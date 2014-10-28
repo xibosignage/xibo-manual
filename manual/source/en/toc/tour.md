@@ -4,3 +4,5 @@
 * [Icon Dashboard](tour_icon_dashboard.html)
 * [Media Dashboard](tour_media_dashboard.html)
 * [Navigation](tour_navigation.html)
+* [Grids](tour_grids.html)
+* [Forms](tour_forms.html)

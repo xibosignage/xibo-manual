@@ -10,16 +10,16 @@ A [[PRODUCTNAME]] solution is based on 4 things:
 *   Layouts
 *   Scheduling
 
-So what does all this mean? Basically [[PRODUCTNAME]] will allow multiple different displays to show media contained on multiple different screen layouts on a scheduled basis.
+So what does all this mean? Basically [[PRODUCTNAME]] will allow multiple displays to show media contained on multiple different screen layouts on a scheduled basis.
 
 This manual has sections for all of these things, but lets take a quick look at each to get started.
 
 
 ###Displays
-These represent the hardware connected to the TV/Projector/Tablet panel that is actually displaying the end content. In other words Displays drive the medium people will look at. Each Display is uniquely identified in the CMS so that they can have their own unique content, layout designs and schedules set to them. They can also be uniquely identified for reporting statistics.</dd>
+These represent the hardware connected to the TV/Projector/Tablet panel that is actually displaying the end content. In other words Displays drive the medium people will look at. Each Display is uniquely identified in the CMS so that they can have their own unique content, layout designs and schedules set to them. They can also be uniquely identified for reporting statistics.
 
 ###Media
-Media content is the core of a [[PRODUCTNAME]] solution and many different types of content are supported. These are generally split into two categories. File based media that is uploaded and stored in the Library and Layout based media that doesn't have an associated file but is configured directly on a layout instead. An image or video would be Library Media and a RSS feed or some free Text would be Layout based media.</dd>
+Media content is the core of a [[PRODUCTNAME]] solution and many different types of content are supported. These are generally split into two categories. File based media that is uploaded and stored in the Library and Layout based media that doesn't have an associated file but is configured directly on a layout instead. An image or video would be Library Media and a RSS feed or some free Text would be Layout based media.
 
 ###Layouts
 These are the design that is seen on the screen. [[PRODUCTNAME]] allows you to split the screen up into different Regions, each containing their own Timeline of media to play. A layout itself remains on screen until all the Timelines have finished playing through once, then an entirely fresh Layout can be loaded with different positioning and size of Regions, with different Timelines. This flexibility drives the dynamic nature of an [[PRODUCTNAME]] display screen.

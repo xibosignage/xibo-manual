@@ -1,6 +1,9 @@
 <!--toc=getting_started-->
 # Troubleshooting
+Need help? We hope one of the articles below can provide assistance. If the topic is not listed, please visit the [Support page]([[PRODUCTSUPPORTURL]]).
 
-Please head over to our [Support page]([[PRODUCTSUPPORTURL]]) if you have problems installing [[PRODUCTNAME]].
+### Logging In
+1. [Reset the admin password](faq_reset_admin_password.html)
+2. [Unable to login](faq_enable_cookies.html)
 
-Be sure to checkout the [FAQs]([[PRODUCTFAQURL]]) too.
+There are more [FAQs available on-line]([[PRODUCTFAQURL]]).

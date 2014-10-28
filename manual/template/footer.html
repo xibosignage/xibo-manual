@@ -19,6 +19,13 @@
             $(document).ready(function() {
                 $(".ss-sidebar .list-group li").addClass("list-group-item");
                 $("img").addClass("img-thumbnail");
+
+                // Set the selected page based on the TOC name
+                // Mark the appropriate top nav element as the selected page
+                $("#top-nav a").each(function() {
+                    if ($(this).data().tocName == $("body").data().toc)
+                        $(this).parent().addClass("active");
+                });
             });
         </script>
     </body>

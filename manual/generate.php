@@ -39,16 +39,23 @@ foreach (array_diff(scandir('source'), array('..', '.')) as $langDir) {
     }
 }
 
+echo PHP_EOL;
+
 function processFile($folder, $lang, $file) {
     
-    // Header
-    $string  = processReplacements($lang, file_get_contents('template/header.html'));
-    $string .= processReplacements($lang, file_get_contents('template/footer.html'));
+    echo '.';
+    flush();
 
+    // Get the page content
     $pageContent = Parsedown::instance()->text(processReplacements($lang, file_get_contents('source' . DIRECTORY_SEPARATOR . $lang . DIRECTORY_SEPARATOR . $file . '.md')));
     $toc = strtok($pageContent, "\n");
     $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
 
+    // Header
+    $string  = processReplacements($lang, file_get_contents('template/header.html'));
+    $string .= processReplacements($lang, file_get_contents('template/footer.html'));
+
+    $string = str_replace('[[TOCNAME]]', $toc, $string);
     $string = str_replace('[[PAGE]]', $pageContent, $string);
     $string = str_replace('[[NAVBAR]]', file_get_contents('source' . DIRECTORY_SEPARATOR . $lang . '/toc/nav_bar.html'), $string);
     
