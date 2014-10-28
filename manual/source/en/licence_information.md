@@ -3,10 +3,10 @@
 [[PRODUCTNAME]] has leveraged the power of several open source platforms and libraries.
 
 ##Xibo
-Xibo - Digital Signage - [http://www.xibo.org.uk]. Version 1.7.0-beta
+Xibo - Digital Signage - [http://www.xibo.org.uk]. Version [[PRODUCTVERSION]]
 Copyright &copy; 2006-2014 Daniel Garner and the Xibo Developers.
 
-Xibo is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
+Xibo is free software: you can redistribute it and / or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
 
 Xibo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
 
@@ -19,10 +19,10 @@ This manual is licensed under the Creative Commons Attribution ShareAlike UK v2 
 Xibo is supported and maintained by Spring Signage
 
 ##Third Party Licenses
-Xibo uses some third party libraries and tools - these are provided to you along with Xibo under the following licenses:
+[[PRODUCTNAME]] uses some third party libraries and tools - these are provided to you along with [[PRODUCTNAME]] under the following licenses:
 
 ###jQuery
-Jquery (and plugins) are provided under the MIT license.
+jQuery (and plug-ins) are provided under the MIT license.
 
 ###Bootstrap
 Licensed under the Apache License v2.0
@@ -40,4 +40,4 @@ PHP gettext is provided under the GNU General Public License
 Any other code items are attributed directly in the source code
 
 ##Content Licensing
-Please be aware that Xibo takes no measures to regulate the content put on your displays beyond what is described in these manual pages. Please make sure that any content is used in the manner described in its license.
+Please be aware that [[PRODUCTNAME]] takes no measures to regulate the content put on your displays beyond what is described in these manual pages. Please make sure that any content is used in the manner described in its license.
