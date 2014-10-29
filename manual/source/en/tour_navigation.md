@@ -2,6 +2,8 @@
 #Navigation
 Getting around the CMS is easy, with the intuitive side bar that shows only the items each user has permission to see.
 
+![Side Bar](img/tour_cms_sidebar.png)
+
 The side bar is split into sections to further classify each page - these are:
 
 1. Dashboard

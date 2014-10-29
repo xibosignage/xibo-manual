@@ -122,3 +122,21 @@ body {
   margin-top: 30px;
   border-bottom: 1px solid #eee
 }
+
+nav#top-nav {
+  background-color: #273759;
+  border-color: #273759;
+}
+
+ul.navbar-nav a, .navbar-inverse .navbar-nav>li>a {
+  color: #b2bfdc;
+}
+ul.navbar-nav a:hover {
+  color: #fff;
+  border-bottom: 3px solid #e99d1a;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: #273759;
+  border-bottom: 3px solid #e99d1a;
+}

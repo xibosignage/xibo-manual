@@ -6,3 +6,4 @@
 * [Navigation](tour_navigation.html)
 * [Grids](tour_grids.html)
 * [Forms](tour_forms.html)
+* [Guides](tour_guides.html)
