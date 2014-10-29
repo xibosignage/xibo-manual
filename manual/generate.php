@@ -41,22 +41,28 @@ foreach (array_diff(scandir('source'), array('..', '.')) as $langDir) {
     }
 }
 
+// Build a langs string
+$langsString = '<a href="../en/index.html">en</a>';
+foreach ($languages as $lang) {
+    $langsString .= ' | <a href="../' . $lang . '/index.html">' . $lang . '</a>';
+}
+
 // Scan files in the EN folder:
 foreach (array_diff(scandir('source/en'), array('..', '.')) as $file) {
     if (stripos($file, '.md')) {
         // Process each file in turn
-        processFile($OUTPUT_ROOT, 'en', str_replace('.md', '', $file));
+        processFile($langsString, $OUTPUT_ROOT, 'en', str_replace('.md', '', $file));
 
         // Process for the other languages.
         foreach ($languages as $lang) {
-            processFile($OUTPUT_ROOT, $lang, str_replace('.md', '', $file));
+            processFile($langsString, $OUTPUT_ROOT, $lang, str_replace('.md', '', $file));
         }
     }
 }
 
 echo PHP_EOL;
 
-function processFile($folder, $lang, $file) {
+function processFile($langs, $folder, $lang, $file) {
     
     echo '.';
     flush();
@@ -76,6 +82,9 @@ function processFile($folder, $lang, $file) {
     
     // Handle the TOC
     $string = str_replace('[[TOC]]', Parsedown::instance()->text(file_get_contents_or_default($lang, '/toc/' . $toc . '.md')), $string);
+
+    // Replace the languages
+    $string = str_replace('[[LANGS]]', $langs, $string);
 
     file_put_contents($folder . $lang . DIRECTORY_SEPARATOR . $file . '.html', $string);
 }

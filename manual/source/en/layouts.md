@@ -39,6 +39,6 @@ _Layouts with more than one tag appear once for each tag with the tag viewer ena
 ![Tag Viewer](img/layouts_grid_tag_viewer.png)
 
 ##Schedule Now
-Layouts can be instantly scheduled using the [Schedule Now](schedule_now.html) functionality available on the row menu.
+Layouts can be instantly scheduled using the [Schedule Now](scheduling_now.html) functionality available on the row menu.
 
 
