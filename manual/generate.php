@@ -15,6 +15,8 @@ xcopy('libraries/jquery', $OUTPUT_ROOT . 'libraries/jquery');
 xcopy('template/img', $OUTPUT_ROOT . 'img');
 xcopy('template/manual.css', $OUTPUT_ROOT . 'manual.css');
 
+$languages = array();
+
 // Get a list of folders
 foreach (array_diff(scandir('source'), array('..', '.')) as $langDir) {
     
@@ -27,14 +29,27 @@ foreach (array_diff(scandir('source'), array('..', '.')) as $langDir) {
         
         mkdir($OUTPUT_ROOT . $langDir);
 
-        xcopy('source/' . $langDir . '/img', $OUTPUT_ROOT . $langDir . '/img');
+        // Make sure a full suite of images is present.
+        xcopy('source/en/img', $OUTPUT_ROOT . $langDir . '/img');
+        
+        // And layer in any language specific replacements
+        if (is_dir('source/' . $langDir . '/img'))
+            xcopy('source/' . $langDir . '/img', $OUTPUT_ROOT . $langDir . '/img');
+        
+        if ($langDir != 'en')
+            $languages[] = $langDir;
+    }
+}
 
-        // Scan all files in the folder
-        foreach (array_diff(scandir('source/' . $langDir), array('..', '.')) as $file) {
-            if (stripos($file, '.md')) {
-                // Process each file in turn
-                processFile($OUTPUT_ROOT, $langDir, str_replace('.md', '', $file));
-            }
+// Scan files in the EN folder:
+foreach (array_diff(scandir('source/en'), array('..', '.')) as $file) {
+    if (stripos($file, '.md')) {
+        // Process each file in turn
+        processFile($OUTPUT_ROOT, 'en', str_replace('.md', '', $file));
+
+        // Process for the other languages.
+        foreach ($languages as $lang) {
+            processFile($OUTPUT_ROOT, $lang, str_replace('.md', '', $file));
         }
     }
 }
@@ -47,7 +62,7 @@ function processFile($folder, $lang, $file) {
     flush();
 
     // Get the page content
-    $pageContent = Parsedown::instance()->text(processReplacements($lang, file_get_contents('source' . DIRECTORY_SEPARATOR . $lang . DIRECTORY_SEPARATOR . $file . '.md')));
+    $pageContent = Parsedown::instance()->text(processReplacements($lang, file_get_contents_or_default($lang, $file . '.md')));
     $toc = strtok($pageContent, "\n");
     $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
 
@@ -57,12 +72,19 @@ function processFile($folder, $lang, $file) {
 
     $string = str_replace('[[TOCNAME]]', $toc, $string);
     $string = str_replace('[[PAGE]]', $pageContent, $string);
-    $string = str_replace('[[NAVBAR]]', file_get_contents('source' . DIRECTORY_SEPARATOR . $lang . '/toc/nav_bar.html'), $string);
+    $string = str_replace('[[NAVBAR]]', file_get_contents_or_default($lang, '/toc/nav_bar.html'), $string);
     
     // Handle the TOC
-    $string = str_replace('[[TOC]]', Parsedown::instance()->text(file_get_contents('source' . DIRECTORY_SEPARATOR . $lang . '/toc/' . $toc . '.md')), $string);
+    $string = str_replace('[[TOC]]', Parsedown::instance()->text(file_get_contents_or_default($lang, '/toc/' . $toc . '.md')), $string);
 
     file_put_contents($folder . $lang . DIRECTORY_SEPARATOR . $file . '.html', $string);
+}
+
+function file_get_contents_or_default($lang, $file) {
+    if (file_exists('source' . DIRECTORY_SEPARATOR . $lang . DIRECTORY_SEPARATOR . $file))
+        return file_get_contents('source' . DIRECTORY_SEPARATOR . $lang . DIRECTORY_SEPARATOR . $file);
+    else
+        return file_get_contents('source' . DIRECTORY_SEPARATOR . 'en' . DIRECTORY_SEPARATOR . $file);
 }
 
 function processReplacements($lang, $string) {
