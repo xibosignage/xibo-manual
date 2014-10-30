@@ -9,5 +9,6 @@ Events have the following properties:
 - Priority events
 - Schedule an event for more that one Display / Display Group at once
 
+When a Display has more than one Layout scheduled to it at one time it will automatically alternate between the Layouts in the schedule.
 
 If at any time there are no layouts scheduled to run, the default layout for the Display will be run automatically.

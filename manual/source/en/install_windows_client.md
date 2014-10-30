@@ -117,19 +117,7 @@ Here are some suggested settings for Windows / PowerPoint for a Display Client:
 - If the client is accessible from where you manage your displays from, you might want to install UltraVNC server so you can connect in and check on the client from time to time. Use the "View only" option in the VNC client to avoid disturbing the display.
 - Set Windows to log on as your display client user automatically
 - Disable balloon tips in the notification area
-- Disable Windows Error Reporting. Occasionally PowerPoint seems to "crash" when [[PRODUCTNAME]] closes it. Unfortunately this leaves an unsightly "PowerPoint has encountered a problem and needs to close" message on the display. Follow the steps here to disable Windows Error Reporting completely - including notifications.
-- Also disable Office Application Error reporting. Follow instructions at KB325075 or merge this registry patch.
+
+- Displays that will show _PowerPoint_ should follow the detailed [preparation instructions](media_powerpoint.html#machine_preparation).
 
 **Please take a backup before modifying the registry**
-
-If you're using PowerPoint, then there are a couple of extra steps:
-
-First consider if you would be better converting your PowerPoint content to video files. PowerPoint 2010 and later can "Save As" a WMV file which can be loaded straight in to [[PRODUCTNAME]] and is far more reliable. If however you still need to play PowerPoint files, please ensure you action the following:
-
-The first time you run [[PRODUCTNAME]] with a PowerPoint, you might get a popup appear that asks what [[PRODUCTNAME]] should do with the PowerPoint file. The popup actually originates from Internet Explorer. Choose to "Open" the file, and untick the box so you won't be prompted again.
-In some circumstances, you may find that PowerPoint, the application, loads instead of the file opening within [[PRODUCTNAME]] itself. If that happens, try merging this registry patch. (Taken from pptfaq.com). Users of PowerPoint 2007 should go to Microsoft KB927009 and run the FixIT application instead. Users of PowerPoint 2010 should go here instead KB982995
-
-Note also that PowerPoint will put scroll bars up the side of your presentation, unless you do the following for each PowerPoint file BEFORE you upload it:
-- Open your PowerPoint Document
-- Slide Show -> Setup Show
-- Under "Show Type", choose "Browsed by an individual (window)" and then untick "Show scrollbar"
