@@ -23,14 +23,14 @@ The Embedded Content module allows HTML and JavaScript to be embedded into a Lay
     The `EmbedInit()` method will be called by the Display Client and can be used to safely start any custom JavaScript at the appropriate time. The method is defaulted on any new Embedded Media Item.
 
     ``` html
-    &lt;script type="text/javascript"&gt;
+    <script type="text/javascript">
     function EmbedInit()
     {
         // Init will be called when this page is loaded in the client.
 
         return;
     }
-    &lt;/script&gt;
+    </script>
     ```
 
 Show embedded HTML with Active-X content on the Windows Display Client the security settings of IE so that local files were allowed to run active content by default. This can be done in Tools -> Internet Options -> Advanced -> Security -> "Allow Active content to run in files on My Computer"

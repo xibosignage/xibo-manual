@@ -29,7 +29,7 @@ After choosing the Source of the View the Edit form will automatically open, pro
 
 - **Update Interval**
     
-    <?php echo PRODUCT_NAME; ?> Display Clients can cache the content of this media type to prevent repeated download of identical resources. They are also cached for off-line playback. 
+    Displays can cache the content of this media type to prevent repeated download of identical resources. They are also cached for off-line playback. 
 
 - **Order**
     
