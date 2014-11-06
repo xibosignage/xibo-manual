@@ -24,8 +24,10 @@ foreach (array_diff(scandir('source'), array('..', '.')) as $langDir) {
         echo 'Found ' . $langDir . PHP_EOL;
 
         // Make sure our output folder is empty
-        if (is_dir($OUTPUT_ROOT . $langDir))
+        if (is_dir($OUTPUT_ROOT . $langDir)) {
             delete($OUTPUT_ROOT . $langDir);
+            sleep(3);
+        }
         
         mkdir($OUTPUT_ROOT . $langDir);
 
