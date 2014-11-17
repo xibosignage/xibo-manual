@@ -127,3 +127,6 @@ It is possible to run more than one of the Display client on Windows. [Installat
 
 ### Screen Saver
 It is possible to run [[PRODUCTNAME]] as a Screen Saver. [Installation Instructions](install_windows_client_screensaver.html).
+
+### Watchdog
+The Watchdog is an optional component which can be used to monitor the stability of the main application and restart it where necessary. [Installation Instructions](install_windows_client_watchdog.html).
