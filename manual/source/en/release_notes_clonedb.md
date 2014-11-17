@@ -1,64 +1,66 @@
 <!--toc=getting_started-->
-#Clone Database
+#Cloning the Database
 [[PRODUCTNAME]] uses database constraints to enforce it's database schema. You can think of it as a second level of checking after the web interface to ensure that the database remains corruption-free.
 
-What this means for you, the [[PRODUCTNAME]] admin, is that when you try and restore a mysqldump'ed database the restore will fail.
+This means that when you try and restore a database "dump" the restore will fail. The restoration will fail due to the database constraints, unless the following steps are taken.
 
-I'll use the following names for things throughout the examples. Substitute these values for your real database details:
+The following placeholders are used in the below instructions, substitute these values for the real database details:
 
 *   MySQL Administrative User = madmin
-
 *   MySQL [[PRODUCTNAME]] User = [[PRODUCTNAME]]dbuser
-
 *   MySQL Database = [[PRODUCTNAME]]db
 
-##  <span class="mw-headline" id="Method_1"> Method 1 </span>
+
+## Method 1 
 
 The easier of the two methods.
 
-*   Dump the 1.0.x database to a file:
-```
- mysqldump -u madmin -p [[PRODUCTNAME]]db &gt; [[PRODUCTNAME]].sql
+1.   Dump the database to a file:
 
-```
+    ```
+     mysqldump -u madmin -p [[PRODUCTNAME]]db > [[PRODUCTNAME]].sql
 
-*   If you now want to clone that database (for testing or similar) then first you need to create a new database to restore the dump in to:
-```
-mysql -u madmin -p mysql
+    ```
 
-```
+2.   If you now want to clone that database (for testing or similar) then first you need to create a new database to restore the dump in to:
 
-*   You'll be prompted to enter your madmin password. At the mysql prompt, enter:
-```
-create database [[PRODUCTNAME]]db2;
-grant all privileges on [[PRODUCTNAME]]db2.* to '[[PRODUCTNAME]]dbuser'@'localhost';
-use [[PRODUCTNAME]]db2;
-source [[PRODUCTNAME]].sql
-quit;
+    ```
+    mysql -u madmin -p mysql
 
-```
+    ```
 
-Substitute [[PRODUCTNAME]]db2 for any database name of your choosing (although clearly it can't exist already!).
+3. You'll be prompted to enter your madmin password. At the mysql prompt, enter:
 
-*   Finally alter your settings.php file in your 1.1 install to use the new database name ([[PRODUCTNAME]]db2 in this example).
+    ```
+    create database [[PRODUCTNAME]]db2;
+    grant all privileges on [[PRODUCTNAME]]db2.* to '[[PRODUCTNAME]]dbuser'@'localhost';
+    use [[PRODUCTNAME]]db2;
+    source [[PRODUCTNAME]].sql
+    quit;
 
-##  <span class="mw-headline" id="Method_2"> Method 2 </span>
+    ```
+
+    Substitute [[PRODUCTNAME]]db2 for any database name of your choosing (although clearly it can't exist already!).
+
+
+4.   Finally alter your settings.php file in your 1.1 install to use the new database name ([[PRODUCTNAME]]db2 in this example).
+
+
+## Method 2
 
 Before you backup your database, create a file "[[PRODUCTNAME]].sql" with the following contents:
 
-```
+``` sql
 SET FOREIGN_KEY_CHECKS=0;
 SET UNIQUE_CHECKS=0;
-
-
 ```
 
 It's really important that there is at least one blank line on the end of the file.
 
 Next you dump your [[PRODUCTNAME]] database and add the output to the end of [[PRODUCTNAME]].sql
 
-```
-mysqldump -u [[PRODUCTNAME]]dbuser -p [[PRODUCTNAME]]db &gt;&gt; [[PRODUCTNAME]].sql
+``` sql
+mysqldump -u [[PRODUCTNAME]]dbuser -p [[PRODUCTNAME]]db >> [[PRODUCTNAME]].sql
 
 ```
 
@@ -66,26 +68,25 @@ You will be prompted to enter the password for your [[PRODUCTNAME]]dbuser accoun
 
 If you now want to clone that database (for testing or similar) then first you need to create a new database to restore the dump in to:
 
-```
+``` sql
 mysql -u madmin -p mysql
 
 ```
 
 You'll be prompted to enter your madmin password. At the mysql prompt, enter:
 
-```
+``` sql
 create database [[PRODUCTNAME]]db2;
 grant all privileges on [[PRODUCTNAME]]db2.* to '[[PRODUCTNAME]]dbuser'@'localhost';
 quit;
-
 ```
 
 Substitute [[PRODUCTNAME]]db2 for any database name of your choosing (although clearly it can't exist already!).
 
 Now we can restore our database dump in to the new database:
 
-```
-mysql -u madmin -p [[PRODUCTNAME]]db2 &lt; [[PRODUCTNAME]].sql
+``` sql
+mysql -u madmin -p [[PRODUCTNAME]]db2 < [[PRODUCTNAME]].sql
 
 ```
 

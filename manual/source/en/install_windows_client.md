@@ -118,6 +118,12 @@ Here are some suggested settings for Windows / PowerPoint for a Display Client:
 - Set Windows to log on as your display client user automatically
 - Disable balloon tips in the notification area
 
-- Displays that will show _PowerPoint_ should follow the detailed [preparation instructions](media_powerpoint.html#machine_preparation).
+- Displays that will show _PowerPoint_ should follow the detailed [preparation instructions](media_module_powerpoint.html#machine_preparation).
 
 **Please take a backup before modifying the registry**
+
+### Multiple Clients
+It is possible to run more than one of the Display client on Windows. [Installation Instructions](install_windows_client_multiple.html)
+
+### Screen Saver
+It is possible to run [[PRODUCTNAME]] as a Screen Saver. [Installation Instructions](install_windows_client_screensaver.html).
