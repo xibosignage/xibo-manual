@@ -29,10 +29,12 @@ class ManualGenerator
     private $sourcePath;
     private $outputPath;
 
-    public function __construct($productName, $productVersion, $productHome, $productSupportUrl, $productFaqUrl)
+    public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
+        // This should be updated with each release of the manual
+        $this->productVersion = '1.7.0';
+
         $this->productName = $productName;
-        $this->productVersion = $productVersion;
         $this->productHome = $productHome;
         $this->productSupportUrl = $productSupportUrl;
         $this->productFaqUrl = $productFaqUrl;
