@@ -5,12 +5,14 @@ Each release comes with its own set of release notes. These should be read and u
 The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSION]].html).
 
 ## Version 1.7 "Tuttle"
+* [1.7.0](release_notes_1.7.0.html)
 * [1.7.0-rc1](release_notes_1.7.0-rc1.html)
 * [1.7.0-beta](release_notes_1.7.0-beta.html)
 * [1.7.0-alpha2](release_notes_1.7.0-alpha2.html)
 * [1.7.0-alpha](release_notes_1.7.0-alpha.html)
 
 ## Version 1.6 "Pons-Winnecke"
+* [1.6.4](release_notes_1.6.4.html)
 * [1.6.3](release_notes_1.6.3.html)
 * [1.6.2](release_notes_1.6.2.html)
 * [1.6.1](release_notes_1.6.1.html)
