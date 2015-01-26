@@ -3,7 +3,7 @@
 
 This is the first stable release of Xibo 1.7.0!
 
-You can download this release from [https://github.com/xibosignage/xibo/releases/tag/1.7.0](https://github.com/xibosignage/xibo/releases/tag/1.7.0)
+You can download this release from [https://github.com/xibosignage/xibo-cms/releases/tag/1.7.0](https://github.com/xibosignage/xibo-cms/releases/tag/1.7.0)
 
 This release is the result of 2 alpha releases, a beta release and a release candidate and is packed with new features and improvements, including:
 
