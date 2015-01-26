@@ -29,7 +29,7 @@ define('PRODUCT_VERSION', '1.7.0');
 define('PRODUCT_HOME', 'http://xibo.org.uk');
 
 # Product Support URL
-define('PRODUCT_SUPPORT_URL', 'https://answers.launchpad.net/xibo');
-define('PRODUCT_FAQ_URL', 'https://answers.launchpad.net/xibo/+faqs');
+define('PRODUCT_SUPPORT_URL', 'https://github.com/xibosignage/xibo/issues');
+define('PRODUCT_FAQ_URL', 'http://xibo.org.uk/manual/en/troubleshooting.html');
 
 ?>

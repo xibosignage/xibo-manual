@@ -1,26 +1,26 @@
 <!--toc=tour-->
 #Formulaires
-C'est par le biais de formulaires que le CMS permet d'effectuer la plupart des opérations (actions visant en quelque sorte à éditer le contenu).
+C'est par le biais de formulaires que le CMS permet d'effectuer la plupart des opÃ©rations (actions visant en quelque sorte Ã  Ã©diter le contenu).
 
-Ces formulaires ont été conçus de manière à être cohérent pour l'ensemble de l'application et à fournir un maximum d'information.
+Ces formulaires ont Ã©tÃ© conÃ§us de maniÃ¨re Ã  Ãªtre cohÃ©rent pour l'ensemble de l'application et Ã  fournir un maximum d'information.
 
-Le formulaire Ajouter une nouvelle présentation, ci-dessous est un exemple type.
+Le formulaire Ajouter une nouvelle prÃ©sentation, ci-dessous est un exemple type.
 
 ![Forms](img/tour_cms_forms.png)
 
 ##Onglets
-Les formulaires peuvent comporter un ou plusieurs onglets, auquel cas ces derniers servent à gérer des attributs ou des paramètres moins importants.
+Les formulaires peuvent comporter un ou plusieurs onglets, auquel cas ces derniers servent Ã  gÃ©rer des attributs ou des paramÃ¨tres moins importants.
 
-On accède aux onglets en cliquant sur leur entête.
+On accÃ¨de aux onglets en cliquant sur leur entÃªte.
 
-Certains onglets peuvent provoquer l'extension d'un formulaire afin de mieux refléter son contenu.
+Certains onglets peuvent provoquer l'extension d'un formulaire afin de mieux reflÃ©ter son contenu.
 
 ##Champs de formulaire
-Les champs de formulaire se trouvent à l'intérieur des onglets et correspondent aux attributs des différents éléments à éditer. Les types de champ sont différents selon la nature des données et la plupart sont intuitifs.
+Les champs de formulaire se trouvent Ã  l'intÃ©rieur des onglets et correspondent aux attributs des diffÃ©rents Ã©lÃ©ments Ã  Ã©diter. Les types de champ sont diffÃ©rents selon la nature des donnÃ©es et la plupart sont intuitifs.
 
-Chaque champ est pourvu d'un titre expliquant ce qu'il représente. Au-dessus ou au-dessous de chaque champ se trouve également une zone d'explication en gris encore plus détaillée.
+Chaque champ est pourvu d'un titre expliquant ce qu'il reprÃ©sente. Au-dessus ou au-dessous de chaque champ se trouve Ã©galement une zone d'explication en gris encore plus dÃ©taillÃ©e.
 
 ##Boutons
-Chaque formulaire est doté d'une barre de boutons en bas d'écran permettant à l'utilisateur de valider ou d'annuler les ajouts ou modifications effectués.
+Chaque formulaire est dotÃ© d'une barre de boutons en bas d'Ã©cran permettant Ã  l'utilisateur de valider ou d'annuler les ajouts ou modifications effectuÃ©s.
 
-La plupart des formulaires incluent également un lien "aide" vers ce manuel pour plus de détails.
+La plupart des formulaires incluent Ã©galement un lien "aide" vers ce manuel pour plus de dÃ©tails.

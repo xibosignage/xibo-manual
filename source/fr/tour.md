@@ -1,31 +1,31 @@
 <!--toc=tour-->
 #Vue d'ensemble de la plate-forme
 
-[[PRODUCTNAME]] est une application puissante et flexible dotée d'un noyau "ethos", dédiée à l'affichage dynamique, dont il est important de comprendre le fondement.
+[[PRODUCTNAME]] est une application puissante et flexible dotÃ©e d'un noyau "ethos", dÃ©diÃ©e Ã  l'affichage dynamique, dont il est important de comprendre le fondement.
 
-Une solution [[PRODUCTNAME]] s'appuie sur quatre éléments:
+Une solution [[PRODUCTNAME]] s'appuie sur quatre Ã©lÃ©ments:
 
 *   Les afficheurs
 *   Les medias
-*   Les présentations
+*   Les prÃ©sentations
 *   La planification
 
-Que faut-il entendre par là ? Fondamentalement, [[PRODUCTNAME]] permet à de multiples afficheurs de diffuser des medias sur un grand nombre de présentations d'écran différentes, planifiés dans le temps.
+Que faut-il entendre par lÃ  ? Fondamentalement, [[PRODUCTNAME]] permet Ã  de multiples afficheurs de diffuser des medias sur un grand nombre de prÃ©sentations d'Ã©cran diffÃ©rentes, planifiÃ©s dans le temps.
 
-Ce manuel comprend des sections traitant de chacun de ces éléments, mais pour commencer examinons-les brièvement.
+Ce manuel comprend des sections traitant de chacun de ces Ã©lÃ©ments, mais pour commencer examinons-les briÃ¨vement.
 
 
 ###Les afficheurs
-Il s'agit de l'équipement relié à l'écran de télévision, de projecteur et de tablette qui diffusent réellement le contenu final. En d'autres termes, les afficheurs pilotent le contenu que les gens regarderont. Chaque afficheur a sa propre identification auprès du CMS de sorte qu'un contenu, une présentation et une planification spécifique peuvent lui être attribués. Chacun d'eux peut aussi être identifié à des fins statistiques.
+Il s'agit de l'Ã©quipement reliÃ© Ã  l'Ã©cran de tÃ©lÃ©vision, de projecteur et de tablette qui diffusent rÃ©ellement le contenu final. En d'autres termes, les afficheurs pilotent le contenu que les gens regarderont. Chaque afficheur a sa propre identification auprÃ¨s du CMS de sorte qu'un contenu, une prÃ©sentation et une planification spÃ©cifique peuvent lui Ãªtre attribuÃ©s. Chacun d'eux peut aussi Ãªtre identifiÃ© Ã  des fins statistiques.
 
 ###Les medias
-Le contenu du media constitue la clé de voûte d'une solution [[PRODUCTNAME]] et de nombreux types de contenu peuvent être utilisés. Ils se répartissent généralement en deux catégories. Le fichier média, chargé et stocké dans la bibliothèque, et le média de présentation auquel n'est pas associé de fichier mais qui au contraire est configuré directement à partir d'un modèle. Une image ou une vidéo correspond à un média de la bibliothèque et un flux RSS ou des données texte correspondent à des médias de présentation.
+Le contenu du media constitue la clÃ© de voÃ»te d'une solution [[PRODUCTNAME]] et de nombreux types de contenu peuvent Ãªtre utilisÃ©s. Ils se rÃ©partissent gÃ©nÃ©ralement en deux catÃ©gories. Le fichier mÃ©dia, chargÃ© et stockÃ© dans la bibliothÃ¨que, et le mÃ©dia de prÃ©sentation auquel n'est pas associÃ© de fichier mais qui au contraire est configurÃ© directement Ã  partir d'un modÃ¨le. Une image ou une vidÃ©o correspond Ã  un mÃ©dia de la bibliothÃ¨que et un flux RSS ou des donnÃ©es texte correspondent Ã  des mÃ©dias de prÃ©sentation.
 
-###Présentations
-Il s'agit de la présentation qui apparaît à l'écran. [[PRODUCTNAME]] permet de partager l'écran en différentes régions, chacune disposant de son propre déroulé chronologique pour la lecture des médias. Une présentation demeure à l'écran jusqu'à ce que les déroulés chronologiques aient été lus en entier, ensuite, on pourra charger une présentation totalement nouvelle, dotée de tailles et d'emplacements différents pour les régions ainsi que de chronologies différentes. Cette flexibilité est à l'origine du comportement dynamique d'un écran d'affichage [[PRODUCTNAME]].
+###PrÃ©sentations
+Il s'agit de la prÃ©sentation qui apparaÃ®t Ã  l'Ã©cran. [[PRODUCTNAME]] permet de partager l'Ã©cran en diffÃ©rentes rÃ©gions, chacune disposant de son propre dÃ©roulÃ© chronologique pour la lecture des mÃ©dias. Une prÃ©sentation demeure Ã  l'Ã©cran jusqu'Ã  ce que les dÃ©roulÃ©s chronologiques aient Ã©tÃ© lus en entier, ensuite, on pourra charger une prÃ©sentation totalement nouvelle, dotÃ©e de tailles et d'emplacements diffÃ©rents pour les rÃ©gions ainsi que de chronologies diffÃ©rentes. Cette flexibilitÃ© est Ã  l'origine du comportement dynamique d'un Ã©cran d'affichage [[PRODUCTNAME]].
 
 ###Planification
-Lorsque les afficheurs ont été enregistrés, que le contenu d'un media est téléchargé et que les présentations sont conçues, il est temps de les assembler et de planifier les présentations sur les afficheurs. Chaque afficheur vérifie régulièrement les nouveaux contenus planifiés et télécharge les éléments planifiés avant leur reproduction. La planification est extrêmement flexible et peut s'effectuer par afficheur ou par groupes spécifiques, par présentations et campagnes spécifiques et de façon récurrente. Chaque afficheur dispose d'une présentation par défaut qui apparaît si rien d'autre n'est planifié.
+Lorsque les afficheurs ont Ã©tÃ© enregistrÃ©s, que le contenu d'un media est tÃ©lÃ©chargÃ© et que les prÃ©sentations sont conÃ§ues, il est temps de les assembler et de planifier les prÃ©sentations sur les afficheurs. Chaque afficheur vÃ©rifie rÃ©guliÃ¨rement les nouveaux contenus planifiÃ©s et tÃ©lÃ©charge les Ã©lÃ©ments planifiÃ©s avant leur reproduction. La planification est extrÃªmement flexible et peut s'effectuer par afficheur ou par groupes spÃ©cifiques, par prÃ©sentations et campagnes spÃ©cifiques et de faÃ§on rÃ©currente. Chaque afficheur dispose d'une prÃ©sentation par dÃ©faut qui apparaÃ®t si rien d'autre n'est planifiÃ©.
 
 ## Contenu - que peut afficher [[PRODUCTNAME]]?
 
@@ -33,33 +33,33 @@ Lorsque les afficheurs ont été enregistrés, que le contenu d'un media est téléch
 
 *   Texte
 *   Images
-*   Vidéo
+*   VidÃ©o
 *   PowerPoint (client d'affichage Windows uniquement)
 *   Flash (client d'affichage Windows uniquement)
 *   RSS / Atom
-*   Fichier CSV (formatés)
+*   Fichier CSV (formatÃ©s)
 *   Pages Web
-*   Contenu personnalisé intégré
+*   Contenu personnalisÃ© intÃ©grÃ©
 
-On trouvera sur le site web de [[PRODUCTNAME]] une liste complète des fonctionnalités.
+On trouvera sur le site web de [[PRODUCTNAME]] une liste complÃ¨te des fonctionnalitÃ©s.
 
-## CMS - Comment gérer tout cela?
+## CMS - Comment gÃ©rer tout cela?
 
-La gestion d'une solution aussi souple que [[PRODUCTNAME]] nécessite un puissant CMS (content management system = système de gestion de contenu) pour offrir ces fonctions fondamentales de façon rationnelle et maîtrisée. Le CMS de [[PRODUCTNAME]] est doté de fonctionnalités telles que:
+La gestion d'une solution aussi souple que [[PRODUCTNAME]] nÃ©cessite un puissant CMS (content management system = systÃ¨me de gestion de contenu) pour offrir ces fonctions fondamentales de faÃ§on rationnelle et maÃ®trisÃ©e. Le CMS de [[PRODUCTNAME]] est dotÃ© de fonctionnalitÃ©s telles que:
 
 *   Groupes d'utilisateurs
-*   Définition de droits d'accès pour utilisateurs et groupes
+*   DÃ©finition de droits d'accÃ¨s pour utilisateurs et groupes
 *   Groupes d'afficheurs
-*   Définition de droits d'accès pour des groupes d'afficheurs
-*   Définition de droits d'accès aux menus et aux pages
-*   Campagnes (groupes de présentations ordonnés)
-*   Modèles de présentations
+*   DÃ©finition de droits d'accÃ¨s pour des groupes d'afficheurs
+*   DÃ©finition de droits d'accÃ¨s aux menus et aux pages
+*   Campagnes (groupes de prÃ©sentations ordonnÃ©s)
+*   ModÃ¨les de prÃ©sentations
 *   Statistiques concernant les afficheurs
 
 ## Le Manuel
 
-Ce manuel est structuré en sections correspondant globalement aux principes de base et aux fonctions les plus évoluées du CMS. Nous commençons par la bibliothèque, les présentations et la planification, pour passer ensuite à la gestion des afficheurs et aux options pour utilisateurs et développeurs.
+Ce manuel est structurÃ© en sections correspondant globalement aux principes de base et aux fonctions les plus Ã©voluÃ©es du CMS. Nous commenÃ§ons par la bibliothÃ¨que, les prÃ©sentations et la planification, pour passer ensuite Ã  la gestion des afficheurs et aux options pour utilisateurs et dÃ©veloppeurs.
 
 
 ## Plus d'informations
-Le site web de [[[PRODUCTNAME]] ]([[PRODUCTHOME]]) est une excellente ressource pour en savoir plus car il s'agit du site de la communauté d'utilisateurs (PRODUCTSUPPORTURL) pour la plate-forme.
+Le site web de [[[PRODUCTNAME]] ]([[PRODUCTHOME]]) est une excellente ressource pour en savoir plus car il s'agit du site de la communautÃ© d'utilisateurs (PRODUCTSUPPORTURL) pour la plate-forme.
