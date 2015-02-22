@@ -3,7 +3,7 @@
 
 Willkommen beim Benutzerhandbuch von [[PRODUCTNAME]] - Dieses Handbuch von [[PRODUCTNAME]] hat als Grundlage Version [[PRODUCTVERSION]]. Wir möchten diese Gelegenheit nutzen, um Ihnen für die Nutzung von [[PRODUCTNAME]] zu danken.
 
-[[PRODUCTNAME]] ist eine leistungsstarke Software zur digitalen Beschilderung (Digital Signage). According to Wikipedia, Digital Signage is:
+[[PRODUCTNAME]] ist eine leistungsstarke Software zur digitalen Beschilderung (Digital Signage). Hier ein Auszug von Wikipedia zu Digital Signage:
 
 > Der Begriff Digital Signage (dt.: Digitale Beschilderung) umschreibt den Einsatz digitaler Medieninhalte bei Werbe- und Informationssystemen wie elektronische Plakate, elektronische Verkehrsschilder, Werbung in Geschäften (Instore Marketing), digitale Türbeschilderung oder Großbildprojektionen.
 
