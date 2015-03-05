@@ -1,6 +1,6 @@
 <!--toc=getting_started-->
 #Reset admin password
-Connect to the Xibo database and run the following SQL:
+Connect to the Xibo database and run the following SQL, making sure you change the `'username'` at the end to the username you want to reset.
 
 ```mysql
 UPDATE `user` set `UserPassword` = MD5('password'), CSPRNG = 0 WHERE `UserName` = 'username' LIMIT 1;

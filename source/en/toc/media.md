@@ -15,6 +15,7 @@
 - [Shell Command](media_module_shellcommand.html)
 - [Text](media_module_text.html)
 - [Ticker](media_module_ticker.html)
+- [Twitter](media_module_twitter.html)
 - [Video](media_module_video.html)
 - [Weather](media_module_weather.html)
 - [Web Page](media_module_webpage.html)
