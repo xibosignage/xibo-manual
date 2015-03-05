@@ -6,5 +6,8 @@ Need help? We hope one of the articles below can provide assistance. If the topi
 1. [Reset the admin password](faq_reset_admin_password.html)
 2. [Unable to login](faq_enable_cookies.html)
 
-## Widgets with Content from the Internet
+## Widgets (media on region time lines)
 1. [Using Tickers and other external resources over HTTPS](faq_curl_configuration.html)
+
+## Windows Player
+1. [Configuring the [[PRODUCTNAME]] web engine to use a specific version of Internet Explorer](faq_webbrowser_emulation.html)
