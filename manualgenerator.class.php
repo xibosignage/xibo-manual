@@ -1,7 +1,7 @@
 <?php
 /*
  * Xibo - Digital Signage - http://www.xibo.org.uk
- * Copyright (C) 2006-2014 Spring Signage Ltd
+ * Copyright (C) 2006-2015 Spring Signage Ltd
  *
  * This file is part of Xibo.
  *
@@ -20,6 +20,7 @@
  */ 
 class ManualGenerator
 {
+    private $whiteLabel;
     private $productName;
     private $productVersion;
     private $productHome;
@@ -27,17 +28,17 @@ class ManualGenerator
     private $productFaqUrl;
 
     private $sourcePath;
-    private $outputPath;
 
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
         // This should be updated with each release of the manual
-        $this->productVersion = '1.7.0';
+        $this->productVersion = '1.7.1';
 
         $this->productName = $productName;
         $this->productHome = $productHome;
         $this->productSupportUrl = $productSupportUrl;
         $this->productFaqUrl = $productFaqUrl;
+        $this->whiteLabel = ($this->productName != 'Xibo');
     }
 
     public function build($sourcePath, $outputPath)
@@ -128,6 +129,15 @@ class ManualGenerator
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
+
+        // Replace any chunks of manual that we don't want appearing in non white labels
+        if ($this->whiteLabel) {
+            $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+        }
+        else {
+            $string = str_replace('<nonwhite>', '', $string);
+            $string = str_replace('</nonwhite>', '', $string);
+        }
 
         file_put_contents($folder . $lang . DIRECTORY_SEPARATOR . $file . '.html', $string);
     }

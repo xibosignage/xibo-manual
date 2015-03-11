@@ -3,6 +3,7 @@
 The following guides have been made available from various sources to help you get started with Xibo.
 
 ## Text Guides
+- [Getting Started with [[PRODUCTNAME]]. A simple Cafe worked example](guide_getting_started_cafe_menu.html)
 - [Using DataSets to Display Meeting room bookings](http://xibo.org.uk/2014/05/27/using-datasets-to-display-meeting-room-bookings/)
 
 ## Video Guides
