@@ -130,15 +130,6 @@ class ManualGenerator
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
 
-        // Replace any chunks of manual that we don't want appearing in non white labels
-        if ($this->whiteLabel) {
-            $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
-        }
-        else {
-            $string = str_replace('<nonwhite>', '', $string);
-            $string = str_replace('</nonwhite>', '', $string);
-        }
-
         file_put_contents($folder . $lang . DIRECTORY_SEPARATOR . $file . '.html', $string);
     }
 
@@ -159,6 +150,15 @@ class ManualGenerator
         $string = str_replace('[[PRODUCTSUPPORTURL]]', $this->productSupportUrl, $string);
         $string = str_replace('[[PRODUCTFAQURL]]', $this->productFaqUrl, $string);
 
+        // Replace any chunks of manual that we don't want appearing in non white labels
+        if ($this->whiteLabel) {
+            $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+        }
+        else {
+            $string = str_replace('<nonwhite>', '', $string);
+            $string = str_replace('</nonwhite>', '', $string);
+        }
+
         return $string;
     }
 
@@ -166,7 +166,7 @@ class ManualGenerator
      * Copy a file, or recursively copy a folder and its contents
      * @param       string   $source    Source path
      * @param       string   $dest      Destination path
-     * @param       string   $permissions New folder creation permissions
+     * @param       int   $permissions New folder creation permissions
      * @return      bool     Returns true on success, false on failure
      */
     function xcopy($source, $dest, $permissions = 0755)

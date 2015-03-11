@@ -26,6 +26,6 @@ define('PRODUCT_NAME', 'Xibo');
 define('PRODUCT_HOME', 'http://xibo.org.uk');
 
 # Product Support URL
-define('PRODUCT_SUPPORT_URL', 'https://github.com/xibosignage/xibo/issues');
+define('PRODUCT_SUPPORT_URL', 'https://community.xibo.org.uk/');
 define('PRODUCT_FAQ_URL', 'https://community.xibo.org.uk/c/faq');
 
