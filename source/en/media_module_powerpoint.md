@@ -1,11 +1,20 @@
 <!--toc=media-->
 #PowerPoint
+[[PRODUCTNAME]] can display PowerPoint in two different ways, the correct solution for your network will depend on whether you have a full copy of PowerPoint to install on each Player or not.
+
+**We recommend Option 1 for new installations.**
+
+## Option 1 - Export as a Video
+From Office 2010 onwards PowerPoint presentations can be exported as Video files and played using the video module on Windows and Android displays.
+
+To export a PowerPoint use the option on the File Menu from inside the PowerPoint application. Save the file with an appropriate name and then upload it to the [Video Module](media_module_video.html).
+
+If your players are Android devices you should ensure that the export format is MP4 (PowerPoint 2013 onwards) or convert your video to a MP4 using a 3rd party tool.
+
+## Option 2 - Prepare and Upload your PowerPoint PPT file
 PowerPoint is a proprietary format from Microsoft and can only be displayed on a Windows based signage player that has Microsoft PowerPoint installed.
 
-**From Office 2010 onwards PowerPoint presentations can be exported as Video files and played on the Ubuntu/Android display clients.**
-
-## Preparation
-First prepare the PowerPoint Presentation. PowerPoint will, by default, put scroll bars up the side of your presentation, unless you do the following for each PowerPoint file BEFORE you upload it:
+First prepare the PowerPoint Presentation. PowerPoint will, by default, put scroll bars up the side of your presentation, unless you do the following for each PowerPoint file *BEFORE* you upload it:
 
 1. Open your PowerPoint Document
 2. Slide Show -> Set-up Show
@@ -15,29 +24,34 @@ First prepare the PowerPoint Presentation. PowerPoint will, by default, put scro
 6. Note also that Xibo will not advance the slides in a Presentation, so you should record automatic slide timings by going to "Slide Show -> Rehearse Timings" and then saving the presentation.
 
 <a name="machine_preparation"></a>
-## Windows Modifications
-The first time you run [[PRODUCTNAME]] with a PowerPoint, you might get a pop-up appear that asks what [[PRODUCTNAME]] should do with the PowerPoint file. The pop-up actually originates from Internet Explorer. Choose to "Open" the file, and un-tick the box so you won't be prompted again.
-
-In some circumstances, you may find that PowerPoint, the application, loads instead of the file opening within [[PRODUCTNAME]] itself. If that happens, try merging this, taken from pptfaq.com.
+### Prepare your Windows Players
+Install PowerPoint on your Windows PC alongside your [[PRODUCTNAME]] Player and make the following adjustments to the Windows Registry to disable the windows prompt when opening the PowerPoint. **Please ensure you have taken all necessary precautions when making these changes**.
 
 ``` registry
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.Show.8]
-"BrowserFlags"=dword:00000000
+"BrowserFlags"=dword:800000A0
+"EditFlags"=hex:00,00,01,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.Show.12]
+"BrowserFlags"=dword:800000A0
+"EditFlags"=hex:00,00,01,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.ShowMacroEnabled.12]
+"BrowserFlags"=dword:800000A0
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.SlideShow.8]
+"BrowserFlags"=dword:800000A0
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.SlideShow.12]
+"BrowserFlags"=dword:800000A0
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.SlideShowMacroEnabled.12]
+"BrowserFlags"=dword:800000A0
 ```
 
-Users of PowerPoint 2007 should go to Microsoft [KB927009](http://support.microsoft.com/kb/927009) and run the FixIT application instead. Users of PowerPoint 2010 should go here instead [KB982995](http://support.microsoft.com/kb/982995/en-us)
+If you do not feel comfortable changing the registry it may be possible to achieve the same results by waiting for [[PRODUCTNAME]] to open the first PowerPoint and then when the pop-up notification appears, choose to "Open" the file, and un-check the box so you won't be prompted again.
 
-Disable Windows Error Reporting. Occasionally PowerPoint seems to "crash" when [[PRODUCTNAME]] closes it. Unfortunately this leaves an unsightly "PowerPoint has encountered a problem and needs to close" message on the display. Follow the [steps here to disable Windows Error Reporting completely](http://www.windowsnetworking.com/articles_tutorials/Disable-Error-Reporting-Windows-XP-Server-2003.html) - including notifications.
+### Advanced Steps
+When displaying PowerPoint [[PRODUCTNAME]] is relying on Windows and PowerPoint to display the content. This means that error capture and reporting is outside the control of [[PRODUCTNAME]]. To mitigate any issues we recommend disabling windows error notifications. This can be done by following the [steps here](http://www.windowsnetworking.com/articles_tutorials/Disable-Error-Reporting-Windows-XP-Server-2003.html).
 
-Also disable Office Application Error reporting. Follow instructions at [KB325075](http://support.microsoft.com/kb/325075) or merge this registry patch below.
-
-``` registry
-[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\11.0\Common]
-"DWNeverUpload"=dword:00000001
-
-[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\10.0\Common]
-"DWNeverUpload"=dword:00000001
-
-[HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\12.0\Common]
-"DWNeverUpload"=dword:00000001
-```
+If you still experience issues, it may also be advisable to disable Office Application Error reporting. Follow instructions at [KB325075](http://support.microsoft.com/kb/325075).

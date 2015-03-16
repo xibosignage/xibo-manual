@@ -1,11 +1,11 @@
 <!--toc=getting_started-->
 # Xibo 1.7.1 - Codename "Tuttle"</span>
 
-This is the first stable release of Xibo 1.7.1!
+This is a bug fix release of Xibo!
 
-You can download this release from [https://github.com/xibosignage/xibo-cms/releases/tag/1.7.1](https://github.com/xibosignage/xibo-cms/releases/tag/1.7.1)
+You can download this release from [GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.7.1).
 
-This release is a bug fix release for the 1.7 stable series. If you are upgrading from 1.4 or 1.6 please refer to the [1.7.0 release notes](release_notes_1.7.0.html) for a detailed list of changes.
+This release is a bug fix release for the 1.7 stable series. If you are upgrading from 1.4 or 1.6 please refer to the [1.7.0 release notes](release_notes_1.7.0.html) for a detailed list of changes and upgrade notes.
 
 
 ## Requirements
@@ -29,11 +29,7 @@ There are significant changes between the 1.7 series of Xibo and prior releases.
 Instructions for cloning a Xibo database are available here [Clone Database](release_notes_clonedb.html "Clone Database").
 
 ## Help
-
-Please ask for help / advice on [Github Issues](https://github.com/xibosignage/xibo/issues)
-
-When asking for assistance with this release, please make it clear the version you are using.
+Please see our [troubleshooting](troubleshooting.html) section for help, advice and links to the [[PRODUCTNAME]] community.
 
 ## Bug Fixes
-
 For a full list of bug fixes please refer to the [Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.7.1+is%3Aclosed)

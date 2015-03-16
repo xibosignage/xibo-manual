@@ -1,7 +1,7 @@
 <?php
 /*
  * Xibo - Digital Signage - http://www.xibo.org.uk
- * Copyright (C) 2006-2014 Spring Signage Ltd
+ * Copyright (C) 2006-2015 Spring Signage Ltd
  *
  * This file is part of Xibo.
  *
@@ -22,14 +22,10 @@
 # Name of the product
 define('PRODUCT_NAME', 'Xibo');
 
-# Product Version
-define('PRODUCT_VERSION', '1.7.0');
-
 # Home page URL
 define('PRODUCT_HOME', 'http://xibo.org.uk');
 
 # Product Support URL
-define('PRODUCT_SUPPORT_URL', 'https://github.com/xibosignage/xibo/issues');
-define('PRODUCT_FAQ_URL', 'http://xibo.org.uk/manual/en/troubleshooting.html');
+define('PRODUCT_SUPPORT_URL', 'https://community.xibo.org.uk/');
+define('PRODUCT_FAQ_URL', 'https://community.xibo.org.uk/c/faq');
 
-?>

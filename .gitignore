@@ -1,0 +1,4 @@
+.idea/
+.vagrant/
+output/
+template/footer_with_ads.html
