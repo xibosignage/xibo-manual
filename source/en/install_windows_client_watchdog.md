@@ -2,7 +2,7 @@
 # Windows Client Watchdog
 The Watchdog is an optional component which can be used to monitor the stability of the main application and restart it where necessary.
 
-The Watchdog installs with a windows installer but requires manual configuration using a text editor.
+The Watchdog is installed into the same folder as the Windows Player during the Windows Player installation. **Prior to 1.7.3 it is necessary to get the watchdog from [GitHub](https://github.com/xibosignage/xibo-windows-client-watchdog)**.
 
 ## Configuration file
 Configuration is managed though a configuration file located in the watchdog installation folder.
