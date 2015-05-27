@@ -1,17 +1,14 @@
 <!--toc=getting_started-->
-# Troubleshooting and FAQ
-Need help? We hope one of the articles below can provide assistance. If the topic is not listed, please ask for help or advice in the [[[PRODUCTNAME]] Community]([[PRODUCTSUPPORTURL]]). When asking for assistance please make it clear the version you are using.
+# Troubleshooting
+Need help? Please ask for help or advice in the [[[PRODUCTNAME]] Community]([[PRODUCTSUPPORTURL]]).
+
+It is likely that the support representative will ask you to visit the Fault page in the CMS so that some logging can be generated for your issue. 
+
+When asking for assistance it is essential that as much information as possible is included. A minimum of the version of the software you are using and the steps to recreate the problem you are having.
+
+General questions are also welcome! 
 
 <nonwhite>
-We have lots more FAQ's in the [Community Forum](https://community.xibo.org.uk/c/faq).
+#FAQ and Guides
+There are lots of [FAQ](https://community.xibo.org.uk/c/faq) and [Guides](https://community.xibo.org.uk/c/guides) on our [Community Forum](https://community.xibo.org.uk), please visit us.
 </nonwhite>
-
-## Logging In
-1. [Reset the admin password](faq_reset_admin_password.html)
-2. [Unable to login](faq_enable_cookies.html)
-
-## Widgets (media on region time lines)
-1. [Using Tickers and other external resources over HTTPS](faq_curl_configuration.html)
-
-## Windows Player
-1. [Configuring the [[PRODUCTNAME]] web engine to use a specific version of Internet Explorer](faq_webbrowser_emulation.html)
