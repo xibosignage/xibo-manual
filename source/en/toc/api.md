@@ -1,5 +1,7 @@
 - [Overview](api.html)
 - [Authentication](api_oauth.html)
+- [Users](api_users.html)
+- [User Groups](api_groups.html)
 - [Displays](api_displays.html)
 - [Display Groups](api_displaygroups.html)
 - [Layouts](api_layouts.html)
