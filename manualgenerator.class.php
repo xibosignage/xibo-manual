@@ -28,6 +28,11 @@ class ManualGenerator
     private $productFaqUrl;
 
     private $sourcePath;
+    private $outputPath;
+
+    private $template;
+    public $overrideHeader;
+    public $overrideFooter;
 
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
@@ -45,6 +50,9 @@ class ManualGenerator
     {
         $this->outputPath = $outputPath;
         $this->sourcePath = $sourcePath;
+
+        // Load the template
+        $this->loadTemplate();
 
         // Copy the bootstrap, jquery folders and the img folder
         if (!is_dir($this->outputPath . 'libraries'))
@@ -106,6 +114,15 @@ class ManualGenerator
         echo PHP_EOL;
     }
 
+    private function loadTemplate()
+    {
+        $headerLocation = ($this->overrideHeader == null) ? $this->sourcePath . 'template/header.html' : $this->overrideHeader;
+        $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
+
+        $this->template  = $this->processReplacements(file_get_contents($headerLocation));
+        $this->template  = $this->processReplacements(file_get_contents($footerLocation));
+    }
+
     private function processFile($langs, $folder, $lang, $file)
     {
         echo '.';
@@ -116,9 +133,8 @@ class ManualGenerator
         $toc = strtok($pageContent, "\n");
         $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
 
-        // Header
-        $string  = $this->processReplacements($lang, file_get_contents($this->sourcePath . 'template/header.html'));
-        $string .= $this->processReplacements($lang, file_get_contents($this->sourcePath . 'template/footer.html'));
+        // Header and Footer
+        $string = $this->template;
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
@@ -141,7 +157,7 @@ class ManualGenerator
             return file_get_contents($this->sourcePath . 'source' . DIRECTORY_SEPARATOR . 'en' . DIRECTORY_SEPARATOR . $file);
     }
 
-    private function processReplacements($lang, $string)
+    private function processReplacements($string)
     {
         // Replace the nav bar
         $string = str_replace('[[PRODUCTNAME]]', $this->productName, $string);
