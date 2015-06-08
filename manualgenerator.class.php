@@ -120,7 +120,7 @@ class ManualGenerator
         $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
 
         $this->template  = $this->processReplacements(file_get_contents($headerLocation));
-        $this->template  = $this->processReplacements(file_get_contents($footerLocation));
+        $this->template .= $this->processReplacements(file_get_contents($footerLocation));
     }
 
     private function processFile($langs, $folder, $lang, $file)
