@@ -11,4 +11,6 @@
 - [Template](api_template.html)
 - [Resolution](api_resolution.html)
 - [Modules](api_modules.html)
+- [Transitions](api_transitions.html)
+- [Help Links](api_help.html)
 - [Miscellaneous](api_misc.html)

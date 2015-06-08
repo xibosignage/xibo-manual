@@ -96,3 +96,35 @@ Delete a user group
 	data: << group object >>
 }
 ```
+
+## Members
+
+`POST /api/group/members/:id`
+
+An array of `userId`'s must also be provided. These are the users assigned to the group.
+
+```json
+{
+	message: "Membership set for <<group>>",
+	id: The groupId
+}
+``` 
+
+## ACL
+User groups support ACL for Pages and Menu Items in the CMS. Individual users can also be given ACL using their `groupId`, which can be obtained from within the `<<user object>>`.
+
+`POST /api/group/:entity/:id`
+
+ - `entity` is either `Page` or `Menu`
+ - `id` is the groupId
+
+An array of `objectIds` must also be provided. Either `pageId`'s or `menuId`'s dependant on the ACL entity.
+
+ - `objectId[]`
+
+```json
+{
+	message: "ACL set for <<group>>",
+	id: The groupId
+}
+``` 
