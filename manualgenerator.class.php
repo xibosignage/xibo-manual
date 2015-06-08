@@ -129,7 +129,7 @@ class ManualGenerator
         flush();
 
         // Get the page content
-        $pageContent = Parsedown::instance()->text($this->processReplacements($lang, $this->file_get_contents_or_default($lang, $file . '.md')));
+        $pageContent = Parsedown::instance()->text($this->processReplacements($this->file_get_contents_or_default($lang, $file . '.md')));
         $toc = strtok($pageContent, "\n");
         $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
 
@@ -138,10 +138,10 @@ class ManualGenerator
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
-        $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, '/toc/nav_bar.html'), $string);
+        $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, 'toc/nav_bar.html'), $string);
         
         // Handle the TOC
-        $string = str_replace('[[TOC]]', Parsedown::instance()->text($this->file_get_contents_or_default($lang, '/toc/' . $toc . '.md')), $string);
+        $string = str_replace('[[TOC]]', Parsedown::instance()->text($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md')), $string);
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
