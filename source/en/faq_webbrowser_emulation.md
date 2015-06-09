@@ -20,8 +20,8 @@ A particular version of Internet Explorer can be selected by modifying the regis
 
 The registry key may already exist (there may be entries within that folder), if that is the case then add a new String Value for `XiboClient.exe`.
 
-The example above is for IE9. Further values can be obtained from [here](https://msdn.microsoft.com/en-us/library/ee330730(v=vs.85).aspx#browser_emulation).
+The example above is for IE9. Further values can be obtained from [here](https://msdn.microsoft.com/en-us/library/ee330730#browser_emulation).
 
 ## Further Reading
- - [Internet Feature Controls](https://msdn.microsoft.com/en-us/library/ee330720(v=vs.85).aspx) by Microsoft.
- - [Browser Emulation](https://msdn.microsoft.com/en-us/library/ee330730(v=vs.85).aspx#browser_emulation) by Microsoft.
+ - [Internet Feature Controls](https://msdn.microsoft.com/en-us/library/ee330730) by Microsoft.
+ - [Browser Emulation](https://msdn.microsoft.com/en-us/library/ee330730#browser_emulation) by Microsoft.
