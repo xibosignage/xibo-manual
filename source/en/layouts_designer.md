@@ -37,7 +37,7 @@ At the top left of the screen below the navigation bar is the options menu. This
 
 - **Save Template**
     
-    Want to use the design again? It can be saved as a Template from here. Templates only save the aspect ratio, background and region positions, not the actual content.
+    Want to use the design again? It can be saved as a Template from here. Saving a template will store an exact copy of the layout, including regions, playlists and media.
 
 - **Shrink Designer**
 
