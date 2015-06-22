@@ -51,40 +51,31 @@ Add a resolution
 
 ```json
 {
-	userName: "The users username",
-	email: "The users email",
-	userTypeId: "The users user type",
-	homePageId: "The users homepage id",
-	libraryQuota: "The users library quota",
-	groupId: "The users group id",
-	password: "The users password"
+	resolution: Resolution Name
+	width: Resolution Output Width
+	height: Resolution Output Height
 }
 ```
 
 ```json
 {
 	message: "A success message",
-	id: "The User Id",
+	id: "The Id",
 	data: <<object>>
 }
 ```
 
 ## Edit
 <a name="edit"></a>
-Edit a user
+Edit a resolution
 
 `PUT /api/resolution/:id`
 
 ```json
 {
-	userName: "The users username",
-	email: "The users email",
-	userTypeId: "The users user type",
-	homePageId: "The users homepage id",
-	libraryQuota: "The users library quota",
-	retired: "Is the user retired 0|1",
-	newPassword: "Super Admin Only, set a new password",
-	retypeNewPassword: "Confirm the new password"
+	resolution: Resolution Name
+	width: Resolution Output Width
+	height: Resolution Output Height
 }
 ```
 
@@ -92,28 +83,21 @@ Edit a user
 ```json
 {
 	message: "A success message",
-	id: "The User Id",
+	id: "The Id",
 	data: <<object>>
 }
 ```
 
 ## Delete
 <a name="delete"></a>
-Delete a user
+Delete a resolution
 
 `DELETE /api/resolution/:id`
 
 ```json
 {
-	deleteAllItems: 0|1
-}
-```
-
-
-```json
-{
 	message: "A success message",
-	id: "The User Id",
+	id: "The Id",
 	data: <<object>>
 }
 ```
