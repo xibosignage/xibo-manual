@@ -5,6 +5,7 @@
 - [Displays](api_displays.html)
 - [Display Groups](api_displaygroups.html)
 - [Layouts](api_layouts.html)
+- [Playlists](api_playlists.html)
 - [Library](api_library.html)
 - [DataSets](api_datasets.html)
 - [Schedule](api_schedule.html)

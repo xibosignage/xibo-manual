@@ -1,21 +1,65 @@
 <!--toc=api-->
-###  <span class="mw-headline" id="Modules"> Modules</span>
+# Modules
+Modules are [[PRODUCTNAME]]'s name for the widgets that get assigned to a Playlist in a Timeline on a Layout.
 
-*   ModuleList
+They exist so that 3rd party designers and developers can easily add extra functionality to [[PRODUCTNAME]]. The module is designed to collect some data from the User and create a `Widget` from that data. The `widget` is then assigned to the Playlist by the application.
 
-###  <span class="mw-headline" id="ModuleList"> ModuleList </span>
+## Widget API
+All modules can be added from the API as the API supports the follow methods for each:
+ - Module Widget Add
+ - Module Widget Edit
+ - Module Widget Delete
 
-Response
-A list of modules with the following attributes:
+Each module will expect different parameters that correspond to the options it requires. The module author may or may not have provided that documentation with the module.
 
-*   module - The Module Name
+### Core Modules
+The following core modules are documented.
 
-*   layoutOnly- Whether the module is a library based module or only available for layouts
+* Clock
+* DataSetView
+* Embedded
+* Flash
+* ForecastIO
+* Image
+* LocalVideo
+* PowerPoint
+* ShellCommand
+* Text
+* Ticker
+* Twitter
+* Video
+* WebPage
 
-*   description - A description of the module
+### Transitions
+In addition to these module specific functions, a transition can be set on any module.
 
-*   extensions - Extensions allowed by this module
+`PUT /api/module/transition/:type/:id`
 
-Error Codes
+* `:type` is the type of transition, in|out
+* `id` is the `widgetId`
 
-*   40 - Unable to query for modules
+## Module API
+Modules can also be administered through the API. The following API calls are available for Module Administration.
+
+* [Search](#search)
+* [Settings](#settings)
+* [Verify](#verify)
+
+## Module Object
+Where `<<object>>` is referenced a module object is returned.
+
+```json
+{
+	"name": "The module name",
+	"description": "",
+	"validExtensions": "",
+	"imageUri": "",
+	"type": "",
+	"enabled": "",
+	"regionSpecific": "",
+	"previewEnabled": "",
+	"assignable": "",
+	"renderAs": "",
+	"schemaVersion": ""
+}
+```

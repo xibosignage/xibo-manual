@@ -16,10 +16,10 @@ Where `<<object>>` is referenced a display group object is returned.
 
 ```json
 {
-	"displayGroupId": The Id for the DisplayGroup,
-	"displayGroup": The name for the DisplayGroup,
-	"description": Description,
-	"isDisplaySpecific": 0|1
+	"displayGroupId": "The Id for the DisplayGroup",
+	"displayGroup": "The name for the DisplayGroup",
+	"description": "Description",
+	"isDisplaySpecific": "0|1"
 }
 ```
 
@@ -36,8 +36,8 @@ Return a list of all displayGroups
 
 ```json
 {
-	recordsTotal: int,
-	data: [
+	"recordsTotal": "int",
+	"data": [
 		<<object>>
 	]
 }
@@ -51,16 +51,16 @@ Add a DisplayGroup
 
 ```json
 {
-	displayGroup: DisplayGroup Name,
-	description: Description
+	"displayGroup": "DisplayGroup Name",
+	"description": "Description"
 }
 ```
 
 ```json
 {
-	message: "A success message",
-	id: "The Id",
-	data: <<object>>
+	"message": "A success message",
+	"id": "The Id",
+	"data": "<<object>>"
 }
 ```
 
@@ -72,17 +72,17 @@ Edit a displayGroup
 
 ```json
 {
-	displayGroup: DisplayGroup Name,
-	description: Description
+	"displayGroup": "DisplayGroup Name",
+	"description": "Description"
 }
 ```
 
 
 ```json
 {
-	message: "A success message",
-	id: "The Id",
-	data: <<object>>
+	"message": "A success message",
+	"id": "The Id",
+	"data": "<<object>>"
 }
 ```
 
@@ -94,9 +94,9 @@ Delete a displayGroup
 
 ```json
 {
-	message: "A success message",
-	id: "The Id",
-	data: <<object>>
+	"message": "A success message",
+	"id": "The Id",
+	"data": "<<object>>"
 }
 ```
 
@@ -107,7 +107,7 @@ Delete a displayGroup
 
 ```json
 {
-	displayIds: an array of displayIds to assign
+	"displayIds": "an array of displayIds to assign"
 }
 ```
 
@@ -124,14 +124,14 @@ Delete a displayGroup
 
 ```json
 {
-	displayIds: an array of displayIds to unassign
+	"displayIds": "an array of displayIds to unassign"
 }
 ```
 
 ```json
 {
 	"message": "Displays unassigned from %s",
-	"id": displayGroupId
+	"id": "displayGroupId"
 }
 ```
 
@@ -143,14 +143,14 @@ Delete a displayGroup
 
 ```json
 {
-	mediaIds: an array of mediaIds to assign
+	"mediaIds": "an array of mediaIds to assign"
 }
 ```
 
 ```json
 {
 	"message": "Media assigned to %s",
-	"id": displayGroupId
+	"id": "displayGroupId"
 }
 ```
 
@@ -160,13 +160,13 @@ Delete a displayGroup
 
 ```json
 {
-	mediaIds: an array of mediaIds to unassign
+	"mediaIds": "an array of mediaIds to unassign"
 }
 ```
 
 ```json
 {
 	"message": "Media unassigned from %s",
-	"id": displayGroupId
+	"id": "displayGroupId"
 }
 ```
