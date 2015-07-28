@@ -132,21 +132,21 @@ It returns the following XML string:
 <files>
    <file type="media" id="493" size="40408" md5="c90a4c420dd010a5e95dedb8927a29e7" download="xmds" path="weathericons-regular-webfont.woff" />
    <file type="layout" id="29" size="303" md5="5e6ef3b612b39c83bf8c5cf9f2a75ef5" download="xmds" path="29" />
-	<file type="resource" id="29" layoutid="1" regionid="3" mediaid="5" updated="102984759" download="xmds" path="29" />
+	<file type="resource" id="29" layoutid="1" regionid="3" mediaid="5" updated="102984759" />
 </files>
 ```
 
-Each `file` node contains the following parameters:
+Each `file` node contains the following attributes:
 
  - type: Either media, layout or resource
  - id: A unique ID for the file
- - download: Either xmds or http
- - path: The intended save path
 
 Layout and Media file nodes also contain:
 
  - size: The file size
  - md5: A MD5 of the file to be used as a checksum
+ - download: Either xmds or http
+ - path: The intended save path
  
 Resource file nodes also contain:
 
@@ -155,13 +155,177 @@ Resource file nodes also contain:
  - mediaid: The mediaId that references this resource.
  - updated: A timestamp indicating the last time this resource was updated.
 
+The required files XML should be parsed and any files that are missing from the local cache OR that have a different MD5 should be downloaded again.
+
+#### Download Type
+The CMS supports downloading files over XMDS directly or over directly over HTTP. If HTTP downloads are enabled the `path` attribute will contain a fully qualified download path and a new attribute named `saveAs` will be present showing the intended save path.
+
+HTTP downloads are only valid for one usage and are refreshed with a new `path` each time `RequiredFiles` is called.
+
+When the download mode is `xmds` the Player should call `GetFile`.
+
+#### Resource Files
+Resource files are downloaded using the `GetResource` call. The Player implementation is free to save these files with whatever name is most suitable. The Layout XML contains the layout, region and media Ids that can be used to return the relevant cached resource file.
+
 ### GetFile
+The `GetFile` method is used to request a chunk (part) of a specific file id. This file **must** have been present in the `RequiredFiles` return otherwise it will not be served.
+
+The `chunkSize` is left to the implementer and should be suitable for the type of network the Player is installed on. It should be noted that the smaller the `chunkSize`, the more I/O load there will be on the CMS.
+
+It takes the following parameters:
+ 
+ - serverKey
+ - hardwareKey
+ - fileId: The ID of the file being downloaded.
+ - fileType: The type of the file being downloaded.
+ - chunkOffset: The offset for the current file chunk being requested. Starts as 0.
+ - chunkSize: The size for the current file chunk.
+
+It returns base64 encoded binary data representing the requested file, offset and size. The Player is responsible for reassembling the file and checking the MD5 of the completed file against the one provided in `RequiredFiles`.
+
+### GetResource
+The `GetResource` method is used to request the HTML representation of a media item on a Layout in a Region. The CMS will calculate the necessary HTML to correctly display that media item once opened in a correctly sized webview. 
+
+The Layout XLF determines when a resource file should be loaded or when a native component is needed.
+
+### MediaInventory
+The `MediaInventory` method is used by the Player to update the status of its cached files in the CMS. The CMS uses this information to present the status of each Display in the "Displays" page.
+
+It takes the following parameters:
+ 
+ - serverKey
+ - hardwareKey
+ - mediaInventory: XML representation of currently cached files vs required files.
+
+#### Media Inventory
+The XML structure for media inventory is:
+
+``` xml
+<files>
+	<file id="1" complete="0|1" md5="c90a4c420dd010a5e95dedb8927a29e7" lastChecked="1284569347" />
+</files>
+```
+
+ - id: the ID of the file.
+ - complete: whether the file is complete or not.
+ - md5: the md5 of the file in the local cache.
+ - lastChecked: a unix date/time for when the file was last by the player checked.
+
+
 
 ### Schedule
-### SubmitLog
-### SubmitStats
-### MediaInventory
-### GetResource
-### NotifyStatus
-### SubmitScreenShot
+The `Schedule` method call provides the Player with a date/time aware set of Layouts that need to be played. The time window of schedule returned is controlled by the CMS setting `REQUIRED_FILES_LOOKAHEAD` if the `SCHEDULE_LOOKAHEAD` setting is `On`.
 
+It takes the following parameters:
+ 
+ - serverKey
+ - hardwareKey
+
+It returns XML in the following format:
+
+```xml
+<schedule>
+	<default file="4" />
+	<layout file="5" fromdt="" todt="" scheduleid="" priority="" dependents="" />
+	<dependents>
+		<file>5.jpg</file>
+	</dependents>
+</schedule>
+```
+
+The from and to dates are ISO formatted dates in the CMS time zone.
+
+#### Default Layout
+If there aren't any Layouts in the Schedule window then the default Layout should be shown. If the Display is set to *interleave default* in the CMS then the Layout will appear as a `<layout>` element and no additional logic is required.
+
+#### Priority
+The priority attribute determines whether a Layout is in the priority schedule or normal schedule. Priority schedules should be shown in preference to normal ones.
+
+#### Dependents
+A list of dependencies is provided in the `dependents` element. This is a list of files that must be in the cache before any Layouts can be considered valid. These "global dependencies" are provided at the top of the `RequiredFiles` XML.
+
+A Layout node may also have its own `dependents` attribute which is a comma separated list of dependencies for that specific Layout. They should all be checked in the offline cache before the Layout is considered for playback.
+
+
+
+### SubmitLog
+The `SubmitLog` method is used by the Player to send useful audit/error logging information back to the CMS. The log messages should be kept to a minimum to prevent unnecessary traffic. The log level is defined in the Display Settings and defaults to "error".
+
+It takes the following parameters:
+ 
+ - serverKey
+ - hardwareKey
+ - logXml: XML representation for Log Messages
+
+#### Log XML
+The structure for Log XML is as follows:
+
+``` xml
+<logs>
+	<log date="" category="" type="" message="" method="" thread=""></log>
+</logs>
+```
+
+ - date: The local date, ISO formatted.
+ - category: Either error or audit. Audit messages are discarded unless auditing is switched on globally and on the display.
+ - type (optional): The type.
+ - message: The log message
+ - method (optional): The method.
+ - thread (optional): The Thread that the log message executed on.
+
+
+
+### SubmitStats
+The `SubmitStats` method is used to report Proof of Play statistics to the CMS.
+
+It takes the following parameters:
+ 
+ - serverKey
+ - hardwareKey
+ - statXml: XML representation for Proof of Play Statistics
+
+#### Stat XML
+The structure for Stat XML is as follows:
+
+``` xml
+<stats>
+	<stat type="" fromdt="" todt="" scheduleid="" layoutid="" mediaid=""></stat>
+</stats>
+```
+
+ - type: The type of stat record, either layout or media.
+ - fromdt: The ISO date that the layout/media started playing.
+ - todt: The ISO date that the layout/media finished playing.
+ - scheduleid: The ID of the schedule that caused the Layout/Media to be shown.
+ - layoutid: The layoutId.
+ - mediaid: The mediaId
+
+
+
+### NotifyStatus
+The `NotifyStatus` method is used by the Player to update the CMS on various events in the Player life cycle.
+
+It takes the following parameters:
+ 
+ - serverKey
+ - hardwareKey
+ - status: JSON encoded key/value string of properties to update on the display.
+
+Properties supported by `status` are:
+
+``` json
+{
+	"currentLayoutId": "The ID of the Current Layout",
+	"availableSpace": "The bytes of available space",
+	"totalSpace": "The bytes of total space"
+}
+```
+
+### SubmitScreenShot
+The `SubmitScreenShot` method call is used by the Player to send a screen shot of the current playback to the CMS. The instruction to send a screen shot appears in the `RegisterDisplay` call settings.
+
+It takes the following parameters:
+ 
+ - serverKey
+ - hardwareKey
+ - screenShot: Base64 encoded binary representation of the screen shot image.
