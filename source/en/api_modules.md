@@ -6,6 +6,7 @@ They exist so that 3rd party designers and developers can easily add extra funct
 
 ## Widget API
 All modules can be added from the API as the API supports the follow methods for each:
+
  - Module Widget Add
  - Module Widget Edit
  - Module Widget Delete

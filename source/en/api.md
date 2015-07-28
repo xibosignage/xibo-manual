@@ -25,3 +25,5 @@ Layouts are provided by XMDS in their XLF format ([[PRODUCTNAME]] Layout Format)
 The CMS API is a RESTful API protected by oAuth. It can be consumed at `//yoururl/api` and exposes routes for all CMS operations.
 
 If developing a CMS extension for use within the existing web portal (for example an extension to be used in a theme file), the API can be consumed directly from `//yoururl/`.
+
+The API is [Swagger Compliant](http://swagger.io/) and the documentation is generated using Swagger Codegen. It is included as [static HTML](swagger/index.html) in this manual. You may also point a Swagger-UI installation to the `/swagger.json` resource.
