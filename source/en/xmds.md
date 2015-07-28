@@ -1,3 +1,4 @@
+<!--toc=api-->
 # [[PRODUCTNAME] Media Distribution Service
 XMDS is a SOAP API published by the CMS and consumed by the Player applications. It is described by a WSDL which can be parsed by many IDEs and tools to produce *client methods* to call the API (for example you can set up a web reference in Visual Studio).
 
