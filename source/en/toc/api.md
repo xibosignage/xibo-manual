@@ -1,3 +1,4 @@
 - [Overview](api.html)
+- [CMS API](cms-api.html)
 - [XMDS](xmds.html)
 - [XLF](xlf.html)

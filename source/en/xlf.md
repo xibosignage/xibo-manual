@@ -139,6 +139,10 @@ A list of media types and their associated render options can be found below:
    {
       "Module":"forecastio",
       "render":"html"
+   },
+   {
+      "Module":"twitter",
+      "render":"html"
    }
 ]
 ```
@@ -228,3 +232,10 @@ These options are provided as HTML tags which can be parsed by the Player and us
  - `<!-- NUMITEMS= -->`: Informational tag containing the number of items in the resource.
  - `<!-- DURATION= -->`: Calculated total duration for this media item.
 
+
+# Complete Example
+Below is a complete Layout XLF.
+
+``` xml
+
+```

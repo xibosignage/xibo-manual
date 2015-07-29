@@ -48,11 +48,13 @@ There are two types of calls, those that happen on the collection interval and t
 Each collection interval a set of calls are made to the CMS - some of which can be run in parallel. The required sequence is shown in the numbered list below.
 
  1. Register Display
- 2. - Required Files
+ 2. 
+ 	- Required Files
 	- Schedule
  3. Get File / Resource
  4. Media Inventory
- 5. - Submit Stats
+ 5. 
+ 	- Submit Stats
 	- Submit Logs
 
 The Player must call `RegisterDisplay` first and parse the response from the Player, if it is not registered it should stop there and not call the subsequent methods. In this case it is common to check at the next collection interval.
@@ -77,8 +79,8 @@ When a Media item is shown on a Layout by the Player it may be necessary to get 
 
 Resource content should always be cached locally so that the Player can decide the content is fresh or in the event the CMS is unavailable.
 
-#### Submit Screenshot
-The Player can submit a screenshot of the current output to the CMS.
+#### Submit Screen shot
+The Player can submit a screen shot of the current output to the CMS.
 
 #### Notify Status
 The player should notify the status when the storage usage significantly changes and when a new layout is shown (if notify current layout is set).
