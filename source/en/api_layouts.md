@@ -1,380 +1,127 @@
 <!--toc=api-->
-###  <span class="mw-headline" id="Layout"> Layout </span>
-
-*   LayoutList
-
-*   LayoutAdd
-
-*   LayoutEdit
-
-*   LayoutCopy
-
-*   LayoutDelete
-
-*   LayoutRetire
-
-*   LayoutBackgroundList
-
-*   LayoutBackgroundEdit
-
-*   LayoutGetXlf
-
-*   LayoutRegionList
-
-*   LayoutRegionAdd
-
-*   LayoutRegionEdit
-
-*   LayoutRegionPosition
-
-*   LayoutRegionTimelineList
-
-*   LayoutRegionMediaAdd
-
-*   LayoutRegionMediaReorder
-
-*   LayoutRegionMediaDelete
-
-*   LayoutRegionLibraryAdd
-
-*   LayoutRegionMediaEdit
-
-*   LayoutRegionMediaDetails
-
-##  <span class="mw-headline" id="Layout_2"> Layout </span>
-
-Transactions Related to Layouts
-
-###  <span class="mw-headline" id="LayoutAdd"> LayoutAdd </span>
-
-Parameters
-
-*   layout - The Name of the Layout
-
-*   description - The Description of the Layout
-
-*   permissionid - PermissionID for the layout
-
-*   tags - Tags for the Layout
-
-*   templateid - Template for the Layout
-
-*   resolutionid - Resolution for the Layout (not required if a template is provided)
-
-Response
-
-*   layout - The ID of the layout
-
-Errors
-
-*   Code 1 - Access Denied
-
-*   Code 25001 - Layout Name must be between 1 and 50 characters
-
-*   Code 25002 - Description must be less than 254 characters
-
-*   Code 25003 - All tags combined must be less that 254 characters
-
-*   Code 25004 - User already has a layout with this name
-
-*   Code 25005 - Database error adding layout
-
-*   Code 25006 - Failed to Parse Tags
-
-*   Code 25007 - Unable to update layout xml
-
-*   Code 25008 - Unable to Delete layout on failure
-
-###  <span class="mw-headline" id="LayoutDelete"> LayoutDelete </span>
-
-Parameters
-
-*   layoutId - The ID of the layout to delete
-
-Response
-
-*   success = true
-
-Errors
-
-*   Code 1 - Access Denied
-
-*   Code 25008 - Unable to delete layout
-
-###  <span class="mw-headline" id="LayoutRegionList"> LayoutRegionList </span>
-
-Parameters
-
-*   layoutId
-
-Response
-
-A list of region timelines. Each item will have the following values:
-
-*   regionid
-
-*   width
-
-*   height
-
-*   top
-
-*   left
-
-*   ownerid
-
-*   permission_edit
-
-*   permissions_del
-
-*   permissions_update_permissions
-
-Error Codes
-
-*   1 - Access Denied
-
-###  <span class="mw-headline" id="LayoutRegionAdd"> LayoutRegionAdd </span>
-
-Adds a new Region Timeline to a Layout
-
-Parameters
-
-*   layoutId
-
-*   width
-
-*   height
-
-*   top
-
-*   left
-
-*   name
-
-Response
-
-*   success = true
-
-Error Codes
-
-*   1 - Access Denied
-
-###  <span class="mw-headline" id="LayoutRegionEdit"> LayoutRegionEdit </span>
-
-Edits an existing Region Timeline on a Layout
-
-Parameters
-
-*   layoutId
-
-*   regionId
-
-*   width
-
-*   height
-
-*   top
-
-*   left
-
-*   name
-
-Response
-
-*   success = true
-
-Error Codes
-
-*   1 - Access Denied
-
-###  <span class="mw-headline" id="LayoutRegionDelete"> LayoutRegionDelete </span>
-
-Deletes an existing Region Timeline on a Layout
-
-Parameters
-
-*   layoutId
-
-*   regionId
-
-Response
-
-*   success = true
-
-Error Codes
-
-*   1 - Access Denied
-
-##  <span class="mw-headline" id="Layout_Timelines"> Layout Timelines </span>
-
-Transactions related to layout timelines
-
-###  <span class="mw-headline" id="LayoutRegionTimelineList"> LayoutRegionTimelineList </span>
-
-Parameters
-
-*   layoutId
-
-*   regionId
-
-Response
-
-A list of media items on a region timeline. Each item will have the following values:
-
-*   mediaid
-
-*   lkid
-
-*   mediatype
-
-*   duration
-
-*   permission_edit
-
-*   permission_del
-
-*   permission_update_duration
-
-*   permission_update_permissions
-
-Error Codes
-
-*   1 - Access Denied
-
-## LayoutRegionMediaDetails
-
-### Parameters
-
-<dl>
-    <dt>layoutId</dt>
-    <dd>The ID for this Layout. Required.</dd>
-</dl>
-<dl>
-    <dt>regionId</dt>
-    <dd>The ID for this Region. Required</dd>
-</dl>
-<dl>
-    <dt>mediaId</dt>
-    <dd>The ID for this media. Required</dd>
-</dl>
-<dl>
-    <dt>type</dt>
-    <dd>The media type. Required</dd>
-</dl>
-
-### Response
-
-The XLF for the provided media id (XML format). Base 64 encoded.
-<pre>
+## Layouts
+The following API calls are available.
+
+*   [Search](#search)
+*   [Add](#add)
+*   [Edit](#edit)
+*   [Retire](#retire)
+*   [Delete](#delete)
+*   [Copy](#copy)
+
+## Layout Object
+Where `<<object>>` is referenced a layout object is returned.
+
+```json
 {
-    "media": {
-        "id": "1",
-        "base64Xlf": "base64"
-    },
-    "status": "ok"
+	"layoutId": "int: The id of the Layout",
+	"ownerId": "int: The id of the Layout Owner",
+	"campaignId": "int: The id of the Layout's dedicated Campaign",
+	"backgroundImageId": "int: The id of the image media set as the background",
+	"schemaVersion": "int: The XLF schema version",
+	"layout": "string: The name of the Layout",
+	"description": "string: The description of the Layout",
+	"backgroundColor": "string: A HEX string representing the Layout background color",
+	"createdDt": "timestamp: The datetime the Layout was created",
+	"modifiedDt": "timestamp: The datetime the Layout was last modified",
+	"status": "int: A flag indicating the Layout status",
+	"retired": "int: 0|1 flag indicating whether the Layout is retired",
+	"backgroundzIndex": "int: The Layer that the background should occupy",
+	"width": "double: The Layout Width",
+	"height": "double: The Layout Height"
 }
-</pre>
+```
 
-### Errors
+## Search
 
-General Errors Only.
+## Add
+<a name="add"></a>
+Add a Layout
 
-###  <span class="mw-headline" id="LayoutRegionMediaAdd"> LayoutRegionMediaAdd </span>
+`POST /api/layout`
 
-Parameters
+```json
+{
+	"name": "string: The Layout Name",
+	"description": "string: The Layout Description",
+	"templateId": "int: If the Layout should be created with a Template, provide the ID, otherwise don't provide",
+	"resolutionId": "int: If a Template is not provided, provide the resolutionId for this Layout."
+}
+```
 
-*   layoutId
+```json
+{
+	"message": "A success message",
+	"id": "The Id",
+	"data": "<<object>>"
+}
+```
 
-*   regionId
+## Edit
+<a name="edit"></a>
+Edit a Layout
 
-*   type (the type of media item being added)
+`PUT /api/layout`
 
-*   xlf (the xibo layout file xml representing the media to add)
+```json
+{
+	"name": "string: The Layout Name",
+	"description": "string: The Layout Description",
+	"tags": "string: A comma separated string of Tags",
+	"resolutionId": "int: The resolution of this Layout. Widgets may need adjustment if a different resolution is selected.",
+	"retired": "int: 0|1 flag to indicate whether the Layout is retired.",
+	"backgroundColor", "string: A HEX string representing the background color",
+	"backgroundImageId", "int: A mediaId from the Library that should be used as the background image",
+	"backgroundzIndex", "int: The Layer that the background should occupy"
+}
+```
 
-The XLF will be checked for the attributes that are required for all media type. It is the callers responsibility to ensure media type specific attributes are set correctly.
+```json
+{
+	"message": "A success message",
+	"id": "The Id",
+	"data": "<<object>>"
+}
+```
 
-Response
+## Retire
+<a name="retire"></a>
+`PUT /api/layout/retire/:id`
 
-<pre> The Media ID added
-</pre>
+```json
+{
+	"message": "A success message"
+}
+```
 
-Error Codes
+## Delete
+<a name="delete"></a>
+`DELETE /api/layout/retire/:id`
 
-*   1 - Access Denied
+```json
+{
+	"message": "A success message"
+}
+```
 
-###  <span class="mw-headline" id="LayoutRegionLibraryAdd"> LayoutRegionLibraryAdd </span>
+## Copy
+<a name="copy"></a>
+`post /api/layout/copy/:id`
 
-Parameters
+`:id` is the `layoutId` of the Layout that should be copied.
 
-*   layoutId
+```json
+{
+	"name": "string: The Layout Name",
+	"description": "string: The Layout Description",
+	"copyMediaFiles": "int: 0|1 flag to determine whether new copies of assigned media need updating"
+}
+```
 
-*   regionId
-
-*   mediaList (A list of media id's from the library that should be added to to supplied layout/region)
-
-Response
-
-<pre>success (true|error)
-</pre>
-
-Error Codes
-
-*   1 - Access Denied
-
-###  <span class="mw-headline" id="LayoutRegionMediaEdit"> LayoutRegionMediaEdit </span>
-
-Parameters
-
-*   layoutId
-
-*   regionId
-
-*   mediaId
-
-*   xlf (the xibo layout file xml representing the media to add)
-
-The XLF will be checked for the attributes that are required for all media type. It is the callers responsibility to ensure media type specific attributes are set correctly.
-
-Response
-
-<pre>success (true|error)
-</pre>
-
-Error Codes
-
-*   1 - Access Denied
-
-###  <span class="mw-headline" id="LayoutRegionMediaReorder"> LayoutRegionMediaReorder </span>
-
-Parameters
-
-*   layoutId
-
-*   regionId
-
-*   mediaList (array('mediaid' =&gt; _, 'lkid' =&gt; 0))_
-
-Response
-
-*   success (true|false)
-
-Error Codes
-
-*   1 - Access Denied
-
-###  <span class="mw-headline" id="LayoutRegionMediaDelete"> LayoutRegionMediaDelete </span>
-
-Parameters
-
-*   layoutId
-
-*   regionId
-
-*   mediaId
-
-Response
-success (true|error)
-
-Error Codes
-
-*   1 - Access Denied
+```json
+{
+	"message": "A success message",
+	"id": "The Copied Id",
+	"data": "The Copied Layout <<object>>"
+}
+```
