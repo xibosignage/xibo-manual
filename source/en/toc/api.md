@@ -1,4 +1,4 @@
 - [Overview](api.html)
-- [CMS API](cms-api.html)
-- [XMDS](xmds.html)
+- [CMS API](cms_api.html)
+- [Player API](xmds.html)
 - [XLF](xlf.html)
