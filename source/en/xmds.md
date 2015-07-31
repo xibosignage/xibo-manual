@@ -118,7 +118,7 @@ It returns the following XML string:
 
 The Player should interpret the `code` attribute on the root node to see if the Display has been granted access and "licensed" with the CMS. *An administrator can licence a display by logging into the Web Portal, Editing the Display and selecting Licence = Yes*.
 
-The `settingsNodes` are dependent on the `clientType` provided.
+The `settingsNodes` are dependant on the `clientType` provided.
 
 ### RequiredFiles
 The required files method returns all files needed for the Player to play its scheduled Layouts entirely offline for the quantity of time specified by the `REQUIRED_FILES_LOOKAHEAD` setting in the CMS. This setting defaults to 4 days.
@@ -244,7 +244,7 @@ If there aren't any Layouts in the Schedule window then the default Layout shoul
 #### Priority
 The priority attribute determines whether a Layout is in the priority schedule or normal schedule. Priority schedules should be shown in preference to normal ones.
 
-#### Dependents
+#### Dependants
 A list of dependencies is provided in the `dependents` element. This is a list of files that must be in the cache before any Layouts can be considered valid. These "global dependencies" are provided at the top of the `RequiredFiles` XML.
 
 A Layout node may also have its own `dependents` attribute which is a comma separated list of dependencies for that specific Layout. They should all be checked in the offline cache before the Layout is considered for playback.
