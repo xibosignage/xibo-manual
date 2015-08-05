@@ -1,5 +1,5 @@
 <!--toc=api-->
-# [[PRODUCTNAME] Media Distribution Service
+# [[PRODUCTNAME]] Media Distribution Service
 XMDS is a SOAP API published by the CMS and consumed by the Player applications. It is described by a WSDL which can be parsed by many IDEs and tools to produce *client methods* to call the API (for example you can set up a web reference in Visual Studio).
 
 The SOAP service is published over HTTP and HTTPS. HTTPS is the recommended end point.
@@ -48,14 +48,12 @@ There are two types of calls, those that happen on the collection interval and t
 Each collection interval a set of calls are made to the CMS - some of which can be run in parallel. The required sequence is shown in the numbered list below.
 
  1. Register Display
- 2. 
- 	- Required Files
-	- Schedule
- 3. Get File / Resource
- 4. Media Inventory
- 5. 
- 	- Submit Stats
-	- Submit Logs
+ 2. Required Files
+ 3. Schedule
+ 4. Get File / Resource
+ 5. Media Inventory
+ 6. Submit Stats
+ 7. Submit Logs
 
 The Player must call `RegisterDisplay` first and parse the response from the Player, if it is not registered it should stop there and not call the subsequent methods. In this case it is common to check at the next collection interval.
 
@@ -118,7 +116,7 @@ It returns the following XML string:
 
 The Player should interpret the `code` attribute on the root node to see if the Display has been granted access and "licensed" with the CMS. *An administrator can licence a display by logging into the Web Portal, Editing the Display and selecting Licence = Yes*.
 
-The `settingsNodes` are dependent on the `clientType` provided.
+The `settingsNodes` are dependant on the `clientType` provided.
 
 ### RequiredFiles
 The required files method returns all files needed for the Player to play its scheduled Layouts entirely offline for the quantity of time specified by the `REQUIRED_FILES_LOOKAHEAD` setting in the CMS. This setting defaults to 4 days.
@@ -244,7 +242,7 @@ If there aren't any Layouts in the Schedule window then the default Layout shoul
 #### Priority
 The priority attribute determines whether a Layout is in the priority schedule or normal schedule. Priority schedules should be shown in preference to normal ones.
 
-#### Dependents
+#### Dependants
 A list of dependencies is provided in the `dependents` element. This is a list of files that must be in the cache before any Layouts can be considered valid. These "global dependencies" are provided at the top of the `RequiredFiles` XML.
 
 A Layout node may also have its own `dependents` attribute which is a comma separated list of dependencies for that specific Layout. They should all be checked in the offline cache before the Layout is considered for playback.

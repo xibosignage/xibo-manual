@@ -30,8 +30,12 @@ The structure part of a Layout XLF is shown below:
 	</tags>
 </layout>
 ```
-
 This is a 1080p landscape Layout with a single full screen region.
+
+A XLF will always have 1 Layout node (the root element of the document) and one or more region nodes. A Layout without any regions should be considered invalid.
+
+### Layout
+The Layout node provides the following options:
 
  - schemaVersion: The schema version for this Layout.
  - width: The Layout Width.
@@ -39,14 +43,26 @@ This is a 1080p landscape Layout with a single full screen region.
  - background: The path to the background image.
  - bgcolor: A HEX colour for the background.
 
-### Dimensions 
+#### Dimensions 
 The XLF provides the width/height of the Layout and the width/height/position of each region. This should be used alongside the Player Dimensions to reconstruct the Layout at the appropriate aspect ratio. Simply put, the Player should scale the Layout according to the Player Dimensions.
 
-### Options
+### Regions
+The region nodes provide the following options:
+
+ - id: The regionId.
+ - width: The region width.
+ - height: The region height.
+ - top: The region position from the top of the Layout.
+ - left: The region position from the left of the Layout.
+ - zindex: The order this region should be drawn on the screen (0 first, with each new region on top).
+
+It may also provide an options node with one or more option nodes describing additional settings for that region.
+
+#### Options
 A region node provides additional options in its `<options>` node. These are optional elements and should be provided with sensible defaults in the Player.
 
 #### Loop
-The Loop option is only applicable when there is only 1 media item in the region. It controls whether that one media item should be reloaded or not. The default is 0 (don't loop).
+The Loop option is only applicable when there is only 1 media item in the region. It controls whether that one media item should be reloaded after it finished or not. The default is 0 (don't loop).
 
 #### Transition
 The Transitions attached to the Region are referred to as "Region Exit Transitions". They are the transition that should be shown when the Layout is finishing. Transitions are described in more detail in the Media section.
@@ -191,10 +207,20 @@ The Player is responsible for natively rendering videos according to the followi
  - loop: Play the video for its full duration and loop if it finishes before the duration is reached.
  - mute: Mute the video.
 
+#### Loop
+The loop setting is only applicable if the duration has been specified and is not 0 (end-detect). Duration always specifies the total duration for the media item, which means the loop setting can be used to play a shorter video in a loop for a set period of time, without any gap between playback.
+
+For example, a 10 second video with duration set to 60 seconds and set to loop will play through 6 times before moving on to the next media in the list.
+
 ### Duration
 Videos can have a special duration attribute of "0" which means "end detect". This allows the user to assign a video widget to the Layout without having to assess its duration. When a duration of 0 is provided it is the Players responsibility to detect when that video has completed and advance to the next item.
 
 When a duration of 0 is provided the `loop` option should be ignored.
+
+## Local Video
+The local video module is very similar to the video module except that the file is not provided by `RequiredFiles`. Local Video is used either when the file is provided to the player by another means or when the video should be streamed.
+
+In both cases the `uri` option is the path to the video file.
 
 ## Flash and PowerPoint
 Flash and PowerPoint have limited support on the Windows Player and rely on the underlying application being available.
@@ -229,13 +255,57 @@ Some widget (such as Ticker / DataSet) provide additional data in the `GetResour
 
 These options are provided as HTML tags which can be parsed by the Player and used to adjust the duration accordingly. They are:
 
- - `<!-- NUMITEMS= -->`: Informational tag containing the number of items in the resource.
- - `<!-- DURATION= -->`: Calculated total duration for this media item.
+ - `<!-- NUMITEMS=X -->`: Informational tag containing the number of items in the resource.
+ - `<!-- DURATION=X -->`: Calculated total duration for this media item.
 
 
 # Complete Example
 Below is a complete Layout XLF.
 
 ``` xml
-
+<?xml version="1.0" encoding="UTF-8"?>
+<layout width="1920" height="1080" resolutionid="9" bgcolor="#ffffff" schemaVersion="2" background="975.jpg">
+   <tags>
+      <tag>unittest</tag>
+   </tags>
+   <region id="1153205596546b3c1237b90" userId="1" width="1812" height="132" top="57.1875" left="54.7875">
+      <media id="c962f98bcea442f07bac533f7e8d2bc1" type="text" render="native" duration="5" lkid="" userId="1" schemaVersion="1">
+         <options>
+            <xmds>1</xmds>
+            <effect>none</effect>
+            <speed>0</speed>
+            <backgroundColor />
+         </options>
+         <raw>
+            <text><![CDATA[<p style="text-align: center;"><font color="#000000" face="lucida sans unicode, lucida grande, sans-serif"><span style="font-size: 80px;">Image Alignment Test</span></font></p>]]></text>
+         </raw>
+      </media>
+   </region>
+   <region id="2033362323546b3f480f7ea" userId="1" width="1816.8" height="772.79999999999" top="253.9875" left="54.7875">
+      <media id="978" type="image" render="native" duration="10" lkid="2226" userId="1" schemaVersion="1">
+         <options>
+            <uri>978.png</uri>
+         </options>
+         <raw />
+      </media>
+      <media id="977" type="image" render="native" duration="10" lkid="2227" userId="1" schemaVersion="1">
+         <options>
+            <uri>977.png</uri>
+            <scaleType>center</scaleType>
+            <align>left</align>
+            <valign>middle</valign>
+         </options>
+         <raw />
+      </media>
+      <media id="976" type="image" render="native" duration="10" lkid="2228" userId="1" schemaVersion="1">
+         <options>
+            <uri>976.png</uri>
+            <scaleType>center</scaleType>
+            <align>right</align>
+            <valign>middle</valign>
+         </options>
+         <raw />
+      </media>
+   </region>
+</layout>
 ```

@@ -1,0 +1,460 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>API Reference</title>
+  </head>
+  <body>
+  <h1>Xibo API</h1>
+    <div class="app-desc">Xibo CMS API for </div>
+    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
+    <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
+    <div class="app-desc">Version: 1.8.0-alpha</div>
+    <div class="license-info">AGPLv3 or later</div>
+    <div class="license-url">http://www.gnu.org/licenses/</div>
+  <h2>Access</h2>
+  <div class="method-summary">Customize this message as you see fit!</div>
+  <h2>Methods</h2>
+  
+  
+  
+  <div class="method">
+    <div class="method-path"><pre class="get"><code class="huge"><span>get</span>: /displaygroup</code></pre></div>
+    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
+    <div class="method-summary"><span class="nickname">displayGroupSearch</span> Get Display Groups</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Parameters</h3>
+    <div class="field-items">
+      
+    </div>  <!-- field-items -->
+    <h3 class="field-label">Return type</h3>
+
+    <div class="return-type"><a href="#">displayGroupSearchResult</a></div>
+
+    
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>&quot;&quot;</code></pre>
+    
+  </div> <!-- method -->
+  <hr>
+  
+  <div class="method">
+    <div class="method-path"><pre class="post"><code class="huge"><span>post</span>: /displaygroup</code></pre></div>
+    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
+    <div class="method-summary"><span class="nickname">displayGroupAdd</span> Add a Display Group</div>
+    <div class="method-notes">Add a new Display Group to the CMS</div>
+
+    <h3 class="field-label">Parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroup (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Name </div>
+      <div class="param">description (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Description </div>
+      
+    </div>  <!-- field-items -->
+    <h3 class="field-label">Return type</h3>
+
+    <div class="return-type"><a href="#">DisplayGroup</a></div>
+
+    
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  &quot;description&quot; : &quot;aeiou&quot;,
+  &quot;displayGroupId&quot; : 123,
+  &quot;displayGroup&quot; : &quot;aeiou&quot;,
+  &quot;isDisplaySpecific&quot; : 123
+}</code></pre>
+    
+  </div> <!-- method -->
+  <hr>
+  
+  <div class="method">
+    <div class="method-path"><pre class="put"><code class="huge"><span>put</span>: /displaygroup/{displayGroupId}</code></pre></div>
+    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
+    <div class="method-summary"><span class="nickname">displayGroupEdit</span> Edit a Display Group</div>
+    <div class="method-notes">Edit an existing Display Group identified by its Id</div>
+
+    <h3 class="field-label">Parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The displayGroupId to edit. </div>
+      <div class="param">displayGroup (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Name </div>
+      <div class="param">description (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Description </div>
+      
+    </div>  <!-- field-items -->
+    <h3 class="field-label">Return type</h3>
+
+    <div class="return-type"><a href="#">DisplayGroup</a></div>
+
+    
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  &quot;description&quot; : &quot;aeiou&quot;,
+  &quot;displayGroupId&quot; : 123,
+  &quot;displayGroup&quot; : &quot;aeiou&quot;,
+  &quot;isDisplaySpecific&quot; : 123
+}</code></pre>
+    
+  </div> <!-- method -->
+  <hr>
+  
+  <div class="method">
+    <div class="method-path"><pre class="delete"><code class="huge"><span>delete</span>: /displaygroup/{displayGroupId}</code></pre></div>
+    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
+    <div class="method-summary"><span class="nickname">displayGroupDelete</span> Delete a Display Group</div>
+    <div class="method-notes">Delete an existing Display Group identified by its Id</div>
+
+    <h3 class="field-label">Parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The displayGroupId to delete </div>
+      
+    </div>  <!-- field-items -->
+    <h3 class="field-label">Return type</h3>
+
+    <div class="return-type"><a href="#"></a></div>
+
+    
+  </div> <!-- method -->
+  <hr>
+  
+  <div class="method">
+    <div class="method-path"><pre class="post"><code class="huge"><span>post</span>: /layout</code></pre></div>
+    <div class="method-tags"> <span class="method-tag">Layout</span></div>
+    <div class="method-summary"><span class="nickname">layoutAdd</span> Add a Layout</div>
+    <div class="method-notes">Add a new Layout to the CMS</div>
+
+    <h3 class="field-label">Parameters</h3>
+    <div class="field-items">
+      <div class="param">name (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The layout name </div>
+      <div class="param">description (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The layout description </div>
+      <div class="param">layoutId (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; If the Layout should be created with a Template, provide the ID, otherwise don&#39;t provide </div>
+      <div class="param">resolutionId (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; If a Template is not provided, provide the resolutionId for this Layout. </div>
+      
+    </div>  <!-- field-items -->
+    <h3 class="field-label">Return type</h3>
+
+    <div class="return-type"><a href="#">Layout</a></div>
+
+    
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  &quot;campaignId&quot; : 123,
+  &quot;backgroundColor&quot; : &quot;aeiou&quot;,
+  &quot;status&quot; : 123,
+  &quot;ownerId&quot; : 123,
+  &quot;width&quot; : 3.149,
+  &quot;retired&quot; : 123,
+  &quot;layoutId&quot; : 123,
+  &quot;height&quot; : 3.149,
+  &quot;backgroundImageId&quot; : 123,
+  &quot;description&quot; : &quot;aeiou&quot;,
+  &quot;layout&quot; : &quot;aeiou&quot;,
+  &quot;backgroundzIndex&quot; : 123,
+  &quot;modifiedDt&quot; : &quot;aeiou&quot;,
+  &quot;schemaVersion&quot; : 123,
+  &quot;createdDt&quot; : &quot;aeiou&quot;
+}</code></pre>
+    
+  </div> <!-- method -->
+  <hr>
+  
+  <div class="method">
+    <div class="method-path"><pre class="put"><code class="huge"><span>put</span>: /layout/{layoutId}</code></pre></div>
+    <div class="method-tags"> <span class="method-tag">Layout</span></div>
+    <div class="method-summary"><span class="nickname">layoutEdit</span> </div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Parameters</h3>
+    <div class="field-items">
+      <div class="param">layoutId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash;  </div>
+      
+    </div>  <!-- field-items -->
+    <h3 class="field-label">Return type</h3>
+
+    <div class="return-type"><a href="#">Layout</a></div>
+
+    
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  &quot;campaignId&quot; : 123,
+  &quot;backgroundColor&quot; : &quot;aeiou&quot;,
+  &quot;status&quot; : 123,
+  &quot;ownerId&quot; : 123,
+  &quot;width&quot; : 3.149,
+  &quot;retired&quot; : 123,
+  &quot;layoutId&quot; : 123,
+  &quot;height&quot; : 3.149,
+  &quot;backgroundImageId&quot; : 123,
+  &quot;description&quot; : &quot;aeiou&quot;,
+  &quot;layout&quot; : &quot;aeiou&quot;,
+  &quot;backgroundzIndex&quot; : 123,
+  &quot;modifiedDt&quot; : &quot;aeiou&quot;,
+  &quot;schemaVersion&quot; : 123,
+  &quot;createdDt&quot; : &quot;aeiou&quot;
+}</code></pre>
+    
+  </div> <!-- method -->
+  <hr>
+  
+  
+
+  <h2>Models</h2>
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="SearchResponse">SearchResponse</a></h3>
+    <div class="field-items">
+      <div class="param">draw </div><div class="param-desc"><span class="param-type">String</span> The draw request, useful for validating async request responses</div>
+      <div class="param">recordsTotal </div><div class="param-desc"><span class="param-type">Integer</span> The total number of records</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DisplayGroupSearchResult">DisplayGroupSearchResult</a></h3>
+    <div class="field-items">
+      <div class="param">data </div><div class="param-desc"><span class="param-type">array[DisplayGroup]</span> </div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DisplayGroup">DisplayGroup</a></h3>
+    <div class="field-items">
+      <div class="param">displayGroupId </div><div class="param-desc"><span class="param-type">Integer</span> The displayGroup Id</div>
+      <div class="param">displayGroup </div><div class="param-desc"><span class="param-type">String</span> The displayGroup Name</div>
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The displayGroup Description</div>
+      <div class="param">isDisplaySpecific </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this displayGroup is a single display displayGroup</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Layout">Layout</a></h3>
+    <div class="field-items">
+      <div class="param">layoutId </div><div class="param-desc"><span class="param-type">Integer</span> The layoutId</div>
+      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the Layout Owner</div>
+      <div class="param">campaignId </div><div class="param-desc"><span class="param-type">Integer</span> The id of the Layout&#39;s dedicated Campaign</div>
+      <div class="param">backgroundImageId </div><div class="param-desc"><span class="param-type">Integer</span> The id of the image media set as the background</div>
+      <div class="param">schemaVersion </div><div class="param-desc"><span class="param-type">Integer</span> The XLF schema version</div>
+      <div class="param">layout </div><div class="param-desc"><span class="param-type">String</span> The name of the Layout</div>
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The description of the Layout</div>
+      <div class="param">backgroundColor </div><div class="param-desc"><span class="param-type">String</span> A HEX string representing the Layout background color</div>
+      <div class="param">createdDt </div><div class="param-desc"><span class="param-type">String</span> The datetime the Layout was created</div>
+      <div class="param">modifiedDt </div><div class="param-desc"><span class="param-type">String</span> The datetime the Layout was last modified</div>
+      <div class="param">status </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating the Layout status</div>
+      <div class="param">retired </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether the Layout is retired</div>
+      <div class="param">backgroundzIndex </div><div class="param-desc"><span class="param-type">Integer</span> The Layer that the background should occupy</div>
+      <div class="param">width </div><div class="param-desc"><span class="param-type">Double</span> The Layout Width</div>
+      <div class="param">height </div><div class="param-desc"><span class="param-type">Double</span> The Layout Height</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Schedule">Schedule</a></h3>
+    <div class="field-items">
+      <div class="param">eventId </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      <div class="param">campaignId </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      <div class="param">displayGroups </div><div class="param-desc"><span class="param-type">array[DisplayGroup]</span> Display Groups assigned to this Scheduled Event.</div>
+      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The userId that owns this event.</div>
+      <div class="param">fromDt </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp representing the from date of this event in CMS time.</div>
+      <div class="param">toDt </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp representing the to date of this event in CMS time.</div>
+      <div class="param">isPriority </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether the event should be considered priority or not.</div>
+      <div class="param">displayOrder </div><div class="param-desc"><span class="param-type">Integer</span> The display order for this event.</div>
+      <div class="param">recurrenceType </div><div class="param-desc"><span class="param-type">String</span> If this event recurs when what is the recurrence period.</div>
+      <div class="param">recurrenceDetail </div><div class="param-desc"><span class="param-type">Integer</span> If this event recurs when what is the recurrence frequency.</div>
+      <div class="param">recurrenceRange </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp indicating the end time of the recurring events.</div>
+      <div class="param">campaign </div><div class="param-desc"><span class="param-type">String</span> The Campaign/Layout Name</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  <style>
+body { 
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 15px;
+	color: #444;
+	margin-right: 24px;
+}
+
+h1	{
+	font-size: 25px;
+}
+h2	{
+	font-size: 20px;
+}
+h3	{
+	font-size: 16px;
+	font-weight: bold;
+}
+hr	{
+	height: 1px;
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+	display: none;
+}
+
+.app-desc {
+  clear: both;
+  margin-left: 20px;
+}
+.param-name {
+  width: 100%;
+}
+.license-info {
+  margin-left: 20px;
+}
+
+.license-url {
+  margin-left: 20px;
+}
+
+.model {
+  margin: 0 0 0px 20px;
+}
+
+.method {
+  margin-left: 20px;
+}
+
+.method-notes	{
+	margin: 10px 0 20px 0;
+	font-size: 90%;
+	color: #555;
+}
+
+pre {
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+pre.get {
+  background-color: #0f6ab4;
+}
+
+pre.post {
+  background-color: #10a54a;
+}
+
+pre.put {
+  background-color: #c5862b;
+}
+
+pre.delete {
+  background-color: #a41e22;
+}
+
+.huge	{
+	color: #fff;
+}
+
+pre.example {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+code {
+  white-space: pre;
+}
+
+.nickname {
+  font-weight: bold;
+}
+
+.method-path {
+  font-size: 1.5em;
+  background-color: #0f6ab4;
+}
+
+.parameter {
+  width: 500px;
+}
+
+.param {
+  width: 500px;
+  padding: 10px 0 0 20px;
+  font-weight: bold;
+}
+
+.param-desc {
+  width: 700px;
+  padding: 0 0 0 20px;
+  color: #777;
+}
+
+.param-type {
+  font-style: italic;
+}
+
+.field-label {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.field-items	{
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+
+.return-type {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.param-header {
+  font-weight: bold;
+}
+
+.method-tags {
+  text-align: right;
+}
+
+.method-tag {
+  background: none repeat scroll 0% 0% #24A600;
+  border-radius: 3px;
+  padding: 2px 10px;
+  margin: 2px;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+}
+  </style>
+  </body>
+</html>
