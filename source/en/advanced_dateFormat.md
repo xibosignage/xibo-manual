@@ -2,18 +2,18 @@
 
 # Date Format
 
-[[PRODUCTNAME]] is using a PHP date format.
+Xibo is using a PHP date format.
 
-The date format can be set:
-1. On settings page (Y-m-d H:i by default)
-2. On some modules 
-..*Twitter (d M by default), 
-..*Ticker,
-..*Forecast IO (depending on template).
+The date format can be set on:
+* Settings page (Y-m-d H:i by default)
+* Some modules 
+  * Twitter (d M by default), 
+  * Ticker,
+  * Forecast IO (depending on template).
 
 ## Changing Date format
 
-[[PRODUCTNAME]] should accept any date format that is a correct PHP date format.
+Xibo should accept any date format that is a correct PHP date format.
 
 The following characters are recognized and can be used to set date format:
 
