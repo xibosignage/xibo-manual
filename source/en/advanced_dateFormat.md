@@ -2,7 +2,7 @@
 
 # Date Format
 
-Xibo is using a PHP date format.
+[[PRODUCTNAME]] is using a PHP date format.
 
 The date format can be set on:
 * Settings page (Y-m-d H:i by default)
@@ -13,7 +13,7 @@ The date format can be set on:
 
 ## Changing Date format
 
-Xibo should accept any date format that is a correct PHP date format.
+[[PRODUCTNAME]] should accept any date format that is a correct PHP date format.
 
 The following characters are recognized and can be used to set date format:
 
