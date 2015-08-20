@@ -1,12 +1,13 @@
 <!--toc=media-->
 # Twitter
+
 The [[PRODUCTNAME]] Twitter widget provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search).
 
 ## Installation
 
-Access to the Twitter API is protected and users must register for an API key and enter that key in to the Xibo CMS settings. The process differs slightly for Spring Signage Cloud customers as detailed below.
+Access to the Twitter API is protected and users must register for an API key and enter that key in to the Xibo CMS settings.
 
-### Xibo Open Source Users
+### Connecting to Twitter
 
 * As a first step you will need to head to the modules page in your CMS and click on the link to install Twitter module.
 
@@ -20,7 +21,8 @@ Access to the Twitter API is protected and users must register for an API key an
 	* Optionally adjust the Cache Period value to determine how long to cache a results set for each Twitter search. Note that setting low values can cause your access to the Twitter API to be disabled for generating too many requests.
 	* Save changes
 
-### Spring Signage Cloud Customers
+<nonwhite>
+### Xibo Cloud Users
 
 The process of connecting to the Twitter API is simplified for Spring Signage Cloud customers.
 
@@ -28,6 +30,7 @@ The process of connecting to the Twitter API is simplified for Spring Signage Cl
 * In the newly opened form click the Login with Twitter button, to allow you to authorise the CMS to connect via your Twitter account.
 * Follow the on-screen instructions to authorise the CMS to use your Twitter account.
 
+</nonwhite>
 
 ## Adding to a Layout
 
