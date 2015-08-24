@@ -109,7 +109,7 @@ It returns the following XML string:
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
-<display status="0" code="READY" message="Display is active and ready to start." version_instructions="">
+<display date="2015-01-01 00:00:00" timezone="Europe/London" status="0" code="READY" message="Display is active and ready to start." version_instructions="">
    <settingsNode>One or more settings nodes</settingsNode>
 </display>
 ```
