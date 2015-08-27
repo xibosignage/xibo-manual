@@ -1,13 +1,20 @@
 <!--toc=getting_started-->
-#CMS Installation
-The [[PRODUCTNAME]] CMS is a PHP web application which sits on a MySQL database. The PHP / MySQL combination is very popular as a web platform and can be run on Linux or Windows servers.
+# CMS Installation
+The [[PRODUCTNAME]] CMS is a PHP web application and MySQL database. The PHP / MySQL combination is very popular as a web platform and can be run on Linux or Windows servers.
 
-We have provided some basic instructions for installing your own web server [here](install_environment.html), but would recommend a Cloud based solution or something managed by an I.T department if the signage application is critical.
+It is strongly encouraged to use a web server that allows you to copy files outside the web root and ideally modify the `DocumentRoot`.
+
+It is strongly encouraged to use a web server that supports URL rewriting which will allow the CMS to use clean, human-friendly URLs. Rewriting is enabled on the web server, we've provided some basic information on the [environment](install_environment.html). 
+
+## What if I don't have a web server?
+We have provided some basic instructions for installing your own web server [here](install_environment.html). There are a number of service providers that will install [[PRODUCTNAME]] for you, or even run [[PRODUCTNAME]] on their architecture. If you are unfamiliar with web servers and just want to use the application, then a service provider solution may be preferable.
+
 
 ## Installation
 Beyond this point it is assumed that a web server running with PHP and MySQL is available and that the compressed archive (ZIP or Tarball) of the CMS installation package has been transferred to the server.
 
-The basic process is as follows:
+The installation process is:
+
 1. Download and extract the archive
 2. Starting the Installation
 3. Pre-requisites
@@ -17,16 +24,18 @@ The basic process is as follows:
 7. Final Configuration
 8. Complete
 
-###Download and extract the archive
-The CMS archive contains a sub folder called [[PRODUCTNAME]]-server-[[PRODUCTVERSION]], the contents of this folder should be copied into the appropriate web serviceable location on your web server. In the simplest of web server configurations the name of this folder will be the name of the URL you use to access the CMS. For example: `http://localhost/[[PRODUCTNAME]]`.
+### Download and extract the archive
+The CMS archive contains a sub folder called [[PRODUCTNAME]]-server-[[PRODUCTVERSION]], the contents of this folder should be copied into an appropriate location on your web server. It is **strongly recommended** that the folder is extracted in a non-webservable location. On a dedicated server the `DocumentRoot` should point to `/path/to/xibo-folder/web`. Other configurations are discussed on the [environment](install_environment.html) page.
 
 The extracted archive should look like the below screen shot:
 
 ![Extracted Archive](img/win32_install_extracted.png)
 
-A folder will need to be created for the [[PRODUCTNAME]] library. This will be used to store images, videos and other file based media that is uploaded to the CMS. _Subsequent steps in the installation will require this information._
+A folder is provided for the [[PRODUCTNAME]] library which will be used to store images, videos and other files. This folder can be moved to another location and changed during the install process.
 
-###Starting the Installation
+
+
+### Starting the Installation
 Navigating to `http://localhost/[[PRODUCTNAME]]` will automatically start the installation.
 
 The installation is in a _wizard_ format that contains 6 steps in total. The wizard will guide the installer through the process of installing [[PRODUCTNAME]].
