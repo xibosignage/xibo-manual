@@ -2,9 +2,15 @@
 # Finance
 The [[PRODUCTNAME]] Finance widget provides access to the [Yahoo! YQL API](https://developer.yahoo.com/yql/console/?q=show%20tables&env=store://datatables.org/alltableswithkeys#h=select+*+from+yahoo.finance.xchange+where+pair+in+(%22EURUSD%22%2C%22GBPUSD%22)).
 
-At the time of writing the Yahoo! API is a public source of data that can be used free of charge for non-commercial usage and for commercial usage with Yahoo approval. Please see the [usage notes](https://developer.yahoo.com/yql/guide/usage_info_limits.html) for more information.
+At the time of writing the Yahoo! API is a public source of data that can be used free of charge for non-commercial usage and for commercial usage with Yahoo approval. Please refer to the below resources for more information:
 
-It is the content creators responsibility to ensure that the necessary permissions have been obtained for data usage *before* this module is used.
+ - [API FAQ](https://developer.yahoo.com/faq/)
+ - [API Terms of Use](https://policies.yahoo.com/us/en/yahoo/terms/product-atos/apiforydn/index.htm)
+ - [API Network Guidelines](https://policies.yahoo.com/us/en/yahoo/guidelines/ydn/index.htm)
+ - [Attribution Guidelines](https://developer.yahoo.com/attribution/)
+ - [Usage notes](https://developer.yahoo.com/yql/guide/usage_info_limits.html) 
+
+**It is the content creators responsibility to ensure that the necessary permissions have been obtained for data usage *before* this module is used and that the necessary attribution is in place.**
  
 
 ## Installation
