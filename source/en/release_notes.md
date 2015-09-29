@@ -4,6 +4,9 @@ Each release comes with its own set of release notes. These should be read and u
 
 The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSION]].html).
 
+## Version 1.8 "Tempel"
+* [1.8.0-alpha](release_notes_1.8.0-alpha.html)
+
 ## Version 1.7 "Tuttle"
 * [1.7.4](release_notes_1.7.4.html)
 * [1.7.3](release_notes_1.7.3.html)
