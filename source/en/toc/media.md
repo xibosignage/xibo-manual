@@ -6,6 +6,7 @@
 - [Counter](media_module_counter.html)
 - [DataSet View](media_module_dataset_view.html)
 - [Embedded](media_module_embedded.html)
+- [Finance](media_module_finance.html)
 - [Flash](media_module_flash.html)
 - [Font](media_module_font.html)
 - [Generic File](media_module_genericfile.html)
