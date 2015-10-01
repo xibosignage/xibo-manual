@@ -1,310 +1,12 @@
-<html lang="en">
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8" />
-    <title>API Reference</title>
-  </head>
-  <body>
-  <h1>Xibo API</h1>
-    <div class="app-desc">Xibo CMS API for </div>
-    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
-    <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
-    <div class="app-desc">Version: 1.8.0-alpha</div>
-    <div class="license-info">AGPLv3 or later</div>
-    <div class="license-url">http://www.gnu.org/licenses/</div>
-  <h2>Access</h2>
-  <div class="method-summary">Customize this message as you see fit!</div>
-  <h2>Methods</h2>
-  
-  
-  
-  <div class="method">
-    <div class="method-path"><pre class="get"><code class="huge"><span>get</span>: /displaygroup</code></pre></div>
-    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
-    <div class="method-summary"><span class="nickname">displayGroupSearch</span> Get Display Groups</div>
-    <div class="method-notes"></div>
-
-    <h3 class="field-label">Parameters</h3>
-    <div class="field-items">
-      
-    </div>  <!-- field-items -->
-    <h3 class="field-label">Return type</h3>
-
-    <div class="return-type"><a href="#">displayGroupSearchResult</a></div>
-
-    
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/json</div>
-    <pre class="example"><code>&quot;&quot;</code></pre>
-    
-  </div> <!-- method -->
-  <hr>
-  
-  <div class="method">
-    <div class="method-path"><pre class="post"><code class="huge"><span>post</span>: /displaygroup</code></pre></div>
-    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
-    <div class="method-summary"><span class="nickname">displayGroupAdd</span> Add a Display Group</div>
-    <div class="method-notes">Add a new Display Group to the CMS</div>
-
-    <h3 class="field-label">Parameters</h3>
-    <div class="field-items">
-      <div class="param">displayGroup (required)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Name </div>
-      <div class="param">description (optional)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Description </div>
-      
-    </div>  <!-- field-items -->
-    <h3 class="field-label">Return type</h3>
-
-    <div class="return-type"><a href="#">DisplayGroup</a></div>
-
-    
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/json</div>
-    <pre class="example"><code>{
-  &quot;description&quot; : &quot;aeiou&quot;,
-  &quot;displayGroupId&quot; : 123,
-  &quot;displayGroup&quot; : &quot;aeiou&quot;,
-  &quot;isDisplaySpecific&quot; : 123
-}</code></pre>
-    
-  </div> <!-- method -->
-  <hr>
-  
-  <div class="method">
-    <div class="method-path"><pre class="put"><code class="huge"><span>put</span>: /displaygroup/{displayGroupId}</code></pre></div>
-    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
-    <div class="method-summary"><span class="nickname">displayGroupEdit</span> Edit a Display Group</div>
-    <div class="method-notes">Edit an existing Display Group identified by its Id</div>
-
-    <h3 class="field-label">Parameters</h3>
-    <div class="field-items">
-      <div class="param">displayGroupId (required)</div>
-
-      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The displayGroupId to edit. </div>
-      <div class="param">displayGroup (required)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Name </div>
-      <div class="param">description (optional)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The Display Group Description </div>
-      
-    </div>  <!-- field-items -->
-    <h3 class="field-label">Return type</h3>
-
-    <div class="return-type"><a href="#">DisplayGroup</a></div>
-
-    
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/json</div>
-    <pre class="example"><code>{
-  &quot;description&quot; : &quot;aeiou&quot;,
-  &quot;displayGroupId&quot; : 123,
-  &quot;displayGroup&quot; : &quot;aeiou&quot;,
-  &quot;isDisplaySpecific&quot; : 123
-}</code></pre>
-    
-  </div> <!-- method -->
-  <hr>
-  
-  <div class="method">
-    <div class="method-path"><pre class="delete"><code class="huge"><span>delete</span>: /displaygroup/{displayGroupId}</code></pre></div>
-    <div class="method-tags"> <span class="method-tag">DisplayGroup</span></div>
-    <div class="method-summary"><span class="nickname">displayGroupDelete</span> Delete a Display Group</div>
-    <div class="method-notes">Delete an existing Display Group identified by its Id</div>
-
-    <h3 class="field-label">Parameters</h3>
-    <div class="field-items">
-      <div class="param">displayGroupId (required)</div>
-
-      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The displayGroupId to delete </div>
-      
-    </div>  <!-- field-items -->
-    <h3 class="field-label">Return type</h3>
-
-    <div class="return-type"><a href="#"></a></div>
-
-    
-  </div> <!-- method -->
-  <hr>
-  
-  <div class="method">
-    <div class="method-path"><pre class="post"><code class="huge"><span>post</span>: /layout</code></pre></div>
-    <div class="method-tags"> <span class="method-tag">Layout</span></div>
-    <div class="method-summary"><span class="nickname">layoutAdd</span> Add a Layout</div>
-    <div class="method-notes">Add a new Layout to the CMS</div>
-
-    <h3 class="field-label">Parameters</h3>
-    <div class="field-items">
-      <div class="param">name (required)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The layout name </div>
-      <div class="param">description (optional)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; The layout description </div>
-      <div class="param">layoutId (optional)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; If the Layout should be created with a Template, provide the ID, otherwise don&#39;t provide </div>
-      <div class="param">resolutionId (optional)</div>
-
-      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; If a Template is not provided, provide the resolutionId for this Layout. </div>
-      
-    </div>  <!-- field-items -->
-    <h3 class="field-label">Return type</h3>
-
-    <div class="return-type"><a href="#">Layout</a></div>
-
-    
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/json</div>
-    <pre class="example"><code>{
-  &quot;campaignId&quot; : 123,
-  &quot;backgroundColor&quot; : &quot;aeiou&quot;,
-  &quot;status&quot; : 123,
-  &quot;ownerId&quot; : 123,
-  &quot;width&quot; : 3.149,
-  &quot;retired&quot; : 123,
-  &quot;layoutId&quot; : 123,
-  &quot;height&quot; : 3.149,
-  &quot;backgroundImageId&quot; : 123,
-  &quot;description&quot; : &quot;aeiou&quot;,
-  &quot;layout&quot; : &quot;aeiou&quot;,
-  &quot;backgroundzIndex&quot; : 123,
-  &quot;modifiedDt&quot; : &quot;aeiou&quot;,
-  &quot;schemaVersion&quot; : 123,
-  &quot;createdDt&quot; : &quot;aeiou&quot;
-}</code></pre>
-    
-  </div> <!-- method -->
-  <hr>
-  
-  <div class="method">
-    <div class="method-path"><pre class="put"><code class="huge"><span>put</span>: /layout/{layoutId}</code></pre></div>
-    <div class="method-tags"> <span class="method-tag">Layout</span></div>
-    <div class="method-summary"><span class="nickname">layoutEdit</span> </div>
-    <div class="method-notes"></div>
-
-    <h3 class="field-label">Parameters</h3>
-    <div class="field-items">
-      <div class="param">layoutId (required)</div>
-
-      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash;  </div>
-      
-    </div>  <!-- field-items -->
-    <h3 class="field-label">Return type</h3>
-
-    <div class="return-type"><a href="#">Layout</a></div>
-
-    
-    <h3 class="field-label">Example data</h3>
-    <div class="example-data-content-type">Content-Type: application/json</div>
-    <pre class="example"><code>{
-  &quot;campaignId&quot; : 123,
-  &quot;backgroundColor&quot; : &quot;aeiou&quot;,
-  &quot;status&quot; : 123,
-  &quot;ownerId&quot; : 123,
-  &quot;width&quot; : 3.149,
-  &quot;retired&quot; : 123,
-  &quot;layoutId&quot; : 123,
-  &quot;height&quot; : 3.149,
-  &quot;backgroundImageId&quot; : 123,
-  &quot;description&quot; : &quot;aeiou&quot;,
-  &quot;layout&quot; : &quot;aeiou&quot;,
-  &quot;backgroundzIndex&quot; : 123,
-  &quot;modifiedDt&quot; : &quot;aeiou&quot;,
-  &quot;schemaVersion&quot; : 123,
-  &quot;createdDt&quot; : &quot;aeiou&quot;
-}</code></pre>
-    
-  </div> <!-- method -->
-  <hr>
-  
-  
-
-  <h2>Models</h2>
-  
-  
-  <div class="model">
-    <h3 class="field-label"><a name="SearchResponse">SearchResponse</a></h3>
-    <div class="field-items">
-      <div class="param">draw </div><div class="param-desc"><span class="param-type">String</span> The draw request, useful for validating async request responses</div>
-      <div class="param">recordsTotal </div><div class="param-desc"><span class="param-type">Integer</span> The total number of records</div>
-      
-    </div>  <!-- field-items -->
-  </div>
-  
-  
-  
-  <div class="model">
-    <h3 class="field-label"><a name="DisplayGroupSearchResult">DisplayGroupSearchResult</a></h3>
-    <div class="field-items">
-      <div class="param">data </div><div class="param-desc"><span class="param-type">array[DisplayGroup]</span> </div>
-      
-    </div>  <!-- field-items -->
-  </div>
-  
-  
-  
-  <div class="model">
-    <h3 class="field-label"><a name="DisplayGroup">DisplayGroup</a></h3>
-    <div class="field-items">
-      <div class="param">displayGroupId </div><div class="param-desc"><span class="param-type">Integer</span> The displayGroup Id</div>
-      <div class="param">displayGroup </div><div class="param-desc"><span class="param-type">String</span> The displayGroup Name</div>
-      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The displayGroup Description</div>
-      <div class="param">isDisplaySpecific </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this displayGroup is a single display displayGroup</div>
-      
-    </div>  <!-- field-items -->
-  </div>
-  
-  
-  
-  <div class="model">
-    <h3 class="field-label"><a name="Layout">Layout</a></h3>
-    <div class="field-items">
-      <div class="param">layoutId </div><div class="param-desc"><span class="param-type">Integer</span> The layoutId</div>
-      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the Layout Owner</div>
-      <div class="param">campaignId </div><div class="param-desc"><span class="param-type">Integer</span> The id of the Layout&#39;s dedicated Campaign</div>
-      <div class="param">backgroundImageId </div><div class="param-desc"><span class="param-type">Integer</span> The id of the image media set as the background</div>
-      <div class="param">schemaVersion </div><div class="param-desc"><span class="param-type">Integer</span> The XLF schema version</div>
-      <div class="param">layout </div><div class="param-desc"><span class="param-type">String</span> The name of the Layout</div>
-      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The description of the Layout</div>
-      <div class="param">backgroundColor </div><div class="param-desc"><span class="param-type">String</span> A HEX string representing the Layout background color</div>
-      <div class="param">createdDt </div><div class="param-desc"><span class="param-type">String</span> The datetime the Layout was created</div>
-      <div class="param">modifiedDt </div><div class="param-desc"><span class="param-type">String</span> The datetime the Layout was last modified</div>
-      <div class="param">status </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating the Layout status</div>
-      <div class="param">retired </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether the Layout is retired</div>
-      <div class="param">backgroundzIndex </div><div class="param-desc"><span class="param-type">Integer</span> The Layer that the background should occupy</div>
-      <div class="param">width </div><div class="param-desc"><span class="param-type">Double</span> The Layout Width</div>
-      <div class="param">height </div><div class="param-desc"><span class="param-type">Double</span> The Layout Height</div>
-      
-    </div>  <!-- field-items -->
-  </div>
-  
-  
-  
-  <div class="model">
-    <h3 class="field-label"><a name="Schedule">Schedule</a></h3>
-    <div class="field-items">
-      <div class="param">eventId </div><div class="param-desc"><span class="param-type">Integer</span> </div>
-      <div class="param">campaignId </div><div class="param-desc"><span class="param-type">Integer</span> </div>
-      <div class="param">displayGroups </div><div class="param-desc"><span class="param-type">array[DisplayGroup]</span> Display Groups assigned to this Scheduled Event.</div>
-      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The userId that owns this event.</div>
-      <div class="param">fromDt </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp representing the from date of this event in CMS time.</div>
-      <div class="param">toDt </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp representing the to date of this event in CMS time.</div>
-      <div class="param">isPriority </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether the event should be considered priority or not.</div>
-      <div class="param">displayOrder </div><div class="param-desc"><span class="param-type">Integer</span> The display order for this event.</div>
-      <div class="param">recurrenceType </div><div class="param-desc"><span class="param-type">String</span> If this event recurs when what is the recurrence period.</div>
-      <div class="param">recurrenceDetail </div><div class="param-desc"><span class="param-type">Integer</span> If this event recurs when what is the recurrence frequency.</div>
-      <div class="param">recurrenceRange </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp indicating the end time of the recurring events.</div>
-      <div class="param">campaign </div><div class="param-desc"><span class="param-type">String</span> The Campaign/Layout Name</div>
-      
-    </div>  <!-- field-items -->
-  </div>
-  
-  
-  <style>
-body { 
+    <title>Xibo API</title>
+    <link rel="stylesheet" type="text/css" href="site.css" media="screen" />
+    <style type="text/css">
+      body { 
 	font-family: Trebuchet MS, sans-serif;
 	font-size: 15px;
 	color: #444;
@@ -363,6 +65,10 @@ pre {
   margin-bottom: 2px;
 }
 
+.http-method {
+ text-transform: uppercase;
+}
+
 pre.get {
   background-color: #0f6ab4;
 }
@@ -400,6 +106,10 @@ code {
 .method-path {
   font-size: 1.5em;
   background-color: #0f6ab4;
+}
+
+.up {
+  float:right;
 }
 
 .parameter {
@@ -455,6 +165,4107 @@ code {
   display: inline-block;
   text-decoration: none;
 }
-  </style>
+    </style>
+  </head>
+  <body>
+  <h1>Xibo API</h1>
+    <div class="app-desc">Xibo CMS API</div>
+    
+    <div class="app-desc">Contact Info: <a href="info@xibo.org.uk">info@xibo.org.uk</a></div>
+    <div class="app-desc">Version: 1.8.0-alpha</div>
+    <div class="license-info">AGPLv3 or later</div>
+    <div class="license-url">http://www.gnu.org/licenses/</div>
+  <h2>Access</h2>
+  
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  
+  <h2>Table of Contents </h2>
+  <div class="method-summary"></div>
+  
+  <ol>
+  
+  
+  
+  <li><a href="#about"><code><span class="http-method">get</span> /about</code></a></li>
+  
+  <li><a href="#campaignSearch"><code><span class="http-method">get</span> /campaign</code></a></li>
+  
+  <li><a href="#campaignAdd"><code><span class="http-method">post</span> /campaign</code></a></li>
+  
+  <li><a href="#campaignEdit"><code><span class="http-method">put</span> /campaign/{campaignId}</code></a></li>
+  
+  <li><a href="#campaignDelete"><code><span class="http-method">delete</span> /campaign/{campaignId}</code></a></li>
+  
+  <li><a href="#clock"><code><span class="http-method">get</span> /clock</code></a></li>
+  
+  <li><a href="#dataSetSearch"><code><span class="http-method">get</span> /dataset</code></a></li>
+  
+  <li><a href="#dataSetAdd"><code><span class="http-method">post</span> /dataset</code></a></li>
+  
+  <li><a href="#dataSetData"><code><span class="http-method">get</span> /dataset/data/{dataSetId}</code></a></li>
+  
+  <li><a href="#dataSetDataAdd"><code><span class="http-method">post</span> /dataset/data/{dataSetId}</code></a></li>
+  
+  <li><a href="#dataSetDataEdit"><code><span class="http-method">put</span> /dataset/data/{dataSetId}/{rowId}</code></a></li>
+  
+  <li><a href="#dataSetDataDelete"><code><span class="http-method">delete</span> /dataset/data/{dataSetId}/{rowId}</code></a></li>
+  
+  <li><a href="#dataSetImport"><code><span class="http-method">post</span> /dataset/import/{dataSetId}</code></a></li>
+  
+  <li><a href="#dataSetEdit"><code><span class="http-method">put</span> /dataset/{dataSetId}</code></a></li>
+  
+  <li><a href="#dataSetDelete"><code><span class="http-method">delete</span> /dataset/{dataSetId}</code></a></li>
+  
+  <li><a href="#dataSetColumnSearch"><code><span class="http-method">get</span> /dataset/{dataSetId}/column</code></a></li>
+  
+  <li><a href="#dataSetColumnAdd"><code><span class="http-method">post</span> /dataset/{dataSetId}/column</code></a></li>
+  
+  <li><a href="#dataSetColumnEdit"><code><span class="http-method">put</span> /dataset/{dataSetId}/column/{dataSetColumnId}</code></a></li>
+  
+  <li><a href="#dataSetColumnDelete"><code><span class="http-method">delete</span> /dataset/{dataSetId}/column/{dataSetColumnId}</code></a></li>
+  
+  <li><a href="#displaySearch"><code><span class="http-method">get</span> /display</code></a></li>
+  
+  <li><a href="#displayRequestScreenshot"><code><span class="http-method">put</span> /display/requestscreenshot/{displayId}</code></a></li>
+  
+  <li><a href="#displayWakeOnLan"><code><span class="http-method">get</span> /display/wol/{displayId}</code></a></li>
+  
+  <li><a href="#displayEdit"><code><span class="http-method">put</span> /display/{displayId}</code></a></li>
+  
+  <li><a href="#displayDelete"><code><span class="http-method">delete</span> /display/{displayId}</code></a></li>
+  
+  <li><a href="#displayGroupSearch"><code><span class="http-method">get</span> /displaygroup</code></a></li>
+  
+  <li><a href="#displayGroupAdd"><code><span class="http-method">post</span> /displaygroup</code></a></li>
+  
+  <li><a href="#displayGroupEdit"><code><span class="http-method">put</span> /displaygroup/{displayGroupId}</code></a></li>
+  
+  <li><a href="#displayGroupDelete"><code><span class="http-method">delete</span> /displaygroup/{displayGroupId}</code></a></li>
+  
+  <li><a href="#displayGroupDisplayAssign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/display/assign</code></a></li>
+  
+  <li><a href="#displayGroupDisplayUnassign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/display/unassign</code></a></li>
+  
+  <li><a href="#displayGroupMediaAssign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/media/assign</code></a></li>
+  
+  <li><a href="#displayGroupMediaUnassign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/media/unassign</code></a></li>
+  
+  <li><a href="#displayGroupDisplayVersion"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/version</code></a></li>
+  
+  <li><a href="#displayProfileSearch"><code><span class="http-method">get</span> /displayprofile</code></a></li>
+  
+  <li><a href="#displayProfileAdd"><code><span class="http-method">post</span> /displayprofile</code></a></li>
+  
+  <li><a href="#displayProfileEdit"><code><span class="http-method">put</span> /displayprofile/{displayProfileId}</code></a></li>
+  
+  <li><a href="#displayProfileDelete"><code><span class="http-method">delete</span> /displayprofile/{displayProfileId}</code></a></li>
+  
+  <li><a href="#userGroupCopy"><code><span class="http-method">post</span> /group/{userGroupId}/copy</code></a></li>
+  
+  <li><a href="#layoutSearch"><code><span class="http-method">get</span> /layout</code></a></li>
+  
+  <li><a href="#layoutAdd"><code><span class="http-method">post</span> /layout</code></a></li>
+  
+  <li><a href="#layoutCopy"><code><span class="http-method">post</span> /layout/copy/{layoutId}</code></a></li>
+  
+  <li><a href="#layoutRetire"><code><span class="http-method">put</span> /layout/retire/{layoutId}</code></a></li>
+  
+  <li><a href="#layoutEdit"><code><span class="http-method">put</span> /layout/{layoutId}</code></a></li>
+  
+  <li><a href="#layoutDelete"><code><span class="http-method">delete</span> /layout/{layoutId}</code></a></li>
+  
+  <li><a href="#librarySearch"><code><span class="http-method">get</span> /library</code></a></li>
+  
+  <li><a href="#libraryAdd"><code><span class="http-method">post</span> /library</code></a></li>
+  
+  <li><a href="#libraryTidy"><code><span class="http-method">post</span> /library/tidy</code></a></li>
+  
+  <li><a href="#libraryEdit"><code><span class="http-method">put</span> /library/{mediaId}</code></a></li>
+  
+  <li><a href="#libraryDelete"><code><span class="http-method">delete</span> /library/{mediaId}</code></a></li>
+  
+  <li><a href="#playlistLibraryAssign"><code><span class="http-method">post</span> /playlist/library/assign/{playlistId}</code></a></li>
+  
+  <li><a href="#playlistSearch"><code><span class="http-method">get</span> /playlist/widget</code></a></li>
+  
+  <li><a href="#regionAdd"><code><span class="http-method">post</span> /region/{layoutId}</code></a></li>
+  
+  <li><a href="#regionEdit"><code><span class="http-method">put</span> /region/{regionId}</code></a></li>
+  
+  <li><a href="#regionDelete"><code><span class="http-method">delete</span> /region/{regionId}</code></a></li>
+  
+  <li><a href="#resolutionSearch"><code><span class="http-method">get</span> /resolution</code></a></li>
+  
+  <li><a href="#resolutionAdd"><code><span class="http-method">post</span> /resolution</code></a></li>
+  
+  <li><a href="#resolutionEdit"><code><span class="http-method">put</span> /resolution/{resolutionId}</code></a></li>
+  
+  <li><a href="#resolutionDelete"><code><span class="http-method">delete</span> /resolution/{resolutionId}</code></a></li>
+  
+  <li><a href="#scheduleAdd"><code><span class="http-method">post</span> /schedule</code></a></li>
+  
+  <li><a href="#scheduleCalendarData"><code><span class="http-method">get</span> /schedule/data/events</code></a></li>
+  
+  <li><a href="#scheduleEdit"><code><span class="http-method">put</span> /schedule/{eventId}</code></a></li>
+  
+  <li><a href="#scheduleDelete"><code><span class="http-method">delete</span> /schedule/{eventId}</code></a></li>
+  
+  <li><a href="#statsSearch"><code><span class="http-method">get</span> /stats</code></a></li>
+  
+  <li><a href="#templateSearch"><code><span class="http-method">get</span> /template</code></a></li>
+  
+  <li><a href="#template.add.from.layout"><code><span class="http-method">post</span> /template/{layoutId}</code></a></li>
+  
+  <li><a href="#userSearch"><code><span class="http-method">get</span> /user</code></a></li>
+  
+  <li><a href="#userAdd"><code><span class="http-method">post</span> /user</code></a></li>
+  
+  <li><a href="#userMe"><code><span class="http-method">get</span> /user/me</code></a></li>
+  
+  <li><a href="#userPermissionsSearch"><code><span class="http-method">get</span> /user/permissions/{entity}/{objectId}</code></a></li>
+  
+  <li><a href="#userPermissionsSet"><code><span class="http-method">post</span> /user/permissions/{entity}/{objectId}</code></a></li>
+  
+  
+  
+  </ol>
+  
+
+  
+  
+  
+  
+  <div class="method"><a name="about"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /about</code></pre></div>
+    <div class="method-summary">About (<span class="nickname">about</span>)</div>
+    
+    <div class="method-notes">Information about this API, such as Version code, etc</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#map">map[String, String]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful response
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="campaignSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /campaign</code></pre></div>
+    <div class="method-summary">Search Campaigns (<span class="nickname">campaignSearch</span>)</div>
+    
+    <div class="method-notes">Search all Campaigns this user has access to</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Campaign]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="campaignAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /campaign</code></pre></div>
+    <div class="method-summary">Add Campaign (<span class="nickname">campaignAdd</span>)</div>
+    
+    <div class="method-notes">Add a Campaign</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Campaign</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="campaignEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /campaign/{campaignId}</code></pre></div>
+    <div class="method-summary">Edit Campaign (<span class="nickname">campaignEdit</span>)</div>
+    
+    <div class="method-notes">Edit an existing Campaign</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">campaignId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Campaign ID to Edit </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Campaign</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="campaignDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /campaign/{campaignId}</code></pre></div>
+    <div class="method-summary">Delete Campaign (<span class="nickname">campaignDelete</span>)</div>
+    
+    <div class="method-notes">Delete an existing Campaign</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">campaignId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Campaign ID to Delete </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="clock"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /clock</code></pre></div>
+    <div class="method-summary">The current CMS time (<span class="nickname">clock</span>)</div>
+    
+    <div class="method-notes">The Time</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#map">map[String, String]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful response
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /dataset</code></pre></div>
+    <div class="method-summary">DataSet Search (<span class="nickname">dataSetSearch</span>)</div>
+    
+    <div class="method-notes">Search this users DataSets</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[DataSet]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /dataset</code></pre></div>
+    <div class="method-summary">Add DataSet (<span class="nickname">dataSetAdd</span>)</div>
+    
+    <div class="method-notes">Add a DataSet</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DataSet</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetData"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /dataset/data/{dataSetId}</code></pre></div>
+    <div class="method-summary">DataSet Data (<span class="nickname">dataSetData</span>)</div>
+    
+    <div class="method-notes">Get Data for DataSet</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetDataAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /dataset/data/{dataSetId}</code></pre></div>
+    <div class="method-summary">Add Row (<span class="nickname">dataSetDataAdd</span>)</div>
+    
+    <div class="method-notes">Add a row of Data to a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetDataEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /dataset/data/{dataSetId}/{rowId}</code></pre></div>
+    <div class="method-summary">Edit Row (<span class="nickname">dataSetDataEdit</span>)</div>
+    
+    <div class="method-notes">Edit a row of Data to a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div><div class="param">rowId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Row ID of the Data to Edit </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetDataDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /dataset/data/{dataSetId}/{rowId}</code></pre></div>
+    <div class="method-summary">Delete Row (<span class="nickname">dataSetDataDelete</span>)</div>
+    
+    <div class="method-notes">Delete a row of Data to a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div><div class="param">rowId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Row ID of the Data to Delete </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetImport"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /dataset/import/{dataSetId}</code></pre></div>
+    <div class="method-summary">Import CSV (<span class="nickname">dataSetImport</span>)</div>
+    
+    <div class="method-notes">Import a CSV into a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID to import into. </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /dataset/{dataSetId}</code></pre></div>
+    <div class="method-summary">Edit DataSet (<span class="nickname">dataSetEdit</span>)</div>
+    
+    <div class="method-notes">Edit a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DataSet</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /dataset/{dataSetId}</code></pre></div>
+    <div class="method-summary">Delete DataSet (<span class="nickname">dataSetDelete</span>)</div>
+    
+    <div class="method-notes">Delete a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetColumnSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /dataset/{dataSetId}/column</code></pre></div>
+    <div class="method-summary">Search Columns (<span class="nickname">dataSetColumnSearch</span>)</div>
+    
+    <div class="method-notes">Search Columns for DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[DataSetColumn]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetColumnAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /dataset/{dataSetId}/column</code></pre></div>
+    <div class="method-summary">Add Column (<span class="nickname">dataSetColumnAdd</span>)</div>
+    
+    <div class="method-notes">Add a Column to a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DataSetColumn</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetColumnEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /dataset/{dataSetId}/column/{dataSetColumnId}</code></pre></div>
+    <div class="method-summary">Edit Column (<span class="nickname">dataSetColumnEdit</span>)</div>
+    
+    <div class="method-notes">Edit a Column to a DataSet</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div><div class="param">dataSetColumnId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Column ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DataSetColumn</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="dataSetColumnDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /dataset/{dataSetId}/column/{dataSetColumnId}</code></pre></div>
+    <div class="method-summary">Delete Column (<span class="nickname">dataSetColumnDelete</span>)</div>
+    
+    <div class="method-notes">Delete DataSet Column</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">dataSetId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The DataSet ID </div><div class="param">dataSetColumnId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Column ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displaySearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /display</code></pre></div>
+    <div class="method-summary">Display Search (<span class="nickname">displaySearch</span>)</div>
+    
+    <div class="method-notes">Search Displays for this User</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Display]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayRequestScreenshot"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /display/requestscreenshot/{displayId}</code></pre></div>
+    <div class="method-summary">Request Screen Shot (<span class="nickname">displayRequestScreenshot</span>)</div>
+    
+    <div class="method-notes">Notify the display that the CMS would like a screen shot to be sent.</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Display</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayWakeOnLan"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /display/wol/{displayId}</code></pre></div>
+    <div class="method-summary">Issue WOL (<span class="nickname">displayWakeOnLan</span>)</div>
+    
+    <div class="method-notes">Send a Wake On LAN packet to this Display</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /display/{displayId}</code></pre></div>
+    <div class="method-summary">Display Edit (<span class="nickname">displayEdit</span>)</div>
+    
+    <div class="method-notes">Edit a Display</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Display</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /display/{displayId}</code></pre></div>
+    <div class="method-summary">Display Delete (<span class="nickname">displayDelete</span>)</div>
+    
+    <div class="method-notes">Delete a Display</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /displaygroup</code></pre></div>
+    <div class="method-summary">Get Display Groups (<span class="nickname">displayGroupSearch</span>)</div>
+    
+    <div class="method-notes"></div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[DisplayGroup]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    a successful response
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup</code></pre></div>
+    <div class="method-summary">Add a Display Group (<span class="nickname">displayGroupAdd</span>)</div>
+    
+    <div class="method-notes">Add a new Display Group to the CMS</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DisplayGroup</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /displaygroup/{displayGroupId}</code></pre></div>
+    <div class="method-summary">Edit a Display Group (<span class="nickname">displayGroupEdit</span>)</div>
+    
+    <div class="method-notes">Edit an existing Display Group identified by its Id</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The displayGroupId to edit. </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DisplayGroup</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /displaygroup/{displayGroupId}</code></pre></div>
+    <div class="method-summary">Delete a Display Group (<span class="nickname">displayGroupDelete</span>)</div>
+    
+    <div class="method-notes">Delete an existing Display Group identified by its Id</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The displayGroupId to delete </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupDisplayAssign"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/display/assign</code></pre></div>
+    <div class="method-summary">Assign one or more Displays to a Display Group (<span class="nickname">displayGroupDisplayAssign</span>)</div>
+    
+    <div class="method-notes">Adds the provided Displays to the Display Group</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group to assign to </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupDisplayUnassign"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/display/unassign</code></pre></div>
+    <div class="method-summary">Unassigns one or more Displays to a Display Group (<span class="nickname">displayGroupDisplayUnassign</span>)</div>
+    
+    <div class="method-notes">Removes the provided Displays from the Display Group</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group to unassign from </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupMediaAssign"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/media/assign</code></pre></div>
+    <div class="method-summary">Assign one or more Media items to a Display Group (<span class="nickname">displayGroupMediaAssign</span>)</div>
+    
+    <div class="method-notes">Adds the provided Media to the Display Group</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group to assign to </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupMediaUnassign"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/media/unassign</code></pre></div>
+    <div class="method-summary">Unassign one or more Media items from a Display Group (<span class="nickname">displayGroupMediaUnassign</span>)</div>
+    
+    <div class="method-notes">Removes the provided from the Display Group</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group to unassign from </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupDisplayVersion"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/version</code></pre></div>
+    <div class="method-summary">Set the Version for this Display (<span class="nickname">displayGroupDisplayVersion</span>)</div>
+    
+    <div class="method-notes">Sets the version instructions on all Displays in the Group</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayProfileSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /displayprofile</code></pre></div>
+    <div class="method-summary">Display Profile Search (<span class="nickname">displayProfileSearch</span>)</div>
+    
+    <div class="method-notes">Search this users Display Profiles</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[DisplayProfile]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayProfileAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displayprofile</code></pre></div>
+    <div class="method-summary">Add Display Profile (<span class="nickname">displayProfileAdd</span>)</div>
+    
+    <div class="method-notes">Add a Display Profile</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DisplayProfile</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayProfileEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /displayprofile/{displayProfileId}</code></pre></div>
+    <div class="method-summary">Edit Display Profile (<span class="nickname">displayProfileEdit</span>)</div>
+    
+    <div class="method-notes">Edit a Display Profile</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">DisplayProfile</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayProfileDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /displayprofile/{displayProfileId}</code></pre></div>
+    <div class="method-summary">Delete Display Profile (<span class="nickname">displayProfileDelete</span>)</div>
+    
+    <div class="method-notes">Delete an existing Display Profile</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayProfileId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Profile ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="userGroupCopy"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /group/{userGroupId}/copy</code></pre></div>
+    <div class="method-summary">Copy User Group (<span class="nickname">userGroupCopy</span>)</div>
+    
+    <div class="method-notes">Copy an user group, optionally copying the group members</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">userGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The User Group ID to Copy </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">UserGroup</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="layoutSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /layout</code></pre></div>
+    <div class="method-summary">Search Layouts (<span class="nickname">layoutSearch</span>)</div>
+    
+    <div class="method-notes">Search for Layouts viewable by this user</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Layout]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="layoutAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /layout</code></pre></div>
+    <div class="method-summary">Add a Layout (<span class="nickname">layoutAdd</span>)</div>
+    
+    <div class="method-notes">Add a new Layout to the CMS</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Layout</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="layoutCopy"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /layout/copy/{layoutId}</code></pre></div>
+    <div class="method-summary">Copy Layout (<span class="nickname">layoutCopy</span>)</div>
+    
+    <div class="method-notes">Copy a Layout, providing a new name if applicable</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">layoutId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Layout ID to Copy </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Layout</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="layoutRetire"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /layout/retire/{layoutId}</code></pre></div>
+    <div class="method-summary">Retire Layout (<span class="nickname">layoutRetire</span>)</div>
+    
+    <div class="method-notes">Retire a Layout so that it isn&#39;t available to Schedule. Existing Layouts will still be played</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">layoutId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Layout ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="layoutEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /layout/{layoutId}</code></pre></div>
+    <div class="method-summary">Edit Layout (<span class="nickname">layoutEdit</span>)</div>
+    
+    <div class="method-notes">Edit a Layout</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">layoutId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash;  </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Layout</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="layoutDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /layout/{layoutId}</code></pre></div>
+    <div class="method-summary">Delete Layout (<span class="nickname">layoutDelete</span>)</div>
+    
+    <div class="method-notes">Delete a Layout</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">layoutId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Layout ID to Delete </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="librarySearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /library</code></pre></div>
+    <div class="method-summary">Library Search (<span class="nickname">librarySearch</span>)</div>
+    
+    <div class="method-notes">Search the Library for this user</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Media]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="libraryAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /library</code></pre></div>
+    <div class="method-summary">Add Media (<span class="nickname">libraryAdd</span>)</div>
+    
+    <div class="method-notes">Add Media to the Library</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="libraryTidy"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /library/tidy</code></pre></div>
+    <div class="method-summary">Tidy Library (<span class="nickname">libraryTidy</span>)</div>
+    
+    <div class="method-notes">Routine tidy of the library, removing unused files.</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="libraryEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /library/{mediaId}</code></pre></div>
+    <div class="method-summary">Edit Media (<span class="nickname">libraryEdit</span>)</div>
+    
+    <div class="method-notes">Edit a Media Item in the Library</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">mediaId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Media ID to Edit </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Media</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="libraryDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /library/{mediaId}</code></pre></div>
+    <div class="method-summary">Delete Media (<span class="nickname">libraryDelete</span>)</div>
+    
+    <div class="method-notes">Delete Media from the Library</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">mediaId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Media ID to Delete </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="playlistLibraryAssign"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /playlist/library/assign/{playlistId}</code></pre></div>
+    <div class="method-summary">Assign Library Items (<span class="nickname">playlistLibraryAssign</span>)</div>
+    
+    <div class="method-notes">Assign Media from the Library to this Playlist</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">playlistId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Playlist ID to assign to </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Playlist</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="playlistSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /playlist/widget</code></pre></div>
+    <div class="method-summary">Playlist Widget Search (<span class="nickname">playlistSearch</span>)</div>
+    
+    <div class="method-notes">Search widgets on a Playlist</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Widget]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="regionAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /region/{layoutId}</code></pre></div>
+    <div class="method-summary">Add Region (<span class="nickname">regionAdd</span>)</div>
+    
+    <div class="method-notes">Add a Region to a Layout</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">layoutId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Layout ID to add the Region to </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Region</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="regionEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /region/{regionId}</code></pre></div>
+    <div class="method-summary">Edit Region (<span class="nickname">regionEdit</span>)</div>
+    
+    <div class="method-notes">Edit Region</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">regionId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Region ID to Edit </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Region</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="regionDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /region/{regionId}</code></pre></div>
+    <div class="method-summary">Region Delete (<span class="nickname">regionDelete</span>)</div>
+    
+    <div class="method-notes">Delete an existing region</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">regionId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Region ID to Delete </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="resolutionSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /resolution</code></pre></div>
+    <div class="method-summary">Resolution Search (<span class="nickname">resolutionSearch</span>)</div>
+    
+    <div class="method-notes">Search Resolutions this user has access to</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Resolution]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="resolutionAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /resolution</code></pre></div>
+    <div class="method-summary">Add Resolution (<span class="nickname">resolutionAdd</span>)</div>
+    
+    <div class="method-notes">Add new Resolution</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Resolution</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="resolutionEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /resolution/{resolutionId}</code></pre></div>
+    <div class="method-summary">Edit Resolution (<span class="nickname">resolutionEdit</span>)</div>
+    
+    <div class="method-notes">Edit new Resolution</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">resolutionId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Resolution ID to Edit </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Resolution</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="resolutionDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /resolution/{resolutionId}</code></pre></div>
+    <div class="method-summary">Delete Resolution (<span class="nickname">resolutionDelete</span>)</div>
+    
+    <div class="method-notes">Delete Resolution</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">resolutionId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Resolution ID to Delete </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="scheduleAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /schedule</code></pre></div>
+    <div class="method-summary">Add Schedule Event (<span class="nickname">scheduleAdd</span>)</div>
+    
+    <div class="method-notes">Add a new scheduled event for a Campaign/Layout to be shown on a Display Group/Display.</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Schedule</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="scheduleCalendarData"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /schedule/data/events</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">scheduleCalendarData</span>)</div>
+    
+    <div class="method-notes"></div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[ScheduleCalendarData]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful response
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="scheduleEdit"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="put"><code class="huge"><span class="http-method">put</span> /schedule/{eventId}</code></pre></div>
+    <div class="method-summary">Edit Schedule Event (<span class="nickname">scheduleEdit</span>)</div>
+    
+    <div class="method-notes">Edit a scheduled event for a Campaign/Layout to be shown on a Display Group/Display.</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">eventID (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Scheduled Event ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Schedule</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="scheduleDelete"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="delete"><code class="huge"><span class="http-method">delete</span> /schedule/{eventId}</code></pre></div>
+    <div class="method-summary">Delete Event (<span class="nickname">scheduleDelete</span>)</div>
+    
+    <div class="method-notes">Delete a Scheduled Event</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">eventId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Scheduled Event ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="statsSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /stats</code></pre></div>
+    <div class="method-summary"> (<span class="nickname">statsSearch</span>)</div>
+    
+    <div class="method-notes"></div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[StatisticsData]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="templateSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /template</code></pre></div>
+    <div class="method-summary">Template Search (<span class="nickname">templateSearch</span>)</div>
+    
+    <div class="method-notes">Search templates this user has access to</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Layout]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="template.add.from.layout"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /template/{layoutId}</code></pre></div>
+    <div class="method-summary">Add a template from a Layout (<span class="nickname">template.add.from.layout</span>)</div>
+    
+    <div class="method-notes">Use the provided layout as a base for a new template</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">layoutId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Layout ID </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">Layout</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="userSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /user</code></pre></div>
+    <div class="method-summary">User Search (<span class="nickname">userSearch</span>)</div>
+    
+    <div class="method-notes">Search users</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[User]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="userAdd"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /user</code></pre></div>
+    <div class="method-summary">Add User (<span class="nickname">userAdd</span>)</div>
+    
+    <div class="method-notes">Add a new User</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">User</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">201</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="userMe"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /user/me</code></pre></div>
+    <div class="method-summary">Get Me (<span class="nickname">userMe</span>)</div>
+    
+    <div class="method-notes">Get my details</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#">User</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="userPermissionsSearch"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /user/permissions/{entity}/{objectId}</code></pre></div>
+    <div class="method-summary">Permission Data (<span class="nickname">userPermissionsSearch</span>)</div>
+    
+    <div class="method-notes">Permission data for the Entity and Object Provided.</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">entity (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Entity </div><div class="param">objectId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The ID of the Object to return permissions for </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type"><a href="#array">array[Permission]</a></div>
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="userPermissionsSet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /user/permissions/{entity}/{objectId}</code></pre></div>
+    <div class="method-summary">Permission Set (<span class="nickname">userPermissionsSet</span>)</div>
+    
+    <div class="method-notes">Set Permissions to users/groups for the provided entity.</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">entity (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Entity </div><div class="param">objectId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The ID of the Object to set permissions on </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  
+  
+  
+
+  <div class="up"><a href="#__Models">Up</a></div>
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h2>Table of Contents</h2>
+  <ol>
+  
+  
+    <li><a href="#Tag"><code>Tag</code></a></li>
+  
+  
+  
+    <li><a href="#Module"><code>Module</code></a></li>
+  
+  
+  
+    <li><a href="#Display"><code>Display</code></a></li>
+  
+  
+  
+    <li><a href="#Permission"><code>Permission</code></a></li>
+  
+  
+  
+    <li><a href="#DataSetColumnType"><code>DataSetColumnType</code></a></li>
+  
+  
+  
+    <li><a href="#Campaign"><code>Campaign</code></a></li>
+  
+  
+  
+    <li><a href="#Region"><code>Region</code></a></li>
+  
+  
+  
+    <li><a href="#Layout"><code>Layout</code></a></li>
+  
+  
+  
+    <li><a href="#Page"><code>Page</code></a></li>
+  
+  
+  
+    <li><a href="#DisplayGroup"><code>DisplayGroup</code></a></li>
+  
+  
+  
+    <li><a href="#Media"><code>Media</code></a></li>
+  
+  
+  
+    <li><a href="#LogEntry"><code>LogEntry</code></a></li>
+  
+  
+  
+    <li><a href="#AuditLog"><code>AuditLog</code></a></li>
+  
+  
+  
+    <li><a href="#DataSet"><code>DataSet</code></a></li>
+  
+  
+  
+    <li><a href="#Transition"><code>Transition</code></a></li>
+  
+  
+  
+    <li><a href="#DataSetColumn"><code>DataSetColumn</code></a></li>
+  
+  
+  
+    <li><a href="#Help"><code>Help</code></a></li>
+  
+  
+  
+    <li><a href="#Schedule"><code>Schedule</code></a></li>
+  
+  
+  
+    <li><a href="#Application"><code>Application</code></a></li>
+  
+  
+  
+    <li><a href="#WidgetOption"><code>WidgetOption</code></a></li>
+  
+  
+  
+    <li><a href="#DataType"><code>DataType</code></a></li>
+  
+  
+  
+    <li><a href="#DisplayProfile"><code>DisplayProfile</code></a></li>
+  
+  
+  
+    <li><a href="#Widget"><code>Widget</code></a></li>
+  
+  
+  
+    <li><a href="#RegionOption"><code>RegionOption</code></a></li>
+  
+  
+  
+    <li><a href="#UserGroup"><code>UserGroup</code></a></li>
+  
+  
+  
+    <li><a href="#Playlist"><code>Playlist</code></a></li>
+  
+  
+  
+    <li><a href="#User"><code>User</code></a></li>
+  
+  
+  
+    <li><a href="#Resolution"><code>Resolution</code></a></li>
+  
+  
+  
+    <li><a href="#ScheduleCalendarData"><code>ScheduleCalendarData</code></a></li>
+  
+  
+  
+    <li><a href="#StatisticsData"><code>StatisticsData</code></a></li>
+  
+  
+  
+    <li><a href="#ModuleWidget"><code>ModuleWidget</code></a></li>
+  
+  
+  </ol>
+
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Tag">Tag</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">tagId </div><div class="param-desc"><span class="param-type">Integer</span> The Tag ID</div>
+      <div class="param">tag </div><div class="param-desc"><span class="param-type">String</span> The Tag Name</div>
+      <div class="param">layoutIds </div><div class="param-desc"><span class="param-type">array[Integer]</span> An array of layoutIDs with this Tag</div>
+      <div class="param">mediaIds </div><div class="param-desc"><span class="param-type">array[Integer]</span> An array of mediaIds with this Tag</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Module">Module</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">moduleId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Module</div>
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> Module Name</div>
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> Description of the Module</div>
+      <div class="param">validExtensions </div><div class="param-desc"><span class="param-type">String</span> A comma separated list of Valid Extensions</div>
+      <div class="param">imageUri </div><div class="param-desc"><span class="param-type">String</span> The file uri of an image to represent this Module</div>
+      <div class="param">type </div><div class="param-desc"><span class="param-type">String</span> The type code for this module</div>
+      <div class="param">enabled </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this module is enabled</div>
+      <div class="param">regionSpecific </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this module is specific to a Layout or can be uploaded to the Library</div>
+      <div class="param">previewEnabled </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether the Layout designer should render a preview of this module</div>
+      <div class="param">assignable </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether the module is assignable to a Layout</div>
+      <div class="param">renderAs </div><div class="param-desc"><span class="param-type">String</span> A flag indicating whether the module should be rendered natively by the Player or via the CMS (native|html)</div>
+      <div class="param">settings </div><div class="param-desc"><span class="param-type">array[String]</span> An array of additional module specific settings</div>
+      <div class="param">schemaVersion </div><div class="param-desc"><span class="param-type">Integer</span> The schema version of the module</div>
+      <div class="param">class </div><div class="param-desc"><span class="param-type">String</span> Class Name including namespace</div>
+      <div class="param">viewPath </div><div class="param-desc"><span class="param-type">String</span> The Twig View path for module specific templates</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Display">Display</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">displayId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Display</div>
+      <div class="param">isAuditing </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this Display is recording Auditing Information from XMDS</div>
+      <div class="param">display </div><div class="param-desc"><span class="param-type">String</span> The Name of this Display</div>
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The Description of this Display</div>
+      <div class="param">defaultLayoutId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the Default Layout</div>
+      <div class="param">license </div><div class="param-desc"><span class="param-type">String</span> The Display Unique Identifier also called hardware key</div>
+      <div class="param">licensed </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this Display is licensed or not</div>
+      <div class="param">loggedIn </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this Display is currently logged in</div>
+      <div class="param">lastAccessed </div><div class="param-desc"><span class="param-type">Integer</span> A timestamp in CMS time for the last time the Display accessed XMDS</div>
+      <div class="param">incSchedule </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether the default layout is interleaved with the Schedule</div>
+      <div class="param">emailAlert </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether the Display will send email alerts.</div>
+      <div class="param">alertTimeout </div><div class="param-desc"><span class="param-type">Integer</span> A timeout in seconds for the Display to send email alerts.</div>
+      <div class="param">clientAddress </div><div class="param-desc"><span class="param-type">String</span> The MAC Address of the Display</div>
+      <div class="param">mediaInventoryStatus </div><div class="param-desc"><span class="param-type">Integer</span> The media inventory status of the Display</div>
+      <div class="param">macAddress </div><div class="param-desc"><span class="param-type">String</span> The current Mac Address of the Player</div>
+      <div class="param">lastChanged </div><div class="param-desc"><span class="param-type">Integer</span> A timestamp indicating the last time the Mac Address changed</div>
+      <div class="param">numberOfMacAddressChanges </div><div class="param-desc"><span class="param-type">Integer</span> A count of Mac Address changes</div>
+      <div class="param">lastWakeOnLanCommandSent </div><div class="param-desc"><span class="param-type">Integer</span> A timestamp indicating the last time a WOL command was sent</div>
+      <div class="param">wakeOnLanEnabled </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether Wake On Lan is enabled</div>
+      <div class="param">wakeOnLanTime </div><div class="param-desc"><span class="param-type">String</span> A h:i string indicating the time to send a WOL command</div>
+      <div class="param">broadCastAddress </div><div class="param-desc"><span class="param-type">String</span> The broad cast address for this Display</div>
+      <div class="param">secureOn </div><div class="param-desc"><span class="param-type">String</span> The secureOn WOL settings for this display.</div>
+      <div class="param">cidr </div><div class="param-desc"><span class="param-type">String</span> The CIDR WOL settings for this display</div>
+      <div class="param">latitude </div><div class="param-desc"><span class="param-type">Double</span> The display Latitude</div>
+      <div class="param">longitude </div><div class="param-desc"><span class="param-type">Double</span> The display longitude</div>
+      <div class="param">versionInstructions </div><div class="param-desc"><span class="param-type">String</span> A JSON string representing the player installer that should be installed</div>
+      <div class="param">clientType </div><div class="param-desc"><span class="param-type">String</span> A string representing the player type</div>
+      <div class="param">clientVersion </div><div class="param-desc"><span class="param-type">String</span> A string representing the player version</div>
+      <div class="param">clientCode </div><div class="param-desc"><span class="param-type">Integer</span> A number representing the Player version code</div>
+      <div class="param">displayProfileId </div><div class="param-desc"><span class="param-type">Integer</span> The display settings profile ID for this Display</div>
+      <div class="param">currentLayoutId </div><div class="param-desc"><span class="param-type">Integer</span> The current layout ID reported via XMDS</div>
+      <div class="param">screenShotRequested </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating that a screen shot should be taken by the Player</div>
+      <div class="param">storageAvailableSpace </div><div class="param-desc"><span class="param-type">Integer</span> The number of bytes of storage available on the device.</div>
+      <div class="param">storageTotalSpace </div><div class="param-desc"><span class="param-type">Integer</span> The number of bytes of storage in total on the device</div>
+      <div class="param">displayGroupId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the Display Group for this Device</div>
+      <div class="param">currentLayout </div><div class="param-desc"><span class="param-type">String</span> The current layout</div>
+      <div class="param">defaultLayout </div><div class="param-desc"><span class="param-type">String</span> The default layout</div>
+      <div class="param">displayGroups </div><div class="param-desc"><span class="param-type">array[DisplayGroup]</span> The Display Groups this Display belongs to</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Permission">Permission</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">permissionId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Permission Record</div>
+      <div class="param">entityId </div><div class="param-desc"><span class="param-type">Integer</span> The Entity ID that this Permission refers to</div>
+      <div class="param">groupId </div><div class="param-desc"><span class="param-type">Integer</span> The User Group ID that this permission refers to</div>
+      <div class="param">objectId </div><div class="param-desc"><span class="param-type">Integer</span> The object ID that this permission refers to</div>
+      <div class="param">isUser </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether the groupId refers to a user specific group</div>
+      <div class="param">entity </div><div class="param-desc"><span class="param-type">String</span> The entity name that this refers to</div>
+      <div class="param">objectIdString </div><div class="param-desc"><span class="param-type">String</span> Legacy for when the Object ID is a string</div>
+      <div class="param">group </div><div class="param-desc"><span class="param-type">String</span> The group name that this refers to</div>
+      <div class="param">view </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether view permission is granted</div>
+      <div class="param">edit </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether edit permission is granted</div>
+      <div class="param">delete </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether delete permission is granted</div>
+      <div class="param">modifyPermissions </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether modify permission permission is granted.</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DataSetColumnType">DataSetColumnType</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">dataSetColumnTypeId </div><div class="param-desc"><span class="param-type">Integer</span> The ID for this DataSetColumnType</div>
+      <div class="param">dataSetColumnType </div><div class="param-desc"><span class="param-type">String</span> The name for this DataSetColumnType</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Campaign">Campaign</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">campaignId </div><div class="param-desc"><span class="param-type">Integer</span> The Campaign Id</div>
+      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the User that owns this Campaign</div>
+      <div class="param">campaign </div><div class="param-desc"><span class="param-type">String</span> The name of the Campaign</div>
+      <div class="param">isLayoutSpecific </div><div class="param-desc"><span class="param-type">Integer</span> A 0|1 flag to indicate whether this is a Layout specific Campaign or not.</div>
+      <div class="param">numberLayouts </div><div class="param-desc"><span class="param-type">Integer</span> The number of Layouts associated with this Campaign</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Region">Region</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">regionId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this region</div>
+      <div class="param">layoutId </div><div class="param-desc"><span class="param-type">Integer</span> The Layout ID this region belongs to</div>
+      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the User that owns this Region</div>
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> The name of this Region</div>
+      <div class="param">width </div><div class="param-desc"><span class="param-type">Double</span> Width of the region</div>
+      <div class="param">height </div><div class="param-desc"><span class="param-type">Double</span> Height of the Region</div>
+      <div class="param">top </div><div class="param-desc"><span class="param-type">Double</span> The top coordinate of the Region</div>
+      <div class="param">left </div><div class="param-desc"><span class="param-type">Double</span> The left coordinate of the Region</div>
+      <div class="param">zIndex </div><div class="param-desc"><span class="param-type">Integer</span> The z-index of the Region to control Layering</div>
+      <div class="param">playlists </div><div class="param-desc"><span class="param-type">array[Playlist]</span> An array of Playlists assigned</div>
+      <div class="param">regionOptions </div><div class="param-desc"><span class="param-type">array[RegionOption]</span> An array of Region Options</div>
+      <div class="param">permissions </div><div class="param-desc"><span class="param-type">array[Permission]</span> An array of Permissions</div>
+      <div class="param">displayOrder </div><div class="param-desc"><span class="param-type">Integer</span> When linked from a Playlist, what is the display order of that link</div>
+      <div class="param">duration </div><div class="param-desc"><span class="param-type">Integer</span> A read-only estimate of this Regions&#39;s total duration in seconds. This is valid when the parent layout status is 1 or 2.</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Layout">Layout</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">layoutId </div><div class="param-desc"><span class="param-type">Integer</span> The layoutId</div>
+      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the Layout Owner</div>
+      <div class="param">campaignId </div><div class="param-desc"><span class="param-type">Integer</span> The id of the Layout&#39;s dedicated Campaign</div>
+      <div class="param">backgroundImageId </div><div class="param-desc"><span class="param-type">Integer</span> The id of the image media set as the background</div>
+      <div class="param">schemaVersion </div><div class="param-desc"><span class="param-type">Integer</span> The XLF schema version</div>
+      <div class="param">layout </div><div class="param-desc"><span class="param-type">String</span> The name of the Layout</div>
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The description of the Layout</div>
+      <div class="param">backgroundColor </div><div class="param-desc"><span class="param-type">String</span> A HEX string representing the Layout background color</div>
+      <div class="param">createdDt </div><div class="param-desc"><span class="param-type">String</span> The datetime the Layout was created</div>
+      <div class="param">modifiedDt </div><div class="param-desc"><span class="param-type">String</span> The datetime the Layout was last modified</div>
+      <div class="param">status </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating the Layout status</div>
+      <div class="param">retired </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether the Layout is retired</div>
+      <div class="param">backgroundzIndex </div><div class="param-desc"><span class="param-type">Integer</span> The Layer that the background should occupy</div>
+      <div class="param">width </div><div class="param-desc"><span class="param-type">Double</span> The Layout Width</div>
+      <div class="param">height </div><div class="param-desc"><span class="param-type">Double</span> The Layout Height</div>
+      <div class="param">displayOrder </div><div class="param-desc"><span class="param-type">Integer</span> If this Layout has been requested by Campaign, then this is the display order of the Layout within the Campaign</div>
+      <div class="param">duration </div><div class="param-desc"><span class="param-type">Integer</span> A read-only estimate of this Layout&#39;s total duration in seconds. This is equal to the longest region duration and is valid when the layout status is 1 or 2.</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Page">Page</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">pageId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the Page</div>
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> A code name for the page</div>
+      <div class="param">title </div><div class="param-desc"><span class="param-type">String</span> A user friendly title for this page</div>
+      <div class="param">asHome </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating if the page can be used as a homepage</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DisplayGroup">DisplayGroup</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">displayGroupId </div><div class="param-desc"><span class="param-type">Integer</span> The displayGroup Id</div>
+      <div class="param">displayGroup </div><div class="param-desc"><span class="param-type">String</span> The displayGroup Name</div>
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The displayGroup Description</div>
+      <div class="param">isDisplaySpecific </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this displayGroup is a single display displayGroup</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Media">Media</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">mediaId </div><div class="param-desc"><span class="param-type">Integer</span> The Media ID</div>
+      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the User that owns this Media</div>
+      <div class="param">parentId </div><div class="param-desc"><span class="param-type">Integer</span> The Parent ID of this Media if it has been revised</div>
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> The Name of this Media</div>
+      <div class="param">mediaType </div><div class="param-desc"><span class="param-type">Integer</span> The module type of this Media</div>
+      <div class="param">storedAs </div><div class="param-desc"><span class="param-type">String</span> The file name of the media as stored in the library</div>
+      <div class="param">fileName </div><div class="param-desc"><span class="param-type">String</span> The original file name as it was uploaded</div>
+      <div class="param">tags </div><div class="param-desc"><span class="param-type">array[Tag]</span> Tags associated with this Media</div>
+      <div class="param">fileSize </div><div class="param-desc"><span class="param-type">Integer</span> The file size in bytes</div>
+      <div class="param">duration </div><div class="param-desc"><span class="param-type">Integer</span> The duration to use when assigning this media to a Layout widget</div>
+      <div class="param">valid </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this media is valid.</div>
+      <div class="param">moduleSystemFile </div><div class="param-desc"><span class="param-type">Boolean</span> Flag indicating whether this media is a system file or not</div>
+      <div class="param">expires </div><div class="param-desc"><span class="param-type">Integer</span> Timestamp indicating when this media should expire</div>
+      <div class="param">retired </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this media is retired</div>
+      <div class="param">isEdited </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this media has been edited and replaced with a newer file</div>
+      <div class="param">md5 </div><div class="param-desc"><span class="param-type">String</span> A MD5 checksum of the stored media file</div>
+      <div class="param">owner </div><div class="param-desc"><span class="param-type">String</span> The username of the User that owns this media</div>
+      <div class="param">groupsWithPermissions </div><div class="param-desc"><span class="param-type">String</span> A comma separated list of groups/users with permissions to this Media</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="LogEntry">LogEntry</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">logId </div><div class="param-desc"><span class="param-type">Integer</span> The Log ID</div>
+      <div class="param">runNo </div><div class="param-desc"><span class="param-type">String</span> A unique run number for a set of Log Messages.</div>
+      <div class="param">logDate </div><div class="param-desc"><span class="param-type">Integer</span> A timestamp representing the CMS date this log message occured</div>
+      <div class="param">channel </div><div class="param-desc"><span class="param-type">String</span> The Channel that generated this message. WEB/API/MAINT/TEST</div>
+      <div class="param">page </div><div class="param-desc"><span class="param-type">String</span> The requested route</div>
+      <div class="param">function </div><div class="param-desc"><span class="param-type">String</span> The request method, GET/POST/PUT/DELETE</div>
+      <div class="param">message </div><div class="param-desc"><span class="param-type">String</span> The log message</div>
+      <div class="param">displayId </div><div class="param-desc"><span class="param-type">Integer</span> The display ID this message relates to or NULL for CMS</div>
+      <div class="param">type </div><div class="param-desc"><span class="param-type">String</span> The Log Level</div>
+      <div class="param">display </div><div class="param-desc"><span class="param-type">String</span> The display this message relates to or CMS for CMS.</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="AuditLog">AuditLog</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">logId </div><div class="param-desc"><span class="param-type">Integer</span> The Log Id</div>
+      <div class="param">logDate </div><div class="param-desc"><span class="param-type">Integer</span> The Log Date</div>
+      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the User that took this action</div>
+      <div class="param">message </div><div class="param-desc"><span class="param-type">String</span> Message describing the action taken</div>
+      <div class="param">entity </div><div class="param-desc"><span class="param-type">String</span> The effected entity</div>
+      <div class="param">entityId </div><div class="param-desc"><span class="param-type">Integer</span> The effected entityId</div>
+      <div class="param">objectAfter </div><div class="param-desc"><span class="param-type">String</span> A JSON representation of the object after it was changed</div>
+      <div class="param">userName </div><div class="param-desc"><span class="param-type">String</span> The User Name of the User that took this action</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DataSet">DataSet</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">dataSetId </div><div class="param-desc"><span class="param-type">Integer</span> The dataSetId</div>
+      <div class="param">dataSet </div><div class="param-desc"><span class="param-type">String</span> The dataSet Name</div>
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> The dataSet description</div>
+      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the User that owns this DataSet</div>
+      <div class="param">lastDataEdit </div><div class="param-desc"><span class="param-type">Integer</span> Timestamp indicating the date/time this DataSet was edited last</div>
+      <div class="param">owner </div><div class="param-desc"><span class="param-type">String</span> The user name of the User that owns this DataSet</div>
+      <div class="param">groupsWithPermissions </div><div class="param-desc"><span class="param-type">String</span> A comma separated list of Groups/Users that have permission to this DataSet</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Transition">Transition</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">transitionId </div><div class="param-desc"><span class="param-type">Integer</span> The transition ID</div>
+      <div class="param">transition </div><div class="param-desc"><span class="param-type">String</span> The transition name</div>
+      <div class="param">code </div><div class="param-desc"><span class="param-type">String</span> Code for transition</div>
+      <div class="param">hasDirection </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this is a directional transition</div>
+      <div class="param">hasDuration </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this transition has a duration option</div>
+      <div class="param">availableAsIn </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this transition should be available for IN assignments</div>
+      <div class="param">availableAsOut </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this transition should be available for OUT assignments</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DataSetColumn">DataSetColumn</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">dataSetColumnId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this DataSetColumn</div>
+      <div class="param">dataSetId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the DataSet that this Column belongs to</div>
+      <div class="param">heading </div><div class="param-desc"><span class="param-type">String</span> The Column Heading</div>
+      <div class="param">dataTypeId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the DataType for this Column</div>
+      <div class="param">dataSetColumnTypeId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the ColumnType for this Column</div>
+      <div class="param">listContent </div><div class="param-desc"><span class="param-type">String</span> Comma separated list of valid content for drop down columns</div>
+      <div class="param">columnOrder </div><div class="param-desc"><span class="param-type">Integer</span> The order this column should be displayed</div>
+      <div class="param">formula </div><div class="param-desc"><span class="param-type">String</span> A MySQL formula for this column</div>
+      <div class="param">dataType </div><div class="param-desc"><span class="param-type">String</span> The data type for this Column</div>
+      <div class="param">dataSetColumnType </div><div class="param-desc"><span class="param-type">String</span> The column type for this Column</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Help">Help</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">helpId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Help Record</div>
+      <div class="param">topic </div><div class="param-desc"><span class="param-type">String</span> The topic for this Help Record</div>
+      <div class="param">category </div><div class="param-desc"><span class="param-type">String</span> The Category for this Help Record</div>
+      <div class="param">link </div><div class="param-desc"><span class="param-type">String</span> The Link to the Manual for this Help Record</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Schedule">Schedule</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">eventId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Event</div>
+      <div class="param">campaignId </div><div class="param-desc"><span class="param-type">Integer</span> The CampaignID this event is for</div>
+      <div class="param">displayGroups </div><div class="param-desc"><span class="param-type">array[DisplayGroup]</span> Display Groups assigned to this Scheduled Event.</div>
+      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The userId that owns this event.</div>
+      <div class="param">fromDt </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp representing the from date of this event in CMS time.</div>
+      <div class="param">toDt </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp representing the to date of this event in CMS time.</div>
+      <div class="param">isPriority </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether the event should be considered priority or not.</div>
+      <div class="param">displayOrder </div><div class="param-desc"><span class="param-type">Integer</span> The display order for this event.</div>
+      <div class="param">recurrenceType </div><div class="param-desc"><span class="param-type">String</span> If this event recurs when what is the recurrence period.</div>
+      <div class="param">recurrenceDetail </div><div class="param-desc"><span class="param-type">Integer</span> If this event recurs when what is the recurrence frequency.</div>
+      <div class="param">recurrenceRange </div><div class="param-desc"><span class="param-type">Integer</span> A Unix timestamp indicating the end time of the recurring events.</div>
+      <div class="param">campaign </div><div class="param-desc"><span class="param-type">String</span> The Campaign/Layout Name</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Application">Application</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">key </div><div class="param-desc"><span class="param-type">String</span> Application Key</div>
+      <div class="param">secret </div><div class="param-desc"><span class="param-type">String</span> Private Secret Key</div>
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> Application Name</div>
+      <div class="param">expires </div><div class="param-desc"><span class="param-type">Integer</span> Application Session Expiry</div>
+      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The Owner of this Application</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="WidgetOption">WidgetOption</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">widgetId </div><div class="param-desc"><span class="param-type">Integer</span> The Widget ID that this Option belongs to</div>
+      <div class="param">type </div><div class="param-desc"><span class="param-type">String</span> The option type, either attrib or raw</div>
+      <div class="param">option </div><div class="param-desc"><span class="param-type">String</span> The option name</div>
+      <div class="param">value </div><div class="param-desc"><span class="param-type">String</span> The option value</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DataType">DataType</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">dataTypeId </div><div class="param-desc"><span class="param-type">Integer</span> The ID for this DataType</div>
+      <div class="param">dataType </div><div class="param-desc"><span class="param-type">String</span> The Name for this DataType</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="DisplayProfile">DisplayProfile</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">displayProfileId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Display Profile</div>
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> The name of this Display Profile</div>
+      <div class="param">type </div><div class="param-desc"><span class="param-type">String</span> The player type that this Display Profile is for</div>
+      <div class="param">config </div><div class="param-desc"><span class="param-type">array[String]</span> The configuration options for this Profile</div>
+      <div class="param">isDefault </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating if this profile should be used as the Default for the client type</div>
+      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the User that owns this profile</div>
+      <div class="param">configDefault </div><div class="param-desc"><span class="param-type">array[String]</span> The default configuration options for this Profile</div>
+      <div class="param">configTabs </div><div class="param-desc"><span class="param-type">array[String]</span> Array of tab names to logically group the configuration options</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Widget">Widget</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">widgetId </div><div class="param-desc"><span class="param-type">Integer</span> The Widget ID</div>
+      <div class="param">playlistId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the Playlist this Widget belongs to</div>
+      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of the User that owns this Widget</div>
+      <div class="param">type </div><div class="param-desc"><span class="param-type">String</span> The Module Type Code</div>
+      <div class="param">duration </div><div class="param-desc"><span class="param-type">Integer</span> The duration in seconds this widget should be shown</div>
+      <div class="param">displayOrder </div><div class="param-desc"><span class="param-type">Integer</span> The display order of this widget</div>
+      <div class="param">widgetOptions </div><div class="param-desc"><span class="param-type">array[WidgetOption]</span> An array of Widget Options</div>
+      <div class="param">mediaIds </div><div class="param-desc"><span class="param-type">array[Integer]</span> An array of MediaIds this widget is linked to</div>
+      <div class="param">permissions </div><div class="param-desc"><span class="param-type">array[Permission]</span> An array of permissions for this widget</div>
+      <div class="param">module </div><div class="param-desc"><span class="param-type">ModuleWidget</span> The Module Object for this Widget</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="RegionOption">RegionOption</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">regionId </div><div class="param-desc"><span class="param-type">Integer</span> The regionId that this Option applies to</div>
+      <div class="param">option </div><div class="param-desc"><span class="param-type">String</span> The option name</div>
+      <div class="param">value </div><div class="param-desc"><span class="param-type">String</span> The option value</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="UserGroup">UserGroup</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">groupId </div><div class="param-desc"><span class="param-type">Integer</span> The Group ID</div>
+      <div class="param">group </div><div class="param-desc"><span class="param-type">String</span> The group name</div>
+      <div class="param">isUserSpecific </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this is a user specific group or not</div>
+      <div class="param">isEveryone </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating the special everyone group</div>
+      <div class="param">libraryQuota </div><div class="param-desc"><span class="param-type">Integer</span> This users library quota in bytes. 0 = unlimited</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Playlist">Playlist</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">playlistId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Playlist</div>
+      <div class="param">ownerId </div><div class="param-desc"><span class="param-type">Integer</span> The userId of the User that owns this Playlist</div>
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> The Name of the Playlist</div>
+      <div class="param">tags </div><div class="param-desc"><span class="param-type">array[Tag]</span> An array of Tags</div>
+      <div class="param">regions </div><div class="param-desc"><span class="param-type">array[Region]</span> An array of Regions this Playlist is assigned to</div>
+      <div class="param">widgets </div><div class="param-desc"><span class="param-type">array[Widget]</span> An array of Widgets assigned to this Playlist</div>
+      <div class="param">permissions </div><div class="param-desc"><span class="param-type">array[Permission]</span> An array of permissions</div>
+      <div class="param">displayOrder </div><div class="param-desc"><span class="param-type">Integer</span> The display order of the Playlist when assigned to a Region</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="User">User</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this User</div>
+      <div class="param">userName </div><div class="param-desc"><span class="param-type">String</span> The user name</div>
+      <div class="param">userTypeId </div><div class="param-desc"><span class="param-type">Integer</span> The user type ID</div>
+      <div class="param">loggedIn </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether this user is logged in or not</div>
+      <div class="param">email </div><div class="param-desc"><span class="param-type">String</span> Email address of the user used for email alerts</div>
+      <div class="param">homePageId </div><div class="param-desc"><span class="param-type">Integer</span> The pageId of the Homepage for this User</div>
+      <div class="param">lastAccessed </div><div class="param-desc"><span class="param-type">Integer</span> A timestamp indicating the time the user last logged into the CMS</div>
+      <div class="param">newUserWizard </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this user has see the new user wizard</div>
+      <div class="param">retired </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether the user is retired</div>
+      <div class="param">groupId </div><div class="param-desc"><span class="param-type">Integer</span> The users user group ID</div>
+      <div class="param">group </div><div class="param-desc"><span class="param-type">Integer</span> The users group name</div>
+      <div class="param">libraryQuota </div><div class="param-desc"><span class="param-type">Integer</span> The users library quota in bytes</div>
+      <div class="param">groups </div><div class="param-desc"><span class="param-type">array[UserGroup]</span> An array of user groups this user is assigned to</div>
+      <div class="param">campaigns </div><div class="param-desc"><span class="param-type">array[Campaign]</span> An array of Campaigns for this User</div>
+      <div class="param">layouts </div><div class="param-desc"><span class="param-type">array[Layout]</span> An array of Layouts for this User</div>
+      <div class="param">media </div><div class="param-desc"><span class="param-type">array[Media]</span> An array of Media for this user</div>
+      <div class="param">events </div><div class="param-desc"><span class="param-type">array[Schedule]</span> An array of Scheduled Events for this User</div>
+      <div class="param">homePage </div><div class="param-desc"><span class="param-type">String</span> The name of home page</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Resolution">Resolution</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">resolutionId </div><div class="param-desc"><span class="param-type">Integer</span> The ID of this Resolution</div>
+      <div class="param">resolution </div><div class="param-desc"><span class="param-type">String</span> The resolution name</div>
+      <div class="param">width </div><div class="param-desc"><span class="param-type">Double</span> The display width of the resolution</div>
+      <div class="param">height </div><div class="param-desc"><span class="param-type">Double</span> The display height of the resolution</div>
+      <div class="param">designerWidth </div><div class="param-desc"><span class="param-type">Double</span> The designer width of the resolution</div>
+      <div class="param">designerHeight </div><div class="param-desc"><span class="param-type">Double</span> The designer height of the resolution</div>
+      <div class="param">version </div><div class="param-desc"><span class="param-type">Integer</span> The layout schema version</div>
+      <div class="param">enabled </div><div class="param-desc"><span class="param-type">Integer</span> A flag indicating whether this resolution is enabled or not</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="ScheduleCalendarData">ScheduleCalendarData</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">id </div><div class="param-desc"><span class="param-type">Integer</span> Event ID</div>
+      <div class="param">title </div><div class="param-desc"><span class="param-type">String</span> Event Title</div>
+      <div class="param">event </div><div class="param-desc"><span class="param-type">Schedule</span> </div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="StatisticsData">StatisticsData</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">type </div><div class="param-desc"><span class="param-type">String</span> </div>
+      <div class="param">display </div><div class="param-desc"><span class="param-type">String</span> </div>
+      <div class="param">layout </div><div class="param-desc"><span class="param-type">String</span> </div>
+      <div class="param">media </div><div class="param-desc"><span class="param-type">String</span> </div>
+      <div class="param">numberPlays </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      <div class="param">duration </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      <div class="param">minStart </div><div class="param-desc"><span class="param-type">String</span> </div>
+      <div class="param">maxEnd </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="ModuleWidget">ModuleWidget</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">widget </div><div class="param-desc"><span class="param-type">Widget</span> The Widget</div>
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
   </body>
 </html>
