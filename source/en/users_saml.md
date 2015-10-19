@@ -33,9 +33,14 @@ $authentication = new \Xibo\Middleware\SAMLAuthentication();
 The SAML settings array contains all the necessary information for the CMS to connect and use a SAML enabled IdP. An 
 example settings file can be seen below.
 
-The workflow section of the configuration is used to determine the 
+The workflow section of the configuration is used to determine the mapping between the IdP and the CMS and whether
+the CMS allows JIT provisioning. With JIT provisioning enabled users that visit the CMS who do not currently have 
+an account are automatically created.
 
-Further explanation can be found at: https://github.com/onelogin/php-saml#settings
+If *single logout* is disabled selecting logout in the CMS won't have any effect as the user will be immediately
+logged in again on the next request.
+
+Further explanation of the SAML specific settings can be found at: https://github.com/onelogin/php-saml#settings
 
 ``` php
 $samlSettings = array (
