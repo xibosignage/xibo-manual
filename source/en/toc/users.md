@@ -3,3 +3,4 @@
 - [Types](users_user_types.html)
 - [Groups](users_groups.html)
 - [Permissions](users_permissions.html)
+- [SAML](users_saml.html)
