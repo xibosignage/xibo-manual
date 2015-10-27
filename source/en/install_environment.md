@@ -52,3 +52,28 @@ If an alias is required then the `.htaccess` file will need to be modified to in
 the alias.
 
 For example, if the alias is `/xibo` the `.htaccess` should have: `RewriteBase /xibo`.
+
+## NGINX
+A sample `nginx` config is provided below:
+
+```
+location / {
+    try_files $uri /index.php?$args;
+}
+
+location /api/authorize {
+    try_files $uri /api/authorize/index.php?args;
+}
+
+location /api {
+    try_files $uri /api/index.php?$args;
+}
+
+location /install {
+    try_files $uri /install/index.php?$args;
+}
+
+location /maint {
+    try_files $uri /maint/index.php?$args;
+}
+```
