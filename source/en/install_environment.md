@@ -23,17 +23,7 @@ If your document root is `/var/www`, copy the CMS into a different folder (for e
 
 
 ### 4. Use an Alias
-
-
-
-## URL Rewriting
-The CMS should be run on a web server that supports URL rewriting. If this is not possible you will need to access the application by specifying `index.php` in the URL.
-
-A `.htaccess` file has been provided in `web/.htaccess`. This file assumes that the CMS is being served from the web server document root or from a virtual host.
-
-
-## Using an Alias
-The CMS can be run under an alias:
+The CMS can be run under an alias - this is an example for Apache:
 
 ```
 Alias /xibo "/home/user/xibo-cms/web"
@@ -47,13 +37,18 @@ Alias /xibo "/home/user/xibo-cms/web"
 </Directory>
 ```
 
+## URL Rewriting
+The CMS should be run on a web server that supports URL rewriting. If this is not possible you will need to access the application by specifying `index.php` in the URL.
+
+A `.htaccess` file has been provided in `web/.htaccess`. This file assumes that the CMS is being served from the web server document root or from a virtual host.
+
 ### Rewrite Rules with an Alias
 If an alias is required then the `.htaccess` file will need to be modified to include a `RewriteBase` directive that matches
 the alias.
 
 For example, if the alias is `/xibo` the `.htaccess` should have: `RewriteBase /xibo`.
 
-## NGINX
+## nginx
 A sample `nginx` config is provided below:
 
 ```

@@ -88,8 +88,7 @@ validating against these limits, and when they are exceeded will prevent the upl
 However these two settings are currently not available through the user interface; Only the statistical data is shown in Content page
 
 ### Maintenance
-
-Maintenance is a very import part of the system and therefore is covered in its [own section](index.php?toc=getting_started&p=admin/settings_maintenance).
+Maintenance is a very import part of the system and therefore is covered in its [own section](cms_maintenance.html).
 
 ## Other functions
 
