@@ -8,3 +8,4 @@
 - [Data Model](advanced_database_model.html)
 - [Ubuntu Client Binary Dependency Build Instructions](advanced_pyclient_libbrowsernode_build.html)
 - [Date Format](advanced_dateFormat.html)
+- [Logging](advanced_logging.html)

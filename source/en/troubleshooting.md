@@ -12,3 +12,11 @@ General questions are also welcome!
 #FAQ and Guides
 There are lots of [FAQ](https://community.xibo.org.uk/c/faq) and [Guides](https://community.xibo.org.uk/c/guides) on our [Community Forum](https://community.xibo.org.uk), please visit us.
 </nonwhite>
+
+
+## Logging
+The CMS has a central "error log" which collects messages from all components in the platform - CMS, Players, API, 
+ Maintenance, etc. Providing relevant information from the log is often the key to a support representative finding the
+ solution to any problems.
+ 
+CMS logging can be provided from the Fault page, but for a better understanding of Log content see [understanding the log](advanced_logging.html).

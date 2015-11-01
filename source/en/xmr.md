@@ -13,8 +13,8 @@ XMR for short, the message relay is responsible for **pushing** messages from th
 XMR uses a technology called ZeroMQ which must be available on your web server before it will function. If not enabled
  the fault page will show a warning.
 
-** [[PRODUCTNAME]] will function without XMR running, but will not run any player actions. Scheduling and Layouts will
- function as normal. **
+**[[PRODUCTNAME]] will function without XMR running, but will not run any player actions. Scheduling and Layouts will
+ function as normal.**
 
 ## Mile-high Overview
 XMR is a message queuing application and comes in two parts, one handles the CMS -> XMR communication and the other the 

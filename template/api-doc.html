@@ -245,9 +245,19 @@ code {
   
   <li><a href="#displayGroupDelete"><code><span class="http-method">delete</span> /displaygroup/{displayGroupId}</code></a></li>
   
+  <li><a href="#displayGroupActionChangeLayout"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/action/changeLayout</code></a></li>
+  
+  <li><a href="#displayGroupActionCollectNow"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/action/collectNow</code></a></li>
+  
+  <li><a href="#displayGroupActionRevertToSchedule"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/action/revertToSchedule</code></a></li>
+  
   <li><a href="#displayGroupDisplayAssign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/display/assign</code></a></li>
   
   <li><a href="#displayGroupDisplayUnassign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/display/unassign</code></a></li>
+  
+  <li><a href="#displayGroupLayoutsAssign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/layout/assign</code></a></li>
+  
+  <li><a href="#displayGroupLayoutUnassign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/layout/unassign</code></a></li>
   
   <li><a href="#displayGroupMediaAssign"><code><span class="http-method">post</span> /displaygroup/{displayGroupId}/media/assign</code></a></li>
   
@@ -1643,6 +1653,147 @@ code {
   </div> <!-- method -->
   <hr/>
   
+  <div class="method"><a name="displayGroupActionChangeLayout"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/action/changeLayout</code></pre></div>
+    <div class="method-summary">Action: Change Layout (<span class="nickname">displayGroupActionChangeLayout</span>)</div>
+    
+    <div class="method-notes">Send the change layout action to this DisplayGroup</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group Id </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupActionCollectNow"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/action/collectNow</code></pre></div>
+    <div class="method-summary">Action: Collect Now (<span class="nickname">displayGroupActionCollectNow</span>)</div>
+    
+    <div class="method-notes">Send the collect now action to this DisplayGroup</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The display group id </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupActionRevertToSchedule"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/action/revertToSchedule</code></pre></div>
+    <div class="method-summary">Action: Revert to Schedule (<span class="nickname">displayGroupActionRevertToSchedule</span>)</div>
+    
+    <div class="method-notes">Send the revert to schedule action to this DisplayGroup</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The display group id </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
   <div class="method"><a name="displayGroupDisplayAssign"/>
     <div class="method-path">
     <a class="up" href="#__Methods">Up</a>
@@ -1697,6 +1848,100 @@ code {
     <div class="method-summary">Unassigns one or more Displays to a Display Group (<span class="nickname">displayGroupDisplayUnassign</span>)</div>
     
     <div class="method-notes">Removes the provided Displays from the Display Group</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group to unassign from </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupLayoutsAssign"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/layout/assign</code></pre></div>
+    <div class="method-summary">Assign one or more Layouts items to a Display Group (<span class="nickname">displayGroupLayoutsAssign</span>)</div>
+    
+    <div class="method-notes">Adds the provided Layouts to the Display Group</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">displayGroupId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; The Display Group to assign to </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- Remove Return type... unclear where this comes from;
+         for our swagger.json files, it is always empty and there is no boolean guard or hasReturnType
+         do we end up with a heading but not content
+
+    
+
+    Todo: process Response Object and its headers, schema, examples
+    -->
+
+    
+
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">204</h4>
+    successful operation
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="displayGroupLayoutUnassign"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /displaygroup/{displayGroupId}/layout/unassign</code></pre></div>
+    <div class="method-summary">Unassign one or more Layout items from a Display Group (<span class="nickname">displayGroupLayoutUnassign</span>)</div>
+    
+    <div class="method-notes">Removes the provided from the Display Group</div>
 
     
     <h3 class="field-label">Path parameters</h3>
@@ -3793,6 +4038,8 @@ code {
       <div class="param">currentLayout </div><div class="param-desc"><span class="param-type">String</span> The current layout</div>
       <div class="param">defaultLayout </div><div class="param-desc"><span class="param-type">String</span> The default layout</div>
       <div class="param">displayGroups </div><div class="param-desc"><span class="param-type">array[DisplayGroup]</span> The Display Groups this Display belongs to</div>
+      <div class="param">xmrChannel </div><div class="param-desc"><span class="param-type">String</span> The Player Subscription Channel</div>
+      <div class="param">xmrPubKey </div><div class="param-desc"><span class="param-type">String</span> The Player Public Key</div>
       
     </div>  <!-- field-items -->
   </div>
@@ -4076,6 +4323,8 @@ code {
       <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> Application Name</div>
       <div class="param">expires </div><div class="param-desc"><span class="param-type">Integer</span> Application Session Expiry</div>
       <div class="param">userId </div><div class="param-desc"><span class="param-type">Integer</span> The Owner of this Application</div>
+      <div class="param">authCode </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether to allow the authorizationCode Grant Type</div>
+      <div class="param">clientCredentials </div><div class="param-desc"><span class="param-type">Integer</span> Flag indicating whether to allow the clientCredentials Grant Type</div>
       
     </div>  <!-- field-items -->
   </div>
