@@ -29,12 +29,14 @@ The CMS is configured with a `secret CMS key` which is a required parameter for 
 
 
 ## Versioning
-The API provides two schema versions:
+The API provides various schema versions:
 
  - v3 - for use by players prior to 1.7
- - v4 - for use by players 1.7+
+ - v4 - for use by players 1.7
+ - v5 - for use by players 1.8+
 
-A `v3` player will only be allowed to connect if it has already been registered to the CMS. This encourages new players to be commissioned with the latest versions.
+A `v3` player will only be allowed to connect if it has already been registered to the CMS. This encourages new players 
+ to be commissioned with the latest versions. v5 will allow v4 registrations but will prevent access to [XMR](xmr.html).
 
 # Methods
 Information exchanged between the Player and CMS is driven by the Player connecting to the CMS and calling the appropriate method.
@@ -83,8 +85,8 @@ The Player can submit a screen shot of the current output to the CMS.
 #### Notify Status
 The player should notify the status when the storage usage significantly changes and when a new layout is shown (if notify current layout is set).
 
-## Definition v4
-The definition of the SOAP service can be automatically consumed from the WSDL at `//xmds.php?v=4&wsdl`.
+## Definition v4/v5
+The definition of the SOAP service can be automatically consumed from the WSDL at `//xmds.php?v=4&wsdl` or `//xmds.php?v=5&wsdl`.
 
 There are 2 common parameters to all Method calls:
 
@@ -104,6 +106,11 @@ It takes the following parameters:
  -  clientCode
  -  operatingSystem
  -  macAddress
+ 
+V5 introduced 2 additional parameters:
+
+ - xmrChannel
+ - xmrPubKey
 
 It returns the following XML string:
 
@@ -111,12 +118,30 @@ It returns the following XML string:
 <?xml version="1.0" encoding="UTF-8"?>
 <display date="2015-01-01 00:00:00" timezone="Europe/London" status="0" code="READY" message="Display is active and ready to start." version_instructions="">
    <settingsNode>One or more settings nodes</settingsNode>
+   <commands>
+        <commandName>
+            <commandString></commandString>
+            <validationString></validationString>
+        </commandName>
+   </commands>
 </display>
 ```
 
 The Player should interpret the `code` attribute on the root node to see if the Display has been granted access and "licensed" with the CMS. *An administrator can licence a display by logging into the Web Portal, Editing the Display and selecting Licence = Yes*.
 
 The `settingsNodes` are dependant on the `clientType` provided.
+
+The `<commands>` element was introduced in `v5` and contains a list of commands and their command strings. The `<commandName>` 
+ changes with each command to indicate the actual command code as registered in the CMS.
+
+#### XMR
+When connected to a `v5` CMS the player is expected to generate a RSA pub/private key and a unique channel. It is expected
+ to provide these details to the CMS on each register call.
+ 
+The CMS will use the pub key to encrypt any messages sent to the Player on the XMR Public Address. The Player should 
+ subscribe to the XMR Public Address using the Channel it sent to `RegisterDisplay`.
+
+Messages sent through XMR are encrypted using `openssl_seal` and should be decrypted accordingly.
 
 ### RequiredFiles
 The required files method returns all files needed for the Player to play its scheduled Layouts entirely offline for the quantity of time specified by the `REQUIRED_FILES_LOOKAHEAD` setting in the CMS. This setting defaults to 4 days.
@@ -222,7 +247,28 @@ It takes the following parameters:
  - serverKey
  - hardwareKey
 
-It returns XML in the following format:
+It returns XML in the following format for v5:
+
+```xml
+<schedule>
+	<default file="4">
+	    <dependents>
+	        <file>5.jpg</file>
+	    </dependents>
+	</default>
+	<layout file="5" fromdt="" todt="" scheduleid="" priority="">
+	    <dependents>
+            <file>5.jpg</file>
+        </dependents>
+	</layout>
+	<dependents>
+		<file>5.jpg</file>
+	</dependents>
+	<command code="CODE" fromdt="" todt="" />
+</schedule>
+```
+
+It returns XML in the following format for v4 and below:
 
 ```xml
 <schedule>
