@@ -264,7 +264,7 @@ It returns XML in the following format for v5:
 	<dependents>
 		<file>5.jpg</file>
 	</dependents>
-	<command code="CODE" fromdt="" todt="" />
+	<command code="CODE" date="" />
 </schedule>
 ```
 

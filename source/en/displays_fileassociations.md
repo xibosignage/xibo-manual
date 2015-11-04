@@ -1,12 +1,14 @@
 <!--toc=displays-->
-# File Associations
+# File Assignments
+Library files can be assigned directly to a display or display group so that those files are always available in the local
+ library of the player.
+ 
+Once assigned the file will be downloaded to the display at the next collection interval or if XMR is installed the file
+ will be downloaded immediately.
 
-Occasionally it may be necessary to associate a file directly with a display group or display so that the file is transferred to the display for use locally. It may also be desirable to do this without having the media file assigned to a layout.
-
-The CMS fully caters for this requirement using the File Associations functionality. This functionality enables a simple "Assign Files" menu on the Display and Display Group Administration pages.
-
-Selecting the Assign Files menu item will open a form showing all stored menu items (video, jpg, etc) which can be selected for assignment.
+Files are assigned by selecting the *Assign Files* row menu item on either the Display or Display Group page.
 
 ![Display Administration](img/displays_file_associations_form.png)
 
-Associating a file in this manner will automatically download that file to the client at the next collection interval.
+A file can be removed from the same form and will be cleaned up when the player needs space or after 30 days of that file
+ no-longer being required.
