@@ -116,7 +116,7 @@ It returns the following XML string:
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
-<display date="2015-01-01 00:00:00" timezone="Europe/London" status="0" code="READY" message="Display is active and ready to start." version_instructions="">
+<display date="2015-01-01 00:00:00" timezone="Europe/London" status="0" code="READY" message="Display is active and ready to start." version_instructions="" localDate="2015-01-01 00:00:00 +/- timezone">
    <settingsNode>One or more settings nodes</settingsNode>
    <commands>
         <commandName>
@@ -129,10 +129,13 @@ It returns the following XML string:
 
 The Player should interpret the `code` attribute on the root node to see if the Display has been granted access and "licensed" with the CMS. *An administrator can licence a display by logging into the Web Portal, Editing the Display and selecting Licence = Yes*.
 
-The `settingsNodes` are dependant on the `clientType` provided.
+The `settingsNodes` are dependent on the `clientType` provided.
 
 The `<commands>` element was introduced in `v5` and contains a list of commands and their command strings. The `<commandName>`
  changes with each command to indicate the actual command code as registered in the CMS.
+
+The `localDate` attribute is only available in CMS 1.8 and above (`v5` and `v4`) and will provide the local display date/time according to the *Display Timezone* setting
+configured in the Display Profile.
 
 #### XMR
 When connected to a `v5` CMS the player is expected to generate a RSA pub/private key and a unique channel. It is expected
