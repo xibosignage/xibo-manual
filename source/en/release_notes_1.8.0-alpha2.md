@@ -31,7 +31,7 @@ The CMS will function without `ZeroMQ` or `XMR` installed, however it is advisab
 This release contains a new upgrade application which is build into the CMS. This
 application supports upgrades from 1.7.0 (including 1.8.0-alpha).
 
-Follow the [upgrade](upgrage.html) instructions to complete the upgrade.
+Follow the [upgrade](upgrade.html) instructions to complete the upgrade.
 
 ## Help
 Please report problems with this release using the [Development Category on the Community Forum](https://community.xibo.org.uk/c/dev).
