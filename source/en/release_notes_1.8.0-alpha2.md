@@ -37,6 +37,8 @@ Follow the [upgrade](upgrage.html) instructions to complete the upgrade.
 Please report problems with this release using the [Development Category on the Community Forum](https://community.xibo.org.uk/c/dev).
 
 ## Issues addressed in this release
-This release is the first stage of the rearchitecting of Xibo. It includes a completely rewritten CMS backend and full featured API. It also lays the foundations for the Playlists functionality.
+This release adds push messaging and various actions to take advantage of the new
+ functionality. It also fixes bugs found by our early alpha testers.
 
-For a full list of bug fixes please refer to the [Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.0-alpha+is%3Aclosed).
+For a full list of enhancements and bug fixes please refer to the
+ [Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.0-alpha2+is%3Aclosed).
