@@ -4,7 +4,7 @@ The [[PRODUCTNAME]] CMS is a PHP web application and MySQL database. The PHP / M
 
 It is strongly encouraged to use a web server that allows you to copy files outside the web root and ideally modify the `DocumentRoot`.
 
-It is strongly encouraged to use a web server that supports URL rewriting which will allow the CMS to use clean, human-friendly URLs. Rewriting is enabled on the web server, we've provided some basic information on the [environment](install_environment.html). 
+It is strongly encouraged to use a web server that supports URL rewriting which will allow the CMS to use clean, human-friendly URLs. Rewriting is enabled on the web server, we've provided some basic information on the [environment](install_environment.html).
 
 ## What if I don't have a web server?
 We have provided some basic instructions for installing your own web server [here](install_environment.html). There are a number of service providers that will install [[PRODUCTNAME]] for you, or even run [[PRODUCTNAME]] on their architecture. If you are unfamiliar with web servers and just want to use the application, then a service provider solution may be preferable.
@@ -104,7 +104,7 @@ Each installation will require at least one "Super User" level Administrator to 
 ###Settings
 The next screen deals with configuring [[PRODUCTNAME]]. The first box asks for the location that [[PRODUCTNAME]] should store the media you upload. We created a folder for this earlier, so enter that folder here e.g `/home/[[PRODUCTNAME]]/library`.
 
-The next box asks for a CMS key - this key is used to authenticate Displays with the CMS and should be something obscure. 
+The next box asks for a CMS key - this key is used to authenticate Displays with the CMS and should be something obscure.
 
 The final tick box asks if it's OK to send anonymous statistics back to the [[PRODUCTNAME]] project. We would be very happy if you did!
 
@@ -114,3 +114,11 @@ The final tick box asks if it's OK to send anonymous statistics back to the [[PR
 The installation is now complete and the system is ready to log in.
 
 ![Install Complete](img/install_cms_complete.png)
+
+## XMR
+XMR is the push messaging engine in [[PRODUCTNAME]] and it is recommended to
+ have XMR running for all installations.
+
+Instructions for installing XMR can be found [here](xmr.html). If you are
+ running with [Docker](install_docker.html) then XMR is already installed for
+ you, but will need to be configured.
