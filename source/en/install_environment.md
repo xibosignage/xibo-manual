@@ -78,6 +78,11 @@ location /install {
 location /maint {
     try_files $uri /maint/index.php?$args;
 }
+
+location /maintenance {
+    try_files $uri /index.php?$args;
+}
+
 ```
 
 <a id="zeroMQ"></a>
@@ -90,19 +95,25 @@ Installation of the ZeroMQ bindings can be complicated - we've included an examp
  of installation on Ubuntu 14.04. We recommend using our Docker container for
  easy installation.
 
-### Install the ZeroMQ core
+### Install the ZeroMQ core and PHP bindings from PPA
 Installation via `apt-get`.
 
 ```bash
 sudo add-apt-repository ppa:chris-lea/zeromq
+sudo add-apt-repository ppa:alexharrington/php-zmq
 sudo apt-get update
-sudo apt-get install libzmq3-dbg libzmq3-dev libzmq3
+sudo apt-get install php5-zmq
 ```
 
-### Install the ZeroMQ PHP bindings
+### Install the ZeroMQ PHP bindings manually
+If you can't install from the PPA directly, then you can do the following to
+install the zmq extension.
+
 Installation via `PECL`.
 
 ```bash
+sudo add-apt-repository ppa:chris-lea/zeromq
+sudo apt-get install libzmq3 libzmq3-dev libzmq3-dbg pkg-config php5-dev build-essential php-pear
 sudo pecl install zmq-beta
 ```
 
