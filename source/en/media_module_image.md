@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #Image
 Images are used as foreground and background on Layouts.
 

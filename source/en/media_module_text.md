@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #Text
 Text media is entered directly on a Layout in a Region Playlist. A rich editor is provided for formatting the text for display.
 

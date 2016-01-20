@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 # Weather
 The [[PRODUCTNAME]] weather widget provides current and daily weather forecasts worldwide. It uses the [Forecast API](https://developer.forecast.io/) and needs to be authenticated before use.
 
@@ -31,11 +31,11 @@ Weather data can be added to any layout and configured to use either a provided 
 The module will also ask for a template - there are 3 provided with the application.
 
 - Current Day
-    
+
     The current days weather and temperature.
 
 - Daily
-    
+
     A 7 day forecast with a summary for each day.
 
 - Pictures
@@ -60,7 +60,7 @@ There are 3 sections that need to be provided:
     This is the repeating template that should be provided for the 7 day forecast. It will be repeated for each day and then substituted into the special [dailyForecast] tag (which should feature on the main template).
 
 3. CSS
-    
+
     This is the CSS to apply to the template structure above. It will be augmented with a colour attribute and has a special [[ICONS]] which will be replaced with the selected icon sprite (see section below).
 
 The template will be automatically scaled and should be designed for the intended output resolution.

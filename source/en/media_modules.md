@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 # Modules
 All content displayed in [[PRODUCTNAME]] is added / edited and served by a media module. There are 13 media modules to choose from and more are being added as new releases are made.
 

@@ -1,6 +1,6 @@
-<!--toc=media-->
+<!--toc=widgets-->
 # Shell Command
-The Shell Command module is used to instruct the Display to execute a command outside of the [[PRODUCTNAME]] environment, 
+The Shell Command module is used to instruct the Display to execute a command outside of the [[PRODUCTNAME]] environment,
  using the operating system shell.
 
 The Shell Command is executed when the Widget is shown on the Layout.
@@ -9,11 +9,11 @@ A Shell command can be a string which is passed directly to the shell or a [pred
  a command string is specified then an option for windows/linux is provided.
 
 - **Windows Command**
-    
+
     The Shell Command for Windows. Will be executed using `cmd.exe`.
 
 - **Linux Command**
-    
+
     The Shell Command for Linux/Android - Android players require **root access** to use shell commands.
 
 ![Shell Command Form](img/media_shellcommand_form.png)
@@ -23,7 +23,7 @@ Shell Commands do not have a duration, they are executed once and then expire au
 
 ## Usage
 A common usage of Shell Commands is to run external commands, such as volume up, based on the layout's activity.
- 
-[[PRODUCTNAME]] supplies some *helper* commands that can be used in predefined commands 
+
+[[PRODUCTNAME]] supplies some *helper* commands that can be used in predefined commands
  ([list of helpers](displays_commands.html#helpers)). In most cases a predefined command will be preferable to a command
  string specified in the Layout.

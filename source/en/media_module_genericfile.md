@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #Generic Files
 The generic file module is used to send additional files to the display client that can then be used for other purposes.
 

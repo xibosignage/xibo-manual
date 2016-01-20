@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #Clock
 The clock module is used to show an analogue, digital or flip clock set to the current time or the current time +/- an offset.
 
