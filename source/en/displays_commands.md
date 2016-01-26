@@ -97,7 +97,7 @@ The command itself is a string which gets sent over RS232 using the connection
 
 #### Android Intents
 Android display profiles can use the `intent` helper to specify an intent that should be called when the command executes.
- The format of the command is `intent|<activity>|[<extras>]`.
+ The format of the command is `intent|<type|activity,service,broadcast>|<activity>|[<extras>]`.
 
 Commands containing an intent helper are ignored in the Windows Player.
 
