@@ -10,7 +10,7 @@ This release is a bug fix release for the 1.7 stable series. If you are upgradin
 ## Requirements
 You must use the 1.7.0 or higher version of the Windows Display Player with this version of the Xibo CMS. We recommend using the 1.7.5 Windows Player release. 
 
-Xibo requires PHP 5.3.3 or higher. A full list of module requirements is presented at the point of installation.
+[[PRODUCTNAME]] requires PHP 5.3.3 or higher. A full list of module requirements is presented at the point of installation.
 
 ## Upgrading
 You should always take a backup before upgrading your Xibo CMS Installation.

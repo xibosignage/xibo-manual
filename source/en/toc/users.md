@@ -2,4 +2,5 @@
 - [Users](users_administration.html)
 - [Types](users_user_types.html)
 - [Groups](users_groups.html)
+- [Library Quota](users_library_quota.html)
 - [Permissions](users_permissions.html)
