@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #Video
 Videos uploaded to the CMS are cached for off-line playback on Displays.
 

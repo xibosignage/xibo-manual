@@ -29,12 +29,14 @@ The CMS is configured with a `secret CMS key` which is a required parameter for 
 
 
 ## Versioning
-The API provides two schema versions:
+The API provides various schema versions:
 
  - v3 - for use by players prior to 1.7
- - v4 - for use by players 1.7+
+ - v4 - for use by players 1.7
+ - v5 - for use by players 1.8+
 
-A `v3` player will only be allowed to connect if it has already been registered to the CMS. This encourages new players to be commissioned with the latest versions.
+A `v3` player will only be allowed to connect if it has already been registered to the CMS. This encourages new players
+ to be commissioned with the latest versions. v5 will allow v4 registrations but will prevent access to [XMR](xmr.html).
 
 # Methods
 Information exchanged between the Player and CMS is driven by the Player connecting to the CMS and calling the appropriate method.
@@ -83,16 +85,16 @@ The Player can submit a screen shot of the current output to the CMS.
 #### Notify Status
 The player should notify the status when the storage usage significantly changes and when a new layout is shown (if notify current layout is set).
 
-## Definition v4
-The definition of the SOAP service can be automatically consumed from the WSDL at `//xmds.php?v=4&wsdl`.
+## Definition v4/v5
+The definition of the SOAP service can be automatically consumed from the WSDL at `//xmds.php?v=4&wsdl` or `//xmds.php?v=5&wsdl`.
 
 There are 2 common parameters to all Method calls:
 
  - serverKey: The secret CMS server key.
- - hardwareKey: The Player hardware key used to identify this Player as a Display. 
+ - hardwareKey: The Player hardware key used to identify this Player as a Display.
 
 ### RegisterDisplay
-Register Display is used to add a new display to the CMS or receive updated settings for an existing display. 
+Register Display is used to add a new display to the CMS or receive updated settings for an existing display.
 
 It takes the following parameters:
 
@@ -105,18 +107,44 @@ It takes the following parameters:
  -  operatingSystem
  -  macAddress
 
+V5 introduced 2 additional parameters:
+
+ - xmrChannel
+ - xmrPubKey
+
 It returns the following XML string:
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
-<display date="2015-01-01 00:00:00" timezone="Europe/London" status="0" code="READY" message="Display is active and ready to start." version_instructions="">
+<display date="2015-01-01 00:00:00" timezone="Europe/London" status="0" code="READY" message="Display is active and ready to start." version_instructions="" localDate="2015-01-01 00:00:00 +/- timezone">
    <settingsNode>One or more settings nodes</settingsNode>
+   <commands>
+        <commandName>
+            <commandString></commandString>
+            <validationString></validationString>
+        </commandName>
+   </commands>
 </display>
 ```
 
 The Player should interpret the `code` attribute on the root node to see if the Display has been granted access and "licensed" with the CMS. *An administrator can licence a display by logging into the Web Portal, Editing the Display and selecting Licence = Yes*.
 
-The `settingsNodes` are dependant on the `clientType` provided.
+The `settingsNodes` are dependent on the `clientType` provided.
+
+The `<commands>` element was introduced in `v5` and contains a list of commands and their command strings. The `<commandName>`
+ changes with each command to indicate the actual command code as registered in the CMS.
+
+The `localDate` attribute is only available in CMS 1.8 and above (`v5` and `v4`) and will provide the local display date/time according to the *Display Timezone* setting
+configured in the Display Profile.
+
+#### XMR
+When connected to a `v5` CMS the player is expected to generate a RSA pub/private key and a unique channel. It is expected
+ to provide these details to the CMS on each register call.
+
+The CMS will use the pub key to encrypt any messages sent to the Player on the XMR Public Address. The Player should
+ subscribe to the XMR Public Address using the Channel it sent to `RegisterDisplay`.
+
+Messages sent through XMR are encrypted using `openssl_seal` and should be decrypted accordingly.
 
 ### RequiredFiles
 The required files method returns all files needed for the Player to play its scheduled Layouts entirely offline for the quantity of time specified by the `REQUIRED_FILES_LOOKAHEAD` setting in the CMS. This setting defaults to 4 days.
@@ -148,7 +176,7 @@ Layout and Media file nodes also contain:
  - md5: A MD5 of the file to be used as a checksum
  - download: Either xmds or http
  - path: The intended save path
- 
+
 Resource file nodes also contain:
 
  - layoutid: The layoutId that references this resource.
@@ -174,7 +202,7 @@ The `GetFile` method is used to request a chunk (part) of a specific file id. Th
 The `chunkSize` is left to the implementer and should be suitable for the type of network the Player is installed on. It should be noted that the smaller the `chunkSize`, the more I/O load there will be on the CMS.
 
 It takes the following parameters:
- 
+
  - serverKey
  - hardwareKey
  - fileId: The ID of the file being downloaded.
@@ -185,7 +213,7 @@ It takes the following parameters:
 It returns base64 encoded binary data representing the requested file, offset and size. The Player is responsible for reassembling the file and checking the MD5 of the completed file against the one provided in `RequiredFiles`.
 
 ### GetResource
-The `GetResource` method is used to request the HTML representation of a media item on a Layout in a Region. The CMS will calculate the necessary HTML to correctly display that media item once opened in a correctly sized webview. 
+The `GetResource` method is used to request the HTML representation of a media item on a Layout in a Region. The CMS will calculate the necessary HTML to correctly display that media item once opened in a correctly sized webview.
 
 The Layout XLF determines when a resource file should be loaded or when a native component is needed.
 
@@ -193,7 +221,7 @@ The Layout XLF determines when a resource file should be loaded or when a native
 The `MediaInventory` method is used by the Player to update the status of its cached files in the CMS. The CMS uses this information to present the status of each Display in the "Displays" page.
 
 It takes the following parameters:
- 
+
  - serverKey
  - hardwareKey
  - mediaInventory: XML representation of currently cached files vs required files.
@@ -218,11 +246,32 @@ The XML structure for media inventory is:
 The `Schedule` method call provides the Player with a date/time aware set of Layouts that need to be played. The time window of schedule returned is controlled by the CMS setting `REQUIRED_FILES_LOOKAHEAD` if the `SCHEDULE_LOOKAHEAD` setting is `On`.
 
 It takes the following parameters:
- 
+
  - serverKey
  - hardwareKey
 
-It returns XML in the following format:
+It returns XML in the following format for v5:
+
+```xml
+<schedule>
+	<default file="4">
+	    <dependents>
+	        <file>5.jpg</file>
+	    </dependents>
+	</default>
+	<layout file="5" fromdt="" todt="" scheduleid="" priority="">
+	    <dependents>
+            <file>5.jpg</file>
+        </dependents>
+	</layout>
+	<dependents>
+		<file>5.jpg</file>
+	</dependents>
+	<command code="CODE" date="" />
+</schedule>
+```
+
+It returns XML in the following format for v4 and below:
 
 ```xml
 <schedule>
@@ -243,17 +292,17 @@ If there aren't any Layouts in the Schedule window then the default Layout shoul
 The priority attribute determines whether a Layout is in the priority schedule or normal schedule. Priority schedules should be shown in preference to normal ones.
 
 #### Dependants
-A list of dependencies is provided in the `dependents` element. This is a list of files that must be in the cache before any Layouts can be considered valid. These "global dependencies" are provided at the top of the `RequiredFiles` XML.
+A list of global dependencies is provided in the `dependents` element. This is a list of files that must be in the cache before any Layouts can be considered valid. These *global dependencies* are provided as the first entries in `RequiredFiles` XML.
 
-A Layout node may also have its own `dependents` attribute which is a comma separated list of dependencies for that specific Layout. They should all be checked in the offline cache before the Layout is considered for playback.
+A Layout may also have dependents specific to itself and these are provided either as an attribute on the layout node (v3,v4) or as a `<dependents>` child node (v5). Layout specific dependents should be checked in the off-line cache before the Layout is considered for playback.
 
-
+**Starting in v5 the default layout also has a `<dependents>` child node.**
 
 ### SubmitLog
 The `SubmitLog` method is used by the Player to send useful audit/error logging information back to the CMS. The log messages should be kept to a minimum to prevent unnecessary traffic. The log level is defined in the Display Settings and defaults to "error".
 
 It takes the following parameters:
- 
+
  - serverKey
  - hardwareKey
  - logXml: XML representation for Log Messages
@@ -280,7 +329,7 @@ The structure for Log XML is as follows:
 The `SubmitStats` method is used to report Proof of Play statistics to the CMS.
 
 It takes the following parameters:
- 
+
  - serverKey
  - hardwareKey
  - statXml: XML representation for Proof of Play Statistics
@@ -307,7 +356,7 @@ The structure for Stat XML is as follows:
 The `NotifyStatus` method is used by the Player to update the CMS on various events in the Player life cycle.
 
 It takes the following parameters:
- 
+
  - serverKey
  - hardwareKey
  - status: JSON encoded key/value string of properties to update on the display.
@@ -326,7 +375,7 @@ Properties supported by `status` are:
 The `SubmitScreenShot` method call is used by the Player to send a screen shot of the current playback to the CMS. The instruction to send a screen shot appears in the `RegisterDisplay` call settings.
 
 It takes the following parameters:
- 
+
  - serverKey
  - hardwareKey
  - screenShot: Base64 encoded binary representation of the screen shot image.

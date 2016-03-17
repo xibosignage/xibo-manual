@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #Flash
 The flash module accepts SWF files for upload.
 

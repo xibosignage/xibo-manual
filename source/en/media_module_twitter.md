@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 # Twitter
 
 The [[PRODUCTNAME]] Twitter widget provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search).
