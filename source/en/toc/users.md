@@ -4,4 +4,5 @@
 - [Groups](users_groups.html)
 - [Library Quota](users_library_quota.html)
 - [Permissions](users_permissions.html)
+- [Notifications](users_notifications.html)
 - [SAML](users_saml.html)
