@@ -14,9 +14,9 @@ This split ensures that the Players can consume a simple, reliable, dedicated AP
 ## Player API
 The Player API is referred to as XMDS, which stands for [[PRODUCTNAME]] media distribution service. XMDS is a SOAP service with a set of end points defined by a WSDL.
 
-The XMDS WSDL can be consumed at `//yoururl/xmds.php?wsdl&v=4`.
+The XMDS WSDL can be consumed at `//yoururl/xmds.php?wsdl&v=5`.
 
-The Player API version can be requested with `xmds.php?v=X` where X is the version requested. The latest version is version 4.
+The Player API version can be requested with `xmds.php?v=X` where X is the version requested. The latest version is version 5.
 
 ### XLF
 Layouts are provided by XMDS in their XLF format ([[PRODUCTNAME]] Layout Format). This is an XML file which represents the Layout presentation and content.
@@ -26,4 +26,9 @@ The CMS API is a RESTful API protected by oAuth. It can be consumed at `//yourur
 
 If developing a CMS extension for use within the existing web portal (for example an extension to be used in a theme file), the API can be consumed directly from `//yoururl/`.
 
-The API is [Swagger Compliant](http://swagger.io/) and the documentation is generated using Swagger Codegen. It is included as [static HTML](cms_api.html) in this manual. You may also point a Swagger-UI installation to the `/swagger.json` resource in your CMS instance.
+The [[PRODUCTNAME]] API is [OpenAPI Compliant](http://swagger.io/) and the documentation is presented using Swagger-UI in this manual. 
+You may also point a Swagger-UI installation to the `/swagger.json` resource in your CMS instance.
+
+<nonwhite>
+[View the API documentation](../api/)
+</nonwhite>
