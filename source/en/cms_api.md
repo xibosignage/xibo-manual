@@ -40,11 +40,12 @@ authorization server supports two methods:
  - /access_token obtain a token
  
 ## Methods
-The API is [Swagger Compliant](http://swagger.io/) and the documentation is generated using Swagger Codegen. It is 
-included as [static HTML](../api-doc.html) in this manual. You may also point a Swagger-UI installation to the 
-`/swagger.json` resource in your CMS instance.
+The [[PRODUCTNAME]] API is [OpenAPI Compliant](http://swagger.io/) and the documentation is presented using Swagger-UI in this manual. 
+You may also point a Swagger-UI installation to the `/swagger.json` resource in your CMS instance.
 
 <nonwhite>
+[View the API documentation](../api/)
+
 ## PHP client implementation
 A PHP oAuth client implementation has been provided for ease of authentication with the API. It can be found here:
 https://github.com/xibosignage/oauth2-xibo-cms.
