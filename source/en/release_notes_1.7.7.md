@@ -13,6 +13,7 @@ You must use the 1.7.0 or higher version of the Windows Display Player with this
 [[PRODUCTNAME]] requires PHP 5.3.3 or higher. A full list of module requirements is presented at the point of installation.
 
 ### Special Considerations
+#### Windows Player
 It has come to our attention that the way the Windows Player handles the refresh of resource based content (such as Tickers, DataSets, Twitter, etc) can introduce a visual delay when updating a widget on the active Layout. The length of delay is dependent on the time it takes to make the necessary request to the CMS. This request can be lengthy if the CMS has to fetch a further remote resource from the wider Internet.
 
 This release contains an improvement so that the Player will show its cached content immediately and update the resource in the background so that it is ready for the next widget reload - greatly improving the visual experience when watching the Player.
@@ -22,6 +23,15 @@ The trade off with this improvement is that a widgets content can be out of date
 A full detailed explanation is available on the [issue](https://github.com/xibosignage/xibo/issues/759).
 
 This improvement brings the Windows Player in-line with the Xibo for Android Player.
+
+#### Android Player
+If you are using Xibo for Android R60 or later with this version of the CMS, the functionality to report proof of play statistics will be switched off by default. This will happen on upgrade
+of either the CMS or the Player.
+
+This functionality change has occurred because Proof of Play statistics generate a large overhead in both network activity and storage requirements for the Xibo database. It was
+therefore felt that they should be "opt-in" rather than "opt-out".
+
+To re-enable them it is necessary to adjust the setting in the CMS Display Settings.
 
 ## Upgrading
 You should always take a backup before upgrading your Xibo CMS Installation.
