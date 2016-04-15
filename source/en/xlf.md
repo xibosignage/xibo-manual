@@ -95,6 +95,19 @@ Media Nodes have attributes common to all types of Media and Options Nodes which
  - render: The render type, either native or html
  - options -> uri: The uri of the save location as presented in `RequiredFiles`. This is common to all library based media.
 
+Additional options may be present from **v5** onwards
+
+``` xml
+<media "...">
+    <audio>
+        <uri>1.mp4</uri>
+    </audio>
+    <commands>
+        <command>code</command>
+    </commands>
+</media>
+```
+
 ### Type and Render
 The Media Node contains a type which the Player can use to determine how that type of Media should be shown. This is particularly important if the `render` attribute is `native`. Native rendering means that the CMS does not provide a HTML file for the Player to show and that the Player should be responsible for implementing the logic to render that item.
 
@@ -159,6 +172,10 @@ A list of media types and their associated render options can be found below:
    {
       "Module":"twitter",
       "render":"html"
+   },
+   {
+      "Module":"audio",
+      "render":"native"
    }
 ]
 ```
@@ -184,6 +201,15 @@ Media options include instructions for showing transitions at the start and end 
  - Type: The type of transition, currently supported are Fade In, Fade Out and Fly.
  - Duration: This is the duration in milliseconds that the transition should run for.
  - Direction: This is a compass point set of directions for the transition (only applicable for fly). N, NE, E, SE, S, SW, W, W, NW.
+
+### Audio Nodes
+Starting in **v5** the XLF may contain `<audio>` nodes. These are audio files that should be played at the start of a media item and should be executed by the Audio module.
+
+
+### Command Nodes
+Starting in **v5** the XLF may contain one or more `<command>` nodes contained in a `<commands>` element. These are commands that should be executed in order when the 
+media item is started. They should be executed by the Shell Command module.
+
 
 # Modules
 The term `Modules` is used by [[PRODUCTNAME]] to represent the different types of Media. The term is being phased out in 1.8 to `Widgets`.
@@ -238,12 +264,20 @@ When the `modeId` is equal to 1 the Player should parse the `url` option and ope
 Embedded widgets provide rendered HTML via `GetResource`. They also provide a `transparency` option which is used to determine if the web view should be transparent.
 
 ## Shell Commands
-The Shell Command widget exists to execute Shell Commands on a Layout. It provides two options:
+The Shell Command widget exists to execute Shell Commands on a Layout. It provides three options:
 
+ - commandCode
  - windowsCommand
  - linuxCommand
 
-It is the players responsibility to sanitize and execute these commands in a Shell.
+Pre-defined commands can be used which have been configured as per the [command functionality](displays_commands.html). The player should inspect the command configuration
+it received during the [`RegisterDisplay`](xmds.html#RegisterDisplay) XMDS call for the command string to execute.
+
+An adhoc command does not have a commandCode and instead provides a windows/linux Command to execute. It is the players responsibility to sanitize and execute these commands in a Shell.
+
+## Audio
+Audio files are library items and will be transferred to the Player via `RequiredFiles`. The player is responsible for natively rendering these files in an appropriate
+media player.
 
 ## Get Resource
 Using the rendered HTML provided by the CMS is entirely at the Players discretion. All widget options are also provided on each Media node should the Player implementation require native rendering of any other types of media.
