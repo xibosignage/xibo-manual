@@ -14,13 +14,31 @@ This 2-stage approach means that the same commands can be scheduled across multi
 Commands also provide easy access to functionality such as RS232, Android Intents, etc.
 
 ## Configuring a command
-Commands are initially created on the **Commands** page in the CMS.
+Commands are configured in 2 steps:
+ 
+  1. Create the Command
+  2. Configure the Command string per Display Profile
+ 
+This allows a generic command to be created which can be used in a schedule, executed via XMR or used in a Layout. The 
+ command can be used **across different types of players** as the command string is created in the Display Settings
+ Profile.
+ 
+For example, imagine a mixed network of Windows and Android players and a command called "Reboot". The command string
+ for reboot on windows is `shutdown /r now`, on android it is `reboot`.
+ 
+The same can also be useful with a non-mixed network - imagine a network of Windows players with different monitors
+ connected over HDMI/RS232. A single command called "Monitor On" can be created and the different brands of monitor can 
+ be represented by different display settings profiles, and each can have a different command string to turn the 
+ monitor on/off.
+ 
+ 
+Step 1 is done on the **Commands** page.
 
 ![Commands](img/displays_commands_page.png)
 
 The usual CMS functionality to add/edit and delete commands is provided.
 
-All commands are then presented on the Display Profile Edit form under the Commands tab:
+Step 2 is done on the Display Profile Edit form under the Commands tab:
 
 ![Display Profile Edit Commands Tab](img/displayprofile_commands_tab.png)
 
