@@ -20,7 +20,7 @@ There are 3 steps to follow:
 
 
 ###Installation
-To start the installation double click on the `[[PRODUCTNAME]]-client-1.7.0-beta-x86.msi` file you downloaded along with the package. The installer will take you through a number of screens asking for your confirmation at each stage. The steps are outlined below.
+To start the installation double click on the `[[PRODUCTNAME]] msi` file you downloaded along with the package. The installer will take you through a number of screens asking for your confirmation at each stage. The steps are outlined below.
 
 ###Step 1
 You may see the following security warning when installing [[PRODUCTNAME]]. Please click on "Run" to begin the installation.
@@ -118,15 +118,53 @@ Here are some suggested settings for Windows / PowerPoint for a Display Client:
 - Set Windows to log on as your display client user automatically
 - Disable balloon tips in the notification area
 
-- Displays that will show _PowerPoint_ should follow the detailed [preparation instructions](media_module_powerpoint.html#machine_preparation).
+### HTML5
+[[PROUCTNAME]] uses the Web Browser provided by Windows to display web content, tickers, text, etc. This browser
+component defaults to Internet Explorer 9 on most systems.
 
-**Please take a backup before modifying the registry**
+In version 1.7.8 onwards the installer creates a registry key to force the browser to be IE11. 
+
+<nonwhite>
+Users running 1.7.7 or earlier should follow these [instructions for enabling IE11 support](https://community.xibo.org.uk/t/enabling-html5-in-the-windows-net-player/33).
+</nonwhite>
+
+### PowerPoint
+Displays that will show _PowerPoint_ should follow the detailed [preparation instructions](media_module_powerpoint.html#machine_preparation)
+to confirm that the registry has been modified correctly for their version of Windows / PowerPoint.
+
+### Thumbnail Database
+
+Windows automatically creates thumbnails for content in the user folder and will try to do so for the [[PRODUCTNAME]] 
+ local library.
+ 
+In some cases this interferes with the normal operation of the player and should be disabled. This can be achieved with
+the following registry settings.
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoThumbnailCache"=dword:00000001
+"DisableThumbnailCache"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DisableThumbnailCache"=dword:00000001
+"NoThumbnailCache"=dword:00000001
+```
+
+** Please ensure you know what you are doing and have appropriate backups in place before modifying the registry **
 
 ### Multiple Clients
+
 It is possible to run more than one of the Display client on Windows. [Installation Instructions](install_windows_client_multiple.html)
 
 ### Screen Saver
+
 It is possible to run [[PRODUCTNAME]] as a Screen Saver. [Installation Instructions](install_windows_client_screensaver.html).
 
+
 ### Watchdog
-The Watchdog is an optional component which can be used to monitor the stability of the main application and restart it where necessary. [Installation Instructions](install_windows_client_watchdog.html).
+
+The Watchdog is a system tray application which can be used to monitor the stability of the main application and restart 
+it where necessary. 
+
+In 1.7.8 the watchdog is configured and started by the Player application. Prior to that it must be manually configured
+following the [Installation Instructions](install_windows_client_watchdog.html).
