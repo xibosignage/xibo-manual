@@ -1,9 +1,9 @@
 <!--toc=getting_started-->
 # [[PRODUCTNAME]] 1.7.8 - Codename "Tuttle"
 
-This is a bug fix release of [[PRODUCTNAME]] - 1.7.8. Included in this release are 24 bugs and small enhancements.
+This is a bug fix release of [[PRODUCTNAME]] - 1.7.8. Included in this release are 12 bugs and small enhancements.
 
-You can download this release from [GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.7.7).
+You can download this release from [GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.7.8).
 
 This release is a bug fix release for the 1.7 stable series. If you are upgrading from 1.4 or 1.6 please refer to 
 the [1.7.0 release notes](release_notes_1.7.0.html) for a detailed list of changes and upgrade notes.
