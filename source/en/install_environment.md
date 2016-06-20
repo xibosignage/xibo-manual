@@ -1,22 +1,33 @@
 <!--toc=getting_started-->
 # Choosing your Environment
-The [[PRODUCTNAME]] CMS can be run on any operating system that supports PHP/MySQL, the most common installation being "LAMP" (Linux, Apache, MySQL and PHP).
 
-The CMS installation will present a list of requirements on the first installation
- screen. To get that far a web server running PHP 5.5 or later must be available and the CMS files must be served via a web server.
+The [[PRODUCTNAME]] CMS can be run on any operating system that supports
+PHP/MySQL, the most common installation being "LAMP" (Linux, Apache, MySQL and
+PHP).
 
-The following pages contain basic guides to configuring the most common environments.
+The CMS installation will present a list of requirements on the first
+installation screen. To get that far a web server running PHP 5.5 or later must
+be available and the CMS files must be served via a web server.
+
+The following pages contain basic guides to configuring the most common
+environments.
 
 - [Docker](install_docker.html)
 - [Install on Linux](install_environment_linux.html)
 - [Install on Windows using XAMPP](install_environment_windows_xampp.html)
 - [Install on Windows using IIS](install_environment_windows_iis.html)
 
+### Docker
+
 If using Docker, the below considerations have been addressed and everything is
- already running according to the recommendations.
+already running according to the recommendations. This means you can stop here
+and get started with the [tour](tour.html).
 
 ## Placing CMS Files
-Secure by design, the CMS has a folder structure which intends for only the `web` folder to be in a location served by the web server. This means the web server / hosting must allow files to be placed outside the web location.
+
+Secure by design, the CMS has a folder structure which intends for only the
+`web` folder to be in a location served by the web server. This means the web
+server / hosting must allow files to be placed outside the web location.
 
 There are several strategies for achieving this (this is not an exhaustive list):
 
