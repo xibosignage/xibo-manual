@@ -69,7 +69,6 @@ class ManualGenerator
         $this->xcopy($this->sourcePath . 'template/img', $this->outputPath . 'img');
         $this->xcopy($this->sourcePath . 'template/manual.css', $this->outputPath . 'manual.css');
         $this->xcopy($this->sourcePath . 'template/index.html', $this->outputPath . 'index.html');
-        $this->xcopy($this->sourcePath . 'template/api-doc.html', $this->outputPath . 'api-doc.html');
 
         // Copy the en/ language images into the en/language sub folder.
         $this->xcopy($this->sourcePath . 'source/en/img', $this->outputPath . 'en/img');

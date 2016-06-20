@@ -1,5 +1,6 @@
 - [< Library](media_library.html)
 - [Modules](media_modules.html)
+- [Audio](media_module_audio.html)
 - [Clock](media_module_clock.html)
 - [DataSet View](media_module_dataset_view.html)
 - [Embedded](media_module_embedded.html)

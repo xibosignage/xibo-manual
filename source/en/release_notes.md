@@ -10,6 +10,7 @@ The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSIO
 * [1.8.0-alpha](release_notes_1.8.0-alpha.html)
 
 ## Version 1.7 "Tuttle"
+* [1.7.7](release_notes_1.7.7.html)
 * [1.7.6](release_notes_1.7.6.html)
 * [1.7.5](release_notes_1.7.5.html)
 * [1.7.4](release_notes_1.7.4.html)

@@ -268,6 +268,9 @@ It returns XML in the following format for v5:
 		<file>5.jpg</file>
 	</dependents>
 	<command code="CODE" date="" />
+	<overlays>
+	    <overlay file="5" fromdt="" todt="" scheduleid="" priority=""></overlay>
+	</overlays>
 </schedule>
 ```
 
@@ -291,12 +294,23 @@ If there aren't any Layouts in the Schedule window then the default Layout shoul
 #### Priority
 The priority attribute determines whether a Layout is in the priority schedule or normal schedule. Priority schedules should be shown in preference to normal ones.
 
+The attribute will either be empty or contain an integer value - when empty a value of 0 should be assumed. Only the highest priority layouts should be included in the schedule
+at any time.
+
 #### Dependants
 A list of global dependencies is provided in the `dependents` element. This is a list of files that must be in the cache before any Layouts can be considered valid. These *global dependencies* are provided as the first entries in `RequiredFiles` XML.
 
 A Layout may also have dependents specific to itself and these are provided either as an attribute on the layout node (v3,v4) or as a `<dependents>` child node (v5). Layout specific dependents should be checked in the off-line cache before the Layout is considered for playback.
 
 **Starting in v5 the default layout also has a `<dependents>` child node.**
+
+#### Overlays
+**Starting in v5** overlay nodes may be provided in the overlays element. These describe layouts that should be overlaid on top of the normal layout schedule.
+
+Overlays have a from/to dt, scheduleId and priority which have the same meaning as a normal `layout` node. The order of `overlay` nodes determines the order in which the overlay
+layout regions should be applied, starting with the first and stacking on top.
+
+Overlays should be applied on top of the existing Layout schedule and remain there while they are still considered to be in the schedule.
 
 ### SubmitLog
 The `SubmitLog` method is used by the Player to send useful audit/error logging information back to the CMS. The log messages should be kept to a minimum to prevent unnecessary traffic. The log level is defined in the Display Settings and defaults to "error".
