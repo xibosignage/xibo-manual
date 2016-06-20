@@ -47,7 +47,7 @@ of things like Email Configuration and persistent data storage.
 ### Run Launcher
 
 ```
-launcher bootstrap
+./launcher bootstrap
 ```
 
 This will bootstrap and start your [[PRODUCTNAME]] CMS. The CMS will be fully
@@ -75,16 +75,12 @@ Pass start/stop or destroy into launcher to take the corresponding action:
  - destroy: Remove the CMS
 
 ```
-launcher start
-launcher stop
-launcher destroy
+./launcher start
+./launcher stop
+./launcher destroy
 ```
 
 ## Upgrading [[PRODUCTNAME]]
 
 Download the new version of `launcher`, extract it over the top of your current
 files and then run `./launcher upgrade`.
-
-```
-launcher upgrade
-```
