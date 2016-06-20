@@ -66,21 +66,25 @@ accepting connections on the host machine Port 80 (default web server port).
 It may be necessary to start/stop/upgrade or destroy your CMS instance. These
 commands are also available through `launcher`.
 
-### Start/Stop/Destroy
+### Start/Stop
 
 Pass start/stop or destroy into launcher to take the corresponding action:
 
  - start: Run the CMS
  - stop: Stop the CMS
- - destroy: Remove the CMS
 
 ```
 ./launcher start
 ./launcher stop
-./launcher destroy
 ```
 
 ## Upgrading [[PRODUCTNAME]]
 
 Download the new version of `launcher`, extract it over the top of your current
 files and then run `./launcher upgrade`.
+
+## Uninstall
+
+Should you want to uninstall please run `./launcher destroy` which will remove
+the Docker containers that have been created. The data directories and launcher
+can then be deleted or kept for reinstall purposes.
