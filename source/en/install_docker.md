@@ -101,6 +101,7 @@ you can safely run
 Providing your keep your `launcher.env` file and your `DATA_DIR` directory intact,
 the CMS will be run using your existing data.
 
+<a name="upgrade"></a>
 ## Upgrading [[PRODUCTNAME]]
 
 Before attempting an upgrade, it's strongly recommended to take a full backup of

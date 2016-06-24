@@ -35,8 +35,8 @@ Players. Further instructions can be found on the [XMR](xmr.html) manual page.
 
 ## Upgrading
 
-This release contains a new upgrade application which is build into the CMS.
-This application supports upgrades from 1.7.0 onwards (including 1.8.0-beta).
+This release supports upgrades from 1.7.0 onwards. If you are running a release
+prior to 1.7.0 then please upgrade to [1.7.8](release_notes_1.7.8.html) first.
 
 Follow the [upgrade](upgrade.html) instructions to complete the upgrade.
 
@@ -46,8 +46,6 @@ Please report problems with this release using the [Development Category on the
 Community Forum](https://community.xibo.org.uk/c/dev).
 
 ## Issues addressed in this release
-
-
 
 For a full list of enhancements and bug fixes please refer to the [Release
 Project

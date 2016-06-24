@@ -25,6 +25,9 @@ The CMS -> XMR section is a request/response queue and the XMR -> Player section
 The communication protocol doesn't matter and you may choose - we recommend TCP.
 
 ## Installation
+
+[Docker installations](install_docker.html) have XMR pre-installed and configured.
+
 Please make sure [ZeroMQ](install_environment.html#zeroMQ) is installed and enabled.
 
 XMR is included in the `vendor/bin` folder of your CMS installation and requires a `config.json` file to be written
