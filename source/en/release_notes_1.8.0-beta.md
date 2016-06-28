@@ -33,6 +33,21 @@ The CMS will function without `ZeroMQ` or `XMR` installed, however it is
 advisable to use it as it improves the overall performance of the CMS and
 Players. Further instructions can be found on the [XMR](xmr.html) manual page.
 
+### Special Considerations
+#### Windows Player
+
+The 1.7 series contained experimental support for CEF browser integration. This
+has been removed in the 1.8 release due to stability issues. In 1.8 you will
+not be able to use CEF as an alternative rendering engine.
+
+<nonwhite>
+We are working towards a new cross platform player which will replace this
+Windows player and will also support Ubuntu. This development can be tracked
+on our [community](https://community.xibo.org.uk/t/cross-platform-player-specification/6261)
+forum. One aim is for the player to support multiple browser rendering engines
+when running on Windows.
+</nonwhite>
+
 ## Upgrading
 
 This release supports upgrades from 1.7.0 onwards. If you are running a release
