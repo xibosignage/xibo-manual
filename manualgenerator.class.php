@@ -30,7 +30,6 @@ class ManualGenerator
     private $sourcePath;
     private $outputPath;
 
-    private $template;
     public $overrideHeader;
     public $overrideFooter;
 
@@ -132,7 +131,7 @@ class ManualGenerator
         
         // Handle the TOC
         $string = str_replace('[[TOC]]', Parsedown::instance()->text(
-            $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+            $this->processReplacements($lang, $this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
         ), $string);
 
         // Replace the languages
