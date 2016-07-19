@@ -45,7 +45,7 @@ The installation process is:
 
 ### Download and extract the archive
 
-The CMS archive contains a sub folder called [[PRODUCTNAME]]-server-[[PRODUCTVERSION]], the contents of this folder should be copied into an appropriate location on your web server. It is **strongly recommended** that the folder is extracted in a non-webservable location. On a dedicated server the `DocumentRoot` should point to `/path/to/xibo-folder/web`. Other configurations are discussed on the [environment](install_environment.html) page.
+The CMS archive contains a sub folder called [[PRODUCTNAME]]-server-[[PRODUCTVERSION]], the contents of this folder should be copied into an appropriate location on your web server. It is **strongly recommended** that the folder is extracted in a non-webservable location. On a dedicated server the `DocumentRoot` should point to `/path/to/[[PRODUCTNAME]]-folder/web`. Other configurations are discussed on the [environment](install_environment.html) page.
 
 The extracted archive should look like the below screen shot:
 

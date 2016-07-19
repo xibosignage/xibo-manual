@@ -1,5 +1,5 @@
-* [Introduction](index.html)
-* [Release Notes](release_notes.html)
+* [Introduction](index.html)<nonwhite>
+* [Release Notes](release_notes.html)</nonwhite>
 * [CMS Installation](install_cms.html)
 * [Windows Player Installation](install_windows_client.html)
 * [Troubleshooting](troubleshooting.html)

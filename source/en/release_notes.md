@@ -2,6 +2,11 @@
 #Release Notes
 Each release comes with its own set of release notes. These should be read and understood before installation or upgrade.
 
+<white>
+Please [contact support]([[PRODUCTSUPPORTURL]]) for the releases notes.
+</white>
+
+<nonwhite>
 The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSION]].html).
 
 ## Version 1.8 "Tempel"
@@ -72,3 +77,4 @@ The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSIO
 * [1.0.2](release_notes_1.0.2.html)
 * [1.0.1](release_notes_1.0.1.html)
 * [1.0.0](release_notes_1.0.0.html)
+</nonwhite>

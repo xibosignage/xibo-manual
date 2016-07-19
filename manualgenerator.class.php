@@ -45,11 +45,14 @@ class ManualGenerator
         // This should be updated with each release of the manual
         $this->productVersion = '1.8.0-beta';
 
-        $this->productName = $productName;
+        //$this->productName = $productName;
+        $this->productName = 'MY_PRODUCT_NAME';
         $this->productHome = $productHome;
         $this->productSupportUrl = $productSupportUrl;
         $this->productFaqUrl = $productFaqUrl;
-        $this->whiteLabel = ($this->productName != 'Xibo');
+
+        //$this->whiteLabel = ($this->productName != 'Xibo');
+        $this->whiteLabel = true;
     }
 
     public function build($sourcePath, $outputPath)
@@ -179,7 +182,9 @@ class ManualGenerator
         $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, 'toc/nav_bar.html'), $string);
 
         // Handle the TOC
-        $string = str_replace('[[TOC]]', Parsedown::instance()->text($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md')), $string);
+        $string = str_replace('[[TOC]]', Parsedown::instance()->text(
+            $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+        ), $string);
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
@@ -207,8 +212,11 @@ class ManualGenerator
         // Replace any chunks of manual that we don't want appearing in non white labels
         if ($this->whiteLabel) {
             $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = str_replace('<white>', '', $string);
+            $string = str_replace('</white>', '', $string);
         }
         else {
+            $string = preg_replace('/<(white)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
             $string = str_replace('<nonwhite>', '', $string);
             $string = str_replace('</nonwhite>', '', $string);
         }
