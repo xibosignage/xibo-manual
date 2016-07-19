@@ -28,6 +28,7 @@ class ManualGenerator
     private $productFaqUrl;
 
     private $sourcePath;
+    public $overrideFooter;
 
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
@@ -118,7 +119,8 @@ class ManualGenerator
 
         // Header
         $string  = $this->processReplacements($lang, file_get_contents($this->sourcePath . 'template/header.html'));
-        $string .= $this->processReplacements($lang, file_get_contents($this->sourcePath . 'template/footer.html'));
+        $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
+        $string .= $this->processReplacements($lang, file_get_contents($footerLocation));
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
