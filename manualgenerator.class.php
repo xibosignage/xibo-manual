@@ -45,14 +45,12 @@ class ManualGenerator
         // This should be updated with each release of the manual
         $this->productVersion = '1.8.0-beta';
 
-        //$this->productName = $productName;
-        $this->productName = 'MY_PRODUCT_NAME';
+        $this->productName = $productName;
         $this->productHome = $productHome;
         $this->productSupportUrl = $productSupportUrl;
         $this->productFaqUrl = $productFaqUrl;
 
-        //$this->whiteLabel = ($this->productName != 'Xibo');
-        $this->whiteLabel = true;
+        $this->whiteLabel = ($this->productName != 'Xibo');
     }
 
     public function build($sourcePath, $outputPath)
