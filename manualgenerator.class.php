@@ -28,6 +28,10 @@ class ManualGenerator
     private $productFaqUrl;
 
     private $sourcePath;
+    private $outputPath;
+
+    private $template;
+    public $overrideHeader;
     public $overrideFooter;
 
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
@@ -127,7 +131,9 @@ class ManualGenerator
         $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, '/toc/nav_bar.html'), $string);
         
         // Handle the TOC
-        $string = str_replace('[[TOC]]', Parsedown::instance()->text($this->file_get_contents_or_default($lang, '/toc/' . $toc . '.md')), $string);
+        $string = str_replace('[[TOC]]', Parsedown::instance()->text(
+            $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+        ), $string);
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
@@ -155,8 +161,11 @@ class ManualGenerator
         // Replace any chunks of manual that we don't want appearing in non white labels
         if ($this->whiteLabel) {
             $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = str_replace('<white>', '', $string);
+            $string = str_replace('</white>', '', $string);
         }
         else {
+            $string = preg_replace('/<(white)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
             $string = str_replace('<nonwhite>', '', $string);
             $string = str_replace('</nonwhite>', '', $string);
         }
