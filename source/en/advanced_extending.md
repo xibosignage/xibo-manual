@@ -231,4 +231,8 @@ The Middleware needs to be wired up in the `settings.php` file:
 $middleware = [new \Xibo\Custom\MyMiddleware()];
 ```
 
+With this code added, visiting the CMS causes the new Middleware to be called,
+which registers your new Controller and Route. If the link visited matches
+your route, the Controller Method is executed and its output rendered.
+
 </nonwhite>
