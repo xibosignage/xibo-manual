@@ -92,6 +92,23 @@ The framework provides an `ApplicationState` object which can be used to
 conditionally format a response. It is not necessary to use this object if you
 would rather format your own response.
 
+### Twig templates
+
+When using the `/web/index.php` entry point it is advisable but not necessary
+to render output to the browser using the Twig template library. This is
+included in the CMS code and has helper methods in the `ApplicationState`
+object. This should be done for any page which should output HTML.
+
+Themes should be used to provide additional templates for rendering.
+
+A Controller should use the `ApplicationState` object and set the following
+properties:
+
+ - `ApplicationState::template` - set to the name of the template without it's
+ extension.
+ - `ApplicationState::setData()` - an array of data to provide to the template
+
+
 ## Examples
 
 ### Wiring up a new theme link
@@ -157,6 +174,10 @@ class MyMiddleware extends Middleware
 }
 ```
 
+The URL chosen will be automatically checked for permissions by the CMS
+Middleware. If you want the route to be accessible by users other than super
+admins, you should add `myapp` as a page record in the `pages` database table.
+
 The Controller should be provided also:
 
 ```
@@ -196,6 +217,8 @@ class MyController extends Base
     public function testView()
     {
         // Call to render the template
+        // This assumes that "twig-template-name-without-extension.twig" exists
+        // in the active theme (i.e. in the view path of the active theme).
         $this->getState()->template = 'twig-template-name-without-extension';
         $this->getState()->setData([]); /* Data array to provide to the template */
     }
