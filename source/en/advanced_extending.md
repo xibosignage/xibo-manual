@@ -19,6 +19,7 @@ Please contact your provider for further development details.
 </white>
 
 <nonwhite>
+
 ## Architecture
 
 The CMS is a PHP web application which uses the Slim2 framework. It's core
