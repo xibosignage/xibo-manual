@@ -109,19 +109,29 @@ properties:
  extension.
  - `ApplicationState::setData()` - an array of data to provide to the template
 
+### Logging
+
+While developing it is advisable to put the CMS installation into Test mode so that full
+logging output is available in the event of any errors. More information is available 
+[here](advanced_logging.html).
+
 
 ## Examples
 
 ### Wiring up a new theme link
 
 You've developed a custom theme which exposes a new link on the navigation menu
-(or anywhere else). This link should take some action provided by a Custom
-Route/Controller.
+(or anywhere else). 
+
+**We recommend you use a theme for custom modifications so that they are not overwritten
+during an upgrade**. 
+
+This link should take some action provided by a Custom Route/Controller.
 
 Your link looks like:
 
 ```
-{% if currentUser.routeViewable("/test") %}
+{% if currentUser.routeViewable("/myapp") %}
 <li class="sidebar-list"><a href="{{ urlFor("test.view") }}">{% trans "Test" %}</a></li>
 {% endif %}
 ```
@@ -235,5 +245,36 @@ $middleware = [new \Xibo\Custom\MyMiddleware()];
 With this code added, visiting the CMS causes the new Middleware to be called,
 which registers your new Controller and Route. If the link visited matches
 your route, the Controller Method is executed and its output rendered.
+
+This Controller example uses the `ApplicationState` to render a Twig template. The
+template would need to be available in the view path of the active theme. If you
+are using a custom theme this is `/web/theme/custom/themeName/views` (unless you have
+specified an alternative path in your theme config).
+
+Create a file in your theme named `twig-template-name-without-extension.twig` for the simplest 
+example of a Twig template.
+ 
+```
+{% extends "authed.twig" %}
+{% import "inline.twig" as inline %}
+
+{% block pageContent %}
+    <div class="widget">
+        <div class="widget-title">{% trans "Page Name" %}</div>
+        <div class="widget-body">
+            
+        </div>
+    </div>
+{% endblock %}
+```
+
+Alternatively you can directly modify the browser output within the controller. To do this
+you need to inform the `ApplicationState` object that it should not output anything. For
+example:
+
+```
+$this->setNoOutput(true);
+echo 'This is my output to the browser';
+```
 
 </nonwhite>
