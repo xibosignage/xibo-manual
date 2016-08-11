@@ -1,5 +1,5 @@
 <!--toc=advanced-->
-# Themes</small>
+# Themes
 The CMS has a theme system which allows a developer to customise the look and feel of the application by creating
 a theme and adding it to the `web/theme/custom` folder. The theme engine has been designed with the 
 principle of inheritance in mind, meaning that any resource requested by the CMS is passed through the currently active 

@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.0.8_-_Codename_.22Halley.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.0.8 - Codename "Halley"</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.0.8_-_Codename_.22Halley.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.0.8 - Codename "Halley"</a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Upgrading_Client"><span class="tocnumber">3</span> <span class="toctext">Upgrading Client</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#Upgrading_Server"><span class="tocnumber">4</span> <span class="toctext">Upgrading Server</span></a></li>
@@ -10,7 +10,7 @@
 <li class="toclevel-1 tocsection-7"><a href="#Known_Issues_and_Limitations"><span class="tocnumber">7</span> <span class="toctext">Known Issues and Limitations</span></a></li>
 </ul>
 </td></tr></table>
-<h3> <span class="mw-headline" id="Xibo_1.0.8_-_Codename_.22Halley.22">Xibo 1.0.8 - Codename "Halley"</span></h3>
+<h3> <span class="mw-headline" id="Xibo_1.0.8_-_Codename_.22Halley.22">Xibo 1.0.8 - Codename "Halley"</h3>
 <p>This is a client and server stability release of Xibo. We recommend all Xibo installations be upgraded to 1.0.8
 </p><p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.0/1.0.8">https://launchpad.net/xibo/1.0/1.0.8</a>
 </p>

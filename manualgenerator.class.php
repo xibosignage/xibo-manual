@@ -168,6 +168,17 @@ class ManualGenerator
         // Run through parse down
         $pageContent = Parsedown::instance()->text($pageContent);
 
+        // Look for headers in the page content and give them ID's based on their actual content.
+        $pageContent = preg_replace_callback('#(<h1>)(.*)(</h1>)#i', function ($m) {
+            $id = strtolower(str_replace(' ', '_', $m[2]));
+            return '<h1 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h1>';
+        }, $pageContent);
+
+        $pageContent = preg_replace_callback('#(<h2>)(.*)(</h2>)#i', function ($m) {
+            $id = strtolower(str_replace(' ', '_',$m[2]));
+            return '<h2 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>';
+        }, $pageContent);
+
         // Find out what TOC this file should have (read the first line)
         $toc = strtok($pageContent, "\n");
         $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));

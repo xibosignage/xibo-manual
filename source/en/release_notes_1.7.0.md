@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# Xibo 1.7.0 - Codename "Tuttle"</span>
+# Xibo 1.7.0 - Codename "Tuttle"
 
 This is the first stable release of Xibo 1.7.0!
 
