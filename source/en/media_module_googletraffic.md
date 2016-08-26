@@ -23,6 +23,17 @@ the number the closer to ground level. A zoom of 1 is "whole globe".
 
 This module requires a valid internet connection on the Player in order to function.
 
+## Configuration
+
+The Google Traffic module must be configured with a Google Maps API key before use. There
+are two types of keys - standard and premium. The [Get a Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
+documentation describes the process and differences between the keys.
+
+Once a key is obtained it should be entered on the Module Settings Form (CMS -> Modules Page).
+
+Until an API key is entered the Widget will not render in the Layout Designer or the Player,
+although you can still add the Widget to your Layouts.
+
 ## Terms
 
 The Google Maps API terms of use must be read and understood before using this module. At

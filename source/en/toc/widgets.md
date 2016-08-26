@@ -10,6 +10,7 @@
 - [Generic File](media_module_genericfile.html)
 - [Image](media_module_image.html)
 - [Local Video](media_module_localvideo.html)
+- [PDF](media_module_pdf.html)
 - [PowerPoint](media_module_powerpoint.html)
 - [Shell Command](media_module_shellcommand.html)
 - [Text](media_module_text.html)
