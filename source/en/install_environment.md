@@ -6,7 +6,7 @@ PHP/MySQL, the most common installation being "LAMP" (Linux, Apache, MySQL and
 PHP).
 
 The CMS installation will present a list of requirements on the first
-installation screen. To get that far a web server running PHP 5.5 or later must
+installation screen. To get that far a web server running PHP 5.5.9 or later must
 be available and the CMS files must be served via a web server.
 
 The following pages contain basic guides to configuring the most common

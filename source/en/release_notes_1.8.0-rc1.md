@@ -16,7 +16,7 @@ You can download this release from
 
 ## Requirements
 
-[[PRODUCTNAME]] requires PHP 5.5 or higher. Please read the details in [install
+[[PRODUCTNAME]] requires PHP 5.5.9 or higher. Please read the details in [install
 environment](install_environment.html) to understand the extra configuration 1.8
 Series requires before proceeding.
 

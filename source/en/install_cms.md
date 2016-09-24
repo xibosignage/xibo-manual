@@ -15,7 +15,7 @@ encourage you to use a [Docker](install_docker.html) environment.
 
 If Docker is not available then you will need a web server that supports:
 
- - PHP 5.5 and MySQL 5.6
+ - PHP 5.5.9 and MySQL 5.6
  - copying files outside the web root and ideally modify the `DocumentRoot`.
  - URL rewriting which will allow the CMS to use clean, human-friendly URLs.
 
