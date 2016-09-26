@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 # [[PRODUCTNAME]] 1.7.9 - Codename "Tuttle"
 
-This is a bug fix release of [[PRODUCTNAME]] - 1.7.9. Included in this release are 12 bugs and 
+This is a bug fix release of [[PRODUCTNAME]] - 1.7.9. Included in this release are 18 bugs and 
 small enhancements.
 
 You can download this release from [GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.7.9).
