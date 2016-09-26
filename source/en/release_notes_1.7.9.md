@@ -24,7 +24,7 @@ that the Player application is running correctly. If you are not currently runni
 recommend upgrading to this release to enable it.
 
 ## Upgrading
-You should always take a backup before upgrading your Xibo CMS Installation.
+You should always take a backup before upgrading your [[PRODUCTNAME]] CMS Installation.
 
 *   Clone your existing [[PRODUCTNAME]] database and grant permissions
 (see [Clone Database](release_notes_clonedb.html "Clone Database") for details). It is possible to upgrade without cloning but much harder to roll back.
