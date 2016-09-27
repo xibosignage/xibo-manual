@@ -28,11 +28,15 @@ class ManualGenerator
     private $productFaqUrl;
 
     private $sourcePath;
+    private $outputPath;
+
+    public $overrideHeader;
+    public $overrideFooter;
 
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
         // This should be updated with each release of the manual
-        $this->productVersion = '1.7.8';
+        $this->productVersion = '1.7.9';
 
         $this->productName = $productName;
         $this->productHome = $productHome;
@@ -118,14 +122,17 @@ class ManualGenerator
 
         // Header
         $string  = $this->processReplacements($lang, file_get_contents($this->sourcePath . 'template/header.html'));
-        $string .= $this->processReplacements($lang, file_get_contents($this->sourcePath . 'template/footer.html'));
+        $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
+        $string .= $this->processReplacements($lang, file_get_contents($footerLocation));
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
         $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, '/toc/nav_bar.html'), $string);
         
         // Handle the TOC
-        $string = str_replace('[[TOC]]', Parsedown::instance()->text($this->file_get_contents_or_default($lang, '/toc/' . $toc . '.md')), $string);
+        $string = str_replace('[[TOC]]', Parsedown::instance()->text(
+            $this->processReplacements($lang, $this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+        ), $string);
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
@@ -153,8 +160,11 @@ class ManualGenerator
         // Replace any chunks of manual that we don't want appearing in non white labels
         if ($this->whiteLabel) {
             $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = str_replace('<white>', '', $string);
+            $string = str_replace('</white>', '', $string);
         }
         else {
+            $string = preg_replace('/<(white)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
             $string = str_replace('<nonwhite>', '', $string);
             $string = str_replace('</nonwhite>', '', $string);
         }

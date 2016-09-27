@@ -24,7 +24,7 @@ The extracted archive should look like the below screen shot:
 
 ![Extracted Archive](img/win32_install_extracted.png)
 
-A folder will need to be created for the [[PRODUCTNAME]] library. This will be used to store images, videos and other file based media that is uploaded to the CMS. _Subsequent steps in the installation will require this information._
+A folder will need to be created for the [[PRODUCTNAME]] library. This will be used to store images, videos and other file based media that is uploaded to the CMS. _Subsequent steps in the installation will require this information.
 
 ###Starting the Installation
 Navigating to `http://localhost/[[PRODUCTNAME]]` will automatically start the installation.
