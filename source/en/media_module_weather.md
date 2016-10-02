@@ -60,13 +60,18 @@ There are 5 sections that need to be provided:
 2. Daily Template
 
     This is the repeating template that should be provided for the 7 day forecast. It will be repeated 
-    for each day and then substituted into the special [dailyForecast] tag (which should feature on 
-    the main template).
+    for each day and then substituted into the special `[dailyForecast]` tag (which should feature on 
+    the main template). The `[dailyForecast]` tag has 2 optional settings which can be added to the tag
+    by including the `|` character. These are `[dailyForecast|Number of days|Start day]` and default to 
+    7 days, starting at tomorrow (day 2). If you wanted to see the next 3 days you would 
+    use `[dailyForecast|3]`, for a 3 day forecast starting the day after tomorrow use `[dailyForecast|3|3]`.
+    A common example is to ignore the "Current Template" and produce a full 7 day forecast using the 
+    daily forecast - this is achieved with `[dailyForecast|7|1]`.
 
 3. CSS
 
     This is the CSS to apply to the template structure above. It will be augmented with a colour 
-    attribute and has a special [[ICONS]] which will be replaced with the selected icon sprite 
+    attribute and has a special `[[ICONS]]` which will be replaced with the selected icon sprite 
     (see section below).
     
 4. Design Width
