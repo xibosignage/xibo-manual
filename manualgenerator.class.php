@@ -34,8 +34,6 @@ class ManualGenerator
     public $overrideHeader;
     public $overrideFooter;
 
-    private $template;
-
     /**
      * Language specific image replacements
      * @var array
