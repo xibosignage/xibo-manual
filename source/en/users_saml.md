@@ -8,7 +8,8 @@ The CMS can be configured to use SAML as its authentication provider.
 > - Wikipedia
 
 SAML integration is enabled via the `settings.php` file in the CMS installation - at a later date a GUI may be 
-provided.
+provided. If Docker has been used `settings.php` will not be accessible, however it is possible to create a 
+`settings-custom.php` file in the `/custom` mount point. The below configuration can be added to that file instead.
 
 The purpose of the integration is to configure a SAML enabled IdP (identity provider) for authentication with the
 [[PRODUCTNAME]] CMS.
