@@ -44,8 +44,7 @@ not be able to use CEF as an alternative rendering engine.
 We are working towards a new cross platform player which will replace this
 Windows player and will also support Ubuntu. This development can be tracked
 on our [community](https://community.xibo.org.uk/t/cross-platform-player-specification/6261)
-forum. One aim is for the player to support multiple browser rendering engines
-when running on Windows.
+forum.
 </nonwhite>
 
 ## Upgrading
