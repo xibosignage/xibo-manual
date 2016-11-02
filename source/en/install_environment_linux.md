@@ -1,7 +1,10 @@
 <!--toc=getting_started-->
-#<span id="Install_on_Linux"> Install on Linux </span>
+# Install on Linux
 
-Linux makes a good home for a Xibo server. All of the software it needs to support it is provided by the major Linux distributions. We'll cover Ubuntu in detail here, as it's what I use. There are some notes further down for other distributions, however the whole procedure is very similar.
+> This is intended as a getting started guide only - the documentation provided by the software vendor
+ should always be used in preference.
+ 
+Linux makes a good home for a [[PRODUCTNAME]] server. All of the software it needs to support it is provided by the major Linux distributions. We'll cover Ubuntu in detail here, as it's what I use. There are some notes further down for other distributions, however the whole procedure is very similar.
 
 ###  <span id="Setup_Apache_and_PHP"> Setup Apache and PHP </span>
 
