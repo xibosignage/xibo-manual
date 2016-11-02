@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.0.3_-_Codename_.22Halley.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.0.3 - Codename "Halley"</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.0.3_-_Codename_.22Halley.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.0.3 - Codename "Halley"</a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Upgrading"><span class="tocnumber">3</span> <span class="toctext">Upgrading</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#Bug_Fixes"><span class="tocnumber">4</span> <span class="toctext">Bug Fixes</span></a></li>
@@ -17,7 +17,7 @@
 <li class="toclevel-1 tocsection-11"><a href="#Known_Issues_and_Limitations"><span class="tocnumber">6</span> <span class="toctext">Known Issues and Limitations</span></a></li>
 </ul>
 </td></tr></table>
-<h3> <span class="mw-headline" id="Xibo_1.0.3_-_Codename_.22Halley.22">Xibo 1.0.3 - Codename "Halley"</span></h3>
+<h3> <span class="mw-headline" id="Xibo_1.0.3_-_Codename_.22Halley.22">Xibo 1.0.3 - Codename "Halley"</h3>
 <p>This is a bug fix release of Xibo. We recommend all Xibo installations be upgraded to 1.0.3
 </p><p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.0/1.0.3">https://launchpad.net/xibo/1.0/1.0.3</a>
 </p>

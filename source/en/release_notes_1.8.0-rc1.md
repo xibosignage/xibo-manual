@@ -1,26 +1,26 @@
 <!--toc=getting_started-->
 
-# [[PRODUCTNAME]] 1.8.0-beta - Codename "Tempel"
+# [[PRODUCTNAME]] 1.8.0-rc1 - Codename "Tempel"
 
-Welcome to the release notes for the third alpha release in the 1.8 Series of
+Welcome to the release notes for the first release candidate in the 1.8 Series of
 [[PRODUCTNAME]], codenamed "Tempel".
 
  **This should NOT BE USED IN PRODUCTION.**.
 
 This release contains significant changes from 1.7 Series and significant
-changes from the 1.8.0-alpha releases and these release notes should be read an
+changes from the 1.8.0-alpha/beta releases and these release notes should be read an
 understood before trying the release.
 
 You can download this release from
-[GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.0-beta).
+[GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.0-rc1).
 
 ## Requirements
 
-[[PRODUCTNAME]] requires PHP 5.5 or higher. Please read the details in [install
+[[PRODUCTNAME]] requires PHP 5.5.9 or higher. Please read the details in [install
 environment](install_environment.html) to understand the extra configuration 1.8
 Series requires before proceeding.
 
-We recommend using the 1.8.0-beta Windows Player with this release. The 1.7.6 or
+We recommend using the 1.8.0-rc1 Windows Player with this release. The 1.7.6 or
 later version of the Windows Display Player is also compatible with this CMS,
 but will not run the latest features.
 
@@ -44,8 +44,7 @@ not be able to use CEF as an alternative rendering engine.
 We are working towards a new cross platform player which will replace this
 Windows player and will also support Ubuntu. This development can be tracked
 on our [community](https://community.xibo.org.uk/t/cross-platform-player-specification/6261)
-forum. One aim is for the player to support multiple browser rendering engines
-when running on Windows.
+forum.
 </nonwhite>
 
 ## Upgrading
@@ -64,4 +63,4 @@ Community Forum](https://community.xibo.org.uk/c/dev).
 
 For a full list of enhancements and bug fixes please refer to the [Release
 Project
-Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.0-beta+is%3Aclosed).
+Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.0-rc1+is%3Aclosed).

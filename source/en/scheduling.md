@@ -53,6 +53,14 @@ the CMS. More information can be found [here](displays_commands.html).
 Display Order and Priority are also irrelevant when it comes to executing the
 command, but may be set in the CMS for organisational purposes.
 
+## Schedule
+
+Events are scheduled into "dayparts" which are blocks of time that split up the
+day. By default the CMS contains a daypart for adhoc scheduling (called the custom
+daypart) and for scheduling an event "always." More information can be found in 
+[Dayparting](scheduling_dayparting.html).
+
+To give your own From/To Dates then the "Custom" daypart should be selected.
 
 ## Priority
 

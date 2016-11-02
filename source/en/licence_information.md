@@ -1,8 +1,15 @@
 <!--toc=getting_started-->
 #License Information
-[[PRODUCTNAME]] has leveraged the power of several open source platforms and libraries.
 
+<white>
+Please refer to the CMS for [[PRODUCTNAME]] licensing information. If you can't find what you are looking for then
+[Contact Support]([[PRODUCTSUPPORTURL]]).
+</white>
+
+<nonwhite>
 ##Xibo
+
+[[PRODUCTNAME]] has leveraged the power of several open source platforms and libraries.
 
 Xibo - Digital Signage - [http://www.xibo.org.uk]. Version [[PRODUCTVERSION]].
 
@@ -45,3 +52,4 @@ A full list of backend software can be found in the `vendor` folder and a full l
 Please be aware that [[PRODUCTNAME]] takes no measures to regulate the content
 put on your displays beyond what is described in these manual pages. Please make
 sure that any content is used in the manner described in its license.
+</nonwhite>

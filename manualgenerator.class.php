@@ -1,7 +1,7 @@
 <?php
 /*
  * Xibo - Digital Signage - http://www.xibo.org.uk
- * Copyright (C) 2006-2015 Spring Signage Ltd
+ * Copyright (C) 2006-2016 Spring Signage Ltd
  *
  * This file is part of Xibo.
  *
@@ -43,12 +43,13 @@ class ManualGenerator
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
         // This should be updated with each release of the manual
-        $this->productVersion = '1.8.0-beta';
+        $this->productVersion = '1.8.0-rc1';
 
         $this->productName = $productName;
         $this->productHome = $productHome;
         $this->productSupportUrl = $productSupportUrl;
         $this->productFaqUrl = $productFaqUrl;
+
         $this->whiteLabel = ($this->productName != 'Xibo');
     }
 
@@ -167,6 +168,17 @@ class ManualGenerator
         // Run through parse down
         $pageContent = Parsedown::instance()->text($pageContent);
 
+        // Look for headers in the page content and give them ID's based on their actual content.
+        $pageContent = preg_replace_callback('#(<h1>)(.*)(</h1>)#i', function ($m) {
+            $id = strtolower(str_replace(' ', '_', $m[2]));
+            return '<h1 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h1>';
+        }, $pageContent);
+
+        $pageContent = preg_replace_callback('#(<h2>)(.*)(</h2>)#i', function ($m) {
+            $id = strtolower(str_replace(' ', '_',$m[2]));
+            return '<h2 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>';
+        }, $pageContent);
+
         // Find out what TOC this file should have (read the first line)
         $toc = strtok($pageContent, "\n");
         $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
@@ -179,7 +191,9 @@ class ManualGenerator
         $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, 'toc/nav_bar.html'), $string);
 
         // Handle the TOC
-        $string = str_replace('[[TOC]]', Parsedown::instance()->text($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md')), $string);
+        $string = str_replace('[[TOC]]', Parsedown::instance()->text(
+            $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+        ), $string);
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
@@ -207,8 +221,11 @@ class ManualGenerator
         // Replace any chunks of manual that we don't want appearing in non white labels
         if ($this->whiteLabel) {
             $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = str_replace('<white>', '', $string);
+            $string = str_replace('</white>', '', $string);
         }
         else {
+            $string = preg_replace('/<(white)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
             $string = str_replace('<nonwhite>', '', $string);
             $string = str_replace('</nonwhite>', '', $string);
         }

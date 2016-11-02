@@ -28,25 +28,21 @@ First prepare the PowerPoint Presentation. PowerPoint will, by default, put scro
 Install PowerPoint on your Windows PC alongside your [[PRODUCTNAME]] Player and make the following adjustments to the Windows Registry to disable the windows prompt when opening the PowerPoint. **Please ensure you have taken all necessary precautions when making these changes**.
 
 ``` registry
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.Show.8]
-"BrowserFlags"=dword:800000A0
-"EditFlags"=hex:00,00,01,00
+[HKEY_CLASSES_ROOT\PowerPoint.Show.12]
+"BrowserFlags"=dword:00000002
+"EditFlags"=dword:00010000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.Show.12]
-"BrowserFlags"=dword:800000A0
-"EditFlags"=hex:00,00,01,00
+[HKEY_CLASSES_ROOT\PowerPoint.Show.8]
+"BrowserFlags"=dword:00000002
+"EditFlags"=dword:00010000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.ShowMacroEnabled.12]
-"BrowserFlags"=dword:800000A0
+[HKEY_CLASSES_ROOT\PowerPoint.SlideShow.12]
+"BrowserFlags"=dword:800000a0
+"EditFlags"=dword:00010000
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.SlideShow.8]
-"BrowserFlags"=dword:800000A0
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.SlideShow.12]
-"BrowserFlags"=dword:800000A0
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PowerPoint.SlideShowMacroEnabled.12]
-"BrowserFlags"=dword:800000A0
+[HKEY_CLASSES_ROOT\PowerPoint.SlideShow.8]
+"BrowserFlags"=dword:00000002
+"EditFlags"=dword:00010000
 ```
 
 If you do not feel comfortable changing the registry it may be possible to achieve the same results by waiting for [[PRODUCTNAME]] to open the first PowerPoint and then when the pop-up notification appears, choose to "Open" the file, and un-check the box so you won't be prompted again.

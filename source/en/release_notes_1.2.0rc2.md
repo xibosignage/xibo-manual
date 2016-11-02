@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.2.0-rc2_-_Codename_.22Biela.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.2.0-rc2 - Codename "Biela"</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.2.0-rc2_-_Codename_.22Biela.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.2.0-rc2 - Codename "Biela"</a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Upgrading"><span class="tocnumber">3</span> <span class="toctext">Upgrading</span></a>
 <ul>
@@ -22,7 +22,7 @@
 <li class="toclevel-1 tocsection-13"><a href="#Known_Issues_and_Limitations"><span class="tocnumber">7</span> <span class="toctext">Known Issues and Limitations</span></a></li>
 </ul>
 </td></tr></table>
-<h3> <span class="mw-headline" id="Xibo_1.2.0-rc2_-_Codename_.22Biela.22">Xibo 1.2.0-rc2 - Codename "Biela"</span></h3>
+<h3> <span class="mw-headline" id="Xibo_1.2.0-rc2_-_Codename_.22Biela.22">Xibo 1.2.0-rc2 - Codename "Biela"</h3>
 <p><b>This is the second release candidate for Xibo Server 1.2.0. We need as many users as possible to test this release on their systems so that we can iron out any issues before 1.2.0 is released. Please work on a copy of your production Xibo database. This should NOT BE USED IN PRODUCTION.</b>
 </p><p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.2/1.2.0-rc2">https://launchpad.net/xibo/1.2/1.2.0-rc2</a>
 </p>

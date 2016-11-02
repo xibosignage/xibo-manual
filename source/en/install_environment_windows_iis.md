@@ -1,5 +1,10 @@
 <!--toc=getting_started-->
 # Install on Windows using IIS
+
+
+> This is intended as a getting started guide only - the documentation provided by the software vendor
+ should always be used in preference.
+
 This guide is written by Piermaria Spinazzola.
 
 ## Install Internet Information Services (IIS) Manager

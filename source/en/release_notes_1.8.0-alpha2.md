@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# [[PRODUCTNAME]] 1.8.0-alpha2 - Codename "Tempel"</span>
+# [[PRODUCTNAME]] 1.8.0-alpha2 - Codename "Tempel"
 Welcome to the release notes for the second alpha release in the 1.8 Series of
  [[PRODUCTNAME]], codenamed "Tempel".
 

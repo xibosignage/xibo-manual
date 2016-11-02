@@ -53,3 +53,30 @@ https://github.com/xibosignage/oauth2-xibo-cms.
 
 ## Enveloping
 All requests can be enveloped by adding `envelope=1` as a query parameter.
+
+## Errors
+API errors are reported via the 4xx and 5xx HTTP response codes, the most common of which are:
+
+ - 404 Not Found (the resource could not be found)
+ - 409 Conflict (the request conflicts with an existing entity)
+ - 422 Unprocessable Entity (the entity provided is invalid)
+ 
+Extra information is available in the response body and is JSON formatted. A human readable
+error message is presented, the HTTP status code and a data block indicating further information.
+
+An example 422 response is below:
+
+```
+{
+    "error": {
+        "message": "Layout Name must be between 1 and 50 characters",
+        "code": 422,
+        "data": {
+            "property": "name"
+        }
+    }
+}
+```
+
+5xx errors indicate an issue with the CMS environment and extra information will be available
+in the CMS logs.

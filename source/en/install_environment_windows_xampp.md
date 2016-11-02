@@ -1,5 +1,8 @@
 <!--toc=getting_started-->
-#  <span id="Install_on_Windows"> Install on Windows </span>
+# Install on Windows
+
+> This is intended as a getting started guide only - the documentation provided by the software vendor
+ should always be used in preference.
 
 This Windows install guide is focused mainly on someone who wants to use a Windows PC to be the server as well as the client, or perhaps has a spare Windows XP machine to use as a server. The instructions should work equally well on Windows Server operating systems.
 

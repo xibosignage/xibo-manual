@@ -1,14 +1,16 @@
 <!--toc=advanced-->
 # Logging
-The CMS has a central repository for all log information, including the Players which send back log information with
- each collection from CMS.
+
+The CMS has a central repository for all log information, including the Players which send 
+back log information with each collection from CMS.
  
-The log is split into *channels*, *functions* and *pages* for easy searching. Each unique request has a *runNo* to
- group messages together.
+The log is split into *channels*, *functions* and *pages* for easy searching. Each unique request 
+has a *runNo* to group messages together.
  
 The log is accessible from the *Log* page in the CMS administration portal. 
 
 ## Fields
+
 | Field    | Explanation                                                                                |
 |----------|--------------------------------------------------------------------------------------------|
 | ID       | A sequential ID of log messages                                                            |
@@ -23,6 +25,7 @@ The log is accessible from the *Log* page in the CMS administration portal.
 
 
 ## Channels
+
 | Channel | Explanation                                |
 |---------|--------------------------------------------|
 | WEB     | The CMS Web Portal                         |
@@ -32,9 +35,24 @@ The log is accessible from the *Log* page in the CMS administration portal.
 | MAINT   | The Maintenance Script                     |
 
 ## Finding your message
-Understanding the log can be complicated in a busy system and it can often be hard to find messages related to your
- interest. The log can be filtered for this purpose, it is usually best to start with the Channel, then the Function
- and finally (if necessary) the page.
+
+Understanding the log can be complicated in a busy system and it can often be hard to find messages 
+related to your interest. The log can be filtered for this purpose, it is usually best to start with 
+the Channel, then the Function and finally (if necessary) the page.
  
-For example, if an API call to the statistics search function is not working as expected the log can be searched for API,
- GET and `/stats`.
+For example, if an API call to the statistics search function is not working as expected the log can 
+be searched for API, GET and `/stats`.
+
+## Log location
+
+The default log location is the database which can be viewed from the CMS log page. It may be desirable
+to log to a different location, depending on your use case.
+
+The CMS supports adding new log handlers that confirm to the PSR log handler format - we recommend 
+Monolog. To add log handlers simply append to the `$logHandlers` array in `settings.php`.
+
+For example to add a file log handler:
+
+```
+$logHandlers = [new \Monolog\Handler\StreamHandler(PROJECT_ROOT . '/log.txt')];
+```

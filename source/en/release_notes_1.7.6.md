@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# [[PRODUCTNAME]] 1.7.6 - Codename "Tuttle"</span>
+# [[PRODUCTNAME]] 1.7.6 - Codename "Tuttle"
 
 This is a bug fix release of [[PRODUCTNAME]] - 1.7.6. Included in this release are 19 bugs and small enhancements.
 

@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# Xibo 1.7.0-beta - Codename "Tuttle"</span>
+# Xibo 1.7.0-beta - Codename "Tuttle"
 
 This is a release candidate for Xibo working towards the release of Xibo 1.7.0, the next stable line of Xibo released. **This should NOT BE USED IN PRODUCTION.**.
 

@@ -2,15 +2,23 @@
 #Release Notes
 Each release comes with its own set of release notes. These should be read and understood before installation or upgrade.
 
+<white>
+Please [contact support]([[PRODUCTSUPPORTURL]]) for the releases notes.
+</white>
+
+<nonwhite>
 The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSION]].html).
 
 ## Version 1.8 "Tempel"
+* [1.8.0-rc1](release_notes_1.8.0-rc1.html)
 * [1.8.0-beta](release_notes_1.8.0-beta.html)
 * [1.8.0-alpha3](release_notes_1.8.0-alpha3.html)
 * [1.8.0-alpha2](release_notes_1.8.0-alpha2.html)
 * [1.8.0-alpha](release_notes_1.8.0-alpha.html)
 
 ## Version 1.7 "Tuttle"
+* [1.7.9](release_notes_1.7.9.html)
+* [1.7.8](release_notes_1.7.8.html)
 * [1.7.7](release_notes_1.7.7.html)
 * [1.7.6](release_notes_1.7.6.html)
 * [1.7.5](release_notes_1.7.5.html)
@@ -72,3 +80,4 @@ The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSIO
 * [1.0.2](release_notes_1.0.2.html)
 * [1.0.1](release_notes_1.0.1.html)
 * [1.0.0](release_notes_1.0.0.html)
+</nonwhite>

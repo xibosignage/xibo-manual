@@ -6,13 +6,18 @@ PHP/MySQL, the most common installation being "LAMP" (Linux, Apache, MySQL and
 PHP).
 
 The CMS installation will present a list of requirements on the first
-installation screen. To get that far a web server running PHP 5.5 or later must
+installation screen. To get that far a web server running PHP 5.5.9 or later must
 be available and the CMS files must be served via a web server.
 
-The following pages contain basic guides to configuring the most common
-environments.
+A Docker environment is the easiest for installation and maintenance and we encourage all users
+to consider using Docker.
 
 - [Docker](install_docker.html)
+
+If Docker is not available the following pages contain basic guides to configuring the most common
+environments. These are intended as a guide only and the latest documentation from the OS/software
+vendor should be used when available.
+
 - [Install on Linux](install_environment_linux.html)
 - [Install on Windows using XAMPP](install_environment_windows_xampp.html)
 - [Install on Windows using IIS](install_environment_windows_iis.html)
@@ -32,13 +37,34 @@ server / hosting must allow files to be placed outside the web location.
 There are several strategies for achieving this (this is not an exhaustive list):
 
 ### 1. Modify the DocumentRoot
-If your document root is `/var/www`, copy the CMS into that folder and then modify the document root to be `/var/www/web`.
+If your document root is `/var/www`, copy the CMS into that folder and then modify the document 
+root to be `/var/www/web`.
 
 ### 2. Use a symlink
-If your document root is `/var/www`, copy the CMS into a different folder (for example `/home/user/xibo-cms`) and then create a link between `/home/user/xibo-cms/web` and `/var/www/web`. Change the ownership of `/home/user/xibo-cms/web` to www-data (or the user your web server runs under).
+If your document root is `/var/www`, copy the CMS into a different folder 
+(for example `/home/user/xibo-cms`) and then create a link between `/home/user/xibo-cms/web` 
+and `/var/www/web`. Change the ownership of `/home/user/xibo-cms/web` to www-data (or the user 
+your web server runs under).
 
 ### 3. Use a Virtual Host
- > TODO
+A virtual host may be used:
+
+```
+<VirtualHost *:80>
+    DocumentRoot "/var/www/web"
+    ServerName www.example.com
+
+    # Other directives here
+    AllowOverride All
+    Options Indexes FollowSymLinks MultiViews
+    Order allow,deny
+    Allow from all
+    Require all granted
+</VirtualHost>
+```
+
+Any Virtual Host configuration that points to the `/web` folder of the release archive and enables
+the `.htaccess` file is sufficient.
 
 ### 4. Use an Alias
 The CMS can be run under an alias - this is an example for Apache:
@@ -56,17 +82,20 @@ Alias /xibo "/home/user/xibo-cms/web"
 ```
 
 ## URL Rewriting
-The CMS should be run on a web server that supports URL rewriting. If this is not possible you will need to access the application by specifying `index.php` in the URL.
+The CMS should be run on a web server that supports URL rewriting. If this is not possible you 
+will need to access the application by specifying `index.php` in the URL.
 
-A `.htaccess` file has been provided in `web/.htaccess`. This file assumes that the CMS is being served from the web server document root or from a virtual host.
+### Apache
+A `.htaccess` file has been provided in `web/.htaccess`. This file assumes that the CMS is being served from the 
+web server document root or from a virtual host.
 
-### Rewrite Rules with an Alias
-If an alias is required then the `.htaccess` file will need to be modified to include a `RewriteBase` directive that matches
-the alias.
+#### Rewrite Rules with an Alias
+If an alias is required then the `.htaccess` file will need to be modified to include a `RewriteBase` 
+directive that matches the alias.
 
 For example, if the alias is `/xibo` the `.htaccess` should have: `RewriteBase /xibo`.
 
-#### nginx
+### nginx
 A sample `nginx` config is provided below:
 
 ```
@@ -95,6 +124,15 @@ location /maintenance {
 }
 
 ```
+
+### IIS
+
+IIS includes a function to convert from `.htaccess` which creates the correct configuration for IIS. However,
+the error message `Error IIS MAP RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]` may be 
+received.
+
+This rule is incompatible with IIS and can be removed.
+
 
 <a id="zeroMQ"></a>
 ## ZeroMQ

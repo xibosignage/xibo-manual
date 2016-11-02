@@ -15,7 +15,7 @@ encourage you to use a [Docker](install_docker.html) environment.
 
 If Docker is not available then you will need a web server that supports:
 
- - PHP 5.5 and MySQL 5.6
+ - PHP 5.5.9 and MySQL 5.6
  - copying files outside the web root and ideally modify the `DocumentRoot`.
  - URL rewriting which will allow the CMS to use clean, human-friendly URLs.
 
@@ -45,32 +45,41 @@ The installation process is:
 
 ### Download and extract the archive
 
-The CMS archive contains a sub folder called [[PRODUCTNAME]]-server-[[PRODUCTVERSION]], the contents of this folder should be copied into an appropriate location on your web server. It is **strongly recommended** that the folder is extracted in a non-webservable location. On a dedicated server the `DocumentRoot` should point to `/path/to/xibo-folder/web`. Other configurations are discussed on the [environment](install_environment.html) page.
+The CMS archive contains a sub folder called [[PRODUCTNAME]]-cms-[[PRODUCTVERSION]], the contents of 
+this folder should be copied into an appropriate location on your web server. It 
+is **strongly recommended** that the folder is extracted in a non-webservable location. On a 
+dedicated server the `DocumentRoot` should point to `/path/to/[[PRODUCTNAME]]-folder/web`. Other 
+configurations are discussed on the [environment](install_environment.html) page.
 
 The extracted archive should look like the below screen shot:
 
 ![Extracted Archive](img/win32_install_extracted.png)
 
-A folder is provided for the [[PRODUCTNAME]] library which will be used to store images, videos and other files. This folder can be moved to another location and changed during the install process.
+A folder is provided for the [[PRODUCTNAME]] library which will be used to store images, videos and 
+other files. This folder can be moved to another location and changed during the install process.
 
 
 ### Starting the Installation
 Navigating to `http://localhost` will automatically start the installation.
 
-The installation is in a _wizard_ format that contains 6 steps in total. The wizard will guide the installer through the process of installing [[PRODUCTNAME]].
+The installation is in a _wizard_ format that contains 6 steps in total. The wizard will guide the 
+installer through the process of installing [[PRODUCTNAME]].
 
 ### Step 1 - Pre-requisites
-The installer contains a detailed check list of all the items required for a successful installation. Each item will have either:
+The installer contains a detailed check list of all the items required for a successful installation. 
+Each item will have either:
 
 * A tick - the item is present and correct
 * An exclamation mark - the item is present but may not be configured correctly.
 * A cross - the item is missing.
 
-Any items with an exclamation mark or a cross should be addressed and the retest button used to run this step again.
+Any items with an exclamation mark or a cross should be addressed and the retest button used to run 
+this step again.
 
 ![Installer Step 1](img/install_cms_step1.png)
 
-The most common problems here are missing PHP modules, configuration of PHP settings and file permissions issues to the library.
+The most common problems here are missing PHP modules, configuration of PHP settings and file 
+permissions issues to the library.
 
 Once all the items are ticked press next to advance.
 
@@ -82,7 +91,8 @@ The CMS can install into a new database, or an existing one. We recommend a new 
 The choice for a new or existing database can be made by switching between the two available tabs.
 
 ###Database Details
-Whether you chose an existing database or a new one, the installer will need to collect some information about that database to allow the CMS to connect, read and write.
+Whether you chose an existing database or a new one, the installer will need to collect some 
+information about that database to allow the CMS to connect, read and write.
 
 ![Installer Step 2](img/install_cms_step2.png)
 
@@ -92,10 +102,12 @@ The installer will need the following information:
 The host name for your MySQL installation - in the majority of cases this will be "localhost".
 
 **Admin Username**
-The "root" user name for your MySQL installation. This is only used for the installation and is only required if you have asked the installer to create a new database.
+The "root" user name for your MySQL installation. This is only used for the installation and is 
+only required if you have asked the installer to create a new database.
 
 **Admin Password**
-The "root" password. This is only used for the installation and is only required if you have asked the installer to create a new database.
+The "root" password. This is only used for the installation and is only required if you have 
+asked the installer to create a new database.
 
 **Database Name**
 The name for the CMS database.
@@ -108,12 +120,16 @@ The password to use to connect to the database.
 
 
 ###Start the Installation
-The installer will now create / populate database for [[PRODUCTNAME]]. You should see a series of dots appear on the screen as this happens. It can take a few moments to complete. Assuming everything went well, click "Next".
+The installer will now create / populate database for [[PRODUCTNAME]]. You should see a series 
+of dots appear on the screen as this happens. It can take a few moments to complete. Assuming 
+everything went well, click "Next".
 
 _If there are errors at this point, please see the troubleshooting section of this manual._
 
 ###Admin Password
-Each installation will require at least one "Super User" level Administrator to manage the system, apply upgrades and configure the advanced settings. The installer will prompt for the creation of this user at Step 3.
+Each installation will require at least one "Super User" level Administrator to manage the system, 
+apply upgrades and configure the advanced settings. The installer will prompt for the creation of 
+this user at Step 3.
 
 ![Installer Step 3](img/install_cms_step3.png)
 
@@ -121,11 +137,16 @@ Each installation will require at least one "Super User" level Administrator to 
 
 
 ###Settings
-The next screen deals with configuring [[PRODUCTNAME]]. The first box asks for the location that [[PRODUCTNAME]] should store the media you upload. We created a folder for this earlier, so enter that folder here e.g `/home/[[PRODUCTNAME]]/library`.
+The next screen deals with configuring [[PRODUCTNAME]]. The first box asks for the location 
+that [[PRODUCTNAME]] should store the media you upload. The release archive included a folder for this 
+`/library` or a different folder can be used. Enter enter that folder here 
+e.g `/var/www/[[PRODUCTNAME]]/library`.
 
-The next box asks for a CMS key - this key is used to authenticate Displays with the CMS and should be something obscure.
+The next box asks for a CMS key - this key is used to authenticate Displays with the CMS and should 
+be something obscure.
 
-The final tick box asks if it's OK to send anonymous statistics back to the [[PRODUCTNAME]] project. We would be very happy if you did!
+The final tick box asks if it's OK to send anonymous statistics back to the [[PRODUCTNAME]] project. 
+We would be very happy if you did!
 
 ![Install Step 4](img/install_cms_step4.png)
 

@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# [[PRODUCTNAME]] 1.8.0-alpha - Codename "Tempel"</span>
+# [[PRODUCTNAME]] 1.8.0-alpha - Codename "Tempel"
 Welcome to the release notes for the first alpha release in the 1.8 Series of Xibo, codenamed "Tempel". **This should NOT BE USED IN PRODUCTION.**.
 
 This release contains significant changes from 1.7 Series and these release notes should be read an understood before trying the release.
