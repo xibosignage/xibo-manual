@@ -3,7 +3,7 @@
 # Events
 
 Events are Layouts or Campaigns assigned to Displays at specific dates and
-times. The event form can be launched from  the Calendar Control buttons and by
+times. The event form can be launched from the Calendar Control buttons and by
 clicking on any existing event in the calendar.
 
 When launched the form looks like this:
@@ -35,11 +35,15 @@ that they sit on top of the Campaign / Layout schedule playing. This is
 particularly useful for having a company logo or Ticker that exists across all
 Layouts being shown.
 
-## The "always" option
-Campaign/Layout and Overlay Layout events allow the user to schedule the event
-to run "Always" by marking the Always checkbox on the Add/Edit form. This option
-puts the event in the schedule all the time and is useful for Schedules that
-rarely change.
+## Dayparting
+Events are scheduled into "dayparts" which are blocks of time that split up the
+day. By default the CMS contains a daypart for adhoc scheduling (called the custom
+daypart) and for scheduling an event "always." More information can be found in 
+[Dayparting](scheduling_dayparting.html).
+
+To give your own From/To Dates then the "Custom" daypart should be selected.
+
+Dayparting is not available for Command Events as these must be for a specific time.
 
 ## Recurring Events
 
