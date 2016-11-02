@@ -5,7 +5,7 @@ include_once('template/template.php');
 
 $argv = $GLOBALS['argv'];
 
-$footer = isset($argv[0]) ? $argv[0] : null;
+$footer = isset($argv[1]) ? $argv[1] : null;
 
 // Generates a complete manual.
 $manual = new ManualGenerator(PRODUCT_NAME, PRODUCT_HOME, PRODUCT_SUPPORT_URL, PRODUCT_FAQ_URL);
