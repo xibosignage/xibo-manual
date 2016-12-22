@@ -64,6 +64,11 @@ $samlSettings = array (
             'usertypeid' => '',
             'UserName' => 'uid',
             'email' => 'mail',
+            'ref1' => '',
+            'ref2' => '',
+            'ref3' => '',
+            'ref4' => '',
+            'ref5' => ''
         )
     ),
    // Settings for the PHP-SAML toolkit. 

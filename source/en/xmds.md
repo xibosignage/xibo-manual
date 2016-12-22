@@ -146,6 +146,8 @@ The CMS will use the pub key to encrypt any messages sent to the Player on the X
 
 Messages sent through XMR are encrypted using `openssl_seal` and should be decrypted accordingly.
 
+Please see [here](xmr_api.html) for more information.
+
 ### RequiredFiles
 The required files method returns all files needed for the Player to play its scheduled Layouts entirely offline for the quantity of time specified by the `REQUIRED_FILES_LOOKAHEAD` setting in the CMS. This setting defaults to 4 days.
 
