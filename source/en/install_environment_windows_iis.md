@@ -198,3 +198,36 @@ PHPmyAdmin is a third party graphic interface for the MySQL server, this is not 
 ```
 Rev 30.11.2014 v.1.0 – IIS 8.5, MySQL 5.6.21 Community Server Edition, PHP 5.3, Windows Server 2012.
 ```
+
+
+## Max Query String
+
+Please ensure that you increase the maximum length of the query string for IIS to 4096 bytes. This can be
+done by adding the following directive to your `web.config` file.
+
+```
+<system.webServer>
+    <security>
+        <requestFiltering>
+            <requestLimits maxQueryString="4096" />
+            <verbs>
+            </verbs>
+        </requestFiltering>
+    </security>
+</system.webServer>
+```
+
+## HTTP Verbs
+
+The CMS requires that PUT/DELETE/HEAD are enabled for PHP - by default the PHP Handler for IIS disables
+these verbs. Add the following to the `web.config` file to enable the mapping. This can also be done
+from the IIS Management GUI in Handler Mappings.
+
+```
+<system.webServer>
+    <handlers>
+        <remove name="PHP_via_FastCGI" />
+        <add name="PHP_via_FastCGI" path="*.php" verb="*" modules="FastCgiModule" scriptProcessor="C:\Program Files (x86)\PHP\v5.6\php-cgi.exe" resourceType="Either" requireAccess="Script" />
+    </handlers>
+</system.webServer>
+```

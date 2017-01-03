@@ -133,6 +133,56 @@ received.
 
 This rule is incompatible with IIS and can be removed.
 
+After import the following content will be inserted into the `web.config` file.
+
+```
+<system.webServer>
+    <rewrite>
+        <rules>
+            <rule name="Imported Rule 1" stopProcessing="true">
+                <match url="^" ignoreCase="false" />
+                <conditions logicalGrouping="MatchAll">
+                    <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true" />
+                    <add input="{URL}" pattern="^.*/authorize/.*$" ignoreCase="false" />
+                </conditions>
+                <action type="Rewrite" url="api/authorize/index.php" appendQueryString="true" />
+            </rule>
+            <rule name="Imported Rule 2" stopProcessing="true">
+                <match url="^" ignoreCase="false" />
+                <conditions logicalGrouping="MatchAll">
+                    <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true" />
+                    <add input="{URL}" pattern="^.*/api/.*$" ignoreCase="false" />
+                </conditions>
+                <action type="Rewrite" url="api/index.php" appendQueryString="true" />
+            </rule>
+            <rule name="Imported Rule 3" stopProcessing="true">
+                <match url="^" ignoreCase="false" />
+                <conditions logicalGrouping="MatchAll">
+                    <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true" />
+                    <add input="{URL}" pattern="^.*/install/.*$" ignoreCase="false" />
+                </conditions>
+                <action type="Rewrite" url="install/index.php" appendQueryString="true" />
+            </rule>
+            <rule name="Imported Rule 4" stopProcessing="true">
+                <match url="^" ignoreCase="false" />
+                <conditions logicalGrouping="MatchAll">
+                    <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true" />
+                    <add input="{URL}" pattern="^.*/maint/.*$" ignoreCase="false" />
+                </conditions>
+                <action type="Rewrite" url="maint/index.php" appendQueryString="true" />
+            </rule>
+            <rule name="Imported Rule 5" stopProcessing="true">
+                <match url="^" ignoreCase="false" />
+                <conditions logicalGrouping="MatchAll">
+                    <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true" />
+                </conditions>
+                <action type="Rewrite" url="index.php" appendQueryString="true" />
+            </rule>
+        </rules>
+    </rewrite>
+</system.webServer>
+```
+
 
 <a id="zeroMQ"></a>
 ## ZeroMQ
