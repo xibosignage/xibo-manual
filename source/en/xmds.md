@@ -383,7 +383,10 @@ Properties supported by `status` are:
 {
 	"currentLayoutId": "The ID of the Current Layout",
 	"availableSpace": "The bytes of available space",
-	"totalSpace": "The bytes of total space"
+	"totalSpace": "The bytes of total space",
+	"lastCommandSuccess": "Whether or not the last received Command was executed successfully",
+	"deviceName": "The name of the physical device",
+	"timeZone": "An IANA timezone identifier for the Displays timezone"
 }
 ```
 
