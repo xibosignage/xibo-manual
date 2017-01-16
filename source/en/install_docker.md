@@ -9,7 +9,8 @@ CMS with recommended configuration.
 
 The easiest and fastest way to get started with [[PRODUCTNAME]] is to
 install Docker and use `launcher` to bootstrap and run your [[PRODUCTNAME]]
-environment.
+environment. `launcher` is a small shell script used to provide base functionality - its features
+are described below.
 
 ### Download and extract the [[PRODUCTNAME]] Docker archive
 
@@ -25,15 +26,28 @@ choice of location is up to you. The only requirement is that the Docker
 installation can read/write to it.
 
 ### Install Docker
+Docker installation documents can be found on the [Docker website](https://docs.docker.com/installation/).
+
+#### Linux
+Docker can be installed on Linux based systems using the below command:
 
 ```
 wget -qO- https://get.docker.com/ | sh
 ```
 
-You can [manually install Docker](https://docs.docker.com/installation/) if you
-prefer.
+#### Windows
+There are 2 Docker products for Windows - if you want to use `launcher` on your installation then
+please install [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
 
-### Bootstrap [[PRODUCTNAME]]
+`launcher` supports the VirtualBox providers for Docker, you may use HyperV but if you do so you
+will need to [create the containers yourself](#running_without_launcher).
+
+Please note that when running through Docker Toolbox, the Docker system will be running in a VM,
+which will be created in bridged mode. The resulting Docker containers will therefore be accessible
+from the IP address assigned to the Docker Toolbox VM, rather than your local machine.
+
+
+## Bootstrap [[PRODUCTNAME]]
 Open a terminal/command window in the folder where you extracted the archive.
 As a user who has permissions to run the `docker` command, simply run:
 
@@ -79,6 +93,10 @@ You can log on to the CMS at `http://localhost`. If you configured an
 alternative port number, then be sure to add that to the URL - so for example
 `http://localhost:8080`
 
+Please note that if you are running Docker Toolbox on Windows the CMS will not be accessible
+at `localhost`, instead you should use the IP address assigned to the Docker Toolbox Virtual Machine.
+This will be shown to you when Docker Toolbox starts.
+
 ### Start/Stop/Destroy
 
 Pass start/stop or destroy into launcher to take the corresponding action
@@ -101,7 +119,6 @@ you can safely run
 Providing your keep your `launcher.env` file and your `DATA_DIR` directory intact,
 the CMS will be run using your existing data.
 
-<a name="upgrade"></a>
 ## Upgrading [[PRODUCTNAME]]
 
 Before attempting an upgrade, it's strongly recommended to take a full backup of
@@ -138,6 +155,42 @@ contents of `DATA_DIR`, and then running
 ```
 The original version of the CMS will be restored for you.
 
+## HTTPS/SSL
+[[PRODUCTNAME]] should be run over SSL if running on anything other than a secure private 
+network. The Docker containers do not provide SSL and this must be provided by an external 
+web server which handles SSL termination and reverse proxy into the `cms-web` container.
+
+There are many good resources for achieving this architecture - for example a 
+[nginx-proxy container](https://github.com/jwilder/nginx-proxy) could be used. 
+
+If you already have a web server running on your Host machine, configuring a reverse proxy should 
+be straightforward, an example `VirtualHost` for Apache is below:
+
+```
+Listen 443
+
+NameVirtualHost *:443
+<VirtualHost *:443>
+
+    SSLEngine On
+    ProxyPreserveHost On
+
+    # Set the path to SSL certificate
+    # Usage: SSLCertificateFile /path/to/cert.pem
+    SSLCertificateFile /etc/apache2/ssl/file.pem
+
+
+    # Servers to proxy the connection, or;
+    # List of application servers:
+    # Usage:
+    # ProxyPass / http://[IP Addr.]:[port]/
+    # ProxyPassReverse / http://[IP Addr.]:[port]/
+    # Example: 
+    ProxyPass / http://0.0.0.0:8080/
+    ProxyPassReverse / http://0.0.0.0:8080/
+
+</VirtualHost>
+```
 
 ## Running without launcher
 If you have your own docker environment you may want to run without the
@@ -146,14 +199,35 @@ for pulling the docker containers, starting them and manually installing [[PRODU
 
 The structure expected by the containers is outlined below.
 
-#### /containers
+#### Containers
 
-web and xmr Dockerfiles and associated configuration. These are built by Docker
-Hub and packaged into `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-cms` and `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-xmr`.
+There are 2 containers provided:
 
-#### DATA_DIR/shared
+ - web 
+ - xmr 
 
-Data folders for the [[PRODUCTNAME]] installation.
+These are built by Docker Hub and packaged into `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-cms` 
+and `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-xmr`.
+
+[[PRODUCTNAME]] also requires a database - we recommend using the `mysql` container available on 
+Docker Hub. Any MySQL based container can be used, provided it can be linked to the `cms-web`
+container. It is also possible to use an external database by providing those details to the `cms-web` 
+container as environment variables, as below:
+
+ - CMS_DATABASE_HOST
+ - CMS_DATABASE_PORT
+ - CMS_DATABASE_USERNAME
+ - CMS_DATABASE_PASSWORD
+ - CMS_DATABASE_NAME
+
+If you decide to run the containers yourself you should read and understand the `DockerFile` which can
+be found for each container in the `/containers` folder.
+
+#### Storing Data
+
+Data folders should be mapped outside the Docker containers as volumes so that data is persisted
+across Container upgrades. The following Data folders are used by `launcher` and should be configured
+for your environment:
 
  - The Library storage can be found in `/shared/cms/library`
  - The database storage can be found in `/shared/db`
