@@ -1,7 +1,7 @@
 <?php
 /*
  * Xibo - Digital Signage - http://www.xibo.org.uk
- * Copyright (C) 2006-2016 Spring Signage Ltd
+ * Copyright (C) 2006-2017 Spring Signage Ltd
  *
  * This file is part of Xibo.
  *
@@ -43,7 +43,7 @@ class ManualGenerator
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
         // This should be updated with each release of the manual
-        $this->productVersion = '1.8.0-rc2';
+        $this->productVersion = '1.8.0-rc3';
 
         $this->productName = $productName;
         $this->productHome = $productHome;
