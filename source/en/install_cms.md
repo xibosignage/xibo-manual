@@ -1,164 +1,221 @@
 <!--toc=getting_started-->
 # CMS Installation
 
-The [[PRODUCTNAME]] CMS is a PHP web application and MySQL database. The PHP /
-MySQL combination is very popular as a web platform and can be run on Linux or
-Windows servers.
+The [[PRODUCTNAME]] CMS is a web application run through Docker.
 
-There are a number of service providers that will install [[PRODUCTNAME]] for
+Alternatively there are a number of service providers that will install [[PRODUCTNAME]] for
 you, or even run [[PRODUCTNAME]] on their architecture. If you are unfamiliar
-with web servers and just want to use the application, then a service provider
+with Docker and just want to use the application, then a service provider
 solution may be preferable.
 
 Should you want to install and run [[PRODUCTNAME]] yourself then we strongly
 encourage you to use a [Docker](install_docker.html) environment.
 
-If Docker is not available then you will need a web server that supports:
+## Requirements
 
- - PHP 5.5.9 and MySQL 5.6
- - copying files outside the web root and ideally modify the `DocumentRoot`.
- - URL rewriting which will allow the CMS to use clean, human-friendly URLs.
+ - A server/machine capable of running Docker
+ - If HTTPS is required, a web server capable of being a reverse proxy (nginx, apache, iis)
 
-We have explained some other options in the
-[environment](install_environment.html) section of this manual.
+### No Docker?
+If Docker is not available please refer to a [Custom Installation](manual_install.html).
 
+**Please note** that while every effort will be made to assist with custom installations, 
+Docker is the supported method of running [[PRODUCTNAME]] and it may not be possible to help 
+with your custom installation without opening a paid support incident from a company offering
+commercial support.
 
 ## Installation
 
-** If you are using Docker please refer to the [Docker Install Guide](install_docker.html)
-and return here for step 6 onwards. **
+The easiest and fastest way to get started with [[PRODUCTNAME]] is to use `launcher` to 
+bootstrap Docker and run your [[PRODUCTNAME]] environment. 
 
-Beyond this point it is assumed that a web server running with PHP and MySQL is
-available and that the compressed archive (ZIP or Tarball) of the CMS
-installation package has been transferred to the server.
+`launcher` is a small shell script used to provide base functionality - its features
+are described below.
 
-The installation process is:
+### Download and extract the [[PRODUCTNAME]] Docker archive
 
-1. Download and extract the archive
-2. Starting the Installation
-3. Pre-requisites
-4. Creating the database
-5. Database details
-6. Starting the Installation
-7. Final Configuration
-8. Complete
+<nonwhite>
+The latest [[PRODUCTNAME]] Docker installation files can be [downloaded
+from our website](https://github.com/xibosignage/xibo-docker/releases).
+</nonwhite>
 
-### Download and extract the archive
+<white>
+Ask your service provider for the [[PRODUCTNAME]] Docker installation files. 
+</white>
 
-The CMS archive contains a sub folder called [[PRODUCTNAME]]-cms-[[PRODUCTVERSION]], the contents of 
-this folder should be copied into an appropriate location on your web server. It 
-is **strongly recommended** that the folder is extracted in a non-webservable location. On a 
-dedicated server the `DocumentRoot` should point to `/path/to/[[PRODUCTNAME]]-folder/web`. Other 
-configurations are discussed on the [environment](install_environment.html) page.
+The archive should be extracted in a suitable location on your host machine - the
+choice of location is up to you. The only requirement is that the Docker
+installation can read/write to it. By default your library content and database will be
+written under this folder.
 
-The extracted archive should look like the below screen shot:
+## Bootstrap [[PRODUCTNAME]]
+Open a terminal/command window in the folder where you extracted the archive.
+As a user who has permissions to run the `docker` command, simply run:
 
-![Extracted Archive](img/win32_install_extracted.png)
+```
+./launcher bootstrap
+```
+The first time you run `launcher`, a new file `launcher.env` will be created in
+the same directory as the `launcher` program. Edit this with a text editor to
+provide the configuration needed to get your [[PRODUCTNAME]] CMS installed.
 
-A folder is provided for the [[PRODUCTNAME]] library which will be used to store images, videos and 
-other files. This folder can be moved to another location and changed during the install process.
+If you don't want [[PRODUCTNAME]] to be able to send email messages, then you can omit to
+configure those options.
 
+`DATA_DIR` will default to the current directory you're in. If you want to store
+your [[PRODUCTNAME]] data somewhere else, then change `DATA_DIR` to point to that place.
 
-### Starting the Installation
-Navigating to `http://localhost` will automatically start the installation.
+By default, [[PRODUCTNAME]] will start a webserver listening on port 80. If you already
+have a webserver listening on port 80, or would prefer to use an alternative
+port number, then you need to change the value of the `WEBSERVER_PORT` option.
 
-The installation is in a _wizard_ format that contains 6 steps in total. The wizard will guide the 
-installer through the process of installing [[PRODUCTNAME]].
+Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. If you
+would prefer to use an alternative port number, then you'll need to do so by
+changing the `XMR_PLAYER_PORT` option.
 
-### Step 1 - Pre-requisites
-The installer contains a detailed check list of all the items required for a successful installation. 
-Each item will have either:
+Once you've made your changes to `launcher.env` and have saved the file, run
 
-* A tick - the item is present and correct
-* An exclamation mark - the item is present but may not be configured correctly.
-* A cross - the item is missing.
+```
+./launcher bootstrap
+```
 
-Any items with an exclamation mark or a cross should be addressed and the retest button used to run 
-this step again.
+This will bootstrap and start your [[PRODUCTNAME]] CMS. The CMS will be fully installed
+with the default credentials.
 
-![Installer Step 1](img/install_cms_step1.png)
+```
+Username: [[PRODUCTNAME]]_admin
+Password: password
+```
 
-The most common problems here are missing PHP modules, configuration of PHP settings and file 
-permissions issues to the library.
+You should log on to the CMS straight away and change the password on that
+account.
 
-Once all the items are ticked press next to advance.
+You can log on to the CMS at `http://localhost`. If you configured an
+alternative port number, then be sure to add that to the URL - so for example
+`http://localhost:8080`
 
-###Creating the database
-The CMS can install into a new database, or an existing one. We recommend a new database.
+Please note that if you are running Docker Toolbox on Windows the CMS will not be accessible
+at `localhost`, instead you should use the IP address assigned to the Docker Toolbox Virtual Machine.
+This will be shown to you when Docker Toolbox starts.
 
-[[PRODUCTNAME]] does not prefix its table names and may conflict with content in an existing database.
+#### Configuration of XMR public address
 
-The choice for a new or existing database can be made by switching between the two available tabs.
+Docker cannot reasonably know the DNS name or IP address of your host machine, and therefore
+it is necessary to configure the XMR Public Address in CMS Settings when first logged in. **This
+only needs to be done on the first bootstrap**.
 
-###Database Details
-Whether you chose an existing database or a new one, the installer will need to collect some 
-information about that database to allow the CMS to connect, read and write.
+This can be found on the CMS Settings page under Administration, on the Display tab.
 
-![Installer Step 2](img/install_cms_step2.png)
+The format of the address is:
 
-The installer will need the following information:
+```
+tcp://<ip_address>:<port>
+```
 
-**Host**
-The host name for your MySQL installation - in the majority of cases this will be "localhost".
-
-**Admin Username**
-The "root" user name for your MySQL installation. This is only used for the installation and is 
-only required if you have asked the installer to create a new database.
-
-**Admin Password**
-The "root" password. This is only used for the installation and is only required if you have 
-asked the installer to create a new database.
-
-**Database Name**
-The name for the CMS database.
-
-**Database User name**
-The user name for the CMS to use to connect to the database - usually this can be the same.
-
-**Database Password**
-The password to use to connect to the database.
+The default `<port>` is 9505 and should be set to that unless you have modified the `XMR_PLAYER_PORT` setting
+ in your `launcher.env` file.
 
 
-###Start the Installation
-The installer will now create / populate database for [[PRODUCTNAME]]. You should see a series 
-of dots appear on the screen as this happens. It can take a few moments to complete. Assuming 
-everything went well, click "Next".
 
-_If there are errors at this point, please see the troubleshooting section of this manual._
+### Start/Stop/Destroy
 
-###Admin Password
-Each installation will require at least one "Super User" level Administrator to manage the system, 
-apply upgrades and configure the advanced settings. The installer will prompt for the creation of 
-this user at Step 3.
+Pass start/stop or destroy into launcher to take the corresponding action
 
-![Installer Step 3](img/install_cms_step3.png)
+```
+./launcher XXX
+```
 
-**This user name and password should be kept safe as it will be required when the installation is complete.**
+The `stop` command will stop the [[PRODUCTNAME]] CMS services running. If you want to start
+them up again, issue the `start` command.
+
+If you suspect there are problems with the containers running your [[PRODUCTNAME]] CMS, then
+you can safely run
+
+```
+./launcher destroy
+./launcher bootstrap
+```
+
+Providing your keep your `launcher.env` file and your `DATA_DIR` directory intact,
+the CMS will be run using your existing data.
+
+## Upgrading [[PRODUCTNAME]]
+
+Before attempting an upgrade, it's strongly recommended to take a full backup of
+your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
+
+```
+./launcher stop
+```
+
+and then, backup `launcher`, `launcher.env` and `DATA_DIR` and keep
+them somewhere safe.
+
+<nonwhite>
+Next download the [appropriate version of launcher](https://github.com/xibosignage/xibo-docker/releases), replace the 
+version of launcher on your system leaving your launcher.env file intact, and run
+</nonwhite>
+
+<white>
+Next download the appropriate version of launcher from your service provider, replace the version of
+launcher on your system leaving your launcher.env file intact, and run
+</white>
+
+```
+./launcher upgrade
+```
+
+The CMS containers will be destroyed, and rebuilt with the newer [[PRODUCTNAME]] version.
+
+A database backup will be automatically run for you as part of this process.
+
+If you need to roll back to the older [[PRODUCTNAME]] version for some reason, you can do
+so by running
+
+```
+./launcher stop
+```
+Restoring your original copy of `launcher`, `launcher.env` and the complete
+contents of `DATA_DIR`, and then running
+
+```
+./launcher bootstrap
+```
+The original version of the CMS will be restored for you.
+
+## HTTPS/SSL
+[[PRODUCTNAME]] should be run over SSL if running on anything other than a secure private 
+network. The Docker containers do not provide SSL and this must be provided by an external 
+web server which handles SSL termination and reverse proxy into the `cms-web` container.
+
+There are many good resources for achieving this architecture - for example a 
+[nginx-proxy container](https://github.com/jwilder/nginx-proxy) could be used. 
+
+If you already have a web server running on your Host machine, configuring a reverse proxy should 
+be straightforward, an example `VirtualHost` for Apache is below:
+
+```
+Listen 443
+
+NameVirtualHost *:443
+<VirtualHost *:443>
+
+    SSLEngine On
+    ProxyPreserveHost On
+
+    # Set the path to SSL certificate
+    # Usage: SSLCertificateFile /path/to/cert.pem
+    SSLCertificateFile /etc/apache2/ssl/file.pem
 
 
-###Settings
-The next screen deals with configuring [[PRODUCTNAME]]. The first box asks for the location 
-that [[PRODUCTNAME]] should store the media you upload. The release archive included a folder for this 
-`/library` or a different folder can be used. Enter enter that folder here 
-e.g `/var/www/[[PRODUCTNAME]]/library`.
+    # Servers to proxy the connection, or;
+    # List of application servers:
+    # Usage:
+    # ProxyPass / http://[IP Addr.]:[port]/
+    # ProxyPassReverse / http://[IP Addr.]:[port]/
+    # Example: 
+    ProxyPass / http://0.0.0.0:8080/
+    ProxyPassReverse / http://0.0.0.0:8080/
 
-The next box asks for a CMS key - this key is used to authenticate Displays with the CMS and should 
-be something obscure.
-
-The final tick box asks if it's OK to send anonymous statistics back to the [[PRODUCTNAME]] project. 
-We would be very happy if you did!
-
-![Install Step 4](img/install_cms_step4.png)
-
-###Complete
-The installation is now complete and the system is ready to log in.
-
-![Install Complete](img/install_cms_complete.png)
-
-## XMR
-XMR is the push messaging engine in [[PRODUCTNAME]] and it is recommended to
- have XMR running for all installations.
-
-Instructions for installing XMR can be found [here](xmr.html). If you are
- running with [Docker](install_docker.html) then XMR is already installed for
- you, but will need to be configured.
+</VirtualHost>
+```

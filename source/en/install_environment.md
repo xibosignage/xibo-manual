@@ -1,4 +1,4 @@
-<!--toc=getting_started-->
+<!--toc=manual_install-->
 # Choosing your Environment
 
 The [[PRODUCTNAME]] CMS can be run on any operating system that supports

@@ -1,4 +1,4 @@
-<!--toc=getting_started-->
+<!--toc=manual_install-->
 # Install on Windows using IIS
 
 

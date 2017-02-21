@@ -10,16 +10,16 @@ The CMS can be upgraded from 1.4 to 1.7 and from 1.7 to 1.8. Direct upgrade
 ## Docker installations
 
 `launcher` can upgrade your Docker based installation. Please see the
-[Docker guide](install_docker.html#upgrade).
+[Docker guide](install_cms.html#upgrade).
 
 ### Steps
 
-* Take the actions in the [Docker guide](install_docker.html#upgrade)
+* Take the actions in the [Docker guide](install_cms.html#upgrading_xibo)
 * Navigate to login and the upgrade wizard will open and show the list of
 upgrade steps.
 * Press start to run through them.
 
-## Manual installations
+## Custom/Manual installations
 
 Upgrading a manual installation happens in 3 stages:
 
@@ -37,7 +37,7 @@ Please check the [release notes](release_notes.html) before starting the upgrade
 You should always take a backup before upgrading your CMS Installation.
 
 * If upgrading to 1.8 series, ensure your environment meets the [requirements
-for installation](install_cms.html).
+for installation](manual_install.html), if it does not then correct that before continuing.
 *   *Optionally* clone your existing [[PRODUCTNAME]] database and grant
 permissions (see [Clone Database](release_notes_clonedb.html "Clone Database")
 for details). It is possible to upgrade without cloning but much harder to roll

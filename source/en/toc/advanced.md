@@ -1,5 +1,7 @@
 - [Overview](advanced.html)
 <nonwhite>- [Contributing](advanced_contributing.html)</nonwhite>
+- [XTR - Routine Tasks](xtr.html)
+- [XMR - Push Messaging](xmr.html)
 - [API](api.html)
 - [Themes](advanced_theme.html)
 - [Extending](advanced_extending.html)
