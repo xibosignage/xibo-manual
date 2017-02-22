@@ -61,23 +61,15 @@ in a text editor (Notepad/TextEdit/Nano and not a Word processor).
 If you don't want [[PRODUCTNAME]] to be able to send email messages, then you can omit to
 configure those options.
 
-`DATA_DIR` will default to the current directory you're in. If you want to store
-your [[PRODUCTNAME]] data somewhere else, then change `DATA_DIR` to point to that place.
-
-By default, [[PRODUCTNAME]] will start a webserver listening on port 80. If you already
-have a webserver listening on port 80, or would prefer to use an alternative
-port number, then you need to change the value of the `WEBSERVER_PORT` option.
-
-Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. If you
-would prefer to use an alternative port number, then you'll need to do so by
-changing the `XMR_PLAYER_PORT` option.
+Docker will map data folders to contain database data and any custom files for the CMS. These will default appear 
+in the folder containing the release archive in a `/shared` sub-folder.
 
 Once you've made your changes to `config.env` and have saved the file, Open a terminal/command window 
 in the folder where you extracted the archive. As a user who has permissions to run the `docker` 
 command, simply run:
 
 ```
-./docker-compose up
+docker-compose up -d
 ```
 
 This will bootstrap and start your [[PRODUCTNAME]] CMS. The CMS will be fully installed
@@ -92,7 +84,7 @@ You should log on to the CMS straight away and change the password on that
 account.
 
 You can log on to the CMS at `http://localhost`. If you configured an
-alternative port number, then be sure to add that to the URL - so for example
+alternative port number (see [below](#using_different_ports)), then be sure to add that to the URL - so for example
 `http://localhost:8080`
 
 Please note that if you are running Docker Toolbox on Windows the CMS will not be accessible
@@ -122,7 +114,7 @@ The default `<port>` is 9505 and should be set to that unless you have modified 
 Pass start/stop or down (destroy completely) into launcher to take the corresponding action
 
 ```
-./docker-compose XXX
+docker-compose XXX
 ```
 
 The `stop` command will stop the [[PRODUCTNAME]] CMS services running. If you want to start
@@ -132,8 +124,8 @@ If you suspect there are problems with the containers running your [[PRODUCTNAME
 you can safely run
 
 ```
-./docker-compose down
-./docker-compose up
+docker-compose down
+docker-compose up -d
 ```
 
 Providing your keep your `config.env` file and your `DATA_DIR` directory intact,
@@ -145,7 +137,7 @@ Before attempting an upgrade, it's strongly recommended to take a full backup of
 your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
 
 ```
-./docker-compose stop
+docker-compose stop
 ```
 
 and then, backup `config.env` and `DATA_DIR` and keep
@@ -167,8 +159,8 @@ launcher on your system leaving your config.env file intact, and run
 </white>
 
 ```
-./docker-compose down
-./docker-compose up
+docker-compose down
+docker-compose up -d
 ```
 
 The CMS containers will be destroyed, and rebuilt with the newer [[PRODUCTNAME]] version.
@@ -179,19 +171,45 @@ If you need to roll back to the older [[PRODUCTNAME]] version for some reason, y
 so by running
 
 ```
-./docker-compose stop
+docker-compose stop
 ```
 
 Restoring your original copy of `launcher`, `config.env` and the complete
 contents of `DATA_DIR`, and then running
 
 ```
-./docker-compose up
+docker-compose up -d
 ```
 
 The original version of the CMS will be restored for you.
 
+## Using different ports
+
+By default, [[PRODUCTNAME]] will start a web server listening on port 80. If you already have a web server listening 
+on port 80, or would prefer to use an alternative port number, then you need to copy the 
+`docker-compose.custom-ports.yml.template` file and change the `ports` section for `cms-web`. The file should be saved
+as `docker-compose.custom-ports.yml`.
+
+Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. If you would prefer to use an 
+alternative port number, then you'll need to do so by copying the `docker-compose.custom-ports.yml.template` file 
+and changing the `ports` section for `cms-xmr`.
+
+To use this file replace any `docker-compose up -d` commands in the above instructions 
+with `docker-compose -f docker-compose.yml -f docker-compose.custom-ports.yml up -d`. 
+
+
+## Remote MySQL 
+
+The default `docker-compose.yml` file includes a container for MySQL, however it is possible to run with an 
+external / remote MySQL instance as the database for [[PRODUCTNAME]].
+
+To do this base the `config.env` file on the template `config.evn.template-remote-mysql` and replace any 
+`docker-compose up -d` commands in the above instructions 
+with `docker-compose -f docker-compose.remote-mysql.yml up -d`. 
+
+
 ## HTTPS/SSL
+
 [[PRODUCTNAME]] should be run over SSL if running on anything other than a secure private 
 network. The Docker containers do not provide SSL and this must be provided by an external 
 web server which handles SSL termination and reverse proxy into the `cms-web` container.

@@ -40,9 +40,12 @@ This means that upgrading from any 1.8 release to 1.8.0-rc3 will require the fol
  - Take a backup of your `DATA_DIR`, `launcher` and `launcher.env`
  - `./launcher destroy`
  - Replace the contents of your Docker files with the new release archive for 1.8.0-rc3
- - Rename `launcher.env` to `config.env`
+ - Copy `config.env.template` as `config.env`
+ - Open both `launcher.env` and `config.env` in your preferred text editor
+ - Transfer CMS_DATABASE_PASSWORD from `launcher.env` to MYSQL_PASSWORD in `config.env`
  - `docker-compose up`
 
+If you have custom ports for the web server or XMR, please see [these notes](install_cms.html#using_different_ports).
 
 #### Windows Player
 
