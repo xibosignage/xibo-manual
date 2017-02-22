@@ -195,7 +195,7 @@ alternative port number, then you'll need to do so by copying the `docker-compos
 and changing the `ports` section for `cms-xmr`.
 
 To use this file replace any `docker-compose up -d` commands in the above instructions 
-with `docker-compose -f docker-compose.yml -f docker-compose.custom-ports.yml up -d`. 
+with `docker-compose -f docker-compose.custom-ports.yml up -d`. 
 
 
 ## Remote MySQL 
