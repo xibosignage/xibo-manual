@@ -19,6 +19,12 @@ The CMS can be upgraded from 1.4 to 1.7 and from 1.7 to 1.8. Direct upgrade
 upgrade steps.
 * Press start to run through them.
 
+## Switching to Docker
+Installations prior to 1.8 will be "Custom/Manual" installations and should be migrated
+to Docker during the upgrade.
+
+TODO
+
 ## Custom/Manual installations
 
 Upgrading a manual installation happens in 3 stages:

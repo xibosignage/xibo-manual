@@ -17,12 +17,12 @@ wget -qO- https://get.docker.com/ | sh
 ```
 
 #### Windows
-There are 2 Docker products for Windows - if you want to use our `launcher` on your installation then
-please install [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
-
-`launcher` supports the VirtualBox providers for Docker, you may use HyperV but if you do so you
-will need to [create the containers yourself](install_docker_without_launcher.html).
+There are 2 Docker products for Windows, native and toolbox. Either of these options come with 
+Docker Compose and are compatible with [[PRODUCTNAME]].
 
 Please note that when running through Docker Toolbox, the Docker system will be running in a VM,
 which will be created in bridged mode. The resulting Docker containers will therefore be accessible
 from the IP address assigned to the Docker Toolbox VM, rather than your local machine.
+
+#### Mac
+Docker can be installed on a Mac - see https://docs.docker.com/docker-for-mac/

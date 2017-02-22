@@ -29,6 +29,21 @@ later version of the Windows Display Player is also compatible with this CMS,
 but will not run the latest features.
 
 ### Special Considerations
+
+#### Changes to Docker
+We have removed `launcher` in favour of Docker Compose. Docker Compose supports a wider variety of platforms
+and is the official Docker implementation.
+
+This means that upgrading from any 1.8 release to 1.8.0-rc3 will require the following additional steps:
+ 
+ - `./launcher stop`
+ - Take a backup of your `DATA_DIR`, `launcher` and `launcher.env`
+ - `./launcher destroy`
+ - Replace the contents of your Docker files with the new release archive for 1.8.0-rc3
+ - Rename `launcher.env` to `config.env`
+ - `docker-compose up`
+
+
 #### Windows Player
 
 The 1.7 series contained experimental support for CEF browser integration. This
@@ -48,6 +63,8 @@ This release supports upgrades from 1.7.0 onwards. If you are running a release
 prior to 1.7.0 then please upgrade to [1.7.9](release_notes_1.7.9.html) first.
 
 Follow the [upgrade](upgrade.html) instructions to complete the upgrade.
+
+For Docker installations of 1.8, please see the "Changes to Docker" section above.
 
 ## Help
 

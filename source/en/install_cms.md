@@ -13,7 +13,7 @@ encourage you to use a [Docker](install_docker.html) environment.
 
 ## Requirements
 
- - A server/machine capable of running Docker
+ - A server/machine capable of running Docker and Docker Compose
  - If HTTPS is required, a web server capable of being a reverse proxy (nginx, apache, iis)
 
 ### No Docker?
@@ -49,15 +49,14 @@ installation can read/write to it. By default your library content and database 
 written under this folder.
 
 ## Bootstrap [[PRODUCTNAME]]
-Open a terminal/command window in the folder where you extracted the archive.
-As a user who has permissions to run the `docker` command, simply run:
 
-```
-./launcher bootstrap
-```
-The first time you run `launcher`, a new file `launcher.env` will be created in
-the same directory as the `launcher` program. Edit this with a text editor to
-provide the configuration needed to get your [[PRODUCTNAME]] CMS installed.
+The first time [[PRODUCTNAME]] is installed a configuration file is needed to tell Docker how the 
+environment is configured. This file is called `config.env`. This covers where you want files to be stored,
+email config, etc.
+ 
+A template file with detailed instructions is provided in the release archive and is 
+called `config.env.template`. Take a copy of this file, renaming to `config.env` and then edit the file
+in a text editor (Notepad/TextEdit/Nano and not a Word processor).
 
 If you don't want [[PRODUCTNAME]] to be able to send email messages, then you can omit to
 configure those options.
@@ -73,10 +72,12 @@ Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. 
 would prefer to use an alternative port number, then you'll need to do so by
 changing the `XMR_PLAYER_PORT` option.
 
-Once you've made your changes to `launcher.env` and have saved the file, run
+Once you've made your changes to `config.env` and have saved the file, Open a terminal/command window 
+in the folder where you extracted the archive. As a user who has permissions to run the `docker` 
+command, simply run:
 
 ```
-./launcher bootstrap
+./docker-compose up
 ```
 
 This will bootstrap and start your [[PRODUCTNAME]] CMS. The CMS will be fully installed
@@ -113,16 +114,15 @@ tcp://<ip_address>:<port>
 ```
 
 The default `<port>` is 9505 and should be set to that unless you have modified the `XMR_PLAYER_PORT` setting
- in your `launcher.env` file.
+ in your `config.env` file.
 
 
+### Start/Stop/Down
 
-### Start/Stop/Destroy
-
-Pass start/stop or destroy into launcher to take the corresponding action
+Pass start/stop or down (destroy completely) into launcher to take the corresponding action
 
 ```
-./launcher XXX
+./docker-compose XXX
 ```
 
 The `stop` command will stop the [[PRODUCTNAME]] CMS services running. If you want to start
@@ -132,11 +132,11 @@ If you suspect there are problems with the containers running your [[PRODUCTNAME
 you can safely run
 
 ```
-./launcher destroy
-./launcher bootstrap
+./docker-compose down
+./docker-compose up
 ```
 
-Providing your keep your `launcher.env` file and your `DATA_DIR` directory intact,
+Providing your keep your `config.env` file and your `DATA_DIR` directory intact,
 the CMS will be run using your existing data.
 
 ## Upgrading [[PRODUCTNAME]]
@@ -145,24 +145,30 @@ Before attempting an upgrade, it's strongly recommended to take a full backup of
 your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
 
 ```
-./launcher stop
+./docker-compose stop
 ```
 
-and then, backup `launcher`, `launcher.env` and `DATA_DIR` and keep
+and then, backup `config.env` and `DATA_DIR` and keep
 them somewhere safe.
 
+**What about `launcher`?**
+
+`launcher` was used for 1.8.0-alpha, beta, rc1 and rc2, but since then we have switched to Docker Compose. Further
+details are available in the [1.8.0-rc3 release notes](release_notes_1.8.0-rc3.html#requirements).
+
 <nonwhite>
-Next download the [appropriate version of launcher](https://github.com/xibosignage/xibo-docker/releases), replace the 
-version of launcher on your system leaving your launcher.env file intact, and run
+Next download the [appropriate version of the Docker files](https://github.com/xibosignage/xibo-docker/releases), replace the 
+version of launcher on your system leaving your config.env file intact, and run
 </nonwhite>
 
 <white>
-Next download the appropriate version of launcher from your service provider, replace the version of
-launcher on your system leaving your launcher.env file intact, and run
+Next download the appropriate version of Docker files from your service provider, replace the version of
+launcher on your system leaving your config.env file intact, and run
 </white>
 
 ```
-./launcher upgrade
+./docker-compose down
+./docker-compose up
 ```
 
 The CMS containers will be destroyed, and rebuilt with the newer [[PRODUCTNAME]] version.
@@ -173,14 +179,16 @@ If you need to roll back to the older [[PRODUCTNAME]] version for some reason, y
 so by running
 
 ```
-./launcher stop
+./docker-compose stop
 ```
-Restoring your original copy of `launcher`, `launcher.env` and the complete
+
+Restoring your original copy of `launcher`, `config.env` and the complete
 contents of `DATA_DIR`, and then running
 
 ```
-./launcher bootstrap
+./docker-compose up
 ```
+
 The original version of the CMS will be restored for you.
 
 ## HTTPS/SSL
