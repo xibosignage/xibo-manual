@@ -233,10 +233,11 @@ The XML structure for media inventory is:
 
 ``` xml
 <files>
-	<file id="1" complete="0|1" md5="c90a4c420dd010a5e95dedb8927a29e7" lastChecked="1284569347" />
+	<file type="media|layout|resource" id="1" complete="0|1" md5="c90a4c420dd010a5e95dedb8927a29e7" lastChecked="1284569347" />
 </files>
 ```
 
+ - type: the type of file being reported for, either media, layout or resource
  - id: the ID of the file.
  - complete: whether the file is complete or not.
  - md5: the md5 of the file in the local cache.
