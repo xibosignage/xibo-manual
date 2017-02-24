@@ -47,7 +47,7 @@ This means that upgrading from any 1.8 release to 1.8.0-rc3 will require the fol
 
 If you have custom ports for the web server or XMR, please see [these notes](install_cms.html#using_different_ports).
 
-#### Windows Player
+#### Windows Player CEF
 
 The 1.7 series contained experimental support for CEF browser integration. This
 has been removed in the 1.8 release due to stability issues. In 1.8 you will
@@ -59,6 +59,16 @@ Windows player and will also support Ubuntu. This development can be tracked
 on our [community](https://community.xibo.org.uk/t/cross-platform-player-specification/6261)
 forum.
 </nonwhite>
+
+#### Windows Player XMR Key
+
+This release contains changes to how the Players RSA key for XMR is stored, as a result it is necessary to
+"Re-key" the Player after upgrading. **Effects 1.8 Players only, that means alpha, beta and release candidates
+before rc3.**
+
+To do this, after upgrade, log into the CMS Displays Page, find the Display, click Edit. Go to the advanced tab, tick
+"re-key" and save. XMR push messaging will not function until these steps have been taken.
+
 
 ## Upgrading
 
