@@ -258,18 +258,18 @@ It returns XML in the following format for v5:
 ```xml
 <schedule>
 	<default file="4">
-	    <dependents>
+	    <dependants>
 	        <file>5.jpg</file>
-	    </dependents>
+	    </dependants>
 	</default>
 	<layout file="5" fromdt="" todt="" scheduleid="" priority="">
-	    <dependents>
+	    <dependants>
             <file>5.jpg</file>
-        </dependents>
+        </dependants>
 	</layout>
-	<dependents>
+	<dependants>
 		<file>5.jpg</file>
-	</dependents>
+	</dependants>
 	<command code="CODE" date="" />
 	<overlays>
 	    <overlay file="5" fromdt="" todt="" scheduleid="" priority=""></overlay>
@@ -283,9 +283,9 @@ It returns XML in the following format for v4 and below:
 <schedule>
 	<default file="4" />
 	<layout file="5" fromdt="" todt="" scheduleid="" priority="" dependents="" />
-	<dependents>
+	<dependants>
 		<file>5.jpg</file>
-	</dependents>
+	</dependants>
 </schedule>
 ```
 
