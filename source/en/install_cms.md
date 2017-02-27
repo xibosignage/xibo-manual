@@ -32,7 +32,8 @@ please ensure you have [Docker](install_docker.html) installed.
 
 <nonwhite>
 The latest [[PRODUCTNAME]] Docker installation files can be [downloaded
-from our website](https://github.com/xibosignage/xibo-docker/releases).
+from our website](https://github.com/xibosignage/xibo-cms/releases). Select the release required
+and download the `tar.gz`/`zip` called `xibo-docker`.
 </nonwhite>
 
 <white>

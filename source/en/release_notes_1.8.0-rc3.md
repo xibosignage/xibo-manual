@@ -12,12 +12,14 @@ changes from the 1.8.0-alpha/beta releases and these release notes should be rea
 understood before trying the release.
 
 You can download this release from
-[GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.0-rc3).
+[GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.0-rc3/xibo-docker.tar.gz).
+The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.0-rc3).
 
 ## Requirements
 
 [[PRODUCTNAME]] runs on [Docker](install_docker.html), please check the [install guide](install_cms.html) 
-for detailed requirements.
+for detailed requirements. The archive for this release can be downloaded from 
+[GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.0-rc3).
 
 The CMS can be run without Docker, but this is not a supported configuration. Installs without
 Docker are called [Custom/Manual Installs](manual_install.html) and further details can be found
