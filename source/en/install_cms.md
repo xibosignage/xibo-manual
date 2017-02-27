@@ -187,15 +187,15 @@ The original version of the CMS will be restored for you.
 
 By default, [[PRODUCTNAME]] will start a web server listening on port 80. If you already have a web server listening 
 on port 80, or would prefer to use an alternative port number, then you need to copy the 
-`docker-compose.custom-ports.yml.template` file and change the `ports` section for `cms-web`. The file should be saved
-as `docker-compose.custom-ports.yml`.
+`cms_custom-ports.yml.template` file and change the `ports` section for `cms-web`. The file should be saved
+as `cms_custom-ports.yml`.
 
 Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. If you would prefer to use an 
-alternative port number, then you'll need to do so by copying the `docker-compose.custom-ports.yml.template` file 
+alternative port number, then you'll need to do so by copying the `cms_custom-ports.yml.template` file 
 and changing the `ports` section for `cms-xmr`.
 
 To use this file replace any `docker-compose up -d` commands in the above instructions 
-with `docker-compose -f docker-compose.yml -f docker-compose.custom-ports.yml up -d`. 
+with `docker-compose -f cms.custom-ports.yml up -d`. 
 
 
 ## Remote MySQL 
@@ -205,7 +205,7 @@ external / remote MySQL instance as the database for [[PRODUCTNAME]].
 
 To do this base the `config.env` file on the template `config.evn.template-remote-mysql` and replace any 
 `docker-compose up -d` commands in the above instructions 
-with `docker-compose -f docker-compose.remote-mysql.yml up -d`. 
+with `docker-compose -f cms_remote-mysql.yml up -d`. 
 
 
 ## HTTPS/SSL
@@ -215,7 +215,7 @@ network. The Docker containers do not provide SSL and this must be provided by a
 web server which handles SSL termination and reverse proxy into the `cms-web` container.
 
 There are many good resources for achieving this architecture - for example a 
-[nginx-proxy container](https://github.com/jwilder/nginx-proxy) could be used. 
+[nginx-proxy container](https://github.com/jwilder/nginx-proxy) could be used.
 
 If you already have a web server running on your Host machine, configuring a reverse proxy should 
 be straightforward, an example `VirtualHost` for Apache is below:
