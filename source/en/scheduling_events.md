@@ -41,6 +41,10 @@ day. By default the CMS contains a daypart for adhoc scheduling (called the cust
 daypart) and for scheduling an event "always." More information can be found in 
 [Dayparting](scheduling_dayparting.html).
 
+Events scheduled with Dayparting only apply to a **single day**, meaning recurring
+events should be used to create an event that covers more than 1 day. This is because
+the Dayparting information is used to set the end time of the event.
+
 To give your own From/To Dates then the "Custom" daypart should be selected.
 
 Dayparting is not available for Command Events as these must be for a specific time.
@@ -73,3 +77,26 @@ cycle in the same way as non-priority  layouts would be.
 To delete an event, first open the Schedule Form and then select the "Delete"
 button from the button bar on the form.  The Delete Event form will open
 allowing confirmation of the Delete.
+
+
+## Run at CMS time
+
+The "Run at CMS time" checkbox is available on Add/Edit forms. It determines whether the
+event runs using the time on the Display, or whether the event is synchronised to the 
+CMS time. The default is for this option to be deselected.
+
+Consider the following example:
+
+ - CMS Time = GMT
+ - Display 1 = GMT
+ - Display 2 = GMT -4
+ 
+An event scheduled for 11:00 with Run at CMS time deselected (the default) will run on
+Display 1 at 11:00 and Display 2 at 11:00. These two Displays will not show the same 
+content at the same time, because Display 2 is 4 hours behind.
+
+With "Run at CMS time" selected Display 1 will run at 11:00 as before, but Display 2 will 
+run at 07:00.
+
+Please note that Schedule Now functionality will always create events with this option
+selected.

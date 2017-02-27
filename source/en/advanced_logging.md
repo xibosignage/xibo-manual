@@ -32,7 +32,7 @@ The log is accessible from the *Log* page in the CMS administration portal.
 | API     | The CMS API                                |
 | XMDS    | The CMS/Player API (Media Distribution)    |
 | AUTH    | The oauth authorization server for the API |
-| MAINT   | The Maintenance Script                     |
+| CONSOLE | XTR task running                           |
 
 ## Finding your message
 

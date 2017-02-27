@@ -233,10 +233,11 @@ The XML structure for media inventory is:
 
 ``` xml
 <files>
-	<file id="1" complete="0|1" md5="c90a4c420dd010a5e95dedb8927a29e7" lastChecked="1284569347" />
+	<file type="media|layout|resource" id="1" complete="0|1" md5="c90a4c420dd010a5e95dedb8927a29e7" lastChecked="1284569347" />
 </files>
 ```
 
+ - type: the type of file being reported for, either media, layout or resource
  - id: the ID of the file.
  - complete: whether the file is complete or not.
  - md5: the md5 of the file in the local cache.
@@ -257,18 +258,18 @@ It returns XML in the following format for v5:
 ```xml
 <schedule>
 	<default file="4">
-	    <dependents>
+	    <dependants>
 	        <file>5.jpg</file>
-	    </dependents>
+	    </dependants>
 	</default>
 	<layout file="5" fromdt="" todt="" scheduleid="" priority="">
-	    <dependents>
+	    <dependants>
             <file>5.jpg</file>
-        </dependents>
+        </dependants>
 	</layout>
-	<dependents>
+	<dependants>
 		<file>5.jpg</file>
-	</dependents>
+	</dependants>
 	<command code="CODE" date="" />
 	<overlays>
 	    <overlay file="5" fromdt="" todt="" scheduleid="" priority=""></overlay>
@@ -282,9 +283,9 @@ It returns XML in the following format for v4 and below:
 <schedule>
 	<default file="4" />
 	<layout file="5" fromdt="" todt="" scheduleid="" priority="" dependents="" />
-	<dependents>
+	<dependants>
 		<file>5.jpg</file>
-	</dependents>
+	</dependants>
 </schedule>
 ```
 
@@ -383,7 +384,10 @@ Properties supported by `status` are:
 {
 	"currentLayoutId": "The ID of the Current Layout",
 	"availableSpace": "The bytes of available space",
-	"totalSpace": "The bytes of total space"
+	"totalSpace": "The bytes of total space",
+	"lastCommandSuccess": "Whether or not the last received Command was executed successfully",
+	"deviceName": "The name of the physical device",
+	"timeZone": "An IANA timezone identifier for the Displays timezone"
 }
 ```
 

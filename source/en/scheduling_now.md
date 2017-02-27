@@ -16,9 +16,10 @@ Schedule Now functionality is available from the following pages:
 The form has been standardised across all areas of the CMS.
 
 ## Timezones
-The schedule now functionality uses the CMS timezone to anchor the start time of the scheduled event. If
-the network has Displays in a later timezone events "now" will occur when the Display reaches the CMS
-time.
 
-If the network has Displays in an earlier timezone events "now" will only occur if their duration exceeds
-the timezone different between the Display and CMS time.
+Events created using the Schedule Now form will always have the "Run at CMS time" option
+selected. This means that the event will be adjusted for each Display timezone and forced
+to run from the time "Save" is pressed.
+
+More information about this option can be found on the [Events](scheduling_events.html#run_at_cms_time)
+page.

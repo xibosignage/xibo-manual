@@ -1,4 +1,4 @@
-<!--toc=getting_started-->
+<!--toc=manual_install-->
 # Install on Windows
 
 > This is intended as a getting started guide only - the documentation provided by the software vendor
