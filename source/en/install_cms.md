@@ -25,12 +25,8 @@ with your custom installation without opening a paid support incident from a com
 commercial support.
 
 ## Installation
-
-The easiest and fastest way to get started with [[PRODUCTNAME]] is to use `launcher` to 
-bootstrap Docker and run your [[PRODUCTNAME]] environment. 
-
-`launcher` is a small shell script used to provide base functionality - its features
-are described below.
+Docker Compose is used to install [[PRODUCTNAME]] on an environment with Docker installed. Before continuing
+please ensure you have [Docker](install_docker.html) installed.
 
 ### Download and extract the [[PRODUCTNAME]] Docker archive
 
@@ -111,7 +107,7 @@ The default `<port>` is 9505 and should be set to that unless you have modified 
 
 ### Start/Stop/Down
 
-Pass start/stop or down (destroy completely) into launcher to take the corresponding action
+Pass start/stop or down (destroy completely) into docker-compose to take the corresponding action
 
 ```
 docker-compose XXX
@@ -173,8 +169,7 @@ so by running
 docker-compose stop
 ```
 
-Restoring your original copy of `launcher`, `config.env` and the complete
-contents of `DATA_DIR`, and then running
+Restoring your original copy of `config.env` and the complete contents of `DATA_DIR`, and then running
 
 ```
 docker-compose up -d

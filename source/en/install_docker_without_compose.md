@@ -1,7 +1,7 @@
 <!--toc=manual_install-->
-# Docker without Launcher
+# Docker without Docker Compose
 If you have your own docker environment you may want to run without the
-automation provided by launcher. If this is the case you will be responsible
+automation provided by docker-compose. If this is the case you will be responsible
 for pulling the docker containers, starting them and manually installing [[PRODUCTNAME]].
 
 The structure expected by the containers is outlined below.
@@ -33,8 +33,8 @@ be found for each container in the `/containers` folder.
 #### Storing Data
 
 Data folders should be mapped outside the Docker containers as volumes so that data is persisted
-across Container upgrades. The following Data folders are used by `launcher` and should be configured
-for your environment:
+across Container upgrades. The following Data folders are used by `docker-compose` and should 
+be configured for your environment:
 
  - The Library storage can be found in `/shared/cms/library`
  - The database storage can be found in `/shared/db`
