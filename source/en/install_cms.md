@@ -140,8 +140,7 @@ your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
 docker-compose stop
 ```
 
-and then, backup `config.env` and `DATA_DIR` and keep
-them somewhere safe.
+and then, backup `config.env` and `DATA_DIR` and keep them somewhere safe.
 
 **What about `launcher`?**
 
