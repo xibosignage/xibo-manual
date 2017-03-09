@@ -1,15 +1,21 @@
 <!--toc=widgets-->
 # Modules
-All content displayed in [[PRODUCTNAME]] is added / edited and served by a media module. There are a wide variety of modules to choose from and more are being added as new releases are made.
+All content displayed in [[PRODUCTNAME]] is added / edited and served by a media module. There are a wide variety of 
+modules to choose from and more are being added as new releases are made.
 
-Modules can be enabled and disabled using the CMS admin interface on the Modules page. Each module also has a range of settings available.
+Modules can be enabled and disabled using the CMS admin interface on the Modules page. Each module also has a range 
+of settings available.
 
 ![Module List](img/media_module_admin.png)
 
 
 ## Installing new Modules
 
-New modules must be uploaded to the CMS manually and then installed from the Module Administration screen. Un-installed modules are detected automatically and will be offered as installation options. See the below image for an example:
+New modules must be uploaded to the CMS manually and then installed from the Module Administration screen. Modules
+which are not installed are detected automatically and will be offered as installation options on the "Install Module"
+form. See the below image for an example:
+
+![Module Install Form](img/media_module_admin_install_form.png)
 
 Clicking on the module name will install the module and refresh the page.
 
