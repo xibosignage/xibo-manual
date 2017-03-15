@@ -11,10 +11,10 @@ There are 3 steps to follow:
 [[PRODUCTNAME]] is a low resource signage solution, however with the advance of technology it has been necessary to set out some minimum requirements. The installation process will check these for you, but they are listed below for convenience:
 
 - A network connection to the CMS (possibly over the Internet)
-- Microsoft Windows XP SP3 / Windows Vista / Windows 7 (*recommended Windows 7*)
-- .NET Framework v3.5 SP1
-- Internet Explorer 7+ (*recommended IE10 or higher*)
-- Flash Player Version 9 or later
+- Microsoft Windows 7 or later
+- .NET Framework v4.5
+- Internet Explorer 8+ (*recommended IE11 or higher*)
+- Flash Player Version 9 or later (if Flash support required)
 - Windows Media Player 11 or later
 - For PowerPoint support, Microsoft PowerPoint 2003 or later. *PowerPoint viewer is not suitable*.
 
