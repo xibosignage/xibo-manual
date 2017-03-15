@@ -10,8 +10,8 @@ manual or custom installation.
 
  - MySQL 5.6 
  - A web server (nginx, apache, iis)
- - PHP 5.6+
- - PHP-CLI 5.6+
+ - PHP 5.6+ (lower than PHP7)
+ - PHP-CLI 5.6+ (lower than PHP7)
  - PHP PHAR support
  - ZeroMQ bindings for PHP
  - URL Rewriting

@@ -1,32 +1,11 @@
 <!--toc=manual_install-->
-# Choosing your Environment
+# Prepare your Environment
+To run without Docker it is necessary to ensure that the environment is configured in a way
+that will run [[PRODUCTNAME]]. There are several things to take into consideration, such as
+where to put the files, which web server to run, etc.
 
-The [[PRODUCTNAME]] CMS can be run on any operating system that supports
-PHP/MySQL, the most common installation being "LAMP" (Linux, Apache, MySQL and
-PHP).
-
-The CMS installation will present a list of requirements on the first
-installation screen. To get that far a web server running PHP 5.5.9 or later must
-be available and the CMS files must be served via a web server.
-
-A Docker environment is the easiest for installation and maintenance and we encourage all users
-to consider using Docker.
-
-- [Docker](install_docker.html)
-
-If Docker is not available the following pages contain basic guides to configuring the most common
-environments. These are intended as a guide only and the latest documentation from the OS/software
-vendor should be used when available.
-
-- [Install on Linux](install_environment_linux.html)
-- [Install on Windows using XAMPP](install_environment_windows_xampp.html)
-- [Install on Windows using IIS](install_environment_windows_iis.html)
-
-### Docker
-
-If using Docker, the below considerations have been addressed and everything is
-already running according to the recommendations. This means you can stop here
-and get started with the [tour](tour.html).
+This manual cannot cover every possible environment consideration, but it does address some
+common issues in the following sections.
 
 ## Placing CMS Files
 
