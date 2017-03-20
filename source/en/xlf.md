@@ -302,8 +302,8 @@ Below is a complete Layout XLF.
    <tags>
       <tag>unittest</tag>
    </tags>
-   <region id="1153205596546b3c1237b90" userId="1" width="1812" height="132" top="57.1875" left="54.7875">
-      <media id="c962f98bcea442f07bac533f7e8d2bc1" type="text" render="native" duration="5" lkid="" userId="1" schemaVersion="1">
+   <region id="1" userId="1" width="1812" height="132" top="57.1875" left="54.7875">
+      <media id="1" type="text" render="native" duration="5">
          <options>
             <xmds>1</xmds>
             <effect>none</effect>
@@ -315,25 +315,25 @@ Below is a complete Layout XLF.
          </raw>
       </media>
    </region>
-   <region id="2033362323546b3f480f7ea" userId="1" width="1816.8" height="772.79999999999" top="253.9875" left="54.7875">
-      <media id="978" type="image" render="native" duration="10" lkid="2226" userId="1" schemaVersion="1">
+   <region id="2" userId="1" width="1816.8" height="772.79999999999" top="253.9875" left="54.7875">
+      <media id="2" type="image" render="native" duration="10">
          <options>
-            <uri>978.png</uri>
+            <uri>2.png</uri>
          </options>
          <raw />
       </media>
-      <media id="977" type="image" render="native" duration="10" lkid="2227" userId="1" schemaVersion="1">
+      <media id="3" type="image" render="native" duration="10">
          <options>
-            <uri>977.png</uri>
+            <uri>3.png</uri>
             <scaleType>center</scaleType>
             <align>left</align>
             <valign>middle</valign>
          </options>
          <raw />
       </media>
-      <media id="976" type="image" render="native" duration="10" lkid="2228" userId="1" schemaVersion="1">
+      <media id="4" type="image" render="native" duration="10">
          <options>
-            <uri>976.png</uri>
+            <uri>4.png</uri>
             <scaleType>center</scaleType>
             <align>right</align>
             <valign>middle</valign>
