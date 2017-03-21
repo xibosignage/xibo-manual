@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.2.1_-_Codename_.22Biela.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.2.1 - Codename "Biela"</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.2.1_-_Codename_.22Biela.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.2.1 - Codename "Biela"</a></li>
 <li class="toclevel-1 tocsection-2"><a href="#IMPORTANT:_Released_files_issue"><span class="tocnumber">2</span> <span class="toctext">IMPORTANT: Released files issue</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Requirements"><span class="tocnumber">3</span> <span class="toctext">Requirements</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#Upgrading"><span class="tocnumber">4</span> <span class="toctext">Upgrading</span></a>
@@ -27,7 +27,7 @@
 <li class="toclevel-1 tocsection-15"><a href="#Known_Issues_and_Limitations"><span class="tocnumber">8</span> <span class="toctext">Known Issues and Limitations</span></a></li>
 </ul>
 </td></tr></table>
-<h3> <span class="mw-headline" id="Xibo_1.2.1_-_Codename_.22Biela.22">Xibo 1.2.1 - Codename "Biela"</span></h3>
+<h3> <span class="mw-headline" id="Xibo_1.2.1_-_Codename_.22Biela.22">Xibo 1.2.1 - Codename "Biela"</h3>
 <p><b>This is the first bug fix release in the 1.2 series of Xibo server and clients.</b>
 </p><p>Our thanks go to everyone who has helped out with testing and developing some of the new features in this release. Thanks also to everyone who sent bug reports, patches, translations or ideas. Special thanks to everyone who has supported us financially too by making a donation to the project.
 </p><p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.2/1.2.1">https://launchpad.net/xibo/1.2/1.2.1</a>

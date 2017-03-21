@@ -1,0 +1,5 @@
+* [< Home](index.html)
+* [Docker without Compose](install_docker_without_compose.html)
+* [Environment](install_environment.html)
+* [XTR - Routine Tasks](install_xtr.html)
+* [XMR - Push Messaging](install_xmr.html)

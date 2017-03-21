@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# [[PRODUCTNAME]] 1.7.3 - Codename "Tuttle"</span>
+# [[PRODUCTNAME]] 1.7.3 - Codename "Tuttle"
 
 This is a bug fix release of [[PRODUCTNAME]] - 1.7.3.
 

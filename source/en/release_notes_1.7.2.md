@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# Xibo 1.7.2 - Codename "Tuttle"</span>
+# Xibo 1.7.2 - Codename "Tuttle"
 
 This is a bug fix release of Xibo - 1.7.2.
 

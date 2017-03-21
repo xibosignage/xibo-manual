@@ -1,14 +1,14 @@
 <?php
 /*
  * Xibo - Digital Signage - http://www.xibo.org.uk
- * Copyright (C) 2006-2015 Spring Signage Ltd
+ * Copyright (C) 2006-2017 Spring Signage Ltd
  *
  * This file is part of Xibo.
  *
  * Xibo is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
- * any later version. 
+ * any later version.
  *
  * Xibo is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -17,7 +17,7 @@
  *
  * You should have received a copy of the GNU Affero General Public License
  * along with Xibo.  If not, see <http://www.gnu.org/licenses/>.
- */ 
+ */
 class ManualGenerator
 {
     private $whiteLabel;
@@ -30,18 +30,26 @@ class ManualGenerator
     private $sourcePath;
     private $outputPath;
 
+    private $template;
     public $overrideHeader;
     public $overrideFooter;
+
+    /**
+     * Language specific image replacements
+     * @var array
+     */
+    private $languageImages = [];
 
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
         // This should be updated with each release of the manual
-        $this->productVersion = '1.7.9';
+        $this->productVersion = '1.8.0';
 
         $this->productName = $productName;
         $this->productHome = $productHome;
         $this->productSupportUrl = $productSupportUrl;
         $this->productFaqUrl = $productFaqUrl;
+
         $this->whiteLabel = ($this->productName != 'Xibo');
     }
 
@@ -49,6 +57,9 @@ class ManualGenerator
     {
         $this->outputPath = $outputPath;
         $this->sourcePath = $sourcePath;
+
+        // Load the template
+        $this->loadTemplate();
 
         // Copy the bootstrap, jquery folders and the img folder
         if (!is_dir($this->outputPath . 'libraries'))
@@ -60,11 +71,14 @@ class ManualGenerator
         $this->xcopy($this->sourcePath . 'template/manual.css', $this->outputPath . 'manual.css');
         $this->xcopy($this->sourcePath . 'template/index.html', $this->outputPath . 'index.html');
 
+        // Copy the en/ language images into the en/language sub folder.
+        $this->xcopy($this->sourcePath . 'source/en/img', $this->outputPath . 'en/img');
+
         $languages = array();
 
         // Get a list of folders
         foreach (array_diff(scandir($this->sourcePath . 'source'), array('..', '.')) as $langDir) {
-            
+
             if (is_dir($this->sourcePath . 'source/' . $langDir)) {
                 echo 'Found ' . $langDir . PHP_EOL;
 
@@ -73,25 +87,29 @@ class ManualGenerator
                     $this->delete($this->outputPath . $langDir);
                     sleep(3);
                 }
-                
+
                 mkdir($this->outputPath . $langDir);
 
-                // Make sure a full suite of images is present.
-                $this->xcopy($this->sourcePath . 'source/en/img', $this->outputPath . $langDir . '/img');
-                
-                // And layer in any language specific replacements
-                if (is_dir($this->sourcePath . 'source/' . $langDir . '/img'))
+                // Copy any language specific images into the img folder.
+                if (is_dir($this->sourcePath . 'source/' . $langDir . '/img')) {
                     $this->xcopy($this->sourcePath . 'source/' . $langDir . '/img', $this->outputPath . $langDir . '/img');
-                
+                }
+
                 if ($langDir != 'en')
                     $languages[] = $langDir;
             }
         }
 
-        // Build a langs string
+        // Process each detected language
         $langsString = '<a href="../en/index.html">en</a>';
         foreach ($languages as $lang) {
+            // Build a langs string
             $langsString .= ' | <a href="../' . $lang . '/index.html">' . $lang . '</a>';
+
+            // Build an array of language specific images
+            $this->languageImages[$lang] = array_map(function($element) {
+                return basename($element);
+            }, glob($this->sourcePath . 'source/' . $lang . '/img/*.*'));
         }
 
         // Scan files in the EN folder:
@@ -110,28 +128,71 @@ class ManualGenerator
         echo PHP_EOL;
     }
 
+    private function loadTemplate()
+    {
+        $headerLocation = ($this->overrideHeader == null) ? $this->sourcePath . 'template/header.html' : $this->overrideHeader;
+        $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
+
+        $this->template  = $this->processReplacements(file_get_contents($headerLocation));
+        $this->template .= $this->processReplacements(file_get_contents($footerLocation));
+    }
+
+    /**
+     * process a single file
+     * @param string $langs the language string
+     * @param string $folder the folder
+     * @param string $lang the current language
+     * @param string $file the file
+     */
     private function processFile($langs, $folder, $lang, $file)
     {
         echo '.';
         flush();
 
         // Get the page content
-        $pageContent = Parsedown::instance()->text($this->processReplacements($lang, $this->file_get_contents_or_default($lang, $file . '.md')));
+        $pageContent = $this->processReplacements($this->file_get_contents_or_default($lang, $file . '.md'));
+
+        // Replace any image URL's which do not exist in the img folder for this language
+        // unless we are "en" in which case we are the source of all images so it doesn't matter
+        if ($lang != 'en') {
+            $langImg = $this->languageImages[$lang];
+            $pageContent = preg_replace_callback('/(!\[.*?\]\()(.+?)(\))/s', function ($matches) use ($langImg) {
+                if (!in_array(str_replace('img/', '', $matches[2]), $langImg)) {
+                    return str_replace('img/', '../en/img/', $matches[0]);
+                } else {
+                    return $matches[0];
+                }
+            }, $pageContent);
+        }
+
+        // Run through parse down
+        $pageContent = Parsedown::instance()->text($pageContent);
+
+        // Look for headers in the page content and give them ID's based on their actual content.
+        $pageContent = preg_replace_callback('#(<h1>)(.*)(</h1>)#i', function ($m) {
+            $id = strtolower(str_replace(' ', '_', $m[2]));
+            return '<h1 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h1>';
+        }, $pageContent);
+
+        $pageContent = preg_replace_callback('#(<h2>)(.*)(</h2>)#i', function ($m) {
+            $id = strtolower(str_replace(' ', '_',$m[2]));
+            return '<h2 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>';
+        }, $pageContent);
+
+        // Find out what TOC this file should have (read the first line)
         $toc = strtok($pageContent, "\n");
         $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
 
-        // Header
-        $string  = $this->processReplacements($lang, file_get_contents($this->sourcePath . 'template/header.html'));
-        $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
-        $string .= $this->processReplacements($lang, file_get_contents($footerLocation));
+        // Header and Footer
+        $string = $this->template;
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
-        $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, '/toc/nav_bar.html'), $string);
-        
+        $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, 'toc/nav_bar.html'), $string);
+
         // Handle the TOC
         $string = str_replace('[[TOC]]', Parsedown::instance()->text(
-            $this->processReplacements($lang, $this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+            $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
         ), $string);
 
         // Replace the languages
@@ -148,7 +209,7 @@ class ManualGenerator
             return file_get_contents($this->sourcePath . 'source' . DIRECTORY_SEPARATOR . 'en' . DIRECTORY_SEPARATOR . $file);
     }
 
-    private function processReplacements($lang, $string)
+    private function processReplacements($string)
     {
         // Replace the nav bar
         $string = str_replace('[[PRODUCTNAME]]', $this->productName, $string);

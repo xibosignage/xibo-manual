@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.4.1_-_Codename_.22Brorsen.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.4.1 - Codename "Brorsen"</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.4.1_-_Codename_.22Brorsen.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.4.1 - Codename "Brorsen"</a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Upgrading"><span class="tocnumber">3</span> <span class="toctext">Upgrading</span></a>
 <ul>
@@ -13,7 +13,7 @@
 <li class="toclevel-1 tocsection-7"><a href="#Known_Issues_and_Limitations"><span class="tocnumber">6</span> <span class="toctext">Known Issues and Limitations</span></a></li>
 </ul>
 </td></tr></table>
-<h3> <span class="mw-headline" id="Xibo_1.4.1_-_Codename_.22Brorsen.22">Xibo 1.4.1 - Codename "Brorsen"</span></h3>
+<h3> <span class="mw-headline" id="Xibo_1.4.1_-_Codename_.22Brorsen.22">Xibo 1.4.1 - Codename "Brorsen"</h3>
 <p>This is the first bug fix release in a the stable 1.4 series of Xibo and we recommend that everyone upgrade. This release will address the text scaling issues that have existed in Xibo since the birth of the project. Xibo will now perfectly scale text between all resolutions.
 </p><p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.4/1.4.1">https://launchpad.net/xibo/1.4/1.4.1</a>
 </p>

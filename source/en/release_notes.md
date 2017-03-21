@@ -9,6 +9,16 @@ Please [contact support]([[PRODUCTSUPPORTURL]]) for the releases notes.
 <nonwhite>
 The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSION]].html).
 
+## Version 1.8 "Tempel"
+* [1.8.0](release_notes_1.8.0.html)
+* [1.8.0-rc3](release_notes_1.8.0-rc3.html)
+* [1.8.0-rc2](release_notes_1.8.0-rc2.html)
+* [1.8.0-rc1](release_notes_1.8.0-rc1.html)
+* [1.8.0-beta](release_notes_1.8.0-beta.html)
+* [1.8.0-alpha3](release_notes_1.8.0-alpha3.html)
+* [1.8.0-alpha2](release_notes_1.8.0-alpha2.html)
+* [1.8.0-alpha](release_notes_1.8.0-alpha.html)
+
 ## Version 1.7 "Tuttle"
 * [1.7.9](release_notes_1.7.9.html)
 * [1.7.8](release_notes_1.7.8.html)
