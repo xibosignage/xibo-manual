@@ -32,7 +32,8 @@ please ensure you have [Docker](install_docker.html) installed.
 
 <nonwhite>
 The latest [[PRODUCTNAME]] Docker installation files can be [downloaded
-from our website](https://github.com/xibosignage/xibo-docker/releases).
+from our website](https://github.com/xibosignage/xibo-cms/releases). Select the release required
+and download the `tar.gz`/`zip` called `xibo-docker`.
 </nonwhite>
 
 <white>
@@ -188,8 +189,11 @@ Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. 
 alternative port number, then you'll need to do so by copying the `cms_custom-ports.yml.template` file 
 and changing the `ports` section for `cms-xmr`.
 
+The ports section of a Docker Compose YML file lists ports in the format <host>:<container> - to move to port 8080
+the declaration would be `8080:80`.
+
 To use this file replace any `docker-compose up -d` commands in the above instructions 
-with `docker-compose -f cms.custom-ports.yml up -d`. 
+with `docker-compose -f cms_custom-ports.yml up -d`. 
 
 
 ## Remote MySQL 

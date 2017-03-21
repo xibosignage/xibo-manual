@@ -16,6 +16,10 @@ Docker can be installed on Linux based systems using the below command:
 wget -qO- https://get.docker.com/ | sh
 ```
 
+On Linux is it also necessary to install Docker Compose as it is not shipped with the above
+package. To do so visit [Docker Releases](https://github.com/docker/compose/releases) and
+run the commands indicated on the latest release.
+
 #### Windows
 There are 2 Docker products for Windows, native and toolbox. Either of these options come with 
 Docker Compose and are compatible with [[PRODUCTNAME]].

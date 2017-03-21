@@ -1,32 +1,59 @@
 <!--toc=getting_started-->
 
-# [[PRODUCTNAME]] 1.8.0-rc3 - Codename "Tempel"
+# [[PRODUCTNAME]] 1.8.0 - Codename "Tempel"
 
-Welcome to the release notes for the third release candidate in the 1.8 Series of
-[[PRODUCTNAME]], codenamed "Tempel".
-
- **This should NOT BE USED IN PRODUCTION.**.
-
-This release contains significant changes from 1.7 Series and significant
-changes from the 1.8.0-alpha/beta releases and these release notes should be read an
-understood before trying the release.
+This is the first stable release of Xibo 1.8!
 
 You can download this release from
-[GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.0-rc3/xibo-docker.tar.gz).
-The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.0-rc3).
+[GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.0/xibo-docker.tar.gz).
+The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.0).
+
+
+This release is the result of 7 alpha/beta/rc releases and contains significant improvements from 1.7 Series, the 
+highlights are below:
+ 
+ * Installation: Docker deployments
+ * Installation: Step by Step Upgrade Wizard
+ * Layouts and Content: Layout Designer improvements, including a new toolbar
+ * Layouts and Content: Add audio to Widgets
+ * Layouts and Content: Layout Import/Export handles DataSets
+ * Layouts and Content: Add some extra fonts as standard
+ * Layouts and Content: New Widgets, including Stocks, Currencies, HLS, PDF, Metro Twitter, Google Traffic, Audio
+ * Displays: Push messaging
+ * Displays: Scheduled and Immediate shell commands
+ * Displays: RS232 commands
+ * Displays: Dynamic and Nested Display Groups
+ * Schedule: Dayparting and "always" schedules
+ * Schedule: Agenda View
+ * Schedule: Recurring Events without an end date
+ * Internationalisation: Support for custom date formats
+ * Internationalisation: Displays in different timezones
+ * User and Permissions: Changing ownership of items
+ * User and Permissions: SAML support for single sign on
+ * User and Permissions: Announcement system
+ * Extending and Troubleshooting: API for 3rd party integrations
+ * Extending and Troubleshooting: Code improvements to enable better customisation of code (Middleware and Modules)
+ * Extending and Troubleshooting: Overhaul auditing and logging
+ * Extending and Troubleshooting: PHPUnit Test Suite
+ * Extending and Troubleshooting: Documentation improvements
+ * 389 closed issues
+
+
+These release notes should be read and understood before upgrading.
+
 
 ## Requirements
 
 [[PRODUCTNAME]] runs on [Docker](install_docker.html), please check the [install guide](install_cms.html) 
 for detailed requirements. The archive for this release can be downloaded from 
-[GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.0-rc3).
+[GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.0).
 
 The CMS can be run without Docker, but this is not a supported configuration. Installs without
 Docker are called [Custom/Manual Installs](manual_install.html) and further details can be found
 [here](manual_install.html). The release archive for a manual install can be downloaded from
-[GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.0-rc3).
+[GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.0).
 
-We recommend using the 1.8.0-rc3 Windows Player with this release. The 1.7.6 or
+We recommend using the 1.8.0 Windows Player with this release. The 1.7.6 or
 later version of the Windows Display Player is also compatible with this CMS,
 but will not run the latest features.
 
@@ -68,15 +95,6 @@ on our [community](https://community.xibo.org.uk/t/cross-platform-player-specifi
 forum.
 </nonwhite>
 
-#### Windows Player XMR Key
-
-This release contains changes to how the Players RSA key for XMR is stored, as a result it is necessary to
-"Re-key" the Player after upgrading. **Effects 1.8 Players only, that means alpha, beta and release candidates
-before rc3.**
-
-To do this, after upgrade, log into the CMS Displays Page, find the Display, click Edit. Go to the advanced tab, tick
-"re-key" and save. XMR push messaging will not function until these steps have been taken.
-
 
 ## Upgrading
 
@@ -89,11 +107,11 @@ For Docker installations of 1.8, please see the "Changes to Docker" section abov
 
 ## Help
 
-Please report problems with this release using the [Development Category on the
-Community Forum](https://community.xibo.org.uk/c/dev).
+Please report problems with this release using the [Support Category on the
+Community Forum](https://community.xibo.org.uk/c/support).
 
 ## Issues addressed in this release
 
 For a full list of enhancements and bug fixes please refer to the [Release
 Project
-Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.0-rc3+is%3Aclosed).
+Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.0+is%3Aclosed).
