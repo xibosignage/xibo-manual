@@ -110,8 +110,7 @@ The format of the address is:
 tcp://<ip_address>:<port>
 ```
 
-The default `<port>` is 9505 and should be set to that unless you have modified the `XMR_PLAYER_PORT` setting
- in your `config.env` file.
+The default `<port>` is 9505 and should be set to that unless you have specified a custom port in your docker-compose configuration.
 
 
 ### Start/Stop/Down
@@ -125,6 +124,8 @@ docker-compose XXX
 The `stop` command will stop the [[PRODUCTNAME]] CMS services running. If you want to start
 them up again, issue the `start` command.
 
+** Before running docker-compose down**, please be sure that your media and database files are being correctly written to the `shared` directory. This is particularly important if you are running on a Windows computer. To do so, upload for example an image in to the CMS, and check that the same image appears in the `shared/cms/library` directory. Another good check is to make sure that `shared/backup/db/latest.tar.gz` was created within the last 24 hours. If either of those checks fail, please do not run `docker-compose down` as this will lead to data loss.
+
 If you suspect there are problems with the containers running your [[PRODUCTNAME]] CMS, then
 you can safely run
 
@@ -133,10 +134,12 @@ docker-compose down
 docker-compose up -d
 ```
 
-Providing your keep your `config.env` file and your `DATA_DIR` directory intact,
+Providing your keep your `config.env` file and your `shared` directory intact,
 the CMS will be run using your existing data.
 
 ## Upgrading [[PRODUCTNAME]]
+
+** Before attempting an upgrade**, please be sure that your media and database files are being correctly written to the `shared` directory. This is particularly important if you are running on a Windows computer. To do so, upload for example an image in to the CMS, and check that the same image appears in the `shared/cms/library` directory. Another good check is to make sure that `shared/backup/db/latest.tar.gz` was created within the last 24 hours. If either of those checks fail, please do not run proceed with the upgrade as this will lead to data loss. Seek support for how to recover the situation.
 
 Before attempting an upgrade, it's strongly recommended to take a full backup of
 your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
@@ -145,7 +148,7 @@ your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
 docker-compose stop
 ```
 
-and then, backup `config.env` and `DATA_DIR` and keep them somewhere safe.
+and then, backup `config.env`, your docker-compose files, and `shared` directory and keep them somewhere safe.
 
 **What about `launcher`?**
 
