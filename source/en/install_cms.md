@@ -13,14 +13,14 @@ encourage you to use a [Docker](install_docker.html) environment.
 
 ## Requirements
 
- - A server/machine capable of running Docker and Docker Compose
- - If HTTPS is required, a web server capable of being a reverse proxy (nginx, apache, iis)
+ - A server/machine capable of running Docker (for Linux containers) and Docker Compose
+ - If HTTPS is required, a web server capable of being a reverse proxy (nginx, Apache, IIS)
 
 ### No Docker?
 If Docker is not available please refer to a [Custom Installation](manual_install.html).
 
-**Please note** that while every effort will be made to assist with custom installations, 
-Docker is the supported method of running [[PRODUCTNAME]] and it may not be possible to help 
+**Please note** that while every effort will be made to assist with custom installations,
+Docker is the supported method of running [[PRODUCTNAME]] and it may not be possible to help
 with your custom installation without opening a paid support incident from a company offering
 commercial support.
 
@@ -37,7 +37,7 @@ and download the `tar.gz`/`zip` called `xibo-docker`.
 </nonwhite>
 
 <white>
-Ask your service provider for the [[PRODUCTNAME]] Docker installation files. 
+Ask your service provider for the [[PRODUCTNAME]] Docker installation files.
 </white>
 
 The archive should be extracted in a suitable location on your host machine - the
@@ -47,22 +47,22 @@ written under this folder.
 
 ## Bootstrap [[PRODUCTNAME]]
 
-The first time [[PRODUCTNAME]] is installed a configuration file is needed to tell Docker how the 
+The first time [[PRODUCTNAME]] is installed a configuration file is needed to tell Docker how the
 environment is configured. This file is called `config.env`. This covers where you want files to be stored,
 email config, etc.
- 
-A template file with detailed instructions is provided in the release archive and is 
+
+A template file with detailed instructions is provided in the release archive and is
 called `config.env.template`. Take a copy of this file, renaming to `config.env` and then edit the file
 in a text editor (Notepad/TextEdit/Nano and not a Word processor).
 
 If you don't want [[PRODUCTNAME]] to be able to send email messages, then you can omit to
 configure those options.
 
-Docker will map data folders to contain database data and any custom files for the CMS. These will default appear 
+Docker will map data folders to contain database data and any custom files for the CMS. These will default appear
 in the folder containing the release archive in a `/shared` sub-folder.
 
-Once you've made your changes to `config.env` and have saved the file, Open a terminal/command window 
-in the folder where you extracted the archive. As a user who has permissions to run the `docker` 
+Once you've made your changes to `config.env` and have saved the file, Open a terminal/command window
+in the folder where you extracted the archive. As a user who has permissions to run the `docker`
 command, simply run:
 
 ```
@@ -85,8 +85,16 @@ alternative port number (see [below](#using_different_ports)), then be sure to a
 `http://localhost:8080`
 
 Please note that if you are running Docker Toolbox on Windows the CMS will not be accessible
-at `localhost`, instead you should use the IP address assigned to the Docker Toolbox Virtual Machine.
-This will be shown to you when Docker Toolbox starts.
+at `localhost`, instead you should use the IP address assigned to the Docker Toolbox Virtual Machine. You can discover this IP address by running `docker-machine ip` from the `Docker Toolbox Quickstart Terminal`. Please see the [Install Docker Toolbox](install_docker.html#docker_toolbox) page, for details on accessing the CMS from other computers on your network.
+
+If you are running a firewall on your computer, either the Microsoft Windows firewall, or an iptables based firewall on Linux, you will need to allow the ports you've configured the CMS to run on inbound. If you haven't specifically configured alternative ports, then the following is required:
+
+```
+Inbound TCP Port 9505 (for XMR Push Messaging)
+
+Inbound TCP Port 80 (for HTTP Traffic) AND/OR
+Inbound TCP Port 443 (for HTTPS Traffic - if you are using SSL)
+```
 
 #### Configuration of XMR public address
 
@@ -102,8 +110,7 @@ The format of the address is:
 tcp://<ip_address>:<port>
 ```
 
-The default `<port>` is 9505 and should be set to that unless you have modified the `XMR_PLAYER_PORT` setting
- in your `config.env` file.
+The default `<port>` is 9505 and should be set to that unless you have specified a custom port in your docker-compose configuration.
 
 
 ### Start/Stop/Down
@@ -117,6 +124,8 @@ docker-compose XXX
 The `stop` command will stop the [[PRODUCTNAME]] CMS services running. If you want to start
 them up again, issue the `start` command.
 
+** Before running docker-compose down**, please be sure that your media and database files are being correctly written to the `shared` directory. This is particularly important if you are running on a Windows computer. To do so, upload for example an image in to the CMS, and check that the same image appears in the `shared/cms/library` directory. Another good check is to make sure that `shared/backup/db/latest.tar.gz` was created within the last 24 hours. If either of those checks fail, please do not run `docker-compose down` as this will lead to data loss. Seek support to resolve the situation.
+
 If you suspect there are problems with the containers running your [[PRODUCTNAME]] CMS, then
 you can safely run
 
@@ -125,10 +134,12 @@ docker-compose down
 docker-compose up -d
 ```
 
-Providing your keep your `config.env` file and your `DATA_DIR` directory intact,
+Providing your keep your `config.env` file and your `shared` directory intact,
 the CMS will be run using your existing data.
 
 ## Upgrading [[PRODUCTNAME]]
+
+** Before attempting an upgrade**, please be sure that your media and database files are being correctly written to the `shared` directory. This is particularly important if you are running on a Windows computer. To do so, upload for example an image in to the CMS, and check that the same image appears in the `shared/cms/library` directory. Another good check is to make sure that `shared/backup/db/latest.tar.gz` was created within the last 24 hours. If either of those checks fail, please do not run proceed with the upgrade as this will lead to data loss. Seek support to recover the situation.
 
 Before attempting an upgrade, it's strongly recommended to take a full backup of
 your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
@@ -137,7 +148,7 @@ your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
 docker-compose stop
 ```
 
-and then, backup `config.env` and `DATA_DIR` and keep them somewhere safe.
+and then, backup `config.env`, your docker-compose files, and `shared` directory and keep them somewhere safe.
 
 **What about `launcher`?**
 
@@ -145,7 +156,7 @@ and then, backup `config.env` and `DATA_DIR` and keep them somewhere safe.
 details are available in the [1.8.0-rc3 release notes](release_notes_1.8.0-rc3.html#requirements).
 
 <nonwhite>
-Next download the [appropriate version of the Docker files](https://github.com/xibosignage/xibo-docker/releases), replace the 
+Next download the [appropriate version of the Docker files](https://github.com/xibosignage/xibo-docker/releases), replace the
 version of launcher on your system leaving your config.env file intact, and run
 </nonwhite>
 
@@ -180,42 +191,42 @@ The original version of the CMS will be restored for you.
 
 ## Using different ports
 
-By default, [[PRODUCTNAME]] will start a web server listening on port 80. If you already have a web server listening 
-on port 80, or would prefer to use an alternative port number, then you need to copy the 
+By default, [[PRODUCTNAME]] will start a web server listening on port 80. If you already have a web server listening
+on port 80, or would prefer to use an alternative port number, then you need to copy the
 `cms_custom-ports.yml.template` file and change the `ports` section for `cms-web`. The file should be saved
 as `cms_custom-ports.yml`.
 
-Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. If you would prefer to use an 
-alternative port number, then you'll need to do so by copying the `cms_custom-ports.yml.template` file 
+Similarly, [[PRODUCTNAME]]'s XMR server will be started listening on port 9505. If you would prefer to use an
+alternative port number, then you'll need to do so by copying the `cms_custom-ports.yml.template` file
 and changing the `ports` section for `cms-xmr`.
 
 The ports section of a Docker Compose YML file lists ports in the format <host>:<container> - to move to port 8080
 the declaration would be `8080:80`.
 
-To use this file replace any `docker-compose up -d` commands in the above instructions 
-with `docker-compose -f cms_custom-ports.yml up -d`. 
+To use this file replace any `docker-compose up -d` commands in the above instructions
+with `docker-compose -f cms_custom-ports.yml up -d`.
 
 
-## Remote MySQL 
+## Remote MySQL
 
-The default `docker-compose.yml` file includes a container for MySQL, however it is possible to run with an 
+The default `docker-compose.yml` file includes a container for MySQL, however it is possible to run with an
 external / remote MySQL instance as the database for [[PRODUCTNAME]].
 
-To do this base the `config.env` file on the template `config.evn.template-remote-mysql` and replace any 
-`docker-compose up -d` commands in the above instructions 
-with `docker-compose -f cms_remote-mysql.yml up -d`. 
+To do this base the `config.env` file on the template `config.evn.template-remote-mysql` and replace any
+`docker-compose up -d` commands in the above instructions
+with `docker-compose -f cms_remote-mysql.yml up -d`.
 
 
 ## HTTPS/SSL
 
-[[PRODUCTNAME]] should be run over SSL if running on anything other than a secure private 
-network. The Docker containers do not provide SSL and this must be provided by an external 
+[[PRODUCTNAME]] should be run over SSL if running on anything other than a secure private
+network. The Docker containers do not provide SSL and this must be provided by an external
 web server which handles SSL termination and reverse proxy into the `cms-web` container.
 
-There are many good resources for achieving this architecture - for example a 
+There are many good resources for achieving this architecture - for example a
 [nginx-proxy container](https://github.com/jwilder/nginx-proxy) could be used.
 
-If you already have a web server running on your Host machine, configuring a reverse proxy should 
+If you already have a web server running on your Host machine, configuring a reverse proxy should
 be straightforward, an example `VirtualHost` for Apache is below:
 
 ```
@@ -237,9 +248,12 @@ NameVirtualHost *:443
     # Usage:
     # ProxyPass / http://[IP Addr.]:[port]/
     # ProxyPassReverse / http://[IP Addr.]:[port]/
-    # Example: 
+    # Example:
     ProxyPass / http://0.0.0.0:8080/
     ProxyPassReverse / http://0.0.0.0:8080/
 
 </VirtualHost>
 ```
+<nonwhite>
+A worked example for setting up an Apache reverse proxy for SSL with LetsEncrypt SSL certificates can be found [here](https://community.xibo.org.uk/t/xibo-1-8-0-with-docker-on-ubuntu-16-04/9392).
+</nonwhite>
