@@ -85,8 +85,16 @@ alternative port number (see [below](#using_different_ports)), then be sure to a
 `http://localhost:8080`
 
 Please note that if you are running Docker Toolbox on Windows the CMS will not be accessible
-at `localhost`, instead you should use the IP address assigned to the Docker Toolbox Virtual Machine.
-This will be shown to you when Docker Toolbox starts.
+at `localhost`, instead you should use the IP address assigned to the Docker Toolbox Virtual Machine. You can discover this IP address by running `docker-machine ip` from the `Docker Toolbox Quickstart Terminal`. Please see the [Install Docker Toolbox](install_docker.html#docker_toolbox) page, for details on accessing the CMS from other computers on your network.
+
+If you are running a firewall on your computer, either the Microsoft Windows firewall, or an iptables based firewall on Linux, you will need to allow the ports you've configured the CMS to run on inbound. If you haven't specifically configured alternative ports, then the following is required:
+
+```
+Inbound TCP Port 9505 (for XMR Push Messaging)
+
+Inbound TCP Port 80 (for HTTP Traffic) AND/OR
+Inbound TCP Port 443 (for HTTPS Traffic - if you are using SSL)
+```
 
 #### Configuration of XMR public address
 
