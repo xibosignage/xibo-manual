@@ -20,6 +20,7 @@ Each theme has a simple config file called `config.php` which sets the title for
 for example the default theme `config.php` is:
 
 ```
+<?php
 $config = array(
     'view_path' => '../views',
     'theme_name' => 'Xibo Default Theme',
@@ -69,6 +70,7 @@ example assumes that you do not have a theme yet. Create the following structure
 Next you need to provide a config file for your theme at `/web/theme/custom/mytheme/config.php`
 
 ```
+<?php
 $config = array(
     'theme_name' => 'My Theme',
     'theme_title' => 'My Theme',
