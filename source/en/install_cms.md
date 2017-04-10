@@ -27,7 +27,7 @@ commercial support.
 ## Installation
 Docker Compose is used to install [[PRODUCTNAME]] on an environment with Docker
 installed. Before continuing please ensure you have Docker installed.
-Guideance on which version of Docker to use, and how to install it can be found
+Guidance on which version of Docker to use, and how to install it can be found
 in our [Docker Installation Guide](install_docker.html).
 
 ### Download and extract the [[PRODUCTNAME]] Docker archive
