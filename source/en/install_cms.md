@@ -25,8 +25,10 @@ with your custom installation without opening a paid support incident from a com
 commercial support.
 
 ## Installation
-Docker Compose is used to install [[PRODUCTNAME]] on an environment with Docker installed. Before continuing
-please ensure you have [Docker](install_docker.html) installed.
+Docker Compose is used to install [[PRODUCTNAME]] on an environment with Docker
+installed. Before continuing please ensure you have Docker installed.
+Guideance on which version of Docker to use, and how to install it can be found
+in our [Docker Installation Guide](install_docker.html).
 
 ### Download and extract the [[PRODUCTNAME]] Docker archive
 
@@ -45,6 +47,10 @@ choice of location is up to you. The only requirement is that the Docker
 installation can read/write to it. By default your library content and database will be
 written under this folder.
 
+On a Linux server, we'd suggest for example `/opt/xibo`. On a Windows server,
+please refer to the [Docker Installation Guide](install_docker.html) for details
+on the placement of the CMS installation files.
+
 ## Bootstrap [[PRODUCTNAME]]
 
 The first time [[PRODUCTNAME]] is installed a configuration file is needed to tell Docker how the
@@ -59,7 +65,7 @@ If you don't want [[PRODUCTNAME]] to be able to send email messages, then you ca
 configure those options.
 
 Docker will map data folders to contain database data and any custom files for the CMS. These will default appear
-in the folder containing the release archive in a `/shared` sub-folder.
+in the folder containing the release archive in a `shared` sub-folder.
 
 Once you've made your changes to `config.env` and have saved the file, Open a terminal/command window
 in the folder where you extracted the archive. As a user who has permissions to run the `docker`
@@ -81,13 +87,20 @@ You should log on to the CMS straight away and change the password on that
 account.
 
 You can log on to the CMS at `http://localhost`. If you configured an
-alternative port number (see [below](#using_different_ports)), then be sure to add that to the URL - so for example
-`http://localhost:8080`
+alternative port number (see [below](#using_different_ports)), then be sure to
+add that to the URL - so for example `http://localhost:8080`
 
-Please note that if you are running Docker Toolbox on Windows the CMS will not be accessible
-at `localhost`, instead you should use the IP address assigned to the Docker Toolbox Virtual Machine. You can discover this IP address by running `docker-machine ip` from the `Docker Toolbox Quickstart Terminal`. Please see the [Install Docker Toolbox](install_docker.html#docker_toolbox) page, for details on accessing the CMS from other computers on your network.
+Please note that if you are running Docker Toolbox on Windows the CMS will not
+be accessible at `localhost`, instead you should use the IP address assigned to
+the Docker Toolbox Virtual Machine. You can discover this IP address by running
+`docker-machine ip` from the `Docker Toolbox Quickstart Terminal`. Please see
+the [Install Docker Toolbox](install_docker.html#docker_toolbox) page, for
+details on accessing the CMS from other computers on your network.
 
-If you are running a firewall on your computer, either the Microsoft Windows firewall, or an iptables based firewall on Linux, you will need to allow the ports you've configured the CMS to run on inbound. If you haven't specifically configured alternative ports, then the following is required:
+If you are running a firewall on your computer, either the Microsoft Windows
+firewall, or an iptables based firewall on Linux, you will need to allow the
+ports you've configured the CMS to run on inbound. If you haven't specifically
+configured alternative ports, then the following is required:
 
 ```
 Inbound TCP Port 9505 (for XMR Push Messaging)
@@ -110,7 +123,8 @@ The format of the address is:
 tcp://<ip_address>:<port>
 ```
 
-The default `<port>` is 9505 and should be set to that unless you have specified a custom port in your docker-compose configuration.
+The default `<port>` is 9505 and should be set to that unless you have specified
+a custom port in your docker-compose configuration.
 
 
 ### Start/Stop/Down
@@ -124,7 +138,14 @@ docker-compose XXX
 The `stop` command will stop the [[PRODUCTNAME]] CMS services running. If you want to start
 them up again, issue the `start` command.
 
-** Before running docker-compose down**, please be sure that your media and database files are being correctly written to the `shared` directory. This is particularly important if you are running on a Windows computer. To do so, upload for example an image in to the CMS, and check that the same image appears in the `shared/cms/library` directory. Another good check is to make sure that `shared/backup/db/latest.tar.gz` was created within the last 24 hours. If either of those checks fail, please do not run `docker-compose down` as this will lead to data loss. Seek support to resolve the situation.
+** Before running docker-compose down**, please be sure that your media and
+database files are being correctly written to the `shared` directory. This is
+particularly important if you are running on a Windows computer. To do so,
+upload for example an image in to the CMS, and check that the same image
+appears in the `shared/cms/library` directory. Another good check is to make
+sure that `shared/backup/db/latest.tar.gz` was created within the last 24
+hours. If either of those checks fail, please do not run `docker-compose
+down` as this will lead to data loss. Seek support to resolve the situation.
 
 If you suspect there are problems with the containers running your [[PRODUCTNAME]] CMS, then
 you can safely run
@@ -139,49 +160,88 @@ the CMS will be run using your existing data.
 
 ## Upgrading [[PRODUCTNAME]]
 
-** Before attempting an upgrade**, please be sure that your media and database files are being correctly written to the `shared` directory. This is particularly important if you are running on a Windows computer. To do so, upload for example an image in to the CMS, and check that the same image appears in the `shared/cms/library` directory. Another good check is to make sure that `shared/backup/db/latest.tar.gz` was created within the last 24 hours. If either of those checks fail, please do not run proceed with the upgrade as this will lead to data loss. Seek support to recover the situation.
+** Before attempting an upgrade**, please be sure that your media and database
+files are being correctly written to the `shared` directory. This is
+particularly important if you are running on a Windows computer. To do so,
+upload for example an image in to the CMS, and check that the same image
+appears in the `shared/cms/library` directory. Another good check is to make
+sure that `shared/backup/db/latest.tar.gz` was created within the last 24
+hours. If either of those checks fail, please do not proceed with the upgrade as
+this will lead to data loss. Seek support to recover the situation.
 
-Before attempting an upgrade, it's strongly recommended to take a full backup of
+Before starting the upgrade, it's strongly recommended to take a full backup of
 your [[PRODUCTNAME]] system. So `stop` your CMS by issuing the command
 
 ```
 docker-compose stop
 ```
 
-and then, backup `config.env`, your docker-compose files, and `shared` directory and keep them somewhere safe.
+and then, backup `config.env`, your docker-compose files, and `shared` directory
+and keep them somewhere safe. On a Linux system, you will need to be the `root`
+user, or use `sudo` to make a copy of the shared directory.
 
-**What about `launcher`?**
+If you're upgrading from an earlier 1.8.0 pre-release, you may have previously
+used `launcher`. `launcher` was used for 1.8.0-alpha, beta, rc1 and rc2, but
+since then we have switched to Docker Compose. Further details are available in
+the [1.8.0-rc3 release notes](release_notes_1.8.0-rc3.html#requirements).
 
-`launcher` was used for 1.8.0-alpha, beta, rc1 and rc2, but since then we have switched to Docker Compose. Further
-details are available in the [1.8.0-rc3 release notes](release_notes_1.8.0-rc3.html#requirements).
+Once you have a suitable backup of your CMS files, you can proceed with the
+upgrade process.
 
-<nonwhite>
-Next download the [appropriate version of the Docker files](https://github.com/xibosignage/xibo-docker/releases), replace the
-version of launcher on your system leaving your config.env file intact, and run
+<nonwhite> Download the [appropriate version of the Docker Compose
+files](https://github.com/xibosignage/xibo-docker/releases) for the version of
+[[PRODUCTNAME]] you want to upgrade to. Extract the Docker Compose files over
+the top of your exisiting installation, replacing any existing files.
 </nonwhite>
 
-<white>
-Next download the appropriate version of Docker files from your service provider, replace the version of
-launcher on your system leaving your config.env file intact, and run
-</white>
+<white> Next download the appropriate version of Docker Compose files from your
+service provider. Extract the Docker Compose files over the top of your
+exisiting installation, replacing any existing files. </white>
+
+If you are running the CMS on Custom Ports, then you will need to repeat the
+initial steps in the CMS installation process where you copied the template
+`cms_custom-ports.yml.template` file to `cms_custom-ports.yml` and make the
+appropriate modifications for the ports you want to use.
+
+If you made any other changes to the docker-compose files, you will need to make
+those modifications again. `config.env` will have been preserved, so you should
+not need to make any changes there. Specifically, do not change the MySQL
+password in that file.
+
+To perform the upgrade, run
 
 ```
 docker-compose down
 docker-compose up -d
 ```
 
-The CMS containers will be destroyed, and rebuilt with the newer [[PRODUCTNAME]] version.
+substiuting the second command there for the appropriate `up` command if you're
+using custom ports, or a remote MySQL server.
+
+The CMS containers will be destroyed, and rebuilt with the newer [[PRODUCTNAME]]
+version.
 
 A database backup will be automatically run for you as part of this process.
 
-If you need to roll back to the older [[PRODUCTNAME]] version for some reason, you can do
-so by running
+Please be patient. The upgrade process can take a few minutes to complete. In
+the interim, the CMS will be unavailable. If the upgrade is fully successful,
+you should not see the upgrade wizard at all when you go to log in to the CMS.
+
+If you do see the upgrade wizard, you can attempt to work through it, however
+please be wary of skipping upgrade steps unless you have a detailed knowledge
+that it is safe to do so.
+
+The upgrade should now be complete for you.
+
+If you need to roll back to the older [[PRODUCTNAME]] version for some reason,
+you can do so by running
 
 ```
-docker-compose stop
+docker-compose down
 ```
 
-Restoring your original copy of `config.env` and the complete contents of `DATA_DIR`, and then running
+restoring your original copy of `config.env`, the Docker Compose files and the
+`shared` directory, and finally running
 
 ```
 docker-compose up -d
