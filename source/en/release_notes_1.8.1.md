@@ -53,4 +53,4 @@ Community Forum](https://community.xibo.org.uk/c/support).
 ## Issues addressed in this release
 
 For a full list of enhancements and bug fixes please refer to the 
-[Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.0+is%3Aclosed).
+[Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.1+is%3Aclosed).
