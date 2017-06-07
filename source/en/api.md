@@ -28,7 +28,3 @@ If developing a CMS extension for use within the existing web portal (for exampl
 
 The [[PRODUCTNAME]] API is [OpenAPI Compliant](http://swagger.io/) and the documentation is presented using Swagger-UI in this manual. 
 You may also point a Swagger-UI installation to the `/swagger.json` resource in your CMS instance.
-
-<nonwhite>
-[View the API documentation](../api/)
-</nonwhite>
