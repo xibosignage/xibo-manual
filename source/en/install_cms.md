@@ -317,3 +317,22 @@ NameVirtualHost *:443
 <nonwhite>
 A worked example for setting up an Apache reverse proxy for SSL with LetsEncrypt SSL certificates can be found [here](https://community.xibo.org.uk/t/xibo-1-8-0-with-docker-on-ubuntu-16-04/9392).
 </nonwhite>
+
+## Custom Scripts and Web pages
+
+If you want to use the environment provided by Docker to run custom developments, themes, modules or standalone files 
+you can do so using the `/shared` folders.
+
+The following locations are available:
+
+ - `/shared/cms/custom`: Used for custom middleware
+ - `/shared/cms/web/theme/custom`: Used for custom themes
+ - `/shared/cms/web/userscripts`: Use for standalone files, will be served as `http://localhost/userscripts`
+ 
+## Other shared folders
+
+Docker also makes the library and backup available as shared folders:
+
+ - `/shared/backup`: 
+ - `/shared/cms/library`
+ 
