@@ -79,8 +79,12 @@ RS232 commands can be executed on Players by using the `rs232` prefix in
 The connection string should be provided in the following format on Windows:
 
 ```bash
-<COM#>,<Baud Rate>,<Data Bits>,<Parity|None,Odd,Even,Mark,Space>,<StopBits|None,One,Two,OnePointFive>,<Handshake|None,XOnXOff,RequestToSend,RequestToSendXOnXOff>
+<COM#>,<Baud Rate>,<Data Bits>,<Parity|None,Odd,Even,Mark,Space>,<StopBits|None,One,Two,OnePointFive>,<Handshake|None,XOnXOff,RequestToSend,RequestToSendXOnXOff>,<HexSupport|0,1,default 0>
 ```
+
+Please note, if you need to send your command in HEX format, you should specify the byte string in the command string,
+for example: `7E 00 00 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 FF`, this will be converted to a byte stream by the
+player. You will need to set the `HexSupport` element of the connection string to `1`.
 
 The connection string should be provided in the following format on Android:
 
