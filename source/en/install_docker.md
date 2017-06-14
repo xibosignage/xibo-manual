@@ -15,7 +15,7 @@ version is suggested, unless you have a pre-existing "Enterprise" install of Doc
 Specifically, Docker for Windows Server 2016 (for Windows Containers) is not suitable for running [[PRODUCTNAME]].
 
 When using Docker, the CMS provides its own webserver and MySQL server. If you have a webserver installed already, you 
-will either need to remove it (so [PRODUCTNAME] can use port 80), or run [PRODUCTNAME] on a different port number 
+will either need to remove it (so [[PRODUCTNAME]] can use port 80), or run [[PRODUCTNAME]] on a different port number 
 (see [using different ports](install_cms.html#using_different_ports)).
 
 ### Linux
