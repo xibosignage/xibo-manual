@@ -5,6 +5,10 @@
 application in a pre-configured container making it much easier to deploy a [[PRODUCTNAME]]
 CMS with recommended configuration.
 
+**The following information relates to installing the Docker package that the [[PRODUCTNAME]] CMS will run on. Once Docker
+is available on the host machine (the machine to run the CMS), the [CMS Installation](install_cms.html) procedure can 
+be followed.** 
+
 ## Install Docker
 Docker installation documents can be found on the
 [Docker website](https://docs.docker.com/installation/).
@@ -30,8 +34,8 @@ package. To do so visit [Docker Releases](https://github.com/docker/compose/rele
 run the commands indicated on the latest release.
 
 ### Windows
-There are 2 Docker products for 64 bit Windows, For Windows and Toolbox. Either of these options come with Docker 
-Compose and are compatible with [[PRODUCTNAME]].
+There are 2 Docker products for 64 bit Windows, "Docker for Windows" and " Docker Toolbox". Either of these options 
+come with Docker Compose and are compatible with [[PRODUCTNAME]].
 
 #### Docker for Windows
 Docker for Windows requires Windows 10 Professional 64 bit to run. It leverages Microsoft HyperV to run your Docker 
@@ -40,20 +44,18 @@ containers.
 If you have Windows 10 Professional 64 bit, then Docker for Windows is the version of Docker you should install.
 
 You can download the Docker for Windows installer from the Docker website, and follow their guide to getting Docker 
-installed. You should install the latest Stable build of Docker CE (Community Edition).
-
-[Docker for Windows Install](https://docs.docker.com/docker-for-windows/install/)
+installed. You should install the latest Stable build of Docker CE (Community Edition). See 
+[docs.docker.com - Docker for Windows Install](https://docs.docker.com/docker-for-windows/install/)
 
 Docker for Windows comes with Docker Compose, so all the requirements are met installing that single package.
 
-Once Docker is installed, you will need to share the local hard drive on which you will install the [[PRODUCTNAME]] CMS.
-
-To do so, find the Docker icon in the Windows system tray, right click on it, and select `Settings`.
+Once Docker is installed, you will need to share the local hard drive on which you will install the [[PRODUCTNAME]] 
+CMS. To do so, find the Docker icon in the Windows system tray, right click on it, and select `Settings`.
 
 ![Docker for Windows Drive Sharing](img/install_docker_for_windows_drives.png)
 
-Click on the `Shared Drives` tab, and then put a tick against the local drive on which you will install the CMS. 
-Click `Apply` to save your changes.
+Click on the `Shared Drives` tab, and then put a tick against the local drive on which you will install the CMS. Click 
+`Apply` to save your changes.
 
 You can then follow the [CMS install guide](install_cms.html), using the PowerShell command prompt.
 
@@ -72,18 +74,13 @@ where `\[[PRODUCTNAME]]-docker` is the directory you've installed the CMS in.
 
 #### Docker Toolbox
 If you are running a 64 bit version of Windows other than Windows 10 Professional, then you can instead install Docker 
-Toolbox to run the [[PRODUCTNAME]] CMS.
+Toolbox to run the [[PRODUCTNAME]] CMS. This leverages Oracle VirtualBox to run your Docker containers.
 
-This leverages Oracle VirtualBox to run your Docker containers.
+You can download the Docker Toolbox installer from the Docker website, and follow their guide to getting Docker 
+installed. See - [docs.docker.com - Docker Toolbox Install](https://www.docker.com/products/docker-toolbox). Docker 
+Toolbox comes with Docker Compose, so all the requirements are met installing that single package.
 
-You can download the Docker Toolbox installer from the Docker website, and follow their guide to geting Docker 
-installed.
-
-[Docker Toolbox Install](https://www.docker.com/products/docker-toolbox)
-
-Once Docker Toolbox comes with Docker Compose, so all the requirements are met installing that single package.
-
-Using the default settings, you must install the [[PRODUCTNAME]] CMS inside the `C:\Users` directory for correct 
+Using the default settings, you must extract/install the [[PRODUCTNAME]] CMS inside the `C:\Users` directory for correct 
 operation. Using an alternative location will cause your uploaded content and layouts to be lost.
 
 You can then follow the [CMS install guide](install_cms.html), using the `Docker Toolbox Quickstart Terminal` command 
