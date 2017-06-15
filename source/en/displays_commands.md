@@ -123,7 +123,9 @@ Android display profiles can use the `intent` helper to specify an intent that s
 
 Commands containing an intent helper are ignored in the Windows Player.
 
-## HDMI-CEC
+## Monitor ON/OFF
+
+### HDMI-CEC
 HDMI-CEC is a bus that is implemented on nearly all new large screen TVs that have HDMI connectors. This bus (which
  is physically connected within normal HDMI cables) supports control signals that can perform power-on, power off,
  volume adjust, selection of video source and many of the features that are accessible via the TV's remote control. It can
@@ -131,3 +133,23 @@ HDMI-CEC is a bus that is implemented on nearly all new large screen TVs that ha
 
 [[PRODUCTNAME]] doesn't provide a direct interface to HDMI-CEC as there are many different manufacturer specifications, however
  it is possible to control HDMI-CEC via a batch file.
+ 
+### Serial/RS232
+Industry grade monitors often have a serial interface for turning the monitor panel on and off. [[PRODUCTNAME]] can use
+the RS232 command helper to send these commands to the monitor - usually in HEX mode.
+
+The following monitors and commands have been tested:
+
+#### NEC E464
+ - Power On - `rs232|COM1,9600,8,None,One,None,1|01 30 41 30 41 30 43 02 43 32 30 33 44 36 30 30 30 31 03 73 0d`
+ - Power Off - `rs232|COM1,9600,8,None,One,None,1|01 30 41 30 41 30 43 02 43 32 30 33 44 36 30 30 30 34 03 76 0d`
+
+#### Sharp LC-42D69U
+ - Power On - `rs232|COM1,9600,8,None,One,None,1|50 4F 57 52 31 20 20 20 0D`
+ - Power Off - `rs232|COM1,9600,8,None,One,None,1|50 4F 57 52 00 20 20 20 0D`
+
+#### LG 55LK520
+ - Power On - `rs232|COM1,9600,8,None,One,None,1|6B 61 20 30 30 20 30 31 0D`
+ - Power Off - `rs232|COM1,9600,8,None,One,None,1|6B 61 20 30 30 20 30 30 0D`
+
+It should be noted that other models of each brand should also use the same commands.
