@@ -1,4 +1,4 @@
-<!--toc=manual_install-->
+<!--toc=cms_installation-->
 # Docker without Docker Compose
 If you have your own docker environment you may want to run without the
 automation provided by docker-compose. If this is the case you will be responsible
@@ -10,15 +10,15 @@ The structure expected by the containers is outlined below.
 
 There are 2 containers provided:
 
- - web 
- - xmr 
+ - web
+ - xmr
 
-These are built by Docker Hub and packaged into `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-cms` 
+These are built by Docker Hub and packaged into `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-cms`
 and `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-xmr`.
 
-[[PRODUCTNAME]] also requires a database - we recommend using the `mysql` container available on 
+[[PRODUCTNAME]] also requires a database - we recommend using the `mysql` container available on
 Docker Hub. Any MySQL based container can be used, provided it can be linked to the `cms-web`
-container. It is also possible to use an external database by providing those details to the `cms-web` 
+container. It is also possible to use an external database by providing those details to the `cms-web`
 container as environment variables, as below:
 
  - CMS_DATABASE_HOST
@@ -33,7 +33,7 @@ be found for each container in the `/containers` folder.
 #### Storing Data
 
 Data folders should be mapped outside the Docker containers as volumes so that data is persisted
-across Container upgrades. The following Data folders are used by `docker-compose` and should 
+across Container upgrades. The following Data folders are used by `docker-compose` and should
 be configured for your environment:
 
  - The Library storage can be found in `/shared/cms/library`
