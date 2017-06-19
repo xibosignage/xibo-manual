@@ -22,6 +22,19 @@ manual or custom installation.
 We have explained some common environment configurations in 
 [Prepare your environment](install_environment.html).
 
+<nonwhite>
+## Community Guides
+Special thanks to members of our community who have written guides for installing [[PRODUCTNAME]] in 
+specific environments.
+
+These guides are community contributed and should be considered as guidance only:
+
+ - [Docker on Ubuntu 16:04](https://community.xibo.org.uk/t/xibo-1-8-0-with-docker-on-ubuntu-16-04/9392)
+ - [Docker on Synology DSM6+](https://community.xibo.org.uk/t/synology-dsm6-xibo-docker-1-8-installation/9697/8)
+ - [Non-docker on IIS 8.5, Windows Server 2012](https://community.xibo.org.uk/t/xibo-step-by-step-installation-iis-8-5-on-windows-server-2012/9878/16)
+ - [Non-docker on CentOS 7](https://community.xibo.org.uk/t/installation-guide-of-xibo-1-8-on-centos-7/9429/1)
+
+</nonwhite>
 
 ## Installation
 
