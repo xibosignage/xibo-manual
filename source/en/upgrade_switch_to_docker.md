@@ -39,8 +39,8 @@ Export your database from your old installation by running the following,
 where `user` is the Xibo database user. You will be prompted for the password. You can find
 both those values in the `settings.php` file in your old Xibo installation directory.
 
-If you're not comfortable using the mysqldump command, then see the following section which
-covers using PHPMyAdmin if you have that available, however, please note that PHPMyAdmin is
+If you're not comfortable using the mysqldump command, then see the [following section](#exporting_with_phpmyadmin)
+which covers using PHPMyAdmin if you have that available, however, please note that PHPMyAdmin is
 known to have issues exporting very large database backups reliably.
 
 It is CRITICAL that your import.sql file contains only the [[PRODUCTNAME]] database that you
@@ -103,3 +103,18 @@ or be the root user on a Linux system to do so).
 You should then be able to log on to the 1.8 web interface using an administrative user account.
 The passwords will be the same as your old 1.7 installation used.
 
+## Exporting with PHPMyAdmin
+
+The example above uses `mysqldump`, however if your environment does not have
+`mysqldump` it is possible to use `phpmyadmin` to generate a backup. Care must
+be taken to ensure that a database is selected in the left hand pane **before**
+going to the export tab. Failure to do this will result in the export containing
+the existing database name, which may not match the new name in Docker.
+
+Step 1:
+
+![Truncate Logs](img/phpmyadmin_backup_1.png)
+
+Step 2:
+
+![Export Database](img/phpmyadmin_backup_2.png)
