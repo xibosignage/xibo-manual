@@ -31,7 +31,7 @@ For the rest of this guide, you will need to use the Windows PowerShell.
 ## Download and extract the [[PRODUCTNAME]] Docker archive
 <nonwhite>
 The latest [[PRODUCTNAME]] Docker installation files can be [downloaded
-from our website](https://github.com/xibosignage/xibo-cms/releases/download[[PRODUCTVERSION]]/xibo-docker.tar.gz).
+from our website](https://github.com/xibosignage/xibo-cms/releases/download/[[PRODUCTVERSION]]/xibo-docker.zip).
 </nonwhite>
 
 <white>
@@ -39,7 +39,7 @@ Ask your service provider for the [[PRODUCTNAME]] Docker installation files.
 </white>
 
 The archive should be extracted in a suitable location on your host machine we'd
-suggest `c:\xibo`. Your library content and database will be written under this
+suggest `c:\[[PRODUCTNAME]]`. Your library content and database will be written under this
 folder.
 
 ## Check and edit configuration
@@ -83,7 +83,7 @@ is possible to run with an external / remote MySQL instance as the database for
 
 To do this base the `config.env` file on the template
 `config.evn.template-remote-mysql` and replace any `docker-compose up -d`
-commands in the above instructions with `docker-compose -f cms_remote-mysql.yml
+commands in the below instructions with `docker-compose -f cms_remote-mysql.yml
 up -d`.
 
 
@@ -210,7 +210,7 @@ hours. If either of those checks fail, please do not run `docker-compose
 down` as this will lead to data loss. Seek support to resolve the situation.
 
 If your intention is to remove all traces of [[PRODUCTNAME]] you may delete
-the `c:\xibo` folder **after** running the `down` command.
+the `c:\[[PRODUCTNAME]]` folder **after** running the `down` command.
 
 ```
 docker-compose down
@@ -226,7 +226,7 @@ need to manually restart the CMS containers to restore the content. To do so,
 you would run the following from the PowerShell command prompt:
 
 ```
-cd \[[PRODUCTNAME]]-docker
+cd c:\[[PRODUCTNAME]]
 docker-compose stop
 docker-compose start
 ```

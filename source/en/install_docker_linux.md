@@ -23,7 +23,7 @@ commands indicated on the latest release.
 ## Download and extract the [[PRODUCTNAME]] Docker archive
 <nonwhite>
 The latest [[PRODUCTNAME]] Docker installation files can be [downloaded
-from our website](https://github.com/xibosignage/xibo-cms/releases/download[[PRODUCTVERSION]]/xibo-docker.tar.gz).
+from our website](https://github.com/xibosignage/xibo-cms/releases/download/[[PRODUCTVERSION]]/xibo-docker.tar.gz).
 </nonwhite>
 
 <white>
@@ -76,7 +76,7 @@ is possible to run with an external / remote MySQL instance as the database for
 
 To do this base the `config.env` file on the template
 `config.evn.template-remote-mysql` and replace any `docker-compose up -d`
-commands in the above instructions with `docker-compose -f cms_remote-mysql.yml
+commands in the below instructions with `docker-compose -f cms_remote-mysql.yml
 up -d`.
 
 

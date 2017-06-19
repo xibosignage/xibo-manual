@@ -10,9 +10,11 @@ the below list. Not sure what to use? Read on for more details.
  - [[[PRODUCTNAME]] for Docker on Linux](install_docker_linux.html)
  - [[[PRODUCTNAME]] for Docker on Windows 10 64bit](install_docker_win10_64bit.html)
  - [[[PRODUCTNAME]] for Docker on other Windows 64bit](install_docker_winother_64bit.html)
- - [[[PRODUCTNAME]] for Docker on Mac](install_docker_mac.html)
  - [[[PRODUCTNAME]] for Docker on an existing Docker cluster](install_docker_without_compose.html)
  - [[[PRODUCTNAME]] on a Web server](manual_install.html)
+ 
+**Docker for Windows Server 2016 (for Windows Containers) is not suitable as it is only capable of running
+Windows containers.**
 
 Alternatively there are a number of service providers that will install [[PRODUCTNAME]] for
 you, or even run [[PRODUCTNAME]] on their architecture. If you are unfamiliar

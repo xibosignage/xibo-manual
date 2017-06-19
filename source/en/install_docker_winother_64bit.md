@@ -52,7 +52,7 @@ PowerShell. You'll find a link to the Quickstart Terminal on your Desktop.
 ## Download and extract the [[PRODUCTNAME]] Docker archive
 <nonwhite>
 The latest [[PRODUCTNAME]] Docker installation files can be [downloaded
-from our website](https://github.com/xibosignage/xibo-cms/releases/download[[PRODUCTVERSION]]/xibo-docker.tar.gz).
+from our website](https://github.com/xibosignage/xibo-cms/releases/download/[[PRODUCTVERSION]]/xibo-docker.zip).
 </nonwhite>
 
 <white>
@@ -104,7 +104,7 @@ is possible to run with an external / remote MySQL instance as the database for
 
 To do this base the `config.env` file on the template
 `config.evn.template-remote-mysql` and replace any `docker-compose up -d`
-commands in the above instructions with `docker-compose -f cms_remote-mysql.yml
+commands in the below instructions with `docker-compose -f cms_remote-mysql.yml
 up -d`.
 
 
@@ -232,25 +232,9 @@ hours. If either of those checks fail, please do not run `docker-compose
 down` as this will lead to data loss. Seek support to resolve the situation.
 
 If your intention is to remove all traces of [[PRODUCTNAME]] you may delete
-the `c:\xibo` folder **after** running the `down` command.
+the `c:\[[PRODUCTNAME]]` folder **after** running the `down` command.
 
 ```
 docker-compose down
 ```
 
-## Special considerations
-At the time of writing, there is a bug with Docker for Windows which means that
-when your Windows computer is restarted, the CMS will appear to lose all your
-Media, Layouts and Configuration.
-
-Your content is safe! Until this issue is resolved, after a reboot, you will
-need to manually restart the CMS containers to restore the content. To do so,
-you would run the following from the PowerShell command prompt:
-
-```
-cd \[[PRODUCTNAME]]-docker
-docker-compose stop
-docker-compose start
-```
-
-where `\[[PRODUCTNAME]]-docker` is the directory you've installed the CMS in.
