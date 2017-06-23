@@ -13,7 +13,6 @@
 	padding-bottom: 30px;
 	margin-top: 100px;
 	color: #777;
-	text-align: center;
 	border-top: 1px solid #e5e5e5;
 	text-align: left;
 }
@@ -65,4 +64,12 @@ ul.navbar-nav a:hover {
     padding-left: 4px;
     line-height: 1;
     font-size: 16px;
+}
+
+ul#side-nav ul {
+    margin-left: 15px;
+}
+
+ul#side-nav ul > li {
+    margin-top: 5px;
 }
