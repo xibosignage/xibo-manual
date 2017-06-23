@@ -80,21 +80,26 @@ class ManualGenerator
         $this->outputPath = $outputPath;
         $this->sourcePath = $sourcePath;
 
+        // Clean the output folder
+        if (is_dir($this->outputPath)) {
+            $this->delete($this->outputPath);
+            sleep(3);
+        }
+        mkdir($this->outputPath);
+
         // Load the template
         $this->loadTemplate();
 
-        // Copy the bootstrap, jquery folders and the img folder
-        if (!is_dir($this->outputPath . 'vendor'))
-            mkdir($this->outputPath . 'vendor');
+        foreach (json_decode(file_get_contents($this->path('files.json'))) as $file) {
 
-        $this->xcopy($this->path('vendor/bootstrap'), $this->outputPath . 'vendor/bootstrap');
-        $this->xcopy($this->path('vendor/jquery'), $this->outputPath . 'vendor/jquery');
-        $this->xcopy($this->path('img'), $this->outputPath . 'img');
-        $this->xcopy($this->path('manual.css'), $this->outputPath . 'manual.css');
-        $this->xcopy($this->path('index.html'), $this->outputPath . 'index.html');
+            // Are we a file or a folder?
+            if (stripos($file, '.') === false) {
+                // Folder
+                mkdir($this->outputPath . $file);
+            }
 
-        // Copy the en/ language images into the en/language sub folder.
-        $this->xcopy($this->sourcePath . 'source/en/img', $this->outputPath . 'en/img');
+            $this->xcopy($this->path($file), $this->outputPath . $file);
+        }
 
         $languages = array();
 
@@ -103,12 +108,6 @@ class ManualGenerator
 
             if (is_dir($this->sourcePath . 'source/' . $langDir)) {
                 echo 'Found ' . $langDir . PHP_EOL;
-
-                // Make sure our output folder is empty
-                if (is_dir($this->outputPath . $langDir)) {
-                    $this->delete($this->outputPath . $langDir);
-                    sleep(3);
-                }
 
                 mkdir($this->outputPath . $langDir);
 
@@ -210,12 +209,29 @@ class ManualGenerator
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
-        $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, 'toc/nav_bar.html'), $string);
 
-        // Handle the TOC
-        $string = str_replace('[[TOC]]', Parsedown::instance()->text(
-            $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
-        ), $string);
+        // Navigation
+        //  we want to put the appropriate TOC at the right place inside the navbar
+        $navString = '';
+        $navigation = json_decode($this->file_get_contents_or_default($lang, 'toc/nav_bar.json'), true);
+
+        // for each item in the menu, we want to render a navbar link
+        foreach ($navigation as $nav) {
+            // Does this nav link hold the TOC for the current page?
+            $tocString = '';
+            $navToc = $nav['containsToc'][0];
+            if (in_array($toc, $nav['containsToc'])) {
+                $navToc = $toc;
+                $tocString = Parsedown::instance()->text(
+                    $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+                );
+            }
+
+            $navString .= '<li><a href="' . $nav['href'] . '" data-toc-name="' . $navToc . '">' . $nav['title'] . '</a></li>';
+            $navString .= $tocString;
+        }
+
+        $string = str_replace('[[NAVBAR]]', $navString, $string);
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
