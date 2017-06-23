@@ -31,8 +31,7 @@ class ManualGenerator
     private $outputPath;
 
     private $template;
-    public $overrideHeader;
-    public $overrideFooter;
+    private $templateName;
 
     /**
      * Language specific image replacements
@@ -40,7 +39,7 @@ class ManualGenerator
      */
     private $languageImages = [];
 
-    public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
+    public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl, $template = 'default')
     {
         // This should be updated with each release of the manual
         $this->productVersion = '1.8.2';
@@ -51,8 +50,31 @@ class ManualGenerator
         $this->productFaqUrl = $productFaqUrl;
 
         $this->whiteLabel = ($this->productName != 'Xibo');
+
+        $this->templateName = $template;
     }
 
+    /**
+     * Return the template aware path
+     * @param $file
+     * @return string
+     */
+    private function path($file)
+    {
+        if ($this->templateName == 'default')
+            return $this->sourcePath . 'template/default/' . $file;
+
+        if (file_exists($this->sourcePath . 'template/custom/' . $this->templateName . '/' . $file))
+            return $this->sourcePath . 'template/custom/' . $this->templateName . '/' . $file;
+        else
+            return $this->sourcePath . 'template/default/' . $file;
+    }
+
+    /**
+     * Build
+     * @param $sourcePath
+     * @param $outputPath
+     */
     public function build($sourcePath, $outputPath)
     {
         $this->outputPath = $outputPath;
@@ -62,14 +84,14 @@ class ManualGenerator
         $this->loadTemplate();
 
         // Copy the bootstrap, jquery folders and the img folder
-        if (!is_dir($this->outputPath . 'libraries'))
-            mkdir($this->outputPath . 'libraries');
+        if (!is_dir($this->outputPath . 'vendor'))
+            mkdir($this->outputPath . 'vendor');
 
-        $this->xcopy($this->sourcePath . 'libraries/bootstrap', $this->outputPath . 'libraries/bootstrap');
-        $this->xcopy($this->sourcePath . 'libraries/jquery', $this->outputPath . 'libraries/jquery');
-        $this->xcopy($this->sourcePath . 'template/img', $this->outputPath . 'img');
-        $this->xcopy($this->sourcePath . 'template/manual.css', $this->outputPath . 'manual.css');
-        $this->xcopy($this->sourcePath . 'template/index.html', $this->outputPath . 'index.html');
+        $this->xcopy($this->path('vendor/bootstrap'), $this->outputPath . 'vendor/bootstrap');
+        $this->xcopy($this->path('vendor/jquery'), $this->outputPath . 'vendor/jquery');
+        $this->xcopy($this->path('img'), $this->outputPath . 'img');
+        $this->xcopy($this->path('manual.css'), $this->outputPath . 'manual.css');
+        $this->xcopy($this->path('index.html'), $this->outputPath . 'index.html');
 
         // Copy the en/ language images into the en/language sub folder.
         $this->xcopy($this->sourcePath . 'source/en/img', $this->outputPath . 'en/img');
@@ -130,8 +152,8 @@ class ManualGenerator
 
     private function loadTemplate()
     {
-        $headerLocation = ($this->overrideHeader == null) ? $this->sourcePath . 'template/header.html' : $this->overrideHeader;
-        $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
+        $headerLocation = $this->path('header.html');
+        $footerLocation = $this->path('footer.html');
 
         $this->template  = $this->processReplacements(file_get_contents($headerLocation));
         $this->template .= $this->processReplacements(file_get_contents($footerLocation));
