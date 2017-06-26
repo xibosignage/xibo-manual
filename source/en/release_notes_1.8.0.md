@@ -60,10 +60,10 @@ but will not run the latest features.
 ### Special Considerations
 
 #### Switching to Docker
-Our recommended configuration for 1.8 series on ward will be based on Docker and from 1.8.0-rc3 the focus of 
+Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8.0-rc3 the focus of 
 the documentation has changed to reflect this. If you would like to try 1.8.0-rc3 by upgrading your existing 
 1.7 installation, we recommend switching to Docker. Please refer to the 
-[upgrade guide for more information](upgrade.html#switching_to_docker).
+[upgrade guide for more information](upgrade_switch_to_docker.html).
 
 #### Changes to Docker
 We have removed `launcher` in favour of Docker Compose. Docker Compose supports a wider variety of platforms
