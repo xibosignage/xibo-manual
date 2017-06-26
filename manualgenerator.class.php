@@ -258,12 +258,12 @@ class ManualGenerator
 
         // Replace any chunks of manual that we don't want appearing in non white labels
         if ($this->whiteLabel) {
-            $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = preg_replace('/(<(nonwhite)\b[^>]*>).*?(<\/\2>)/s', '', $string);
             $string = str_replace('<white>', '', $string);
             $string = str_replace('</white>', '', $string);
         }
         else {
-            $string = preg_replace('/<(white)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = preg_replace('/(<(white)\b[^>]*>).*?(<\/\2>)/s', '', $string);
             $string = str_replace('<nonwhite>', '', $string);
             $string = str_replace('</nonwhite>', '', $string);
         }
