@@ -48,6 +48,17 @@ and then add:
 The first five entries are the times to run values, followed by the command to run. The asterisk is a 
 wildcard, indicating any time.
 
+**Importantly** the `xtr.php` file must be run by a user which can share files with the user account your web
+server runs under. If you run `crontab -e` you will need to do so as said user, and if you edit `/etc/crontab` you 
+can specify the user in the task.
+
+```
+* * * * * www-data /usr/bin/php /var/www/xibo/bin/xtr.php
+```
+
+This is because XTR may update cached files.
+
+
 There are CRON resources available online which may be useful:
 
 *   [A basic crontab tutorial](http://linuxweblog.com/node/24)

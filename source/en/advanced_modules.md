@@ -33,7 +33,7 @@ A widget is the assignment of a Module to a Playlist.
 
 These are modules that exist on a specific Layout and have their configuration and user options saved to the
 <abbr title="Layout Format">XLF</abbr> for the Layout. These modules are served to the player in HTML and rendered
-locally using an internal browser.
+locally using an internal embedded browser.
 
 It is the responsibility of the ModuleWidget class to provide methods for add/edit/getResource.
 
@@ -61,3 +61,45 @@ should live in `/custom/MyModule`. The module should then specify this view path
 ```
 $module->viewPath = '../custom/MyModule';
 ```
+
+### getResource
+
+Each Module must implement `getResource`, which is the method that returns the generated HTML to the CMS preview and
+player.
+
+This method renders a Twig template called `get-resource`, but can also render direct HTML or another Twig template
+provided by the module itself.
+
+As the module provides resources for both the CMS and Player, it must be able to differentiate between those two 
+requests, so that the URL of dependent resources can be changed. For example - referencing the `jquery` library from
+the Player would serve from the local library - e.g. `jquery.min.js`, and referencing from the CMS would require the
+fully qualified path to that file on the web server - e.g. `/vendor/jquery.min.js`.
+
+The Module base class contains helper methods to add javascript, css and content.
+
+The two most important helper methods are `initialiseGetResource` and `finaliseGetResource` as these control the 
+behaviour. Initialise sets up internal data tracking for the subsequent method calls, and `finalise` renders the 
+template.
+
+`isPreview()` can be called to determine whether to render a CMS preview or a Player HTML file.
+
+A typical `getResource` might look like:
+
+```php
+public function GetResource($displayId = 0)
+{
+    $this
+        ->initialiseGetResource()
+        ->appendViewPortWidth($this->region->width)
+        ->appendJavaScriptFile('vendor/jquery-1.11.1.min.js')
+        ->appendCssFile((($this->isPreview()) ? $this->getApp()->urlFor('library.font.css') : 'fonts.css'))
+        ->appendBody('<h1>My HTML</h1>')
+        ->appendJavaScript('$(document).ready(function() { $("h1").html("My Altered HTML"); } );
+        
+    return $this->finaliseGetResource();
+}
+```
+
+These helpers are optional, but if they are used once then the entire `getResource` must be served with them. 
+Alternatively a Twig template can be rendered using `$this->renderTemplate([], $templateName);`, where the first 
+parameter is an array of data to provide to the template and the second is the template name.
