@@ -225,6 +225,23 @@ class ManualGenerator
                 $tocString = Parsedown::instance()->text(
                     $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
                 );
+
+                // highlight the sub link in this toc
+                $document = new DOMDocument();
+                $document->loadHTML($tocString);
+
+                foreach ($document->getElementsByTagName('a') as $a) {
+                    /** @var DOMElement $a */
+                    if ($a->getAttribute('href') === $file . '.html') {
+                        // Get the parent and add a class
+                        $a->parentNode->setAttribute('class', 'active');
+                        $arrow = $document->createElement('span');
+                        $arrow->setAttribute('class', 'glyphicon glyphicon-arrow-left you-are-here-arrow');
+                        $a->appendChild($arrow);
+                    }
+                }
+
+                $tocString = $document->saveHTML();
             }
 
             $navString .= '<li><a href="' . $nav['href'] . '" data-toc-name="' . $navToc . '">' . $nav['title'] . '</a></li>';

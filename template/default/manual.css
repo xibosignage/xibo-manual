@@ -73,3 +73,11 @@ ul#side-nav ul {
 ul#side-nav ul > li {
     margin-top: 5px;
 }
+
+ul#side-nav ul > li.active {
+    text-decoration: underline;
+}
+
+ul#side-nav ul > li.active span.you-are-here-arrow {
+    margin-left: 5px;
+}
