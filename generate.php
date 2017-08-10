@@ -6,8 +6,8 @@ $argv = $GLOBALS['argv'];
 
 $template = isset($argv[1]) ? $argv[1] : 'default';
 
-if (file_exists('template/' . $template . '/template.php'))
-    include_once 'template/' . $template . '/template.php';
+if (file_exists('template/custom/' . $template . '/template.php'))
+    include_once 'template/custom/' . $template . '/template.php';
 else
     include_once 'template/default/template.php';
 
