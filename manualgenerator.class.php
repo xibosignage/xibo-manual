@@ -31,8 +31,7 @@ class ManualGenerator
     private $outputPath;
 
     private $template;
-    public $overrideHeader;
-    public $overrideFooter;
+    private $templateName;
 
     /**
      * Language specific image replacements
@@ -40,7 +39,7 @@ class ManualGenerator
      */
     private $languageImages = [];
 
-    public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
+    public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl, $template = 'default')
     {
         // This should be updated with each release of the manual
         $this->productVersion = '1.8.2';
@@ -51,28 +50,56 @@ class ManualGenerator
         $this->productFaqUrl = $productFaqUrl;
 
         $this->whiteLabel = ($this->productName != 'Xibo');
+
+        $this->templateName = $template;
     }
 
+    /**
+     * Return the template aware path
+     * @param $file
+     * @return string
+     */
+    private function path($file)
+    {
+        if ($this->templateName == 'default')
+            return $this->sourcePath . 'template/default/' . $file;
+
+        if (file_exists($this->sourcePath . 'template/custom/' . $this->templateName . '/' . $file))
+            return $this->sourcePath . 'template/custom/' . $this->templateName . '/' . $file;
+        else
+            return $this->sourcePath . 'template/default/' . $file;
+    }
+
+    /**
+     * Build
+     * @param $sourcePath
+     * @param $outputPath
+     */
     public function build($sourcePath, $outputPath)
     {
         $this->outputPath = $outputPath;
         $this->sourcePath = $sourcePath;
 
+        // Clean the output folder
+        if (is_dir($this->outputPath)) {
+            $this->delete($this->outputPath);
+            sleep(3);
+        }
+        mkdir($this->outputPath);
+
         // Load the template
         $this->loadTemplate();
 
-        // Copy the bootstrap, jquery folders and the img folder
-        if (!is_dir($this->outputPath . 'libraries'))
-            mkdir($this->outputPath . 'libraries');
+        foreach (json_decode(file_get_contents($this->path('files.json'))) as $file) {
 
-        $this->xcopy($this->sourcePath . 'libraries/bootstrap', $this->outputPath . 'libraries/bootstrap');
-        $this->xcopy($this->sourcePath . 'libraries/jquery', $this->outputPath . 'libraries/jquery');
-        $this->xcopy($this->sourcePath . 'template/img', $this->outputPath . 'img');
-        $this->xcopy($this->sourcePath . 'template/manual.css', $this->outputPath . 'manual.css');
-        $this->xcopy($this->sourcePath . 'template/index.html', $this->outputPath . 'index.html');
+            // Are we a file or a folder?
+            if (stripos($file, '.') === false) {
+                // Folder
+                mkdir($this->outputPath . $file);
+            }
 
-        // Copy the en/ language images into the en/language sub folder.
-        $this->xcopy($this->sourcePath . 'source/en/img', $this->outputPath . 'en/img');
+            $this->xcopy($this->path($file), $this->outputPath . $file);
+        }
 
         $languages = array();
 
@@ -81,12 +108,6 @@ class ManualGenerator
 
             if (is_dir($this->sourcePath . 'source/' . $langDir)) {
                 echo 'Found ' . $langDir . PHP_EOL;
-
-                // Make sure our output folder is empty
-                if (is_dir($this->outputPath . $langDir)) {
-                    $this->delete($this->outputPath . $langDir);
-                    sleep(3);
-                }
 
                 mkdir($this->outputPath . $langDir);
 
@@ -130,8 +151,8 @@ class ManualGenerator
 
     private function loadTemplate()
     {
-        $headerLocation = ($this->overrideHeader == null) ? $this->sourcePath . 'template/header.html' : $this->overrideHeader;
-        $footerLocation = ($this->overrideFooter == null) ? $this->sourcePath . 'template/footer.html' : $this->overrideFooter;
+        $headerLocation = $this->path('header.html');
+        $footerLocation = $this->path('footer.html');
 
         $this->template  = $this->processReplacements(file_get_contents($headerLocation));
         $this->template .= $this->processReplacements(file_get_contents($footerLocation));
@@ -188,12 +209,46 @@ class ManualGenerator
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
-        $string = str_replace('[[NAVBAR]]', $this->file_get_contents_or_default($lang, 'toc/nav_bar.html'), $string);
 
-        // Handle the TOC
-        $string = str_replace('[[TOC]]', Parsedown::instance()->text(
-            $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
-        ), $string);
+        // Navigation
+        //  we want to put the appropriate TOC at the right place inside the navbar
+        $navString = '';
+        $navigation = json_decode($this->file_get_contents_or_default($lang, 'toc/nav_bar.json'), true);
+
+        // for each item in the menu, we want to render a navbar link
+        foreach ($navigation as $nav) {
+            // Does this nav link hold the TOC for the current page?
+            $tocString = '';
+            $navToc = $nav['containsToc'][0];
+            if (in_array($toc, $nav['containsToc'])) {
+                $navToc = $toc;
+                $tocString = Parsedown::instance()->text(
+                    $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
+                );
+
+                // highlight the sub link in this toc
+                $document = new DOMDocument();
+                $document->loadHTML($tocString);
+
+                foreach ($document->getElementsByTagName('a') as $a) {
+                    /** @var DOMElement $a */
+                    if ($a->getAttribute('href') === $file . '.html') {
+                        // Get the parent and add a class
+                        $a->parentNode->setAttribute('class', 'active');
+                        $arrow = $document->createElement('span');
+                        $arrow->setAttribute('class', 'glyphicon glyphicon-arrow-left you-are-here-arrow');
+                        $a->appendChild($arrow);
+                    }
+                }
+
+                $tocString = $document->saveHTML();
+            }
+
+            $navString .= '<li><a href="' . $nav['href'] . '" data-toc-name="' . $navToc . '">' . $nav['title'] . '</a></li>';
+            $navString .= $tocString;
+        }
+
+        $string = str_replace('[[NAVBAR]]', $navString, $string);
 
         // Replace the languages
         $string = str_replace('[[LANGS]]', $langs, $string);
@@ -220,12 +275,12 @@ class ManualGenerator
 
         // Replace any chunks of manual that we don't want appearing in non white labels
         if ($this->whiteLabel) {
-            $string = preg_replace('/<(nonwhite)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = preg_replace('/(<(nonwhite)\b[^>]*>).*?(<\/\2>)/s', '', $string);
             $string = str_replace('<white>', '', $string);
             $string = str_replace('</white>', '', $string);
         }
         else {
-            $string = preg_replace('/<(white)(?:(?!<\/\1).)*?<\/\1>/s', '', $string);
+            $string = preg_replace('/(<(white)\b[^>]*>).*?(<\/\2>)/s', '', $string);
             $string = str_replace('<nonwhite>', '', $string);
             $string = str_replace('</nonwhite>', '', $string);
         }
