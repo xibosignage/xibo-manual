@@ -1,4 +1,3 @@
-- [< Library](media_library.html)
 - [Modules](media_modules.html)
 - [Audio](media_module_audio.html)
 - [Clock](media_module_clock.html)

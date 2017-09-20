@@ -1,4 +1,3 @@
-* [< Home](index.html)
 * [CMS Installation](install_cms.html)
 - [Docker on Linux](install_docker_linux.html)
 - [Docker on Windows 10 64bit](install_docker_win10_64bit.html)
