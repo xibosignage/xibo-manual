@@ -1,12 +1,12 @@
 <!--toc=getting_started-->
 
-# [[PRODUCTNAME]] 1.8.2 - Codename "Tempel"
+# [[PRODUCTNAME]] 1.8.3 - Codename "Tempel"
 
-This is the first minor release of Xibo 1.8 Series. Included in this release are 84 bugs and small enhancements.
+This is the first minor release of Xibo 1.8 Series. Included in this release are 81 bugs and small enhancements.
 
 You can download this release from
-[GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.2/xibo-docker.tar.gz).
-The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.2).
+[GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.3/xibo-docker.tar.gz).
+The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.3).
 
 This release is a bug fix release for the 1.8 stable series. If you are upgrading from 1.4, 1.6 or 1.7 please refer 
 to the [1.8.0 release notes](release_notes_1.8.0.html) for a detailed list of changes and upgrade notes.
@@ -16,22 +16,28 @@ to the [1.8.0 release notes](release_notes_1.8.0.html) for a detailed list of ch
 
 [[PRODUCTNAME]] runs on [Docker](install_docker.html), please check the [install guide](install_cms.html) 
 for detailed requirements. The archive for this release can be downloaded from 
-[GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.2).
+[GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.3).
 
 The CMS can be run without Docker, but this is not our recommended configuration. Installs without
 Docker are called [Custom/Manual Installs](manual_install.html) and further details can be found
 [here](manual_install.html). The release archive for a manual install can be downloaded from
-[GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.2).
+[GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.3).
 
-We recommend using the 1.8.2 Windows Player with this release. The 1.7.6 or
+We recommend using the 1.8.3 Windows Player with this release. The 1.7.6 or
 later version of the Windows Display Player is also compatible with this CMS,
 but will not run the latest features.
 
 ### Special Considerations
 
+#### Changes to Display Notifications
+We've removed the MAINTENANCE_ALERTS_FOR_VIEW_USERS setting in this release. This functionality is now controlled
+on the User/UserGroup using the "Receive Display Notifications?" checkbox. This change allows a more flexible assignment
+of Users/UserGroups to notifications. As with the old setting, only Users/UserGroups with "view" permissions will
+receive the notification.
+
 #### Switching to Docker
-Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8.0-rc3 the focus of 
-the documentation has changed to reflect this. If you would like to try 1.8.0-rc3 by upgrading your existing 
+Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8 the focus of 
+the documentation has changed to reflect this. If you would like to try 1.8.3 by upgrading your existing 
 1.7 installation, we recommend switching to Docker. Please refer to the 
 [upgrade guide for more information](upgrade_switch_to_docker.html).
 
@@ -51,4 +57,4 @@ Community Forum](https://community.xibo.org.uk/c/support).
 ## Issues addressed in this release
 
 For a full list of enhancements and bug fixes please refer to the 
-[Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.2+is%3Aclosed).
+[Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.3+is%3Aclosed).
