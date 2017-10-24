@@ -1,9 +1,18 @@
 <!--toc=api-->
 # CMS API
+The CMS API is a full featured restful API which allows for advanced integrations with other applications and 
+automation of CMS functionality.
+
+The API enables exciting opportunities to integrate [[PRODUCTNAME]] with other systems. Imagine an integration
+with a point of sale system which pushed complimentary products to the signage when a customer purchased something.
+
+Any party connecting to the CMS is considered to be an "application" and is granted credentials according to the
+Applications page in the CMS.
+
 
 ## Authentication
-The API is secured behind an oAuth resource server which requires a valid `access_token` to be provided before access
-will be granted.
+Securing the CMS is of utmost importance and the API is secured behind an oAuth resource server which requires 
+a valid `access_token` to be provided before access will be granted.
  
 An `access_token` can be obtained from the CMS Authorization Server.
 
@@ -14,14 +23,12 @@ Once an `access_token` has been obtained it should be provided with every reques
 Authorization: Bearer <<access token>>
 ```
 
-`GET` and `POST` requests also accept the `access_token` in the query string/form parameters of the request. Access to
-the other verbs must be using a header.
-
 ### Client Information
 Applications connecting to the CMS API must do so using a `clientId` and `clientSecret` which are available from the
 Applications page.
 
-An application needs to be added to the CMS before an authorisation request can be processed.
+An application needs to be added to the CMS before an authorisation request can be processed. After adding an 
+Application it can be granted access to two different types of credentials, called grant types.
 
 ### Grant Types
 The CMS supports two grant types:
@@ -30,18 +37,20 @@ The CMS supports two grant types:
  
 The grant type requested must be supplied in the `grant_type` query parameter whenever requesting a token.
 
-Applications added to the CMS should specify which grant types are allowed to use those client credentials.
+Applications added to the CMS should specify which grant types are allowed to use those client credentials. The 
+`client_credentials` grant is typically used for machine-to-machine communication, whereas the `access_code` grant
+type is used to authorise a user.
 
 ### Authorization Server
 The CMS authorization server is used to obtain an `access_token` and can be found at `/api/authorize`. The 
 authorization server supports two methods:
 
- - / initiate the `access_code` grant
- - /access_token obtain a token
+ - `/api/authorize/` initiate the `access_code` grant
+ - `/api/authorize/access_token` obtain a token
  
 ## Methods
-The [[PRODUCTNAME]] API is [OpenAPI Compliant](http://swagger.io/) and the documentation is presented using Swagger-UI in this manual. 
-You may also point a Swagger-UI installation to the `/swagger.json` resource in your CMS instance.
+The [[PRODUCTNAME]] API is [OpenAPI Compliant](http://swagger.io/) and the documentation is presented using Swagger-UI 
+in this manual.  You may also point a Swagger-UI installation to the `/swagger.json` resource in your CMS instance.
 
 <nonwhite>
 [View the API documentation](../api/)
@@ -94,10 +103,10 @@ which means to get page 2, `start=20` would be provided.
 
 The headers of the response contain extra information related to paging, these are:
 
- - X-Total-Count: The total count of records (all pages)
- - Link: Links pointing to the first, prev, next and last pages (as appropriate)
+ - `X-Total-Count`: The total count of records (all pages)
+ - `Link`: Links pointing to the first, prev, next and last pages (as appropriate)
 
-The link header is [RFC formatted](http://tools.ietf.org/html/rfc5988) and consists of a url and ; and a `rel=` 
+The link header is [RFC formatted](http://tools.ietf.org/html/rfc5988) and consists of a url and `;` and a `rel=` 
 (relationship) attribute.
 
 For example, the headers returned with page 1 are:
