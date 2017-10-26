@@ -88,10 +88,18 @@ The Ticker Edit form has minor differences depending on the Data Source of the T
 - **Copyright**
 
     Should the Display Client insert a Copyright notice at the end of the feed.
+    
+- **Randomise**
+
+    Should the feed items be shown in a random order? Random feeds work offline; the entire feed is parsed, rendered 
+    and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to
+    randomise the order of items. Randomise works on the full feed, "number of items" and "take items from".
 
 - **Substitutions**
 
-    The available keywords to use in the template that will be substituted with content from the feed. The CMS supports a set of default keywords that will be present of the majority of feeds. A special notation is also available where the user can specify the Tag|Namespace within the feed for [[PRODUCTNAME]] to extract content.
+    The available keywords to use in the template that will be substituted with content from the feed. The CMS supports 
+    a set of default keywords that will be present of the majority of feeds. A special notation is also available where 
+    the user can specify the Tag|Namespace within the feed for [[PRODUCTNAME]] to extract content.
 
 The Available Substitutions can be double clicked to automatically insert them into the Template editing area.
 

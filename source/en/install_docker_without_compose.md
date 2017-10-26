@@ -13,22 +13,26 @@ There are 2 containers provided:
  - web
  - xmr
 
-These are built by Docker Hub and packaged into `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-cms`
-and `[[PRODUCTNAME]]signage/[[PRODUCTNAME]]-xmr`.
+<nonwhite>
+These are built by Docker Hub and packaged into `xibo-signage/xibo-cms` and `xibosignage/xibo-xmr`.
+</nonwhite>
 
 [[PRODUCTNAME]] also requires a database - we recommend using the `mysql` container available on
 Docker Hub. Any MySQL based container can be used, provided it can be linked to the `cms-web`
 container. It is also possible to use an external database by providing those details to the `cms-web`
 container as environment variables, as below:
 
- - CMS_DATABASE_HOST
- - CMS_DATABASE_PORT
- - CMS_DATABASE_USERNAME
- - CMS_DATABASE_PASSWORD
- - CMS_DATABASE_NAME
+ - MYSQL_HOST
+ - MYSQL_PORT
+ - MYSQL_DATABASE
+ - MYSQL_USER
+ - MYSQL_PASSWORD
 
 If you decide to run the containers yourself you should read and understand the `DockerFile` which can
 be found for each container in the `/containers` folder.
+
+You may also want to pass in environment variables to configure SMTP in the container. All options are fully
+documented in the `config.env.template` and `config.env.template-remote-mysql` files found in our archives.
 
 #### Storing Data
 
