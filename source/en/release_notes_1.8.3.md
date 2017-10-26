@@ -2,7 +2,7 @@
 
 # [[PRODUCTNAME]] 1.8.3 - Codename "Tempel"
 
-This is the first minor release of Xibo 1.8 Series. Included in this release are 81 bugs and small enhancements.
+This is the first minor release of Xibo 1.8 Series. Included in this release are 85 bugs and small enhancements.
 
 You can download this release from
 [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.3/xibo-docker.tar.gz).
