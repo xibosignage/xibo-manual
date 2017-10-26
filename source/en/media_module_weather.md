@@ -114,4 +114,4 @@ icon in position 11.
 ## Attribution
 
 The DarkSky terms of service should be read and understood before using this module and all Widget 
-templates should include the test "Powered by DarkSky".
+templates should include the text "Powered by DarkSky".
