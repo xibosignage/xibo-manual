@@ -173,4 +173,4 @@ XMR is the push messaging engine in [[PRODUCTNAME]] and it is recommended to
  found [here](install_xmr.html).
   
 XTR is the task runner and should be configured for all installations. Instructions for
-configuring XTR can be found [here](install_xtr.hrml).
+configuring XTR can be found [here](install_xtr.html).
