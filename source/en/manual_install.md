@@ -23,6 +23,10 @@ We have explained some common environment configurations in
 [Prepare your environment](install_environment.html).
 
 <nonwhite>
+
+## Release Download
+The latest release can be downloaded from the [release archives page on GitHub](https://github.com/xibosignage/xibo-cms/releases).
+
 ## Community Guides
 Special thanks to members of our community who have written guides for installing [[PRODUCTNAME]] in 
 specific environments.
