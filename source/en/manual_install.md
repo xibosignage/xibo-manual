@@ -23,6 +23,10 @@ We have explained some common environment configurations in
 [Prepare your environment](install_environment.html).
 
 <nonwhite>
+
+## Release Download
+The latest release can be downloaded from the [release archives page on GitHub](https://github.com/xibosignage/xibo-cms/releases).
+
 ## Community Guides
 Special thanks to members of our community who have written guides for installing [[PRODUCTNAME]] in 
 specific environments.
@@ -173,4 +177,4 @@ XMR is the push messaging engine in [[PRODUCTNAME]] and it is recommended to
  found [here](install_xmr.html).
   
 XTR is the task runner and should be configured for all installations. Instructions for
-configuring XTR can be found [here](install_xtr.hrml).
+configuring XTR can be found [here](install_xtr.html).

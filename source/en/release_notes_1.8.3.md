@@ -2,7 +2,7 @@
 
 # [[PRODUCTNAME]] 1.8.3 - Codename "Tempel"
 
-This is the first minor release of Xibo 1.8 Series. Included in this release are 85 bugs and small enhancements.
+This is the first minor release of Xibo 1.8 Series. Included in this release are 99 bugs and small enhancements.
 
 You can download this release from
 [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.3/xibo-docker.tar.gz).
@@ -34,6 +34,17 @@ We've removed the MAINTENANCE_ALERTS_FOR_VIEW_USERS setting in this release. Thi
 on the User/UserGroup using the "Receive Display Notifications?" checkbox. This change allows a more flexible assignment
 of Users/UserGroups to notifications. As with the old setting, only Users/UserGroups with "view" permissions will
 receive the notification.
+
+#### Finance, Currencies and Stocks Widgets
+The Finance, Currencies and Stocks Widgets use Yahoo's public YQL API for their data source. Unfortunately Yahoo have
+decided to retire this API immediately without explanation.
+
+Therefore this release contains revised Currency/Stocks Widgets which use a new provider for their data. This provider
+requires registration to obtain an API key, which can then be entered in the Module settings page. The same key can 
+be used for both [Stocks](media_module_stocks.html) and [Currencies](media_module_currencies.html).
+
+It is not possible to replicate the generic Finance Widget functionality with the new provider and therefore the 
+Finance Widget is now deprecated.
 
 #### Switching to Docker
 Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8 the focus of 
