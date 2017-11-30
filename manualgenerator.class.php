@@ -36,7 +36,7 @@ class ManualGenerator
     public function __construct($productName, $productHome, $productSupportUrl, $productFaqUrl)
     {
         // This should be updated with each release of the manual
-        $this->productVersion = '1.7.9';
+        $this->productVersion = '1.7.10';
 
         $this->productName = $productName;
         $this->productHome = $productHome;
