@@ -1,107 +1,52 @@
-<!--toc=getting_started-->
-#CMS Installation
-The [[PRODUCTNAME]] CMS is a PHP web application which sits on a MySQL database. The PHP / MySQL combination is very popular as a web platform and can be run on Linux or Windows servers.
+<!--toc=cms_installation-->
+# CMS Installation
 
-We have provided some basic instructions for installing your own web server [here](install_environment.html), but would recommend a Cloud based solution or something managed by an I.T department if the signage application is critical.
+The [[PRODUCTNAME]] CMS is a web application run through Docker or a web server
+supporting PHP/MySQL.
 
-## Installation
-Beyond this point it is assumed that a web server running with PHP and MySQL is available and that the compressed archive (ZIP or Tarball) of the CMS installation package has been transferred to the server.
+Please select the installation instructions appropriate to your environment from
+the below list. Not sure what to use? Read on for more details.
 
-The basic process is as follows:
-1. Download and extract the archive
-2. Starting the Installation
-3. Pre-requisites
-4. Creating the database
-5. Database details
-6. Starting the Installation
-7. Final Configuration
-8. Complete
+ - [[[PRODUCTNAME]] for Docker on Linux](install_docker_linux.html)
+ - [[[PRODUCTNAME]] for Docker on Windows 10 64bit](install_docker_win10_64bit.html)
+ - [[[PRODUCTNAME]] for Docker on other Windows 64bit](install_docker_winother_64bit.html)
+ - [[[PRODUCTNAME]] for Docker on an existing Docker cluster](install_docker_without_compose.html)
+ - [[[PRODUCTNAME]] on a Web server](manual_install.html)
+ 
+**Docker for Windows Server 2016 (for Windows Containers) is not suitable as it is only capable of running
+Windows containers.**
 
-###Download and extract the archive
-The CMS archive contains a sub folder called [[PRODUCTNAME]]-server-[[PRODUCTVERSION]], the contents of this folder should be copied into the appropriate web serviceable location on your web server. In the simplest of web server configurations the name of this folder will be the name of the URL you use to access the CMS. For example: `http://localhost/[[PRODUCTNAME]]`.
+Alternatively there are a number of service providers that will install [[PRODUCTNAME]] for
+you, or even run [[PRODUCTNAME]] on their architecture. If you are unfamiliar
+with Docker or web servers and just want to use the application, then a service provider
+solution may be preferable.
 
-The extracted archive should look like the below screen shot:
+Should you want to install and run [[PRODUCTNAME]] yourself then we strongly
+encourage you to use a [Docker](install_docker.html) environment.
 
-![Extracted Archive](img/win32_install_extracted.png)
+## Docker or not?
+Starting with 1.8 series we have packed [[PRODUCTNAME]] with Docker. Docker is
+a technology that can be compared to Virtual Machines, but without the overhead
+of running Virtual Machines.
 
-A folder will need to be created for the [[PRODUCTNAME]] library. This will be used to store images, videos and other file based media that is uploaded to the CMS. _Subsequent steps in the installation will require this information.
+Essentially this means that you can have a fully isolated environment running
+on a host machine, running our recommended configuration, which is the same
+as the configuration we use to develop and test the software.
 
-###Starting the Installation
-Navigating to `http://localhost/[[PRODUCTNAME]]` will automatically start the installation.
+This reduces the chance of encountering a bug with the software and allows
+for in place upgrades of the software.
 
-The installation is in a _wizard_ format that contains 6 steps in total. The wizard will guide the installer through the process of installing [[PRODUCTNAME]].
+The disadvantage of Docker is that you have to install Docker, which is a software
+product from a third party. The installation of Docker is not always straightforward,
+but we have tried to provide full instructions for each host operating system.
 
-### Step 1 - Pre-requisites
-The installer contains a detailed check list of all the items required for a successful installation. Each item will have either:
+[[PRODUCTNAME]] can still be installed without Docker - Docker is a recommendation
+and not a requirement. To install without Docker a working knowledge of how to
+install, configure and maintain a web server is recommended. There are extra
+considerations in 1.8 compared to 1.7 series regarding the "web root" and
+"URL rewriting".
 
-* A tick - the item is present and correct
-* An exclamation mark - the item is present but may not be configured correctly.
-* A cross - the item is missing.
-
-Any items with an exclamation mark or a cross should be addressed and the retest button used to run this step again.
-
-![Installer Step 1](img/install_cms_step1.png)
-
-The most common problems here are missing PHP modules, configuration of PHP settings and file permissions issues to the library.
-
-Once all the items are ticked press next to advance.
-
-###Creating the database
-The CMS can install into a new database, or an existing one. We recommend a new database.
-
-[[PRODUCTNAME]] does not prefix its table names and may conflict with content in an existing database.
-
-The choice for a new or existing database can be made by switching between the two available tabs.
-
-###Database Details
-Whether you chose an existing database or a new one, the installer will need to collect some information about that database to allow the CMS to connect, read and write.
-
-![Installer Step 2](img/install_cms_step2.png)
-
-The installer will need the following information:
-
-**Host**
-The host name for your MySQL installation - in the majority of cases this will be "localhost".
-
-**Admin Username**
-The "root" user name for your MySQL installation. This is only used for the installation and is only required if you have asked the installer to create a new database.
-
-**Admin Password**
-The "root" password. This is only used for the installation and is only required if you have asked the installer to create a new database.
-
-**Database Name**
-The name for the CMS database.
-
-**Database User name**
-The user name for the CMS to use to connect to the database - usually this can be the same.
-
-**Database Password**
-The password to use to connect to the database.
-
-
-###Start the Installation
-The installer will now create / populate database for [[PRODUCTNAME]]. You should see a series of dots appear on the screen as this happens. It can take a few moments to complete. Assuming everything went well, click "Next".
-
-_If there are errors at this point, please see the troubleshooting section of this manual._
-
-###Admin Password
-Each installation will require at least one "Super User" level Administrator to manage the system, apply upgrades and configure the advanced settings. The installer will prompt for the creation of this user at Step 3.
-
-![Installer Step 3](img/install_cms_step3.png)
-
-**This user name and password should be kept safe as it will be required when the installation is complete.**
-
-
-###Settings
-The next screen deals with configuring [[PRODUCTNAME]]. The first box asks for the location that [[PRODUCTNAME]] should store the media you upload. We created a folder for this earlier, so enter that folder here e.g `/home/[[PRODUCTNAME]]/library`.
-
-The next box asks for a CMS key - this key is used to authenticate Displays with the CMS and should be something obscure. 
-
-The final tick box asks if it's OK to send anonymous statistics back to the [[PRODUCTNAME]] project. We would be very happy if you did!
-
-![Install Step 4](img/install_cms_step4.png)
-
-###Complete
-The installation is now complete and the system is ready to log in.
-
-![Install Complete](img/install_cms_complete.png)
+**Please note** that while every effort will be made to assist with custom
+installations, Docker is the supported method of running [[PRODUCTNAME]] and it
+may not be possible to help with your custom installation without opening a paid
+support incident from a company offering commercial support.

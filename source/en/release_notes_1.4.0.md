@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.4.0_-_Codename_.22Brorsen.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.4.0 - Codename "Brorsen"</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.4.0_-_Codename_.22Brorsen.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.4.0 - Codename "Brorsen"</a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Upgrading"><span class="tocnumber">3</span> <span class="toctext">Upgrading</span></a>
 <ul>
@@ -13,7 +13,7 @@
 <li class="toclevel-1 tocsection-7"><a href="#Known_Issues_and_Limitations"><span class="tocnumber">6</span> <span class="toctext">Known Issues and Limitations</span></a></li>
 </ul>
 </td></tr></table>
-<h3> <span class="mw-headline" id="Xibo_1.4.0_-_Codename_.22Brorsen.22">Xibo 1.4.0 - Codename "Brorsen"</span></h3>
+<h3> <span class="mw-headline" id="Xibo_1.4.0_-_Codename_.22Brorsen.22">Xibo 1.4.0 - Codename "Brorsen"</h3>
 <p>This is the first release in a new stable series of Xibo and we recommend that everyone upgrade. It has been a little over 18 months since the last stable release and in that time there have been 5 development preview releases introducing 27 new features and fixing 108 bugs.
 </p><p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.4/1.4.0">https://launchpad.net/xibo/1.4/1.4.0</a>
 </p>

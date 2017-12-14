@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #PowerPoint
 [[PRODUCTNAME]] can display PowerPoint in two different ways, the correct solution for your network will depend on whether you have a full copy of PowerPoint to install on each Player or not.
 

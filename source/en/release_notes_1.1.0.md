@@ -1,7 +1,7 @@
 <!--toc=getting_started-->
 <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.1.0_-_Codename_.22Encke.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.1.0 - Codename "Encke"</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Xibo_1.1.0_-_Codename_.22Encke.22"><span class="tocnumber">1</span> <span class="toctext">Xibo 1.1.0 - Codename "Encke"</a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Upgrading"><span class="tocnumber">3</span> <span class="toctext">Upgrading</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#New_Features"><span class="tocnumber">4</span> <span class="toctext">New Features</span></a>
@@ -18,7 +18,7 @@
 <li class="toclevel-1 tocsection-12"><a href="#Known_Issues_and_Limitations"><span class="tocnumber">6</span> <span class="toctext">Known Issues and Limitations</span></a></li>
 </ul>
 </td></tr></table>
-<h3> <span class="mw-headline" id="Xibo_1.1.0_-_Codename_.22Encke.22">Xibo 1.1.0 - Codename "Encke"</span></h3>
+<h3> <span class="mw-headline" id="Xibo_1.1.0_-_Codename_.22Encke.22">Xibo 1.1.0 - Codename "Encke"</h3>
 <p><b>This is a development preview release of Xibo. This release is the first of the development preview releases of Xibo working towards the release of Xibo 1.2.0, the next stable line of Xibo released. This should NOT BE USED IN PRODUCTION.</b>
 </p><p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.1/1.1.0">https://launchpad.net/xibo/1.1/1.1.0</a>
 </p>

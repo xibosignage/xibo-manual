@@ -11,9 +11,9 @@ Le processus comprend trois étapes:
 [[PRODUCTNAME]] est une solution d'affichage dynamique à faible consommation. Toutefois, avec les progrès de la technologie il a été nécessaire de fixer certaines conditions minimales. Celles-ci seront vérifiées par le programme d'installation mais elles sont cependant répertoriées ci-dessous pour plus de commodité:
 
 - Connexion réseau au CMS (si possible par internet)
-- Microsoft Windows XP SP3 / Windows Vista / Windows 7 (*Windows 7 recommandé*)
-- Framework .NET v3.5 SP1
-- Internet Explorer 7+ (*IE10 ou supérieur recommandé*)
+- Microsoft Windows 7
+- Framework .NET v4.5
+- Internet Explorer 8+ (*IE10 ou supérieur recommandé*)
 - Flash Player Version 9 ou supérieure
 - Windows Media Player 11 ou supérieur
 - Pour les supports PowerPoint, Microsoft PowerPoint 2003 ou supérieur. *La visionneuse PowerPoint n'est pas adaptée*.

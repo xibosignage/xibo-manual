@@ -16,9 +16,12 @@ The display administration table gives an easy to understand overview of each di
 
 The rows and columns have the following meanings:
 
-- **Row Colour**
+- **Status**
 
- The status of the display. Red = missing content, Yellow = downloading missing content, Green = Up to Date.
+ The status of the display. 
+ Tick (checkmark) = Player is up to date with the content (in older CMS versions, it used to be green), 
+ [!] = Player wasn't logged in since the content change (in older CMS versions, it used to be yellow),
+ [X] = Player is currently downloading the new content (in older CMS versions, it used to be red)
 
 - **ID**
 

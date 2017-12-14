@@ -1,0 +1,54 @@
+
+        <footer class="ss_footer" role="contentinfo">
+            <div class="container">
+                <div class="pull-right">
+                    <img class="img-responsive logo" src="../img/logo.png" alt="[[PRODUCTNAME]]" />
+                </div>
+
+                <p class="ss_back_to_top">Back to Top</p>
+
+                <p>Designed and built by <a href="http://springsignage.com/">Spring Signage</a> for the <a href="http://www.xibo.org.uk" target="_blank">Xibo Project</a>.</p>
+                <p>Open Source Code licensed under <a href="" target="_blank">GNU Affero General Public License v3 or later</a>, documentation under <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/uk/" target="_blank">Creative Commons Licence</a>.</p>
+
+                <p class="ss_footer_links">Currently v[[PRODUCTVERSION]]</p>
+
+                <p class="ss_languages">[[LANGS]]</p>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="../vendor/jquery/jquery-1.9.1.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".ss_body img").addClass("img-thumbnail");
+                $(".ss_body table").addClass("table");
+
+                // Set the selected page based on the TOC name
+                // Mark the appropriate top nav element as the selected page
+                $("#side-nav a").each(function() {
+                    if ($(this).data().tocName == $("body").data().toc)
+                        $(this).parent().addClass("active");
+                });
+
+                $(".ss_back_to_top").click(function() {
+                    $('html, body').animate({scrollTop : 0},800);
+                });
+
+                if (inIframe()) {
+                    console.log("In Frame");
+                    $("#top-nav").css("display", "none");
+                    $(".ss-sidebar").parent().css("display", "none");
+                }
+            });
+
+            function inIframe () {
+                try {
+                    return window.self !== window.top;
+                } catch (e) {
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>

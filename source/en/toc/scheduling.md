@@ -1,4 +1,5 @@
 - [Introduction](scheduling.html)
 - [Calendar](scheduling_calendar.html)
 - [Events](scheduling_events.html)
+- [Dayparting](scheduling_dayparting.html)
 - [Schedule Now](scheduling_now.html)

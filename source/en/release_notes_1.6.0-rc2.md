@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-<h1 id="Notes_Title">Xibo 1.6.0 RC 2 - Codename "Pons-Winnecke"</span></h1>
+<h1 id="Notes_Title">Xibo 1.6.0 RC 2 - Codename "Pons-Winnecke"</h1>
 <p><strong>This is a release candidate for the first stable 1.6 release, 1.6.0. This should NOT BE USED IN PRODUCTION.</strong></p>
 <p>You can download this release from <a rel="nofollow" class="external free" href="https://launchpad.net/xibo/1.6/1.6.0-rc2;">https://launchpad.net/xibo/1.6/1.6.0-rc2;</a></p>
 

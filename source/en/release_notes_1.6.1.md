@@ -1,5 +1,5 @@
 <!--toc=getting_started-->
-# Xibo 1.6.1 - Codename "Pons-Winnecke"</span>
+# Xibo 1.6.1 - Codename "Pons-Winnecke"
 
 **This is a bug fixing release of the 1.6 Series of Xibo**.
 

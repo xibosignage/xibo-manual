@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Getting Started",
+    "href": "index.html",
+    "containsToc": ["getting_started", "cms_installation", "cms_upgrade", "manual_install"]
+  },{
+    "title": "Tour",
+    "href": "tour.html",
+    "containsToc": ["tour"]
+  },{
+    "title": "Displays",
+    "href": "displays.html",
+    "containsToc": ["displays"]
+  },{
+    "title": "Layouts",
+    "href": "layouts.html",
+    "containsToc": ["layouts"]
+  },{
+    "title": "Library",
+    "href": "media.html",
+    "containsToc": ["media", "widgets"]
+  },{
+    "title": "Scheduling",
+    "href": "scheduling.html",
+    "containsToc": ["scheduling"]
+  },{
+    "title": "Users",
+    "href": "users.html",
+    "containsToc": ["users"]
+  },{
+    "title": "Advanced",
+    "href": "advanced.html",
+    "containsToc": ["advanced", "api"]
+  }
+]

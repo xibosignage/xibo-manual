@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 #Font
 [[PRODUCTNAME]] comes with a set of standard fonts provided by our text editor tool - CKEditor.
 
@@ -7,7 +7,7 @@ The font module allows extra fonts to be added to the CMS and display clients.
 The font module is a library based module and requires fonts to be added from the library page.
 
 ##Adding a new font
-Adding and Installing a font is a two step process - firstly the font must be uploaded using the Add Form. 
+Adding and Installing a font is a two step process - firstly the font must be uploaded using the Add Form.
 
 ![Font Add](img/media_font_form_add.png)
 

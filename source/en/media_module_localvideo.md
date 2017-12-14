@@ -1,4 +1,4 @@
-<!--toc=media-->
+<!--toc=widgets-->
 # Local Video
 The local video module is used for Video that exists only on the Display and is not uploaded to the CMS.
 

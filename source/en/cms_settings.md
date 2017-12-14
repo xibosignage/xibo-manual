@@ -11,7 +11,7 @@ Changes to settings can be saved using the Save button in the category selector 
 
 ## Categories
 
-The settings are split into related Categories: 
+The settings are split into related Categories:
 
 **Configuration**
 
@@ -68,13 +68,13 @@ This section will take a look at the User Password Management with three feature
 
 ### User Password Policy
 
-This feature has the utmost flexibility given to the administrator to test passwords in which ever way they chose. 
+This feature has the utmost flexibility given to the administrator to test passwords in which ever way they chose.
 This is done with a setting in the Permissions tab called `USER_PASSWORD_POLICY`.
 
 An administrator can put any valid regular expression in this box, which will cause all users password change requests (and new users)
 to be tested against this expression.
 
-It is also important for the user to know what the policy actually is; the setting `USER_PASSWORD_ERROR` which will be presented 
+It is also important for the user to know what the policy actually is; the setting `USER_PASSWORD_ERROR` which will be presented
 to the user when they enter a password that does not validate against the regular expression.
 
 ### Library Size &amp; Bandwidth
@@ -82,14 +82,13 @@ to the user when they enter a password that does not validate against the regula
 To manage limits on the library file size and monthly bandwidth usage. This is done by virtue of two settings in the database
 table (LIBRARY_SIZE_LIMIT_KB &amp; MONTHLY_XMDS_TRANSFER_LIMIT_KB).
 
-If no limits are entered in database, everything continues to work without restriction; however once a limit is entered [[PRODUCTNAME]] will start 
+If no limits are entered in database, everything continues to work without restriction; however once a limit is entered [[PRODUCTNAME]] will start
 validating against these limits, and when they are exceeded will prevent the upload of new media / updates to clients.
 
 However these two settings are currently not available through the user interface; Only the statistical data is shown in Content page
 
 ### Maintenance
-
-Maintenance is a very import part of the system and therefore is covered in its [own section](index.php?toc=getting_started&p=admin/settings_maintenance).
+Maintenance is a very import part of the system and therefore is covered in its [own section](cms_maintenance.html).
 
 ## Other functions
 
@@ -104,5 +103,5 @@ Import the entire CMS database.
 Export the entire CMS database.
 
 ### Tidy Library
-
-The library tidy function clears up orphaned media items and temporary files.
+The library tidy function clears up orphaned media items and temporary files. More
+information can be found in the [tidy library](media_tidylibrary.html) section.
