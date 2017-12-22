@@ -42,6 +42,10 @@ The archive should be extracted in a suitable location on your host machine we'd
 suggest `c:\[[PRODUCTNAME]]`. Your library content and database will be written under this
 folder.
 
+Please note that the archive already contains a sub-folder called [[PRODUCTNAME]]-docker, which is best practice for archives! For the subsequent instructions please make sure you are *inside* the sub-folder contained in the archive.
+
+
+
 ## Check and edit configuration
 The first time [[PRODUCTNAME]] is installed a configuration file is needed to
 tell Docker how the environment is configured. This file is called `config.env`.
