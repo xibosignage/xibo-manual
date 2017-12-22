@@ -1,89 +1,335 @@
 <!--toc=advanced-->
 # Modules and Widgets
-[[PRODUCTNAME]] benefits from a Modular "plug-in" architecture for designing and displaying content. There are "core"
-supported modules that ship with the product, but these can be extended with new community authored modules at any time.
+[[PRODUCTNAME]] benefits from a Modular "plug-in" architecture for designing and displaying content. There are "core" supported modules that ship with the product, but these can be extended with new community authored modules at any time.
 
 There are two concepts to consider when developing additional modules, the Module and the Widget.
 
 ### Module
-A Module is the "Entity" which is added to the CMS to identify the new module code. Installation instructions are provided
-in the Module code and recorded in the `module` database table. They contain all the information required to instantiate
-the module as well as any global settings.
+A Module is the "Entity" which is added to the CMS to identify the new module code. Installation instructions are provided in the Module code and recorded in the `module` database table. They contain all the information required to instantiate the module as well as any global settings.
 
-All modules provide a `class` which extends `\Xibo\Widget\ModuleWidget` and implements `\Xibo\Widget\ModuleInterface`.
-They must also provide a `<<modulename>>.json` file in the `/modules` or `/custom` folder for installation.
+### Widget
 
-This file contains the information necessary for the CMS to instantiate the module the first time it is installed into
-the `module` database table.
+A widget is the assignment of a Module to a Playlist.
+
+These are modules that exist on a specific Layout and have their configuration and user options saved to the <abbr title="Layout Format">XLF</abbr> for the Layout. These modules are served to the player in HTML and rendered locally using an internal embedded browser.
+
+The "Module" is responsible for providing the code for all actions that take place on Widgets, for example: Add, Edit, Preview, GetResource (generate the full HTML to show the module).
+
+
+
+# Creating a Module
+
+So you're thinking of creating a Module? That is great! They are easy to create once you understand what each part of the Module is doing and how that interacts with the CMS and Players.
+
+## Overview
+
+All modules provide a `class` which extends `\Xibo\Widget\ModuleWidget` and implements `\Xibo\Widget\ModuleInterface`. They must also provide a `<<modulename>>.json` file in the `/custom` folder for installation. Core modules that ship with the software have their `json` file in the `/modules` folder.
+
+This json file contains the information necessary for the CMS to instantiate the module the first time it is installed into the `module` database table. After installation, this file is not used anylonger.
 
 An example is below:
 
-```
+```json
 {
-  "title": "Forecast IO Weather Module",
+  "title": "My Custom Xibo Module",
   "author": "Spring Signage Ltd",
-  "description": "A module for displaying weather information. Uses the Forecast API",
-  "name": "forecastio",
-  "class": "Xibo\\Widget\\ForecastIo"
+  "description": "A module for displaying some information I am interested in",
+  "name": "mymodule",
+  "class": "Xibo\\Custom\\MyModule\MyModule"
 }
 ```
 
-### Widget
-A widget is the assignment of a Module to a Playlist.
+#### Where do I put my code?
 
-These are modules that exist on a specific Layout and have their configuration and user options saved to the
-<abbr title="Layout Format">XLF</abbr> for the Layout. These modules are served to the player in HTML and rendered
-locally using an internal embedded browser.
+When you are making a custom module you should place all of your files under the `/custom` folder, in their own sub folder. The above example would be called `mymodule.json` and stored in `/custom/mymodule.json` with the associated class stored in `/custom/MyModule/MyModule.php`. It is vitally important that your `MyModule` class exists in the `\Xibo\Custom` namespace for it to be auto-loaded correctly.
 
-It is the responsibility of the ModuleWidget class to provide methods for add/edit/getResource.
+## Installation
 
-### Views
-Each module entity has a `viewPath` which should be the location of the Twig Template used to render the forms for
- that module.
+The Module Admin page in the CMS has an action button called "Install Modules". This button looks in the `/custom` folder for all `*.json` files and loads any that are not already installed in the `modules` table. It will present these Modules according to the contents of the file, in the example above you would expect to see an entry for "My Custom Xibo Module - Spring Signage Ltd".
+
+When clicked, the Module is instantiated using the `class` provided in the JSON file, and the `installOrUpdate` method is called. An example implementation of this method is below:
+
+```php
+/**
+* Install or Update this module
+* @param ModuleFactory $moduleFactory
+*/
+public function installOrUpdate($moduleFactory)
+{
+  if ($this->module == null) {
+    // Install
+    $module = $moduleFactory->createEmpty();
+    $module->name = 'My Module';
+    $module->type = 'mymodule';
+    $module->class = 'Xibo\Custom\MyModule\MyModule';
+    $module->description = 'A module for displaying my information.';
+    $module->imageUri = 'forms/library.gif';
+    $module->enabled = 1;
+    $module->previewEnabled = 1;
+    $module->assignable = 1;
+    $module->regionSpecific = 1;
+    $module->renderAs = 'html';
+    $module->schemaVersion = $this->codeSchemaVersion;
+    $module->defaultDuration = 60;
+    $module->settings = [];
+    $module->viewPath = '../custom/MyModule';
+
+    // Set the newly created module and then call install
+    $this->setModule($module);
+    $this->installModule();
+  }
+
+  // Install and additional module files that are required.
+  $this->installFiles();
+}
+```
+
+This method is only called once! So it is important that the information is correct before you install.
+
+
+
+#### What do all these properties mean?
+
+There are a lot of properties to set on a module, which govern how that module is loaded, where its templates are stored and how the Player renders it. Each property is explained below:
+
+| Property        | Explaination                             | Default           |
+| --------------- | ---------------------------------------- | ----------------- |
+| name            | This is the friendly name of your module. It will be shown in the Layout Designer |                   |
+| type            | This is the internal identifier for your module and is what gets recorded on the Layout XLF file and sent to the Player. This does not have to be unique, the CMS will choose the first available module of a particular type to render a Widget. |                   |
+| class           | This is the PHP class associated with the Module. It will be instantiated whenever this module is used. This should always include the namespace. |                   |
+| description     | A description for the module, only used on the Module admin page |                   |
+| imageUri        | DEPRECATED - this option will be removed | forms/library.gif |
+| enabled         | A flag indicating whether the module is enabled | 1                 |
+| previewEnabled  | Should the Layout designer render a preview of the module or not? | 1                 |
+| assignable      | Should this module be assignable - used for Library modules. | 1                 |
+| regionSpecific  | Is this Module for the Library (0) or a Widget on a Layout (1) | 1                 |
+| renderAs        | Render natively or as HTML. If HTML then the Module should provide the HTML from `getResource`, and if native the player must understand how to render the module and its options. | html              |
+| schemaVersion   | Schema Version - can use used to determine different rendering from past versions. | 1                 |
+| defaultDuration | When the user has declined to provide a duration for the Widget, what should the duration be. | 60                |
+| settings        | An array of settings.                    | []                |
+| viewPath        | The view path containing the Twig forms for add, edit and settings. This should be `/custom/MyModule` |                   |
+
+#### Complimentary Files
+
+The Module must also provide an `installFiles()` method which is called after Install and also on upgrade or when the user manually verifies their module files.
+
+The responsbility of this method is to install any complimentary files required by the module - for example if the HTML rendered uses jQuery, or one of the Xibo rendering libraries (layout scaler, etc). An example of this method is below:
+
+```php
+/**
+ * Install Files
+ */
+public function installFiles()
+{
+  // Use JQuery and some Xibo resources
+  $this->mediaFactory->createModuleSystemFile(PROJECT_ROOT . '/modules/vendor/jquery-1.11.1.min.js')->save();
+  $this->mediaFactory->createModuleSystemFile(PROJECT_ROOT . '/modules/xibo-layout-scaler.js')->save();
+  
+  // Install files from a folder
+  $folder = PROJECT_ROOT . '/custom/MyModule/resources';
+  foreach ($this->mediaFactory->createModuleFileFromFolder($folder) as $media) {
+    /* @var Media $media */
+    $media->save();
+  }
+}
+```
+
+
+
+These files are then copied to the library and available for later reference in the CMS and also on the Players.
+
+**Please note** it is important that all files have unique names, discounting the folder structure. Files are transferred to the Player and stored in a flat folder structure.
+
+
+
+### Settings
+
+It may be necessary to provide global settings for a module, typically useful for something like a user entered API key. This is done via a settings form accessible on the Module Admin page.
+
+There are two methods that should be implemented to support this.
+
+```php
+/**
+ * Form for updating the module settings
+ */
+public function settingsForm()
+{
+  // Return the name of the TWIG file to render the settings form
+  return 'mymodule-form-settings';
+}
+
+/**
+ * Process any module settings
+ */
+public function settings()
+{
+  // Process any module settings you asked for.
+  $apiKey = $this->getSanitizer()->getString('apiKey');
+
+  if ($apiKey == '')
+    throw new \InvalidArgumentException(__('Missing API Key'));
+
+  $this->module->settings['apiKey'] = $apiKey;
+}
+```
+
+The form returned from `settingsForm` should be accessible in the `viewPath` you configured for you module during installation.
+
+The TWIG file should extend the default settings for as shown below:
+
+```twig
+{% extends "module-form-settings.twig" %}
+{% import "forms.twig" as forms %}
+
+{% block moduleFormFields %}
+    {% set title %}{% trans "API Key" %}{% endset %}
+    {% set helpText %}{% trans "Enter your API Key" %}{% endset %}
+    {{ forms.input("apiKey", title, module.getSetting("apiKey"), helpText, "", "required") }}
+{% endblock %}
+```
+
+It is not necessary to use `trans` blocks, but if you do it is possible that your string is already translated elsewhere in the software.
+
+
+
+## Layout Designer
+
+Each Module must provide the appropriate forms for adding/editing in the Layout Designer.
+
+### Views - the add/edit form
+Each module entity has a `viewPath` which should be the location of the Twig Template used to render the forms for that module.
 
 Each module should provide:
 
  - `<<modulename>>-form-add.twig`
  - `<<modulename>>-form-edit.twig`
 
-Modules may optionally provide `<<modulename>>-form-settings.twig` as well as any other files they reference directly
-in their code.
+Modules may optionally provide `<<modulename>>-form-settings.twig` as well as any other files they reference directly in their code.
 
-## Custom Modules
-Custom modules can be created in the `/custom` folder. Classes will be auto-loaded from the `/custom` folder provided they
-are in the name space `\Xibo\Custom` and that the file name is `ClassName.php`.
 
-The Modules page in the CMS will look in the `/custom` folder for files ending in `.json`.
 
-It is recommended to include all custom views and resources in the a sub-folder named the same as the module. I.e. "MyModule"
-should live in `/custom/MyModule`. The module should then specify this view path in `installOrUpdate()`, i.e.
+### Designer JavaScript
 
+You may find that you need to add some custom JavaScript to make your form more user friendly. This can be done by implementing the `layoutDesignerJavaScript` method:
+
+```php
+/**
+ * Template for Layout Designer JavaScript
+ * @return string
+ */
+public function layoutDesignerJavaScript()
+{
+  return 'my-module-javascript';
+}
 ```
-$module->viewPath = '../custom/MyModule';
+
+The string returned should be the name of a TWIG file, example below. The contents of this file are included in the Layout Designer page for use on your form - in the below example you could call `myModuleFormOpen` on your Add/Edit form callBack to execute the code when the form opens.
+
+```twig
+<script type="text/javascript">
+function myModuleFormOpen(dialog) {
+  console.log("Opened!");
+}
+</script>
 ```
 
-### getResource
 
-Each Module must implement `getResource`, which is the method that returns the generated HTML to the CMS preview and
-player.
 
-This method renders a Twig template called `get-resource`, but can also render direct HTML or another Twig template
-provided by the module itself.
 
-As the module provides resources for both the CMS and Player, it must be able to differentiate between those two 
-requests, so that the URL of dependent resources can be changed. For example - referencing the `jquery` library from
-the Player would serve from the local library - e.g. `jquery.min.js`, and referencing from the CMS would require the
-fully qualified path to that file on the web server - e.g. `/vendor/jquery.min.js`.
 
-The Module base class contains helper methods to add javascript, css and content.
+## Rendering
 
-The two most important helper methods are `initialiseGetResource` and `finaliseGetResource` as these control the 
-behaviour. Initialise sets up internal data tracking for the subsequent method calls, and `finalise` renders the 
-template.
+Widgets are rendered in the Layout Designer, Preview and through XMDS for display on the Player. Each Module must provide a `getResource` method which generates HTML to be returned in the above situations.
 
-`isPreview()` can be called to determine whether to render a CMS preview or a Player HTML file.
+The core software provides a `get-resource` TWIG template which sets out a boilerplate HTML file that can then be filled in using the following methods:
 
-A typical `getResource` might look like:
+```php
+/**
+* Initialise getResource
+* @return $this
+*/
+$this->initialiseGetResource();
+
+/**
+* @return bool Is Preview
+*/
+$this->isPreview();
+
+/**
+* Finalise getResource
+* @param string $templateName an optional template name
+* @return string the rendered template
+*/
+$this->finaliseGetResource($templateName = 'get-resource');
+
+/**
+* Append the view port width - usually the region width
+* @param int $width
+* @return $this
+*/
+$this->appendViewPortWidth($width);
+
+/**
+* Append CSS File
+* @param string $uri The URI, according to whether this is a CMS preview or not
+* @return $this
+*/
+$this->appendCssFile($uri);
+
+/**
+* Append CSS content
+* @param string $css
+* @return $this
+*/
+$this->appendCss($css);
+
+/**
+* Append JavaScript file
+* @param string $uri
+* @return $this
+*/
+$this->appendJavaScriptFile($uri);
+
+/**
+* Append JavaScript
+* @param string $javasScript
+* @return $this
+*/
+$this->appendJavaScript($javasScript);
+
+/**
+* Append Body
+* @param string $body
+* @return $this
+*/
+$this->appendBody($body);
+
+/**
+* Append Options
+* @param array $options
+* @return $this
+*/
+$this->appendOptions($options);
+
+/**
+* Append Items
+* @param array $items
+* @return $this
+*/
+$this->appendItems($items);
+
+/**
+ * Append raw string
+ * @param string $key
+ * @param string $item
+ * @return $this
+ */
+$this->appendRaw($key, $item)
+```
+
+The two most important helper methods are `initialiseGetResource` and `finaliseGetResource` as these control the behaviour. Initialise sets up internal data tracking for the subsequent method calls, and `finalise` renders the template. `isPreview()` can be called to determine whether to render a CMS preview or a Player HTML file.
+
+A simplified `getResource` might look like:
 
 ```php
 public function GetResource($displayId = 0)
@@ -92,14 +338,136 @@ public function GetResource($displayId = 0)
         ->initialiseGetResource()
         ->appendViewPortWidth($this->region->width)
         ->appendJavaScriptFile('vendor/jquery-1.11.1.min.js')
-        ->appendCssFile((($this->isPreview()) ? $this->getApp()->urlFor('library.font.css') : 'fonts.css'))
+        ->appendFontCss())
         ->appendBody('<h1>My HTML</h1>')
-        ->appendJavaScript('$(document).ready(function() { $("h1").html("My Altered HTML"); } );
+        ->appendJavaScript('$(document).ready(function() { $("h1").html("My Altered HTML"); } ');
         
     return $this->finaliseGetResource();
 }
 ```
 
 These helpers are optional, but if they are used once then the entire `getResource` must be served with them. 
-Alternatively a Twig template can be rendered using `$this->renderTemplate([], $templateName);`, where the first 
-parameter is an array of data to provide to the template and the second is the template name.
+
+**Please note** it is entirely correct and feasible to render the HTML using your own methodolody. Alternatively a Twig template can be rendered using `$this->renderTemplate([], $templateName);`, where the first parameter is an array of data to provide to the template and the second is the template name.
+
+
+
+#### Complimentary Files
+
+Similar to how you've added files in `installFiles()` you will also want to reference these files. Perhaps they are CSS or JavaScript, or perhaps images. Whatever the files are you can use a helper method to render them and the Module code will handle whether they are shown in the CMS or Player.
+
+To reference installed module files use the method below:
+
+```php
+$this->getResourceUrl('<<file name>>')
+```
+
+The file name should be the same as the file name used when you installed it.
+
+
+
+#### Core HTML rendering
+
+Xibo provides some helper JavaScript and CSS for rendering core aspects of the solution. Typical examples of this are the way we render text and the Layout scaler (which is a tool that keeps content at the correct scale regardless of the region changing size).
+
+The key options for the Layout scaler are:
+
+```php
+// Layout Scaler Options
+$options = array(
+  'originalWidth' => $this->region->width,
+  'originalHeight' => $this->region->height,
+  'previewWidth' => $this->getSanitizer()->getDouble('width', 0),
+  'previewHeight' => $this->getSanitizer()->getDouble('height', 0),
+  'scaleOverride' => $this->getSanitizer()->getDouble('scale_override', 0)
+);
+
+$this
+  ->appendOptions($options)
+  ->appendJavaScript('
+$(document).ready(function() {
+    $("body").xiboLayoutScaler(options);
+});
+');
+```
+
+
+
+### Downloading for Rendering
+
+As your module is rendered you may want to download data and/or resources for use when rendering the Widget. An example would be a JSON datasource giving weather data, tweets, Facebook data, etc.
+
+**Whenever you interact with a 3rd party resource please take care to respect that resource and cache appropriately. Remember that your Widget might be used on a network with 1000s of Displays!**
+
+Xibo includes the popular [Guzzle](http://docs.guzzlephp.org/en/stable/) HTTP client and is the recommended way to get third party data sources. Please refer to their documentation to learn how to use Guzzle.
+
+#### Caching
+
+Xibo has a sophisticated caching interface build in, accessible from a module using the `$this->getPool()` method. This is a PSR compliant caching interface. An example of using the cache is provided below:
+
+```php
+/** @var \Stash\Item $cache */
+$cache = $this->getPool()->getItem($this->makeCacheKey('some key for this widget'));
+$cache->setInvalidationMethod(Invalidation::SLEEP, 5000, 15);
+
+$items = $cache->get();
+
+// Check our cache to see if the key exists
+// Ticker cache holds the entire rendered contents of the feed
+if ($cache->isHit()) {
+  return $items;
+} else {
+  // Lock this cache item (120 seconds)
+  // Your module might be accessed concurrently!!
+  $cache->lock(120);
+  
+  // Do something to get my items
+  $items = [];
+  
+  $cache->set($items);
+  $cache->expiresAfter(<some cache period>);
+  $this->getPool()->saveDeferred($cache);
+  
+  return $items;
+}
+
+```
+
+
+
+#### Downloading Images
+
+You may also want to download images to use with your module, for example with Media RSS or Facebook posts.
+
+Xibo provides a `MediaFactory` to help with this - the `MediaFactory` will queue your downloads to happen concurrently, add them to the library and assign them to your Layout so that they are downloaded to the Player correctly.
+
+An example of using the `MediaFactory` is below:
+
+```php
+// Determine a number of seconds to keep this media before expiring
+$expires = 86400;
+
+$file = $this->mediaFactory->queueDownload(md5('http://example.com/myfile'), 'http://example.com/myfile', $expires);
+
+// After queueing the download you can use the returned object to get an ID reference to the file. This is used to refer to it later.
+$downloadUrlToUseLater = $this->getFileUrl($file, 'image');
+
+// After you've queued all of your downloads
+// Process queued downloads
+$this->mediaFactory->processDownloads(function($media) {
+  // Tag this layout with this file
+  $this->assignMedia($media->mediaId);
+});
+```
+
+
+
+The download URL provided by the `getFileUrl` is valid for the CMS Layout Designer, Preview and also for the Player.
+
+
+
+## Summary
+
+As you might have imagined, this is the "thin end of the wedge", meaning there is a lot more you can do with Modules. Most of the complexity behind a module comes from the desired goal rather than the tools. For example you may need to parse some very difficult content, or have some difficult HTML to make.
+
+It is intended that the tools above provide a basis for generating good quality HTML from `getResource`, that is compatible with the Player and making sure that any 3rd party content is cached.

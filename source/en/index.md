@@ -17,11 +17,12 @@ Wikipedia, Digital Signage is:
 * Xibo Message Relay (XMR - bundled with the CMS)
 * Windows Signage Player
 * Android Signage Player (Commercial Software*)
+* webOS Signage Player (Commercial Software*)
 * With [[PRODUCTNAME]] the content is designed from anywhere using a web browser on the internet accessible CMS, scheduled 
 to your Players, called Displays, and then downloaded automatically when appropriate. This manual will guide you through 
 the application from installation to troubleshooting, from the CMS to the Displays.
 
-* Commercial software provided by the project sponsors.
+*Commercial software provided by the project sponsors.
 
 
 ##Getting Help
