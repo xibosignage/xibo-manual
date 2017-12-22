@@ -24,5 +24,5 @@ A Player by default will position itself on the Primary monitor in a full screen
 
 Open a CMS connection and log in, navigating to the Display Settings page. Create a new Windows Profile called "Second Screen" or similar. 
 
-In the new profile configure the "Location" tab so that your left, top, width and height represent the second screen in your PC configuration. For example, if you have two 1920x1080 panels the second one would be at left=1920, top=0, width=1920, height=1080. This is different if they are not side by side or resolution and you should adjust the coordinates according to your setup.
+In the new profile configure the "Location" tab so that your left, top, width and height represent the second screen in your PC configuration. For example, if you have two 1920x1080 panels the second one would be at left=1920, top=0, width=1920, height=1080. You would enter different coordinates if the monitors are not side by side or have different resolutions. You should therefore adjust the coordinates according to your setup.
 
