@@ -9,8 +9,8 @@ Running multiple instances of the Player application requires some leg-work in o
 1. Install 1 copy of the Player normally following the [installation instructions](install_windows_client.html).
 2. Navigate to the Player installation folder
 3. Copy the entire folder and rename to something unique (for example a 2 at the end).
-4. Navigate inside the new folder, rename XiboClient.exe to XiboClient2.exe
-5. Create a start-up short cut to the new XiboClient2.exe file, ensuring that you provide the letter `o` in the start up arguments (this indicates that the options form should be opened instead of the main application).
+4. Navigate inside the new folder, rename [[PRODUCTNAME]]Client.exe to [[PRODUCTNAME]]Client2.exe
+5. Create a start-up short cut to the new [[PRODUCTNAME]]Client2.exe file, ensuring that you provide the letter `o` in the start up arguments (this indicates that the options form should be opened instead of the main application).
 6. Double click the short cut and configure the second Player as normal making sure that you choose a **different library folder**.
 7. Navigate inside the Watchdog sub folder, edit the `app.config` file and set the `ClientLibrary` to be the library folder you've configure above.
 8. Before starting the Player, create a display profile in the CMS to position the second Player - see below.
