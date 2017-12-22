@@ -12,7 +12,7 @@ Running multiple instances of the Player application requires some leg-work in o
 4. Navigate inside the new folder, rename [[PRODUCTNAME]]Client.exe to [[PRODUCTNAME]]Client2.exe
 5. Create a start-up short cut to the new [[PRODUCTNAME]]Client2.exe file, ensuring that you provide the letter `o` in the start up arguments (this indicates that the options form should be opened instead of the main application).
 6. Double click the short cut and configure the second Player as normal making sure that you choose a **different library folder**.
-7. Navigate inside the Watchdog sub folder, edit the `app.config` file and set the `ClientLibrary` to be the library folder you've configure above.
+7. Navigate inside the Watchdog sub folder, edit the `app.config` file, set the `ClientLibrary` to be the library folder you've configure above and set the `ProcessPath` to be the path to the renamed [[PRODUCTNAME]]Client2.exe.
 8. Before starting the Player, create a display profile in the CMS to position the second Player - see below.
 9. Double click the EXE and the client should start.
 
