@@ -18,7 +18,7 @@ The DataSet is defined in the Library and can be reused across multiple DataSet 
 
 ![Add Dataset](img/media_dataset_table.png)
 
-Each data set can have a number of actions performed against it, using the Action Menu.
+Each data set can have a number of actions performed against it, using the row menu.
 
 
 
@@ -79,7 +79,6 @@ Data is populated according to the Columns defined that are of column type "Remo
 Consider an example JSON data source:
 
 ```json
-
 {
     "base": "EUR",
     "date": "2017-12-22",
@@ -89,7 +88,6 @@ Consider an example JSON data source:
         "USD": 1.1853
     }
 }
-
 ```
 
 If we wanted columns to capture the currency symbol and value, we would set our "Data Root" to `rates` and then have a columns for:
@@ -124,13 +122,13 @@ Once you have your DataSet configured you will want to add some data to it. This
 
 ## Manually
 
-Once all the required columns have been added, the DataSet is ready to have data recorded against it. This is done using the "View Data" task on the DataSet table view. This view will contain all of the columns that were added in the previous step and allow you to go through each one and enter data.
+Data can always be viewed/added and edited in a DataSet using the View Data row menu, or the "View Data" action menu on the Columns page. The data table returned will contain a column for each of the Columns you've defined in your configuration. There will also be a filter option for each - see below for an example:
 
 ![Dataset Row](img/media_dataset_row.png)
 
-There is no "save" button on this interface, [[PRODUCTNAME]] will automatically save your changes after each data entry.
 
-Note: If all the rows are taken, more rows can be added to the data set by clicking the "More Rows" button.
+
+A new row can be added using the "Add Row" button, which opens a form with fields for all non-forumla columns. A row can be eidted by clicking anywhere on the row, and deleted using the `x` in the right most column.
 
 
 
@@ -159,5 +157,7 @@ Further discussion on the API can be viewed in the [CMS API documentation](cms_a
 
 
 ## Remotely
+
+
 
 Remote DataSets are kept in sync with a Task called "Fetch Remote DataSets". This task is configured by default and runs once per minute.
