@@ -364,6 +364,8 @@ $this->getResourceUrl('<<file name>>')
 
 The file name should be the same as the file name used when you installed it.
 
+Please note that files installed via this way are only used in the rendering of HTML for the Player/Preview - they are not for PHP files and won't be loaded by PHP in any way.
+
 
 
 #### Core HTML rendering
@@ -433,6 +435,8 @@ if ($cache->isHit()) {
 
 ```
 
+When caching you must ensure that you cache everything required to render your module.
+
 
 
 #### Downloading Images
@@ -463,6 +467,16 @@ $this->mediaFactory->processDownloads(function($media) {
 
 
 The download URL provided by the `getFileUrl` is valid for the CMS Layout Designer, Preview and also for the Player.
+
+If downloading resources in this way you must ensure that these images are included in your cache, or exist outside your cache. For example, if your cache key is **not** specific to your Layout then you would want to cache the `mediaId` of every assigned media. 
+
+
+
+### Concurrency
+
+In a network consisting of many Displays it is conceivable that `getResource` will be called concurrently by 2 or more Players. It is therefore important that we build `getResource` in a concurrent aware manner. In order to do this you should call `$this->concurrentRequestLock();` at the start of `getResource` and `$this->concurrentRequestRelease();` at the end.
+
+This will ensure that concurrent requests wait for the first one to complete before executing themselves.
 
 
 

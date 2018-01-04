@@ -131,6 +131,7 @@ NameVirtualHost *:443
 
     SSLEngine On
     ProxyPreserveHost On
+	RequestHeader set X-Forwarded-Proto "https"
 
     # Set the path to SSL certificate
     # Usage: SSLCertificateFile /path/to/cert.pem
