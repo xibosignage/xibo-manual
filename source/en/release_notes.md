@@ -10,6 +10,7 @@ Please [contact support]([[PRODUCTSUPPORTURL]]) for the releases notes.
 The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSION]].html).
 
 ## Version 1.8 "Tempel"
+* [1.8.4](release_notes_1.8.4.html)
 * [1.8.3](release_notes_1.8.3.html)
 * [1.8.2](release_notes_1.8.2.html)
 * [1.8.1](release_notes_1.8.1.html)
@@ -86,4 +87,4 @@ The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSIO
 * [1.0.2](release_notes_1.0.2.html)
 * [1.0.1](release_notes_1.0.1.html)
 * [1.0.0](release_notes_1.0.0.html)
-</nonwhite>
+  </nonwhite>
