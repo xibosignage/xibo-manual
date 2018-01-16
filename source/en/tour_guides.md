@@ -1,20 +1,28 @@
 <!--toc=tour-->
 # Guides
-The following guides have been made available from various sources to help you get started with Xibo.
+<white>
 
-## Text Guides
-- [Getting Started with [[PRODUCTNAME]]. A simple Cafe worked example](guide_getting_started_cafe_menu.html)
-- [Using DataSets to Display Meeting room bookings](http://xibo.org.uk/2014/05/27/using-datasets-to-display-meeting-room-bookings/)
+Please contact your support department for information on the guides available.
 
-## Video Guides
-- [DataSets](http://xibo.org.uk/2013/02/20/howto-video-series-datasets/)
-- [Adding Users and Groups](http://xibo.org.uk/2013/02/16/howto-video-series-adding-users-and-groups/)
-- [Adding Displays and Display Groups](http://xibo.org.uk/2013/02/12/howto-video-series-adding-displays-and-display-groups/)
-- [Scheduling Layouts](http://xibo.org.uk/2013/02/08/howto-video-series-scheduling-layouts/)
-- [Changing the Timeline Order](http://xibo.org.uk/2013/02/04/howto-video-series-changing-the-timeline-order/)
-- [Layouts and Permissions](http://xibo.org.uk/2013/01/31/howto-video-series-layouts-and-permissions/)
+</white>
 
-## Windows Player
-- [Running multiple players on one PC](install_windows_client_multiple.html)
-- [Running the player as a Screen Saver](install_windows_client_screensaver.html)
-- [Using the WatchDog to restart troublesome players](install_windows_client_watchdog.html)
+<nonwhite>
+
+[[PRODUCTNAME]] has a large back catalogue of guides, videos and FAQ's for you to refer to - far too many to include directly in this manual. Instead we have made these available online in our community, blog and YouTube.
+
+The essential getting started guide is in this manual and covers all the basics needed to set up a cafe menu sign. This can be found here: [Getting Started with [[PRODUCTNAME]]. A simple Cafe worked example](guide_getting_started_cafe_menu.html)
+
+
+
+For other guides and resources please refer to the list below:
+
+- [Community Guides](https://community.xibo.org.uk/c/guides)
+- [YouTube](https://www.youtube.com/channel/UCyKmNZsDK02jopQcGmE27LQ/featured)
+- [YouTube Playlists](https://www.youtube.com/channel/UCyKmNZsDK02jopQcGmE27LQ/playlists)
+- [FAQ](https://community.xibo.org.uk/c/faq)
+- [Commercial Knowledge Base](https://community.xibo.org.uk/c/kb)
+- [Feature Spotlights](https://blog.xibo.org.uk/tag/spotlight/)
+
+
+
+</nonwhite>
