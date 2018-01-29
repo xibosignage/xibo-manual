@@ -12,7 +12,7 @@ install.
 
 You can download the Docker Toolbox installer from the Docker website, and
 follow their guide to getting Docker installed. See - [docs.docker.com - Docker
-Toolbox Install](https://www.docker.com/products/docker-toolbox). Docker Toolbox
+Toolbox Install](https://docs.docker.com/toolbox/toolbox_install_windows/). Docker Toolbox
 comes with Docker Compose, so all the requirements are met installing that
 single package.
 
