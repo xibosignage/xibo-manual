@@ -1,10 +1,10 @@
 <!--toc=getting_started-->
 
-# [[PRODUCTNAME]] 1.8.4 - Codename "Tempel"
+# [[PRODUCTNAME]] 1.8.5 - Codename "Tempel"
 
-This is the fourth minor release of Xibo 1.8 Series. Included in this release are 31 bugs and small enhancements.
+This is the fifth minor release of Xibo 1.8 Series. Included in this release are 12 bug fixes.
 
-You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.4/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.4).
+You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.5/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.5).
 
 This release is a bug fix release for the 1.8 stable series. If you are upgrading from 1.4, 1.6 or 1.7 please refer to the [1.8.0 release notes](release_notes_1.8.0.html) for a detailed list of changes and upgrade notes.
 
@@ -23,17 +23,11 @@ We recommend using the 1.8.3 Windows Player with this release. The 1.7.6 or late
 
 ### Special Considerations
 
-#### XMR improvements
+#### PHP7
 
-This release contains improvements to the XMR push messaging service. If a custom manual or custom Docker installation has been performed XMR should also be upgraded. If the standard Docker files are used XMR will be upgraded automatically.
+This release supports PHP7 and ships with PHP7 Docker containers as standard.
 
-#### Custom Modules
 
-Improvements have been made to the way custom modules reference files for `getResource` rendering, which means that these resources no-longer have to live under the `/web` folder. Please see the [Advanced Modules Documentation](advanced_modules.html) which has also been updated with the changes.
-
-#### Remote DataSets
-
-This release contains a new feature called "Remote DataSets" which adds extra functionality to the existing DataSets feature. Remote DataSets allow a user to configure a remote data source for a DataSet, which will then be synchronised automatically by the CMS. A very special thanks to [LukyLuke](https://github.com/lukyluke) for contributing this excellent new feature.
 
 #### Switching to Docker
 Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8 the focus of the documentation has changed to reflect this. If you would like to try 1.8.4 by upgrading your existing 1.7 installation, we recommend switching to Docker. Please refer to the [upgrade guide for more information](upgrade_switch_to_docker.html).
