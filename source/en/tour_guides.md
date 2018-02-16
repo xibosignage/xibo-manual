@@ -8,9 +8,9 @@ Please contact your support department for information on the guides available.
 
 <nonwhite>
 
-[[PRODUCTNAME]] has a large back catalogue of guides, videos and FAQ's for you to refer to - far too many to include directly in this manual. Instead we have made these available online in our community, blog and YouTube.
+Xibo has a large back catalogue of guides, videos and FAQ's for you to refer to - far too many to include directly in this manual. Instead we have made these available online in our community, blog and YouTube.
 
-The essential getting started guide is in this manual and covers all the basics needed to set up a cafe menu sign. This can be found here: [Getting Started with [[PRODUCTNAME]]. A simple Cafe worked example](guide_getting_started_cafe_menu.html)
+The essential getting started guide is in this manual and covers all the basics needed to set up a cafe menu sign. This can be found here: [Getting Started with Xibo, a simple Cafe worked example](https://community.xibo.org.uk/t/getting-started-guide-cafe-menu/13293).
 
 
 
