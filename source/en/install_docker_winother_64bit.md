@@ -182,6 +182,14 @@ IP address by running `docker-machine ip` from the `Docker Toolbox Quickstart
 Terminal`. If you configured an alternative port number then be sure to add that
 to the URL, for example `http://192.168.1.3:8080`.
 
+
+
+#### Check your `shared` folder
+
+At this point you should check to ensure that a `shared` folder has been created inside your installation folder and contains sub folders for cms, db and backup. If it hasn't, then it might be that Docker Toolbox doesn't have permission to create the files on your system. To solve this problem you need to add `command: --innodb_use_native_aio=0` to bottom of your `cms-db` service block in your `docker-compose.yml` file.
+
+
+
 ## Configuration adjustments
 If you are running a the Windows or a 3rd party firewall on your computer you
 will need to allow the ports you've configured the CMS to run on inbound. If you
@@ -240,4 +248,3 @@ the `c:\[[PRODUCTNAME]]` folder **after** running the `down` command.
 ```
 docker-compose down
 ```
-

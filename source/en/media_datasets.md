@@ -58,7 +58,8 @@ Columns are used to define the structure of the data, each column has a number o
 Depending on the Column Type a column will also require:
 
 - **List Content**: A comma separated list of values that can be selected for this field.
-- **Remote Data Path**: A JSON syntax string showing how to access the data in the remote data source
+- **Remote Data Path**: A JSON syntax string showing how to access the data in the remote data source.
+- **Formula**: A MySQL statement suitable for use in a `SELECT` statement, or a string to format a date field `$dateFormat(<col>,<format>)`.
 
 
 

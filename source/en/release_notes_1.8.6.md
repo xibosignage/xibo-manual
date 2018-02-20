@@ -1,10 +1,10 @@
 <!--toc=getting_started-->
 
-# [[PRODUCTNAME]] 1.8.5 - Codename "Tempel"
+# [[PRODUCTNAME]] 1.8.6 - Codename "Tempel"
 
-This is the fifth minor release of Xibo 1.8 Series. Included in this release are 12 bug fixes.
+This is the sixth minor release of Xibo 1.8 Series. Included in this release are 22 bug fixes.
 
-You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.5/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.5).
+You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.6/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.6).
 
 This release is a bug fix release for the 1.8 stable series. If you are upgrading from 1.4, 1.6 or 1.7 please refer to the [1.8.0 release notes](release_notes_1.8.0.html) for a detailed list of changes and upgrade notes.
 
@@ -23,14 +23,8 @@ We recommend using the 1.8.3 Windows Player with this release. The 1.7.6 or late
 
 ### Special Considerations
 
-#### PHP7
-
-This release supports PHP7 and ships with PHP7 Docker containers as standard.
-
-
-
 #### Switching to Docker
-Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8 the focus of the documentation has changed to reflect this. If you would like to try 1.8.5 by upgrading your existing 1.7 installation, we recommend switching to Docker. Please refer to the [upgrade guide for more information](upgrade_switch_to_docker.html).
+Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8 the focus of the documentation has changed to reflect this. If you would like to try 1.8.6 by upgrading your existing 1.7 installation, we recommend switching to Docker. Please refer to the [upgrade guide for more information](upgrade_switch_to_docker.html).
 
 
 
@@ -51,4 +45,4 @@ Please report problems with this release using the [Support Category on the Comm
 
 ## Issues addressed in this release
 
-For a full list of enhancements and bug fixes please refer to the [Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.5+is%3Aclosed).
+For a full list of enhancements and bug fixes please refer to the [Release Project Page](https://github.com/xibosignage/xibo/issues?q=milestone%3A1.8.6+is%3Aclosed).
