@@ -2,7 +2,7 @@
 
 # [[PRODUCTNAME]] 1.8.6 - Codename "Tempel"
 
-This is the sixth minor release of Xibo 1.8 Series. Included in this release are 23 bug fixes.
+This is the sixth minor release of Xibo 1.8 Series. Included in this release are 22 bug fixes.
 
 You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.6/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.6).
 
@@ -24,7 +24,7 @@ We recommend using the 1.8.3 Windows Player with this release. The 1.7.6 or late
 ### Special Considerations
 
 #### Switching to Docker
-Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8 the focus of the documentation has changed to reflect this. If you would like to try 1.8.4 by upgrading your existing 1.7 installation, we recommend switching to Docker. Please refer to the [upgrade guide for more information](upgrade_switch_to_docker.html).
+Our recommended configuration for 1.8 series onward will be based on Docker and from 1.8 the focus of the documentation has changed to reflect this. If you would like to try 1.8.6 by upgrading your existing 1.7 installation, we recommend switching to Docker. Please refer to the [upgrade guide for more information](upgrade_switch_to_docker.html).
 
 
 
