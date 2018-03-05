@@ -403,9 +403,45 @@ As your module is rendered you may want to download data and/or resources for us
 
 Xibo includes the popular [Guzzle](http://docs.guzzlephp.org/en/stable/) HTTP client and is the recommended way to get third party data sources. Please refer to their documentation to learn how to use Guzzle.
 
-#### Caching
+#### Widget Caching
 
-Xibo has a sophisticated caching interface build in, accessible from a module using the `$this->getPool()` method. This is a PSR compliant caching interface. An example of using the cache is provided below:
+Widget HTML output is cached to ensure the CMS isn't doing more work than necessary and that the Players can download their Widget in a reasonable time frame. By default the Widgets HTML is cached on a per `widgetId` basis for 15 minutes and modified only when an option on the Widget is modified.
+
+The following methods can be overriden to control the behaviour of the cache.
+
+```php
+/**
+ * Get the Modified Date of this Widget
+ * @param int $displayId The displayId, or 0 for preview
+ * @return Date the date this widgets was modified
+ */
+public function getModifiedDate($displayId);
+
+/**
+ * Get Cache Duration
+ * @return int the number of seconds the widget should be cached.
+ */
+public function getCacheDuration();
+
+/**
+ * Get Cache Key
+ * @param int $displayId The displayId we're requesting for, or 0 for preview
+ * @return string
+ */
+public function getCacheKey($displayId);
+```
+
+`getModifiedDate()` should be implemented if the Module can be updated by a source external to the Module. For example, Tickers using a DataSet are updated when that DataSet gets updated and therefore should implement a `getModifiedDate()` which returns the DataSet modified date.
+
+It is likely that `getCacheDuration()` should be modified to be the `updateInterval` of the Widget, or the cache duration setting of the Module if it has one.
+
+`getCacheKey()` determines the granularity of the cache and defaults to the `widgetId`. As the Module developer you may know that your Module will generate different HTML according to the `displayId`, in which case you should include that in the cache key. Likewise you may know that it will always generate the same content for a particular resource - you can set the cache key accordingly.
+
+
+
+#### Resource Caching
+
+Xibo has a sophisticated resource caching interface build in, accessible from a module using the `$this->getPool()` method. This is a PSR compliant caching interface. An example of using the cache is provided below:
 
 ```php
 /** @var \Stash\Item $cache */
@@ -435,7 +471,7 @@ if ($cache->isHit()) {
 
 ```
 
-When caching you must ensure that you cache everything required to render your module.
+Whether you implement a resource cache will depend on whether your external data source can be used across multiple widgets and whether that can be handled by the `getCacheKey()` mechanism.
 
 
 
@@ -474,9 +510,19 @@ If downloading resources in this way you must ensure that these images are inclu
 
 ### Concurrency
 
-In a network consisting of many Displays it is conceivable that `getResource` will be called concurrently by 2 or more Players. It is therefore important that we build `getResource` in a concurrent aware manner. In order to do this you should call `$this->concurrentRequestLock();` at the start of `getResource` and `$this->concurrentRequestRelease();` at the end.
+In a network consisting of many Displays it is conceivable that `getResource` will be called concurrently by 2 or more Players, or the preview. It is therefore important that we build `getResource` in a concurrent aware manner. By default a request is locked to the `widgetId` meaning each Widget can only have 1 request running at once. As the Module author you may decide that this is not granular enough, for example if your Widget downloads content from a 3rd party resource.
 
-This will ensure that concurrent requests wait for the first one to complete before executing themselves.
+The concurreny lock key can be set by overriding the following method:
+
+```php
+/**
+ * Get the lock key for this widget.
+ * should return the most unique lock key required to prevent concurrent access
+ * normally the default is fine, unless the module fetches some external images
+ * @return string
+ */
+public function getLockKey();
+```
 
 
 
