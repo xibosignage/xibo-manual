@@ -7,16 +7,22 @@ There are 3 steps to follow:
 2. Installation - Double click the MSI to start the installation process.
 3. Connect - [Connect your client to the CMS](#configuration)
 
+
+
 ##Minimum Requirements
+
 [[PRODUCTNAME]] is a low resource signage solution, however with the advance of technology it has been necessary to set out some minimum requirements. The installation process will check these for you, but they are listed below for convenience:
 
 - A network connection to the CMS (possibly over the Internet)
 - Microsoft Windows 7 or later
+- **Please note** that starting with Windows 10 it is advisable to use the "professional" variant of the operating system. The "home" version nolonger has the ability to fully control the schedule of automatic updates which may cause messages to interrupt your signage playback.
 - .NET Framework v4.5
 - Internet Explorer 8+ (*recommended IE11 or higher*)
 - Flash Player Version 9 or later (if Flash support required)
 - Windows Media Player 11 or later
 - For PowerPoint support, Microsoft PowerPoint 2003 or later. *PowerPoint viewer is not suitable*.
+
+
 
 
 ###Installation
