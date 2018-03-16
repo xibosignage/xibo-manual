@@ -10,14 +10,18 @@ To simplify the explanation the XLF will be considered in two parts:
  - Media
 
 ## Structure
-The Layout structure defines the layout width, height and the regions it is divided into. It can also define the background properties.
+The Layout structure defines the Layout width, height and the Regions it is divided into. It is an XML document with the `<layout>` as the root node. Layouts are designed by the end user and can therefore have different combinations of Regions and Media.
+
+*Note:* in 1.8 onward the CMS refers to "Widgets" being added to Region Timelines - for the Player this is translated into `<media>` nodes.
+
+![Layout Structure](img/advanced_structure_of_a_layout.png)
 
 The structure part of a Layout XLF is shown below:
 
 ``` xml
 <layout schemaVersion="3" width="1920" height="1080" background="126.jpg" bgcolor="#FF3399">
     <region id="1" width="1920" height="1080" top="0" left="0" zindex="1">
-        <media>...</media>
+        <media/>
 		<options>
 			<loop>0</loop>
 			<transitionType></transitionType>
@@ -34,32 +38,39 @@ This is a 1080p landscape Layout with a single full screen region.
 
 A XLF will always have 1 Layout node (the root element of the document) and one or more region nodes. A Layout without any regions should be considered invalid.
 
+
+
 ### Layout
 The Layout node provides the following options:
 
  - schemaVersion: The schema version for this Layout.
  - width: The Layout Width.
  - height: The Layout Height.
- - background: The path to the background image.
+ - background: The path to the background image (optional).
  - bgcolor: A HEX colour for the background.
 
+
+
 #### Dimensions 
-The XLF provides the width/height of the Layout and the width/height/position of each region. This should be used alongside the Player Dimensions to reconstruct the Layout at the appropriate aspect ratio. Simply put, the Player should scale the Layout according to the Player Dimensions.
+
+The Player is responsible for rendering the Layout at the appropriate aspect ratio, according to its own dimensions. The Player might be full screen, or windowed and can be *any* resolution. It must therefore be capable of rendering a Layout at the largest width or height it can support, centrally on screen and to add "black bars" to each side.
+
+The XLF provides the width/height of the Layout and the width/height/position of each Region. These are the dimensions the Layout was **designed** at - for example a Layout might be 1920x1080 in dimension. If the Player is 1920x1080 also, then a 1:1 rendering can occur, but if the player is 1280x720 or even 1080x1920, scaling must occur.
+
+
 
 ### Regions
-The region nodes provide the following options:
+The Region nodes provide the following options:
 
- - id: The regionId.
- - width: The region width.
- - height: The region height.
- - top: The region position from the top of the Layout.
- - left: The region position from the left of the Layout.
- - zindex: The order this region should be drawn on the screen (0 first, with each new region on top).
+ - id: The `regionId`.
+ - width: The Region width.
+ - height: The Region height.
+ - top: The Region position from the top of the Layout.
+ - left: The Region position from the left of the Layout.
+ - zindex: The order this Region should be drawn on the screen (0 first, with each new region on top).
+ - options: A region node provides additional options in its `<options>` node. These are optional elements and should be provided with sensible defaults in the Player, possible options are shown below.
 
-It may also provide an options node with one or more option nodes describing additional settings for that region.
 
-#### Options
-A region node provides additional options in its `<options>` node. These are optional elements and should be provided with sensible defaults in the Player.
 
 #### Loop
 The Loop option is only applicable when there is only 1 media item in the region. It controls whether that one media item should be reloaded after it finished or not. The default is 0 (don't loop).
@@ -67,8 +78,12 @@ The Loop option is only applicable when there is only 1 media item in the region
 #### Transition
 The Transitions attached to the Region are referred to as "Region Exit Transitions". They are the transition that should be shown when the Layout is finishing. Transitions are described in more detail in the Media section.
 
+
+
 ## Media
-Media appears as `<media>` nodes within `<region>` nodes on a Layout. Media should be played in the order is appears in the XLF.
+Media nodes represent the Widgets added to the Region in the CMS - they could come from a Playlist or directly from the Region timeline. The CMS will pre-calculate which Widgets should be shown in a Region and will add them as Media nodes in the XLF. Media appears as `<media>` nodes within `<region>` nodes on a Layout. 
+
+Media should be played in the order is appears in the XLF and looped once finished. The only time a Region is not looped is if there is only 1 Media node and the `loop` option is set to 0.
 
 Media Nodes have attributes common to all types of Media and Options Nodes which are specific to the Media Module. There are set of core modules documented here, 3rd party modules should provide their own documentation notes.
 
@@ -89,16 +104,16 @@ Media Nodes have attributes common to all types of Media and Options Nodes which
 </media>
 ```
 
- - id: The `mediaId` of this media node
- - duration: The duration in seconds that this media item should be played
+ - id: The `mediaId` of this media node (in 1.7 and later this is the CMS `widgetId`)
+ - duration: The duration in seconds that this media item should be played (unless overridden as described below)
  - type: The type of media module
- - render: The render type, either native or html
+ - render: The render type, either `native` or `html`
  - options -> uri: The uri of the save location as presented in `RequiredFiles`. This is common to all library based media.
 
 Additional options may be present from **v5** onwards
 
 ``` xml
-<media "...">
+<media>
     <audio>
         <uri>1.mp4</uri>
     </audio>
@@ -108,92 +123,47 @@ Additional options may be present from **v5** onwards
 </media>
 ```
 
+The most important information on a Media node is the `type` and `render`.
+
+
+
 ### Type and Render
-The Media Node contains a type which the Player can use to determine how that type of Media should be shown. This is particularly important if the `render` attribute is `native`. Native rendering means that the CMS does not provide a HTML file for the Player to show and that the Player should be responsible for implementing the logic to render that item.
 
-Some media items are set to render `native` but can actually be rendered in `html` at the discretion of the implementer. This HTML files are provided for convenience.
+The Media node in the XLF attempts to tell the Player how it should be played using the `type` and `render` attributes. The render attribute can either be `native` or `html` and the type attribute is set to the type of Widget the Media node represents.
 
-A list of media types and their associated render options can be found below:
+HTML render mode means that the CMS will provide a `html` file via `GetResource` which the Player can open in an embedded browser (at the appropriate size) to render the Media. 
 
-``` json
-[
-   {
-      "Module":"Image",
-      "render":"native"
-   },
-   {
-      "Module":"Video",
-      "render":"native"
-   },
-   {
-      "Module":"Flash",
-      "render":"native"
-   },
-   {
-      "Module":"PowerPoint",
-      "render":"native"
-   },
-   {
-      "Module":"Webpage",
-      "render":"native"
-   },
-   {
-      "Module":"Ticker",
-      "render":"native"
-   },
-   {
-      "Module":"Text",
-      "render":"native"
-   },
-   {
-      "Module":"Embedded",
-      "render":"native"
-   },
-   {
-      "Module":"datasetview",
-      "render":"native"
-   },
-   {
-      "Module":"shellcommand",
-      "render":"native"
-   },
-   {
-      "Module":"localvideo",
-      "render":"native"
-   },
-   {
-      "Module":"clock",
-      "render":"html"
-   },
-   {
-      "Module":"forecastio",
-      "render":"html"
-   },
-   {
-      "Module":"twitter",
-      "render":"html"
-   },
-   {
-      "Module":"audio",
-      "render":"native"
-   }
-]
-```
+Native render mode means that the Player is entirely responsible for rendering that Media and the CMS does not provide a resource to assist.
 
-The following `native` modules can be rendered using the HTML returned by `GetResource`.
+Most types of core Media and any custom Media will be `html` render mode. Some media items are set to render `native` but can actually be rendered in `html` at the discretion of the implementer - these are mostly cases where the Media is set to `native` for backwards compatibility. If you are implementing a new Player then it is safest to use `html` where possible.
 
- - DataSet View
- - Embedded (may need to adjust transparency)
- - Text
- - Ticker
- - Web Page (may need to open natively)
+Some examples of what you might expect (this list is not exhaustive):
 
-These media items predate the "render" mode on Modules and will be converted in due course where appropriate.
+| Render               | Type                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| native               | image, video, powerpoint, flash, audio, localvideo, shell command |
+| html                 | twitter, forecastio, clock                                   |
+| native (can be html) | embedded, text, ticker, webpage, datasetview                 |
+
+Typically `native` Media is a type that would benefit or require a deeper integration with the underlying hardware.
+
+How the HTML files for `html` render arrive at the Player is discussed below.
+
+
 
 ### Duration
-Each Media item represented in the XLF has a duration in seconds attribute. This represents the total time the Player should show that item before moving on to the next.
+Each Media item represented in the XLF has a duration in seconds attribute. This represents the total time the Player should show that item before moving on to the next. The Player should show a Media item for the time specificed in the `duration` attribute.
 
-All media cycling in the Player should be driven by the Duration. This means that a Layout is shown for the duration of the longest set of media.
+A Region is considered "expired" when all Media has been shown for its duration, and a Layout is expired when all Regions are expired. This means that a Layout is shown for the duration of the longest set of media.
+
+HTML rendered Media sometimes provides additional data in the HTML, which is used to adjust the duration of the media item. This happens when it is *impossible* for the XLF to know how long the Media will be shown before it is rendered - a good example is when a Ticker has "duration is per item" selected, as this then depends on the number of items.
+
+These options are provided in the HTML file as comments which can be parsed by the Player and used to adjust the duration of the Media accordingly. They are:
+
+- `<!-- NUMITEMS=X -->`: Informational tag containing the number of items in the resource.
+- `<!-- DURATION=X -->`: Calculated total duration for this media item.
+
+
 
 ### Transitions
 Media options include instructions for showing transitions at the start and end of each media item, described as In and Out. Each of the two transitions have the following 3 properties:
@@ -202,19 +172,43 @@ Media options include instructions for showing transitions at the start and end 
  - Duration: This is the duration in milliseconds that the transition should run for.
  - Direction: This is a compass point set of directions for the transition (only applicable for fly). N, NE, E, SE, S, SW, W, W, NW.
 
+
+
 ### Audio Nodes
-Starting in **v5** the XLF may contain `<audio>` nodes. These are audio files that should be played at the start of a media item and should be executed by the Audio module.
+Starting in **v5** the XLF may contain `<audio>` nodes. These are audio files that should be played at the start of a media item and should be executed by the Audio module. Audio can also exist as a Media node it is own right, unattached from another Media item.
+
+
 
 
 ### Command Nodes
-Starting in **v5** the XLF may contain one or more `<command>` nodes contained in a `<commands>` element. These are commands that should be executed in order when the 
-media item is started. They should be executed by the Shell Command module.
+Starting in **v5** the XLF may contain one or more `<command>` nodes contained in a `<commands>` element. These are commands that should be executed in order when the media item is started. They should be executed by the Shell Command module.
 
 
-# Modules
-The term `Modules` is used by [[PRODUCTNAME]] to represent the different types of Media. The term is being phased out in 1.8 to `Widgets`.
 
-Essentially both modules and widgets are short terminology for "assigning media to a region in a layout".
+
+# Media
+There are 3 terms in [[PRODUCTNAME]] used to describe Media:
+
+- Modules: A component in the software responsible for handling a particular type of file or data source, adding and configuring it, and rendering it.
+- Media (in the CMS): Files Stored in the Library
+- Media (in the XLF): Items to Play
+- Widgets: A Module assigned to a Region Timeline or Playlist
+
+
+
+## HTML render - GetResource
+
+Media using `html` rendering should load the HTML file provided by XMDS during the GetResource call. This file is designed to render according to the original design size and scale appropriately. It should be opened in a transparent Web Browser unless otherwise stated by a `transparency` option.
+
+HTML resources are downloaded during the usual XMDS "Required Files" process, where they are kept in date by the `updated` attribute. However it is also common place for the Media rendering itself to call `GetResource` if it thinks that the cached resource of out of date.
+
+An `updateInterval` option is provided on most Media types to support this functionality. When rendering Media the Player should compare the last write time of the HTML file with the `updateInterval` option if one is present. If so, a new copy of the HTML should be downloaded from XMDS. This process shouldn't  effect the timely rendering of the Media and it could be that it queues the downloaded to happen in the background, so that it is ready for the next time the Media is shown.
+
+
+
+Following in this section are some notes specific to certain core Modules. These are either native modules or html modules that require specific handling.
+
+
 
 ## Image
 Images are library items and will be transferred to the Player via `RequiredFiles`. By default the CMS allows JPG, PNG, GIF and BMP images to be uploaded. Image media nodes contain the `uri` option which matches the `path` attribute provided in `Required Files`. The Player should use this to locate the cached file.
@@ -224,6 +218,8 @@ The Player is responsible for natively rendering images according to the followi
  - scaleType: Either center or stretch.
  - align: Either left, center or right.
  - valign: Either top, middle or bottom.
+
+
 
 ## Video
 Videos are library items and will be transferred to the Player via `RequiredFiles`. By default the CMS allows WMV, AVI, MP4 and WEBM videos to be uploaded. Video media nodes contain the `uri` option which matches the `path` attribute provided in `Required Files`. The Player should use this to locate the cached file.
@@ -243,10 +239,14 @@ Videos can have a special duration attribute of "0" which means "end detect". Th
 
 When a duration of 0 is provided the `loop` option should be ignored.
 
+
+
 ## Local Video
 The local video module is very similar to the video module except that the file is not provided by `RequiredFiles`. Local Video is used either when the file is provided to the player by another means or when the video should be streamed.
 
 In both cases the `uri` option is the path to the video file.
+
+
 
 ## Flash and PowerPoint
 Flash and PowerPoint have limited support on the Windows Player and rely on the underlying application being available.
@@ -255,13 +255,19 @@ They are both library items transferred to the Player via `RequiredFiles`.
 
 There are no additional options with these widgets.
 
+
+
 ## Web Page
 Web Page widgets provide rendered HTML via `GetResource`. However they also provide a `modeId` option which is used to determine whether the web page should be opened natively or via the rendered HTML.
 
 When the `modeId` is equal to 1 the Player should parse the `url` option and open that directly in a web view.
 
+
+
 ## Embedded
 Embedded widgets provide rendered HTML via `GetResource`. They also provide a `transparency` option which is used to determine if the web view should be transparent.
+
+
 
 ## Shell Commands
 The Shell Command widget exists to execute Shell Commands on a Layout. It provides three options:
@@ -275,26 +281,16 @@ it received during the [`RegisterDisplay`](xmds.html#RegisterDisplay) XMDS call 
 
 An adhoc command does not have a commandCode and instead provides a windows/linux Command to execute. It is the players responsibility to sanitize and execute these commands in a Shell.
 
+
+
 ## Audio
 Audio files are library items and will be transferred to the Player via `RequiredFiles`. The player is responsible for natively rendering these files in an appropriate
 media player.
 
-## Get Resource
-Using the rendered HTML provided by the CMS is entirely at the Players discretion. All widget options are also provided on each Media node should the Player implementation require native rendering of any other types of media.
-
-Rendered HTML should be loaded in a transparent Web View unless otherwise stated by a `transparency` option.
-
-### Additional Data
-Some widget (such as Ticker / DataSet) provide additional data in the `GetResource` HTML which is used to adjust the duration of the media item. For example Tickers have an option to use the duration setting as a duration per item.
-
-These options are provided as HTML tags which can be parsed by the Player and used to adjust the duration accordingly. They are:
-
- - `<!-- NUMITEMS=X -->`: Informational tag containing the number of items in the resource.
- - `<!-- DURATION=X -->`: Calculated total duration for this media item.
 
 
-# Complete Example
-Below is a complete Layout XLF.
+# Example
+Below is a complete Layout XLF for a Layout with a white background and 2 regions.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
