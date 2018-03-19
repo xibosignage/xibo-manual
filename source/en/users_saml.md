@@ -2,26 +2,27 @@
 # SAML
 The CMS can be configured to use SAML as its authentication provider. 
 
-> Security Assertion Markup Language (SAML, pronounced sam-el) is an XML-based, open-standard data format for 
-> exchanging authentication and authorization data between parties, in particular, between an identity provider 
-> and a service provider.
+> Security Assertion Markup Language (SAML, pronounced sam-el) is an XML-based, open-standard data format for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider.
 > - Wikipedia
+
+
 
 SAML integration is enabled via the `settings.php` file in the CMS installation - at a later date a GUI may be 
 provided. If Docker has been used `settings.php` will not be accessible, however it is possible to create a 
 `settings-custom.php` file in the `/custom` mount point. The below configuration can be added to that file instead.
 
-The purpose of the integration is to configure a SAML enabled IdP (identity provider) for authentication with the
-[[PRODUCTNAME]] CMS.
+The purpose of the integration is to configure a SAML enabled IdP (identity provider) for authentication with the [[PRODUCTNAME]] CMS.
 
-A user already authenticated with the IdP will automatically be logged into the CMS. If the user does not exist they 
-will optionally be created with a set of default credentials.
+A user already authenticated with the IdP will automatically be logged into the CMS. If the user does not exist they will optionally be created with a set of default credentials.
+
+
 
 ## Configuration
-SAML integration is configured in the `settings.php` file of the CMS installation. This file can be found in your
-`/web` folder.
+SAML integration is configured in the `settings.php` file of the CMS installation. This file can be found in your `/web` folder.
 
 There are two sections to adjust, the `$authentication` middleware and the `$samlSettings` configuration array.
+
+
 
 ### Middleware
 The authentication middleware should be changed to `SAMLAuthentication`, shown below:
@@ -30,18 +31,28 @@ The authentication middleware should be changed to `SAMLAuthentication`, shown b
 $authentication = new \Xibo\Middleware\SAMLAuthentication();
 ```
 
+
+
 ### SAML Settings
-The SAML settings array contains all the necessary information for the CMS to connect and use a SAML enabled IdP. An 
-example settings file can be seen below.
 
-The workflow section of the configuration is used to determine the mapping between the IdP and the CMS and whether
-the CMS allows JIT provisioning. With JIT provisioning enabled users that visit the CMS who do not currently have 
-an account are automatically created.
+The SAML settings array contains all the necessary information for the CMS to connect and use a SAML enabled IdP. An example settings file can be seen below. The configuration is split into 4 main sections:
 
-If *single logout* is disabled selecting logout in the CMS won't have any effect as the user will be immediately
-logged in again on the next request.
+- `idp`: options for the identity provider (these are used by the CMS to identify and communicate with the identity provider). The values for these settings can be found in the IdP.
+- `sp`: options for the service provider (these are sent by the CMS to the identity provider so that the IdP can communicate back to the CMS). The CMS URL for the target installation should be used in these settings.
+- `security`: options to enable security as required by the IdP.
+- `workflow`: CMS specific options to determine how to map the data from the IdP to data in [[PRODUCTNAME]]. This section is used to determine the mapping between the IdP and the CMS. If *single logout* is disabled selecting logout in the CMS won't have any effect as the user will be immediately logged in again on the next request.
 
-Further explanation of the SAML specific settings can be found at: https://github.com/onelogin/php-saml#settings
+
+
+#### Just-in-time provisioning (JIT)
+
+Just-in-time provisioning can be enabled in the workflow section. With JIT provisioning enabled users that visit the CMS who do not currently have an account are automatically created. 
+
+If the intention is to use JIT then it is required to define what information should be used to create the user in the CMS.
+
+
+
+#### Example settings
 
 ``` php
 $samlSettings = array (
@@ -71,8 +82,7 @@ $samlSettings = array (
             'ref5' => ''
         )
     ),
-   // Settings for the PHP-SAML toolkit. 
-   // See documentation: https://github.com/onelogin/php-saml#settings 
+   // Configure the IdP and SP
    'strict' => false,
    'debug' => true,
    'idp' => array (
@@ -110,3 +120,10 @@ $samlSettings = array (
     )
 );
 ```
+Further explanation of the SAML specific settings can be found at: https://github.com/onelogin/php-saml#settings.
+
+
+
+## Active Directory
+
+ADFS (Active Directory Federation Services) supports SAML and can therefore be used as an IdP. <nonwhite>Please refer to the [knowledge base](https://community.xibo.org.uk/t/saml-single-signon-with-active-directory-adfs/13735) for a guide to configuring ADFS for use with Xibo.</nonwhite>
