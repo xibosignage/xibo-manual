@@ -60,7 +60,9 @@ $samlSettings = array (
         // Enable/Disable Just-In-Time provisioning
         'jit' => true,
         // Attribute to identify the user 
-        'field_to_identify' => 'UserName',   // Alternatives: UserID, UserName or email
+        // if set to nameId then the NameID from SAML will be taken and used as the
+       	// username in [[PRODUCTNAME]].
+        'field_to_identify' => 'UserName',   // Alternatives: UserID, UserName, email
         // Default libraryQuota assigned to the created user by JIT
         'libraryQuota' => 1000,
         // Initial User Group
