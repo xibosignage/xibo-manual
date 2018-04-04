@@ -44,11 +44,15 @@ The SAML settings array contains all the necessary information for the CMS to co
 
 
 
+
+
 #### Just-in-time provisioning (JIT)
 
 Just-in-time provisioning can be enabled in the workflow section. With JIT provisioning enabled users that visit the CMS who do not currently have an account are automatically created. 
 
 If the intention is to use JIT then it is required to define what information should be used to create the user in the CMS.
+
+If the IdP does not provide any attributes, it is important to exclude the `mapping` property of the `workflow` settings.
 
 
 

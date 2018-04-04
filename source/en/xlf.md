@@ -258,7 +258,7 @@ There are no additional options with these widgets.
 
 
 ## Web Page
-Web Page widgets provide rendered HTML via `GetResource`. However they also provide a `modeId` option which is used to determine whether the web page should be opened natively or via the rendered HTML.
+Web Page widgets provide rendered HTML via `GetResource`. However they also provide a `modeId` option which is used to determine whether the web page should be opened directly in the embedded web browser or via the rendered HTML.
 
 When the `modeId` is equal to 1 the Player should parse the `url` option and open that directly in a web view.
 
