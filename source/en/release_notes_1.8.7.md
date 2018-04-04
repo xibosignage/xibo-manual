@@ -13,9 +13,9 @@ This release is a bug fix release for the 1.8 stable series. If you are upgradin
 
 ## Requirements
 
-[[PRODUCTNAME]] runs on [Docker](install_docker.html), please check the [install guide](install_cms.html) for detailed requirements. The archive for this release can be downloaded from [GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.4).
+[[PRODUCTNAME]] runs on [Docker](install_docker.html), please check the [install guide](install_cms.html) for detailed requirements. The archive for this release can be downloaded from [GitHub](https://github.com/xibosignage/xibo-docker/releases/tag/1.8.7).
 
-The CMS can be run without Docker, but this is not our recommended configuration. Installs without Docker are called [Custom/Manual Installs](manual_install.html) and further details can be found [here](manual_install.html). The release archive for a manual install can be downloaded from [GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.4).
+The CMS can be run without Docker, but this is not our recommended configuration. Installs without Docker are called [Custom/Manual Installs](manual_install.html) and further details can be found [here](manual_install.html). The release archive for a manual install can be downloaded from [GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.7).
 
 We recommend using the 1.8.3 Windows Player with this release. The 1.7.6 or later version of the Windows Display Player is also compatible with this CMS, but will not run the latest features.
 
