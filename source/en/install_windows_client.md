@@ -7,16 +7,22 @@ There are 3 steps to follow:
 2. Installation - Double click the MSI to start the installation process.
 3. Connect - [Connect your client to the CMS](#configuration)
 
+
+
 ##Minimum Requirements
+
 [[PRODUCTNAME]] is a low resource signage solution, however with the advance of technology it has been necessary to set out some minimum requirements. The installation process will check these for you, but they are listed below for convenience:
 
 - A network connection to the CMS (possibly over the Internet)
 - Microsoft Windows 7 or later
+- **Please note** that starting with Windows 10 it is advisable to use the "professional" variant of the operating system. The "home" version nolonger has the ability to fully control the schedule of automatic updates which may cause messages to interrupt your signage playback.
 - .NET Framework v4.5
 - Internet Explorer 8+ (*recommended IE11 or higher*)
 - Flash Player Version 9 or later (if Flash support required)
 - Windows Media Player 11 or later
 - For PowerPoint support, Microsoft PowerPoint 2003 or later. *PowerPoint viewer is not suitable*.
+
+
 
 
 ###Installation
@@ -96,13 +102,27 @@ Library and Display ID) the Save button should be pressed. At this point the mes
 
 Assuming there are no errors with the communication between the CMS Address and the client, the display will be registered and awaiting approval.
 
+
+
 ###CMS Display Management
-Now log in to the server web interface, go to the "Display->Displays" page. You should see your newly registered client in the list. Click the "Edit" button next to the display. The "License Display" option will automatically change to "Yes". Optionally select a different default layout (the layout the client will play if nothing is scheduled).
+Now log in to the CMS web interface, go to the "Displays" page. You should see your newly registered Player in the list. Before this Player will function correctly you need to authorise it to connect to your CMS.
+
+In 1.8.8 or later you can click the row-menu down arrow and select "Authorise" from the list. In versions before this you click "Edit" instead and select "Authorise" from the first tab. In both cases click save on the form.
+
+The row menu looks like:
+
+![row menu](img/windows_displays_menu.png)
+
+At this point you may want to select a Default Layout for your new Player to run.
+
+
 
 ####Display Setting Profiles
 Once registered the display client will be given a default display setting profile. For more information see the display profiles section.
 
-Make sure you click Click "Save" before exiting the Client Options.
+Make sure you click Click "Save" before exiting the Player Options.
+
+
 
 ##Start Client Player
 You can now start the [[PRODUCTNAME]] Client Player. It should show you the [[PRODUCTNAME]] splash screen while the default layout and its media contents (and anything else you have scheduled) are downloaded and then begin playing layout contents.
@@ -136,7 +156,7 @@ to confirm that the registry has been modified correctly for their version of Wi
 
 Windows automatically creates thumbnails for content in the user folder and will try to do so for the [[PRODUCTNAME]] 
  local library.
- 
+
 In some cases this interferes with the normal operation of the player and should be disabled. This can be achieved with
 the following registry settings.
 
