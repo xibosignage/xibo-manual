@@ -393,6 +393,8 @@ $(document).ready(function() {
 ');
 ```
 
+**Please note**: preview width, height and scale override are "special" elements and will be replaced at design time with any real time updates to the region positioning.
+
 
 
 ### Downloading for Rendering
