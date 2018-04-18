@@ -25,9 +25,9 @@ We recommend using the 1.8.8 Windows Player with this release. The 1.7.6 or late
 
 #### Currencies Module
 
-The Currencies Module in [[PRODUCTNAME]] uses data from two 3rd party datasources, Alpha Advantage and Fixer. This release works around issues exposed in both of these data sources.
+The Currencies Module in [[PRODUCTNAME]] uses data from two 3rd party datasources, Alpha vantage and Fixer. This release works around issues exposed in both of these data sources.
 
-1. Alpha Advantage Rate Limiting: despite advertising that there are no rate limits on their API, it seems that Widgets which ask for more than 5 symbols are disallowed due to rate limiting. This release recommends only 5 symbols are entered and improves caching to assist in returning data despite the rate limit.
+1. Alpha vantage Rate Limiting: despite advertising that there are no rate limits on their API, it seems that Widgets which ask for more than 5 symbols are disallowed due to rate limiting. This release recommends only 5 symbols are entered and improves caching to assist in returning data despite the rate limit.
 2. Fixer paywall: this free service exposes the ECB's 16:00 UTC published exchange rates and is used in the Currencies Module to calculate percentage change (Alpha Advantage does not support time series exchange data). Unfortunately Fixer are expanding their service to uses non ECB data and moving it behind a paywall. This release switches to a new service called https://exchangeratesapi.io/.
 
 
