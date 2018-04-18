@@ -2,7 +2,7 @@
 
 # [[PRODUCTNAME]] 1.8.9 - Codename "Tempel"
 
-This is the eighth minor release of Xibo 1.8 Series. Included in this release are 11 bug fixes. There is a new Player with this release.
+This is the ninth minor release of Xibo 1.8 Series. Included in this release are 11 bug fixes. There is a new Player with this release.
 
 You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.9/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.9).
 
