@@ -10,6 +10,7 @@ Please [contact support]([[PRODUCTSUPPORTURL]]) for the releases notes.
 The current release notes are [[[PRODUCTVERSION]]](release_notes_[[PRODUCTVERSION]].html).
 
 ## Version 1.8 "Tempel"
+* [1.8.10](release_notes_1.8.10.html)
 * [1.8.9](release_notes_1.8.9.html)
 * [1.8.8](release_notes_1.8.8.html)
 * [1.8.7](release_notes_1.8.7.html)
