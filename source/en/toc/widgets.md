@@ -1,6 +1,7 @@
 - [Modules](media_modules.html)
 - [Audio](media_module_audio.html)
 - [Calendar](media_module_calendar.html)
+- [Chart](media_module_chart.html)
 - [Clock](media_module_clock.html)
 - [Currencies](media_module_currencies.html)
 - [DataSet View](media_module_dataset_view.html)

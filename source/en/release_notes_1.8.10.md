@@ -2,7 +2,7 @@
 
 # [[PRODUCTNAME]] 1.8.10 - Codename "Tempel"
 
-This is the ninth minor release of Xibo 1.8 Series. Included in this release are XXXXX bug fixes. There is a new Player with this release.
+This is the ninth minor release of Xibo 1.8 Series. Included in this release are 68 bug fixes and improvements. There is a new Player with this release.
 
 You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.10/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.10).
 
@@ -32,6 +32,24 @@ Google are making changes to their Traffic API billing and terms which may resul
 #### Dropdown Lists
 
 This release improves the way the CMS provides drop down select lists for Layouts, Media and Displays. In large CMS instances with a lot of Layouts, Media and/or Displays the user interface could become unresponsive and hard to use. Drop down lists for these types of data are now paged and filtered so they open faster.
+
+
+
+#### Widget Sync
+
+We've made improvements to the way we manage Widget Caching and updating 3rd party resources, such as Tickers and Twitter. Please review our [blog post](https://blog.xibo.org.uk/widget-refresh-from-the-cms/) for more information.
+
+
+
+#### Calendar Module
+
+This release contains a new Module for you to try - the Calendar Module, used the show an iCal feed on a Layout. We've got a great guide for this new module on [the community](https://community.xibo.org.uk/t/calendar-module-guide-xibo-cms-1-8-10/14749).
+
+
+
+####Chart Module
+
+Adding to the work he did in on Remote DataSets in 1.8.4, [LukyLuke](https://github.com/lukyluke) is back with another contribution, this time a Chart Module. This is used to show various type of Chart on a Layout, based on data in a DataSet (perhaps even a remote one!). We've got a great guide for this new module on [the community]().
 
 
 
