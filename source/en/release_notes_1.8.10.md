@@ -17,7 +17,7 @@ This release is a bug fix release for the 1.8 stable series. If you are upgradin
 
 The CMS can be run without Docker, but this is not our recommended configuration. Installs without Docker are called [Custom/Manual Installs](manual_install.html) and further details can be found [here](manual_install.html). The release archive for a manual install can be downloaded from [GitHub](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.9).
 
-We recommend using the 1.8.8 Windows Player with this release. The 1.7.6 or later version of the Windows Player is also compatible with this CMS, but will not run the latest features.
+We recommend using the 1.8.10 Windows Player with this release. The 1.7.6 or later version of the Windows Player is also compatible with this CMS, but will not run the latest features.
 
 
 
@@ -47,9 +47,9 @@ This release contains a new Module for you to try - the Calendar Module, used th
 
 
 
-####Chart Module
+#### Chart Module
 
-Adding to the work he did in on Remote DataSets in 1.8.4, [LukyLuke](https://github.com/lukyluke) is back with another contribution, this time a Chart Module. This is used to show various type of Chart on a Layout, based on data in a DataSet (perhaps even a remote one!). We've got a great guide for this new module on [the community]().
+Adding to the work he did in on Remote DataSets in 1.8.4, [LukyLuke](https://github.com/lukyluke) is back with another contribution, this time a Chart Module. This is used to show various type of Chart on a Layout, based on data in a DataSet (perhaps even a remote one!). We've got a great guide for this new module on [the community](https://community.xibo.org.uk/t/chart-module-guide-xibo-cms-1-8-10/14794).
 
 
 
