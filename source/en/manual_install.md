@@ -10,8 +10,8 @@ manual or custom installation.
 
  - MySQL 5.6 
  - A web server (nginx, apache, iis)
- - PHP 5.6+ (lower than PHP7)
- - PHP-CLI 5.6+ (lower than PHP7)
+ - PHP 5.6+ (from 1.8.5 onward you can use PHP7+)
+ - PHP-CLI 5.6+ (from 1.8.5 onward you can use PHP7+)
  - PHP PHAR support
  - ZeroMQ bindings for PHP
  - URL Rewriting
@@ -175,6 +175,6 @@ The installation is now complete and the system is ready to log in.
 XMR is the push messaging engine in [[PRODUCTNAME]] and it is recommended to
  have XMR running for all installations. Instructions for installing XMR can be 
  found [here](install_xmr.html).
-  
+
 XTR is the task runner and should be configured for all installations. Instructions for
 configuring XTR can be found [here](install_xtr.html).

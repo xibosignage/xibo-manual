@@ -72,15 +72,28 @@ The Region nodes provide the following options:
 
 
 
+
 #### Loop
-The Loop option is only applicable when there is only 1 media item in the region. It controls whether that one media item should be reloaded after it finished or not. The default is 0 (don't loop).
+
+The Loop option is only applicable when there is only 1 media item in the region. It controls whether that one media item should be reloaded after it finished or not. When `loop = 0` the expired media item should be left on screen until the entire Layout has finished. When `loop = 1` the item should be removed and replaced with the same item again.
+
+The default is 0 (don't loop) as the most common use case is to have a logo, text, clock, etc which you want to stay on screen for the whole time that other content it playing. You set its duration to something very low - e.g. 5 seconds - it expires fast and remains on screen until the other content has expired, at which point the whole Layout has expired and it is removed.
+
+
 
 #### Transition
-The Transitions attached to the Region are referred to as "Region Exit Transitions". They are the transition that should be shown when the Layout is finishing. Transitions are described in more detail in the Media section.
+The Transitions attached to the Region are referred to as "Region Exit Transitions". They are the transition that should be shown when the Layout is finishing. Refer to the below [Transitions](#transitions) section for more information.
 
 
 
-## Media
+### Media
+There are 3 terms in [[PRODUCTNAME]] used to describe Media:
+
+- Modules: A component in the software responsible for handling a particular type of file or data source, adding and configuring it, and rendering it.
+- Media (in the CMS): Files Stored in the Library
+- Media (in the XLF): Items to Play
+- Widgets: A Module assigned to a Region Timeline or Playlist
+
 Media nodes represent the Widgets added to the Region in the CMS - they could come from a Playlist or directly from the Region timeline. The CMS will pre-calculate which Widgets should be shown in a Region and will add them as Media nodes in the XLF. Media appears as `<media>` nodes within `<region>` nodes on a Layout. 
 
 Media should be played in the order is appears in the XLF and looped once finished. The only time a Region is not looped is if there is only 1 Media node and the `loop` option is set to 0.
@@ -115,7 +128,7 @@ Additional options may be present from **v5** onwards
 ``` xml
 <media>
     <audio>
-        <uri>1.mp4</uri>
+        <uri volume="100" loop="1" mediaId="12">1.mp4</uri>
     </audio>
     <commands>
         <command>code</command>
@@ -165,7 +178,9 @@ These options are provided in the HTML file as comments which can be parsed by t
 
 
 
+
 ### Transitions
+
 Media options include instructions for showing transitions at the start and end of each media item, described as In and Out. Each of the two transitions have the following 3 properties:
 
  - Type: The type of transition, currently supported are Fade In, Fade Out and Fly.
@@ -174,8 +189,12 @@ Media options include instructions for showing transitions at the start and end 
 
 
 
+
 ### Audio Nodes
+
 Starting in **v5** the XLF may contain `<audio>` nodes. These are audio files that should be played at the start of a media item and should be executed by the Audio module. Audio can also exist as a Media node it is own right, unattached from another Media item.
+
+An Audio node has child `<uri>` nodes which represent the audio file to play. Each node can also have a `volume` and `loop` attribute.
 
 
 
@@ -186,13 +205,8 @@ Starting in **v5** the XLF may contain one or more `<command>` nodes contained i
 
 
 
-# Media
-There are 3 terms in [[PRODUCTNAME]] used to describe Media:
-
-- Modules: A component in the software responsible for handling a particular type of file or data source, adding and configuring it, and rendering it.
-- Media (in the CMS): Files Stored in the Library
-- Media (in the XLF): Items to Play
-- Widgets: A Module assigned to a Region Timeline or Playlist
+# Rendering Media
+Following in this section are some notes specific to certain core Modules. These are either native modules or html modules that require specific handling.
 
 
 
@@ -203,10 +217,6 @@ Media using `html` rendering should load the HTML file provided by XMDS during t
 HTML resources are downloaded during the usual XMDS "Required Files" process, where they are kept in date by the `updated` attribute. However it is also common place for the Media rendering itself to call `GetResource` if it thinks that the cached resource of out of date.
 
 An `updateInterval` option is provided on most Media types to support this functionality. When rendering Media the Player should compare the last write time of the HTML file with the `updateInterval` option if one is present. If so, a new copy of the HTML should be downloaded from XMDS. This process shouldn't  effect the timely rendering of the Media and it could be that it queues the downloaded to happen in the background, so that it is ready for the next time the Media is shown.
-
-
-
-Following in this section are some notes specific to certain core Modules. These are either native modules or html modules that require specific handling.
 
 
 
@@ -221,7 +231,9 @@ The Player is responsible for natively rendering images according to the followi
 
 
 
+
 ## Video
+
 Videos are library items and will be transferred to the Player via `RequiredFiles`. By default the CMS allows WMV, AVI, MP4 and WEBM videos to be uploaded. Video media nodes contain the `uri` option which matches the `path` attribute provided in `Required Files`. The Player should use this to locate the cached file.
 
 The Player is responsible for natively rendering videos according to the following options:
@@ -249,7 +261,7 @@ In both cases the `uri` option is the path to the video file.
 
 
 ## Flash and PowerPoint
-Flash and PowerPoint have limited support on the Windows Player and rely on the underlying application being available.
+Flash and PowerPoint have limited support on the Windows Player and rely on the underlying application being available. If the Player does not have PowerPoint or Flash installed the Layout should be skipped.
 
 They are both library items transferred to the Player via `RequiredFiles`.
 
@@ -284,10 +296,61 @@ An adhoc command does not have a commandCode and instead provides a windows/linu
 
 
 ## Audio
-Audio files are library items and will be transferred to the Player via `RequiredFiles`. The player is responsible for natively rendering these files in an appropriate
-media player.
+Audio files are library items and will be transferred to the Player via `RequiredFiles`. The player is responsible for natively rendering these files in an appropriate media player. They will have a `loop` and `volume` option.
+
+#### Child Audio
+
+Audio can also be added to another Media item - for example a text item - in order to play a sound while the parent item is being shown. Zero or more audio items can be added to a media item.
+
+When the parent media item finishes the child must also finish, even if it hasn't played completely through.
 
 
+
+# Transitions
+
+Transitions are a concept used to describe how a Media item should be put on and taken off the screen. How and where they are added is described in more detail in the [Layout Transitions](layouts_transitions.html) section of this manual.
+
+There are places the XLF can contain transitions:
+
+- Region Exit Transitions in Region options
+- Playlist Transitions in Media options
+
+The Region Exit transition describes the transition to run when the region has finished completely and will be removed (this is different from when the region has expired). It runs in place of the `transOut` transition on the Widget being shown at the time the Region ends. All Regions Exit transitions run at the same time and describe how the Layout moves off screen.
+
+The Playlist transition describes a `transIn` and `transOut` on each Media item, decribing how that media item comes onto screen and leaves screen.
+
+Example Media:
+
+```xml
+<transIn></transIn>
+<transInDuration></transInDuration>
+<transInDirection></transInDirection>
+<transOut></transOut>
+<transOutDuration></transOutDuration>
+<transOutDirection></transOutDirection>
+```
+
+
+
+Example Region:
+
+```xml
+<transitionType></transitionType>
+<transitionDuration></transitionDuration>
+<transitionDirection></transitionDirection>
+```
+
+
+
+The transition type can be:
+
+- `fadeIn`: only used for In
+- `fadeOut`: only used for Out
+- `fly`: can be used for In and Out
+
+The transition duration is measured in milliseconds and in the case of `fly` the direction is a compass point: `N, NE, E, SE, S, SW, W, NW`.
+
+The media duration should **include** the `in` transition but exclude the `out` transition.
 
 # Example
 Below is a complete Layout XLF for a Layout with a white background and 2 regions.

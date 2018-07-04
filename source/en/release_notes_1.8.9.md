@@ -2,7 +2,7 @@
 
 # [[PRODUCTNAME]] 1.8.9 - Codename "Tempel"
 
-This is the eighth minor release of Xibo 1.8 Series. Included in this release are 11 bug fixes. There is a new Player with this release.
+This is the ninth minor release of Xibo 1.8 Series. Included in this release are 11 bug fixes. There is a new Player with this release.
 
 You can download this release from [GitHub - xibo-docker.tar.gz](https://github.com/xibosignage/xibo-cms/releases/download/1.8.9/xibo-docker.tar.gz). The full release files can be viewed [here](https://github.com/xibosignage/xibo-cms/releases/tag/1.8.9).
 
@@ -25,10 +25,10 @@ We recommend using the 1.8.8 Windows Player with this release. The 1.7.6 or late
 
 #### Currencies Module
 
-The Currencies Module in [[PRODUCTNAME]] uses data from two 3rd party datasources, Alpha Advantage and Fixer. This release works around issues exposed in both of these data sources.
+The Currencies Module in [[PRODUCTNAME]] uses data from two 3rd party datasources, Alpha Vantage and Fixer. This release works around issues exposed in both of these data sources.
 
-1. Alpha Advantage Rate Limiting: despite advertising that there are no rate limits on their API, it seems that Widgets which ask for more than 5 symbols are disallowed due to rate limiting. This release recommends only 5 symbols are entered and improves caching to assist in returning data despite the rate limit.
-2. Fixer paywall: this free service exposes the ECB's 16:00 UTC published exchange rates and is used in the Currencies Module to calculate percentage change (Alpha Advantage does not support time series exchange data). Unfortunately Fixer are expanding their service to uses non ECB data and moving it behind a paywall. This release switches to a new service called https://exchangeratesapi.io/.
+1. Alpha Vantage Rate Limiting: despite advertising that there are no rate limits on their API, it seems that Widgets which ask for more than 5 symbols are disallowed due to rate limiting. This release recommends only 5 symbols are entered and improves caching to assist in returning data despite the rate limit.
+2. Fixer paywall: this free service exposes the ECB's 16:00 UTC published exchange rates and is used in the Currencies Module to calculate percentage change (Alpha Vantage does not support time series exchange data). Unfortunately Fixer are expanding their service to uses non ECB data and moving it behind a paywall. This release switches to a new service called https://exchangeratesapi.io/.
 
 
 
