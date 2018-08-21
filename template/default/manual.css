@@ -66,6 +66,15 @@ ul.navbar-nav a:hover {
     font-size: 16px;
 }
 
+.top-tip {
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background: #f4f7fa;
+}
+
 ul#side-nav ul {
     margin-left: 15px;
 }
