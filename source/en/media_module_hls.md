@@ -6,11 +6,11 @@ Add the HLS Video Stream Widget to show **live streamed content** in Layouts.
 
 **Please note:** This Module requires Windows 8.1 or later/Android 6 or later. Earlier Android devices may play HLS using the [Local Video](media_module_localvideo.html) Module.
 
-<tip>
+{tip}
 
 This Module requires a valid internet connection on the Player in order to function.
 
-</tip>
+{/tip}
 
 
 

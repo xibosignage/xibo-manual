@@ -22,8 +22,8 @@ Complete a local file path or URL to the video, this can be an RTSP Stream.
 
 ![Add Local Video](img/media_localvideo_add.png)
 
-<tip>
+{tip}
 
 Video scaling and RTSP streams are only supported on the Android and webOS Players. Use the HLS Widget to show compatible video streams on Window Players.
 
-</tip>
+{/tip}

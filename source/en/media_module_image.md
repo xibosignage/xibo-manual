@@ -6,11 +6,11 @@ Add an image to a Layout using the Image Widget, by adding a file to upload dire
 
 **Caution should be taken as uploading very large Images can cause issues for the Player.**
 
-<tip>
+{tip}
 
 We recommend uploading JPG or PNG files, ensuring that Users check the resolution of the Image and keep it within the intended screen size.
 
-</tip>
+{/tip}
 
 ![Add Media Image](img/media_image_add.png)
 

@@ -4,19 +4,19 @@
 
 The primary purpose of [[PRODUCTNAME]] is to show content on screens with the entire application suite existing for that one purpose. [[PRODUCTNAME]] provides a concept called **Displays** to manage when and how content is shown on a screen.
 
-<tip>
+{tip}
 When no other content is Scheduled, Displays will **always** show a **Default Layout**. You can create your own Default Layout to replace the existing one to show.
-</tip>
+{/tip}
 
 Displays are uniquely identified by a **hardware key** which is generated when the Signage Player software is installed. This hardware key is used to create a Display record in the CMS and is unique to that one Display record.
 
 ## Connecting a Display
 
-Displays connect to the CMS over an API called "XMDS" <nonwhite>(Xibo Media Distribution Service)</nonwhite>. Each Signage Player software application will have its own method of registering and connecting to the CMS - most of them only require the `URL` and `CMS Key`.
+Displays connect to the CMS over an API called "XMDS" {nonwhite}(Xibo Media Distribution Service){/nonwhite}. Each Signage Player software application will have its own method of registering and connecting to the CMS - most of them only require the `URL` and `CMS Key`.
 
-<tip>
+{tip}
 New Displays will need to be marked as **authorised** before they can be sent any content. This can be done by using the row menu for the Display and clicking **Authorise**.
-</tip>
+{/tip}
 
 ## Display Administration
 
@@ -58,9 +58,9 @@ Date and time stamp of when the Display was last accessed.
 
 Media Access Control Address of the Display (if the client software is capable of sending it).
 
-<tip>
+{tip}
 Columns can be toggled on and off to show the information you would like to display for administration purposes by clicking on the **Column visibility** button. 
-</tip>
+{/tip}
 
 ### Row Menu
 
@@ -88,9 +88,9 @@ Each Display has its own Dashboard which shows the Displays current status, band
 
 
 
-<tip>
+{tip}
 This Dashboard is useful as a first step for troubleshooting issues with a Display.
-</tip>
+{/tip}
 
 
 
@@ -106,9 +106,9 @@ Configure options specific to that Display with the 'Advanced' tab, which lists 
 
 Deleting a Display will remove it from the CMS entirely - this operation cannot be reversed. A deleted Display can be reconnected to the CMS by repeating the “Register” procedure which will create a new unique Display record.
 
-<tip>
+{tip}
 Deauthorise a Display instead of deleting so that it can be re-authorised at a later date if needed. Use the row menu for the Display and click on Authorise to toggle to Deauthorise. This can also be actioned from the **Edit Display** form by selecting **No** for Authorise display.
-</tip>
+{/tip}
 
 #### **Send Command**
 
@@ -118,12 +118,12 @@ The **Send Command** functionality is executed via XMR to Players by selecting a
 
 
 
-<tip>
+{tip}
 Administrators create predefined commands for use, therefore if you require additional commands, please contact your Administrator.
-</tip>
+{/tip}
 
 
 
-<tip>
+{tip}
 This type of Command can also be executed by scheduling a [Command Event](scheduling.html#Events)
-</tip>
+{/tip}

@@ -29,11 +29,11 @@ Use the drop down to select the **Chart type** which would best present informat
 
 All types of Chart need an X and Y axis configured from the available columns in the associated DataSet. Configure by using the selectors on this tab. Press + to get a new selector once you’ve configured the first one.
 
-<tip>
+{tip}
 
 Include a Series Identifier if you want to show a breakdown of values rather than the sum of all values. A series identifier is not suitable for Pie/Donut charts.
 
-</tip>
+{/tip}
 
 ### Format
 
@@ -59,8 +59,8 @@ DataSet results can be ordered by any column. Use the clause builder or for more
 
 DataSet results can be filtered by any column. Include or omit DataSet results using the clause builder.
 
-<nonwhite>
+{nonwhite}
 
 Take a look at the [Chart Module Guide](https://community.xibo.org.uk/t/chart-module-guide-xibo-cms-1-8-10/14794) to walk you through how you can produce a Layout to include a Chart.
 
-</nonwhite>
+{/nonwhite}

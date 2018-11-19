@@ -5,11 +5,11 @@ Library files and Layouts can be assigned directly to a Display or Display Group
 
 **This does NOT mean that assigned files and Layouts will be shown, and will still need to be Scheduled**
 
-<tip>
+{tip}
 
 This is useful for pre-loading a Layout ahead of time when that Layout will be used for some API integration, triggering a Layout change for example.
 
-</tip>
+{/tip}
 
 ## Assign Files / Layouts
 
@@ -29,9 +29,9 @@ Select which **Library files/Layouts** you wish to directly assign (these will s
 
 Those selected will be downloaded to the **Display** at the next collection interval. If XMR is installed these will be downloaded immediately.
 
-<tip>
+{tip}
 Library files and Layouts that have been directly assigned will still need to be **Scheduled** to Displays or Display groups to be shown.
-</tip>
+{/tip}
 
 
 

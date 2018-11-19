@@ -7,9 +7,9 @@ Regions can be positioned anywhere inside a Layout using drag and drop, and resi
 
 **Regions show on the Layout Designer as semi-transparent white overlays.**
 
-<tip>
+{tip}
 Each change that is made to a Region must be saved using the Save Region Positions button, or it will revert back to previous settings.
-</tip>
+{/tip}
 
 ## Adding Regions
 
@@ -17,9 +17,9 @@ Add Regions by using the **+Region** button in the toolbox, a new Region will ap
 
 ![Resize a region](img/layouts_designer_region_resize_handles.png)
 
-<tip>
+{tip}
 If a Layout has been created from a Template it will most likely have a full-screen Region pre-created. Make sure you don't accidentally create new Regions over the top of this one, empty Regions cause the Layout to be marked as invalid and **WILL NOT PLAY**.
-</tip>
+{/tip}
 
 ## Region Menu
 
@@ -31,9 +31,9 @@ Each Region has its own drop-down menu of Actions, located at the top right corn
 
 Assign content to the Region or amend the existing Playlist.
 
-<tip>
+{tip}
 The menu's default action is **Edit Timeline** which can also be accessed by double-clicking on the Region.
-</tip>
+{/tip}
 
 ### Options
 
@@ -41,9 +41,9 @@ This form allows for naming, precise sizing and positioning as well as Exit Tran
 
 **Exit Transitions** happen when the last Media item in a Region is shown and occurs only when all other Media items have expired in the other Regions. 
 
-<tip>
+{tip}
 Transitions are only supported in the Ubuntu /Android and webOS Display clients and need to be configured, please contact your Administrator.
-</tip>
+{/tip}
 
 ### Delete
 
@@ -55,11 +55,11 @@ Control which User and User Groups can view/edit/delete the Region.
 
 The owner of the Layout has full control over sharing. 
 
-<tip>
+{tip}
 
 A globally shared Layout can have Region access rights defined for any other users of the CMS. Read more for [Permissions for User Objects](users_permissions.html#user_objects) 
-</tip>
+{/tip}
 
-<tip>
+{tip}
 **NOTE:** The Windows Player does not support overlapping Regions. For a mixed Player network ensure Regions do not overlap for the best results.
-</tip>
+{/tip}

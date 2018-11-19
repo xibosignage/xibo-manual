@@ -24,6 +24,6 @@ Layouts are assigned using the plus icon, once pressed Layouts will show in the 
 
 Re-order Layouts in the staging area by drag and drop to ensure that Layouts play out in your designed sequence, ensuring that you press Save to keep changes.
 
-<tip>
+{tip}
 Layouts can be directly assigned to Campaigns using the row menu on the Layouts grid. Layouts will be assigned to the end of the selected Campaign by default.
-</tip>
+{/tip}

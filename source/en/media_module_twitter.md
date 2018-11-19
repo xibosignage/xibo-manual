@@ -3,14 +3,14 @@
 
 The Twitter Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Add the Twitter Widget to Layouts to display Twitter feeds.
 
-<tip>
+{tip}
 
 Granted access is to **read data** only.
 
-</tip>
+{/tip}
 
-<nonwhite>
-<cloud>
+{nonwhite}
+{cloud}
 
 The main set-up is provided as part of the service for **Xibo in the Cloud** customers. Please follow the simplified process below to connect to the Twitter API.
 
@@ -21,11 +21,11 @@ The main set-up is provided as part of the service for **Xibo in the Cloud** cus
 
 Skip the Installation section below and go straight to the **Add Twitter Widget** section.
 
-</cloud>
+{/cloud}
 
 **Non-Xibo in the Cloud customers please follow the full Installation steps as detailed below.**
 
-</nonwhite>
+{/nonwhite}
 
 ## Installation
 
@@ -48,11 +48,11 @@ Access to the Twitter API is protected and so Users must register for an **API k
 - Enter the generated **API key** and **API secret**.
 - Optionally adjust the Cache Period to determine how long to cache a results set for each Twitter search.
 
-<tip>
+{tip}
 
 Setting a low value can cause your access to the Twitter API to be disabled for generating too many requests.
 
-</tip>
+{/tip}
 
 ## Add Twitter Widget
 
@@ -68,24 +68,24 @@ Setting a low value can cause your access to the Twitter API to be disabled for 
 - Select a Distance that Tweets should be returned from or 0 for no restrictions
 - Select the number of Tweets to return, left blank will return the default number of 15
 
-<tip>
+{tip}
 
 To return Tweets from a specific account rather than all Tweets that contain the accounts @ handle, use `from:` before the name of the account in the Search Term field.
 
-</tip>
+{/tip}
 
 #### **Template**
 
 Select a Template from the many selections using the drop-down menu.
 
-<tip>
+{tip}
 
 If you opt to Override the template to use your own, the following substitutions are available for use:
 [Tweet][User]
 [ScreenName][Date]
 [ProfileImage][Photo]
 
-</tip>
+{/tip}
 
 #### **Effect**
 
@@ -105,8 +105,8 @@ Select an optional Effect/Speed to be used to transition between Tweets.
 - Toggle to add/remove URLs from returned Tweet Text
 - Enter the Update Interval in minutes, keeping this as high as possible
 
-<tip>
+{tip}
 
 Most URL’s do not compliment digital signage and so we would recommend having this ticked to Remove URLs.
 
-</tip>
+{/tip}

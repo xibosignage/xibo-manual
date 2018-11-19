@@ -3,15 +3,15 @@
 
 The Weather Widget provides current daily weather forecasts worldwide using the [DarkSky API](https://darksky.net/) as a source of weather data.
 
-<nonwhite>
-<cloud>
+{nonwhite}
+{cloud}
 
 The Weather Module is configured for **Xibo in the Cloud** customers and is provided as part of the service. Please skip the Installation steps detailed below and proceed with the set-up at the **Add Weather Widget** section.
-</cloud>
+{/cloud}
 
 **Non-Xibo in the Cloud customers please follow the Installation steps as detailed below.**
 
-</nonwhite>
+{/nonwhite}
 
 ## Installation
 
@@ -33,13 +33,13 @@ DarkSky allows 1000 requests for a forecast, per day before charging a small fee
 
 The DarkSky Terms of Service <https://darksky.net/tos> should be read and understood before using this Widget.
 
-<nonwhite>
-<cloud>
+{nonwhite}
+{cloud}
 
 Cloud customers with older CMS Instances may see the Weather Widget labelled as ‘Forecast IO’ in the Widget Toolbox. 
 
-</cloud>
-</nonwhite>
+{/cloud}
+{/nonwhite}
 
 ![Add Weather](img/media_weather_add.png)
 
@@ -88,7 +88,7 @@ This is the intended width of the template and is used to scale the Widget withi
 
 This is the intended height of the template and is used to scale the Widget within its region when the template is applied.
 
-<tip>
+{tip}
 
 The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
 
@@ -98,7 +98,7 @@ The template will be automatically scaled and should be designed for the intende
 - Templates can use bootstrap
 - The aspect ratio will be fixed by [[PRODUCTNAME]] and sized to fit the Region
 - Templates are treated the same as a static image
-  </tip>
+  {/tip}
 
 #### **Current forecast template**
 
@@ -109,11 +109,11 @@ Also known as the **main template** as it is used for the current weather condit
 This is the **repeating template** that should be provided for the 7 day forecast. It will be repeated each day and then substituted into the special `[dailyForecast]` tag (which should feature on the main template). 
 
 The `[dailyForecast]` tag has 2 optional settings which can be added to the tag by including the`|` character. These are `[dailyForecast|Number of days|Start day]` and default to 7 days, starting at tomorrow (day 2). If you wanted to see the next 3 days you would use [dailyForecast|3]` and for a 3 day forecast starting the day after tomorrow you could use `[dailyForecast|3|3]`.
-<tip>  
+{tip}  
 
  A common example is to ignore the "Current Template" and produce a full 7 day forecast using the daily forecast - this is achieved with `[dailyForecast|7|1]`.
 
-</tip>
+{/tip}
 
 #### **CSS**
 
@@ -127,23 +127,23 @@ attribute and has a special `[[ICONS]]` which will be replaced with a selected i
 It is possible to **request a forecast** at any time to see what forecast data is returned. Any field is available as a substitute in the template by entering the field name between square 
 brackets - for example `[nearestStormDistance]`.
 
-<tip>
+{tip}
 
 This button is available once the Weather Widget has been added to the Region Timeline and is then edited. There is not enough information saved to make a request to get the forecast at the ‘Add’ stage.
 
-</tip>
+{/tip}
 
 ### Extending with new icons
 
 New icons can be added by an administrator who has access to the file system. Any PNG file in `modules/theme/forecastio/weather_icons` will be made available for selection in the Icons selector.
 
 Weather icons are provided as a sprite, each icon is 128x128 and should represent the same weather conditions as the shipped icon sprite.
-<tip>
+{tip}
 For example, a "clear-day" is represented by the icon in position 1, a "windy day" is represented by the icon in position 11.
 
-</tip>
+{/tip}
 
-<tip>
+{tip}
 You may have a Layout Status `! There are items on this Layout that can only be assessed by the client`This is a normal Layout Status if you have online content which will be assessed on the Player side. 
 
-</tip>
+{/tip}

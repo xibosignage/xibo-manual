@@ -3,10 +3,10 @@
 # Schedule Now
 
 Schedule Now provides a quick way to Schedule a **Campaign** or **Layout** for a specific amount of time.
-<tip>
+{tip}
 This is useful for displaying temporary/important notices on Displays.
 
-</tip>
+{/tip}
 
 Schedule Now is available across the CMS and is available from the following pages:
 

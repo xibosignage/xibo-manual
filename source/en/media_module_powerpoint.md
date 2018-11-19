@@ -16,11 +16,11 @@ From Office 2010 onwards PowerPoint presentations can be exported as **Video fil
 
 - Export a PowerPoint by using the option on the File Menu from inside the PowerPoint application. Save the file with an appropriate name to be selected for upload.
 
-<tip>
+{tip}
 
 If your Players are Android or webOS devices you should ensure that the export format is MP4 (PowerPoint 2013 onwards) or convert your video to a MP4 using a 3rd party tool.
 
-</tip>
+{/tip}
 
 ### Upload Video
 

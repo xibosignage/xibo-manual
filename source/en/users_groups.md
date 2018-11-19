@@ -5,9 +5,9 @@
 User Groups are administered from the Menu under the Administration section.
 Add a new User Group so that a selected group of Users are able to share and edit their Media, Layouts and Schedules with each other.
 
-<tip>
+{tip}
 Make it easier to onboard new Users and manage system access by creating **User Groups**. Users will inherit permissions that have been assigned to the User Group. Read the [Permissions](users_permissions.html) page for further information.
-</tip>
+{/tip}
 
 ![User Group Add](img/\user_group_add.png)
 
@@ -30,8 +30,8 @@ Use the checkboxes to assign Users to that User Group, Save.
 
 ![User Group Manage Membership](img/user_group_manage_membership.png)
 
-<tip>
+{tip}
 Users can be assigned to one or more User Groups for ease of sharing and collaboration as well as being used for **Access control** to parts of the CMS.
-</tip>
+{/tip}
 
 Users will inherit permissions that have been assigned to the User Group. Read the [Permissions](users_permissions.html) page for further information

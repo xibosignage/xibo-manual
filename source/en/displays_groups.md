@@ -22,9 +22,9 @@ The membership of a Display Group is either a **Manual Assignment** or controlle
 When ticked an additional field will appear to allow for entry of one or more regular expressions to use to select which Displays belong to that Display Group.
 
 Filter criteria for Dynamic Groups is in the format of regular expressions, but can also be simple string comparisons. The expressions should be separated by a comma and can be negated with a `-` prefix.
-<tip>
+{tip}
 For example, all Displays containing "a" but not "b" would be `a,-b`.
-</tip>
+{/tip}
 
 
 
@@ -42,7 +42,7 @@ The form shows **Displays** and **Display Groups** for nesting as well as a **Re
 
 Display Groups can be nested to create complex structures and allow for targeted Scheduling.
 
-<tip>
+{tip}
 Example Group Structure
 
 - Site 1
@@ -53,7 +53,7 @@ Example Group Structure
 
 The Display membership is set on the lowest level Groups and those groups then belong to the next level up, which in turn belong to the highest level parent "Site 1".
 The CMS will not allow a circular reference to be created - this is an assignment that creates a loop (i.e. Site 1 has Site 1 - Building A, and Site 1 - Building A has Site 1.)
-</tip>
+{/tip}
 
 ![Display Group Members](img/displays_group_members.png)
 

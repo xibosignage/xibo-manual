@@ -1,13 +1,13 @@
 <!--toc=tour-->
 # Guides
 
-<white>
+{white}
 
 Please contact your support department for information on the resources available.
 
-</white>
+{/white}
 
-<nonwhite>
+{nonwhite}
 
 Xibo has a large back catalogue of guides, videos and FAQ's to assist you every step of the way, available online on our **Community** page, on our **blog** and **YouTube** channel:
 
@@ -25,4 +25,4 @@ To get started with Xibo take a look at the following walkthroughs:
 
 [How to build an ‘Hours since last incident counter’ using datasets](https://community.xibo.org.uk/t/building-an-hours-since-last-incident-counter-with-datasets/14391)
 
-</nonwhite>
+{/nonwhite}

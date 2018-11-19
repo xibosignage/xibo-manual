@@ -3,15 +3,15 @@
 
 The Stocks Widget displays trade price information for stock listings when added to a Layout.
 
-<nonwhite>
-<cloud>
+{nonwhite}
+{cloud}
 
 The Stocks Module is configured for **Xibo in the Cloud** customers, with an API key provided as part of the service, so please skip the Installation steps detailed below. Proceed with the set-up from the **Stocks Widget** section.
-</cloud>
+{/cloud}
 
 **Non-Xibo in the Cloud customers please follow the Installation steps as detailed below.**
 
-</nonwhite>
+{/nonwhite}
 
 ## Installation 
 
@@ -44,11 +44,11 @@ Give an optional name and select to override the default duration if required.
 
 ![Stocks Template](img/media_stocks_template.png)
 
-<tip>
+{tip}
 
 If you need a Stock Symbol that is only quoted on a specific Exchange then you can use the format `SYMBOL:EXCHANGE` to return results. 
 
-</tip>
+{/tip}
 
 #### **Effect**
 
@@ -58,8 +58,8 @@ Select an optional Effect and Speed
 
 Optionally choose a Background Colour and include a message to be displayed when no records are returned. 
 
-<tip>
+{tip}
 
 Stock Symbols can be found on various lookup sites such as [Yahoo Finance](https://finance.yahoo.com/)
 
-</tip>
+{/tip}

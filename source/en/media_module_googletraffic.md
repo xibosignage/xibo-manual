@@ -11,15 +11,15 @@ Once a key is obtained it should be entered on the **Module** page under the Adm
 
 **Please note:** The Google API is charged per map load and therefore how long the Widget remains on screen has a direct relation on the charges you will accrue.
 
-<tip>
+{tip}
 Until an API key is entered the Widget will not render in the Layout Designer or the Player, although you can still add the Widget to your Layouts.
-</tip>
+{/tip}
 
-<tip>
+{tip}
 
 This Module requires a **valid internet connection** on the Player in order to function.
 
-</tip>
+{/tip}
 
 ### Terms
 
@@ -38,7 +38,7 @@ Traffic data can be added to a Layout using the Google Traffic Widget and comple
 **Use the Display location** - once ticked the lat/long recorded on the Display is used rather than specifying manually.
 **Zoom** - how close/far away the aerial view of the map is. The higher the number the closer view to ground level. A zoom of 1 is the whole globe.
 
-<tip>
+{tip}
 Use the Display location so that you can have 1 Layout of **Traffic Data** that can be reused on multiple Displays to show the traffic in the correct location on each Display.
 
-</tip>
+{/tip}

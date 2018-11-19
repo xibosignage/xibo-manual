@@ -4,9 +4,9 @@
 
 All **CMS Pages** are categorised into sections and are accessible from the **Menu** located on the left hand side of the CMS, for ease of navigation.
 
-<tip>
+{tip}
 The Menu will only show the items each User has permission to see!
-</tip>
+{/tip}
 
 ![CMS Menu](img/tour_cms_menu.png)
 
@@ -52,6 +52,6 @@ In the top right-hand corner of the CMS use the Profile Icon to access **User-sp
 
 ![CMS Profile Icon](img/tour_cms_profile_icon.png)
 
-<tip>
+{tip}
 All new Users are strongly advised to navigate to the Profile Icon menu to change their password the first time they log into the CMS.
-</tip>
+{/tip}

@@ -28,11 +28,11 @@ Click on the **Add User** button and complete the form fields as required.
 
 **Initial User Group** - select which group the **User** should belong to.
 
-<tip>
+{tip}
 
 Use **System Notifications** as the Initial User Group for Users that do not require permission to anything within the CMS but need notification emails when there are system issues (System Administrators).
 
-</tip>
+{/tip}
 
 ### Reference
 
@@ -46,20 +46,20 @@ Choose if the User should receive Notifications by ticking the checkboxes.
 
 Select the options as necessary for the User.
 
-<tip>
+{tip}
 [[PRODUCTNAME]] doesn't place any limits on the number of Users that can be added.
 
-</tip>
+{/tip}
 
-<nonwhite>
+{nonwhite}
 
-<cloud>
+{cloud}
 
 With **Xibo in the Cloud** we do not impose limits on concurrent access or licence User access in any way.
 
-</cloud>
+{/cloud}
 
-</nonwhite>
+{/nonwhite}
 
 ## Editing Users
 
@@ -87,11 +87,11 @@ Users will be redirected to a page to reset their password, the next time they l
 Delete a User in the same way by using the row menu for the selected User.
 A confirmation form will open up and give you further options regarding the items currently owned by that User.
 
-<tip>
+{tip}
 
 Deleting a User is irreversible and will remove all their owned items including; Media, Layouts and Schedules, even if these items are being used by other Users in the system. **Reassign items** to another User using the selector to make them the new owner of all the items currently owned by the User you wish to delete. Alternatively, use the **Retired** checkbox at the bottom of the Edit User form so that the items remain in use in the system with the User unable to log in. 
 
-</tip>
+{/tip}
 
 ## My Applications
 
@@ -101,8 +101,8 @@ Once an application is authorised it can be viewed by clicking on the **My Appli
 
   ![Users My Applications](img/users_my_applications_button.png)
 
-<tip>
+{tip}
 
 At the current time the CMS does not provide individual Users with a method of revoking access to an application, however, an admin can remove an application completely.
 
-</tip>
+{/tip}

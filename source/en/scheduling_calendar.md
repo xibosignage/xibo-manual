@@ -22,17 +22,17 @@ Schedule Events by completing the form fields.
 
 Use to navigate through the calendar.
 
-<tip>
+{tip}
 Use the calendar icon, next to these buttons, to go directly to a selected date.
-</tip>
+{/tip}
 
 ### Calendar Views
 
 Each Calendar View will show the associated Schedule for the selected Display/Display Group. Views show **Events** represented by Icons, with a key to explain each one, located below the calendar. 
 
-<tip>
+{tip}
 Click on an Event or Icon shown on a Calendar View to Edit the Schedule.
- </tip>
+ {/tip}
 
 #### **Year**
 
@@ -40,9 +40,9 @@ The Year view is intended as an overview of the Events Scheduled throughout the 
 
 ![Schedule Year View](img/schedule_year_view.png)
 
-<tip>
+{tip}
 Double-click to open the Month View for that particular month.
-</tip>
+{/tip}
 
 #### **Month**
 
@@ -50,9 +50,9 @@ This View includes Icons to represent the Events that have been scheduled for th
 
 ![Schedule Month View](img/schedule_month_view.png)
 
-<tip>
+{tip}
 Hover over each Icon to display information for that particular Event.
-</tip>
+{/tip}
 
 #### **Week**
 
@@ -78,10 +78,10 @@ Use the slider, located above the tabs, to pinpoint the exact time of day to vie
 
 Click on a Layout to highlight the associated information (associations will turn blue) and view the breadcrumb, to show further Campaign and Display Group information. If nested Display Groups have been configured, these will show in the breadcrumb.
 
-<tip>
+{tip}
 This can be used to view exactly why a certain Layout is being shown at a certain time.
-</tip>
+{/tip}
 
-<tip>
+{tip}
 Click on the breadcrumb to view the Layout and make Edits to the Schedule.
-</tip>
+{/tip}

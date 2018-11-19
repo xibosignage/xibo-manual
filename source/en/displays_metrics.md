@@ -20,9 +20,9 @@ Filter to one Display to see each call that the Player makes to XMDS in isolatio
 
 ![Display Statistics Filter](img/displays_statistics_filter.png)
 
-<tip>
+{tip}
 Filtering to just one Display helps to better understand where bandwidth was used.
-</tip>
+{/tip}
 
 ### Availability
 
@@ -38,11 +38,11 @@ Each Display collects information on Layout and Media items they show and can pr
 
 ![Displays Proof of Play](img/displays_proofofplay.png)
 
-<tip>
+{tip}
 
 **Enable stats reporting** can be toggled on/off by editing [Display Profiles](displays_settings.html#editing_profiles>). 
 
-</tip>
+{/tip}
 
 ## Library Usage
 

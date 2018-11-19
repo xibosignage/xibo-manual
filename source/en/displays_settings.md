@@ -27,35 +27,35 @@ Each setting is explained under each form field for each of the tabs.
 
 Using the drop-down menu select how often you would like the Player to check for new content. This means that once a Player has communicated with the CMS, it will check again for any changes by the time  set here.
 
-<tip>
+{tip}
 
 **Scenario:**
 
 A Player has a collect interval set for 24 hours, it will check for any changes, action pending changes and then wait for the next 24-hour collection. If a change is made between this period of time, the Player will not be aware of it until it is time to check again.
-</tip>
+{/tip}
 
 If a Display Profile for a Player is changed, the Player will only be aware of the change after it has connected according to its prior connection interval. 
 
-<tip>
+{tip}
 
 **Scenario:**
 
 A Player with a collect interval set for 24 hours made a check at 12 pm, it will not check again until 12 pm the following day for any changes that have been made. Once the 24 hour interval has passed, it will update the new changes and from this point will collect changes based on the new Profile.
-</tip>
+{/tip}
 
-<nonwhite>
+{nonwhite}
 
 XMR is configured by default for **Xibo in the Cloud** customers which allows for changes to be communicated immediately to the Player, regardless of the Collection Interval set. This means that fast and dynamic modifications can be made to your Display, without the need to modify a Display Profile.
 
 For non-cloud customers the CMS can be configured to talk to an XMR instance if player actions are required, please contact your Administrator.
 
-</nonwhite> 
+{/nonwhite} 
 
-<white>
+{white}
 
 The CMS can be configured to talk to an XMR instance if player actions are required, please contact your Administrator.
 
-</white>
+{/white}
 
 
 

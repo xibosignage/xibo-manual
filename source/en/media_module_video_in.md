@@ -18,8 +18,8 @@ Once assigned to the Region Timeline the Video In Widget can be edited if necess
 
 ![Edit webOS Video In](img/media_webos_edit.png)
 
-<tip>
+{tip}
 
 To seamlessly show content alongside **Live TV** create an Overlay Layout with the **Video In** Widget added, this will allow for your Layout of content ‘underneath’ to Display and rotate freely. This will prevent the TV signal from skipping with each Layout load if on the same Layout.
 
-</tip>
+{/tip}

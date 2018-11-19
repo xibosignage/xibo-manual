@@ -8,10 +8,10 @@
 
 Notifications for a logged in User appear at the top right of the screen with unread notifications shown in red next to the Alarm bell icon. The Notification Drawer can be accessed by clicking on the Alarm bell icon.
 
-<tip>
+{tip}
 
 The Notification Drawer is shown when a User or User Group has the **Notification Drawer** permission, without this permission the Alarm bell icon will not be shown.
-</tip>
+{/tip}
 
 Click on the Alarm bell to open the Notification Drawer, which will show the last 5 notifications received. Unread notifications will be shown in black text and read notifications in a light grey text.
 
@@ -19,11 +19,11 @@ Click on the Alarm bell to open the Notification Drawer, which will show the las
 
 Click on the title of each notification to open a popup to read the full notification.
 
-<tip>
+{tip}
 
 Notifications will only show in the Notification Drawer if their release date has passed and if the logged in User has been assigned the notification.
 
-</tip>
+{/tip}
 
 ## Notification Centre
 
@@ -43,21 +43,21 @@ Notifications can be created by authorised Users, those that have permission, by
 
 **Interrupt** - Users would be automatically redirected to a page to show the full Notification and would need to click on **Continue** to carry on navigating the CMS.
 
-<tip>
+{tip}
 
 Ensure that **Enable Email Alerts** has been set to **On** in Settings, Maintenance tab.
 
-</tip>
+{/tip}
 
 ### Message
 
 Use the text editor to create and format the message body of your Notification. 
 
-<tip>
+{tip}
 
 If you are going to use the [Notification Widget](media_module_notifications.html) to target your message to Display/Display groups the formatting you use here would be replaced with the formatting as applied in the Widget.
 
-</tip>
+{/tip}
 
 ### Audience
 

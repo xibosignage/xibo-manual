@@ -19,9 +19,9 @@ Examples of Library Media are:
 
 Library Media is administered from **Media** under the Library section of the Menu. 
 
-<tip>
+{tip}
 [DataSets](media_datasets.html) are a special type of Library Media which are used to represent tabular data.
-</tip>
+{/tip}
 
 ## Layout Media
 

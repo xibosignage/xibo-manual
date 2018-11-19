@@ -11,28 +11,28 @@ Modules are enabled/disabled by using the row menu for the selected Module. Sele
 
 ### Library Modules
 
-At times it may be necessary to add or remove the allowed extensions on a particular file based Module. <tip>
-A typical use case would be if a client is being used which does not support that particular type of file.</tip>
+At times it may be necessary to add or remove the allowed extensions on a particular file based Module. {tip}
+A typical use case would be if a client is being used which does not support that particular type of file.{/tip}
 
 ## Generic Files
 
 The Generic File Module is used to send **additional files** to the Display Client that can then be used for other purposes. 
 
-<tip>
+{tip}
 This could be useful for:
 
 - Embedded HTML - supplementary files can be provided to be used as relative paths (e.g. An up and down arrow that is dynamically shown in the embedded HTML based on the results of stock data)
 - Auto Update - functionality exists to act as a foundation for an auto-client update.
-  </tip>
+  {/tip}
 
 ## Caching and external access
 
 The core Modules are designed to have their data cached and served from the CMS so that they can be played back without an active connection and/or without direct access to external resources that might be required.
 
 The CMS also uses this mechanism to be a _good citizen_ when requesting 3rd party data.
-<tip>
+{tip}
 For example, a Ticker Widget with the address `http://anexternal.com/feed` would only be accessed by the CMS and only once per `updateInterval`. The Players showing the Layout would not need to access that address directly.
-</tip>
+{/tip}
 
 All of the core modules adopt this approach, with the exceptions noted below:
 
@@ -43,16 +43,16 @@ All of the core modules adopt this approach, with the exceptions noted below:
 - The **Local Video Module** is rendered by the video decoder on the Player and can reference an external stream.
 - **Flash** Files have the capability to reference an external file and will be run on the Player.
 
-<nonwhite>
+{nonwhite}
 Xibo is shipped with all of the stock modules which can be enabled for use. 
 
-<cloud>
+{cloud}
 
 We prevent the installation of your own or third-party modules with **Xibo in the Cloud.**
 
-</cloud>
+{/cloud}
 
-</nonwhite>
+{/nonwhite}
 
 ## Installing new Modules
 

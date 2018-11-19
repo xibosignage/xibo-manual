@@ -1,20 +1,20 @@
 <!--toc=media-->
 # Tidy Library
 
-<nonwhite>
-<cloud>
+{nonwhite}
+{cloud}
 The Tidy Library function is turned off by default for **Xibo in the Cloud** Customers as it can be potentially destructive if the options are not fully understood. This can be enabled if required by following the steps below.
-</cloud>
-</nonwhite>
+{/cloud}
+{/nonwhite}
 
 As the CMS is used and Layouts/Media are added, over time the Library can become cluttered with old content that is no longer in use.
 
 The Library can be *tidied* by a User or Super Administrator so that it is kept clean and small. 
 **Actions cannot be reversed so this must be used with caution.**
 
-<tip>
+{tip}
 This might be of particular interest if the CMS is installed on a web server that has quotas or if Users have been assigned their own quotas.
-</tip>
+{/tip}
 
 There are two places where the Library can be tidied:
 
@@ -54,6 +54,6 @@ Once enabled Users can click on the **Tidy Library** button at the top of the Li
 
  The form will show the number of files that will be deleted and how much space those files take up.
 
-<tip>
+{tip}
 This will only delete files that are owned by the logged in User which are no longer in use on a Layout or Assigned to a Display Group/Display.
-</tip>
+{/tip}

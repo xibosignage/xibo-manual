@@ -3,14 +3,14 @@
 
 The Currencies Widget provides exchange rates for many currency pairs when added to a Layout.
 
-<nonwhite>
-<cloud>
+{nonwhite}
+{cloud}
 The Currencies Module is configured for **Xibo in the Cloud** customers with an API key provided as part of the service. Skip the Installation steps detailed below and follow the set up from the **Currencies Widget** section.
-</cloud>
+{/cloud}
 
 **Non-Xibo in the Cloud customers please follow the Installation steps as detailed below.**
 
-</nonwhite>
+{/nonwhite}
 
 ## Installation
 

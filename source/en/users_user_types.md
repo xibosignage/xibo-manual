@@ -14,21 +14,21 @@ Every User is assigned 1 of 3 User Types:
 
   ![User Type](img/user_type.png)
 
-<tip>
+{tip}
 
 User Types are pre-configured and cannot be modified.
 
-</tip>
+{/tip}
 
 ## Super Admin
 
 Super Admin Users have access to every part of the CMS including **all** Media, Layouts and Schedules added by other Users of the system.
 Super Admin Users have access to the entire CMS regardless of any permissions set to a User Group that they are assigned to.
 
-<tip>
+{tip}
 
 During installation, a **Super Admin User** is created who would, therefore, have full access to the entire CMS. We suggest having at least one Super Admin User to act as the last contact point for the CMS system.
-</tip>  
+{/tip}  
 
 ## Group Admin
 
@@ -38,8 +38,8 @@ Group Admin Users only have access to the parts of the CMS as assigned to the Us
 
 A User will only have access to the parts of the CMS as assigned to the User Group they belong to as well as access to their own Media, Layouts and Schedules.
 
-<tip>
+{tip}
 
 User Type is selected when first adding a User and can be edited from the individual User record.
 
-</tip>
+{/tip}

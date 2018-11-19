@@ -37,9 +37,9 @@ Use **Date Format** to ensure that you show the appropriate date/time formats fo
 Specify the Number of items, **Events** you wish to display from the iCAL feed.
 
 **Items per page** - With an **Effect** selected specify the number of **Events** you wish to show per page.
-<tip>
+{tip}
 We would encourage Users to opt for an Effect when you have many Events you wish to display, otherwise, they will be shown as a static list.
-</tip>
+{/tip}
 
 ### Advanced
 
@@ -49,15 +49,15 @@ Select the **Exclude all day events** tick box if you would like all day events 
 
 Include a suitable time for the Update Interval in minutes, keeping it as high as possible. This determines how often the Module will request data from your feed. If your Calendar only ever modified with events Scheduled days in advance, you can set this for a long period.
 
-<tip>
+{tip}
 It is best practice to contact a remote feed as little as possible.
-</tip>
+{/tip}
 
 Include a message using the text editor to ensure that your audience is not left with blank displays when no information is returned from the iCAL feed.
 
-<nonwhite>
+{nonwhite}
 Take a look at the [Calendar Module Guide](https://community.xibo.org.uk/t/calendar-module-guide-xibo-cms-1-8-10/14749) which gives a walkthrough of how to display calendar events using this Widget.
-</nonwhite>
+{/nonwhite}
 
 
 

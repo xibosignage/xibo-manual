@@ -3,11 +3,11 @@
 
 Include the Web Page Widget to Layouts to show an entire Web Page embedded inside a Region. 
 
-<tip>
+{tip}
 
 There is support for **scaling** and **offsetting** the target Web Page to allow for a particular section of a Web Page to be defined to display.
 
-</tip>
+{/tip}
 
 ![Add Webpage](img/media_webpage_add.png)
 
@@ -55,14 +55,14 @@ Select from 3 options to choose how the Web Page should be embedded:
 
 Choose to render the Web Page with a transparent background (currently not available on the Windows Player). [[PRODUCTNAME]] will try its best to do this when checked, however, it cannot be supported on some Web Pages.
 
-<tip>
+{tip}
 
 After the page is rendered [[PRODUCTNAME]] will scale to fit within the Region.
 
-</tip>
+{/tip}
 
-<tip>
+{tip}
 
 Web Pages are not cached by the Display, this Module requires a valid internet connection on the Player in order to function.
 
-</tip>
+{/tip}

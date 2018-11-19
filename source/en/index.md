@@ -8,9 +8,9 @@ Management of a solution as flexible as [[PRODUCTNAME]] requires a powerful CMS 
 
 This User Manual covers the core concepts and CMS features and starts with a "Tour" to further explain what [[PRODUCTNAME]] can actually do...
 
-<nonwhite>
+{nonwhite}
 If you are not a [Xibo in the Cloud](https://xibo.org.uk/hosting) User and need to install a CMS then please refer to the [Installation Guides](https://xibo.org.uk/docs/setup/cms-installation-guides) to get up and running with Xibo!
-</nonwhite>
+{/nonwhite}
 
 ## Welcome to the Tour!
 
@@ -36,9 +36,9 @@ Users are the people that have access to the CMS and are identified by a **Usern
 
 [[PRODUCTNAME]] supports 3 **User types**, **User Groups** as well as multi-level **Permissions** to all parts and items stored within the CMS.
 
-<tip>
+{tip}
 For a corporate environment [[PRODUCTNAME]] can also integrate with Active Director/LDAP. 
-</tip>
+{/tip}
 
 ### Displays
 
@@ -60,15 +60,15 @@ Media content is at the core of the [[PRODUCTNAME]] solution and has many differ
 
 [[PRODUCTNAME]] uses powerful **Widgets** which allow you to show your content as well as integrating dynamic third-party information from a variety of sources.
 
-<nonwhite>
+{nonwhite}
 A full list of features can be found [here](https://xibo.org.uk/cms). 
-</nonwhite>
+{/nonwhite}
 
 ### Scheduling
 
 Scheduling is highly flexible and supports Schedules to single **Displays** as well as to **Display Groups**. Each Display will check for new Scheduled content periodically, and download Scheduled Items in advance of playback. **Default Layouts** are shown on Displays when nothing else is Scheduled.
 
-<nonwhite>
+{nonwhite}
 
 ### Open Source
 
@@ -84,5 +84,5 @@ If you would like further help with the information contained in the User Manual
 
 **Xibo in the Cloud** customers have free access to our experts at our Help Desk so please open a [ticket](https://xibo.org.uk/help#commercial) if you need assistance.
 
-</nonwhite>
+{/nonwhite}
 

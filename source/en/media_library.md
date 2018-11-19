@@ -12,18 +12,18 @@ Navigate to the Media page under the Library section of the Menu to open the Lib
 
 ![Media Library](img/media_Library_grid.png)
 
-<tip>
+{tip}
 Media can also be uploaded directly to a Module assigned in a Layout, which will also save to the Library by default.
-</tip>
+{/tip}
 
 Uploading is achieved in two steps.
 
 1. Click **Add files** and select the file(s) you wish to upload.
 2. Click **Start upload** to begin the transfer of all files, alternatively click on the blue upload button next to individual files to upload individually. Once successfully uploaded, click Done.
 
-<tip>
+{tip}
 Files can also be added via drag and drop.
-</tip>
+{/tip}
 
 ![Media Library Upload](img/media_library_upload.png)
 
@@ -33,9 +33,9 @@ Files can also be added via drag and drop.
 
 [[PRODUCTNAME]] comes with a set of standard fonts provided by our text editor tool - CKEditor. New fonts can be added and uploaded to the Library in the same way. Once added the font will be available to use in the text editor.
 
-<tip>
+{tip}
 If the new font does not show in the text editor after upload, try clearing the browser cache.
-</tip>
+{/tip}
 
 ## Row Menu
 
@@ -53,9 +53,9 @@ It may be necessary to upload a new revision of an existing file. This can be do
 
 Upload a replacement file using the same steps as before and select whether the replacement file should be updated to all Layouts it is assigned to and remove the old version.
 
-<tip>
+{tip}
 Media files can also be edited directly from the Layout that they are assigned to by editing the Playlist Widget, including replacing Media files.
-</tip>
+{/tip}
 
 ### Delete
 
@@ -63,9 +63,9 @@ Media files can only be deleted from the CMS if they are not being used on any e
 
 ![Delete Media](img/media_delete.png)
 
-<tip>
+{tip}
 Retiring content means that it will no longer be available to assign to new Layouts but will remain in existing Layouts it is assigned to, meaning Scheduled content can remain unaffected.
-</tip>
+{/tip}
 
 ### Permissions
 
@@ -81,6 +81,6 @@ This will show if the selected Media file is scheduled to Displays. Use the Layo
 
 ![Library Usage Report](img/media_library_usage_report.png)
 
-<tip>
+{tip}
 The Usage Report is great to make checks prior to deleting files.
-</tip>
+{/tip}

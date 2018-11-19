@@ -44,21 +44,21 @@ The Status of the Layout is shown, as well as a Status indicator (cross or tick)
 The Layout Status in the image shown above is an "invalid status" as the Layout just contains 1 empty Region, Media content has yet to be assigned.
 **Invalid Layouts will be excluded from the Schedule and will not be played.**
 
-<tip>
+{tip}
 
 A Layout must contain at least one Region **and** each Region must contain at least **one** media item for it to be valid and play when Scheduled.
 
-</tip>
+{/tip}
 
 ### Layout Duration
 
 The Layout Duration is shown at the top of the screen and will update each time the Layout Status is checked by the CMS. The Layout Duration is based on the longest running Region in the Layout.
 
-<tip>
+{tip}
 
 Each Media item has a duration so to calculate a Region duration all Media items contained on the Playlist are added together.
 
-</tip>
+{/tip}
 
 ### Layout Selector
 

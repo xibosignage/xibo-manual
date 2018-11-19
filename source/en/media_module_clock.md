@@ -78,6 +78,6 @@ The time can be formatted by providing "tokens" that sit between square brackets
 | Unix Timestamp             | X       | 1360013296                             |
 | Unix Millisecond Timestamp | x       | 1360013296123                          |
 
-<tip>
+{tip}
 The default duration can be overridden for each clock type by clicking in the **Set a duration** checkbox.
-</tip>
+{/tip}

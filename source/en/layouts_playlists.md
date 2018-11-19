@@ -16,9 +16,9 @@ Items assigned to Playlists are called **Widgets** which are files stored in the
 
 Widgets are assigned to a Region Playlist using the Widget Toolbox, shown on the left-hand side of the Region Timeline form. The toolbox lists all of the enabled media types for your CMS.
 
-<tip>
+{tip}
 Widgets that are available can be enabled/disabled by an Administrator in the Modules section of the CMS.
-</tip>
+{/tip}
 
 ## Assigning Content
 
@@ -34,9 +34,9 @@ Each Widget assigned to a Playlist has its own set of "Actions" to edit, delete,
 
 ![Layout Playlist](img/layouts_widgets_playlist.png)
 
-<tip>
+{tip}
 Select Edit and use the tabs to locate the **Set a duration?** check box to override the systems default duration for the selected Widget.
-</tip>
+{/tip}
 
 ## Reordering Items in the Playlist
 
@@ -50,6 +50,6 @@ Use the **Switch to Grid** button at the bottom of the Region Timeline form for 
 
 ![Region Playlist](img/layouts_region_playlist_grid.png)
 
-<tip>
+{tip}
 The grid view is particularly useful for deleting more than one Widget at a time.
-</tip>
+{/tip}

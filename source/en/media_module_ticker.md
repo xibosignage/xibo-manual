@@ -2,9 +2,9 @@
 # Ticker
 
 The Ticker Widget allows **dynamic Feed** and **DataSet** content to be added to a Layout. The Ticker module primarily consists of a data source location and a template to apply to each data item retrieved from that data source.
-<tip>
+{tip}
 For example, if the data source is an RSS Feed, the feed will have multiple items and the template will be applied to each of these items.
-</tip>
+{/tip}
 Tickers are specific to a Layout and not saved in the Library - this means that text items are **not** reusable and will need to be copied/pasted between Layouts if the same text is required on more than one.
 
 ## Add Ticker
@@ -65,9 +65,9 @@ Select how many Items should appear on each page if an effect to split items has
 
 **Duration is per item** - if selected, the configured Duration will be extended by the number of items returned by the Data Source.
 
-<tip>
+{tip}
 This should be used with caution as it can create long-running Media items. It is recommended to use this setting in conjunction with a setting to limit the number of items shown.
-</tip>
+{/tip}
 
 **Update Interval** - Display clients can **cache** the content of this Media type to prevent repeated downloads and off-line playback. Keep this number as high as possible.
 
@@ -95,9 +95,9 @@ Use the drop-down menu to select a template.
 
 Select to override the template to show available keywords that can be used in the template. Double click to add to the text editor. 
 
-<tip>
+{tip}
 A special notation is available where the User can specify the Tag|Namespace within the feed for [[PRODUCTNAME]] to extract content.
-</tip>
+{/tip}
 
 #### Format
 
@@ -113,9 +113,9 @@ A special notation is available where the User can specify the Tag|Namespace wit
 
 **Duration is per item** - tick to configure the Duration to be extended by the number of items. 
 
-<tip>
+{tip}
 Use with caution as this can create long-running media items. Use in conjunction with ‘Number of items’ to limit this.
-</tip>
+{/tip}
 
 **Randomise** - random feeds work offline; the entire feed is parsed, rendered and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to randomise the order of items. Randomise works on the full feed, "Number of items" and "Take items from" options.
 
@@ -141,6 +141,6 @@ Use with caution as this can create long-running media items. Use in conjunction
 
 This is applied to the entire Ticker media item when shown on Display Clients.
 
-<tip>
+{tip}
 This is intended for advanced users to ‘tweak’ the CMS generated output.
-</tip>
+{/tip}

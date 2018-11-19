@@ -12,11 +12,11 @@ The thin red border in the text editing window represents the **Region** size. E
 
 Optionally use the Date/Time templates by double-clicking on the field tag you wish to use. This will then appear in the text editor ready to be formatted.
 
-<tip>
+{tip}
 
 Additional Fonts can be added to this editor by uploading files to the Library.
 
-</tip>
+{/tip}
 
 ## Options
 
@@ -30,18 +30,18 @@ Additional Fonts can be added to this editor by uploading files to the Library.
 
 **Set a duration** - override the default duration.
 
-<tip>
+{tip}
 
 It is typical to have a text item as the only Media item assigned to a Region Playlist, therefore the duration can be set to a low value.
 
-</tip>
+{/tip}
 
 ### CKEditor
 
 CKEditor is used for Text input. Complete documentation for all the buttons can be found on the [CKEditor's website](http://docs.cksource.com/CKEditor_3.x/Users_Guide).
 
-<tip>
+{tip}
 
 Text formatting is HTML, **view source** on the text editor to adjust the HTML manually if you prefer.
 
-</tip>
+{/tip}

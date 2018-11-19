@@ -40,9 +40,9 @@ Designing a DataSet is a **2 step** process - first add the **DataSet record** a
 
 **Remote?** - Should this DataSet sync itself with a remote data source?
 
-<tip>
+{tip}
 If you choose to make the DataSet Remote you will be presented with further tabbed headers with information that will need completing, see the [Remote DataSets](media_datasets.html#Remote_Datasets) section of this page.
-</tip>
+{/tip}
 
 ### Columns
 
@@ -50,9 +50,9 @@ Use the row menu and select **View Columns**, a new grid will open which will sh
 
 ![DataSets Add columns](img/media_add_columns_grid.png)
 
-<tip>
+{tip}
 By default, all DataSets will have **Col1** added which should be edited or deleted using the row menu.
-</tip>
+{/tip}
 
 Columns are used to define the structure of the data, with each Column having a number of settings to achieve this. Click on the **Add Column** button and complete the fields on the form.
 
@@ -82,9 +82,9 @@ Depending on the Column Type selecting additional information will be required:
 
 There is no theoretical limit to the number of columns [[PRODUCTNAME]] can support; although a smaller DataSet is often easier to enter and display.
 
-<tip>
+{tip}
 Columns can be added and removed after Data has been entered. The ordering and list content of Columns can also be changed after Data has been collected.
-</tip>
+{/tip}
 
 ## Remote DataSets
 
@@ -156,9 +156,9 @@ If you have edited your CSV file using Excel, you will need to make sure you sel
 
 You can write your own application which syncs data into a DataSet using the [[PRODUCTNAME]] API. Data can be added row by row or via importing whole JSON structures.
 
-<nonwhite>
+{nonwhite}
 Further discussion on the API can be viewed in the [Developer documentation](/docs/developer).
-</nonwhite>
+{/nonwhite}
 
 ### Remotely
 
@@ -172,20 +172,20 @@ As well as the Actions that have been previously mentioned, each data set can ha
 
 Select the Delete menu item to show the DataSet Delete form which gives the option of deleting any associated data contained. 
 
-<tip>
+{tip}
 DataSets can only be deleted if they are not currently being used.
-</tip>
+{/tip}
 
 ### Permissions
 
 The creator (owner) of the DataSet or a Super Administrator can assign View/Edit/Delete Permissions for User/User Groups.
-<tip>
+{tip}
 Users with Edit permissions will be able to add/edit data and reorganise the structure of the DataSet.
 Only Users with View permissions will be able to use the DataSet in Layouts.
-</tip>
+{/tip}
 
-<nonwhite>
+{nonwhite}
 
 Take a look at our  [DataSets Getting Started Guide](https://community.xibo.org.uk/t/getting-started-guide-datasets/14149) which will walk through how to create 'Meeting Room Bookings' using DataSets.
 
-</nonwhite>
+{/nonwhite}

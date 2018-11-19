@@ -4,9 +4,9 @@
 
 A Layout is a complete screen design including content and background, which is then Scheduled to a Display or multiple Displays. A Layout is made up of 1 or more Regions which hold content and contain Playlists of Media to show. Media is assigned to Playlists using Widgets which provide the actions for the selected Module. 
 
-<tip>
+{tip}
 Take a look at the [Modules](media_modules.html) page to see the variety of content available by simply adding a Widget to a Layout.
-</tip>
+{/tip}
 
 [[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User can have.
 
@@ -20,7 +20,7 @@ Click on the action button to open the Add Layout form to complete the fields.
 
 ![Add Layout](img/layouts_add.png)
 
-<tip>
+{tip}
 
 **When should a User create a new Layout? When should a User add to an existing Layout?**
 Layouts provide vast flexibility in the system, but can also cause confusion. The recommended usage for a Layout is to only contain the design and Media required for a set of related content that should be Scheduled at the same time.
@@ -28,7 +28,7 @@ Layouts provide vast flexibility in the system, but can also cause confusion. Th
 **Scenario**:
 You have a video showing a fire safety demonstration and a video showing an advert for an upcoming production - it would be natural to have separate Layouts for these.
 
-</tip>
+{/tip}
 
 ### Tags
 
@@ -42,9 +42,9 @@ Create Layouts and save your design to use as a [Template](layouts_templates.htm
 
 Layouts are designed for an intended Display resolution and will function best when shown on a Signage Player with a matching Resolution. If they are shown on a Display that has a different Resolution it will dynamically resize which may result in  unused screen space.  
 
-<tip>
+{tip}
 Sending a client a Layout that has been designed with a 4:3 Resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
-</tip>
+{/tip}
 
 **If you require an alternative Resolution to the available options listed contact your Administrator**
 
@@ -65,10 +65,10 @@ Make changes to your existing Layout designs by clicking on **Design**. This wil
 
 See how your design will playout. The Layout will open in a separate window in your browser and play from start to finish. This allows you to make important adjustments to ensure that your Layouts play as intended.
 
-<tip>
+{tip}
 
 Before the Layout can start all Media must be downloaded to your browser and verified so you may experience a slight delay whilst this is in process.
-</tip>
+{/tip}
 
 ### Schedule Now
 
@@ -104,8 +104,8 @@ Assign Permissions to choose Users/User Groups who should have access to View Ed
 
 
 
-<tip>
+{tip}
 
 Did you know….Layouts and Library files can be [Assigned](displays_fileassociations.html) directly to a Display or Display Group so that they are always available in the local library of the Player. Useful for pre-loading a Layout ahead of time ready to be Scheduled.
 
-</tip>
+{/tip}

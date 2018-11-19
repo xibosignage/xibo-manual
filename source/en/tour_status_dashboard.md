@@ -28,11 +28,11 @@ The CMS Media Dashboard can be enabled for **Users** who should only edit the **
 
 
 
-<tip>
+{tip}
 
 Ensure that your User has the required Permissions applied so that they can access the Media Dashboard and view/edit content of a Layout. See [Permissions](users_permissions.html) for guidance.
 
-</tip>
+{/tip}
 
 ## How to set Dashboard views
 

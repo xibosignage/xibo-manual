@@ -4,9 +4,9 @@
 The DataSet View Module allows content from a created DataSet to be added into a **Region**, organised and displayed in a tabular fashion.
 
 When the underlying DataSet Data is changed, the DataSet View Widget included in your Layout(s), will automatically update with the new Data.
-<tip>
+{tip}
 Once a DataSet has been added to a DataSet View, care should be taken when editing the Column structure of the DataSet.
-</tip>
+{/tip}
 
 ## Adding a DataSet View
 
@@ -16,10 +16,10 @@ Select the **DataSet** to use as the source of data from the drop-down menu. On 
 
 ![DataSet View](img/media_dataset_view_add.png)
 
-<tip>
+{tip}
 You cannot change to a different DataSet once it has been added to a DataSet View. To use an alternative DataSet a **new** DataSet View would need to be created.
 
-</tip>
+{/tip}
 
 ## Edit DataSet View
 
@@ -53,11 +53,11 @@ Enter an update interval in minutes, kept as high as possible. (Displays can cac
 
 Split the data over multiple pages using **Rows per Page**. 
 
-<tip>
+{tip}
 
 Use the text editor to ensure that a message is displayed when no data is returned from the source to prevent an ‘empty screen’!
 
-</tip>
+{/tip}
 
 ## Example Style Sheet
 

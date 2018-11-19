@@ -17,11 +17,11 @@ Complete the form fields on each tab.
 - Complete a maximum **Notification age** for messages you wish to use in this Widget.
 - Format the **[Subject]** - **[Body]** field tags using the text editor.
 
-<tip>
+{tip}
 
 To ensure that the field tags stay intact and therefore display the correct fields of your message within the Notification Drawer, highlight the field tags before applying your desired format. 
 
-</tip>
+{/tip}
 
 #### **Effect**
 

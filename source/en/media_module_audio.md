@@ -22,12 +22,12 @@ Select Audio from the Widget Toolbox and select the uploaded audio file from the
 
 ![Audio AddFile](img/media_modules_audio_addfile.png)
 
-<tip>
+{tip}
 If Audio is assigned to a Widget which is the **only** Widget in its Region the Audio will stop once the Widget duration has expired, but the Widget may be left on screen until the rest of the Layout has expired.
 
-</tip>
+{/tip}
 
-<tip>
+{tip}
 
 The Audio Module is fully compatible with [Overlay Layouts](layouts_overlay.html) and can therefore be used effectively to draw attention.
-</tip>
+{/tip}

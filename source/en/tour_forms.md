@@ -22,8 +22,8 @@ Each field has a title that explains what the field represents. Each field will 
 
 Every form has a button bar at the bottom for the User to commit or cancel the additions/edits they have made.
 
-<tip>
+{tip}
 
 Most forms also include a "Help" link to sections of the Manual for additional guidance.
 
-</tip>
+{/tip}
