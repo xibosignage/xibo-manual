@@ -1,60 +1,74 @@
 <!--toc=users-->
+
 # Notifications
-[[PRODUCTNAME]] has a notification system to keep the administrators and users of the CMS informed of important system
-events and other user created notifications.
+
+[[PRODUCTNAME]] has a **Notification System** to keep Administrators and Users of the CMS informed of important system events and other user-created notifications.
 
 ## Notification Drawer
-Notifications for the logged in user appear in the notification drawer at the top right of the screen. The notification 
-drawer can be accessed by clicking on the Alarm bell icon.
 
-The number of unread notifications is shown next to the Alarm bell.
+Notifications for a logged in User appear at the top right of the screen with unread notifications shown in red next to the Alarm bell icon. The Notification Drawer can be accessed by clicking on the Alarm bell icon.
 
-![User Notification Drawer](img/user_notification_draw.png)
+<tip>
 
-Clicking on the Alarm bell opens the notification drawer and shows the last 5 notifications. Unread notifications are 
-shown in black text and read ones in a light grey. Each notification can be read by clicking on the title which will open
-a popup containing the full notification.
+The Notification Drawer is shown when a User or User Group has the **Notification Drawer** permission, without this permission the Alarm bell icon will not be shown.
+</tip>
 
-The notification drawer is shown when a user or group has the "Notification Drawer" permission, without this permission the 
-bell icon is not shown.
+Click on the Alarm bell to open the Notification Drawer, which will show the last 5 notifications received. Unread notifications will be shown in black text and read notifications in a light grey text.
 
-### Automatic notifications
-Users may see some notifications after login or navigate (moving to a different page in the CMS). Where an automatic
- notification is shown the user is taken to a page showing the full notification and they must click "Continue..." to 
- reach their original destination.
+![Users Notification Bell](img/users_notification_bell.png)
+
+Click on the title of each notification to open a popup to read the full notification.
+
+<tip>
+
+Notifications will only show in the Notification Drawer if their release date has passed and if the logged in User has been assigned the notification.
+
+</tip>
 
 ## Notification Centre
-Notifications are created in the notification centre which can be accessed by authenticated users from a link at the bottom
- of the notification drawer. The notification centre link is shown when a user or group has the "Notifications" permission.
- 
-The notification centre is a standard CMS administration screen with a grid showing all notifications.
- 
-![Notification Centre](img/users_notification_centre.png) 
 
-Notifications have the following properties:
+Notifications can be created by authorised Users, those that have permission, by using the **Notification Centre** link at the bottom of the Notification Drawer and clicking on the **Add Notification** action button.
 
- - Subject
- - Body
- - Release Date
- - Is Email?
- - Is Interrupt?
- - One or more Users/UserGroups
- - One or more Displays/DisplayGroups
- 
-Notifications will only show in the notification drawer if their release date has been passed and if the logged in user
-has been assigned the notification.
+![Users Add Notification](img/users_notification_add_general.png)
 
-If the notification has been configured for email and the user has an email address recorded in the CMS against their
-user account, then the notification will be emailed by the CMS maintenance system. **Maintenance must be configured for
-email notifications to be sent.**
 
-### Editing Notifications
-When editing a notification is should be noted that the notification will be altered in the CMS web portal according to
-the edits made, but that any emails generated which have already been sent will not be recalled.
+
+### **General**
+
+**Subject** - title for your Notification
+
+**Release Date** -  use the date and time picker to select when you want your Notification to be sent.
+
+**Email** - choose to send to the email address recorded in the CMS against the User record. 
+
+**Interrupt** - Users would be automatically redirected to a page to show the full Notification and would need to click on **Continue** to carry on navigating the CMS.
+
+<tip>
+
+Ensure that **Enable Email Alerts** has been set to **On** in Settings, Maintenance tab.
+
+</tip>
+
+### Message
+
+Use the text editor to create and format the message body of your Notification. 
+
+<tip>
+
+If you are going to use the [Notification Widget](media_module_notifications.html) to target your message to Display/Display groups the formatting you use here would be replaced with the formatting as applied in the Widget.
+
+</tip>
+
+### Audience
+
+**Users** - Select one or more Users/User Groups
+
+**Displays** - Select one or more Display/Display Groups to show the notification within Scheduled Layouts. (Scheduled Layouts must already include the Notification Widget to target Displays successfully).
+
+## Editing Notifications
+
+Edits to a Notification will be altered in the CMS web portal but any emails generated which have already been sent will not be recalled.
 
 ## System Notifications
-[[PRODUCTNAME]] raises various system notifications to report on the health of the system as a whole. These notifications 
-will be emailed to the maintenance alert email address configured in Settings. They will also be sent to users who belong
-to groups configured to receive system notifications or who have been configured to receive these notifications themselves.
 
-This configuration is managed on the User/User Group Edit form.
+[[PRODUCTNAME]] raises various **System Notifications** to report on the health of the system as a whole. Notifications are emailed to the Admin email address configured in Settings, Maintenance tab. Notifications will also be sent to Users who belong to groups configured to receive System Notifications or who have been configured to receive these notifications themselves. This configuration is managed on the User/User Group Edit form.

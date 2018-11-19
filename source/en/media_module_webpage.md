@@ -1,47 +1,68 @@
 <!--toc=widgets-->
 # Web Page
 
-The Web Page module allows an entire Web Page to be embedded inside a Region on a Layout.
+Include the Web Page Widget to Layouts to show an entire Web Page embedded inside a Region. 
 
-There is support for scaling and offsetting the target web page inside the Region so the particular section of the web page can be displayed.
+<tip>
 
-![Webpage Form](img/media_webpage_form.png)
+There is support for **scaling** and **offsetting** the target Web Page to allow for a particular section of a Web Page to be defined to display.
 
-- **Link**
+</tip>
 
-    The URL of the Web Page - including `http://`
+![Add Webpage](img/media_webpage_add.png)
 
-- **Duration**
+#### **Link**
 
-    The duration in seconds that this item should remain in the Region.
+Provide the **URL** (including `http://`) of the Web Page.
 
-- **Offset Top**
+#### **Name**
 
-    The top position for the page to start.
+Provide an optional name.
 
-- **Offset Left**
+#### **Set a duration**
 
-    The left position for the page to start.
+Choose to override the default duration.
 
-- **Scale Percentage**
+#### **Options**
 
-    The percentage zoom to apply to the web page.
+Select from 3 options to choose how the Web Page should be embedded:
 
-- **Transparent?**
+1. #### **Open Natively**
 
-    Should the web page be rendered with a transparent background? [[PRODUCTNAME]] will try its best to do this when checked, however it cannot be supported on some web pages.
+   The Player will open the Web Page without any alterations and will open and render in the browser as if the URL had been visited on the device outside [[PRODUCTNAME]].
 
-## Options
-###Open Natively
-This option tells the player to open the web page without any alterations from [[PRODUCTNAME]]. It will open and render in the browser as if the URL had been visited on the device outside of [[PRODUCTNAME]]. There isn't any Layout Designer preview available for this option.
+   **Please note:** There is no Layout Designer Preview for this option.
 
-###Manual Position
-The web page will be embedded in [[PRODUCTNAME]] at the dimensions specified on the form (width, height, offset left and offset top). This can be used to force the page to fit within certain pre-set dimensions. It can also be scaled using the scale percentage option, it is always moved and then scaled. After the page is rendered [[PRODUCTNAME]] will scale the entire thing to fit within the region.
+2. #### **Manual Position**
 
-This is close to the existing functionality in 1.6.
+   Embed the Web Page by specifying dimensions which can be used to force the page to fit within certain pre-set dimensions.
 
-###Best Fit
-This allows you to specify a width and height for the web page, which will then be scaled so that it fits inside the region.
+   **Page Width** - specify the width of the page
 
-## Notes
-Web Pages are not cached by the Display and will not operate when disconnected from the network.
+   **Page Height** - specify the height of the page
+
+   **Offset Top** - the top position for the page to start
+
+   **Offset Left** - the left position for the page to start
+
+   **Scale Percentage** - percentage zoom to apply to the Web Page
+
+3. #### **Best Fit**
+
+   Specify a Page Width and Height.
+
+#### Background Transparent
+
+Choose to render the Web Page with a transparent background (currently not available on the Windows Player). [[PRODUCTNAME]] will try its best to do this when checked, however, it cannot be supported on some Web Pages.
+
+<tip>
+
+After the page is rendered [[PRODUCTNAME]] will scale to fit within the Region.
+
+</tip>
+
+<tip>
+
+Web Pages are not cached by the Display, this Module requires a valid internet connection on the Player in order to function.
+
+</tip>

@@ -1,12 +1,12 @@
 [
   {
-    "title": "Getting Started",
-    "href": "index.html",
-    "containsToc": ["getting_started", "cms_installation", "cms_upgrade", "manual_install"]
-  },{
     "title": "Tour",
-    "href": "tour.html",
+    "href": "index.html",
     "containsToc": ["tour"]
+  },{
+    "title": "Users",
+    "href": "users.html",
+    "containsToc": ["users"]
   },{
     "title": "Displays",
     "href": "displays.html",
@@ -16,7 +16,7 @@
     "href": "layouts.html",
     "containsToc": ["layouts"]
   },{
-    "title": "Library",
+    "title": "Media",
     "href": "media.html",
     "containsToc": ["media", "widgets"]
   },{
@@ -24,12 +24,8 @@
     "href": "scheduling.html",
     "containsToc": ["scheduling"]
   },{
-    "title": "Users",
-    "href": "users.html",
-    "containsToc": ["users"]
-  },{
-    "title": "Advanced",
-    "href": "advanced.html",
-    "containsToc": ["advanced", "api"]
+    "title": "Troubleshooting",
+    "href": "troubleshooting.html",
+    "containsToc": ["troubleshooting"]
   }
 ]

@@ -90,3 +90,21 @@ ul#side-nav ul > li.active {
 ul#side-nav ul > li.active span.you-are-here-arrow {
     margin-left: 5px;
 }
+
+noncloud, cloud, tip {
+    padding: 10px;
+    margin: 25px;
+    display: block;
+}
+
+noncloud {
+    background: aliceblue;
+}
+
+cloud {
+    background: aliceblue;
+}
+
+tip {
+    background: aliceblue;
+}

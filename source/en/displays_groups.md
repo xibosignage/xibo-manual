@@ -1,52 +1,62 @@
 <!--toc=displays-->
 # Display Groups
-Displays can be assigned to one or more Display Groups for easier Scheduling and Media Assignment.
 
-When a new Display Group is added in the CMS it will be available on the Schedule Calendar for events
-to be Scheduled against it. Display Groups are born empty and Displays will need to be added.
+For ease of **Scheduling** and **Media Assignment** create Display Groups and assign Displays to one or multiple Display Groups. 
 
-## Add/Edit
-Display Groups are added, edited and deleted using the standard forms available on the Display Groups page. If
-the Group should be dynamic then this can be selected when adding/editing by ticking the "dynamic" check box. Once
-ticked an extra field will appear allowing entry of one or more regular expressions used to select which Displays
-belong to that Group.
+Display Groups are administered in the CMS by clicking on Display Settings under the Displays section on the Menu. The Display Group grid will open to Add and manage Display Groups.
 
-![Display Group Add and Edit](img/displays_group_addedit.png)
+![Display Groups Grid](img/displays_groups_grid.png)
+
+## Add/Edit 
+
+Click on the **Add Display Group** button to create a new Display Group or use the row menu to **Edit** an existing Display Group.
+
+![Display Groups Add](img/displays_groups_add.png)
 
 ## Members
-The membership of a Display Group is either a manual assignment process or is controlled by filter criteria if the
-group is dynamic. Schedules, Media and Layout Assignments applied to the Display Group will apply to all its members.
+
+The membership of a Display Group is either a **Manual Assignment** or controlled by filter criteria using **Dynamic Groups**. 
+
+### Dynamic Groups
+
+When ticked an additional field will appear to allow for entry of one or more regular expressions to use to select which Displays belong to that Display Group.
+
+Filter criteria for Dynamic Groups is in the format of regular expressions, but can also be simple string comparisons. The expressions should be separated by a comma and can be negated with a `-` prefix.
+<tip>
+For example, all Displays containing "a" but not "b" would be `a,-b`.
+</tip>
+
+
+
+![Display Group Dynamic Criteria](img/displays_group_dynamic.png)
 
 ### Manual Assignment
-Display Group Members can be manually assigned using the "Members" option in the row menu for each group. Selecting that option
-will open a form for managing the assignments of each Display in the CMS. The form shows "Displays" and "Display Groups" for nesting (see below).
 
-A Display can belong to as many Display Groups as required.
+Use the row menu for the selected Display Group and click on **Members**. Tick/untick Displays or Nested Groups to add/remove membership from the Display Group.
 
-### Nested Groups
-Display Groups can be nested to create complex structures and allow targeted scheduling. For example a Group structure could look like:
+![Display Group Memberships](img/displays_groups_memberships.png)
 
- - Site 1
- - Site 1 - Building A
- - Site 1 - Building A - Level 1
- - Site 1 - Building A - Level 2
- - Site 1 - Building B
+The form shows **Displays** and **Display Groups** for nesting as well as a **Relationship Tree** making it easier to see the relationships of Displays.
 
-The Display membership is set on the lowest level Groups and those groups then belong to the next level up, which in turn belong to the
-highest level parent "Site 1".
+## Nested Groups
 
-Display Groups are provided as a separate list in the "Members" form so that they can be easily identified. The CMS will not allow
-a circular reference to be created - this is an assignment that creates a loop (i.e. Site 1 has Site 1 - Building A, and Site 1 - Building A has Site 1.)
+Display Groups can be nested to create complex structures and allow for targeted Scheduling.
+
+<tip>
+Example Group Structure
+
+- Site 1
+- Site 1 - Building A
+- Site 1 - Building A - Level 1
+- Site 1 - Building A - Level 2
+- Site 1 - Building B
+
+The Display membership is set on the lowest level Groups and those groups then belong to the next level up, which in turn belong to the highest level parent "Site 1".
+The CMS will not allow a circular reference to be created - this is an assignment that creates a loop (i.e. Site 1 has Site 1 - Building A, and Site 1 - Building A has Site 1.)
+</tip>
 
 ![Display Group Members](img/displays_group_members.png)
 
-### Dynamic Groups
-Dynamic Groups are configured using the Add/Edit form by ticking the check box for dynamic members and entering
-filter criteria.
 
-Filter criteria is in the format of Regular expressions, but can also be simple string comparisons. The expressions
-should be separated by a comma and can be negated with a `-` prefix.
 
-For example, all Displays containing "a" but not "b" would be `a,-b`.
-
-![Display Group Dynamic Criteria](img/displays_group_dynamic.png)
+**Schedules**, **Media** and **Layout Assignments** applied to the Display Group will apply to all its members and will appear for selection when Scheduling.

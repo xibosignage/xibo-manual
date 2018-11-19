@@ -1,70 +1,87 @@
 <!--toc=scheduling-->
-#Calendar
-The Calendar is accessible from the Scheduling link in the side bar and has 5 views:
 
-- Year
-- Month
-- Week
-- Day
-- Agenda
+# Schedule
 
-Scheduling transactions can be performed when in any view.
+Schedule content using the simple calendar interface by clicking on the Schedule section of the Menu. 
 
 ## Controls
-There is a control bar at the top of the calendar for selecting the Displays, Adding 
-Events and navigating through time and the views.
 
-![Calendar Controls](img/scheduling_calendar_controls.png)
+Use the control bar at the top of the calendar to select **Displays**, **Add Events**, **view date periods** and **alternate Views**.
 
-## Month View
-The month view is the most commonly used view of the calendar. Each day within the month
-it drawn in a traditional calendar and icons representing the events on each day are
-added. It is important to remember that events can usually span multiple days. A key of 
-icon meanings is located below the calendar.
+![Schedule Controls](img/schedule_controls.png)
 
-Clicking on an icon will open the Edit form for the related event.
+#### **Select Displays**
 
-Users may click on a particular day square to see an expanded view of that day, including
-a textual representation of any events on that day. Clicking on the event text will open
- the Edit form for the related event.
+Click in this field to select Displays /Display Groups to view the associated Schedules.
 
-Users may also click on the day number (i.e. 11) to jump to the day view for that day.
+#### **Add Event**
 
-![Month View](img/scheduling_calendar_month.png)
+Schedule Events by completing the form fields.
 
-## Week View
-The week view gives a week overview of events.
+#### **Prev/Today/Next**
 
-![Week View](img/scheduling_calendar_week.png)
+Use to navigate through the calendar.
 
-## Day View
-The day view is the lowest resolution and shows all events occurring within a single day.
+<tip>
+Use the calendar icon, next to these buttons, to go directly to a selected date.
+</tip>
 
-![Day View](img/scheduling_calendar_day.png)
+### Calendar Views
 
-## Year View
-The year view is intended as an overview of the events throughout the year.
+Each Calendar View will show the associated Schedule for the selected Display/Display Group. Views show **Events** represented by Icons, with a key to explain each one, located below the calendar. 
 
-![Year View](img/scheduling_calendar_year.png)
+<tip>
+Click on an Event or Icon shown on a Calendar View to Edit the Schedule.
+ </tip>
 
-## Agenda
+#### **Year**
 
-The agenda view is used to show a precise representation of the Layouts that will be
-shown on the selected Display at a point in time. The Layouts are shown in tabular
-format and appear in the order they will cycle on the Display.
+The Year view is intended as an overview of the Events Scheduled throughout the year and provides a total number of Events Scheduled per month. Roll over a Month and use the black arrow to show Event details.
 
-The Displays / Display Groups selected in the Calendar selector will be presented as 
-tabs on the Agenda view.
+![Schedule Year View](img/schedule_year_view.png)
 
-A slider is located above the tabs to allow an exact time of day to be selected. The
-date is brought through from the calendar, but can also be adjusted using the mini
-calendar by clicking on the icon.
+<tip>
+Double-click to open the Month View for that particular month.
+</tip>
 
-Each Layout can be selected, which will cause the associated information to be highlighted
-and a breadcrumb to be shown. This can be used to trace exactly why a certain Layout
-is being shown at a certain time. Associated information includes Campaigns and 
-Display Groups.
+#### **Month**
 
-If nested Display Groups have been configured, these will be shown in the breadcrumb.
+This View includes Icons to represent the Events that have been scheduled for that Month. Click on a particular day square to see an expanded view for that day. Double click on a day square to open the Day View for that date.
+
+![Schedule Month View](img/schedule_month_view.png)
+
+<tip>
+Hover over each Icon to display information for that particular Event.
+</tip>
+
+#### **Week**
+
+This view gives a week overview of Scheduled Events. Double click on a date to open the Day View.
+
+![Schedule Week View](img/scheduled_week_view.png)
+
+#### **Day**
+
+The Day View shows all Events occurring within a single day.
+
+![Schedule Day View](img/schedule_day_view.png)
+
+#### **Agenda**
+
+Events can span multiple days/weeks/months so it is highly useful to be able to see a precise representation of Layouts/Campaigns that will be shown on a selected Display at a point in time.
 
 ![Agenda View](img/scheduling_calendar_agenda.png)
+
+The selected Displays/Display Groups will be presented as tabs with Layouts shown in tabular format which appear in the order they will cycle on the Display.
+
+Use the slider, located above the tabs, to pinpoint the exact time of day to view. Change the date using the **Prev/Today/Next** buttons or by selecting a date using the calendar icon.
+
+Click on a Layout to highlight the associated information (associations will turn blue) and view the breadcrumb, to show further Campaign and Display Group information. If nested Display Groups have been configured, these will show in the breadcrumb.
+
+<tip>
+This can be used to view exactly why a certain Layout is being shown at a certain time.
+</tip>
+
+<tip>
+Click on the breadcrumb to view the Layout and make Edits to the Schedule.
+</tip>

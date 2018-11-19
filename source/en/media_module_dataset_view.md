@@ -1,71 +1,63 @@
 <!--toc=widgets-->
 # DataSet Views
 
-The DataSet View module allows content from a DataSet to be added into a Region, organised and displayed in a tabular fashion.
+The DataSet View Module allows content from a created DataSet to be added into a **Region**, organised and displayed in a tabular fashion.
 
-When the underlying DataSet Data is changed, the view automatically updates with new Data.
-
-Once a DataSet has views care should be taken when editing the Column structure of the DataSet.
+When the underlying DataSet Data is changed, the DataSet View Widget included in your Layout(s), will automatically update with the new Data.
+<tip>
+Once a DataSet has been added to a DataSet View, care should be taken when editing the Column structure of the DataSet.
+</tip>
 
 ## Adding a DataSet View
 
-When adding a new DataSet View the CMS provides a simple form asking for the Data Source and duration. These items cannot be changed without re-creating the View.
+Ensure that you have created a [DataSet](media_datasets.html) prior to adding a DataSet View.
 
-- **DataSet**
+Select the **DataSet** to use as the source of data from the drop-down menu. On saving, a new form will open to provide further options.
 
-    The DataSet to use as the Source of Data.
+![DataSet View](img/media_dataset_view_add.png)
 
-- **Duration**
+<tip>
+You cannot change to a different DataSet once it has been added to a DataSet View. To use an alternative DataSet a **new** DataSet View would need to be created.
 
-    The duration in seconds that this item should remain in the Region.
+</tip>
 
-After choosing the Source of the View the Edit form will automatically open, providing access to the other options.
+## Edit DataSet View
 
-## Editing
+Complete the form fields for each tab header.
 
-![General Tab](img/media_datasetview_form_general.png)
+![DataSet View Edit](img/media_dataset_view_edit.png)
 
-![Advanced Tab](img/media_datasetview_form_advanced.png)
+#### General
 
-- **Update Interval**
+- Give an optional name.
+- Set a duration to override the default if required.
+- Use drag and drop to select available columns.
 
-    Displays can cache the content of this media type to prevent repeated download of identical resources. They are also cached for off-line playback.
+#### Appearance
 
-- **Order**
+Complete the form fields to style your DataSet View. Override the template to use a **CSS style sheet** to control the visual styling of the Table. (Example style sheet at the bottom of this page).
 
-    An Order by clause using SQL syntax that should be applied to the Data Source. e.g. Name DESC
+#### Order
 
-- **Filter**
+Order by any column using the clause builder or by providing a SQL command for more complex ordering.
 
-    A filtering clause using SQL syntax that should be applied to the Data Source. e.g. Region = 'Europe'
+#### Filter
 
-- **Upper Row Limit**
+Filter by any column using the clause builder to only include/omit results based on chosen criteria. Provide a SQL command for more complex filtering.
 
-    The upper row count (0 = unlimited)
+#### Advanced
 
-- **Lower Row Limit**
+Set Lower and Upper row limits (0 = unlimited).
 
-    The lower row count (0 = unlimited)
+Enter an update interval in minutes, kept as high as possible. (Displays can cache the content of this Media type to prevent repeated download of identical resources, as well as for off-line playback).
 
-- **Table Headings**
+Split the data over multiple pages using **Rows per Page**. 
 
-    Show the column headings on the table, or have the table without headings.
+<tip>
 
-- **Rows per Page**
+Use the text editor to ensure that a message is displayed when no data is returned from the source to prevent an ‘empty screen’!
 
-    Spilt the data into multiple pages that will be cycled.
-
-- **Columns Selected**
-
-    An ordered list of Columns Selected for this View. Items can be dragged / dropped between lists and ordered within the same list.
-
-- **Columns Available**
-
-    A list of Columns that are available for display.
-
-- **Style Sheet**
-
-    A CSS Style Sheet to control the visual styling of the Table.
+</tip>
 
 ## Example Style Sheet
 
@@ -125,4 +117,4 @@ span.DataSetColumnSpan {
 }
 ```
 
-The resulting view will be showing the region preview window and displayed on the client.
+

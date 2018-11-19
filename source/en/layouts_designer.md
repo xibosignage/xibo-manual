@@ -1,103 +1,67 @@
 <!--toc=layouts-->
 # Layout Designer
 
-The Layout Designer is the heart of content creation in [[PRODUCTNAME]]. Each
-time a new Layout is created, or an existing one needs a design change, the
-Layout Designer is used.
+The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
 
-[[PRODUCTNAME]] makes Layout Design simple through the use of drag and drop,
-interactive previewing and design flexibility. When Designing a Layout from
-scratch all of the default templates come with one Full Screen Empty
-[Region](layouts_regions.html), pictured below.
+[[PRODUCTNAME]] makes Layout Design simple through the use of **drag and drop**, **interactive previewing** and **design flexibility**. On adding a Layout the Layout Designer will open with one full screen empty [Region](layouts_regions.html), as pictured below.
 
 ![Layout Designer](img/layouts_designer_first_load.png)
 
-Layouts are designed with an intended resolution which has been scaled back in
-the designer window. The Layout Designer has a small design resolution so that
-the Design can occur without panning around the browser with scroll bars. The
-small design window does not matter and is seamlessly resized without losses on
-each Display.
 
-## Layout Status
-
-When the Layout Designer is open the Layout will be periodically checked by the
-CMS to make sure it is ready to play. This is called the Layout Status and can
-be seen on the Actions tab and also on the Action Tab header icon.
-
-Invalid layouts will be excluded from the Schedule and will not be played.
-
-## Layout Duration
-
-The Layout Duration is shown at the top of the screen and will update each time
-the Layout Status is checked by the CMS. The Layout Duration is calculated based
-on the longest running Region in the Layout.
-
-Region durations are based on the durations of all the media contained on the
-Play list, added together.
-
-When a Layout is shown on a Player, it will run for its duration and then be
-removed to make way for the next Layout in the Schedule.
 
 ## Toolbox
 
-The top of the layout designer holds a toolbox which contains all of the
-most used actions that can be taken on the Layout. There are two tabs to the
-toolbox, "Designer" and "Actions".
+The Layout Designer holds a toolbox of actions that can be taken on a Layout. There are two tabs to the toolbox, **Designer** and **Actions**.
 
-![Layout Designer Screenshot](img/layouts_designer_options_menu.png)
+### Designer 
 
-- **Background**
-    Change the Background image, colour and aspect ratio.
+![Designer Toolbox](img/layouts_designer_toolbox.png)
 
-- **Add Region**
-    Adds a new Region to the Layout that can then be positioned (drag/drop)
-    and resized. It can then have content assigned to it.
+- **Background** - Select a Background image, colour and aspect ratio for your Layout.
+- **+ Region** -  Add a new empty Region to the Layout.
+- **Lock Positions** -  Toggle to 'On' to disable drag and drop for Regions so that they cannot be accidentally moved after Regions have been sized and placed. (Remember to toggle to ‘Off’ if you need to make further adjustments).
+- **Hide Controls** -  Disable Region controls from showing when you move the mouse over a Region.
+- **- icon** -  Decrease the canvas size to fit the screen you are working on.
+- **+ icon** - Increase the canvas size to fit the screen you are working on.
+- **Save icon** - Save your optimum canvas size as default.
+- **Undo** - If Regions are moved or resized with drag and drop, then Undo will revert to your previously saved Region Positions and sizing.
+- **Save Region Positions**  - Save the sizing and positioning of Regions on a Layout. These saved positions can then be used to revert back to if Regions are inadvertently moved.
 
-- **Lock Positions**
-    Disable drag and drop on the Regions so that they cannot be accidentally
-    moved.
 
-- **Hide Controls**
-    Prevent the Region controls from showing when you move the mouse over a
-    region.
 
-- **- icon**
-    Make the design window smaller.
+### Actions
 
-- **+ icon**
-    Make the design window larger.
+![Actions Toolbox](img/layouts_actions_toolbox.png)
 
-- **Save icon**
-    Save the current design window size as the default.
-    Make the design window larger.
+- **Preview Layout** - View a full screen Preview of the Layout from the comfort of your browser.
+- **Schedule Now** - Schedule the Layout onto one or more Displays directly from the Layout Designer.
+- **Save Template** - Save as a Template to use the design again. Saving a template will store an exact copy of the Layout, including Regions, Playlists and media.
 
-- **Undo**
-    If the Regions have been moved around or resized with drag and drop, then
-    undo those position changes.
+### Layout Status
 
-- **Save Region Positions**
-    If the Regions have been moved around or resized with drag and drop, then
-    save those position changes.
+The Status of the Layout is shown, as well as a Status indicator (cross or tick) being shown on the Action Tab header icon. When the Layout Designer is open the Layout will be periodically checked by the CMS to make sure it is a valid Layout ready to play.  
 
-- **Preview Layout**
-    View the full screen Layout Preview directly in your browser.
-    See [Previewing](layouts_previewing.html)
+The Layout Status in the image shown above is an "invalid status" as the Layout just contains 1 empty Region, Media content has yet to be assigned.
+**Invalid Layouts will be excluded from the Schedule and will not be played.**
 
-- **Schedule Now**
-    Schedule the Layout onto one or more Displays directly from the Layout Designer.
+<tip>
 
-- **Save Template**
-    Want to use the design again? It can be saved as a Template from here.
-    Saving a template will store an exact copy of the layout, including
-    regions, playlists and media.
+A Layout must contain at least one Region **and** each Region must contain at least **one** media item for it to be valid and play when Scheduled.
 
-## Layout Selector
+</tip>
 
-The Layout selector provides navigation between all Layouts the
-current user has permissions to edit, without having to jump out to the Layout
-Administration page each and every time.
+### Layout Duration
+
+The Layout Duration is shown at the top of the screen and will update each time the Layout Status is checked by the CMS. The Layout Duration is based on the longest running Region in the Layout.
+
+<tip>
+
+Each Media item has a duration so to calculate a Region duration all Media items contained on the Playlist are added together.
+
+</tip>
+
+### Layout Selector
+
+The Layout selector provides easy navigation between all Layouts the logged in User has permissions to edit, without having to leave the Layout Designer screen.
 
 ![Jump List](img/layouts_designer_jumplist.png)
-
-Once clicked, it presents a list of Layout names - clicking the name will
-load corresponding layout into the designer window.

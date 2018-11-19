@@ -1,44 +1,64 @@
-<!--toc=getting_started-->
+<!--toc=troubleshooting-->
 
-# Troubleshooting
+# User Support 
 
-Need help? Please ask for help or advice in the [[[PRODUCTNAME]]
-Community]([[PRODUCTSUPPORTURL]]).
+<white>
 
-It is likely that the support representative will ask you to visit the Fault
-page in the CMS so that some logging can be generated for your issue.
+Please contact your administrator.
 
-When asking for assistance it is essential that as much information as possible
-is included. A minimum of the version of the software you are using and the
-steps to recreate the problem you are having.
-
-General questions are also welcome!
+</white>
 
 <nonwhite>
-#FAQ and Guides
 
-There are lots of
-[FAQ](https://community.xibo.org.uk/c/faq) and
-[Guides](https://community.xibo.org.uk/c/guides) on our [Community
-Forum](https://community.xibo.org.uk), please visit us.
-</nonwhite>
+So you can get the best support from us we ask that you provide us with specific information when contacting us with a support request:
 
-## Reporting a Fault
+- The version of the software that you are using.
+- Description of the issue you are experiencing.
+- Detailed steps so that the issue can be recreated by our team.
+- Download a troubleshoot zip file from the CMS central ‘error log’ and attach to your support ticket.
 
-The CMS has a central "error log" which collects messages from all components in
-the platform - CMS, Players, API,  Maintenance, etc. Providing relevant
-information from the log is often the key to a support representative finding
-the solution to any problems.
 
-CMS logging can be provided from the Fault page accessible from the
-Administration menu. A fault wizard will be shown taking you through the steps
-to collect and download a `troubleshoot.zip` file which can be attached to
-your support request.
+
+## CMS error log
+
+The CMS collects messages from all the components within the platform; CMS, Players, API, Maintenance etc and so is a valuable resource when investigating issues.
+
+CMS logging can be provided from the **Report Fault** page located under the Advanced section of the Menu. Click on start to be taken through the fault wizard which will guide you through the steps to collect and download a troubleshoot.zip file.
 
 ![Fault Page](img/report-fault-step1.png)
 
-## Raw Logs
+Depending on the issue that you are experiencing, we may ask for additional information.
 
-Raw logs can be viewed in the CMS on the Advanced -> Log page. If you want to
-understand the contents of these logs please  see [understanding the
-log](advanced_logging.html).
+
+
+### Provide a screenshot of the Player Status.
+
+Access the status page on Players by following the steps for the Player type:
+
+**Windows** - Whilst Xibo is running, click `i` on the keyboard to open the Status screen.
+
+**Android** - Connect a mouse to your device and click on the screen whilst Xibo is running. Choose ‘Status’ from the Action bar at the top of the screen.
+
+**webOS** - Press the OK or Enter button on your webOS remote control whilst Xibo is running and choose 'Status' from the Action bar at the top of the screen.
+
+
+
+## Contacting us…
+
+<cloud>
+
+**Xibo in the Cloud** customers get access to our support team as part of the service. Our Help Desk is open 24/7 for new tickets and is monitored by our support agents Monday - Friday, 8AM to 4.30PM (GMT/BST). Nominated Super Admin Users can open a [New Ticket](https://support.xibosignage.com/open.php) providing the information as explained above, and click on **Create Ticket**.
+
+If you are contacting us outside our normal operating hours then please do take a look at the [Community Forum](https://community.xibo.org.uk/) for additional support from our members.
+
+</cloud>
+
+### Enterprise Support
+
+If you have an on-premise setup and would like to benefit from priority access to our expert support service then please do [talk to us](https://xibo.org.uk/contact) to tailor an Enterprise Support contract to your needs. 
+
+### Community Forum
+
+The [Xibo Community](https://community.xibo.org.uk/) provides a wealth of knowledge and expertise from its members as well as our own support team, with many answered questions, support guides and feature walkthroughs accessible to all.
+
+</nonwhite>

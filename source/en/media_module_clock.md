@@ -1,22 +1,33 @@
 <!--toc=widgets-->
-#Clock
-The clock module is used to show an analogue, digital or flip clock set to the current time or the current time +/- an offset.
 
-##Analogue
-The analogue clock is a traditional clock face available in a light or dark theme (black or white face).
+# Clock
 
-![Analogue Clock](img/media_clock_analogue.png)
+The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Clock** set to the current time or the current time +/- an offset when added to Layouts.
 
-##Digital
-The digital clock has a text editor to provide a template for the clock. The font, size, colour and other properties of the template can be changed as normal.
+## Analogue
 
-![Digital Clock](img/media_clock_digital.png)
+The Analogue Clock is a traditional clock face available in a Light or Dark theme (black or white face).
+
+![Add Analogue Clock](img/media_clock_analogue.png)
+
+## Flip Clock
+
+The Flip Clock is a pre-formatted clock that animates a "flip" for each hour, minute and seconds (optional) elapsed.
+
+![Add Flip Clock](img/media_clock_flip.png)
+
+## Digital
+
+The Digital Clock has a text editor to provide a template for the clock. The font, size, colour and other properties of the template can be changed.
+
+![Add Digital Clock](img/media_clock_digital.png)
 
 ### Formatting the Time
-The time can be formatted by providing "tokens" that sit between the square brackets in the template area.
 
-|  Title                     | Token   | Output                                 |
-|----------------------------|---------|----------------------------------------|
+The time can be formatted by providing "tokens" that sit between square brackets [] in the template area.
+
+| Title                      | Token   | Output                                 |
+| -------------------------- | ------- | -------------------------------------- |
 | Month                      | M       | 1 2 ... 11 12                          |
 |                            | Mo      | 1st 2nd ... 11th 12th                  |
 |                            | MM      | 01 02 ... 11 12                        |
@@ -67,7 +78,6 @@ The time can be formatted by providing "tokens" that sit between the square brac
 | Unix Timestamp             | X       | 1360013296                             |
 | Unix Millisecond Timestamp | x       | 1360013296123                          |
 
-##Flip Clock
-The flip clock is a pre-formatted clock that animates a "flip" for each second, minute and hour elapsed.
-
-![Flip Clock](img/media_clock_flip.png)
+<tip>
+The default duration can be overridden for each clock type by clicking in the **Set a duration** checkbox.
+</tip>

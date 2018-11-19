@@ -1,85 +1,88 @@
-<!--toc=getting_started-->
-#[[PRODUCTNAME]] Documentation
+<!--toc=tour-->
 
-Welcome to the user manual for [[PRODUCTNAME]] - this documentation applies to [[PRODUCTNAME]] Version [[PRODUCTVERSION]]. We would like to take this opportunity to thank you for using [[PRODUCTNAME]].
+# [[PRODUCTNAME]] User Manual
 
-[[PRODUCTNAME]] is a powerful Digital Signage content management system and suite of signage players. According to Wikipedia, Digital Signage is:
+**Revision: [[PRODUCTVERSION]]**
 
-> Digital signage is a form of electronic display that shows information, advertising and other messages. Digital signs (such as LCD, LED, plasma displays, or projected images) can be found in public and private environments, such as retail stores and corporate buildings
+Management of a solution as flexible as [[PRODUCTNAME]] requires a powerful CMS (Content Management System) to control the core concepts. The [[PRODUCTNAME]] CMS is packed full of features to help you get the very best out of the [[PRODUCTNAME]] solution.
 
-> *Various authors from Wikipedia*
-
-
-
-[[PRODUCTNAME]] is a digital signage solution and is a suite of applications, including a:
-
-* Content Management System (CMS)
-* Windows Signage Player
-* Push Messaging - Xibo Message Relay (XMR - bundled with the CMS)
-* Android Signage Player *
-* webOS Signage Player *
-
-
-
-With [[PRODUCTNAME]] your content is designed from anywhere using a web browser on the internet accessible CMS, scheduled to your Players, which we call Displays, and then downloaded automatically when appropriate. This manual will guide you through the application from installation to troubleshooting, from the CMS to the Displays.
+This User Manual covers the core concepts and CMS features and starts with a "Tour" to further explain what [[PRODUCTNAME]] can actually do...
 
 <nonwhite>
+If you are not a [Xibo in the Cloud](https://xibo.org.uk/hosting) User and need to install a CMS then please refer to the [Installation Guides](https://xibo.org.uk/docs/setup/cms-installation-guides) to get up and running with Xibo!
+</nonwhite>
 
-*Commercial software provided by the project sponsors.
+## Welcome to the Tour!
 
+[[PRODUCTNAME]] is a flexible and powerful application with a core ethos in Digital Signage for all, regardless of skill or technological knowledge. 
 
+The software itself center's on 5 core concepts:
+
+1. Users
+2. Displays
+3. Layouts
+4. Media
+5. Scheduling
+
+Using these 5 concepts we can sum up what [[PRODUCTNAME]] can do in a simple sentence;
+
+**"[[PRODUCTNAME]] enables a User to upload Media and arrange it in a Layout which is then Scheduled to one or more authorised Displays".**
+
+[[PRODUCTNAME]] has many more features to take advantage of which are covered within this User Manual, but to get started let's take a quick look at the main 5.
+
+### Users
+
+Users are the people that have access to the CMS and are identified by a **Username** and **Password** to grant access. 
+
+[[PRODUCTNAME]] supports 3 **User types**, **User Groups** as well as multi-level **Permissions** to all parts and items stored within the CMS.
+
+<tip>
+For a corporate environment [[PRODUCTNAME]] can also integrate with Active Director/LDAP. 
+</tip>
+
+### Displays
+
+Displays represent the hardware connected to the TV/Projector/Tablet that is displaying the **Scheduled** end content. Each Display is uniquely identified in the CMS so that every Display can have its own content, Layout designs and Schedules set with uniquely identified reporting statistics available.
+
+### Layouts
+
+Layouts are the complete design that is seen on the screen. Layouts are made up of **Regions** which allows you to split the screen/position how you choose, with each Region containing its own **Playlist/Timeline** to which **Media Widgets** are assigned.  A Layout will remain on screen until all Regions have finished playing their assigned content through once, then an entirely fresh Scheduled Layout can be loaded that has different positioning/sizing of Regions and different Playlists/Timelines. 
+
+This flexibility drives the dynamic nature of a [[PRODUCTNAME]] display screen.
+
+### Media
+
+Media content is at the core of the [[PRODUCTNAME]] solution and has many different types which can be generally split into two categories:
+
+**File-based media** -  uploaded and stored in the Library, for example, image and video files.
+
+**Layout based media** - does not have an associated file and is configured directly on a Layout; RSS feeds and free Text
+
+[[PRODUCTNAME]] uses powerful **Widgets** which allow you to show your content as well as integrating dynamic third-party information from a variety of sources.
+
+<nonwhite>
+A full list of features can be found [here](https://xibo.org.uk/cms). 
+</nonwhite>
+
+### Scheduling
+
+Scheduling is highly flexible and supports Schedules to single **Displays** as well as to **Display Groups**. Each Display will check for new Scheduled content periodically, and download Scheduled Items in advance of playback. **Default Layouts** are shown on Displays when nothing else is Scheduled.
+
+<nonwhite>
 
 ### Open Source
 
-The heart of the software is open source and has been for many years! We're committed to keeping it that way and everything you need to run your digital signage network with [[PRODUCTNAME]] is Open Source and will always be Open Source.
+The heart of the software is open source, including the entire **CMS** platform and **Windows** and **Ubuntu Players**, and has been for many years! We're committed to keeping it that way. The code can be downloaded and used in accordance with our AGPLv3 licence.
 
-Open Source is great, but it can sometimes be a little daunting to tackle a new piece of software all alone. The project offers some commercial products and services designed to help you on your journey, all of which are completely optional.
+### Content Licensing
 
-By choosing any of our commercial services, you are enabling the ongoing development and maintenance of the project by enabling us to employ great developers, support staff and infrastructure.
+Please ensure that any content you wish to use complies with Copyright law and is used in the manner as described within its own license. Xibo takes no measures to regulate what is put on displays, beyond what is described in these Manual pages.
 
-</nonwhite>
+### Support
 
+If you would like further help with the information contained in the User Manual please take a look at the [Troubleshooting](troubleshooting.html) section or our [Xibo Community Forum](https://community.xibo.org.uk/).
 
-
-
-##Getting Help
-We understand that using complicated software like [[PRODUCTNAME]] is not always straight forward and that this manual may not always be sufficient. Therefore we have a [FAQ]([[PRODUCTFAQURL]]) and a [question & answer community forum]([[PRODUCTSUPPORTURL]]) to help.
-
-If you would like any further help with the information contained in this document, or the software package in general, please visit: [[PRODUCTSUPPORTURL]] and ask us a question!
-
-
-
-##[[PRODUCTNAME]] Signage Player 
-The Signage Player is software that runs on the device connected to your physical display hardware, be that a monitor, projector, LED wall, etc. [[PRODUCTNAME]] supports devices running on Windows, Android or a system-on-chip solution (webOS). We have software packages for each of these environments:
-
-- [[PRODUCTNAME]] for Windows (open source, AGPLv3 licenced)
-- [[PRODUCTNAME]] for Android (commercially licenced)
-- [[PRODUCTNAME]] for webOS (commercially licenced)
-
-
-
-
-
-##Getting Started 
-**What next?**
-
-Like the sound of [[PRODUCTNAME]] and want to learn more? Or already have a CMS installation running? Skip straight to our [Tour](tour.html) to learn more about [[PRODUCTNAME]].
-
-Ready to install [[PRODUCTNAME]] on your own infrastructure? Start by installing the CMS, [proceed to the Installation Instructions](install_cms.html).
-
-<nonwhite>
-
-If you'd like to find out more about how we can help you to get started take a look at [our website](https://xibo.org.uk)
+**Xibo in the Cloud** customers have free access to our experts at our Help Desk so please open a [ticket](https://xibo.org.uk/help#commercial) if you need assistance.
 
 </nonwhite>
 
-
-
-##Closing thoughts
-**Think about your target audience...**
-
-Digital signs are there to service a need for information. People will only look at a digital sign if there is some information being shown that they need, or are interested in. It's important then to ensure a good mix of information and targeted advertising (if desired) to meet the business's goals. For example, combine a list of upcoming events with a list of sports results, a news feed or bus times to draw attention.
-
-[[PRODUCTNAME]] can schedule different items to be shown at different times of the day. Be sure to target content to the times when your target audience are in the building (eg advertise events for young children when parents are arriving to drop of or collect children for an existing event).
-
-People need to be able to read what is on the sign. Be sure to take a look at your completed work and make sure it's possible to read it in the time that it appears on the screen, and that the font size is large enough etc.

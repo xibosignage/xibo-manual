@@ -1,28 +1,28 @@
 <!--toc=tour-->
 # Guides
+
 <white>
 
-Please contact your support department for information on the guides available.
+Please contact your support department for information on the resources available.
 
 </white>
 
 <nonwhite>
 
-Xibo has a large back catalogue of guides, videos and FAQ's for you to refer to - far too many to include directly in this manual. Instead we have made these available online in our community, blog and YouTube.
-
-The essential getting started guide is in this manual and covers all the basics needed to set up a cafe menu sign. This can be found here: [Getting Started with Xibo, a simple Cafe worked example](https://community.xibo.org.uk/t/getting-started-guide-cafe-menu/13293).
-
-
-
-For other guides and resources please refer to the list below:
+Xibo has a large back catalogue of guides, videos and FAQ's to assist you every step of the way, available online on our **Community** page, on our **blog** and **YouTube** channel:
 
 - [Community Guides](https://community.xibo.org.uk/c/guides)
+- [Blog - Feature Spotlights](https://blog.xibo.org.uk/tag/spotlight/)
 - [YouTube](https://www.youtube.com/channel/UCyKmNZsDK02jopQcGmE27LQ/featured)
-- [YouTube Playlists](https://www.youtube.com/channel/UCyKmNZsDK02jopQcGmE27LQ/playlists)
-- [FAQ](https://community.xibo.org.uk/c/faq)
-- [Commercial Knowledge Base](https://community.xibo.org.uk/c/kb)
-- [Feature Spotlights](https://blog.xibo.org.uk/tag/spotlight/)
 
+To get started with Xibo take a look at the following walkthroughs:
 
+[How to create a simple layout](https://community.xibo.org.uk/t/how-to-create-a-simple-layout/13108)
+
+[How to set up a café menu sign](https://community.xibo.org.uk/t/getting-started-guide-cafe-menu/13293)
+
+[How to set up meeting room bookings using Datasets](https://community.xibo.org.uk/t/getting-started-guide-datasets/14149)
+
+[How to build an ‘Hours since last incident counter’ using datasets](https://community.xibo.org.uk/t/building-an-hours-since-last-incident-counter-with-datasets/14391)
 
 </nonwhite>

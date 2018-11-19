@@ -1,32 +1,35 @@
 <!--toc=tour-->
-#Logging In
-The CMS is protected by an authentication system that requires a user name and password.
 
-During installation a user name and password is provided which grants unrestricted access to all areas of the CMS. Additional user accounts can be created with various permissions.
+# Logging In
 
-More information on the users, user groups and permissions can be found in the [users section](users.html) of this manual.
+The CMS is protected by an authentication system that requires a **Username** and **Password**.
 
-**All pages** in the CMS are authenticated and if the user is not logged a login form will appear.
+During installation a Username and Password is provided which grants unrestricted access to all areas of the CMS, as a **Super Admin** User. Once logged in additional User accounts can be created with various permissions, as covered in the [Users section](users.html) of this manual.
 
+**All pages** in the CMS are authenticated and if the User is not logged a login form will appear.
 
+## First time access
 
-##First time access
+### Administrators (Super Admin Users)
 
-###Administrators
-After installation the user name and password provided during installation must be used to access the CMS.
+After installation the Username and Password provided during installation must be used to access the CMS.
 
+### Users
 
+Users can be created by Administrators and given access to the system. The Username and Password for any new User should be shared in a private and secure manner and the User should change their password after they have logged in for the first time.
 
-###New Users
-Users can be created by an administrator account and given access to the system. The user name and password for any new user should be shared in a private and secure manner and the user should change their password after they have logged in for the first time.
+### Force Password Change at next login
 
+This function can be set by Super Admin Users at [User](users_administration.html) level.
 
+### Forgotten Password reset
 
-##Cookies
-The CMS uses cookies to track whether users are logged in or not. If you are experiencing trouble logging in you may need to adjust your browser settings for cookies.
+**Administrators** can activate a Reset link to be available at login, by configuring CMS settings.
 
+### Cookies
 
+The CMS uses cookies to track whether Users are logged in or not. If you are experiencing trouble logging in you may need to adjust your browser settings for cookies.
 
-##After login
+### After login
 
-Each user is assigned a dashboard which they will be taken to after login.
+Each User is assigned a [Dashboard](tour_status_dashboard.html) which they will be taken to after login.

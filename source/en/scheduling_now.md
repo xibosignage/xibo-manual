@@ -1,25 +1,24 @@
 <!--toc=scheduling-->
-#Schedule Now
-Schedule Now functionality is available throughout the CMS and provides a quick way to Schedule a 
-Campaign or Layout for a specific amount of time.
 
-This is typically used for displaying temporary notices on the signage system.
+# Schedule Now
 
-Schedule Now functionality is available from the following pages:
-- Campaign
-- Layout
-- Layout Designer
-- Display
+Schedule Now provides a quick way to Schedule a **Campaign** or **Layout** for a specific amount of time.
+<tip>
+This is useful for displaying temporary/important notices on Displays.
 
-![Schedule Now Form](img/scheduling_schedule_now.png)
+</tip>
 
-The form has been standardised across all areas of the CMS.
+Schedule Now is available across the CMS and is available from the following pages:
 
-## Timezones
+- **Campaign** - row menu for selected Campaign
+- **Layout** - row menu for selected Layout
+- **Layout Designer** - on the Actions tab
+- **Display** - row menu for selected Display
 
-Events created using the Schedule Now form will always have the "Run at CMS time" option
-selected. This means that the event will be adjusted for each Display timezone and forced
-to run from the time "Save" is pressed.
+![](img/schedule_schedule_now_form.png)
 
-More information about this option can be found on the [Events](scheduling_events.html#run_at_cms_time)
-page.
+Complete the form fields as required.
+
+## Time zones 
+
+Events created using **Schedule Now** will always have the **Run at CMS time** option selected. This means that the event will be adjusted for each Display time zone and forced to run from the time "Save" is pressed. Please see [Run at CMS time](scheduling_events.html) for further information.
