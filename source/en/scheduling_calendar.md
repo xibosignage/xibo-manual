@@ -10,15 +10,15 @@ Use the control bar at the top of the calendar to select **Displays**, **Add Eve
 
 ![Schedule Controls](img/schedule_controls.png)
 
-#### **Select Displays**
+### Select Displays
 
 Click in this field to select Displays /Display Groups to view the associated Schedules.
 
-#### **Add Event**
+### Add Event
 
 Schedule Events by completing the form fields.
 
-#### **Prev/Today/Next**
+### Prev/Today/Next
 
 Use to navigate through the calendar.
 
@@ -34,7 +34,7 @@ Each Calendar View will show the associated Schedule for the selected Display/Di
 Click on an Event or Icon shown on a Calendar View to Edit the Schedule.
  {/tip}
 
-#### **Year**
+### Year
 
 The Year view is intended as an overview of the Events Scheduled throughout the year and provides a total number of Events Scheduled per month. Roll over a Month and use the black arrow to show Event details.
 
@@ -44,7 +44,9 @@ The Year view is intended as an overview of the Events Scheduled throughout the 
 Double-click to open the Month View for that particular month.
 {/tip}
 
-#### **Month**
+
+
+### Month
 
 This View includes Icons to represent the Events that have been scheduled for that Month. Click on a particular day square to see an expanded view for that day. Double click on a day square to open the Day View for that date.
 
@@ -54,19 +56,25 @@ This View includes Icons to represent the Events that have been scheduled for th
 Hover over each Icon to display information for that particular Event.
 {/tip}
 
-#### **Week**
+
+
+### Week
 
 This view gives a week overview of Scheduled Events. Double click on a date to open the Day View.
 
 ![Schedule Week View](img/scheduled_week_view.png)
 
-#### **Day**
+
+
+### Day
 
 The Day View shows all Events occurring within a single day.
 
 ![Schedule Day View](img/schedule_day_view.png)
 
-#### **Agenda**
+
+
+### Agenda
 
 Events can span multiple days/weeks/months so it is highly useful to be able to see a precise representation of Layouts/Campaigns that will be shown on a selected Display at a point in time.
 

@@ -71,7 +71,7 @@ An Edit User form will open so that changes can be made as needed.
 
 ![Users Edit Form](img/users_edit_form.png)
 
-### Force Password Change
+## Force Password Change
 
 Use to ensure that **new Users** change the password first given to them to access the system or if a User account password has been **reset**.
 Edit the User record and click on the Options tab. Tick the box **Force Password Change**, Save.

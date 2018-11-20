@@ -65,7 +65,7 @@ Modifications made to items are available in ‘real time’ this means the next
 
 {tip}
 
-### **Scenario**
+### Scenario:
 
 All members of a User Group need to edit DataSet(s) data with only one specific User able to delete.
 

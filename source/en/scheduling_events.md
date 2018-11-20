@@ -10,9 +10,9 @@ Click on the **Add Event** button on the calendar to Schedule an Event.
 
 ![Add Scheduled Event](img/schedule_event_add.png)
 
-### **General**
+## General
 
-#### **Event Type**
+### Event Type
 
 Use the drop-down to select an Event from the 3 Event Types supported:
 
@@ -23,11 +23,11 @@ Use the drop-down to select an Event from the 3 Event Types supported:
 {tip}
 Events, with the exception of Command Events, can also be added using the [Schedule Now](scheduling_now.html) function.{/tip}
 
-#### **Display** 
+### Display 
 
 Click in the field to select one or more Displays/Display Groups to show the Event content on.
 
-#### **Dayparting**
+### Dayparting
 
 **Custom**/**Always** or **User** created Dayparts can be selected using the drop-down menu. 
 
@@ -37,7 +37,7 @@ Select **Custom** to specify your own start/end dates/time. Click in the form fi
 Start and end times can be free typed to get the exact timings required.
 {/tip}
 
-#### **Layout/Campaign**
+### Layout/Campaign
 
 Use the drop-down menu to select the Layout/Campaign to Schedule.
 
@@ -45,7 +45,7 @@ Use the drop-down menu to select the Layout/Campaign to Schedule.
 This list is dependent on the permissions for that User.
 {/tip}
 
-#### **Preview**
+### Preview
 
 Click on the Preview button to view the Layout/Campaign in another tab. 
 
@@ -53,7 +53,7 @@ Click on the Preview button to view the Layout/Campaign in another tab.
 This is useful to use to ensure that the Correct Layout/Campaign has been selected and to make checks, such as the total duration, without having to leave the Schedule.
 {/tip}
 
-#### **Display Order**
+### Display Order
 
 Determine the order in which the Layout/Campaign will play in rotation when Scheduled at the same time as other Layouts/Campaigns. Ordering is by a simple numerical sort, lowest to highest numbers, therefore **Layouts/Campaigns marked 1** will be played before **Layouts/Campaigns marked 2**.
 
@@ -85,7 +85,7 @@ A - Layout 1 and so on.
 To ensure that the Campaigns played all the contained Layouts before rotating to the next, Campaign A would need a Display Order of 1 and Campaign B would need a Display Order of 2.
 {/tip}
 
-#### **Priority**
+### Priority
 
 Set the Priority of the Event with the **highest** number stated playing in preference to lower numbers. This can be used to override all other non-priority Events on the Schedule.
 
@@ -93,7 +93,7 @@ Set the Priority of the Event with the **highest** number stated playing in pref
 This functionality is useful for displaying temporary/important notices for overriding a Schedule for a specific Event without having to make any changes to your existing Schedule or cancelling Layouts/Campaigns that would be running at that time.
 {/tip}
 
-#### **Run at CMS Time**
+### Run at CMS Time
 
 When selected, the Event will Play at the time determined by the **CMS** rather than using the local Display time.
 {tip}
@@ -109,7 +109,7 @@ With **Run at CMS time** selected, Display 1 will run at 11:00 as before but Dis
 
 Please note **The Schedule Now** functionality will always create events with this option Selected.
 
-### **Repeats**
+## Repeats
 
 An Event can be repeated at defined intervals (hourly, daily, weekly, monthly or yearly) until a specified time. Use the **Repeats** tab to create recurring Events. Select the type of Repeat from the drop-down and complete the form fields as required. Use **Repeat every** to further specify the frequency of the Repeat.
 

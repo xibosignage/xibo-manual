@@ -28,13 +28,13 @@ Complete the form fields and include the **API key** and Cache Period settings.
 
 Select the Currencies Widget from the Widget Toolbox to add to your Region Timeline.  Complete the form fields:
 
-#### **General**
+### General
 
 Give an optional name and select to override the default duration if required.
 
 ![Add Currencies](img/media_currencies_add_general.png)
 
-#### **Template**
+### Template
 
 - Use the drop-down menu to select a **Template**
 - Define currencies using their **acronym/abbreviation** (symbols or written text will not be recognised)
@@ -42,11 +42,13 @@ Give an optional name and select to override the default duration if required.
 
 ![Add Template](img/media_currencies_add_template.png)
 
-#### **Effect**
+
+
+### Effect
 
 Select an optional Effect and Speed
 
-#### **Advanced**
+### Advanced
 
 Optionally choose a Background Colour and include a message to be displayed when no records are returned. 
 

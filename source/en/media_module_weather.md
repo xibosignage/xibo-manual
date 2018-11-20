@@ -71,7 +71,7 @@ Cloud customers with older CMS Instances may see the Weather Widget labelled as 
 
 
 
-#### Attribution
+## Attribution
 
 All Layouts that use the Weather Widget need to include the text “Powered by DarkSky” as per the [DarkSky Terms of Service](<https://darksky.net/tos>) . 
 
@@ -80,11 +80,11 @@ All Layouts that use the Weather Widget need to include the text “Powered by D
 Default templates can be edited and saved with 5 sections that will need to be completed.
 Selecting a template using the dropdown and clicking in the **Override the template** checkbox will automatically load the template structure and presentation. Templates can be edited and saved by providing the information needed for each of the 5 sections detailed below:
 
-#### **Original Width**
+### Original Width
 
 This is the intended width of the template and is used to scale the Widget within its region when applied.
 
-#### **Original Height**
+### Original Height
 
 This is the intended height of the template and is used to scale the Widget within its region when the template is applied.
 
@@ -100,11 +100,11 @@ The template will be automatically scaled and should be designed for the intende
 - Templates are treated the same as a static image
   {/tip}
 
-#### **Current forecast template**
+### Current forecast template
 
 Also known as the **main template** as it is used for the current weather conditions and as the basis for the repeating Daily forecast template.
 
-#### **Daily forecast template**
+### Daily forecast template
 
 This is the **repeating template** that should be provided for the 7 day forecast. It will be repeated each day and then substituted into the special `[dailyForecast]` tag (which should feature on the main template). 
 
@@ -115,12 +115,10 @@ The `[dailyForecast]` tag has 2 optional settings which can be added to the tag 
 
 {/tip}
 
-#### **CSS**
+### CSS
 
 This is the CSS to apply to the template structure above. It will be augmented with a colour 
 attribute and has a special `[[ICONS]]` which will be replaced with a selected icon sprite. 
-
-
 
 ### Request a Forecast
 

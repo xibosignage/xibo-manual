@@ -27,25 +27,25 @@ Complete the form fields for each tab header.
 
 ![DataSet View Edit](img/media_dataset_view_edit.png)
 
-#### General
+### General
 
 - Give an optional name.
 - Set a duration to override the default if required.
 - Use drag and drop to select available columns.
 
-#### Appearance
+### Appearance
 
 Complete the form fields to style your DataSet View. Override the template to use a **CSS style sheet** to control the visual styling of the Table. (Example style sheet at the bottom of this page).
 
-#### Order
+### Order
 
 Order by any column using the clause builder or by providing a SQL command for more complex ordering.
 
-#### Filter
+### Filter
 
 Filter by any column using the clause builder to only include/omit results based on chosen criteria. Provide a SQL command for more complex filtering.
 
-#### Advanced
+### Advanced
 
 Set Lower and Upper row limits (0 = unlimited).
 

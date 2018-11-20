@@ -33,11 +33,11 @@ Select the Stocks Widget from the Widget Toolbox to add to your Region Timeline.
 
 ![Add Stocks](img/media_stocks_add.png)
 
-#### **General**
+### General
 
 Give an optional name and select to override the default duration if required.
 
-#### **Template**
+### Template
 
 - Use the drop-down menu to select a Template
 - Include a **Stock Symbol** (Ticker) 
@@ -50,11 +50,11 @@ If you need a Stock Symbol that is only quoted on a specific Exchange then you c
 
 {/tip}
 
-#### **Effect**
+### Effect
 
 Select an optional Effect and Speed
 
-#### **Advanced**
+### Advanced
 
 Optionally choose a Background Colour and include a message to be displayed when no records are returned. 
 

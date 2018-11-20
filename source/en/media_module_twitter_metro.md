@@ -28,11 +28,11 @@ Please ensure that the Installation steps **Connecting to Twitter** have been ta
 
 ![Twitter Metro Add](img/media_twittermetro_add.png)
 
-#### General
+### General
 
 Complete the form options as required, refer to the [Twitter Module](media_module_twitter.html#Add_Twitter_Widget) page 
 
-#### Template
+### Template
 
 This form allows you to specify a **colour pallet** to be applied to the Metro tiles. 
 
@@ -42,11 +42,11 @@ Tick to Override the template and specify your own colour pallets to use for the
 
 {/tip}
 
-#### Effect
+### Effect
 
 Select an optional Effect/Speed to be used to transition between Tweets, which will be applied to each tile.
 
-#### Advanced
+### Advanced
 
 Complete the form fields as required, refer to the [Twitter Module](media_module_twitter.html) page
 

@@ -26,15 +26,15 @@ Displays are administered from the Menu, with logged in Users able to view the s
 
 
 
-#### **ID**
+#### ID
 
 Used for internal identification of the display.
 
-#### **Display**
+#### Display
 
 Name given to the Display for easy identification purposes (this is not shown on the Display itself).
 
-#### **Status**
+#### Status
 
 *Tick* = Player is up to date (this may also show as green in colour).
 
@@ -42,19 +42,19 @@ Name given to the Display for easy identification purposes (this is not shown on
 
 *Cross* = Player is currently downloading new content and has yet to complete (this may also show as red in colour).
 
-#### **Authorised**
+#### Authorised
 
 Tick or cross to indicate whether the Display has been granted a licence with the CMS. This prevents unauthorised Displays being added to the CMS.
 
-#### **Logged In**
+#### Logged In
 
 Tick or cross to show if the Display has logged in recently.
 
-#### **Last Accessed**
+#### Last Accessed
 
 Date and time stamp of when the Display was last accessed. 
 
-#### **MAC Address**
+#### MAC Address
 
 Media Access Control Address of the Display (if the client software is capable of sending it).
 
@@ -76,7 +76,7 @@ Each Display has a row menu containing a number of actions that can be performed
 
 
 
-#### **Manage**
+#### Manage
 
 Each Display has its own Dashboard which shows the Displays current status, bandwidth usage, file status and errors.
 
@@ -94,7 +94,7 @@ This Dashboard is useful as a first step for troubleshooting issues with a Displ
 
 
 
-#### **Edit**
+#### Edit
 
 Configure options specific to that Display with the 'Advanced' tab, which lists the general settings applied from the selected **Settings Profile**.
 
@@ -102,7 +102,7 @@ Configure options specific to that Display with the 'Advanced' tab, which lists 
 
 
 
-#### **Delete**
+#### Delete
 
 Deleting a Display will remove it from the CMS entirely - this operation cannot be reversed. A deleted Display can be reconnected to the CMS by repeating the “Register” procedure which will create a new unique Display record.
 
@@ -110,7 +110,7 @@ Deleting a Display will remove it from the CMS entirely - this operation cannot 
 Deauthorise a Display instead of deleting so that it can be re-authorised at a later date if needed. Use the row menu for the Display and click on Authorise to toggle to Deauthorise. This can also be actioned from the **Edit Display** form by selecting **No** for Authorise display.
 {/tip}
 
-#### **Send Command**
+#### Send Command
 
 The **Send Command** functionality is executed via XMR to Players by selecting a predefined command. This is useful for sending Players 'Reboot' commands for example.
 

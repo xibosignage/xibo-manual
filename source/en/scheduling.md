@@ -37,11 +37,11 @@ Display Order and Priority are irrelevant when it comes to executing the Command
 
 Events are Scheduled into **Dayparts** which are selected to Schedule within the selected period:
 
-#### **Custom Daypart**
+### Custom Daypart
 
 Create your own To/From dates and times.
 
-#### **Always Daypart**
+### Always Daypart
 
 Select to have the Event run constantly.
 {tip}

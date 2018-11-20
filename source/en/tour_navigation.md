@@ -10,41 +10,43 @@ The Menu will only show the items each User has permission to see!
 
 ![CMS Menu](img/tour_cms_menu.png)
 
-#### **Dashboard**
+### Dashboard
 
 A direct link to the logged in **Users** assigned Dashboard (homepage).
 
-#### **Schedule**
+### Schedule
 
 Create, view and manage **Events** for each Display in your signage network.
 
-#### **Dayparting**
+### Dayparting
 
 Create your own **Dayparts** to include when Scheduling Events.
 
-#### **Design**
+### Design
 
 Create and manage **Layouts** and **Campaigns** and utilise **Templates**.
 
-#### **Library**
+### Library
 
 Store file-based **Media** for re-use and design and store tabular data using **DataSets**.
 
-#### **Displays**
+### Displays
 
 The Display section contains all pages needed for managing your connected **Displays**.
 
-#### **Administration**
+### Administration
 
 Manage all **Users**/**User Groups**, **CMS** **Settings** and **Modules**.
 
-#### **Reporting**
+### Reporting
 
 View **Display statistics** and **Proof of Play** reports.
 
-#### **Advanced**
+### Advanced
 
 Troubleshooting.
+
+
 
 ## Profile Icon
 

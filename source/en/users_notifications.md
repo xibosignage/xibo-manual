@@ -33,7 +33,7 @@ Notifications can be created by authorised Users, those that have permission, by
 
 
 
-### **General**
+### General
 
 **Subject** - title for your Notification
 

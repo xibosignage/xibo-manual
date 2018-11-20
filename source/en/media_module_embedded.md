@@ -18,15 +18,15 @@ Examples of where this might be useful are displaying a Clock or Weather region.
 
 - Should the embedded content be scaled along with the Layout?
 
-#### **HTML to Embed**
+### HTML to Embed
 
 The HTML content that should be loaded into the Region.
 
-#### **Custom Style Sheets**
+### Custom Style Sheets
 
 A CSS style sheet to control the visual styling.
 
-#### **HEAD content**
+### HEAD content
 
 Any content to put in the HEAD of the document - JavaScript should be wrapped in `script` tags. [[PRODUCTNAME]] will automatically add jQuery.
 

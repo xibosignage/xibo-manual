@@ -36,7 +36,7 @@ For example, a Ticker Widget with the address `http://anexternal.com/feed` would
 
 All of the core modules adopt this approach, with the exceptions noted below:
 
-#### Notable Exceptions
+### Notable Exceptions
 
 - The **Web Page Module** does not cache from the CMS and will always attempt to open the specified web page address using the browser on the Player. This means that the Player must have network access to the web address at all times.
 - The **Embedded Module** can be cached using library references, however, the User that creates the Module is free to specify external resources should they require them.

@@ -11,19 +11,19 @@ There is support for **scaling** and **offsetting** the target Web Page to allow
 
 ![Add Webpage](img/media_webpage_add.png)
 
-#### **Link**
+### Link
 
 Provide the **URL** (including `http://`) of the Web Page.
 
-#### **Name**
+### Name
 
 Provide an optional name.
 
-#### **Set a duration**
+### Set a duration
 
 Choose to override the default duration.
 
-#### **Options**
+### Options
 
 Select from 3 options to choose how the Web Page should be embedded:
 
@@ -51,7 +51,7 @@ Select from 3 options to choose how the Web Page should be embedded:
 
    Specify a Page Width and Height.
 
-#### Background Transparent
+### Background Transparent
 
 Choose to render the Web Page with a transparent background (currently not available on the Windows Player). [[PRODUCTNAME]] will try its best to do this when checked, however, it cannot be supported on some Web Pages.
 

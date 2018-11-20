@@ -31,7 +31,7 @@ Depending on the issue that you are experiencing, we may ask for additional info
 
 
 
-### Provide a screenshot of the Player Status.
+## Provide a screenshot of the Player Status
 
 Access the status page on Players by following the steps for the Player type:
 

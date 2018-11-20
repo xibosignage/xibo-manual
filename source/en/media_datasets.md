@@ -115,7 +115,7 @@ If we wanted columns to capture the currency symbol and value, we would set our 
 - Symbol - data path = 0
 - Value - data path = 1
 
-#### **Dependents**
+### Dependents
 
 A remote DataSet can depend on another DataSet to formulate its request. Each row in the dependent DataSet will be used to create a request using the parent DataSet's request parameters.
 

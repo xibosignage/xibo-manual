@@ -10,7 +10,7 @@ Complete the form fields on each tab.
 
 ![Add Notifications](img/media_notifications_add.png)
 
-#### **General**
+### General
 
 - Give an optional name for the Widget.
 - Optionally set a duration to override the default.
@@ -23,11 +23,11 @@ To ensure that the field tags stay intact and therefore display the correct fiel
 
 {/tip}
 
-#### **Effect**
+### Effect
 
 - Select an optional Effect and Speed from the drop-down menu.
 
-#### **Advanced**
+### Advanced
 
 - Select if the Duration should be per Notification or a total Duration for **ALL** Notifications.
 - Optionally construct and format a message to show when there are no Notifications to display.

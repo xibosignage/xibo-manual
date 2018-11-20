@@ -33,7 +33,7 @@ Depending on the selected Source Type, options will be presented to configure:
 
 ![Ticker Edit Datasource](img/media_ticker_edit_datasource.png)
 
-#### **General**
+### General
 
 **Name** - give an optional name
 
@@ -43,23 +43,23 @@ Depending on the selected Source Type, options will be presented to configure:
 
 **Speed** - Set the speed for the Effect selected.
 
-#### **Appearance**
+### Appearance
 
 Use the Text Editor to format your Ticker. The available columns to use in the template can be found under **Available Substitutions**, double-click on the tags you wish to use to insert into the editing area. 
 
-#### **Order** 
+### Order 
 
 Order the DataSet results by using the clause builder or by using an advanced filter clause using SQL syntax, e.g. Name DESC
 
-#### **Filter**
+### Filter
 
 Filter the DataSet to exclude/include results by using the clause builder or by using an advanced filter cause using the SQL syntax.
 
-#### **Format**
+### Format
 
 Select how many Items should appear on each page if an effect to split items has been selected and if they should show side by side.
 
-#### **Advanced**
+### Advanced
 
 **Background Colour** - optionally select a background colour
 
@@ -81,7 +81,7 @@ This should be used with caution as it can create long-running Media items. It i
 
 ![Ticker Edit RSS Feed](img/media_ticker_edit_rss.png)
 
-#### General
+### General
 
 **Name** - give an optional name
 
@@ -89,7 +89,7 @@ This should be used with caution as it can create long-running Media items. It i
 
 **Effect** - use the drop down to select an Effect to be used to transition between items.
 
-#### Appearance
+### Appearance
 
 Use the drop-down menu to select a template.
 
@@ -99,7 +99,7 @@ Select to override the template to show available keywords that can be used in t
 A special notation is available where the User can specify the Tag|Namespace within the feed for [[PRODUCTNAME]] to extract content.
 {/tip}
 
-#### Format
+### Format
 
 **Speed** - set the transition speed for the selected Effect.
 
@@ -119,7 +119,7 @@ Use with caution as this can create long-running media items. Use in conjunction
 
 **Randomise** - random feeds work offline; the entire feed is parsed, rendered and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to randomise the order of items. Randomise works on the full feed, "Number of items" and "Take items from" options.
 
-#### Advanced
+### Advanced
 
 **Background Colour** - optionally select a background colour.
 

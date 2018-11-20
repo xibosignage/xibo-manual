@@ -37,7 +37,7 @@ Users are the people that have access to the CMS and are identified by a **Usern
 [[PRODUCTNAME]] supports 3 **User types**, **User Groups** as well as multi-level **Permissions** to all parts and items stored within the CMS.
 
 {tip}
-For a corporate environment [[PRODUCTNAME]] can also integrate with Active Director/LDAP. 
+For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory via ADFS. 
 {/tip}
 
 ### Displays

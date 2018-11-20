@@ -58,7 +58,7 @@ Setting a low value can cause your access to the Twitter API to be disabled for 
 
 ![Twitter Add](img/media_twitter_add.png)
 
-#### **General**
+### General
 
 - Provide an optional name
 - Choose to override the default duration
@@ -74,7 +74,7 @@ To return Tweets from a specific account rather than all Tweets that contain the
 
 {/tip}
 
-#### **Template**
+### Template
 
 Select a Template from the many selections using the drop-down menu.
 
@@ -87,11 +87,11 @@ If you opt to Override the template to use your own, the following substitutions
 
 {/tip}
 
-#### **Effect**
+### Effect
 
 Select an optional Effect/Speed to be used to transition between Tweets.
 
-#### **Advanced**
+### Advanced
 
 ![Twitter Advanced](img/media_twitter_advanced.png)
 
