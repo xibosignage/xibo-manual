@@ -79,7 +79,7 @@ This should be used with caution as it can create long-running Media items. It i
 
 ### Edit Ticker with an RSS Feed as selected Source
 
-![Ticker Edit RSS Feed](img/media_ticker_edit_RSS.png)
+![Ticker Edit RSS Feed](img/media_ticker_edit_rss.png)
 
 #### General
 

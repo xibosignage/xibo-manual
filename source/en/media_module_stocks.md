@@ -21,7 +21,7 @@ The Stocks Module is installed from the Modules page, under the Administration s
 
 After installation,  select the Module from the grid and use the row menu to select **Edit**.
 
-![Edit Stocks](img/media_Stocks_edit.png)
+![Edit Stocks](img/media_stocks_edit.png)
 
 Complete the form fields and include the **API key** and Cache Period settings.
 

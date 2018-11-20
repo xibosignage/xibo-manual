@@ -146,7 +146,7 @@ When the importer opens the Columns in the DataSet will be listed with a field n
 
 An example of the form is shown below:
 
-![Dataset Import CSV](/img/media_dataset_importcsv_form.png)
+![Dataset Import CSV](img/media_dataset_importcsv_form.png)
 
 It is important to ensure that your CSV file has the correct file encoding if you are using non-ASCII characters. Non-ASCII characters are very common for languages outside of English. The file encoding most commonly used is UTF-8.
 

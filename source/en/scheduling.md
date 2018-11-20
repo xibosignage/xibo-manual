@@ -8,7 +8,7 @@
 
 Events are administered from the **Schedule** section of the Menu and managed from the Calendar interface.
 
-![Schedule](img/Schedule_intro_.png)
+![Schedule](img/schedule_intro_.png)
 
 
 

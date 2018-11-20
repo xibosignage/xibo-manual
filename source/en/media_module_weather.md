@@ -55,7 +55,7 @@ Cloud customers with older CMS Instances may see the Weather Widget labelled as 
 
 **Template** - Use the drop-down to select an appropriate Template
 
-**Override the template** - Tick in the box to edit. Please see section on [Editing default templates](media_module_weather.html#Editing_default_templates) for further information.
+**Override the template** - Tick in the box to edit. Please see section on [Editing default templates](media_module_weather.html#editing_default_templates) for further information.
 
 ### Advanced
 

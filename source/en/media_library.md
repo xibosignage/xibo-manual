@@ -10,7 +10,7 @@ Library Media can be uploaded directly to the Library using an easy to use file 
 
 Navigate to the Media page under the Library section of the Menu to open the Library grid, and click on the **Add Media** button.
 
-![Media Library](img/media_Library_grid.png)
+![Media Library](img/media_library_grid.png)
 
 {tip}
 Media can also be uploaded directly to a Module assigned in a Layout, which will also save to the Library by default.

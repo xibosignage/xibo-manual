@@ -56,7 +56,7 @@ Setting a low value can cause your access to the Twitter API to be disabled for 
 
 ## Add Twitter Widget
 
-![Twitter Add](img/media_Twitter_add.png)
+![Twitter Add](img/media_twitter_add.png)
 
 #### **General**
 
