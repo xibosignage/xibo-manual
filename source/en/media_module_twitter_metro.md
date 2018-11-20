@@ -1,22 +1,57 @@
 <!--toc=widgets-->
 # Twitter Metro
 
-The [[PRODUCTNAME]] Twitter widget provides access to the 
-[Twitter Search API](https://dev.twitter.com/rest/public/search).
+The Twitter Metro Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Add the Twitter Metro Widget to Layouts to display Metro tiles of Twitter feeds.
+
+{nonwhite}
+{cloud}
+
+As the main set-up is provided as part of the service for Xibo  in the Cloud customers, please ensure you have already provided the steps as detailed on the [Twitter Module](media_module_twitter.html) page. Once completed please start at the **Add Twitter Metro Widget** section.
+{/cloud}
+
+**Non-Xibo in the Cloud customers please follow the Installation steps as detailed below.**
+
+{/nonwhite}
 
 ## Installation
 
-Please refer to the [Twitter](media_module_twitter.html) documentation for installation instructions.
-You can use the same Twitter API key/secret to configure the Twitter Metro Module.
+Please ensure that the Installation steps **Connecting to Twitter** have been taken as detailed on the [Twitter Module](media_module_twitter.html#Installation) page.
 
-## Adding to a Layout
+### Twitter Metro Module Installation
 
-The Metro Widget can be added to a Layout by selecting "Twitter Metro" from the Widget chooser on
-the Edit Timeline form.
+- Select the Modules page under the Administration section and install the Twitter Metro Module.
+- Once installed click on the row menu for the Twitter Metro Module and click **Edit**.
+- Enter the generated **API key** and **API secret**, you can use the same generated key/secret as before.
+- Optionally adjust the Cache Period.
 
-The template tab of the form allows you to specify a color pallet for the Metro tiles.
+## Add Twitter Metro Widget
 
-The Widget will automatically size portrait/landscape based on the size of the Region that it is
-added to. It will resize as if it were an image for best consistency across all Display resolutions.
+![Twitter Metro Add](img/media_twittermetro_add.png)
 
-When selecting an effect, the effect will apply to each tile.
+### General
+
+Complete the form options as required, refer to the [Twitter Module](media_module_twitter.html#Add_Twitter_Widget) page 
+
+### Template
+
+This form allows you to specify a **colour pallet** to be applied to the Metro tiles. 
+
+{tip}
+
+Tick to Override the template and specify your own colour pallets to use for the Metro tiles.
+
+{/tip}
+
+### Effect
+
+Select an optional Effect/Speed to be used to transition between Tweets, which will be applied to each tile.
+
+### Advanced
+
+Complete the form fields as required, refer to the [Twitter Module](media_module_twitter.html) page
+
+{tip}
+
+The Twitter Metro Widget will automatically size portrait/landscape based on the size of the Region that it is added to. It will resize as if it were an image for best consistency across all Display resolutions.
+
+{/tip}

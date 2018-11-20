@@ -1,18 +1,29 @@
 <!--toc=layouts-->
-#Campaigns
-Layouts can be grouped together into an ordered list, called a Campaign. Campaigns can then be scheduled as whole units and the Display will play them in sequence.
 
-Campaigns are managed in the Campaign Administration page which is accessible from the "Design" navigation item, Campaigns sub menu. Campaigns are simple entities with a Name and a list of assigned Layouts.
+# Campaigns
 
-![Campaign Admin](img/layouts_campaign_admin.png)
+Layouts can be grouped together into an ordered list. A Campaign can then be Scheduled and the Display will play the grouped Layouts in sequence.
 
+Campaigns are administered from the Design section of the Menu. 
 
-## Scheduling
-Campaigns can be scheduled interchangeably with Layouts and can also be used with the [Schedule Now](scheduling_now.html) feature.
+![Campaigns](img/layouts_Campaigns_grid.png)
+
+## Create a Campaign
+
+Click on the **Add Campaign** button and give the Campaign a name and optional Tag’s. The Campaign will be listed in the Campaigns grid ready for Layouts to be assigned.
 
 ## Assigning Layouts
-Layouts are assigned to a Campaign in a particular order using the "Layouts" row menu item.
 
-![Layout Assignment](img/layouts_campaign_layout_assign.png)
+Use the row menu for the selected Campaign and click on **Layouts**.
 
-Layouts are assigned using the plus icon, once pressed the Layouts are automatically moved to the staging area. Layouts can be removed from the staging area using the minus icon.
+![](img/layouts_campaigns_rowmenu.png)
+
+Layouts are assigned using the plus icon, once pressed Layouts will show in the staging area. Layouts can be removed from here by using the minus icon.
+
+![](img/layouts_campaigns_assign_layouts.png)
+
+Re-order Layouts in the staging area by drag and drop to ensure that Layouts play out in your designed sequence, ensuring that you press Save to keep changes.
+
+{tip}
+Layouts can be directly assigned to Campaigns using the row menu on the Layouts grid. Layouts will be assigned to the end of the selected Campaign by default.
+{/tip}

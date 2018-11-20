@@ -2,78 +2,67 @@
 
 # Scheduling
 
-[[PRODUCTNAME]] has a sophisticated scheduling system allowing for scheduling
-Layouts and Campaigns across Displays and Display Groups. This is achieved
-through Schedule Events and visualised on the Calendar.
+[[PRODUCTNAME]] has a sophisticated Scheduling system which allows for the simple creation of complex Schedules for **Events** across Displays/Display Groups. 
 
-## Event Types
+## Events
 
-The CMS supports 3 types of event:
+Events are administered from the **Schedule** section of the Menu and managed from the Calendar interface.
 
- - Campaign / Layout
- - Overlay Layout
- - Command
+![Schedule](img/schedule_intro_.png)
 
-### Campaign / Layout
 
-The most common event type is the scheduling of a Campaign or Layout to be shown
-within a specific time period. These events can be scheduled from the
-[Calendar](scheduling_calendar.html) and the [Schedule Now](scheduling_now.html)
-form.
 
-When a Display has more than one Layout scheduled to it at one time it will
-automatically alternate between the Layouts in the schedule. The display order
-is used to determine which order the Layouts will be rotated.
+The CMS supports Scheduling for 3 Event types:
 
-If at any time there are no layouts scheduled to run, the default layout for the
-Display will be run automatically.
+1. #### **Campaign/Layout Event**
 
-### Overlay Layout
+   Schedule 1 or multiple Events to Displays. 
 
-Layouts can be overlaid over the existing schedule so that they sit on top
-of the Campaign / Layout schedule playing. This is particularly useful for
-having a company logo or Ticker that exists across all Layouts being shown.
+2. #### **Overlay Layout Event**
 
-These events can be scheduled from the [Calendar](scheduling_calendar.html).
+   Specially created Layouts are Scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
 
-The Display Order on Overlay Layouts determines the order in which the Layouts
-regions are applied to the overlay and compliments the regions own Layer
-settings.
+3. #### **Command Event**
 
-### Command
+   A Scheduled Command can be executed by the Player at a specific point in time and therefore this type of Event does not need a `toDt`.
 
-A scheduled command is executed by the player at a specific point in time and
-therefore command events do not need a `toDt`.
+Commands available to Schedule are pre-configured by an Administrator. Available Commands can be selected using the **Command** drop-down menu on the **Schedule Event** form. If you require additional commands please contact your Administrator.
+{tip}
 
-These events can be scheduled from the [Calendar](scheduling_calendar.html).
+Display Order and Priority are irrelevant when it comes to executing the Command, but may be set in the CMS for organisational purposes.
 
-The commands available to schedule are configured in the Commands section of
-the CMS. More information can be found [here](displays_commands.html).
+{/tip}
 
-Display Order and Priority are also irrelevant when it comes to executing the
-command, but may be set in the CMS for organisational purposes.
+## Schedule Events
 
-## Schedule
+Events are Scheduled into **Dayparts** which are selected to Schedule within the selected period:
 
-Events are scheduled into "dayparts" which are blocks of time that split up the
-day. By default the CMS contains a daypart for adhoc scheduling (called the custom
-daypart) and for scheduling an event "always." More information can be found in 
-[Dayparting](scheduling_dayparting.html).
+### Custom Daypart
 
-To give your own From/To Dates then the "Custom" daypart should be selected.
+Create your own To/From dates and times.
+
+### Always Daypart
+
+Select to have the Event run constantly.
+{tip}
+Create your own defined [Dayparts](scheduling_dayparting.html) for ease of Scheduling.
+{/tip}
 
 ## Priority
 
-Event Priority determines whether the event is included in the schedule
-on the player or not. Priority is a number where 0 is considered the lowest
-priority.
+Use Event Priority to determine whether the Event should be included in the Schedule for the Player or not. A Priority Event is determined by a number, with 0 considered the lowest Priority.
 
-If a player has a schedule containing events which are all priority 0, then
-all of the events will be shown in rotation together. If one of the events
-has a priority of 1, then this will be the only event shown. Likewise if there
-are some events with priority 0, some with priority 1 and some with priority 2
-only the priority 2 events will be shown.
+{tip}
+If a Player has a Schedule containing Events which are all Priority 0, then all of the Events will be shown in rotation together. 
 
-Priority is a way to alter the schedule at specific times - for example
-a normal rotation during the day, with a priority event at lunch time which
-shows some lunch specific information (i.e. a menu).
+If 1 of the Events has a Priority of 1, then this will be the only event shown. 
+
+If there are some Events with Priority 0, some with Priority 1 and some with Priority 2 only the Priority 2 Events will be shown, in a rotation for that Scheduled period (as the highest Priority)
+
+{/tip}
+
+{tip}
+
+A good example to use Priority would be in a way to alter the Schedule at a specific time, for example, a normal rotation during the day with a Priority Event at lunchtime which shows specific ‘lunch’ information (i.e. Lunchtime specials on a cafe menu).
+
+{/tip}

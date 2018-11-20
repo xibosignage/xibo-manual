@@ -1,70 +1,55 @@
 <!--toc=layouts-->
+
 # Playlists
 
-Each Region on a Layout has its own Playlist of content, which will be shown in
-order by the Display Client. If required a Playlist can consist of a single item
-(such as a company logo), or multiple items (such as an image slide show).
+Each Region on a Layout has its own Playlist of content, which is shown in the specified order by the Display Client. A Playlist can consist of a **single item** (such as a company logo), or **multiple items** (such as an image slideshow).
 
-A Regions Playlist is viewed/edited by using the Region Action button and
-selecting Edit Playlist. The following form is shown.
+A Regions Playlist is viewed/edited by using the Region Menu and selecting **Edit Timeline** (or by double clicking within the Region).
 
 ![Region Playlist](img/layouts_region_playlist.png)
 
-The items assigned to the Playlist are called **Widgets** and can either be
-files stored in the Library or [Modules](media_modules.html).
 
-The sequence of Widgets in the Playlist is vertical - top down.
 
-## Assigning Widgets to Regions
+Items assigned to Playlists are called **Widgets** which are files stored in the [Library](media_library.html) or enabled [Modules](media_modules.html).
 
-Widgets are assigned to a Region Playlist using the " Widget Toolbox" shown on
-the left hand side of the Region Playlist form. This toolbox lists all of the
-enabled media types on the CMS.
+## Assigning Widgets 
 
-The different types of Widget available can be enabled / disabled by an
-administrator in the [Modules section](media_modules.html).
+Widgets are assigned to a Region Playlist using the Widget Toolbox, shown on the left-hand side of the Region Timeline form. The toolbox lists all of the enabled media types for your CMS.
 
-### Adding from the Library
+{tip}
+Widgets that are available can be enabled/disabled by an Administrator in the Modules section of the CMS.
+{/tip}
 
-The first link in the Widget Toolbox is the "Library" link. This allows
-library files to be assigned directly from the CMS library. This content may
-have been uploaded in a different Layout, or directly into the Library.
+## Assigning Content
 
-![Assign from Library form](img/layouts_designer_add_library.png)
+Library files can be assigned directly from the CMS Library by clicking on Library in the Widget Toolbox. This content may have been uploaded to another Layout or directly to the Library.
 
-Pressing the "Library" link in the Widget toolbox will open the Assignment form
-(above). The Assignment form is a standard CMS form with a "staging area" for
-media which has been queued for assignment.
+![Library Files](img/layouts_widgets_library.png)
 
-Library items are assigned using the plus icon, once pressed the item is
-automatically moved to the staging area. Items can be removed from the staging
-area using the minus icon.
+Assign Library items using the plus icon, once pressed the selected item will move to the **Assignments** staging area. Items can be removed from here by using the minus icon.
 
-### Editing Widgets
+### Playlist Widget Actions
 
-Widgets that have already been assigned to the Playlist can be edited or removed
-using the links on the Playlist Widget bars. Each bar has its own "Action" links.
+Each Widget assigned to a Playlist has its own set of "Actions" to edit, delete, assign Permissions and assign Audio.
 
-### Deleting Widgets
+![Layout Playlist](img/layouts_widgets_playlist.png)
 
-Widgets can be deleted by selecting the Delete button on the Playlist Widget
-Bar. If a Library Widget is selected the option to "Delete from the Library"
-will also be shown.
+{tip}
+Select Edit and use the tabs to locate the **Set a duration?** check box to override the systems default duration for the selected Widget.
+{/tip}
 
-### Reordering Items in the Playlist
+## Reordering Items in the Playlist
 
-The sequence of a media item in the Playlist can be changed with drag and drop.
-Once the item in the desired position press the "Save Order" button at the
-bottom of the Region Playlist form.
+Widgets in the Playlist are played from top to bottom. The sequence can be changed by dragging and dropping to the required order and pressing the **Save Order** button at the bottom of the Region Timeline form.
 
-![Reorder items on the Playlist](img/layouts_reorder_items.png)
+
 
 ## Grid View
 
-An alternative view of the playlist is available called the "Grid View". This
-view is very similar to other grids seen throughout the application.
+Use the **Switch to Grid** button at the bottom of the Region Timeline form for an alternative view of the Playlist.
 
 ![Region Playlist](img/layouts_region_playlist_grid.png)
 
-The grid view is particularly useful for deleting more than one Widget at a
-time.
+{tip}
+The grid view is particularly useful for deleting more than one Widget at a time.
+{/tip}

@@ -1,53 +1,59 @@
 <!--toc=media-->
 # Tidy Library
-As the CMS is used and Layouts/Media are added, over time the library can become
-cluttered with old content that is no longer in use.
 
-The Library can be *tidied* by a user or super administrator so that it is kept
-clean and small. This might be of particular interest if the CMS is installed on
-a web server that has quotas or if users have been assigned their own quotas.
+{nonwhite}
+{cloud}
+The Tidy Library function is turned off by default for **Xibo in the Cloud** Customers as it can be potentially destructive if the options are not fully understood. This can be enabled if required by following the steps below.
+{/cloud}
+{/nonwhite}
 
-There are two places where the library can be tidied:
+As the CMS is used and Layouts/Media are added, over time the Library can become cluttered with old content that is no longer in use.
 
- 1. Library page
- 2. Settings page
+The Library can be *tidied* by a User or Super Administrator so that it is kept clean and small. 
+**Actions cannot be reversed so this must be used with caution.**
 
-### Enabling
-Tidy library functionality might be disabled on the whole CMS via a checkbox in
-the General tab called "Enable library tidy?".
+{tip}
+This might be of particular interest if the CMS is installed on a web server that has quotas or if Users have been assigned their own quotas.
+{/tip}
 
-## Tidy from the Library
-Any user is able to initiate a "Tidy Library" from the Library page using the menu
-item in the action bar.
+There are two places where the Library can be tidied:
 
-![Library Tidy from Library](img/media_librarytidy_fromlibrary.png)
-
-The form presented will show the number of files that will be deleted as a result
-of the tidy operation and how much space those files take up.
-
-This will only delete files that are no-longer in use on a Layout or Assigned to
-a Display Group/Display. It will only assess files owned by the logged in User.
+1. **Settings** page - available to all Super Administrators
+2. **Library** page - enabled for All Users of the CMS
 
 ## Tidy from Settings
-A super administrator user can initiate a system wide library tidy operation from
-the settings page.
 
-![Library Tidy from Settings](img/media_librarytidy_fromsettings.png)
+Super Administrators can initiate a system-wide Library tidy operation by navigating to the Settings page under the Administration section on the Menu. Click on the General tab and click on the **Tidy Library** button.
 
-As this functionality is **system wide** and operates on all users files confirmation
-is required to remove unused and old revisions.
+![Settings Tidy Library](img/media_settings_tidylibrary.png)
+
+As this functionality is system-wide and therefore operates on **ALL** User files, confirmation is required to remove unused and old revisions.
 
 This option is more comprehensive and removes:
 
- - Temporary files
- - Orphaned files
- - Thumbnails
- - Media revisions that aren't used anywhere
- - Media that isn't used anywhere (on any Layouts / Display Groups / Displays)
+- Temporary files
+- Orphaned files
+- Thumbnails
+- Media revisions that aren't used anywhere
+- Media that isn't used anywhere (on any Layouts / Display Groups / Displays)
+- Generic files uploaded to the CMS
 
-#### Orphaned files
-Orphaned files are a rare occurrence where a file stored on disk in the library
-folder is not deleted when the media item is deleted from the library. This means
-that the file exists but the CMS doesn't know anything about it.
+### Orphaned files
 
-These files are deleted in a Tidy Library Call.
+Orphaned files are a rare occurrence where a file stored on disk in the Library folder is not deleted when the Media item is deleted from the Library. This means that the file exists but the CMS doesn't know anything about it.
+
+## Tidy from Library
+
+Allow **ANY** User to initiate a Library tidy from the Library page by enabling the functionality in Settings under the Administration section of the Menu. Click on the General tab and use the checkbox for **Enable Library Tidy.**
+
+![Enable Library Tidy](img/media_settings_enable_librarytidy.png)
+
+Once enabled Users can click on the **Tidy Library** button at the top of the Library page.
+
+![Tidy from Library](img/media_library_tidylibrary.png)
+
+ The form will show the number of files that will be deleted and how much space those files take up.
+
+{tip}
+This will only delete files that are owned by the logged in User which are no longer in use on a Layout or Assigned to a Display Group/Display.
+{/tip}

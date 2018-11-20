@@ -1,36 +1,50 @@
 <!--toc=widgets-->
 # Embedded Content
-The Embedded Content module allows HTML and JavaScript to be embedded into a Layout Region. This allows for custom enhancements to be made to [[PRODUCTNAME]] without modifying the core application. Examples of where this might be useful are displaying a Clock or Weather region.
+The Embedded Content Widget allows HTML and JavaScript to be embedded into a **Region** on a Layout. This allows for custom enhancements to be made to [[PRODUCTNAME]] without modifying the core application. 
 
-![Embedded Content Form](img/media_embedded_form.png)
+{tip}
+Examples of where this might be useful are displaying a Clock or Weather region.
+{/tip}
 
-- **Duration**
+![Add Embedded](img/media_embedded_add.png)
 
-    The duration in seconds that this item should remain in the Region.
+- Optionally set a duration to override the default.
+- Select whether the item should be shown with a transparent background. This is currently not available on the Windows Display Client.
 
-- **Transparent?**
+{tip}
+ [[PRODUCTNAME]] will try its best to do this when checked, however, it may be overridden by the custom content.
 
-    Should the item be rendered with a transparent background? [[PRODUCTNAME]] will try its best to do this when checked, however it may be overridden by the custom content.
+{/tip}
 
-- **HTML Content**
+- Should the embedded content be scaled along with the Layout?
 
-    The HTML that should be loaded into the Region.
+### HTML to Embed
 
-- **HEAD content**
+The HTML content that should be loaded into the Region.
 
-    Any content to put in the HEAD of the document - JavaScript should be wrapped in `script` tags. [[PRODUCTNAME]] will automatically add jQuery.
+### Custom Style Sheets
 
-    The `EmbedInit()` method will be called by the Display Client and can be used to safely start any custom JavaScript at the appropriate time. The method is defaulted on any new Embedded Media Item.
+A CSS style sheet to control the visual styling.
 
-    ``` html
-    <script type="text/javascript">
-    function EmbedInit()
-    {
-        // Init will be called when this page is loaded in the client.
+### HEAD content
 
-        return;
-    }
-    </script>
-    ```
+Any content to put in the HEAD of the document - JavaScript should be wrapped in `script` tags. [[PRODUCTNAME]] will automatically add jQuery.
 
-Show embedded HTML with Active-X content on the Windows Display Client the security settings of IE so that local files were allowed to run active content by default. This can be done in Tools -> Internet Options -> Advanced -> Security -> "Allow Active content to run in files on My Computer"
+The `EmbedInit()` method will be called by the Display Client and can be used to safely start any custom JavaScript at the appropriate time. The method is defaulted on any new Embedded Media Item.
+
+``` html
+<script type="text/javascript">
+function EmbedInit()
+{
+    // Init will be called when this page is loaded in the client.
+
+    return;
+}
+</script>
+```
+
+{tip}
+
+Show embedded HTML with Active-X content on the Windows Display Client the security settings of IE so that local files were allowed to run active content by default. This can be done in Tools -> Internet Options -> Advanced -> Security -> "Allow Active content to run in files on My Computer".
+
+{/tip}

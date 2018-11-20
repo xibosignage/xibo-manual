@@ -1,26 +1,47 @@
 <!--toc=widgets-->
-#Text
-Text media is entered directly on a Layout in a Region Playlist. A rich editor is provided for formatting the text 
-for display.
 
-[Fonts](media_module_font.html) can be added to the editor using the Font module.
+# Text
 
-The text editor will have a background colour that is identical to the layout background colour and will provide a 
-complimentary text colour when first opened. A red box will appear in the text editing window which signifies the size
-of the region being edited. Text will wrap within that box, but can exceed the box height.
+Add Text directly onto a Layout using the Text Widget which provides a rich text editor for formatting options to apply an Effect to your text.
 
-![General Tab](img/media_text_form_general.png)
+![Add Text](img/media_text_add.png)
 
+The text editor will open with the same background as selected for the Layout and will use a complimentary text colour for the chosen background colour.
 
-##Options
-Text items can also have a scroll direction, speed and must have a duration of play. It is typical to have a text item 
-as the only item in a Region Playlist and therefore the duration can be set to 1 second (or another low value).
+The thin red border in the text editing window represents the **Region** size. Ensure that formatted text remains within this border.
 
-![Options Tab](img/media_text_form_options.png)
+Optionally use the Date/Time templates by double-clicking on the field tag you wish to use. This will then appear in the text editor ready to be formatted.
 
-##CKEditor
-CKEditor is used for text input. Complete documentation for all the buttons is available over 
-at [CKEditor's website](http://docs.cksource.com/CKEditor_3.x/Users_Guide).
+{tip}
 
-Text formatting is actually HTML and you can "view source" on the text editor to adjust the HTML manually 
-if you choose.
+Additional Fonts can be added to this editor by uploading files to the Library.
+
+{/tip}
+
+## Options
+
+![Text Options](img/media_text_options.png)
+
+**Name** - give an optional name for this Widget.
+
+**Effect** - use the drop down to select an effect to be applied to your text.
+
+**Speed** -  select a speed for the selected effect.
+
+**Set a duration** - override the default duration.
+
+{tip}
+
+It is typical to have a text item as the only Media item assigned to a Region Playlist, therefore the duration can be set to a low value.
+
+{/tip}
+
+### CKEditor
+
+CKEditor is used for Text input. Complete documentation for all the buttons can be found on the [CKEditor's website](http://docs.cksource.com/CKEditor_3.x/Users_Guide).
+
+{tip}
+
+Text formatting is HTML, **view source** on the text editor to adjust the HTML manually if you prefer.
+
+{/tip}

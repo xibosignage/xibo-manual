@@ -1,117 +1,147 @@
 <!--toc=widgets-->
 # Weather
-The [[PRODUCTNAME]] weather widget provides current and daily weather forecasts worldwide. 
-It uses the [DarkSky API](https://darksky.net/) as a source of weather data and a valid account
-on this service is needed before usage.
 
-<nonwhite>
-If the CMS is hosted on the Spring Signage Xibo Cloud then the DarkSky API has been configured
-and is provided as part of the service.
-</nonwhite>
+The Weather Widget provides current daily weather forecasts worldwide using the [DarkSky API](https://darksky.net/) as a source of weather data.
+
+{nonwhite}
+{cloud}
+
+The Weather Module is configured for **Xibo in the Cloud** customers and is provided as part of the service. Please skip the Installation steps detailed below and proceed with the set-up at the **Add Weather Widget** section.
+{/cloud}
+
+**Non-Xibo in the Cloud customers please follow the Installation steps as detailed below.**
+
+{/nonwhite}
 
 ## Installation
-The module comes pre-installed on all 1.7 installations, but needs an API key 
-from [DarkSky API](https://darksky.net/) to function correctly. This should be obtained by creating
-an account and (if you will exceed 1000 calls per day) entering your billing information.
 
-This configuration is entered in the Module Administration page by Editing the "Forecast IO" module.
+To get an API key please visit [DarkSky](https://darksky.net) to create an account.
 
-There are two settings required:
-1. API Key
-2. Cache Period
+(If you are going to exceed 1000 calls per day you will also need to enter your billing information).
 
-![Edit Form](img/media_forecast_installation.png)
+The Weather Module is installed from the Modules page, under the Administration section of the Menu. Click on the **Install Module** button and select the Module to install.
 
-### API Key
-The API key is obtained after [registering an application](https://darksky.net/) on the 
-Forecast developer website.
+After installation,  select the Module from the grid and use the row menu to select **Edit**.
 
-The API Key identifies the [[PRODUCTNAME]] CMS with Forecast and allows the CMS access to the weather data.
+![Edit Weather Module](img/media_weather_module_edit.png)
 
-### Cache Period
-Forecast allow 1000 requests for a forecast per day before charging a small fee for each subsequent request.
+Complete the form fields and include the **API key**. The CMS allows a Cache period to be specified which will create a delay between requests for each geographic location.
 
-The CMS allows a cache period to be specified which will create a delay between requests for each 
-geographic location.
+DarkSky allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
 
-## Adding to a Layout
-Weather data can be added to any layout and configured to use either a provided latitude / longitude, 
-or the displays latitude / longitude. If the displays latitude / longitude is selected the default global 
-location will be used in the preview.
+## Add Weather Widget
 
-![Adding to a Layout](img/media_forecast_add.png)
+The DarkSky Terms of Service <https://darksky.net/tos> should be read and understood before using this Widget.
 
-You will also be asked to select a template to control how the Widget is presented. There are several
-to choose from and a user designed template can be provided by selecting "Override the Template".
+{nonwhite}
+{cloud}
 
+Cloud customers with older CMS Instances may see the Weather Widget labelled as ‘Forecast IO’ in the Widget Toolbox. 
 
-## Editing the default templates
+{/cloud}
+{/nonwhite}
 
-Selecting a template on the General tab will automatically load that templates structure and 
-presentation in the Format tab. These can be edited and saved with each Layout.
+![Add Weather](img/media_weather_add.png)
 
-There are 5 sections that need to be provided:
+**Name** - select an optional name for this Widget.
 
-1. Current Template
+**Set a duration** - tick to override the default.
 
-    This is also known as the "main" template as it is used for the current weather conditions and as 
-    the basis for the repeating daily template.
+**Use the Display location** - once ticked the lat/long recorded on the Display is used rather than specifying manually.
 
-2. Daily Template
+### Appearance
 
-    This is the repeating template that should be provided for the 7 day forecast. It will be repeated 
-    for each day and then substituted into the special `[dailyForecast]` tag (which should feature on 
-    the main template). The `[dailyForecast]` tag has 2 optional settings which can be added to the tag
-    by including the `|` character. These are `[dailyForecast|Number of days|Start day]` and default to 
-    7 days, starting at tomorrow (day 2). If you wanted to see the next 3 days you would 
-    use `[dailyForecast|3]`, for a 3 day forecast starting the day after tomorrow use `[dailyForecast|3|3]`.
-    A common example is to ignore the "Current Template" and produce a full 7 day forecast using the 
-    daily forecast - this is achieved with `[dailyForecast|7|1]`.
+![Weather Appearance](img\media_weather_apperance.png)
 
-3. CSS
+**Template** - Use the drop-down to select an appropriate Template
 
-    This is the CSS to apply to the template structure above. It will be augmented with a colour 
-    attribute and has a special `[[ICONS]]` which will be replaced with the selected icon sprite 
-    (see section below).
-    
-4. Design Width
+**Override the template** - Tick in the box to edit. Please see section on [Editing default templates](media_module_weather.html#editing_default_templates) for further information.
 
-    This is the intended width of the template and is used to scale the Widget within its region when 
-     the template is applied.
+### Advanced
 
-5. Design Height
-    
-    This is the intended height of the template and is used to scale the Widget within its region when 
-     the template is applied.
+![](img/media_weather_advanced.png)
 
-The template will be automatically scaled and should be designed for the intended output resolution. This
-scaling means there are some guidelines that should be considered when editing templates:
+**Units** - Use the drop-down menu to select the unit of measurement to use.
 
- - The template must be designed at a fixed size
- - All elements must use absolute sizing in px, including fonts, margins, widths, heights, etc
- - If positioning is used, it must be from top,left
- - Templates can use bootstrap
- - The aspect ratio will of the template will be fixed by Xibo and sized to fit the region
- - Templates are treated the same as a static image
+**Language** - Select from the drop-down.
 
-### Request a Forecast
-It is possible to "request a forecast" at any time to see what forecast data is returned. Any field 
-is available as a substitute in the template by entering the field name between square 
-brackets - for example [nearestStormDistance].
+**Update Interval** - Enter a number in minutes.
+
+**Only show Daytime weather conditions** - Toggle on/off.
 
 
-### Extending with new icons
-
-New icons can be added by a system administrator who has access to the file system. Any PNG file 
-in `modules/theme/forecastio/weather_icons` will be made available for selection in the Icons selector.
-
-Weather icons are provided as a sprite, each icon is 128x128 and should represent the same weather 
-conditions as the shipped icon sprite.
-
-For example, a "clear-day" is represented by the icon in position 1, a "windy day" is represented by the 
-icon in position 11.
 
 ## Attribution
 
-The DarkSky terms of service should be read and understood before using this module and all Widget 
-templates should include the text "Powered by DarkSky".
+All Layouts that use the Weather Widget need to include the text “Powered by DarkSky” as per the [DarkSky Terms of Service](<https://darksky.net/tos>) . 
+
+## Editing default templates
+
+Default templates can be edited and saved with 5 sections that will need to be completed.
+Selecting a template using the dropdown and clicking in the **Override the template** checkbox will automatically load the template structure and presentation. Templates can be edited and saved by providing the information needed for each of the 5 sections detailed below:
+
+### Original Width
+
+This is the intended width of the template and is used to scale the Widget within its region when applied.
+
+### Original Height
+
+This is the intended height of the template and is used to scale the Widget within its region when the template is applied.
+
+{tip}
+
+The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
+
+- Templates must be designed at a fixed size
+- All elements must use absolute sizing in px, including fonts, margins, widths, heights, etc
+- If positioning is used, it must be from top,left
+- Templates can use bootstrap
+- The aspect ratio will be fixed by [[PRODUCTNAME]] and sized to fit the Region
+- Templates are treated the same as a static image
+  {/tip}
+
+### Current forecast template
+
+Also known as the **main template** as it is used for the current weather conditions and as the basis for the repeating Daily forecast template.
+
+### Daily forecast template
+
+This is the **repeating template** that should be provided for the 7 day forecast. It will be repeated each day and then substituted into the special `[dailyForecast]` tag (which should feature on the main template). 
+
+The `[dailyForecast]` tag has 2 optional settings which can be added to the tag by including the`|` character. These are `[dailyForecast|Number of days|Start day]` and default to 7 days, starting at tomorrow (day 2). If you wanted to see the next 3 days you would use [dailyForecast|3]` and for a 3 day forecast starting the day after tomorrow you could use `[dailyForecast|3|3]`.
+{tip}  
+
+ A common example is to ignore the "Current Template" and produce a full 7 day forecast using the daily forecast - this is achieved with `[dailyForecast|7|1]`.
+
+{/tip}
+
+### CSS
+
+This is the CSS to apply to the template structure above. It will be augmented with a colour 
+attribute and has a special `[[ICONS]]` which will be replaced with a selected icon sprite. 
+
+### Request a Forecast
+
+It is possible to **request a forecast** at any time to see what forecast data is returned. Any field is available as a substitute in the template by entering the field name between square 
+brackets - for example `[nearestStormDistance]`.
+
+{tip}
+
+This button is available once the Weather Widget has been added to the Region Timeline and is then edited. There is not enough information saved to make a request to get the forecast at the ‘Add’ stage.
+
+{/tip}
+
+### Extending with new icons
+
+New icons can be added by an administrator who has access to the file system. Any PNG file in `modules/theme/forecastio/weather_icons` will be made available for selection in the Icons selector.
+
+Weather icons are provided as a sprite, each icon is 128x128 and should represent the same weather conditions as the shipped icon sprite.
+{tip}
+For example, a "clear-day" is represented by the icon in position 1, a "windy day" is represented by the icon in position 11.
+
+{/tip}
+
+{tip}
+You may have a Layout Status `! There are items on this Layout that can only be assessed by the client`This is a normal Layout Status if you have online content which will be assessed on the Player side. 
+
+{/tip}

@@ -1,46 +1,59 @@
 <!--toc=tour-->
-#Navigation
-Getting around the CMS is easy, with the intuitive side bar that shows only the items each user has permission to see.
 
-![Side Bar](img/tour_cms_sidebar.png)
+# Navigation
 
-The side bar is split into sections to further classify each page - these are:
+All **CMS Pages** are categorised into sections and are accessible from the **Menu** located on the left hand side of the CMS, for ease of navigation.
 
-1. Dashboard
+{tip}
+The Menu will only show the items each User has permission to see!
+{/tip}
 
-   The dashboard section is actually a direct link to the logged in users dashboard.
+![CMS Menu](img/tour_cms_menu.png)
 
-2. Schedule
+### Dashboard
 
-   The schedule section is actually a direct link to the calendar of events for each display in the signage network.
+A direct link to the logged in **Users** assigned Dashboard (homepage).
 
-3. Design
+### Schedule
 
-   The design section contains all the pages for Layout design and Campaigns.
+Create, view and manage **Events** for each Display in your signage network.
 
-4. Library
+### Dayparting
 
-   The library section contains all the stored media, including DataSets.
+Create your own **Dayparts** to include when Scheduling Events.
 
-5. Displays
+### Design
 
-   The display section contains all the pages for managing connected Displays, sorting Displays into Groups and viewing statistics.
+Create and manage **Layouts** and **Campaigns** and utilise **Templates**.
 
-6. Administration
+### Library
 
-   The administration section contains all the pages for managing Users, User Groups, Modules and Global Settings.
+Store file-based **Media** for re-use and design and store tabular data using **DataSets**.
 
-7. Advanced
+### Displays
 
-   The advanced section is for troubleshooting.
+The Display section contains all pages needed for managing your connected **Displays**.
+
+### Administration
+
+Manage all **Users**/**User Groups**, **CMS** **Settings** and **Modules**.
+
+### Reporting
+
+View **Display statistics** and **Proof of Play** reports.
+
+### Advanced
+
+Troubleshooting.
 
 
-These options are enabled based on the user permissions for the logged in user. Permissions can be granted on a user by user or user group basis.
 
+## Profile Icon
 
-##Profile Icon
-In the top right hand corner of the CMS is the profile icon. This provides access to user specific data and options.
+In the top right-hand corner of the CMS use the Profile Icon to access **User-specific** data and options.
 
-![Profile Icon](img/tour_cms_profile_icon.png)
+![CMS Profile Icon](img/tour_cms_profile_icon.png)
 
-**All new users should visit this menu to change their password the first time they log into the CMS**
+{tip}
+All new Users are strongly advised to navigate to the Profile Icon menu to change their password the first time they log into the CMS.
+{/tip}
