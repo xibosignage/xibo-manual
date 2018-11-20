@@ -275,12 +275,12 @@ class ManualGenerator
 
         // Replace any chunks of manual that we don't want appearing in non white labels
         if ($this->whiteLabel) {
-            $string = preg_replace('/({(nonwhite)\b[^>]*}).*?({\/\2})/s', '', $string);
+            $string = preg_replace('/({(nonwhite)\b[^}]*}).*?({\/\2})/s', '', $string);
             $string = str_replace('{white}', '', $string);
             $string = str_replace('{/white}', '', $string);
         }
         else {
-            $string = preg_replace('/({(white)\b[^>]*}).*?({\/\2})/s', '', $string);
+            $string = preg_replace('/({(white)\b[^}]*}).*?({\/\2})/s', '', $string);
             $string = str_replace('{nonwhite}', '', $string);
             $string = str_replace('{/nonwhite}', '', $string);
         }
@@ -289,21 +289,21 @@ class ManualGenerator
         $isSvg = (is_dir($this->outputPath . 'img/svg'));
 
         // Replace highlight blocks with div's and styles
-        $string = preg_replace_callback('/({(tip)\b[^>]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
+        $string = preg_replace_callback('/({(tip)\b[^}]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
             $match = $matches[0];
             $match = str_replace('{tip}', '', $match);
             $match = str_replace('{/tip}', '', $match);
             return '<blockquote class="tip">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_engage_lightblue.svg" />' : '') . Parsedown::instance()->text($match) . '</blockquote>';
         }, $string);
 
-        $string = preg_replace_callback('/({(cloud)\b[^>]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
+        $string = preg_replace_callback('/({(cloud)\b[^}]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
             $match = $matches[0];
             $match = str_replace('{cloud}', '', $match);
             $match = str_replace('{/cloud}', '', $match);
             return '<blockquote class="cloud">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_cloud_blue.svg" />' : '') . Parsedown::instance()->text($match) . '</blockquote>';
         }, $string);
 
-        $string = preg_replace_callback('/({(noncloud)\b[^>]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
+        $string = preg_replace_callback('/({(noncloud)\b[^}]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
             $match = $matches[0];
             $match = str_replace('{noncloud}', '', $match);
             $match = str_replace('{/noncloud}', '', $match);
