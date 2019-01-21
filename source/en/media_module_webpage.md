@@ -49,7 +49,12 @@ Select from 3 options to choose how the Web Page should be embedded:
 
 3. #### **Best Fit**
 
-   Specify a Page Width and Height.
+   Specify a **Page Width** and **Page Height**.
+
+   {tip}
+
+   The **Best Fit** option will not work with websites that set the X-Frame-Options header. If you are unable to see the web page try the **Open Natively** option.
+   {/tip}
 
 ### Background Transparent
 
