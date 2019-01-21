@@ -14,7 +14,7 @@ Optionally use the Date/Time templates by double-clicking on the field tag you w
 
 {tip}
 
-Additional Fonts can be added to this editor by uploading files to the Library.
+**Additional Fonts** can be added to this editor by uploading files to the **Library**. Please be aware that Fonts have 'preferences' built into them known as OS/2 Tags. [[PRODUCTNAME]] checks these OS/2 preferences, and can use Fonts with OS/2 tags 0 or 8. Fonts with other tags may not display correctly or you may receive an error on upload.
 
 {/tip}
 
@@ -44,4 +44,4 @@ CKEditor is used for Text input. Complete documentation for all the buttons can 
 
 Text formatting is HTML, **view source** on the text editor to adjust the HTML manually if you prefer.
 
-{/tip}
+{/tip}:
