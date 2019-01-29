@@ -1,7 +1,9 @@
 <!--toc=widgets-->
 # Shell Command
 
-The Shell Command Module is used to instruct the Display to execute a **Command** outside of the [[PRODUCTNAME]] environment, using the operating system shell. 
+The Shell Command Module is used to instruct the Display to execute a **Command** outside of the [[PRODUCTNAME]] environment, using the operating system shell.  
+
+**Please note: This Module is not supported for webOS**.
 
 {cloud}
 
