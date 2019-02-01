@@ -23,6 +23,10 @@ Use the row menu for the Profile you wish to view and click on **Edit**. Use the
 
 Each setting is explained under each form field for each of the tabs.
 
+{tip}
+Using the row menu click on **Copy** to make another version of a Profile. Make adjustments as needed to quickly and simply create new Profiles.
+{/tip}
+
 ### Collect Interval
 
 Using the drop-down menu select how often you would like the Player to check for new content. This means that once a Player has communicated with the CMS, it will check again for any changes by the time  set here.

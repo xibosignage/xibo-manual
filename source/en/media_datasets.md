@@ -92,6 +92,10 @@ A Remote DataSet will need additional information completed; the Remote data sou
 
 Remote DataSets are a special type of DataSet which periodically syncs from a **3rd party data source** which you specify when adding/editing the DataSet. [[PRODUCTNAME]] will call the URL specified at the time period specified and parse the data according to the instructions set on the DataSet and any Remote Columns.
 
+{tip}
+A **Remote DataSet** will not sync or update until it is being used in a **Layout** that has been **Scheduled** to show on a Player.
+{/tip}
+
 The remote data source must be JSON formatted.
 
 Data is populated according to the Columns defined as Column type **Remote**. When specifying a Remote Column a "data path" is entered which is the JSON syntax path to the data for that column, with respect to the Data Root specified on the DataSet.
