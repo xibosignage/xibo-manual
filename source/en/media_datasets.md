@@ -14,9 +14,9 @@ Examples of where DataSets could be utilised:
 DataSets have been designed to be versatile and reusable and come in two parts:
 
 1. **The DataSet** (Data Structure and data)
-2. **The Display** (DataSet View / Ticker / a source of data for a custom Module)
+2. **The Display** ([DataSet View](https://xibo.org.uk/manual/en/media_module_dataset_view.html) / [Ticker](https://xibo.org.uk/manual/en/media_module_ticker.html) / a source of data for a custom Module)
 
-DataSets are first defined, which can then be reused across multiple DataSet Views and Layouts. Access by navigating to DataSets under the Library section on the Menu to view the DataSet grid where you can add new and manage existing DataSets.
+DataSets are first defined, which can then be reused across multiple DataSet Views and Layouts. Access by navigating to **DataSets** under the **Library** section on the Menu to view the DataSet grid where you can add new and manage existing DataSets.
 
 ![DataSet Grid](img/media_dataset_grid.png)
 
@@ -24,13 +24,11 @@ DataSets are first defined, which can then be reused across multiple DataSet Vie
 
 ## Add DataSet
 
+Designing a DataSet is a **2 step** process - first add the **DataSet record** and then configure **Columns**.
+
 Click on the **Add DataSet** button and complete the form fields.
 
 ![DataSet Add](img/media_dataset_add.png)
-
-Designing a DataSet is a **2 step** process - first add the **DataSet record** and then configure **Columns**.
-
-### DataSet Record
 
 **Name** - Use to identify in the CMS
 
@@ -86,11 +84,42 @@ There is no theoretical limit to the number of columns [[PRODUCTNAME]] can suppo
 Columns can be added and removed after Data has been entered. The ordering and list content of Columns can also be changed after Data has been collected.
 {/tip}
 
+[[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
+
+| Format Character | Description                                                  | Example returned values                 |
+| ---------------- | :----------------------------------------------------------- | --------------------------------------- |
+|                  | **Day**                                                      |                                         |
+| d                | Day of the month, 2 digits with leading zeros                | 01 to 31                                |
+| D                | A textual representation of a day, three  letters            | Mon through Sun                         |
+| j                | Day of the month without leading zeros                       | 1 to 31                                 |
+| l                | (lowercase ‘L’) A full textual representation of the day of the week | Sunday through Saturday                 |
+| N                | ISO-8601 numeric representation of the day of the week (added in PHP 5.1.0) | 1 (for Monday) through 7 (for Sunday)   |
+| S                | English ordinal suffix for the day of the month, 2 characters | st, nd, rd or th. Works well with j     |
+| w                | Numeric representation of the day of the week                | 0 (for Sunday) through 6 (for Saturday) |
+| z                | The day of the year (starting from 0)                        | 0 through 365                           |
+|                  | **Week**                                                     |                                         |
+| W                | ISO-8601 week number of year, weeks starting on Monday (added in PHP 4.1.0) | 42 (the 42nd week in the year)          |
+|                  | **Month**                                                    |                                         |
+| F                | A full textual representation of a month, such as January or March | January through December                |
+| m                | Numeric representation of a month, with leading zeros        | 01 through 12                           |
+| M                | A short textual representation of a month, three letters     | Jan through Dec                         |
+| n                | Numeric representation of a month, without leading zeros     | 1 through 12                            |
+| t                | Number of days in the given month                            | 28 through 31                           |
+|                  | **Year**                                                     |                                         |
+| L                | Whether it’s a leap year                                     | 1 if it is a leap year, 0 otherwise.    |
+| o                | ISO-8601 year number. This has the same value as Y, except that if the ISO     week number (W) belongs to the previous or next year, that year is used instead. (added in  PHP 5.1.0) | 1999 or 2003                            |
+| Y                | A full numeric representation of a year, 4 digits            | 1999 or 2003                            |
+| y                | A two digit representation of a year                         | 99 or 0                                 |
+
 ## Remote DataSets
 
 A Remote DataSet will need additional information completed; the Remote data source URL, request params, request method and authentication information.
 
 Remote DataSets are a special type of DataSet which periodically syncs from a **3rd party data source** which you specify when adding/editing the DataSet. [[PRODUCTNAME]] will call the URL specified at the time period specified and parse the data according to the instructions set on the DataSet and any Remote Columns.
+
+{tip}
+A **Remote DataSet** will not sync or update until it is being used in a **Layout** that has been **Scheduled** to show on a Player.
+{/tip}
 
 The remote data source must be JSON formatted.
 
