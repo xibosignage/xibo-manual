@@ -1,8 +1,11 @@
 - [Introduction](layouts.html)
 - [Layout Designer](layouts_designer.html)
 - [Regions](layouts_regions.html)
-- [Playlists](layouts_playlists.html)
+- [Layout Timeline](layouts_timeline.html)
+- [Tools](layouts_tools.html)
+- [Widgets](layouts_widgets.html)
 - [Library Search](layouts_library_search.html)
 - [Templates](layouts_templates.html)
 - [Overlay Layouts](layouts_overlay.html)
 - [Campaigns](layouts_campaigns.html)
+

@@ -1,5 +1,3 @@
-<!--toc=layouts-->
-
 # Playlists
 
 Each Region on a Layout has its own Playlist of content, which is shown in the specified order by the Display Client. A Playlist can consist of a **single item** (such as a company logo), or **multiple items** (such as an image slideshow).
