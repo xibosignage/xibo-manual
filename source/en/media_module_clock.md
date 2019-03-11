@@ -2,27 +2,56 @@
 
 # Clock
 
-The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Clock** set to the current time or the current time +/- an offset when added to Layouts.
+The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Clock** as well as a **Countdown** on Layouts.
 
-## Analogue
+Click on the **Clock Widget** on the toolbar,  add / drag to the target **Region**.  ![Clock Widget](img/v2_media_clock_widget.png)
+
+{tip}
+If you are using 1.8 select **Clock** from the Widget Toolbox to add to your Region Timeline.
+{/tip}
+
+### General
+
+- Provide an optional name
+- Choose to override the default duration
+
+### Appearance
+
+Use the drop-down menu to select the type of clock to display:
+
+#### Analogue
 
 The Analogue Clock is a traditional clock face available in a Light or Dark theme (black or white face).
 
-![Add Analogue Clock](img/media_clock_analogue.png)
+![Add Analogue Clock](img/v2_media_clock_analogue.png)
 
-## Flip Clock
+
+
+#### Digital
+
+The Digital Clock has an additional Editor tab so that a template can be entered for the Digital Clock. 
+
+![Add Digital Clock](img/v2_media_clock_digital.png)
+
+The font, size, colour and other properties of the template can be changed.  Toggle on the **Visual editor** to access the inline editor and click on the edit icon in the Preview window.
+
+Enter text and formatting, use the **Snippets** menu to include available merge fields. See the section **Formatting the time** for further information.
+
+{tip}
+If you are using 1.8 use the text editor at the bottom of the form to enter a format for the clock.
+{/tip}
+
+#### Flip Clock
 
 The Flip Clock is a pre-formatted clock that animates a "flip" for each hour, minute and seconds (optional) elapsed.
 
-![Add Flip Clock](img/media_clock_flip.png)
+![Add Flip Clock](img/v2_media_clock_flip.png)
 
-## Digital
 
-The Digital Clock has a text editor to provide a template for the clock. The font, size, colour and other properties of the template can be changed.
 
-![Add Digital Clock](img/media_clock_digital.png)
+The **Flip Clock** also has Hourly, Minute and Daily **Counter** options which run from a specified date/time to give a Countdown on Layouts.
 
-### Formatting the Time
+## Formatting the Time
 
 The time can be formatted by providing "tokens" that sit between square brackets [] in the template area.
 
@@ -77,7 +106,3 @@ The time can be formatted by providing "tokens" that sit between square brackets
 |                            | ZZ      | -0700 -0600 ... +0600 +0700            |
 | Unix Timestamp             | X       | 1360013296                             |
 | Unix Millisecond Timestamp | x       | 1360013296123                          |
-
-{tip}
-The default duration can be overridden for each clock type by clicking in the **Set a duration** checkbox.
-{/tip}

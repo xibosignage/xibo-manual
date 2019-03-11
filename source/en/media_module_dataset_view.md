@@ -1,41 +1,67 @@
 <!--toc=widgets-->
-# DataSet Views
 
-The DataSet View Module allows content from a created DataSet to be added into a **Region**, organised and displayed in a tabular fashion.
+# DataSet View
 
-When the underlying DataSet Data is changed, the DataSet View Widget included in your Layout(s), will automatically update with the new Data.
+The DataSet View Widget allows content from a created DataSet to be added into a **Region**, organised and displayed in a tabular format.
+
+When the underlying **DataSet Data** is changed, the DataSet View Widget included in your Layout(s), will automatically update with the new data.
 {tip}
-Once a DataSet has been added to a DataSet View, care should be taken when editing the Column structure of the DataSet.
+Once a DataSet has been added to a DataSet View, care should be taken when editing the column structure of the DataSet.
 {/tip}
 
-## Adding a DataSet View
+Ensure that you have created a [DataSet](media_datasets.html) prior to adding a DataSet View to a Layout.
 
-Ensure that you have created a [DataSet](media_datasets.html) prior to adding a DataSet View.
+## Add DataSet View
 
-Select the **DataSet** to use as the source of data from the drop-down menu. On saving, a new form will open to provide further options.
+Click on the **DataSet View Widget** on the toolbar,  add / drag to the target **Region**.  ![DataSet View Widget](img/v2_media_datasetviews_widget.png)
 
-![DataSet View](img/media_dataset_view_add.png)
+
+
+- Use the drop-down menu to select the **DataSet** to be used as the source of data for the DataSet View.
+- Save
+
+{tip}
+If you are using 1.8, select **DataSet View** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. 
+{/tip}
 
 {tip}
 You cannot change to a different DataSet once it has been added to a DataSet View. To use an alternative DataSet a **new** DataSet View would need to be created.
-
 {/tip}
 
-## Edit DataSet View
+Once saved the **Edit DataSet View** form will open to provide further options.
 
-Complete the form fields for each tab header.
-
-![DataSet View Edit](img/media_dataset_view_edit.png)
+![DataSet View Edit](img/v2_media_datasetview_edit.png)
 
 ### General
 
-- Give an optional name.
-- Set a duration to override the default if required.
-- Use drag and drop to select available columns.
+- Provide an optional name
+- Choose to override the default duration.
+
+### Configuration
+
+- Click or drag and drop to select available columns.
+- Choose to show the table headings
+- Configure **Upper** and **Lower** row limits
+- Split the data over multiple pages using **Rows per Page**.
 
 ### Appearance
 
-Complete the form fields to style your DataSet View. Override the template to use a **CSS style sheet** to control the visual styling of the Table. (Example style sheet at the bottom of this page).
+- Select a Template using the drop-down menu
+- Choose to override the Template
+
+{tip}
+By selecting to **Override the Template** you can use a **CSS style sheet** to control the visual styling of the table. (Example style sheet at the bottom of this page).
+{/tip}
+
+Complete the form fields to style your DataSet View by selecting colouring and fonts/font size to use.
+
+### Templates
+
+Select the **No Data Template** to provide a message to display when there is no data to show.
+
+{tip}
+Toggle on the Visual editor to use the inline text editor.
+{/tip}
 
 ### Order
 
@@ -43,25 +69,15 @@ Order by any column using the clause builder or by providing a SQL command for m
 
 ### Filter
 
-Filter by any column using the clause builder to only include/omit results based on chosen criteria. Provide a SQL command for more complex filtering.
+Filter by any Column using the clause builder to only include/omit results based on chosen criteria. Provide a SQL command for more complex filtering.
 
-### Advanced
+### Caching
 
-Set Lower and Upper row limits (0 = unlimited).
-
-Enter an update interval in minutes, kept as high as possible. (Displays can cache the content of this Media type to prevent repeated download of identical resources, as well as for off-line playback).
-
-Split the data over multiple pages using **Rows per Page**. 
-
-{tip}
-
-Use the text editor to ensure that a message is displayed when no data is returned from the source to prevent an ‘empty screen’!
-
-{/tip}
+Enter an update interval in minutes, kept as high as possible. (Displays can cache the content of this media type to prevent repeated download of identical resources, as well as for off-line playback).
 
 ## Example Style Sheet
 
-``` css
+```css
 table.DataSetTable {
 font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;  
 width:100%;
@@ -116,5 +132,3 @@ span.DataSetColumnSpan {
 
 }
 ```
-
-
