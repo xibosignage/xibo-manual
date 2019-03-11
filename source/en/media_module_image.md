@@ -2,25 +2,36 @@
 
 # Image
 
-Add an image to a Layout using the Image Widget, by adding a file to upload directly or choosing an image that has already been added to the [Library](media_library.html). 
+The Media Module allows for image uploads which can be added to layouts using the Image Widget.
 
-**Caution should be taken as uploading very large Images can cause issues for the Player.**
+{tip}
+If the Image file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.
+{/tip}
+
+Click on the **Image Widget** on the toolbar,  add / drag to the target **Region**.  ![Image Widget](img/v2_media_image_widget.png)
+
+{tip}
+If you are using 1.8, select **Image** from the Widget Toolbox to add to your Region Timeline.
+{/tip}
+
+Click on **Add files** to upload to the Library or click on View Library to select an uploaded file.
+
+![Add Image File](img/v2_media_add_image.png)
 
 {tip}
 
-We recommend uploading JPG or PNG files, ensuring that Users check the resolution of the Image and keep it within the intended screen size.
+We recommend uploading JPG or PNG files, ensuring that users check the resolution of the Image and keep it within the intended screen size.
 
 {/tip}
 
-![Add Media Image](img/media_image_add.png)
+**Caution should be taken as uploading very large Images can cause issues for the Player.**
 
-## Edit/Delete/Permissions
-
-Once assigned to the Region Timeline, **Edit, Delete** and **Permission** functions can be selected.
+Once assigned to a Region, **Edit** options are available.
 
 
 
 **Please note:** Animated GIF’s are not supported on any Player.
 
-**As [[PRODUCTNAME]] takes no measures to control what content is put on your Displays, it is your responsibility to ensure that any images used are appropriately attributed if you do not own the rights.**
 
+
+**As [[PRODUCTNAME]] takes no measures to control what content is put on your displays, it is your responsibility to ensure that any images used are appropriately attributed if you do not own the rights.**
