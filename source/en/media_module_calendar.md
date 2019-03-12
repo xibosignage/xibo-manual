@@ -8,6 +8,8 @@ The Calendar Module is used to display events from an **iCAL feed**. Calendar ev
 
 Click on the **Calendar Widget** on the toolbar,  add / drag to the target **Region**.  ![Calendar Widget](img/v2_media_calendar_widget.png)
 
+
+
 {tip}
 If you are using 1.8, select **Calendar** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. 
 {/tip}
@@ -16,16 +18,18 @@ If you are using 1.8, select **Calendar** from the Widget Toolbox to add to your
 
 - Provide an optional name.
 - Choose to override the default duration.
-- Select whether the duration is per item, unticked the duration will be per feed.
+- Select whether the duration is per item. Left unticked the duration will be per feed.
 
 ### Configuration
 
 ![Calendar Configuration](img/v2_media_calendar_configuration.png)
 
+
+
 - Provide the iCAL URL.
 - Use the Interval option as a filter to show events for a certain period. Use natural language such as '1 day' or '2 weeks' to return the events within your chosen time frame.
 - Specify the Number of items / events you wish to display from the iCAL feed.
-- Select the **Exclude all day events** tick box if you would like all day events excluded from the feed and therefore not be displayed.
+- Select the **Exclude all day events** tick box if you would like all day events excluded from the feed and therefore not displayed.
 - Choose to **Exclude current events** so that they are removed from the feed and therefore will not be displayed.
 - Opt to use the **event timezone** and **calendar timezone**. Left unticked, the timezone set in the CMS will be used.
 - If your feed is from **Windows** use the check box.
@@ -64,13 +68,13 @@ If you are using 1.8 text merge fields are located under the **Available Substit
 
 #### Current Event
 
-Using the **Set an alternative template for events that are current** feature will tell [[PRODUCTNAME]] to use the Players Date/Time to work out if the event showing is current. 
+Using the **Set an alternative template for events that are current** feature will tell [[PRODUCTNAME]] to use the Players date/time to work out if the event showing is current. 
 
 ![Calendar Current Event](img/v2_media_calendar_current_events.png)
 
 Include alternative text and formatting to be used just for your **Current Events**. 
 
-Include **Snippets** to pull the required information from your Calendar.
+Include **Snippets** to pull the required information from your calendar.
 
 #### No Data
 
