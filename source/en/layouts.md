@@ -66,7 +66,7 @@ If you are using 1.8, clicking on **Design** will return you to the Layout Desig
 
 ### Checkout
 
-'Checking out' puts the Layout into a **draft** mode so that changes can be made. Once edited, the Layout can be **Published** to make changes permanent and send the edited Layout to Displays. **Discard** will revert the Layout back to the original published state.
+Checkout from the row menu to put the Layout into a **draft** mode so that changes can be made later. Once edited, the Layout can be **Published** to make changes permanent and send the edited Layout to Displays. **Discard** will revert the Layout back to the original published state.
 
 {tip}
 Take your time with any edits you need to make as using **Checkout** ensures that no changes are made to your published version or shown on scheduled **Displays** until you choose to do so. **Publish** confirms changes that have been made and will overwrite your published version. **Discard** will delete the draft with the published version remaining untouched.
