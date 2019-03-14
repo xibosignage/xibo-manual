@@ -29,4 +29,4 @@ If you are using 1.8, select **HLS** from the Widget Toolbox to add to your Regi
 
 - Use the checkbox to mute/unmute the video stream.
 
-  ![Add HLS Video Stream](/img/v2_media_hls_configuration.png)
+  ![Add HLS Video Stream](img/v2_media_hls_configuration.png)

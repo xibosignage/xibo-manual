@@ -14,7 +14,7 @@ Examples of where DataSets could be utilised:
 DataSets have been designed to be versatile and reusable and come in two parts:
 
 1. **The DataSet** (Data Structure and data)
-2. **The Display** ([DataSet View](https://xibo.org.uk/manual/en/media_module_dataset_view.html) / [Ticker](https://xibo.org.uk/manual/en/media_module_ticker.html) / a source of data for a custom Module)
+2. **The Display** ([DataSet View](https://xibo.org.uk/manual/en/media_module_dataset_view.html) / [DataSet Ticker](https://xibo.org.uk/manual/en/media_module_dataset_ticker.html) / a source of data for a custom Module)
 
 DataSets are first defined, which can then be reused across multiple DataSet Views and Layouts. Access by navigating to **DataSets** under the **Library** section on the Menu to view the DataSet grid where you can add new and manage existing DataSets.
 

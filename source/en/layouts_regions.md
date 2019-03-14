@@ -70,7 +70,7 @@ Remove Regions and all associated content by clicking on a **Region** to highlig
 
 {tip}
 Delete by right clicking on the target Region.
-{tip}
+{/tip}
 
 ### Permissions for a Region
 

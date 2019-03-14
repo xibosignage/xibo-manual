@@ -12,12 +12,6 @@ Located on the bottom of the toolbar, click on the magnifying glass icon to crea
 
 Search fields can be used to search the CMS Library by **Name**, **Tag** or by using the drop down menu to search by a media **Type**. Click on the **Search** button to return results.
 
-
-
-![Tab Search](img/v2_layouts_tab_search.png)
-
-
-
 Returned results will show above the toolbar. Use the arrows to scroll through uploaded **media** files and click or drag to add to a **Region**. 
 
 ![Search Results](img/v2_layouts_search_results.png)

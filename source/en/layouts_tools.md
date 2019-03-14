@@ -2,7 +2,7 @@
 
 # Tools (New Feature for 2.0)
 
-Located on the bottom toolbar on the [Layout Designer](layout_designer.html), the **Tools** tab contains actions that can be applied to the components of Layouts. 
+Located on the bottom toolbar on the [Layout Designer](layouts_designer.html), the **Tools** tab contains actions that can be applied to the components of Layouts. 
 
 ![Tools](img/v2_layouts_tools.png)
 
