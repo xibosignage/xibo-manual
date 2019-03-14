@@ -32,7 +32,7 @@ If your Players are Android or webOS devices you should ensure that the export f
 If you are using 1.8, select **Video** from the Widget Toolbox to add to your Region Timeline.
 {/tip}
 
-- Click on the  [Video Widget](media_module_video.html) on the toolbar, add / drag to the target **Region**. ![Video Widget](C:/Users/Natasha/Documents/V2%20Manual%20Pages/img/v2_media_video_widget.png)
+- Click on the  [Video Widget](media_module_video.html) on the toolbar, add / drag to the target **Region**. ![Video Widget](img/v2_media_video_widget.png)
 - Click on **Add files** and select the exported PowerPoint file to upload.
 
 ![Add Powerpoint Video](img/v2_media_video_powerpoint_upload.png)

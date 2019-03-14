@@ -2,7 +2,7 @@
 
 # PDF
 
-The PDF Module allows for the upload of PDF files to the Library which can then be added to layouts.
+The PDF Module allows for the upload of PDF files to the Library which can then be added to Layouts.
 
 {tip}
 If the PDF file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

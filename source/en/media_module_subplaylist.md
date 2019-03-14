@@ -2,7 +2,7 @@
 
 # Sub-Playlists (New Feature for 2.0)
 
-The Sub-Playlists Widget allows for pre-defined Playlists to be simply added to a Region.
+The Sub-Playlists Widget allows for pre-defined Playlists to be simply added to a Layout.
 
 {tip}
 Ensure that you have created a  [Playlist](media_playlists.html) prior to adding this Widget.

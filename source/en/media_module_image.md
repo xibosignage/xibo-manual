@@ -2,7 +2,7 @@
 
 # Image
 
-The Media Module allows for image uploads which can be added to layouts using the Image Widget.
+The Media Module allows for image uploads which can be added to Layouts using the Image Widget.
 
 {tip}
 If the Image file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

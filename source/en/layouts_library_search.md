@@ -10,7 +10,7 @@ Located on the bottom of the toolbar, click on the magnifying glass icon to crea
 
 
 
-Search fields are used to search the CMS Library by **Name**, **Tag** or by using the drop down menu to search by media **Type**. Click on the **Search** button to return results.
+Search fields can be used to search the CMS Library by **Name**, **Tag** or by using the drop down menu to search by a media **Type**. Click on the **Search** button to return results.
 
 
 
@@ -22,11 +22,10 @@ Returned results will show above the toolbar. Use the arrows to scroll through u
 
 ![Search Results](img/v2_layouts_search_results.png)
 
-{tip}
-Create new tabs so that you can easily click between multiple search results.
-{/tip}
+
 
 {tip}
+Create new tabs so that you can easily click between multiple search results.
 Use the red X icon to easily close all open search tabs.
 {/tip}
 

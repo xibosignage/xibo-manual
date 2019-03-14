@@ -4,7 +4,7 @@
 
 Located on the bottom toolbar on the [Layout Designer](layout_designer.html), the **Tools** tab contains actions that can be applied to the components of Layouts. 
 
-![Tools](/img/v2_layouts_tools.png)
+![Tools](img/v2_layouts_tools.png)
 
 ### Region
 
@@ -72,8 +72,8 @@ If there are no more Widgets to follow or the Layout is in the process of being 
 
 ### Permissions
 
-Set view, edit and delete Permissions for Widgets and Regions by clicking to add or drag and drop. 
+Set view, edit and delete permissions for Widgets and Regions by clicking to add or drag and drop. 
 
-![Permissions](C:\Users\Natasha\AppData\Local\Temp\1549026795519.png)
+![Permissions](img/v2_layouts_tools_permissions.png)
 
 Please see the manual page for [Permissions](users_permissions.html) for further information.
