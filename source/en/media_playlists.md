@@ -1,6 +1,6 @@
 <!--toc=media-->
 
-# Playlists (New Feature for 2.0)
+# Playlists (New Features for v2)
 
 Playlists allow for the creation of reusable playlists which can be easily added to Layouts and come in two parts:
 
@@ -18,7 +18,7 @@ If you require media assignments to be managed automatically then tick the **Dyn
 ![Playlist Filter Tab](img/v2_media_playlists_filter_tab.png)
 
 {tip}
-You can prepopulate your playlist with media from the Library using the Filter tab, but leaving the Dynamic checkbox unticked to make it a one-time assignment.
+You can prepopulate your playlist with media from the Library using the **Filter** tab, but leaving the Dynamic checkbox unticked to make it a one-time assignment.
 {/tip}
 
 Once added use the row menu for your created Playlist and click on **Timeline**.

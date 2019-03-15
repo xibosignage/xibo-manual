@@ -7,7 +7,7 @@ The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Cloc
 Click on the **Clock Widget** on the toolbar,  add / drag to the target **Region**.  ![Clock Widget](img/v2_media_clock_widget.png)
 
 {tip}
-If you are using 1.8 select **Clock** from the Widget Toolbox to add to your Region Timeline.
+If you are using 1.8, select **Clock** from the Widget Toolbox to add to your Region Timeline.
 {/tip}
 
 ### General

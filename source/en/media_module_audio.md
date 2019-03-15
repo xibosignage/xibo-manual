@@ -13,7 +13,7 @@ Click on the **Audio Widget** on the toolbar,  add / drag to the target **Region
 
 
 {tip}
-If you are using 1.8 select **Audio** from the Widget Toolbox to add to your Region Timeline.
+If you are using 1.8, select **Audio** from the Widget Toolbox to add to your Region Timeline.
 {/tip}
 
 

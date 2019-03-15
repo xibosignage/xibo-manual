@@ -1,6 +1,6 @@
 <!--toc=layouts-->
 
-# Regions (New Features for 2.0)
+# Regions (New Features for v2)
 
 Regions define areas on a **Layout** which hold **Widgets** (media content) to form sets of timed content.
 

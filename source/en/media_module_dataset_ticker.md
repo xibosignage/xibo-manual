@@ -1,5 +1,5 @@
 <!--toc=widgets-->
-# DataSet Ticker (New Feature for 2.0)
+# DataSet Ticker (New Features for v2)
 
 The DataSet Ticker Widget allows for **DataSet** content to be displayed as a **Ticker** on a Layout. The Ticker module primarily consists of a data source location and a template to apply to the retrieved data.
 {tip}
@@ -7,7 +7,7 @@ Ensure that a [DataSet](https://xibo.org.uk/manual/en/media_datasets.html) has b
 {/tip}
 
 {tip}
-If you are using 1.8, DataSets can be displayed using Tickers. Please use the following link to the appropriate manual page:[Ticker 1.8](media_module_ticker_1.8.html)
+If you are using 1.8, DataSets can be displayed using Tickers. Please use the following link :[Ticker 1.8](media_module_ticker_1.8.html)
 {/tip}
 
 

@@ -33,7 +33,8 @@ Complete the form fields and include the **API key** and Cache Period settings.
 Click on the Stocks Widget on the  toolbar, add / drag to the target **Region**. ![Stocks Widget](img/v2_media_stocks_widget.png)
 
 {tip}
-If you are using 1.8, select **Stocks** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. Please note: The Visual editor is not available in 1.8.
+If you are using 1.8, select **Stocks** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below.
+**Please note:** The Visual editor is not available in the 1.8 series CMS for this Widget.
 {/tip}
 
 ### General

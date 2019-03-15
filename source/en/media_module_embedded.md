@@ -11,7 +11,8 @@ Examples of where this might be useful are displaying a Clock or Weather region.
 Click on the **Embedded Widget** on the toolbar,  add / drag to the target **Region**.  ![Embedded Widget](img/v2_media_embedded_widget.png)
 
 {tip}
-If you are using 1.8, select **Embedded** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. Please note: The Visual editor is not available in 1.8.
+If you are using 1.8, select **Embedded** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below.
+**Please note:** The Visual editor is not available in the 1.8 series CMS for this Widget.
 {/tip}
 
 ### General

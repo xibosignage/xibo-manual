@@ -1,6 +1,6 @@
 # Regions
 
-If you are using **CMS 2.0**, please follow the link: [Regions](layouts_regions.html)
+If you are using **v2** of the CMS, please use the following link: [Regions](layouts_regions.html)
 
 Regions define areas on a Layout which hold Media content (Widgets) to form Playlists (sets of timed content).
 

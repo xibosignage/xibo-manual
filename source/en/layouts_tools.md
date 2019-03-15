@@ -1,6 +1,6 @@
 <!--toc=layouts-->
 
-# Tools (New Feature for 2.0)
+# Tools (New Features for v2)
 
 Located on the bottom toolbar on the [Layout Designer](layouts_designer.html), the **Tools** tab contains actions that can be applied to the components of Layouts. 
 

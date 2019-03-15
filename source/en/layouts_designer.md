@@ -1,11 +1,11 @@
 <!--toc=layouts-->
 
-# Layout Designer (New Features for 2.0)
+# Layout Designer (New Features for v2)
 
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
 
 {tip}
-If you are using 1.8 please use the following link to the appropriate manual page for your version: [Layout Designer 1.8](layouts_designer_1.8.html)
+If you are using the **1.8** series CMS, please use the following link: [Layout Designer 1.8](layouts_designer_1.8.html)
 {/tip}
 
 [[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout the Layout Designer will open in **Read Only Mode**.
@@ -21,7 +21,7 @@ All newly created Layouts have a '**Published**' status by default. This allows 
 To enable editing click on the **Actions** menu located at the bottom right of the toolbar, and click on **Checkout**. A confirmation form will appear, click on the **Checkout** button to continue.
 
 {tip}
-Clicking on the 'Read Only Mode' button at the top of the window will also 'Checkout'.
+Clicking on the 'Read Only Mode' pop up at the bottom of the window will also 'Checkout'.
 {/tip}
 
 ![Layouts checkout](img/v2_layouts_checkout.png)
@@ -78,15 +78,13 @@ Located on the bottom left of the toolbar assign actions using [Tools](layouts_t
 
 ## Actions
 
-Located on the bottom right of the toolbar, select from the menu of Actions that can be performed.
+Located on the bottom right of the toolbar, select from the menu of Actions that can be performed for **Published** Layouts.
 
 ![Actions List](img/v2_layouts_actions_list.png)
 
 
 
-- **Checkout**  - enable editing by putting the Layout into a draft status.
-
-- **Publish** - make edits permanent and send to Displays or make available for scheduling.
+- **Checkout**  - enable editing by putting the published Layout into a draft status.
 
 - **Schedule Now**  - schedule published Layouts onto one or more Displays directly from the Layout Designer.
 
@@ -95,6 +93,12 @@ Located on the bottom right of the toolbar, select from the menu of Actions that
   {tip}
   Invalid Layouts cannot be published.
   {/tip}
+
+{tip}
+Layouts that have been 'checked out' and are in a draft status have action buttons to **Publish**, **Undo** and **Delete**, located on the bottom right of the toolbar. ![Actions](img/v2_layouts_designer_actions.png)
+{/tip}
+
+{/tip}
 
 ### Layout Selector
 

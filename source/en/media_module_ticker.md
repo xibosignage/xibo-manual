@@ -6,7 +6,7 @@ The Ticker Widget allows **dynamic Feed** content to be added to a Layout. The T
 Click on the **Ticker Widget** on the  toolbar, add / drag to the target **Region**. ![Ticker Widget](img/v2_media_ticker_widget.png)
 
 {tip}
-If you are using 1.8 please use the following link to the appropriate manual page for this version: [Ticker 1.8](media_module_ticker_1.8.html)
+If you are using 1.8 please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
 {/tip}
 
 ### General

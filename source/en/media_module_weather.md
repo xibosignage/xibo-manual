@@ -39,7 +39,8 @@ Click on the **Weather Widget** on the  toolbar, add / drag to the target **Regi
 
 
 {tip}
-If you are using 1.8, select **Weather** or **Forecast IO** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. Please note: The Visual editor is not available in 1.8.
+If you are using 1.8, select **Weather** or **Forecast IO** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below.
+**Please note:** The Visual editor is not available in the 1.8 series of the CMS for this Widget.
 {/tip}
 
 ### General

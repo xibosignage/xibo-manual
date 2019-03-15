@@ -1,6 +1,6 @@
 # Layout Designer
 
-If you are using **CMS 2.0**, please follow the link: [Layout Designer](layouts_designer.html)
+If you are using **v2** of the CMS, please use the following link: [Layout Designer](layouts_designer.html)
 
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
 
