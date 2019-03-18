@@ -80,6 +80,6 @@ Include a suitable time for the **Update Interval** in minutes, keeping it as hi
 
 {nonwhite}
 
-Take a look at the [Chart Module Guide](https://community.xibo.org.uk/t/chart-module-guide-xibo-cms-1-8-10/14794) to walk you through how you can produce a Layout to include a Chart.
+Take a look at the [Chart Module Guide](https://community.xibo.org.uk/t/chart-module-guide/17791) to walk you through how you can produce a Layout to include a Chart.
 
 {/nonwhite}

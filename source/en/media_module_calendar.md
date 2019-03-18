@@ -93,7 +93,7 @@ It is best practice to contact a remote feed as little as possible.
 {/tip}
 
 {nonwhite}
-Take a look at the [Calendar Module Guide](https://community.xibo.org.uk/t/calendar-module-guide-xibo-cms-1-8-10/14749) which gives a walkthrough of how to display calendar events using this Widget.
+Take a look at the [Calendar Module Guide](https://community.xibo.org.uk/t/calendar-module-guide/17797) which gives a walkthrough of how to display calendar events using this Widget.
 {/nonwhite}
 
 ## Date Format - PHP

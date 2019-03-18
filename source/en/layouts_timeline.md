@@ -7,7 +7,7 @@ Each Region on a Layout has its own **Playlist** of content, which is shown in a
 A Playlist can consist of a **single item** (such as a company logo), or **multiple items** (such as an image slideshow).
 
 {tip}
-If you are using 1.8 please use the following link to the appropriate manual page for your version: [Playlists](layouts_playlists.html).
+If you are using 1.8 please use the following link: [Playlists](layouts_playlists.html).
 {/tip}
 
 A Region's Playlist is viewed/edited in the **Layout Timeline** window.  Use the buttons to zoom through the timeline to see the full Playlist of content.
