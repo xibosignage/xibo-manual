@@ -2,7 +2,7 @@
 
 # Schedule
 
-Schedule content using the simple calendar interface by clicking on the Schedule section of the Menu. 
+Schedule content using the simple calendar interface by clicking on the **Schedule** section of the Menu. 
 
 ## Controls
 
@@ -12,7 +12,7 @@ Use the control bar at the top of the calendar to select **Displays**, **Add Eve
 
 ### Select Displays
 
-Click in this field to select Displays /Display Groups to view the associated Schedules.
+Click in this field to select Displays /Display Groups to view the associated schedules.
 
 ### Add Event
 
@@ -28,15 +28,15 @@ Use the calendar icon, next to these buttons, to go directly to a selected date.
 
 ### Calendar Views
 
-Each Calendar View will show the associated Schedule for the selected Display/Display Group. Views show **Events** represented by Icons, with a key to explain each one, located below the calendar. 
+Each Calendar View will show the associated schedule for the selected Display/Display Group. Views show **Events** represented by Icons, with a key to explain each one, located below the calendar. 
 
 {tip}
-Click on an Event or Icon shown on a Calendar View to Edit the Schedule.
+Click on an Event or Icon shown on a Calendar View to Edit the schedule.
  {/tip}
 
 ### Year
 
-The Year view is intended as an overview of the Events Scheduled throughout the year and provides a total number of Events Scheduled per month. Roll over a Month and use the black arrow to show Event details.
+The Year view is intended as an overview of the Events scheduled throughout the year and provides a total number of Events scheduled per month. Roll over a month and use the black arrow to show Event details.
 
 ![Schedule Year View](img/schedule_year_view.png)
 
@@ -60,7 +60,7 @@ Hover over each Icon to display information for that particular Event.
 
 ### Week
 
-This view gives a week overview of Scheduled Events. Double click on a date to open the Day View.
+This view gives a week overview of scheduled Events. Double click on a date to open the Day View.
 
 ![Schedule Week View](img/scheduled_week_view.png)
 
@@ -91,5 +91,5 @@ This can be used to view exactly why a certain Layout is being shown at a certai
 {/tip}
 
 {tip}
-Click on the breadcrumb to view the Layout and make Edits to the Schedule.
+Click on the breadcrumb to view the Layout and make edits to the schedule.
 {/tip}

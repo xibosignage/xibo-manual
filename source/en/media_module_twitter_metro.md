@@ -1,7 +1,8 @@
 <!--toc=widgets-->
+
 # Twitter Metro
 
-The Twitter Metro Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Add the Twitter Metro Widget to Layouts to display Metro tiles of Twitter feeds.
+The Twitter Metro Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Add the Twitter Metro Widget to Layouts to display metro tiles of Twitter feeds.
 
 {nonwhite}
 {cloud}
@@ -9,13 +10,13 @@ The Twitter Metro Module provides access to the [Twitter Search API](https://dev
 As the main set-up is provided as part of the service for Xibo  in the Cloud customers, please ensure you have already provided the steps as detailed on the [Twitter Module](media_module_twitter.html) page. Once completed please start at the **Add Twitter Metro Widget** section.
 {/cloud}
 
-**Non-Xibo in the Cloud customers please follow the Installation steps as detailed below.**
+**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
 
 {/nonwhite}
 
 ## Installation
 
-Please ensure that the Installation steps **Connecting to Twitter** have been taken as detailed on the [Twitter Module](media_module_twitter.html#Installation) page.
+Please ensure that the installation steps **Connecting to Twitter** have been taken as detailed on the [Twitter Module](media_module_twitter.html#Installation) page.
 
 ### Twitter Metro Module Installation
 
@@ -26,32 +27,51 @@ Please ensure that the Installation steps **Connecting to Twitter** have been ta
 
 ## Add Twitter Metro Widget
 
-![Twitter Metro Add](img/media_twittermetro_add.png)
+Click on the **Twitter Metro Widget** on the  toolbar, add / drag to the target **Region**. ![Twitter Metro Widget](img/v2_media_twittermetro_widget.png)
+
+{tip}
+If you are using 1.8, select **Twitter Metro** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. 
+{/tip}
+
+{tip}
+The Twitter Metro Widget will automatically size portrait/landscape based on the size of the Region that it is added to. It will resize as if it were an image for best consistency across all display resolutions.
+{/tip}
 
 ### General
 
-Complete the form options as required, refer to the [Twitter Module](media_module_twitter.html#Add_Twitter_Widget) page 
+- Provide an optional name.
+- Choose to override the default duration.
 
-### Template
+### Configuration
 
-This form allows you to specify a **colour pallet** to be applied to the Metro tiles. 
+Complete the form options as required, refer to the [Twitter](media_module_twitter.html#Add_Twitter_Widget) page.
 
-{tip}
+### Appearance
 
-Tick to Override the template and specify your own colour pallets to use for the Metro tiles.
+Use the **Appearance** tab to edit the **Main** template, **Colours** to be applied and the **Effect** to be used to transition between Tweets.
 
-{/tip}
+![Twitter Metro Appearance](img/v2_media_twitter_metro_appearance.png)
 
-### Effect
+#### Main
 
-Select an optional Effect/Speed to be used to transition between Tweets, which will be applied to each tile.
+- Optionally add a background colour.
+- Provide a **No Tweets** message to display when there are no Tweets to return, based on the search query.
+- Apply a date format to be used for returned results, in PHP date format 9refer to the [Twitter](media_module_twitter.html#Add_Twitter_Widget) page. 
 
-### Advanced
+#### Colours
 
-Complete the form fields as required, refer to the [Twitter Module](media_module_twitter.html) page
+- Use the drop-down menu to specify a colour pallet to be applied to the metro tiles.
+- Tick to **Override the template** and specify your own colour pallets to use for the metro tiles
 
-{tip}
+![Metro Colours](img/v2_media_twitter_metro_colours.png)
 
-The Twitter Metro Widget will automatically size portrait/landscape based on the size of the Region that it is added to. It will resize as if it were an image for best consistency across all Display resolutions.
+- Click in the colour bars to re-select using the colour picker, remove by clicking `-` or add using `+`
+- Ensure that you **Save** your changes.
 
-{/tip}
+#### Effect
+
+- Select an optional effect/speed to be used to transition between Tweets, to be applied to each tile.
+
+### Caching
+
+Include a suitable time for the Update Interval in minutes, keeping it as high as possible. This determines how often the Module will request data from your feed.

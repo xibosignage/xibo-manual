@@ -2,11 +2,21 @@
 
 # Flash
 
-The Flash Module allows for **SWF file** uploads. Include the Flash Widget to Layouts to upload files using the **Upload Media** form.
+The Flash Module allows for **SWF file** uploads to the Library which can be assigned to Layouts.
 
-![Add Flash](img/media_flash_add.png)
+{tip}
+If the SWF file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.
+{/tip}
 
+Click on the **Flash Widget** on the toolbar,  add / drag to the target **Region**.![Flash Widget](img/v2_media_flash_widget.png)
 
+{tip}
+If you are using 1.8 select **Flash** from the Widget Toolbox to add to your Region Timeline.
+{/tip}
+
+Click on **Add files** to upload to the Library or click on View Library to select an uploaded file.
+
+![Add Flash](img/v2_media_flash_upload.png)
 
 ## Supported Players
 

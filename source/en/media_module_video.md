@@ -2,31 +2,41 @@
 
 # Video
 
-Add the Video Widget to Layouts to play Videos uploaded to the CMS on Displays. 
-
-![Video Add](img/media_video_add.png)
-
-Use the Upload Media form to Add files to Upload to the CMS.
+The Video Module allows for videos to be uploaded to the Library which are then cached for off-line playback.
 
 {tip}
+If the video file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.
+{/tip}
 
+Click on the **Video Widget** on the  toolbar, add / drag to the target **Region**. ![Video Widget](img/v2_media_video_widget.png)
+
+{tip}
+If you are using 1.8, select **Video** from the Widget Toolbox to add to your Region Timeline.
+{/tip}
+
+Click on **Add files** to upload to the Library or click on View Library to select an uploaded file.
+
+
+
+![Video Add](img/v2_media_video_upload.png)
+
+{tip}
 We recommend a H264 MP4 file format.
-
 {/tip}
 
-### Edit Video
+Once assigned to a Region, **Edit** options are available.
 
-Once assigned to the Region Timeline the Video Widget can be edited. 
+Choose to provide a specific duration:
 
-![Video Edit](img/media_video_edit.png)
+- The video can be cut short by providing a lower duration.
+- Wait on the last frame of the video or set the video to **Loop** (start from the beginning again) by providing a higher duration.
 
-- Choose to override the default duration
-- Select a **Scale** type (currently supported for Android and webOS only)
-- Toggle whether the video should loop (start from the beginning again) if it finishes before the set duration.
-- Toggle to mute/unmute the video.
+![Video Edit](img/v2_media_video_edit.png)
 
-{tip}
 
-Videos uploaded to the CMS are cached for off-line playback on Displays.
 
-{/tip}
+- Select a **scale** type (currently supported for Android and webOS Players only).
+- Opt to mute the video by using the tick box.
+- Tick to expand the video so that it shows in full screen.
+
+![Video Configuration](img/v2_media_video_configuration.png)

@@ -1,4 +1,5 @@
 <!--toc=widgets-->
+
 # Shell Command
 
 The Shell Command Module is used to instruct the Display to execute a **Command** outside of the [[PRODUCTNAME]] environment, using the operating system shell.  
@@ -9,13 +10,13 @@ The Shell Command Module is used to instruct the Display to execute a **Command*
 
 {nonwhite}
 
-This module is disabled by default for **Xibo in the Cloud** Customers. If you would like to utilise the Shell Command functionality to execute actions on loading a Layout, then please contact our help desk and open a [ticket](https://xibo.org.uk/help#commercial) asking to have this Module enabled.
+This Module is disabled by default for **Xibo in the Cloud** Customers. If you would like to utilise the Shell Command functionality to execute actions on loading a Layout, then please contact our help desk and open a [ticket](https://xibo.org.uk/help#commercial) asking to have this Module enabled.
 
 {/nonwhite}
 
 {/cloud}
 
-The Command is executed when a Layout containing the Shell Command Widget plays at its Scheduled time.
+The Command is executed when a Layout containing the Shell Command Widget plays at its scheduled time.
 
 A Shell command can be an **"ad hoc"** command string which is passed directly to the shell or a **predefined** **command** configured by an Administrator.
 
@@ -25,13 +26,27 @@ It is recommended that predefined commands should be used where possible. If you
 
 {/tip}
 
- If a command string is specified then an option for Windows or Linux is provided.
+Click on the **Shell Command Widget** on the  toolbar, add / drag to the target **Region**. ![Shell Command Widget](img/v2_media_shellcommand_widget.png)
 
-\- **Windows Command** - will be executed using `cmd.exe`.
+{tip}
+If you are using 1.8, select **Shell Command** from the Widget Toolbox to add to your Region Timeline.
+{/tip}
 
-\- **Linux Command** - Linux/Android Players require **root access** to use Shell Commands.
+### General
 
-![Shell Command Form](img/media_shellcommand_form.png)
+- Provide an optional name
+- Choose to override the default duration
+
+### Configuration
+
+![Shell Command](img/v2_media_shellcommand.png)
+
+- Use the drop-down menu to select a command.
+- If a command string is to be used, then fields are provided for Windows or Android / Linux compatible commands.
+
+{tip}
+Linux/Android Players require **root access** to use Shell Commands.
+{/tip}
 
 {tip}
 

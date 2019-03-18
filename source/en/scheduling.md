@@ -2,17 +2,17 @@
 
 # Scheduling
 
-[[PRODUCTNAME]] has a sophisticated Scheduling system which allows for the simple creation of complex Schedules for **Events** across Displays/Display Groups. 
+[[PRODUCTNAME]] has a sophisticated scheduling system which allows for the simple creation of complex schedules for **Events** across Displays/Display Groups. 
 
 ## Events
 
-Events are administered from the **Schedule** section of the Menu and managed from the Calendar interface.
+Events are administered from the **Schedule** section of the menu and managed from the calendar interface.
 
 ![Schedule](img/schedule_intro_.png)
 
 
 
-The CMS supports Scheduling for 3 Event types:
+The CMS supports scheduling for 3 event types:
 
 1. #### **Campaign/Layout Event**
 
@@ -20,13 +20,13 @@ The CMS supports Scheduling for 3 Event types:
 
 2. #### **Overlay Layout Event**
 
-   Specially created Layouts are Scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
+   Specially created Layouts are scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
 
 3. #### **Command Event**
 
-   A Scheduled Command can be executed by the Player at a specific point in time and therefore this type of Event does not need a `toDt`.
+   A Scheduled Command can be executed by the Player at a specific point in time and therefore this type of event does not need a `toDt`.
 
-Commands available to Schedule are pre-configured by an Administrator. Available Commands can be selected using the **Command** drop-down menu on the **Schedule Event** form. If you require additional commands please contact your Administrator.
+Commands available to schedule are pre-configured by an Administrator. Available Commands can be selected using the **Command** drop-down menu on the **Schedule Event** form. If you require additional commands please contact your Administrator.
 {tip}
 
 Display Order and Priority are irrelevant when it comes to executing the Command, but may be set in the CMS for organisational purposes.
@@ -35,7 +35,7 @@ Display Order and Priority are irrelevant when it comes to executing the Command
 
 ## Schedule Events
 
-Events are Scheduled into **Dayparts** which are selected to Schedule within the selected period:
+Events are scheduled into **Dayparts** which are selected to schedule within the selected period:
 
 ### Custom Daypart
 
@@ -43,19 +43,19 @@ Create your own To/From dates and times.
 
 ### Always Daypart
 
-Select to have the Event run constantly.
+Select to have the event run constantly.
 {tip}
-Create your own defined [Dayparts](scheduling_dayparting.html) for ease of Scheduling.
+Create your own defined [Dayparts](scheduling_dayparting.html) for ease of scheduling.
 {/tip}
 
 ## Priority
 
-Use Event Priority to determine whether the Event should be included in the Schedule for the Player or not. A Priority Event is determined by a number, with 0 considered the lowest Priority.
+Use Event Priority to determine whether the event should be included in the schedule for the Player or not. A 'Priority Event' is determined by a number, with 0 considered the lowest Priority.
 
 {tip}
-If a Player has a Schedule containing Events which are all Priority 0, then all of the Events will be shown in rotation together. 
+If a Player has a schedule containing Events which are all Priority 0, then all of the Events will be shown in rotation together. 
 
-If 1 of the Events has a Priority of 1, then this will be the only event shown. 
+If 1 of the Events has a Priority of 1, then this will be the only Event shown. 
 
 If there are some Events with Priority 0, some with Priority 1 and some with Priority 2 only the Priority 2 Events will be shown, in a rotation for that Scheduled period (as the highest Priority)
 
