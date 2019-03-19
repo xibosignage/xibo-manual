@@ -1,6 +1,8 @@
 # Regions
 
+{tip}
 If you are using **v2** of the CMS, please use the following link: [Regions](layouts_regions.html)
+{/tip}
 
 Regions define areas on a Layout which hold Media content (Widgets) to form Playlists (sets of timed content).
 

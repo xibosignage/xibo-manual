@@ -36,7 +36,7 @@ To make **edits** at anytime simply click on the Widget on the **Layout Timeline
 {/tip}
 
 {tip}
-Toggle Widgets to off when you have finished adding to Regions using the slider to the left of the Tools tab for a 'cleaner' work space.
+Toggle Widgets to off when you have finished adding to Regions using the slider to the left of the Tools tab for a 'clearer' work space.
 {/tip}
 
 ## Deleting from Regions

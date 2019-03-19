@@ -72,7 +72,7 @@ Widgets can be edited by clicking on assigned **Widgets** on the **Layout Timeli
 
 ## Toolbox
 
-Located on the bottom left of the toolbar assign actions using [Tools](layouts_tools.html), add  [Widgets](layouts_widgets.html) and search for [Library](media_library.html) media items to add to Layouts.
+Located on the bottom left of the toolbar assign actions using [Tools](layouts_tools.html), add  [Widgets](layouts_widgets.html) and search for [Library](media_library_search.html) media items to add to Layouts.
 
 ![Toolbox](img/v2_layouts_toolbox.png)
 
@@ -98,7 +98,7 @@ Located on the bottom right of the toolbar, select from the menu of Actions that
 Layouts that have been 'checked out' and are in a draft status have action buttons to **Publish**, **Undo** and **Delete**, located on the bottom right of the toolbar. ![Actions](img/v2_layouts_designer_actions.png)
 {/tip}
 
-{/tip}
+
 
 ### Layout Selector
 
