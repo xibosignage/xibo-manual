@@ -74,7 +74,15 @@ Depending on the Column Type selecting additional information will be required:
 
 **(Value) List Content** - A comma-separated list of values that can be selected for this field.
 
-**(Formula) Formula** - A MySQL statement suitable for use in a ‘SELECT’ statement, or a string to format a date field `$dateFormat(<col>,<format>)`.
+**(Formula) Formula** - A MySQL statement suitable for use in a ‘SELECT’ statement, or a string to format a date field `$dateFormat(<col>,<format><language>)`.
+
+{tip}
+Ensure that `<col>` has a date and time specified for the date format to work.
+{/tip}
+
+{tip}
+If the Language has not been set, then it will default to English.
+{/tip}
 
 **(Remote) Remote Data Path** - A JSON syntax string showing how to access the Data in the Remote data source.
 
