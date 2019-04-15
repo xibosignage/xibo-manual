@@ -40,3 +40,7 @@ Choose to provide a specific duration:
 - Tick to expand the video so that it shows in full screen.
 
 ![Video Configuration](img/v2_media_video_configuration.png)
+
+{tip}
+If you tick **Show Full Screen** the video will show full screen whilst it is playing. When the next item in the Region is shown it will revert back to the size of the Region.
+{/tip}
