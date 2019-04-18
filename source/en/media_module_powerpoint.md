@@ -2,11 +2,13 @@
 
 # PowerPoint
 
-[[PRODUCTNAME]] has 2 options to display PowerPoint PPT files.
+[[PRODUCTNAME]] has 3 options to display PowerPoint PPT files.
 
 **Option 1 -** Exported as a Video for non-Windows Players, and or, have no full copy of PowerPoint to install.
 
-**Option 2 -** Prepared and Uploaded as a PowerPoint PPT file for Windows Players only. Requires a full copy of PowerPoint to install on each Windows Player.
+**Option 2** - Saved as a PDF for non-Windows Players, and or, have no full copy of PowerPoint to install.
+
+**Option 3 -** Prepared and Uploaded as a PowerPoint PPT file for **Windows Players only**. Requires a full copy of PowerPoint to install on each Windows Player.
 
 {tip}
 If the PowerPoint PPT file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.
@@ -39,7 +41,28 @@ If you are using 1.8, select **Video** from the Widget Toolbox to add to your Re
 
 Once assigned to a Region, **Edit** options are available.
 
-## Option 2 - Prepare and Upload your PowerPoint PPT file
+## Option 2 - Save as a PDF
+
+- Save your PowerPoint as a PDF.
+- Click on the [PDF Widget](<https://xibo.org.uk/manual/en/media_module_pdf.html>) on the toolbar, add / drag to the target Region. ![PDF Widget](img/v2_media_pdf_widget.png)
+
+{tip}
+If you are using 1.8, select **PDF** from the Widget Toolbox to add to your Region Timeline.
+{/tip}
+
+- Select **Add files** and select the saved PDF file to upload.
+
+![PDF Upload](img/v2_media_pdf_upload.png)
+
+Once assigned to a Region, **Edit** options are available.
+
+{tip}
+Set the duration for the overall presentation and the PDF Widget will handle the number of pages to make it fit within this timescale.
+{/tip}
+
+
+
+## Option 3 - Prepare and Upload your PowerPoint PPT file
 
 PowerPoint is a proprietary format from Microsoft and can only be displayed on a Windows-based signage player which has Microsoft PowerPoint installed.
 
