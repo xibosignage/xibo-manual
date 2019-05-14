@@ -16,21 +16,11 @@ Ensure that the Layout has been 'checked out' to enable editing.
 
 Click on the 'edit' icon located in the top right hand corner of the **Layout Navigator** window to open.
 
-![Region Resize](img/v2_layouts_regions_resize.png)
-
 **Regions** can be positioned anywhere inside the **Layout** canvas using drag and drop, and resized by using the resize handle located in the lower right-hand corner of the Region. 
 
-Click on **X** located on the left of the toolbar to save changes and exit the window. The **Layout Navigator** will now show the **Region** resized and positioned.
+Click in the Region to resize and position, further actions are available via the tabs on the **Region Options** form.
 
-![Resized Region Layout Navigator](img/v2_layouts_regions_resized_layout_navigator.png)
-
-{tip}
-As all edits made here are autosaved click on **Undo** to revert any changes.
-{/tip}
-
-Further actions can be accessed by clicking on a Region on the Layout Navigator. Edits can be made using the **Region Options** form.
-
-![Region Options](img/v2_layouts_regions_region_options.png)
+![Region Resize](img/v2_layouts_regions_resize.png)
 
 
 
@@ -52,24 +42,27 @@ This tab allows for precise sizing and positioning.  **Make the Region full scre
 Transitions are only supported in the Linux, Android and webOS Players and need to be pre configured. Please contact your Administrator.
 {/tip}
 
+Once you have **Saved** your edits click **Close** to return to the Layout Designer screen.
+
+![Resized Region Layout Navigator](img/v2_layouts_regions_resized_layout_navigator.png)
+
+
+
 ## Adding Regions
 
 Regions can be added in two ways:
 
-- open the **Layout Navigator** window and click on the **Add** button.
+- open the **Layout Navigator** window and click on the **Add Region** button.![Add Region Button](img/v2_layouts_regions_add_button.png)
 
-  ![Add Region Button](img/v2_layouts_regions_add_button.png)
+- select **Tools** on the bottom toolbar and click on **Region** to add or drag to the Layout Navigator window.![Add Region](img/v2_layouts_regions_add.png)
 
-- select **Tools** on the bottom toolbar and click on **Region** to add or drag to the Layout Navigator window.
-
-![Add Region](img/v2_layouts_regions_add.png)
 
 ### Deleting Regions
 
-Remove Regions and all associated content by clicking on a **Region** to highlight then **click** on the **bin icon**, located at the bottom right of the toolbar. **This action cannot be undone**.
+Remove Regions and all associated content by clicking on the **Delete Region** button in the Layout Navigator window. **Please note: This action cannot be undone**.
 
 {tip}
-Delete by right clicking on the target Region.
+Regions can be deleted from the Layout Designer by clicking on the Region and clicking the bin icon on the bottom toolbar or by right clicking on the target Region and using the bin icon.
 {/tip}
 
 ### Permissions for a Region
@@ -89,3 +82,6 @@ A globally shared Layout can have Region access rights defined for any other use
 {tip}
 **Please note:** The Windows Player does not support overlapping Regions. For a mixed Player network ensure Regions do not overlap for the best results.
 {/tip}
+
+
+

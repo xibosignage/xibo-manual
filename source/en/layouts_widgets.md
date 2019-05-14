@@ -21,15 +21,11 @@ Clicking on a Widget will give you the option to **click to Add** ![Click to add
 
 Add the Widget by clicking directly on or dragging to a target **Region**.
 
-![Add Widget to a Region](img/v2_layouts_add_widget_to_region.png)
-
-
+![Widget added to Region Timeline](img/v2_layouts_widget_region_timeline.png)
 
 Once added the Widget will be added to the **Layout Timeline** and can be configured using the available **edit** options in the **Editor**. 
 
-![Widget added to Region Timeline](img/v2_layouts_widget_region_timeline.png)
-
-
+![Widget Edit Options](img/v2_layouts_widget_edit_options.png)
 
 {tip}
 To make **edits** at anytime simply click on the Widget on the **Layout Timeline** to open the available options form for that Widget.
