@@ -3,7 +3,7 @@
 
 All content displayed in [[PRODUCTNAME]] is added/edited and served by a **Media Module**. [[PRODUCTNAME]] has a wide variety of Modules to choose from with more being introduced with new releases.
 
-Modules can be enabled/disabled from the Modules page under the Administration section of the Menu.
+Modules can be enabled/disabled from the **Modules** page under the **Administration** section of the Menu.
 
 ![Modules Grid](img/media_modules_grid.png)
 
@@ -12,17 +12,17 @@ Modules are enabled/disabled by using the row menu for the selected Module. Sele
 ### Library Modules
 
 At times it may be necessary to add or remove the allowed extensions on a particular file based Module. {tip}
-A typical use case would be if a client is being used which does not support that particular type of file.{/tip}
+A typical use case would be if a Player is being used which does not support that particular type of file.{/tip}
 
 ## Generic Files
 
-The Generic File Module is used to send **additional files** to the Display Client that can then be used for other purposes. 
+The Generic File Module is used to send **additional files** to the Player that can then be used for other purposes. 
 
 {tip}
 This could be useful for:
 
 - Embedded HTML - supplementary files can be provided to be used as relative paths (e.g. An up and down arrow that is dynamically shown in the embedded HTML based on the results of stock data)
-- Auto Update - functionality exists to act as a foundation for an auto-client update.
+
   {/tip}
 
 ## Caching and external access
