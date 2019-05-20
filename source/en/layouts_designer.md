@@ -32,9 +32,15 @@ The **Layout Designer** will open and confirm that the Layout has been 'checked 
 
 ## Layout Navigator
 
-This is located in the top right corner of the Layout Designer window. As shown in the above image, all new Layouts, by default, have one full screen empty [Region](layouts_regions.html), represented as a white semi-transparent overlay.  The Layout Navigator can be used to add, position and resize Regions and gives an overview to the overall layout design. 
+This is located in the bottom corner of the Layout Designer window. As shown in the above image, all new Layouts, by default, have one full screen empty [Region](layouts_regions.html), represented as a semi-transparent overlay.  The Layout Navigator is used to add, position and resize Regions and gives an overview to the overall layout design.
 
 ![Layout Navigator](img/v2_layouts_layout_navigator.png)
+
+Clicking on a **Region** in the opened Layout Navigator window, opens the **Region Options** form which allows for refinement of  **Positioning** and the application of **Transitions**.
+
+![Region Options](img/v2_layout_designer_region_options_form.png)
+
+
 
 ## Layout Timeline
 
@@ -50,21 +56,27 @@ A Layout must contain at least one Region **and** each Region must contain at le
 
 ## Preview
 
-Preview  Layouts, Widgets and Regions and make the necessary alterations to designs to ensure that everything plays as intended.  Toggle to full screen size by clicking the icon in the top right hand corner of the Preview window.
+Preview your Layout, Widgets and Regions and make the necessary alterations to designs to ensure that everything plays as intended.  Click on the Play icon located in the top left  of the Preview window to Preview your Layout. Toggle to full screen size by clicking the icon in the top right hand corner of the Preview window.
 
 ![Layout Preview](img/v2_layouts_layout_preview.png)
 
+Click on a **Widget** to view media in the Preview window. Use the arrows to cycle through all Widgets that have been assigned to that **Region**.
+
+![Widget Preview](img/v2_layouts_widget_preview.png)
+
+{tip}
+Click on the back arrow in the top right hand of the Preview window to return to the Layout Preview.
+{/tip}
+
 ## Editor
 
-Click on any aspect of the Layout to edit. 
+Edit aspects of your Layout and assigned Widgets. Click on assigned **Widgets** from the **Layout Timeline** window to open the edit options available for that media item.
+
+![Edit Widget](img/v2_layouts_edit_widget.png)
+
+Use the arrow in the top right hand corner of the Preview window to return to the Layout and **Edit Layout** form.
 
 ![Layout Editor](img/v2_layouts_layout_editor.png)
-
-
-
-Click on a **Region** on the **Layout Navigator** window to open the **Region Options** form. Refine Positioning and apply Transitions using the tabs.
-
-![Region Options](img/v2_layouts_region_options.png)
 
 Widgets can be edited by clicking on assigned **Widgets** on the **Layout Timeline** window to open the options available for that media item.
 

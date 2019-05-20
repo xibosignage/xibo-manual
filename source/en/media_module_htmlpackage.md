@@ -18,6 +18,3 @@ Click on **Add files** to upload to the Library or click on View Library to sele
 
 
 
-
-
-**Please note:** This Module is currently supported on Windows and Android Players only.
