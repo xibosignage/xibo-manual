@@ -52,7 +52,18 @@ The Configuration tab contains the following options:
 
 **Round Robin** - Takes one Widget from each Playlist in the order they appear on the General tab and repeats.
 
-**Auto** - Ensures that Widgets are played evenly from each Playlist by using the total count of Widgets on all Playlists.
+**Auto** - Ensures that Widgets are played evenly from each Playlist. Auto uses the total count of Widgets in each list and divides by the smallest list. This determines how often it should take media items from each list to ensure an even play from each Playlist.
+
+{tip}
+Scenario:
+
+I have three Playlists with images of Flowers, Sweets and Fruit which vary in Spot allocation.  I would like an even spread of media items from each of these Playlists to be played:
+
+![Subplaylist Scenario](img/v2_media_subplaylist_scenario.png)
+
+Set with an **Auto** configuration media would be taken from each Playlist as follows:
+
+5 x Flowers, 1 x Sweet, 2 x Fruit and will then repeat until the specified Slots have been fulfilled, which would be one more rotation in this scenario.
 
 There are also options to decide what should be done with any Widgets that are left unordered at the end of a Playlist:
 
