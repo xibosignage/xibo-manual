@@ -48,7 +48,13 @@ Sending a Player a Layout that has been designed with a 4:3 resolution which is 
 
 **If you require an alternative resolution to the available options listed, contact your Administrator**
 
+### Enable Stats collection
 
+Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for the newly added **Layout**.
+
+{tip}
+Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](<https://xibo.org.uk/manual/en/displays_settings.html>).
+{/tip}
 
 ## Row menu
 
@@ -115,6 +121,20 @@ Export the Layout including all associated Widgets/Media/DataSet structures to a
 ### Permissions
 
 Assign Permissions for **Users/User Groups** to define who should have access to **View**, **Edit** and **Delete** the Layout.
+
+
+
+## Draft Status
+
+Selecting a Layout that is in a Draft status will present further row menu options.
+
+### Publish
+
+Select to Publish straight away or select a date and time to set the Layout to Publish in the future.
+
+### Discard
+
+Ignore any changes that have been made and revert to the previous Published version of the Layout.
 
 
 

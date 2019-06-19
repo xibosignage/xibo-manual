@@ -82,6 +82,12 @@ Users will be redirected to a page to reset their password, the next time they l
 
   
 
+## Reset Two Factor Authentication
+
+If a User loses access to their email or Google Authenticator app and have no access to any saved recovery codes, tick to reset.
+
+Once ticked the Two Factor Authentication will be set to ‘Off’ for this **User Profile** with any stored secret codes cleared. The User can now set up two factor authentication from the User Profile as before.
+
 ## Deleting Users
 
 Delete a User in the same way by using the row menu for the selected User.

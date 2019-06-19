@@ -5,7 +5,7 @@
 The primary purpose of [[PRODUCTNAME]] is to show content on screens with the entire application suite existing for that one purpose. [[PRODUCTNAME]] provides a concept called **Displays** to manage when and how content is shown on a screen.
 
 {tip}
-When no other content is Scheduled, Displays will **always** show a **Default Layout**. You can create your own Default Layout to replace the existing one to show.
+When no other content is Scheduled, Displays will **always** show a **Default Layout**. You can create your own Default Layout to replace the existing one and show on selected Displays. Use the row menu and click on Default Layout to select. 
 {/tip}
 
 Displays are uniquely identified by a **hardware key** which is generated when the Signage Player software is installed. This hardware key is used to create a Display record in the CMS and is unique to that one Display record.
@@ -62,7 +62,7 @@ Media Access Control Address of the Display (if the client software is capable o
 Columns can be toggled on and off to show the information you would like to display for administration purposes by clicking on the **Column visibility** button. 
 {/tip}
 
-### Row Menu
+## Row Menu
 
 Each Display has a row menu containing a number of actions that can be performed against them such as;
 
@@ -72,11 +72,7 @@ Each Display has a row menu containing a number of actions that can be performed
 
 
 
-
-
-
-
-#### Manage
+### Manage
 
 Each Display has its own Dashboard which shows the Displays current status, bandwidth usage, file status and errors.
 
@@ -94,23 +90,37 @@ This Dashboard is useful as a first step for troubleshooting issues with a Displ
 
 
 
-#### Edit
+### Edit
 
-Configure options specific to that Display with the 'Advanced' tab, which lists the general settings applied from the selected **Settings Profile**.
+Clicking on **Edit** opens configure options for that **Display**.
 
-![Displays Edit Advanced](img/displays_edit_advanced.png)
+#### Override Display Profile Settings for individual Displays
+
+Use the Profile Settings tab to see the settings applied from the selected [Display Settings Profile](<https://xibo.org.uk/manual/en/displays_settings.html>).
 
 
 
-#### Delete
+![Displays Edit Profile Settings](img/displays_edit_profilesettings.png)
 
-Deleting a Display will remove it from the CMS entirely - this operation cannot be reversed. A deleted Display can be reconnected to the CMS by repeating the “Register” procedure which will create a new unique Display record.
+
+
+#### Set Bandwidth Limits per Display
+
+Use the **Advanced** tab to apply a limit for the amount of bandwidth that a **Display** can consume.
+
+
+
+![Displays Bandwidth](img/displays_edit_advanced_bandwidth.png)
+
+### Delete
+
+Deleting a **Display** will remove it from the **CMS** entirely - this operation cannot be reversed. A deleted Display can be reconnected to the CMS by repeating the “Register” procedure which will create a new unique Display record.
 
 {tip}
-Deauthorise a Display instead of deleting so that it can be re-authorised at a later date if needed. Use the row menu for the Display and click on Authorise to toggle to Deauthorise. This can also be actioned from the **Edit Display** form by selecting **No** for Authorise display.
+**Deauthorise** a Display instead of deleting so that it can be re-authorised at a later date if needed. Use the row menu for the Display and click on **Authorise** to toggle to **Deauthorise**. This can also be actioned from the **Edit Display** form by selecting **No** for Authorise display.
 {/tip}
 
-#### Send Command
+### Send Command
 
 The **Send Command** functionality is executed via XMR to Players by selecting a predefined command. This is useful for sending Players 'Reboot' commands for example.
 
@@ -127,3 +137,6 @@ Administrators create predefined commands for use, therefore if you require addi
 {tip}
 This type of Command can also be executed by scheduling a [Command Event](scheduling.html#Events)
 {/tip}
+
+
+

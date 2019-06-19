@@ -52,7 +52,9 @@ Each **media** file has a row menu with a list of actions that can be performed 
 
 ### Edit
 
-The Edit Media form allows you to edit the name and duration of the file as well as options to **Retire** and **Update** edits to layouts that contain the current media file.
+The Edit Media form allows you to edit the name and duration of the file as well as options to **Retire** and **Update** edits to layouts that contain the current media file. 
+
+Select from the settings to enable/disable the collection of **Proof of Play** statistics for the selected media file. Use the drop-down for **Enable Media Stats Collection**.
 
 ![Edit Media](img/media_edit.png)
 
@@ -61,6 +63,10 @@ It may be necessary to upload a new revision of an existing file. This can be do
 ![Replace Media](img/media_replace.png)
 
 Upload a replacement file using the same steps as before and select whether the replacement file should be updated to all Layouts it is currently assigned to and the old version removed.
+
+### Copy
+
+Make copies of the selected media file, give the copied file a new name and Tag.
 
 ### Delete
 
@@ -79,6 +85,10 @@ Assign **view/edit/delete** permissions for User/User Groups.
 ### Download
 
 Download a copy of the **media file** for ease of sharing.
+
+### Enable Stats collection?
+
+Click to select **Off** / **On** / **Inherit** settings for collection of **Proof of Play** statistics for the selected media file.
 
 ### Usage Report
 
