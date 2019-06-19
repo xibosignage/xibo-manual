@@ -80,5 +80,6 @@ There are also options to decide what should be done with any Widgets that are l
 The Sub-Playlist preview shows the number of Widgets and total duration after play order and Spot options are taken into consideration. Use the Layout preview to see each Widget in the list previewed in sequence.
 {/tip}
 
-
-
+{tip}
+**Please note:**  Setting Widget start dates may cause fewer Spots to be shown than the total Spots specified.
+{/tip}
