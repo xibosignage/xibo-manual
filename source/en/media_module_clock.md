@@ -51,9 +51,9 @@ The Flip Clock is a pre-formatted clock that animates a "flip" for each hour, mi
 
 The **Flip Clock** also has Hourly, Minute and Daily **Counter** options which run from a specified date/time to give a Countdown on Layouts.
 
-## Formatting the Time
+## Available Formatting
 
-The time can be formatted by providing "tokens" that sit between square brackets [] in the template area.
+Date / time can be formatted by providing "tokens" that sit between square brackets [] in the template area.
 
 | Title                      | Token   | Output                                 |
 | -------------------------- | ------- | -------------------------------------- |
