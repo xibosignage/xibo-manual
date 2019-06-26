@@ -13,6 +13,14 @@ Click on the **Add Playlist** button and complete the form fields:
 
 ![Add Playlist](img/v2_media_playlists_add.png)
 
+Playlists can be tagged which allows for ordering and makes it easier to find and view a large number of Playlists if grouped by a certain Tag. 
+
+{tip}
+Administrators can set certain **Tag's** to have a **Value** associated to them.   Tags that have a Tag Value will show the selections available from an additional field -  **Tag value** drop down.
+
+For further information on what Tag and Tag Values to use, please speak with your Administrator.
+{/tip}
+
 If you require media assignments to be managed automatically then tick the **Dynamic** check box and set the filter criteria to use for Library media on the **Filter** tab.
 
 ![Playlist Filter Tab](img/v2_media_playlists_filter_tab.png)

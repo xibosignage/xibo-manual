@@ -94,6 +94,12 @@ This Dashboard is useful as a first step for troubleshooting issues with a Displ
 
 Clicking on **Edit** opens configure options for that **Display**.
 
+Displays can be tagged which allows for ordering and makes it easier to find. Administrators can set certain **Tag's** to have a **Value** associated to them.  Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
+
+{tip}
+For further information on what Tag and Tag Values to use, please speak with your Administrator.
+{/tip}
+
 #### Override Display Profile Settings for individual Displays
 
 Use the Profile Settings tab to see the settings applied from the selected [Display Settings Profile](<https://xibo.org.uk/manual/en/displays_settings.html>).
