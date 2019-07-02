@@ -38,10 +38,6 @@ This tab allows for precise sizing and positioning as well as setting a **Layeri
 
 **Please note: Overlapping Regions is not supported for Windows Players.**
 
-{tip}
-We are currently working on supporting this with the Linux Player - [Supported Features](https://xibo.org.uk/xibo-for-linux)
-{/tip}
-
 If required, overlapping Regions can be ordered for playback using z-index settings.
 
 These are set from the **Positioning Tab**, by entering a number in the **Layer** field to determine the order that Region should be shown within the overall stack.
