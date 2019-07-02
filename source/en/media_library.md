@@ -66,7 +66,7 @@ For further information on what Tag and Tag Values to use, please speak with you
 
 Select from the settings to enable/disable the collection of **Proof of Play** statistics for the selected media file. Use the drop-down for **Enable Media Stats Collection**.
 
-![Edit Media](img/media_edit.png)
+![Edit Media](img/v2_media_edit.png)
 
 It may be necessary to upload a new revision of an existing file. This can be done by using the **Replace** button at the bottom of the form.
 

@@ -26,7 +26,7 @@ For further information on what **Tag** and **Tag Values** to use, please speak 
 
 
 
-![Templates](img/layouts_templates_save.png)
+![Templates](img/v2_layouts_templates_save.png)
 
 Once saved, templates can be selected by users (with appropriate Permissions) when creating a new Layout.
 

@@ -6,7 +6,7 @@ Layouts can be grouped together into an ordered list. A Campaign can then be Sch
 
 Campaigns are administered from the Design section of the Menu. 
 
-![Campaigns](img/layouts_Campaigns_grid.png)
+![Campaigns](img/v2_layouts_Campaigns_grid.png)
 
 ## Create a Campaign
 
