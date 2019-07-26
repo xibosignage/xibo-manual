@@ -20,9 +20,9 @@ The CMS Icon Dashboard is the default Dashboard for all new assigned **Users** a
 
 
 
-## Media Dashboard
+## Media Manager Dashboard
 
-The CMS Media Dashboard can be enabled for **Users** who should only edit the **Media** they have been given permission for. The Media Dashboard gives a restricted access view of the CMS presented in a grid style interface which lists each item the User has permissions to edit. 
+The CMS Media Manager Dashboard can be enabled for **Users** who should only edit the **Media** they have been given permission for. The Media Manager Dashboard gives a restricted access view of the CMS presented in a grid style interface which lists each item the User has permissions to edit. Users can use the dropdown menu to select **Widgets** from **Drafts** or **Playlists** and use the available filters.
 
 ![CMS Media Dashboard](img/tour_cms_media_dashboard.png)
 
@@ -30,7 +30,7 @@ The CMS Media Dashboard can be enabled for **Users** who should only edit the **
 
 {tip}
 
-Ensure that your User has the required Permissions applied so that they can access the Media Dashboard and view/edit content of a Layout. See [Permissions](users_permissions.html) for guidance.
+Ensure that your User has the required Permissions applied so that they can access the Media Manager Dashboard and view/edit content of a Layout. See [Permissions](users_permissions.html) for guidance.
 
 {/tip}
 
