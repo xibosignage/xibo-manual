@@ -4,7 +4,7 @@
 
 [[PRODUCTNAME]] provides useful **metrics** for Users, who have the relevant permissions, to view within the CMS. These are designed to provide a centralised area for analysis into Display performance and usage and are available from the Reporting section on the menu.
 
-## Display Statistics
+# Display Statistics
 
 The CMS records the bandwidth used by each Display when connecting to XMDS for content and when reporting back Display information. 
 
@@ -42,17 +42,23 @@ Reports can be provided for Proof of Play statistics recorded by:
 - **Media**
 - **Widget**
 
-Statistical collection can be enabled by an **Administrator** by default as well as set by User's on adding/editing a [Layout](<https://xibo.org.uk/manual/en/layouts.html>), from the [Media Library](<https://xibo.org.uk/manual/en/media_library.html>) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
+Statistical collection can be enabled as a default by an **Administrator** and set by a User on adding/editing a [Layout](<https://xibo.org.uk/manual/en/layouts.html>), [Playlist](<https://xibo.org.uk/manual/en/media_playlists.html>), from the [Media Library](<https://xibo.org.uk/manual/en/media_library.html>) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
 
-Click on **Proof of Play** under the **Reporting** section of the CMS menu.
+Click on **Proof of Play** under the **Reporting** section of the CMS menu to access the Proof of Play dashboard. 
 
-Use the filters on the Proof of Play grid to retrieve the information needed. Information displayed in the table can be printed or exported to CSV.
+### Report: Proof of Play
+
+Use the filters to retrieve the Proof of Play information needed. Information can be printed or exported to a CSV.
 
 ![Proof Of Play](img/displays_proofofplay.png)
 
-### Reports
+### Export: Proof of Play
 
-Use the drop-down to select to use the **Chart Summary by Layout or Media file** report.
+Use **Export** to select from and to dates for a Display to easily see all Proof of Play data.
+
+![Proof of Play Export](img/v2_displays_export_proof_of_play.png)
+
+### Chart Reports
 
 Select a predefined timeframe, (Today, Yesterday, This Week etc) and use the filters to populate the data.
 
@@ -74,9 +80,7 @@ The **Report Schedules** button will show all your saved Reports and schedule in
 **Report Schedules** and **Saved Reports** can also be accessed directly from the CMS menu under the **Reporting** section.
 {/tip}
 
-
-
-## Library Usage
+# Library Usage
 
 View Library usage for all Users or filter to have an overview of usage by individual User/User Group. 
 
