@@ -32,7 +32,23 @@ Complete a name for the Region and use the checkbox to Loop the content if requi
 
 ### Positioning
 
-This tab allows for precise sizing and positioning.  **Make the Region full screen** by clicking on the text which will display the dimensions the Region will be set by.
+This tab allows for precise sizing and positioning as well as setting a **Layering Order**.  **Make the Region full screen** by clicking on the text which will display the dimensions the Region will be set by.
+
+### Rules for Layering Regions
+
+**Please note: Overlapping Regions is not supported for Windows Players.**
+
+If required, overlapping Regions can be ordered for playback using z-index settings.
+
+These are set from the **Positioning Tab**, by entering a number in the **Layer** field to determine the order that Region should be shown within the overall stack.
+
+![Region Options Layering](img/v2_layouts_regions_layer.png)
+
+The ‘Layer’ order is determined by the number entered here, with 1 considered the lowest Layer. The higher the number the higher the Layer.
+
+{tip}
+On some devices, it is impossible to overlay anything on a Region showing a **Video** or **VideoIn** Widget. Whether it is possible will depend on the device and whether hardware accelerated playback is being used. In general, it is possible on Android (when not using the SurfaceView option in the Display Settings Profile), Linux, Tizen and webOS Players, but if you have a requirement for this, be sure to test your intended device carefully to ensure this works in your use case.
+{/tip}
 
 ### Transition
 
