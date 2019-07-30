@@ -30,9 +30,11 @@ Click on the speaker icon to edit the assigned audio.
 
 ### Expiry Dates
 
-Click on the Expiry Dates button and click to add or drag and drop to a Widget to enter **Start** and **End** dates and times.
+Click on the Expiry Dates button and click to add or drag and drop to a Widget to enter **Start** and **End** dates and times. Use the checkbox to delete the Widget at the set end time.
 
 ![Expiry Dates](img/v2_layouts_tools_expiry_dates.png)
+
+
 
 Widgets that have Expiry Dates assigned can be identified by the **clock icon** shown in the corner of the media item on the Layout Timeline. 
 
@@ -43,7 +45,7 @@ Click on this icon to make edits to expiry dates/times as necessary.
 {/tip}
 
 {tip}
-Once the End date has passed the Widget will be removed from the Region. Expired Widgets will remain visible in the Layout Designer so that **Start** and **End** times can be re-adjusted if needed.
+Once the End date has passed the Widget will be removed from the Region. Expired Widgets that have not been set to **Delete on Expiry** will remain visible in the Layout Designer so that **Start** and **End** times can be re-adjusted if needed.
 {/tip}
 
 It is important to note that the Layout will be marked invalid and not sent to Players if a Region is empty due to Widget expiry. It should also be noted that if at the time of download there was a valid Layout but the Player has since gone offline, the Layout will show with an empty Region.

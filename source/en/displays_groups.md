@@ -11,7 +11,15 @@ Display Groups are administered in the CMS by clicking on Display Settings under
 
 Click on the **Add Display Group** button to create a new Display Group or use the row menu to **Edit** an existing Display Group.
 
-![Display Groups Add](img/displays_groups_add.png)
+![Display Groups Add](img/v2_displays_groups_add.png)
+
+Display Groups can be tagged which allows for ordering and makes it easier to find. Administrators can set certain **Tag's** to have a **Value** associated to them.  Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
+
+{tip}
+For further information on what Tag and Tag Values to use, please speak with your Administrator.
+{/tip}
+
+
 
 ## Members
 

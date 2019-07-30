@@ -12,13 +12,13 @@ Take a look at the [Modules](media_modules.html) page to see the variety of cont
 
 Layouts are administered from the Design section of the menu. Click on **Layouts** to open the Layouts grid to view all existing Layouts and to create new from the **Add Layout** button.
 
-![Layout Grid](img/layouts_grid.png)
+![Layout Grid](img/v2_layouts_grid.png)
 
 ## Add Layout
 
 Click on the action button to open the Add Layout form to complete the appropriate fields.
 
-![Add Layout](img/layouts_add.png)
+![Add Layout](img/v2_layouts_add.png)
 
 {tip}
 
@@ -32,7 +32,11 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 ### Tags
 
-Layouts can be tagged which allows for ordering and makes it easier to find and view a large number of Layouts if grouped by a certain Tag. This is particularly useful with a growing number of Layouts.
+Layouts can be tagged which allows for ordering and makes it easier to find and view a large number of Layouts if grouped by a certain Tag. Administrators can set certain Tag's to have a Value associated to them.   Tags that have a Tag Value will show the selections available from an additional field -  **Tag value** drop down.
+
+{tip}
+For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
+{/tip}
 
 ### Templates
 
@@ -48,7 +52,13 @@ Sending a Player a Layout that has been designed with a 4:3 resolution which is 
 
 **If you require an alternative resolution to the available options listed, contact your Administrator**
 
+### Enable Stats collection
 
+Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for the newly added **Layout**.
+
+{tip}
+Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](<https://xibo.org.uk/manual/en/displays_settings.html>).
+{/tip}
 
 ## Row menu
 
@@ -115,6 +125,20 @@ Export the Layout including all associated Widgets/Media/DataSet structures to a
 ### Permissions
 
 Assign Permissions for **Users/User Groups** to define who should have access to **View**, **Edit** and **Delete** the Layout.
+
+
+
+## Draft Status
+
+Selecting a Layout that is in a Draft status will present further row menu options.
+
+### Publish
+
+Select to Publish straight away or select a date and time to set the Layout to Publish in the future.
+
+### Discard
+
+Ignore any changes that have been made and revert to the previous Published version of the Layout.
 
 
 

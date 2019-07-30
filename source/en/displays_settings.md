@@ -1,15 +1,15 @@
 <!--toc=displays-->
 # Display Settings 
 
-Display Clients are configured automatically from the CMS once they are connected, this is managed using Display Profiles.
+Displays can be configured automatically from the CMS once they are connected. This is managed using Display Setting Profiles.
 
-## Display Profiles
+## Display Setting Profiles
 
-Each Display has a default Display Profile which can be customised by an Administrator to suit required preferences or new Display Profiles can be created and assigned directly to a Display.
+Each Display has a default **Display Setting Profile** which can be customised by an Administrator to suit required preferences. New Display Setting Profiles can be created and assigned directly to a **Display**.
 
 ## Available profiles
 
-A list of available profiles can be viewed from Display Settings under the Display section on the menu.
+A list of available profiles can be viewed from **Display Settings** under the **Display** section on the menu.
 
 ![Display Settings Profiles](img/displays_settings_profiles.png)
 
@@ -61,7 +61,9 @@ The CMS can be configured to talk to an XMR instance if player actions are requi
 
 {/white}
 
+### Enable Stats Reporting
 
+Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for all **Displays** that use the selected **Display Profile**.
 
 ## Add a Profile
 
@@ -77,6 +79,6 @@ Please ensure that there is **one default** remaining for each Type.
 
 ## Setting on the Display
 
-A default profile will automatically apply to all Displays of the same Type. A Display can be overridden with a Profile other than default by selecting the required Profile on the Display Edit form and using the **Advanced** tab.
+A default profile will automatically apply its settings to all Displays of the same Type. A Display can be overridden with a Profile other than the default by selecting the required **Settings Profile** on a Display's **Edit form** using the **Profile Settings** tab. Each setting can also be overridden for individual Displays.
 
-![Displays Edit Profile Advanced](img/displays_edit_advanced.png)
+![Displays Edit Profile Settings](img/displays_edit_profilesettings.png)
