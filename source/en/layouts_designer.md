@@ -106,11 +106,21 @@ Located on the bottom right of the toolbar, select from the menu of Actions that
   Invalid Layouts cannot be published.
   {/tip}
 
+### Draft Layout Status
+
+Layouts that have been 'checked out' and in a draft status have action buttons to **Publish**, **Undo** and **Delete**, located on the bottom right of the toolbar.
+
+ ![Actions](img/v2_layouts_designer_actions.png)
+
+### Set to Publish
+
+Layouts can be **Published** straight away with updates automatically pushed to Layouts that are in the schedule. A date and time can also be selected to Publish a Layout at a **specified** time.
+
+![Publish Selected Time](img/v2_layouts_publish_selected_time.png)
+
 {tip}
-Layouts that have been 'checked out' and are in a draft status have action buttons to **Publish**, **Undo** and **Delete**, located on the bottom right of the toolbar. ![Actions](img/v2_layouts_designer_actions.png)
+You can also use the **row menu** for a selected draft Layout to set a **Publish time**.
 {/tip}
-
-
 
 ### Layout Selector
 
