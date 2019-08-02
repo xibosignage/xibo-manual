@@ -34,6 +34,10 @@ The CMS records all Displays on/offline events to provide further information re
 
 # Proof of Play
 
+{tip}
+If you are using 1.8 please use the following link to the appropriate manual page for your version: [Proof of Play 1.8](displays_proof_of_play_1.8.html)
+{/tip}
+
 Each **Display** can collect information to provide **Proof of Play** reports on what they have shown.
 
 Reports can be provided for Proof of Play statistics recorded by:
@@ -41,6 +45,10 @@ Reports can be provided for Proof of Play statistics recorded by:
 - **Layout**
 - **Media**
 - **Widget**
+
+{tip}
+Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
+{/tip}
 
 Statistical collection can be enabled as a default by an **Administrator** and set by a User on adding/editing a [Layout](<https://xibo.org.uk/manual/en/layouts.html>), [Playlist](<https://xibo.org.uk/manual/en/media_playlists.html>), from the [Media Library](<https://xibo.org.uk/manual/en/media_library.html>) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
 
