@@ -40,17 +40,20 @@ If you are using 1.8 please use the following link to the appropriate manual pag
 
 Each **Display** can collect information to provide **Proof of Play** reports on what they have shown.
 
+**Enable Stats Reporting** and set the **Aggregation level** on a [Display Profile Setting](displays_settings.html)
+
+Statistical collection can be enabled as a default by an **Administrator** on the Settings page and set by a User on adding/editing a [Layout](<https://xibo.org.uk/manual/en/layouts.html>), [Playlist](<https://xibo.org.uk/manual/en/media_playlists.html>), from the [Media Library](<https://xibo.org.uk/manual/en/media_library.html>) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
+
 Reports can be provided for Proof of Play statistics recorded by:
 
 - **Layout**
 - **Media**
 - **Widget**
+- **Event**
 
 {tip}
-Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
+If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
 {/tip}
-
-Statistical collection can be enabled as a default by an **Administrator** and set by a User on adding/editing a [Layout](<https://xibo.org.uk/manual/en/layouts.html>), [Playlist](<https://xibo.org.uk/manual/en/media_playlists.html>), from the [Media Library](<https://xibo.org.uk/manual/en/media_library.html>) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
 
 Click on **Proof of Play** under the **Reporting** section of the CMS menu to access the Proof of Play dashboard. 
 
