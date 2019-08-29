@@ -8,25 +8,20 @@ The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Eac
 If you are using the **1.8** series CMS, please use the following link: [Layout Designer 1.8](layouts_designer_1.8.html)
 {/tip}
 
-[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout the Layout Designer will open in **Read Only Mode**.
+[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the Layout Designer will open in a **Published** state.
 
 ![Layout Designer](img/v2_layouts_designer_first_load.png)
 
-
-
 {tip}
-All newly created Layouts have a '**Published**' status by default. This allows for quick and easy creation to scheduling if creating from a **Template** or importing a designed layout. Layouts with a **valid** status can be scheduled straight away!
+This allows for quick and easy creation of Layouts from a Template or importing a designed Layout.
+Layouts with a **valid** status can be scheduled straight away!
 {/tip}
 
-To enable editing click on the **Actions** menu located at the bottom right of the toolbar, and click on **Checkout**. A confirmation form will appear, click on the **Checkout** button to continue.
+To enable editing click on the **Checkout** button.
 
 {tip}
-Clicking on the 'Read Only Mode' pop up at the bottom of the window will also 'Checkout'.
+If after selecting View, the Layout can be Checked out if needed using the **Actions** menu on the bottom toolbar.
 {/tip}
-
-![Layouts checkout](img/v2_layouts_checkout.png)
-
-
 
 The **Layout Designer** will open and confirm that the Layout has been 'checked out' ready for editing.
 
