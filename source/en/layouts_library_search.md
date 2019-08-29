@@ -1,6 +1,6 @@
 <!--toc=layouts-->
 
-# Library Search (New Features for v2)
+# Library Search
 
 The Library Search feature is used as a quick and easy way to assign **media** to **Layouts** which has already been uploaded to the Library.
 

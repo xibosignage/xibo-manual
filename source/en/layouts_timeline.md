@@ -1,6 +1,6 @@
 <!--toc=layouts-->
 
-# Layout Timeline (New Features for 2.0)
+# Layout Timeline
 
 Each Region on a Layout has its own **Playlist** of content, which is shown in a specified order by the Player. 
 
