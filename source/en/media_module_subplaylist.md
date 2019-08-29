@@ -1,6 +1,8 @@
 <!--toc=widgets-->
 
-# Sub-Playlists (New Features for v2)
+# Sub-Playlists
+
+**Please note:** This Module is available from v2
 
 The Sub-Playlists Widget allows for pre-defined Playlists to be simply added to a Layout.
 

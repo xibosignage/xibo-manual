@@ -1,6 +1,6 @@
 <!--toc=layouts-->
 
-# Widgets (New Features for 2.0)
+# Widgets
 
 Media is assigned to Layouts using **Widgets**, which provide the actions for the selected Module.
 

@@ -1,6 +1,6 @@
 <!--toc=media-->
 
-# Playlists (New Features for v2)
+# Playlists
 
 Playlists allow for the creation of reusable playlists which can be easily added to Layouts and come in two parts:
 

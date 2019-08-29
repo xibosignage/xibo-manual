@@ -1,6 +1,8 @@
 <!--toc=widgets-->
 
-# HTML Package (New Features for v2)
+# HTML Package
+
+**Please note:** This Module is available from v2
 
 The HTML Package Module allows for the upload of a complete HTML Package which can be distributed to Players.
 

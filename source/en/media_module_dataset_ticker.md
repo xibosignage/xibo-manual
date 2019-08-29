@@ -1,5 +1,5 @@
 <!--toc=widgets-->
-# DataSet Ticker (New Features for v2)
+# DataSet Ticker
 
 The DataSet Ticker Widget allows for **DataSet** content to be displayed as a **Ticker** on a Layout. The Ticker module primarily consists of a data source location and a template to apply to the retrieved data.
 {tip}

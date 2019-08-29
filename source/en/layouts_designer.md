@@ -1,6 +1,6 @@
 <!--toc=layouts-->
 
-# Layout Designer (New Features for v2)
+# Layout Designer
 
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
 
