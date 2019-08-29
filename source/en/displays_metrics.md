@@ -55,7 +55,13 @@ Reports can be provided for Proof of Play statistics recorded by:
 If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
 {/tip}
 
-Click on **Proof of Play** under the **Reporting** section of the CMS menu to access the Proof of Play dashboard. 
+Click on **Proof of Play** under the **Reporting** section of the CMS menu to access the Proof of Play dashboard. ![Proof of Play Dashboard](img/v2_proof_of_play_dashboard.png)
+
+### Proof of Play: Export
+
+Use **Export** to select from and to dates for a Display to easily see all Proof of Play data.
+
+![Proof of Play Export](img/v2_displays_export_proof_of_play.png)
 
 ### Report: Proof of Play
 
@@ -63,11 +69,7 @@ Use the filters to retrieve the Proof of Play information needed. Information ca
 
 ![Proof Of Play](img/displays_proofofplay.png)
 
-### Export: Proof of Play
 
-Use **Export** to select from and to dates for a Display to easily see all Proof of Play data.
-
-![Proof of Play Export](img/v2_displays_export_proof_of_play.png)
 
 ### Chart Reports
 
