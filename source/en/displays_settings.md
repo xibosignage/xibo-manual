@@ -65,6 +65,18 @@ The CMS can be configured to talk to an XMR instance if player actions are requi
 
 Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for all **Displays** that use the selected **Display Profile**.
 
+If enabled set the required level of collection for Proof of Play statistics to be applied to all Layouts / Media and Widget items using the **Aggregation level** drop down.
+
+![Enable Stats](img/v2_aggregation_level_displays_proof_of_play.png)
+
+- **Individual** - statistics are collected when specified by default.
+- **Hourly** - statistics will be collected hourly by default.
+- **Daily** - statistics will be collected daily by default.
+
+{tip}
+Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
+{/tip}
+
 ## Add a Profile
 
 Click on the Add Profile button, and include a name and select **Client type**, Save.
