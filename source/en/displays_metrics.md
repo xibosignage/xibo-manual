@@ -38,7 +38,7 @@ The CMS records all Displays on/offline events to provide further information re
 If you are using 1.8 please use the following link to the appropriate manual page for your version: [Proof of Play 1.8](displays_proof_of_play_1.8.html)
 {/tip}
 
-Each **Display** can collect information to provide **Proof of Play** reports on what they have shown.
+Each **Display** can collect information to provide Proof of Play Reports on what they have shown.
 
 **Enable Stats Reporting** and set the **Aggregation level** on a [Display Profile Setting](displays_settings.html)
 
@@ -55,17 +55,19 @@ Reports can be provided for Proof of Play statistics recorded by:
 If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
 {/tip}
 
-Click on **Proof of Play** under the **Reporting** section of the CMS menu to access the Proof of Play dashboard. ![Proof of Play Dashboard](img/v2_proof_of_play_dashboard.png)
+Click on **Proof of Play** under the **Reporting** section of the CMS menu to access the available reports.
+
+![Proof of Play Dashboard](img/v2_proof_of_play_dashboard.png)
 
 ### Proof of Play: Export
 
-Use **Export** to select from and to dates for a Display to easily see all Proof of Play data.
+Use **Export** to select from and to dates for a Display to easily see all Proof of Play data exported to a CSV.
 
 ![Proof of Play Export](img/v2_displays_export_proof_of_play.png)
 
 ### Report: Proof of Play
 
-Use the filters to retrieve the Proof of Play information needed. Information can be printed or exported to a CSV.
+Select a Range, use the filters and **Apply** to retrieve the Proof of Play information needed. Export data to CSV.
 
 ![Proof Of Play](img/displays_proofofplay.png)
 
@@ -77,17 +79,27 @@ Select a predefined timeframe, (Today, Yesterday, This Week etc) and use the fil
 
 ![Proof of Play Summary Report](img/displays_proofofplay_summary_report.png)
 
-You can also use the filter to specify a particular date range and schedule it to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis.
+### Schedule
+
+Once defined, Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis.
 
 Complete the **From Date** and **To Date** and use the other filter to collect the data needed. Click on the **Schedule** button and complete the form fields.
 
 ![Proof of Play Reports Schedule](img/displays_proofofplay_report_schedule.png)
 
-Select how often you wish this report to run and give it a name which can be later identified in the **Report Schedule**.
+Select how often you wish this report to run using the **Filter** and give it a name. 
 
-Click on **Saved Reports** to view all your run reports. Use the row menu to view your saved report, return to the Reports page and to delete.
+### Report Schedules
 
-The **Report Schedules** button will show all your saved Reports and schedule information. Use the row menu to open the last saved report, return to the Reports page, edit the existing schedule, re-run a report schedule (available for super administrators only) and delete.
+Use the **Report Schedules** button to view all schedules by Type. Use the row menu for a particular report to open the last saved report, return to the Reports page, edit the existing schedule, re-run a report schedule (available for super administrators only) and delete.
+
+### Saved Reports
+
+Click on **Saved Reports** to view all your run reports. Use the row menu to view your saved report, return to the reports page or schedule, as well as delete.
+
+{tip}
+**Please note**: Exporting to a CSV is not supported for saved reports.
+{/tip}
 
 {tip}
 **Report Schedules** and **Saved Reports** can also be accessed directly from the CMS menu under the **Reporting** section.
