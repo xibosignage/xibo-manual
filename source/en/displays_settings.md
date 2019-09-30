@@ -77,6 +77,20 @@ If enabled set the required level of collection for Proof of Play statistics to 
 Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
 {/tip}
 
+## Network
+
+Using the **Network** tab, you can set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
+
+Use the drop down menu to select the day part to apply
+
+![Display Settings Network](img/v2_display_settings_network.png)
+
+'Email alerts' such as those which send when a Display is offline, will not be sent outside of the specified Operating Hours.
+
+{tip}
+Use the **Profile Settings** tab for individual **Displays** to override.
+{/tip}
+
 ## Add a Profile
 
 Click on the Add Profile button, and include a name and select **Client type**, Save.

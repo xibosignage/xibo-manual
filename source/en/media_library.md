@@ -6,15 +6,13 @@ The CMS Library stores all file-based media that is uploaded for use onto Layout
 
 ## Uploading Media
 
-Library media can be uploaded directly to the Library using an easy to use file upload tool.
-
-Navigate to Media under the Library section of the menu to open the Library grid. Click on the **Add Media** button.
+Library media can be either uploaded directly to the Library using our easy to use file upload tool or by URL.
 
 ![Media Library](img/media_library_grid.png)
 
-{tip}
-Media can also be uploaded directly to a **Widget** assigned in a **Layout**, which will also save to the Library by default.
-{/tip}
+Navigate to Media under the Library section of the menu to open the Library grid:
+
+### Add Media
 
 Uploading is achieved in two steps.
 
@@ -28,6 +26,16 @@ Files can also be added via drag and drop.
 ![Media Library Upload](img/media_library_upload.png)
 
 {tip}
+Media can also be uploaded directly to a **Widget** assigned in a **Layout**, which will also save to the Library by default.
+{/tip}
+
+### Add Media (URL)
+
+Use the Add Media (URL) button to provide a remote URL to the file.
+
+![Upload via URL](img/media_library_upload_url.png)
+
+{tip}
 All media items that have been uploaded to the Library are available to include in Layouts by simply using the [Library Search](layouts_library_search.html) tab on the **Layout Designer** tool bar.
 
 ![Library Search Tab](img/v2_media_library_search.png)
@@ -36,7 +44,7 @@ All media items that have been uploaded to the Library are available to include 
 
 ## Adding New Fonts
 
-[[PRODUCTNAME]] comes with a set of standard fonts provided by our text editor tool - CKEditor. New fonts can be added and uploaded to the **Library** in the same way. Once added the font will be available to use in the text editor.
+[[PRODUCTNAME]] comes with a set of standard fonts provided by our text editor tool - CKEditor. New fonts can also be added and uploaded to the **Library** using the easy file upload tool. Once added the font will be available to use in the text editor.
 
 {tip}
 If the new font does not show in the text editor after upload, try clearing the browser cache. 
@@ -46,27 +54,50 @@ If the new font does not show in the text editor after upload, try clearing the 
 **Please note:** Fonts have preferences built into then known as OS/2 tags. [[PRODUCTNAME]] checks for OS/2 preferences and can use fonts with OS/2 tags 0 or 8. Fonts with other OS/2 tags may produce an error on uploading and may not display correctly.
 {/tip}
 
-## Row Menu
+## Row Menu 
 
-Each **media** file has a row menu with a list of actions that can be performed against it.
+Each **Media** file has a row menu with a list of actions and shortcuts that can be performed against it:
 
 ### Edit
 
-The Edit Media form allows you to edit the name and duration of the file as well as options to **Retire** and **Update** edits to layouts that contain the current media file. 
+The Edit Media form allows you to make edits to the name and duration of the selected file amongst other actions.
+
+![Edit Media](img/v2_media_edit.png)
+
+
+
+**Tags**:
 
 Media can be tagged to allow for ordering and make files easier to find.
 
-{tip}
-Administrators can set certain **Tag's** to have a **Value** associated to them.   Tags that have a Tag Value will show the selections available from an additional field -  **Tag value** drop down.
+> Administrators can set certain **Tag's** to have a **Value** associated to them. Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
+>
+> For further information on what Tag and Tag Values to use, please speak with your Administrator.
 
-For further information on what Tag and Tag Values to use, please speak with your Administrator.
+**Expiry date:**
+
+Select a date and time to completely remove the selected Media file from the CMS.
+**Please note:** This will remove the Media from any Layouts that contain this file.
+
+**Retire this media:**
+
+If you do not want to completely remove the Media file and keep it assigned to existing Layout's then tick the **Retire this media** option. The Media file will not show for selection for new Layouts.
+
+**Enable Media Stats Collection:**
+
+Use the drop-down to set the collection of [Proof of Play](displays_metrics.html#proof_of_play) statistics to On / Off / Inherit for the selected Media file.
+
+> To collect Proof of Play records ensure that the Enable Stats Reporting has been ticked in [Display Settings
+
+**Update this Media in all Layouts it is assigned to:**
+
+Ticking this box will update any edits made to be reflected in the Layouts that the selected Media file is currently assigned to.
+
+{tip}
+Edits will only be updated in Layouts which you have permission to edit.
 {/tip}
 
-
-
-Select from the settings to enable/disable the collection of **Proof of Play** statistics for the selected media file. Use the drop-down for **Enable Media Stats Collection**.
-
-![Edit Media](img/v2_media_edit.png)
+**Replace**
 
 It may be necessary to upload a new revision of an existing file. This can be done by using the **Replace** button at the bottom of the form.
 

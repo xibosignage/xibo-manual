@@ -2,7 +2,7 @@
 
 # Notifications
 
-[[PRODUCTNAME]] has a **Notification System** to keep Administrators and Users of the CMS informed of important system events and other user-created notifications.
+[[PRODUCTNAME]] has a **Notification System** to keep Administrators and Users of the CMS informed of important system events and other user-created notifications, such as [Schedule Event Reminders](scheduling_events#Reminders.png).
 
 ## Notification Drawer
 

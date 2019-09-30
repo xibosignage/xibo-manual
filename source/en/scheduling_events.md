@@ -124,7 +124,14 @@ E.g. With a **Weekly** Repeat you could specify to repeat each Wednesday and Fri
 For example: an event which is scheduled on 06/03/2019 can be set to repeat on the 6th day of every month or the 1st Wednesday of each month (as 06/03/2019 falls on a Wednesday). 
 {/tip}
 
+## Reminders
 
+Create a set of reminders to be sent to the [Notification Drawer](users_notifications.html) for your scheduled Events. 
+
+![Event Reminders](/img/v2_scheduling_event_reminders.png)
+
+Use the form fields to define a reminder, use the + icon to add additional fields.
+Tick the box if you wish to be notified email. This will be sent to the email address as set for your [User Profile](users_administration.html>).
 
 ## Edit / Delete
 
