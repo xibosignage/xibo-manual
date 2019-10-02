@@ -81,13 +81,23 @@ Select a predefined timeframe, (Today, Yesterday, This Week etc) and use the fil
 
 ### Schedule
 
-Once defined, Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis.
+Once defined, Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis. 
 
-Complete the **From Date** and **To Date** and use the other filter to collect the data needed. Click on the **Schedule** button and complete the form fields.
+From version 2.2.0 a PDF of a Scheduled Report can also be emailed to Users by clicking in the **Should an email be sent?** tick box. 
+
+{tip}
+Scheduled Reports can also be emailed to additional email addresses as entered in the **Email addresses** field.
+{/tip}
+
+Click on the **Schedule** button and complete the form fields.
 
 ![Proof of Play Reports Schedule](img/displays_proofofplay_report_schedule.png)
 
-Select how often you wish this report to run using the **Filter** and give it a name. 
+{tip}
+Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to setting up sending via email.
+{/tip} 
+
+
 
 ### Report Schedules
 

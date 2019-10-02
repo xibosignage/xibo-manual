@@ -8,6 +8,10 @@ The CMS Library stores all file-based media that is uploaded for use onto Layout
 
 Library media can be either uploaded directly to the Library using our easy to use file upload tool or by URL.
 
+{tip}
+**Please note:** Adding Media via URL is available from v2.2.0
+{/tip}
+
 ![Media Library](img/media_library_grid.png)
 
 Navigate to Media under the Library section of the menu to open the Library grid:
@@ -74,9 +78,9 @@ Media can be tagged to allow for ordering and make files easier to find.
 >
 > For further information on what Tag and Tag Values to use, please speak with your Administrator.
 
-**Expiry date:**
+**Expiry date:** (available from v2.2.0)
 
-Select a date and time to completely remove the selected Media file from the CMS.
+Select a date and time to completely remove the selected Media file from the CMS
 **Please note:** This will remove the Media from any Layouts that contain this file.
 
 **Retire this media:**

@@ -61,6 +61,10 @@ The logged in User will only see a list of Users in their own User Group. Super 
 
 Optionally use the checkbox to cascade permissions to items contained underneath. For example, as permissions are being assigned to a Layout if this box was checked then all Regions, Playlists and Widgets within the selected Layout would have the same assigned permissions. 
 
+{tip}
+From v2.2.0 Administrators can set the option to select this checkbox by default for all Users from the **Defaults** tab on the **Settings** page.
+{/tip}
+
 Modifications made to items are available in ‘real time’ this means the next time a User interacts with the object the newly set permissions are applied.
 
 {tip}

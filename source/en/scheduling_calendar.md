@@ -14,6 +14,10 @@ Use the control bar at the top of the calendar to select **Displays**, **Add Eve
 
 Click in this field to select Displays /Display Groups to view the associated schedules.
 
+### Layout / Campaign
+
+Use this field to search for Layouts/Campaigns that already exist in the Schedule for 'All' or 'selected' Displays. (Available from v2.2.0)
+
 ### Add Event
 
 Schedule Events by completing the form fields.

@@ -4,6 +4,14 @@
 
 [[PRODUCTNAME]] has a **Notification System** to keep Administrators and Users of the CMS informed of important system events and other user-created notifications, such as [Schedule Event Reminders](scheduling_events#Reminders.png).
 
+{tip}
+Please ensure that your Administrator has entered a **Sending Email** address on the CMS Settings page, **Network** tab prior to using Notifications.
+
+If you are using v1.8 of the CMS,  you can find these settings on the **Maintenance** tab.
+{/tip}
+
+
+
 ## Notification Drawer
 
 Notifications for a logged in User appear at the top right of the screen with unread notifications shown in red next to the Alarm bell icon. The Notification Drawer can be accessed by clicking on the Alarm bell icon.

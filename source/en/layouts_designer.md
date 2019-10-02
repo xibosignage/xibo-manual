@@ -8,22 +8,11 @@ The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Eac
 If you are using the **1.8** series CMS, please use the following link: [Layout Designer 1.8](layouts_designer_1.8.html)
 {/tip}
 
-[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the Layout Designer will open in a **Published** state.
+[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the Layout Designer will open.
 
 ![Layout Designer](img/v2_layouts_designer_first_load.png)
 
-{tip}
-This allows for quick and easy creation of Layouts from a Template or importing a designed Layout.
-Layouts with a **valid** status can be scheduled straight away!
-{/tip}
 
-To enable editing click on the **Checkout** button.
-
-{tip}
-If after selecting View, the Layout can be Checked out if needed using the **Actions** menu on the bottom toolbar.
-{/tip}
-
-The **Layout Designer** will open and confirm that the Layout has been 'checked out' ready for editing.
 
 ## Layout Navigator
 

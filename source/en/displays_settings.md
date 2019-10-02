@@ -79,7 +79,7 @@ Players aggregate ‘completed records’ only, with collection made at the end 
 
 ## Network
 
-Using the **Network** tab, you can set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
+From v2.2.0 use the **Network** tab to set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
 
 Use the drop down menu to select the day part to apply
 
