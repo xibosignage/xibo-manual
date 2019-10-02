@@ -2,6 +2,10 @@
 
 For added security, Users can set **Two Factor Authentication** options for **Email** or **Google Authenticator** to complete login by entering a code, to further confirm their identity when logging into the CMS.
 
+{tip}
+Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to the set up of Two Factor Authentication.
+{/tip}
+
 ![2FA Code Login](img/v2_tour_2fa_login.png)
 
 Navigate to the **Profile icon** in the top right hand corner of the CMS and click on **Edit Profile**.

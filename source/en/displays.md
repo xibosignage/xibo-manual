@@ -102,7 +102,7 @@ For further information on what Tag and Tag Values to use, please speak with you
 
 #### Override Display Profile Settings for individual Displays
 
-Use the Profile Settings tab to see the settings applied from the selected [Display Settings Profile](<https://xibo.org.uk/manual/en/displays_settings.html>).
+Use the Profile Settings tab to see the settings applied from the selected [Display Settings Profile](displays_settings.html).
 
 
 
