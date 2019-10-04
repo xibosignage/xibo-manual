@@ -16,7 +16,7 @@ Click in this field to select Displays /Display Groups to view the associated sc
 
 ### Layout / Campaign
 
-Use this field to search for Layouts/Campaigns that already exist in the Schedule for 'All' or 'selected' Displays. (Available from v2.2.0)
+Use this field to search for Layouts/Campaigns that already exist in the Schedule, filter by Display / Display Group. (Available from v2.2.0)
 
 ### Add Event
 
