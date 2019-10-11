@@ -88,6 +88,15 @@ If a User loses access to their email or Google Authenticator app and have no ac
 
 Once ticked the Two Factor Authentication will be set to ‘Off’ for this **User Profile** with any stored secret codes cleared. The User can now set up two factor authentication from the User Profile as before.
 
+{tip}
+Add the **Two Factor** column to the Users grid using the **Column visibility** button. This will give you an overview of what Users have set with regards to Two Factor authorisation. (Disabled / Email / Google Authenticator)
+
+![2fa Coloumn](img/user_administration_2fa_column.png)
+
+{/tip}
+
+
+
 ## Deleting Users
 
 Delete a User in the same way by using the row menu for the selected User.
