@@ -1,6 +1,6 @@
 # Spacer
 
-(Available from v2.2.0)
+**Please note:** This Module is available from 2.2.0
 
 Include the Spacer Widget to your Layouts to create an 'empty' Region for a specified duration.
 

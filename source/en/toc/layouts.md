@@ -7,5 +7,6 @@
 - [Library Search](layouts_library_search.html)
 - [Templates](layouts_templates.html)
 - [Overlay Layouts](layouts_overlay.html)
+- [Interrupt Layouts](layouts_interrupt.html)
 - [Campaigns](layouts_campaigns.html)
 
