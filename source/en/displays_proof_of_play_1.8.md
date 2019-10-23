@@ -1,7 +1,7 @@
 # Proof of Play
 
 {tip}
-If you are using v2 of the CMS, please use the following link: [Reporting](displays_metrics.html)
+If you are using 2.1 or later of the CMS, please use the following link: [Reporting](displays_metrics.html)
 {/tip}
 
 Players are capable of sending Proof of Play statistics to the CMS so you can see exactly how many times any given Layout and Media file was displayed on your Players.
