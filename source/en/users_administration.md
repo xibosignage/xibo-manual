@@ -6,7 +6,7 @@ Users are administered in the CMS by clicking on Users under the Administration 
 
 ![Users Admin Grid](img/users_admin_grid.png)
 
-{non-white}
+{nonwhite}
 {cloud}
 Xibo in the Cloud customers have access to the helpdesk as part of the hosting service. Please ensure that the user account named `xibo_admin` is not modified or removed so that our agents can assist you with your CMS as and when required.
 {/cloud}
