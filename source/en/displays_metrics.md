@@ -35,7 +35,7 @@ The CMS records all Displays on/offline events to provide further information re
 # Proof of Play
 
 {tip}
-If you are using 1.8 please use the following link to the appropriate manual page for your version: [Proof of Play 1.8](displays_proof_of_play_1.8.html)
+If you are using an earlier version than 2.1, please use the following link to the appropriate manual page for your version: [Proof of Play ](displays_proof_of_play_1.8.html)
 {/tip}
 
 Each **Display** can collect information to provide Proof of Play Reports on what they have shown.
