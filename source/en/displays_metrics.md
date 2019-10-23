@@ -67,7 +67,7 @@ Use **Export** to select from and to dates for a Display to easily see all Proof
 
 ### Report: Proof of Play
 
-Select a Range, use the filters and **Apply** to retrieve the Proof of Play information needed. Export data to CSV.
+Select a Range, use the filters and **Apply** to retrieve the Proof of Play information needed. Data can be exported to CSV.
 
 ![Proof Of Play](img/displays_proofofplay.png)
 
@@ -83,7 +83,7 @@ Select a predefined timeframe, (Today, Yesterday, This Week etc) and use the fil
 
 Once defined, Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis. 
 
-From version 2.2.0 a PDF of a Scheduled Report can also be emailed to Users by clicking in the **Should an email be sent?** tick box. 
+From version 2.2.0, a PDF of a Scheduled Report can also be emailed to Users by clicking in the **Should an email be sent?** tick box. 
 
 {tip}
 Scheduled Reports can also be emailed to additional email addresses as entered in the **Email addresses** field.
@@ -105,11 +105,7 @@ Use the **Report Schedules** button to view all schedules by Type. Use the row m
 
 ### Saved Reports
 
-Click on **Saved Reports** to view all your run reports. Use the row menu to view your saved report, return to the reports page or schedule, as well as delete.
-
-{tip}
-**Please note**: Exporting to a CSV is not supported for saved reports.
-{/tip}
+Click on **Saved Reports** to view all your run reports. Use the row menu to view your saved report, return to the reports page or schedule, export as a PDF and delete.
 
 {tip}
 **Report Schedules** and **Saved Reports** can also be accessed directly from the CMS menu under the **Reporting** section.
