@@ -107,7 +107,17 @@ Add the **Two Factor** column to the Users grid using the **Column visibility** 
 
 {/tip}
 
+{tip}
+If you cannot access the CMS then run the following sql directly in the database to clear 2FA data for a specified User `{yourUserId}` , userId can be found in the User table.
 
+```
+UPDATE `user` SET `twoFactorSecret` = NULL,
+`twoFactorTypeId` = 0,
+`twoFactorRecoveryCodes` = NULL
+WHERE userId = {yourUserId}
+```
+
+{/tip}
 
 ## Deleting Users
 
