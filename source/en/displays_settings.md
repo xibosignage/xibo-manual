@@ -79,17 +79,17 @@ Players aggregate ‘completed records’ only, with collection made at the end 
 
 ## Network
 
-From v2.2.0 use the **Network** tab to set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
+From v2.2.0, an option has been included to force a Displays connection to use HTTPS on the **Network** tab. Use the checkbox to **Force HTTPS**. 
+
+**Please note:** We are currently working to bring this feature to all Players but at present is only available for Windows and webOS Players.
+
+Also included in 2.2.0 is the ability to set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
 
 Use the drop down menu to select the day part to apply
 
 ![Display Settings Network](img/v2_display_settings_network.png)
 
 'Email alerts' such as those which send when a Display is offline, will not be sent outside of the specified Operating Hours.
-
-{tip}
-Use the **Profile Settings** tab for individual **Displays** to override.
-{/tip}
 
 ## Add a Profile
 
@@ -105,6 +105,6 @@ Please ensure that there is **one default** remaining for each Type.
 
 ## Setting on the Display
 
-A default profile will automatically apply its settings to all Displays of the same Type. A Display can be overridden with a Profile other than the default by selecting the required **Settings Profile** on a Display's **Edit form** using the **Profile Settings** tab. Each setting can also be overridden for individual Displays.
+A **default profile** will automatically apply its settings to all Displays of the same Type. A Display can be overridden with a Profile other than the default by selecting the required **Settings Profile** on a Display's **Edit form** using the **Profile Settings** tab. Each setting can also be overridden to suit individual Displays.
 
 ![Displays Edit Profile Settings](img/displays_edit_profilesettings.png)
