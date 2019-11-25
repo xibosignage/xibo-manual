@@ -1,6 +1,8 @@
 # Interrupt Layouts
 
-**Please note:** This feature is available from 2.2.0
+#### Coming soon to Android Players!
+
+**Please note:** We are currently working to bring this feature to all Players.
 
 When a Layout is scheduled as an **Interrupt Layout**, [ProductName] will work out how it should be played to 'interrupt'  the usual schedule using the **Share of Voice** percentage entered on the event.
 

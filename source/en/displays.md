@@ -144,7 +144,7 @@ This type of Command can also be executed by scheduling a [Command Event](schedu
 
 ### Transfer Display to another CMS - available from version 2.2.0
 
-**Please note:** We are currently working to bring this feature to all Players but at present is only available for Windows and webOS Players.
+**Please note:** We are currently working to bring this feature to all Players but at present this is only available for Windows Players from Windows version v2 R201.
 
 To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>), if you have not already set this up.
 

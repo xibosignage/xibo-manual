@@ -17,9 +17,7 @@ Each profile has a **Name**, **Type** and a flag indicating if it is the **defau
 
 ## Editing Profiles
 
-Use the row menu for the Profile you wish to view and click on **Edit**. Use the Edit Profile form to adjust available settings:
-
-![Displays Settings Edit](img/displays_settings_edit.png)
+Use the row menu for the Profile you wish to view and click on **Edit**. Use the Edit Profile form to adjust available settings.
 
 Each setting is explained under each form field for each of the tabs.
 
@@ -77,13 +75,17 @@ If enabled set the required level of collection for Proof of Play statistics to 
 Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
 {/tip}
 
-## Network
+### Force HTTPS
 
-From v2.2.0, an option has been included to force a Displays connection to use HTTPS on the **Network** tab. Use the checkbox to **Force HTTPS**. 
+From v2.2.0, an option has been included to force a Displays connection to use HTTPS. This is currently available for the Windows Player only, from Windows version v2 R201.
 
-**Please note:** We are currently working to bring this feature to all Players but at present is only available for Windows and webOS Players.
+Use the checkbox to **Force HTTPS** on the Network tab for Windows.
+
+### Operating Hours
 
 Also included in 2.2.0 is the ability to set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
+
+Use the **Network** tab for Windows, Android and Linux Players, and the **General** tab for webOS and Tizen Players.
 
 Use the drop down menu to select the day part to apply
 
