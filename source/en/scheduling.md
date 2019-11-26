@@ -8,21 +8,25 @@
 
 Events are administered from the **Schedule** section of the menu and managed from the calendar interface.
 
-![Schedule](img/schedule_intro_.png)
+![Schedule](img/schedule_intro.png)
 
 
 
-The CMS supports scheduling for 3 event types:
+The CMS supports scheduling for 4 Event types:
 
 1. #### **Campaign/Layout Event**
 
-   Schedule 1 or multiple Events to Displays. 
+   Select Published Layouts / Campaigns to schedule to Displays. 
 
 2. #### **Overlay Layout Event**
 
    Specially created Layouts are scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
 
-3. #### **Command Event**
+3. #### Interrupt Layout Event (available from v2.2.0)
+
+   A Layout that is scheduled as an Interrupt Layout will interrupt your usual schedule and play for the specified **Share of Voice** percentage set for each full hour that the Layout is scheduled.
+
+4. #### **Command Event**
 
    A Scheduled Command can be executed by the Player at a specific point in time and therefore this type of event does not need a `toDt`.
 

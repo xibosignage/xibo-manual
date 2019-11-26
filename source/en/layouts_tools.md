@@ -52,24 +52,36 @@ It is important to note that the Layout will be marked invalid and not sent to P
 
 ### Transitions
 
+Transition Type and Duration can be applied to a Widget by clicking to add or drag and drop.
+
 {tip}
 Transitions are supported for Android/webOS and Tizen Players.
 {/tip}
 
 ### Fade/Fly In
 
-Select a transition and duration to be applied when the media item starts. 
+Select a Transition and Duration to be applied when the media item starts. 
 
 ![Transition In](img/v2_layouts_tools_transition_in.png)
 
 ### Fade/Fly Out
 
-Select the finish transition and duration to be applied to the media item when further Widget's are set to follow in the Layout Timeline.
+Select the finish Transition and Duration to be applied to the media item when further Widget's are set to follow in the Layout Timeline.
 
 ![Transition Out](img/v2_layouts_tools_transition_out.png)
 
+Default Transition Type's and Duration can be entered by an Administrator on the **Settings** page using the **Defaults** tab, which can then be applied to all Widgets.  Applied defaults can be overridden for Layouts by unticking the box on the Edit Layout form.
+
+![Tools Edit Layout Form](img/v2_layouts_tools_edit_layout_form.png)
+
+Assign and complete Transitions as before.
+
 {tip}
-If there are no more Widgets to follow or the Layout is in the process of being removed then the Exit Transition will apply as configured in Region Options.
+When Transition Defaults are applied to a Widget the Edit form will show blank fields. Only manually entered Transitions will show on Edit Transition forms.
+{/tip}
+
+{tip}
+If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](<https://xibo.org.uk/manual/en/layouts_regions.html#region_options>).
 {/tip}
 
 ### Permissions

@@ -54,12 +54,12 @@ The ‘Layer’ order is determined by the number entered here, with 1 considere
 On some devices, it is impossible to overlay anything on a Region showing a **Video** or **VideoIn** Widget. Whether it is possible will depend on the device and whether hardware accelerated playback is being used. In general, it is possible on Android (when not using the SurfaceView option in the Display Settings Profile), Linux, Tizen and webOS Players, but if you have a requirement for this, be sure to test your intended device carefully to ensure this works in your use case.
 {/tip}
 
-### Transition
+### Exit Transition
 
 **Exit Transitions** happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
 
 {tip}
-Transitions are only supported in the Linux, Android and webOS Players and need to be pre configured. Please contact your Administrator.
+Transitions are supported in the Android, webOS and Tizen Players and need to be pre configured. Please contact your Administrator.
 {/tip}
 
 Once you have **Saved** your edits click **Close** to return to the Layout Designer screen.

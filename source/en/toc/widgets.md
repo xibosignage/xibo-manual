@@ -17,6 +17,7 @@
 - [PDF](media_module_pdf.html)
 - [PowerPoint](media_module_powerpoint.html)
 - [Shell Command](media_module_shellcommand.html)
+- [Spacer](media_module_spacer.html)
 - [Stocks](media_module_stocks.html)
 - [Sub Playlist](media_module_subplaylist.html)
 - [Text](media_module_text.html)

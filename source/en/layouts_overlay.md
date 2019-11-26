@@ -11,9 +11,13 @@ Schedule as an **Overlay Layout** to tell [[PRODUCTNAME]] to display the Layout 
 Overlay Layouts are created in exactly the same way as all other **Layouts**. Add Regions to fit around your existing content so that your Overlay Layout can "sit on top" of other Layouts that are **Scheduled** at the same time as the Overlay.  Your Overlay Layout will display its all important content whilst the Layouts "underneath" playout in rotation.
 
 {tip}
-[[PRODUCTNAME]] will not render the background on an Android or webOS Players when a Layout is scheduled as an Overlay Layout.
+[[PRODUCTNAME]] will not render the background on an Android,webOS, Tizen and Linux Players when a Layout is scheduled as an Overlay Layout.
 
 With the Windows Player, you will need to match the background so its the same colour/image as the Layout you are overlaying.
+{/tip}
+
+{tip}
+Overlay Layouts can also be used for Campaigns.
 {/tip}
 
 ## Scheduling

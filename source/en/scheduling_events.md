@@ -2,7 +2,9 @@
 
 # Events
 
-Events are **Layouts**/**Campaigns**, **Overlay Layouts** or **Commands** assigned to Displays/Display Groups at specific dates and times. Events are administered from the Schedule section from the menu.
+Event types are **Layouts**/**Campaigns**, **Overlay Layouts**, **Interrupt Layouts** or **Commands** which can be assigned to Displays/Display Groups at specific dates and times.
+
+Events are administered from the Schedule section from the menu.
 
 ## Add Event
 
@@ -14,14 +16,15 @@ Click on the **Add Event** button on the calendar to schedule an Event.
 
 ### Event Type
 
-Use the drop-down to select an Event from the 3 Types supported:
+Use the drop-down to select an Event from the 4 Types supported:
 
 - **Campaign/Layout** - select designed Layouts and Campaigns.
 - **Overlay Layout** - select a specifically designed Layout to schedule as an [Overlay Layout](layouts_overlay.html).
+- **Interrupt Layout** - select a Layout to play for a specified **Share of Voice** to interrupt your usual schedule. (Available from v2.2.0)
 - **Command** -  select from a predefined command.
 
 {tip}
-Events, with the exception of Command Events, can also be added using the [Schedule Now](scheduling_now.html) function.{/tip}
+Events, with the exception of Interrupt and Command Events, can also be added using the [Schedule Now](scheduling_now.html) function.{/tip}
 
 ### Display 
 
@@ -124,7 +127,18 @@ E.g. With a **Weekly** Repeat you could specify to repeat each Wednesday and Fri
 For example: an event which is scheduled on 06/03/2019 can be set to repeat on the 6th day of every month or the 1st Wednesday of each month (as 06/03/2019 falls on a Wednesday). 
 {/tip}
 
+## Reminders
 
+From v2.2.0 create a set of reminders to be sent to the [Notification Drawer](users_notifications.html) for your scheduled Events. 
+
+{tip}
+Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to set up of Reminders.
+{/tip}
+
+![Event Reminders](/img/v2_scheduling_event_reminders.png)
+
+Use the form fields to define a reminder, use the + icon to add additional fields.
+Tick the box if you wish to be notified email. This will be sent to the email address as set for your [User Profile](users_administration.html>).
 
 ## Edit / Delete
 
