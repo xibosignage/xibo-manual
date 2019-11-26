@@ -122,9 +122,13 @@ Deleting a User is irreversible and will remove all their owned items including;
 
 ## My Applications
 
-[[PRODUCTNAME]] contains an API that allows 3rd party applications to connect and consume its data. Before using an application each User must authorise the application to act on their behalf within the CMS.
+[[PRODUCTNAME]] contains an API that allows 3rd party applications to connect and consume its data. 
 
-Once an application is authorised it can be viewed by clicking on the **My Applications** button to open a current list.
+{tip}
+**Add Applications** and **Add DOOH Applications** and configure from **Applications** under the **Administration** section of the main menu. 
+{/tip}
+
+Before using an **Application** each User must authorise the application to act on their behalf within the CMS. Once  authorised it can be viewed by clicking on the **My Applications** button to open a current list.
 
   ![Users My Applications](img/users_my_applications_button.png)
 

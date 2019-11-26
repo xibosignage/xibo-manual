@@ -1,5 +1,6 @@
 * [Introduction](index.html)
 * [Login](tour_login.html)
+* [User Profile](tour_user_profile.html)
 * [Two Factor Authentication](tour_two_factor_authentication.html)
 * [CMS Dashboards](tour_status_dashboard.html)
 * [CMS Navigation](tour_navigation.html)
