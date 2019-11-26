@@ -10,7 +10,9 @@ Take a look at the [Modules](media_modules.html) page to see the variety of cont
 
 [[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User can have.
 
-Layouts are administered from the Design section of the menu. Click on **Layouts** to open the Layouts grid to view all existing Layouts and to create new from the **Add Layout** button.
+Layouts are administered from the Design section of the menu. Click on **Layouts** to open the Layouts grid, use the available fields to narrow your search for existing Layouts.
+
+Create a new Layout from the **Add Layout** button.
 
 ![Layout Grid](img/v2_layouts_grid.png)
 
@@ -59,6 +61,16 @@ Tick/untick the box to enable/disable the collection of statistics for **Proof o
 {tip}
 Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](<https://xibo.org.uk/manual/en/displays_settings.html>).
 {/tip}
+
+### Automatically apply Transitions
+
+{tip}
+Transitions are not supported on Windows and Linux Players.
+{/tip}
+
+Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
+
+Transitions can be applied from [Tools](<https://xibo.org.uk/manual/en/layouts_tools.html>)
 
 ## Row menu
 
@@ -131,6 +143,10 @@ Assign Permissions for **Users/User Groups** to define who should have access to
 ## Draft Status
 
 Selecting a Layout that is in a Draft status will present further row menu options.
+
+{tip}
+From v2.2.0 Administrators can use the default setting on the CMS **Settings** page to automatically **Publish** draft Layouts 30 minutes after the last edit!
+{/tip}
 
 ### Publish
 

@@ -17,9 +17,7 @@ Each profile has a **Name**, **Type** and a flag indicating if it is the **defau
 
 ## Editing Profiles
 
-Use the row menu for the Profile you wish to view and click on **Edit**. Use the Edit Profile form to adjust available settings:
-
-![Displays Settings Edit](img/displays_settings_edit.png)
+Use the row menu for the Profile you wish to view and click on **Edit**. Use the Edit Profile form to adjust available settings.
 
 Each setting is explained under each form field for each of the tabs.
 
@@ -77,6 +75,24 @@ If enabled set the required level of collection for Proof of Play statistics to 
 Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
 {/tip}
 
+### Force HTTPS
+
+From v2.2.0, an option has been included to force a Displays connection to use HTTPS. This is currently available for the Windows Player only, from Windows version v2 R201.
+
+Use the checkbox to **Force HTTPS** on the Network tab for Windows.
+
+### Operating Hours
+
+Also included in 2.2.0 is the ability to set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
+
+Use the **Network** tab for Windows, Android and Linux Players, and the **General** tab for webOS and Tizen Players.
+
+Use the drop down menu to select the day part to apply
+
+![Display Settings Network](img/v2_display_settings_network.png)
+
+'Email alerts' such as those which send when a Display is offline, will not be sent outside of the specified Operating Hours.
+
 ## Add a Profile
 
 Click on the Add Profile button, and include a name and select **Client type**, Save.
@@ -91,6 +107,6 @@ Please ensure that there is **one default** remaining for each Type.
 
 ## Setting on the Display
 
-A default profile will automatically apply its settings to all Displays of the same Type. A Display can be overridden with a Profile other than the default by selecting the required **Settings Profile** on a Display's **Edit form** using the **Profile Settings** tab. Each setting can also be overridden for individual Displays.
+A **default profile** will automatically apply its settings to all Displays of the same Type. A Display can be overridden with a Profile other than the default by selecting the required **Settings Profile** on a Display's **Edit form** using the **Profile Settings** tab. Each setting can also be overridden to suit individual Displays.
 
 ![Displays Edit Profile Settings](img/displays_edit_profilesettings.png)

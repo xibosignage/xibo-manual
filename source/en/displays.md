@@ -138,11 +138,35 @@ The **Send Command** functionality is executed via XMR to Players by selecting a
 Administrators create predefined commands for use, therefore if you require additional commands, please contact your Administrator.
 {/tip}
 
-
-
 {tip}
 This type of Command can also be executed by scheduling a [Command Event](scheduling.html#Events)
 {/tip}
 
+### Transfer Display to another CMS - available from version 2.2.0
+
+**Please note:** We are currently working to bring this feature to all Players but at present this is only available for Windows Players from Windows version v2 R201.
+
+To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>), if you have not already set this up.
+
+![Display Transfer Google Authenticator](img/displays_transfer_cms_google_authenticator.png)
+
+Once activated, click on **Displays** from the CMS main menu. Use the row menu for the Display you want to Transfer and click on **Transfer to another CMS**.
+
+![Display Transfer Row Menu](img/displays_transfer_cms_row_menu.png)
 
 
+
+Ensure all the form fields are completed by:
+
+- Entering the full **CMS URL** you wish to transfer this Display to.
+- Providing the **CMS Secret Key** for the CMS Address you wish to transfer to.
+- Complete the **Two Factor authentication code**, as displayed on the app.![Transfer CMS](img/displays_move_cms.png)
+
+Once the details provided have been authenticated, the Display will attempt registration with the 'new' CMS. Once the Display has been successfully transferred the Display will stop communicating with the 'old' CMS and will change from a 'tick' to a 'X' in the **Authorised** column.
+
+{tip}
+Select multiple Displays to transfer by using the **With Selected** option at the bottom of the Displays Grid and select **Transfer to another CMS**.
+
+![Transfer with Selected](img\displays_transfer_cms_with_selected.png)
+
+{/tip}
