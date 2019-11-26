@@ -8,7 +8,7 @@ Every User is assigned 1 of 3 main User Types:
 - **Group Admin**
 - **User**
 
-There is an additional **DOOH** User Type which will only be granted access to the CMS via the APi. Used in conjunction with the [DOOH Application](<https://xibo.org.uk/manual/en/users_administration.html#my_applications>).
+There is an additional **DOOH** User Type which will only be granted access to the CMS via the API. Used in conjunction with the [DOOH Application](users_administration.html#my_applications>).
 
   ![User Type](img/user_type.png)
 
@@ -38,9 +38,9 @@ A User will only have access to the parts of the CMS as assigned to the User Gro
 
 ### DOOH
 
-A DOOH user will have access to the CMS, via the APi, to allow for content creation and Scheduling and will only see Displays / Media / Playlists / Layouts that belong to them.
+A DOOH user will have access to the CMS, via the API, to allow for content creation and Scheduling and will only see Displays / Media / Playlists / Layouts that belong to them. Content created by the DOOH User will not be visible to other non-DOOH Users.
 
-
+**Super Admin** Users are able to set a Preference to view DOOH Users content in their [User Profile](tour_user_profile.html)
 
 {tip}
 User Type is selected when first adding a User and can be edited from the individual User record.

@@ -38,7 +38,7 @@ The CMS time and timezone that has been set is displayed here!
 DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](<https://xibo.org.uk/manual/en/users_administration.html#my_applications>).
 {/tip}
 
-- Enable [Two Factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>) (new image needed for two factor page)
+- Enable [Two Factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>) 
 
 ## Reshow Welcome
 
