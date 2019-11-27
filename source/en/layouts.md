@@ -59,7 +59,7 @@ Sending a Player a Layout that has been designed with a 4:3 resolution which is 
 Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for the newly added **Layout**.
 
 {tip}
-Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](<https://xibo.org.uk/manual/en/displays_settings.html>).
+Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](displays_settings.html).
 {/tip}
 
 ### Automatically apply Transitions
@@ -70,7 +70,7 @@ Transitions are not supported on Windows and Linux Players.
 
 Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
 
-Transitions can be applied from [Tools](<https://xibo.org.uk/manual/en/layouts_tools.html>)
+Transitions can be applied from [Tools](layouts_tools.html)
 
 ## Row menu
 

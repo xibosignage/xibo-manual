@@ -25,7 +25,7 @@ Filtering to just one Display helps to better understand where bandwidth was use
 {/tip}
 
 {tip}
-Did you know...you can set a bandwidth limit per [Display](<https://xibo.org.uk/manual/en/displays.html>)!
+Did you know...you can set a bandwidth limit per [Display](displays.html>)!
 {/tip}
 
 ### Availability
@@ -42,7 +42,7 @@ Each **Display** can collect information to provide Proof of Play Reports on wha
 
 **Enable Stats Reporting** and set the **Aggregation level** on a [Display Profile Setting](displays_settings.html)
 
-Statistical collection can be enabled as a default by an **Administrator** on the Settings page and set by a User on adding/editing a [Layout](<https://xibo.org.uk/manual/en/layouts.html>), [Playlist](<https://xibo.org.uk/manual/en/media_playlists.html>), from the [Media Library](<https://xibo.org.uk/manual/en/media_library.html>) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
+Statistical collection can be enabled as a default by an **Administrator** on the Settings page and set by a User on adding/editing a [Layout](layouts.html), [Playlist](media_playlists.html), from the [Media Library](media_library.html) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
 
 Reports can be provided for Proof of Play statistics recorded by:
 
