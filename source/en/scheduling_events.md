@@ -135,7 +135,7 @@ From v2.2.0 create a set of reminders to be sent to the [Notification Drawer](us
 Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to set up of Reminders.
 {/tip}
 
-![Event Reminders](/img/v2_scheduling_event_reminders.png)
+![Event Reminders](img/v2_scheduling_event_reminders.png)
 
 Use the form fields to define a reminder, use the + icon to add additional fields.
 Tick the box if you wish to be notified email. This will be sent to the email address as set for your [User Profile](users_administration.html>).

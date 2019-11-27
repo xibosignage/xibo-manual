@@ -98,7 +98,7 @@ Users will be redirected to a page to reset their password, the next time they l
 
 If a User loses access to their email or Google Authenticator app and have no access to any saved recovery codes, tick to reset.
 
-Once ticked the Two Factor Authentication will be set to ‘Off’ for this **User Profile** with any stored secret codes cleared. The User can now set up two factor authentication from the User Profile as before.
+Once ticked the Two Factor Authentication will be set to ‘Off’ for this **User Profile** with any stored secret codes cleared. The User can now set up [Two Factor Authentication](tour_two_factor_authentication.html) from the User Profile as before.
 
 {tip}
 Add the **Two Factor** column to the Users grid using the **Column visibility** button. This will give you an overview of what Users have set with regards to Two Factor authorisation. (Disabled / Email / Google Authenticator)

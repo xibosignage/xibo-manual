@@ -2,7 +2,7 @@
 
 # Navigation
 
-All **CMS pages** are categorised into sections and are accessible from the CMS **Main** **Menu** for ease of navigation. This menu can be placed vertically on the left hand side or horizontally along the top of the CMS, based on **User Preference**.
+All **CMS pages** are categorised into sections and are accessible from the CMS **Main** **Menu** for ease of navigation. This menu can be placed vertically on the left hand side or horizontally along the top of the CMS, based on [User Preference](tour_user_profile.html#preferences)
 
 {tip}
 If you are using 1.8 the menu will only be placed vertically on the left hand side as standard.
@@ -48,20 +48,3 @@ View **Display statistics** and **Proof of Play** reports as well as **Library U
 
 **Log** and **Session** information as well as **Audit Trail's** and **Fault Reporting**.
 
-
-
-## Profile Icon
-
-Located in the top right-hand corner of the CMS,  the Profile Icon is used to access User-specific data and set **User Preferences**.
-
-![CMS Profile Icon](img/tour_cms_profile_icon.png)
-
-**Users** can set their Preference as to where they would like the **Navigation Menu** to be positioned as well as decide to use the **Library duration** rather than the default Module duration for media items.
-
-![User Preferences](img/v2_tour_user_preferences.png)
-
-
-
-{tip}
-All new users are strongly advised to navigate to the Profile Icon menu to change their password the first time they log into the CMS.
-{/tip}

@@ -8,7 +8,7 @@ Please ensure that your Administrator has entered a **Sending Email** address on
 
 ![2FA Code Login](img/v2_tour_2fa_login.png)
 
-Navigate to the **Profile icon** in the top right hand corner of the CMS and click on **Edit Profile**.
+Navigate to the [User Profile](tour_user_profile.html) in the top right hand corner of the CMS and click on **Edit Profile**.
 
 ![Edit Profile](img/v2_tour_2fa_edit_profile.png)
 
@@ -46,5 +46,5 @@ Clicking on Generate will invalidate all existing codes.
 {/tip}
 
 {tip}
-In the event access is lost to the configured email address or app with a User unable to retrieve recovery codes, this can be reset from the [Edit User form](.<https://xibo.org.uk/manual/en/users_administration.html#editing_users>). Once ticked the User can reconfigure the options from the User Profile as before.
+In the event access is lost to the configured email address or app with a User unable to retrieve recovery codes, this can be reset from the [Edit User form](users_administration.html#editing_users>). Once ticked the User can reconfigure the options from the User Profile as before.
 {/tip}

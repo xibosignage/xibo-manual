@@ -1,10 +1,10 @@
 <!--toc=widgets-->
 
-# Video In (webOS)
+# Video In (webOS and Tizen)
 
 The Video In Widget can show input from an external source when added to a Layout. 
 
-**Please note: This feature is for webOS only.**
+**Please note: This feature is for webOS and Tizen Players only.**
 
 Click on the **Video In Widget** on the toolbar, add / drag to the target **Region**. ![Video In Widget](img/v2_media_videoin_widget.png)
 

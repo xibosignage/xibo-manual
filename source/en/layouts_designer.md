@@ -80,7 +80,7 @@ Widgets can be edited by clicking on assigned **Widgets** on the **Layout Timeli
 
 ## Toolbox
 
-Located on the bottom left of the toolbar assign actions using [Tools](layouts_tools.html), add  [Widgets](layouts_widgets.html) and search for [Library](media_library_search.html) media items to add to Layouts.
+Located on the bottom left of the toolbar assign actions using [Tools](layouts_tools.html), add  [Widgets](layouts_widgets.html) and search for [Library](layouts_library_search.html) media items to add to Layouts.
 
 ![Toolbox](img/v2_layouts_toolbox.png)
 
