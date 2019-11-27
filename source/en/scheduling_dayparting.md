@@ -9,7 +9,7 @@
 A typical use case would be a hospitality User who has different content to display for Breakfast, Lunch and Dinner. Dayparting allows that User to create a Breakfast, Lunch and Dinner daypart, each of which starts and ends on a different day, to select for ease of Scheduling.
 {/tip}
 
-From v2.2.0 **Dayparts** can also be created and defined to be selected to set a [Displays Operating Hours](displays_settings#Network).
+From v2.2.0 **Dayparts** can also be created and defined to be selected to set a [Displays Operating Hours](displays_settings.html).
 
 ## Create a Daypart
 

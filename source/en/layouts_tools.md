@@ -81,7 +81,7 @@ When Transition Defaults are applied to a Widget the Edit form will show blank f
 {/tip}
 
 {tip}
-If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](<https://xibo.org.uk/manual/en/layouts_regions.html#region_options>).
+If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](layouts_regions.html#region_options>).
 {/tip}
 
 ### Permissions

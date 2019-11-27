@@ -52,3 +52,6 @@ Click to view the User Manual to give a greater understanding of CMS features an
 
 Click to securely logout of the CMS Instance.
 
+{tip}
+All new Users are strongly advised to navigate to the User Profile menu to change their password the first time they log into the CMS.
+{/tip}

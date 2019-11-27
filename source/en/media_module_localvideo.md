@@ -33,3 +33,7 @@ Complete a local file path or URL to the video, this can be an RTSP Stream.
 Video scaling and RTSP streams are only supported on the Android, webOS and Tizen Players. Use the HLS Widget to show compatible video streams on Window and Linux Players.
 
 {/tip}
+
+{tip}
+ The number of RTSP streams you can show on one Layout is dependent on the device being used.
+{/tip}
