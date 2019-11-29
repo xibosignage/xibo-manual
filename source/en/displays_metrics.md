@@ -25,7 +25,7 @@ Filtering to just one Display helps to better understand where bandwidth was use
 {/tip}
 
 {tip}
-Did you know...you can set a bandwidth limit per [Display](displays.html>)!
+Did you know...you can set a bandwidth limit per [Display](displays.html)!
 {/tip}
 
 ### Availability
