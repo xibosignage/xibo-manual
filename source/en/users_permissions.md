@@ -26,6 +26,12 @@ Use this form to select what areas of the **CMS** are to be visible for that Use
 **Please note:** In order to set further permissions with regards to User Objects the User/User Group would need to have access to **view** the Page/Menu item in the first instance.
 
 {tip}
+An owner of a Layout who want to set **Permissions** for other Users to view/edit and delete their Layout would need to have the **User** option ticked to be able to **View** Users.
+{/tip}
+
+
+
+{tip}
 
 Make it easier to onboard new Users by managing system access via [User Groups](users_groups.html). If you need to give more permissions to specific Users within User Groups, assign these directly on their individual User record.
 
