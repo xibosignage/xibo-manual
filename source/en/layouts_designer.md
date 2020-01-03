@@ -40,13 +40,26 @@ A Layout must contain at least one Region **and** each Region must contain at le
 
 ## Preview
 
-Preview your Layout, Widgets and Regions and make the necessary alterations to designs to ensure that everything plays as intended.  Click on the Play icon located in the top left  of the Preview window to Preview your Layout. Toggle to full screen size by clicking the icon in the top right hand corner of the Preview window.
+Preview your Layout, Widgets and Regions and make the necessary alterations to designs to ensure that everything plays as intended.  Click on the Play icon located in the top left of the Preview window to play a full Preview of your Layout. 
+
+{tip}
+View your Preview in full screen by clicking on the icon in the top right corner of the screen then press Play.
+{/tip}
 
 ![Layout Preview](img/v2_layouts_layout_preview.png)
 
-Click on a **Widget** to view media in the Preview window. Use the arrows to cycle through all Widgets that have been assigned to that **Region**.
+Click on a **Widget** to view media in the Preview window. Use the arrows to cycle through all Widgets that have been assigned to that **Region**. 
+
+**Please note:** Video files will only play in the full Layout Preview.
 
 ![Widget Preview](img/v2_layouts_widget_preview.png)
+
+{tip}
+When you have multiple Regions, easily Preview all of the Media assigned by toggling to full screen and using the arrow tabs for each Region to cycle through the content.
+
+![Multiple Region Preview](img/v2_layouts_multiple_region_preview.png)
+
+{/tip}
 
 {tip}
 Click on the back arrow in the top right hand of the Preview window to return to the Layout Preview.
