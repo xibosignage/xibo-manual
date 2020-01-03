@@ -8,7 +8,7 @@
 
 Events are administered from the **Schedule** section of the menu and managed from the calendar interface.
 
-![Schedule](img/schedule_intro.png)
+![Schedule](img/v2_schedule_intro.png)
 
 
 
@@ -22,7 +22,9 @@ The CMS supports scheduling for 4 Event types:
 
    Specially created Layouts are scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
 
-3. #### Interrupt Layout Event (available from v2.2.0)
+3. #### **Interrupt Layout Event (available only in the CMS from v2.2.0)**
+
+   **Please note:** We are currently working to bring this feature to all Players and will be coming soon to Android!
 
    A Layout that is scheduled as an Interrupt Layout will interrupt your usual schedule and play for the specified **Share of Voice** percentage set for each full hour that the Layout is scheduled.
 

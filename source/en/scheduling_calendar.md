@@ -8,11 +8,15 @@ Schedule content using the simple calendar interface by clicking on the **Schedu
 
 Use the control bar at the top of the calendar to select **Displays**, **Add Events**, **view date periods** and **alternate Views**.
 
-![Schedule Controls](img/schedule_controls.png)
+![Schedule Controls](img/v2_schedule_controls.png)
 
 ### Select Displays
 
 Click in this field to select Displays /Display Groups to view the associated schedules.
+
+{tip}
+Use the **Show All** option to see the schedules for all Displays!
+{/tip}
 
 ### Layout / Campaign
 
