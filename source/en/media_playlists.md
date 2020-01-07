@@ -2,6 +2,8 @@
 
 # Playlists
 
+**Please note:** Playlists are available from v2.
+
 Playlists allow for the creation of reusable playlists which can be easily added to Layouts and come in two parts:
 
 1. **The Playlist** (contains the media content and configuration)

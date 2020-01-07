@@ -20,7 +20,7 @@ Use the drop-down to select an Event from the 4 Types supported:
 
 - **Campaign/Layout** - select designed Layouts and Campaigns.
 - **Overlay Layout** - select a specifically designed Layout to schedule as an [Overlay Layout](layouts_overlay.html).
-- **Interrupt Layout** - select a Layout to play for a specified **Share of Voice** to interrupt your usual schedule. (Available from v2.2.0)
+- **Interrupt Layout** - select a Layout to play for a specified **Share of Voice** to interrupt your usual schedule. (Available only in the CMS from v2.2.0, coming soon to Android Players. We are currently working to bring this feature to all Players!)
 - **Command** -  select from a predefined command.
 
 {tip}
