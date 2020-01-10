@@ -28,10 +28,17 @@ Click in the Region to resize and position, further actions are available via th
 
 ### General
 
-Complete a name for the Region and use the checkbox to **Loop** the content if required.
+Complete a name for the Region and use the checkbox to **Loop** the content, for that Region if required.
 
 {tip}
 It may be desirable to have a Region with just 1 media item reload when that item has finished. With the **Loop** ticked the media item will reload each time it expires and show refreshed content until other Regions have fully played out. Loop is only effective for a Region with only 1 media item and should only be used for certain Media types where the content changes (Ticker RSS, Calendar etc).
+
+### Consider the following rules when thinking about using the Region Loop option for the best results:
+
+- If your Region contains more than one Widget, Loop should not be enabled.
+- If your Region contains one Widget, and that Widget is a 'fixed' item (eg Text), Loop should not be enabled.
+- If your Region contains one Widget, and that Widget needs to update periodically (eg RSS Ticker Widget), Loop can be enabled ONLY if the Widget needs to update MORE frequently than the duration of the overall Layout.
+
 {/tip}
 
 ### Positioning
