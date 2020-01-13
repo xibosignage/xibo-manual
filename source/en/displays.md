@@ -12,7 +12,11 @@ Displays are uniquely identified by a **hardware key** which is generated when t
 
 ## Connecting a Display
 
-Displays connect to the CMS over an API called "XMDS" {nonwhite}(Xibo Media Distribution Service){/nonwhite}. Each Signage Player software application will have its own method of registering and connecting to the CMS - most of them only require the `URL` and `CMS Key`.
+Displays connect to the CMS over an API called "XMDS" {nonwhite}(Xibo Media Distribution Service){/nonwhite} with most Players only requiring the URL and CMS Key. 
+
+Alternatively, Displays can be added by providing a 6 character ‘Activation Code’ in the **Displays** page of the CMS.
+
+**Please note:** Connecting a Display using the **Add Display (Code)** in the CMS is currently only supported for **Android Players**. We are working on supporting this connection method for all Players.
 
 {tip}
 New Displays will need to be marked as **authorised** before they can be sent any content. This can be done by using the row menu for the Display and clicking **Authorise**.
@@ -22,7 +26,7 @@ New Displays will need to be marked as **authorised** before they can be sent an
 
 Displays are administered from the Menu, with logged in Users able to view the status of Displays that they have been assigned permission for.
 
-![Display Administration Grid](img/displays_admin_grid.png)
+![Display Administration Grid](img/v2_displays_admin_grid.png)
 
 
 
