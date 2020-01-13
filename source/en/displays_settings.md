@@ -75,11 +75,13 @@ If enabled set the required level of collection for Proof of Play statistics to 
 Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
 {/tip}
 
-### Force HTTPS
+### Force HTTPS - available from version 2.2.0
 
-From v2.2.0, an option has been included to force a Displays connection to use HTTPS. This is currently available for the Windows Player only, from Windows version v2 R201.
+**Please note:** We are currently working to bring this feature to all Players but at present this is only available for Windows Players from version v2 R201, and Android Players from version v2 R203.
 
-Use the checkbox to **Force HTTPS** on the Network tab for Windows.
+This option has been included to force a Displays connection to the CMS using HTTPS. 
+
+Use the checkbox to **Force HTTPS** on the **Network** tab of the **Edit Profile** form.
 
 ### Operating Hours
 
@@ -95,7 +97,7 @@ Use the drop down menu to select the day part to apply
 
 ## Add a Profile
 
-Click on the Add Profile button, and include a name and select **Client type**, Save.
+Click on the Add Profile button, and include a name and select **Display Type**, Save.
 
 The Edit Profile form will open so that you can complete the necessary form fields for this Profile.
 
