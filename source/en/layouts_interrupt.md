@@ -44,6 +44,3 @@ I have completed a Share of Voice percentage of 50%. [ProductName] will calculat
 When the usual schedule is interrupted you should see the first announcement for its total duration of 30 seconds before resuming to the previously interrupted Layout. Then at the next interruption the second announcement for 30 seconds then the previous Layout is resumed and so on for the scheduled hour.
 {/tip}
 
-{tip}
-**Please note:** Only 1 Interrupt Layout can be 'active' per Display at any given time.
-{/tip}
