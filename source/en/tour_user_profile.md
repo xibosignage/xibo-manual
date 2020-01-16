@@ -12,12 +12,18 @@ The CMS time and timezone that has been set is displayed here!
 
 ## Preferences
 
-![Preferences](img/tour_profile_preferences.png)
+![Preferences](img/v2_tour_profile_preferences.png) 
 
 - Select how you would like the **Navigation Menu** to be positioned.
 
   {tip}
   Once saved, ensure you refresh your browser to apply changes.
+  {/tip}
+
+- Use the drop down to view only relevant content as, **Standard** CMS content or **DOOH** content.
+
+  {tip}
+  DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](<https://xibo.org.uk/manual/en/users_administration.html#my_applications>).
   {/tip}
 
 - Select to use the **Library duration** or **Module defaults** for all assigned Media.
@@ -26,17 +32,14 @@ The CMS time and timezone that has been set is displayed here!
 
 
 
+
+
 ## Edit Profile
 
-![Edit Profile](img/tour_edit_profile.png)
+![Edit Profile](img/v2_tour_edit_profile.png)
 
 - Change **Passwords**
 - Update a User **Email** address
-- Use the drop down to view only relevant content , **Standard** CMS content or **DOOH** content.
-
-{tip}
-DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](<https://xibo.org.uk/manual/en/users_administration.html#my_applications>).
-{/tip}
 
 - Enable [Two Factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>) 
 
