@@ -4,7 +4,7 @@
 
 ### Coming soon to Android Players!
 
-When a Layout is scheduled as an **Interrupt Layout**, [ProductName] will work out how it should be played to 'interrupt'  the usual schedule using the **Share of Voice** percentage entered on the event.
+When a Layout is scheduled as an **Interrupt Layout**, [[PRODUCTNAME]] will work out how it should be played to 'interrupt'  the usual schedule using the **Share of Voice** percentage entered on the event.
 
 When the usual schedule is 'interrupted', 1 **Widget** from each **Region** will play from the **Interrupt Layout** for its duration. The schedule will then return to resume the previous Layout at the point it was interrupted and so on.
 
@@ -39,7 +39,7 @@ Complete the percentage (0 - 100%) of the events duration (the difference betwee
 
 I have created an Interrupt Layout with 1 full size Region that has two Text Widgets assigned, containing my 'Announcements', both of which have durations of 30 seconds, which I have scheduled for 1 hour.
 
-I have completed a Share of Voice percentage of 50%. [ProductName] will calculate how many and how often the interrupt intervals should occur to occupy the screen for half of the time.
+I have completed a Share of Voice percentage of 50%. [[PRODUCTNAME]] will calculate how many and how often the interrupt intervals should occur to occupy the screen for half of the 
 
 When the usual schedule is interrupted you should see the first announcement for its total duration of 30 seconds before resuming to the previously interrupted Layout. Then at the next interruption the second announcement for 30 seconds then the previous Layout is resumed and so on for the scheduled hour.
 {/tip}
