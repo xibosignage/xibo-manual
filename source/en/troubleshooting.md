@@ -35,13 +35,11 @@ Depending on the issue that you are experiencing, we may ask for additional info
 
 Access the status page on Players by following the steps for the Player type:
 
-**Windows** - Whilst Xibo is running, click `i` on the keyboard to open the Status screen.
+**Windows / Linux** - Whilst Xibo is running, click `i` on the keyboard to open the Status screen.
 
 **Android** - Connect a mouse to your device and click on the screen whilst Xibo is running. Choose ‘Status’ from the Action bar at the top of the screen.
 
-**webOS** - Press the OK or Enter button on your webOS remote control whilst Xibo is running and choose 'Status' from the Action bar at the top of the screen.
-
-
+**webOS / Tizen** - Press the OK or Enter button on your webOS remote control whilst Xibo is running and choose 'Status' from the Action bar at the top of the screen.
 
 ## Contacting us…
 
