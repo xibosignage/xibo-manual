@@ -4,8 +4,6 @@
 
 #### We are working on bringing this feature to all Players.
 
-### Coming soon to Android Players!
-
 When a Layout is scheduled as an **Interrupt Layout**, [[PRODUCTNAME]] will work out how it should be played to 'interrupt'  the usual schedule using the **Share of Voice** percentage entered on the event.
 
 When the usual schedule is 'interrupted', 1 **Widget** from each **Region** will play from the **Interrupt Layout** for its duration. The schedule will then return to resume the previous Layout at the point it was interrupted and so on.
