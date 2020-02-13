@@ -1,6 +1,8 @@
 # Interrupt Layouts
 
-### Please note: This feature is not currently supported by any Player,  we are currently working to bring this feature to all Players.
+#### Please note: This feature is currently supported by the Android Player only, from v2 R204.  
+
+#### We are working on bringing this feature to all Players.
 
 ### Coming soon to Android Players!
 
