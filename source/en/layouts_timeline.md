@@ -7,38 +7,47 @@ Each Region on a Layout has its own **Playlist** of content, which is shown in a
 A Playlist can consist of a **single item** (such as a company logo), or **multiple items** (such as an image slideshow).
 
 {tip}
+If you are using a version earlier than 2.3 for the v2 CMS, please use the following link: [v2 Layout Timeline](layouts_timeline_2.0). {/tip}
+
+{tip}
 If you are using 1.8 please use the following link: [Playlists](layouts_playlists.html).
 {/tip}
 
-A Region's Playlist is viewed/edited in the **Layout Timeline** window.  Use the buttons to zoom through the timeline to see the full Playlist of content.
+A Region's Playlist is viewed/edited in the **Layout Timeline** window.  
 
-![Region Timeline](img/v2_layouts_region_timeline.png)
+![Region Timeline](img/v2.3_layouts_region_timeline.png)
 
-The Layout Timeline shows the duration of **Widgets** as well as the total duration of the **Layout**.
-
-The timeline will show how each Regions assigned Widgets will play out. The greyed out entries indicate what will play when that items own duration is exceeded.
+The timeline clearly shows how each Regions assigned Widgets will play. The greyed out entries indicate what will play when that items own duration is exceeded.
 
 {tip}
-
-The above timeline tells us the following:
+The above Timeline tells us the following:
 
 **Text** determines the duration of the Layout, as the longest running Region with a 60 second duration.
 
 **Clock** has a set duration of 10 seconds but will remain on screen for 60 seconds (until the Text Widget has fully played out)
 
-**Image (1)** will play for 10 seconds then **Image (2)** will play for 10 seconds, this will repeat twice more to remain on screen for 60 seconds (until the Text Widget has fully played out)
-
+**Image 1** will play for 10 seconds then **Image 2** will play for 10 seconds, this will repeat twice more to remain on screen for 60 seconds (until the Text Widget has fully played out)
 {/tip}
 
-The Layout status indicator shows if a Layout is valid and will play when scheduled (green tick)  **Invalid Layouts (red cross) will be excluded from the Schedule and will not be played.**
+The window to the left of the Region gives a preview of the Region positioning on the Layout. 
+
+![Region Position Preview](img/v2.3_layouts_timeline_region_position_preview.png)
+
+Click on the Region here to open the Region Editor and Region Options form to make edits.
+
+![Region Preview](img/v2.3_layouts_timeline_region_preview.png)
 
 {tip}
-A Layout must contain at least one Region **and** each Region must contain at least **one** media item for it to be valid and play when scheduled.
+You can also use the edit icon next to the Region Position Preview to open the editor and the Region Options form.
 {/tip}
 
-## Assigning Content
+{tip}
+Ensure you click on the back arrow to Return to Layout View and exit edit mode.
+{/tip}
 
-**Media items** that are assigned to Playlists are called **Widgets** which can be files stored in the [Library](media_library.html) as well as enabled [Modules](media_modules.html).
+
+
+## Assigning Content
 
 Use the toolbar on the Layout Designer to add [Widgets](layouts_widgets.html) or use the [Library Search](layouts_library_search.html) to add content that has already been uploaded to the Library.
 
@@ -46,20 +55,55 @@ Use the toolbar on the Layout Designer to add [Widgets](layouts_widgets.html) or
 Widgets that are available can be enabled/disabled by an Administrator in the Modules section of the CMS.
 {/tip}
 
-### Deleting Widgets
+Once Media has been added, the timeline will automatically scroll to the newly added content (highlighted as green) for easy configuration.
 
-Widgets can be deleted by clicking on the Widget to be removed and clicking on the red bin icon, on the bottom right of the toolbar.
+![Scroll to Media](img/v2.3_layouts_added_media_scroll.png)
+
+{tip}
+Drag and drop Widgets along the timeline to reorder the sequence they should play.
+{/tip}
+
+Use the timeline buttons to zoom in and out to decrease / increase the visible time span and use the blue scroll bar to see all assigned content in your Timeline.
+
+![Timeline Buttons](img/v2.3_layouts_timeline_buttons.png)
+
+{tip}
+Easily snap back to the Widget you are currently working on when scrolling through the Timeline by using the **Scroll to Selected Widget** button.
+{/tip}
+
+Add and edit media content using the **Playlist View**. Click on the menu icon located next to the Region Position Preview window.
+
+![Playlist Menu](img/v2.3_layouts_timeline_playlist_menu.png)
+
+Use the toolbar to add media as normal.
+
+![Playlist View](img/v2.3_layouts_timeline_playlist_view.png)
+
+{tip}
+
+Media can be added to a specific point on the Timeline. 
+
+![Specific Point](img/v2.3_layouts_timeline_point_marker.png)
+
+Drag or click to add media to a position marker shown on the Timeline.
+
+### Deleting from Regions
+
+Widgets can be deleted by clicking on the Widget to be removed and clicking on the red bin icon, on the bottom right of the toolbar, or by right clicking and selecting the bin icon.
 
 ### Widget Actions
 
-Each Widget assigned to the timeline has its own set of Actions.  Access by right clicking on a Widgets from the Layout Timeline.
+To delete, click on the Widget assigned in the Layout Timeline and click on the red **bin icon** in the bottom right hand corner of the screen. 
+
+{tip}
+Right-click on the Widget on the Layout Timeline to also delete.
+
+**Attached Audio**, **Expiry Dates**, **Transition In**, **Transition Out** and **Permissions** can also be edited in this way.
 
 ![Timeline Widget Actions](img/v2_layouts_timeline_widget_actions.png)
 
-Use the arrows to move Widgets along the timeline to reorder the sequence.
+Use the arrows to move Widgets along the Timeline to reorder the sequence.
 
-{tip}
-Widgets can also be dragged along the timeline to reorder.
 {/tip}
 
 For further information regarding the available Actions, please see the [Tools](layouts_tools.html) manual page.

@@ -9,8 +9,6 @@ Examples of where DataSets could be utilised:
 - Tee times at a golf club
 - Meeting room bookings
 
-
-
 DataSets have been designed to be versatile and reusable and come in two parts:
 
 1. **The DataSet** (Data Structure and data)
@@ -121,7 +119,7 @@ Columns can be added and removed after Data has been entered. The ordering and l
 
 ## Remote DataSets
 
-A Remote DataSet will need additional information completed; the Remote data source URL, request params, request method and authentication information.
+On selecting the Remote tick box, additional information needs to be completed; the Remote data source URL, request params, request method and authentication information.
 
 Remote DataSets are a special type of DataSet which periodically syncs from a **3rd party data source** which you specify when adding/editing the DataSet. [[PRODUCTNAME]] will call the URL specified at the time period specified and parse the data according to the instructions set on the DataSet and any Remote Columns.
 
@@ -129,9 +127,10 @@ Remote DataSets are a special type of DataSet which periodically syncs from a **
 A **Remote DataSet** will not sync or update until it is being used in a **Layout** that has been **Scheduled** to show on a Player.
 {/tip}
 
-The remote data source must be JSON formatted.
+The remote data source can be JSON formatted or selected as a CSV (available from v2.3 and later).
 
-Data is populated according to the Columns defined as Column type **Remote**. When specifying a Remote Column a "data path" is entered which is the JSON syntax path to the data for that column, with respect to the Data Root specified on the DataSet.
+- JSON
+  Data is populated according to the Columns defined as Column type **Remote**. When specifying a Remote Column a "data path" is entered which is the JSON syntax path to the data for that column, with respect to the Data Root specified on the DataSet.
 
 Consider an example JSON data source:
 
@@ -175,6 +174,10 @@ The data table returned will contain a column for each of the Columns you've def
 
 Add a new row by clicking on the **Add Row** button to open a form with fields to be completed for all non-formula Columns. A Row can be edited by clicking anywhere on the row and deleted using the blue X.
 
+From v2.3, toggle between **Edit Mode** and **Multi Select Mode** using the buttons at the bottom of the grid, to delete multiple rows in bulk.
+
+![Multi Select Mode](img/v2.3_media_datasets_multi_select_mode.png)
+
 ### Importing CSV 
 
 The CMS has a DataSet CSV importer that can be used to extract data from a **CSV file** and put it into a DataSet. The importer can be accessed through the row menu of any DataSet, with the exception of DataSets configured for Remote data sources.
@@ -208,6 +211,10 @@ As well as the Actions that have been previously mentioned, each data set can ha
 ### Delete
 
 Select the Delete menu item to show the DataSet Delete form which gives the option of deleting any associated data contained. 
+
+{tip}
+From v2.3 delete multiple DataSets using the With Selected option at the bottom of the DataSets grid!
+{/tip}
 
 {tip}
 DataSets can only be deleted if they are not currently being used.
