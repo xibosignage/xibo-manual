@@ -1,8 +1,8 @@
 # Interrupt Layouts
 
-### Please note: This feature is not currently supported by any Player,  we are currently working to bring this feature to all Players.
+#### Please note: This feature is currently supported by the Android Player only, from v2 R204.  
 
-### Coming soon to Android Players!
+#### We are working on bringing this feature to all Players.
 
 When a Layout is scheduled as an **Interrupt Layout**, [[PRODUCTNAME]] will work out how it should be played to 'interrupt'  the usual schedule using the **Share of Voice** percentage entered on the event.
 
