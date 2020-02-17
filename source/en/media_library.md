@@ -41,9 +41,6 @@ Use the Add Media (URL) button to provide a remote URL to the file.
 
 {tip}
 All media items that have been uploaded to the Library are available to include in Layouts by simply using the [Library Search](layouts_library_search.html) tab on the **Layout Designer** tool bar.
-
-![Library Search Tab](img/v2_media_library_search.png)
-
 {/tip}
 
 ## Adding New Fonts

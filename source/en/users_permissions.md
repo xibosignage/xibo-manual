@@ -51,6 +51,7 @@ Assign **view**, **edit**, **delete** permissions on the object itself. The foll
 - Displays and associated Schedules
 - Display Groups and associated Schedules
 - Dayparts
+- Commands
 
 Select the object and use the row menu to select **Permissions**:
 

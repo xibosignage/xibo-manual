@@ -6,7 +6,7 @@ If you are using **v2** of the CMS, please use the following link: [Layout Desig
 
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
 
-[[PRODUCTNAME]] makes Layout Design simple through the use of **drag and drop**, **interactive previewing** and **design flexibility**. On adding a Layout the Layout Designer will open with one full screen empty [Region](layouts_regions.html), as pictured below.
+[[PRODUCTNAME]] makes Layout Design simple through the use of **drag and drop**, **interactive previewing** and **design flexibility**. On adding a Layout the Layout Designer will open with one full screen empty [Region](layouts_regions_1.8.html), as pictured below.
 
 ![Layout Designer](img/layouts_designer_first_load.png)
 
