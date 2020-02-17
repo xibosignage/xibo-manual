@@ -3,6 +3,7 @@
 - [Calendar](media_module_calendar.html)
 - [Chart](media_module_chart.html)
 - [Clock](media_module_clock.html)
+- [Countdown](media_module_countdown.html)
 - [Currencies](media_module_currencies.html)
 - [DataSet Ticker](media_module_dataset_ticker.html)
 - [DataSet View](media_module_dataset_view.html)

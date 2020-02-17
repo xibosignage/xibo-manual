@@ -50,6 +50,10 @@ Name given to the Display for easy identification purposes (this is not shown on
 
 Tick or cross to indicate whether the Display has been granted a licence with the CMS. This prevents unauthorised Displays being added to the CMS.
 
+{tip}
+From v2.3 include the **Commercial License** column using the **Column Visibility** button to easily identify the Commercial Licence status of your Displays!
+{/tip}
+
 #### Logged In
 
 Tick or cross to show if the Display has logged in recently.
@@ -63,8 +67,10 @@ Date and time stamp of when the Display was last accessed.
 Media Access Control Address of the Display (if the client software is capable of sending it).
 
 {tip}
-Columns can be toggled on and off to show the information you would like to display for administration purposes by clicking on the **Column visibility** button. 
+Use the **Column visibility** button to select the information you would like to display for your administration purposes. Deselect an entry to remove from the Displays grid.
 {/tip}
+
+
 
 ## Row Menu
 
