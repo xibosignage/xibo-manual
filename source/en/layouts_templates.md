@@ -6,7 +6,7 @@ Templates are saved copies of **Layouts** which can then be used to create new L
 
 ## Saving a Layout as a Template
 
-Published Layouts can be saved as templates in the Layout Designer by using the **Actions** menu on the bottom of the toolbar and selecting **Save Template**.
+**Published Layouts** can be saved as templates in the Layout Designer by using the **Actions** menu on the toolbar and selecting **Save Template**.
 
 {tip}
 If you are using version 1.8 use the **Actions tab** located on the Layout Designer page and click on the **Save Template button**.

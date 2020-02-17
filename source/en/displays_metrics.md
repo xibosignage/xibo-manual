@@ -73,6 +73,15 @@ Select a Range, use the filters and **Apply** to retrieve the Proof of Play info
 
 
 
+{tip}
+From version 2.3 use **Select a range**  to select **Time** as well as **Date**!
+
+![POP by Time](img/v2.3_displays_proofofplay_time.png)
+
+{/tip}
+
+
+
 ### Chart Reports
 
 Select a predefined timeframe, (Today, Yesterday, This Week etc) and use the filters to populate the data.

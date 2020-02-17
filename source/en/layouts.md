@@ -2,7 +2,7 @@
 
 # Layouts
 
-A Layout is a complete screen design including content and background, which is then scheduled to a Display or multiple displays in a Display Group. A Layout is made up of 1 or more Regions which hold content and contain a timeline of Media to show. Media is assigned to the Layout Timeline using Widgets which provide the actions for the selected Module. 
+A Layout is a complete screen design including content and background, which is then scheduled to a Display or multiple displays and Display Groups. A Layout is made up of 1 or more Regions which hold content and contain a timeline of Media to show. Media is assigned to the Layout Timeline using Widgets which provide the actions for the selected Module. 
 
 {tip}
 Take a look at the [Modules](media_modules.html) page to see the variety of content available by simply adding a Widget to a Layout.
@@ -70,7 +70,9 @@ Transitions are not supported on Windows and Linux Players.
 
 Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
 
-Transitions can be applied from [Tools](layouts_tools.html)
+{tip}
+Transitions can be applied from the [Tools](layouts_tools.html) menu on the Layout Designer.
+{/tip}
 
 ## Row menu
 
@@ -80,18 +82,18 @@ Use the row menu for a selected Layout to access more options:
 
 ### Design
 
-Click to open in a **Read Only Mode**, which is viewed in the Layout Designer window. **Checkout** the Layout to enable editing.
+Click to open the Layout Designer to enable editing.
 
 {tip}
-If you are using 1.8, clicking on **Design** will return you to the Layout Designer screen to edit.
+If your Layout has a Published status, the Layout Designer will open in a **Read Only Mode**. **Checkout** the Layout to enable editing.
 {/tip}
 
 ### Checkout
 
-Checkout from the row menu to put the Layout into a **draft** mode so that changes can be made later. Once edited, the Layout can be **Published** to make changes permanent and send the edited Layout to Displays. **Discard** will revert the Layout back to the original published state.
+Checkout from the row menu to put the Layout into a **draft** mode so that changes can be made later. Once edited, the Layout can be **Published** to make changes permanent and to overwrite the existing Layout.  **Discard** will revert the Layout back to the original published state.
 
 {tip}
-Take your time with any edits you need to make as using **Checkout** ensures that no changes are made to your published version or shown on scheduled **Displays** until you choose to do so. **Publish** confirms changes that have been made and will overwrite your published version. **Discard** will delete the draft with the published version remaining untouched.
+Take your time with any edits you need to make as using **Checkout** ensures that no changes are made to your published version or shown on scheduled **Displays** until you choose to do so. **Publish** confirms changes have been made and will overwrite your published version. **Discard** will delete the draft with the published version remaining untouched.
 {/tip}
 
 ### Preview Layout
@@ -150,13 +152,11 @@ From v2.2.0 Administrators can use the default setting on the CMS **Settings** p
 
 ### Publish
 
-Select to Publish straight away or select a date and time to set the Layout to Publish in the future.
+Select to Publish Now or select a date and time to set the Layout to Publish.
 
 ### Discard
 
 Ignore any changes that have been made and revert to the previous Published version of the Layout.
-
-
 
 {tip}
 Did you know…**.Layouts** and **Library files** can be [Assigned](displays_fileassociations.html) directly to a **Display** or **Display Group** so that they are always available in the local library of the Player. Useful for pre-loading a Layout ahead of time ready to be scheduled.

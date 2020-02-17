@@ -39,7 +39,7 @@ Once added use the row menu for your created Playlist and click on **Timeline**.
 
 Click on a **Widget** or drag and drop to add to the playlist. 
 
-![Playlists Timeline](img/v2_media_playlists_timeline.png)
+![Playlists Timeline](img/v2.3_media_playlists_timeline.png)
 
 {tip}
 Use the [Library Search](layouts_library_search.html) tab to add media already uploaded to the Library.
@@ -60,6 +60,10 @@ Change the playlist Timeline order by clicking on an item and dragging it to the
 {tip}
 Use the [Tools](layouts_tools.html) tab to apply **Actions** such as **Audio**/**Permissions** and **Expiry Dates** to the items added to the timeline.
 {/tip}
+
+From v2.2, use the **Select Multiple Widgets** button on the bottom toolbar to select and delete multiple items from the Playlist.
+
+![Select Multiple Widgets](img/v2.3_media_select_multiple_widgets.png)
 
 Easily make copies of Playlists by using the **Copy** button from the row menu.
 
