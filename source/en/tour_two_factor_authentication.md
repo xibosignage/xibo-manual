@@ -26,7 +26,7 @@ Ensure that an email address has been provided on this form and press **Save**.
 
 Each time a User enters their **Username** and **Password** to login they will need to access the **Google Authenticator app** to enter the 6 digit **code** displayed.
 
-Install the [Google Authenticator app](<https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2>) to your mobile device.
+Install the [Google Authenticator app](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) to your mobile device.
 
 Scan the QR code shown on the Edit User Profile form and enter the code displayed into the Access Code field and Save to complete the set up.
 
