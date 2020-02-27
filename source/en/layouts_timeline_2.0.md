@@ -5,7 +5,7 @@ Each Region on a Layout has its own **Playlist** of content, which is shown in a
 A Playlist can consist of a **single item** (such as a company logo), or **multiple items** (such as an image slideshow).
 
 {tip}
-If you are using **v2.3** or later, please use the following link: [Layout Timeline](layouts_layout_timeline.html)
+If you are using **v2.3** or later, please use the following link: [Layout Timeline](layouts_timeline.html)
 {/tip}
 
 {tip}

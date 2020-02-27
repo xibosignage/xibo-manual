@@ -3,7 +3,7 @@
 # Tools
 
 {tip}
-If you are using a version earlier than **2.3** for the **v2 CMS**, please use the following link: [v2 Tools](layouts_tools_2.0). 
+If you are using a version earlier than **2.3** for the **v2 CMS**, please use the following link: [v2 Tools](layouts_tools_2.0.html). 
 {/tip}
 
 Located on the bottom toolbar of the [Layout Designer](layouts_designer.html), the **Tools** button contains a menu of actions that can be applied to the components of Layouts. 
