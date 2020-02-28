@@ -9,7 +9,7 @@ If you are using the **1.8** series CMS, please use the following link: [Layout 
 {/tip}
 
 {tip}
-If you are using a version earlier than **2.3** for the **v2 CMS**, please use the following link: [v2 Layout Designer](layouts_designer_2.0). Speak to your Administrator about upgrading to the latest version!
+If you are using a version earlier than **2.3** for the **v2 CMS**, please use the following link: [v2 Layout Designer](layouts_designer_2.0.html). Speak to your Administrator about upgrading to the latest version!
 {/tip}
 
 [[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the Layout Designer will open:
