@@ -1,3 +1,5 @@
+<!--toc=tour-->
+
 # Two Factor Authentication
 
 For added security, Users can set **Two Factor Authentication** options for **Email** or **Google Authenticator** to complete login by entering a code, to further confirm their identity when logging into the CMS.
