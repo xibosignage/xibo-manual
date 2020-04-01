@@ -2,6 +2,17 @@
 
 # Weather
 
+{tip}
+
+### Update: Important news regarding Dark Sky 31st March 2020
+
+Dark Sky have announced that they have joined Apple. Our development team are aware of this and are currently investigating alternative providers as Dark Sky will no longer accept new API signups. The API service for existing customers will not be affected until the end of 2021. 
+
+Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/dark-sky-has-a-new-home/)
+{/tip}
+
+
+
 The Weather Widget provides current daily weather forecasts worldwide using the [DarkSky API](https://darksky.net/) as a source of weather data.
 
 {nonwhite}
