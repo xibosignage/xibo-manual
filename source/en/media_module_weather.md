@@ -2,12 +2,27 @@
 
 # Weather
 
-The Weather Widget provides current daily weather forecasts worldwide using the [DarkSky API](https://darksky.net/) as a source of weather data.
+{tip}
+
+### Update: Important news regarding Dark Sky 31st March 2020
+
+Dark Sky have announced that they have joined Apple and will no longer accept new API signups. The Dark Sky API service for existing customers will not be affected until the end of 2021. 
+
+Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/dark-sky-has-a-new-home/)
+
+We have chosen [OpenWeather](https://openweathermap.org/) as an alternative, follow the Installation steps below to provide an API key.
+
+{/tip}
+
+The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
 
 {nonwhite}
 {cloud}
 
 The Weather Module is configured for **Xibo in the Cloud** customers and is provided as part of the service. Please skip the installation steps detailed below and proceed with the set-up at the **Add Weather Widget** section.
+
+**Please note:** No action is required with the change of weather provider, as this is handled as part of the Cloud subscription service.
+
 {/cloud}
 
 **Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
@@ -16,7 +31,9 @@ The Weather Module is configured for **Xibo in the Cloud** customers and is prov
 
 ## Installation
 
-To get an API key please visit [DarkSky](https://darksky.net) to create an account.
+Weather data is provided by [OpenWeather](https://openweathermap.org/) which is provided under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and [ODbL](https://opendatacommons.org/licenses/odbl/)
+
+To get an API key please visit [Open Weather Map](https://openweathermap.org/api) to create an account.
 
 (If you are going to exceed 1000 calls per day you will also need to enter your billing information).
 
@@ -28,11 +45,15 @@ After installation,  select the Module from the grid and use the row menu to sel
 
 Complete the form fields and include the **API key**. The CMS allows a Cache period to be specified which will create a delay between requests for each geographic location.
 
-DarkSky allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
+Open Weather Map allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
+
+{tip}
+**Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
+{/tip}
 
 ## Add Weather Widget
 
-The DarkSky Terms of Service <https://darksky.net/tos> should be read and understood before using this Widget. 
+The Open Weather Map Terms of Service https://openweathermap.org/terms should be read and understood before using this Widget. 
 
 Click on the **Weather Widget** on the  toolbar, add / drag to the target **Region**. ![Weather Widget](img/v2_media_weather_widget.png)
 
@@ -59,7 +80,7 @@ If you are using 1.8, select **Weather** or **Forecast IO** from the Widget Tool
 
 Select **Preset** templates or provide your own using JavaScript.
 
-![Weather Templates](img\v2_media_weather_templates.png)
+![Weather Templates](img/v2_media_weather_templates.png)
 
 #### Preset
 
@@ -74,7 +95,7 @@ Enter the Update Interval in minutes.
 
 ## Attribution
 
-All Layouts that use the Weather Widget need to include the text “Powered by DarkSky” as per the [DarkSky Terms of Service](<https://darksky.net/tos>) . 
+All Layouts that use the Weather Widget need to include attribution, available by using the `[Attribution]` tag. All preset templates contain this tag by default, please ensure that this tag is included when editing/overriding default templates.
 
 
 

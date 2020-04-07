@@ -33,7 +33,9 @@ Choose to provide a specific duration:
 
 ![Video Edit](img/v2_media_video_edit.png)
 
-
+{tip}
+The Loop check box will appear once you enter a duration higher than the video to initiate the Loop functionality.
+{/tip}
 
 - Select a **scale** type (currently supported for Android and webOS Players only).
 - Opt to mute the video by using the tick box.
