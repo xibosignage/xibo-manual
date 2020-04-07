@@ -9,6 +9,9 @@
 Dark Sky have announced that they have joined Apple and will no longer accept new API signups. The Dark Sky API service for existing customers will not be affected until the end of 2021. 
 
 Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/dark-sky-has-a-new-home/)
+
+We have chosen [OpenWeather](https://openweathermap.org/) as an alternative, follow the Installation steps below to provide an API key.
+
 {/tip}
 
 The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
@@ -28,7 +31,7 @@ The Weather Module is configured for **Xibo in the Cloud** customers and is prov
 
 ## Installation
 
-Weather data is provided by [OpenWeather](https://openweathermap.org/) which is provided under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)and [ODbl](https://opendatacommons.org/licenses/odbl/)
+Weather data is provided by [OpenWeather](https://openweathermap.org/) which is provided under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and [ODbL](https://opendatacommons.org/licenses/odbl/)
 
 To get an API key please visit [Open Weather Map](https://openweathermap.org/api) to create an account.
 
@@ -77,7 +80,7 @@ If you are using 1.8, select **Weather** or **Forecast IO** from the Widget Tool
 
 Select **Preset** templates or provide your own using JavaScript.
 
-![Weather Templates](img\v2_media_weather_templates.png)
+![Weather Templates](img/v2_media_weather_templates.png)
 
 #### Preset
 
