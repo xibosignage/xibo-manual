@@ -16,7 +16,7 @@ Displays connect to the CMS over an API called "XMDS" {nonwhite}(Xibo Media Dist
 
 Alternatively, Displays can be added by providing a 6 character ‘Activation Code’ in the **Displays** page of the CMS.
 
-**Please note:** Connecting a Display using the **Add Display (Code)** in the CMS is currently only supported for **Android Players** (from v2 R204 and later). We are working on supporting this connection method for all Players.
+**Please note:** Connecting a Display using the **Add Display (Code)** in the CMS is currently only supported for **Android Players** (from v2 R204 and later) and **Windows Players** (from v2 R202/R252 and later). We are working on supporting this connection method for all Players.
 
 {tip}
 New Displays will need to be marked as **authorised** before they can be sent any content. This can be done by using the row menu for the Display and clicking **Authorise**.
