@@ -5,6 +5,10 @@
 Audio files are uploaded to the **Library** and served to the Player for offline playback. The Audio Module allows for audio to be assigned to Layouts.
 
 {tip}
+This module is currently not supported for the Linux Player.
+{/tip}
+
+{tip}
 If the audio file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.
 {/tip}
 
