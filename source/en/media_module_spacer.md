@@ -1,3 +1,5 @@
+<!--toc=widgets-->
+
 # Spacer
 
 **Please note:** This Module is available from 2.2.0
