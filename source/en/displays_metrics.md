@@ -35,7 +35,7 @@ The CMS records all Displays on/offline events to provide further information re
 # Proof of Play
 
 {tip}
-If you are using an earlier version than 2.1, please use the following link to the appropriate manual page for your version: [Proof of Play ](displays_proof_of_play_1.8.html)
+If you are using an earlier version than 2.1, please use the following: [Proof of Play ](displays_proof_of_play_1.8.html)
 {/tip}
 
 Each **Display** can collect information to provide Proof of Play Reports on what they have shown.
@@ -50,6 +50,8 @@ Reports can be provided for Proof of Play statistics recorded by:
 - **Media**
 - **Widget**
 - **Event**
+
+![Proof of Play by Type](img/v2_proof_of_play_type.png)
 
 {tip}
 If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
@@ -90,23 +92,23 @@ Select a predefined timeframe, (Today, Yesterday, This Week etc) and use the fil
 
 ### Schedule
 
-Once defined, Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis. 
-
-From version 2.2.0, a PDF of a Scheduled Report can also be emailed to Users by clicking in the **Should an email be sent?** tick box. 
+Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis. 
 
 {tip}
-Scheduled Reports can also be emailed to additional email addresses as entered in the **Email addresses** field.
+**Chart: Distribution** and **Chart: Summary Reports** must have the **Type** and the named Layout/Media/Event selected to activate the **Schedule** button.
 {/tip}
 
 Click on the **Schedule** button and complete the form fields.
 
 ![Proof of Play Reports Schedule](img/displays_proofofplay_report_schedule.png)
 
+From version 2.2.0, a PDF of a Scheduled Report can also be emailed to Users by clicking in the **Should an email be sent?** tick box. 
+
 {tip}
+Scheduled Reports can also be emailed to additional email addresses as entered in the **Email addresses** field.
+
 Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to setting up sending via email.
 {/tip} 
-
-
 
 ### Report Schedules
 
