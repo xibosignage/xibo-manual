@@ -1,3 +1,5 @@
+<!--toc=layouts-->
+
 # Interrupt Layouts
 
 #### Please note: This feature is currently supported by the Android Player only, from v2 R204 and the Windows Player from v2 R253.
