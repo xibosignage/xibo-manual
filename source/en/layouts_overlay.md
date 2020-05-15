@@ -2,7 +2,7 @@
 
 # Overlay Layouts
 
-Schedule as an **Overlay Layout** to tell [[PRODUCTNAME]] to display the Layout on top of normally **Scheduled Layouts**. Overlays remain on top while your normal Scheduled content changes underneath, particularly useful for logos, important information or emergency notices.
+Schedule as an **Overlay Layout** to tell [[PRODUCTNAME]] to display the Layout on top of normally **Scheduled Layouts**. Overlays remain on top while your normal scheduled content changes underneath, particularly useful for logos, important information or emergency notices.
 
 ![Overlay Layout](img/layouts_overlay.png)
 
@@ -11,9 +11,10 @@ Schedule as an **Overlay Layout** to tell [[PRODUCTNAME]] to display the Layout 
 Overlay Layouts are created in exactly the same way as all other **Layouts**. Add Regions to fit around your existing content so that your Overlay Layout can "sit on top" of other Layouts that are **Scheduled** at the same time as the Overlay.  Your Overlay Layout will display its all important content whilst the Layouts "underneath" playout in rotation.
 
 {tip}
-[[PRODUCTNAME]] will not render the background on an Android,webOS, Tizen and Linux Players when a Layout is scheduled as an Overlay Layout.
+[[PRODUCTNAME]] will not render the background on Players when a Layout is scheduled as an Overlay Layout.
 
-With the Windows Player, you will need to match the background so its the same colour/image as the Layout you are overlaying.
+**Please note:** Layouts that contain Widgets / Media that use the Edge browser cannot be used with an Overlay Layout as content cannot sit on top of other content under these circumstances. This would include HLS and Embedded Youtube.
+If your content is not a video then the CEF browser can be used instead. 
 {/tip}
 
 {tip}
