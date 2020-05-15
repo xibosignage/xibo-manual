@@ -12,6 +12,9 @@ Overlay Layouts are created in exactly the same way as all other **Layouts**. Ad
 
 {tip}
 [[PRODUCTNAME]] will not render the background on Players when a Layout is scheduled as an Overlay Layout.
+
+**Please note:** Layouts that contain Widgets / Media that use the Edge browser cannot be used with an Overlay Layout as content cannot sit on top of other content under these circumstances. This would include HLS and Embedded Youtube.
+If your content is not a video then the CEF browser can be used instead. 
 {/tip}
 
 {tip}

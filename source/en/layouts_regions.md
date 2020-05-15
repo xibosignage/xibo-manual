@@ -69,7 +69,10 @@ This tab allows for precise sizing and positioning as well as the ability to set
 
 ### Rules for Layering Regions
 
-**Please note: Overlapping Regions is not supported for Windows Players.**
+{tip}
+**Please note:** You cannot overlay anything on a Region that has Widgets / Media that use the Edge browser. This would include HLS and Embedded Youtube.
+For content other than a video you can use the CEF browser instead.
+{/tip}
 
 If required, overlapping Regions can be ordered for playback using z-index settings.
 
@@ -111,10 +114,6 @@ Alternatively Permissions can also be located from the [Tools](layouts_tools.htm
 
 {tip}
 A globally shared Layout can have Region access rights defined for any other users of the CMS. Read more for [Permissions for User Objects](users_permissions.html#user_objects) 
-{/tip}
-
-{tip}
-**Please note:** The Windows Player does not support overlapping Regions. For a mixed Player network ensure Regions do not overlap for the best results.
 {/tip}
 
 
