@@ -12,7 +12,7 @@ Examples of where DataSets could be utilised:
 DataSets have been designed to be versatile and reusable and come in two parts:
 
 1. **The DataSet** (Data Structure and data)
-2. **The Display** ([DataSet View](https://xibo.org.uk/manual/en/media_module_dataset_view.html) / [DataSet Ticker](https://xibo.org.uk/manual/en/media_module_dataset_ticker.html) / a source of data for a custom Module)
+2. **The Display** ([DataSet View](media_module_dataset_view.html) / [DataSet Ticker](media_module_dataset_ticker.html) / a source of data for a custom Module)
 
 DataSets are first defined, which can then be reused across multiple DataSet Views and Layouts. Access by navigating to **DataSets** under the **Library** section on the Menu to view the DataSet grid where you can add new and manage existing DataSets.
 
@@ -37,7 +37,7 @@ Click on the **Add DataSet** button and complete the form fields.
 **Remote?** - Should this DataSet sync itself with a remote data source?
 
 {tip}
-If you choose to make the DataSet Remote you will be presented with further tabbed headers with information that will need completing, see the [Remote DataSets](media_datasets.html#Remote_Datasets) section of this page.
+If you choose to make the DataSet Remote you will be presented with further tabbed headers with information that will need completing, see the [Remote DataSets](https://xibo.org.uk/manual/en/media_datasets.html#remote_datasets) section of this page. 
 {/tip}
 
 ### Columns

@@ -28,7 +28,11 @@ Layouts are assigned using the plus icon, once pressed Layouts will show in the 
 
 ![](img/layouts_campaigns_assign_layouts.png)
 
-Re-order Layouts in the staging area by drag and drop to ensure that Layouts play out in your designed sequence, ensuring that you press Save to keep changes.
+Re-order Layouts in the staging area by drag and drop to ensure that Layouts play in your designed sequence, ensuring that you press Save to keep changes.
+
+{tip}
+Did you know that using **Display Order** when [Scheduling Events](scheduling_events.html) you can further control how your Campaigns will play on your Displays…
+{/tip}
 
 {tip}
 Use the **Copy** button located on the row menu to easily make a copy of an existing Campaign!
