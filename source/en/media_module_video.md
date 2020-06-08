@@ -46,3 +46,8 @@ The Loop check box will appear once you enter a duration higher than the video t
 {tip}
 If you tick **Show Full Screen** the video will show full screen whilst it is playing. When the next item in the Region is shown it will revert back to the size of the Region.
 {/tip}
+
+{tip}
+**Please note:** Transitions are not supported for the Tizen Player when using the Video Widget.
+{/tip}
+

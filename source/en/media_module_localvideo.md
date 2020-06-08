@@ -37,3 +37,7 @@ Video scaling and RTSP streams are only supported on the Android, webOS and Linu
 {tip}
  The number of RTSP streams you can show on one Layout is dependent on the device being used.
 {/tip}
+
+{tip}
+**Please note:** Transitions are not supported for the Tizen Player when using the Local Video Widget.
+{/tip}
