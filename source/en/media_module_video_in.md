@@ -22,3 +22,7 @@ If you are using 1.8, select **Video In** from the Widget Toolbox to add to your
 {tip}
 To seamlessly show content alongside **Live TV** create an Overlay Layout with the **Video In** Widget added, this will allow for your layout of content ‘underneath’ to display and rotate freely. This will prevent the TV signal from skipping with each Layout load if on the same Layout.
 {/tip}
+
+{tip}
+**Please note:** Transitions are not supported for the Tizen Player when using the Video In Widget.
+{/tip}
