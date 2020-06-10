@@ -1,8 +1,10 @@
 <!--toc=scheduling-->
 
-# Geo Location
+# Geo Scheduling
 
-#### Please note: This feature is currently supported in the Windows Player from v2 R253. We are currently working to bring this feature to all Players.
+#### Please note: This feature is currently supported in the Windows Player from v2 R253 and Android Players from v2 R206. 
+
+#### We are currently working to bring this feature to all Players.
 
 From version 2.3.0, **Events** can be scheduled to be location aware.
 
