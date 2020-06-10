@@ -1,6 +1,6 @@
 <!--toc=scheduling-->
 
-# Geo Location
+# Geo Scheduling
 
 #### Please note: This feature is currently supported in the Windows Player from v2 R253 and Android Players from v2 R206. 
 
