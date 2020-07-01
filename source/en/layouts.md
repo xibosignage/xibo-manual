@@ -16,6 +16,12 @@ Create a new Layout from the **Add Layout** button.
 
 ![Layout Grid](img/v2_layouts_grid.png)
 
+{tip}
+Thumbnails will only show for Layouts that have a set background image.
+{/tip} 
+
+
+
 ## Add Layout
 
 Click on the action button to open the Add Layout form to complete the appropriate fields.
