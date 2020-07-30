@@ -71,9 +71,13 @@ The Edit Media form allows you to make edits to the name and duration of the sel
 
 Media can be tagged to allow for ordering and make files easier to find.
 
-> Administrators can set certain **Tag's** to have a **Value** associated to them. Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
->
-> For further information on what Tag and Tag Values to use, please speak with your Administrator.
+{tip}
+Administrators can set certain **Tag's** to have a **Value** associated to them. Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
+
+From v2.3.6, you can add an associated value for Tags without an existing predefined value. Enter the Value you wish to associate with the Tag in the **Tag value** field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
+
+For further information on what Tag and Tag Values to use, please speak with your Administrator.
+{/tip}
 
 **Expiry date:** (available from v2.2.0)
 
@@ -88,7 +92,8 @@ If you do not want to completely remove the Media file and keep it assigned to e
 
 Use the drop-down to set the collection of [Proof of Play](displays_metrics.html#proof_of_play) statistics to On / Off / Inherit for the selected Media file.
 
-> To collect Proof of Play records ensure that the Enable Stats Reporting has been ticked in [Display Settings
+{tip}
+To collect Proof of Play records ensure that the Enable Stats Reporting has been ticked in [Display Settings](displays_settings.html)
 
 **Update this Media in all Layouts it is assigned to:**
 
