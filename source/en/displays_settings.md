@@ -77,11 +77,15 @@ Players aggregate ‘completed records’ only, with collection made at the end 
 
 ### Force HTTPS - available from version 2.2.0
 
-**Please note:** We are currently working to bring this feature to all Players but at present this is only available for Windows Players from version v2 R201, and Android Players from version v2 R203.
+**Please note:** This feature is available for Windows Players from v2 R201, Android Players v2 R203, webOS v2 R204 and Tizen v2 R201and is currently not supported for Linux Players.
 
 This option has been included to force a Displays connection to the CMS using HTTPS. 
 
 Use the checkbox to **Force HTTPS** on the **Network** tab of the **Edit Profile** form.
+
+{tip}
+This option can be overridden for individual Displays.
+{/tip}
 
 ### Operating Hours
 

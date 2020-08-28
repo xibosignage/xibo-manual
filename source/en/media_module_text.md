@@ -24,6 +24,13 @@ The thin red border in the text editing window represents the **Region** size. E
 
 Optionally use date/time merge tags, available from the **Snippets** menu. 
 
+{tip}
+From v2.1.0, [Date] tags can include an optional [Date|format] so that [Date] can be used multiple times in a Template with different formats which allows for different styling for each element of the date.
+
+![Text Date Format](img/v2_media_text_dateformat.png)
+
+{/tip}
+
 ### General
 
 - Provide an optional name.
