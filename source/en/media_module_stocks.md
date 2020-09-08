@@ -15,8 +15,12 @@ The Stocks Module is configured for **Xibo in the Cloud** customers, with an API
 {/nonwhite}
 
 ## Installation 
+The Stocks Widget relies on the [Alpha Vantage Stock API](https://www.alphavantage.co/) to retrieve stock market data. 
+The prices returned by Alpha Vantage follow the 
+[stock market standard](https://medium.com/@patrick.collins_58673/stock-api-landscape-5c6e054ee631) of adjusting for 
+corporate events such as splits and dividend payout.
 
-To get an API key please visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key)  and create an account.
+To get an API key please visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key) and create an account.
 
 The Stocks Module is installed from the Modules page, under the Administration section of the Menu. Click on the **Install Module** button and select the Module to install.
 

@@ -14,8 +14,10 @@ The Currencies Module is configured for **Xibo in the Cloud** customers with an 
 {/nonwhite}
 
 ## Installation
+The Currencies Widget relies in part on the [Alpha Vantage API](https://www.alphavantage.co/) to retrieve exchange rates. 
+Prior to installation you will need an API key. 
 
-Prior to installation you will need an API key. Please visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key) to create an account and obtain a key.
+Please visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key) to create an account and obtain a key.
 
 The Currencies Module is installed from the Modules page, under the Administration section of the Menu. Click on the **Install Module** button and select the Module to install.
 
