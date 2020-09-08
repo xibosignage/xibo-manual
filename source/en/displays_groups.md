@@ -16,6 +16,8 @@ Click on the **Add Display Group** button to create a new Display Group or use t
 Display Groups can be tagged which allows for ordering and makes it easier to find. Administrators can set certain **Tag's** to have a **Value** associated to them.  Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
 
 {tip}
+From v2.3.6, you can add an associated value for Tags without an existing predefined value. Enter the Value you wish to associate with the Tag in the **Tag value** field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
+
 For further information on what Tag and Tag Values to use, please speak with your Administrator.
 {/tip}
 

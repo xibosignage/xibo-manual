@@ -62,6 +62,15 @@ Toggle **On** the Visual editor to format the main template using the inline edi
 
 Include text merge fields from the **Snippets** menu to pull in the required event information from the Calendar. Click on the **Save** button.
 
+
+
+{tip}
+From v2.1.0, [Date] tags can include an optional format [Date|format] so that [Date] can be used multiple times in a Template with different formats which allows for different styling for each element of the date.
+
+![Calendar Date Format](img/v2_media_calendar_dateformat.png)
+
+{/tip}
+
 {tip}
 If you are using 1.8 text merge fields are located under the **Available Substitutions**.
 {/tip}
