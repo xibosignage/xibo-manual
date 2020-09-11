@@ -67,7 +67,8 @@ It is important to note that the Layout will be marked invalid and not sent to P
 Transition Type and Duration can be applied to a Widget by clicking to add or drag and drop.
 
 {tip}
-Transitions are supported for Android/webOS and Tizen Players.
+Transitions are supported for Android/webOS ,Tizen Players and Window Players from v2 R252.
+Transitions are currently not supported on the Linux Player.
 {/tip}
 
 ### Fade/Fly In

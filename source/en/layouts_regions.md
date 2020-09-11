@@ -93,7 +93,8 @@ At the bottom of this tab, click on the **Make this Region full screen** text to
 **Exit Transitions** happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
 
 {tip}
-Transitions are supported in the Android, webOS and Tizen Players and need to be pre configured. Please contact your Administrator.
+Transitions are supported in the Android, webOS, Tizen Players and Windows Players from v2 R252 and need to be pre configured. Please contact your Administrator.
+Transitions are currently not supported in the Linux Player.
 {/tip}
 
 Ensure any edits made are saved using the **Save** button on the Region Options form before returning to the Layout View.

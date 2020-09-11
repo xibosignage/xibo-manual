@@ -75,7 +75,9 @@ Ensure that the **Enable Stats Collection** check box has been enabled for the *
 ### Automatically apply Transitions
 
 {tip}
-Transitions are not supported on Windows and Linux Players.
+
+Transitions are supported on Android, webOS and Tizen Players and Windows Players from v2R252
+Transitions are currently not supported on Linux Players.
 {/tip}
 
 Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
@@ -128,7 +130,7 @@ Select Layouts to include in created Campaigns.
 
 ### Edit
 
-Make changes to the naming and Tags used for the **Layout** as well as making changes to the background image/colour.
+Make changes to the naming and Tags used for the **Layout**.
 
 ### Copy
 
