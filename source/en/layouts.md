@@ -12,7 +12,9 @@ Take a look at the [Modules](media_modules.html) page to see the variety of cont
 
 Layouts are administered from the Design section of the menu. Click on **Layouts** to open the Layouts grid, use the available fields to narrow your search for existing Layouts.
 
-Create a new Layout from the **Add Layout** button.
+{tip}
+The Display Group filter is available from v2.2.0 to view Layouts that are currently active by Display.
+{/tip}
 
 ![Layout Grid](img/v2_layouts_grid.png)
 
@@ -24,7 +26,7 @@ Thumbnails will only show for Layouts that have a set background image.
 
 ## Add Layout
 
-Click on the action button to open the Add Layout form to complete the appropriate fields.
+Click on the **Add Layout** button to open the  form to complete the appropriate fields.
 
 ![Add Layout](img/v2_layouts_add.png)
 
@@ -75,7 +77,9 @@ Ensure that the **Enable Stats Collection** check box has been enabled for the *
 ### Automatically apply Transitions
 
 {tip}
-Transitions are not supported on Windows and Linux Players.
+
+Transitions are supported on Android, webOS and Tizen Players and Windows Players from v2R252
+Transitions are currently not supported on Linux Players.
 {/tip}
 
 Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
@@ -128,7 +132,7 @@ Select Layouts to include in created Campaigns.
 
 ### Edit
 
-Make changes to the naming and Tags used for the **Layout** as well as making changes to the background image/colour.
+Make changes to the naming and Tags used for the **Layout**.
 
 ### Copy
 
