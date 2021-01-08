@@ -22,6 +22,10 @@ Use the drop-down menu to select an audio file from the Library.
 
 When assigning audio to a Widget you can enter **Volume** as well as a **Loop** parameter to determine whether the audio will loop for the duration of the existing Widget or just play through once. The audio will be stopped when its parent Widget finishes playing.
 
+{tip}
+If Audio is assigned to a Widget, which is the **only** Widget it its Region, the audio will stop once the Widget duration has expired. The Widget may be left on screen until the rest of the Layout has expired.
+{/tip}
+
 Once audio has been assigned to a Widget, a **speaker icon** will be visible for the media item in the Region Timeline.
 
 {tip}

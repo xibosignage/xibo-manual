@@ -29,11 +29,5 @@ Click on **Add files** to upload to the Library or click on View Library to sele
 Once assigned to a Region, **Edit** options are available.
 
 {tip}
-If Audio is assigned to a Widget, which is the **only** Widget in its Region, the audio will stop once the Widget duration has expired, but the Widget may be left on screen until the rest of the Layout has expired.
-{/tip}
-
-
-
-{tip}
 The Audio Widget is fully compatible with [Overlay Layouts](layouts_overlay.html) and can therefore be used effectively to draw attention and compliment content.
 {/tip}

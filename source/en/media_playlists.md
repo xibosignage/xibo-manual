@@ -78,3 +78,4 @@ Use the tick box to make **new copies** of all media assigned to the original pl
 ![Copy Media](img/v2_media_playlists_copy_media.png)
 
 Include pre-defined Playlists by adding the [Sub-Playlist Widget](media_module_subplaylist.html) to Layouts.
+
