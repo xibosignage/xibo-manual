@@ -120,7 +120,7 @@ Before the Layout can start all **Media** must be downloaded to your browser and
 
 ### Schedule Now
 
-To save time, **Layouts** can be scheduled for a specified amount of time, which can be very useful for important notices / promotions.
+To save time, **Layouts** can be scheduled for a specified amount of time, which can be very useful for important notices / promotions. Using **Schedule Now** creates a new **Event** record to the [Schedule](scheduling_calendar.html)
 
 {tip}
 Layouts must have a **Published** status before being scheduled.

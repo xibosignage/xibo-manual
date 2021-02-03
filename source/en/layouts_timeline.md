@@ -79,7 +79,7 @@ Use the toolbar to add media as normal.
 
 ![Playlist View](img/v2.3_layouts_timeline_playlist_view.png)
 
-{tip}
+
 
 Media can be added to a specific point on the Timeline. 
 

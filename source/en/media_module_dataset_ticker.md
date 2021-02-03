@@ -41,6 +41,10 @@ This should be used with caution as it can create long-running media items. It i
 
 Select if returned items should be shown side by side and configure **Upper** and **Lower** row limits.
 
+{tip}
+From v2.3.8 use the **Randomise** option to randomly shuffle items to de displayed in a random sequence.
+{/tip}
+
 ### Appearance
 
 - Optionally select a background colour
