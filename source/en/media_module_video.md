@@ -37,7 +37,7 @@ Choose to provide a specific duration:
 The Loop check box will appear once you enter a duration higher than the video to initiate the Loop functionality.
 {/tip}
 
-- Select a **scale** type (currently supported for Android and webOS Players only).
+- Select a **scale** type (currently supported for Android, Windows WPF Player versions, webOS and Tizen Players only).
 - Opt to mute the video by using the tick box.
 - Tick to expand the video so that it shows in full screen.
 

@@ -208,6 +208,10 @@ Remote DataSets are kept in sync with a Task called **Fetch Remote DataSets**. T
 
 As well as the Actions that have been previously mentioned, each data set can have a number of actions performed against it, accessed using the row menu.
 
+## View RSS
+
+This option allows you to publish content in a Layout as an RSS feed from data held in your own DataSet. Click View RSS to copy the URL which can then be included in the  [Ticker](media_module_ticker.html)  Widget configuration.
+
 ### Delete
 
 Select the Delete menu item to show the DataSet Delete form which gives the option of deleting any associated data contained. 

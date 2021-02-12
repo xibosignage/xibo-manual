@@ -52,7 +52,7 @@ If the new font does not show in the text editor after upload, try clearing the 
 {/tip}
 
 {tip}
-**Please note:** Fonts have preferences built into then known as OS/2 tags. [[PRODUCTNAME]] checks for OS/2 preferences and can use fonts with OS/2 tags 0 or 8. Fonts with other OS/2 tags may produce an error on uploading and may not display correctly.
+**Please note:** Fonts have preferences built into them known as OS/2 tags. [[PRODUCTNAME]] checks for OS/2 preferences and can use fonts with OS/2 tags 0 or 8. Fonts with other OS/2 tags may produce an error on uploading and may not display correctly.
 {/tip}
 
 ## Row Menu 

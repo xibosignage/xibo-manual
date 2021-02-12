@@ -23,9 +23,12 @@ Overlay Layouts can also be used for Campaigns.
 
 ## Scheduling
 
-Overlay Layouts are selected as an **Event type** when [Scheduling an Event](scheduling_events.html) and will behave differently to standard Layouts when Scheduled as an Overlay:
+Overlay Layouts are selected as an **Event type** when [Scheduling an Event](scheduling_events.html) and will behave differently to standard Layouts when Scheduled as an Overlay.
 
-#### Refreshing Content
+![Overlay Event](img/layouts_overlay_event.png)
+
+- #### Refreshing Content
+
 
 When an Overlay Layout is scheduled it will render the **Media content** once and will not show refreshed content.
 
@@ -33,7 +36,8 @@ When an Overlay Layout is scheduled it will render the **Media content** once an
 A workaround to this would be to add a second Media Item to the Overlay Layout so that it loads item 2 and then reloads item 1 (with now refreshed content). This is particularly useful when creating an Overlay Layout which includes the Calendar or Ticker Widgets for example.
 {/tip}
 
-#### Scheduling multiple Overlays
+- #### Scheduling multiple Overlays
+
 
 Overlay Layouts do not appear one after the other in Scheduling but instead will **stack**.
 

@@ -82,6 +82,12 @@ Use the **No Data** template to include a message to display when there is no da
 
 Players can **cache** the content of this media type to prevent repeated downloads and off-line playback. Keep this number as high as possible.
 
+{tip}
+Options are provided to set different update frequencies for images and data to determine how long the Player will keep the data and or images, saved locally, before checking for updates.
+{/tip}
+
+
+
 ## Additional Information
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
