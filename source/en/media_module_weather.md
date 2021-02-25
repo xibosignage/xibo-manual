@@ -151,20 +151,7 @@ attribute and has a special `[[ICONS]]` which will be replaced with a selected i
 It is possible to **request a forecast** at any time to see what forecast data is returned. Any field is available as a substitute in the template by entering the field name between square 
 brackets - for example `[nearestStormDistance]`.
 
-### Extending with new icons
 
-New icons can be added by an Administrator who has access to the file system. Any PNG file in `modules/theme/forecastio/weather_icons` will be made available for selection in the Icons selector.
-
-Weather icons are provided as a sprite, each icon is 128x128 and should represent the same weather conditions as the shipped icon sprite.
-{tip}
-For example, a "clear-day" is represented by the icon in position 1, a "windy day" is represented by the icon in position 11.
-
-{/tip}
-
-{tip}
-You may have a Layout Status `! There are items on this Layout that can only be assessed by the client`This is a normal Layout Status if you have online content which will be assessed on the Player side. 
-
-{/tip}
 
 ## Additional Information
 
