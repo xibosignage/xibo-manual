@@ -1,6 +1,6 @@
-<!--toc=users-->
-
 # Permissions
+
+**Please note:** If you are using a 3.x CMS, please use the following link: [Features and Sharing](users_features_and_sharing.html)
 
 Permissions can be assigned to both **User** and **User Groups** to allow or restrict access to System and **User Objects** within the CMS.
 

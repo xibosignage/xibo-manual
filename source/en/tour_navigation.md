@@ -13,38 +13,45 @@ If you are using 1.8 the menu will only be placed vertically on the left hand si
 ![CMS Main Menu](img/tour_cms_menu.png)
 
 {tip}
-The menu will only show the items each User has been given permission to see!
+The menu will only show the items enabled for each User to see!
 {/tip}
 
 ### Dashboard
 
-This is a direct link to the logged in **Users** assigned Dashboard (homepage). 
+This is a direct link to the logged in Users assigned [Dashboard](tour_status_dashboard.html) (homepage). 
 
 ### Schedule
 
-Create, view and manage **Events** for each Display in your signage network. Create your own **Daypart**s to include when scheduling events.
+Create, view and manage [Events](scheduling.html) for each Display in your signage network. Create your own [Dayparts](scheduling_dayparting.html) to include when scheduling events.
 
 ### Design
 
-Create and manage **Layouts** / **Campaigns** and utilise **Templates**.
+Create and manage [Layouts](layouts.html)/[Campaigns](layouts_campaigns.html) and utilise [Templates](layouts_templates.html).
 
 ### Library
 
-Create reusable **Playlists** and store file-based **Media** for re-use and design. Store tabular data using **DataSets**.
+Create reusable [Playlists](media_playlists.html) and store file-based [Media](media.html) for re-use and design. Store tabular data using [DataSets](media_datasets.html).
 
 ### Displays
 
-The Display section contains all pages needed for managing connected **Displays**.
+The Display section contains all pages needed for managing connected [Displays](displays.html).
 
 ### Administration
 
-Manage all **Users**/**User Groups**, **CMS** **Settings** and **Modules**.
+Manage all [Users](users_administration.html)/[User Groups](users_groups.html)**, **CMS Settings and [Modules](https://xibo.org.uk/manual/en/media_modules.html).
+
+{nonwhite}
+For CMS Settings administration please click [here](https://xibo.org.uk/docs/setup/xibo-cms-settings)
+{/nonwhite}
 
 ### Reporting
 
-View **Display statistics** and **Proof of Play** reports as well as **Library Usage** by User/User Group.
+View Display statistics, Proof of Play as well as Library Usage by User/User Group [Reports](displays_metrics.html).
 
 ### Advanced
 
-**Log** and **Session** information as well as **Audit Trail's** and **Fault Reporting**.
+Access Log and Session information as well as Audit Trail and [Fault Reporting](troubleshooting.html).
 
+{nonwhite}
+Advanced information regarding logs and Audit Trails for administrators can be found [here](https://xibo.org.uk/docs/setup/troubleshooting-for-administrators)
+{/nonwhite}

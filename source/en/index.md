@@ -9,7 +9,9 @@ Management of a solution as flexible as [[PRODUCTNAME]] requires a powerful CMS 
 This User Manual covers the core concepts and CMS features and starts with a "Tour" to further explain what [[PRODUCTNAME]] can actually do...
 
 {tip}
-**Please note:** The User Manual gives a complete overview of the CMS as a Super Administrator with full access to all Features/Permissions within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
+**Please note:** The User Manual gives a complete overview of the CMS as a Super Administrator with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS.
+
+If you have any questions regarding your User access, then please contact your Administrator.
 {/tip}
 
 {nonwhite}
@@ -41,7 +43,7 @@ Using these 5 concepts we can sum up what [[PRODUCTNAME]] can do in a simple sen
 
 Users are the people that are granted access to the CMS and are identified by a **Username** and **Password** to securely log in.
 
-[[PRODUCTNAME]] supports 3 User Types, User Groups as well as multi-level access to all parts and items stored within the CMS.
+[[PRODUCTNAME]] supports 3 User Types, User Groups as well as multi-level [Feature and Sharing](users_features_and_sharing.html) access to all parts and items stored within the CMS.
 
 {tip}
 For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory via ADFS. 
@@ -68,7 +70,7 @@ Media content is at the core of the [[PRODUCTNAME]] solution and has many differ
 [[PRODUCTNAME]] uses powerful **Widgets** which allow you to show your content as well as integrating dynamic third-party information from a variety of sources.
 
 {nonwhite}
-A full list of features can be found [here](https://xibo.org.uk/cms). 
+A look at some of the CMS features can be found [here](https://xibo.org.uk/cms). 
 {/nonwhite}
 
 ### 5. Scheduling
