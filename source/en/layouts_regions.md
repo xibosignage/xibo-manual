@@ -6,9 +6,6 @@ Regions define areas on a **Layout** which hold **Widgets** (media content) to f
 
 {tip}
 If you are using a version earlier than 2.3 for the v2 CMS, please use the following link: [Regions v2](layouts_regions_2.0.html)
-{/tip}
-
-{tip}
 If you are using the **1.8 series**, please use the following link: [Regions 1.8](layouts_regions_1.8.html)
 {/tip}
 
@@ -27,7 +24,7 @@ You can toggle to a full sized screen using the icon located in the bottom right
 
 Click inside a Region to use the resize handle and to open the **Region Options** form for further configuration.
 
-![Region Resize](img/v2.3_layouts_region_resize.png)
+![Region Resize](img/v3_layouts_region_resize.png)
 
 {tip}
 When you are in **Layout Editor** mode you will notice that the window toolbar changes to orange!
@@ -93,28 +90,49 @@ At the bottom of this tab, click on the **Make this Region full screen** text to
 **Exit Transitions** happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
 
 {tip}
-Transitions are supported in the Android, webOS, Tizen Players and Windows Players from v2 R252 and need to be pre configured. Please contact your Administrator.
-Transitions are currently not supported in the Linux Player.
-{/tip}
+Transitions are supported in the Android, webOS, Tizen Players and Windows Players from v2 R252 and are **not** currently supported in the Linux Player.{/tip}
+Transitions need to be pre-configured, please contact your Administrator with any queries.
+
+{nonwhite}
+Further information on Transitions for administrators can be found [here](https://xibo.org.uk/docs/setup/transitions-administration)
+{/nonwhite}
 
 Ensure any edits made are saved using the **Save** button on the Region Options form before returning to the Layout View.
 
-### Permissions for a Region
-
-Control which **User** and **User Groups** can view/edit/delete the Region.  
-
-Assign/edit Permissions by right clicking on the target Region to open the Permissions form.
-
-![Region Permissions](img/v2.3_layouts_region_permissions.png)
+### Actions
 
 {tip}
-Alternatively Permissions can also be located from the [Tools](layouts_tools.html) button on the bottom toolbar. Click or drag to the target Region, and complete the Permissions form as appropriate.
+Actions are available from v3.0.0!
 {/tip}
 
-**Please note:** The owner of the Layout has full control over sharing. 
+Actions can be attached to Regions to effect changes on the Layout. 
+
+![Actions](img\v3_layouts_regions_actions.png)
+
+Full details are available on the [Interactive Actions](layouts_interactive_actions.html) page.
+
+### Share options for a Region
+
+Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete** access for a Region.  
+
+- Assign/edit **Share** options by right clicking on the target Region to open the form.
+
+  {tip}
+  In versions earlier than 3.0.0, Share options are labelled as **Permissions**!
+  {/tip}
+
+
+![Region Sharing](img\v3_layouts_regions_share.png)
 
 {tip}
-A globally shared Layout can have Region access rights defined for any other users of the CMS. Read more for [Permissions for User Objects](users_permissions.html#user_objects) 
+Alternatively Share options can also be located from the [Tools](layouts_tools.html) button on the bottom toolbar. Click or drag to the target Region, and enable/disable access as appropriate.
+{/tip}
+
+**Please note:** The owner of the **Layout** has full control over sharing. 
+
+{tip}
+A globally shared Layout can have Region access right defined for any other Users of the CMS. See the [Features and Sharing](users_features_and_sharing.html) page for more information.
+Users of a CMS earlier than v3.0.0 please see the [Permissions](users_permissions.html) page.
 {/tip}
 
 
