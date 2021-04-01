@@ -14,7 +14,7 @@ Take a look at the [Modules](media_modules.html) page to see the variety of cont
 
 [[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User can have.
 
-Layouts are administered by clicking on **Layouts** under the **Design** section of the main menu, to open the Layouts [Grid](tour_grids.html).
+Layouts are administered by clicking on **Layouts** under the **Design** section of the main menu, to open the Layouts [grid](tour_grids.html).
 
 ![Layout Grid](img/v3_layouts_grid.png)
 
@@ -43,7 +43,7 @@ You have a video showing a fire safety demonstration and a video showing an adve
 Layouts can be optionally saved to **Folders**.
 
 {tip}
-Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User / User Group access!
+Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
 - Click on the **Select Folder** button and expand to select the Folder to save in.

@@ -2,25 +2,93 @@
 
 # HTML Package
 
-**Please note:** This Module is available from v2
+{tip}
+If you are using a 2.x CMS please use the following link: [HTML Package](media_module_htmlpackage_2.html)
+{/tip}
 
 {tip}
-This module is currently not supported for the Linux Player.
+Please note: This module is currently not supported for the Linux Player.
 {/tip}
 
 The HTML Package Module allows for the upload of a complete HTML Package which can be distributed to Players.
 
+## Add Widget
+
+Click on **HTML Package** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop. ![HTML Package Widget](img/v2_media_html_package.png)
+
 {tip}
-If the file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.
+If the file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add!
 {/tip}
 
-Click on the **HTML Package Widget** on the toolbar,  add / drag to the target **Region**.  ![HTML Package Widget](img/v2_media_html_package.png)
+## Upload File
+
+The file uploader will open on adding the HTML Package Widget:
+
+![HTML Package Add](img/v3_media_htmlpackage_upload.png)
+
+- Click on **Add files** and select the file(s) to upload
+
+- Give your file a **Name** for easier identification in the CMS and an optional **Tag**.
+
+{tip}
+If the Name field is left blank, the file will be named as per the original file name on upload!
+{/tip}
+
+HTML Packages can also be directly uploaded to a specified **Folder** location.
+
+{tip}
+HTML Packages that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
+{/tip}
+
+- Click on the **Select Folder** button. Expand to select an existing Folder or right click and **Create** a new Folder.
+
+![Select Folder](img\v3_media_htmlpackage_select_folder.png)
+
+{tip}
+Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
+{/tip}
+
+- Click in the folder you wish to upload the file to and click **Done**. The **Current Folder** will show the selected file path:
+
+{nonwhite}
+Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
+{/nonwhite}
+
+{white}
+For further information regarding Folder access and set-up, please speak to your Administrator.
+{/white}
+
+There is also an option to set expiry dates and times for files uploaded to this particular Widget.
+
+- Tick the **Set Expiry Dates** box.
+
+- Use the date picker to select **Start** and **End** dates and times.
+
+![Expiry Dates](img\v3_media_htmlpackage_expiry_dates.png)
+
+- There are further options to remove the Widget from the Playlist on expiry and to delete the file from the Library.
 
 
+- Click the **Start upload** button to begin the upload. 
+- Once successfully uploaded, click **Done**.
 
-Click on **Add files** to upload to the Library or click on View Library to select an uploaded file.
+Files can also be uploaded individually and have different Folder locations/Expiry dates and times specified.
+Instead of clicking on the Start upload button, click on the **blue upload** button shown at the end of the row for an added file after changing the Folder location and Expiry dates, to upload individually.
 
-![HTML Package Upload](img/v2_media_html_package_upload.png)
+{tip}
+View or make changes to Expiry Dates by clicking on the icon on the Widget from the Timeline!
+{/tip}
 
+## Configuration Options
 
+Click on the added **HTML Package Widget** from the **Timeline** to open configuration options in the **Edit HTML Package** form:
 
+![HTML Options](img/v3_media_html_options.png)
+
+- Using the General tab, make edits to the Name and provide a specific duration as required.
+- Enter a file name for the Player to attempt to open after extracting the .htz archive.
+- Save any changes.
+
+### Actions
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

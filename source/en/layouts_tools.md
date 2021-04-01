@@ -11,7 +11,7 @@ Located on the bottom toolbar of the [Layout Designer](layouts_designer.html), t
 ![Tools](img/v3_layouts_tools.png)
 
 {tip}
-Versions earlier than 3.0.0 **Sharing** will be labelled **Permissions**!
+Versions earlier than 3.0.0 **Sharing** will be labelled [Permissions](users_permissions.html)
 {/tip}
 
 ### Audio
@@ -36,7 +36,13 @@ Once audio has been assigned to a Widget, a **speaker icon** will be visible for
 Click on the speaker icon to edit the assigned audio.
 {/tip}
 
+{tip}
+If Audio is assigned to a Widget, which is the **only** Widget in its Region, the audio will stop once the Widget duration has expired but the Widget will remain on screen until the rest of the Layout has expired!
+{/tip}
+
 ### Expiry Dates
+
+**Please note:** Expiry Dates are currently not supported on the Linux Player.
 
 Click on the Expiry Dates button and click to add or drag and drop to a Widget to enter **Start** and **End** dates and times. Use the checkbox to additionally delete the Widget at the set end time.
 
