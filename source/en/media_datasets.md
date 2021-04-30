@@ -13,9 +13,9 @@ Examples of where DataSets could be utilised:
 DataSets have been designed to be versatile and reusable and come in two parts:
 
 1. **The DataSet** (Data Structure and data)
-2. **The Display** ([DataSet View](media_module_dataset_view.html)/[DataSet Ticker](media_module_dataset_ticker.html) or a source of data for a custom Module)
+2. **The Display** ([DataSet View](media_module_dataset_view.html)/[DataSet Ticker](media_module_dataset_ticker.html)/[Chart](media_module_chart.html) or a source of data for a custom Module)
 
-DataSets are first defined, which can then be reused across multiple DataSet Views/Tickers added to Layouts. Access by navigating to DataSets under the Library section of the main menu:
+DataSets are first defined, which can then be reused across multiple DataSet Views/Tickers/Chart Widgets added to Layouts. Access by navigating to DataSets under the Library section of the main menu:
 
 ![DataSet Grid](img/v3_media_dataset_grid.png)
 

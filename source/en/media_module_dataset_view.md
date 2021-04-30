@@ -2,78 +2,106 @@
 
 # DataSet View
 
-The DataSet View Widget allows content from a created DataSet to be added into a **Region**, organised and displayed in a tabular format.
+The DataSet View Widget is used with DataSets to display information in a tabular format.
 
-When the underlying **DataSet Data** is changed, the DataSet View Widget included in your Layout(s), will automatically update with the new data.
+When the underlying **DataSet Data** is changed, the DataSet View Widget included in your Timelines, will  update with the new data.
+
+DataSets need to be created and defined prior to adding the DataSet View Widget to Layouts. Please see the  [DataSet](media_datasets.html)  page for further information.
+
+## Add Widget
+
+Click DataSet View from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop  ![DataSet View Widget](img\v2_media_datasetviews_widget.png)
+
+{tip}
+If you are using a 1.8.x CMS, select DataSet View from the Widget Toolbox to add!
+{/tip}
+
+On adding, select the DataSet to use from the drop-down menu:
+
+![DataSet View Add DataSet](img\v3_media_datasetview_add_dataset.png)!
+
 {tip}
 Once a DataSet has been added to a DataSet View, care should be taken when editing the column structure of the DataSet.
 {/tip}
 
-Ensure that you have created a [DataSet](media_datasets.html) prior to adding a DataSet View to a Layout.
-
-## Add DataSet View
-
-Click on the **DataSet View Widget** on the toolbar,  add / drag to the target **Region**.  ![DataSet View Widget](img/v2_media_datasetviews_widget.png)
-
-
-
-- Use the drop-down menu to select the **DataSet** to be used as the source of data for the DataSet View.
-- Save
-
 {tip}
-If you are using 1.8, select **DataSet View** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. 
+Once a DataSet has been associated with the Widget you cannot edit to change to an alternative set of data. A new Widget would need to be added and configured!
 {/tip}
 
-{tip}
-You cannot change to a different DataSet once it has been added to a DataSet View. To use an alternative DataSet a **new** DataSet View would need to be created.
-{/tip}
+Once Saved, configuration options are shown in the the Edit DataSet View form:
 
-Once saved the **Edit DataSet View** form will open to provide further options.
-
-![DataSet View Edit](img/v2_media_datasetview_edit.png)
-
-### General
-
-- Provide an optional name
-- Choose to override the default duration.
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
+- Select whether the duration is to be per page or leave unticked to use the overall Widget duration.
 
 ### Configuration
 
-- Click or drag and drop to select available columns.
-- Choose to show the table headings
-- Configure **Upper** and **Lower** row limits
+![DataSet View Configuration](img\v3_media_datasetview_configuration.png)
+
+- Choose which columns to use by dragging to **Columns Selected**. 
+- Tick in the box to show the **Table Headings**.
+- Configure **Upper** and **Lower** row limits.
 - Split the data over multiple pages using **Rows per Page**.
 
 ### Appearance
 
-- Select a Template using the drop-down menu
-- Choose to override the Template
+- Select a Template using the drop-down menu.
 
 {tip}
-By selecting to **Override the Template** you can use a **CSS style sheet** to control the visual styling of the table. (Example style sheet at the bottom of this page).
+From v3.0.0 additional templates have been added, earlier versions have two available templates. Speak to your administrator to upgrade the CMS to benefit from these template additions!
 {/tip}
 
-Complete the form fields to style your DataSet View by selecting colouring and fonts/font size to use.
+- The first template option is customisable and allows users to select colouring for background, border, font, select a custom font and font size to use.
+- The other templates allow for a user to select a custom font and size.
 
-### Templates
+- Enter HTML and CSS by ticking to Override a selected template. Click on the Templates tab to select the Template to edit:
 
-Select the **No Data Template** to provide a message to display when there is no data to show.
+![DataSet View Templates](img/v3_media_datasetview_templates.png)
+
+
+
+### Optional StyleSheet
+
+Include CSS to apply to the template structure when overriding templates. 
 
 {tip}
-Toggle on the Visual editor to use the inline text editor.
+This optional template is intended for advanced users to 'tweak' the CMS generated output. Scroll to the bottom of this page to view an example style sheet!
 {/tip}
+
+### No Data Template
+
+Include a message to ensure that your audience is not left with blank displays when there is no data to display.
 
 ### Order
 
-Order by any column using the clause builder or by providing a SQL command for more complex ordering.
+DataSet results can be set and ordered by any column:
+
+- Select the column to order from the drop down menu.
+
+- Click the `+` button to add additional fields.
+- Use the advanced order clause for more complex ordering by providing a SQL command.
 
 ### Filter
 
-Filter by any Column using the clause builder to only include/omit results based on chosen criteria. Provide a SQL command for more complex filtering.
+DataSet results can be filtered by any column:
+
+- Use the clause builder to include/omit DataSet results
+- Click the `+` button to add additional fields.
+- Use the advanced filter clause for more complex filtering by providing a SQL command.
 
 ### Caching
 
-Enter an update interval in minutes, kept as high as possible. (Displays can cache the content of this media type to prevent repeated download of identical resources, as well as for off-line playback).
+Players can **cache** the content of this media for off-line playback and to prevent repeated downloads. Keep this number as high as possible.
+
+{tip}
+From v3.0.0 set a 'freshness check' to determine when to switch to the **No Data Template** when a Player is offline!
+{/tip}
+
+## Actions 
+
+**Available from v3.0.0**
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
 ## Example Style Sheet
 

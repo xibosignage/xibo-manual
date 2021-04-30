@@ -28,4 +28,6 @@
 - [Video](media_module_video.html)
 - [Video In](media_module_video_in.html)
 - [Weather](media_module_weather.html)
+- [Weather Tiles](media_module_weather_tiles.html)
 - [Web Page](media_module_webpage.html)
+- [World Clock](media_module_world_clock.html)

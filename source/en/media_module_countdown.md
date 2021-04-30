@@ -2,34 +2,30 @@
 
 # Countdown
 
-The Countdown Widget is available from v2.3. 
+**Available from v2.3.0**
 
-{tip}
-Speak to your Administrator to upgrade the CMS to benefit from this new feature!
-{/tip}
+The Countdown Widget can be used to show a countdown for a selected **duration** or until a **specified date**.
 
-The Countdown Widget can be used to show a countdown for a selected **duration** or until a **specified date** and displayed using **preset templates**.
+## Add Widget
 
-Click on the **Countdown Widget** on the toolbar, add / drag to the target **Region** ![Countdown Widget](img/v2.3_media_countdown_widget.png)
+Click on **Countdown** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Countdown Widget](img\v2.3_media_countdown_widget.png)
 
-### General
+On adding, configuration options are shown in the Edit Countdown form:
 
-- Provide an optional name, to be used internally for identification purposes.
-- Select to override the default duration if needed.
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
 
 ### Configuration
 
 Use the drop-down menu to select the type of countdown to display:
 
-![Countdown Type](img/v2.3_media_countdown_type.png)
+![Countdown Type](img\v3_media_countdown_type.png)
 
-**Widget Duration -** The countdown is determined by the duration of the Widget.
+- **Widget Duration -** The countdown will be determined by the duration of the Widget.
+- **Custom Duration** - Set a countdown duration in seconds.
+- **Use Date** - Countdown to a selected date and time.
 
-**Custom Duration** - Set a countdown duration in seconds.
-
-**Use Date** - Countdown to a selected date and time.
-
-Use the **Warning Duration / Date** to set at which point the countdown will change to a 'warning mode' for the remainder of the countdown.
+Use the **Warning Date** to set at which point the countdown will change to a 'warning mode' for the remainder of the countdown.
 
 {tip}
 The "warning" and "finished" status can be styled using the CSS style sheet on overriding a Template. 
@@ -37,23 +33,40 @@ The "warning" and "finished" status can be styled using the CSS style sheet on o
 
 ### Templates
 
-Select from the available **Preset** templates using the drop-down menu:
+Click on the Templates tab and select from one of the preset templates available from the drop down menu.
 
-![Templates](img/v2.3_media_countdown_templates.png)
+![Templates](img/v3_media_countdown_preset.png)
 
-### Overriding Templates
+## Editing Preset Templates
 
-Templates can be edited by selecting a Template using the drop-down and clicking in the **Override the template** checkbox.
-
-Click again on the **Templates** tab and select from a **Main** or **Optional Stylesheet** to edit:
-
-![Override Template](img/v2.3_media_countdown_override_template.png) 
+Preset templates can be edited by clicking in the **Override the template** checkbox.
 
 {tip}
-To return to the **Preset** menu Template selection, untick the override checkbox.
-{/tip}
+The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
 
-## Date Format - PHP
+- Templates must be designed at a fixed size
+- All elements must use absolute sizing in px, including fonts, margins, widths, heights, etc
+- If positioning is used, it must be from top,left
+- Templates can use bootstrap
+- The aspect ratio will be fixed by [[PRODUCTNAME]] and sized to fit the Region
+- Templates are treated the same as a static image
+  {/tip}
+
+With override template selected, you can enter text, HTML and CSS.
+
+Once override has been selected, click back on the **Templates tab** to select the templates to edit:
+
+![Override Template](img\v3_media_countdown_override_template.png) 
+
+## Optional Stylesheet
+
+This is the CSS to apply to the template structure above.
+
+## Actions
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+
+## Additional Information
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 

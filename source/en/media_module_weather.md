@@ -2,6 +2,19 @@
 
 # Weather
 
+The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
+
+{nonwhite}
+{cloud}
+
+The Weather Module is configured for Xibo in the Cloud customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
+
+{/cloud}
+
+**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
+
+{/nonwhite}
+
 {tip}
 
 ### Update: Important news regarding Dark Sky 31st March 2020
@@ -10,24 +23,8 @@ Dark Sky have announced that they have joined Apple and will no longer accept ne
 
 Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/dark-sky-has-a-new-home/)
 
-We have chosen [OpenWeather](https://openweathermap.org/) as an alternative, follow the Installation steps below to provide an API key.
-
+We have chosen [OpenWeather](https://openweathermap.org/) as an alternative, follow the **Installation** steps below to provide an API key.
 {/tip}
-
-The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
-
-{nonwhite}
-{cloud}
-
-The Weather Module is configured for **Xibo in the Cloud** customers and is provided as part of the service. Please skip the installation steps detailed below and proceed with the set-up at the **Add Weather Widget** section.
-
-**Please note:** No action is required with the change of weather provider, as this is handled as part of the Cloud subscription service.
-
-{/cloud}
-
-**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
-
-{/nonwhite}
 
 ## Installation
 
@@ -39,9 +36,7 @@ To get an API key please visit [Open Weather Map](https://openweathermap.org/api
 
 The Weather Module is installed from the Modules page, under the Administration section of the menu. Click on the **Install Module** button and select the Module to install.
 
-After installation,  select the Module from the grid and use the row menu to select **Edit**.
-
-![Edit Weather Module](img/media_weather_module_edit.png)
+After installation, select the Module from the grid and use the row menu to select **Edit**.
 
 Complete the form fields and include the **API key**. The CMS allows a Cache period to be specified which will create a delay between requests for each geographic location.
 
@@ -51,57 +46,45 @@ Open Weather Map allows 1000 requests for a forecast, per day before charging a 
 **Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
 {/tip}
 
-## Add Weather Widget
+## Add Widget
 
 The Open Weather Map Terms of Service https://openweathermap.org/terms should be read and understood before using this Widget. 
 
-Click on the **Weather Widget** on the  toolbar, add / drag to the target **Region**. ![Weather Widget](img/v2_media_weather_widget.png)
-
-
+Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img\v2_media_weather_widget.png)
 
 {tip}
-If you are using 1.8, select **Weather** or **Forecast IO** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below.
-**Please note:** The Visual editor is not available in the 1.8 series of the CMS for this Widget.
+If you are using a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
+Please note: The Visual editor is not available in a 1.8.x CMS.
 {/tip}
 
-### General
+On adding, configuration options are shown in the Edit Weather form:
 
-- Provide an optional name
-- Choose to override the default duration
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
 
 ### Configuration
 
-- Use the display location for the lat/long recorded on the **Display** rather than specifying manually.
-- Select the unit of measurement using the drop-down menu.
-- Choose the language to use.
+![Weather Configuration](img\v3_media_weather_configuration.png)
+
+- Tick to use the **Display Location** or untick to manually enter **Latitude** and **Longitude** to be used for this Widget.
+- Use the drop down menu to select the **Unit** of measurement or opt for the automatic selection (first item) which will be based on the geographic location.
+- Select the **Language** to be used.
 - Use the checkbox to only show daytime weather conditions.
 
 ### Templates
 
-Select **Preset** templates or provide your own using JavaScript.
-
-![Weather Templates](img/v2_media_weather_templates.png)
+Select from the available Templates:
 
 #### Preset
 
-- Use the drop-down to select an appropriate template.
-- Tick to edit the selected template. Please see the section on [Editing default templates](media_module_weather.html#editing_default_templates) below for further information.
+![Weather Preset Templates](img/v3_media_weather_preset_templates.png)
 
-### Caching
+- Use the drop down to select from the available templates.
+- Tick to edit the selected template if required. Please see the section on **Editing Preset Templates** below for further information.
 
-Enter the Update Interval in minutes.
+## Editing Preset Templates
 
-
-
-## Attribution
-
-All Layouts that use the Weather Widget need to include attribution, available by using the `[Attribution]` tag. All preset templates contain this tag by default, please ensure that this tag is included when editing/overriding default templates.
-
-
-
-## Editing default templates
-
-Default templates can be edited by selecting a template using the drop-down and clicking in the **Override the template** checkbox. 
+Preset templates can be edited by clicking in the **Override the template** checkbox.
 
 {tip}
 The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
@@ -114,57 +97,55 @@ The template will be automatically scaled and should be designed for the intende
 - Templates are treated the same as a static image
   {/tip}
 
-Click again on the **Templates** tab and select to edit:
+With override template selected, you can enter text, HTML and CSS.
 
-![Edit Default Templates](img/v2_media_weather_edit_default.png)
+Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-### Current forecast template
+![Weather Template Override](img\v3_media_weather_override_template.png)
 
-Also known as the **main template** as it is used for the current weather conditions and as the basis for the repeating Daily forecast template.
+### Current Forecast Template
+
+Also known as the main template, used for the current weather conditions and as the basis for the repeating Daily Forecast Template.
+
+Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 
 {tip}
 Click on **Get Forecast** to see available substitutions to use.
 {/tip}
 
-{tip}
-Toggle **On** the Visual editor to use the Inline Editor to provide text and formatting.
-{/tip}
+### Daily Forecast Template
 
-### Daily forecast template
+This is the **repeating template** that should be provided for the 7 day forecast. It will be repeated each day and then substituted into the special `[dailyForecast]` tag (which should feature on the main Current Forecast template). 
 
-This is the **repeating template** that should be provided for the 7 day forecast. It will be repeated each day and then substituted into the special `[dailyForecast]` tag (which should feature on the main template). 
-
-The `[dailyForecast]` tag has 2 optional settings which can be added to the tag by including the`|` character. These are `[dailyForecast|Number of days|Start day]` and default to 7 days, starting at tomorrow (day 2). If you wanted to see the next 3 days you would use [dailyForecast|3]` and for a 3 day forecast starting the day after tomorrow you could use `[dailyForecast|3|3]`.
+The `[dailyForecast]` tag has 2 optional settings which can be added to the tag by including the`|` character. These are `[dailyForecast|Number of days|Start day]` and default to 7 days, starting at tomorrow (day 2). If you wanted to see the next 3 days you would use `[dailyForecast|3]` and for a 3 day forecast starting the day after tomorrow you could use `[dailyForecast|3|3]`.
 {tip}  
-
- A common example is to ignore the "Current Template" and produce a full 7 day forecast using the daily forecast - this is achieved with `[dailyForecast|7|1]`.
-
+A common example is to ignore the "Current Template" and produce a full 7 day forecast using the Daily Forecast - this is achieved with `[dailyForecast|7|1]`.
 {/tip}
 
-### CSS
+### CSS Style Sheet
 
-This is the CSS to apply to the template structure above. It will be augmented with a colour 
-attribute and has a special `[[ICONS]]` which will be replaced with a selected icon sprite. 
+This is the CSS to apply to the template structure above.
+
+### Attribution
+
+All Layouts that use the Weather Widget need to include attribution, available by using the `[Attribution]` tag. All preset templates contain this tag by default, please ensure that this tag is included when editing/overriding default templates.
+
+### Caching
+
+Enter the Update Interval to be applied, in minutes, kept as high as possible. 
+
+{tip}
+If the data will only change once per hour the Update Interval could be set to 60.
+{/tip}
 
 ### Get Forecast
 
 It is possible to **request a forecast** at any time to see what forecast data is returned. Any field is available as a substitute in the template by entering the field name between square 
 brackets - for example `[nearestStormDistance]`.
 
-### Extending with new icons
+## Actions
 
-New icons can be added by an Administrator who has access to the file system. Any PNG file in `modules/theme/forecastio/weather_icons` will be made available for selection in the Icons selector.
-
-Weather icons are provided as a sprite, each icon is 128x128 and should represent the same weather conditions as the shipped icon sprite.
-{tip}
-For example, a "clear-day" is represented by the icon in position 1, a "windy day" is represented by the icon in position 11.
-
-{/tip}
-
-{tip}
-You may have a Layout Status `! There are items on this Layout that can only be assessed by the client`This is a normal Layout Status if you have online content which will be assessed on the Player side. 
-
-{/tip}
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
 ## Additional Information
 

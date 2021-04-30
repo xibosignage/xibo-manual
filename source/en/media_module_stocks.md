@@ -2,12 +2,11 @@
 
 # Stocks
 
-The Stocks Widget displays trade price information for stock listings when added to a Layout.
+The Stocks Widget displays trade price information for stock listings.
 
 {nonwhite}
 {cloud}
-
-The Stocks Module is configured for **Xibo in the Cloud** customers, with an API key provided as part of the service, so please skip the installation steps detailed below. Proceed with the set-up from the **Add Stocks Widget** section.
+The Stocks Module is configured for **Xibo in the Cloud** customers with an API key provided as part of the service, so please skip the installation steps detailed below. Proceed with the set-up from the **Add Widget** section.
 {/cloud}
 
 **Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
@@ -15,81 +14,117 @@ The Stocks Module is configured for **Xibo in the Cloud** customers, with an API
 {/nonwhite}
 
 ## Installation 
-The Stocks Widget relies on the [Alpha Vantage Stock API](https://www.alphavantage.co/) to retrieve stock market data. 
-The prices returned by Alpha Vantage follow the 
-[stock market standard](https://medium.com/@patrick.collins_58673/stock-api-landscape-5c6e054ee631) of adjusting for 
-corporate events such as splits and dividend payout.
 
-To get an API key please visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key) and create an account.
+The Stocks Widget relies on the [Alpha Vantage Stock API](https://www.alphavantage.co/) to retrieve stock market data. The prices returned by Alpha Vantage follow the 
+[stock market standard](https://medium.com/@patrick.collins_58673/stock-api-landscape-5c6e054ee631) of adjusting for corporate events such as splits and dividend payout.
 
-The Stocks Module is installed from the Modules page, under the Administration section of the Menu. Click on the **Install Module** button and select the Module to install.
+Prior to installation you will need an API key. Please visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key) to create an account and obtain a key. 
 
-After installation,  select the Module from the grid and use the row menu to **edit**.
+The Stocks Module is installed from the Modules page, under the Administration section of the menu. Click on the **Install Module** button and select the Module to install.
 
-![Edit Stocks](img/media_stocks_edit.png)
+After installation, select the Module from the grid and use the row menu to **Edit**.
 
 Complete the form fields and include the **API key** and Cache Period settings.
 
+## Add Widget
 
-
-## Add Stocks Widget
-
-Click on the Stocks Widget on the  toolbar, add / drag to the target **Region**. ![Stocks Widget](img/v2_media_stocks_widget.png)
+Click on **Stocks** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Stocks Widget](img\v2_media_stocks_widget.png)
 
 {tip}
-If you are using 1.8, select **Stocks** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below.
-**Please note:** The Visual editor is not available in the 1.8 series CMS for this Widget.
+If you are using a 1.8.x CMS, select Stocks from the Widget Toolbox to add. 
+Please note: The Visual editor is not available in a 1.8.x  CMS.
 {/tip}
 
-### General
+On adding, configuration options are shown in the Edit Stocks form:
 
-- Provide an optional name
-- Choose to override the default duration
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
 - Select whether the duration is per item, unticked the duration will be per page / number of items.
 
 ### Configuration
 
-- Include a Stock Symbol (Ticker) to return results
+![Stocks Configuration](img\v3_media_stocks_configuration.png)
+
+- Include a list of comma separated Stock Symbols (Ticker) to return results.
 
 {tip}
 If you need a stock symbol that is only quoted on a specific exchange then you can use the format `SYMBOL:EXCHANGE` to return results. 
 {/tip}
 
 {tip}
-Stock symbols can be found on various lookup sites such as [Yahoo Finance](https://finance.yahoo.com/)
+Stock symbols can be found on various lookup sites such as [Yahoo Finance](https://finance.yahoo.com/)!
 {/tip}
 
 ### Appearance
 
-- Optionally choose a **background colour** 
-- Include a PHP **Date Format** to apply to returned results, see the bottom of the page for further information.
+- Optionally choose a **background colour** using the colour picker.
+- Include a PHP **Date Format** to apply to returned results, (see the bottom of the page for date formats).
 - Select an optional **Effect** and **Speed** to be used to transition between items.
 
 ### Templates
 
-Select **Preset Templates** or provide your own using JavaScript.
+Select from the available Templates:
 
-**Edit** templates using the **Override the template** checkbox, then click on the Template header to select the template you want to edit.
+![Stocks Templates](img\v3_media_stocks_template.png)
+
+### Preset
+
+- Use the drop down to select one of the preset templates:
+
+  ![Preset Stocks Templates](img\v3_media_stocks_preset_templates.png)
+
+- Tick to edit the selected template if required. Please see the section on Editing Preset Templates below for further information.
+
+### No Records Message Template
+
+- Provide a **No Records Message** to display when there are no records returned.
+
+### Editing Preset Templates
+
+Templates can be edited by selecting a Template using the drop-down and clicking in the **Override the template** checkbox. 
 
 {tip}
-Provide a **No Records Message** to display when there are no records returned.
-{/tip}
+The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
 
-![Stocks Override the Template](img/v2_media_stocks_template_override.png)
+- Templates must be designed at a fixed size
+- All elements must use absolute sizing in px, including fonts, margins, widths, heights, etc
+- If positioning is used, it must be from top,left
+- Templates can use bootstrap
+- The aspect ratio will be fixed by [[PRODUCTNAME]] and sized to fit the Region
+- Templates are treated the same as a static image
+  {/tip}
 
-To use the inline editor toggle **On** the Visual editor.
+Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Stocks Visual Editor](img/v2_media_stocks_visual_editor.png)
+![Currencies Override the Template](img\v3_media_stocks_override_templates.png)!!
 
-{tip}
-Get Results at anytime to see what data is returned. Any field is available as a substitute to use in the template by simply entering the field name between square brackets [].
-{/tip}
+#### Main Template
+
+Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
+
+#### Item Template
+
+Enter a Template to be applied to each item, use the Visual editor or provide text/HTML in the box provided.
+
+#### Optional Stylesheet
+
+This is the CSS to apply to the template structure above.
 
 ### Caching
 
 Include a suitable time for the Update Interval in minutes, keeping it as high as possible.
 
-## Date Format - PHP
+### Results
+
+Get results at anytime to see what data is returned. Any field is available as a substitute to use in a template by simply entering the field name between square brackets []. 
+
+### Actions 
+
+**Available from v3.0.0**
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+
+## Additional Information
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 
