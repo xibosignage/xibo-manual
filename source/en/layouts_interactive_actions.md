@@ -11,6 +11,10 @@ Actions can be attached to an entire **Layout** a particular **Region** or speci
 A Product display has a product that the customer can pick up. An 'internet of things' device, such as a light sensor could be used to trigger a webhook to [[PRODUCTNAME]] which loads that particular products information into a Region to be shown.
 {/tip}
 
+{nonwhite}
+More information on webhooks can be found in our Developer documentation [here](https://xibo.org.uk/docs/developer/player-control/webhooks)
+{/nonwhite}
+
 Interactive Actions are accessed from the [Layout Designer](layouts_designer.html) and created and managed from the **Actions** tab on a Layout, Region or Widget **Edit** form.
 
 ![Interactive Actions](img\v3_layouts_interactive_actions.png)

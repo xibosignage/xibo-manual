@@ -8,7 +8,7 @@
 
 Events are administered from the **Schedule** section of the menu and managed from the calendar interface.
 
-![Schedule](img/v2_schedule_intro.png)
+![Schedule](img/v3_scheduling_intro.png)
 
 
 
@@ -24,38 +24,43 @@ The CMS supports scheduling for 5 Event types:
 
 3. #### Overlay Layout Event
 
-   Specially created Layouts are scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
+   Specially created [Overlay Layouts](layouts_overlay.html) are scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
 
-4. #### Interrupt Layout Event (available only in the CMS from v2.2.0)
+4. #### Interrupt Layout Event (available from v2.2.0)
 
-   **Please note:** We are currently working to bring this feature to all Players and will be coming soon to Android!
+   **Please note:** Currently supported for Android from R204 and Windows from R253
 
-   A Layout that is scheduled as an Interrupt Layout will interrupt your usual schedule and play for the specified **Share of Voice** percentage set for each full hour that the Layout is scheduled.
+   A Layout that is scheduled as an [Interrupt Layout](layouts_interrupt.html) will interrupt your usual schedule to fit around other scheduled Layouts to play for the specified **Share of Voice** percentage set.
 
 5. #### Command Event
 
    A Scheduled Command can be executed by the Player at a specific point in time and therefore this type of event does not need a `toDt`.
 
 Commands available to schedule are pre-configured by an Administrator. Available Commands can be selected using the **Command** drop-down menu on the **Schedule Event** form. If you require additional commands please contact your Administrator.
+
+{nonwhite}
+Further information regarding Command Functionality for Administrators can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
+{/nonwhite}
+
 {tip}
-
 Display Order and Priority are irrelevant when it comes to executing the Command, but may be set in the CMS for organisational purposes.
-
 {/tip}
 
 ## Schedule Events
 
-Events are scheduled into **Dayparts** which are selected to schedule within the selected period:
+Events are scheduled into **Dayparts**. Select from the two available options when configuring an Event:
 
-### Custom Daypart
+- ### Custom
+
 
 Create your own To/From dates and times.
 
-### Always Daypart
+- ### Always
+
 
 Select to have the event run constantly.
 {tip}
-Create your own defined [Dayparts](scheduling_dayparting.html) for ease of scheduling.
+Create your own defined [Dayparts](scheduling_dayparting.html) for ease of scheduling. Once created these will show in the Dayparting drop down menu for selection!
 {/tip}
 
 ## Priority
