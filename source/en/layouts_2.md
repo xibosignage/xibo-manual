@@ -130,6 +130,10 @@ Layouts must have a **Published** status before being scheduled.
 
 Select Layouts to include in created Campaigns.
 
+### Jump Lists
+
+From v2.3.10 select to 'jump' to Playlists, Campaigns and Media associated for the selected Layout.
+
 ### Edit
 
 Make changes to the naming and Tags used for the **Layout**.
@@ -137,6 +141,10 @@ Make changes to the naming and Tags used for the **Layout**.
 ### Copy
 
 Create copies of designed layouts. Choose to include all contained **Media** items, to use as a base for creating new layouts to save time.
+
+{tip}
+Copying a Layout will create an exact copy of the last time the Layout was Published. Make sure that you Publish a Layout before making a copy to preserve any changes!
+{/tip}
 
 ### Retire
 

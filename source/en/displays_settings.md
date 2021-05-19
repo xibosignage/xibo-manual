@@ -1,17 +1,15 @@
 <!--toc=displays-->
 # Display Settings 
 
-Displays can be configured automatically from the CMS once they are connected. This is managed using Display Setting Profiles.
+Displays can be configured automatically from the CMS once they are connected and managed using Display Setting Profiles.
 
-## Display Setting Profiles
+Each Display has a default **Display Setting Profile** which can be customised by an Administrator to suit required preferences. 
 
-Each Display has a default **Display Setting Profile** which can be customised by an Administrator to suit required preferences. New Display Setting Profiles can be created and assigned directly to a **Display**.
+New Display Setting Profiles can be created and assigned directly to a **Display**.
 
-## Available profiles
+A list of available profiles can be viewed from **Display Settings** under the **Display** section of the main menu.
 
-A list of available profiles can be viewed from **Display Settings** under the **Display** section on the menu.
-
-![Display Settings Profiles](img/displays_settings_profiles.png)
+![Display Settings Profiles](img\displays_settings_profiles.png)
 
 Each profile has a **Name**, **Type** and a flag indicating if it is the **default** or not. Default profiles are automatically assigned to Displays of the corresponding type.
 
@@ -25,9 +23,11 @@ Each setting is explained under each form field for each of the tabs.
 Using the row menu click on **Copy** to make another version of a Profile. Make adjustments as needed to quickly and simply create new Profiles.
 {/tip}
 
+## Notable Settings
+
 ### Collect Interval
 
-Using the drop-down menu select how often you would like the Player to check for new content. This means that once a Player has communicated with the CMS, it will check again for any changes by the time  set here.
+Located on the **General** tab, use the drop-down menu select how often you would like the Player to check for new content. This means that once a Player has communicated with the CMS, it will check again for any changes by the time set here.
 
 {tip}
 
@@ -65,17 +65,45 @@ Tick/untick the box to enable/disable the collection of statistics for **Proof o
 
 If enabled set the required level of collection for Proof of Play statistics to be applied to all Layouts / Media and Widget items using the **Aggregation level** drop down.
 
-![Enable Stats](img/v2_aggregation_level_displays_proof_of_play.png)
+![Enable Stats](img\v2_aggregation_level_displays_proof_of_play.png)
 
 - **Individual** - statistics are collected when specified by default.
 - **Hourly** - statistics will be collected hourly by default.
 - **Daily** - statistics will be collected daily by default.
 
+From v2.3.9 if the geolocation of the Display is known, enable the checkbox to record the location against each proof of play record. Users with mobile Displays can turn this setting on if desired.
+
 {tip}
 Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
 {/tip}
 
-### Force HTTPS - available from version 2.2.0
+### Download and Update windows
+
+Located on the **Network** tab, set a time window for **Downloads** from the CMS and **Updates** to the Player.
+
+![Display Settings Network](img\v3_display_settings_network.png)
+
+#### Download window timings
+
+- Select Start and End times to connect to the CMS and download any changes that have been made.
+
+If you make changes to content outside of the download window set, the Player will not be able to download any changes and could cause the Player to show the assigned default Layout or Splash screen instead.
+
+{tip}
+Leave at the Default 00:00 - 00:00 to leave the window as always open!
+{/tip}
+
+#### Update window timings
+
+- Select Start and End times to install any application updates. 
+
+Define a time to download updates to a Player, such as new Player versions. This will also include any new or changes to existing schedules to be updated to the Player. Changes to content will NOT be updated during the set Update window timings set.
+
+{tip}
+This setting is best used in conjunction with either assigned Layouts or deferred published Layouts so that they publish during the update window!
+{/tip}
+
+### Force HTTPS - available from v2.2.0
 
 **Please note:** This feature is available for Windows Players from v2 R201, Android Players v2 R203, webOS v2 R204 and Tizen v2 R201and is currently not supported for Linux Players.
 
@@ -87,17 +115,31 @@ Use the checkbox to **Force HTTPS** on the **Network** tab of the **Edit Profile
 This option can be overridden for individual Displays.
 {/tip}
 
-### Operating Hours
+### Operating Hours - available from v2.2.0
 
-Also included in 2.2.0 is the ability to set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
+Set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
 
-Use the **Network** tab for Windows, Android and Linux Players, and the **General** tab for webOS and Tizen Players.
+- Use the **Network** tab for Windows, Android and Linux Players, and the **General** tab for webOS and Tizen Players.
 
-Use the drop down menu to select the day part to apply
-
-![Display Settings Network](img/v2_display_settings_network.png)
+- Use the drop down menu to select the day part to apply.
 
 'Email alerts' such as those which send when a Display is offline, will not be sent outside of the specified Operating Hours.
+
+### Expire Modified Layouts
+
+Located on the **Advanced** tab, use this checkbox to tell [[PRODUCTNAME]] to immediately expire and cut playback of a Layout when a Player receives an update from the CMS. 
+
+{tip}
+Useful for Layouts with long durations!
+{/tip}
+
+### Use Multiple Decoders (Xibo for Android)
+
+From v2 R207, Gapless Playback with Video content requires an Android device to have multiple decoders. This setting can be found on the Advanced tab and will use the Device Default automatically.
+
+{tip}
+Should an issue arise with playback set to On!
+{/tip}
 
 ## Add a Profile
 

@@ -45,8 +45,6 @@ You can also use the edit icon next to the Region Position Preview to open the e
 Ensure you click on the back arrow to **Return to Layout View** and exit edit mode.
 {/tip}
 
-
-
 ## Assigning Content
 
 Use the toolbar on the Layout Designer to add [Widgets](layouts_widgets.html) or use the [Library Search](layouts_library_search.html) to add content that has already been uploaded to the Library.

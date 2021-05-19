@@ -77,6 +77,10 @@ Each Display has a Row Menu containing a number of actions that can be performed
 
 ![Displays Row Menu](img\v3_displays_row_menu.png)
 
+{tip}
+Selected actions allow for [Forms](tour_forms.html) to be automatically submitted by clicking on the action from the Row Menu, such as **Authorise** and **Check Licence**. Actions that have an auto submit capability will display an option to enable. Take a look at [Grids](tour_grids.html) for further information!
+{/tip}
+
 
 
 ### Manage

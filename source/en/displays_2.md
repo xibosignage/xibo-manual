@@ -140,6 +140,10 @@ Deleting a **Display** will remove it from the **CMS** entirely - this operation
 **Deauthorise** a Display instead of deleting so that it can be re-authorised at a later date if needed. Use the row menu for the Display and click on **Authorise** to toggle to **Deauthorise**. This can also be actioned from the **Edit Display** form by selecting **No** for Authorise display.
 {/tip}
 
+### Jump to Scheduled Layouts
+
+From v2.3.10 select to 'jump' to Scheduled Layouts for the selected Display.
+
 ### Send Command
 
 The **Send Command** functionality is executed via XMR to Players by selecting a predefined command. This is useful for sending Players 'Reboot' commands for example.

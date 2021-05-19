@@ -232,3 +232,7 @@ Use the Row Menu to view/edit in the Layout Designer by selecting **Design** or 
 {tip}
 The **Usage Report** is great to make final checks prior to tidying media files.
 {/tip}
+
+{tip}
+Use the **With Selected** option at the bottom of the Library [Grid](tour_grids.html) to Edit Tags, Move to Folder, Delete and Share in bulk!
+{/tip}

@@ -159,7 +159,9 @@ Export the Template including all associated Widgets/Media/DataSet structures to
 When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tags** will be exported. Select the **Import Tags** option to add these Tags on Layout Import.
 {/tip}
 
-
+{tip}
+Use the **With Selected** option at the bottom of the Templates [Grid](tour_grids.html) to Edit Tags, Delete and Share in bulk actions!
+{/tip}
 
 
 

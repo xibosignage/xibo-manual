@@ -40,8 +40,6 @@ Select Edit and use the tabs to locate the **Set a duration?** check box to over
 
 Widgets in the Playlist are played from top to bottom. The sequence can be changed by dragging and dropping to the required order and pressing the **Save Order** button at the bottom of the Region Timeline form.
 
-
-
 ## Grid View
 
 Use the **Switch to Grid** button at the bottom of the Region Timeline form for an alternative view of the Playlist.

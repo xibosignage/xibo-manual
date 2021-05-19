@@ -96,7 +96,7 @@ Use each tab to enter the URL for the remote data source, request method, reques
 
 **Remote** - Enter the URL for the remote data source and request method.
 
-**Authentication** - provide authentication information and optional custom HTTP headers. (Custom Headers are available from v2.3.10)
+**Authentication** - provide authentication information and optional string of custom HTTP headers. (Custom Headers are available from v2.3.10)
 
 **Data** - The remote data source can be JSON formatted or selected as a CSV. (The CSV option is available from v2.3.0)
 

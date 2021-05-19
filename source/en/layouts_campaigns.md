@@ -49,6 +49,10 @@ From v2.3.6, **Tag Values** can be added to **Tags** that do not have an existin
 For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
 {/tip}
 
+{tip}
+From v3.0.0, use the **With Selected** option at the bottom of the Campaign grid to edit Tag assignments in bulk. Take a look at [Grids](tour_grids.html) for further information!
+{/tip}
+
 {nonwhite}
 Tag management for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
 {/nonwhite}
@@ -78,4 +82,12 @@ Use the **Copy** button located on the row menu to easily make a copy of an exis
 
 {tip}
 Layouts can be directly assigned to Campaigns using the row menu, **Assign to Campaign**, on the Layouts grid. Layouts will be assigned to the end of the selected Campaign by default.
+{/tip}
+
+{tip}
+Use the Row Menu to assign User/User Group access to selected Campaigns.
+
+- Users of a 3.x CMS refer to the [Features and Sharing](users_features_and_sharing.html) page for further information.
+- Users of a CMS earlier than 3.x refer to the [Permissions](users_permissions.html) page for further information.
+
 {/tip}

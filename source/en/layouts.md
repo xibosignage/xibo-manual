@@ -160,7 +160,7 @@ On saving the form, the [Layout Designer](layouts_designer.html) will automatica
 
 ## Row menu
 
-Each Layout has additional actions / shortcuts that can be accessed from the **Row Menu**.
+Each Layout has additional actions/shortcuts that can be accessed from the **Row Menu**.
 
 ![Layouts Row Menu](img/v3_layouts_row_menu.png)
 
@@ -206,6 +206,10 @@ Layouts must have a **Published** status before being scheduled.
 
 Click to add the selected Layout to an existing [Campaign](layouts_campaigns.html).
 
+### Jump Lists
+
+Select to 'jump' to Playlists, Campaigns and Media associated for the selected Layout.
+
 ### Edit
 
 Make changes to the Layout record such as, Folder location, Name and Tags etc. 
@@ -217,6 +221,10 @@ Move the Layout to a selected Folder.
 ### Copy
 
 Create copies of designed Layouts to easily make modifications. Choose to include all contained **Media** items, to use as a base for creating new layouts to save time.
+
+{tip}
+Copying a Layout will create an exact copy of the last time the Layout was Published. Make sure that you Publish a Layout before making a copy to preserve any changes!
+{/tip}
 
 ### Retire
 

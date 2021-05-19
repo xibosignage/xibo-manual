@@ -81,6 +81,10 @@ Sharing options for **Regions** and **Widgets** are assigned by using the [Tools
 Modifications made to items are available in 'real time' which means that the next time a User interacts with the object the newly set options will be applied.
 
 {tip}
+Use **With Selected** at the bottom of [Grids](tour_grids.html) to perform bulk actions with Sharing!
+{/tip}
+
+{tip}
 When logged in, a **User** will only see a list of other Users from their own User Group on clicking **Share**. A **Super Admin User** will see all Users in the system.
 {/tip}
 
