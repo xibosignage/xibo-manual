@@ -52,8 +52,12 @@ Select from one of the pre-configured **Groups** to go through the **Onboarding 
   A user can complete/edit their email address after login from the [User Profile!](tour_user_profile.html)
   {/tip}
 
-- Select from the available **Folders** to share content/items with the new User.
+- Select from available **Folders** to share objects with the new User.
 
+  {tip}
+  All objects contained or moved into a Folder will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been enabled for Users/User Groups!
+  {/tip}
+  
   ![Folder Select](img/v3_users_new_folders.png)
 
 {nonwhite}

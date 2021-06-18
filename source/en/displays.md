@@ -39,7 +39,17 @@ Displays are administered in the CMS from clicking on **Displays** under the **A
 
 ![Display Administration Grid](img\v3_displays_administration_grid.png)
 
+The **Folder** tree will open by default:
 
+- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
+
+or
+
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
+
+{tip}
+Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
 
 {tip}
 Logged in Users will only view the status of Displays that they have been given access to!
@@ -107,24 +117,17 @@ The unique hardware key that is generated during installation is shown on the Ge
 
 ### Folders
 
-Displays can be optionally saved to Folders.
+Displays can be optionally saved to **Folders** using the **Edit form** or from the **Select Folder** option on the Row Menu.
 
 {tip}
 Displays that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
 {/tip}
 
-- Click on the Select Folder button and expand to select the Folder to save in/move to.
+- Click on the **Select Folder** button and expand to select a Folder to save in.
 
 ![Folder Tree](img/v3_displays_folders.png)
 
-{tip}
-If a Display is already saved to a Folder, the file path will be shown for the Current Folder!
-{/tip}
-
-- Users can also right click a folder to create a new folder to save in and access further options:
-
-
-![Folder Menu](img/v3_displays_folders_menu.png)
+- Users can also right click a Folder to access further options.
 
 {tip}
 Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group!
@@ -141,6 +144,8 @@ For further information regarding Folder access and set-up, please speak to your
 {tip}
 Assign multiple Displays to a Folder using the With Selected option at the bottom of the grid!
 {/tip}
+
+The selected folder file path will be shown next to the Folder field on the form
 
 ### Tags
 

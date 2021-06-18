@@ -40,15 +40,18 @@ HTML Packages can also be directly uploaded to a specified **Folder** location.
 HTML Packages that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
-- Click on the **Select Folder** button. Expand to select an existing Folder or right click and **Create** a new Folder.
+- Click on the **Select Folder** button and expand to select a Folder to save in.
 
 ![Select Folder](img\v3_media_htmlpackage_select_folder.png)
+
+Users can also right click a Folder to access further options.
 
 {tip}
 Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
 
-- Click in the folder you wish to upload the file to and click **Done**. The **Current Folder** will show the selected file path:
+- Click in the folder you wish to upload the file to and click **Done**. 
+- The **Current Folder** will show the selected file path:
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)

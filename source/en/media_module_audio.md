@@ -36,31 +36,24 @@ Files can also be added via drag and drop!
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-{tip}
-Use the play function to check the audio file prior to uploading!
-{/tip}
-
 Audio files can also be directly uploaded to a specified **Folder** location.
 
 {tip}
 Audio files that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) option that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
-- Click on the **Select Folder** button. Expand to select an existing Folder or right click and **Create** a new Folder.
+- Click on the **Select Folder** button and expand to select a Folder to save in.
 
 ![Select Folder](img/v3_media_audio_select_folder.png)
+
+Users can also right click a Folder to access further options.
 
 {tip}
 Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
 
-- Click in the folder you wish to upload the file to and click **Done**. The **Current Folder** will show the selected file path:
-
-![Current Folder](img/v3_media_audio_current_folder.png)
-
-{tip}
-The above image shows audio files will be uploaded to `  />Example Folder` 
-{/tip}
+- Click in the Folder you wish to upload the file to and click **Done**. 
+- The **Current Folder** will now show the selected file path.
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
@@ -104,7 +97,7 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 ### Configuration Options
 
-Click on the added**Audio Widget** from the **Timeline** to open configuration options in the **Edit Audio** form:
+Click on the added **Audio Widget** from the **Timeline** to open configuration options in the **Edit Audio** form:
 
 ![Edit Options](img/v3_media_audio_edit_options.png)
 

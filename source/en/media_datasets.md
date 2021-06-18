@@ -29,14 +29,14 @@ The **Folder** tree will open by default:
 **Please note:** Folders are available from v3.0.0!
 {/tip}
 
-- Click on a folder/sub-folder to search the contents and return results based on any filters applied to the grid.
+- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
 
 or
 
-- Tick **Global Search** to look in all places; all folders/CMS libraries and return results based on any filters applied to the grid.
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
 
 {tip}
-Click the Folders menu to toggle on/off from view.  When Folders is hidden from view, the file path for the selected folder will be shown to make it easier to see where you are searching!
+Click the Folders menu to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
 {/tip}
 
 ## Create a new DataSet
@@ -58,15 +58,19 @@ From **v3.0.0** DataSets can be optionally saved to **Folders**.
 DataSets that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
-- Click on the **Select Folder** button and expand to select the Folder to save in.
+- Click on the **Select Folder** button and expand to select a Folder to save in.
 
 ![Select Folder DataSet](img/v3_media_dataset_select_folder.png)
 
+Users can also right click a Folder to access further options:
+
+![Folder Options](img/v3_layouts_folder_options.png)
+
 {tip}
-Users can also right click a folder to create a new Folder to save in and access further options. Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
+Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
 
-- Once selected click **Done**, the selected folder file path will be shown next to the Folder field on the form.
+- The selected Folder file path will be shown next to the Folder field on the form.
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)

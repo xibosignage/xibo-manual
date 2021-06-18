@@ -12,6 +12,22 @@ Display Groups are administered in the CMS by clicking on **Display Settings** u
 
 ![Display Groups Grid](img/v3_displays_groups_grid.png)
 
+The **Folder** tree will open by default:
+
+- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
+
+or
+
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
+
+{tip}
+Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
+
+{tip}
+Logged in Users will only view the status of Displays that they have been given access to!
+{/tip}
+
 ## Add/Edit 
 
 Click on the **Add Display Group** button to create a new Display Group or use the Row Menu to **Edit** an existing Display Group.
@@ -28,7 +44,9 @@ Display Groups that are saved in Folders will inherit the View, Edit, Delete Sha
 
 - Click on the Select Folder button and expand to select the Folder to save in/move to.
 
-- Users can also right click a folder to create a new folder to save in and access further options:
+![Select Folder](img/v3_display_groups_select_folder.png)
+
+- Users can also right click a folder to create a new folder to save in and access further options.
 
 {tip}
 Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group!

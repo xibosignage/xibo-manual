@@ -12,7 +12,7 @@ If you are using a CMS earlier than v3.0.0 please select from the options below:
 
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
 
-[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the Layout Designer will open:
+[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the **Layout Designer** will open:
 
 ![Layout Designer](img\v3_layouts_designer.png)
 
@@ -55,14 +55,34 @@ A Layout must contain at least one Region **and** each Region must contain at le
 
 The **Layout selector** provides easy navigation between all Layouts the logged in User has permission to edit without having to leave the Layout Designer page. Use the dropdown menu to change the Layout you are currently viewing/editing.
 
+{tip}
+Use the checkbox to only access your own Layouts!
+{/tip}
+
 ### Menu
 
-Located next to the Layout Selector is a menu of actions that can be performed for Layouts, depending on the status of the Layout.
+Located next to the Layout Selector is a menu of options that can be performed for Layouts, depending on the status of the Layout.
 
 ### Layouts in a Draft status have the following: 
 
 ![Draft Actions](img\v3_layout_unlock_layout.png)
 
+- #### Publish layout
+
+  Once you are happy with your designs, set your Layout to **Publish** ready to be Scheduled.
+  
+  Layouts can be set to be **Published** straight away with updates automatically pushed to Layouts that are in the schedule. A **Publish Date** can also be selected to Publish a Layout at a specified date and time.
+  
+  ![Publish Date](img\v3_layouts_publish_selected_time.png)
+  
+  {tip}
+  You can also use the **Row Menu** for a selected draft Layout to set to **Publish** immediately or on a set date..
+  {/tip}
+  
+  {tip}
+  Published Layouts can be viewed in a read-only mode and 'Checked out' to create a draft Layout to make any edits needed.
+  {/tip}
+  
 - #### Discard layout
 
   Any changes made to the Layout can be completely discarded, reverting the Layout to the previous Published version. 
@@ -70,22 +90,6 @@ Located next to the Layout Selector is a menu of actions that can be performed f
 ![Discard Layout](C:\Users\Natasha\Documents\Fork Manual Pages ALL\source\en\img\v2.3_layouts_discard_layout.png)
 
 ​		Clicking on **Discard** will delete the draft and leave the Published version untouched.
-
-- #### Publish layout
-
-  Once you are happy with your designs, set your Layout to **Publish** ready to be Scheduled.
-
-  Layouts can be set to be **Published** straight away with updates automatically pushed to Layouts that are in the schedule. A **Publish Date** can also be selected to Publish a Layout at a specified date and time.
-
-  ![Publish Date](img\v3_layouts_publish_selected_time.png)
-
-  {tip}
-  You can also use the **Row Menu** for a selected draft Layout to set to **Publish** immediately or on a set date..
-  {/tip}
-
-  {tip}
-  Published Layouts can be viewed in a read-only mode and 'Checked out' to create a draft Layout to make any edits needed.
-  {/tip}
 
 - #### Unlock Layout (visible when another User is attempting to edit the same Layout)
 

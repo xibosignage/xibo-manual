@@ -26,20 +26,24 @@ Grids have multiple **Filter** fields which can be used to restrict the criteria
 For example all Layouts belonging to a particular **Owner** can be the only results shown in the Grid.
 {/tip}
 
+{tip}
+Use the checkbox to apply advanced filtering options for Names using Regex!
+{/tip}
+
 ## Folders
 
-Folders allow Users to easily organise and search for items. 
+Folders allow Users to easily organise,search and share object easily.  
 
 Available on selected Grids, the Folder tree will open by default.
 
-- Click on a folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
+- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
 
 or
 
-- Tick **Global Search** to look in all places; all folders/CMS libraries and return results based on any filters applied to the Grid.
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
 
 {tip}
-Click the Folders menu to toggle on/off from view.  When Folders is hidden from view, the file path for the selected folder will be shown to make it easier to see where you are searching!
+Click the Folders menu to toggle on/off from view.  When Folders is hidden from view, the file path for the selected folder will be shown!
 
 ![Folder Path](img/v3_tour_folder_path.png)
 

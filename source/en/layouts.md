@@ -14,12 +14,26 @@ Take a look at the [Modules](media_modules.html) page to see the variety of cont
 
 [[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User can have.
 
-Layouts are administered by clicking on **Layouts** under the **Design** section of the main menu, to open the Layouts [grid](tour_grids.html).
+Layouts are administered by clicking on **Layouts** under the **Design** section of the main menu:
 
 ![Layout Grid](img/v3_layouts_grid.png)
 
+
+
+The Layout [Grid](tour_grid.html) allows you to edit existing and create new. The **Folder** tree will open by default:
+
+- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
+
+or
+
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
+
 {tip}
-**Thumbnails** will only show in Columns for Layouts that have a set background image
+Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
+
+{tip}
+**Thumbnails** will only show in Columns for Layouts that have a set background image!
 {/tip} 
 
 ## Add Layout
@@ -46,20 +60,23 @@ Layouts can be optionally saved to **Folders**.
 Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
-- Click on the **Select Folder** button and expand to select the Folder to save in.
+- Click on the **Select Folder** button and expand to select a Folder to save in.
 
 
 ![Select Folder Layouts](img/v3_layouts_folder.png)
 
-The selected folder file path will be shown next to the Folder field on the form.
 
-Users can also right click a folder to create a new folder to save in and access further options:
+
+Users can also right click a Folder to access further options:
 
 ![Folder Options](img/v3_layouts_folder_options.png)
 
 {tip}
 Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
+
+- The selected folder file path will be shown next to the Folder field on the form
+  
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)

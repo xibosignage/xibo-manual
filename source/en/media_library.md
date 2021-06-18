@@ -8,7 +8,7 @@ If you are using a CMS version earlier than 3.0.0 please use the following link:
 
 The CMS Library stores all file-based media that is uploaded for use on Layouts.
 
-Navigate to **Media** under the **Library section** of the main menu to open the Library [grid](tour_grids.html):
+Navigate to **Media** under the **Library section** of the main menu to open the Library [Grid](tour_grids.html):
 
 ![Media Library](img/v3_media_library_grid.png)
 
@@ -36,27 +36,24 @@ Files can also be added via drag and drop!
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-Media can also be directly uploaded to a specified Folder location.
+Media can also be directly uploaded to a specified **Folder** location.
 
 {tip}
 Media files that are saved in Folders will inherit the View, Edit, Delete Share option that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
-- Click on the **Select Folder** button. Expand to select an existing Folder or right click and **Create** a new Folder.
+- Click on the **Select Folder** button and expand to select a Folder to save in.
 
 ![Select Folder](img/v3_media_select_folder.png)
+
+Users can also right click a Folder to access further options.
 
 {tip}
 Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
 
-- Click in the folder you wish to upload the file to and click **Done**. The **Current Folder** will show the selected file path:
-
-![Current Folder](img/v3_media_current_folder.png)
-
-{tip}
-The above image shows media files will be uploaded to `  />Example Folder` 
-{/tip}
+- Click in the Folder you wish to upload the file to and click **Done**. 
+- The **Current Folder** will now show the selected file path.
 
 - Click the **Start upload** button to begin the upload of all files. If a Folder has been selected and you have added multiple files, all files will be uploaded to that location.
 
@@ -115,14 +112,14 @@ If the new font does not show in the text editor after upload, try clearing the 
 By default, the **Folder Search** option will open. 
 
 {tip}
-This can be toggled on and off from view by clicking!
+This can be toggled on and off from view by clicking the folder icon!
 {/tip}
 
-- Tick **Global Search** to Look in all places; including all folders and CMS libraries, to return results based on the filters applied to the Grid.
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
 
   or
 
-- Click on a folder or sub folder to search contents and return results based on the filters applied to the Grid.
+- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
 
   
 
@@ -141,9 +138,8 @@ The **Edit Media** form allows you to make edits to the **Folder**, **Name** and
 
 ![Edit Media](img/v3_media_row_menu_edit.png)
 
-**Current Folder** - If the media file is already in a Folder, the file path with be shown here. Click **Select Folder** to move to a different location.
-
-**Tags** - Media can be tagged to allow for ordering and make files easier to find.
+- **Current Folder** - If the media file is already in a Folder, the file path with be shown here. Click **Select Folder** to move to a different location.
+- **Tags** - Media can be tagged to allow for ordering and make files easier to find.
 
 When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
 
@@ -165,7 +161,7 @@ For further information on what **Tag **and **Tag Values** to use, please speak 
 Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
 {/nonwhite}
 
-**Expiry date** - Select a date and time to completely remove the selected media file from the CMS.
+- **Expiry date** - Select a date and time to completely remove the selected media file from the CMS.
 
 {tip}
 **Please note:** This will remove media from any Layouts that contain the selected file.
@@ -175,7 +171,7 @@ Tag management information for Administrators can be found [here](https://xibo.o
 If you do not want to completely remove the media file and keep it assigned to existing Layout's then tick the **Retire this media** option. The Media file will not show for selection for new Layouts.
 {/tip}
 
-**Enable Media Stats Collection** - Use the drop-down to set the collection of [Proof of Play](displays_metrics.html#proof_of_play) statistics to On / Off / Inherit for the selected Media file.
+- **Enable Media Stats Collection** - Use the drop-down to set the collection of [Proof of Play](displays_metrics.html#proof_of_play) statistics to On / Off / Inherit for the selected Media file.
 
 {tip}
 To collect Proof of Play records ensure that the Enable Stats Reporting has been ticked in [Display Settings](displays_settings.html)

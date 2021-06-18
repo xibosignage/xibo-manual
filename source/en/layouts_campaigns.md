@@ -26,10 +26,9 @@ Folder options are available from v3.0.0!
 
 Campaigns can be optionally saved to **Folders** to organise, search and easily set **Share** access permissions.
 
-- Click on the **Select Folder** button, expand to save to an existing folder or right click on a folder to create a new location. 
+- Click on the **Select Folder** button, expand to save to an existing folder or right click create a new location and access further options. 
 
-
-![Select Folder](img\v3_layouts_campaigns_folders.png)
+![Campaign Folder Options](img/v3_layouts_campaign_folder_options.png)
 
 {tip}
 Once selected, the Folder file path will be shown next to the Folder field on the form.
@@ -60,7 +59,7 @@ Tag management for Administrators can be found [here](https://xibo.org.uk/docs/s
 ## Assigning Layouts
 
 {tip}
-In earlier versions, use the row menu for a Campaign and select **Layouts** to open the form to assign.
+In earlier versions, use the Row Menu for a **Campaign** and select **Layouts** to open the form to assign.
 {/tip}
 
 - Layouts are assigned using the plus icon. Once pressed Layouts will show in the staging area. 
@@ -81,11 +80,11 @@ Use the **Copy** button located on the row menu to easily make a copy of an exis
 {/tip}
 
 {tip}
-Layouts can be directly assigned to Campaigns using the row menu, **Assign to Campaign**, on the Layouts grid. Layouts will be assigned to the end of the selected Campaign by default.
+Layouts can be directly assigned to Campaigns using the Row Menu, **Assign to Campaign**, on the Layouts grid. Layouts will be assigned to the end of the selected Campaign by default!
 {/tip}
 
 {tip}
-Use the Row Menu to assign User/User Group access to selected Campaigns.
+Use the Row Menu to assign User/User Group access to selected Campaigns:
 
 - Users of a 3.x CMS refer to the [Features and Sharing](users_features_and_sharing.html) page for further information.
 - Users of a CMS earlier than 3.x refer to the [Permissions](users_permissions.html) page for further information.

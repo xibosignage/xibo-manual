@@ -35,13 +35,13 @@ Templates that are saved in Folders will inherit the View, Edit, Delete **Share*
 - Click on the **Select Folder** button and expand to select the Folder to save in.
 
 
-![Select Folder Layouts](img/v3_layouts_folder.png)![UPDATE IMAGE]
+![Select Folder Layouts](img/v3_layouts_templates_folder.png)
 
-The selected folder file path will be shown next to the Folder field on the form. 
 
-Users can also right click a folder to create a new Folder to save in and access further options:
 
-![Folder Options](img/v3_layouts_campaign_folder_options.png)
+Users can also right click a folder to access further Folder options:
+
+![Template Folder Options](img/v3_layouts_templates_folder_options.png)
 
 {tip}
 Available Folder options are based on enabled [Features and Share](users_features_and_sharing.html) options for a User/User Group.
@@ -54,6 +54,8 @@ Further information for Administrators regarding Folder access and set-up can be
 {white}
 For further information regarding Folder access and set-up, please speak to your Administrator.
 {/white}
+
+The selected folder file path will be shown next to the Folder field on the Add Template form. 
 
 ### Name
 
@@ -116,8 +118,14 @@ Layouts can also be saved as Templates by using the **Row Menu** for a Layout in
 
 ![Templates](img/v3_layouts_templates_save.png)
 
-- Complete the form fields, move from the Current Folder location and assign Tags if required.
-- Use the tick box to include all Widgets  that have been added to the Layout to the Template.
+Complete all relevant form fields, 
+
+- Use **Select Folder** to move from the shown Current Folder Location.
+- Give the Template an identifiable **Name** so that Users can easily select from the Template drop down when adding Layouts.
+- Assign **Tags** if required.
+- Provide an optional description/explanation/instructions to other users of this Template.
+- Use the tick box to include all **Widgets** that have been added to the Layout to be included in the Template.
+- **Save**
 
 Once saved, Templates can be managed from the Templates grid.
 

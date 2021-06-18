@@ -17,16 +17,16 @@ Playlists are administered by clicking on Playlists under the **Library** sectio
 
 ![Playlist Grid](img/v3_media_playlists_grid.png)
 
-The Playlists [grid](tour_grid.html) allows you to edit existing and create new. The **Folder** tree will open by default:
+The Playlists [Grid](tour_grid.html) allows you to edit existing and create new. The **Folder** tree will open by default:
 
-- Click on a folder/sub-folder to search the contents and return results based on any filters applied to the grid.
+- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
-- Tick **Global Search** to look in all places; all folders/CMS libraries and return results based on any filters applied to the grid.
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
 {tip}
-Click the Folders menu to toggle on/off from view.  When Folders is hidden from view, the file path for the selected folder will be shown to make it easier to see where you are searching!
+Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
 {/tip}
 
 ### Create a new Playlist
@@ -36,7 +36,7 @@ Click the Folders menu to toggle on/off from view.  When Folders is hidden from 
 
 ![Add Playlist](img/v3_media_playlists_add.png)
 
-#### Folders:
+### Folders
 
 Playlists can be optionally saved to **Folders**.
 
@@ -44,7 +44,7 @@ Playlists can be optionally saved to **Folders**.
 Playlists that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
-- Click on the **Select Folder** button and expand to select the Folder to save in.
+- Click on the **Select Folder** button and expand to select a Folder to save in.
 
 ![Select Folder Playlists](img/v3_media_playlists_folder.png)
 
@@ -54,7 +54,7 @@ Users can also right click a folder to create a new folder to save in and access
 Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
 
-- Once selected click **Done**, the selected folder file path will be shown next to the Folder field on the form.
+- The selected folder file path will be shown next to the Folder field on the form.
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
@@ -64,12 +64,12 @@ Further information for Administrators regarding Folder access and set-up can be
 For further information regarding Folder access and set-up, please speak to your Administrator.
 {/white}
 
-#### Name:
+### Name
 
 - Give the Playlist a **Name** for easy identification purposes within the CMS.
 
 
-#### Tags:
+### Tags
 
 Playlists can be tagged for organisation and to make it easier to find a larger number of Playlists if grouped by Tag.  
 When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.

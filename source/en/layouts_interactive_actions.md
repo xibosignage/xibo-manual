@@ -2,7 +2,7 @@
 
 # Interactive Actions
 
-#### Please note: Interactive Actions are currently only supported by the Windows Player.
+#### Please note: Interactive Actions are currently supported on Xibo for Windows R3 R300 and Xibo for Android R3 R300. 
 
 Actions can be attached to an entire **Layout** a particular **Region** or specific **Widget** and can be used to effect changes to the Layout. These can be triggered by **Touch or Click** or programmatically by **webhook**.
 
