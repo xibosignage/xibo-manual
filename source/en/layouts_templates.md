@@ -59,7 +59,7 @@ The selected folder file path will be shown next to the Folder field on the Add 
 
 ### Name
 
-- Give the Template a **Name** for easy identification purposes when selecting to use by Users.
+Give the Template a **Name** for easy identification purposes when selecting to use by Users.
 
 
 ### Tags

@@ -2,7 +2,9 @@
 
 # Grids 
 
+{tip}
 If you are using a CMS earlier than v3.0.0, please use the following link: [Grids](tour_grids_2.html)
+{/tip}
 
 The CMS presents many of the entities,**Layouts**, **Media**, **Displays** for example, as tabular data called **Grids**. Each Grid has a number of elements that combine to create a flexible administration tool that is easy to read and understand.
 

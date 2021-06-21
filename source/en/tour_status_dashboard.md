@@ -10,7 +10,7 @@ There are four **Dashboard views** for the CMS that can be assigned, which will 
 
 The CMS **Status Dashboard** is the default Dashboard for **Super Admin Users** and is intended as a high-level view of the system for Administrators. It gives an overview to how many Display have been connected, Users and provides information relating to Library and Bandwidth usage and Display Activity.
 
-![CMS Status Dashboard](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/tour_cms_status_dashboard.png)
+![CMS Status Dashboard](img/tour_cms_status_dashboard.png)
 
 
 
@@ -18,7 +18,7 @@ The CMS **Status Dashboard** is the default Dashboard for **Super Admin Users** 
 
 The CMS **Icon Dashboard** is a default Dashboard used for all newly assigned **Users** and is intended as a **Launcher** into other areas of the CMS. The icons within the Dashboard are shown/hidden according to the [Feature](users_features_and_sharing.html) access for the User.
 
-![CMS Icon Dashboard](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/tour_cms_icon_dashboard.png)
+![CMS Icon Dashboard](img/tour_cms_icon_dashboard.png)
 
 
 
@@ -26,7 +26,7 @@ The CMS **Icon Dashboard** is a default Dashboard used for all newly assigned **
 
 The CMS **Media Manager Dashboard** can be selected for **Users** who should only edit the **Media** they have been given access to. The Media Manager Dashboard gives a restricted access view of the CMS presented in a grid style interface which lists each item the User has [Share](users_features_and_sharing.html) options enabled for. Users can use the 'Widgets From' dropdown menu to select **Widgets** from **Drafts** or **Playlists** and use the available filters.
 
-![CMS Media Dashboard](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/tour_cms_media_dashboard.png)
+![CMS Media Dashboard](img/tour_cms_media_dashboard.png)
 
 
 
@@ -38,7 +38,7 @@ The **Playlist Dashboard** can be assigned to Users who belong to the **Playlist
 
 The Playlist Dashboard gives a very restricted view of the CMS with a User only able to select specific Playlists to manage using the drop-down menu.
 
-![Playlist Dashboard](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v2.3_tour_cms_dashboards_playlist_dashboard.png)
+![Playlist Dashboard](img/v2.3_tour_cms_dashboards_playlist_dashboard.png)
 
 **Spots** are configured using the [Sub-Playlist Widget](media_module_subplaylist.html) which determines how many media files a User can upload. 
 

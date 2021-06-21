@@ -38,7 +38,7 @@ A User will only have access to the parts of the CMS as assigned to the User Gro
 
 ### DOOH
 
-A DOOH user will have access to the CMS, via the API, to allow for content creation and Scheduling and will only see Displays / Media / Playlists / Layouts that belong to them. Content created by the DOOH User will not be visible to other non-DOOH Users.
+A DOOH user will have access to the CMS, via the API, to allow for content creation and Scheduling and will only see Displays/Media/Playlists/Layouts that belong to them. Content created by the DOOH User will not be visible to other non-DOOH Users.
 
 **Super Admin** Users are able to set a Preference to view DOOH Users content in their [User Profile](tour_user_profile.html)
 

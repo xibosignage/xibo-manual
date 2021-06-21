@@ -6,7 +6,7 @@ Layouts can be grouped together into an ordered list. A Campaign can then be **S
 
 **Campaigns** are administered from the **Design** section of the CMS Menu. 
 
-![Campaigns](img/v3_layouts_Campaigns_grid.png)
+![Campaigns](img/v3_layouts_campaigns_grid.png)
 
 {tip}
 Take a look at the [Layouts](layouts.html) page to see how to first add and create Layouts that can then be grouped into Campaigns!
@@ -21,7 +21,7 @@ Click on the **Add Campaign** button at the top of the grid and complete the app
 ### Folders
 
 {tip}
-Folder options are available from v3.0.0!
+Folder options are available from v3.0.0! (Speak to your Administrator to upgrade the CMS to benefit from this feature!)
 {/tip}
 
 Campaigns can be optionally saved to **Folders** to organise, search and easily set **Share** access permissions.
