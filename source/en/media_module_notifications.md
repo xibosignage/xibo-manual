@@ -12,7 +12,7 @@ Click on **Notification** from the [Widget](layouts_widgets.html) toolbar and cl
 If you are using a 1.8.x CMS, select Notification from the Widget Toolbox to add!
 {/tip}
 
-On adding, configuration options are shown in the Edit HLS form:
+On adding, configuration options are shown in the Edit Notification form:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.

@@ -20,13 +20,13 @@ The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Eac
 
 A status indicator is shown to the left of the top toolbar to show you the current 'play' status of the selected Layout:
 
-![Build Status](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v2.3_layouts_build_status.png)- This Layout has not been built yet.
+![Build Status](img/v2.3_layouts_build_status.png)- This Layout has not been built yet.
 
-![Valid Status](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v2.3_layouts_valid_status.png) - This Layout is valid and can be scheduled once Published.
+![Valid Status](img/v2.3_layouts_valid_status.png) - This Layout is valid and can be scheduled once Published.
 
-![Invalid Status](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v2.3_layouts_invalid_status.png) - This Layout is invalid and will not be Published for scheduling. 
+![Invalid Status](img/v2.3_layouts_invalid_status.png) - This Layout is invalid and will not be Published for scheduling. 
 
-![Assessed Player Side Status](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v2.3_layouts_assessed_player_side_status.png) - This Layout contains media that can only be assessed Player side, and can be scheduled once Published. 
+![Assessed Player Side Status](img/v2.3_layouts_assessed_player_side_status.png) - This Layout contains media that can only be assessed Player side, and can be scheduled once Published. 
 
 {tip}
 The last status indicator is a normal Layout status to have if your Layout contains online content, such as a webpage etc. The CMS cannot say that the Player will display the content as it is not sent directly from the CMS (as with file based media, images, videos etc,) and is instead cached (stored) Player side.  The Player will need to have a reliable internet connection to successfully display such content.
@@ -87,7 +87,7 @@ Located next to the Layout Selector is a menu of options that can be performed f
 
   Any changes made to the Layout can be completely discarded, reverting the Layout to the previous Published version. 
 
-![Discard Layout](C:\Users\Natasha\Documents\Fork Manual Pages ALL\source\en\img\v2.3_layouts_discard_layout.png)
+![Discard Layout](img\v2.3_layouts_discard_layout.png)
 
 ​		Clicking on **Discard** will delete the draft and leave the Published version untouched.
 
@@ -208,7 +208,7 @@ Use the Search field here to look for Widgets already added to the drawer!
 
 Located on the bottom left of the toolbar use the buttons to add [Library](layouts_library_search.html) media items, apply actions from the [Tools](layouts_tools.html) menu and assign [Widgets](layouts_widgets.html) to Layouts. 
 
-![Bottom Toolbar](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v2.3_layouts_bottom_toolbar.png)
+![Bottom Toolbar](img/v2.3_layouts_bottom_toolbar.png)
 
 {tip}
 Further actions will show on this toolbar when available such as Undo changes and Delete!

@@ -5,8 +5,10 @@
 Regions define areas on a **Layout** which hold **Widgets** (media content) to form sets of timed content.
 
 {tip}
-If you are using a version earlier than 2.3 for the v2 CMS, please use the following link: [Regions v2](layouts_regions_2.0.html)
-If you are using the **1.8 series**, please use the following link: [Regions 1.8](layouts_regions_1.8.html)
+
+- If you are using a version earlier than 2.3 for the v2 CMS, please use the following link: [Regions v2](layouts_regions_2.0.html)
+- If you are using the **1.8 series**, please use the following link: [Regions 1.8](layouts_regions_1.8.html)
+
 {/tip}
 
 
@@ -102,7 +104,7 @@ Ensure any edits made are saved using the **Save** button on the Region Options 
 ### Actions
 
 {tip}
-Actions are available from v3.0.0!
+Actions are available from v3.0.0! (Speak to your Administrator to upgrade the CMS to benefit from this feature!)
 {/tip}
 
 Actions can be attached to Regions to effect changes on the Layout. 
@@ -115,10 +117,10 @@ Full details are available on the [Interactive Actions](layouts_interactive_acti
 
 Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete** access for a Region.  
 
-- Assign/edit **Share** options by right clicking on the target Region to open the form.
+- Assign/edit [Share](users_features_and_sharing.html) options by right clicking on the target Region to open the form.
 
   {tip}
-  In versions earlier than 3.0.0, Share options are labelled as **Permissions**!
+  In versions earlier than 3.0.0, Share options are labelled as [Permissions](users_permissions.html!
   {/tip}
 
 

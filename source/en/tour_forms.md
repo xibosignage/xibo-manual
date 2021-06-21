@@ -2,7 +2,9 @@
 
 # Forms
 
+{tip}
 If you are using a CMS earlier than v3.0.0, please use the following link: [Forms](tour_forms_2.html)
+{/tip}
 
 The CMS presents most transactions (actions that **add**/**edit** or **delete** in some way) using **Forms**.
 

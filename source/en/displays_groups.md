@@ -3,7 +3,7 @@
 # Display Groups
 
 {tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Display Groups](displays_groups_2.md)
+If you are using a CMS earlier than v3.0.0 please use the following link: [Display Groups](displays_groups_2.html)
 {/tip}
 
 For ease of **Scheduling** and **Media Assignment** create Display Groups and assign Displays to one or multiple Display Groups. 

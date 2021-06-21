@@ -2,7 +2,9 @@
 
 # User Groups
 
+{tip}
 If you are using a CMS earlier than v3.0.0, please use the following link: [User Groups](users_groups_2.html)
+{/tip}
 
 User Groups allow for a selected group of Users to share and edit Media, Layouts and Schedules within the group.
 
@@ -57,7 +59,7 @@ Once all tabs have been created click to **Save**.
 
 Once created, Users can be assigned to the Group using the **Row Menu** and clicking on **Members**:
 
-![User Group Manage Membership](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/user_group_manage_membership.png)
+![User Group Manage Membership](img/user_group_manage_membership.png)
 
 - Use the checkboxes to assign **Users** to the **Group**, and click to Save.
 

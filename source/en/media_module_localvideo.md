@@ -12,7 +12,7 @@ The Local Video Widget is used for video that exists **only** on the **Display**
 
 ## Add Widget
 
-Click on **HLS** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Local Video Widget](img\v2_media_localvideo_widget.png)
+Click on **Local Video** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Local Video Widget](img\v2_media_localvideo_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select Local Video from the Widget Toolbox to add!

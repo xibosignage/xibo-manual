@@ -1,6 +1,6 @@
 # Image
 
-Please note: If you are using a 3.x CMS, please use the following link: [Image](media_module_image_2.html)
+Please note: If you are using a 3.x CMS, please use the following link: [Image](media_module_image.html)
 
 The Media Module allows for image uploads which can be added to Layouts using the Image Widget.
 

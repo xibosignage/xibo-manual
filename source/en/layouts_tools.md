@@ -11,7 +11,7 @@ Located on the bottom toolbar of the [Layout Designer](layouts_designer.html), t
 ![Tools](img/v3_layouts_tools.png)
 
 {tip}
-Versions earlier than 3.0.0 **Sharing** will be labelled [Permissions](users_permissions.html)
+Versions earlier than 3.0.0 [Sharing](users_features_and_sharing.html) will be labelled [Permissions](users_permissions.html)
 {/tip}
 
 ### Audio
@@ -115,7 +115,7 @@ If there are no more Widgets to follow or the Layout is in the process of being 
 ### Sharing  
 
 {tip}
-If you are using a version earlier than 3.0.0 Sharing will be named [Permissions](users_permissions.html)
+If you are using a version earlier than 3.0.0 [Sharing](users_features_and_sharing.html) will be named [Permissions](users_permissions.html)
 {/tip}
 
 Enable/Disable **View**, **Edit** and **Delete** access for Users/User Groups for Widgets and Regions by clicking to add or by drag and drop. 

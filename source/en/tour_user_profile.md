@@ -29,7 +29,7 @@ For further information regarding the administration of CMS settings, please cli
 - Use the drop down to view only relevant content as, **Standard** CMS content or **DOOH** content.
 
   {tip}
-  DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](<https://xibo.org.uk/manual/en/users_administration.html#my_applications>).
+  DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](https://xibo.org.uk/manual/en/users_administration.html#my_applications).
   {/tip}
 
 - Select to use the **Library duration** or **Module defaults** for all assigned Media.
@@ -57,7 +57,7 @@ The Edit User Profile form allows a logged in User to:
 - Change **Passwords**
 - Update a User **Email** address
 
-- Enable [Two Factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>) 
+- Enable [Two Factor Authentication](https://xibo.org.uk/manual/en/tour_two_factor_authentication.html) 
 
 ## Reshow Welcome
 
