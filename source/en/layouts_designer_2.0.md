@@ -5,7 +5,7 @@
 
 - 1.8.x CMS click [here](layouts_designer_1.8.html)
 - 2.x CMS click [here](layouts_designer_2.html)
-- 3.x CMS click [here
+- 3.x CMS click [here](layouts_designer.html)
 
 {/tip}
 

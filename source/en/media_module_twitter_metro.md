@@ -19,6 +19,7 @@ The main set-up is provided as part of the service for **Xibo in the Cloud** cus
 - Follow the on-screen instructions to authorise.
 
 Skip the installation section below and go straight to the **Add Widget** section.
+{/cloud}
 
 **Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
 

@@ -109,7 +109,7 @@ You can also prepopulate a Playlist with media from the Library by leaving the D
 
 The Playlist Editor window will open:
 
-![Playlists Timeline](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v2.3_media_playlists_timeline.png)
+![Playlists Timeline](img/v2.3_media_playlists_timeline.png)
 
 Click on a **Widget** to add or drag and drop to add to the canvas.
 
@@ -146,7 +146,7 @@ Playlists are edited independently to Layouts, so there is no need to access or 
 
 {tip}
 Changes will be available in the system straight away ready to be picked up by Players on their next collection, with no need to make any edits to Layouts!
-{tip}
+{/tip}
 
 ### Row Menu
 

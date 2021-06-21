@@ -221,7 +221,7 @@ This type of Command can also be executed by scheduling a [Command Event](schedu
 
 **Please note:** This feature is currently not supported on Tizen and Linux Players. We are currently working to bring this feature to all Players but at present this feature is only available for Windows Players from v2 R201, Android Players from v2 R203 and webOS from R204.  
 
-To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>), if you have not already set this up.
+To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](https://xibo.org.uk/manual/en/tour_two_factor_authentication.html), if you have not already set this up.
 
 ![Display Transfer Google Authenticator](img\displays_transfer_cms_google_authenticator.png)
 

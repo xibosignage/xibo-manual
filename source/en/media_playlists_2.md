@@ -1,7 +1,7 @@
 # Playlists
 
 {tip}
-If you are using a v3 CMS, please use the following link: [Playlists](media_playlists_2.html)
+If you are using a v3 CMS, please use the following link: [Playlists](media_playlists.html)
 {/tip}
 
 **Please note:** Playlists are only available from v2.0.0

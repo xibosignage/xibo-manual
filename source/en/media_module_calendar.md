@@ -120,7 +120,7 @@ It is best practice to contact a remote feed as little as possible.
 
 **Available from v3.0.0**
 
-Use this tab to trigger a Web Hook **Action** when there is a **Current Event** or **No Event**.
+Use this tab to trigger a Web Hook **Action** when there is a **Current Event** or **No Event**!
 
 {tip}
 
@@ -136,7 +136,7 @@ A user has a meeting room calendar configured using the Calendar Widget on a Lay
 Further information on Commands for Administrators can be found here: [Shell Commands](https://xibo.org.uk/docs/setup/command-functionality#shell_commands)
 {/nonwhite}
 
-{/white}
+{white}
 For information on what Commands to use, please speak with your Administrator.
 {/white}
 

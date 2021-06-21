@@ -1,6 +1,6 @@
 # User Groups
 
-**Please note:** If you are using a 3.x CMS, please use the following link: [User Groups](users_groups_2.html)
+**Please note:** If you are using a 3.x CMS, please use the following link: [User Groups](users_groups.html)
 
 User Groups are administered from the Menu under the Administration section.
 Add a new User Group so that a selected group of Users are able to share and edit their Media, Layouts and Schedules with each other.

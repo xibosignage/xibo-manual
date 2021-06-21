@@ -4,7 +4,7 @@
 The Ticker Widget allows **dynamic Feed** content to be added to a Layout. The Ticker module primarily consists of a data source location and a template to apply to the retrieved data.
 
 {tip}
-If you are using 1.8.x CMS, please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
+If you are using a 1.8.x CMS, please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
 {/tip}
 
 ## Add Widget
@@ -38,7 +38,7 @@ Use the last option with caution as this can create long-running media items. Us
 
   {tip}
   The Randomise option works offline; the entire feed is parsed, rendered and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to randomise the order of items. Randomise works on the full feed, "Number of items" and "Take items from" options.
-  {tip}
+  {/tip}
 
 - Display a Copyright notice at the end of the feed.
 

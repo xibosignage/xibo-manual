@@ -3,7 +3,7 @@
 # Layouts
 
 {tip}
-If you are using a CMS earlier than 3.0.0, please use the following link: [Layouts](layouts_2.html)
+If you are using a CMS earlier than v3.0.0 please use the following link: [Layouts](layouts_2.html)
 {/tip}
 
 A Layout is a complete screen design including content and background, which is then scheduled to a Display or multiple displays and Display Groups. A **Layout** is made up of 1 or more **Regions** which hold content and contain a **Timeline** of **Media** to show. Media is assigned to the Layout Timeline using Widgets which provide the actions for the selected Module. 

@@ -21,12 +21,12 @@ DataSets are first defined, which can then be reused across multiple DataSet Vie
 
 
 
-The DataSets [grid](tour_grid.html) allows you to edit existing and create new. 
+The DataSets [Grid](tour_grid.html) allows you to edit existing and create new. 
 
 The **Folder** tree will open by default:
 
 {tip}
-**Please note:** Folders are available from v3.0.0!
+**Please note:** Folders are available from v3.0.0! (Speak to your Administrator to upgrade the CMS to benefit from this new feature!)
 {/tip}
 
 - Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
@@ -148,7 +148,7 @@ Columns are used to define the structure of the data.
 
 - Use the row menu for the selected DataSet record and select **View Columns**.
 
-![DataSets Add columns](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/media_add_columns_grid.png)
+![DataSets Add columns](img/media_add_columns_grid.png)
 
 {tip}
 All created Columns for the DataSet will be shown here. By default, all new DataSets will have a **Col1** added. This should be edited or removed using the row menu!
@@ -157,7 +157,7 @@ All created Columns for the DataSet will be shown here. By default, all new Data
 - Click on the **Add Column** button to create a new column. 
 - Use the form fields to define settings:
 
-![DataSet Columns Form](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/media_columns_form.png)
+![DataSet Columns Form](img/media_columns_form.png)
 
 - Include a **Heading** to identify the Column.
 - Use the drop down to select the type of Column required.
@@ -206,7 +206,7 @@ Data is added/edited using the **View Data** button on the Columns page or from 
 
 The data table will show each of the Columns as they have been configured.
 
-![Dataset Row](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/v3_media_dataset_row.png)
+![Dataset Row](img/v3_media_dataset_row.png)
 
 - Add a new row of data by clicking on the **Add Row** button and complete for each non-formula Column type.
 - Click **Next** to continue adding data to add more rows.
@@ -232,7 +232,7 @@ The Remote Columns in the DataSet will be listed with a field next to them to in
 
 An example of this form is shown below:
 
-![Dataset Import CSV](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/media_dataset_importcsv_form.png)
+![Dataset Import CSV](img/media_dataset_importcsv_form.png)
 
 {tip}
 It is important to ensure that your CSV file has the correct file encoding if you are using non-ASCII characters. Non-ASCII characters are very common for languages outside of English. The file encoding most commonly used is UTF-8.

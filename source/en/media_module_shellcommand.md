@@ -3,7 +3,7 @@
 # Shell Command
 
 {tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Shell Command](media_module_shell_command_2.html)
+If you are using a CMS earlier than v3.0.0 please use the following link: [Shell Command](media_module_shellcommand_2.html)
 {/tip}
 
 The Shell Command Module is used to instruct the Display to execute a **Command** outside of the [[PRODUCTNAME]] environment, using the operating system shell.  

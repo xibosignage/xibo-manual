@@ -1,7 +1,8 @@
 <!--toc=widgets-->
+
 # Ticker
 
-If you are using **v2** of the CMS, please use the following link: [Dataset Ticker](media_module_dataset_ticker.html)
+If you are using a later version than 1.8.x of the CMS, please use the following link: [Dataset Ticker](media_module_ticker.html)
 
 The Ticker Widget allows **dynamic Feed** and **DataSet** content to be added to a Layout. The Ticker module primarily consists of a data source location and a template to apply to each data item retrieved from that data source.
 {tip}

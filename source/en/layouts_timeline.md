@@ -101,7 +101,7 @@ Right-click on the Widget on the Layout Timeline to also delete.
 ![Timeline Widget Actions](img/v2_layouts_timeline_widget_actions.png)
 
 {tip}
-In versions earlier than 3.0.0 **Sharing** is labelled [Permissions](users_permissions.html)!
+In versions earlier than 3.0.0 [Sharing](users_features_and_sharing.html) is labelled [Permissions](users_permissions.html)!
 {/tip}
 
 Use the arrows to move Widgets along the Timeline to reorder the sequence.

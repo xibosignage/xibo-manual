@@ -2,7 +2,9 @@
 
 # User Administration
 
+{tip}
 If you are using a CMS earlier than v3.0.0, please use the following link: [Users Administration](users_administration_2.html)
+{/tip}
 
 Users are administered in the CMS by clicking on **Users** under the **Administration** section on the main menu. The Users [Grid](tour_grids.html) will open for you to add new and manage existing Users.
 
@@ -158,7 +160,7 @@ Once ticked the Two Factor Authentication will be set to ‘Off’ for this **Us
 {tip}
 Add the **Two Factor** column to the Users grid using the **Column visibility** button. This will give you an overview of what Users have set with regards to Two Factor authorisation. (Disabled / Email / Google Authenticator)
 
-![2fa Coloumn](C:/Users/Natasha/Documents/Fork Manual Pages ALL/source/en/img/user_administration_2fa_column.png)
+![2fa Coloumn](img/user_administration_2fa_column.png)
 
 {/tip}
 
