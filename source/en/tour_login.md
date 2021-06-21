@@ -4,7 +4,7 @@
 
 The CMS is protected by an authentication system that requires a **Username** and **Password**.
 
-During installation a Username and Password is provided which grants unrestricted access to all areas of the CMS, as a **Super Admin** User. Once logged in additional User accounts can be created with various permissions, as covered in the [Users section](users.html) of this manual.
+During the installation process,  a Username and Password is provided which grants unrestricted access to all areas of the CMS, as a top level **Super Admin** User. Once logged in additional User accounts can be created with various levels of access, as covered in the [Users section](users.html) of this manual.
 
 **All pages** in the CMS are authenticated and if the User is not logged a login form will appear.
 
@@ -12,11 +12,15 @@ During installation a Username and Password is provided which grants unrestricte
 
 ### Administrators (Super Admin Users)
 
-After installation the Username and Password provided during installation must be used to access the CMS.
+After installation the Username and Password provided during installation must be used to access the CMS as a Super Administrator.
 
 ### Users
 
-Users can be created by Administrators and given access to the system. The Username and Password for any new User should be shared in a private and secure manner and the User should change their password after they have logged in for the first time.
+Users can be created by Administrators and given access to the system. The Username and Password for any new User should be shared in a private and secure manner. We highly recommend that the User changes their password after first time log in.
+
+{tip}
+Take a look at the **Force Password Change** option on User records!
+{/tip}
 
 ### Two Factor Authentication
 
@@ -29,6 +33,10 @@ This function can be set by Super Admin Users at [User](users_administration.htm
 ### Forgotten Password reset
 
 **Administrators** can activate a Reset link to be available at login, by configuring CMS settings.
+
+{nonwhite}
+For further information regarding Password Settings administration, click [here](https://xibo.org.uk/docs/setup/password-settings)
+{/nonwhite}
 
 ### Cookies
 

@@ -3,90 +3,139 @@
 
 The Ticker Widget allows **dynamic Feed** content to be added to a Layout. The Ticker module primarily consists of a data source location and a template to apply to the retrieved data.
 
-Click on the **Ticker Widget** on the  toolbar, add / drag to the target **Region**. ![Ticker Widget](img/v2_media_ticker_widget.png)
-
 {tip}
-If you are using 1.8 please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
+If you are using 1.8.x CMS, please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
 {/tip}
 
-### General
+## Add Widget
 
-- Provide an optional name
-- Choose to override the default duration
-- Opt to extend the duration by the number of items.
+Click on **Ticker** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Ticker Widget](img\v2_media_ticker_widget.png)
+
+On adding, configuration options are shown in the Edit Ticker form:
+
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
+
+- Select whether the duration is to be per item or leave unticked to set the duration per feed.
 
 {tip}
-Use with caution as this can create long-running media items. Use in conjunction with ‘Number of items’ to limit this.
+Use the last option with caution as this can create long-running media items. Use in conjunction with **Number of items** to limit!
 {/tip}
 
 ### Configuration
 
-- Specify the Feed URL.
+![Ticker Configuration](img\v3_media_ticker_configuration.png)
 
-- Choose how many RSS items should be returned.
+- Enter the Feed URL to use.
+
+- Choose how many RSS items to display.
+
 - Select to start with items from the beginning or end of the list.
-- Random feeds work offline; the entire feed is parsed, rendered and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to randomise the order of items. Randomise works on the full feed, "Number of items" and "Take items from" options.
+
+- Tick to select to reverse the order of items on the feed.
+
+- Select to display items in a random order.
+
+  {tip}
+  The Randomise option works offline; the entire feed is parsed, rendered and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to randomise the order of items. Randomise works on the full feed, "Number of items" and "Take items from" options.
+  {tip}
+
 - Display a Copyright notice at the end of the feed.
-- Opt to display returned results side by side.
-- Apply a Date Format to apply to all returned date results. 
-- Include a comma-separated list of attributes that will not be stripped from the incoming feed.
+
+- Tick to display returned results side by side.
+
+- Apply a Date Format to apply to all returned date results. (see the **Additional Information** at the bottom of this page for further information).
+
+- Include a comma-separated list of attributes that should not be stripped from the incoming feed.
+
 - Include a comma-separated list of HTML tags to be stripped from the feed.
+
+- Tick to decode the HTML entities in the feed before parsing it.
+
 - Select to disable the date sort for the feed.
 
 ### Appearance
 
 - Optionally select a background colour
 - Use the drop-down menu to select an **Effect** to be used to transition between items.
-- Set the **Speed** for the selected effect.
-- Select the **direction** of the text in the feed to use, right to left or left to right.
-- Enter how many Items should appear on each page, if an effect to split items has been selected.
+- Set the **Speed** for the effect selected.
+- Enter how many Items should appear on each page if an effect to split items has been selected.
 
 ### Templates
 
-Select **Preset Templates** or provide your own using JavaScript.
+![Ticker Template](img\v3_media_ticker_template.png)
 
-![Ticker Template](img/v2_media_ticker_template.png)
+Use the drop down to select from the **Preset** Templates available to choose how the Ticker will be displayed.
 
-#### Preset
+![Preset Templates](img\v3_media_ticker_templates_preset.png)
 
-- Use the drop-down to select an appropriate template.
-- Choose to **Override** the selected template.
+Tick to edit by overriding the selected template if required. Please see the section below on **Editing Preset Templates** below for further information.
 
-{tip}
-By selecting to **Override the Template** you can enter your own text, html and CSS by using the templates  available from clicking on the Templates tab.
-{/tip}
+## Editing Preset Templates
 
-![Ticker Override Template](img/v2_media_ticker_override.png)
+Preset templates can be edited by clicking in the **Override the template** checkbox.
 
 {tip}
-Toggle on the **Visual editor** to use the inline editor.
-{/tip}
+The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
+
+- Templates must be designed at a fixed size
+- All elements must use absolute sizing in px, including fonts, margins, widths, heights, etc
+- If positioning is used, it must be from top,left
+- Templates can use bootstrap
+- The aspect ratio will be fixed by [[PRODUCTNAME]] and sized to fit the Region
+- Templates are treated the same as a static image
+  {/tip}
+
+With override template selected, you can enter your own text, HTML and CSS.
+
+Once override has been selected, click back on the **Templates tab** to select the template to edit:
+
+![Ticker Override Template](img\v3_media_ticker_template_override.png)
+
+### Main Template
+
+- Select **Main**
+- Toggle **On** the Visual editor to format the main template using the inline editor. 
+- Click the edit icon to open.
+
+![Ticker Visual Editor](img\v3_media_ticker_template_visual_editor.png)
 
 {tip}
-A special notation is available where the User can specify the Tag|Namespace within the feed for [[PRODUCTNAME]] to extract content.
+Leave this off to enter HTML in the box provided.
 {/tip}
 
-#### Optional Style Sheet
+- Include text merge fields from the **Snippets** menu to pull in the required information from the feed.
 
-This is applied to the entire Ticker media item when shown on Displays.
 
 {tip}
-This is intended for advanced users to ‘tweak’ the CMS generated output.
+A special notation is available where the User can specify the `Tag|Namespace` within the feed for [[PRODUCTNAME]] to extract content.
 {/tip}
 
-#### No Data
+### Optional Stylesheet
 
-Use the **No Data** template to include a message to display when there is no data returned from the source.
+Include CSS to apply to the template structure. 
+
+{tip}
+This optional template is intended for advanced users to 'tweak' the CMS generated output!
+{/tip}
+
+### No Data Template
+
+Include a message to ensure that your audience is not left with blank displays when there is no data returned from the source.
 
 ### Caching
 
-Players can **cache** the content of this media type to prevent repeated downloads and off-line playback. Keep this number as high as possible.
+Players can **cache** the content of this media for off-line playback and to prevent repeated downloads. Keep this number as high as possible.
 
 {tip}
 Options are provided to set different update frequencies for images and data to determine how long the Player will keep the data and or images, saved locally, before checking for updates.
 {/tip}
 
+## Actions 
 
+**Available from v3.0.0**
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
 ## Additional Information
 

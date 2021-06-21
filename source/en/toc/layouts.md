@@ -1,5 +1,6 @@
 - [Introduction](layouts.html)
 - [Layout Designer](layouts_designer.html)
+- [Interactive Actions](layouts_interactive_actions.html)
 - [Regions](layouts_regions.html)
 - [Layout Timeline](layouts_timeline.html)
 - [Tools](layouts_tools.html)

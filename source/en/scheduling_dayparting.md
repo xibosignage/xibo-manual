@@ -15,24 +15,24 @@ From v2.2.0 **Dayparts** can also be created and defined to be selected to set a
 
 Dayparts are administered from the Dayparting page from the Menu and are created by clicking on the **Add Daypart** button. Complete the form fields to define the Daypart.
 
-![Add Dayparts](img/schedule_dayparts_add.png)
+![Add Dayparts](img/v3_schedule_dayparts.png)
 
 Once created the Daypart will show in the **Dayparting drop-down** list when Scheduling Events.
 {tip}
 The below Daypart form shows an example Breakfast Daypart:
 
-![Exanple Breakfast Daypart](img/scheduling_daypart_form.png)
+![Exanple Breakfast Daypart](img/v3_scheduling_daypart_form.png)
 
 Saturday and Sunday have been configured as exceptions so that breakfast starts and ends at different times on those days.
 
-![Daypart form exceptions tab](img/scheduling_daypart_form_exceptions.png)
+![Daypart form exceptions tab](img/v3_scheduling_daypart_form_exceptions.png)
 
 When Scheduling, the **Breakfast** Daypart will appear in the drop-down list to select. Once selected, the from/to date time selectors will change to date only selectors and the time will be taken from the Daypart configuration - according to the day of the week the Event occurs on.
 {/tip}
 
 ## Edit Dayparts
 
-Dayparts can be edited by using their row menu. 
+Dayparts can be Edited/Deleted and [Shared](users_features_and_sharing.html) using the Row Menu from the Dayparting Grid.
 
 {tip}
 Updating the start/end times or exceptions for a Daypart will cause existing future events to be updated with the newly defined times. Existing recurring Schedules, set to recur beyond the current time, will have new Schedules created to reflect the updated information.

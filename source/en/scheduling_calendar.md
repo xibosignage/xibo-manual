@@ -8,27 +8,33 @@ Schedule content using the simple calendar interface by clicking on the **Schedu
 
 Use the control bar at the top of the calendar to select **Displays**, **Add Events**, **view date periods** and **alternate Views**.
 
-![Schedule Controls](img/v2_schedule_controls.png)
+![Schedule Controls](img\v3_schedule_controls.png)
 
-### Select Displays
+### Displays
 
-Click in this field to select Displays /Display Groups to view the associated schedules.
+Click in this field to select Displays/Display Groups to view the associated schedules.
 
 {tip}
-Use the **Show All** option to see the schedules for all Displays!
+Multiple Displays/Display Groups can be added here!
+{/tip}
+
+{tip}
+Use the **Show All** option to see schedules for **all** Displays.
 {/tip}
 
 ### Layout / Campaign
 
-Use this field to search for Layouts/Campaigns that already exist in the Schedule, filter by Display / Display Group. (Available from v2.2.0)
+**Please note:** This functionality is available from v2.2.0
+
+Use this field to search for Layouts/Campaigns that already exist in the Schedule for filtered Display/Display Groups.
 
 ### Add Event
 
-Schedule Events by completing the form fields.
+Use the Add Event button to add a new Scheduled Event.
 
 ### Prev/Today/Next
 
-Use to navigate through the calendar.
+Use the buttons to navigate through the calendar.
 
 {tip}
 Use the calendar icon, next to these buttons, to go directly to a selected date.
@@ -39,65 +45,62 @@ Use the calendar icon, next to these buttons, to go directly to a selected date.
 Each Calendar View will show the associated schedule for the selected Display/Display Group. Views show **Events** represented by Icons, with a key to explain each one, located below the calendar. 
 
 {tip}
-Click on an Event or Icon shown on a Calendar View to Edit the schedule.
+Click on an Event Icon to view/edit the schedule!
  {/tip}
 
 ### Year
 
-The Year view is intended as an overview of the Events scheduled throughout the year and provides a total number of Events scheduled per month. Roll over a month and use the black arrow to show Event details.
+The Year view is intended as an overview of the Events scheduled throughout the year and provides a total number of Events scheduled per month. Click in a month to view the Event details.
 
-![Schedule Year View](img/schedule_year_view.png)
+![Schedule Year View](img\v3_schedule_year_view.png)
 
 {tip}
-Double-click to open the Month View for that particular month.
+Double-click to open the Month View for that particular month!
 {/tip}
-
-
 
 ### Month
 
 This View includes Icons to represent the Events that have been scheduled for that Month. Click on a particular day square to see an expanded view for that day. Double click on a day square to open the Day View for that date.
 
-![Schedule Month View](img/schedule_month_view.png)
+![Schedule Month View](img\v3_schedule_month_view.png)
 
 {tip}
-Hover over each Icon to display information for that particular Event.
+Hover over each Icon to view the Event information!
 {/tip}
-
-
 
 ### Week
 
 This view gives a week overview of scheduled Events. Double click on a date to open the Day View.
 
-![Schedule Week View](img/scheduled_week_view.png)
-
-
+![Schedule Week View](img\v3_scheduled_week_view.png)
 
 ### Day
 
 The Day View shows all Events occurring within a single day.
 
-![Schedule Day View](img/schedule_day_view.png)
-
-
+![Schedule Day View](img\v3_schedule_day_view.png)
 
 ### Agenda
 
 Events can span multiple days/weeks/months so it is highly useful to be able to see a precise representation of Layouts/Campaigns that will be shown on a selected Display at a point in time.
 
-![Agenda View](img/scheduling_calendar_agenda.png)
+![Agenda View](img\v3_schedule_calendar_agenda.png)
 
-The selected Displays/Display Groups will be presented as tabs with Layouts shown in tabular format which appear in the order they will cycle on the Display.
+{tip}
+Select multiple Displays/Display Groups which will be presented in separate tabs!
+{/tip}
+
+Layouts/Campaigns will be shown in tabular format in the order they will cycle on the Display.
 
 Use the slider, located above the tabs, to pinpoint the exact time of day to view. Change the date using the **Prev/Today/Next** buttons or by selecting a date using the calendar icon.
 
 Click on a Layout to highlight the associated information (associations will turn blue) and view the breadcrumb, to show further Campaign and Display Group information. If nested Display Groups have been configured, these will show in the breadcrumb.
 
 {tip}
-This can be used to view exactly why a certain Layout is being shown at a certain time.
+From v3.0.0, use the Preview window to Play the highlighted Layout, use the buttons to minimise/maximise the viewing window or go to full screen to Play!
 {/tip}
 
 {tip}
-Click on the breadcrumb to view the Layout and make edits to the schedule.
+Click on the breadcrumb to view the selected Layout in the Layout Designer and make necessary edits to the Schedule!
 {/tip}
+

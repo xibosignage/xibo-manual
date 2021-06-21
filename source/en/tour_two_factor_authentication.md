@@ -8,21 +8,21 @@ For added security, Users can set **Two Factor Authentication** options for **Em
 Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to the set up of Two Factor Authentication.
 {/tip}
 
-![2FA Code Login](img/v2_tour_2fa_login.png)
+![2FA Code Login](img/tour_2fa_login.png)
 
 Navigate to the [User Profile](tour_user_profile.html) in the top right hand corner of the CMS and click on **Edit Profile**.
 
-![Edit Profile](img/v2_tour_2fa_edit_profile.png)
+![Edit Profile](img/tour_2fa_edit_profile.png)
 
 Use the dropdown menu for **Two Factor Authentication** and select from one of the two options:
 
-![Two Factor dropdown menu](img/v2_tour_2fa_dropdown.png)
+![Two Factor dropdown menu](img/tour_2fa_dropdown.png)
 
 ## Email
 
 Each time a User enters their **Username** and **Password** to login they will also receive an **email**, to the address provided, containing a 6 digit **code** to enter to complete log in.
 
-Ensure that an email address has been provided on this form and press **Save**. 
+Ensure that an Email address for the User has been provided on this form and press **Save**. 
 
 ## Google Authenticator
 
@@ -32,7 +32,7 @@ Install the [Google Authenticator app](https://play.google.com/store/apps/detail
 
 Scan the QR code shown on the Edit User Profile form and enter the code displayed into the Access Code field and Save to complete the set up.
 
-![QR Code](img/v2_tour_2fa_qrcode.png)
+![QR Code](img/tour_2fa_qrcode.png)
 
 {tip}
 You will need to enter your password to verify any changes made to the Two Factor Authentication options.{/tip}
