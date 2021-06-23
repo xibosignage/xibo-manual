@@ -1,7 +1,11 @@
 # Layout Designer
 
 {tip}
-If you are using **v2** of the CMS, please use the following link: [Layout Designer](layouts_designer.html)
+**Please note:** If you are using a CMS later than 1.8.x please select from the options below:
+
+- 2.x CMS click [here](layouts_designer_2.html)
+- 3.x CMS click [here](layouts_designer.html)
+
 {/tip}
 
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.

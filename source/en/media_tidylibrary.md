@@ -44,11 +44,13 @@ Orphaned files are a rare occurrence where a file stored on disk in the Library 
 
 ## Tidy from Library
 
-Allow **ANY** User to initiate a Library tidy from the Library page by enabling the functionality in Settings under the Administration section of the Menu. Click on the General tab and use the checkbox for **Enable Library Tidy.**
+Allow **ANY** User to initiate a Library tidy from the Library page by enabling the functionality in **Settings** under the Administration section of the main menu. 
+
+- Click on the General tab and use the checkbox for **Enable Library Tidy.**
 
 ![Enable Library Tidy](img/media_settings_enable_librarytidy.png)
 
-Once enabled Users can click on the **Tidy Library** button at the top of the Library page.
+Once enabled Users can click on a **Tidy Library** button located at the top of the Library page.
 
 ![Tidy from Library](img/media_library_tidylibrary.png)
 

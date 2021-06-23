@@ -5,9 +5,7 @@
 The Twitter Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Add the Twitter Widget to Layouts to display Twitter feeds.
 
 {tip}
-
-Granted access is to **read data** only.
-
+Granted access is to **read data** only!
 {/tip}
 
 {nonwhite}
@@ -15,12 +13,12 @@ Granted access is to **read data** only.
 
 The main set-up is provided as part of the service for **Xibo in the Cloud** customers. Please follow the simplified process below to connect to the Twitter API.
 
-- Select Modules from the Administration section of the menu.
+- Select **Modules** from the Administration section of the menu.
 - Click on the row menu for the Twitter Provider (Twitter Search) Module and select **Connect to Twitter**.
 - A form will open which has a **Login with Twitter** button which allows authorisation for the CMS to connect via a Twitter account.
 - Follow the on-screen instructions to authorise.
 
-Skip the installation section below and go straight to the **Add Twitter Widget** section.
+Skip the installation section below and go straight to the **Add Widget** section.
 
 {/cloud}
 
@@ -44,90 +42,104 @@ Access to the Twitter API is protected and so users must register for an **API k
 
 ### Twitter Module Installation
 
-- Select the Modules page under the Administration section and install the Twitter Module.
+- Select the **Modules** page under the Administration section and install the Twitter Module.
 - Once installed click on the row menu for the Twitter Module and click **Edit**.
 - Enter the generated **API key** and **API secret**.
-- Optionally adjust the Cache Period to determine how long to cache a results set for each Twitter search.
+- Optionally adjust the **Cache Period** to determine how long to cache a results set for each Twitter search.
 
 {tip}
-
 Setting a low value can cause your access to the Twitter API to be disabled for generating too many requests.
-
 {/tip}
 
-## Add Twitter Widget
+## Add Widget
 
-Click on the **Twitter Widget** on the toolbar, add / drag to the target **Region**. ![Twitter Widget](img/v2_media_twitter_widget.png)
+Click on **Twitter** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop![Twitter Widget](img\v2_media_twitter_widget.png)
 
 {tip}
-If you are using 1.8, select **Twitter** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. 
+If you are using a 1.8.x CMS, select Twitter from the Widget Toolbox to add!
 {/tip}
 
-### General
+On adding, configuration options are shown in the Edit Twitter form:
 
-- Provide an optional name
-- Choose to override the default duration
-- Select whether the duration is per item, unticked the duration will be per feed.
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
+- Select whether the duration is to be per item or leave unticked to set the duration per feed.
 
 ### Configuration
 
-![Twitter Configuration](img/v2_media_twitter_configuration.png)
+![Twitter Configuration](img\v3_media_twitter_configuration.png)
 
-- Provide a search term to return applicable Tweets
-- Select the language to use
-- Choose to return Tweets based on popularity, most recent or a mixture of results
-- Select how many miles away from your location Tweets should be returned from. 0 has no restrictions
-- Select to remove Mentions from returned Tweet text
-- Select to remove Hashtags from returned Tweet text
-- Select to remove URLs from returned Tweet Text
+- Provide a **Search Term** to return applicable Tweets
+
+{tip}
+Check to make sure your search term is valid before entering here by using the twitter.com search box!
+{/tip}
 
 {tip}
 To return Tweets from a specific account rather than all Tweets that contain the accounts @ handle, use `from:` before the name of the account in the **Search Term** field.
 {/tip}
 
+- Select the Language to use
+- Use the drop down to select how Tweets should be returned; based on popularity, most recent or a mixed.
+- Select how many miles away from your location Tweets should be returned from. 0 has no restrictions.
+- Use the tick box if Mentions (@someone) should be removed from the returned Tweet text.
+- Use the tick box if Hashtags (#something) should be removed from the returned Tweet text.
+- Use the tick box to remove URLs from returned Tweet Text.
+
 {tip}
-Most URL’s do not compliment digital signage and so we would recommend having **Remove URLs** selected.
+Most URL's do not compliment Digital Signage!
 {/tip}
 
 ### Appearance
 
-- Optionally add a background colour
-- Select the number of Tweets to return, left blank will return the default number of 15
-- Select the number of Tweets to show per page, left blank will show the default number of 5 Tweets.
-- Apply a date format to be used for returned results, in PHP date format (see bottom of page)
-- Select an optional effect/speed to be used to transition between Tweets.
+- Optionally add a Background Colour.
+- Specify the number of Tweets to return, left blank will return the default number of 15
+- Select the number of Tweets to show Per Page, left blank will show the default number of 5 Tweets.
+- Apply a Date Format to be used for returned results (see Additional Information at the bottom of page).
+- Select an optional Effect/Speed to be used to transition between Tweets.
 
 ### Templates
 
-Select **Preset** templates or provide your own using JavaScript.  
+Select from the available Templates:
 
-![Twitter Templates](img/v2_media_twitter_templates.png)
+![Twitter Templates](img\v3_media_twitter_templates.png)
 
-**Preset** - Use the drop-down to select an appropriate template.
+### Preset
 
-**Override the template** - Tick in the box to edit the selected template. Please see the section on [Overriding Templates](media_module_twitter.html#overriding_templates) below for further information.
+- Use the drop down to select one of the preset templates:
+
+  ![Preset Templates](img\v3_media_twitter_preset_templates.png)
+
+- Tick to edit the selected template if required. Please see the section on Editing Preset Templates below for further information.
+
+### No Tweets Message
+
+- Provide a **No Tweets Message** to display when there are no Tweets to return, based on the search query.
+
+### Editing Preset Templates
+
+Templates can be edited by selecting a Template using the drop-down and clicking in the **Override the template** checkbox. 
 
 {tip}
-Provide a **No Tweets Message** to display when there are no Tweets to return, based on the search query.
-{/tip}
+The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
 
-### Caching
+- Templates must be designed at a fixed size
+- All elements must use absolute sizing in px, including fonts, margins, widths, heights, etc
+- If positioning is used, it must be from top,left
+- Templates can use bootstrap
+- The aspect ratio will be fixed by [[PRODUCTNAME]] and sized to fit the Region
+- Templates are treated the same as a static image
+  {/tip}
 
-Include a suitable time for the Update Interval in minutes, keeping it as high as possible. This determines how often the Module will request data from your feed.
+Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-## Overriding Templates
+![Twitter Override the Template](img\v3_media_twitter_override_template.png)
 
-Templates can be edited by selecting a template and using the drop-down. Use the tick box to **Override the template**. 
+#### Main Template
 
-Click again on the **Templates** tab to see the available templates to edit:
+Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 
-![Override Template](img/v2_media_twitter_template_override.png)
-
-### Main Template
-
-Toggle **On** the Visual editor to access the inline editor. Click in the preview window to open.
-
-Use the inline editor to enter text and formatting. Use the **Snippets** menu to include merge text fields. 
+Use the Snippets menu to include merge text fields.
 
 {tip}
 If you are using 1.8 the following substitutions are available for use:
@@ -136,7 +148,21 @@ If you are using 1.8 the following substitutions are available for use:
 [ProfileImage][Photo]
 {/tip}
 
-### PHP - Date Format
+#### Optional Stylesheet
+
+This is the CSS to apply to the template structure above.
+
+### Caching
+
+Include a suitable time for the Update Interval in minutes, keeping it as high as possible. This determines how often the Module will request data from the feed.
+
+## Actions 
+
+**Available from v3.0.0**
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+
+### Additional Information
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 

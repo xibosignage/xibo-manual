@@ -2,43 +2,54 @@
 
 # Notifications
 
-Add the Notification Widget to layouts to **display messages** created in the [Notification Drawer](users_notifications.html) of the CMS. 
+Add the Notification Widget to **display messages** created in the [Notification Drawer](users_notifications.html) of the CMS. 
 
-Click on the **Notification Widget** on the toolbar,  add / drag to the target **Region**.  ![Notifications Widget](img/v2_media_notifications_widget.png)
+## Add Widget
+
+Click on **Notification** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop  ![Notifications Widget](img\v2_media_notifications_widget.png)
 
 {tip}
-If you are using 1.8, select **Notification** from the Widget Toolbox to add to your Region Timeline and complete the form fields as explained below. 
+If you are using a 1.8.x CMS, select Notification from the Widget Toolbox to add!
 {/tip}
 
-### General
+On adding, configuration options are shown in the Edit Notification form:
 
-- Provide an optional name
-- Choose to override the default duration
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
+
 - Select if the duration should be per Notification or a total duration for **ALL** Notifications.
 
 ### Configuration
 
-- Complete a maximum notification age for messages you wish to use in this Widget.
-- Select an optional Effect and Speed from the drop-down menu.
+- Complete a maximum notification **Age** for messages you wish to use in this Widget.
+- Select an optional **Effect** and transition **Speed** for the selected effect from the drop-down menu.
 
 ### Templates
 
-Click on the Template header to format the Notifications Template.
+Click on the **Template** tab to format available templates:
 
-![Notification Template](img/v2_media_notifications.png)
+![Notification Template](img\v3_media_notifications_templates.png)
 
 #### Main Template
 
-Toggle **On** the Visual editor to format the **Main Template** using the inline editor. Click in the preview window to open.
+- Select **Main**
+- Enter HTML in the box provided or toggle On the **Visual editor** to format the main template using the inline editor.
+- Click the edit icon to open.
 
-![Notification Editor](img/v2_media_notifications_inline_editor.png)
+![Notification Editor](img\v3_media_notifications_inline_editor.png)
 
-Include text merge fields from the **Snippets** menu to pull in the **Subject** and **Body** information from the Notification Drawer. Click on the **Save** button.
+- Include the text merge fields to format from the **Snippets** menu, to pull in the **Subject** and **Body** information from the Notification Drawer. Click on the **Save** button.
 
-### No Data
+### No Data Template
 
-Include a message to ensure that your audience is not left with blank displays when there are no Notifications to display. 
+This template allows a user to include a message to ensure that the intended audience is not left with blank displays when there are no Notifications to display. 
 
 ### Optional Style Sheet
 
 Include CSS to apply to the template structure.
+
+## Actions 
+
+**Available from v3.0.0**
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.

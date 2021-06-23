@@ -2,6 +2,10 @@
 
 # Shell Command
 
+{tip}
+If you are using a CMS earlier than v3.0.0 please use the following link: [Shell Command](media_module_shellcommand_2.html)
+{/tip}
+
 The Shell Command Module is used to instruct the Display to execute a **Command** outside of the [[PRODUCTNAME]] environment, using the operating system shell.  
 
 {tip}
@@ -20,45 +24,63 @@ This Module is disabled by default for **Xibo in the Cloud** Customers. If you w
 
 The Command is executed when a Layout containing the Shell Command Widget plays at its scheduled time.
 
-A Shell command can be an **"ad hoc"** command string which is passed directly to the shell or a **predefined** **command** configured by an Administrator.
+A Shell command can be a **created** command string which is passed directly to the shell or a **stored command** preconfigured configured by an Administrator.
+
+{nonwhite}
+Further information regarding Command Functionality for Administrators can be found [here](docs/setup/command-functionality)
+{/nonwhite}
+
+## Add Widget
+
+Click on **Shell Command** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![Shell Command Widget](img/v2_media_shellcommand_widget.png)
+
+On adding, configuration options are shown in the Edit Shell Command form:
+
+- Provide a **Name** for ease of identification.
+- Tick the **Set a duration** box and provide a **Duration** to forcibly stop the process. Leave unticked to leave the command to run to its natural conclusion.
+
+![Shell Command Duration](img/v3_media_shell_command_duration.png)
 
 {tip}
+In most cases, commands that are run from a Layout tend to be background commands which trigger something to happen like screen on/off or restart the device etc. In such cases, leave the box unticked.
 
-It is recommended that predefined commands should be used where possible. If you require additional commands, please contact your Administrator to create a new predefined command or provide a command string to include.
-
+If you need to run a command for a fixed period of time, for example where your command shows something on the screen for a time and cannot close itself, [[PRODUCTNAME]] can be instructed to terminate the command it started running by ticking the box and specifying a duration.
 {/tip}
-
-Click on the **Shell Command Widget** on the  toolbar, add / drag to the target **Region**. ![Shell Command Widget](img/v2_media_shellcommand_widget.png)
-
-{tip}
-If you are using 1.8, select **Shell Command** from the Widget Toolbox to add to your Region Timeline.
-{/tip}
-
-### General
-
-- Provide an optional name
-- Choose to override the default duration
 
 ### Configuration
 
-![Shell Command](img/v2_media_shellcommand.png)
+![Shell Command Configuration](img/v3_media_shell_command_configuration.png)
 
-- Use the drop-down menu to select a command.
-- If a command string is to be used, then fields are provided for Windows or Android / Linux compatible commands.
+Use the drop down to select from the Command Type options:
+
+**Stored Command** - allows a user to pick a predefined command from the drop down menu.
+
+**Create Command** - use the command builder and select from the available options to create a command.
+
+![Shell Command Create](img/v3_media_shell_command_create.png)
+
+
+Select **Free Text** to enter a command string or use the drop down menu to select from the available Commands to configure.
+
+Tick to use a global command and enter a Command Line compatible command to work with all Player types.
+
+With Create Command selected, an **Advanced** tab is made available to enable launching the command via Windows Command Line (cmd.exe).
 
 {tip}
-Linux/Android Players require **root access** to use Shell Commands.
-{/tip}
-
-{tip}
-
-Shell Commands do not have a duration, they are executed once and then expire automatically.
-{/tip}
 
 Add the Shell Command Widget to Layouts to execute external commands, such as ‘volume up’ for a Layout with an Audio Widget that is set to play, and ‘volume down’ when the Layout finishes.
 
-{tip}
-
 For commands that are executed on a specific date/time, such as  ‘reboots’, 'turn on/off' on opening/closing times for example, then please see [Events](scheduling_events.html) in the Scheduling section and [Send Command](displays.html) in the Displays section of this User Manual.
-
 {/tip}
+
+{tip}
+Android/Linux Players require **root access** to use Shell Commands.
+{/tip}
+
+## Actions
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+
+{nonwhite}
+For Administrators, further information on Command Functionality can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
+{/nonwhite}

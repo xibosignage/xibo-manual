@@ -1,11 +1,12 @@
 # Layout Designer
 
 {tip}
-If you are using **v2.3** or later, please use the following link: [Layout Designer](layouts_designer.html)
-{/tip}
+**Please note:** This page is for users of a 2.0 - 2.2 CMS. For an alternative version please select from the options below:
 
-{tip}
-If you are using the **1.8 series**, please use the following link: [Layout Designer 1.8](layouts_designer_1.8.html)
+- 1.8.x CMS click [here](layouts_designer_1.8.html)
+- 2.x CMS click [here](layouts_designer_2.html)
+- 3.x CMS click [here](layouts_designer.html)
+
 {/tip}
 
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
@@ -99,7 +100,7 @@ Located on the bottom right of the toolbar, select from the menu of Actions that
 
 - **Schedule Now**  - schedule published Layouts onto one or more Displays directly from the Layout Designer.
 
-- **Save Template** - save your published designs by creating a [Template](layouts_templates.html) for reuse. Saving a template will store an exact copy of the Layout, including Regions, Playlists and media.
+- **Save Template** - save your published designs by creating a [Template](layouts_templates_2.html) for reuse. Saving a template will store an exact copy of the Layout, including Regions, Playlists and media.
 
   {tip}
   Invalid Layouts cannot be published.

@@ -2,54 +2,55 @@
 
 # Clock
 
-The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Clock** as well as a **Countdown** on Layouts.
+The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Clock**
 
-Click on the **Clock Widget** on the toolbar,  add / drag to the target **Region**.  ![Clock Widget](img/v2_media_clock_widget.png)
+## Add Widget
+
+Click on **Clock** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Clock Widget](img\v2_media_clock_widget.png)
 
 {tip}
-If you are using 1.8, select **Clock** from the Widget Toolbox to add to your Region Timeline.
+If you are using a 1.8.x CMS, select Chart from the Widget Toolbox to add!
 {/tip}
 
-### General
+On adding, configuration options are shown in the Edit Clock form:
 
-- Provide an optional name
-- Choose to override the default duration
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
 
 ### Appearance
 
 Use the drop-down menu to select the type of clock to display:
 
-#### Analogue
+![Clock Appearance](img\v3_media_clock_appearance.png)
 
-The Analogue Clock is a traditional clock face available in a Light or Dark theme (black or white face).
+- **Analogue** is a traditional clock face available in a Light or Dark theme (black or white face).
+- **Digital** has an additional **Editor** tab to enter formatting.
 
-![Add Analogue Clock](img/v2_media_clock_analogue.png)
+Enter text or HTML in the box provided or toggle on the Visual editor and click on the edit icon to access the inline editor:
 
+![Digital Editor](img/v3_media_clock_editor.png)
 
-
-#### Digital
-
-The Digital Clock has an additional Editor tab so that a template can be entered for the Digital Clock. 
-
-![Add Digital Clock](img/v2_media_clock_digital.png)
-
-The font, size, colour and other properties of the template can be changed.  Toggle on the **Visual editor** to access the inline editor and click on the edit icon in the Preview window.
-
-Enter text and formatting, use the **Snippets** menu to include available merge fields. See the section **Formatting the time** for further information.
+Use the editor to select font, size, colour and use **Snippets** to include available merge fields. 
 
 {tip}
-If you are using 1.8 use the text editor at the bottom of the form to enter a format for the clock.
+See the section at the bottom of the page for further information on available formats!
 {/tip}
 
-#### Flip Clock
+{tip}
+If you are using 1.8.x CMS, use the text editor at the bottom of the form to format! 
+{/tip}
 
-The Flip Clock is a pre-formatted clock that animates a "flip" for each hour, minute and seconds (optional) elapsed.
+- **Flip Clock** is a pre-formatted clock that animates a "flip" for each hour, minute and seconds (optional) elapsed.
 
-![Add Flip Clock](img/v2_media_clock_flip.png)
+{tip}
+The **Flip Clock** has Hourly, Minute and Daily **Counter** options which can run from a specified date/time to give a countdown!
+{/tip}
 
+## Actions 
 
+**Available from v3.0.0**
 
-The **Flip Clock** also has Hourly, Minute and Daily **Counter** options which run from a specified date/time to give a Countdown on Layouts.
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
 ## Available Formatting
 

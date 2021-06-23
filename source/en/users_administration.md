@@ -2,13 +2,17 @@
 
 # User Administration
 
-Users are administered in the CMS by clicking on Users under the Administration section on the menu. The Users grid will open for you to manage and add Users.
+{tip}
+If you are using a CMS earlier than v3.0.0, please use the following link: [Users Administration](users_administration_2.html)
+{/tip}
 
-![Users Admin Grid](img/users_admin_grid.png)
+Users are administered in the CMS by clicking on **Users** under the **Administration** section on the main menu. The Users [Grid](tour_grids.html) will open for you to add new and manage existing Users.
+
+![Users Admin Grid](img/v3_users_admin_grid.png)
 
 {nonwhite}
 {cloud}
-Xibo in the Cloud customers have access to the helpdesk as part of the hosting service. Please ensure that the user account named `xibo_admin` is not modified or removed so that our agents can assist you with your CMS as and when required.
+Xibo in the Cloud customers have access to the helpdesk as part of the hosting service. Please ensure that the user account named `xibo_admin` is not modified or removed so that our helpdesk agents can assist you with your CMS as and when required.
 {/cloud}
 {/nonwhite}
 
@@ -20,47 +24,105 @@ Please ensure that the user account named `cms_admin` is not modified or removed
 
 ## Adding Users
 
-Click on the **Add User** button and complete the form fields as required.
+Click on the **Add User** button. 
 
-![Users Add Form](img/users_add_form.png)
+There are two ways in which Users can be added, via an onboarding wizard using pre-configured User Groups or information manually added.
 
-### Details
+![Add User](img/v3_user_admin_add.png)
 
-**Username** - create a Username for the User, to be used for **login** and identifying the User.
+Select from one of the pre-configured **Groups** to go through the **Onboarding Wizard** or select the last option to **Manually create a user** to be taken to the **Add User** form:
 
-**Password** - create a Password for the User, to be used for **login**.
+### Onboarding wizard
 
-**Email** - include an email address for the User (used for password reset / CMS notifications).
+- Select a Group and click **Next**
 
-**Homepage** - select the first page or choice of **Dashboard** the User will see after login. 
+  {tip}
+  [Features](users_features_and_sharing.html) are pre-configured for the groups common functions and can be modified to suit by Editing the User record!
+  {/tip}
 
-**User Type** - use the drop down to select from the three **User Types** available.
+  ![User Credentials](img/v3_user_admin_user_credentials.png)
 
-**Library Quota** -  assign a quota to determine the **maximum** amount of content allowed to be uploaded to the Library. 
+- Create a **User Name** and **Password** which will be used as their login and to identify the User within the CMS.
 
-**Initial User Group** - select which group the **User** should belong to.
+  {tip}
+  The password must contain at least 8 characters and include upper and lower case letters as well as at least one number or special character!
+  {/tip}
+
+- Complete the Email address for this user, click **Next**
+
+  {tip}
+  A user can complete/edit their email address after login from the [User Profile!](tour_user_profile.html)
+  {/tip}
+
+- Select from available **Folders** to share objects with the new User.
+
+  {tip}
+  All objects contained or moved into a Folder will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been enabled for Users/User Groups!
+  {/tip}
+  
+  ![Folder Select](img/v3_users_new_folders.png)
+
+{nonwhite}
+For further information regarding Folder Administration click [here!](https://xibo.org.uk/docs/setup/folders-administration)
+{/nonwhite}
+
+- **Save**
+
+  The newly created User will be added and can be viewed in the Grid.
+
+### Add User form
+
+![New User Form](img/v3_users_add_user_form.png)
 
 {tip}
-
-Use **System Notifications** as the Initial User Group for Users that do not require permission to anything within the CMS but need notification emails when there are system issues (System Administrators).
-
+To always show the manual Add User form when adding new user's to the system instead of the onboarding wizard, use the option available in **Preferences** from the [User Profile](tour_user_profile.html)!
 {/tip}
 
-### Reference
+#### Details
 
-Optionally complete information to be used as a reference to view and organise your Users.
+- Create a **User Name** and **Password** which will be used as their login and to identify the User within the CMS.
 
-### Notifications
+  {tip}
+  The password must contain at least 8 characters and include upper and lower case letters as well as at least one number or special character!
+  {/tip}
 
-Choose if the User should receive Notifications by ticking the checkboxes.
+- Complete the Email address for this user, click **Next**
 
-### Options
+  {tip}
+  A user can complete/edit their email address after login from the [User Profile!](tour_user_profile.html)
+  {/tip}
 
-Select the options as necessary for the User.
+- Use the drop down to select from the three available [User Types](user_types.html)
+
+- Assign the maximum amount of content allowed to be uploaded to the Library for this User. Enter 0 for no quota to be applied.
+
+- Select which [User Group](users_groups.html) this User should belong to so that they can access the relevant parts of the system as required.
+
+  {tip}
+  Use **System Notifications** as the Initial User Group for Users that do not require permission to anything within the CMS but need notification emails when there are system issues as System Administrators!
+  {/tip}
+
+- Use the drop down to select from the choice of [Dashboards](tour_status_dashboards.html) for the Users 'Homepage' which the User will be taken to after login.
+
+#### Reference
+
+Use this tab to optionally complete information to be used as a reference to view and organise your Users.
+
+#### Notifications
+
+- Choose if the User should receive **System** or **Display** Notifications by ticking the checkboxes.
+
+
+#### Options
+
+Further options can be applied for the User as required:
+
+- Hide the side navigational bar.
+- Hide the New User guide when they log in.
+- Force a User to change their password the next time they log in.
 
 {tip}
 [[PRODUCTNAME]] doesn't place any limits on the number of Users that can be added.
-
 {/tip}
 
 {nonwhite}
@@ -75,28 +137,23 @@ With **Xibo in the Cloud** we do not impose limits on concurrent access or licen
 
 ## Editing Users
 
-Use the row menu for the User record you wish to make changes to and select **Edit**.
+Use the Row Menu for a User to make changes by selecting from the options available:
 
-![Users Edit Row Menu](img/users_edit_row_menu.png)
+![Users Edit Row Menu](img/v3_users_row_menu.png)
 
-An Edit User form will open so that changes can be made as needed.
+{tip}
+Manage [User Group](users_groups.html) membership as well as [Features](users_features_and_sharing.html) from this menu!
+{/tip}
 
-![Users Edit Form](img/users_edit_form.png)
+Click on **Edit** to open the **Edit User** form so that changes can be made to the User record as required.
 
-## Force Password Change
 
-Use to ensure that **new Users** change the password first given to them to access the system or if a User account password has been **reset**.
-Edit the User record and click on the Options tab. Tick the box **Force Password Change**, Save.
 
-![Users Edit Options](img/users_edit_options.png)
-
-Users will be redirected to a page to reset their password, the next time they log in.
-
-  
+![Users Edit Form](img/v3_users_edit_form.png)
 
 ## Reset Two Factor Authentication
 
-If a User loses access to their email or Google Authenticator app and have no access to any saved recovery codes, tick to reset.
+If a User loses access to their email or Google Authenticator app and has no access to any saved recovery codes, use the check box and tick to **Reset Two Factor Authentication**.
 
 Once ticked the Two Factor Authentication will be set to ‘Off’ for this **User Profile** with any stored secret codes cleared. The User can now set up [Two Factor Authentication](tour_two_factor_authentication.html) from the User Profile as before.
 
@@ -119,15 +176,25 @@ WHERE userId = {yourUserId}
 
 {/tip}
 
+
+
+## Force Password Change
+
+Use this function to ensure that 'new' Users change the password first given to them to access the system or if a User account password has been reset.
+Click on the **Options** tab and tick the box **Force Password Change**, Save.
+
+![Users Edit Options](img/users_edit_options.png)
+
+Users will be redirected to a page to reset their password, the next time they log in.
+
+  
+
 ## Deleting Users
 
-Delete a User in the same way by using the row menu for the selected User.
-A confirmation form will open up and give you further options regarding the items currently owned by that User.
+Remove a User from the Row Menu, **Delete** option. A confirmation form will open up and give you further options regarding the items currently owned by that User.
 
 {tip}
-
 Deleting a User is irreversible and will remove all their owned items including; Media, Layouts and Schedules, even if these items are being used by other Users in the system. **Reassign items** to another User using the selector to make them the new owner of all the items currently owned by the User you wish to delete. Alternatively, use the **Retired** checkbox at the bottom of the Edit User form so that the items remain in use in the system with the User unable to log in. 
-
 {/tip}
 
 ## My Applications
@@ -143,7 +210,5 @@ Before using an **Application** each User must authorise the application to act 
   ![Users My Applications](img/users_my_applications_button.png)
 
 {tip}
-
 At the current time the CMS does not provide individual Users with a method of revoking access to an application, however, an admin can remove an application completely.
-
 {/tip}

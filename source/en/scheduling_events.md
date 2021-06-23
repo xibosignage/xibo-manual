@@ -2,17 +2,15 @@
 
 # Events
 
-Event types are **Layouts**,**Campaigns**, **Overlay Layouts**, **Interrupt Layouts** or **Commands** which can be assigned to Displays/Display Groups at specific dates and times.
+Events are administered from the Schedule section of the m main menu.
 
-Events are administered from the Schedule section from the menu.
+Layouts, Campaigns, Overlay Layouts, Interrupt Layouts and Command **Event Types** can be assigned to Displays/Display Groups to be shown at specific dates and times.
 
 ## Add Event
 
 Click on the **Add Event** button on the calendar to schedule an Event.
 
-![Add Scheduled Event](img/schedule_event_add.png)
-
-## General
+![Add Scheduled Event](img\schedule_event_add.png)
 
 ### Event Type
 
@@ -21,33 +19,26 @@ Use the drop-down to select an Event from the 5 Types supported:
 - **Layout** - select Published Layouts.
 - **Campaign** - select designed Campaigns. 
 - **Overlay Layout** - select a specifically designed Layout to schedule as an [Overlay Layout](layouts_overlay.html).
-- **Interrupt Layout** - select a Layout to play for a specified **Share of Voice** to interrupt your usual schedule. (**Please note:** This feature is currently supported by the Android Player only from v2 R204.  We are working on bringing this feature to all Players.)
+- **Interrupt Layout** (available from v2.2.0) - select a Layout to play for a specified **Share of Voice** to interrupt your usual schedule. (**Please note:** This feature is currently supported by the Android Player from R204 and Windows from R253. We are working on bringing this feature to all Players.)
 - **Command** -  select from a predefined command.
 
 {tip}
-Events, with the exception of Interrupt and Command Events, can also be added using the [Schedule Now](scheduling_now.html) function.{/tip}
+Events, with the exception of Interrupt and Command Events, can also be added using the [Schedule Now](scheduling_now.html) function.
+{/tip}
 
 ### Display 
 
-Click in the field to select one or more Displays/Display Groups to show the event content on.
+Click in the Display field to select one or more Displays/Display Groups to show the event content on.
 
 ### Dayparting
 
 **Custom**/**Always** or **User** created Dayparts can be selected using the drop-down menu. 
 
-Select **Custom** to specify your own start/end dates/time. Click in the form field to open the date and time picker. 
-
-{tip}
-Start and end times can be free typed to get the exact timings required.
-{/tip}
+With Custom selected, use the date picker to select Start/End dates and times.
 
 ### Layout/Campaign
 
 Use the drop-down menu to select the Layout or Campaign to schedule.
-
-{tip}
-This list is dependent on the permissions for that User.
-{/tip}
 
 ### Preview
 
@@ -123,26 +114,22 @@ E.g. With a **Weekly** Repeat you could specify to repeat each Wednesday and Fri
 {/tip}
 
 {tip}
-(Available in version 2.0 and later) **Monthly** Repeats can be determined by the Event date or by the day in the month the event falls on. 
+(Available from version 2.0 and later) **Monthly** Repeats can be determined by the Event date or by the day in the month the event falls on. 
 
 For example: an event which is scheduled on 06/03/2019 can be set to repeat on the 6th day of every month or the 1st Wednesday of each month (as 06/03/2019 falls on a Wednesday). 
 {/tip}
 
-To completely remove all instances of a Recurring Event, click on the **Delete** button at the bottom of the form.
+- To completely remove all instances of a Recurring Event, click on the **Delete** button at the bottom of the form.
 
 From v2.3, an **individual recurrence** can be deleted from the Schedule. 
 
-![Deleting Recurring Events](img/v2.3_scheduling_deleting_repeats.png)
+![Deleting Recurring Events](img\v2.3_scheduling_deleting_repeats.png)
 
-Click on the Recurring event you wish to remove from the Schedule, to open the **Edit Event** form.
+- Click on the Recurring event you wish to remove from the Schedule, to open the **Edit Event** form.
 
+![Delete from Schedule](img\v2.3_scheduling_delete_from_schedule.png)
 
-
-
-
-![Delete from Schedule](img/v2.3_scheduling_delete_from_schedule.png)
-
-Click on the **Delete from Schedule** button to remove this singular event from the schedule and remove it from all Displays.
+- Click on the **Delete from Schedule** button to remove this singular event from the schedule and remove it from all Displays.
 
 {tip}
 Care should  be taken if amendments are made to the Schedule after deleting individual instances of a recurring schedule.  Previously deleted instances could be recreated with any edits made to the existing Schedule.
@@ -150,16 +137,22 @@ Care should  be taken if amendments are made to the Schedule after deleting indi
 
 ## Reminders
 
-From v2.2.0 create a set of reminders to be sent to the [Notification Drawer](users_notifications.html) for your scheduled Events. 
+From v2.2.0 create a set of reminders to be sent to the [Notification Drawer](users_notifications.html) as well as notified by email for selected scheduled Events. 
 
 {tip}
 Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to set up of Reminders.
 {/tip}
 
-![Event Reminders](img/v2_scheduling_event_reminders.png)
+![Event Reminders](img\v3_scheduling_event_reminders.png)
 
 Use the form fields to define a reminder, use the + icon to add additional fields.
-Tick the box if you wish to be notified email. This will be sent to the email address as set for your [User Profile](users_administration.html>).
+Tick the box if you wish to be notified email, this will be sent to the email address as set for your [User Profile](users_administration.html>).
+
+## Geo Location
+
+Available from v2.3.0 This is currently supported in Players from Windows R253 and Android R206. 
+
+Tick the checkbox to make this Event location aware. Further details can be found on the [Geo Scheduling](scheduling_geolocation.html) page.
 
 ## Edit / Delete
 
@@ -170,7 +163,7 @@ Click on any **Event/Icon** in the calendar to edit form fields or to remove com
 Located at the bottom of the Edit form, the **Duplicate** button allows for event details to be duplicated and configured for a new event. Once clicked a pop up will appear to confirm that a new form has been loaded so that amendments can be made.
 
 {tip}
-The new loaded form will not have a **Duplicate** button.
+The new loaded form will not have a **Duplicate** button!
 {/tip}
 
-**It is important to note that if at any time there are no Layouts/Campaigns Scheduled to run, the Default Layout for the display will run automatically.**
+**It is important to note that if at any time there are no Layouts/Campaigns Scheduled to run, the Default Layout assigned for the display will run automatically.**

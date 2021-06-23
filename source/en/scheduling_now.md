@@ -8,16 +8,17 @@ This is useful for displaying temporary/important notices on Displays.
 
 {/tip}
 
-Schedule Now is available across the CMS and is available from the following pages:
+Schedule Now is available from the following pages:
 
 - **Campaign** - row menu for selected Campaign
 - **Layout** - row menu for selected Layout
 - **Layout Designer** - on the Actions tab
 - **Display** - row menu for selected Display
 
-![](img/schedule_schedule_now_form.png)
+![Schedule Now Form](img/v3_schedule_schedule_now.png)
 
-Complete the form fields as required.
+- Complete the form fields as required.
+- The Event will be added to the [Schedule](scheduling_calendar.html) to view/edit.
 
 ## Time zones 
 

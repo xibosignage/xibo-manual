@@ -2,19 +2,19 @@
 
 # Layout Designer
 
+{tip}
+If you are using a CMS earlier than v3.0.0 please select from the options below:
+
+- 1.8x CMS click [here](layouts_designer_1.8.html)
+- 2.x CMS click [here](layouts_designer_2.html)
+
+{/tip}
+
 The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
 
-{tip}
-If you are using the **1.8** series CMS, please use the following link: [Layout Designer 1.8](layouts_designer_1.8.html)
-{/tip}
+[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the **Layout Designer** will open:
 
-{tip}
-If you are using a version earlier than **2.3** for the **v2 CMS**, please use the following link: [v2 Layout Designer](layouts_designer_2.0.html). Speak to your Administrator about upgrading to the latest version!
-{/tip}
-
-[[PRODUCTNAME]] makes layout design simple through the use of **drag and drop**,**interactive previewing** and **design flexibility**. On adding a new Layout, the Layout Designer will open:
-
-![Layout Designer](img/v2.3_layouts_designer.png)
+![Layout Designer](img\v3_layouts_designer.png)
 
 ## Top Toolbar
 
@@ -29,24 +29,22 @@ A status indicator is shown to the left of the top toolbar to show you the curre
 ![Assessed Player Side Status](img/v2.3_layouts_assessed_player_side_status.png) - This Layout contains media that can only be assessed Player side, and can be scheduled once Published. 
 
 {tip}
-This is a normal Layout status to have if your Layout contains online content, such as a webpage etc. The CMS cannot say that the Player will display the content as it is not sent directly from the CMS (as with file based media, images, videos etc,) and is instead cached (stored) Player side.  The Player will need to have a reliable internet connection to successfully display such content.
+The last status indicator is a normal Layout status to have if your Layout contains online content, such as a webpage etc. The CMS cannot say that the Player will display the content as it is not sent directly from the CMS (as with file based media, images, videos etc,) and is instead cached (stored) Player side.  The Player will need to have a reliable internet connection to successfully display such content.
 {/tip}
 
 {tip}
 Hover over the status icon to see further information regarding the status you are seeing!
 
-![Status Indicator Tip](img/v2.3_layouts_layout_status_tip.png)
+![Status Indicator Tip](img\v3_layouts_status_tip.png)
 
 {/tip}
 
+The total **Duration** of the selected Layout is displayed here in seconds, which updates each time a **Media** item is added or an existing **Duration** is edited, along with the Layout **Dimensions** applied from the selected **Resolution** on the Edit Layout form.
 
-
-The total **Duration** of the selected Layout is displayed here in seconds, which updates each time a media item is added or an existing duration is edited, along with the Layout **Dimensions** applied from the selected **Resolution** on the Edit Layout form.
-
-![Layout Status](img/v2.3_layouts_layout_status.png)
+![Layout Status](img/v3_layout_status_bar.png)
 
 {tip}
-The overall Layout duration is always based on the longest running Region on the Layout.
+The overall Layout duration is always based on the longest running [Region](layouts_regions.html) on the Layout.
 {/tip}
 
 {tip}
@@ -55,47 +53,55 @@ A Layout must contain at least one Region **and** each Region must contain at le
 
 ### Layout Selector
 
-To the right of the toolbar, the **Layout selector** provides easy navigation between all Layouts the logged in User has permission to edit without having to leave the Layout Designer screen. Use the dropdown menu to change the Layout you are currently viewing/editing.
+The **Layout selector** provides easy navigation between all Layouts the logged in User has permission to edit without having to leave the Layout Designer page. Use the dropdown menu to change the Layout you are currently viewing/editing.
 
-### Actions Menu
+{tip}
+Use the checkbox to only access your own Layouts!
+{/tip}
 
-Located next to the Layout Selector is a menu of **Actions** that can be performed for Layouts, depending on the status of the Layout.
+### Menu
 
-### Layouts in a Draft status have the following available Actions:
+Located next to the Layout Selector is a menu of options that can be performed for Layouts, depending on the status of the Layout.
 
-![Draft Actions](img/v2.3_layouts_draft_actions.png)
+### Layouts in a Draft status have the following: 
 
-- #### Discard
+![Draft Actions](img\v3_layout_unlock_layout.png)
+
+- #### Publish layout
+
+  Once you are happy with your designs, set your Layout to **Publish** ready to be Scheduled.
+  
+  Layouts can be set to be **Published** straight away with updates automatically pushed to Layouts that are in the schedule. A **Publish Date** can also be selected to Publish a Layout at a specified date and time.
+  
+  ![Publish Date](img\v3_layouts_publish_selected_time.png)
+  
+  {tip}
+  You can also use the **Row Menu** for a selected draft Layout to set to **Publish** immediately or on a set date..
+  {/tip}
+  
+  {tip}
+  Published Layouts can be viewed in a read-only mode and 'Checked out' to create a draft Layout to make any edits needed.
+  {/tip}
+  
+- #### Discard layout
 
   Any changes made to the Layout can be completely discarded, reverting the Layout to the previous Published version. 
 
-![Discard Layout](img/v2.3_layouts_discard_layout.png)
+![Discard Layout](img\v2.3_layouts_discard_layout.png)
 
-Clicking on Discard will delete the draft and leave the Published version untouched.
+​		Clicking on **Discard** will delete the draft and leave the Published version untouched.
 
-- #### Publish 
+- #### Unlock Layout (visible when another User is attempting to edit the same Layout)
 
-  Once you are happy with your designs, set your Layout to **Publish** ready to be Scheduled.
+  If a User attempts to edit a Layout that is already being edited by a User, the Layout will lock. The User will be locked out from editing the Layout for a specified amount of time (as shown in the lock message) or until the Layout is unlocked. 
 
-{tip}
-Invalid Layouts will not be published. On publishing, an error message will show as to why your Layout is invalid, which you will need to rectify before being able to Publish.
-{/tip}
+  {tip}
+  On selecting the **Unlock Layout** button, the User will be redirected to the Layout Grid.
+  {/tip}
 
-​	Layouts can be set to be **Published** straight away with updates automatically pushed to Layouts that are 	in the schedule. A **Publish Date** can also be selected to Publish a Layout at a specified date and time.
+### Layouts in a Published status have the following:
 
-![Publish Selected Time](img/v2_layouts_publish_selected_time.png)
-
-{tip}
-You can also use the **row menu** for a selected draft Layout to set a **Publish time**.
-{/tip}
-
-{tip}
-Published Layouts can be viewed in a read-only mode and 'Checked out' to create a draft Layout to make any edits needed.
-{/tip}
-
-### Layouts in a Published status have the following available Actions:
-
-![Published Actions](img/v2.3_layouts_published_actions.png)
+![Published Actions](img\v3_layouts_published_actions.png)
 
 - #### Checkout
 
@@ -103,54 +109,59 @@ Published Layouts can be viewed in a read-only mode and 'Checked out' to create 
 
 - #### Schedule Now 
 
-  Schedule published Layouts onto one or more Displays directly from the Layout Designer.
+  Schedule published Layouts onto one or more Displays directly from the Layout Designer. 
 
 - #### Save Template
 
-  Save your published designs by creating a [Template](layouts_templates.html) for reuse. Saving a template will store an exact copy of the Layout, including Regions, Playlists and media.
+  Use your design as a [Template](layouts_templates.html) for creating additional Layouts.
+
+- #### Unlock Layout
+
+  As before.
 
 ## Layout View
 
-As you create your Layout, the Layout View will update, so that you can view all the elements as you go to ensure the correct positioning of [Regions](layouts_regions.html) and the correct ordering of [Widgets](layouts_modules.html), so it will play as you intend.
+As you create your Layout, the Layout View will update so that you can view all the elements as you go to ensure the correct positioning of [Regions](layouts_regions.html) and the correct ordering of [Widgets](layouts_modules.html), so it will play as you intend.
 
-![Layout View](img/v2.3_layouts_layout_view.png)
+![Layout View](img\v3_layouts_view.png)
 
 ### Edit Layout Mode
 
-All new Layouts, by default, have one full screen empty Region, represented as a semi-transparent overlay.  Use the **Edit Layout Mode** to add, position and resize **Regions**, by clicking on the Edit icon to open the editor.
+All new Layouts, by default, have one full screen empty **Region**, represented as a semi-transparent overlay.  Use the **Edit Layout Mode** to add, position and resize Regions, by clicking on the **Edit icon** to open the editor.
 
-![Layout Navigator](img/v2.3_layouts_layout_editor_icon.png)
+![Layout Navigator](img\v3_layouts_editor_button.png)
 
-Clicking on a **Region** in the opened editor, opens the **Region Options** form which allows for refinement of  **Positioning** and the application of **Exit Transitions** for when the Region finishes.
+Clicking on a **Region** in the opened editor, opens the **Region Options** form which allows for refinement of  **Positioning** and the application of **Exit Transitions** for when the Region finishes as well as configuring **Actions** for the Region.
 
-![Region Options](img/v2.3_layouts_region_options.png)
+![Region Options](img\v3_layouts_region_options.png)
 
-Use the arrow, in the bottom left corner of this window, to return to the Layout View.
+Use the arrow, in the bottom left corner of this window, to return to the **Layout View**.
 
 ## Preview
 
 Play a full **Preview** of your Layout by clicking on the **Play** button located at the bottom left of the Layout View window. 
 
-![Layout Preview](img/v2.3_layouts_layout_preview.png)
+![Layout Preview](img\v3_layouts_preview.png)
 
 {tip}
-View your Preview in full screen by clicking on the icon in the bottom right corner of the screen then press Play.
+View your Preview in full screen by clicking on the icon in the bottom right corner of this window to toggle to full screen then press Play.
 {/tip}
 
 Click on a **Widget** to view the media content and use the arrows to cycle through all Widgets that have been assigned to that **Region**. 
 
-**Please note:** Video files will only play in the full Layout Preview.
-
-![Widget Preview](img/v2.3_layouts_widget_preview.png)
-
 {tip}
-Return to the **Layout View** by clicking on the back arrow at the bottom left of the Preview screen.
+Video files will only play in the full Layout Preview!
 {/tip}
+
+![Widget Preview](img\v3_layouts_widget_preview.png)
+
+Return to the **Layout View** by clicking on the back arrow at the bottom left of the Preview screen.
+
 
 {tip}
 When you have multiple Regions, easily Preview all of the Media assigned by toggling to full screen and using the arrow tabs for each Region to cycle through the content.
 
-![Multiple Region Preview](img/v2.3_layouts_multiple_region_preview.png)
+![Multiple Region Preview](img\v3_layouts_multiple_region_preview.png)!
 
 {/tip}
 
@@ -158,17 +169,40 @@ When you have multiple Regions, easily Preview all of the Media assigned by togg
 
 Edit aspects of your **Layout**,**Regions** and assigned **Widgets** using the available options in the **Edit **forms. 
 
-![Layout Edit Form](img/v2.3_layouts_layout_edit_form.png)
+![Layout Edit Form](img\v3_layouts_edit_form.png)
 
-Once assigned, click on **Widgets** from the **Timeline** to open the available edit options for that media item.
+{tip}
+The Edit Layout form is available when in **Layout View**, to add background colour or image, change the resolution etc.
+{/tip}
 
-![Media Edit Form](img/v2.3_layouts_layout_media_edit_form.png)
+Once assigned, click on **Widgets** from the **Timeline** to open the available options in the Edit form for that media item.
+
+![Media Edit Form](img\v3_layouts_edit_media_form.png)
+
+{tip}
+**Layouts**, **Regions** and **Widgets** can have **Actions** attached to effect changes to the Layout, triggered by Touch, click or by webhook. [Interactive Actions](layouts_interactive_actions.html) are created and managed from the **Actions** tab on Edit forms.
+{/tip}
 
 ## Layout Timeline 
 
-The [Layout Timeline](layouts_timeline.html) displays the duration of individual Widgets and gives you an overview of how media will play on the Layout.
+The [Layout Timeline](layouts_timeline.html) displays the duration of individual Widgets and gives you an overview of how your configured media will play on the Layout.
 
-![Region Timeline](img/v2.3_layouts_region_timeline.png)
+![Region Timeline](img\v3_layouts_region_timeline.png)
+
+## Interactive Drawer
+
+Located under the Timeline, the Interactive Drawer is used to add Widgets to be used when configuring [Interactive Actions](layouts_interactive_actions.html).
+
+![Interactive Drawer](img\v3_layouts_interactive_drawer.png)
+
+
+Add Widgets or Library items in the same way as adding to Regions by clicking to add or by drag and drop.
+
+Once added, set a **Target Region** and configure using the available **Edit** options.
+
+{tip}
+Use the Search field here to look for Widgets already added to the drawer!
+{/tip}
 
 ## Bottom Toolbar
 
@@ -177,6 +211,6 @@ Located on the bottom left of the toolbar use the buttons to add [Library](layou
 ![Bottom Toolbar](img/v2.3_layouts_bottom_toolbar.png)
 
 {tip}
-Further actions will show, when available, to Undo changes and Delete.
+Further actions will show on this toolbar when available such as Undo changes and Delete!
 {/tip}
 

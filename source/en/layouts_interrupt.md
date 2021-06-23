@@ -28,20 +28,20 @@ Interrupt Layouts are selected as an **Event type** when Scheduling an Event.
 
 Once selected, complete the form fields:
 
-![Interrupt Layout](img/v2_layouts_schedule_interrupt.png)
+![Interrupt Layout](img/v3_layouts_schedule_interrupt.png)
 
 
 
 ### Share of Voice
 
-Complete the percentage (0 - 100%) of the events duration (the difference between the from date and the to date) that the **Interrupt Layout** should occupy the usual schedule.
+Enter the amount of time the Layout should be shown in seconds per hour or as a percentage (0 - 100%) of the events duration (the difference between the from date and the to date) that the **Interrupt Layout** should occupy the usual schedule.
 
 {tip}
 **Example Scenario**:
 
 I have created an Interrupt Layout with 1 full size Region that has two Text Widgets assigned, containing my 'Announcements', both of which have durations of 30 seconds, which I have scheduled for 1 hour.
 
-I have completed a Share of Voice percentage of 50%. [[PRODUCTNAME]] will calculate how many and how often the interrupt intervals should occur to occupy the screen for half of the 
+I have completed a Share of Voice percentage of 50%. [[PRODUCTNAME]] will calculate how many and how often the interrupt intervals should occur to occupy the screen for half of the play time.
 
 When the usual schedule is interrupted you should see the first announcement for its total duration of 30 seconds before resuming to the previously interrupted Layout. Then at the next interruption the second announcement for 30 seconds then the previous Layout is resumed and so on for the scheduled hour.
 {/tip}

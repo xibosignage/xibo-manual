@@ -2,66 +2,74 @@
 
 # Text
 
-Add Text directly onto a Layout by using the Text Widget. 
+The Text Widget allows for the addition of text onto a Layout.
 
-Click on the **Text Widget** on the toolbar, add / drag to the target **Region**. ![Text Widget](img/v2_media_text_widget.png)
+## Add Widget
+
+Click on **Text** from the  [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Text Widget](img\v2_media_text_widget.png)
 
 {tip}
-If you are using 1.8, select **Text** from the Widget Toolbox to add to your Region Timeline.
+If you are using a 1.8.x CMS, select Text from the Widget Toolbox to add. 
 {/tip}
 
 ### Text Editor
 
-![Edit Text](img/v2_media_text_edit.png)
+![Edit Text](img\v3_media_text_edit.png)
 
-Click in the Preview window to open the inline editor to enter text and apply formatting.
+Click the edit icon in the Preview window to open the inline editor to enter text and apply formatting.
+
+![Enter Text](img\v3_media_text_inline_editor.png)
 
 The text editor will open with the same background as selected for the Layout and will use a complimentary text colour for the chosen background colour.
 
-![Enter Text](img/v2_media_enter_text.png)
-
 The thin red border in the text editing window represents the **Region** size. Ensure that formatted text remains within this border.
 
-Optionally use date/time merge tags, available from the **Snippets** menu. 
+Optionally include date/time merge tags, available from the **Snippets** menu. 
 
 {tip}
-From v2.1.0, [Date] tags can include an optional [Date|format] so that [Date] can be used multiple times in a Template with different formats which allows for different styling for each element of the date.
+From v2.1.0, [Date] tags can include an optional [Date|format] so that [Date] can be used multiple times in a Template each with different formats.
 
-![Text Date Format](img/v2_media_text_dateformat.png)
-
+![Text Date Format](img\v3_media_text_snippets.png)
 {/tip}
 
-### General
+Configuration options are shown in the Edit Text form:
 
-- Provide an optional name.
-
-- Choose to override the default duration.
-
-  {tip}
-
-  It is typical to have a text item as the only media item assigned to a Region, therefore the duration can be set to a low value.
-
-  {/tip}
+- Provide a **Name** for ease of identification.
+- Choose to override the default **duration** if required.
 
 ### Effect
 
-- Use the drop-down menu to select an effect to be applied to your text.
-- Select a speed for the selected effect.
-- Optionally add a background colour.
-- Include a selector to use for marquee items.
+- Optionally select a **Background Colour** to use.
+- Select an **Effect** to use from the dropdown menu.
+- Include a **Speed** for the selected effect.
+- Include a selector to use for stacking marquee items in a line when scrolling left/right.
 
 ### Templates
 
-Click on the Template header to enter HTML directly into the box provided.
+Select from the available Templates:
 
-![Media Text](img/v2_media_text.png)
+![Text Templates](img\v3_media_text_templates.png)
+
+#### Main Template
+
+Toggle Off the Visual editor to enter text/HTML in the box provided.
+
+#### Optional JavaScript Template
+
+Provide JavaScript in the box provided.
 
 {tip}
 
 **Additional Fonts** can be added to this editor by uploading files to the **Library**. Please be aware that fonts have 'preferences' built into them known as OS/2 tags. [[PRODUCTNAME]] checks these OS/2 preferences, and can use fonts with OS/2 tags 0 or 8. Fonts with other tags may not display correctly or you may receive an error on upload.
 {/tip}
 
-## Available Formatting
+### Actions 
+
+**Available from v3.0.0**
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+
+## Additional Information
 
 Date / time can be formatted by providing "tokens" that sit between square brackets [] in the template area.
 
