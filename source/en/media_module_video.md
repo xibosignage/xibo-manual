@@ -6,7 +6,7 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [Video](media_module_video_2.html)
 {/tip}
 
-The Media Module allows for video files to be played when assigned to a Timeline. Video files are uploaded to the [Library](media_library) which are then cached for off-line playback.
+The Video Module allows for video files to be played when assigned to a Timeline. Video files are uploaded to the [Library](media_library) which are then cached for off-line playback.
 
 ## Add Widget
 

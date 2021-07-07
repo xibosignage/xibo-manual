@@ -6,7 +6,7 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [Image](media_module_image_2.html)
 {/tip}
 
-The Media Module allows for images to be shown when assigned to a Timeline. Image files are uploaded to the [Library](media_library) 
+The Image Module allows for images to be shown when assigned to a Timeline. Image files are uploaded to the [Library](media_library) 
 
 ## Add Widget
 
