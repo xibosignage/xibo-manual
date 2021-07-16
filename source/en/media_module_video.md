@@ -6,7 +6,7 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [Video](media_module_video_2.html)
 {/tip}
 
-The Media Module allows for video files to be played when assigned to a Timeline. Video files are uploaded to the [Library](media_library) which are then cached for off-line playback.
+The Video Module allows for video files to be played when assigned to a Timeline. Video files are uploaded to the [Library](media_library) which are then cached for off-line playback.
 
 ## Add Widget
 
@@ -40,12 +40,12 @@ Files can also be added via drag and drop!
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-- Use the scroll bar or press play and stop on your chosen frame to be used as the thumbnail for this video file. !
+- Use the scroll bar or press play and stop on your chosen frame to be used as the thumbnail for this video file!
 
 ![Thumbnail](img/v3_media_video_thumbnail.png)
 
 {tip}
-The thumbnail will be used in the Library media grid for easier identification as well as being able to view in the Region preview.
+The thumbnail will be used in the Library media grid for easier identification as well as being used for the Region preview when **Preview Enabled** has been ticked in the Video Module settings!
 {/tip}
 
 Video files can also be directly uploaded to a specified **Folder** location.

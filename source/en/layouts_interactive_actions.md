@@ -36,6 +36,10 @@ Actions are created and configured in the [Layout Designer](layouts_designer.htm
 
   Trigger by touching or clicking anywhere on a Layout, a particular Region or a particular Widget
 
+  {tip}
+  When using Android, ensure that **Touch** capabilities are enabled for the device from [Display Settings](display_settings.html) using the **Advanced** tab!
+  {/tip}
+
   #### Web hook
 
   Include a Trigger Code, which must be present in the URL ``trigger=` parameter.

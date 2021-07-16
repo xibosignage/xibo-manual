@@ -141,6 +141,16 @@ From v2 R207, Gapless Playback with Video content requires an Android device to 
 Should an issue arise with playback set to On!
 {/tip}
 
+### Enable Touch capabilities on the device (Xibo for Android)
+
+From v3 R300, go to the **Advanced** tab and enable this option if the device will be used as a touch screen. 
+
+{tip}
+Enabling this option will show a one time message on the Player which will need to be manually dismissed!
+{/tip}
+
+When left disabled, touching the screen will show the action bar according to the **Action Bar Mode** option.
+
 ## Add a Profile
 
 Click on the Add Profile button, and include a name and select **Display Type**, Save.

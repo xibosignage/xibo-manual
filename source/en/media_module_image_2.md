@@ -2,7 +2,7 @@
 
 Please note: If you are using a 3.x CMS, please use the following link: [Image](media_module_image.html)
 
-The Media Module allows for image uploads which can be added to Layouts using the Image Widget.
+The Image Module allows for image uploads which can be added to Layouts using the Image Widget.
 
 {tip}
 If the Image file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

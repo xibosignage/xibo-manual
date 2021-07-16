@@ -3,12 +3,16 @@
 # User Groups
 
 {tip}
-If you are using a CMS earlier than v3.0.0, please use the following link: [User Groups](users_groups_2.html)
+If you are using a CMS earlier than v3.0.0 please use the following link: [User Groups](users_groups_2.html)
 {/tip}
 
-User Groups allow for a selected group of Users to share and edit Media, Layouts and Schedules within the group.
+User Groups allow for a set of [Features and Share](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options to be applied to all Users within a specified Group.
 
 [[PRODUCTNAME]] comes with a set of pre-configured User Groups for common functions for new installations.
+
+{tip}
+Pre-configured User Groups are available for new v3 installations and for users who upgrade to v3 who have not previously utilised User Groups in earlier versions!
+{/tip}
 
 ![Pre-Configured Groups](img/v3_user_groups_preconfigured.png)
 

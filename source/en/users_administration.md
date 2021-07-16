@@ -3,7 +3,7 @@
 # User Administration
 
 {tip}
-If you are using a CMS earlier than v3.0.0, please use the following link: [Users Administration](users_administration_2.html)
+If you are using a CMS earlier than v3.0.0 please use the following link: [Users Administration](users_administration_2.html)
 {/tip}
 
 Users are administered in the CMS by clicking on **Users** under the **Administration** section on the main menu. The Users [Grid](tour_grids.html) will open for you to add new and manage existing Users.
@@ -27,6 +27,10 @@ Please ensure that the user account named `cms_admin` is not modified or removed
 Click on the **Add User** button. 
 
 There are two ways in which Users can be added, via an onboarding wizard using pre-configured User Groups or information manually added.
+
+{tip}
+The onboarding wizard and pre-configured Groups are available for new v3 installations and for users who upgrade to v3 who have not previously utilised User Groups in earlier versions!
+{/tip}
 
 ![Add User](img/v3_user_admin_add.png)
 
