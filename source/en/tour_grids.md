@@ -110,7 +110,7 @@ Actions that have an 'auto submit' capability will display an option to enable o
 Once selected and Saved, forms will be automatically submitted the next time this particular action is selected.
 
 {tip}
-Auto form submissions preferences can be reset from the [User Profile](user_profile.html)
+Auto form submissions preferences can be reset from the [User Profile](tour_user_profile.html)
 {/tip}
 
 ## Multi-select - With Selected
