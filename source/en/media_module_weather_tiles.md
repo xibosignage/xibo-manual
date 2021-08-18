@@ -12,8 +12,10 @@ If you are using an earlier CMS, speak to your administrator to upgrade to benef
 
 {nonwhite}
 {cloud}
+If you are a Xibo in the Cloud customer and would like to use Weather Tiles, please [Open a Ticket](https://support.xibosignage.com/open.php) to enable the Widget.
+{/cloud}
 
-The Weather Tiles Module is configured for Xibo in the Cloud customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
+Once enabled, please skip the installation steps detailed below and proceed to the Add Widget section.
 
 {/cloud}
 
