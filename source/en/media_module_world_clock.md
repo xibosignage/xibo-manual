@@ -10,6 +10,12 @@ The World Clock Widget can be used to show one or multiple clocks displaying tim
 If you are using an earlier CMS, speak to your administrator to upgrade to benefit from this new feature!
 {/tip}
 
+{nonwhite}
+{cloud}
+If you are a Xibo in the Cloud customer and would like to use World Clock, please [Open a Ticket](https://support.xibosignage.com/open.php) to enable the Widget.
+{/cloud}
+{/nonwhite}
+
 ## Add Widget
 
 Click on **World Clock** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![World Clock Widget](img/v3_media_modules_world_clock.png)
