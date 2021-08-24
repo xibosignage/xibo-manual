@@ -174,7 +174,7 @@ Depending on the Column Type selected, additional information will be required:
 
 - **Value** - Provide a comma-separated list of values that can be selected for this field.
 
-- **Formula** - Enter a MySQL statement suitable to use in a 'SELECT' statement, or a string to format a date field `$dateFormat(<col>,<format><language>)`
+- **Formula** - Enter a MySQL statement suitable to use in a 'SELECT' statement, or a string to format a date field `$dateFormat(<col>,<format>,<language>)`
 
   {tip}
   Ensure that `<col>` has a date and time specified for the date format to work.
