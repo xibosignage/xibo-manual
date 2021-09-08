@@ -120,7 +120,7 @@ Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete**
 - Assign/edit [Share](users_features_and_sharing.html) options by right clicking on the target Region to open the form.
 
   {tip}
-  In versions earlier than 3.0.0, Share options are labelled as [Permissions](users_permissions.html!
+  In versions earlier than 3.0.0, Share options are labelled as [Permissions](users_permissions.html)!
   {/tip}
 
 

@@ -8,11 +8,23 @@ There are four **Dashboard views** for the CMS that can be assigned, which will 
 
 ## Status Dashboard
 
-The CMS **Status Dashboard** is the default Dashboard for **Super Admin Users** and is intended as a high-level view of the system for Administrators. It gives an overview to how many Display have been connected, Users and provides information relating to Library and Bandwidth usage and Display Activity.
+The CMS **Status Dashboard** is the default Dashboard for **Super Admin Users** and is intended as a high-level view of the system for Administrators. It gives an overview to how many Display have been connected, how many Users have been added and provides information relating to Library and Bandwidth usage as well as Display Activity for connected Displays.
 
 ![CMS Status Dashboard](img/tour_cms_status_dashboard.png)
 
+Scroll down to see further charts which show Display Status and Display Content Status
 
+![Display Charts](img/tour_status_dashboard_charts.png)
+
+Click on these charts to get further breakdowns:
+
+![Chart Breakdowns](img/tour_status_dashboard_breakdown.png)
+
+The above screenshot shows the Online Display Groups Status with further Display information shown in the grid below.
+
+{tip}
+Use the Displays Page link to be redirected straight to the Displays page!
+{/tip}
 
 ## Icon Dashboard 
 
