@@ -2,6 +2,8 @@
 
 # Weather
 
+#### Please note: The Open Weather API is supported from v2.2 and later.
+
 The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
 
 {nonwhite}
@@ -17,13 +19,16 @@ The Weather Module is configured for Xibo in the Cloud customers and is provided
 
 {tip}
 
-### Update: Important news regarding Dark Sky 31st March 2020
+### Update: Important news regarding Dark Sky 31st March 2020 (update)
 
-Dark Sky have announced that they have joined Apple and will no longer accept new API signups. The Dark Sky API service for existing customers will not be affected until the end of 2021. 
+Dark Sky have announced that they have joined Apple and will no longer accept new API signups. The Dark Sky API service for existing customers will not be affected until the end of 2022. (This has been extended from 2021)
 
-Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/dark-sky-has-a-new-home/)
+Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/)
 
 We have chosen [OpenWeather](https://openweathermap.org/) as an alternative, follow the **Installation** steps below to provide an API key.
+
+**Please note**: The Open Weather API is supported from v2.2 and later. Once the Dark Sky API service for existing customers ceases, the Weather module will no longer work unless you upgrade to at least v2.2.
+
 {/tip}
 
 ## Installation
@@ -53,7 +58,7 @@ The Open Weather Map Terms of Service https://openweathermap.org/terms should be
 Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img\v2_media_weather_widget.png)
 
 {tip}
-If you are using a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
+If you are using an existing API with Dark Sky for a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
 Please note: The Visual editor is not available in a 1.8.x CMS.
 {/tip}
 
