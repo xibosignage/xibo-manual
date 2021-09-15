@@ -2,7 +2,7 @@
 
 # Interrupt Layouts
 
-#### Please note: This feature is currently supported by the Android Player from v2 R204, Windows Player from v2 R253 and the webOS Player from v2 R207.
+#### Please note: This feature is currently supported by the Android Player from v2 R204, Windows Player from v2 R253, webOS Player from v2 R207and Tizen Player from v2 R203.
 
 #### We are working on bringing this feature to all Players.
 
