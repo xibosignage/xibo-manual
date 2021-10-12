@@ -4,17 +4,17 @@
 
 **Available from v3.0.0**
 
-The World Clock Widget can be used to show one or multiple clocks displaying time zones on Layouts.
-
 {tip}
-If you are using an earlier CMS, speak to your administrator to upgrade to benefit from this new feature!
+**Please note:** This module is a tech preview so it may not be made available in future releases.
 {/tip}
 
 {nonwhite}
 {cloud}
-If you are a Xibo in the Cloud customer and would like to use World Clock, please [Open a Ticket](https://support.xibosignage.com/open.php) to enable the Widget.
+It is available on request by contacting our [Helpdesk](https://support.xibosignage.com/open.php) to enable.
 {/cloud}
 {/nonwhite}
+
+The World Clock Widget can be used to show one or multiple clocks displaying time zones on Layouts.
 
 ## Add Widget
 
