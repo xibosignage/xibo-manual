@@ -97,7 +97,15 @@ All media items that have been uploaded to the Library are available to include 
 
 ## Adding additional fonts
 
-[[PRODUCTNAME]] comes with a set of standard fonts provided by our text editor tool - CKEditor. Additional fonts can also be added to the **Library** using the **Add Media by uploading a file** method. Once added, the font will be available to use in the text editor.
+[[PRODUCTNAME]] comes with a set of standard fonts provided by our text editor tool - CKEditor, which are currently:
+
+- Aileron Heavy Regular (Aileron-Heavy.otf)
+- Aileron Regular (Aileron-Regular.otf)
+- Dancing Script Regular (DancingScript-Regular.ttf)
+- Railway Regular (Railway.ttf)
+- Linear Regular (linear-by-braydon-fuller.otf)
+
+Additional fonts can also be added to the **Library** using the **Add Media by uploading a file** method. Once added, the font will be available to use in the text editor.
 
 {tip}
 If the new font does not show in the text editor after upload, try clearing the browser cache!
