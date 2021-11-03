@@ -17,6 +17,11 @@ If you are using a 1.8.x CMS, select Video In from the Widget Toolbox to add.
 ![Add Video In](img/v3_media_video_in.png)
 
 - Use the drop down menu to select which device input should be shown.
+
+{tip}
+Players only support HDMI 1 with the HDMI input selection.
+{/tip}
+
 - Choose to override the default duration if necessary.
 - Tick to expand the video over existing content and therefore play in full screen.
 
