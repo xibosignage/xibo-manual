@@ -19,7 +19,7 @@ If you are using a 1.8.x CMS, select Video In from the Widget Toolbox to add.
 - Use the drop down menu to select which device input should be shown.
 
 {tip}
-Players only support HDMI 1 with the HDMI input selection.
+When **HDMI** is selected for device input, players will only support **HDMI 1**!
 {/tip}
 
 - Choose to override the default duration if necessary.
