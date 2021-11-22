@@ -10,14 +10,8 @@
 
 {nonwhite}
 {cloud}
-It is available on request by contacting our [Helpdesk](https://support.xibosignage.com/open.php) to enable.
-
-Once enabled, please skip the installation steps detailed below and proceed to the Add Widget section.
-
+This module is currently not available for Xibo in the Cloud customers.
 {/cloud}
-
-**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
-
 {/nonwhite}
 
 The Weather Tiles Widget allows you to display current daily weather events as well as weekly forecasts using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
