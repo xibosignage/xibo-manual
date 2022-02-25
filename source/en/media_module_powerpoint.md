@@ -200,7 +200,13 @@ If you still experience issues, it may also be advisable to disable Office Appli
 "DWNeverUpload"=dword:00000001
 ```
 
+{tip}**Please Note**:
 
+The Windows player displays the PowerPoint presentation inside an Internet Explorer container. Internet Explorer uses the directory
+`C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\Content.MSO` to cache Microsoft Office temporary files that are identified as being from the Internet security zone. This can cause multiple copies of the presentation to be saved to this directory over time. Windows does not automatically remove the cached duplicates from that directory, which can consume storage space on your hard drive over time. If you find multiple copies of your presentation cached at this directory it is safe to delete them. 
+
+We would recommend creating a scheduled task or script that will delete the contents of that directory regularly.
+{/tip}
 
 
 
