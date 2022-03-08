@@ -1,13 +1,24 @@
 - [Introduction](layouts.html)
+
 - [Layout Designer](layouts_designer.html)
-- [Interactive Actions](layouts_interactive_actions.html)
+
 - [Regions](layouts_regions.html)
-- [Layout Timeline](layouts_timeline.html)
-- [Tools](layouts_tools.html)
+
 - [Widgets](layouts_widgets.html)
+
 - [Library Search](layouts_library_search.html)
+
+- [Layout Timeline](layouts_timeline.html)
+
+- [Interactive Actions](layouts_interactive_actions.html)
+
 - [Templates](layouts_templates.html)
-- [Overlay Layouts](layouts_overlay.html)
-- [Interrupt Layouts](layouts_interrupt.html)
+
 - [Campaigns](layouts_campaigns.html)
+
+- [Overlay Layouts](layouts_overlay.html)
+
+- [Interrupt Layouts](layouts_interrupt.html)
+
+  
 

@@ -2,55 +2,84 @@
 
 # Library Search
 
-The Library Search feature is used as a quick and easy way to assign **media** to **Layouts** which has already been uploaded to the Library.
-
 {tip}
-If you are using a version 2 CMS earlier than 2.3 please use the following link: [Library Search](layouts_library_search_2.0.html). 
-{/tip}
+If you are using a CMS earlier than v3.1.0 please select from the options below:
 
-Located on the bottom of the toolbar, click on the **Library Search** button to open the search window. 
+- 3.0.x CMS click [here](layouts_library_search_3.html)
+- Earlier than 3.0.0 click [here](layouts_library_search_2.0)
+  {/tip}
 
-![Library Search Tab](img/v2.3_layouts_library_tab.png)
+The **Toolbar** contains multiple **Library Search** options to give users an easy way to assign media which already exists in the [Library](media_library.html) to Layouts and Playlists.
 
-Search fields can be used to search the CMS Library by **Name**, **Tag** and **Owner** as well as using the drop down menu to search by a media **Type**. 
-
-![Search Results](img/v2.3_layouts_search_results.png)
-
-{tip}
-Use the resize handle in the bottom right corner of the Library Search window to minimise / maximise. Click and drag this window to any area of the Layout Designer.
-{/tip}
-
-Click on the plus icon to select the media you wish to add, which will show in the **Media Add Queue**.
-
-![Media Add Queue](img/v3_layouts_library_media_queue.png)
-
-{tip}
-Drag and drop your queued media into another order and remove media files from this list.
-{/tip}
-
-Add your queued media by clicking in the target Region to add. 
-
-You can also add media to a specific point on the **Timeline**, as shown by the markers
-
-![Add to point on Timeline](img/v3_layouts_library_search_timeline_add_point.png)
+- Select from image, audio, video or 'other media' files to open:
 
 
+![Library Search Tab](img/v3.1_layouts_library_search.png)
 
-Library Search Media can also be added using an alternate view by clicking on the Menu icon for a Region.
+- Use the fields to narrow down searches.
 
-![Playlist View Library Search](img/v2.3_layouts_playlist_view_library_search.png)
 
-A **Playlist view** will open, click on the **Library Search** button to add Media.
+Integration from Pixaby allows for images/videos to additionally be shown here.
 
-![Playlist View](img/v2.3_layouts_playlist_view.png)
+{cloud}
+Pixaby integration is enabled by default for Xibo in the Cloud customers.
+{/cloud}
+
+{noncloud}
+
+Pixaby can be enabled from the **Administration** section of the CMS menu by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click Configure and enter your API Key after signing up for a Pixaby account. [PixabyAPI Documentation](https://pixabay.com/api/docs/)
+{/noncloud}
+
+- Click on the **+** icon in the top left corner of a media file to select: 
+
+
+![Search Results](img/v3.1_layouts_search_results.png)
 
 
 
 {tip}
-Create multiple tabs in the Library Search window so that you can easily click between search results.
+
+Select multiple files to add to the target Region in bulk. They will appear in the timeline in the same order they have been selected!
 {/tip}
 
+- Once selected click in the target Region to add.
+
+- Files can also be added by drag and drop to the Region.
+
+You can also add selections to a specific point on the **Timeline**, as indicated by the markers:
+
+![Timeline Marker](img/v3.1_layouts_search_timeline_marker.png)
+
+Files can be previewed before selecting. 
+
+- Click on the Play icon in the top right corner of the media file. 
+
+The file will open in a separate window where you can toggle to a larger window size using the arrow:
+
+![Media Preview](img/v3.1_layouts_media_preview.png)
+
+
+
+- Click on the **+** icon to select the media from the preview window.
+
+- Add to a Region or Timeline.
+
+
 {tip}
-Minimise the window by clicking on the `X` or by clicking on the Library Search button on the toolbar.
+Use the **Upload new** button to add additional image files to the [Library](media_library)!
 {/tip}
+
+Library Media can also be added to a Region as a Playlist view by clicking on the menu to the right of the Timeline:
+
+![Playlist View Library Search](img/v3.1_layouts_playlist_timeline.png)
+
+A Playlist view will open to add media in the same way, by clicking to add or drag and drop.
+
+![Playlist View](img/v3.1_layouts_playlist_view.png)
+
+{tip}
+Delete multiple items on the playlist using the purple **Select Multiple Widgets** button in the toolbar and then clicking on media in the timeline to select. Click the bin icon to remove all selections.
+{/tip}
+
+- Exit the Playlist view by closing down the Playlist window.
 

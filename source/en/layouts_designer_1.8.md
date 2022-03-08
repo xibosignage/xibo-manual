@@ -3,8 +3,10 @@
 {tip}
 **Please note:** If you are using a CMS later than 1.8.x please select from the options below:
 
-- 2.x CMS click [here](layouts_designer_2.html)
-- 3.x CMS click [here](layouts_designer.html)
+- 2.x CMS click [here](layouts_designer_2.0html)
+- 2.3.x CMS click [here](layouts_designer_2.html)
+- 3.0.x CMS click [here](layouts_designer_3.html)
+- 3.1.x CMS click [here](layouts_designer.html)
 
 {/tip}
 

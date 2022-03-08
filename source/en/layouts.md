@@ -3,24 +3,31 @@
 # Layouts
 
 {tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Layouts](layouts_2.html)
+If you are using a CMS earlier than v3.1.0 please select from the options below:
+
+- 3.0.x CMS click [here](layouts_3.html)
+- CMS earlier than v3.0.0 CMS click [here](layouts_2.html)
+
+
 {/tip}
 
-A Layout is a complete screen design including content and background, which is then scheduled to a Display or multiple displays and Display Groups. A **Layout** is made up of 1 or more **Regions** which hold content and contain a **Timeline** of **Media** to show. Media is assigned to the Layout Timeline using Widgets which provide the actions for the selected Module. 
+A Layout is a complete screen design made up of content, which is then scheduled to a Display/multiple Displays / Display Groups. A **Layout** is made up of 1 or more **Regions** which act as placeholders for content which each contain a **Timeline** of **Media** to show. Media is assigned to a Timeline using a wide range of Widgets. 
 
 {tip}
-Take a look at the [Modules](media_modules.html) page to see the variety of content available by simply adding a **Widget** to a Layout.
+Take a look at the [Modules](media_modules.html) page to see the variety of Widgets availalable!
 {/tip}
 
-[[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User can have.
+[[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User/User Group can have.
 
 Layouts are administered by clicking on **Layouts** under the **Design** section of the main menu:
 
-![Layout Grid](img/v3_layouts_grid.png)
+![Layout Grid](img/v3.1_layouts_grid.png)
 
+{tip}
+Thumbnails will show for Published Layouts. If you have upgraded from an earlier version, you will need to checkout and Publish existing Layouts to update the Thumbnail!
+{/tip}
 
-
-The Layout [Grid](tour_grid.html) allows you to edit existing and create new. The **Folder** tree will open by default:
+ The **Folder** tree will open by default:
 
 - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
@@ -32,15 +39,9 @@ or
 Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
 {/tip}
 
-{tip}
-**Thumbnails** will only show in Columns for Layouts that have a set background image!
-{/tip} 
+The Layout [Grid](tour_grid.html) allows users to create new and edit existing. 
 
 ## Add Layout
-
-Click on the **Add Layout** button at the top of the grid and complete the appropriate form fields:
-
-![Add Layout](img/v3_layouts_add.png)
 
 {tip}
 
@@ -52,31 +53,56 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 {/tip}
 
-### Folder
+Click on the **Add Layout** button at the top of the grid:
 
-Layouts can be optionally saved to **Folders**.
+![Add Layout](img/v3.1_layouts_add_layout.png) 
+
+Select a Template to use from the available options:
+
+- Default pre-defined templates
+- Blank to add your own Regions
+- Choose from your own published [Templates](layouts_templates.html)
+
+{nonwhite}
+
+- Select one of our templates from the Xibo Exchange
+
+{cloud}
+
+Xibo Exchange templates are enabled by default for Xibo in the Cloud customers.
+
+If you do not wish to have these templates available on the Add Layout form, disable the Xibo Exchange by navigating to the **Administration** section of the main CMS menu and click on **Applications**. Scroll down the page to the **Connectors** section and click on **Configure**. Untick and Save the form.
+{/cloud}
+
+{noncloud}
+On-prem installations can enable templates from the Xibo Exchange by navigating to the Administration section of the CMS by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click to **Configure** and tick to enable, **Save** changes.
+
+{/noncloud}
+
+{/nonwhite}
+
+- On making a selection click the **Next** button at the very bottom of the form:
+
+
+![Add LayoutForm](img/v3.1_add_layout_form.png)
+
+- Provide a **Name** for easy identification purposes within the CMS.
+- Layouts can be optionally saved to **Folders**.
 
 {tip}
-Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
+Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access. 
+
+If users should also have access to the content of the Layout, ensure that this is also saved to the same Folder!
 {/tip}
 
 - Click on the **Select Folder** button and expand to select a Folder to save in.
 
-
-![Select Folder Layouts](img/v3_layouts_folder.png)
-
-
-
-Users can also right click a Folder to access further options:
-
-![Folder Options](img/v3_layouts_folder_options.png)
+- Users can also right click a Folder to access further options.
+- The selected folder file path will be shown next to the Folder field on the form
 
 {tip}
-Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
+Options available to User/User Groups are based on enabled [Feature and Sharing](features_and_sharing.html) options!
 {/tip}
-
-- The selected folder file path will be shown next to the Folder field on the form
-  
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
@@ -86,17 +112,30 @@ Further information for Administrators regarding Folder access and set-up can be
 For further information regarding Folder access and set-up, please speak to your Administrator.
 {/white}
 
-### Name
+- Select the Resolution to be used for this Layout.
 
-Give the Layout a **Name** for easy identification purposes within the CMS.
-
-### Tags
-
-Layouts can be tagged for organisation and to make it easier to find a large number of Layouts grouped by Tags.  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
+Layouts are designed for an intended display Resolution and will function best when shown on a **Player** with a matching resolution. If they are shown on a display that has a different resolution it will dynamically resize which may result in unused screen space.  
 
 {tip}
+Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
+{/tip}
+
+**If you require an alternative resolution to the available options listed, contact your Administrator**
+
+{nonwhite}
+Resolution management for Administrators can be found [here](https://xibo.org.uk/docs/setup/resolutions-administration)
+{/nonwhite}
+
+- Include an optional Description to give more detail/instructions to other potential users of the Layout.
+
+
+- Include optional Tags to organise and make it easier to search for.
+
+{tip}
+
+When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
+
+Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
 If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
 {/tip}
 
@@ -112,74 +151,49 @@ For further information on what **Tag **and **Tag Values** to use, please speak 
 Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
 {/nonwhite}
 
-### Template
+Further options can be found on the **Settings** tab:
 
-Use the drop down to select a **Template** to use for this Layout.
+![Settings Tab](img/v3.1_layouts_settings_tab.png)
 
-{tip}
-Created Layout designs can be saved as a [Template](layouts_templates.html), great for maintaining a corporate image or style.
-{/tip}
+- Enter a string to be used as the **Code Identifier** to identify this Layout when used with [Interactive Actions](layouts_interactive_actions.html)
 
-### Resolution
 
-Layouts are designed for an intended display resolution and will function best when shown on a **Player** with a matching resolution. If they are shown on a display that has a different resolution it will dynamically resize which may result in unused screen space.  
+- Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for the newly added **Layout**.
 
-{tip}
-Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
-{/tip}
-
-**If you require an alternative resolution to the available options listed, contact your Administrator**
-
-{nonwhite}
-Resolution management for Administrators can be found [here](https://xibo.org.uk/docs/setup/resolutions-administration)
-{/nonwhite}
-
-### Code Identifier
-
-A string can be entered in this field, which will be used as a code to identify this Layout when used with [Interactive Actions](layouts_interactive_actions.html)
-
-### Enable Stats collection
-
-Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for the newly added **Layout**.
-
-{tip}
-Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](displays_settings.html).
-{/tip}
+  {tip}
+  Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](displays_settings.html).
+  {/tip}
 
 {nonwhite}
 Proof of Play Settings for Administrators can be found [here](https://xibo.org.uk/docs/setup/proof-of-play-settings)
 {/nonwhite}
 
-### Automatically apply Transitions
+- Default **Transition** settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
 
 {tip}
 Transitions are supported on Android, webOS and Tizen Players and Windows Players from v2R252
 Transitions are currently not supported on Linux Players.
 {/tip}
 
-Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
-
 {tip}
-Transitions can be applied from the [Tools](layouts_tools.html) menu on the Layout Designer.
+Transitions can be applied to Widgets and Regions from the context menu on the Layout Designer!
 {/tip}
 
 {nonwhite}
 Transitions management for Administrators can be found [here](https://xibo.org.uk/docs/setup/transitions-administration)
 {/nonwhite}
 
-{tip}
-Use the **Description Tab** to complete useful information/instructions for other users of the Layout!
-{/tip}
-
-### Save
-
-On saving the form, the [Layout Designer](layouts_designer.html) will automatically open.
+- **Save** the Add Layout form to automatically open the [Layout Designer](layouts_designer.html).
 
 ## Row menu
 
-Each Layout has additional actions/shortcuts that can be accessed from the **Row Menu**.
+Each Layout has additional actions/shortcuts that can be accessed using the **Row Menu** in the grid:
 
 ![Layouts Row Menu](img/v3_layouts_row_menu.png)
+
+{tip}
+The following options are available from the row menu of a **Published** Layout!
+{/tip}
 
 ### Design
 
@@ -205,7 +219,7 @@ Take your time with any edits you need to make as using **Checkout** ensures tha
 
 ### Preview Layout
 
-The **Layout** will play from start to finish which allows you to see how your layout will play. Make important adjustments to ensure that layout designs play as intended before scheduling to Displays. 
+The Published **Layout** will play from start to finish to allow you to see how it will play. Make important adjustments to ensure that layout designs play as intended before scheduling to Displays. 
 
 {tip}
 Before the Layout can start all **Media** must be downloaded to your browser and verified so you may experience a slight delay whilst this is in process.
@@ -286,6 +300,10 @@ Select to **Publish Now** or select a date and time to set the Layout to Publish
 ### Discard
 
 Click to ignore any changes that have been made and revert to the previous Published version of the Layout.
+
+## Preview Draft Layout
+
+Play a Preview of your Layout in its current **Draft** status. Make any necessary adjustments before commiting any changes by Publishing.
 
 {tip}
 Did you know…**.Layouts** and **Library files** can be [Assigned](displays_fileassociations.html) directly to a **Display** or **Display Group** so that they are always available in the local library of the Player. Useful for pre-loading a Layout ahead of time ready to be scheduled.

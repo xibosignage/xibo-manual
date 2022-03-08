@@ -2,34 +2,22 @@
 
 # Weather
 
-#### Please note: The Open Weather API is supported from v2.2 and later.
+{tip}
+**Please note:** If you are using a CMS earlier than v3.1.x, please click [here](media_module_weather_3.html)
+{/tip}
 
 The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
 
 {nonwhite}
 {cloud}
 
-The Weather Module is configured for Xibo in the Cloud customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
+The Weather Module is fully configured for Xibo in the Cloud customers and is provided as part of the service. 
 
 {/cloud}
 
-**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
-
 {/nonwhite}
 
-{tip}
-
-### Update: Important news regarding Dark Sky 31st March 2020 (update)
-
-Dark Sky have announced that they have joined Apple and will no longer accept new API signups. The Dark Sky API service for existing customers will not be affected until the end of 2022. (This has been extended from 2021)
-
-Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/)
-
-We have chosen [OpenWeather](https://openweathermap.org/) as an alternative, follow the **Installation** steps below to provide an API key.
-
-**Please note**: The Open Weather API is supported from v2.2 and later. Once the Dark Sky API service for existing customers ceases, the Weather module will no longer work unless you upgrade to at least v2.2.
-
-{/tip}
+{noncloud}
 
 ## Installation
 
@@ -50,6 +38,7 @@ Open Weather Map allows 1000 requests for a forecast, per day before charging a 
 {tip}
 **Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
 {/tip}
+{/noncloud}
 
 ## Add Widget
 
@@ -57,37 +46,44 @@ The Open Weather Map Terms of Service https://openweathermap.org/terms should be
 
 Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img\v2_media_weather_widget.png)
 
-{tip}
-If you are using an existing API with Dark Sky for a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
-Please note: The Visual editor is not available in a 1.8.x CMS.
-{/tip}
-
-On adding, configuration options are shown in the Edit Weather form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
 
 ### Configuration
 
-![Weather Configuration](img\v3_media_weather_configuration.png)
+![Weather Configuration](img\v3.1_media_weather_configuration.png)
 
 - Tick to use the **Display Location** or untick to manually enter **Latitude** and **Longitude** to be used for this Widget.
 - Use the drop down menu to select the **Unit** of measurement or opt for the automatic selection (first item) which will be based on the geographic location.
 - Select the **Language** to be used.
-- Use the checkbox to only show daytime weather conditions.
+- Use the checkbox to **Only show Daytime weather conditions**.
+- Use the **Horizontal** and **Vertical** alignment options to position the Widget within its Region.
 
 ### Templates
 
-Select from the available Templates:
+[[PRODUCTNAME]] provides a selection of **Preset Templates** for ease of use.
 
-#### Preset
+On selecting **Preset**, choose the **Type** and **Orientation** and use the drop down to select an available **Template** matching your entered criteria:
 
-![Weather Preset Templates](img/v3_media_weather_preset_templates.png)
+![Preset Templates](img/v3.1_media_modules_weather_templates.png)
 
-- Use the drop down to select from the available templates.
-- Tick to edit the selected template if required. Please see the section on **Editing Preset Templates** below for further information.
 
-## Editing Preset Templates
+
+On selecting a **Template**, options will be made available to change the appearance of the template using the colour picker or providing the Hex if known:
+
+![Template Colouring](img/v3.1_media_modules_weather_colouring.png)
+
+
+
+When a Background Image has been selected, images uploaded to the Library can be used to replace the images provided by default:
+
+![Background Images](img/v3.1_media_modules_weather_background.png)
+
+
+
+## Editing Preset Templates (Advanced Use)
 
 Preset templates can be edited by clicking in the **Override the template** checkbox.
 
@@ -106,13 +102,15 @@ With override template selected, you can enter text, HTML and CSS.
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Weather Template Override](img\v3_media_weather_override_template.png)
+![Weather Template Override](img\v3.1_media_weather_override_template.png)
 
 ### Current Forecast Template
 
 Also known as the main template, used for the current weather conditions and as the basis for the repeating Daily Forecast Template.
 
-Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
+Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided. 
+
+Use the drop down to include **Snippets**.
 
 {tip}
 Click on **Get Forecast** to see available substitutions to use.
@@ -127,7 +125,7 @@ The `[dailyForecast]` tag has 2 optional settings which can be added to the tag 
 A common example is to ignore the "Current Template" and produce a full 7 day forecast using the Daily Forecast - this is achieved with `[dailyForecast|7|1]`.
 {/tip}
 
-### CSS Style Sheet
+### Style Sheet
 
 This is the CSS to apply to the template structure above.
 

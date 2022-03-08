@@ -1,5 +1,3 @@
-<!--toc=layouts-->
-
 # Tools
 
 {tip}

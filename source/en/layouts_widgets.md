@@ -3,92 +3,70 @@
 # Widgets
 
 {tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Widgets](layouts_widgets_2.html)
+
+If you are using a CMS earlier than v3.1.0 please select from the options below:
+
+- 3.0.x CMS click [here](layouts_widgets_3.html)
+- Earlier than 3.0.0 click [here](layouts_widgets_2,html)
+
 {/tip}
 
-Media is assigned to Layouts using **Widgets**, which provide the actions for a selected Module.
+Add content to Layouts using the variety of **Widgets** available from the Toolbar in the [Layout Designer](layouts_designer.html):
 
-Widgets are available from the toolbar at the bottom of the [Layout Designer](layouts_designer.html). Use the  arrows to scroll through all the available Widgets.
+![Widgets Panel](img/v3.1_layouts_widgets_panel.png)
+
+
+
 {tip}
 Widgets that are available can be disabled/enabled by an Administrator in the [Modules](https://xibo.org.uk/manual/en/media_modules.html) section of the CMS.
 {/tip}
 
-![Widget Toolbar](img/v2.3_layouts_widgets_toolbar.png)
+Use the Search field to easily find Widgets and mark as Favourite to group them together to make it easier for future selections.
+
+- Hover over a Widget and select the star icon in the top left corner to mark as a favourite:
+
+![Favourite Widgets](img/v3.1_layouts_widgets_favourite.png)
+
+- Click on the star to deselect and remove from favourites.
 
 
 
-Widgets can be marked as **Favourites** to position them at the beginning of the Widget list for ease of access.
 
-Click on the **Star** to select / unselect a Widget as a Favourite.
+## Adding Widgets to Layouts
 
-![Favourite Widgets](img/v2.3_layouts_favourite_widget.png)
+Clicking on a Widget will give you the option to **click to Add** ![Click to add Widget](img/v3.1_layouts_add_widgets.png)
+
+ or **Grab** to drag and drop ![Drag and Drop Widget](img/v3.1_layouts_drag_widget.png)
+
+- Add the Widget by clicking directly on, or dragging to, a target **Region** (this can be a Region in the viewer or the Timeline):
 
 
+![Widget added to Region Timeline](img/v3.1_layouts_widget_region_timeline.png)
 
-## Adding to Regions
+Once added, the Widget can be configured using the available options for the selected Widget in the properties panel: 
 
-Clicking on a Widget will give you the option to **click to Add** ![Click to add Widget](img/v2.3_layouts_add_widgets.png)
+![Widget Edit Options](img/v3.1_layouts_widget_edit_options.png)
 
- or **Grab** to drag and drop ![Drag and Drop Widget](img/v2.3_layouts_drag_widget.png)
+- Add Widgets to a specific point on the **Timeline**, by dragging or clicking on a marker to add.
 
-Add the Widget by clicking directly on, or dragging to, a target **Region**.
 
-![Widget added to Region Timeline](img/v3_layouts_widget_region_timeline.png)
+Widgets can also be added to a Region in a Playlist view:
 
-Once added the Widget will be added to the **Layout Timeline** and can be configured using the available **edit** options in the **Editor**. 
+- Click on the menu to the right of the Timeline.
 
-![Widget Edit Options](img/v3_layouts_widget_edit_options.png)
+![Region Playlist View](img/v3.1_layouts_menu_playlist_view.png)
 
-Add Widgets to a specific point on the Timeline, by dragging or clicking on a position marker to add.
+A Playlist view will open to add Widgets in the same way by clicking to add or drag and drop.
 
-![Add to Point on Timeline](img/v3_layouts_add_widget_to_point.png)
-
-Widgets can also be added / edited using an alternative **Playlist view**, access by clicking on the menu icon next to a Region.
-
-![Region Playlist View](img/v3_layouts_menu_playlist_view.png)
-
-The Playlist View will open so that Widgets can be added and edited from here.
-
-![Region Playlist View](img/v3_layouts_region_playlist_view.png)
+![Region Playlist View](img/v3.1_layouts_region_playlist_view.png)
 
 {tip}
-Use the **Select Multiple Widgets** button, located next to the bin icon on the bottom toolbar, to highlight multiple items on the Playlists to delete.
+Use the **Select Multiple Widgets** button, located on the left hand side, to highlight multiplte items on the Playlist to delete!
 {/tip}
 
 {tip}
-To make **edits** at anytime simply click on the Widget on the **Layout Timeline** or in the **Playlist view**, to open the available options form for that Widget.
+Make **edits** by clicking on the Widget on the **Layout Timeline** or in the **Playlist view**, to open the available options in the properties panel.
 {/tip}
 
-{tip}
-Click on the Widgets button, on the bottom toolbar, to disable it from view for a 'clearer' work space.
-{/tip}
 
-## Adding Widgets to the Interactive Drawer
-
-When configuring [Interactive Actions](layouts_interactive_actions.html) that require Navigate to Widget as the specified Action Type, Widgets first need to be added to the interactive drawer.
-
-Widgets are added to the Interactive Drawer in the same way, by clicking to add or drag and drop.
-
-![Add to Interactive Drawer](img/v3_layouts_widget_interactive_drawer.png)
-
-Once added, click on the Widget in the Interactive Drawer to set a Target Region:
-
-![Target Region](img/v3_layouts_widget_target_region.png)
-
-On saving, the Widget will update and show the selected Target Region. Configure the Widget using the Edit form:
-
-![Edit Widgets Interactive Drawer](img/v3_layouts_widget_edit_interactive_drawer.png)
-
-## Removing Widgets
-
-To delete, click on the Widget assigned in the Layout Timeline or Interactive Drawer and click on the red **bin icon** in the bottom right hand corner of the screen. 
-
-Right-click on a Widget to also delete:
-
-![Right Click Menu](img/v3_layouts_widgets_menu.png)
-
-{tip}
-
-Right click on a Widget to access the [Tools](layouts_tools.html) menu as a shortcut!
-{/tip}
 
