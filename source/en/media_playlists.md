@@ -6,7 +6,7 @@
 
 **Please note:**
 
-- If you are using a v3.1.x CMS, please click [here](media_playlists.html)
+- If you are using a v3.0.x CMS, please click [here](media_playlists_3.html)
 - If you are using a v2.0.x CMS, please click [here](media_playlists_2.html)
   {/tip}
 
