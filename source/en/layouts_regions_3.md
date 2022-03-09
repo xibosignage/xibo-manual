@@ -3,10 +3,10 @@
 {tip}
 **Please note:**
 
-- If you are using a 3.1.x CMS, please click [here](layouts_regions.html)
-- If you are using a 2.3.x CMS, please click [here](layouts_regions_2.html)
-- If you are using a 2.0.x CMS, please click [here](layouts_regions_2.0.html)
-- If you are using a 1.8.x CMS, please click [here](layouts_regions_1.8.html)
+- If you are using a v3.1.x CMS, please click [here](layouts_regions.html)
+- If you are using a v2.3.x CMS, please click [here](layouts_regions_2.html)
+- If you are using a v2.0.x CMS, please click [here](layouts_regions_2.0.html)
+- If you are using a v1.8.x CMS, please click [here](layouts_regions_1.8.html)
 
 {/tip}
 

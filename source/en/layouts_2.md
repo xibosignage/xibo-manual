@@ -3,8 +3,8 @@
 {tip}
 **Please note:** 
 
-- If you are using a 3.x CMS, please click [here](layouts_3.html)
-- If you are using a 3.1.x CMS, please click [here](layouts.html)
+- If you are using a v3.0.x CMS, please click [here](layouts_3.html)
+- If you are using a v3.1.x CMS, please click [here](layouts.html)
 
 {/tip}
 

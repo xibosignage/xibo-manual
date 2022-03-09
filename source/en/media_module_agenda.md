@@ -3,7 +3,7 @@
 # Agenda
 
 {tip}
-Please note: If you are using a CMS earlier than v3.1.0, please use the following link [Calendar](media_module_calendar.html)
+Please note: If you are using a CMS earlier than v3.1.0 please use the following link [Calendar](media_module_calendar.html)
 {/tip}
 
 The Agenda Widget is used to display an agenda based on an **iCal feed.** 

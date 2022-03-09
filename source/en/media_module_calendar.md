@@ -3,10 +3,14 @@
 # Calendar
 
 {tip}
-**Please note:** If  you are using a CMS earlier than 3.1.0, please click [here](media_module_calendar_3.html)
+**Please note:** If you are using a CMS earlier than v3.1.0, please click [here](media_module_calendar_3.html)
 {/tip}
 
 The Calendar Widget provides an easy way to display events from an **iCal feed**, in a **Schedule, Daily, Weekly** or **Monthly** Calendar view.
+
+{tip}
+Calendar is available from v3.1.0 upgrade from earlier versions to take advantage of this Widget!
+{/tip}
 
 ## Add Widget
 

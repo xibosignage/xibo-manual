@@ -5,7 +5,7 @@
 ### Please note: Interactive Actions are currently supported on Xibo for Windows R3 R300 and Xibo for Android R3 R300. 
 
 {tip}
-**Please note:** If you are using a 3.0.x CMS click [here](layouts_interactive_actions_3.html)
+**Please note:** If you are using a v3.0.x CMS click [here](layouts_interactive_actions_3.html)
 {/tip}
 
 Actions can be attached to an entire **Layout** a particular **Region** or specific **Widget** and can be used to effect changes to the Layout. These can be triggered by **Touch or Click** or programmatically by **webhook**.

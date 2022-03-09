@@ -3,9 +3,9 @@
 {tip}
 **Please note:**
 
-- If you are using a 3.1.x CMS, please click [here](layouts_timeline.html)
-- If you are using a 2.0.x CMS, please click [here](layouts_timeline_2.0.html)
-- If you are using a 1.8.x CMS, please click [here](layouts_playlists.html)
+- If you are using a v3.1.x CMS, please click [here](layouts_timeline.html)
+- If you are using a v2.0.x CMS, please click [here](layouts_timeline_2.0.html)
+- If you are using a v1.8.x CMS, please click [here](layouts_playlists.html)
 
 {/tip}
 

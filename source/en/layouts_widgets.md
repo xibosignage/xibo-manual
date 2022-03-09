@@ -6,8 +6,8 @@
 
 If you are using a CMS earlier than v3.1.0 please select from the options below:
 
-- 3.0.x CMS click [here](layouts_widgets_3.html)
-- Earlier than 3.0.0 click [here](layouts_widgets_2,html)
+- v3.0.x CMS click [here](layouts_widgets_3.html)
+- Earlier than v3.0.0 click [here](layouts_widgets_2,html)
 
 {/tip}
 

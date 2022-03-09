@@ -6,7 +6,7 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [Templates](layouts_templates_2.html)
 {/tip}
 
-Templates are saved copies of designed**Layouts** which can then be used when creating new Layouts. Using a template can speed up the design process and is a good way to ensure that a corporate image/standard is maintained. 
+Templates are saved copies of designed **Layouts** which can then be used when creating new Layouts. Using a template can speed up the design process and is a good way to ensure that a corporate image/standard is maintained. 
 
 ## Creating a Template
 

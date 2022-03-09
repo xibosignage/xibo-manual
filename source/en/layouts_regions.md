@@ -5,10 +5,10 @@
 {tip}
 If you are using a CMS earlier than v3.1.0 please select from the options below:
 
-- 3.0.x CMS click [here](layouts_regions_3.html)
-- 2.3.x CMS click [here](layouts_regions_3.html)
-- 2.x CMS click [here](layouts_regions_2.0.html)
-- 1.8.x CMS click [here](layouts_regions_1.8.html)
+- v3.0.x CMS click [here](layouts_regions_3.html)
+- v2.3.x CMS click [here](layouts_regions_3.html)
+- v2.0.x CMS click [here](layouts_regions_2.0.html)
+- v1.8.x CMS click [here](layouts_regions_1.8.html)
 
 {/tip}
 

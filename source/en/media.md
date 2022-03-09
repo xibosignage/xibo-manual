@@ -11,6 +11,10 @@
 
 Library Media is file-based Media that is uploaded and stored in the CMS Library for use on one or multiple Layouts.
 
+{tip}
+From v3.1.0 integration with Pixaby allows for Images and Videos to be selected when adding content to Layouts using [Library Searches](layouts_library_search.html). Selections will be automatically added to the Library!
+{/tip}
+
 Examples of Library Media are:
 
 - Images
@@ -20,7 +24,7 @@ Examples of Library Media are:
 Library Media is administered from **Media** under the Library section of the Menu. 
 
 {tip}
-[DataSets](media_datasets.html) are a special type of Library Media which are used to represent tabular data.
+[DataSets](media_datasets.html) and [Menu Boards](layouts_menuboards.html) are a special type of Library Media which are used to represent tabular data.
 {/tip}
 
 ## Layout Media

@@ -5,8 +5,15 @@
 The Menu Boards interface provides a simple way for users to create and configure information to be used with the [Menu Board Widget](media_module_menuboards.html) to display Menu  items and information using customisable templates.
 
 {tip}
-Menu Boards is available from v3.1, upgrade from earlier versions to take advantage of this feature!
+Menu Boards is available from v3.1.0 upgrade from earlier versions to take advantage of this feature!
 {/tip}
+
+Menu Boards allow for the creation of 'reusable Menus' which are created and managed independantly to Layouts. Once created, Menus can easily be reused across multiple Layouts.
+
+Using Menu Boards is a two part process:
+
+- The Menu Board - contains the content of the Menu
+- The Menu Board Widget - allows for configuration of the Menu
 
 Menu Boards are administered by clicking on **Menu Boards** under the **Library** section of the main menu:
 
@@ -28,11 +35,11 @@ The Menu Boards [Grid](tour_grids.html) allows users to create new and edit exis
 
 ## Creating Menu Board data
 
-Creating information for Menu Boards is a three step process:
+Creating information for Menu Boards requires 3 stages:
 
-1. Add a Menu Board record
-2. Create Categories
-3. Add Products
+1. Adding a Menu Board record
+2. Creating Categories
+3. Adding Products
 
 ### 1. Add new Menu Board
 

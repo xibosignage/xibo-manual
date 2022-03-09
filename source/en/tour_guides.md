@@ -27,4 +27,6 @@ To get started with Xibo take a look at the following walkthroughs:
 
 [Understanding Media duration and how it affects playback](https://community.xibo.org.uk/t/understanding-media-duration-and-how-it-affects-playback/20011)
 
+**Please note:** We are in the process of creating updated guides for v3.1. In the meantime, please do refer to the above guides.
+
 {/nonwhite}

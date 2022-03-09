@@ -3,10 +3,10 @@
 # Layouts
 
 {tip}
-If you are using a CMS earlier than v3.1.0 please select from the options below:
+**Please note:**
 
-- 3.0.x CMS click [here](layouts_3.html)
-- CMS earlier than v3.0.0 CMS click [here](layouts_2.html)
+- If you are using a v3.0.x CMS, please click [here](layouts_3.html)
+- If you are using a CMS earlier than v3.0.0 please click [here](layouts_2.html)
 
 
 {/tip}

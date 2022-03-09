@@ -1,14 +1,14 @@
 # Regions
 
 {tip}
-**Please note:** If you are using a CMS later than 1.8.x please select from the options below:
+**Please note:** If you are using a CMS later than v1.8.x please select from the options below:
 
-- 2.0.x CMS click [here](layouts_regions_2.0.html)
+- v2.0.x CMS click [here](layouts_regions_2.0.html)
 
-- 2.3.x CMS click [here](layouts_regions_3.html)
+- v2.3.x CMS click [here](layouts_regions_3.html)
 
-- 3.0.x CMS click [here](layouts_regions_3.html)
-- 3.1.x CMS click [here](layouts_regions)
+- v3.0.x CMS click [here](layouts_regions_3.html)
+- v3.1.x CMS click [here](layouts_regions)
 
 {/tip}
 

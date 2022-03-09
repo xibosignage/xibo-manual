@@ -1,12 +1,12 @@
 # Regions 
 
 {tip}
-**Please note:** This page is for users of a **2.0.x - 2.2.x CMS**. For an alternative version please select from the options below:
+**Please note:** This page is for users of a **v2.0.x - v2.2.x CMS**. For an alternative version please select from the options below:
 
-- 1.8.x CMS click [here](layouts_regions_1.8)
-- 2.3.x CMS click [here](layouts_regions_3.html)
-- 3.0.x CMS click [here](layouts_regions_3.html)
-- 3.1.x CMS click [here](layouts_regions.html)
+- v1.8.x CMS click [here](layouts_regions_1.8)
+- v2.3.x CMS click [here](layouts_regions_3.html)
+- v3.0.x CMS click [here](layouts_regions_3.html)
+- v3.1.x CMS click [here](layouts_regions.html)
 
 {/tip}
 

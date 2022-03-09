@@ -5,8 +5,8 @@
 {tip}
 If you are using a CMS earlier than v3.1.0 please select from the options below:
 
-- 3.0.x CMS click [here](layouts_library_search_3.html)
-- Earlier than 3.0.0 click [here](layouts_library_search_2.0)
+- v3.0.x CMS click [here](layouts_library_search_3.html)
+- Earlier than v3.0.0 click [here](layouts_library_search_2.0)
   {/tip}
 
 The **Toolbar** contains multiple **Library Search** options to give users an easy way to assign media which already exists in the [Library](media_library.html) to Layouts and Playlists.
@@ -29,6 +29,10 @@ Pixaby integration is enabled by default for Xibo in the Cloud customers.
 
 Pixaby can be enabled from the **Administration** section of the CMS menu by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click Configure and enter your API Key after signing up for a Pixaby account. [PixabyAPI Documentation](https://pixabay.com/api/docs/)
 {/noncloud}
+
+{tip}
+Images/videos that are selected from Pixaby to be used in Layouts will automatically be added to your Library!
+{/tip}
 
 - Click on the **+** icon in the top left corner of a media file to select: 
 
@@ -66,7 +70,7 @@ The file will open in a separate window where you can toggle to a larger window 
 
 
 {tip}
-Use the **Upload new** button to add additional image files to the [Library](media_library)!
+Use the **Upload new** button to add additional image/Video and Audio files to the [Library](media_library)!
 {/tip}
 
 Library Media can also be added to a Region as a Playlist view by clicking on the menu to the right of the Timeline:

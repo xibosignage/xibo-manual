@@ -5,7 +5,7 @@
 The Menu Board Widget is used with Menu Boards to display Menu information.
 
 {tip}
-Menu Board is available from v3.1, upgrade from earlier versions to take advantage of this Widget!
+Menu Board is available from v3.1.0 upgrade from earlier versions to take advantage of this Widget!
 {/tip}
 
 Menu Boards need to be first created prior to adding the Menu Board Widget to Layouts, Please see the  [Menu Boards](layouts_menuboards.html)  page for further information.

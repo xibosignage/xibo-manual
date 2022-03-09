@@ -3,8 +3,8 @@
 {tip}
 **Please note:**
 
-- If you are using a 3.1.x CMS, please click [here](layouts_library_search.html)
-- If you are using a CMS earlier than 3.0.0, please click [here](layouts_library_search_2.0)
+- If you are using a v3.1.x CMS, please click [here](layouts_library_search.html)
+- If you are using a CMS earlier than v3.0.0, please click [here](layouts_library_search_2.0)
   {/tip}
 
 The Library Search feature is used as a quick and easy way to assign **media** to **Layouts** which has already been uploaded to the Library.

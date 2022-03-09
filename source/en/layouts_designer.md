@@ -5,10 +5,10 @@
 {tip}
 If you are using a CMS earlier than v3.1.0 please select from the options below:
 
-- 3.0.x CMS click [here](layouts_designer_3.html)
-- 2.3.x CMS click [here](layouts_designer_2.html)
-- 2.0.x CMS click [here](layouts_designer_2.0.html)
-- 1.8.x CMS click [here](layouts_designer_1.8.html)
+- v3.0.x CMS click [here](layouts_designer_3.html)
+- v2.3.x CMS click [here](layouts_designer_2.html)
+- v2.0.x CMS click [here](layouts_designer_2.0.html)
+- v1.8.x CMS click [here](layouts_designer_1.8.html)
 
 {/tip}
 

@@ -1,11 +1,11 @@
 # Library Search
 
 {tip}
-**Please note:** This page is for users of a **2.0 - 2.2 CMS**. For an alternative version please select from the options below:
+**Please note:** This page is for users of a **v2.0.x - v2.2.x CMS**. For an alternative version please select from the options below:
 
-- 2.3.x CMS click [here](layouts_library_search_3.html)
-- 3.0.x CMS click [here](layouts_library_search.html)
-- 3.1.x CMS click [here](layouts_library_search.html)
+- v2.3.x CMS click [here](layouts_library_search_3.html)
+- v3.0.x CMS click [here](layouts_library_search.html)
+- v3.1.x CMS click [here](layouts_library_search.html)
 
 
 {/tip}
