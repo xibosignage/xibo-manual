@@ -1,6 +1,11 @@
 ## Audio 
 
-**Please note:** If you are using a 3.x CMS, please use the following link: [Audio](media_module_audio.html)
+{tip}
+**Please note:** 
+
+- If you are using a 3.0.x CMS, please click [here](media_module_audio_3.html)
+- If you are using a 3.1.x CMS, please click [here](media_module_audio.html)
+  {/tip}
 
 Audio files are uploaded to the [Library](media_library_2.html) and served to the Player for offline playback. The Audio Module allows for audio to be assigned to Layouts.
 
