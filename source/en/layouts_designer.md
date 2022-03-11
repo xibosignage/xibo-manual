@@ -46,6 +46,11 @@ Next to the icon the total **Duration** of the selected Layout is displayed in s
 The overall Layout duration is always based on the longest running [Region](layouts_regions.html) on the Layout!
 {/tip}
 
+{tip}
+Interactive Actions that have been added to the Layout will be shown in the status bar.
+
+![Interactive Actions Status](img/v3.1_layouts_designer_interactive_actions_status.png)
+
 The **Layout selector** provides easy navigation between all Layouts the logged in User has permission to edit without having to leave the Layout Designer page. Enter search criteria and use the dropdown menu to change the Layout you are currently viewing/editing.
 
 {tip}

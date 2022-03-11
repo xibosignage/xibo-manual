@@ -8,7 +8,7 @@ If you are using a CMS earlier than v3.0.0, please use the following link: [Grid
 
 The CMS presents many of the entities,**Layouts**, **Media**, **Displays** for example, as tabular data called **Grids**. Each Grid has a number of elements that combine to create a flexible administration tool that is easy to read and understand.
 
-The following screenshot shows the **Layout Grid** annotated with each of its elements.
+The following screenshot shows the **Layout Grid** annotated with each of its elements:
 
 ![Grids](img/v3_tour_grids.png)
 
@@ -18,25 +18,27 @@ Common Actions for each page, such as **Add Layout** are located in the top righ
 
 ## Tabs
 
-Use the available tabs to access **Advanced** filtering options for Grids.
+Use the **Advanced** tab to access further filtering options:
+
+![Advanced Tab](img/v3.1_tour_grids_advanced.png)
 
 ## Filters
 
 Grids have multiple **Filter** fields which can be used to restrict the criteria for returned results.
 
-{tip}
 For example all Layouts belonging to a particular **Owner** can be the only results shown in the Grid.
-{/tip}
 
 {tip}
 Use the checkbox to apply advanced filtering options for Names using Regex!
 {/tip}
 
+{tip}
+From v3.1.0 set the **Orientation** for Image and Media files in the [Library](media_library.html) to apply to filters!
+{/tip}
+
 ## Folders
 
-Folders allow Users to easily organise,search and share object easily.  
-
-Available on selected Grids, the Folder tree will open by default.
+Use Folders to easily organise, search and share objects.
 
 - Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
 
@@ -59,7 +61,7 @@ Right click a folder to access further options:
 The Folder tree and menu options are based on enabled [Features and Share](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
 
-Items can be saved to Folders when adding/editing or from the Row Menu of an item using the **Select Folder** option.
+Items can be saved to Folders when adding/editing or from the row menu of an item using the **Select Folder** option.
 
 {tip}
 If Share options have been set for a Folder, all objects contained or moved to that Folder will inherit the View, Edit, Delete options applied for Users/User Groups!
@@ -85,18 +87,27 @@ Use the **Column Visibility** button to select/de-select which columns to presen
 
 ![Column Visibility](img/v3_tour_column_visibility.png)
 
+HERE blue + icon
+
+{tip}
+From v3.1.0 if too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row:
+
+![Addtional Rows](img/v3.1_tour_grids_addtional_rows.png)
+
+![Visible Rows](img/v3.1_tour_grids_visible_rows.png)
+
+{/tip}
+
+
+
 ## Row Menu
 
-Each row has its own 'Actions' menu which is accessed from a **Row Menu**. 
+Each row has a menu of actions and shortcuts:
 
 ![Row Menu](img/v3_tour_grids_row_menu.png)
 
 {tip}
-Actions will differ dependant on the page selected.
-{/tip}
-
-{tip}
-Objects can be moved between **Folders** using the Row Menu **Select Folder** option.
+Menu's will differ dependant on the page selected!
 {/tip}
 
 ## Automatic Submission of Forms
