@@ -12,15 +12,15 @@ The Local Video Widget is used for video that exists **only** on the **Display**
 
 ## Add Widget
 
-Click on **Local Video** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Local Video Widget](img\v2_media_localvideo_widget.png)
+Click on **Local Video** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Local Video Widget](img\v2_media_localvideo_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select Local Video from the Widget Toolbox to add!
 {/tip}
 
-On adding, configuration options are shown in the Edit Local Video form:
+On adding, configuration options are shown in the properties panel:
 
-![Local Video Add](img/v3_media_localvideo_configuration.png)
+![Local Video Add](img/v3.1_media_localvideo_configuration.png)
 
 - Complete a local file path or URL to the video, this can be an RTSP Stream.
 
@@ -34,10 +34,12 @@ Video scaling and RTSP streams are only supported on the Android, webOS and Linu
 {/tip}
 
 {tip}
- The number of RTSP streams you can show on one Layout is dependent on the device being used.
+The number of RTSP streams you can show on one Layout is dependent on the device being used.
 {/tip}
 
+{tip}
 **Please note:** Transitions are not supported for the Tizen Player.
+{/tip}
 
 ## Actions 
 

@@ -6,13 +6,13 @@ The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Cloc
 
 ## Add Widget
 
-Click on **Clock** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Clock Widget](img\v2_media_clock_widget.png)
+Click on **Clock** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Clock Widget](img\v2_media_clock_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select Chart from the Widget Toolbox to add!
 {/tip}
 
-On adding, configuration options are shown in the Edit Clock form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -21,19 +21,19 @@ On adding, configuration options are shown in the Edit Clock form:
 
 Use the drop-down menu to select the type of clock to display:
 
-![Clock Appearance](img\v3_media_clock_appearance.png)
+![Clock Appearance](img\v3.1_media_clock_appearance.png)
 
 - **Analogue** is a traditional clock face available in a Light or Dark theme (black or white face).
 - **Digital** has an additional **Editor** tab to enter formatting.
 
 Enter text or HTML in the box provided or toggle on the Visual editor and click on the edit icon to access the inline editor:
 
-![Digital Editor](img/v3_media_clock_editor.png)
+![Digital Editor](img/v3.1_media_clock_editor.png)
 
 Use the editor to select font, size, colour and use **Snippets** to include available merge fields. 
 
 {tip}
-See the section at the bottom of the page for further information on available formats!
+See the section at the bottom of the page for further information on date/time formats!
 {/tip}
 
 {tip}

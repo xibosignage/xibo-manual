@@ -32,7 +32,7 @@ Click on **Currencies** from the [Widget](layouts_widgets.html)  toolbar and cli
 If you are using a 1.8.x CMS, select Currencies from the Widget Toolbox to add. 
 {/tip}
 
-On adding, configuration options are shown in the Edit Currencies form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -40,7 +40,7 @@ On adding, configuration options are shown in the Edit Currencies form:
 
 ## Configuration
 
-![Currencies Configuration](img\v3_media_currencies_configuration.png)
+![Currencies Configuration](img\v3.1_media_currencies_configuration.png)
 
 - Define currencies using their **acronym/abbreviation** (symbols or written text will not be recognised).
 - Include a **Base** currency.
@@ -52,23 +52,27 @@ On adding, configuration options are shown in the Edit Currencies form:
 - Include a PHP **Date Format** to apply to returned results, (see the bottom of the page for date formats).
 - Select an optional **Effect** and **Speed** to be used to transition between items.
 
+{tip}
+From v3.1.0 set **Horizontal** and **Vertical** alignment options for this Widget!
+
+{/tip}
+
 ### Templates
 
 Select from the available Templates:
 
-![Currencies Templates](img\v3_media_currencies_templates.png)
+- **Preset**  - use the drop down to select one of the preset templates:
 
-### Preset
+  ![Preset Templates](img\v3.1_media_currencies_preset_templates.png)
 
-- Use the drop down to select one of the preset templates:
+  {tip}
 
-  ![Preset Templates](img\v3_media_currencies_preset_templates.png)
+  Click to Override the selected template if required. 
 
-- Tick to edit the selected template if required. Please see the section on Editing Preset Templates below for further information.
+  Please see the section on Editing Preset Templates below for further information.
+  {/tip}
 
-### No Records Message Template
-
-- Provide a **No Records Message** to display when there are no records returned.
+- **No Records Message** provide a message to display when there are no records returned.
 
 ### Editing Preset Templates
 
@@ -87,23 +91,17 @@ The template will be automatically scaled and should be designed for the intende
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Currencies Override the Template](img\v3_media_currencies_override_templates.png)
+![Currencies Override the Template](img\v3.1_media_currencies_override_templates.png)
 
-#### Main Template
-
-Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
+**Main Template** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 
 {tip}
 **Please note:** The Visual editor is not available in a 1.8.x  CMS.
 {/tip}
 
-#### Item Template
+**Item Template**  - Enter a Template to be applied to each item, use the Visual editor or provide text/HTML in the box provided.
 
-Enter a Template to be applied to each item, use the Visual editor or provide text/HTML in the box provided.
-
-#### Optional Stylesheet
-
-This is the CSS to apply to the template structure above.
+**Optional Stylesheet** - This is the CSS to apply to the template structure above.
 
 ### Caching
 

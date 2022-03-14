@@ -82,7 +82,6 @@ Media files that are saved in Folders will inherit the View, Edit, Delete Share 
 
 - Users can also right click a Folder to access further options.
 
-
 {tip}
 Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
@@ -110,7 +109,7 @@ For further information regarding Folder access and set-up, please speak to your
 - Once all files have been successfully uploaded, click **Done**.
 
 {tip}
-Media files can also be uploaded directly to Layouts using the upload tool from the [Library Search](layouts_library_search.html) function for Images, Audio and Video files. Other file types (such as PDF) can be uploaded by adding the associated **Widget** to a  **Layout**. Files that are added directly to Layouts are saved by deafult to the Library.
+Media files can also be uploaded directly to Layouts using the upload tool from the [Library Search](layouts_library_search.html) function for Images, Audio and Video files. Other file types (such as PDF) can be uploaded by adding the associated **Widget** to a  **Layout**. Files that are added directly to Layouts are saved by default to the Library.
 {/tip}
 
 ### Add Media via URL

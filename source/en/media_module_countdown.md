@@ -8,9 +8,9 @@ The Countdown Widget can be used to show a countdown for a selected **duration**
 
 ## Add Widget
 
-Click on **Countdown** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Countdown Widget](img\v2.3_media_countdown_widget.png)
+Click on **Countdown** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Countdown Widget](img\v2.3_media_countdown_widget.png)
 
-On adding, configuration options are shown in the Edit Countdown form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -19,7 +19,7 @@ On adding, configuration options are shown in the Edit Countdown form:
 
 Use the drop-down menu to select the type of countdown to display:
 
-![Countdown Type](img\v3_media_countdown_type.png)
+![Countdown Type](img\v3.1_media_countdown_type.png)
 
 - **Widget Duration -** The countdown will be determined by the duration of the Widget.
 - **Custom Duration** - Set a countdown duration in seconds.
@@ -29,6 +29,10 @@ Use the **Warning Date** to set at which point the countdown will change to a 'w
 
 {tip}
 The "warning" and "finished" status can be styled using the CSS style sheet on overriding a Template. 
+{/tip}
+
+{tip}
+From v3.1.0 set **Horizontal** and **Vertical** alignments for this Widget!
 {/tip}
 
 ### Templates
@@ -56,7 +60,7 @@ With override template selected, you can enter text, HTML and CSS.
 
 Once override has been selected, click back on the **Templates tab** to select the templates to edit:
 
-![Override Template](img\v3_media_countdown_override_template.png) 
+![Override Template](img\v3.1_media_countdown_override_template.png) 
 
 ## Optional Stylesheet
 

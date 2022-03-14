@@ -3,11 +3,11 @@
 # HTML Package
 
 {tip}
-If you are using a 2.x CMS please use the following link: [HTML Package](media_module_htmlpackage_2.html)
+If you are using a 2.0.x CMS please use the following link: [HTML Package](media_module_htmlpackage_2.html)
 {/tip}
 
 {tip}
-Please note: This module is currently not supported for the Linux Player.
+**Please note:** This module is currently not supported for the Linux Player.
 {/tip}
 
 The HTML Package Module allows for the upload of a complete HTML Package which can be distributed to Players.
@@ -17,10 +17,10 @@ The HTML Package Module allows for the upload of a complete HTML Package which c
 Click on **HTML Package** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop. ![HTML Package Widget](img/v2_media_html_package.png)
 
 {tip}
-If the file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add!
+If the file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) function to add!
 {/tip}
 
-## Upload File
+## Upload Media File
 
 The file uploader will open on adding the HTML Package Widget:
 
@@ -41,17 +41,14 @@ HTML Packages that are saved in Folders will inherit the View, Edit, Delete [Sha
 {/tip}
 
 - Click on the **Select Folder** button and expand to select a Folder to save in.
-
-![Select Folder](img\v3_media_htmlpackage_select_folder.png)
-
-Users can also right click a Folder to access further options.
+- Users can also right click a Folder to access further options.
 
 {tip}
 Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
 {/tip}
 
 - Click in the folder you wish to upload the file to and click **Done**. 
-- The **Current Folder** will show the selected file path:
+- The **Current Folder** will show the selected file path.
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
@@ -61,15 +58,15 @@ Further information for Administrators regarding Folder access and set-up can be
 For further information regarding Folder access and set-up, please speak to your Administrator.
 {/white}
 
-There is also an option to set expiry dates and times for files uploaded to this particular Widget.
+
+
+There is an option to **Set Expiry Dates** and times for files uploaded to this particular Widget.
 
 - Tick the **Set Expiry Dates** box.
 
 - Use the date picker to select **Start** and **End** dates and times.
 
 ![Expiry Dates](img\v3_media_htmlpackage_expiry_dates.png)
-
-- There are further options to remove the Widget from the Playlist on expiry and to delete the file from the Library.
 
 
 - Click the **Start upload** button to begin the upload. 
@@ -86,7 +83,7 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 Click on the added **HTML Package Widget** from the **Timeline** to open configuration options in the **Edit HTML Package** form:
 
-![HTML Options](img/v3_media_html_options.png)
+![HTML Options](img/v3.1_media_html_options.png)
 
 - Using the General tab, make edits to the Name and provide a specific duration as required.
 - Enter a file name for the Player to attempt to open after extracting the .htz archive.
@@ -95,3 +92,4 @@ Click on the added **HTML Package Widget** from the **Timeline** to open configu
 ### Actions
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
+
