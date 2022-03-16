@@ -12,7 +12,7 @@ Events are administered from the **Schedule** section of the menu and managed fr
 
 
 
-The CMS supports scheduling for 5 Event types:
+The CMS supports scheduling for the following Event types:
 
 1. #### Layout Event
 
@@ -45,6 +45,12 @@ Further information regarding Command Functionality for Administrators can be fo
 {tip}
 Display Order and Priority are irrelevant when it comes to executing the Command, but may be set in the CMS for organisational purposes.
 {/tip}
+
+6. #### Action Events (available from v3.1.0)
+
+**Please note:** Currently supported on Windows from v3 R303
+
+**Actions** allows listening for webhooks independantly to Layouts. Users can schedule Action Events to **Navigate to a Layout** or run a **Command**.
 
 ## Schedule Events
 
