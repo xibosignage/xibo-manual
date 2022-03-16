@@ -12,11 +12,11 @@ Ensure that you have created a [Playlist](media_playlists.html) prior to adding 
 
 ## Add Widget
 
-Click on **Sub-Playlists** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Sub-Playlist Widget](img\v2_media_subplaylist_widget.png)
+Click on **Sub-Playlists** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Sub-Playlist Widget](img\v2_media_subplaylist_widget.png)
 
-On adding, configuration options are shown in the Edit Sub-Playlist form:
+On adding, configuration options are shown in the properties panel:
 
-![Sub-Playlist Edit Form](img/v3_media_subplaylist_edit_form.png)
+![Sub-Playlist Edit Form](img/v3.1_media_subplaylist_edit_form.png)
 
 
 
@@ -24,7 +24,7 @@ On adding, configuration options are shown in the Edit Sub-Playlist form:
 
 Included on this tab are optional **Spot** options which allow for the defining of advertising/promotional spots.
 
-- **Spots**
+**Spots**
 
 - Specify the **total number** of Spots you would like to be available for that Playlist to expand or shrink the Playlist to a specified size/duration.
 - Leave this field **blank** to use the count of Widgets assigned to the Playlist to maintain the size.
@@ -48,9 +48,7 @@ With more than one Playlist added, click on the **Configuration** tab to define 
 
 ### Configuration
 
-The Configuration tab contains the following options:
-
-![Sub-Playlist Configuration](img\v3_media_subplaylist_configuration.png)
+![Sub-Playlist Configuration](img\v3.1_media_subplaylist_configuration.png)
 
 **Playlist Ordering**
 
@@ -59,15 +57,16 @@ The Configuration tab contains the following options:
 - **Auto** - Ensures that Widgets are played evenly from each Playlist. Auto uses the total count of Widgets in each list and divides by the smallest list. This determines how often it should take media items from each list to ensure an even play from each Playlist.
 
 {tip}
-**Scenario**:
 
-![Subplaylist Scenario](img\v3_media_subplaylist_scenario.png)
+### Example scenario:
 
-I have three Playlists with images of Flowers, Sweets and Fruit which vary in Spot allocation.  I would like an even spread of media items from each of these Playlists to be played.
+I have three Playlists with images of Flowers, Sweets and Fruit which vary in Spot allocation.  I would like an even spread of media items from each of these Playlists to be played:
 
-Set with an **Auto** configuration:
+![Subplaylist Configuration Scenario](img\v3.1_media_subplaylist_configuration_scenario.png)
 
-![Subplaylist Configuration Scenario](img\v3_media_subplaylist_configuration_scenario.png)
+Set with as **Auto** for Playlist Ordering:
+
+![Subplaylist Scenario](img\v3.1_media_subplaylist_scenario.png)
 
 Media would be taken from each Playlist and play as follows:
 
@@ -89,6 +88,16 @@ The Sub-Playlist preview shows the number of Widgets and total duration after pl
 {tip}
 **Please note:**  Setting Widget start dates may cause fewer Spots to be shown than the total Spots specified.
 {/tip}
+
+From v3.1.0 an option is available to **Enable Cycle based playback**:
+
+![Cycle Playback](img/v3.1_media_subplaylist_cycle_playback.png)
+
+
+
+- When enabled only 1 Widget will play from a playlist each time the Layout is shown
+- Set a **Play count** to determine how many times each Widget will be shown before moving onto the next Widget in the playlist.
+- Play a **Random Widget** from the playlist each time the Layout is shown by ticking the box to enable.
 
 ## Actions 
 

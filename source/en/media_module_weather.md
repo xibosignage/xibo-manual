@@ -129,6 +129,10 @@ A common example is to ignore the "Current Template" and produce a full 7 day fo
 
 This is the CSS to apply to the template structure above.
 
+{tip}
+This optional template is intended for advanced users to 'tweak' the CMS generated output!
+{/tip}
+
 ### Attribution
 
 All Layouts that use the Weather Widget need to include attribution, available by using the `[Attribution]` tag. All preset templates contain this tag by default, please ensure that this tag is included when editing/overriding default templates.

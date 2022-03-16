@@ -8,15 +8,20 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [Flash](media_module_flash_2.html)
 {/tip}
 
-The Flash Module allows for SWF file uploads to the [Library](media_library.html) which can then be assigned to a Timeline.
+The Flash Module allows for SWF file uploads to the [Library](media_library.html) which can then be used in Layouts.
 
 ## Add Widget
 
 Click on Flash from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Flash Widget](img/v2_media_flash_widget.png)
 
 {tip}
-If the Flash file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) function to add!
+Use the [Library Search](layouts_library_search.html) function to add PowerPoint files already uploaded to the Library.
 {/tip}
+
+
+From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
+
+![Upload New](img/v3.1_media_flash_uploadnew.png)
 
 ## Upload Media File
 
@@ -75,6 +80,9 @@ This is particularly useful should you need to preload files to be shown at a la
   ![Expiry Dates](img\v3_media_flash_expiry_dates.png)
 
 - Select **Start** and **End** dates and times.
+
+- Use the check boxes to remove the media file from the Playlist on expiry and delete from the Library.
+
 - Click the **Start upload** button to begin the upload of all files added. If a Folder/Expiry Dates have been selected and there are multiple files to be added, all files will be uploaded to the specified location and have the same Expiry Dates set.
 
 
@@ -89,7 +97,7 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 ## Configuration Options
 
-Click on the added **Flash Widget** to open configuration options in theproperties panel:
+Click on the added **Flash Widget** to open configuration options in the properties panel:
 
 ![Edit Options](img\v3.1_media_modules_flash.png)
 

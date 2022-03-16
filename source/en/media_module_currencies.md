@@ -48,7 +48,7 @@ On adding, configuration options are shown in the properties panel:
 
 ### Appearance
 
-- Optionally choose a **background colour** using the colour picker.
+- Optionally add a **Background Colour**.
 - Include a PHP **Date Format** to apply to returned results, (see the bottom of the page for date formats).
 - Select an optional **Effect** and **Speed** to be used to transition between items.
 
@@ -93,15 +93,19 @@ Once override has been selected, click back on the **Templates tab** to select t
 
 ![Currencies Override the Template](img\v3.1_media_currencies_override_templates.png)
 
-**Main Template** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
+**Main ** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 
 {tip}
 **Please note:** The Visual editor is not available in a 1.8.x  CMS.
 {/tip}
 
-**Item Template**  - Enter a Template to be applied to each item, use the Visual editor or provide text/HTML in the box provided.
+**Item ** - Enter a Template to be applied to each item, use the Visual editor or provide text/HTML in the box provided.
 
-**Optional Stylesheet** - This is the CSS to apply to the template structure above.
+**Optional Stylesheet** - This is the CSS to apply to the template structure.
+
+{tip}
+This optional template is intended for advanced users to 'tweak' the CMS generated output!
+{/tip}
 
 ### Caching
 

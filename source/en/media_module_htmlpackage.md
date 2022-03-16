@@ -17,8 +17,13 @@ The HTML Package Module allows for the upload of a complete HTML Package which c
 Click on **HTML Package** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop. ![HTML Package Widget](img/v2_media_html_package.png)
 
 {tip}
-If the file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) function to add!
+Use the [Library Search](layouts_library_search.html) function to add PowerPoint files already uploaded to the Library.
 {/tip}
+
+
+From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
+
+![Upload New](img/v3.1_media_htmlpackage_uploadnew.png)
 
 ## Upload Media File
 

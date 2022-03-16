@@ -12,7 +12,7 @@ Click on **Notification** from the [Widget](layouts_widgets.html) toolbar and cl
 If you are using a 1.8.x CMS, select Notification from the Widget Toolbox to add!
 {/tip}
 
-On adding, configuration options are shown in the Edit Notification form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -28,17 +28,17 @@ On adding, configuration options are shown in the Edit Notification form:
 
 Click on the **Template** tab to format available templates:
 
-![Notification Template](img\v3_media_notifications_templates.png)
+![Notification Template](img\v3.1_media_notifications_templates.png)
 
-#### Main Template
+#### Main 
 
-- Select **Main**
-- Enter HTML in the box provided or toggle On the **Visual editor** to format the main template using the inline editor.
+- Enter HTML in the box provided or toggle On the **Visual editor** to format the template using the inline editor.
 - Click the edit icon to open.
 
-![Notification Editor](img\v3_media_notifications_inline_editor.png)
+![Notification Editor](img\v3.1_media_notifications_inline_editor.png)
 
-- Include the text merge fields to format from the **Snippets** menu, to pull in the **Subject** and **Body** information from the Notification Drawer. Click on the **Save** button.
+- Include the text merge fields to format from the **Snippets** menu, to pull in the **Subject** and **Body** information from the Notification Drawer. 
+- Click on the **Save** button.
 
 ### No Data Template
 

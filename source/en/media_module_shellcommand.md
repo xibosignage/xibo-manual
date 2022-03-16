@@ -34,12 +34,12 @@ Further information regarding Command Functionality for Administrators can be fo
 
 Click on **Shell Command** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![Shell Command Widget](img/v2_media_shellcommand_widget.png)
 
-On adding, configuration options are shown in the Edit Shell Command form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Tick the **Set a duration** box and provide a **Duration** to forcibly stop the process. Leave unticked to leave the command to run to its natural conclusion.
 
-![Shell Command Duration](img/v3_media_shell_command_duration.png)
+![Shell Command Duration](img/v3.1_media_shell_command_duration.png)
 
 {tip}
 In most cases, commands that are run from a Layout tend to be background commands which trigger something to happen like screen on/off or restart the device etc. In such cases, leave the box unticked.
@@ -49,20 +49,20 @@ If you need to run a command for a fixed period of time, for example where your 
 
 ### Configuration
 
-![Shell Command Configuration](img/v3_media_shell_command_configuration.png)
+![Shell Command Configuration](img/v3.1_media_shell_command_configuration.png)
 
-Use the drop down to select from the Command Type options:
+- Use the drop down to select from the **Command Type** options:
+  - **Stored Command** - allows a user to pick a predefined command from the drop down menu.
+  - **Create Command** - use the command builder and select from the available options to create a command.
 
-**Stored Command** - allows a user to pick a predefined command from the drop down menu.
+![Shell Command Create](img/v3.1_media_shell_command_create.png)
 
-**Create Command** - use the command builder and select from the available options to create a command.
+- 
+  Select **Free Text** to enter a command string or use the drop down menu to select from the available Commands to configure.
 
-![Shell Command Create](img/v3_media_shell_command_create.png)
 
+- Tick to use a global command and enter a Command Line compatible command to work with all Player types.
 
-Select **Free Text** to enter a command string or use the drop down menu to select from the available Commands to configure.
-
-Tick to use a global command and enter a Command Line compatible command to work with all Player types.
 
 With Create Command selected, an **Advanced** tab is made available to enable launching the command via Windows Command Line (cmd.exe).
 
