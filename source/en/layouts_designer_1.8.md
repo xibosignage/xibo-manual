@@ -1,10 +1,12 @@
 # Layout Designer
 
 {tip}
-**Please note:** If you are using a CMS later than 1.8.x please select from the options below:
+**Please note:** If you are using a CMS later than v1.8.x please select from the options below:
 
-- 2.x CMS click [here](layouts_designer_2.html)
-- 3.x CMS click [here](layouts_designer.html)
+- v2.0.x CMS click [here](layouts_designer_2.0html)
+- v2.3.x CMS click [here](layouts_designer_2.html)
+- v3.0.x CMS click [here](layouts_designer_3.html)
+- v3.1.x CMS click [here](layouts_designer.html)
 
 {/tip}
 

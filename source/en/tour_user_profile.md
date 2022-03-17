@@ -32,7 +32,7 @@ For further information regarding the administration of CMS settings, please cli
   DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](https://xibo.org.uk/manual/en/users_administration.html#my_applications).
   {/tip}
 
-- Select to use the **Library duration** or **Module defaults** for all assigned Media.
+- **Force current Library duration** so that any changes made to the media item in the Library are not pulled into Layouts.
 
 - Use this option to automatically show the thumbnail column when requesting screenshots from Displays.
 

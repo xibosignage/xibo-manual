@@ -10,13 +10,13 @@ Examples of where this might be useful are displaying a Clock or Weather region.
 
 ## Add Widget
 
-Click on **Embedded** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Embedded Widget](img\v2_media_embedded_widget.png)
+Click on **Embedded** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Embedded Widget](img\v2_media_embedded_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select Embedded from the Widget Toolbox to add!
 {/tip}
 
-On adding, configuration options are shown in the Edit Embedded form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -41,7 +41,7 @@ On adding, configuration options are shown in the Edit Embedded form:
 
 ### Templates
 
-![Embedded Templates](img\v3_media_embedded_templates.png)
+![Embedded Templates](img\v3.1_media_embedded_templates.png)
 
 ### HTML to Embed
 

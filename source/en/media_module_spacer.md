@@ -10,9 +10,9 @@ Include the Spacer Widget to your Layouts to create an 'empty' Region for a spec
 
 Click on **Spacer** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Spacer Widget](img\media_spacer_widget.png)
 
-![Spacer Edit Form](img\v3_media_spacer_edit.png)
+![Spacer Edit Form](img/v3.1_media_spacer_edit.png)
 
-On adding, configuration options are shown in the Edit Spacer form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.

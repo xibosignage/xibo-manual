@@ -1,6 +1,12 @@
 # Widgets
 
-**Please note:** If you are using a 3.x CMS, please use the following link: [Widgets](layouts_widgets.html)
+{tip}
+**Please note:**
+
+-  If you are using a v3.0.x CMS, please click [here](layouts_widgets_3.html)
+-  If you are using a v3.1.x CMS, please click [here](layouts_widgets.html)
+
+{/tip}
 
 Media is assigned to Layouts using **Widgets**, which provide the actions for the selected Module.
 

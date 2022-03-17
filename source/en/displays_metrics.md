@@ -32,7 +32,7 @@ The CMS records the **bandwidth** used by each Display when connecting to XMDS f
 
 
 {tip}
-Filtering to just one Display helps to better understand where bandwidth has bee used!
+Filtering to just one Display helps to better understand where bandwidth has been used!
 {/tip}
 
 {tip}
@@ -74,7 +74,7 @@ Each **Display** can collect information to provide Proof of Play Reports on wha
 
 To collect Proof of Play reports **Enable Stats Reporting** and set the **Aggregation level** on a [Display Profile Setting](displays_settings.html)
 
-Statistical collection can be enabled as a default by an **Administrator** on the Settings page and set by a User on adding/editing a [Layout](layouts.html), [Playlist](media_playlists.html), from the [Media Library](media_library.html) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** / **On** / **Inherit** selections.
+Statistical collection can be enabled as a default by an **Administrator** on the Settings page and set by a User on adding/editing a [Layout](layouts.html), [Playlist](media_playlists.html), from the [Media Library](media_library.html) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** /**On**/ **Inherit** selections.
 
 {nonwhite}
 For further information regarding Proof of Play Settings for Administrators please click [here](https://xibo.org.uk/docs/setup/proof-of-play-settings)
@@ -98,9 +98,7 @@ Use **Export** to select from and to dates for a Display to easily see all Proof
 
 ![Proof of Play Export](img/v3_displays_export_proof_of_play.png)
 
-
-
-- ### Proof of Play: Report
+### Proof of Play: Report
 
 
 - Select a **Range** from the dropdown or specify your own dates and times and use the filter fields as necessary. 
@@ -116,7 +114,7 @@ Returned results can be exported to a CSV!
 
 Click on **All Reports** to return to the Reports Dashboard or use the **Reports** dropdown to select from the available Proof of Play Reports.
 
-- ### Chart: Summary/Distribution by Layout, Media or Event
+### Chart: Summary/Distribution by Layout, Media or Event
 
 
 Charts show an aggregate duration and number of plays the selected Layout, Media or Event.
@@ -131,7 +129,7 @@ Charts show an aggregate duration and number of plays the selected Layout, Media
 
 ## Library
 
-- ### Library Usage
+### Library Usage
 
 
 View Library usage for all Users of the CMS or filter to have an overview of usage by an individual User/User Group. 
@@ -151,6 +149,10 @@ Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yea
 - Click on the **Schedule** button and complete the necessary form fields for the particular report type.
 
 - A PDF of the report can  be emailed to users by ticking the Should an email be sent? checkbox
+
+{tip}
+From v3.1.0 Administrators can opt to disable the **Logo** shown on exported reports from the General tab on the **Settings** page under the **Administration** section of the main menu!
+{/tip}
 
 
 {tip}

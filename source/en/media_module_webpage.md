@@ -2,7 +2,7 @@
 
 # Webpage
 
-Add the Webpage Widget to Display an entire Webpage embedded inside a Region. 
+Add the Webpage Widget to display an entire Webpage embedded inside a Region. 
 
 **Please note:** This Widget requires a valid internet connection in order to function, Webpages are not cached by the Player.
 
@@ -12,20 +12,20 @@ There is support for **scaling** and **offsetting** the target webpage to allow 
 
 ## Add Widget
 
-Click on **Webpage** from the  [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop![Webpage Widget](img\v2_media_webpage_widget.png)
+Click on **Webpage** from the  [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![Webpage Widget](img\v2_media_webpage_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select Webpage from the Widget Toolbox to add. 
 {/tip}
 
-On adding, configuration options are shown in the Edit Webpage form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
 
 ## Configuration
 
-![Webpage Configuration](img\v3_media_webpage_configuration.png)
+![Webpage Configuration](img\v3.1_media_webpage_configuration.png)
 
 - Provide the **URL** (including `http://`) of the webpage.
 - Use the checkbox to render the webpage with a transparent background. (Available from R253 for the Windows Player). [[PRODUCTNAME]] will try its best to do this when checked, however, it cannot be supported on some webpages.
@@ -34,7 +34,10 @@ On adding, configuration options are shown in the Edit Webpage form:
 After the page is rendered [[PRODUCTNAME]] will scale to fit within the Region.
 {/tip}
 
-Select from the 3 available **Options** to choose how the webpage should be embedded:
+- Tick to **Preload** the Widget off screen so that it is ready to be shown.
+
+- Select from the available **Options** to choose how the webpage should be embedded:
+
 
 #### **Open Natively**
 
@@ -65,3 +68,11 @@ If X-Frame-Options is not set then the website should show in any of the Players
 
 Use the [X-Frame-Options Header Checker Tool](https://tools.geekflare.com/tools/x-frame-options-test) to see if the header has been set.
 {/tip}
+
+- Enter a code identifier for a **Navigate to Layout** Action should the page return an error and not load. See Interactive Actions for further details!
+
+## Actions 
+
+**Available from v3.0.0**
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.

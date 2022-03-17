@@ -1,6 +1,11 @@
 # Video
 
-Please note: If you are using a 3.x CMS, please use the following link: [Video](media_module_video.html)
+{tip}
+**Please note:** 
+
+- If you are using a 3.0.x CMS, please click [here](media_module_video_3.html)
+- If you are using a 3.1.x CMS, please click [here](media_module_video.html)
+  {/tip}
 
 The Video Module allows for videos to be uploaded to the Library which are then cached for off-line playback.
 

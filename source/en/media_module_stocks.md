@@ -32,10 +32,10 @@ Click on **Stocks** from the [Widget](layouts_widgets.html)  toolbar and click t
 
 {tip}
 If you are using a 1.8.x CMS, select Stocks from the Widget Toolbox to add. 
-Please note: The Visual editor is not available in a 1.8.x  CMS.
+**Please note:** The Visual editor is not available in a 1.8.x  CMS.
 {/tip}
 
-On adding, configuration options are shown in the Edit Stocks form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -43,7 +43,7 @@ On adding, configuration options are shown in the Edit Stocks form:
 
 ### Configuration
 
-![Stocks Configuration](img\v3_media_stocks_configuration.png)
+![Stocks Configuration](img\v3.1_media_stocks_configuration.png)
 
 - Include a list of comma separated Stock Symbols (Ticker) to return results.
 
@@ -61,23 +61,27 @@ Stock symbols can be found on various lookup sites such as [Yahoo Finance](https
 - Include a PHP **Date Format** to apply to returned results, (see the bottom of the page for date formats).
 - Select an optional **Effect** and **Speed** to be used to transition between items.
 
+{tip}
+From v3.1.0 set **Horizontal** and **Vertical** alignment options for this Widget!
+
+{/tip}
+
 ### Templates
 
 Select from the available Templates:
 
-![Stocks Templates](img\v3_media_stocks_template.png)
+- **Preset** - use the drop down to select one of the preset templates
 
-### Preset
+![Preset Stocks Templates](img\v3.1_media_stocks_preset_templates.png)
 
-- Use the drop down to select one of the preset templates:
+{tip}
 
-  ![Preset Stocks Templates](img\v3_media_stocks_preset_templates.png)
+Click to Override the selected template if required. 
 
-- Tick to edit the selected template if required. Please see the section on Editing Preset Templates below for further information.
+Please see the section on Editing Preset Templates below for further information.
+{/tip}
 
-### No Records Message Template
-
-- Provide a **No Records Message** to display when there are no records returned.
+- **No Records Message** provide a message to display when there are no records returned.
 
 ### Editing Preset Templates
 
@@ -96,19 +100,21 @@ The template will be automatically scaled and should be designed for the intende
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Currencies Override the Template](img\v3_media_stocks_override_templates.png)!!
+![Currencies Override the Template](img\v3.1_media_stocks_override_templates.png)!!
 
-#### Main Template
+**Main Template** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 
-Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
+{tip}
+**Please note:** The Visual editor is not available in a 1.8.x  CMS.
+{/tip}
 
-#### Item Template
+**Item Template**  - Enter a Template to be applied to each item, use the Visual editor or provide text/HTML in the box provided.
 
-Enter a Template to be applied to each item, use the Visual editor or provide text/HTML in the box provided.
+**Optional Stylesheet** - This is the CSS to apply to the template structure above.
 
-#### Optional Stylesheet
-
-This is the CSS to apply to the template structure above.
+{tip}
+This optional template is intended for advanced users to 'tweak' the CMS generated output!
+{/tip}
 
 ### Caching
 

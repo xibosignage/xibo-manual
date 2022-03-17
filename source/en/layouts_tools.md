@@ -1,9 +1,7 @@
-<!--toc=layouts-->
-
 # Tools
 
 {tip}
-If you are using a version earlier than **v2.3** please use the following link: [Tools](layouts_tools_2.0.html). 
+If you are using a version earlier than v2.3.0, please use the following link: [Tools](layouts_tools_2.0.html). 
 {/tip}
 
 Located on the bottom toolbar of the [Layout Designer](layouts_designer.html), the **Tools** button contains a menu of actions that can be applied to the components of Layouts. 

@@ -52,7 +52,7 @@ Setting a low value can cause your access to the Twitter API to be disabled for 
 
 ## Add Widget
 
-Click on **Twitter Metro** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop. ![Twitter Metro Widget](img\v2_media_twittermetro_widget.png)
+Click on **Twitter Metro** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop. ![Twitter Metro Widget](img\v2_media_twittermetro_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select Twitter Metro from the Widget Toolbox to add!
@@ -62,7 +62,7 @@ If you are using a 1.8.x CMS, select Twitter Metro from the Widget Toolbox to ad
 The Twitter Metro Widget will automatically size portrait/landscape based on the size of the Region that it is added to. It will resize as if it were an image for best consistency across all display resolutions.
 {/tip}
 
-On adding, configuration options are shown in the Edit Twitter Metro form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -79,12 +79,14 @@ Check to make sure your search term is valid before entering here by using the t
 To return Tweets from a specific account rather than all Tweets that contain the accounts @ handle, use `from:` before the name of the account in the **Search Term** field.
 {/tip}
 
-- Select the Language to use
-- Use the drop down to select how Tweets should be returned; based on popularity, most recent or a mixed.
-- Select how many miles away from your location Tweets should be returned from. 0 has no restrictions.
-- Use the tick box if Mentions (@someone) should be removed from the returned Tweet text.
-- Use the tick box if Hashtags (#something) should be removed from the returned Tweet text.
-- Use the tick box to remove URLs from returned Tweet Text.
+- Select the **Language** to use
+- Use the drop down to select the **Type** of Tweets to be returned; based on popularity, most recent or a mixed.
+- Select the **Distance** in miles, away from your location Tweets should be returned from. 0 has no restrictions.
+- Enter the number of Tweets to return. Left blank the default number is 60.
+- Select the Content Type of the Tweets to return using the drop down menu. Select from All Tweets/Tweets with Text only/Tweets with Text and Images.
+- Use the tick box if **Mentions** (@someone) should be removed from the returned Tweet text.
+- Use the tick box if **Hashtags** (#something) should be removed from the returned Tweet text.
+- Use the tick box to remove **URLs** from returned Tweet Text.
 
 {tip}
 Most URL's do not compliment Digital Signage!
@@ -92,33 +94,32 @@ Most URL's do not compliment Digital Signage!
 
 ### Appearance
 
-Use the **Appearance** tab to edit the **Main** template, **Colours** to be applied and the **Effect** to be used to transition between Tweets.
+Use the **Appearance** tab to edit the **Main** template, apply **Colours** and select **Effects** to be used to transition between Tweets.
 
-![Twitter Metro Appearance](img/v3_media_twitter_metro_appearance.png)
+![Twitter Metro Appearance](img/v3.1_media_twitter_metro_appearance.png)
 
 #### Main
 
-- Optionally add a Background Colour.
+- Optionally add a **Background Colour**.
 - Provide a **No Tweets** message to display when there are no Tweets to return, based on the search query.
-- Apply a Date Format to be used for returned results (see Additional Information at the bottom of page).
+- Apply the **Date Format** to use for returned results (see Additional Information at the bottom of page).
 
 #### Colours
 
-- Use the drop down menu and select an colour pallet to be applied to the metro tiles.
+![Twitter Metro Colours](img\v3.1_media_twitter_metro_colours.png)
 
-![Twitter Metro Colours](img\v3_media_twitter_metro_colours.png)
+- Use the drop down menu to select the colour palette to be applied.
+- Select the Override the template box to define alternative colouring.
 
-- Select different colours to use for the template by clicking in the **Override the template** box.
+![Override Colour](img\v3.1_media_twitter_metro_override.png)
 
-![Override Colour](img\v3_media_twitter_metro_override.png)
-
-- Click in the colour bars to re-select using the colour picker. 
+- Click in a colour bars to re-select using the colour picker. 
 - Remove selections completely by clicking `-` or add additional using `+`
 - Ensure that you **Save** your changes.
 
 #### Effect
 
-- Select an optional effect/speed to be used to transition between Tweets, which will be applied to each tile.
+- Select an optional **Effect** and **Speed** to be used to transition between Tweets, to apply to each tile.
 
 ### Caching
 

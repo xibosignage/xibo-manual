@@ -103,6 +103,12 @@ For example, all Displays containing "a" but not "b" would be `a,-b`.
 
 ![Display Group Dynamic Criteria](img/v3_displays_group_dynamic.png)
 
+{tip}
+From v3.1.0 Criteria Tags can be filtered using addtional OR/AND filters for Displays that have multiple Tags assigned!
+{/tip}
+
+
+
 ### Manual Assignment
 
 After completing and saving the **Add Display Group** form,  assign Displays using the Row Menu and selecting **Members**.

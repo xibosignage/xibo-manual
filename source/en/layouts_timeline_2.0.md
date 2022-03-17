@@ -1,5 +1,15 @@
 # Layout Timeline
 
+{tip}
+Please note: This page is for users of a **v2.0.x - v2.2.x CMS**. For an alternative version please select from the options below:
+
+- v1.8.x CMS click [here](layouts_playlists.html)
+- v2.3.x CMS click [here](layouts_timeline_3.html)
+- v3.0.x CMS click [here](layouts_timeline_3.html)
+- v3.1.x CMS click [here](layouts_timeline.html)
+
+{/tip}
+
 Each Region on a Layout has its own **Playlist** of content, which is shown in a specified order by the Player. 
 
 A Playlist can consist of a **single item** (such as a company logo), or **multiple items** (such as an image slideshow).

@@ -2,9 +2,9 @@
 
 # Interrupt Layouts
 
-#### Please note: This feature is currently supported by the Android Player from v2 R204, Windows Player from v2 R253, webOS Player from v2 R207and Tizen Player from v2 R203.
-
-#### We are working on bringing this feature to all Players.
+{tip}
+**Please note:** This feature is currently supported by the Android Player from v2 R204, Windows Player from v2 R253, webOS Player from v2 R207and Tizen Player from v2 R203.
+{/tip}
 
 When a Layout is scheduled as an **Interrupt Layout**, [[PRODUCTNAME]] will work out how it should be played to 'interrupt'  the usual schedule using the **Share of Voice** percentage entered on the event.
 
@@ -18,13 +18,13 @@ This can be useful if you have, for example, Announcements that need to be shown
 
 ## Create an Interrupt Layout
 
-**Interrupt Layouts** are created in exactly the same way as all other Layouts. 
+**Interrupt Layouts** are created in exactly the same way as all other [Layouts](layouts.html). 
 
 Be careful when setting durations of Widgets as the Interrupt Layout will play 1 Widget from each Region in its entirety at each 'interrupt' interval. You should take this into consideration when creating your Layout to get the best out of this feature. 
 
 ## Scheduling
 
-Interrupt Layouts are selected as an **Event type** when Scheduling an Event.
+Interrupt Layouts are selected as an **Event type** when Scheduling an [Event](scheduling_events.html).
 
 Once selected, complete the form fields:
 

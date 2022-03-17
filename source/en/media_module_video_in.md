@@ -1,4 +1,4 @@
-H<!--toc=widgets-->
+<!--toc=widgets-->
 
 # Video In (webOS, Tizen and Philips)
 
@@ -14,7 +14,7 @@ Click on **Video In** from the  [Widget](layouts_widgets.html)  toolbar and clic
 If you are using a 1.8.x CMS, select Video In from the Widget Toolbox to add. 
 {/tip}
 
-![Add Video In](img/v3_media_video_in.png)
+![Add Video In](img/v3.1_media_video_in.png)
 
 - Use the drop down menu to select which device input should be shown.
 

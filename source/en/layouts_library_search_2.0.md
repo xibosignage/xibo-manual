@@ -1,7 +1,13 @@
 # Library Search
 
 {tip}
-If you are using a v2.3 or later CMS, please use the following link: [Library Search](layouts_library_search.html)
+**Please note:** This page is for users of a **v2.0.x - v2.2.x CMS**. For an alternative version please select from the options below:
+
+- v2.3.x CMS click [here](layouts_library_search_3.html)
+- v3.0.x CMS click [here](layouts_library_search.html)
+- v3.1.x CMS click [here](layouts_library_search.html)
+
+
 {/tip}
 
 The Library Search feature is used as a quick and easy way to assign **media** to **Layouts** which has already been uploaded to the Library.

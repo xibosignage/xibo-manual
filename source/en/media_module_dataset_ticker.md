@@ -7,21 +7,21 @@ DataSets need to be created and defined prior to adding the DataSet Ticker Widge
 
 ## Add Widget
 
-Click DataSet Ticker from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop![DataSet Ticker Widget](img\v2_media_datasetticker_widget.png)
+Click DataSet Ticker from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![DataSet Ticker Widget](img\v2_media_datasetticker_widget.png)
 
 {tip}
-If you are using 1.8.x CMS, DataSets can be displayed using a Ticker Widget. Please use the following link :[Ticker 1.8](media_module_ticker_1.8.html)
+If you are using 1.8.x CMS, DataSets can be displayed using a Ticker Widget. Please use the following link:[Ticker 1.8](media_module_ticker_1.8.html)
 {/tip}
 
-On adding, select the DataSet to use from the drop-down menu:
-
-![DataSet Ticker Add DataSet](img\v3_media_datasetticker_add_dataset.png)
+On adding, select the DataSet to use from the drop-down menu.
 
 {tip}
-Once a DataSet has been associated with the Widget you cannot edit to change to an alternative set of data. A new Widget would need to be added and configured!
+From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
+
+If you are using a version earlier than 3.1.0 you cannont edit to change to an alternative set of data. A new Widget would need to be added and configured!
 {/tip}
 
-Once Saved, configuration options are shown in the the Edit DataSet Ticker form:
+Once Saved, further options will be made available:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -33,7 +33,7 @@ This should be used with caution as it can create long-running media items. It i
 
 ### Configuration
 
-![DataSet Ticker Configuration](img\v3_media_datasetticker_configuration.png)
+![DataSet Ticker Configuration](img\v3.1_media_datasetticker_configuration.png)
 
 - Select if returned items should be shown side by side and configure **Upper** and **Lower** row limits.
 - Set the number of items you wish to display.
@@ -54,7 +54,7 @@ From v2.3.8 use the **Randomise** option to randomly shuffle items to de display
 
 Click on the Template tab to show the DataSet Ticker Templates:
 
-![DataSet Ticker Template](img\v3_media_datasetticker_templates.png)
+![DataSet Ticker Template](img\v3.1_media_datasetticker_templates.png)
 
 ### Main Template
 
@@ -63,7 +63,7 @@ Click on the Template tab to show the DataSet Ticker Templates:
 - Toggle **On** the Visual editor to format the main template using the inline editor. 
 - Click the edit icon to open.
 
-![DataSet Ticker Inline Editor](img\v3_media_datasetticker_inline_editor.png)
+![DataSet Ticker Inline Editor](img\v3.1_media_datasetticker_inline_editor.png)
 
 - Include text merge fields from the **Snippets** menu to pull in the required information from the DataSet.
 

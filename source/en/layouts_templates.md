@@ -3,10 +3,10 @@
 # Templates
 
 {tip}
-If  you are using a CMS earlier than v3.0.0 please use the following link: [Templates](layouts_templates_2.html)
+If you are using a CMS earlier than v3.0.0 please use the following link: [Templates](layouts_templates_2.html)
 {/tip}
 
-Templates are saved copies of **Layouts** which can then be used to create new Layouts. Using a template can speed up the design process and are a good way to ensure that a corporate image/standard is maintained. 
+Templates are saved copies of designed **Layouts** which can then be used when creating new Layouts. Using a template can speed up the design process and is a good way to ensure that a corporate image/standard is maintained. 
 
 ## Creating a Template
 
@@ -24,12 +24,12 @@ Templates can be created two ways:
 
 ![Add Template Form](img/v3_layouts_add_template_form.png)
 
-### Folder
-
-Templates can be optionally saved to **Folders**.
+- Templates can be optionally saved to **Folders**.
 
 {tip}
-Templates that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for that User/User Group!
+Templates that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for that User/User Group.
+
+If users should also have access to the content of the Template, ensure that this is also saved to the same Folder!
 {/tip}
 
 - Click on the **Select Folder** button and expand to select the Folder to save in.
@@ -39,13 +39,16 @@ Templates that are saved in Folders will inherit the View, Edit, Delete **Share*
 
 
 
-Users can also right click a folder to access further Folder options:
+- Users can also right click a folder to access further Folder options:
+
 
 ![Template Folder Options](img/v3_layouts_templates_folder_options.png)
 
 {tip}
-Available Folder options are based on enabled [Features and Share](users_features_and_sharing.html) options for a User/User Group.
+Options available to User/User Groups are based on enabled [Feature and Sharing](features_and_sharing.html) options!
 {/tip}
+
+- The selected folder file path will be shown next to the Folder field on the form.
 
 {nonwhite}
 Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
@@ -55,20 +58,15 @@ Further information for Administrators regarding Folder access and set-up can be
 For further information regarding Folder access and set-up, please speak to your Administrator.
 {/white}
 
-The selected folder file path will be shown next to the Folder field on the Add Template form. 
+- Provide a **Name** for easy identification purposes within the CMS.
 
-### Name
-
-Give the Template a **Name** for easy identification purposes when selecting to use by Users.
-
-
-### Tags
-
-Templates can be tagged for organisation and to make it easier to find a large number of Templates when grouped by Tag.  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
+- Include optional **Tags** to organise and make it easier to search for.
 
 {tip}
+
+When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
+
+Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
 If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
 {/tip}
 
@@ -84,9 +82,9 @@ For further information on what **Tag **and **Tag Values** to use, please speak 
 Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
 {/nonwhite}
 
-### Resolution
+- Select the **Resolution** to be used for this Template/Layout.
 
-Templates/Layouts are designed for an intended display resolution and will function best when shown on a **Player** with a matching resolution. If they are shown on a display that has a different resolution it will dynamically resize which may result in unused screen space.  
+Templates/Layouts are designed for an intended display Resolution and will function best when shown on a **Player** with a matching resolution. If they are shown on a display that has a different resolution it will dynamically resize which may result in unused screen space.  
 
 {tip}
 Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
@@ -98,17 +96,15 @@ Sending a Player a Layout that has been designed with a 4:3 resolution which is 
 Resolution management for Administrators can be found [here](https://xibo.org.uk/docs/setup/resolutions-administration)
 {/nonwhite}
 
-{tip}
-Use the **Description Tab** to complete useful information/instructions for other users of the Template!
-{/tip}
+- Provide a **Name** for easy identification purposes within the CMS.
 
-### Save
 
-On saving the form, the [Layout Designer](layouts_designer.html) will automatically open.
+- On saving the form, the [Layout Designer](layouts_designer.html) will automatically open.
+
 
 ## 2. Saving a Layout as a Template
 
-A **Published Layout** can be saved as a Template from the **Layout Designer** by using the menu on the toolbar and selecting **Save Template**.
+A **Published Layout** can be saved as a Template from the **Layout Designer** by using the status menu and selecting **Save Template**:
 
 ![Save Template](img/v3_layouts_save_template.png)
 
@@ -118,7 +114,7 @@ Layouts can also be saved as Templates by using the **Row Menu** for a Layout in
 
 ![Templates](img/v3_layouts_templates_save.png)
 
-Complete all relevant form fields, 
+Complete all relevant form fields to save the selected Layout as a Template:
 
 - Use **Select Folder** to move from the shown Current Folder Location.
 - Give the Template an identifiable **Name** so that Users can easily select from the Template drop down when adding Layouts.
@@ -129,39 +125,29 @@ Complete all relevant form fields,
 
 Once saved, Templates can be managed from the Templates grid.
 
-## Row Menu
+Each Template has additional actions/shortcuts that can be accessed from the row menu.
 
-Each Template has additional actions/shortcuts that can be accessed from the Row Menu.
+![Templates Row Menu](img/v3.1_layouts_templates_row_menu.png)
 
-![Templates Row Menu](img/v3_layouts_templates_row_menu.png)
+**Alter Template** - Use to open the Layout Designer to make design changes to the Template.
 
-### Alter Template
+**Checkout** - If the Template has been Published, Checkout to edit.
 
-Use to open the Layout Designer to make design changes to the Template.
+**Publish** - Publishing a Template will add it to the list of selections when adding a new Layout from v3.1.
 
-{tip}
-If the Layout design has been **Published**, Checkout to make changes or view in a Read Only mode!
-{/tip}
+**Discard** - Revert back to the previous Published version and discard all changes made whilst in a draft status from v3.1
 
-### Edit
+**Edit** - Make changes to the Template record such as, Folder location, Name and Tags etc. 
 
-Make changes to the Template record such as, Folder location, Name and Tags etc. 
+**Select Folder** - add or make edits to a selected folder path.
 
-### Copy
+**Copy** - Create copies of Templates and choose to include all contained **Media** items, to use as a base for creating new Templates or to simply make modifications. 
 
-Create copies of Templates and choose to include all contained **Media** items, to use as a base for creating new Templates or to simply make modifications. 
+**Delete** - Remove a Template and all its associated media. Layout specific media such as Text/RSS will be deleted. **Please note:** This action is irreversible!
 
-### Delete
+**Share** - Enable [**View**, **Edit** and **Delete**](users_features_and_sharing.html) access for selected Users/User Groups.
 
-Remove a Template and all its associated media. Layout specific media such as Text/RSS will be deleted. **Please note:** This action is irreversible!
-
-### Share
-
-Enable [**View**, **Edit** and **Delete**](users_features_and_sharing.html) access for selected Users/User Groups.
-
-### Export
-
-Export the Template including all associated Widgets/Media/DataSet structures to a ZIP file, so it can be easily shared. 
+**Export** - Export the Template including all associated Widgets/Media/DataSet structures to a ZIP file, so it can be easily shared. 
 
 {tip}
 When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tags** will be exported. Select the **Import Tags** option to add these Tags on Layout Import.

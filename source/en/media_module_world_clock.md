@@ -1,20 +1,16 @@
+
+
 <!--toc=widgets-->
 
 # World Clock 
 
-**Available from v3.0.0**
-
-{tip}
-**Please note:** This module is a tech preview so it may not be made available in future releases.
-{/tip}
+The World Clock Widget can be used to show one or multiple clocks displaying time zones on Layouts.
 
 {nonwhite}
-{cloud}
-It is available on request by contacting our [Helpdesk](https://support.xibosignage.com/open.php) to enable.
-{/cloud}
+{tip}
+If you are using a v3.0.x CMS, the World Clock Widget is only available on request by contacting our [Helpdesk](https://support.xibosignage.com/open.php) to enable.
+{/tip}
 {/nonwhite}
-
-The World Clock Widget can be used to show one or multiple clocks displaying time zones on Layouts.
 
 ## Add Widget
 
@@ -27,15 +23,25 @@ On adding, configuration options are shown in the Edit World Clock form:
 
 ## Configuration
 
-![World Clock Configuration](img/v3_media_modules_world_clock_configuration.png)
+![World Clock Configuration](img/v3.1_media_modules_world_clock_configuration.png)
 
-- Use the drop down to select a timezone.
-- Enter a Label to be shown with the selected timezone.
-- Optionally select to highlight. 
+- Use the drop down to select a **Timezone**.
+
+- Enter a **Label** to be shown with the selected timezone.
+
+- Optionally select to **Highlight**. 
 
 - Click on the `+` button to add multiple timezone clocks as required.
+
 - Use the drop down to select from **Digital** or **Analogue** Clock Types.
-- For multiple timezone clocks, set the number of **Clock Columns** and **Clock Rows** to display.
+
+- With multiple timezone clocks selected, set the number of **Clock Columns** and **Clock Rows** to display.
+
+  {tip}
+  From v3.1.0 set **Horizontal** and **Vertical** alignment options for this Widget!
+
+  {/tip}
+
 - **Save**
 
 Depending on the **Clock Type** selected, further options will be made available.
@@ -44,9 +50,14 @@ Depending on the **Clock Type** selected, further options will be made available
 
 Use the drop down to select from the Preset Templates available to choose how the clocks will be displayed.
 
-![World Clock Templates](img/v3_media_modules_world_clock_templates.png)
+![World Clock Templates](img/v3.1_media_modules_world_clock_templates.png)
 
-Tick to edit by overriding the selected template if required. Please see the section below on **Editing Preset Templates** below for further information.
+{tip}
+
+Click to Override the selected template if required. 
+
+Please see the section on Editing Preset Templates below for further information.
+{/tip}
 
 ## Editing Preset Templates
 
@@ -63,27 +74,29 @@ The template will be automatically scaled and should be designed for the intende
 - Templates are treated the same as a static image
   {/tip}
 
-With override template selected, you can enter your own text, HTML and CSS.
-
 Once override has been selected, click back on the **Templates tab** to select the template to edit:
 
-![Preset Override](img/v3_media_modules_world_clock_preset_override.png)
+![Preset Override](img/v3.1_media_modules_world_clock_preset_override.png)
 
-### Optional Stylesheet
+**Main** - provide text/HTML in the box provided.
 
-This is the CSS to apply to the template structure above. 
+**Optional Stylesheet** - This is the CSS to apply to the template structure.
+
+{tip}
+This optional template is intended for advanced users to 'tweak' the CMS generated output!
+{/tip}
 
 ## Analogue Settings - Analogue Clock Types
 
-![Analogue Settings](img/v3_media_modules_world_clock_analogue_settings.png)
+With the Analogue Clock Type selected, an Additional Tab will be available to allow users to set colours for elements of the clock:
 
-Analogue clock settings allow for colours to be set for elements of the clock.
+![Analogue Settings](img/v3.1_media_modules_world_clock_analogue_settings.png)
 
 - Use the colour picker for each field to define.
 
-- Use the check boxes to enable further settings and present options to define colours.
+- To to enable further settings and define colours:
 
-  ![Enable Settings](img/v3_media_modules_world_clock_enabled_settings.png)
+  ![Enable Settings](img/v3.1_media_modules_world_clock_enabled_settings.png)
 
 - **Save**
 
