@@ -37,10 +37,6 @@ Set a lower duration than shown to cut the video short or select a higher durati
 - If the video has audio this can be muted by ticking the box.
 - If you tick to **Show Full Screen**, the video will show full screen whilst it is playing. When the next item in the Timeline is shown it will revert back to the size of the Region.
 
-### Actions
-
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
-
 {tip}
 
 ![Context Menu](img/v3.1_layouts_widgets_context_menu.png)
@@ -48,5 +44,11 @@ Actions can be attached to this Widget, please see the [Interactive Actions](lay
 Use the **Context Menu** to apply options to this Widget. Please refer to the [Layout Designer](layouts_designer.html) page for further information!
 
 {/tip}
+
+### Actions
+
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
+
+
 
 **As [[PRODUCTNAME]] takes no measures to control what content is put on your displays, it is your responsibility to ensure that any videos used are appropriately attributed if you do not own the rights.**

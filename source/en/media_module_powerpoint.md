@@ -37,7 +37,7 @@ Follow the instructions as detailed on the [Video](media_module_video.html) page
 
 ### Add PDF Widget
 
-Follow the instructions as detailed on the [PDF](media_modules_pdf.html) page to add and upload the file.
+Follow the instructions as detailed on the [PDF](media_module_pdf.html) page to add and upload the file.
 
 ## Option 3 - Prepare and Upload your PowerPoint PPT file
 

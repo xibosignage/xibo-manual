@@ -17,7 +17,7 @@ The Weather Module is fully configured for Xibo in the Cloud customers and is pr
 
 {/nonwhite}
 
-{noncloud}
+
 
 ## Installation
 
@@ -38,7 +38,7 @@ Open Weather Map allows 1000 requests for a forecast, per day before charging a 
 {tip}
 **Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
 {/tip}
-{/noncloud}
+
 
 ## Add Widget
 
