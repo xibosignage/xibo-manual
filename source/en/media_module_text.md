@@ -27,9 +27,7 @@ The thin red border in the text editing window represents the **Region** size. E
 Optionally include date/time merge tags, available from the **Snippets** menu. 
 
 {tip}
-From v2.1.0, [Date] tags can include an optional [Date|format] so that [Date] can be used multiple times in a Template each with different formats.
-
-![Text Date Format](img\v3_media_text_snippets.png)
+From v2.1.0, [Date] tags can include an optional [Date|format] so that [Date] can be used multiple times in a Template each with different formats!
 {/tip}
 
 Configuration options are shown in the Edit Text form:
@@ -48,15 +46,8 @@ Configuration options are shown in the Edit Text form:
 
 Select from the available Templates:
 
-![Text Templates](img\v3_media_text_templates.png)
-
-#### Main Template
-
-Toggle Off the Visual editor to enter text/HTML in the box provided.
-
-#### Optional JavaScript Template
-
-Provide JavaScript in the box provided.
+- **Main Template** - Toggle Off the Visual editor to enter text/HTML in the box provided.
+- **Optional JavaScript Template** - Provide JavaScript in the box provided.
 
 {tip}
 

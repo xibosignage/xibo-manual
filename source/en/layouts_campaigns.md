@@ -73,7 +73,7 @@ For further information on what **Tag **and **Tag Values** to use, please speak 
 Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
 {/nonwhite}
 
-- Tick to enable **cycle based playback** for this Campaign.
+-  From v3.1.0 tick to enable **cycle based playback** for this Campaign.
 - Provide a **Play Count** to determine how many 'plays' a Layout should have before moving onto the next Layout in the Campaign.
 
 When you schedule a Campaign with cycle playback enabled, each time the scheduled event appears only 1 Layout will be shown for the set count from the Campaign.

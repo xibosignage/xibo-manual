@@ -212,9 +212,24 @@ Use the tabs to configure media items using the available options for the conten
 **Layouts**, **Regions** and **Widgets** can have **Actions** attached to effect changes to the Layout, triggered by Touch, click or by webhook. [Interactive Actions](layouts_interactive_actions.html) are created and managed from the **Actions** tab in the properties panel.
 {/tip}
 
-Use the properties panel whilst in the main Layout view, to add a background colour or image to the Layout amongst other options.
+Use the properties panel whilst in the main Layout view, to access further configurations to apply to the Layout such as adding a background colour or selecting/uploading an image to use as the background:
 
 ![Layout Edit Form](img\v3.1_layouts_edit_options.png)
+
+
+
+{tip}
+Select an Image from the Image Library Search function from the Toolbar and click or drag to the properties panel:
+
+![Layout Background](img/v3.1_layouts_add_background.png)
+
+
+
+Ensure to **Save**
+
+![Saved Background](img/v3.1_layouts_saved_background.png)
+
+{/tip}
 
 ## Layout Timeline 
 
