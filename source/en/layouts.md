@@ -101,7 +101,7 @@ If users should also have access to the content of the Layout, ensure that this 
 - The selected folder file path will be shown next to the Folder field on the form
 
 {tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](features_and_sharing.html) options!
+Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
 {/tip}
 
 {nonwhite}
@@ -172,6 +172,7 @@ Proof of Play Settings for Administrators can be found [here](https://xibo.org.u
 
 {tip}
 Transitions are supported on Android, webOS and Tizen Players and Windows Players from v2R252
+
 Transitions are currently not supported on Linux Players.
 {/tip}
 

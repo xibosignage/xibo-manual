@@ -24,7 +24,7 @@ Click on the **Add Campaign** button at the top of the grid and complete the app
 
 ### Folders
 
-Menu Boards can be optionally saved to **Folders**.
+Campaigns can be optionally saved to **Folders**.
 
 - Click on the **Select Folder** button and expand to select a Folder to save in.
 - Users can also right click a Folder to access further options.
@@ -37,7 +37,7 @@ If users should also have access to the Layouts/Layout content, ensure that this
 {/tip}
 
 {tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](features_and_sharing.html) options!
+Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
 {/tip}
 
 {nonwhite}

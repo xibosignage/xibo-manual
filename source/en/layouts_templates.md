@@ -3,7 +3,7 @@
 # Templates
 
 {tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Templates](layouts_templates_2.html)
+If you are using a CMS earlier than v3.0.0 please click [here](layouts_templates_2.html)
 {/tip}
 
 Templates are saved copies of designed **Layouts** which can then be used when creating new Layouts. Using a template can speed up the design process and is a good way to ensure that a corporate image/standard is maintained. 
@@ -45,7 +45,7 @@ If users should also have access to the content of the Template, ensure that thi
 ![Template Folder Options](img/v3_layouts_templates_folder_options.png)
 
 {tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](features_and_sharing.html) options!
+Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
 {/tip}
 
 - The selected folder file path will be shown next to the Folder field on the form.
