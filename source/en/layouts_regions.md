@@ -124,7 +124,7 @@ Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete**
 ![Region Sharing](img\v3.1_layouts_regions_share.png)
 
 {tip}
-Alternatively Share options can be accessed from the bottom menu. 
+Alternatively Share options can be accessed from the context menu at the bottom of the viewer! 
 {/tip}
 
 Remove Regions by highlighting the Region to delete in the viewer or timeline and cliick the bin icon. **Please note: This action cannot be undone!**
