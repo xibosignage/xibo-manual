@@ -40,10 +40,12 @@ When you are in 'editing' mode you will notice that the window is framed orange!
 
 - Clicking anywhere on the canvas will save changes made to a Region.
 
+  
 
-Further options are available in the properties panel.
 
-- Highlight a Region to view the options:
+Further options are available in the properties panel:
+
+- Highlight a Region to view the options
 
 ![Editing Panel](img/v3.1_layouts_regions_editing_panel.png)
 
@@ -86,7 +88,7 @@ Enter a number in the **Layer** field to determine the order that Region should 
 The **Layer** order is determined by the number entered here, with 1 considered the lowest Layer. The higher the number the higher the Layer.
 
 {tip}
-On some devices, it is impossible to overlay anything on a Region showing a **Video** or **VideoIn** Widget. Whether it is possible will depend on the device and whether hardware accelerated playback is being used. In general, it is possible on Android (when **not** using the SurfaceView option in the [Display Settings Profile](displays_settings.html)), Linux, Tizen and webOS Players, but if you have a requirement for this, be sure to test your intended device carefully to ensure this works in your use case.
+On some devices, it is impossible to overlay anything on a Region showing a **Video** or **VideoIn** Widget. Whether it is possible will depend on the device and whether hardware accelerated playback is being used. In general, it is possible on Android (when **not** using the SurfaceView option in the [Display Settings Profile](displays_settings.html), Linux, Tizen and webOS Players, but if you have a requirement for this, be sure to test your intended device carefully to ensure this works in your use case.
 {/tip}
 
 At the bottom of this tab, click on the **Make this Region full screen** text to resize as shown by the dimensions displayed here.

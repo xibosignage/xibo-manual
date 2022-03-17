@@ -1,4 +1,4 @@
-<!--toc=layouts-->
+<!--toc=media-->
 
 # Menu Boards
 
@@ -57,7 +57,7 @@ Menu Boards that are saved to Folders will inherit the View,Edit and Delete **Sh
 - The selected folder file path will be shown next to the Folder field on the form.
 
 {tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](features_and_sharing.html) options!
+Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
 {/tip}
 
 {nonwhite}

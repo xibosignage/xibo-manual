@@ -33,7 +33,7 @@ or
 Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
 {/tip}
 
-The Playlists [Grid](tour_grid.html) allows you to edit existing and create new. 
+The Playlists [Grid](tour_grids.html) allows you to edit existing and create new. 
 
 ### Create a new Playlist
 
@@ -114,7 +114,7 @@ You can also prepopulate a Playlist with media from the Library by leaving the D
 
 ![Playlists Timeline](img/v3.1_media_playlists_timeline.png)
 
-- Use the Toolbar to add content to your Playlist using available [Widgets](layouts_widgets.html) and [Library Media](layouts_library_search,html) .
+- Use the Toolbar to add content to your Playlist using available [Widgets](layouts_widgets.html) and [Library Media](layouts_library_search.html) 
 - Add to the canvas by clicking to add or drag and drop.
 
 - Once added, configure using the available options:
@@ -132,9 +132,6 @@ All Widgets/Library Media can access a **Context Menu** with a set of options th
 
 {tip}
 If you need to delete multiple Widgets on the Timeline, click the **Select Multiple Widgets** button on the bottom of the toolbar and then click on Widgets to highlight. Once you have made your selections click to delete with one click.
-
-![Select Multiple Widgets](img/v3_media_select_multiple_widgets.png)
-
 {/tip}
 
 ### Editing Playlists

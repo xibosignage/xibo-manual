@@ -51,6 +51,8 @@ Interactive Actions that have been added to the Layout will be shown in the stat
 
 ![Interactive Actions Status](img/v3.1_layouts_designer_interactive_actions_status.png)
 
+{/tip}
+
 The **Layout selector** provides easy navigation between all Layouts the logged in User has permission to edit without having to leave the Layout Designer page. Enter search criteria and use the dropdown menu to change the Layout you are currently viewing/editing.
 
 {tip}
@@ -100,7 +102,7 @@ The viewer will update as the Layout is designed so that users can clearly see w
 
 ![Layout View](img\v3.1_layouts_view.png)
 
-Edit or add [Regions](layouts_regions.html ) to your Layout using the **Edit Layout** Icon located under the viewer to open the editor:
+Edit or add [Regions](layouts_regions.html) to your Layout using the **Edit Layout** Icon located under the viewer to open the editor:
 
 ![Layout Editor](img/v3.1_layouts_editor.png)
 
@@ -113,7 +115,7 @@ Exit the editor and return to the Layout view using the back arrow in the top le
 
 ## Context Menu
 
-All Widgets /Library Media and Regions have a **Context Menu** with a set of options that can be applied . This menu is located under the viewer for a selected Widget or Region or by right clicking a selected Widget or Region:
+All Widgets/ Library Media and Regions have a **Context Menu** with a set of options that can be applied. This menu is located under the viewer for a selected Widget or Region or by right clicking a selected Widget or Region:
 
 ![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
 
@@ -140,13 +142,13 @@ If audio is assigned to a Widget which is the only Widget in the Region, the aud
 
 Widgets that have expiry dates set can be identified by the following icons shown in the **Timeline**:
 
-- ![Set to Start](C:/Users/Natasha/Documents/GitHub/xibo-manual/source/en/img/v2.3_layouts_tools_set_to_start.png)Start date has been set for a future date/time.
+- ![Set to Start](img/v2.3_layouts_tools_set_to_start.png)Start date has been set for a future date/time.
 
-- ![Set to Expire](C:/Users/Natasha/Documents/GitHub/xibo-manual/source/en/img/v2.3_layouts_tools_set_to_expire.png)Expiry date has been set.
+- ![Set to Expire](img/v2.3_layouts_tools_set_to_expire.png)Expiry date has been set.
 
-- ![Delete on Expiry](C:/Users/Natasha/Documents/GitHub/xibo-manual/source/en/img/v2.3_layouts_tools_delete_on_expiry.png)Widget has been marked to be deleted on reaching the expiry date.
+- ![Delete on Expiry](img/v2.3_layouts_tools_delete_on_expiry.png)Widget has been marked to be deleted on reaching the expiry date.
 
-- ![Expired Widget](C:/Users/Natasha/Documents/GitHub/xibo-manual/source/en/img/v2.3_layouts_tools_expired_widget.png) The Widget has expired but remains on the Layout
+- ![Expired Widget](img/v2.3_layouts_tools_expired_widget.png) The Widget has expired but remains on the Layout
 
   {tip}
   Once the End date has passed the Widget will be removed from the Region. Expired Widgets that have **not** been set to **Delete on Expiry** will remain visible in the Layout Designer so that **Start** and **End** times can be re-adjusted if needed.
@@ -192,7 +194,7 @@ Video files will only play in the full Layout Preview!
 
 ## Toolbar
 
-Add content to your Layout using an array of [Widgets](layouts_widgets.html) and [Library Media](layouts_library_search,html) accessed from the Toolbar located on the left hand side:
+Add content to your Layout using an array of [Widgets](layouts_widgets.html) and [Library Media](layouts_library_search.html) accessed from the Toolbar located on the left hand side:
 
 ![Content Panel](img/v3.1_layouts_content_panel.png)
 

@@ -146,7 +146,7 @@ This is particularly useful should you need to preload media to be shown at a la
 **Please note:** Expiry Dates are currently not supported for the Linux Player!
 {/tip}
 
-![Expiry Dates](C:\Users\Natasha\Documents\GitHub\xibo-manual\source\en\img\v3_media_image_expiry_dates.png)
+![Expiry Dates](img\v3_media_image_expiry_dates.png)
 
 - Select **Start** and **End** dates and times.
 
@@ -161,7 +161,7 @@ Instead of clicking on the Start upload button, click on the **blue upload** but
 
 Change the Folder location using the **Select Folder** button as before and then click the blue button at the end of the row to upload just that singular file.
 
-![Multiple Files](C:\Users\Natasha\Documents\GitHub\xibo-manual\source\en\img\v3_media_image_multiple_files.png)
+![Multiple Files](img\v3_media_image_multiple_files.png)
 
 - Once all files have been individually uploaded, click **Done**.
 

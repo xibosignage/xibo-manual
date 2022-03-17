@@ -22,17 +22,6 @@ A Region's Playlist is viewed/edited in the **Timeline** in the Layout Designer:
 
 The timeline clearly shows how each Regions assigned Widgets will play. The greyed out entries indicate what will play when that items own duration is exceeded.
 
-{tip}
-The above Timeline tells us the following:
-
-**Text** determines the duration of the Layout, as the longest running Region with a 60 second duration.
-
-**Image 1** will play for 10 seconds then **Image 2** will play for 10 seconds, this will repeat twice more to remain on screen for 60 seconds (until the Text Widget has fully played out)
-
-**Clock** has a set duration of 10 seconds but will remain on screen for 60 seconds (until the Text Widget has fully played out)
-
-{/tip}
-
 The window to the left of the Region gives a preview of the Region positioning on the Layout. 
 
 ![Region Position Preview](img/v3_layouts_timeline_region_position_preview.png)
