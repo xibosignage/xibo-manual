@@ -218,6 +218,14 @@ Media files can only be deleted from the CMS if they are **not** being used on a
 **Retiring Content** means that it will no longer be available to assign to new Layouts but will **remain** in existing Layouts it is assigned to, meaning scheduled content can remain unaffected. Click on **Edit** and tick the box to retire on the Edit Media form!
 {/tip}
 
+Tick in the box to enable a hard push using XMDS to completely remove the file from a Players local storage:
+
+![Purge Media](img/v3.1_media_library_purge.png)
+
+
+
+**Please note:** The Purge list functionality is  supported from Android R301 and Windows R302. We are currently working to bring this to all Players.
+
 ### Share
 
 Enable [Share](users_features_and_sharing.html) options for selected Users/User Groups.
