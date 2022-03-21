@@ -26,6 +26,10 @@ Once added to Layouts, click on the Image file in the Timeline or Viewer to show
 - Use the **Appearance** tab to change the settings for **Scale** and **Alignment** of the image.
 
 {tip}
+From v3.1.0 **Fit** Scale type is available for Images!
+{/tip}
+
+{tip}
 
 ![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
 
