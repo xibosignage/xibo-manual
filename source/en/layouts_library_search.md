@@ -19,19 +19,19 @@ The **Toolbar** contains multiple **Library Search** options to give users an ea
 - Use the fields to narrow down searches.
 
 
-Integration from Pixaby allows for images/videos to additionally be shown here.
+Integration from Pixabay allows for images/videos to additionally be shown here.
 
 {cloud}
-Pixaby integration is enabled by default for Xibo in the Cloud customers.
+Pixabay integration is enabled by default for Xibo in the Cloud customers.
 {/cloud}
 
 {noncloud}
 
-Pixaby can be enabled from the **Administration** section of the CMS menu by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click Configure and enter your API Key after signing up for a Pixaby account. [PixabyAPI Documentation](https://pixabay.com/api/docs/)
+Pixabay can be enabled from the **Administration** section of the CMS menu by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click Configure and enter your API Key after signing up for a Pixabay account. [PixabayAPI Documentation](https://pixabay.com/api/docs/)
 {/noncloud}
 
 {tip}
-Images/videos that are selected from Pixaby to be used in Layouts will automatically be added to your Library!
+Images/videos that are selected from Pixabay to be used in Layouts will automatically be added to your Library!
 {/tip}
 
 - Click on the **+** icon in the top left corner of a media file to select: 
