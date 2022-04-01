@@ -130,6 +130,14 @@ For information on what Commands to use, please speak with your Administrator.
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
+{tip}
+{nonwhite}
+
+Take a look at the [Agenda Module Guide](https://community.xibo.org.uk/t/agenda-module-guide/26993) to see an example of how you can utilise this Widget in your Layouts!
+
+{/nonwhite}
+{/tip}
+
 ## Date Format - PHP
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:

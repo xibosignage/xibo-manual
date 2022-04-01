@@ -19,14 +19,14 @@ To get started with Xibo take a look at the following walkthroughs:
 
 [How to create a simple layout](https://community.xibo.org.uk/t/how-to-create-a-simple-layout/13108)
 
+[Understanding Media duration and how it affects playback](https://community.xibo.org.uk/t/understanding-media-duration-and-how-it-affects-playback/20011)
+
+The following guides are based on an earlier version of the CMS but are still helpful to understand setup requirements:
+
 [How to set up a café menu sign](https://community.xibo.org.uk/t/getting-started-guide-cafe-menu/13293)
 
 [How to set up meeting room bookings using Datasets](https://community.xibo.org.uk/t/getting-started-guide-datasets/14149)
 
 [How to build an ‘Hours since last incident counter’ using datasets](https://community.xibo.org.uk/t/building-an-hours-since-last-incident-counter-with-datasets/14391)
-
-[Understanding Media duration and how it affects playback](https://community.xibo.org.uk/t/understanding-media-duration-and-how-it-affects-playback/20011)
-
-**Please note:** We are in the process of creating updated guides for v3.1. In the meantime, please do refer to the above guides.
 
 {/nonwhite}
