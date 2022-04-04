@@ -82,9 +82,11 @@ Use the arrows to move Widgets along the Timeline to reorder the sequence.
 
 For further information regarding the options available in the context menu, please see the [Layout Designer](layouts_designer.html) manual page.
 
+{tip}
+{nonwhite}
 
+Take a look at the [Understanding Media duration and how it affects playback](https://community.xibo.org.uk/t/understanding-media-duration-and-how-it-affects-playback/20011) guide!
 
-
-
-
+{/nonwhite}
+{/tip}
 

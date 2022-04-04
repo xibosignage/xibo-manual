@@ -14,7 +14,7 @@
 The CMS Library stores all file-based media that is uploaded for use on Layouts. 
 
 {tip}
-Pixaby images and videos that are selected to be used on Layouts/Playlists are also added to the Library!
+Pixabay images and videos that are selected to be used on Layouts/Playlists are also added to the Library!
 {/tip}
 
 Library media is managed from **Media** under the **Library section** of the main menu:

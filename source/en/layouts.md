@@ -309,3 +309,11 @@ Play a Preview of your Layout in its current **Draft** status. Make any necessar
 {tip}
 Did you know…**.Layouts** and **Library files** can be [Assigned](displays_fileassociations.html) directly to a **Display** or **Display Group** so that they are always available in the local library of the Player. Useful for pre-loading a Layout ahead of time ready to be scheduled.
 {/tip}
+
+{tip}
+{nonwhite}
+
+Take a look at the [How to create a simple Layout guide](https://community.xibo.org.uk/t/how-to-create-a-simple-layout/13108)
+
+{/nonwhite}
+{/tip}
