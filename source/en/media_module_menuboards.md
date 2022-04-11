@@ -1,12 +1,28 @@
 <!--toc=widgets-->
 
-# Menu Board
-
-The Menu Board Widget is used with Menu Boards to display Menu information.
+# Menu Board (Feature Preview)
 
 {tip}
-Menu Board is available from v3.1.0 upgrade from earlier versions to take advantage of this Widget!
+
+**Please note:** This feature is a preview and should not be used in production. 
+
+Whilst we work on this to make improvements please be aware of the following limitations if you would like to try this feature:
+
+- When creating Categories please be aware that available Templates will only display 3 or 4 Categories in Portrait and 3, 4 or 5 in Landscape
+- Product descriptions do not have a maximum character length which could result in descriptions being incorrectly displayed in a chosen template.
+- Any Allergy information completed in the Product form will automatically show.
+- There is no limit to the amout of Product Options a Product can have which could result in them being incorrectly displayed if more than 2 are created.
+- Product Options does not have a maximum character length which could result in descriptions being incorrectly displayed.
+
+{nonwhite}
+{cloud}
+This feature preview is not available for Xibo in the Cloud Customers.
+{/cloud}
+{/nonwhite}
+
 {/tip}
+
+The Menu Board Widget is used with Menu Boards to display Menu information.
 
 Menu Boards need to be first created prior to adding the Menu Board Widget to Layouts, Please see the [Menu Boards](media_menuboards.html)  page for further information.
 
@@ -21,6 +37,11 @@ On adding, select from the following options in the properties panel:
 - Use the drop down to select which **Menu** to use as the source.
 - Set the **Orientation** to use.
 - Choose a **Template** to apply (based on the selected orientation).
+
+{tip}
+(Legacy) Templates are compatible with older Player/Browser versions!
+{/tip}
+
 - Click to **Save**.
 
 Next add Categories to the menu structure by dragging and dropping to the empty spaces:
