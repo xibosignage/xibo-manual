@@ -24,23 +24,38 @@ On adding, configuration options are shown in the properties panel:
 
 ### Configuration
 
+- Provide the iCal **URL** to link.
+- Use the drop down to select the **type of calendar** to use to display events:
+
 ![Calendar Configuration](img\v3.1_media_calendar_configuration.png)
 
-- Provide the iCal **URL** to link.
+#### Schedule
+
 - Include a **Message** to be shown when no events are returned.
+
 - Use the **Interval** field to filter events for a certain period. Use natural language such as '1 day' or '2 weeks' to return the events within your chosen time frame.
+
 - Tick the checkbox to enter a **Date range** instead with defined start and end dates.
-- Select to **Exclude all day events** which will be removed from the feed and not shown.
-- Select to **Exclude current events** to remove from the feed and not be shown
-- Choose to **Use event timezone** or deselect to use the CMS timezone instead.
-- Choose to **Use calendar timezone** if the feed specifies that it's own timezone should be used. Deselect to use the CMS timezone.
+
+  
+
+#### Daily/Weekly
+
+- Set **Start and End times** to define a window to show events.
+
+  
+
+#### All Calender Types have the following options:
+
+- **Exclude all day events**  to remove from the feed so they won't be shown.
+- **Exclude current events** to remove from the feed so they won't be shown.
+- **Use event timezone** or deselect to use the CMS timezone instead.
+- **Use calendar timezone** if the feed specifies that it's own timezone should be used. Deselect to use the CMS timezone.
 - If your feed comes from **Windows** use this check box.
 
 ### Appearance
 
-- Use the drop down to select the **type of calendar** to use to display events:
-
-  ![Calendar Type](img/v3.1_media_calendar_type.png)
+Depending on the Calendar Type selected, configure the Appearance using the available options:
 
 #### Schedule
 
@@ -53,7 +68,6 @@ On adding, configuration options are shown in the properties panel:
 #### Daily
 
 - Choose to provide a **Time Format** to replace the default HH:mm.
-- Set **Start and End times** to show events.
 - Use the checkbox to show a **now marker** on the calendar for the current time.
 - Set a **Text Scale**, 1 being the lowest.
 - Enter a **Grid step** duration in minutes to apply to rows of events.
@@ -62,8 +76,8 @@ On adding, configuration options are shown in the properties panel:
 #### Weekly
 
 - Choose to provide a **Time Format** to replace the default HH:mm.
-- Set **Start and End times** to show events.
-- Use the checkbox to show a **now marker** on the calendar for the current time.
+
+  Use the checkbox to show a **now marker** on the calendar for the current time.
 - Set a **Text Scale**, 1 being the lowest.
 - Select from a Long, Medium, Short **Week name length** to apply.
 - Enter a **Grid step** duration in minutes to apply to rows of events.
