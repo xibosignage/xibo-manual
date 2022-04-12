@@ -1,12 +1,28 @@
 <!--toc=media-->
 
-# Menu Boards
-
-The Menu Boards interface provides a simple way for users to create and configure information to be used with the [Menu Board Widget](media_module_menuboards.html) to display Menu  items and information using customisable templates.
+# Menu Boards (Feature Preview)
 
 {tip}
-Menu Boards is available from v3.1.0 upgrade from earlier versions to take advantage of this feature!
+
+**Please note:** This feature is a preview and should not be used in production. 
+
+Whilst we work on this to make improvements please be aware of the following limitations if you would like to try this feature:
+
+- When creating Categories please be aware that available Templates will only display 3 or 4 Categories in Portrait and 3, 4 or 5 in Landscape
+- Product descriptions do not have a maximum character length which could result in descriptions being incorrectly displayed in a chosen template.
+- Any Allergy information completed in the Product form will automatically show.
+- There is no limit to the amout of Product Options a Product can have which could result in them being incorrectly displayed if more than 2 are created.
+- Product Options does not have a maximum character length which could result in descriptions being incorrectly displayed.
+
+{nonwhite}
+{cloud}
+This feature preview is not available for Xibo in the Cloud Customers.
+{/cloud}
+{/nonwhite}
+
 {/tip}
+
+The Menu Boards interface provides a simple way for users to create and configure information to be used with the [Menu Board Widget](media_module_menuboards.html) to display Menu  items and information using customisable templates.
 
 Menu Boards allow for the creation of 'reusable Menus' which are created and managed independantly to Layouts. Once created, Menus can easily be reused across multiple Layouts.
 
