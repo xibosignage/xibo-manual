@@ -69,9 +69,10 @@ Select a Template to use from the available options:
 
 {cloud}
 
-Xibo Exchange templates are enabled by default for Xibo in the Cloud customers.
+Xibo Exchange templates are enabled by default for new Xibo in the Cloud customers.
 
-If you do not wish to have these templates available on the Add Layout form, disable the Xibo Exchange by navigating to the **Administration** section of the main CMS menu and click on **Applications**. Scroll down the page to the **Connectors** section and click on **Configure**. Untick and Save the form.
+If you are upgrading from an earlier version you will need to enable by navigating to the **Administration** section of the CMS and click **Applications**. Scroll down the page to the **Connectors** section. Click to **Configure** and tick to enable, **Save** changes.
+
 {/cloud}
 
 {noncloud}
