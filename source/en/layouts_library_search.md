@@ -22,7 +22,10 @@ The **Toolbar** contains multiple **Library Search** options to give users an ea
 Integration from Pixabay allows for images/videos to additionally be shown here.
 
 {cloud}
-Pixabay integration is enabled by default for Xibo in the Cloud customers.
+Pixabay integration is enabled by default for new Xibo in the Cloud customers.
+
+If you are upgrading from an earlier version you will need to enable by navigating to the **Administration** section of the CMS and click **Applications**. Scroll down the page to the **Connectors** section. Click to **Configure** and tick to enable, **Save** changes.
+
 {/cloud}
 
 {noncloud}
