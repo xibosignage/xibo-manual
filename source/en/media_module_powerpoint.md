@@ -150,6 +150,9 @@ Click on the added **PowerPoint Widget** from the **Timeline** to open configura
 
 - Tick the **Set a duration** to provide a specific duration.
 
+{tip}
+**Please note:**  The CMS will not show a Preview for Powerpoint files!
+{/tip}
 
 ### Actions
 
