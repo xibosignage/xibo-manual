@@ -43,7 +43,9 @@ On adding, configuration options are shown in the properties panel:
 
 - Set **Start and End times** to define a window to show events.
 
-  
+{tip}
+From v3.1.2, an additional option to remove Weekends is available for both Weekly and Monthy Calendar Types!
+{/tip}
 
 #### All Calender Types have the following options:
 

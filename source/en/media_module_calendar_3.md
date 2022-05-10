@@ -1,7 +1,7 @@
 # Calendar
 
 {tip}
-**Please note:** If you are using a CMS v3.1.x, please use the following link [Agenda](media_module_agenda)
+**Please note:** If you are using a CMS v3.1.x, please use the following link [Agenda](media_module_agenda.html)
 {/tip}
 
 The Calendar Widget is used to display events from an **iCAL feed.** Calendar events can be filtered and formatted using templates.
