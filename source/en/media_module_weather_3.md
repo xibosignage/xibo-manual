@@ -1,8 +1,32 @@
-# Weather Tiles
+# Weather
 
-### Please note: This preview module has now been removed from the CMS and will no longer work. Please move to the [Weather](media_module_weather.html) widget to continue to provide weather information in Layouts.
+{tip}
+**Please note:** If you are using a CMS v3.1.x, please click [here](media_module_weather.html)
+{/tip}
 
-The Weather Tiles Widget allows you to display current daily weather events as well as weekly forecasts using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
+The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
+
+{nonwhite}
+{cloud}
+
+The Weather Module is configured for Xibo in the Cloud customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
+
+{/cloud}
+
+**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
+
+{/nonwhite}
+
+{tip}
+
+### Update: Important news regarding Dark Sky 31st March 2020
+
+Dark Sky have announced that they have joined Apple and will no longer accept new API signups. The Dark Sky API service for existing customers will not be affected until the end of 2021. 
+
+Click the link for further details [Dark Sky - announcement](https://blog.darksky.net/dark-sky-has-a-new-home/)
+
+We have chosen [OpenWeather](https://openweathermap.org/) as an alternative, follow the **Installation** steps below to provide an API key.
+{/tip}
 
 ## Installation
 
@@ -12,7 +36,7 @@ To get an API key please visit [Open Weather Map](https://openweathermap.org/api
 
 (If you are going to exceed 1000 calls per day you will also need to enter your billing information).
 
-The Weather Tiles Module is installed from the Modules page, under the Administration section of the menu. Click on the **Install Module** button and select the Module to install.
+The Weather Module is installed from the Modules page, under the Administration section of the menu. Click on the **Install Module** button and select the Module to install.
 
 After installation, select the Module from the grid and use the row menu to select **Edit**.
 
@@ -28,57 +52,37 @@ Open Weather Map allows 1000 requests for a forecast, per day before charging a 
 
 The Open Weather Map Terms of Service https://openweathermap.org/terms should be read and understood before using this Widget. 
 
-Click on **Weather Tiles** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Tiles Widget](img/v3_media_modules_weather_tiles.png)
+Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img\v2_media_weather_widget.png)
 
-On adding, configuration options are shown in the Edit Weather Tiles form:
+{tip}
+If you are using a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
+Please note: The Visual editor is not available in a 1.8.x CMS.
+{/tip}
+
+On adding, configuration options are shown in the Edit Weather form:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
 
 ### Configuration
 
-![Weather Type](img/v3_media_modules_weather_tiles_current.png)
+![Weather Configuration](img\v3_media_weather_configuration.png)
 
 - Tick to use the **Display Location** or untick to manually enter **Latitude** and **Longitude** to be used for this Widget.
 - Use the drop down menu to select the **Unit** of measurement or opt for the automatic selection (first item) which will be based on the geographic location.
 - Select the **Language** to be used.
 - Use the checkbox to only show daytime weather conditions.
 
-### Weather type - Forecast
-
-Selecting **Forecast** as the Weather type will show further configuration options:
-
-![Forecast View](img/v3_media_modules_weather_tiles_forecast.png)
-
-- Provide **Days Offset** to specify a starting day for the forecast
-
-- Specify the **Number of days** you wish to display, up to 7 days (counting from the offset value entered)
-
-- Enter the number of **Days Columns** and **Days Rows** to specify how you wish to present your forecast. (You may need to adjust this depending on the Template selected, for best results)
-
-## Templates
+### Templates
 
 Select from the available Templates:
 
-![Templates](img/v3_media_weather_tiles_templates.png)
+#### Preset
 
-### Preset
+![Weather Preset Templates](img/v3_media_weather_preset_templates.png)
 
 - Use the drop down to select from the available templates.
-
 - Tick to edit the selected template if required. Please see the section on **Editing Preset Templates** below for further information.
-
-### Backgrounds
-
-Click to open **Background** options:
-
-![Weather Tiles Backgrounds](img/v3_media_modules_weather_tiles_backgrounds.png)
-
-- Use the check box to show a default background image for the selected template.
-
-  or
-
-- Upload your own image files to the library to replace the default image that will be shown. Use the drop down menus for each field to select the file to be used. 
 
 ## Editing Preset Templates
 
@@ -95,17 +99,36 @@ The template will be automatically scaled and should be designed for the intende
 - Templates are treated the same as a static image
   {/tip}
 
-With override template selected, you can enter HTML and CSS.
+With override template selected, you can enter text, HTML and CSS.
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Preset Override](img/v3_media_modules_weather_tiles_preset_override.png)
+![Weather Template Override](img\v3_media_weather_override_template.png)
+
+### Current Forecast Template
+
+Also known as the main template, used for the current weather conditions and as the basis for the repeating Daily Forecast Template.
+
+Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
+
+{tip}
+Click on **Get Forecast** to see available substitutions to use.
+{/tip}
+
+### Daily Forecast Template
+
+This is the **repeating template** that should be provided for the 7 day forecast. It will be repeated each day and then substituted into the special `[dailyForecast]` tag (which should feature on the main Current Forecast template). 
+
+The `[dailyForecast]` tag has 2 optional settings which can be added to the tag by including the`|` character. These are `[dailyForecast|Number of days|Start day]` and default to 7 days, starting at tomorrow (day 2). If you wanted to see the next 3 days you would use `[dailyForecast|3]` and for a 3 day forecast starting the day after tomorrow you could use `[dailyForecast|3|3]`.
+{tip}  
+A common example is to ignore the "Current Template" and produce a full 7 day forecast using the Daily Forecast - this is achieved with `[dailyForecast|7|1]`.
+{/tip}
 
 ### CSS Style Sheet
 
 This is the CSS to apply to the template structure above.
 
-## Attribution
+### Attribution
 
 All Layouts that use the Weather Widget need to include attribution, available by using the `[Attribution]` tag. All preset templates contain this tag by default, please ensure that this tag is included when editing/overriding default templates.
 
@@ -119,7 +142,8 @@ If the data will only change once per hour the Update Interval could be set to 6
 
 ### Get Forecast
 
-It is possible to **request a forecast** at any time to see what forecast data is returned. Any field is available as a substitute in the template by entering the field name between square brackets - for example `[nearestStormDistance]`.
+It is possible to **request a forecast** at any time to see what forecast data is returned. Any field is available as a substitute in the template by entering the field name between square 
+brackets - for example `[nearestStormDistance]`.
 
 ## Actions
 
