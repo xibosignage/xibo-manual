@@ -1,6 +1,6 @@
 # Interactive Actions
 
-### Please note: Interactive Actions are currently supported on Xibo for Windows R3 R300 and Xibo for Android R3 R300. 
+### Please note: Interactive Actions are currently supported on Xibo for Windows R3 R300 / Xibo for Android R3 R300 and Xibo for webOS v3 R300 
 
 {tip}
 **Please note: **If you are using a v3.1.x CMS, please click [here](layouts_interactive_actions.html)

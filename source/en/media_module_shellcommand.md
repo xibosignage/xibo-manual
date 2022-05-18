@@ -27,7 +27,7 @@ The Command is executed when a Layout containing the Shell Command Widget plays 
 A Shell command can be a **created** command string which is passed directly to the shell or a **stored command** preconfigured configured by an Administrator.
 
 {nonwhite}
-Further information regarding Command Functionality for Administrators can be found [here](docs/setup/command-functionality)
+Further information regarding Command Functionality for Administrators can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
 {/nonwhite}
 
 ## Add Widget
@@ -80,7 +80,3 @@ Android/Linux Players require **root access** to use Shell Commands.
 ## Actions
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
-
-{nonwhite}
-For Administrators, further information on Command Functionality can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
-{/nonwhite}
