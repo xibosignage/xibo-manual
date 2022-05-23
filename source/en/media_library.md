@@ -179,6 +179,10 @@ Tag management information for Administrators can be found [here](https://xibo.o
 - **Expiry date** - set a date and time to remove the selected media file completely from the CMS.
 
 {tip}
+**Please note**: Expiry dates are currently not supported for the Linux Player.
+{/tip}
+
+{tip}
 **Please note:** This will remove media from any Layouts that contain the selected file.
 {/tip}
 
