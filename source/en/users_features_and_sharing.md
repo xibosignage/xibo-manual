@@ -8,7 +8,7 @@ If you are using a version earlier than v3.0.0 please use the following link: [P
 
 Access is controlled for Users and User Groups using two concepts:
 
-1. **Features ** - control what a User can see and do within the CMS
+1. **Features** - control what a User can see and do within the CMS
 2. **Share** - controls View, Edit and Delete options for user objects such as; Folders, Media, Playlists, DataSets, Layouts, Displays/Display Groups.
 
 When used in conjunction with each other, these concepts ensure that only the relevant parts of the CMS are visible to Users/User Groups with the appropriate level of interaction applied for objects.
