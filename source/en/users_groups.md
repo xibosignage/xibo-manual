@@ -83,11 +83,9 @@ Click on **Features** from the **Row Menu** to control the required access for t
 
 For further information see the following page: [Features and Sharing](users_features_and_sharing.html)
 
+
+
 {tip}
-Use the **Copy** function on the Row Menu to easily modify Features to create new User Groups!
+Use **Copy** from the row menu of a User Group to easily make adjustments and create new Groups to suit your needs!
 {/tip}
-
-
-
-
 

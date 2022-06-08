@@ -53,13 +53,13 @@ Setting a low value can cause your access to the Twitter API to be disabled for 
 
 ## Add Widget
 
-Click on **Twitter** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop![Twitter Widget](img\v2_media_twitter_widget.png)
+Click on **Twitter** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![Twitter Widget](img\v2_media_twitter_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select Twitter from the Widget Toolbox to add!
 {/tip}
 
-On adding, configuration options are shown in the Edit Twitter form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -67,7 +67,7 @@ On adding, configuration options are shown in the Edit Twitter form:
 
 ### Configuration
 
-![Twitter Configuration](img\v3_media_twitter_configuration.png)
+![Twitter Configuration](img\v3.1_media_twitter_configuration.png)
 
 - Provide a **Search Term** to return applicable Tweets
 
@@ -79,12 +79,12 @@ Check to make sure your search term is valid before entering here by using the t
 To return Tweets from a specific account rather than all Tweets that contain the accounts @ handle, use `from:` before the name of the account in the **Search Term** field.
 {/tip}
 
-- Select the Language to use
-- Use the drop down to select how Tweets should be returned; based on popularity, most recent or a mixed.
-- Select how many miles away from your location Tweets should be returned from. 0 has no restrictions.
-- Use the tick box if Mentions (@someone) should be removed from the returned Tweet text.
-- Use the tick box if Hashtags (#something) should be removed from the returned Tweet text.
-- Use the tick box to remove URLs from returned Tweet Text.
+- Select the **Language** to use
+- Use the drop down to select the **Type** of Tweets to be returned; based on popularity, most recent or a mixed.
+- Select the **Distance** in miles, away from your location Tweets should be returned from. 0 has no restrictions.
+- Use the tick box if **Mentions** (@someone) should be removed from the returned Tweet text.
+- Use the tick box if **Hashtags** (#something) should be removed from the returned Tweet text.
+- Use the tick box to remove **URLs** from returned Tweet Text.
 
 {tip}
 Most URL's do not compliment Digital Signage!
@@ -92,29 +92,32 @@ Most URL's do not compliment Digital Signage!
 
 ### Appearance
 
-- Optionally add a Background Colour.
+- Optionally add a **Background Colour**.
 - Specify the number of Tweets to return, left blank will return the default number of 15
 - Select the number of Tweets to show Per Page, left blank will show the default number of 5 Tweets.
-- Apply a Date Format to be used for returned results (see Additional Information at the bottom of page).
-- Select an optional Effect/Speed to be used to transition between Tweets.
+- Apply a **Date Format** to be used for returned results (see Additional Information at the bottom of page).
+- Select an optional **Effect** and **Speed** to be used to transition between tweets.
+
+{tip}
+From v3.1.0 set **Horizontal** and **Vertical** alignment options for this Widget!
+{/tip}
 
 ### Templates
 
 Select from the available Templates:
 
-![Twitter Templates](img\v3_media_twitter_templates.png)
+**Preset**  - use the drop down to select one of the preset templates:
 
-### Preset
+![Preset Templates](img\v3.1_media_twitter_preset_templates.png)
 
-- Use the drop down to select one of the preset templates:
+- {tip}
 
-  ![Preset Templates](img\v3_media_twitter_preset_templates.png)
+  Click to Override the selected template if required. 
 
-- Tick to edit the selected template if required. Please see the section on Editing Preset Templates below for further information.
+  Please see the section on Editing Preset Templates below for further information.
+  {/tip}
 
-### No Tweets Message
-
-- Provide a **No Tweets Message** to display when there are no Tweets to return, based on the search query.
+- **No Tweets Message** provide a message to display when there are no Tweets to return based on the search query.
 
 ### Editing Preset Templates
 
@@ -133,24 +136,24 @@ The template will be automatically scaled and should be designed for the intende
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Twitter Override the Template](img\v3_media_twitter_override_template.png)
+![Twitter Override the Template](img\v3.1_media_twitter_override_template.png)
 
-#### Main Template
+**Main ** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 
-Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
+- Use the Snippets menu to include merge text fields.
 
-Use the Snippets menu to include merge text fields.
+  {tip}
+  If you are using 1.8 the following substitutions are available for use:
+  [Tweet][User]
+  [ScreenName][Date]
+  [ProfileImage][Photo]
+  {/tip}
+
+**Optional Stylesheet** - This is the CSS to apply to the template structure above.
 
 {tip}
-If you are using 1.8 the following substitutions are available for use:
-[Tweet][User]
-[ScreenName][Date]
-[ProfileImage][Photo]
+This optional template is intended for advanced users to 'tweak' the CMS generated output!
 {/tip}
-
-#### Optional Stylesheet
-
-This is the CSS to apply to the template structure above.
 
 ### Caching
 

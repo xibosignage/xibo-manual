@@ -66,6 +66,10 @@ Select from one of the pre-configured **Groups** to go through the **Onboarding 
   
   ![Folder Select](img/v3_users_new_folders.png)
 
+{tip}
+When allowing Users, (such as a Group Admin) to add Users using the Onboarding Wizard, ensure that Folders is enabled in [Features](users_features_and_sharing.html) if they are required to Share Folders with the User for viewing and editing!
+{/tip}
+
 {nonwhite}
 For further information regarding Folder Administration click [here!](https://xibo.org.uk/docs/setup/folders-administration)
 {/nonwhite}

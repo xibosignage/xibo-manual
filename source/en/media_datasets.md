@@ -174,7 +174,7 @@ Depending on the Column Type selected, additional information will be required:
 
 - **Value** - Provide a comma-separated list of values that can be selected for this field.
 
-- **Formula** - Enter a MySQL statement suitable to use in a 'SELECT' statement, or a string to format a date field `$dateFormat(<col>,<format><language>)`
+- **Formula** - Enter a MySQL statement suitable to use in a 'SELECT' statement, or a string to format a date field `$dateFormat(<col>,<format>,<language>)`
 
   {tip}
   Ensure that `<col>` has a date and time specified for the date format to work.
@@ -258,13 +258,10 @@ A remote DataSet can depend on another DataSet to formulate its request. Each ro
 
 ## Row Menu
 
-Use the row menu for a DataSet to access additional actions:
+- Use the row menu for a DataSet to access additional actions:
 
-### View RSS
-
-This option allows you to publish content in a Layout as an RSS feed from data held in your own DataSet. Click **View RSS** to copy the URL which can then be included in the  [Ticker](media_module_ticker.html)  Widget configuration.
-
-### Delete
+- View RSS  allows for publishing content in a Layout as an RSS feed from data held in your own DataSet. Click **View RSS** to copy the URL which can then be included in the  [Ticker](media_module_ticker.html)  Widget configuration.
+- From v3.1.0 export the DataSet as a CSV
 
 On selecting Delete, users will be given the option of also deleting any data contained within the DataSet.
 
@@ -274,9 +271,8 @@ DataSets can only be deleted if they are not in use.
 From v2.3 multiple DataSets can be selected and deleted in bulk using the With Selected option at the bottom of the grid.
 {/tip}
 
-### Share
+- Assign [View, Edit, Delete access](users_features_and_sharing.html) for other Users/User Groups.
 
-Assign [View, Edit, Delete access](users_features_and_sharing.html) for other Users/User Groups.
 
 {tip}
 **Please note:** In versions earlier than 3.0.0 Share will be labelled as [Permissions](users_permissions.html)!

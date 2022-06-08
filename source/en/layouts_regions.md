@@ -1,60 +1,66 @@
 <!--toc=layouts-->
 
-# Regions 
-
-Regions define areas on a **Layout** which hold **Widgets** (media content) to form sets of timed content.
+# Regions
 
 {tip}
+If you are using a CMS earlier than v3.1.0 please select from the options below:
 
-- If you are using a version earlier than 2.3 for the v2 CMS, please use the following link: [Regions v2](layouts_regions_2.0.html)
-- If you are using the **1.8 series**, please use the following link: [Regions 1.8](layouts_regions_1.8.html)
+- v3.0.x CMS click [here](layouts_regions_3.html)
+- v2.3.x CMS click [here](layouts_regions_3.html)
+- v2.0.x CMS click [here](layouts_regions_2.0.html)
+- v1.8.x CMS click [here](layouts_regions_1.8.html)
 
 {/tip}
 
+Regions define areas on a **Layout** which hold **Media** to form sets of timed content which are added and edited by using the edit layout icon located below the viewer:
 
-A new Layout will contain one full size empty **Region** by default ready for resizing, positioning and adding media content to. 
-
-Click on the 'edit' icon located in the bottom left hand corner of the Layout View window to open the **Layout Editor**. 
-
-![Layout Editor](img/v2.3_layouts_layout_editor.png)
+![Layout Editor](img/v3.1_layouts_layout_editor.png)
 
 {tip}
-You can toggle to a full sized screen using the icon located in the bottom right of the editor.
+If you have chosen a blank template, you can also click the 'No Regions' banner to open the editor.
+{/tip}
+
+![Region Resize](img/v3.1_layouts_region_resize.png)
+
+- Click on a **Region** to select (highlighted orange once selected) and resize by using the handle located in the right bottom corner.
+- Move a selected Region around the canvas using drag and drop. 
+
+{tip}
+You can toggle to a full sized screen using the icon located in the top right of the editor.
 {/tip} 
 
-**Regions** can be positioned anywhere inside the **Layout Editor** canvas using drag and drop, and resized by using the resize handle located in the lower right-hand corner of the Region. 
-
-Click inside a Region to use the resize handle and to open the **Region Options** form for further configuration.
-
-![Region Resize](img/v3_layouts_region_resize.png)
-
 {tip}
-When you are in **Layout Editor** mode you will notice that the window toolbar changes to orange!
+When you are in 'editing' mode you will notice that the window is framed orange!
 {/tip}
 
-Click on the ![Add Region](img/v2.3_layouts_add_region.png)icon to add more Regions.
+- Add further Regions by clicking on the **+** button located in the bottom left:
 
-Remove Regions and all associated content by clicking in the Region you wish to delete and then click on the ![Delete Region](img/v2.3_layouts_delete_region.png)icon. **Please note: This action cannot be undone!**
+
+ ![Add Region](img/v3.1_layouts_add_region.png)
+
+- Clicking anywhere on the canvas will save changes made to a Region.
+
+  
+
+
+Further options are available in the properties panel:
+
+- Highlight a Region to view the options
+
+![Editing Panel](img/v3.1_layouts_regions_editing_panel.png)
+
+
+
+- The **General** tab allows you to optionally create a **Name** for a Region for easier identification in the CMS, and to enable the **Loop** option if it is required.
+
 
 {tip}
-Regions can also be deleted from here or from the Timeline by clicking on a Region and clicking the bin icon on the bottom toolbar or by right clicking on the target Region and selecting the bin icon from the pop up menu.
-{/tip}
 
-Click on ![Layout View](img/v2.3_layouts_region_layout_view.png)to exit edit mode and return to the Layout View.
-
-## Region Options
-
-### General
-
-This tab allows you to optionally create a name for a Region for easier identification, and to enable the  **Loop** option if it is required.
-
-{tip}
-
-#### When to enable Loop?
+**When to enable Loop?**
 
 It may be desirable to have a Region with just 1 media item reload when that item has finished. With the **Loop** ticked the media item will reload each time it expires and show refreshed content until other Regions have fully played out. Loop is only effective for a Region with only 1 media item and should only be used for certain Media types where the content changes (Ticker RSS, Calendar etc).
 
-#### Consider the following rules when thinking about using the Region Loop option for the best results:
+**Consider the following rules when thinking about using the Region Loop option for the best results:**
 
 - If your Region contains more than one Widget, Loop should not be enabled.
 - If your Region contains one Widget, and that Widget is a 'fixed' item (eg Text), Loop should not be enabled.
@@ -62,11 +68,11 @@ It may be desirable to have a Region with just 1 media item reload when that ite
 
 {/tip}
 
-### Positioning
+- Use the **Positioning** tab for more precise sizing and positioning of Regions, as well as setting a **Layering Order** for playback.
 
-This tab allows for precise sizing and positioning as well as the ability to set a **Layering Order** for playback.  
 
-### Rules for Layering Regions
+
+#### Rules for Layering Regions:
 
 {tip}
 **Please note:** You cannot overlay anything on a Region that has Widgets / Media that use the Edge browser. This would include HLS and Embedded Youtube.
@@ -77,19 +83,19 @@ If required, overlapping Regions can be ordered for playback using z-index setti
 
 Enter a number in the **Layer** field to determine the order that Region should be shown within the overall stack.
 
-![Region Options Layering](img/v2.3_layouts_regions_layer.png)
+![Region Options Layering](img/v3.1_layouts_regions_layer.png)
 
 The **Layer** order is determined by the number entered here, with 1 considered the lowest Layer. The higher the number the higher the Layer.
 
 {tip}
-On some devices, it is impossible to overlay anything on a Region showing a **Video** or **VideoIn** Widget. Whether it is possible will depend on the device and whether hardware accelerated playback is being used. In general, it is possible on Android (when **not** using the SurfaceView option in the [Display Settings Profile](displays_settings.html)), Linux, Tizen and webOS Players, but if you have a requirement for this, be sure to test your intended device carefully to ensure this works in your use case.
+On some devices, it is impossible to overlay anything on a Region showing a **Video** or **VideoIn** Widget. Whether it is possible will depend on the device and whether hardware accelerated playback is being used. In general, it is possible on Android (when **not** using the SurfaceView option in the [Display Settings Profile](displays_settings.html), Linux, Tizen and webOS Players, but if you have a requirement for this, be sure to test your intended device carefully to ensure this works in your use case.
 {/tip}
 
 At the bottom of this tab, click on the **Make this Region full screen** text to resize as shown by the dimensions displayed here.
 
-### Exit Transition
+- Select the **Transitions** tab to apply an **Exit Transition** for when the Region finishes playing.
 
-**Exit Transitions** happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
+Exit transitions happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
 
 {tip}
 Transitions are supported in the Android, webOS, Tizen Players and Windows Players from v2 R252 and are **not** currently supported in the Linux Player.{/tip}
@@ -99,43 +105,28 @@ Transitions need to be pre-configured, please contact your Administrator with an
 Further information on Transitions for administrators can be found [here](https://xibo.org.uk/docs/setup/transitions-administration)
 {/nonwhite}
 
-Ensure any edits made are saved using the **Save** button on the Region Options form before returning to the Layout View.
+- Ensure any edits made are saved using the **Save** button before returning to the Layout View.
 
-### Actions
 
-{tip}
-Actions are available from v3.0.0! (Speak to your Administrator to upgrade the CMS to benefit from this feature!)
-{/tip}
-
-Actions can be attached to Regions to effect changes on the Layout. 
-
-![Actions](img\v3_layouts_regions_actions.png)
-
-Full details are available on the [Interactive Actions](layouts_interactive_actions.html) page.
+**Actions** can be attached to Regions to effect changes on the Layout. Full details are available on the [Interactive Actions](layouts_interactive_actions.html) page.
 
 ### Share options for a Region
 
 Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete** access for a Region.  
 
-- Assign/edit [Share](users_features_and_sharing.html) options by right clicking on the target Region to open the form.
-
-  {tip}
-  In versions earlier than 3.0.0, Share options are labelled as [Permissions](users_permissions.html!
-  {/tip}
-
-
-![Region Sharing](img\v3_layouts_regions_share.png)
-
 {tip}
-Alternatively Share options can also be located from the [Tools](layouts_tools.html) button on the bottom toolbar. Click or drag to the target Region, and enable/disable access as appropriate.
+**Please note:** The owner of the **Layout** has full control over sharing.
 {/tip}
 
-**Please note:** The owner of the **Layout** has full control over sharing. 
+- Assign and Edit [Share](users_features_and_sharing.html) options by right clicking on the target Region to open the form:
+
+
+![Region Sharing](img\v3.1_layouts_regions_share.png)
 
 {tip}
-A globally shared Layout can have Region access right defined for any other Users of the CMS. See the [Features and Sharing](users_features_and_sharing.html) page for more information.
-Users of a CMS earlier than v3.0.0 please see the [Permissions](users_permissions.html) page.
+Alternatively Share options can be accessed from the context menu at the bottom of the viewer! 
 {/tip}
 
+Remove Regions by highlighting the Region to delete in the viewer or timeline and cliick the bin icon. **Please note: This action cannot be undone!**
 
-
+Exit the editor and return to the Layout View by using the back arrow in the top left of the viewer.

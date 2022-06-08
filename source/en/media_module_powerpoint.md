@@ -37,7 +37,7 @@ Follow the instructions as detailed on the [Video](media_module_video.html) page
 
 ### Add PDF Widget
 
-Follow the instructions as detailed on the [PDF](media_modules_pdf.html) page to add and upload the file.
+Follow the instructions as detailed on the [PDF](media_module_pdf.html) page to add and upload the file.
 
 ## Option 3 - Prepare and Upload your PowerPoint PPT file
 
@@ -59,8 +59,14 @@ PowerPoint will, by default, put scroll bars up the side of your presentation, u
 Click on PowerPoint from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![PowerPoint Widget](img/v2_media_powerpoint_widget.png)
 
 {tip}
-If the PowerPoint PPT file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add!
+Use the [Library Search](layouts_library_search.html) function to add PowerPoint files already uploaded to the Library.
 {/tip}
+
+From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
+
+![Upload New](img/v3.1_media_powerpoint_uploadnew.png)
+
+
 
 ### Upload Media File
 
@@ -88,9 +94,8 @@ Files that are saved in Folders will inherit the View, Edit, Delete [Share](user
 
 - Click on the **Select Folder** button and expand to select a Folder to save in.
 
-![Select Folder](img\v3_media_powerpoint_select_folder.png)
+- Users can also right click a Folder to access further options.
 
-Users can also right click a Folder to access further options.
 
 {tip}
 Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
@@ -107,23 +112,22 @@ Further information for Administrators regarding Folder access and set-up can be
 For further information regarding Folder access and set-up, please speak to your Administrator.
 {/white}
 
-There is an option to set expiry dates and times for files uploaded to this particular Widget.
+There is an option to **Set Expiry Dates** and times for files uploaded to this particular Widget.
 
 {tip}
 This is particularly useful should you need to preload files to be shown at a later date/time!
 {/tip}
 
+- Tick the **Set Expiry Dates** box.
+
 {tip}
 **Please note:** Expiry Dates are currently not supported for the Linux Player!
 {/tip}
 
-- Tick the **Set Expiry Dates** box.
-
-- Use the date picker to select **Start** and **End** dates and times.
-
 ![Expiry Dates](img\v3_media_powerpoint_expiry_dates.png)
 
-- There are further options to remove the Widget from the Playlist on expiry and to delete the media file from the Library.
+- Select **Start** and **End** dates and times.
+- Use the check boxes to remove the media file from the Playlist on expiry and delete from the Library.
 
 
 - Click the **Start upload** button to begin the upload of all files added. If a Folder/Expiry Dates have been selected and there are multiple files to be added, all files will be uploaded to the specified location and have the same Expiry Dates set.
@@ -138,14 +142,17 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 ### Configuration Options
 
-Click on the added **PowerPoint  Widget** from the **Timeline** to open configuration options in the **Edit PDF** form:
+Click on the added **PowerPoint Widget** from the **Timeline** to open configuration options in the properties panel:
 
-![Edit Options](img\v3_media_powerpoint_edit_options.png)
+![Edit Options](img\v3.1_media_powerpoint_edit_options.png)
 
 - Make edits to naming of the Widget if required.
 
 - Tick the **Set a duration** to provide a specific duration.
 
+{tip}
+**Please note:**  The CMS will not show a Preview for Powerpoint files!
+{/tip}
 
 ### Actions
 
@@ -200,7 +207,13 @@ If you still experience issues, it may also be advisable to disable Office Appli
 "DWNeverUpload"=dword:00000001
 ```
 
+{tip}**Please Note**:
 
+The Windows player displays the PowerPoint presentation inside an Internet Explorer container. Internet Explorer uses the directory
+`C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\Content.MSO` to cache Microsoft Office temporary files that are identified as being from the Internet security zone. This can cause multiple copies of the presentation to be saved to this directory over time. Windows does not automatically remove the cached duplicates from that directory, which can consume storage space on your hard drive over time. If you find multiple copies of your presentation cached at this directory it is safe to delete them. 
+
+We would recommend creating a scheduled task or script that will delete the contents of that directory regularly.
+{/tip}
 
 
 

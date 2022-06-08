@@ -4,31 +4,28 @@
 
 The DataSet View Widget is used with DataSets to display information in a tabular format.
 
-When the underlying **DataSet Data** is changed, the DataSet View Widget included in your Timelines, will  update with the new data.
+When the underlying **DataSet Data** is changed, the DataSet View Widget included in your Layout, will  update with the new data.
 
 DataSets need to be created and defined prior to adding the DataSet View Widget to Layouts. Please see the  [DataSet](media_datasets.html)  page for further information.
 
 ## Add Widget
 
-Click DataSet View from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop  ![DataSet View Widget](img\v2_media_datasetviews_widget.png)
+Click DataSet View from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop  ![DataSet View Widget](img\v2_media_datasetviews_widget.png)
 
 {tip}
 If you are using a 1.8.x CMS, select DataSet View from the Widget Toolbox to add!
 {/tip}
 
-On adding, select the DataSet to use from the drop-down menu:
+- On adding, select the DataSet to use from the drop-down menu.
 
-![DataSet View Add DataSet](img\v3_media_datasetview_add_dataset.png)!
-
-{tip}
-Once a DataSet has been added to a DataSet View, care should be taken when editing the column structure of the DataSet.
-{/tip}
 
 {tip}
-Once a DataSet has been associated with the Widget you cannot edit to change to an alternative set of data. A new Widget would need to be added and configured!
+From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
+
+If you are using a version earlier than 3.1.0 you cannont edit to change to an alternative set of data. A new Widget would need to be added and configured!
 {/tip}
 
-Once Saved, configuration options are shown in the the Edit DataSet View form:
+Once Saved, further options will be made available:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -36,7 +33,7 @@ Once Saved, configuration options are shown in the the Edit DataSet View form:
 
 ### Configuration
 
-![DataSet View Configuration](img\v3_media_datasetview_configuration.png)
+![DataSet View Configuration](img\v3.1_media_datasetview_configuration.png)
 
 - Choose which columns to use by dragging to **Columns Selected**. 
 - Tick in the box to show the **Table Headings**.
@@ -45,18 +42,20 @@ Once Saved, configuration options are shown in the the Edit DataSet View form:
 
 ### Appearance
 
-- Select a Template using the drop-down menu.
+- Select a **Template** using the drop-down menu:
+
+![DataSet View Templates](img/v3.1_media_datasetview_templates.png)
 
 {tip}
-From v3.0.0 additional templates have been added, earlier versions have two available templates. Speak to your administrator to upgrade the CMS to benefit from these template additions!
+Additional Templates added from v3.0.0!
 {/tip}
 
 - The first template option is customisable and allows users to select colouring for background, border, font, select a custom font and font size to use.
 - The other templates allow for a user to select a custom font and size.
+- Enter HTML and CSS by ticking to Override a selected template. 
+- Click on the Templates tab to select the Template to edit:
 
-- Enter HTML and CSS by ticking to Override a selected template. Click on the Templates tab to select the Template to edit:
-
-![DataSet View Templates](img/v3_media_datasetview_templates.png)
+![DataSet View Override](img/v3.1_media_datasetview_override.png)
 
 
 

@@ -4,7 +4,7 @@
 
 Events are administered from the Schedule section of the m main menu.
 
-Layouts, Campaigns, Overlay Layouts, Interrupt Layouts and Command **Event Types** can be assigned to Displays/Display Groups to be shown at specific dates and times.
+Layouts, Campaigns, Overlay Layouts, Interrupt Layouts, Command and Action **Event Types** can be assigned to Displays/Display Groups to be shown at specific dates and times.
 
 ## Add Event
 
@@ -14,16 +14,30 @@ Click on the **Add Event** button on the calendar to schedule an Event.
 
 ### Event Type
 
-Use the drop-down to select an Event from the 5 Types supported:
+Use the drop-down to select an Event Type:
 
 - **Layout** - select Published Layouts.
+
 - **Campaign** - select designed Campaigns. 
+
 - **Overlay Layout** - select a specifically designed Layout to schedule as an [Overlay Layout](layouts_overlay.html).
-- **Interrupt Layout** (available from v2.2.0) - select a Layout to play for a specified **Share of Voice** to interrupt your usual schedule. (**Please note:** This feature is currently supported by the Android Player from R204 and Windows from R253. We are working on bringing this feature to all Players.)
+
+- **Interrupt Layout** (available from v2.2.0) - select an [Interrupt Layout](layouts_interrupt.html) to play for a specified **Share of Voice** to interrupt your usual schedule.
+
 - **Command** -  select from a predefined command.
 
+- **Actions** (available from v3.1.0) - this Event makes the Player listen for a **Trigger Code** coming in on a webhook to trigger one of the following **Action Types**:
+
+  **Navigate to Layout** - enter the code identifier for the Layout that the Player should navigate to when triggered.
+
+  {tip}
+  This code can be entered on adding a new Layout or by editing a Layout from the Layouts Grid row menu.
+  {/tip}
+
+  **Command** - select from the drop down menu.
+
 {tip}
-Events, with the exception of Interrupt and Command Events, can also be added using the [Schedule Now](scheduling_now.html) function.
+Events, with the exception of Interrupt/Command and Action Events, can also be added using the [Schedule Now](scheduling_now.html) function.
 {/tip}
 
 ### Display 

@@ -35,6 +35,10 @@ Scan the QR code shown on the Edit User Profile form and enter the code displaye
 ![QR Code](img/tour_2fa_qrcode.png)
 
 {tip}
+Ensure that your phone and server have the correct time and date to avoid errors!
+{/tip} 
+
+{tip}
 You will need to enter your password to verify any changes made to the Two Factor Authentication options.{/tip}
 
 ## Generate Recovery Codes

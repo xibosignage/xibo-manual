@@ -59,6 +59,10 @@ The CMS can be configured to talk to an XMR instance if player actions are requi
 
 {/white}
 
+{tip}
+We recommend setting no lower than 5 minutes for production, generally a 15-30 minute setting would be sensible.
+{/tip}
+
 ### Enable Stats Reporting
 
 Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for all **Displays** that use the selected **Display Profile**.

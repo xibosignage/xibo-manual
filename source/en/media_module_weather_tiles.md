@@ -1,25 +1,8 @@
-<!--toc=widgets-->
-
 # Weather Tiles
 
-**Available from v3.0.0**
+### Please note: This preview module has now been removed from the CMS and will no longer work. Please move to the [Weather](media_module_weather.html) widget to continue to provide weather information in Layouts.
 
 The Weather Tiles Widget allows you to display current daily weather events as well as weekly forecasts using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
-
-{tip}
-If you are using an earlier CMS, speak to your administrator to upgrade to benefit from this new feature!
-{/tip}
-
-{nonwhite}
-{cloud}
-
-The Weather Tiles Module is configured for Xibo in the Cloud customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
-
-{/cloud}
-
-**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
-
-{/nonwhite}
 
 ## Installation
 

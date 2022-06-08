@@ -4,7 +4,7 @@
 
 **This Module requires a Google API key which has associated usage charges. Please make sure you are aware of the usage charges before entering your key in this Module's configuration**.
 
-The Google Traffic Widget allow you to display traffic data to a Layout.
+The Google Traffic Widget allows you to display traffic data to a Layout.
 
 ### Installation
 
@@ -45,8 +45,6 @@ On adding, configuration options are shown in the Edit Google Traffic form:
 
 ### Configuration
 
-![Google Traffic](img\v3_media_googletraffic.png)
-
 - Tick to use the **Display Location** to use the **Latitude** and **Longitude** recorded for the Display or untick to manually enter.
 
   {tip}
@@ -56,5 +54,7 @@ On adding, configuration options are shown in the Edit Google Traffic form:
 - Select how close/far away the aerial view of the map will be. The higher the number entered the closer the view to ground level will be with a zoom of 1 being the whole globe.
 
 ## Actions
+
+**Available from v3.0.0**
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.

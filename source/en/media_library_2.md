@@ -1,7 +1,13 @@
 # Library 
 
 {tip}
-**Please note:** If you are using a 3.x CMS, please use the following link: [Library](media_library.html)
+**Please note:** 
+
+- If you are using a v3.0.x CMS, please click [here](media_library_3.html)
+
+- If you are using a v3.1.x CMS, please click [here](media_library.html)
+
+
 {/tip}
 
 The CMS Library stores all file-based media that is uploaded for use onto Layouts.

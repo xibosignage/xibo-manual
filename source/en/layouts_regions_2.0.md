@@ -1,11 +1,13 @@
 # Regions 
 
 {tip}
-If you are using **v2.3** or later, please use the following link: [Regions](layouts_regions.html)
-{/tip}
+**Please note:** This page is for users of a **v2.0.x - v2.2.x CMS**. For an alternative version please select from the options below:
 
-{tip}
-If you are using the **1.8 series**, please use the following link: [Regions 1.8](layouts_regions_1.8.html)
+- v1.8.x CMS click [here](layouts_regions_1.8)
+- v2.3.x CMS click [here](layouts_regions_3.html)
+- v3.0.x CMS click [here](layouts_regions_3.html)
+- v3.1.x CMS click [here](layouts_regions.html)
+
 {/tip}
 
 Regions define areas on a **Layout** which hold **Widgets** (media content) to form sets of timed content.

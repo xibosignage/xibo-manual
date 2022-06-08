@@ -9,14 +9,14 @@ If you are using a 1.8.x CMS, please use the following link: [Ticker 1.8](media_
 
 ## Add Widget
 
-Click on **Ticker** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Ticker Widget](img\v2_media_ticker_widget.png)
+Click on **Ticker** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Ticker Widget](img\v2_media_ticker_widget.png)
 
-On adding, configuration options are shown in the Edit Ticker form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
 
-- Select whether the duration is to be per item or leave unticked to set the duration per feed.
+- Select whether the **Duration is per item** or leave unticked to set the duration per feed.
 
 {tip}
 Use the last option with caution as this can create long-running media items. Use in conjunction with **Number of items** to limit!
@@ -24,56 +24,70 @@ Use the last option with caution as this can create long-running media items. Us
 
 ### Configuration
 
-![Ticker Configuration](img\v3_media_ticker_configuration.png)
+![Ticker Configuration](img\v3.1_media_ticker_configuration.png)
 
-- Enter the Feed URL to use.
+- Enter the **Feed URL** to use.
 
-- Choose how many RSS items to display.
+- Choose how many RSS **items** to display.
 
-- Select to start with items from the beginning or end of the list.
+- Select to start with items from the **Start or End** of the list.
 
-- Tick to select to reverse the order of items on the feed.
+- Tick to select to **Reverse Order** feed items.
 
-- Select to display items in a random order.
+- Select to display items in a **Random** order.
 
   {tip}
   The Randomise option works offline; the entire feed is parsed, rendered and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to randomise the order of items. Randomise works on the full feed, "Number of items" and "Take items from" options.
   {/tip}
 
-- Display a Copyright notice at the end of the feed.
+- Display a **Copyright** notice at the end of the feed.
 
-- Tick to display returned results side by side.
+- Tick to display returned results **side by side**.
 
-- Apply a Date Format to apply to all returned date results. (see the **Additional Information** at the bottom of this page for further information).
+- Apply a **Date Format** to apply to all returned date results. (see the **Additional Information** at the bottom of this page for further information).
 
-- Include a comma-separated list of attributes that should not be stripped from the incoming feed.
+- Include a comma-separated list of **attributes** that should not be stripped from the incoming feed.
 
-- Include a comma-separated list of HTML tags to be stripped from the feed.
+- Include a comma-separated list of **HTML tags** to be stripped from the feed.
 
-- Tick to decode the HTML entities in the feed before parsing it.
+- Tick to **Decode** the HTML entities in the feed before parsing it.
 
-- Select to disable the date sort for the feed.
+- Select to **Disable Date Sort** for the feed.
 
 ### Appearance
 
-- Optionally select a background colour
+- Optionally select a **Background Colour**.
 - Use the drop-down menu to select an **Effect** to be used to transition between items.
 - Set the **Speed** for the effect selected.
 - Enter how many Items should appear on each page if an effect to split items has been selected.
 
 ### Templates
 
-![Ticker Template](img\v3_media_ticker_template.png)
+Select from the available Templates:
 
-Use the drop down to select from the **Preset** Templates available to choose how the Ticker will be displayed.
+- **Preset** - use the drop down to select one of the preset templates
 
-![Preset Templates](img\v3_media_ticker_templates_preset.png)
+From v3.1.0 additional options have been included so that users can easily change the appearance of a selected Template by changing alternative colours, font sizing and image fit options.
 
-Tick to edit by overriding the selected template if required. Please see the section below on **Editing Preset Templates** below for further information.
+![Template Options](img/v3.1_media_ticker_template_options.png)
+
+
+
+
+
+
+
+{tip}
+Click to Override the selected template if required. 
+
+Please see the section on Editing Preset Templates below for further information.
+{/tip}
+
+- **No Data** provide a message to display when no data is returned from the feed. 
 
 ## Editing Preset Templates
 
-Preset templates can be edited by clicking in the **Override the template** checkbox.
+Templates can be edited by selecting a Template using the drop-down and clicking in the **Override the template** checkbox. 
 
 {tip}
 The template will be automatically scaled and should be designed for the intended output resolution. The following guidelines should be considered when editing templates:
@@ -86,23 +100,11 @@ The template will be automatically scaled and should be designed for the intende
 - Templates are treated the same as a static image
   {/tip}
 
-With override template selected, you can enter your own text, HTML and CSS.
-
 Once override has been selected, click back on the **Templates tab** to select the template to edit:
 
-![Ticker Override Template](img\v3_media_ticker_template_override.png)
+![Ticker Override Template](img\v3.1_media_ticker_template_override.png)
 
-### Main Template
-
-- Select **Main**
-- Toggle **On** the Visual editor to format the main template using the inline editor. 
-- Click the edit icon to open.
-
-![Ticker Visual Editor](img\v3_media_ticker_template_visual_editor.png)
-
-{tip}
-Leave this off to enter HTML in the box provided.
-{/tip}
+- **Main Template** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 
 - Include text merge fields from the **Snippets** menu to pull in the required information from the feed.
 
@@ -111,17 +113,11 @@ Leave this off to enter HTML in the box provided.
 A special notation is available where the User can specify the `Tag|Namespace` within the feed for [[PRODUCTNAME]] to extract content.
 {/tip}
 
-### Optional Stylesheet
-
-Include CSS to apply to the template structure. 
+**Optional Stylesheet** - This is the CSS to apply to the template structure above.
 
 {tip}
 This optional template is intended for advanced users to 'tweak' the CMS generated output!
 {/tip}
-
-### No Data Template
-
-Include a message to ensure that your audience is not left with blank displays when there is no data returned from the source.
 
 ### Caching
 
