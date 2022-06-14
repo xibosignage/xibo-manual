@@ -48,15 +48,9 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 ### Tags
 
-Layouts can be tagged which allows for ordering and makes it easier to find and view a large number of Layouts if grouped by a certain Tag. Administrators can set certain Tag's to have a Value associated to them. Tags that have a Tag Value will show the selections available from an additional field -  **Tag value** drop down.
+Layouts can be tagged which allows for ordering and makes it easier to find and view a large number of Layouts if grouped by a certain Tag. 
 
-{tip}
-From v2.3.6, you can add an associated value for Tags without an existing predefined value. Enter the Value you wish to associate with the Tag in the **Tag value** field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
-{/tip}
-
-{tip}
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-{/tip}
+See the [Tags](tour_tags_2.html) for further details.
 
 ### Templates
 
@@ -167,8 +161,6 @@ Export the Layout including all associated Widgets/Media/DataSet structures to a
 ### Permissions
 
 Assign Permissions for **Users/User Groups** to define who should have access to **View**, **Edit** and **Delete** the Layout.
-
-
 
 ## Draft Status
 

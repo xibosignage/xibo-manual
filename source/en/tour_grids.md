@@ -87,8 +87,6 @@ Use the **Column Visibility** button to select/de-select which columns to presen
 
 ![Column Visibility](img/v3_tour_column_visibility.png)
 
-HERE blue + icon
-
 {tip}
 From v3.1.0 if too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row:
 

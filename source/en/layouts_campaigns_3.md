@@ -42,21 +42,11 @@ Give the Campaign a **Name** for easy identification purposes within the CMS.
 
 ### Tags
 
-Campaigns can be tagged to further organise and make it easier to find a large number of Campaigns if grouped by Tags. Administrators can set certain **Tag's** to have a **Value** associated to them.  Tags that have been set a Value will show the selections available from an additional **Tag value** drop down field.
+Campaigns can be tagged to further organise and make it easier to find a large number of Campaigns if grouped by [Tags](tour_tags.html). Administrators can set certain **Tag's** to have a **Value** associated to them.  Tags that have been set a Value will show the selections available from an additional **Tag value** drop down field.
 
 {tip}
-From v2.3.6, **Tag Values** can be added to **Tags** that do not have an existing predefined value. Enter the Value you wish to associate with the Tag in the **Tag value** field and click enter. If you do not wish to enter a Tag value then this field can be left blank.
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
+Use the **With Selected** option at the bottom of the Campaign [grid](tour_grids.html) to edit Tag assignments in bulk!
 {/tip}
-
-{tip}
-From v3.0.0, use the **With Selected** option at the bottom of the Campaign grid to edit Tag assignments in bulk. Take a look at [Grids](tour_grids.html) for further information!
-{/tip}
-
-{nonwhite}
-Tag management for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
 
 ## Assigning Layouts
 

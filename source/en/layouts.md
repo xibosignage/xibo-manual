@@ -126,29 +126,13 @@ Sending a Player a Layout that has been designed with a 4:3 resolution which is 
 - Include an optional Description to give more detail/instructions to other potential users of the Layout.
 
 
-- Include optional Tags to organise and make it easier to search for.
+- Include optional [Tags](tour_tags.html) to organise and make it easier to search for.
 
 {tip}
-
-When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
-If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
+Use the **With Selected** option at the bottom of the Layout [grid](tour_grids.html) to edit Tag assignments in bulk!
 {/tip}
 
-Users can add an associated Value to a Tag that does not already have a predefined value by using the **Tag value** field. If a Tag value is not needed, this field can be left blank.
-
-{tip}
-Tags can also be assigned to multiple Layouts using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the Layout grid!
-{/tip}
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
-
-Further options can be found on the **Settings** tab:
+Click on the **Settings** tab for further options:
 
 ![Settings Tab](img\v3.1_layouts_settings_tab.png)
 
