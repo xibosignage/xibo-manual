@@ -21,7 +21,7 @@ Take a look at the [Modules](media_modules.html) page to see the variety of Widg
 
 Layouts are administered by clicking on **Layouts** under the **Design** section of the main menu:
 
-![Layout Grid](img/v3.1_layouts_grid.png)
+![Layout Grid](img\v3.1_layouts_grid.png)
 
 {tip}
 Thumbnails will show for Published Layouts. If you have upgraded from an earlier version, you will need to checkout and Publish existing Layouts to update the Thumbnail!
@@ -55,7 +55,7 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 Click on the **Add Layout** button at the top of the grid:
 
-![Add Layout](img/v3.1_layouts_add_layout.png) 
+![Add Layout](img\v3.1_layouts_add_layout.png) 
 
 Select a Template to use from the available options:
 
@@ -69,7 +69,7 @@ Select a Template to use from the available options:
 
 {cloud}
 
-Xibo Exchange templates are enabled by default for new Xibo in the Cloud customers.
+Xibo Exchange templates are enabled by default for new Xibo Cloud Hosting customers.
 
 If you are upgrading from an earlier version you will need to enable by navigating to the **Administration** section of the CMS and click **Applications**. Scroll down the page to the **Connectors** section. Click to **Configure** and tick to enable, **Save** changes.
 
@@ -85,7 +85,7 @@ On-prem installations can enable templates from the Xibo Exchange by navigating 
 - On making a selection click the **Next** button at the very bottom of the form:
 
 
-![Add LayoutForm](img/v3.1_add_layout_form.png)
+![Add LayoutForm](img\v3.1_add_layout_form.png)
 
 - Provide a **Name** for easy identification purposes within the CMS.
 - Layouts can be optionally saved to **Folders**.
@@ -113,7 +113,7 @@ Further information for Administrators regarding Folder access and set-up can be
 For further information regarding Folder access and set-up, please speak to your Administrator.
 {/white}
 
-- Select the Resolution to be used for this Layout.
+## Resolutions
 
 Layouts are designed for an intended display Resolution and will function best when shown on a **Player** with a matching resolution. If they are shown on a display that has a different resolution it will dynamically resize which may result in unused screen space.  
 
@@ -121,11 +121,7 @@ Layouts are designed for an intended display Resolution and will function best w
 Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
 {/tip}
 
-**If you require an alternative resolution to the available options listed, contact your Administrator**
-
-{nonwhite}
-Resolution management for Administrators can be found [here](https://xibo.org.uk/docs/setup/resolutions-administration)
-{/nonwhite}
+[[PRODUCTNAME]] comes with a selection of default resolutions that cater for most digital signage applications.  Add/edit and enable from the **Resolutions** page under the **Design** section of the main CMS menu.
 
 - Include an optional Description to give more detail/instructions to other potential users of the Layout.
 
@@ -154,36 +150,19 @@ Tag management information for Administrators can be found [here](https://xibo.o
 
 Further options can be found on the **Settings** tab:
 
-![Settings Tab](img/v3.1_layouts_settings_tab.png)
+![Settings Tab](img\v3.1_layouts_settings_tab.png)
 
 - Enter a string to be used as the **Code Identifier** to identify this Layout when used with [Interactive Actions](layouts_interactive_actions.html)
 
 
-- Tick/untick the box to enable/disable the collection of statistics for **Proof of Play Reports** for the newly added **Layout**.
+- Tick/untick the box to enable/disable the collection of statistics for [Proof of Play Reports](displays_metrics.html) for the newly added **Layout**.
 
   {tip}
   Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to, in the [Display Profile Settings](displays_settings.html).
   {/tip}
 
-{nonwhite}
-Proof of Play Settings for Administrators can be found [here](https://xibo.org.uk/docs/setup/proof-of-play-settings)
-{/nonwhite}
+- Default [Transition](tour_transitions.html) settings can be applied to all Widgets on the Layout by ticking the box.
 
-- Default **Transition** settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
-
-{tip}
-Transitions are supported on Android, webOS and Tizen Players and Windows Players from v2R252
-
-Transitions are currently not supported on Linux Players.
-{/tip}
-
-{tip}
-Transitions can be applied to Widgets and Regions from the context menu on the Layout Designer!
-{/tip}
-
-{nonwhite}
-Transitions management for Administrators can be found [here](https://xibo.org.uk/docs/setup/transitions-administration)
-{/nonwhite}
 
 - **Save** the Add Layout form to automatically open the [Layout Designer](layouts_designer.html).
 
@@ -191,7 +170,7 @@ Transitions management for Administrators can be found [here](https://xibo.org.u
 
 Each Layout has additional actions/shortcuts that can be accessed using the **Row Menu** in the grid:
 
-![Layouts Row Menu](img/v3_layouts_row_menu.png)
+![Layouts Row Menu](img\v3_layouts_row_menu.png)
 
 {tip}
 The following options are available from the row menu of a **Published** Layout!

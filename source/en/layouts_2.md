@@ -70,7 +70,7 @@ Layouts are designed for an intended display resolution and will function best w
 Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
 {/tip}
 
-**If you require an alternative resolution to the available options listed, contact your Administrator**
+[[PRODUCTNAME]] comes with a selection of default resolutions that cater for most digital signage applications.  Add/edit and enable from the **Resolutions** page under the **Design** section of the main CMS menu.
 
 ### Enable Stats collection
 
