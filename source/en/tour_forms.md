@@ -18,29 +18,13 @@ Forms can have one or multiple tabs to provide further details and options, comp
 
 ## Folders
 
-Use Folders to easily organise items by clicking on **Select Folder** and selecting the destination folder from the list. 
+Use [Folders](tour_folders.html) for easier searches, to organise and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups. 
+
+Click on **Select Folder** and select/create the destination folder. 
 
 {tip}
 Items that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
 {/tip}
-
-The selected folder file path will be shown next to the **Folder** field on the form.
-
-Users can also right click a folder to create a new folder to save to and access further options:
-
-![Folder Options](img/v3_tour_folder_options.png)
-
-{tip}
-Available selections are based on enabled [Features and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ## Form Fields
 

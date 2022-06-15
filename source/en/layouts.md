@@ -27,17 +27,17 @@ Layouts are administered by clicking on **Layouts** under the **Design** section
 Thumbnails will show for Published Layouts. If you have upgraded from an earlier version, you will need to checkout and Publish existing Layouts to update the Thumbnail!
 {/tip}
 
- The **Folder** tree will open by default:
+Click the Folders icon to toggle on/off from view.  
+
+{tip}
+When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
 
 - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-{tip}
-Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
 
 The Layout [Grid](tour_grid.html) allows users to create new and edit existing. 
 
@@ -88,30 +88,13 @@ On-prem installations can enable templates from the Xibo Exchange by navigating 
 ![Add LayoutForm](img\v3.1_add_layout_form.png)
 
 - Provide a **Name** for easy identification purposes within the CMS.
-- Layouts can be optionally saved to **Folders**.
+- Layouts can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
 Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access. 
 
 If users should also have access to the content of the Layout, ensure that this is also saved to the same Folder!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-
-- Users can also right click a Folder to access further options.
-- The selected folder file path will be shown next to the Folder field on the form
-
-{tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
-{/tip}
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ## Resolutions
 

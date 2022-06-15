@@ -34,17 +34,15 @@ Images and Videos that have a set thumbnail can also be filtered by Orentation. 
 
 Use the **Folder Search** option to view media saved to folders:
 
-- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
+- {tip}
+  When Folders are hidden from view, the file path for the selected folder will be shown!
+  {/tip}
 
-or
+  - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
+  or
 
-
-Folders allow users to organise, search and share objects easily.  Further information can be found on the [Grids page](tour_grids.html)
-{nonwhite}
-Further information for Administrators regarding folder setup can be found [here](https://xibo.org.uk/docs/setup/folders-administration).
-{/nonwhite}
+  - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
 ## Adding Media
 
@@ -72,7 +70,7 @@ Files can also be added via drag and drop!
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-Media can also be directly uploaded to a specified **Folder** location.
+Media can also be directly uploaded to a specified [Folder](tour_folders.html) location.
 
 {tip}
 Media files that are saved in Folders will inherit the View, Edit, Delete Share option that have been applied to the destination Folder for User/User Group access!
@@ -95,14 +93,6 @@ Files can also be uploaded individually and have different Folder locations spec
 Instead of clicking on the Start upload button, click on the **blue upload** button shown at the end of the row for an added file. 
 
 - Change the Folder location using the **Select Folder** button as before and then click the blue button at the end of the row to upload just that singular file.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ![Single Upload](img/v3_media_single_upload.png)
 
@@ -192,7 +182,7 @@ Make copies of the selected media file, give the copied file a new **Name** and 
 
 ### Select Folder
 
-Select a Folder to save the media file to.
+Select a [Folder](tour_folders.html) to save the media file to.
 
 ### Delete
 

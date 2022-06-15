@@ -19,17 +19,19 @@ Playlists are administered by clicking on Playlists under the **Library** sectio
 
 ![Playlist Grid](img/v3_media_playlists_grid.png)
 
-The Playlists [Grid](tour_grid.html) allows you to edit existing and create new. The **Folder** tree will open by default:
+The Playlists [Grid](tour_grid.html) allows you to edit existing and create new. 
+
+Click the Folders icon to toggle on/off from view.  
+
+{tip}
+When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
 
 - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-{tip}
-Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
 
 ### Create a new Playlist
 
@@ -40,31 +42,11 @@ Click the Folders icon to toggle on/off from view.  When Folders are hidden from
 
 ### Folders
 
-Playlists can be optionally saved to **Folders**.
+Playlists can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
 Playlists that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-
-![Select Folder Playlists](img/v3_media_playlists_folder.png)
-
-Users can also right click a folder to create a new folder to save in and access further options.
-
-{tip}
-Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-- The selected folder file path will be shown next to the Folder field on the form.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ### Name
 

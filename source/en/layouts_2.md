@@ -82,7 +82,7 @@ Transitions are supported on Android, webOS and Tizen Players and Windows Player
 Transitions are currently not supported on Linux Players.
 {/tip}
 
-Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
+Default [Transition](tour_transitions.html) settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
 
 {tip}
 Transitions can be applied from the [Tools](layouts_tools.html) menu on the Layout Designer.

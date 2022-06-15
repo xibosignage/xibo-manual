@@ -23,17 +23,19 @@ Layouts are administered by clicking on **Layouts** under the **Design** section
 
 
 
-The Layout [Grid](tour_grid.html) allows you to edit existing and create new. The **Folder** tree will open by default:
+The Layout [Grid](tour_grid.html) allows you to edit existing and create new. 
+
+Click the Folders icon to toggle on/off from view.  
+
+{tip}
+When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
 
 - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-{tip}
-Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
 
 {tip}
 **Thumbnails** will only show in Columns for Layouts that have a set background image!
@@ -57,37 +59,13 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 ### Folder
 
-Layouts can be optionally saved to **Folders**.
+Layouts can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
 Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
+
+If users should also have access to the content of the Layout, ensure that this is also saved to the same Folder!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-
-
-![Select Folder Layouts](img/v3_layouts_folder.png)
-
-
-
-Users can also right click a Folder to access further options:
-
-![Folder Options](img/v3_layouts_folder_options.png)
-
-{tip}
-Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-- The selected folder file path will be shown next to the Folder field on the form
-  
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ### Name
 
@@ -138,7 +116,7 @@ Transitions are supported on Android, webOS and Tizen Players and Windows Player
 Transitions are currently not supported on Linux Players.
 {/tip}
 
-Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
+Default [Transition](tour_transitions.html) settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
 
 {tip}
 Transitions can be applied from the [Tools](layouts_tools.html) menu on the Layout Designer.

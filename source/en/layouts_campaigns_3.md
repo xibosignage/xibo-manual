@@ -22,19 +22,11 @@ Click on the **Add Campaign** button at the top of the grid and complete the app
 
 ### Folders
 
-{tip}
-Folder options are available from v3.0.0! (Speak to your Administrator to upgrade the CMS to benefit from this feature!)
-{/tip}
-
-Campaigns can be optionally saved to **Folders** to organise, search and easily set **Share** access permissions.
-
-- Click on the **Select Folder** button, expand to save to an existing folder or right click create a new location and access further options. 
-
-![Campaign Folder Options](img/v3_layouts_campaign_folder_options.png)
+Campaigns can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups
 
 {tip}
-Once selected, the Folder file path will be shown next to the Folder field on the form.
-{/tip}
+Campaigns that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
+{tip}
 
 ### Name
 
@@ -42,7 +34,7 @@ Give the Campaign a **Name** for easy identification purposes within the CMS.
 
 ### Tags
 
-Campaigns can be tagged to further organise and make it easier to find a large number of Campaigns if grouped by [Tags](tour_tags.html). Administrators can set certain **Tag's** to have a **Value** associated to them.  Tags that have been set a Value will show the selections available from an additional **Tag value** drop down field.
+Campaigns can be tagged to further organise and make it easier to find a large number of Campaigns if grouped by [Tags](tour_tags.html).
 
 {tip}
 Use the **With Selected** option at the bottom of the Campaign [grid](tour_grids.html) to edit Tag assignments in bulk!

@@ -24,39 +24,13 @@ Templates can be created two ways:
 
 ![Add Template Form](img/v3_layouts_add_template_form.png)
 
-- Templates can be optionally saved to **Folders**.
+- Templates an be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
 Templates that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for that User/User Group.
 
 If users should also have access to the content of the Template, ensure that this is also saved to the same Folder!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select the Folder to save in.
-
-
-![Select Folder Layouts](img/v3_layouts_templates_folder.png)
-
-
-
-- Users can also right click a folder to access further Folder options:
-
-
-![Template Folder Options](img/v3_layouts_templates_folder_options.png)
-
-{tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
-{/tip}
-
-- The selected folder file path will be shown next to the Folder field on the form.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 - Provide a **Name** for easy identification purposes within the CMS.
 
@@ -128,7 +102,7 @@ When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tag
 {/tip}
 
 {tip}
-Use the **With Selected** option at the bottom of the Templates [Grid](tour_grids.html) to Edit Tags, Delete and Share in bulk actions!
+Use the **With Selected** option at the bottom of the Templates [Grid](tour_grids.html) to Edit Tags, move Folder, Delete and Share in bulk actions!
 {/tip}
 
 

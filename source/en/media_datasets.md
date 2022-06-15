@@ -23,21 +23,17 @@ DataSets are first defined, which can then be reused across multiple DataSet Vie
 
 The DataSets [Grid](tour_grid.html) allows you to edit existing and create new. 
 
-The **Folder** tree will open by default:
+Click the Folders icon to toggle on/off from view.  
 
 {tip}
-**Please note:** Folders are available from v3.0.0! (Speak to your Administrator to upgrade the CMS to benefit from this new feature!)
+When Folders are hidden from view, the file path for the selected folder will be shown!
 {/tip}
 
-- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
+- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
-
-{tip}
-Click the Folders menu to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
 ## Create a new DataSet
 
@@ -52,33 +48,11 @@ Click on the Add DataSet button and complete the appropriate form fields:
 
 ![DataSet Add](img/v3_media_dataset_add.png)
 
-From **v3.0.0** DataSets can be optionally saved to **Folders**.
+From **v3.0.0** DataSets can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
-DataSets that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
+Datasets that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-
-![Select Folder DataSet](img/v3_media_dataset_select_folder.png)
-
-Users can also right click a Folder to access further options:
-
-![Folder Options](img/v3_layouts_folder_options.png)
-
-{tip}
-Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-- The selected Folder file path will be shown next to the Folder field on the form.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 - Give the DataSet a **Name** for easy identification purposes within the CMS.
 - Provide an optional **Description** to give more detail/instructions to other potential users of the DataSet.
