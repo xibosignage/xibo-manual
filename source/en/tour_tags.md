@@ -68,7 +68,7 @@ Users can add an associated value to a Tag without an existing predefined value 
 {/tip}
 
 {tip}
-Tags can also be assigned to multiple elements using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option on multiple pages throughout the CMS!
+Tags can also be assigned to multiple elements using the [With Selected](tour_grids.html#multi-select) option on multiple pages throughout the CMS!
 {/tip}
 
 {tip}

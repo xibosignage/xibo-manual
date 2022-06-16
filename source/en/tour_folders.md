@@ -1,10 +1,10 @@
 # Folders
 
-From v3.0.0 **Folders** can be used throughout the CMS to search, organise and easily control User/User Group [Share](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options for items held within a specific Folder.
+From v3.0.0 **Folders** can be used throughout the CMS to search, organise and easily control User/User Group [Share](users_features_and_sharing.html) options for items held within a specific Folder.
 
 ## Creating Folders
 
-Folders can be created to hold **Library Media**, **DataSets**, **Playlists**, **Layouts**, **Campaigns**, **Templates**, **Displays** and **Display Groups** and are accessed from multiple [Grids](https://xibo.org.uk/manual/en/tour_grids.html) by clicking the **Folder** icon to open the Folder Tree:
+Folders can be created to hold **Library Media**, **DataSets**, **Playlists**, **Layouts**, **Campaigns**, **Templates**, **Displays** and **Display Groups** and are accessed from multiple [Grids](tour_grids.html) by clicking the **Folder** icon to open the Folder Tree:
 
 ![Folder Grid](img/v3_tour_folders_grid.png)
 
@@ -19,11 +19,11 @@ Folders can be created to hold **Library Media**, **DataSets**, **Playlists**, *
 Only empty folders can be removed! 
 {/tip}
 
-Folders can be created, renamed and removed from **Add** and **Edit** [Forms](https://xibo.org.uk/manual/en/tour_forms.html) and by using the **Select Folder** option from the **Row Menu** for an object (dependent on [Feature](https://xibo.org.uk/manual/en/users_features_and_sharing.html) access).
+Folders can be created, renamed and removed from **Add** and **Edit** [Forms](tour_forms.html) and by using the **Select Folder** option from the **Row Menu** for an object (dependent on [Feature](users_features_and_sharing.html) access).
 
 ## Sharing Options
 
-Each folder can have [Share options](https://xibo.org.uk/manual/en/users_features_and_sharing.html) set for Users/User Groups by clicking on **Share** from the menu.
+Each folder can have [Share options](users_features_and_sharing.html) set for Users/User Groups by clicking on **Share** from the menu.
 
 {tip}
 **Share** options for folders can only be set by Super Administrator users!
@@ -37,7 +37,7 @@ Each folder can have [Share options](https://xibo.org.uk/manual/en/users_feature
 Once Share options have been set for a folder, all objects contained or moved to that folder will inherit the View, Edit, Delete options that  have been enabled for Users/User Groups.
 
 {tip} 
-New Users can have **Folders** assigned from the start by following the onboarding wizard to [Add Users](https://xibo.org.uk/manual/en/users_administration.html)!
+New Users can have **Folders** assigned from the start by following the onboarding wizard to [Add Users](users_administration.html)!
 {/tip}
 
 ## Folder Search
@@ -66,7 +66,7 @@ If you already have a folder selected, objects added via the Add form will be au
 ![Add Media to Folder](img/v3_tour_add_media_to_folder.png)
 
 ## Folder Menu 
-Control access for Users/User Groups using [Features and Share](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options:
+Control access for Users/User Groups using [Features and Share](users_features_and_sharing.html) options:
 
 ![Feature Options](img/v3_tour_folders_feature_options.png)
 

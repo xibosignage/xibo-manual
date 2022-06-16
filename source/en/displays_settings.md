@@ -142,7 +142,7 @@ Useful for Layouts with long durations!
 From v2 R207, Gapless Playback with Video content requires an Android device to have multiple decoders. This setting can be found on the Advanced tab and will use the Device Default automatically.
 
 {tip}
-Should an issue arise with playback set to On!
+Should an issue arise with playback, set to On!
 {/tip}
 
 ### Enable Touch capabilities on the device (Xibo for Android)

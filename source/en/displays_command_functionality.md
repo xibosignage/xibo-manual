@@ -24,7 +24,7 @@ Commands are created and managed by navigating to **Commands** under the **Displ
 
 ![Display Commands](img/v3_displays_commands.png)
 
-- Use the Row Menu for existing Commands to Edit, Delete and set [Share](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options.
+- Use the Row Menu for existing Commands to Edit, Delete and set [Share](users_features_and_sharing.html) options.
 
 ## Add Command
 
@@ -67,7 +67,7 @@ The same can also be useful with a non-mixed network - imagine a network of Wind
 - Leave blank to apply to all types of Display.
 
 {tip}
-**Command** and **Validation** strings can be overridden using  [Display Profiles](https://xibo.org.uk/manual/en/displays_settings.html#setting_on_the_display). Click to **Edit** and use the **Command** tab!
+**Command** and **Validation** strings can be overridden using  [Display Profiles](en/displays_settings.html#setting_on_the_display). Click to **Edit** and use the **Command** tab!
 {/tip}
 
 ## Send Command
@@ -84,14 +84,14 @@ Commands can be Scheduled to execute on a specific date/time by using the **Sche
 ![Schedule Command](img/v3_displays_commands_schedule_command.png)
 
 
-- Click the **Add Event** button and select the [Event Type](https://xibo.org.uk/manual/en/scheduling_events.html)  as **Command**
+- Click the **Add Event** button and select the [Event Type](scheduling_events.html)  as **Command**
 - Complete the form fields using the **Command** drop down menu to select the Command to schedule.
 
 Scheduled commands are executed once on the Player and only require a **Start** date and time. The Command can be executed up to 10 seconds after the time selected.
 
 ## Shell Commands
 
-The [Shell Command Widget](https://xibo.org.uk/manual/en/media_module_shellcommand.html) is used to run external Commands based on the Layouts activity.
+The [Shell Command Widget](media_module_shellcommand.html) is used to run external Commands based on the Layouts activity.
 
 Commands can be selected by adding the **Shell Command Widget** to a Layout. Shell Commands with a Command as their source act in the same fashion as normal shell commands. The Command is executed when the Widget is shown on the Layout.
 
