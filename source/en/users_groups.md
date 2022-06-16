@@ -37,7 +37,7 @@ Create a new Group by clicking on the **Add User Group** button to open the form
 ### General
 
 - Use this tab to give your User Group an identifiable **Name**
-- Assign a **Library Quota** to the group to determine the maximum amount of content allowed to be uploaded to the Library. Enter 0 if no quota should be applied. Please speak to your administrator regarding any applied Library Quota's.
+- Assign a [Library Quota](tour_library_quota.html) to the group to determine the maximum amount of content allowed to be uploaded to the Library. Enter 0 if no quota should be applied. 
 - Enable the **Notification** options if required for the Group.
 
 ### Description

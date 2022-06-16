@@ -3,4 +3,5 @@
 - [Display Groups](displays_groups.html)
 - [File/Layout Assignments](displays_fileassociations.html)
 - [Reporting](displays_metrics.html)
+- [Command Functionality](displays_command_functionality.html)
 

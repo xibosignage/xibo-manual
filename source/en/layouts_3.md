@@ -23,17 +23,19 @@ Layouts are administered by clicking on **Layouts** under the **Design** section
 
 
 
-The Layout [Grid](tour_grid.html) allows you to edit existing and create new. The **Folder** tree will open by default:
+The Layout [Grid](tour_grid.html) allows you to edit existing and create new. 
+
+Click the Folders icon to toggle on/off from view.  
+
+{tip}
+When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
 
 - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-{tip}
-Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
 
 {tip}
 **Thumbnails** will only show in Columns for Layouts that have a set background image!
@@ -57,37 +59,13 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 ### Folder
 
-Layouts can be optionally saved to **Folders**.
+Layouts can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
 Layouts that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
+
+If users should also have access to the content of the Layout, ensure that this is also saved to the same Folder!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-
-
-![Select Folder Layouts](img/v3_layouts_folder.png)
-
-
-
-Users can also right click a Folder to access further options:
-
-![Folder Options](img/v3_layouts_folder_options.png)
-
-{tip}
-Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-- The selected folder file path will be shown next to the Folder field on the form
-  
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ### Name
 
@@ -95,25 +73,7 @@ Give the Layout a **Name** for easy identification purposes within the CMS.
 
 ### Tags
 
-Layouts can be tagged for organisation and to make it easier to find a large number of Layouts grouped by Tags.  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
-
-{tip}
-If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
-{/tip}
-
-Users can add an associated Value to a Tag that does not already have a predefined value by using the **Tag value** field. If a Tag value is not needed, this field can be left blank.
-
-{tip}
-Tags can also be assigned to multiple Layouts using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the Layout grid!
-{/tip}
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
+Layouts can be tagged for organisation and to make it easier to find a large number of Layouts grouped by [Tags](tour_tags.html).  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
 
 ### Template
 
@@ -131,11 +91,7 @@ Layouts are designed for an intended display resolution and will function best w
 Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
 {/tip}
 
-**If you require an alternative resolution to the available options listed, contact your Administrator**
-
-{nonwhite}
-Resolution management for Administrators can be found [here](https://xibo.org.uk/docs/setup/resolutions-administration)
-{/nonwhite}
+[[PRODUCTNAME]] comes with a selection of default resolutions that cater for most digital signage applications.  Add/edit and enable from the **Resolutions** page under the **Design** section of the main CMS menu.
 
 ### Code Identifier
 
@@ -160,7 +116,7 @@ Transitions are supported on Android, webOS and Tizen Players and Windows Player
 Transitions are currently not supported on Linux Players.
 {/tip}
 
-Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
+Default [Transition](tour_transitions.html) settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
 
 {tip}
 Transitions can be applied from the [Tools](layouts_tools.html) menu on the Layout Designer.
