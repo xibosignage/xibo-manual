@@ -67,11 +67,7 @@ On some devices, it is impossible to overlay anything on a Region showing a **Vi
 
 ### Exit Transition
 
-**Exit Transitions** happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
-
-{tip}
-Transitions are supported in the Android, webOS and Tizen Players and need to be pre configured. Please contact your Administrator.
-{/tip}
+[Exit Transitions](tour_transitions.html) happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
 
 Once you have **Saved** your edits click **Close** to return to the Layout Designer screen.
 

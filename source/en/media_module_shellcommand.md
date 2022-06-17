@@ -16,7 +16,7 @@ This Module is not supported for webOS, Tizen and Linux Players.
 
 {nonwhite}
 
-This Module is disabled by default for **Xibo in the Cloud** Customers. If you would like to utilise the Shell Command functionality to execute actions on loading a Layout, then please contact our help desk and open a [ticket](https://xibo.org.uk/help#commercial) asking to have this Module enabled.
+This Module is disabled by default for **Xibo Cloud Hosting** customers. If you would like to utilise the Shell Command functionality to execute actions on loading a Layout, then please contact our help desk via [My Account](https://xibosignage.com/my-account/tickets?open=true) to request to have this Module enabled.
 
 {/nonwhite}
 
@@ -24,11 +24,10 @@ This Module is disabled by default for **Xibo in the Cloud** Customers. If you w
 
 The Command is executed when a Layout containing the Shell Command Widget plays at its scheduled time.
 
-A Shell command can be a **created** command string which is passed directly to the shell or a **stored command** preconfigured configured by an Administrator.
+A Shell command can be a **created** command string which is passed directly to the shell or a preconfigured **stored command**.
 
-{nonwhite}
-Further information regarding Command Functionality for Administrators can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
-{/nonwhite}
+Click here for further information regarding [Command Functionality](displays_command_functionality.html)
+
 
 ## Add Widget
 

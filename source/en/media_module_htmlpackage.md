@@ -33,37 +33,17 @@ The file uploader will open on adding the HTML Package Widget:
 
 - Click on **Add files** and select the file(s) to upload
 
-- Give your file a **Name** for easier identification in the CMS and an optional **Tag**.
+- Give your file a **Name** for easier identification in the CMS and an optional [Tag](tour_tags.html).
 
 {tip}
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-HTML Packages can also be directly uploaded to a specified **Folder** location.
+HTML Packages can also be directly uploaded to a specified [Folder](tour_folders.html) location.
 
 {tip}
 HTML Packages that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-- Users can also right click a Folder to access further options.
-
-{tip}
-Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-- Click in the folder you wish to upload the file to and click **Done**. 
-- The **Current Folder** will show the selected file path.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
-
-
 
 There is an option to **Set Expiry Dates** and times for files uploaded to this particular Widget.
 
