@@ -5,7 +5,7 @@
 For added security, Users can set **Two Factor Authentication** options for **Email** or **Google Authenticator** to complete login by entering a code, to further confirm their identity when logging into the CMS.
 
 {tip}
-Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to the set up of Two Factor Authentication.
+Please ensure that you have entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to the set up of Two Factor Authentication.
 {/tip}
 
 ![2FA Code Login](img/tour_2fa_login.png)
@@ -39,7 +39,8 @@ Ensure that your phone and server have the correct time and date to avoid errors
 {/tip} 
 
 {tip}
-You will need to enter your password to verify any changes made to the Two Factor Authentication options.{/tip}
+You will need to enter your password to verify any changes made to the Two Factor Authentication options.
+{/tip}
 
 ## Generate Recovery Codes
 

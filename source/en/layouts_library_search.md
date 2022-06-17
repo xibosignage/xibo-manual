@@ -112,30 +112,11 @@ Give your file a Name for easier identification in the CMS and an optional Tag.
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-Files can also be directly uploaded to a **Folder** location.
+Files can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
-Files that are saved in Folders will inherit the View, Edit, Delete [Share](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
+Files that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-
-- Users can also right click a Folder to access further options.
-
-{tip}
-Availalable Folder options are based on enabled [Feature and Sharing](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-- Select the Folder destination and click **Done**.
-- The **Current Folder** will show the selected file path.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 Media uploaded directly to Layouts have the option to **Set Expiry Dates**
 

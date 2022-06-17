@@ -38,7 +38,7 @@ If users should also have access to the Layouts/Layout content, ensure that this
 - Include optional [Tags](tour_tags.html) to organise and make it easier to search for.
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the Campaign grid!
+Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_grids.html#multi-select) option at the bottom of the Campaign grid!
 {/tip}
 
 -  From v3.1.0 tick to enable **cycle based playback** for this Campaign.

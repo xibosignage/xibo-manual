@@ -12,7 +12,7 @@ Media is assigned to Layouts using **Widgets**, which provide the actions for a 
 
 Widgets are available from the toolbar at the bottom of the [Layout Designer](layouts_designer.html). Use the  arrows to scroll through all the available Widgets.
 {tip}
-Widgets that are available can be disabled/enabled by an Administrator in the [Modules](https://xibo.org.uk/manual/en/media_modules.html) section of the CMS.
+Widgets that are available can be disabled/enabled by an Administrator in the [Modules](media_modules.html) section of the CMS.
 {/tip}
 
 ![Widget Toolbar](img/v2.3_layouts_widgets_toolbar.png)

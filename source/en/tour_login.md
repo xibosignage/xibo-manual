@@ -6,7 +6,7 @@ The CMS is protected by an authentication system that requires a **Username** an
 
 During the installation process,  a Username and Password is provided which grants **unrestricted** access to all areas of the CMS, as a top level **Super Admin** User. 
 
-After installation the Username and Password provided must be used to access the CMS for the first time as a [Super Administrator User](https://xibo.org.uk/manual/en/users_user_types.html#super_admin).
+After installation the Username and Password provided must be used to access the CMS for the first time as a [Super Administrator User](users_user_types.html#super_admin).
 
 ### Password Policy
 
@@ -40,7 +40,7 @@ Take a look at the **Force Password Change** option on User records!
 
 ### Password Reminder
 
-Provide a **Forgotten your Password** reset link for **Users** at login. Users can then click the link which will send a **Password Reset Notification** to their stored email address as recorded on their [User Profile](https://xibo.org.uk/manual/en/users_administration.html).
+Provide a **Forgotten your Password** reset link for **Users** at login. Users can then click the link which will send a **Password Reset Notification** to their stored email address as recorded on their [User Profile](users_administration.html).
 
 {tip}
 **Users** can change their own passwords, once logged into the CMS, by clicking on the Profile Icon located in the top right-hand corner of the CMS.
@@ -50,7 +50,7 @@ Provide a **Forgotten your Password** reset link for **Users** at login. Users c
 
 Ensure that new Users change the password first given to them to access the system or use if a User account password has been reset. 
 
-Edit the [User Profile](https://xibo.org.uk/manual/en/users_administration.html) and select the **Options** tab.
+Edit the [User Profile](users_administration.html) and select the **Options** tab.
 
 ### Two Factor Authentication
 

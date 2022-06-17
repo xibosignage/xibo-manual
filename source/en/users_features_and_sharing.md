@@ -36,7 +36,7 @@ Each **Feature** contains a 'Feature Set'. Use the arrow to expand to see all th
 A line shown in the check box, as in the above image, shows you that selected Features from the 'set' have been enabled. Expand to see what has been enabled and to make further edits if required. A blue tick in the check box tells you that all Features within the set have been enabled.
 
 {tip}
-Make it easier to onboard new Users by using the predefined User categories which contain the required Feature access for the type of User or manage Feature access via [User Groups](https://xibo.org.uk/manual/en/users_groups.html). If you need to give further access to specific Users within User Groups, assign these directly on their individual User record.
+Make it easier to onboard new Users by using the predefined User categories which contain the required Feature access for the type of User or manage Feature access via [User Groups](users_groups.html). If you need to give further access to specific Users within User Groups, assign these directly on their individual User record.
 {/tip}
 
 ## 2. Share

@@ -60,7 +60,7 @@ Datasets that are saved in Folders will inherit the View, Edit, Delete Share opt
 
 - If this DataSet should sync itself with a remote data source enable the **Remote** checkbox to present further options for configuration.
 
-If your DataSet is **not Remote**, click to **Save** the DataSet record and continue from the the [Create and Configure Columns](https://xibo.org.uk/manual/en/media_datasets.html#create_and_configure_columns) section of this page.
+If your DataSet is **not Remote**, click to **Save** the DataSet record and continue from the the [Create and Configure Columns](media_datasets.html#create_and_configure_columns) section of this page.
 
 ### Remote DataSets
 

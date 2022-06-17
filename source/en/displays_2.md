@@ -144,14 +144,8 @@ The **Send Command** functionality is executed via XMR to Players by selecting a
 
 ![Displays Send Command](img/displays_send_command.png)
 
-
-
 {tip}
-Administrators create predefined commands for use, therefore if you require additional commands, please contact your Administrator.
-{/tip}
-
-{tip}
-This type of Command can also be executed by scheduling a [Command Event](scheduling.html#Events)
+This type of [Command](displays_command_functionality) can also be executed by scheduling a [Command Event](scheduling.html#Events)
 {/tip}
 
 ### Transfer Display to another CMS - available from version 2.2.0

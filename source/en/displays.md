@@ -162,25 +162,15 @@ The **Send Command** functionality is executed via XMR to Players by selecting a
 
 ![Displays Send Command](img\displays_send_command.png)
 
-
-
 {tip}
-Administrators create predefined commands for use, therefore if you require additional commands, please contact your Administrator.
-{/tip}
-
-{nonwhite}
-Administrator information on the Command Functionality can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
-{/nonwhite}
-
-{tip}
-This type of Command can also be executed by scheduling a [Command Event](scheduling.html#Events)
+This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling.html#Events)
 {/tip}
 
 ### Transfer Display to another CMS
 
 **Please note:** This feature is currently not supported on Tizen and Linux Players. We are currently working to bring this feature to all Players but at present this feature is only available for Windows Players from v2 R201, Android Players from v2 R203 and webOS from R204.  
 
-To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](https://xibo.org.uk/manual/en/tour_two_factor_authentication.html), if you have not already set this up.
+To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_two_factor_authentication.html), if you have not already set this up.
 
 ![Display Transfer Google Authenticator](img\displays_transfer_cms_google_authenticator.png)
 

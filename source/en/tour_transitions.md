@@ -5,16 +5,16 @@
 {tip}
 **Please note:** Transitions are supported on Android, webOS, Tizen and Windows Players from v2R252, however Transitions are not supported by Tizen Players for the following Widgets:
 
-[Video](https://xibo.org.uk/manual/en/media_module_video.html)
-[Video In](https://xibo.org.uk/manual/en/media_module_video_in.html)
-[Local Video](https://xibo.org.uk/manual/en/media_module_localvideo.html)
+- [Video](media_module_video.html)
+- [Video In](media_module_video_in.html)
+- [Local Video](media_module_localvideo.html)
 
 Transitions are currently **not** supported on Linux Players.
 {/tip}
 
 Transitions are managed from the **Transitions** page under the **Administration** section of the main CMS menu:
 
-![Transitions Grid](C:\Users\Natasha\Documents\v4 Documentation\User Manual\img\v3_layouts_transitions_grid.png)
+![Transitions Grid](img\v3_layouts_transitions_grid.png)
 
 
 
@@ -32,7 +32,7 @@ This grid is used to determine which Transitions are available for assignment to
 
 Set a Default Transition **Type** and **Duration** from the **Settings** page under the **Administration** page of the main CMS menu:
 
-![Default Transitions](C:\Users\Natasha\Documents\v4 Documentation\User Manual\img\v3_layouts_default_transitions.png)
+![Default Transitions](img\v3_layouts_default_transitions.png)
 
 - Use the check box to automatically apply the defaults to all Widgets when a User adds a new Layout.
 
@@ -44,12 +44,12 @@ Ensure you click the green Save button at the bottom of the tab to save all chan
 
 Deafult Transitions can also be enabled for all Widgets on a Layout using the Properties Panel in the Layout Designer
 
-![Transitions Layout](C:\Users\Natasha\Documents\v4 Documentation\User Manual\img\v3_layouts_transitions_layout.png)
+![Transitions Layout](img\v3_layouts_transitions_layout.png)
 
 {tip}
 **Please note:** When Transition Defaults are applied to a Widget, the fields will show as blank fields.
 
-![Transitions Widget](C:\Users\Natasha\Documents\v4 Documentation\User Manual\img\v3_layouts_transitions_widget.png)
+![Transitions Widget](img\v3_layouts_transitions_widget.png)
 
 Only **manually** entered Transitions will show in the form fields.
 {/tip}

@@ -6,7 +6,7 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [User Groups](users_groups_2.html)
 {/tip}
 
-User Groups allow for a set of [Features and Share](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options to be applied to all Users within a specified Group.
+User Groups allow for a set of [Features and Share](users_features_and_sharing.html) options to be applied to all Users within a specified Group.
 
 [[PRODUCTNAME]] comes with a set of pre-configured User Groups for common functions for new installations.
 

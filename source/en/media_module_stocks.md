@@ -6,10 +6,10 @@ The Stocks Widget displays trade price information for stock listings.
 
 {nonwhite}
 {cloud}
-The Stocks Module is configured for **Xibo in the Cloud** customers with an API key provided as part of the service, so please skip the installation steps detailed below. Proceed with the set-up from the **Add Widget** section.
+The Stocks Module is configured for **Xibo Cloud Hosting** customers with an API key provided as part of the service, so please skip the installation steps detailed below. Proceed with the set-up from the **Add Widget** section.
 {/cloud}
 
-**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
+**Non-Xibo Cloud Hosting customers please follow the installation steps as detailed below.**
 
 {/nonwhite}
 
@@ -130,7 +130,7 @@ Get results at anytime to see what data is returned. Any field is available as a
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
-## Additional Information
+## Date Format - PHP
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 

@@ -18,7 +18,7 @@ Add content to Layouts using the variety of **Widgets** available from the Toolb
 
 
 {tip}
-Widgets that are available can be disabled/enabled by an Administrator in the [Modules](https://xibo.org.uk/manual/en/media_modules.html) section of the CMS.
+Widgets that are available can be disabled/enabled by an Administrator in the [Modules](media_modules.html) section of the CMS.
 {/tip}
 
 Use the Search field to easily find Widgets and mark as Favourite to group them together to make it easier for future selections.

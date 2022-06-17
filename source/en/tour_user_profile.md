@@ -11,7 +11,7 @@ The CMS time and timezone that has been set in the **Regional** settings is disp
 {/tip}
 
 {nonwhite}
-For further information regarding the administration of CMS settings, please click [here](https://xibo.org.uk/docs/setup/xibo-cms-settings)
+For further information regarding post installation set up, please click [here](https://xibo.org.uk/docs/setup/xibo-cms-post-installation-setup-guide)
 {/nonwhite}
 
 ![User Profile](img/tour_user_profile.png)
@@ -29,7 +29,7 @@ For further information regarding the administration of CMS settings, please cli
 - Use the drop down to view only relevant content as, **Standard** CMS content or **DOOH** content.
 
   {tip}
-  DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](https://xibo.org.uk/manual/en/users_administration.html#my_applications).
+  DOOH content can be a separate view for Users that have authorised DOOH Applications as viewed under [My Applications](users_administration.html#my_applications).
   {/tip}
 
 - **Force current Library duration** so that any changes made to the media item in the Library are not pulled into Layouts.
@@ -57,7 +57,7 @@ The Edit User Profile form allows a logged in User to:
 - Change **Passwords**
 - Update a User **Email** address
 
-- Enable [Two Factor Authentication](https://xibo.org.uk/manual/en/tour_two_factor_authentication.html) 
+- Enable [Two Factor Authentication](tour_two_factor_authentication.html) 
 
 ## Reshow Welcome
 

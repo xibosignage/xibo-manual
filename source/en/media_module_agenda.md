@@ -116,13 +116,8 @@ A user has a meeting room calendar configured using the Agenda Widget on a Layou
 - Next an [Interactive Action](layouts_interactive_actions.html) would need to be defined on the **Layout**, which would **Navigate to Widget** and **Target the Screen**, with the **Shell Command Widgets** configured in the **Interactive Drawer**.
 - Using the **Trigger** tab on the Agenda Widget, assign the code's to trigger the **Web Hooks** for **Current Event** and **No Event**.
 
-{nonwhite}
-Further information on Commands for Administrators can be found here: [Shell Commands](https://xibo.org.uk/docs/setup/command-functionality#shell_commands)
-{/nonwhite}
 
-{white}
-For information on what Commands to use, please speak with your Administrator.
-{/white}
+See the [Commands Functionality](displays_command_functionality) page for more information.
 
 {/tip}
 

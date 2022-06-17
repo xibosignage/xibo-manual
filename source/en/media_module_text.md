@@ -60,7 +60,7 @@ Select from the available Templates:
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
-## Additional Information
+## Date Format - PHP
 
 Date / time can be formatted by providing "tokens" that sit between square brackets [] in the template area.
 

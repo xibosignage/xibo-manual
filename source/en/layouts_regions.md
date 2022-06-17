@@ -93,17 +93,12 @@ On some devices, it is impossible to overlay anything on a Region showing a **Vi
 
 At the bottom of this tab, click on the **Make this Region full screen** text to resize as shown by the dimensions displayed here.
 
-- Select the **Transitions** tab to apply an **Exit Transition** for when the Region finishes playing.
+- Select the [Transitions](tour_transitions.html) tab to apply an **Exit Transition** for when the Region finishes playing.
 
 Exit transitions happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
 
 {tip}
 Transitions are supported in the Android, webOS, Tizen Players and Windows Players from v2 R252 and are **not** currently supported in the Linux Player.{/tip}
-Transitions need to be pre-configured, please contact your Administrator with any queries.
-
-{nonwhite}
-Further information on Transitions for administrators can be found [here](https://xibo.org.uk/docs/setup/transitions-administration)
-{/nonwhite}
 
 - Ensure any edits made are saved using the **Save** button before returning to the Layout View.
 

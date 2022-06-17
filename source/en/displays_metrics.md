@@ -93,7 +93,7 @@ Players aggregate ‘completed records’ only, with collection made at the end 
 
 - Tick the box to enable the collection of Proof of Play statistics to all **Displays** as default.
 
-This can be toggled on/off by editing [Display Setting Profiles](https://xibo.org.uk/manual/en/displays_settings.html#editing_profiles>).
+This can be toggled on/off by editing [Display Setting Profiles](displays_settings.html#editing_profiles>).
 
 ### Enable Layout Stats Collection
 
