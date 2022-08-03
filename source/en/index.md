@@ -16,9 +16,9 @@ If you have any questions regarding your User access, then please contact your A
 
 {nonwhite}
 
-If you are an Administrator and require information regarding the Installation and Set up of the system, please refer to the [Administration Documentation](https://xibo.org.uk/docs/setup)
+If you are an Administrator and require information regarding the Installation and Set up of the system, please refer to the [Administration Documentation](/docs/setup)
 
-If you are not a [Xibo Cloud Hosting](https://xibo.org.uk/hosting) User and need to install a CMS then please refer to the [Installation Guides](https://xibo.org.uk/docs/setup/cms-installation-guides) to get up and running with Xibo!
+If you are not a [Xibo Cloud Hosting](/hosting) User and need to install a CMS then please refer to the [Installation Guides](/docs/setup/cms-installation-guides) to get up and running with Xibo!
 {/nonwhite}
 
 ## Welcome to the Tour!
@@ -68,10 +68,6 @@ Media content is at the core of the [[PRODUCTNAME]] solution and has many differ
 **Layout based media** - does not have an associated file and is configured directly on a Layout; RSS feeds and free Text
 
 [[PRODUCTNAME]] uses powerful **Widgets** which allow you to show your content as well as integrating dynamic third-party information from a variety of sources.
-
-{nonwhite}
-A look at some of the CMS features can be found [here](https://xibo.org.uk/cms). 
-{/nonwhite}
 
 ### 5. Scheduling
 

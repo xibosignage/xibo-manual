@@ -16,7 +16,7 @@ A Product display has a product that the customer can pick up. An 'internet of t
 {/tip}
 
 {nonwhite}
-More information on webhooks can be found in our Developer documentation [here](https://xibo.org.uk/docs/developer/player-control/webhooks){/nonwhite}
+More information on webhooks can be found in our Developer documentation [here](docs/developer/player-control/webhooks){/nonwhite}
 
 ## Adding an Action
 

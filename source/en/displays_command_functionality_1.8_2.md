@@ -70,7 +70,7 @@ Schedule Commands such as 'turn on' to be executed at set times!
 Scheduled commands are executed once on the Player and only require a "Start date and time". The Command can be executed up to 10 seconds after the time selected.
 
 ## Shell Commands
-The [Shell Command Widget](https://xibo.org.uk/manual/en/media_module_shellcommand.html) is used to run external Commands based on the Layouts activity.
+The [Shell Command Widget](media_module_shellcommand.html) is used to run external Commands based on the Layouts activity.
 
 Commands can be selected by adding the **Shell Command Widget** to a Layout. Shell Commands with a Command as their source act in the same fashion as normal shell commands. The Command is executed when the Widget is shown on the Layout. 
 
@@ -87,12 +87,6 @@ We recommend that Administrators create predefined commands where possible.
 ## Helpers 
 
 Command Helpers are prefixes that can be added to the Command String in order to take a more advanced action. Commands without a prefix are executed in the shell of the operating system which runs the Player.  `cmd.exe`  on Windows and  `shell`  on Android.
-
-{nonwhite}
-{tip}
-Take a look at the Helper Command that can be used to change time zone on Android: [Helper Command to change Time zone](https://xibo.org.uk/docs/setup/helper-command-to-change-time-zone)
-{/tip}
-{/nonwhite}
 
 #### RS232
 
