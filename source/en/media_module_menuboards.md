@@ -81,4 +81,4 @@ Players can **cache** the content of this media for off-line playback and to pre
 
 ### Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](https://xibo.org.uk/manual/en/layouts_interactive_actions.html) page for more information.
+Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

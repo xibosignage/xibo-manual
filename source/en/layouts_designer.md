@@ -162,7 +162,7 @@ It is important to note that the Layout will be marked invalid and not sent to P
 
 - Select a **Fade/Fly Out transition** to move onto the next Widget in the Timeline.
 
-  If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](https://xibo.org.uk/manual/en/layouts_regions.html#region_options>).
+  If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](layouts_regions.html#region_options).
 
 {tip}
 Transitions are supported for Android/webOS ,Tizen Players and Window Players from v2 R252. Transitions are currently not supported on the Linux Player.

@@ -55,6 +55,6 @@ The Playlist Dashboard gives a very restricted view of the CMS with a User only 
 **Spots** are configured using the [Sub-Playlist Widget](media_module_subplaylist.html) which determines how many media files a User can upload. 
 
 {tip}
-**Please note:** Administrators need to ensure that the **Sub-Playlist Widget** has been added to a Layout and configured to show the User's Playlist with defined Spots before the User can add/replace Media using the Playlist Dashboard.
+**Please note:** Administrators need to ensure that the **Sub-Playlist Widget** has been added to a Layout and configured to show the User's Playlist with defined Spots before a User can add/replace Media using the Playlist Dashboard.
 {/tip}
 

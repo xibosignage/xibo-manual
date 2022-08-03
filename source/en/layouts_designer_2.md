@@ -171,8 +171,6 @@ Once assigned, click on **Widgets** from the **Timeline** to open the available 
 
 The [Layout Timeline](layouts_timeline.html) displays the duration of individual Widgets and gives you an overview of how media will play on the Layout.
 
-![Region Timeline](img/v2.3_layouts_region_timeline.png)
-
 ## Bottom Toolbar
 
 Located on the bottom left of the toolbar use the buttons to add [Library](layouts_library_search.html) media items, apply actions from the [Tools](layouts_tools.html) menu and assign [Widgets](layouts_widgets.html) to Layouts. 

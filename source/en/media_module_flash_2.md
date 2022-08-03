@@ -2,7 +2,9 @@
 
 # Flash
 
-### Please note: As Adobe no longer supports Flash, it will be naturally phased out over a period of time. Whilst Players may still play flash at this current time, updates to operating systems and other third party components, such as the browser, may render Flash files as unplayable.
+{tip}
+**Please note:** As Adobe no longer supports Flash, it will be naturally phased out over a period of time. Whilst Players may still play flash at this current time, updates to operating systems and other third party components, such as the browser, may render Flash files as unplayable.
+{/tip}
 
 {tip}
 If you are using a 3.x CMS, please use the following link: [Flash](media_module_flash.html)

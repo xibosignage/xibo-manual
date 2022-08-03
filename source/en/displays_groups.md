@@ -12,17 +12,17 @@ Display Groups are administered in the CMS by clicking on **Display Settings** u
 
 ![Display Groups Grid](img/v3_displays_groups_grid.png)
 
-The **Folder** tree will open by default:
+Click the Folders icon to toggle on/off from view.  
+
+{tip}
+When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
 
 - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-{tip}
-Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
 
 {tip}
 Logged in Users will only view the status of Displays that they have been given access to!
@@ -36,55 +36,17 @@ Click on the **Add Display Group** button to create a new Display Group or use t
 
 ### Folders
 
-Display Groups can be optionally saved to Folders.
+Display Groups can be optionally saved to [Folders](tour_folders.html) using the **Edit form** or from the **Select Folder** option on the Row Menu.
 
 {tip}
-Display Groups that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
-{/tip}
+Display Groups  that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
 
-- Click on the Select Folder button and expand to select the Folder to save in/move to.
-
-![Select Folder](img/v3_display_groups_select_folder.png)
-
-- Users can also right click a folder to create a new folder to save in and access further options.
-
-{tip}
-Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group!
-{/tip}
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
-
-{tip}
-Assign multiple Display Groups to a Folder using the With Selected option at the bottom of the grid!
+Assign multiple Display Groups to a Folder using the **With Selected** option at the bottom of the grid!
 {/tip}
 
 ### Tags
 
-Display Groups can be optionally tagged.  When entering text into the Tag field, an auto complete helper will show possible matches to make it easier for Users to select Tags already added in the system.
-
-If Tags require a predefined value, these will be shown in the Tag value drop down menu, or of already known can  be directly typed into the field.
-
-{tip}
-If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
-{/tip}
-
-Users can add an associated Value to a Tag that does not already have a predefined value by using the **Tag value** field. If a Tag value is not needed, this field can be left blank.
-
-{tip}
-Tags can also be assigned to multiple Display Groups using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the Display grid!
-{/tip}
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
+Display Groups can be optionally tagged.  When entering text into the [Tag](tour_tags.html) field, an auto complete helper will show possible matches to make it easier for Users to select Tags already added in the system.
 
 ## Members
 

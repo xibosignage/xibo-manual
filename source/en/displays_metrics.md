@@ -6,13 +6,11 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [Reporting](displays_metrics_2.html)
 {/tip}
 
-[[PRODUCTNAME]] provides useful **metrics** for Users, who have the relevant enabled [Features and Sharing](users_features_and_sharing.html) options, to view reports within the CMS. These are designed to provide a centralised area for analysis into Display performance and usage as well as detailed Proof of Play reports which are all available from **All Reports** under the **Reporting** section on the main menu.
+[[PRODUCTNAME]] provides useful **metrics** for Users, who have the relevant enabled [Features and Sharing](users_features_and_sharing.html) options, to view reports within the CMS. These are designed to provide a centralised area for analysis into Display performance and usage as well as detailed **Proof of Play** reports which are all available from **All Reports** under the **Reporting** section on the main menu.
 
-![Reporting](img/v3_displays_reporting.png)
+![Reporting](img\v3_displays_reporting.png)
 
-
-
-## Display
+## Display Metrics
 
 - ### Display Statistics: Bandwidth
 
@@ -21,15 +19,11 @@ The CMS records the **bandwidth** used by each Display when connecting to XMDS f
 
 - Select the range and click on **Apply**. Leaving the Display field empty will show a bandwidth chart total per Display:
 
-![Display Bandwidth](img/v3_displays_bandwidth.png)
-
-
+![Display Bandwidth](img\v3_displays_bandwidth.png)
 
 - Filter to just one Display and click on **Apply** to see each call that the Player made to XMDS in isolation:
 
-![Bandwidth one Display](img/v3_displays_bandwidth_display.png)
-
-
+![Bandwidth one Display](img\v3_displays_bandwidth_display.png)
 
 {tip}
 Filtering to just one Display helps to better understand where bandwidth has been used!
@@ -54,49 +48,95 @@ The Time Connected Report will give a breakdown of % connected (shown in green) 
 
 - Click **Apply**
 
-![Time Connected](img/v3_displays_time_connected.png)
-
-
+![Time Connected](img\v3_displays_time_connected.png)
 
 The **Summary** gives a further breakdown between specified dates for Displays/Display Groups and shows the number of days connected/disconnected:
 
-![Summary Time Connected](img/v3_displays_summary_connected.png)
-
-
+![Summary Time Connected](img\v3_displays_summary_connected.png)
 
 ## Proof of Play
 
-![Proof of Play Dashboard](img/v2_proof_of_play_dashboard.png)
+![Proof of Play Dashboard](img\v2_proof_of_play_dashboard.png)
 
+Each **Display** can collect information to provide Proof of Play Reports on what they have shown by:
 
+- **Layout** - this will show all instances of the selected Layout being shown.
+- **Media** - this will show all instances of the selected Media file being shown.
+- **Widget** - this will give a report on that one selected Widget contained within a Layout. (This also includes Widgets that do not contain Library media files, such as Text).
+- **Event** - If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
 
-Each **Display** can collect information to provide Proof of Play Reports on what they have shown.
+![Proof of Play Type](img\v3_displays_reporting_proof_of_play_type.png)
 
-To collect Proof of Play reports **Enable Stats Reporting** and set the **Aggregation level** on a [Display Profile Setting](displays_settings.html)
+- To collect Proof of Play reports **Enable Stats Reporting** and set the **Aggregation level** on a [Display Profile Setting](displays_settings.html)
 
-Statistical collection can be enabled as a default by an **Administrator** on the Settings page and set by a User on adding/editing a [Layout](layouts.html), [Playlist](media_playlists.html), from the [Media Library](media_library.html) and adding/editing a **Widget** on a Layout or Playlist Timeline, with **Off** /**On**/ **Inherit** selections.
+## Proof of Play Default Settings
 
-{nonwhite}
-For further information regarding Proof of Play Settings for Administrators please click [here](https://xibo.org.uk/docs/setup/proof-of-play-settings)
-{/nonwhite}
+Statistical collection can be enabled by default from the **Settings** page under the **Administration** section of the main CMS menu. 
 
-Reports can be provided recorded by:
+Click on the **Displays** tab:
 
-- **Layout**
-- **Media**
-- **Widget**
-- **Event**
+![Proof of Play Settings](img\v3_displays_reporting_pop_settings.png)
+
+### Aggregation level
+
+Set the level of collection of Proof of Play statistics to be applied to all **Layouts** / **Media** and **Widget items** as default.
+
+- **Individual** - statistics are recorded at the start and finish of each item individually and sent back to the CMS at each collection interval.
+- **Hourly** - records each item once, and includes the total number of times played and the length of time played during the hour and is sent back to the CMS on the next collection interval after the hour period has expired.
+- **Daily** - records each item once, and includes the total number of times played and the length of time played during the day and is sent back to the CMS on the next collection interval after the day has expired.
 
 {tip}
-If the Player supports collection from external sensors, Event stats can be recorded and shown in Reports.
+Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired!
 {/tip}
+
+### Enable Stats Collection
+
+- Tick the box to enable the collection of Proof of Play statistics to all **Displays** as default.
+
+This can be toggled on/off by editing [Display Setting Profiles](displays_settings.html#editing_profiles>).
+
+### Enable Layout Stats Collection
+
+- Tick the box to set the default to on for the collection of Proof of Play statistics for all newly added **Layouts**.
+
+Collection can be disabled by unticking the box on the **Add/Edit** Layout form.
+
+### Enable Media Stats Collection
+
+- Use the dropdown menu to select the default setting to use for the collection of Proof of Play statistics for all Media items.
+
+  Off
+  On
+  Inherit
+
+### Enable Playlist Stats Collection
+
+- Use the dropdown menu to select the default setting to use for the collection of Proof of Play statistics for all Playlists.
+
+  Off
+  On
+  Inherit
+
+### Enable Widget Stats Collection
+
+- Use the dropdown menu to select the default setting to use for the collection of Proof of Play statistics for all Widgets.
+
+  Off
+  On
+  Inherit
+
+{tip}
+It is intended to have **Widget** always set to Inherit so that Layout and Media options control the collection!
+{/tip}
+
+## Proof of Play Reports
 
 - ### Proof of Play: Export
 
 
 Use **Export** to select from and to dates for a Display to easily see all Proof of Play data exported to a CSV.
 
-![Proof of Play Export](img/v3_displays_export_proof_of_play.png)
+![Proof of Play Export](img\v3_displays_export_proof_of_play.png)
 
 ### Proof of Play: Report
 
@@ -104,9 +144,7 @@ Use **Export** to select from and to dates for a Display to easily see all Proof
 - Select a **Range** from the dropdown or specify your own dates and times and use the filter fields as necessary. 
 - Click **Apply**
 
-![Proof Of Play](img/v3_displays_proofofplay.png)
-
-
+![Proof Of Play](img\v3_displays_proofofplay.png)
 
 {tip}
 Returned results can be exported to a CSV!
@@ -123,9 +161,7 @@ Charts show an aggregate duration and number of plays the selected Layout, Media
 - Choose the **Type** and use the drop down to further specify the type selected.
 - Click **Apply**.
 
-![Proof of Play Summary Report](img/v3_displays_proofofplay_summary_report.png)
-
-
+![Proof of Play Summary Report](img\v3_displays_proofofplay_summary_report.png)
 
 ## Library
 
@@ -134,9 +170,7 @@ Charts show an aggregate duration and number of plays the selected Layout, Media
 
 View Library usage for all Users of the CMS or filter to have an overview of usage by an individual User/User Group. 
 
-![Displays Library Usage](img/displays_library_usage.png)
-
-
+![Displays Library Usage](img\displays_library_usage.png)
 
 ### Schedule
 
@@ -151,14 +185,14 @@ Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yea
 - A PDF of the report can  be emailed to users by ticking the Should an email be sent? checkbox
 
 {tip}
-From v3.1.0 Administrators can opt to disable the **Logo** shown on exported reports from the General tab on the **Settings** page under the **Administration** section of the main menu!
+From v3.1.0 opt to disable the **Logo** shown on exported reports from the General tab on the **Settings** page under the **Administration** section of the main menu!
 {/tip}
 
 
 {tip}
 Scheduled Reports can also be emailed to additional email addresses entered in the **Email addresses** field.
 
-To use this functionality, ensure that your Administrator has set a **Sending email address** on the Network tab of the CMS **Settings** page, which is located under the **Administration** section of the main menu.
+To use this functionality, ensure that a **Sending email address** has been set on the Network tab of the CMS **Settings** page, which is located under the **Administration** section of the main menu.
 {/tip} 
 
 ### Report Schedules
@@ -167,11 +201,9 @@ To use this functionality, ensure that your Administrator has set a **Sending em
 
 - Use the row menu for a report for further options:
 
-  ![Report Row Menu](img/v3_displays_reports_row_menu.png)
+  ![Report Row Menu](img\v3_displays_reports_row_menu.png)
 
-  
-
-### Saved Reports
+  Saved Reports
 
 Click on **Saved Reports** to view all run reports. 
 
@@ -184,4 +216,3 @@ Use the row menu to view a saved report,schedule, export as a PDF or delete.
 {tip}
 **Report Schedules** and **Saved Reports** can also be accessed directly from the CMS menu under the **Reporting** section.
 {/tip}
-

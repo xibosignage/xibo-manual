@@ -11,7 +11,7 @@ Granted access is to **read data** only!
 {nonwhite}
 {cloud}
 
-The main set-up is provided as part of the service for **Xibo in the Cloud** customers. Please follow the simplified process below to connect to the Twitter API.
+The main set-up is provided as part of the service for **Xibo Cloud Hosting** customers. Please follow the simplified process below to connect to the Twitter API.
 
 - Select **Modules** from the Administration section of the menu.
 - Click on the row menu for the Twitter Provider (Twitter Search) Module and select **Connect to Twitter**.
@@ -21,7 +21,7 @@ The main set-up is provided as part of the service for **Xibo in the Cloud** cus
 Skip the installation section below and go straight to the **Add Widget** section.
 {/cloud}
 
-**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
+**Non-Xibo Cloud Hosted customers please follow the installation steps as detailed below.**
 
 {/nonwhite}
 
@@ -131,7 +131,7 @@ Include a suitable time for the Update Interval in minutes, keeping it as high a
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
-### Additional Information
+### Date Format - PHP
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 

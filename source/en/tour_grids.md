@@ -48,32 +48,7 @@ or
 
 {tip}
 Click the Folders menu to toggle on/off from view.  When Folders is hidden from view, the file path for the selected folder will be shown!
-
-![Folder Path](img/v3_tour_folder_path.png)
-
 {/tip}
-
-Right click a folder to access further options:
-
-![Folder Options](img/v3_tour_folder_options.png)
-
-{tip}
-The Folder tree and menu options are based on enabled [Features and Share](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-Items can be saved to Folders when adding/editing or from the row menu of an item using the **Select Folder** option.
-
-{tip}
-If Share options have been set for a Folder, all objects contained or moved to that Folder will inherit the View, Edit, Delete options applied for Users/User Groups!
-{/tip}
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ## Results 
 
@@ -86,8 +61,6 @@ Most columns can be sorted by default. Where the column has an up or down arrow 
 Use the **Column Visibility** button to select/de-select which columns to present in the data table.
 
 ![Column Visibility](img/v3_tour_column_visibility.png)
-
-HERE blue + icon
 
 {tip}
 From v3.1.0 if too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row:

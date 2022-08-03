@@ -38,7 +38,7 @@ The number of RTSP streams you can show on one Layout is dependent on the device
 {/tip}
 
 {tip}
-**Please note:** Transitions are not supported for the Tizen Player.
+**Please note:** [Transitions](tour_transitions.html) are not supported for the Tizen Player.
 {/tip}
 
 ## Actions 

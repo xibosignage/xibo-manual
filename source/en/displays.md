@@ -39,17 +39,18 @@ Displays are administered in the CMS from clicking on **Displays** under the **A
 
 ![Display Administration Grid](img\v3_displays_administration_grid.png)
 
-The **Folder** tree will open by default:
+
+Click the Folders icon to toggle on/off from view.  
+
+{tip}
+When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
 
 - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-{tip}
-Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
 
 {tip}
 Logged in Users will only view the status of Displays that they have been given access to!
@@ -117,59 +118,17 @@ The unique hardware key that is generated during installation is shown on the Ge
 
 ### Folders
 
-Displays can be optionally saved to **Folders** using the **Edit form** or from the **Select Folder** option on the Row Menu.
+Displays can be optionally saved to [Folders](tour_folders.html) using the **Edit form** or from the **Select Folder** option on the Row Menu.
 
 {tip}
 Displays that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
+
+Assign multiple Displays to a Folder using the **With Selected** option at the bottom of the grid!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-
-![Folder Tree](img/v3_displays_folders.png)
-
-- Users can also right click a Folder to access further options.
-
-{tip}
-Available options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group!
-{/tip}
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
-
-{tip}
-Assign multiple Displays to a Folder using the With Selected option at the bottom of the grid!
-{/tip}
-
-The selected folder file path will be shown next to the Folder field on the form
 
 ### Tags
 
-Displays can be tagged for organisation and to make it easier to find a large number of Displays all grouped by Tags.  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
-
-{tip}
-If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
-{/tip}
-
-Users can add an associated Value to a Tag that does not already have a predefined value by using the **Tag value** field. If a Tag value is not needed, this field can be left blank.
-
-{tip}
-Tags can also be assigned to multiple Displays using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the grid!
-{/tip}
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
-
-
+Displays can be tagged for organisation and to make it easier to find a large number of Displays all grouped by [Tags](tour_tags.html).  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
 
 #### Override Display Profile Settings for individual Displays
 
@@ -203,25 +162,15 @@ The **Send Command** functionality is executed via XMR to Players by selecting a
 
 ![Displays Send Command](img\displays_send_command.png)
 
-
-
 {tip}
-Administrators create predefined commands for use, therefore if you require additional commands, please contact your Administrator.
-{/tip}
-
-{nonwhite}
-Administrator information on the Command Functionality can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
-{/nonwhite}
-
-{tip}
-This type of Command can also be executed by scheduling a [Command Event](scheduling.html#Events)
+This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling.html#Events)
 {/tip}
 
 ### Transfer Display to another CMS
 
 **Please note:** This feature is currently not supported on Tizen and Linux Players. We are currently working to bring this feature to all Players but at present this feature is only available for Windows Players from v2 R201, Android Players from v2 R203 and webOS from R204.  
 
-To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](https://xibo.org.uk/manual/en/tour_two_factor_authentication.html), if you have not already set this up.
+To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_two_factor_authentication.html), if you have not already set this up.
 
 ![Display Transfer Google Authenticator](img\displays_transfer_cms_google_authenticator.png)
 

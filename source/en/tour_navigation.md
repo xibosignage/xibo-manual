@@ -38,11 +38,7 @@ The Display section contains all pages needed for managing connected [Displays](
 
 ### Administration
 
-Manage all [Users](users_administration.html)/[User Groups](users_groups.html)**, **CMS Settings and [Modules](https://xibo.org.uk/manual/en/media_modules.html).
-
-{nonwhite}
-For CMS Settings administration please click [here](https://xibo.org.uk/docs/setup/xibo-cms-settings)
-{/nonwhite}
+Manage all [Users](users_administration.html)/[User Groups](users_groups.html) CMS Settings and [Modules](media_modules.html).
 
 ### Reporting
 
