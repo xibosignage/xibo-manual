@@ -67,7 +67,7 @@ The same can also be useful with a non-mixed network - imagine a network of Wind
 - Leave blank to apply to all types of Display.
 
 {tip}
-**Command** and **Validation** strings can be overridden using  [Display Profiles](en/displays_settings.html#setting_on_the_display). Click to **Edit** and use the **Command** tab!
+**Command** and **Validation** strings can be overridden using  [Display Profiles](displays_settings.html#setting_on_the_display). Click to **Edit** and use the **Command** tab!
 {/tip}
 
 ## Send Command
@@ -108,12 +108,6 @@ We recommend that Administrators create predefined commands when possible!
 ## Helpers
 
 Command Helpers are prefixes that can be added to the Command String in order to take a more advanced action. Commands without a prefix are executed in the shell of the operating system which runs the Player. `cmd.exe` on Windows and `shell` on Android.
-
-{nonwhite}
-{tip}
-Take a look at the Helper Command that can be used to change time zone on Android: [Helper Command to change Time zone](https://xibo.org.uk/docs/setup/helper-command-to-change-time-zone) 
-{/tip}
-{/nonwhite}
 
 #### RS232
 
