@@ -109,6 +109,10 @@ We recommend that Administrators create predefined commands when possible!
 
 Command Helpers are prefixes that can be added to the Command String in order to take a more advanced action. Commands without a prefix are executed in the shell of the operating system which runs the Player. `cmd.exe` on Windows and `shell` on Android.
 
+{nonwhite}
+Xibo for Android [Helper Command to change Time zone](/docs/setup/helper-command-to-change-time-zone)
+{/nonwhite}
+
 #### RS232
 
 RS232 commands can be executed on Players by using the `rs232` prefix in the Command String. The format of the command is `rs232|<connection string>|<command>`.
