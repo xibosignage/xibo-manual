@@ -1,0 +1,56 @@
+
+        <footer class="ss_footer" role="contentinfo">
+            <div class="container">
+                <div class="pull-right">
+                    <img class="img-responsive logo" src="../img/logo.png" alt="xibo" />
+                    <img class="img-responsive logo" src="../img/sigme.png" alt="[[PRODUCTNAME]]" />
+                </div>
+
+                <p class="ss_back_to_top">先頭へ戻る</p>
+
+                <p>設計/開発は<a href="http://xibosignage.com/">Xibo Signage</a>が<a href="http://www.xibo.org.uk" target="_blank">Xibo Project</a>として行っています。</p>
+                <p>日本語化/機能拡張は<a href="http://sigme.net/" target="_blank">Sigme Project</a>により、オープンソースライセンスの元、Xibo Versin 3.1以降を対象に行っています。それ以前のバージョンには対応しておりませんので、以前のバージョンに関しては<a href="https://xibo.org.uk/manual/en/index.html" target"_blank">Xibo User Manual</a>(英語)をご覧ください。</p>
+                <p>オープンソースコードは<a href="https://www.gnu.org/licenses/agpl-3.0.ja.html" target="_blank">GNU Affero General Public License v3以降</a>、ドキュメントは<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/uk/" target="_blank">Creative Commons Licence</a>でライセンスされてます。
+                <p>本マニュアルのソースコードは<a href="https://github.com/SigmeSignage/sigme-manual" target="_blank">GitHub</a>で公開しています。</p>
+                <p class="ss_footer_links">現在バージョン:[[PRODUCTVERSION]]</p>
+
+                <p class="ss_languages">[[LANGS]]</p>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".ss_body img").addClass("img-thumbnail");
+                $(".ss_body table").addClass("table");
+
+                // Set the selected page based on the TOC name
+                // Mark the appropriate top nav element as the selected page
+                $("#side-nav a").each(function() {
+                    if ($(this).data().tocName == $("body").data().toc)
+                        $(this).parent().addClass("active");
+                });
+
+                $(".ss_back_to_top").click(function() {
+                    $('html, body').animate({scrollTop : 0},800);
+                });
+
+                if (inIframe()) {
+                    console.log("In Frame");
+                    $("#top-nav").css("display", "none");
+                    $(".ss-sidebar").parent().css("display", "none");
+                }
+            });
+
+            function inIframe () {
+                try {
+                    return window.self !== window.top;
+                } catch (e) {
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>
