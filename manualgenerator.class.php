@@ -33,6 +33,7 @@ class ManualGenerator
     private $template;
     private $templateName;
 
+
     /**
      * Language specific image replacements
      * @var array
@@ -214,7 +215,6 @@ class ManualGenerator
         //  we want to put the appropriate TOC at the right place inside the navbar
         $navString = '';
         $navigation = json_decode($this->file_get_contents_or_default($lang, 'toc/nav_bar.json'), true);
-
         // for each item in the menu, we want to render a navbar link
         foreach ($navigation as $nav) {
             // Does this nav link hold the TOC for the current page?
@@ -225,10 +225,10 @@ class ManualGenerator
                 $tocString = Parsedown::instance()->text(
                     $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
                 );
-
                 // highlight the sub link in this toc
                 $document = new DOMDocument();
-                $document->loadHTML($tocString);
+                $document->loadHTML('<?xml encoding="UTF-8">' . $tocString);
+//		$document->loadHTML(mb_convert_encoding($tocString, 'HTML-ENTITIES', 'UTF-8'));
 
                 foreach ($document->getElementsByTagName('a') as $a) {
                     /** @var DOMElement $a */
@@ -241,7 +241,8 @@ class ManualGenerator
                     }
                 }
 
-                $tocString = $document->saveHTML();
+//                $tocString = $document->saveHTML();
+                $tocString = $document->saveHTML($document->documentElement);
             }
 
             $navString .= '<li><a href="' . $nav['href'] . '" data-toc-name="' . $navToc . '">' . $nav['title'] . '</a></li>';
