@@ -1,7 +1,7 @@
 * [イントロダクション](index.html)
 * [ログイン](tour_login.html)
 * [ユーザープロファイル](tour_user_profile.html)
-* [２段階認証](tour_two_factor_authentication.html)
+* [２要素認証](tour_two_factor_authentication.html)
 * [CMSダッシュボード](tour_status_dashboard.html)
 * [CMSナビゲーション](tour_navigation.html)
 * [グリッド](tour_grids.html)
