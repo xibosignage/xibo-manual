@@ -136,3 +136,7 @@ h2 {
 h3 {
   background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
+
+.ss-body img {
+  box-shadow: 5px 5px 5px 2px rgba(3, 3, 3, 0.4);
+}
