@@ -228,7 +228,6 @@ class ManualGenerator
                 // highlight the sub link in this toc
                 $document = new DOMDocument();
                 $document->loadHTML('<?xml encoding="UTF-8">' . $tocString);
-//		$document->loadHTML(mb_convert_encoding($tocString, 'HTML-ENTITIES', 'UTF-8'));
 
                 foreach ($document->getElementsByTagName('a') as $a) {
                     /** @var DOMElement $a */
@@ -241,7 +240,6 @@ class ManualGenerator
                     }
                 }
 
-//                $tocString = $document->saveHTML();
                 $tocString = $document->saveHTML($document->documentElement);
             }
 
