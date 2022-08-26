@@ -23,6 +23,7 @@
 
 .ss_footer p {
 	margin-bottom: 0;
+        font-size: small;
 }
 
 .ss_footer_links {
@@ -31,6 +32,7 @@
 
 body { 
 	padding-top: 70px;
+	font-size: 18px;
 }
 
 .img-thumbnail {
@@ -138,3 +140,4 @@ h3 {
 .ss_body img {
   box-shadow: 5px 5px 5px 2px rgba(3, 3, 3, 0.4);
 }
+
