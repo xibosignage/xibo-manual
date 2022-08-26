@@ -1,13 +1,17 @@
 # Introduction
-Welcome to the Xibo Manual.
+Welcome to the Sigme User Manual.
+This manual is base on the Xibo Manual and added Japanese translation.
 
-This repository contains the source content for the Xibo manual in markdown format. 
+This repository contains the source content for the original xibo manual in english and Sigme manual in Japanes. 
+Some modifications and customizations are added at template/custom/sigme directory.
 
 ## Support
-Please track all issues in this repository here: https://github.com/xibosignage/xibo/issues
+Please track all issues related xibo original manual here: https://github.com/xibosignage/xibo/issues
+Prease track issues for Sigme Manual here: https://github.com/SigmeSignage/sigme-manual/issues
 
 ## Building
 The manual is built by running generate.php.
+# php genarate sigme
 
 ### Docker
 It is also possible to build the manual using Docker, resulting in a Docker
