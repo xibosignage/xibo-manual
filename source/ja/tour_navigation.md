@@ -2,7 +2,7 @@
 
 # ナビゲーション
 
-すべての**CMSページ**はセクションに分類され、ナビゲーションを容易にするためにCMSの**メイン***メニュー**からアクセスすることができます。このメニューは、[ユーザープロファイル](tour_user_profile.html#preferences)に基づいて、CMSの左側に垂直に、または上部に沿って水平に配置することができます。
+全ての**CMSページ**はセクションに分類され、ナビゲーションを容易にするためにCMSの**メインメニュー**からアクセスすることができます。このメニューは、[ユーザープロファイル](tour_user_profile.html#preferences)の設定で、CMS画面の左側に垂直に、または上部に沿って水平に配置することができます。
 
 
 ![CMSメインメニュー](img/tour_cms_menu.png)
@@ -33,9 +33,9 @@
 
 ### 管理
 
-すべての**[ユーザー](users_administration.html)/[ユーザーグループ](users_groups.html)**、**CMS設定と[モジュール](https://xibo.org.uk/manual/en/media_modules.html)**を管理します。
+すべての**[ユーザー](users_administration.html)/[ユーザーグループ](users_groups.html)**、**設定と[モジュール](media_modules.html)**を管理します。
 
-### レポート作成
+### レポート
 
 ディスプレイの統計情報、再生履歴、ユーザー/ユーザーグループ別のライブラリ利用状況などを表示します。
 
