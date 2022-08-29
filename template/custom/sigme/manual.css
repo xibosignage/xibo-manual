@@ -137,6 +137,57 @@ h3 {
   background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }
 
+h4 {
+  position: relative;/*相対位置*/
+  padding-left: 1.5em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+  color: black;/*文字色*/
+}
+h1 {
+  position: relative;/*相対位置*/
+  padding-left: 1.5em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+  color: black;/*文字色*/
+}
+
+h4:before {
+  font-family: "Font Awesome 5 Free";/*忘れずに*/
+  content: "\f111";/*アイコンのユニコード*/
+  font-weight: 900;
+  position: absolute;/*絶対位置*/
+  font-size: 1.2em;/*サイズ*/
+  left: 0;/*アイコンの位置*/
+  top: -0.2em;/*アイコンの位置*/
+  color: #a1ceff;
+}
+
+.tip {
+  position: relative;
+  border-top: solid 2px #80c8d1;
+  border-bottom: solid 2px #80c8d1;
+  background: #f4f4f4;
+  line-height: 1.4;
+  padding: 0.4em 0.5em;
+  margin: 2em 0 0.5em;
+}
+
+.tip:after {
+  /*タブ*/
+  position: absolute;
+  font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+  font-weight: 900;
+  content: '\f0a7\ Tip';
+  background: #80c8d1;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 7px 3px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
 .ss_body img {
   box-shadow: 5px 5px 5px 2px rgba(3, 3, 3, 0.4);
 }

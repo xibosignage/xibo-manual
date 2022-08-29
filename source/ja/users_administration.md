@@ -2,43 +2,33 @@
 
 # ユーザー管理
 
-ユーザーの管理は、CMSのメインメニューの**管理**セクションにある**ユーザー**をクリックすることで行います。ユーザー[グリッド](tour_grids.html)が表示され、新規ユーザーの追加や既存ユーザーの管理を行うことができます。
+ユーザーの管理は、メインメニューの**管理**セクションにある**ユーザー**をクリックすることで行います。ユーザー[グリッド](tour_grids.html)が表示され、新規ユーザーの追加や既存ユーザーの管理を行うことができます。
 
 ![ユーザー管理グリッド](img/v3_users_admin_grid.png)
 
-{nonwhite}
-{cloud}
-Xibo in the Cloud customers have access to the helpdesk as part of the hosting service. Please ensure that the user account named `xibo_admin` is not modified or removed so that our helpdesk agents can assist you with your CMS as and when required.
-{/cloud}
-{/nonwhite}
-
-{white}
-{cloud}
-必要なときにCMSを利用できるように、`cms_admin`というユーザーアカウントが変更または削除されていないことを確認してください。
-{/cloud}
-{/white}
+システムのトラブルなど、必要なときにスーパー管理者がCMSを操作できるように、スーパー管理者のアカウントが変更または削除できないことを確認してください。画面の例では`root`がスーパー管理者です。
 
 ## ユーザーを追加
 
 **ユーザーを追加**ボタンをクリックします。
 
-ユーザーを追加する方法には、あらかじめ設定されたユーザーグループを使用するオンボーディングウィザードと、手動で追加する情報の2つがあります。
+ユーザーを追加する方法には、あらかじめ設定されたユーザーグループを使用する新規ユーザーを追加ウィザードと、手動でユーザーを追加する2つの方法があります。
 
 ![ユーザーを追加](img/v3_user_admin_add.png)
 
-あらかじめ設定されている **グループ** から選択して **オンボーディングウィザード** を実行するか、**手動でユーザーを追加** を選択すると **ユーザーを追加** フォームに移動します。
+あらかじめ設定されている **グループ** から選択して **新規ユーザーを追加ウィザード** を実行するか、**手動でユーザーを追加** を選択すると **ユーザーを追加** フォームに移動します。
 
-### オンボーディングウィザード
+### 新規ユーザーを追加ウィザード
 
 - グループを選択し、**次へ**をクリックします。
 
   {tip}
-  [機能](users_features_and_sharing.html)は、グループ共通の機能としてあらかじめ設定されており、ユーザーレコードを編集することで自由に変更できます。
+  [機能と共有](users_features_and_sharing.html)の設定は、グループ共通の情報としてあらかじめ設定されており、ユーザーレコードを編集することで自由に変更できます。
   {/tip}
 
   ![ユーザー認証](img/v3_user_admin_user_credentials.png)
 
-- **ユーザー名**とパスワード**を作成します。これはログインとCMS内でのユーザー識別に使用されます。
+- **ユーザー名**と**パスワード**を作成します。これらはログインとCMS内でのユーザー識別に使用されます。
 
   {tip}
   パスワードは少なくとも8文字以上で、大文字と小文字、そして少なくとも1つの数字または特殊文字を含んでいなければなりません。
@@ -56,26 +46,22 @@ Xibo in the Cloud customers have access to the helpdesk as part of the hosting s
   フォルダに含まれる、または移動されたすべてのオブジェクトは、ユーザー/ユーザーグループに対して有効化された、表示、編集、削除、[共有](users_features_and_sharing.html)オプションを引き継ぎます。
   {/tip}
   
-  ![フォルダー選択](img/v3_users_new_folders.png)
+  ![フォルダ選択](img/v3_users_new_folders.png)
 
 {tip}
-ユーザー（グループ管理者など）がオンボーディングウィザードを使用してユーザーを追加できるようにする場合、表示や編集のためにユーザーとフォルダーを共有する必要がある場合は、[機能](users_features_ and_sharing.html) でフォルダーが有効になっていることを確認してください。
+ユーザー（グループ管理者など）が新規ユーザーを追加ウィザードを使用して追加できるようにする場合、表示や編集のためにユーザーとフォルダを共有する必要がある場合は、[機能と共有](users_features_ and_sharing.html) でフォルダーが有効になっていることを確認してください。
 {/tip}
-
-{nonwhite}
-For further information regarding Folder Administration click [here!](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
 
 - **保存**
 
   新しく作成されたユーザーが追加され、グリッドで確認することができます。
 
-### ユーザー追加フォーム
+### ユーザーを追加フォーム
 
 ![ユーザー追加フォーム](img/v3_users_add_user_form.png)
 
 {tip}
-新しいユーザーをシステムに追加する際、オンボーディングウィザードの代わりに、常に手動のユーザー追加フォームを表示するには、[ユーザープロファイル](tour_user_profile.html)の**環境設定**で使用できるオプションを使用してください!
+新しいユーザーをシステムに追加する際、新規ユーザーを追加ウィザードの代わりに、常に手動でユーザー追加フォームを表示するには、[ユーザープロファイル](tour_user_profile.html)の**環境設定**で常に[手動のユーザー追加フォームを使用]オプションを有効にしてください!
 {/tip}
 
 #### 詳細設定
@@ -92,9 +78,9 @@ For further information regarding Folder Administration click [here!](https://xi
   ユーザーはログイン後、[ユーザープロフィール](tour_user_profile.html)からメールアドレスを入力・編集することができます。
   {/tip}
 
-- ドロップダウンで3種類の[ユーザータイプ]のどれかを選択(user_types.html)
+- ドロップダウンで3種類の[ユーザータイプ](user_types.html)のどれかを選択してください。
 
-- このユーザーがライブラリにアップロードできるコンテンツの最大量を割り当てます。0を入力すると容量制限が適用されません。
+- このユーザーがライブラリにアップロードできるコンテンツの最大量を割り当てます。0を入力すると容量制限が適用されません。(容量制限が無制限になります。）
 
 - このユーザーがどの[ユーザーグループ](users_groups.html)に属するかを選択し、必要に応じてシステムの関連部分にアクセスできるようにします。
 
@@ -112,7 +98,6 @@ For further information regarding Folder Administration click [here!](https://xi
 
 - **システム通知**とディスプレイ通知**のどちらを受信するか、チェックボックスで選択します。
 
-
 #### オプション
 
 必要に応じて、さらにオプションを設定することができます。
@@ -125,7 +110,6 @@ For further information regarding Folder Administration click [here!](https://xi
 [[PRODUCTNAME]]は、追加できるユーザー数に制限を設けていません。
 {/tip}
 
-{nonwhite}
 
 {cloud}
 
@@ -133,7 +117,6 @@ With **Xibo in the Cloud** we do not impose limits on concurrent access or licen
 
 {/cloud}
 
-{/nonwhite}
 
 ## ユーザーを編集
 
@@ -142,7 +125,7 @@ With **Xibo in the Cloud** we do not impose limits on concurrent access or licen
 ![ユーザー編集の行メニュー](img/v3_users_row_menu.png)
 
 {tip}
-ユーザーグループ](users_groups.html)のメンバー管理、[機能](users_features_and_sharing.html)の管理もこのメニューから可能です。
+[ユーザーグループ](users_groups.html)のメンバー管理、[機能と共有](users_features_and_sharing.html)の管理もこのメニューから可能です。
 {/tip}
 
 **編集**をクリックすると、**ユーザーを編集**フォームが表示され、必要に応じてユーザーレコードを変更することができます。
@@ -172,10 +155,7 @@ UPDATE `user` SET `twoFactorSecret` = NULL,
 `twoFactorRecoveryCodes` = NULL
 WHERE userId = {yourUserId}
 ```
-
 {/tip}
-
-
 
 ## パスワード変更を強制する
 
