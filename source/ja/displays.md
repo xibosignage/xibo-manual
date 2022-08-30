@@ -2,23 +2,24 @@
 
 # ディスプレイ
 
-[[PRODUCTNAME]]の主な目的は、コンテンツをスクリーンに表示することであり、アプリケーション・スイート全体はその目的のために存在しています。[PRODUCTNAME]]では、コンテンツをいつ、どのようにスクリーンに表示するかを管理するために、**ディスプレイ**という概念を提供しています。
+[[PRODUCTNAME]]の主な目的は、コンテンツをスクリーンに表示することであり、CMS全体はその目的のために存在しています。
+[[PRODUCTNAME]]では、コンテンツをいつ、どのようにスクリーンに表示するかを管理するために、**ディスプレイ**という概念があります。
+
+コンテンツがスケジュールされていない場合、またはスケジュールされたイベントが表示されない問題がある場合、何かがディスプレイ上に**常時表示**されるように、**デフォルトレイアウト**を設定することを強くお勧めします。
+
+独自のデフォルトレイアウトを作成して、既存のレイアウトを置き換えることもできますが、複雑なメディアやウェブコンテンツがないシンプルなデザインにする必要があることに留意してください。
+
+[ディスプレイを編集]を選択するか、行メニューを使用して「デフォルトレイアウト」をクリックし、ドロップダウンメニューから準備したレイアウトを選択します。
 
 {tip}
-他のコンテンツがスケジュールされていない場合、またはスケジュールされたイベントが表示されない問題がある場合、何かがディスプレイ上に**常時表示**されるように、**デフォルトレイアウト**を設定することを強くお勧めします。独自のデフォルトレイアウトを作成して、既存のレイアウトを置き換えることもできますが、複雑なメディアやウェブコンテンツがないシンプルなデザインにする必要があることに留意してください。 ディスプレイを編集して選択するか、行メニューを使用して「デフォルトレイアウト」をクリックし、ドロップダウンメニューから設計したレイアウトを選択します。
-
 **注意：** デフォルトレイアウトが設定されていない場合、または設定されているデフォルトレイアウトに問題がある場合、ディスプレイにスプラッシュ画面が表示されます。
 {/tip}
 
 ディスプレイは、サイネージ・プレーヤー・ソフトウェアがインストールされたときに生成される**ハードウェア・キー**によって一意に識別されます。このハードウェア・キーは、CMSでディスプレイ・レコードを作成するために使用され、その1つのディスプレイ・レコードに固有のものです。
 
-{nonwhite}
-Administrator documentation for Player Installation guides can be found [here](https://xibo.org.uk/docs/setup/xibo-player-installation)
-{/nonwhite}
-
 ## ディスプレイの接続
 
-ディスプレイは「XMDS」{nonwhite}(Xibo Media Distribution Service){/nonwhite}というAPIでCMSに接続し、ほとんどのプレイヤーはURLとCMS Keyだけで利用することが可能です。
+ディスプレイは「XMDS」(Xibo Media Distribution Service)というAPIでCMSに接続し、ほとんどのプレイヤーはURLとCMS Keyだけで利用することが可能です。
 
 また、CMSの**ディスプレイ**ページで6文字の「アクティベーションコード」を入力することで、ディスプレイを追加することも可能です。
 
@@ -37,9 +38,7 @@ Administrator documentation for Player Installation guides can be found [here](h
 デフォルトでは、**フォルダ**ツリーが開きます。
 
 - フォルダ/サブフォルダをクリックすると、その内容が検索され、グリッドに適用された任意のフィルタに基づいて結果が返されます。
-
 または
-
 - **全てのフォルダ** にチェックを入れると、ルートフォルダでの検索を含み、グリッドに適用されたフィルターに基づいた結果を返します。
 
 {tip}
@@ -85,8 +84,6 @@ Administrator documentation for Player Installation guides can be found [here](h
 選択したアクションは、行メニューからアクションをクリックすることで、[フォーム](tour_forms.html)を自動的に送信することができます(**承認**、**ライセンスのチェック**など)。自動投稿機能を持つアクションには、有効化するためのオプションが表示されます。詳しくは、[グリッド](tour_grids.html)をご覧ください。
 {/tip}
 
-
-
 ### 管理
 
 各ディスプレイは独自の**ダッシュボード**を持ち、ディスプレイの現在の状態、帯域幅の使用状況、ファイルの状態、エラーなどを表示します。
@@ -126,13 +123,7 @@ Administrator documentation for Player Installation guides can be found [here](h
 利用可能なオプションは、ユーザー/ユーザーグループに対して有効な[機能と共有](users_features_and_sharing.html)オプションに基づきます!
 {/tip}
 
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
 フォルダアクセスとセットアップに関する詳細については、管理者にご相談ください。
-{/white}
 
 {tip}
 グリッド下部の個別選択オプションを使用して、複数のディスプレイをフォルダに割り当てることができます。
@@ -157,12 +148,6 @@ Further information for Administrators regarding Folder access and set-up can be
 {/tip}
 
 使用する**タグ**と**タグ値**の詳細については、管理者にご相談ください。
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
-
-
 
 #### 個々のディスプレイのディスプレイプロファイル設定の上書き
 
@@ -200,10 +185,6 @@ Tag management information for Administrators can be found [here](https://xibo.o
 {tip}
 管理者があらかじめ定義されたコマンドを作成して使用するため、追加のコマンドが必要な場合は、管理者に連絡してください。
 {/tip}
-
-{nonwhite}
-Administrator information on the Command Functionality can be found [here](https://xibo.org.uk/docs/setup/command-functionality)
-{/nonwhite}
 
 {tip}
 このタイプのコマンドは、[コマンドイベント](scheduling.html#イベント)をスケジューリングすることによっても実行可能です。
