@@ -2,7 +2,7 @@
 Welcome to the Sigme User Manual.
 This manual is base on the Xibo Manual and added Japanese translation.
 
-This repository contains the source content for the original xibo manual in english and Sigme manual in Japanes. 
+This repository contains the source content for the original xibo manual in english and Sigme manual in Japaness. 
 Some modifications and customizations are added at template/custom/sigme directory.
 
 ## Support
@@ -11,7 +11,10 @@ Prease track issues for Sigme Manual here: https://github.com/SigmeSignage/sigme
 
 ## Building
 The manual is built by running generate.php.
-# php genarate sigme
+To create sigme user manual, the build command is
+```
+php generate.php sigme
+```
 
 ### Docker
 It is also possible to build the manual using Docker, resulting in a Docker
@@ -26,5 +29,6 @@ To do this issue the command:
 Where `-t` is your theme name and `-r` is the name with which to tag the 
 container.
 
-Themes must exist in `/template/custom/<theme_name>` to be built. They 
-are build using inheritance from the default theme.
+Themes must exist in `/template/custom/<theme_name>` to be built.
+They are build using inheritance from the default theme.
+Sigme theme is located this template directory.

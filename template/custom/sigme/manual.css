@@ -143,12 +143,6 @@ h4 {
   line-height: 1.4;/*行高*/
   color: black;/*文字色*/
 }
-h1 {
-  position: relative;/*相対位置*/
-  padding-left: 1.5em;/*アイコン分のスペース*/
-  line-height: 1.4;/*行高*/
-  color: black;/*文字色*/
-}
 
 h4:before {
   font-family: "Font Awesome 5 Free";/*忘れずに*/
