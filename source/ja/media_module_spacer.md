@@ -2,10 +2,10 @@
 
 # スペーサ
 
-Include the Spacer Widget to your Layouts to create an 'empty' Region for a specified duration.
+スペーサーウィジェットをレイアウトに組み込むと、指定した時間だけ「空の」リージョンを作成することができます。
 
 ## ウィジェットを追加
-youts_widgets.html)ツールバーの**スペーサ**をクリックして追加、またはドラッグ＆ドロップします。![Spacer Widget](img\media_spacer_widget.png)
+[ウィジェット](layouts_widgets.html)ツールバーの**スペーサ**をクリックして追加、またはドラッグ＆ドロップします。![Spacer Widget](img\media_spacer_widget.png)
 
 ![Spacer Edit Form](img/v3.1_media_spacer_edit.png)
 
@@ -20,5 +20,5 @@ youts_widgets.html)ツールバーの**スペーサ**をクリックして追加
 
 ## アクション
 
-このウィジェットにはアクションを付けることができます。詳しくは[ 対話型アクション ](layouts_interactive_actions.html)のページを参照してください。
+このウィジェットにはアクションを付けることができます。詳しくは[対話型アクション](layouts_interactive_actions.html)のページを参照してください。
 
