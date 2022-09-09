@@ -10,7 +10,7 @@ Tags can be assigned to **Layouts**, **Campaigns**, **Templates**, **Playlists**
 
 {tip}
 Tags can be used in search fields throughout the CMS to narrow down returned results!
-{/tip
+{/tip}
 
 Tags that have been added can be viewed,edited and deleted by navigating to **Tags** under the **Administration** section of the CMS.
 
