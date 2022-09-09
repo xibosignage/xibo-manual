@@ -29,7 +29,10 @@ Grids have multiple **Filter** fields which can be used to restrict the criteria
 For example all Layouts belonging to a particular **Owner** can be the only results shown in the Grid.
 
 {tip}
-Use the checkbox to apply advanced filtering options for Names using Regex!
+Use the checkbox to apply advanced filtering options for Names using Regex.
+
+From v3.2.0 filter **Names** using AND/OR criteria, using comma separated terms!
+
 {/tip}
 
 {tip}
