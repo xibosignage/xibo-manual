@@ -25,11 +25,22 @@ Library media is managed from **Media** under the **Library section** of the mai
 Use the availalble filters to easily narrow down searches.
 
 {tip}
-Use the **AND** option to filter items that have been assigned multiple **Tags**!
+Use the **OR/AND** option to filter items that have been assigned multiple **Tags**.
+
+From v3.2.0 this option can be also used with the **Name** field!
+
 {/tip}
 
 {tip}
-Images and Videos that have a set thumbnail can also be filtered by Orentation. Set by using the row menu and select **Edit** for an Image/Video file.  Scroll down to the bottom of the form and set the intended **Orientation**.
+
+Images and Videos that have a set thumbnail can also be filtered by Orientation. 
+
+Set by using the row menu and select **Edit** for an Image/Video file.  
+
+Scroll down to the bottom of the form and set the intended **Orientation**.
+
+From v3.2.0 **Resolution** has been added to the list for **Column visibility** to easily view the resolution of the uploaded file!
+
 {/tip}
 
 Use the **Folder Search** option to view media saved to folders:

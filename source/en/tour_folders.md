@@ -21,6 +21,10 @@ Only empty folders can be removed!
 
 Folders can be created, renamed and removed from **Add** and **Edit** [Forms](tour_forms.html) and by using the **Select Folder** option from the **Row Menu** for an object (dependent on [Feature](users_features_and_sharing.html) access).
 
+{tip}
+From v3.2.0 a **Folders management** page has been added for Super Admin access only. This page is located under the **Administration** section of the main CMS menu. Super Admins can manage all aspects of Folders as well as see detailed information about Folders such as who it has been shared with,  a breakdown of its contents!
+{/tip}
+
 ## Sharing Options
 
 Each folder can have [Share options](users_features_and_sharing.html) set for Users/User Groups by clicking on **Share** from the menu.
@@ -80,3 +84,70 @@ Control access for Users/User Groups using [Features and Share](users_features_a
 **For Users that need access to Delete on the Folders menu:**
 1. Enable **Rename and Delete existing Folders** from the Content tab on the Folders Feature set.
 2. Enable **Delete** from the **Share options** for the folder(s) that can be removed by the User/User Group.
+
+
+
+## Home Folders
+
+Users can always select their home folder and the root folder from the folder tree. When a folder has been selected, the grid will update to show only objects inside the folder.
+
+For users to see other users' content, it must be shared with them (called Direct Sharing). Users can also see other users’ content if the folder has been shared with them (Folder Sharing).
+
+Admins are encouraged to assign User Groups to their users, and then use Folder Sharing to give these users appropriate access to each other's content (View/Edit/Delete options can be configured).
+
+{tip}
+Users can view/edit and delete objects they own by selecting “All folders”, even if they are in a folder they cannot view.
+Conversely, users cannot view/edit or delete other users objects unless shared with them by Direct/Folder sharing.
+{/tip}
+
+From v3.2.0 an administrator can prevent Users from saving into the Root Folder which forces them to select a folder before saving.
+First disable the use of the Root Folder as a default:
+
+- Navigate to **Settings** under the **Administration** section of the main CMS menu.
+- Click on the **Sharing** tab:
+
+![disable root folder.png](img/tour_folders_disable_root.png)
+
+- Untick **Allow saving in the root folder** option.
+- Click the **Save** button at the bottom.
+
+A user's home folder is shown to them in the folder tree with a house icon. If a folder is not selected, or the folders feature has been disabled, new content will automatically save into the home folder.
+
+Admins / group admins can assign a Home Folder for an existing User:
+
+- Go to **Users** under the **Administration** section of the main CMS menu. 
+- Use the row menu for the User and select **Edit**.
+- Click on the **Home Folder** tab:
+
+![home folder.png](img/tour_folders_default_folder.png)
+
+Select a folder to use, or right click the Root Folder to create a new Folder.
+
+{tip}
+If a new Folder is created, ensure that the correct View/Edit/Delete **Share** options are applied to the Folder from the Folders page found under the Administration section of the main CMS menu or from any of the object grids (Layouts, Library Media, Playlists, Displays etc) so that any objects placed into the Folder inherit these set options. 
+
+A Home Folder can be selected when [Onboarding new Users](/manual/en/users_administration)!
+{/tip}
+
+{tip}
+Users with a Home Folder assigned will have full access to their own Media, Layouts, Schedules etc, with access to all other folder contents as per the Share options set for the Home Folder.
+
+Users can have a Home Folder assigned and Folders disabled as a [Feature](/manual/en/users_features_and_sharing.html), Users would automatically save to their default Home Folder location without the need to view or interact with Folders in the CMS.
+{/tip}
+
+## Move and Merge Folders
+
+From v3.2.0 Folders can be moved to another Folder location to be added as a Sub-Folder.
+
+- Select the **Folder**
+- Right click and select **Move**
+- Highlight the Folder destination to move to
+- **Save**
+
+The Folder and any contained sub-folders will now be moved as a new sub-folder within the new Folder location maintaining the original Folder structure.
+
+You can also select the **Merge** option to add the original Folder contents to the main Folder location, with the original Folder being deleted from the Folder tree.
+
+{tip}
+**Please note:** If you move a Folder that does not have any Share options set, it will inherit the applied Share options of the destination Folder!
+{/tip}
