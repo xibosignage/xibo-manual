@@ -60,6 +60,10 @@ Select from one of the pre-configured **Groups** to go through the **Onboarding 
 
 - Select from available [Folders](tour_folders.html) to share objects with the new User.
 
+- From v3.2.0 **Home Folders** can be set here for new Users. Further information can be found [here](manual/en/tour_folders.html#home-folders)
+
+  
+  
   {tip}
   All objects contained or moved into a Folder will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been enabled for Users/User Groups!
   {/tip}

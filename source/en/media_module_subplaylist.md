@@ -95,6 +95,10 @@ From v3.1.0 an option is available to **Enable Cycle based playback**:
 
 
 
+{tip}
+**Please note:** If your Playlist includes 'nested playlists' this option cannot be used!
+{/tip}
+
 - When enabled only 1 Widget will play from a playlist each time the Layout is shown
 - Set a **Play count** to determine how many times each Widget will be shown before moving onto the next Widget in the playlist.
 - Play a **Random Widget** from the playlist each time the Layout is shown by ticking the box to enable.
