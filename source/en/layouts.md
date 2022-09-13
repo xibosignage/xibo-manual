@@ -39,6 +39,8 @@ or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
+Check out the [Folders](/manual/en/tour_folders.html) page for further information!
+
 The Layout [Grid](tour_grid.html) allows users to create new and edit existing. 
 
 ## Add Layout

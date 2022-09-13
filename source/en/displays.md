@@ -52,6 +52,8 @@ or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
+Check out the [Folders](/manual/en/tour_folders.html) page for further information.
+
 {tip}
 Logged in Users will only view the status of Displays that they have been given access to!
 {/tip}
