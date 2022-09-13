@@ -35,6 +35,8 @@ or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
+Check out the [Folders](/manual/en/tour_folders.html) page for further information!
+
 ## Create a new DataSet
 
 Creating a DataSet is a 2 step process:

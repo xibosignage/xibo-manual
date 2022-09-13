@@ -35,6 +35,8 @@ or
 
 - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
+Check out the [Folders](/manual/en/tour_folders.html) page for further information!
+
 ### Create a new Playlist
 
 - Click on the **Add Playlist** button and complete the appropriate form fields:
@@ -45,7 +47,7 @@ or
 - Playlists can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
-Playlists that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
+Playlists that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access. 
 {/tip}
 
 - Provide a **Name** for easy identification purposes within the CMS.

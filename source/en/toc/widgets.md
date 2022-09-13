@@ -5,6 +5,7 @@
 - [Clock](media_module_clock.html)
 - [Countdown](media_module_countdown.html)
 - [Currencies](media_module_currencies.html)
+- [Dashboard](media_module_dashboard.html)
 - [DataSet Ticker](media_module_dataset_ticker.html)
 - [DataSet View](media_module_dataset_view.html)
 - [Embedded](media_module_embedded.html)
