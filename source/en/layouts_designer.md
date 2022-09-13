@@ -218,17 +218,20 @@ Use the properties panel whilst in the main Layout view, to access further confi
 
 
 
-{tip}
-Select an Image from the Image Library Search function from the Toolbar and click or drag to the properties panel:
+### Adding a Background Image
+
+Add an Image which has already been added to your Library.  Select an Image from the Image Library Search function from the Toolbar and click or drag to the **Background Image** area of the properties panel:
 
 ![Layout Background](img/v3.1_layouts_add_background.png)
 
 
 
-Ensure to **Save**
+Ensure to **Save** clicking the button at the bottom of the properties panel:
 
 ![Saved Background](img/v3.1_layouts_saved_background.png)
 
+{tip}
+New Images can also be added by using the **Upload** button from here!
 {/tip}
 
 ## Layout Timeline 
