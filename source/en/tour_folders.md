@@ -11,7 +11,7 @@ Folders can be created to hold **Library Media**, **DataSets**, **Playlists**, *
 - Right click the **Root Folder** to **Create** a new Folder to add to the tree.
 
 
--  Right click to access a menu with options to **Create** a sub-folder, **Rename**, **Remove** and **Share**:
+-  Right click to access a menu with options to **Create** a sub-folder, **Rename**, **Remove** **Share** and [Move Folder](/manual/en/tour_folders.html#move_and_merge_folders):
 
 ![Folder Menu](img/v3_tour_folders_menu.png)
 
@@ -21,9 +21,16 @@ Only empty folders can be removed!
 
 Folders can be created, renamed and removed from **Add** and **Edit** [Forms](tour_forms.html) and by using the **Select Folder** option from the **Row Menu** for an object (dependent on [Feature](users_features_and_sharing.html) access).
 
-{tip}
-From v3.2.0 a **Folders management** page has been added for Super Admin access only. This page is located under the **Administration** section of the main CMS menu. Super Admins can manage all aspects of Folders as well as see detailed information about Folders such as who it has been shared with,  a breakdown of its contents!
-{/tip}
+
+From v3.2.0 a **Folders management** page has been added for Super Admin access only. 
+
+The **Folders** page is located under the **Administration** section of the main CMS menu. 
+
+![Folders Management](img/users_folders_management_page.png)
+
+
+
+Super Admins can manage all aspects of Folders (right click a Folder to access the context menu) as well as see detailed information about Folders such as who it has been shared with,  a breakdown of its contents!
 
 ## Sharing Options
 
@@ -114,6 +121,10 @@ First disable the use of the Root Folder as a default:
 A user's home folder is shown to them in the folder tree with a house icon. If a folder is not selected, or the folders feature has been disabled, new content will automatically save into the home folder.
 
 Admins / group admins can assign a Home Folder for an existing User:
+
+{tip}
+If you require Group Admins to set a Home Folder for Users, ensure that they have the appropriate [Feature](/manual/en/users_features_and_sharing) enabled!
+{/tip}
 
 - Go to **Users** under the **Administration** section of the main CMS menu. 
 - Use the row menu for the User and select **Edit**.
