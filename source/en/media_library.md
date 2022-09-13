@@ -35,9 +35,10 @@ From v3.2.0 this option can be also used with the **Name** field!
 
 Images and Videos that have a set thumbnail can also be filtered by Orientation. 
 
-Set by using the row menu and select **Edit** for an Image/Video file.  
+- Set by using the row menu and select **Edit** for an Image/Video file.  
 
-Scroll down to the bottom of the form and set the intended **Orientation**.
+- Scroll down to the bottom of the form and set the intended **Orientation**.
+
 
 From v3.2.0 **Resolution** has been added to the list for **Column visibility** to easily view the resolution of the uploaded file!
 
@@ -54,6 +55,8 @@ Use the **Folder Search** option to view media saved to folders:
   or
 
   - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
+  
+  Check out the [Folders](/manual/en/tour_folders.html) page for further information!
 
 ## Adding Media
 
