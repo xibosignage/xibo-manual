@@ -11,7 +11,7 @@ The Xibo Dashboards Service is a commercial feature which allows Users to secure
 
 **Please note:** This commercial feature is available from v3.2.0 and requires an API for configuration as further explained [here](/pricing#dashboards).
 
-Once the Connector has been configured, add dashboards to display in Layouts using the [Dashboards Widget](/manual/en/media_module_dashboards.html)
+Once the Connector has been configured, add dashboards to display in Layouts using the [Dashboards Widget](/manual/en/media_module_dashboard.html)
 
 ## Configure Connector
 
@@ -55,5 +55,5 @@ Please see the following page for further information on obtaining a URL to use 
 
 - Click to **Save** and wait a few moments whilst those credentials are successfully registered.
 
-Your Dashboard is ready to be added to Layouts using the [Dashboard Widget](/manual/en/media_module_dashboards.html)
+Your Dashboard is ready to be added to Layouts using the [Dashboard Widget](/manual/en/media_module_dashboard.html)
 {/nonwhite}
