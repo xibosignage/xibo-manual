@@ -36,7 +36,7 @@ Each **Feature** contains a 'Feature Set'. Use the arrow to expand to see all th
 A line shown in the check box, as in the above image, shows you that selected Features from the 'set' have been enabled. Expand to see what has been enabled and to make further edits if required. A blue tick in the check box tells you that all Features within the set have been enabled.
 
 {tip}
-Make it easier to onboard new Users by using the predefined User categories which contain the required Feature access for the type of User or manage Feature access via [User Groups](https://xibo.org.uk/manual/en/users_groups.html). If you need to give further access to specific Users within User Groups, assign these directly on their individual User record.
+Make it easier to onboard new Users by using the predefined User categories which contain the required Feature access for the type of User or manage Feature access via [User Groups](users_groups.html). If you need to give further access to specific Users within User Groups, assign these directly on their individual User record.
 {/tip}
 
 ## 2. Share
@@ -77,7 +77,7 @@ Actions to take:
 The highest editing level will always be used for Users. If a User belongs to two groups where one group has Delete enabled for an object and the other does not, the User will have Delete access for the object.
 
 {tip}
-Sharing options for **Regions** and **Widgets** are assigned by using the [Tools Menu](https://xibo.org.uk/manual/en/layouts_tools.html) in the Layout Designer!
+Sharing options for **Regions** and **Widgets** are assigned using the context menu in the [Layout Designer](layouts_layouts_designer.html)!
 {/tip}
 
 Modifications made to items are available in 'real time' which means that the next time a User interacts with the object the newly set options will be applied.
@@ -97,9 +97,7 @@ Share permissions for Display and Display Groups, that have no owner, can only b
 
 ### Folders
 
-Create Folders and assign **Share** options to easily set the required access for Layouts, Library Media, DataSets, Displays / Display Groups etc, saved within that Folder for Users/User Groups. 
+Create [Folders](tour_folders.html) and assign **Share** options to easily set the required access for Layouts, Library Media, DataSets, Displays / Display Groups etc, saved within that Folder for Users/User Groups. 
 
-{nonwhite}
-For further information on Folder Administration, click [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
+
 

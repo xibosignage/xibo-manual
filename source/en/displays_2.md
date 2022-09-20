@@ -106,13 +106,7 @@ This Dashboard is useful as a first step for troubleshooting issues with a Displ
 
 Clicking on **Edit** opens configure options for that **Display**.
 
-Displays can be tagged which allows for ordering and makes it easier to find. Administrators can set certain **Tag's** to have a **Value** associated to them.  Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
-
-{tip}
-From v2.3.6, you can add an associated value for Tags without an existing predefined value. Enter the Value you wish to associate with the Tag in the **Tag value** field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
-
-For further information on what Tag and Tag Values to use, please speak with your Administrator.
-{/tip}
+Displays can be [tagged](tour_tags_2.html) which allows for ordering and makes it easier to find. 
 
 #### Override Display Profile Settings for individual Displays
 
@@ -150,21 +144,15 @@ The **Send Command** functionality is executed via XMR to Players by selecting a
 
 ![Displays Send Command](img/displays_send_command.png)
 
-
-
 {tip}
-Administrators create predefined commands for use, therefore if you require additional commands, please contact your Administrator.
-{/tip}
-
-{tip}
-This type of Command can also be executed by scheduling a [Command Event](scheduling.html#Events)
+This type of [Command](displays_command_functionality) can also be executed by scheduling a [Command Event](scheduling.html#Events)
 {/tip}
 
 ### Transfer Display to another CMS - available from version 2.2.0
 
 **Please note:** We are currently working to bring this feature to all Players but at present this is available for Windows Players from v2 R201, Android Players from v2 R203 and webOS R204.  This feature is currently not supported on Tizen and Linux Players.
 
-To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](<https://xibo.org.uk/manual/en/tour_two_factor_authentication.html>), if you have not already set this up.
+To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_two_factor_authentication.html), if you have not already set this up.
 
 ![Display Transfer Google Authenticator](img/displays_transfer_cms_google_authenticator.png)
 

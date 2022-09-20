@@ -154,7 +154,7 @@ brackets - for example `[nearestStormDistance]`.
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
-## Additional Information
+## Date Format - PHP
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 

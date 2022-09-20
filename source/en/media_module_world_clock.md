@@ -8,7 +8,7 @@ The World Clock Widget can be used to show one or multiple clocks displaying tim
 
 {nonwhite}
 {tip}
-If you are using a v3.0.x CMS, the World Clock Widget is only available on request by contacting our [Helpdesk](https://support.xibosignage.com/open.php) to enable.
+If you are using a v3.0.x CMS, the World Clock Widget is only available on request by contacting our Help deskt via [My Account](https://xibosignage.com/my-account/tickets?open=true) to enable.
 {/tip}
 {/nonwhite}
 
@@ -104,7 +104,7 @@ With the Analogue Clock Type selected, an Additional Tab will be available to al
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
-## Additional Information
+## Date Format - PHP
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 

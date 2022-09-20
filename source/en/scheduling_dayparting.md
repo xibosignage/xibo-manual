@@ -1,8 +1,10 @@
 <!--toc=scheduling-->
 # Dayparting
 
-> In broadcast programming, dayparting is the practice of dividing the broadcast day into several parts, in which a different type of radio or television program apropos for that time period is aired.
-> -- Wikipedia
+{tip}
+In broadcast programming, dayparting is the practice of dividing the broadcast day into several parts, in which a different type of radio or television program apropos for that time period is aired.
+-- Wikipedia
+{/tip}
 
 [[PRODUCTNAME]] supports the creation of multiple Dayparts, which can include day of the week exceptions. This means that a single day can be split into as many **pre-defined** parts as necessary.
 {tip}

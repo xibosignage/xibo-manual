@@ -80,11 +80,10 @@ The Edit Media form allows you to make edits to the name and duration of the sel
 Media can be tagged to allow for ordering and make files easier to find.
 
 {tip}
-Administrators can set certain **Tag's** to have a **Value** associated to them. Tags that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
+Set certain **Tag's** to have a **Value** associated to them. [Tags](tour_tags_2.html) that have a Tag Value will show the selections available from an additional field - **Tag value** drop down.
 
 From v2.3.6, you can add an associated value for Tags without an existing predefined value. Enter the Value you wish to associate with the Tag in the **Tag value** field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
 
-For further information on what Tag and Tag Values to use, please speak with your Administrator.
 {/tip}
 
 **Expiry date:** (available from v2.2.0)

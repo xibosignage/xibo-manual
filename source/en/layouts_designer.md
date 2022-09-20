@@ -162,7 +162,7 @@ It is important to note that the Layout will be marked invalid and not sent to P
 
 - Select a **Fade/Fly Out transition** to move onto the next Widget in the Timeline.
 
-  If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](https://xibo.org.uk/manual/en/layouts_regions.html#region_options>).
+  If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](layouts_regions.html#region_options).
 
 {tip}
 Transitions are supported for Android/webOS ,Tizen Players and Window Players from v2 R252. Transitions are currently not supported on the Linux Player.
@@ -218,17 +218,20 @@ Use the properties panel whilst in the main Layout view, to access further confi
 
 
 
-{tip}
-Select an Image from the Image Library Search function from the Toolbar and click or drag to the properties panel:
+### Adding a Background Image
+
+Add an Image which has already been added to your Library.  Select an Image from the Image Library Search function from the Toolbar and click or drag to the **Background Image** area of the properties panel:
 
 ![Layout Background](img/v3.1_layouts_add_background.png)
 
 
 
-Ensure to **Save**
+Ensure to **Save** clicking the button at the bottom of the properties panel:
 
 ![Saved Background](img/v3.1_layouts_saved_background.png)
 
+{tip}
+New Images can also be added by using the **Upload** button from here!
 {/tip}
 
 ## Layout Timeline 

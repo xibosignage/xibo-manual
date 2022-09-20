@@ -16,9 +16,9 @@ If you have any questions regarding your User access, then please contact your A
 
 {nonwhite}
 
-If you are an Administrator and require information regarding the Installation and Set up of the system, please refer to the [Administration Documentation](https://xibo.org.uk/docs/setup)
+If you are an Administrator and require information regarding the Installation and Set up of the system, please refer to the [Administration Documentation](/docs/setup)
 
-If you are not a [Xibo in the Cloud](https://xibo.org.uk/hosting) User and need to install a CMS then please refer to the [Installation Guides](https://xibo.org.uk/docs/setup/cms-installation-guides) to get up and running with Xibo!
+If you are not a [Xibo Cloud Hosting](/hosting) User and need to install a CMS then please refer to the [Installation Guides](/docs/setup/cms-installation-guides) to get up and running with Xibo!
 {/nonwhite}
 
 ## Welcome to the Tour!
@@ -69,10 +69,6 @@ Media content is at the core of the [[PRODUCTNAME]] solution and has many differ
 
 [[PRODUCTNAME]] uses powerful **Widgets** which allow you to show your content as well as integrating dynamic third-party information from a variety of sources.
 
-{nonwhite}
-A look at some of the CMS features can be found [here](https://xibo.org.uk/cms). 
-{/nonwhite}
-
 ### 5. Scheduling
 
 Scheduling is highly flexible and supports Schedules to single **Displays** as well as to **Display Groups**. Each Display will check for new Scheduled content periodically, and download Scheduled Items in advance of playback. **Default Layouts** are shown on Displays when nothing else is Scheduled.
@@ -91,7 +87,7 @@ Please ensure that any content you wish to use complies with Copyright law and i
 
 If you would like further help with the information contained in the User Manual please take a look at the [Troubleshooting](troubleshooting.html) section or our [Xibo Community Forum](https://community.xibo.org.uk/).
 
-**Xibo in the Cloud** customers have free access to our experts at our Help Desk so please open a [ticket](https://xibo.org.uk/help#commercial) if you need assistance.
+Customers on a Professional, Business or Enterprise Plan have access to our experts on our Help Desk. Please open a ticket via [My Account](https://xibosignage.com/my-account/tickets?open=true) if you need assistance.
 
 {/nonwhite}
 

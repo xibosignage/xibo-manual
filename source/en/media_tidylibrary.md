@@ -3,7 +3,7 @@
 
 {nonwhite}
 {cloud}
-The Tidy Library function is turned off by default for **Xibo in the Cloud** Customers as it can be potentially destructive if the options are not fully understood. This can be enabled if required by following the steps below.
+The Tidy Library function is turned off by default for **Xibo Cloud Hosting** customers as it can be potentially destructive if the options are not fully understood. This can be enabled if required by following the steps below.
 {/cloud}
 {/nonwhite}
 

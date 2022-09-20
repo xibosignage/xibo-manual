@@ -59,6 +59,64 @@ Reports can be provided for Proof of Play statistics recorded by:
 If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
 {/tip}
 
+## Proof of Play Default Settings
+
+Statistical collection can be enabled by default from the **Settings** page under the **Administration** section of the main CMS menu, by clicking on the **Displays** tab.
+
+### Aggregation level
+
+Set the level of collection of Proof of Play statistics to be applied to all **Layouts** / **Media** and **Widget items** as default.
+
+- **Individual** - statistics are recorded at the start and finish of each item individually and sent back to the CMS at each collection interval.
+- **Hourly** - records each item once, and includes the total number of times played and the length of time played during the hour and is sent back to the CMS on the next collection interval after the hour period has expired.
+- **Daily** - records each item once, and includes the total number of times played and the length of time played during the day and is sent back to the CMS on the next collection interval after the day has expired.
+
+{tip}
+Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired!
+{/tip}
+
+### Enable Stats Collection
+
+- Tick the box to enable the collection of Proof of Play statistics to all **Displays** as default.
+
+This can be toggled on/off by editing [Display Setting Profiles](displays_settings.html#editing_profiles).
+
+### Enable Layout Stats Collection
+
+- Tick the box to set the default to on for the collection of Proof of Play statistics for all newly added **Layouts**.
+
+Collection can be disabled by unticking the box on the **Add/Edit** Layout form.
+
+### Enable Media Stats Collection
+
+- Use the dropdown menu to select the default setting to use for the collection of Proof of Play statistics for all Media items.
+
+  Off
+  On
+  Inherit
+
+### Enable Playlist Stats Collection
+
+- Use the dropdown menu to select the default setting to use for the collection of Proof of Play statistics for all Playlists.
+
+  Off
+  On
+  Inherit
+
+### Enable Widget Stats Collection
+
+- Use the dropdown menu to select the default setting to use for the collection of Proof of Play statistics for all Widgets.
+
+  Off
+  On
+  Inherit
+
+{tip}
+It is intended to have **Widget** always set to Inherit so that Layout and Media options control the collection!
+{/tip}
+
+## Proof of Play Reports
+
 Click on **Proof of Play** under the **Reporting** section of the CMS menu to access the available reports.
 
 ![Proof of Play Dashboard](img/v2_proof_of_play_dashboard.png)

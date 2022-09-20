@@ -38,7 +38,7 @@ Files can also be added via drag and drop!
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-Media can also be directly uploaded to a specified **Folder** location.
+Media can also be directly uploaded to a specified [Folder](tour_folder.html) location.
 
 {tip}
 Media files that are saved in Folders will inherit the View, Edit, Delete Share option that have been applied to the destination Folder for User/User Group access!
@@ -63,14 +63,6 @@ Files can also be uploaded individually and have different Folder locations spec
 Instead of clicking on the Start upload button, click on the **blue upload** button shown at the end of the row for an added file. 
 
 - Change the Folder location using the **Select Folder** button as before and then click the blue button at the end of the row to upload just that singular file.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ![Single Upload](img/v3_media_single_upload.png)
 
@@ -119,24 +111,22 @@ If the new font does not show in the text editor after upload, try clearing the 
 
 ## Folders
 
-By default, the **Folder Search** option will open. 
+- Click the Folders icon to toggle on/off from view.  
 
-{tip}
-This can be toggled on and off from view by clicking the folder icon!
-{/tip}
-
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
-
+  {tip}
+  When Folders are hidden from view, the file path for the selected folder will be shown!
+  {/tip}
+  
+  - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
+  
   or
-
-- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
-
+  
+  - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
   
 
-Folders allow users to organise, search and share objects easily.  Further information can be found on the [Grids page](tour_grids.html)
-{nonwhite}
-Further information for Administrators regarding folder setup can be found [here](https://xibo.org.uk/docs/setup/folders-administration).
-{/nonwhite}
+{tip}
+[Folders](tour_folders.html) allow users to organise, search and share objects easily!
+{/tip}
 
 ## Row Menu 
 
@@ -149,27 +139,9 @@ The **Edit Media** form allows you to make edits to the **Folder**, **Name** and
 ![Edit Media](img/v3_media_row_menu_edit.png)
 
 - **Current Folder** - If the media file is already in a Folder, the file path with be shown here. Click **Select Folder** to move to a different location.
-- **Tags** - Media can be tagged to allow for ordering and make files easier to find.
+- [Tags](tour_tags.html) - Media can be tagged to allow for ordering and make files easier to find.
 
 When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
-
-{tip}
-If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
-{/tip}
-
-Users can add an associated Value to a Tag that does not already have a predefined value by using the **Tag value** field. If a Tag value is not needed, this field can be left blank.
-
-{tip}
-Tags can also be assigned to multiple media files using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the Library grid!
-{/tip}
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
 
 - **Expiry date** - Select a date and time to completely remove the selected media file from the CMS.
 

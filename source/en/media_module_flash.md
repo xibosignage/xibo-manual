@@ -2,7 +2,9 @@
 
 # Flash
 
-### Please note: As Adobe no longer supports Flash, it will be naturally phased out over a period of time. Whilst Players may still play flash at this current time, updates to operating systems and other third party components, such as the browser, may render Flash files as unplayable.
+{tip}
+**Please note:** As Adobe no longer supports Flash, it will be naturally phased out over a period of time. Whilst Players may still play flash at this current time, updates to operating systems and other third party components, such as the browser, may render Flash files as unplayable.
+{/tip}
 
 {tip}
 If you are using a CMS earlier than v3.0.0 please use the following link: [Flash](media_module_flash_2.html)
@@ -35,35 +37,17 @@ The file uploader will open on adding the Flash Widget:
 Files can also be added via drag and drop!
 {/tip}
 
-- Give your file a **Name** for easier identification in the CMS and an optional **Tag**.
+- Give your file a **Name** for easier identification in the CMS and an optional [Tag](tour_tags.html).
 
 {tip}
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-Flash files can also be directly uploaded to a specified **Folder** location.
+Flash files can also be directly uploaded to a specified [Folder](tour_folders.html) location.
 
 {tip}
 Files that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select a Folder to save in.
-- Users can also right click a Folder to access further options.
-
-{tip}
-Available Folder options are based on enabled [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
-
-- Click in the folder you wish to upload the file to and click **Done**.
-- The **Current Folder** will show the selected file path.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 There is an option to **Set Expiry Dates** and times for files uploaded to this particular Widget.
 

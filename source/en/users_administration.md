@@ -12,7 +12,7 @@ Users are administered in the CMS by clicking on **Users** under the **Administr
 
 {nonwhite}
 {cloud}
-Xibo in the Cloud customers have access to the helpdesk as part of the hosting service. Please ensure that the user account named `xibo_admin` is not modified or removed so that our helpdesk agents can assist you with your CMS as and when required.
+Xibo Cloud Hosting customers have access to the helpdesk as part of the hosting service. Please ensure that the user account named `xibo_admin` is not modified or removed so that our helpdesk agents can assist you with your CMS as and when required.
 {/cloud}
 {/nonwhite}
 
@@ -58,21 +58,26 @@ Select from one of the pre-configured **Groups** to go through the **Onboarding 
   A user can complete/edit their email address after login from the [User Profile!](tour_user_profile.html)
   {/tip}
 
-- Select from available **Folders** to share objects with the new User.
+- Select from available [Folders](tour_folders.html) to share objects with the new User.
 
   {tip}
   All objects contained or moved into a Folder will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been enabled for Users/User Groups!
   {/tip}
-  
+
   ![Folder Select](img/v3_users_new_folders.png)
+
 
 {tip}
 When allowing Users, (such as a Group Admin) to add Users using the Onboarding Wizard, ensure that Folders is enabled in [Features](users_features_and_sharing.html) if they are required to Share Folders with the User for viewing and editing!
 {/tip}
 
-{nonwhite}
-For further information regarding Folder Administration click [here!](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
+From v3.2.0 **Home Folders** can be set by right clicking a Folder and selecting the **Set as Home** option:
+
+![Home Folder](img/users_set_home_folder.png)
+
+
+
+Further information can be found [here](manual/en/tour_folders.html#home-folders)
 
 - **Save**
 
@@ -112,6 +117,11 @@ To always show the manual Add User form when adding new user's to the system ins
 
 - Use the drop down to select from the choice of [Dashboards](tour_status_dashboards.html) for the Users 'Homepage' which the User will be taken to after login.
 
+#### Home Folder
+
+From v3.2.0 a Home Folder can be set for the User. Select from the available Folders or right click to create a new Folder.
+See the [Folders](/manual/en/tour_folders.html#home-folders) page for further information.
+
 #### Reference
 
 Use this tab to optionally complete information to be used as a reference to view and organise your Users.
@@ -137,7 +147,7 @@ Further options can be applied for the User as required:
 
 {cloud}
 
-With **Xibo in the Cloud** we do not impose limits on concurrent access or licence User access in any way.
+With our **Xibo Cloud Hosting** we do not impose limits on concurrent access or licence User access in any way.
 
 {/cloud}
 
@@ -150,7 +160,7 @@ Use the Row Menu for a User to make changes by selecting from the options availa
 ![Users Edit Row Menu](img/v3_users_row_menu.png)
 
 {tip}
-Manage [User Group](users_groups.html) membership as well as [Features](users_features_and_sharing.html) from this menu!
+Manage [User Group](users_groups.html) membership, [Home Folders](/manual/en/tour_folders.html#home-folders) as well as [Features](users_features_and_sharing.html) from this menu!
 {/tip}
 
 Click on **Edit** to open the **Edit User** form so that changes can be made to the User record as required.

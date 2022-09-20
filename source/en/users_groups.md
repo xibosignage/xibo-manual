@@ -6,7 +6,7 @@
 If you are using a CMS earlier than v3.0.0 please use the following link: [User Groups](users_groups_2.html)
 {/tip}
 
-User Groups allow for a set of [Features and Share](https://xibo.org.uk/manual/en/users_features_and_sharing.html) options to be applied to all Users within a specified Group.
+User Groups allow for a set of [Features and Share](users_features_and_sharing.html) options to be applied to all Users within a specified Group.
 
 [[PRODUCTNAME]] comes with a set of pre-configured User Groups for common functions for new installations.
 
@@ -37,7 +37,7 @@ Create a new Group by clicking on the **Add User Group** button to open the form
 ### General
 
 - Use this tab to give your User Group an identifiable **Name**
-- Assign a **Library Quota** to the group to determine the maximum amount of content allowed to be uploaded to the Library. Enter 0 if no quota should be applied. Please speak to your administrator regarding any applied Library Quota's.
+- Assign a [Library Quota](tour_library_quota.html) to the group to determine the maximum amount of content allowed to be uploaded to the Library. Enter 0 if no quota should be applied. 
 - Enable the **Notification** options if required for the Group.
 
 ### Description

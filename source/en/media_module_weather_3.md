@@ -9,11 +9,11 @@ The Weather Widget provides current daily weather forecasts worldwide using a se
 {nonwhite}
 {cloud}
 
-The Weather Module is configured for Xibo in the Cloud customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
+The Weather Module is configured for Xibo Cloud Hosting customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
 
 {/cloud}
 
-**Non-Xibo in the Cloud customers please follow the installation steps as detailed below.**
+**Non-Xibo Cloud Hosting customers please follow the installation steps as detailed below.**
 
 {/nonwhite}
 
@@ -149,7 +149,7 @@ brackets - for example `[nearestStormDistance]`.
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
-## Additional Information
+## Date Format - PHP
 
 [[PRODUCTNAME]] should accept any date format that is in a correct PHP date format, the following characters are recognised and can be used:
 

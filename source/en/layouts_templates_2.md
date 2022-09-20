@@ -20,11 +20,8 @@ Layouts can also be saved as templates by using the row menu for a Layout in the
 
 Complete the form fields and select whether to include assigned Widgets to the template and save.
 
-Templates can be tagged which allows for ordering and makes it easier to find and view a large number of Templates if grouped by a certain Tag.
-{tip}
-Administrators can set certain **Tag's** to have a **Value** associated to them.   Tags that have a Tag Value will show the selections available from an additional field -  **Tag value** drop down.
-For further information on what **Tag** and **Tag Values** to use, please speak with your Administrator.
-{/tip}
+Templates can be tagged which allows for ordering and makes it easier to find and view a large number of Templates if grouped by a certain [Tag](tour_tags.html).
+
 
 
 

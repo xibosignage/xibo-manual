@@ -16,7 +16,7 @@ Whilst we work on this to make improvements please be aware of the following lim
 
 {nonwhite}
 {cloud}
-This feature preview is not available for Xibo in the Cloud Customers.
+This feature preview is not available for Xibo Cloud Hosting customers.
 {/cloud}
 {/nonwhite}
 
@@ -35,19 +35,19 @@ Menu Boards are administered by clicking on **Menu Boards** under the **Library*
 
 ![Menu Boards Grid](img/v3.1_layouts_menuboards_grid.png)
 
-The **Folder** tree will open by default:
+The Menu Boards [Grid](tour_grids.html) allows users to create new and edit existing.
 
-- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
+Click the Folders icon to toggle on/off from view.  
+
+{tip}
+When Folders are hidden from view, the file path for the selected folder will be shown!
+{/tip}
+
+- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
 or
 
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
-
-{tip}
-Click the Folders menu to toggle on/off from view. When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
-
-The Menu Boards [Grid](tour_grids.html) allows users to create new and edit existing.
+- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
 
 ## Creating Menu Board data
 
@@ -62,25 +62,11 @@ Creating information for Menu Boards requires 3 stages:
 Click on the Add Menu Board button and complete the form fields:
 
 - Provide a **Name** for easy identification purposes within the CMS.
-- Menu Boards can be optionally saved to **Folders**
+- Menu Boards can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
 Menu Boards that are saved to Folders will inherit the View,Edit and Delete **Share** options that have been applied to the destination Folder for User/User Group access!
 {/tip}
-
-- Click on the **Select Folder** button and expand to select the folder to save in.
-- Users can also right click a Folder to access further options.
-- The selected folder file path will be shown next to the Folder field on the form.
-
-{tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
-{/tip}
-
-{nonwhite}
-{tip}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration).
-{/tip}
-{/nonwhite}
 
 - Enter a **Code** to be used to identify this Menu Board (advanced use used for referencing the API).
 - Include an optional **Description** to give more detail/instructions to other potential users of the Menu Board.

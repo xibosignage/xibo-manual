@@ -25,26 +25,38 @@ Library media is managed from **Media** under the **Library section** of the mai
 Use the availalble filters to easily narrow down searches.
 
 {tip}
-Use the **AND** option to filter items that have been assigned multiple **Tags**!
+Use the **OR/AND** option to filter items that have been assigned multiple **Tags**.
+
+From v3.2.0 this option can be also used with the **Name** field!
+
 {/tip}
 
 {tip}
-Images and Videos that have a set thumbnail can also be filtered by Orentation. Set by using the row menu and select **Edit** for an Image/Video file.  Scroll down to the bottom of the form and set the intended **Orientation**.
+
+Images and Videos that have a set thumbnail can also be filtered by Orientation. 
+
+- Set by using the row menu and select **Edit** for an Image/Video file.  
+
+- Scroll down to the bottom of the form and set the intended **Orientation**.
+
+
+From v3.2.0 **Resolution** has been added to the list for **Column visibility** to easily view the resolution of the uploaded file!
+
 {/tip}
 
 Use the **Folder Search** option to view media saved to folders:
 
-- Click on a Folder/ sub-folder to search the contents and return results based on any filters applied to the Grid.
+- {tip}
+  When Folders are hidden from view, the file path for the selected folder will be shown!
+  {/tip}
 
-or
+  - Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
 
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the Grid.
+  or
 
-
-Folders allow users to organise, search and share objects easily.  Further information can be found on the [Grids page](tour_grids.html)
-{nonwhite}
-Further information for Administrators regarding folder setup can be found [here](https://xibo.org.uk/docs/setup/folders-administration).
-{/nonwhite}
+  - Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
+  
+  Check out the [Folders](/manual/en/tour_folders.html) page for further information!
 
 ## Adding Media
 
@@ -72,7 +84,7 @@ Files can also be added via drag and drop!
 If the Name field is left blank, the file will be named as per the original file name on upload!
 {/tip}
 
-Media can also be directly uploaded to a specified **Folder** location.
+Media can also be directly uploaded to a specified [Folder](tour_folders.html) location.
 
 {tip}
 Media files that are saved in Folders will inherit the View, Edit, Delete Share option that have been applied to the destination Folder for User/User Group access!
@@ -95,14 +107,6 @@ Files can also be uploaded individually and have different Folder locations spec
 Instead of clicking on the Start upload button, click on the **blue upload** button shown at the end of the row for an added file. 
 
 - Change the Folder location using the **Select Folder** button as before and then click the blue button at the end of the row to upload just that singular file.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
 
 ![Single Upload](img/v3_media_single_upload.png)
 
@@ -154,27 +158,7 @@ Make changes to Folder location, Naming, Duration etc:
 ![Edit Media](img/v3.1_media_library_row_menu_edit.png)
 
 - **Current Folder** will show the current file path.  Click **Select Folder** to move to a different location.
-- **Tags** - allow for ordering and make files easier to find.
-
-When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
-
-{tip}
-If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
-{/tip}
-
-Users can add an associated Value to a Tag that does not already have a predefined value by using the **Tag value** field. If a Tag value is not needed, this field can be left blank.
-
-{tip}
-Tags can also be assigned to multiple media files using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the Library grid!
-{/tip}
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
+- [Tags](tour_tags.html) - allow for ordering and make files easier to find.
 
 - **Expiry date** - set a date and time to remove the selected media file completely from the CMS.
 
@@ -212,7 +196,7 @@ Make copies of the selected media file, give the copied file a new **Name** and 
 
 ### Select Folder
 
-Select a Folder to save the media file to.
+Select a [Folder](tour_folders.html) to save the media file to.
 
 ### Delete
 

@@ -43,17 +43,7 @@ Access the status page on Players by following the steps for the Player type:
 
 ## Contacting us…
 
-{cloud}
-
-**Xibo in the Cloud** customers get access to our support team as part of the service. Our Help Desk is open 24/7 for new tickets and is monitored by our support agents Monday - Friday, 8AM to 4.30PM (GMT/BST). Nominated Super Admin Users can open a [New Ticket](https://support.xibosignage.com/open.php) providing the information as explained above, and click on **Create Ticket**.
-
-If you are contacting us outside our normal operating hours then please do take a look at the [Community Forum](https://community.xibo.org.uk/) for additional support from our members.
-
-{/cloud}
-
-### Enterprise Support
-
-If you have an on-premise setup and would like to benefit from priority access to our expert support service then please do [talk to us](https://xibo.org.uk/contact) to tailor an Enterprise Support contract to your needs. 
+Customers on a Professional, Business or Enterprise Plan have access to our experts on our Help Desk. Please open a ticket via [My Account](https://xibosignage.com/my-account/tickets?open=true) if you need assistance.
 
 ### Community Forum
 

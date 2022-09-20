@@ -16,7 +16,7 @@ Click on the **Add User Group** action button to open the Add User Group form an
 ![User Group Add Form](img/users_group_add_form.png)
 
 1. **Name** - give your User Group a unique name for ease of identification.
-2. **Library Quota** - assign a quota to determine the maximum amount of content allowed to be uploaded to the Library for the group. Please speak to your administrator for further information.
+2. [Library Quota](users_library_quota.html) - assign a quota to determine the maximum amount of content allowed to be uploaded to the Library for the group. 
 3. Tick checkboxes for Notifications as necessary for the User Group.
 4. Save.
 

@@ -24,7 +24,7 @@ Templates can be created two ways:
 
 ![Add Template Form](img/v3_layouts_add_template_form.png)
 
-- Templates can be optionally saved to **Folders**.
+- Templates an be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
 Templates that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for that User/User Group.
@@ -32,55 +32,9 @@ Templates that are saved in Folders will inherit the View, Edit, Delete **Share*
 If users should also have access to the content of the Template, ensure that this is also saved to the same Folder!
 {/tip}
 
-- Click on the **Select Folder** button and expand to select the Folder to save in.
-
-
-![Select Folder Layouts](img/v3_layouts_templates_folder.png)
-
-
-
-- Users can also right click a folder to access further Folder options:
-
-
-![Template Folder Options](img/v3_layouts_templates_folder_options.png)
-
-{tip}
-Options available to User/User Groups are based on enabled [Feature and Sharing](users_features_and_sharing.html) options!
-{/tip}
-
-- The selected folder file path will be shown next to the Folder field on the form.
-
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
-
 - Provide a **Name** for easy identification purposes within the CMS.
 
-- Include optional **Tags** to organise and make it easier to search for.
-
-{tip}
-
-When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
-
-Predefined  Values will be shown by using the **Tag value** drop down, if the Value is already known it can be typed directly into the field using the following format: `Colour|Red`
-If a Value has been set as 'Required' by an Administrator, then the Value must be entered in order to save the form!
-{/tip}
-
-Users can add an associated Value to a Tag that does not already have a predefined value by using the **Tag value** field. If a Tag value is not needed, this field can be left blank.
-
-{tip}
-Tags can also be assigned to multiple Templates using the [With Selected](https://xibo.org.uk/manual/en/tour_grids.html#multi-select) option at the bottom of the Template grid!
-{/tip}
-
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-
-{nonwhite}
-Tag management information for Administrators can be found [here](https://xibo.org.uk/docs/setup/tags-adding-editing-assigning)
-{/nonwhite}
+- Include optional [Tags](tour_tags.html) to organise and make it easier to search for.
 
 - Select the **Resolution** to be used for this Template/Layout.
 
@@ -89,12 +43,6 @@ Templates/Layouts are designed for an intended display Resolution and will funct
 {tip}
 Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
 {/tip}
-
-**If you require an alternative resolution to the available options listed, contact your Administrator**
-
-{nonwhite}
-Resolution management for Administrators can be found [here](https://xibo.org.uk/docs/setup/resolutions-administration)
-{/nonwhite}
 
 - Provide a **Name** for easy identification purposes within the CMS.
 
@@ -118,7 +66,7 @@ Complete all relevant form fields to save the selected Layout as a Template:
 
 - Use **Select Folder** to move from the shown Current Folder Location.
 - Give the Template an identifiable **Name** so that Users can easily select from the Template drop down when adding Layouts.
-- Assign **Tags** if required.
+- Assign [Tags](tour_tags.html) if required.
 - Provide an optional description/explanation/instructions to other users of this Template.
 - Use the tick box to include all **Widgets** that have been added to the Layout to be included in the Template.
 - **Save**
@@ -154,7 +102,7 @@ When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tag
 {/tip}
 
 {tip}
-Use the **With Selected** option at the bottom of the Templates [Grid](tour_grids.html) to Edit Tags, Delete and Share in bulk actions!
+Use the **With Selected** option at the bottom of the Templates [Grid](tour_grids.html) to Edit Tags, move Folder, Delete and Share in bulk actions!
 {/tip}
 
 

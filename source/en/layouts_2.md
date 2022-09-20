@@ -48,15 +48,9 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 ### Tags
 
-Layouts can be tagged which allows for ordering and makes it easier to find and view a large number of Layouts if grouped by a certain Tag. Administrators can set certain Tag's to have a Value associated to them. Tags that have a Tag Value will show the selections available from an additional field -  **Tag value** drop down.
+Layouts can be tagged which allows for ordering and makes it easier to find and view a large number of Layouts if grouped by a certain Tag. 
 
-{tip}
-From v2.3.6, you can add an associated value for Tags without an existing predefined value. Enter the Value you wish to associate with the Tag in the **Tag value** field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
-{/tip}
-
-{tip}
-For further information on what **Tag **and **Tag Values** to use, please speak with your Administrator.
-{/tip}
+See the [Tags](tour_tags_2.html) for further details.
 
 ### Templates
 
@@ -70,7 +64,7 @@ Layouts are designed for an intended display resolution and will function best w
 Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
 {/tip}
 
-**If you require an alternative resolution to the available options listed, contact your Administrator**
+[[PRODUCTNAME]] comes with a selection of default resolutions that cater for most digital signage applications.  Add/edit and enable from the **Resolutions** page under the **Design** section of the main CMS menu.
 
 ### Enable Stats collection
 
@@ -88,7 +82,7 @@ Transitions are supported on Android, webOS and Tizen Players and Windows Player
 Transitions are currently not supported on Linux Players.
 {/tip}
 
-Default Transition settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
+Default [Transition](tour_transitions.html) settings will be applied to all Widgets on the Layout if this box is ticked. Untick to disable defaults for all Widgets on the Layout. 
 
 {tip}
 Transitions can be applied from the [Tools](layouts_tools.html) menu on the Layout Designer.
@@ -167,8 +161,6 @@ Export the Layout including all associated Widgets/Media/DataSet structures to a
 ### Permissions
 
 Assign Permissions for **Users/User Groups** to define who should have access to **View**, **Edit** and **Delete** the Layout.
-
-
 
 ## Draft Status
 

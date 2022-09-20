@@ -47,7 +47,7 @@ A Player with a collect interval set for 24 hours made a check at 12 pm, it will
 
 {nonwhite}
 
-XMR is configured by default for **Xibo in the Cloud** customers which allows for changes to be communicated immediately to the Player, regardless of the Collection Interval set. This means that fast and dynamic modifications can be made to your Display, without the need to modify a Display Profile.
+XMR is configured by default with **Xibo Cloud Hosting** which allows for changes to be communicated immediately to the Player, regardless of the Collection Interval set. This means that fast and dynamic modifications can be made to your Display, without the need to modify a Display Profile.
 
 For non-cloud customers the CMS can be configured to talk to an XMR instance if player actions are required, please contact your Administrator.
 
@@ -142,7 +142,7 @@ Useful for Layouts with long durations!
 From v2 R207, Gapless Playback with Video content requires an Android device to have multiple decoders. This setting can be found on the Advanced tab and will use the Device Default automatically.
 
 {tip}
-Should an issue arise with playback set to On!
+Should an issue arise with playback, set to On!
 {/tip}
 
 ### Enable Touch capabilities on the device (Xibo for Android)
