@@ -6,6 +6,7 @@
 - [時計](media_module_clock.html)
 - [カウントダウン](media_module_countdown.html)
 - [通貨](media_module_currencies.html)
+- [ダッシュボード](media_module_dashboard.html)
 - [データセットティッカー](media_module_dataset_ticker.html)
 - [データセットビュー](media_module_dataset_view.html)
 - [埋め込み](media_module_embedded.html)
