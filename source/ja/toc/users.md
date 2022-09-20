@@ -2,5 +2,6 @@
 - [ユーザー管理](users_administration.html)
 - [ユータータイプ](users_user_types.html)
 - [ユーザーグループ](users_groups.html)
+- [ユーザーライブラリ容量](users_library_quota.html)
 - [機能と共有](users_features_and_sharing.html)
 - [通知](users_notifications.html)
