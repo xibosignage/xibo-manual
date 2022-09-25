@@ -1,13 +1,6 @@
 <!--toc=tour-->
+
 # ガイド
-
-{white}
-
-利用可能なリソースについては、サポート部門にお問い合わせください。
-
-{/white}
-
-{nonwhite}
 
 Xibo has a large back catalogue of guides, videos and FAQ's to assist you every step of the way, available online on our **Community** page, on our **blog** and **YouTube** channel:
 
@@ -29,4 +22,3 @@ The following guides are based on an earlier version of the CMS but are still he
 
 [How to build an ‘Hours since last incident counter’ using datasets](https://community.xibo.org.uk/t/building-an-hours-since-last-incident-counter-with-datasets/14391)
 
-{/nonwhite}

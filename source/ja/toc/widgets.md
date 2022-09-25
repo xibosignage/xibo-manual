@@ -15,7 +15,7 @@
 - [HTMLパッケージ](media_module_htmlpackage.html)
 - [画像](media_module_image.html)
 - [ローカルビデオ](media_module_localvideo.html)
-- [Menu Boards](media_module_menuboards.html)
+- [メニューボード](media_module_menuboards.html)
 - [お知らせ](media_module_notifications.html)
 - [PDF](media_module_pdf.html)
 - [PowerPoint](media_module_powerpoint.html)

@@ -9,5 +9,5 @@
 - [タグ](tour_tags.html)
 - [フォルダ](tour_folders.html)
 - [トランジション](tour_transitions.html)
-- [データフォーマット](tour_date_format.html)
+- [日付/時間フォーマット](tour_date_format.html)
 - [ガイド](tour_guides.html)
