@@ -7,7 +7,6 @@
 また、日本語訳のページは `source/ja/' ディレクトリに格納されています。
 
 ## サポート
-- xiboオリジナルマニュアルに関するすべての問題は、こちらで追跡してください：`https://github.com/xibosignage/xibo/issues`
 - Sigme Manualに関連するすべての問題は、こちらで追跡してください: `https://github.com/SigmeSignage/sigme-manual/issues` 
 
 ## ビルド
@@ -49,7 +48,6 @@ Some modifications and customizations are added at template/custom/sigme directo
 And, translated pages are located in `source/ja/’ directory.
 
 ## Support
-Please track all issues related xibo original manual here: https://github.com/xibosignage/xibo/issues
 Prease track all issues related  Sigme Manual here: https://github.com/SigmeSignage/sigme-manual/issues
 
 ## Building
