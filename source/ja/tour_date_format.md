@@ -18,48 +18,50 @@
 
 [[PRODUCTNAME]]は、PHPの正しい日付書式であれば、どのような日付書式でも受け入れるはずです。以下の文字が認識され、日付フォーマットの設定に使用することができます。
 
-| format character | Description                                                  | Example returned values                 |
-| ---------------- | ------------------------------------------------------------ | --------------------------------------- |
-| Day              | ---                                                          | ---                                     |
-| d                | Day of the month, 2 digits with leading zeros                | 01 to 31                                |
-| D                | A textual representation of a day, three letters             | Mon through Sun                         |
-| j                | Day of the month without leading zeros                       | 1 to 31                                 |
-| l                | (lowercase 'L') A full textual representation of the day of the week | Sunday through Saturday                 |
-| N                | ISO-8601 numeric representation of the day of the week (added in PHP 5.1.0) | 1 (for Monday) through 7 (for Sunday)   |
-| S                | English ordinal suffix for the day of the month, 2 characters | st, nd, rd or th. Works well with j     |
-| w                | Numeric representation of the day of the week                | 0 (for Sunday) through 6 (for Saturday) |
-| z                | The day of the year (starting from 0)                        | 0 through 365                           |
-| Week             | ---                                                          | ---                                     |
-| W                | ISO-8601 week number of year, weeks starting on Monday (added in PHP 4.1.0) | 42 (the 42nd week in the year)          |
-| Month            | ---                                                          | ---                                     |
-| F                | A full textual representation of a month, such as January or March | January through December                |
-| m                | Numeric representation of a month, with leading zeros        | 01 through 12                           |
-| M                | A short textual representation of a month, three letters     | Jan through Dec                         |
-| n                | Numeric representation of a month, without leading zeros     | 1 through 12                            |
-| t                | Number of days in the given month                            | 28 through 31                           |
-| Year             | ---                                                          | ---                                     |
-| L                | Whether it's a leap year                                     | 1 if it is a leap year, 0 otherwise.    |
-| o                | ISO-8601 year number. This has the same value as Y, except that if the ISO week number (W) belongs to the previous or next year, that year is used instead. (added in PHP 5.1.0) | 1999 or 2003                            |
-| Y                | A full numeric representation of a year, 4 digits            | 1999 or 2003                            |
-| y                | A two digit representation of a year                         | 99 or 03                                |
-| Time             | ---                                                          | ---                                     |
-| a                | Lowercase Ante meridiem and Post meridiem                    | am or pm                                |
-| A                | Uppercase Ante meridiem and Post meridiem                    | AM or PM                                |
-| B                | Swatch Internet time                                         | 000 through 999                         |
-| g                | 12-hour format of an hour without leading zeros              | 1 through 12                            |
-| G                | 24-hour format of an hour without leading zeros              | 0 through 23                            |
-| h                | 12-hour format of an hour with leading zeros                 | 01 through 12                           |
-| H                | 24-hour format of an hour with leading zeros                 | 00 through 23                           |
-| i                | Minutes with leading zeros                                   | 00 to 59                                |
-| s                | Seconds, with leading zeros                                  | 00 through 59                           |
-| u                | Microseconds (added in PHP 5.2.2). Note that date() will always generate 000000 since it takes an integer parameter, whereas DateTime::format() does support microseconds if DateTime was created with microseconds. | 654321                                  |
-| Timezone         | ---                                                          | ---                                     |
-| e                | Timezone identifier (added in PHP 5.1.0)                     | UTC, GMT, Atlantic/Azores               |
-| I                | (capital i) Whether or not the date is in daylight saving time | 1 if Daylight Saving Time, 0 otherwise. |
-| O                | Difference to Greenwich time (GMT) in hours                  | +0200                                   |
-| P                | Difference to Greenwich time (GMT) with colon between hours and minutes (added in PHP 5.1.3) | +02:00                                  |
-| T                | Timezone abbreviation                                        | EST, MDT ...                            |
-| Z                | Timezone offset in seconds. The offset for timezones west of UTC is always negative, and for those east of UTC is always positive. | -43200 through 50400                    |
-| Full Date/Time   | ---                                                          | ---                                     |
-| c                | ISO 8601 date (added in PHP 5)                               | 2004-02-12T15:19:21+00:00               |
-| r                | » RFC 2822 formatted date                                    | Thu, 21 Dec 2000 16:01:07 +0200         |
+
+| フォーマット文字 | 説明                                                  | 返される文字の例                 |
+| ---------------- | :----------------------------------------------------------- | --------------------------------------- |
+|                  | **日**                                                      |                                         |
+| d                | ゼロから始まる２桁の日付              | 01 から 31                                |
+| D                | 日を表すテキスト, ３文字            | Mon から Sun                         |
+| j                | ゼロをつけない日付                       | 1 から 31                                 |
+| l                | (小文字‘L’) 日を表す完全な文字列 | Sunday から Saturday                 |
+| N                | ISO-8601で定義された曜日を表す数字(PHP 5.1.0で追加された) | 1 (月曜日) から 7 (日曜日)   |
+| S                | 日にちに対する英語の序数サフィックス、2文字| st, nd, rd または thとともに使われる     |
+| w                | 曜日の数字表現         | 0 (Sunday) から 6 (Saturday) |
+| z                | 年初からの日（0から始まる)                        | 0 から 365                           |
+|                  | **週**                                                     |                                         |
+| W                | ISO-8601で規定する週の数字, 週は月曜日から始まる(PHP 4.1.0で追加) | 42 (一年の中の４２週目)          |
+|                  | **月**                                                    |                                         |
+| F                | 月のテキスト表現, January や March | January から December                |
+| m                | ゼロで始まる月の数字表現        | 01 から 12                           |
+| M                | 月の短いテキスト表現、３文字     | Jan から Dec                         |
+| n                | 月の数字表現、先頭にゼロはつかない| 1 から 12                            |
+| t                | 月の日数                            | 28 から 31                           |
+|                  | **年**                                                     |                                         |
+| L                | うるう年かどうか year                                     | 1 うるう年, 0 それ以外.    |
+| o                | ISO-8601できていされた年. これはYと同じ値です。ただし、ISOの週番号（W）が前後の年に属している>場合は、その年が代わりに使用されます。(PHP 5.1.0で追加) | 1999 または 2003                            |
+| Y                | 年の４桁数字表現            | 1999 または 2003                            |
+| y                | 年の２桁数字表現                         | 99 or 0                                 |
+|                  | **時間**                                                     |                                         |
+| a                | 小文字アンティメリディアムとポストメリディアム                    | am または pm                                |
+| A                | 大文字アンティメリディアムとポストメリディアム                    | AM または PM                                |
+| B                | スウォッチインターネット時間                                         | 000 から 999                         |
+| g                | 先行ゼロなしの時間の12時間形式              | 1 から 12                            |
+| G                | 先行ゼロなしの時間の24時間形式              | 0 から 23                            |
+| h                | 先行ゼロありの時間の12時間形式                 | 01 から 12                           |
+| H                | 先行ゼロありの時間の２４時間形式                 | 00 から 23                           |
+| i                | 先行ゼロ付き分                                   | 00 から 59                                |
+| s                | 先行ゼロ付き秒                                  | 00 から 59                           |
+| u                | マイクロ秒（PHP 5.2.2で追加） DateTimeがマイクロ秒で作成された場合、DateTime :: format（）はマイクロ秒をサポートするのに対して、date（ ）は常に000000を生成します。 | 654321                                  |
+|                  | **タイムゾーン**                                                 |                                         |
+| e                | タイムゾーン識別子（PHP 5.1.0で追加）                     | UTC, GMT, Atlantic/Azores               |
+| I                | （大文字のi）日付が夏時間であるかどうか| 夏時間の場合は1、それ以外の場合は0です。 |
+| O                | グリニッジ時間（GMT）との時差                  | +0200                                   |
+| P                | グリニッジ標準時（GMT）と時間と分の間の差（PHP 5.1.3で追加） | +02:00                                  |
+| T                | タイムゾーンの略語                                        | EST, MDT …                              |
+| Z                | 秒単位のタイムゾーンオフセット。 UTCより西のタイムゾーンのオフセットは常に負で、UTCより東のタ>イムゾーンのオフセットは常に正です。 | -43200 through 50400                    |
+|                  | **フル日付/時刻**                                           |                                         |
+| c                | ISO 8601 日付（PHP 5で追加）                               | 2004-02-12T15:19:21+00:00               |
+| r                | » RFC 2822 フォーマット日付                                    | Thu, 21 Dec 2000 16:01:07 +0200         |
+

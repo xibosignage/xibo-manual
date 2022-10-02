@@ -2,19 +2,18 @@
 
 # ガイド
 
-Xibo has a large back catalogue of guides, videos and FAQ's to assist you every step of the way, available online on our **Community** page, on our **blog** and **YouTube** channel:
+Xiboでは、ガイド、ビデオ、FAQを多数用意しており、**Community**ページ、**blog**、*YouTube**チャンネルでご覧いただけます。
 
 - [Community Guides](https://community.xibo.org.uk/c/guides)
-- [Blog - Feature Spotlights](https://blog.xibo.org.uk/tag/spotlight/)
 - [YouTube](https://www.youtube.com/channel/UCyKmNZsDK02jopQcGmE27LQ/featured)
 
-To get started with Xibo take a look at the following walkthroughs:
+Xiboを使い始めるには、以下のチュートリアルをご覧ください。
 
 [How to create a simple layout](https://community.xibo.org.uk/t/how-to-create-a-simple-layout/13108)
 
 [Understanding Media duration and how it affects playback](https://community.xibo.org.uk/t/understanding-media-duration-and-how-it-affects-playback/20011)
 
-The following guides are based on an earlier version of the CMS but are still helpful to understand setup requirements:
+以下のガイドは、CMSの以前のバージョンに基づいたものですが、セットアップの要件を理解する上で有用です。
 
 [How to set up a café menu sign](https://community.xibo.org.uk/t/getting-started-guide-cafe-menu/13293)
 
