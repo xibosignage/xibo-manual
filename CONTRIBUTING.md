@@ -1,3 +1,12 @@
+# 貢献
+
+私たちは、あなたと一緒に仕事をし、あなたのバグフィックスや誤字/脱字など、小さな変更について貢献を受け入れることができればと思います。
+問題の報告は：https://github.com/SigmeSignage/sigme-user-manual/issues
+
+または、公開しているリポジトリをフォークし、あなたが変更した内容の詳細をプルリクエストとして送信してください。
+
+Xiboもメインストリームへの貢献は以下を参照してください。
+
 # Contributing
 We'd love to work with you and accept your contributions. For small changes like bug fixes, typos, etc. Please Fork us and submit a pull request with the details of what you have changed.
 
