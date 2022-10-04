@@ -2,13 +2,9 @@
 
 # Spacer
 
-{version}
 **Available from v2.2.0**
-{/version}
 
 Include the Spacer Widget to your Layouts to create an 'empty' Region for a specified duration.
-
-{feat}Spacer Widget{/feat}
 
 ## Add Widget
 
@@ -27,9 +23,8 @@ Use to set a delay to the start of Regions on a Layout so that Regions start up 
 
 ## Actions 
 
-{version}
-**Available from: v3.0.0**
-{/version}
+
+**Available from v3.0.0**
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
 
