@@ -17,27 +17,35 @@ The Weather Module is fully configured for Xibo in the Cloud customers and is pr
 
 {/nonwhite}
 
-
-
 ## Installation
 
 Weather data is provided by [OpenWeather](https://openweathermap.org/) which is provided under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and [ODbL](https://opendatacommons.org/licenses/odbl/)
 
 To get an API key please visit [Open Weather Map](https://openweathermap.org/api) to create an account.
 
-(If you are going to exceed 1000 calls per day you will also need to enter your billing information).
+{tip}
+**Please note:** Since the release of Open Weather's One Call 3.0 new users must enter credit card details to use the free x number of calls Key or opt for a paid subscription!
+
+Open Weather Map allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
+
+**Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
+
+{/tip}
 
 The Weather Module is installed from the Modules page, under the Administration section of the menu. Click on the **Install Module** button and select the Module to install.
 
 After installation, select the Module from the grid and use the row menu to select **Edit**.
 
-Complete the form fields and include the **API key**. The CMS allows a Cache period to be specified which will create a delay between requests for each geographic location.
+- Complete the form fields and include the **API Key**:
 
-Open Weather Map allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
 
-{tip}
-**Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
-{/tip}
+
+
+![API Key](img/v3.1_media_weather_api_key.png)
+
+- Once you have entered your API Key use the drop down menu to select the **Open Weather Map Version**.
+- If you have subscribed to a **Paid Plan** ensure that you tick the box.
+- The CMS allows a Cache period to be specified which will create a delay between requests for each geographic location.
 
 
 ## Add Widget
