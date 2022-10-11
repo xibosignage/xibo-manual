@@ -23,7 +23,6 @@ Use to set a delay to the start of Regions on a Layout so that Regions start up 
 
 ## Actions 
 
-
 **Available from v3.0.0**
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
