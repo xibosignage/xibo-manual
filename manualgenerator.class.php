@@ -310,6 +310,12 @@ class ManualGenerator
             return '<blockquote class="noncloud">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_cms_orange.svg" />' : '') . Parsedown::instance()->text($match) . '</blockquote>';
         }, $string);
 
+        // Strip out other not supported tags.
+        $string = preg_replace('/({(feat)\b[^}]*}).*?({\/\2})/s', '', $string);
+        $string = preg_replace('/({(feat_cat)\b[^}]*}).*?({\/\2})/s', '', $string);
+        $string = preg_replace('/({(product)\b[^}]*}).*?({\/\2})/s', '', $string);
+        $string = preg_replace('/({(version)\b[^}]*}).*?({\/\2})/s', '', $string);
+
         return $string;
     }
 
