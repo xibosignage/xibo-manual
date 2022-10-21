@@ -12,7 +12,7 @@ NOTE: If you are using a CMS version earlier than 3.1, please use the links belo
 
 {/version}
 
-{feat}Audio WIdget|v3{/feat}
+{feat}Audio Widget|v3{/feat}
 
 Uploaded audio files are cached for off-line playback which can then be added to Layouts.
 
