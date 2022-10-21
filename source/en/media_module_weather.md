@@ -4,7 +4,7 @@
 
 Display daily weather forecasts on Layouts.
 
-{version
+{version}
 NOTE: If you are using a CMS earlier than v3.1, please click [here](media_module_weather_3.html)
 {/version}
 
