@@ -2,17 +2,19 @@
 
 # Agenda
 
-{tip}
-Please note: If you are using a CMS earlier than v3.1.0 please use the following link [Calendar](media_module_calendar.html)
-{/tip}
+Display an agenda pulled from an iCal feed on Layouts.
 
-The Agenda Widget is used to display an agenda based on an **iCal feed.** 
+{version}
+NOTE: If you are using a CMS earlier than v3.1, please use the following link: [Calendar](media_module_calendar.html)
+{/version}
+
+{feat}Agenda Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **Agenda** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Agenda Widget](img\v3.1_media_agenda_widget.png)
+Locate **Agenda** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-On adding, configuration options are shown in the properties panel:
+On adding, configuration options are shown in the right hand properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -123,12 +125,12 @@ See the [Commands Functionality](displays_command_functionality) page for more i
 
 ## Actions 
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Agenda Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 {tip}
 {nonwhite}
 
-Take a look at the [Agenda Module Guide](https://community.xibo.org.uk/t/agenda-module-guide/26993) to see an example of how you can utilise this Widget in your Layouts!
+Take a look at the [Agenda Module Guide](https://community.xibo.org.uk/t/agenda-module-guide/26993) to see an example of how you can utilise the **Agenda Widget** in your Layouts!
 
 {/nonwhite}
 {/tip}

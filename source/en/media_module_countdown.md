@@ -2,13 +2,13 @@
 
 # Countdown
 
-**Available from v2.3.0**
+Display a countdown for a selected duration or until a specified date on Layouts.
 
-The Countdown Widget can be used to show a countdown for a selected **duration** or until a **specified date**.
+{feat}Countdown Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **Countdown** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Countdown Widget](img\v2.3_media_countdown_widget.png)
+Locate **Countdown** from the [Widget](layouts_widgets.html)  toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
 On adding, configuration options are shown in the properties panel:
 
@@ -31,9 +31,9 @@ Use the **Warning Date** to set at which point the countdown will change to a 'w
 The "warning" and "finished" status can be styled using the CSS style sheet on overriding a Template. 
 {/tip}
 
-{tip}
-From v3.1.0 set **Horizontal** and **Vertical** alignments for this Widget!
-{/tip}
+{version}
+From v3.1.0 users can set **Horizontal** and **Vertical** alignments for this Widget!
+{/version}
 
 ### Templates
 
@@ -68,7 +68,7 @@ This is the CSS to apply to the template structure above.
 
 ## Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Countdown Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Additional Information
 

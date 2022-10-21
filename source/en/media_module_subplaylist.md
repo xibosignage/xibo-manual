@@ -2,9 +2,9 @@
 
 # Sub-Playlists
 
-**Available from v2.0**
+Display content added to Playlists on Layouts.
 
-The Sub-Playlists Widget allows for pre-defined Playlists to be added and combined to play on Layouts.
+{feat}Sub-Playlist Widget|v3{/feat}
 
 {tip}
 Ensure that you have created a [Playlist](media_playlists.html) prior to adding this Widget!
@@ -12,7 +12,7 @@ Ensure that you have created a [Playlist](media_playlists.html) prior to adding 
 
 ## Add Widget
 
-Click on **Sub-Playlists** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Sub-Playlist Widget](img\v2_media_subplaylist_widget.png)
+Locate **Sub-Playlist** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region. 
 
 On adding, configuration options are shown in the properties panel:
 
@@ -107,4 +107,4 @@ From v3.1.0 an option is available to **Enable Cycle based playback**:
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Sub-Playlist Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

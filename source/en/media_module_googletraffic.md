@@ -2,11 +2,15 @@
 
 # Google Traffic
 
-**This Module requires a Google API key which has associated usage charges. Please make sure you are aware of the usage charges before entering your key in this Module's configuration**.
+Display traffic data configured with a Google Maps API key on Layouts.
 
-The Google Traffic Widget allows you to display traffic data to a Layout.
+{version}
+IMPORTANT: This Module requires a Google API key which has associated usage charges. Please make sure you are aware of the usage charges before entering your key in this Module's configuration.
+{/version}
 
-### Installation
+{feat}Google Traffic Maps Widget|v3{/feat}
+
+## Installation
 
 The Google Traffic Module must be configured with a Google Maps API key before use. The "[get a key](https://developers.google.com/maps/documentation/javascript/get-api-key)" documentation describes the process and differences between the keys.
 
@@ -19,10 +23,8 @@ Complete the form fields and include the **API key**. This form also contains se
 **Please note:** The Google API is charged per map load and therefore how long the Widget remains on screen has a direct relation on the charges you will accrue.
 
 {tip}
-Until an API key is entered the Widget will not render in the Layout Designer or the Player, although you can still add the Widget to your layouts.
-{/tip}
+Until an API key is entered the Widget will not render in the Layout Designer or the Player, although you can still add the Widget to your Layouts.
 
-{tip}
 This Module requires a **valid internet connection** on the Player in order to function.
 {/tip}
 
@@ -32,11 +34,11 @@ The Google Maps API terms of use must be read and understood before using this M
 
 The Google Maps API terms of use must be read and understood before using this Module. At the time of writing these terms can be found [here](https://developers.google.com/maps/terms).
 
-Click on **Google Traffic** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop  ![Google Traffic Widget](img\v2_media_googletraffic_widget.png)
+Locate **Google Traffic** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region. 
 
-{tip}
-If you are using a 1.8.x CMS, select Google Traffic from the Widget Toolbox to add. 
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Google Traffic from the Widget Toolbox to add. 
+{/version}
 
 On adding, configuration options are shown in the Edit Google Traffic form:
 
@@ -57,4 +59,4 @@ On adding, configuration options are shown in the Edit Google Traffic form:
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Google Traffic Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

@@ -2,27 +2,27 @@
 
 # Twitter
 
-The Twitter Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Add the Twitter Widget to Layouts to display Twitter feeds.
+Display Twitter feeds on Layouts. 
 
-{tip}
-Granted access is to **read data** only!
-{/tip}
+{feat}Twitter Widget|v3{feat}
+
+The Twitter Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Granted access is to **read data** only!
 
 {nonwhite}
 {cloud}
 
-The main set-up is provided as part of the service for **Xibo Cloud Hosting** customers. Please follow the simplified process below to connect to the Twitter API.
+The main set-up is provided as part of the service for **Xibo Cloud** hosted customers. Please follow the simplified process below to connect to the Twitter API.
 
 - Select **Modules** from the Administration section of the menu.
 - Click on the row menu for the Twitter Provider (Twitter Search) Module and select **Connect to Twitter**.
 - A form will open which has a **Login with Twitter** button which allows authorisation for the CMS to connect via a Twitter account.
 - Follow the on-screen instructions to authorise.
 
-Skip the installation section below and go straight to the **Add Widget** section.
+Skip the installation section below and continue from the **Add Widget** section.
 
 {/cloud}
 
-**Non-Xibo Cloud Hosting customers please follow the full installation steps as detailed below.**
+**Non-Xibo Cloud Hosted customers please follow the full installation steps as detailed below.**
 
 {/nonwhite}
 
@@ -53,11 +53,11 @@ Setting a low value can cause your access to the Twitter API to be disabled for 
 
 ## Add Widget
 
-Click on **Twitter** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![Twitter Widget](img\v2_media_twitter_widget.png)
+Locate **Twitter** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Twitter from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Twitter from the Widget Toolbox to add!
+{/version}
 
 On adding, configuration options are shown in the properties panel:
 
@@ -73,9 +73,7 @@ On adding, configuration options are shown in the properties panel:
 
 {tip}
 Check to make sure your search term is valid before entering here by using the twitter.com search box!
-{/tip}
 
-{tip}
 To return Tweets from a specific account rather than all Tweets that contain the accounts @ handle, use `from:` before the name of the account in the **Search Term** field.
 {/tip}
 
@@ -98,9 +96,9 @@ Most URL's do not compliment Digital Signage!
 - Apply a **Date Format** to be used for returned results (see Additional Information at the bottom of page).
 - Select an optional **Effect** and **Speed** to be used to transition between tweets.
 
-{tip}
-From v3.1.0 set **Horizontal** and **Vertical** alignment options for this Widget!
-{/tip}
+{version}
+NOTE: From v3.1.0 users can set **Horizontal** and **Vertical** alignment options for this Widget!
+{/version}
 
 ### Templates
 
@@ -110,12 +108,9 @@ Select from the available Templates:
 
 ![Preset Templates](img\v3.1_media_twitter_preset_templates.png)
 
-- {tip}
-
-  Click to Override the selected template if required. 
-
-  Please see the section on Editing Preset Templates below for further information.
-  {/tip}
+{tip}
+Click to Override the selected template if required. Please see the section on Editing Preset Templates below for further information.
+{/tip}
 
 - **No Tweets Message** provide a message to display when there are no Tweets to return based on the search query.
 
@@ -142,12 +137,12 @@ Once override has been selected, click back on the **Templates tab** to select t
 
 - Use the Snippets menu to include merge text fields.
 
-  {tip}
-  If you are using 1.8 the following substitutions are available for use:
+  {version}
+  NOTE: If you are using 1.8 the following substitutions are available for use:
   [Tweet][User]
   [ScreenName][Date]
   [ProfileImage][Photo]
-  {/tip}
+  {/version}
 
 **Optional Stylesheet** - This is the CSS to apply to the template structure above.
 
@@ -163,7 +158,7 @@ Include a suitable time for the Update Interval in minutes, keeping it as high a
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Twitter Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ### Date Format - PHP
 

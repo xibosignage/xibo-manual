@@ -1,14 +1,12 @@
 # HTML Package
 
-If you are using a 3.x CMS, please use the following link: [HTML Package](media_module_htmlpackage.html)
-
-**Please note:** This Module is available from v2
-
-{tip}
-This module is currently not supported for the Linux Player.
-{/tip}
-
 The HTML Package Module allows for the upload of a complete HTML Package which can be distributed to Players.
+
+{version}
+NOTE: If you are using a v3.0 CMS, please use the following link: [HTML Package](media_module_htmlpackage.html)
+{/version}
+
+{feat}HTML Package Widget|v2{/feat}
 
 {tip}
 If the file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

@@ -2,23 +2,31 @@
 
 # Text
 
-The Text Widget allows for the addition of text onto a Layout.
+Add text to display on Layouts.
+
+{feat}Text Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **Text** from the  [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Text Widget](img\v2_media_text_widget.png)
+Locate **Text** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Text from the Widget Toolbox to add. 
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Text from the Widget Toolbox to add. 
+{/version}
 
 ### Text Editor
 
 ![Edit Text](img\v3_media_text_edit.png)
 
-Click the edit icon in the Preview window to open the inline editor to enter text and apply formatting.
+
+
+Click the **edit icon** in the **Preview** window to open the inline editor to enter text and apply formatting.
+
+
 
 ![Enter Text](img\v3_media_text_inline_editor.png)
+
+
 
 The text editor will open with the same background as selected for the Layout and will use a complimentary text colour for the chosen background colour.
 
@@ -26,9 +34,9 @@ The thin red border in the text editing window represents the **Region** size. E
 
 Optionally include date/time merge tags, available from the **Snippets** menu. 
 
-{tip}
-From v2.1.0, [Date] tags can include an optional [Date|format] so that [Date] can be used multiple times in a Template each with different formats!
-{/tip}
+{version}
+NOTE: From v2.1.0, [Date] tags can include an optional [Date|format] so that [Date] can be used multiple times in a Template each with different formats!
+{/version}
 
 Configuration options are shown in the Edit Text form:
 
@@ -54,11 +62,11 @@ Select from the available Templates:
 **Additional Fonts** can be added to this editor by uploading files to the **Library**. Please be aware that fonts have 'preferences' built into them known as OS/2 tags. [[PRODUCTNAME]] checks these OS/2 preferences, and can use fonts with OS/2 tags 0 or 8. Fonts with other tags may not display correctly or you may receive an error on upload.
 {/tip}
 
-### Actions 
+## Actions 
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Text Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Date Format - PHP
 
