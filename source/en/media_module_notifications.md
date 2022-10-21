@@ -2,15 +2,17 @@
 
 # Notifications
 
-Add the Notification Widget to **display messages** created in the [Notification Drawer](users_notifications.html) of the CMS. 
+Display messages created in the [Notification Drawer](users_notifications.html) of the CMS on Layouts.
+
+{feat}Notification Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **Notification** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop  ![Notifications Widget](img\v2_media_notifications_widget.png)
+Locate **Notification** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Notification from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a v1.8.x CMS, select Notification from the Widget Toolbox to add!
+{/version}
 
 On adding, configuration options are shown in the properties panel:
 
@@ -52,4 +54,4 @@ Include CSS to apply to the template structure.
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Notifcation Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

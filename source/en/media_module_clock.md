@@ -2,15 +2,17 @@
 
 # Clock
 
-The Clock Widget can be used to show an **Analogue**, **Flip** or **Digital Clock**
+Display an analogue, flip or digital clock in Layouts.
+
+{feat}Clock Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **Clock** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Clock Widget](img\v2_media_clock_widget.png)
+Locate **Clock** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Chart from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Clock from the Widget Toolbox to add!
+{/version}
 
 On adding, configuration options are shown in the properties panel:
 
@@ -36,9 +38,9 @@ Use the editor to select font, size, colour and use **Snippets** to include avai
 See the section at the bottom of the page for further information on date/time formats!
 {/tip}
 
-{tip}
-If you are using 1.8.x CMS, use the text editor at the bottom of the form to format! 
-{/tip}
+{version}
+NOTE: If you are using 1.8.x CMS, use the text editor at the bottom of the form to format! 
+{/version}
 
 - **Flip Clock** is a pre-formatted clock that animates a "flip" for each hour, minute and seconds (optional) elapsed.
 
@@ -50,7 +52,7 @@ The **Flip Clock** has Hourly, Minute and Daily **Counter** options which can ru
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Clock Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Available Formatting
 

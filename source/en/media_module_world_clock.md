@@ -4,19 +4,21 @@
 
 # World Clock 
 
-The World Clock Widget can be used to show one or multiple clocks displaying time zones on Layouts.
+Display multiple clocks and timezones on Layouts.
+
+{feat}World Clock Widget|v3{feat}
 
 {nonwhite}
-{tip}
-If you are using a v3.0.x CMS, the World Clock Widget is only available on request by contacting our Help deskt via [My Account](https://xibosignage.com/my-account/tickets?open=true) to enable.
-{/tip}
+{version}
+If you are using a v3.0.x CMS, the World Clock Widget is only available on request by contacting our Help desk via [My Account](https://xibosignage.com/my-account/tickets?open=true)
+{/version}
 {/nonwhite}
 
 ## Add Widget
 
-Click on **World Clock** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![World Clock Widget](img/v3_media_modules_world_clock.png)
+Locate **World Clock** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-On adding, configuration options are shown in the Edit World Clock form:
+On adding, configuration options are shown in the properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -37,10 +39,10 @@ On adding, configuration options are shown in the Edit World Clock form:
 
 - With multiple timezone clocks selected, set the number of **Clock Columns** and **Clock Rows** to display.
 
-  {tip}
-  From v3.1.0 set **Horizontal** and **Vertical** alignment options for this Widget!
+  {version}
+  NOTE: From v3.1.0 users can set **Horizontal** and **Vertical** alignment options for this Widget!
 
-  {/tip}
+  {/version}
 
 - **Save**
 
@@ -102,7 +104,7 @@ With the Analogue Clock Type selected, an Additional Tab will be available to al
 
 ## Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this World Clock Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Date Format - PHP
 

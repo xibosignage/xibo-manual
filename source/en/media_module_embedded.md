@@ -2,7 +2,9 @@
 
 # Embedded Content
 
-The Embedded Content Widget allows HTML and JavaScript to be embedded into a **Region** on a Layout. This allows for custom enhancements to be made to [[PRODUCTNAME]] without modifying the core application. 
+Embed HTML and JavaScript to be displayed on Layouts. This allows for custom enhancements to be made to [[PRODUCTNAME]] without modifying the core application. 
+
+{feat}Embedded HTML Widget|v3{/feat}
 
 {tip}
 Examples of where this might be useful are displaying a Clock or Weather region.
@@ -10,11 +12,11 @@ Examples of where this might be useful are displaying a Clock or Weather region.
 
 ## Add Widget
 
-Click on **Embedded** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Embedded Widget](img\v2_media_embedded_widget.png)
+Locate **Embedded** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Embedded from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Embedded from the Widget Toolbox to add!
+{/version}
 
 On adding, configuration options are shown in the properties panel:
 
@@ -25,19 +27,16 @@ On adding, configuration options are shown in the properties panel:
 
 - Select if the Widget should be shown with a **transparent** background. 
 
-  {tip}
-  Transparent background is available on all Players and Windows from v2 R253!
-  {/tip}
-
-  {tip}
+  {version}
+  NOTE: Transparent background is available on all Players and Windows from v2 R253!
   Ensure that the embedded content also has a transparent background!
-  {/tip}
-
+{/version}
+  
 - Select to **Scale** embedded content along with the layout.
 - From v3.0.0 users can select to **Preload** the Widget off screen. 
-  {tip}
-  Preload is currently available from Android v2 R207 only!
-  {/tip}
+  {version}
+  NOTE: Preload is currently available from Android v2 R207 only!
+  {/version}
 
 ### Templates
 
@@ -47,9 +46,9 @@ On adding, configuration options are shown in the properties panel:
 
 Complete HTML in the box provided or toggle **On** the Visual editor to use the inline editor to enter text and format. Click in the preview window to open the text editor.
 
-{tip}
-Please note: The Visual Editor is not available in a 1.8.x CMS.
-{/tip}
+{version}
+NOTE: The Visual Editor is not available in a 1.8.x CMS.
+{/version}
 
 ### Custom Style Sheets
 
@@ -82,4 +81,4 @@ Show embedded HTML with Active-X content on a Windows Player, with the security 
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Embedded Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

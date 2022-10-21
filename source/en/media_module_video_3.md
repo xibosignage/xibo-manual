@@ -1,15 +1,17 @@
 # Video 
 
-{tip}
-
-**Please note:**
-
-- If you are using a v3.1.x CMS, please click [here](media_modules_video.html)
-- If you are using a CMS earlier than v3.0.0 please click [here](media_modules_video_2.html)
-
-{/tip}
-
 The Video Module allows for video files to be played when assigned to a Timeline. Video files are uploaded to the [Library](media_library) which are then cached for off-line playback.
+
+{version}
+
+NOTE:
+
+- If you are using a v3.1 or later CMS, please click [here](media_module_video.html)
+- If you are using a CMS earlier than v3.0.0 please click [here](media_module_video_2.html)
+
+{/version}
+
+{feat}Video WIdget|v3{feat}
 
 ## Add Widget
 
@@ -34,8 +36,6 @@ We recommend an H264 MP4 file format!
 {tip}
 Files can also be added via drag and drop!
 {/tip}
-
-
 
 - Give your file a **Name** for easier identification in the CMS and an optional **Tag**.
 
@@ -68,15 +68,9 @@ Available Folder options are based on enabled [Feature and Sharing](users_featur
 {/tip}
 
 - Click in the folder you wish to upload the file to and click **Done**. 
-- The **Current Folder** will show the selected file path:
+- The **Current Folder** will show the selected file path.
 
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
-
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
+Further information for Administrators regarding Folder access and set-up can be found [here](https://xibosignage.com/manual/en/tour_folders).
 
 There is an option to set expiry dates and times for files uploaded to this particular Widget.
 

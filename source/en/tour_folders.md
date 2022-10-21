@@ -96,18 +96,20 @@ Control access for Users/User Groups using [Features and Share](users_features_a
 
 ## Home Folders
 
-Users can always select their home folder and the root folder from the folder tree. When a folder has been selected, the grid will update to show only objects inside the folder.
+From v3.2.0 Users/User Groups can have Home Folders assigned.
 
-For users to see other users' content, it must be shared with them (called Direct Sharing). Users can also see other users’ content if the folder has been shared with them (Folder Sharing).
+Users can always select their Home Folder and the Root Folder from the Folder Tree. When a Folder has been selected, the grid will update to show only objects inside the Folder.
 
-Admins are encouraged to assign User Groups to their users, and then use Folder Sharing to give these users appropriate access to each other's content (View/Edit/Delete options can be configured).
+For Users to see other Users content, it must be shared with them (called Direct Sharing). Users can also see other Users content if the Folder has been shared with them (Folder Sharing).
+
+Admins are encouraged to assign User Groups to their Users, and then use Folder Sharing to give these Users appropriate access to each other's content (View/Edit/Delete options can be configured).
 
 {tip}
-Users can view/edit and delete objects they own by selecting “All folders”, even if they are in a folder they cannot view.
-Conversely, users cannot view/edit or delete other users objects unless shared with them by Direct/Folder sharing.
+Users can view/edit and delete objects they own by selecting **All Folders**, even if they are in a Folder they cannot view.
+Conversely, users cannot view/edit or delete other Users objects unless shared with them by Direct/Folder sharing.
 {/tip}
 
-From v3.2.0 an administrator can prevent Users from saving into the Root Folder which forces them to select a folder before saving.
+From v3.2.0 an Administrator can prevent Users from saving into the Root Folder which forces them to select a Folder before saving.
 First disable the use of the Root Folder as a default:
 
 - Navigate to **Settings** under the **Administration** section of the main CMS menu.
@@ -118,13 +120,15 @@ First disable the use of the Root Folder as a default:
 - Untick **Allow saving in the root folder** option.
 - Click the **Save** button at the bottom.
 
-A user's home folder is shown to them in the folder tree with a house icon. If a folder is not selected, or the folders feature has been disabled, new content will automatically save into the home folder.
-
-Admins / group admins can assign a Home Folder for an existing User:
+A Users Home Folder is shown to them in the Folder Tree with a house icon. If a Folder is not selected, or the Folders Feature has been disabled, new content will automatically save into the Home Folder.
 
 {tip}
 If you require Group Admins to set a Home Folder for Users, ensure that they have the appropriate [Feature](/manual/en/users_features_and_sharing) enabled!
 {/tip}
+
+#### Admins / Group Admins
+
+Assign a Home Folder for an existing User:
 
 - Go to **Users** under the **Administration** section of the main CMS menu. 
 - Use the row menu for the User and select **Edit**.
@@ -132,7 +136,8 @@ If you require Group Admins to set a Home Folder for Users, ensure that they hav
 
 ![home folder.png](img/tour_folders_default_folder.png)
 
-Select a folder to use, or right click the Root Folder to create a new Folder.
+- Select a Folder to use, or right click the Root Folder to create a new Folder.
+
 
 {tip}
 If a new Folder is created, ensure that the correct View/Edit/Delete **Share** options are applied to the Folder from the Folders page found under the Administration section of the main CMS menu or from any of the object grids (Layouts, Library Media, Playlists, Displays etc) so that any objects placed into the Folder inherit these set options. 
@@ -141,7 +146,7 @@ A Home Folder can be selected when [Onboarding new Users](/manual/en/users_admin
 {/tip}
 
 {tip}
-Users with a Home Folder assigned will have full access to their own Media, Layouts, Schedules etc, with access to all other folder contents as per the Share options set for the Home Folder.
+Users with a Home Folder assigned will have full access to their own Media, Layouts, Schedules etc, with access to all other Folder contents as per the Share options set for the Home Folder.
 
 Users can have a Home Folder assigned and Folders disabled as a [Feature](/manual/en/users_features_and_sharing.html), Users would automatically save to their default Home Folder location without the need to view or interact with Folders in the CMS.
 {/tip}

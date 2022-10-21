@@ -2,21 +2,19 @@
 
 # Shell Command
 
-{tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Shell Command](media_module_shellcommand_2.html)
-{/tip}
+The Shell Command Module is used to instruct the Display to execute a command outside of the [[PRODUCTNAME]] environment, using the operating system shell.  
 
-The Shell Command Module is used to instruct the Display to execute a **Command** outside of the [[PRODUCTNAME]] environment, using the operating system shell.  
+{version}
+NOTE: If you are using a CMS earlier than v3.0.0 please use the following link: [Shell Command](media_module_shellcommand_2.html)
+{/version}
 
-{tip}
-This Module is not supported for webOS, Tizen and Linux Players.
-{/tip}
+{feat}Shell Command Widget|v3{/version}
 
 {cloud}
 
 {nonwhite}
 
-This Module is disabled by default for **Xibo Cloud Hosting** customers. If you would like to utilise the Shell Command functionality to execute actions on loading a Layout, then please contact our help desk via [My Account](https://xibosignage.com/my-account/tickets?open=true) to request to have this Module enabled.
+This Module is disabled by default for **Xibo Cloud Hosted** customers. If you would like to utilise the Shell Command functionality to execute actions on loading a Layout, then please contact our help desk via [My Account](https://xibosignage.com/my-account/tickets?open=true) to request to have this Module enabled.
 
 {/nonwhite}
 
@@ -31,7 +29,7 @@ Click here for further information regarding [Command Functionality](displays_co
 
 ## Add Widget
 
-Click on **Shell Command** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![Shell Command Widget](img/v2_media_shellcommand_widget.png)
+Locate **Shell Command** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
 On adding, configuration options are shown in the properties panel:
 
@@ -72,10 +70,10 @@ Add the Shell Command Widget to Layouts to execute external commands, such as �
 For commands that are executed on a specific date/time, such as  ‘reboots’, 'turn on/off' on opening/closing times for example, then please see [Events](scheduling_events.html) in the Scheduling section and [Send Command](displays.html) in the Displays section of this User Manual.
 {/tip}
 
-{tip}
-Android/Linux Players require **root access** to use Shell Commands.
-{/tip}
+{version}
+NOTE: Android/Linux Players require **root access** to use Shell Commands.
+{/version}
 
 ## Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Shell Command Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

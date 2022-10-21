@@ -1,25 +1,28 @@
 <!--toc=widgets-->
 # DataSet Ticker
 
-The DataSet Ticker Widget is used with DataSets to display information as a Ticker. 
+Display information held in a DataSet as a ticker on Layouts.
 
-DataSets need to be created and defined prior to adding the DataSet Ticker Widget to Layouts. Please see the  [DataSet](media_datasets.html)  page for further information.
+{feat}DataSet Ticker Widget|v3{/feat}
+
+DataSets need to be created and defined prior to adding the DataSet Ticker Widget to Layouts. Please see the [DataSet](media_datasets.html) page for further information.
 
 ## Add Widget
 
-Click DataSet Ticker from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop![DataSet Ticker Widget](img\v2_media_datasetticker_widget.png)
+Locate **DatSet Ticker** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using 1.8.x CMS, DataSets can be displayed using a Ticker Widget. Please use the following link:[Ticker 1.8](media_module_ticker_1.8.html)
-{/tip}
+{version}
+NOTE: If you are using 1.8.x CMS, DataSets can be displayed using a **Ticker Widget**. Please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
+{/version}
 
-On adding, select the DataSet to use from the drop-down menu.
+- On adding, select the **DataSet** to use from the drop-down menu.
 
-{tip}
-From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
+
+{version}
+NOTE: From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
 
 If you are using a version earlier than 3.1.0 you cannont edit to change to an alternative set of data. A new Widget would need to be added and configured!
-{/tip}
+{/version}
 
 Once Saved, further options will be made available:
 
@@ -38,10 +41,9 @@ This should be used with caution as it can create long-running media items. It i
 - Select if returned items should be shown side by side and configure **Upper** and **Lower** row limits.
 - Set the number of items you wish to display.
 
-
-{tip}
-From v2.3.8 use the **Randomise** option to randomly shuffle items to de displayed in a random sequence.
-{/tip}
+{version}
+NOTE: From v2.3.8 use the **Randomise** option to randomly shuffle items to de displayed in a random sequence.
+{/version}
 
 ### Appearance
 
@@ -100,15 +102,15 @@ DataSet results can be filtered by any column:
 
 Players can **cache** the content of this media for off-line playback and to prevent repeated downloads. Keep this number as high as possible.
 
-{tip}
-From v3.0.0 set a 'freshness check' to determine when to switch to the **No Data Template** when a Player is offline!
-{/tip}
+{version}
+NOTE: From v3.0.0 set a 'freshness check' to determine when to switch to the **No Data Template** when a Player is offline!
+{/version}
 
 ## Actions 
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this DataSet Ticker Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 
 

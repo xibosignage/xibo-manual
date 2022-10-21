@@ -2,7 +2,7 @@
 
 # Chart
 
-The Chart Widget is used with DataSets to display information as a type of Chart.
+Display DataSet information as one of the chart types below:
 
 - Line
 - Bar
@@ -11,23 +11,25 @@ The Chart Widget is used with DataSets to display information as a type of Chart
 - Horizontal Bar
 - Radar
 
+{feat}Chart Widget|v3{/feat}
+
 DataSets need to be created and defined prior to adding the Chart Widget to Layouts. Please see the [DataSet](media_datasets.html) page for further information.
 
 ## Add Widget
 
-Click on **Chart** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop   ![Chart Widget](img\v2_media_chart_widget.png)
+Locate **Chart** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Chart from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Chart from the Widget Toolbox to add!
+{/version}
 
 - On adding, select the DataSet to use from the drop-down menu.
 
-{tip}
-From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
+{version}
+NOTE: From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
 
 If you are using a version earlier than 3.1.0 you cannont edit to change to an alternative set of data. A new Widget would need to be added and configured!
-{/tip}
+{/version}
 
 Once Saved, further options will be made available:
 
@@ -107,4 +109,4 @@ Include a suitable time for the **Update Interval** in minutes, keeping it as hi
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Chart Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

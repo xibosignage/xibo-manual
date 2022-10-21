@@ -16,7 +16,7 @@ Whilst we work on this to make improvements please be aware of the following lim
 
 {nonwhite}
 {cloud}
-This feature preview is not available for Xibo in the Cloud Customers.
+This feature preview is not available for Xibo Cloud hosted Customers.
 {/cloud}
 {/nonwhite}
 

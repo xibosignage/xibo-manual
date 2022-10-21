@@ -1,19 +1,21 @@
-## Audio 
+# Audio 
 
-{tip}
+Add audio to Layouts.
 
-**Please note:**
+{version}
 
-- If you are using a v3.1.x CMS, please click [here](media_modules_audio.html)
-- If you are using a CMS earlier than v3.0.0 please click [here](media_modules_audio_2.html)
+NOTE:
 
-{/tip}
+- If you are using a v3.1 or later CMS, please click [here](media_module_audio.html)
+- If you are using a CMS earlier than v3.0.0 please click [here](media_module_audio_2.html)
 
-**Please note:** This module is currently not supported for the Linux Player.
+{/version}
 
-The Audio Module allows for audio to be played when assigned to a Timeline. Audio files are uploaded to the [Library](https://xibo.org.uk/manual/en/media_library.html) which are then cached for off-line playback.
+{feat}Audio Widget|v3{/feat}
 
-### Add Widget
+Audio files are uploaded to the [Library](https://xibo.org.uk/manual/en/media_library.html) which are then cached for off-line playback.
+
+## Add Widget
 
 Click on **Audio** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop.![Audio Widget](img/v2_media_audio_widget.png)
 
@@ -58,13 +60,8 @@ Available Folder options are based on enabled [Feature and Sharing](users_featur
 - Click in the Folder you wish to upload the file to and click **Done**. 
 - The **Current Folder** will now show the selected file path.
 
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
 
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
+Further information regarding Folder access and set-up can be found [here](https://xibosignage.com/manual/en/tour_folders)
 
 There is an option to set expiry dates and times for files uploaded to this particular Widget.
 
@@ -98,7 +95,7 @@ Change the Folder location using the **Select Folder** button as before and then
 View or make changes to Expiry Dates by clicking on the icon on the Widget from the Timeline!
 {/tip}
 
-### Configuration Options
+## Configuration Options
 
 Click on the added **Audio Widget** from the **Timeline** to open configuration options in the **Edit Audio** form:
 
@@ -109,13 +106,11 @@ Click on the added **Audio Widget** from the **Timeline** to open configuration 
 
 {tip}
 Set a lower duration than shown to cut the audio short or select a higher duration and use the Loop function!
-{/tip}
 
-{tip}
 The Audio Widget is fully compatible with [Overlay Layouts](layouts_overlay.html) and can therefore be used effectively to draw attention and compliment content.
 {/tip}
 
-### Actions
+## Actions
 
 Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
