@@ -5,7 +5,7 @@
 Display an agenda pulled from an iCal feed on Layouts.
 
 {version}
-NOTE: If you are using a CMS earlier than v3.1, please use the following link: [Calendar](media_module_calendar.html)
+**NOTE:** If you are using a CMS earlier than v3.1, please use the following link: [Calendar](media_module_calendar.html)
 {/version}
 
 {feat}Agenda Widget|v3{/feat}
