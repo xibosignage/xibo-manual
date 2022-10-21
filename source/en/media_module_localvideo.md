@@ -10,13 +10,15 @@ The Local Video Widget is used for video that exists **only** on the **Display**
 
 \- Streamed Videos
 
+{feat}Local Video Widget|v3{/feat}
+
 ## Add Widget
 
-Click on **Local Video** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Local Video Widget](img\v2_media_localvideo_widget.png)
+Locate **Local Video** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Local Video from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Local Video from the Widget Toolbox to add!
+{/version}
 
 On adding, configuration options are shown in the properties panel:
 
@@ -29,9 +31,9 @@ On adding, configuration options are shown in the properties panel:
 - Use the checkbox to mute/unmute the video.
 - Tick to expand the content over the top of existing to show full screen. (not available in versions earlier than 2.0)
 
-{tip}
-Video scaling and RTSP streams are only supported on the Android, webOS and Linux Players. Use the [HLS](media_module_hls.html) Widget to show compatible video streams on Window and Tizen Players.
-{/tip}
+{version}
+NOTE: Video scaling and RTSP streams are only supported on the Android, webOS and Linux Players. Use the [HLS](media_module_hls.html) Widget to show compatible video streams on Window and Tizen Players.
+{/version}
 
 {tip}
 The number of RTSP streams you can show on one Layout is dependent on the device being used.
@@ -45,5 +47,5 @@ The number of RTSP streams you can show on one Layout is dependent on the device
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Local Video Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 

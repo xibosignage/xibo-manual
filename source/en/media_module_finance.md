@@ -1,4 +1,5 @@
 <!--toc=widgets-->
+
 # Finance
 The Finance Widget uses Yahoo's public YQL API for their data source. Unfortunately Yahoo have
 decided to retire this API immediately without explanation.

@@ -2,28 +2,29 @@
 
 # DataSet View
 
-The DataSet View Widget is used with DataSets to display information in a tabular format.
+Display information held in a DataSet in a tabular format on Layouts.
 
-When the underlying **DataSet Data** is changed, the DataSet View Widget included in your Layout, will  update with the new data.
+{feat}DataSet View Widget|v3{/feat}
 
-DataSets need to be created and defined prior to adding the DataSet View Widget to Layouts. Please see the  [DataSet](media_datasets.html)  page for further information.
+When the underlying **DataSet Data** is changed, the DataSet View Widget included in the Layout, will update with the new data.
+
+DataSets need to be created and defined prior to adding the DataSet View Widget to Layouts. Please see the [DataSet](media_datasets.html)  page for further information.
 
 ## Add Widget
 
-Click DataSet View from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop  ![DataSet View Widget](img\v2_media_datasetviews_widget.png)
+Locate **DataSet View** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select DataSet View from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select DataSet View from the Widget Toolbox to add!
+{/version}
 
 - On adding, select the DataSet to use from the drop-down menu.
 
-
-{tip}
-From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
+{version}
+NOTE: From v3.1.0 you can change to an alternative DataSet by clicking the Back button. Options will  need to be reconfigured to suit the new DataSet!
 
 If you are using a version earlier than 3.1.0 you cannont edit to change to an alternative set of data. A new Widget would need to be added and configured!
-{/tip}
+{/version}
 
 Once Saved, further options will be made available:
 
@@ -46,9 +47,9 @@ Once Saved, further options will be made available:
 
 ![DataSet View Templates](img/v3.1_media_datasetview_templates.png)
 
-{tip}
-Additional Templates added from v3.0.0!
-{/tip}
+{version}
+NOTE: Additional Templates are available from v3.0.0!
+{/version}
 
 - The first template option is customisable and allows users to select colouring for background, border, font, select a custom font and font size to use.
 - The other templates allow for a user to select a custom font and size.
@@ -92,15 +93,15 @@ DataSet results can be filtered by any column:
 
 Players can **cache** the content of this media for off-line playback and to prevent repeated downloads. Keep this number as high as possible.
 
-{tip}
-From v3.0.0 set a 'freshness check' to determine when to switch to the **No Data Template** when a Player is offline!
-{/tip}
+{version}
+NOTE: From v3.0.0 users can set a 'freshness check' to determine when to switch to the **No Data Template** when a Player is offline.
+{/version}
 
 ## Actions 
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this DataSet View Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Example Style Sheet
 

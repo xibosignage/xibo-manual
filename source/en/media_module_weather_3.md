@@ -1,19 +1,21 @@
 # Weather
 
-{tip}
-**Please note:** If you are using a CMS v3.1.x, please click [here](media_module_weather.html)
-{/tip}
+{version}
+NOTE: If you are using a CMS v3.1 or later, please click [here](media_module_weather.html)
+{/version}
+
+{feat}Weather Widget|v3{/feat}
 
 The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
 
 {nonwhite}
 {cloud}
 
-The Weather Module is configured for Xibo Cloud Hosting customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
+The Weather Module is configured for **Xibo Cloud** hosted customers and is provided as part of the service. Please skip the installation steps detailed below and proceed to the Add Widget section.
 
 {/cloud}
 
-**Non-Xibo Cloud Hosting customers please follow the installation steps as detailed below.**
+**Non-Xibo Cloud Hosted customers please follow the installation steps as detailed below.**
 
 {/nonwhite}
 
@@ -42,10 +44,13 @@ After installation, select the Module from the grid and use the row menu to sele
 
 Complete the form fields and include the **API key**. The CMS allows a Cache period to be specified which will create a delay between requests for each geographic location.
 
+{tip}
+**Please note:** Since the release of Open Weather's One Call 3.0, new users must enter credit card details to use the free x number of calls Key or opt for a paid subscription!
+
 Open Weather Map allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
 
-{tip}
 **Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
+
 {/tip}
 
 ## Add Widget
@@ -54,10 +59,10 @@ The Open Weather Map Terms of Service https://openweathermap.org/terms should be
 
 Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img\v2_media_weather_widget.png)
 
-{tip}
-If you are using a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
-Please note: The Visual editor is not available in a 1.8.x CMS.
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
+The Visual editor is not available in a 1.8.x CMS.
+{/version}
 
 On adding, configuration options are shown in the Edit Weather form:
 
@@ -147,7 +152,7 @@ brackets - for example `[nearestStormDistance]`.
 
 ## Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Weather Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Date Format - PHP
 

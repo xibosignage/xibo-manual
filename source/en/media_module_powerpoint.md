@@ -2,9 +2,11 @@
 
 # PowerPoint
 
-{tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [PowerPoint](media_module_powerpoint_2.html)
-{/tip}
+Use one of the available options to display PowerPoint files on Layouts.
+
+{version}
+NOTE: If you are using a CMS earlier than v3.0.0 please use the following link: [PowerPoint](media_module_powerpoint_2.html)
+{/version}
 
 [[PRODUCTNAME]] has 3 options to display PowerPoint PPT files.
 
@@ -17,6 +19,8 @@ If you are using a CMS earlier than v3.0.0 please use the following link: [Power
 ## Option 1 - Export as a Video
 
 From Office 2010 onwards PowerPoint presentations can be exported as **Video files** which can then be uploaded to [[PRODUCTNAME]] and played using the Video Widget.
+
+{feat}Video Widget|v3{feat}
 
 ### Export PowerPoint file
 
@@ -33,6 +37,8 @@ Follow the instructions as detailed on the [Video](media_module_video.html) page
 
 ## Option 2 - Save as a PDF
 
+{feat}PDF Widget|v3{feat}
+
 - Save your PowerPoint as a PDF.
 
 ### Add PDF Widget
@@ -42,6 +48,8 @@ Follow the instructions as detailed on the [PDF](media_module_pdf.html) page to 
 ## Option 3 - Prepare and Upload your PowerPoint PPT file
 
 PowerPoint is a proprietary format from Microsoft and can only be displayed on a Windows-based signage player which has Microsoft PowerPoint installed.
+
+{feat}PowerPoint Widget|v3{feat}
 
 ### Prepare the PowerPoint Presentation.
 
@@ -56,17 +64,20 @@ PowerPoint will, by default, put scroll bars up the side of your presentation, u
 
 ### Add Widget
 
-Click on PowerPoint from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![PowerPoint Widget](img/v2_media_powerpoint_widget.png)
+Locate **PowerPoint** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
+
 Use the [Library Search](layouts_library_search.html) function to add PowerPoint files already uploaded to the Library.
-{/tip}
 
-From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
+{version}
+
+NOTE: From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
 
 ![Upload New](img/v3.1_media_powerpoint_uploadnew.png)
 
 
+
+{/version}
 
 ### Upload Media File
 
@@ -136,7 +147,7 @@ Click on the added **PowerPoint Widget** from the **Timeline** to open configura
 
 ### Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
+Interactive Actions can be attached to this Powerpoint Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ### Prepare your Windows Players
 

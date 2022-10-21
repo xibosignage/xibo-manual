@@ -1,6 +1,10 @@
 # PowerPoint
 
-**Please note:** If you are using 3.x CMS, please use the following link: [PowerPoint](media_module_powerpoint.html)
+Use one of the available options to display PowerPoint files on Layouts.
+
+{version}
+NOTE: If you are using 3.x CMS, please use the following link: [PowerPoint](media_module_powerpoint.html)
+{/version}
 
 [[PRODUCTNAME]] has 3 options to display PowerPoint PPT files.
 
@@ -13,6 +17,8 @@
 ## Option 1 - Export as a Video
 
 From Office 2010 onwards PowerPoint presentations can be exported as **Video files** which can then be uploaded to [[PRODUCTNAME]] and played using the Video Widget.
+
+{feat}Video Widget|v2{feat}
 
 ### Export PowerPoint
 
@@ -34,6 +40,8 @@ Follow the instructions as detailed on the [Video](media_module_video_2.html) pa
 
 ## Option 2 - Save as a PDF
 
+{feat}PDF Widget|v2{feat}
+
 - Save your PowerPoint as a PDF.
 
 ### Add PDF Widget
@@ -45,6 +53,8 @@ Follow the instructions as detailed on the [PDF](media_module_pdf_2.html) page t
 ## Option 3 - Prepare and Upload your PowerPoint PPT file
 
 PowerPoint is a proprietary format from Microsoft and can only be displayed on a Windows-based signage player which has Microsoft PowerPoint installed.
+
+{feat}PowerPoint Widget|v2{feat}
 
 ### Prepare the PowerPoint Presentation. 
 
@@ -61,9 +71,9 @@ PowerPoint will, by default, put scroll bars up the side of your presentation, u
 
 Click on the **PowerPoint Widget** on the toolbar, add / drag to the target **Region**. ![PowerPoint Widget](img/v2_media_powerpoint_widget.png)
 
-{tip}
-If you are using 1.8, select **PowerPoint** from the Widget Toolbox to add to your Region Timeline.
-{/tip}
+{version}
+NOTE: If you are using 1.8, select **PowerPoint** from the Widget Toolbox to add to your Region Timeline.
+{/version}
 
 {tip}
 If the PowerPoint PPT file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

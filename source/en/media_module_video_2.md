@@ -1,13 +1,15 @@
 # Video
 
-{tip}
-**Please note:** 
+The Video Module allows for videos to be uploaded to the Library which are then cached for off-line playback.
+
+{version}
+NOTE:
 
 - If you are using a 3.0.x CMS, please click [here](media_module_video_3.html)
-- If you are using a 3.1.x CMS, please click [here](media_module_video.html)
-  {/tip}
+- If you are using a 3.1 or later CMS, please click [here](media_module_video.html)
+  {/version}
 
-The Video Module allows for videos to be uploaded to the Library which are then cached for off-line playback.
+{feat}Video Widget|v2{/feat}
 
 {tip}
 If the video file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.
@@ -15,9 +17,9 @@ If the video file has already been uploaded to the Library use the [Library Sear
 
 Click on the **Video Widget** on the  toolbar, add / drag to the target **Region**. ![Video Widget](img/v2_media_video_widget.png)
 
-{tip}
-If you are using 1.8, select **Video** from the Widget Toolbox to add to your Region Timeline.
-{/tip}
+{version}
+NOTE: If you are using 1.8, select **Video** from the Widget Toolbox to add to your Region Timeline.
+{/version}
 
 Click on **Add files** to upload to the Library or click on View Library to select an uploaded file.
 

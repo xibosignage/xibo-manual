@@ -2,28 +2,29 @@
 
 # HTML Package
 
-{tip}
-If you are using a 2.0.x CMS please use the following link: [HTML Package](media_module_htmlpackage_2.html)
-{/tip}
-
-{tip}
-**Please note:** This module is currently not supported for the Linux Player.
-{/tip}
-
 The HTML Package Module allows for the upload of a complete HTML Package which can be distributed to Players.
+
+{version}
+NOTE: If you are using a v2.0 CMS please use the following link: [HTML Package](media_module_htmlpackage_2.html)
+{/version}
+
+{feat}HTML Package Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **HTML Package** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop. ![HTML Package Widget](img/v2_media_html_package.png)
-
-{tip}
-Use the [Library Search](layouts_library_search.html) function to add PowerPoint files already uploaded to the Library.
-{/tip}
+Locate **HTML Package** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
 
-From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
+Use the [Library Search](layouts_library_search.html) function to add a HTML Package already uploaded to the Library.
+
+{version}
+
+NOTE: From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
 
 ![Upload New](img/v3.1_media_htmlpackage_uploadnew.png)
+
+
+{/version}
 
 ## Upload Media File
 
@@ -76,5 +77,4 @@ Click on the added **HTML Package Widget** from the **Timeline** to open configu
 
 ### Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
-
+Interactive Actions can be attached to this HTML Package Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

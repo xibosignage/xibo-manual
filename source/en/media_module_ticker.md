@@ -1,15 +1,19 @@
 <!--toc=widgets-->
 # Ticker
 
-The Ticker Widget allows **dynamic Feed** content to be added to a Layout. The Ticker module primarily consists of a data source location and a template to apply to the retrieved data.
+Display dynamic feed content on Layouts.
 
-{tip}
-If you are using a 1.8.x CMS, please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
+{/version}
+
+{feat}Ticker Widget|v3{/feat}
+
+The Ticker Widget primarily consists of a data source location and a template to apply to the retrieved data.
 
 ## Add Widget
 
-Click on **Ticker** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Ticker Widget](img\v2_media_ticker_widget.png)
+Locate **Ticker** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
 On adding, configuration options are shown in the properties panel:
 
@@ -67,7 +71,9 @@ Select from the available Templates:
 
 - **Preset** - use the drop down to select one of the preset templates
 
-From v3.1.0 additional options have been included so that users can easily change the appearance of a selected Template by changing alternative colours, font sizing and image fit options.
+{version}
+
+NOTE: From v3.1.0 additional options have been included so that users can easily change the appearance of a selected Template by changing alternative colours, font sizing and image fit options.
 
 ![Template Options](img/v3.1_media_ticker_template_options.png)
 
@@ -77,7 +83,7 @@ From v3.1.0 additional options have been included so that users can easily chang
 
 
 
-{tip}
+{/version}
 Click to Override the selected template if required. 
 
 Please see the section on Editing Preset Templates below for further information.
@@ -131,7 +137,7 @@ Options are provided to set different update frequencies for images and data to 
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Ticker Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Date Format - PHP
 

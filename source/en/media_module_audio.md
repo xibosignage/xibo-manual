@@ -1,53 +1,52 @@
 <!--toc=widgets-->
 
-## Audio 
+# Audio 
 
-{tip}
+Add audio to Layouts.
 
-**Please note:**
+{version}
+NOTE: If you are using a CMS version earlier than 3.1, please use the links below:
 
-- If you are using a 3.0.x CMS, please click [here](media_modules_audio_3.html)
-- If you are using a CMS earlier than v3.0.0 please click [here](media_modules_audio_2.html)
-  {/tip}
+- v3.0.x CMS, please click [here](media_module_audio_3.html)
+- CMS earlier than v3.0.0 please click [here](media_module_audio_2.html)
 
-**Please note:** Audio is currently not supported for the Linux Player.
+{/version}
 
-Uploaded Audio files are cached for off-line playaback and allow for audio to be added to Layouts.
+{feat}Audio WIdget|v3{/feat}
+
+Uploaded audio files are cached for off-line playback which can then be added to Layouts.
 
 Audio files can be uploaded to the [Library](media_library.html) or uploaded directly to Layouts using the Audio [Library Search](layouts_library_search.html) function from the Toolbar in the Layout Designer.
 
-### Configuration Options
+## Configuration Options
 
-Once added to Layouts, click on the Audio file in the Timeline or Viewer to show configuration options in the the properties panel:
+Once added to a Layout, click on the **Audio** file icon in the **Timeline** or **Viewer** to open configuration options in the right hand properties panel:
 
 ![Audio Options](img/3.1_media_audio_options.png)
 
 
 
 - Provide an optional **Name** if required.
-- Here you can see how long the audio will play for. Tick the **Set a duration** to provide a specific duration.
+- Here you can see how long the audio will play for. 
+- Tick the **Set a duration** to provide a specific duration for the audio file.
 
 {tip}
-Set a lower duration than shown to cut the audio short or select a higher duration and use the Loop function!
+With **Set a duration** ticked you can set a lower duration to cut the file short or select a higher duration and use the Loop function!
 {/tip}
 
-{tip}
-The Audio Widget is fully compatible with [Overlay Layouts](layouts_overlay.html) and can therefore be used effectively to draw attention and compliment content.
-{/tip}
-
-### Actions
-
-Actions can be attached to this Audio Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
-
-{tip}
+Use the **Context Menu** at the bottom of the viewer to apply further options to the Audio Widget.  
 
 ![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
 
-Use the **Context Menu** to apply options to this Widget. Please refer to the [Layout Designer](layouts_designer.html) page for further information!
+{tip}
+This menu can also be easily accessed by highlighting the Audio Widget in the Layout and using a right click! See the [Layout Designer](layouts_designer.html) page for further information!
 
+The Audio Widget is fully compatible with [Overlay Layouts](layouts_overlay.html) and can therefore be used effectively to draw attention and compliment content.
 {/tip}
 
+## Actions
 
+Interactive Actions can be attached to this Audio Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 
 

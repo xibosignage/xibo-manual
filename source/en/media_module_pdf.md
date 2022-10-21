@@ -2,24 +2,30 @@
 
 # PDF
 
-{tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [PDF](media_module_pdf_2.html)
-{/tip}
+Display PDF files on Layouts.
 
-The PDF Module allows for the upload of PDF files to the [Library](media_library.html) which can then be used in Layouts.
+{version}
+NOTE: If you are using a CMS earlier than v3.0.0 please use the following link: [PDF](media_module_pdf_2.html)
+{/version}
+
+{feat}PDF Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **PDF** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop. ![PDF Widget](img/v2_media_pdf_widget.png)
+Locate **PDF** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
+
 Use the [Library Search](layouts_library_search.html) function to add PowerPoint files already uploaded to the Library.
-{/tip}
 
+{version}
 
-From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
+NOTE: From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
 
 ![Upload New](img/v3.1_media_pdf_uploadnew.png)
+
+
+
+{/version}
 
 ## Upload Media File
 
@@ -89,6 +95,6 @@ Click on the added **PDF  Widget** from the **Timeline** to open configuration o
 
 - Provide a duration and use the checkbox to apply the duration to **each page** of the PDF.
 
-### Actions
+## Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
+Interactive Actions can be attached to this PDF Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

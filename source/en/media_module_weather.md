@@ -2,16 +2,20 @@
 
 # Weather
 
-{tip}
-**Please note:** If you are using a CMS earlier than v3.1.x please click [here](media_module_weather_3.html)
-{/tip}
+Display daily weather forecasts on Layouts.
+
+{version
+NOTE: If you are using a CMS earlier than v3.1, please click [here](media_module_weather_3.html)
+{/version}
+
+{feat}Weather Widget|v3{feat}
 
 The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
 
 {nonwhite}
 {cloud}
 
-The Weather Module is fully configured for Xibo in the Cloud customers and is provided as part of the service. 
+The Weather Module is fully configured for **Xibo Cloud** hosted customers and is provided as part of the service. 
 
 {/cloud}
 
@@ -24,7 +28,7 @@ Weather data is provided by [OpenWeather](https://openweathermap.org/) which is 
 To get an API key please visit [Open Weather Map](https://openweathermap.org/api) to create an account.
 
 {tip}
-**Please note:** Since the release of Open Weather's One Call 3.0 new users must enter credit card details to use the free x number of calls Key or opt for a paid subscription!
+**Please note:** Since the release of Open Weather's One Call 3.0, new users must enter credit card details to use the free x number of calls Key or opt for a paid subscription!
 
 Open Weather Map allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
 
@@ -32,9 +36,13 @@ Open Weather Map allows 1000 requests for a forecast, per day before charging a 
 
 {/tip}
 
-The Weather Module is installed from the Modules page, under the Administration section of the menu. Click on the **Install Module** button and select the Module to install.
+The Weather Module is installed from the **Modules** page, under the **Administration** section of the main CMS menu:
 
-After installation, select the Module from the grid and use the row menu to select **Edit**.
+- Click on the **Install Module** button and select the Weather Module to install.
+
+Once installed: 
+
+- Select the Weather Module from the grid and use the row menu to select **Edit**.
 
 - Complete the form fields and include the **API Key**:
 
@@ -52,7 +60,7 @@ After installation, select the Module from the grid and use the row menu to sele
 
 The Open Weather Map Terms of Service https://openweathermap.org/terms should be read and understood before using this Widget. 
 
-Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img\v2_media_weather_widget.png)
+Locate **Agenda** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
 On adding, configuration options are shown in the properties panel:
 
@@ -85,7 +93,7 @@ On selecting a **Template**, options will be made available to change the appear
 
 
 
-When a Background Image has been selected, images uploaded to the Library can be used to replace the images provided by default:
+When a **Background Image** has been selected, images uploaded to the Library can be used to replace the images provided by default:
 
 ![Background Images](img/v3.1_media_modules_weather_background.png)
 
@@ -160,7 +168,7 @@ brackets - for example `[nearestStormDistance]`.
 
 ## Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Weather Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Date Format - PHP
 

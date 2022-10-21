@@ -2,16 +2,16 @@
 
 # Twitter Metro
 
-The Twitter Metro Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Add the Twitter Metro Widget to Layouts to display metro tiles of Twitter feeds.
+Display metro tiles of Twitter feeds on Layouts.
 
-{tip}
-Granted access is to **read data** only!
-{/tip}
+{feat}Twitter Metro Widget|v3{/feat}
+
+The Twitter Metro Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Granted access is to **read data** only!
 
 {nonwhite}
 {cloud}
 
-The main set-up is provided as part of the service for **Xibo Cloud Hosting** customers. Please follow the simplified process below to connect to the Twitter API.
+The main set-up is provided as part of the service for **Xibo Cloud** hosted customers. Please follow the simplified process below to connect to the Twitter API.
 
 - Select **Modules** from the Administration section of the menu.
 - Click on the row menu for the Twitter Provider (Twitter Search) Module and select **Connect to Twitter**.
@@ -52,11 +52,11 @@ Setting a low value can cause your access to the Twitter API to be disabled for 
 
 ## Add Widget
 
-Click on **Twitter Metro** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop. ![Twitter Metro Widget](img\v2_media_twittermetro_widget.png)
+Locate **Twitter Metro** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-If you are using a 1.8.x CMS, select Twitter Metro from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Twitter Metro from the Widget Toolbox to add!
+{/version}
 
 {tip}
 The Twitter Metro Widget will automatically size portrait/landscape based on the size of the Region that it is added to. It will resize as if it were an image for best consistency across all display resolutions.
@@ -129,7 +129,7 @@ Include a suitable time for the Update Interval in minutes, keeping it as high a
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Twitter Metro Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ### Date Format - PHP
 

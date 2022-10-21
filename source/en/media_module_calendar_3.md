@@ -1,18 +1,22 @@
 # Calendar
 
-{tip}
-**Please note:** If you are using a CMS v3.1.x, please use the following link [Agenda](media_module_agenda.html)
-{/tip}
+Display calendar events pulled from an iCal feed.
 
-The Calendar Widget is used to display events from an **iCAL feed.** Calendar events can be filtered and formatted using templates.
+{version}
+NOTE: If you are using CMS v3.1 or later,  please use the following link [Agenda](media_module_agenda.html)
+{/version}
+
+{feat}Calendar Widget|v3{/feat}
+
+Calendar events can be filtered and formatted using templates.
 
 ## Add Widget
 
 Click on **Calendar** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Calendar Widget](img\v2_media_calendar_widget.png)
 
-{tip}
-If you are using a 1.8.x CMS, select Calendar from the Widget Toolbox to add!
-{/tip}
+{version}
+NOTE: If you are using a 1.8.x CMS, select Calendar from the Widget Toolbox to add!
+{/version}
 
 On adding, configuration options are shown in the Edit Calendar form:
 
@@ -29,9 +33,9 @@ On adding, configuration options are shown in the Edit Calendar form:
 
 - Use the **Interval** field to filter events for a certain period. Use natural language such as '1 day' or '2 weeks' to return the events within your chosen time frame.
 
-  {tip}
-  From v3.0.0 select a **date range** to return events instead!
-  {/tip}
+  {version}
+  NOTE: From v3.0.0 users can select a **date range** to return events instead!
+  {/version}
 
 - Specify the **Number of items**/events you wish to display from the iCAL feed.
 
@@ -75,16 +79,16 @@ Click on the Template tab to show the Calendar Templates:
 
 - Include text merge fields from the **Snippets** menu to pull in the required event information from the Calendar. 
 
-{tip}
-If you are using 1.8.x CMS use **Available Substitutions** to show available text fields to use!
-{/tip}
+{version}
+NOTE: If you are using 1.8.x CMS use **Available Substitutions** to show available text fields to use!
+{/version}
 
-{tip}
-From v2.1.0 `[Date]` fields can include an optional format `[Date|format]` so that `[Date]` can be used multiple times in a Template with different formats to allow for different styling for each element of a date.
+{version}
+NOTE: From v2.1.0 `[Date]` fields can include an optional format `[Date|format]` so that `[Date]` can be used multiple times in a Template with different formats to allow for different styling for each element of a date.
 
 ![Calendar Date Format](img\v3_media_calendar_dateformat.png)
 
-{/tip}
+{/version}
 
 - Click to **Save**.
 

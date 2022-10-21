@@ -2,25 +2,23 @@
 
 # HLS
 
-Add the HLS Video Stream Widget to show **live streamed content** on Layouts. 
+Display live streamed HLS content on Layouts.
 
-{tip}
+{feat}HLS Stream Widget|v3{/feat}
 
-**Please note:** 
+{version}
+NOTE: This Widget requires a Player running Windows 8.1 or later/Android 6 or later. Earlier Android devices may play HLS using the [Local Video](media_module_localvideo.html) Widget. 
+{/version}
 
-- This Widget requires a Player running Windows 8.1 or later/Android 6 or later. Earlier Android devices may play HLS using the [Local Video](media_module_localvideo.html) Widget. 
-- This Module is currently not supported with the Linux Player.
-
-- This Widget requires a valid internet connection on the Player in order to function.
-  {/tip}
+This Widget requires a valid internet connection on the Player in order to function.
 
 ## Add Widget
 
-Click on **HLS** from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![HLS Widget](img\v2_media_hls_widget.png)
+Locate **HLS** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region. 
 
-{tip}
-If you are using a 1.8.x CMS, select HLS from the Widget Toolbox to add!
-{/tip}
+{verision}
+NOTE: If you are using a 1.8.x CMS, select HLS from the Widget Toolbox to add.
+{/version}
 
 On adding, configuration options are shown in the properties panel:
 
@@ -39,4 +37,4 @@ On adding, configuration options are shown in the properties panel:
 
 **Available from v3.0.0**
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this HLS Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

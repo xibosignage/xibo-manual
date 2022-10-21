@@ -1,15 +1,17 @@
 # Image
 
-{tip}
+Display images on Layouts.
 
-**Please note:**
+{version}
 
-- If you are using a v3.1.x CMS, please click [here](media_modules_image.html)
-- If you are using a CMS earlier than v3.0.0 please click [here](media_modules_image_2.html)
+NOTE:
 
-{/tip}
+- If you are using a v3.1 or later CMS, please click [here](media_module_image.html)
+- If you are using a CMS earlier than v3.0.0 please click [here](media_module_image_2.html)
 
-The Image Module allows for images to be shown when assigned to a Timeline. Image files are uploaded to the [Library](media_library) 
+{/version}
+
+Image files are uploaded to the [Library](media_library) 
 
 ## Add Widget
 
@@ -63,13 +65,9 @@ Available Folder options are based on enabled [Feature and Sharing](users_featur
 - Click in the folder you wish to upload the file to and click **Done**. 
 - The **Current Folder** will show the selected file path.
 
-{nonwhite}
-Further information for Administrators regarding Folder access and set-up can be found [here](https://xibo.org.uk/docs/setup/folders-administration)
-{/nonwhite}
 
-{white}
-For further information regarding Folder access and set-up, please speak to your Administrator.
-{/white}
+
+Further information for Administrators regarding Folder access and set-up can be found [here](https://xibosignage.com/manual/en/tour_folders)
 
 There is an option to set expiry dates and times for files uploaded to this particular Widget.
 

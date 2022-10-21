@@ -2,21 +2,19 @@
 
 # Calendar
 
-{tip}
-**Please note:** If you are using a CMS earlier than v3.1.0, please click [here](media_module_calendar_3.html)
-{/tip}
+Display a Schedule, Daily, Weekly or Monthly calendar views pulled from an iCal feed.
 
-The Calendar Widget provides an easy way to display events from an **iCal feed**, in a **Schedule, Daily, Weekly** or **Monthly** Calendar view.
+{version}
+NOTE: If you are using a CMS earlier than v3.1, please click [here](media_module_calendar_3.html)
+{/version}
 
-{tip}
-Calendar is available from v3.1.0 upgrade from earlier versions to take advantage of this Widget!
-{/tip}
+{feat}Calendar View Widget|v3{/feat}
 
 ## Add Widget
 
-Click on **Calendar** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Calendar Widget](img\v2_media_calendar_widget.png)
+Locate **Calendar** from the [Widget](layouts_widgets.html)  toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-On adding, configuration options are shown in the properties panel:
+On adding, configuration options are shown in the right hand properties panel:
 
 - Provide a **Name** for ease of identification.
 - Choose to override the default **duration** if required.
@@ -43,9 +41,9 @@ On adding, configuration options are shown in the properties panel:
 
 - Set **Start and End times** to define a window to show events.
 
-{tip}
-From v3.1.2, an additional option to remove Weekends is available for both Weekly and Monthy Calendar Types!
-{/tip}
+{version}
+NOTE: From v3.1.2, an additional option to remove Weekends is available for both Weekly and Monthy Calendar Types!
+{/version}
 
 #### All Calender Types have the following options:
 
@@ -126,7 +124,7 @@ See the [Command Functionality](displays_command_functionality) page for more in
 
 ## Actions 
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html)  page for more information.
+Interactive Actions can be attached to this Calendar Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 
 ## Time Format - PHP
 

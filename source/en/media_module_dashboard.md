@@ -11,13 +11,13 @@ The Dashboards Widget is used to display [Dashboards](/manual/en/media_dashboard
 
 **Please note:** This commercial Widget is part of the **Xibo Dashboard Service** available from v3.2.0 and requires an API for configuration as further explained [here](/pricing#dashboards)
 
+{feat}Dashboards Widget|v3{/feat}
+
 ## Add Widget
 
-Click on **Dashboards** from the[ Widget](/manual/en/layouts_widgets.html) toolbar and click to add or drag and drop.
+Locate **Dashboards** from the [Widget](layouts_widgets.html)  toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-![Dashboard Widget](img/media_modules_dashboard_widget.png)
-
-On adding, configuration options are shown in the properties panel:
+On adding, configuration options are shown in the right hand properties panel:
 
 - Use the drop down to select the dashboard service **Type** to use from the ones that have been configured in the connector.
 - Provide a **Name** for easier identification.
@@ -50,6 +50,6 @@ Example Error message with screengrab shown below:
 
 ## Actions
 
-Actions can be attached to this Widget, please see the[ Interactive Actions](https://xibosignage.com/manual/en/layouts_interactive_actions.html) page for more information.
+Interactive Actions can be attached to this Dashboard Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
 {/nonwhite}
 

@@ -2,28 +2,31 @@
 
 # Flash
 
-{tip}
-**Please note:** As Adobe no longer supports Flash, it will be naturally phased out over a period of time. Whilst Players may still play flash at this current time, updates to operating systems and other third party components, such as the browser, may render Flash files as unplayable.
-{/tip}
+{version}
+IMPORTANT: As Adobe no longer supports Flash, it will be naturally phased out over a period of time. Whilst Players may still play flash at this current time, updates to operating systems and other third party components, such as the browser, may render Flash files as unplayable.
 
-{tip}
 If you are using a CMS earlier than v3.0.0 please use the following link: [Flash](media_module_flash_2.html)
-{/tip}
+{/version}
 
 The Flash Module allows for SWF file uploads to the [Library](media_library.html) which can then be used in Layouts.
 
+{feat}Adobe Flash Widget|v3{/feat}
+
+{version}
+NOTE: As Adobe has discontinued development and support for this application the Flash Module is no longer supported on Android. After extensive testing, it was found that instabilities in the Player could cause the Player to close. Should you still choose to run via the Flash Module or on embedded websites, it will render using the Flash application if available. However, if you have stability problems with your device this may be due to the running of Flash content.
+{/version}
+
 ## Add Widget
 
-Click on Flash from the [Widget](layouts_widgets.html) toolbar and click to add or drag and drop ![Flash Widget](img/v2_media_flash_widget.png)
+Locate **Flash** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
-{tip}
-Use the [Library Search](layouts_library_search.html) function to add PowerPoint files already uploaded to the Library.
-{/tip}
+{version}
 
-
-From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
+NOTE: From v3.1.0 use the **Library other media search** and filter by **Type** to select **Upload new** and add to a Layout:
 
 ![Upload New](img/v3.1_media_flash_uploadnew.png)
+
+{/version}
 
 ## Upload Media File
 
@@ -45,9 +48,7 @@ If the Name field is left blank, the file will be named as per the original file
 
 Flash files can also be directly uploaded to a specified [Folder](tour_folders.html) location.
 
-{tip}
 Files that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
-{/tip}
 
 There is an option to **Set Expiry Dates** and times for files uploaded to this particular Widget.
 
@@ -57,9 +58,9 @@ This is particularly useful should you need to preload files to be shown at a la
 
 - Tick the **Set Expiry Dates** box.
 
-  {tip}
-  **Please note:** Expiry Dates are currently not supported for the Linux Player!
-  {/tip}
+  {version}
+  NOTE: Expiry Dates are currently not supported for the Linux Player!
+  {/version}
 
   ![Expiry Dates](img\v3_media_flash_expiry_dates.png)
 
@@ -90,17 +91,4 @@ Click on the added **Flash Widget** to open configuration options in the propert
 
 ### Actions
 
-Actions can be attached to this Widget, please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
-
-## Supported Players
-
-| Display | Supported? | Remarks                                            |
-| ------- | ---------- | -------------------------------------------------- |
-| Android | No         | Not supported, see note.                           |
-| Windows | Yes        |                                                    |
-| webOS   | Yes        |                                                    |
-| Tizen   | Yes        |                                                    |
-| Linux   | Partial    | Support via the browser component can be unstable. |
-
-**Please note:** As Adobe has discontinued development and support for this application the Flash Module is no longer supported on Android. After extensive testing, it was found that instabilities in the Player could cause the Player to close. Should you still choose to run via the Flash Module or on embedded websites, it will render using the Flash application if available. However, if you have stability problems with your device this may be due to the running of Flash content.
-
+Interactive Actions can be attached to this Flash Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
