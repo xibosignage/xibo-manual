@@ -1,3 +1,5 @@
+<!--toc=users-->
+
 # User Administration
 
 **Please note:** If you are using a 3.x CMS, please use the following link: [User Administration](users_administration.html)

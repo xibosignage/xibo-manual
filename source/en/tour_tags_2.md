@@ -1,3 +1,5 @@
+<!--toc=tour-->
+
 # Tags
 
 {tip}

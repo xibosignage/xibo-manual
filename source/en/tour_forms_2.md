@@ -1,3 +1,5 @@
+<!--toc=tour-->
+
 # Forms
 
 **Please note:** If you are using a 3.x CMS, please use the following link: [Forms](tour_forms.html)

@@ -1,3 +1,5 @@
+<!--toc=widgets-->
+
 # Weather
 
 {tip}

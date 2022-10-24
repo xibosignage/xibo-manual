@@ -1,3 +1,5 @@
+<!--toc=widgets-->
+
 # PowerPoint
 
 **Please note:** If you are using 3.x CMS, please use the following link: [PowerPoint](media_module_powerpoint.html)

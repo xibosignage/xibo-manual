@@ -1,3 +1,5 @@
+<!--toc=tour-->
+
 # User Profile
 
 The **User Profile** can be used to set preferences and options for the logged in User.

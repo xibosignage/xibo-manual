@@ -1,3 +1,5 @@
+<!--toc=widgets-->
+
 # PDF
 
 **Please note**: If you are using a 3.x CMS, please use the following link: [PDF](media_module_pdf.html)

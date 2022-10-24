@@ -1,3 +1,5 @@
+<!--toc=media-->
+
 # Playlists
 
 {tip}

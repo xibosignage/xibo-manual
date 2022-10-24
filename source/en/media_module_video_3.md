@@ -1,3 +1,5 @@
+<!--toc=widgets-->
+
 # Video 
 
 {tip}

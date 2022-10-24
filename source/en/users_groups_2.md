@@ -1,3 +1,5 @@
+<!--toc=users-->
+
 # User Groups
 
 **Please note:** If you are using a 3.x CMS, please use the following link: [User Groups](users_groups.html)

@@ -1,3 +1,5 @@
+<!--toc=widgets-->
+
 # HTML Package
 
 If you are using a 3.x CMS, please use the following link: [HTML Package](media_module_htmlpackage.html)
