@@ -1,3 +1,5 @@
+<!--toc=displays-->
+
 # Proof of Play
 
 {tip}

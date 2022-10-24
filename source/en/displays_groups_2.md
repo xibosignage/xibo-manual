@@ -1,3 +1,5 @@
+<!--toc=displays-->
+
 # Display Groups
 
 {tip}

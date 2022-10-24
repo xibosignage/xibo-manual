@@ -1,3 +1,5 @@
+<!--toc=displays-->
+
 # Command Functionality 1.8 - v2
 
 {tip}

@@ -1,3 +1,5 @@
+<!--toc=layouts-->
+
 # Widgets
 
 {tip}

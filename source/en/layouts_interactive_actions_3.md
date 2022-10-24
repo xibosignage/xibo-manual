@@ -1,3 +1,5 @@
+<!--toc=layouts-->
+
 # Interactive Actions
 
 ### Please note: Interactive Actions are currently supported on Xibo for Windows R3 R300 / Xibo for Android R3 R300 and Xibo for webOS v3 R300 

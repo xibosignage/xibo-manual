@@ -1,3 +1,5 @@
+<!--toc=layouts-->
+
 # Library Search
 
 {tip}
