@@ -4,7 +4,7 @@
 
 Display Twitter feeds on Layouts. 
 
-{feat}Twitter Widget|v3{feat}
+{feat}Twitter Widget|v3{/feat}
 
 The Twitter Module provides access to the [Twitter Search API](https://dev.twitter.com/rest/public/search). Granted access is to **read data** only!
 
