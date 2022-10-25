@@ -6,7 +6,7 @@
 
 Display multiple clocks and timezones on Layouts.
 
-{feat}World Clock Widget|v3{feat}
+{feat}World Clock Widget|v3{/feat}
 
 {nonwhite}
 {version}

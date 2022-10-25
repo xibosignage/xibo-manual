@@ -20,7 +20,7 @@ NOTE: If you are using a CMS earlier than v3.0.0 please use the following link: 
 
 From Office 2010 onwards PowerPoint presentations can be exported as **Video files** which can then be uploaded to [[PRODUCTNAME]] and played using the Video Widget.
 
-{feat}Video Widget|v3{feat}
+{feat}Video Widget|v3{/feat}
 
 ### Export PowerPoint file
 
@@ -37,7 +37,7 @@ Follow the instructions as detailed on the [Video](media_module_video.html) page
 
 ## Option 2 - Save as a PDF
 
-{feat}PDF Widget|v3{feat}
+{feat}PDF Widget|v3{/feat}
 
 - Save your PowerPoint as a PDF.
 
@@ -49,7 +49,7 @@ Follow the instructions as detailed on the [PDF](media_module_pdf.html) page to 
 
 PowerPoint is a proprietary format from Microsoft and can only be displayed on a Windows-based signage player which has Microsoft PowerPoint installed.
 
-{feat}PowerPoint Widget|v3{feat}
+{feat}PowerPoint Widget|v3{/feat}
 
 ### Prepare the PowerPoint Presentation.
 
