@@ -75,6 +75,12 @@ Scheduling is highly flexible and supports Schedules to single **Displays** as w
 
 {nonwhite}
 
+{tip}
+Throughout the documentation we have included a helpful table to show **Player** and **CMS** version support for features and functionality:
+
+![Feature Category Table](img/tour_feature_category_table.png)
+{/tip}
+
 ### Open Source
 
 The heart of the software is open source, including the entire **CMS** platform,**Windows** and **Ubuntu Players**, and has been for many years! We're committed to keeping it that way. The code can be downloaded and used in accordance with our AGPLv3 licence.
