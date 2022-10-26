@@ -18,7 +18,11 @@
   },{
     "title": "Media",
     "href": "media.html",
-    "containsToc": ["media", "widgets"]
+    "containsToc": ["media"]
+  },{
+    "title": "Modules",
+    "href": "media.html",
+    "containsToc": ["widgets"]
   },{
     "title": "Scheduling",
     "href": "scheduling.html",
