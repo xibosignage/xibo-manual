@@ -24,3 +24,9 @@ container.
 
 Themes must exist in `/template/custom/<theme_name>` to be built. They 
 are build using inheritance from the default theme.
+
+## Translations
+
+We are not in a position to accept translated contributions for Manuals. 
+
+Please see our [FAQ](https://community.xibo.org.uk/t/how-can-i-translate-xibo/11183) for further information.
