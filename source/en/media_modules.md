@@ -64,6 +64,8 @@ New modules must be uploaded to the CMS manually and then installed from the Mod
 
 
 
-
-
 Click on the **Module** name to install and refresh the page.
+
+## Player Support table for Widgets and Modules
+
+{feat_cat}Widgets and Modules{/feat_cat}
