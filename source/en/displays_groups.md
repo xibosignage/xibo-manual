@@ -106,3 +106,6 @@ The CMS will not allow a circular reference to be created (an assignment that cr
 
 **Schedules**, **Media file** and **Layout Assignments** set to the Display Group, will apply to all members within the group.
 
+### Reference Tab
+
+From v3.3.0 optionally use this tab to provide reference information for the selected Display Group. Once added, this information can be viewed in the Display Group grid and via the API.

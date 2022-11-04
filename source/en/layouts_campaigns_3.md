@@ -1,7 +1,11 @@
 # Campaigns
 
 {tip}
-Please note: If you are using a v3.1.x CMS, please click [here](layouts_campaigns.html)
+**Please note:** 
+
+- If you are using a v3.3.0 and later CMS, please click [here](layouts_campaigns.html)
+- If you are using a v3.1.x CMS, please click [here](layouts_campaigns_3.html)
+
 {/tip}
 
 Layouts can be grouped together into an ordered list. A Campaign can then be **Scheduled** to play the grouped Layouts in a set sequence.

@@ -3,11 +3,13 @@
 # Displays
 
 {tip}
-**Please note:**
-If you are using a CMS earlier than v3.3.0 please select from the options below:
 
-- CMS v3.0.0 - v3.2.x click [here](displays_3.html)
-- CMS earlier than v3.0.0 click [here](displays_2.html)
+**Please note:**
+
+- If you are using a v3.3.0 or later CMS, please click [here](displays.html)
+
+- If you are using a CMS earlier than v3.0.0 please click [here](displays_2.html)
+
   {/tip}
 
 The primary purpose of [[PRODUCTNAME]] is to show content on screens with the entire application suite existing for that one purpose. [[PRODUCTNAME]] provides a concept called **Displays** to manage when and how content is shown on a screen.
@@ -41,7 +43,7 @@ New Displays will need to be marked as **Authorised** before they can be sent an
 
 Displays are administered in the CMS from clicking on **Displays** under the **Administration** section of the main menu.  The Displays [Grid](tour_grids.html) will open for you to add new and manage exiting Displays.
 
-![Display Administration Grid](img\v3.3_displays_administration_grid.png)
+![Display Administration Grid](img\v3_displays_administration_grid.png)
 
 
 Click the Folders icon to toggle on/off from view.  
@@ -58,26 +60,11 @@ or
 
 Check out the [Folders](/manual/en/tour_folders.html) page for further information.
 
-Next to the Folders icon is a **Display Map View**:
-
-![Display Map View](img/v3.3_displays_administration_map_view.png)
-
-View locations on the map to easily see the status of selected or all Displays.
-
 {tip}
-Logged in Users will only view the status of Displays that they have been given access to
-Use the filter fields in the grid from the List View to isolate Displays to view!
+Logged in Users will only view the status of Displays that they have been given access to!
 {/tip}
 
-Click on a Displays status icon on the map to reveal further information:
-
-![Display Map View Status](img/v3.3_displays_administration_display_map_status.png)
-
-
-
-Use the blue **List View** button at the top of the map to return to the Display Grid.
-
-**ID** - Used for internal identification of a Display.
+**ID** - Used for internal identification of the Display only.
 
 **Display** - Name given to the Display for easy identification purposes within the CMS (this is not shown on the Display itself).
 
@@ -105,12 +92,15 @@ Use the **Column visibility** button to select from the available options to sho
 
 Each Display has a Row Menu containing a number of actions that can be performed:
 
-![Displays Row Menu](img\v3.3_displays_row_menu.png)
+
+
+![Displays Row Menu](img\v3_displays_row_menu.png)
 
 {tip}
-Selected actions allow for [Forms](tour_forms.html) to be automatically submitted by clicking on the action from the Row Menu, such as **Authorise** and **Check Licence**. Actions that have an auto submit capability will display an option to enable. 
-Take a look at [Grids](tour_grids.html) for further information!
+Selected actions allow for [Forms](tour_forms.html) to be automatically submitted by clicking on the action from the Row Menu, such as **Authorise** and **Check Licence**. Actions that have an auto submit capability will display an option to enable. Take a look at [Grids](tour_grids.html) for further information!
 {/tip}
+
+
 
 ### Manage
 
@@ -118,22 +108,25 @@ Each Display has its own **Dashboard** which shows the Displays current status, 
 
 ![Manage Dashboard](img\v3_displays_manage_dashboard.png)
 
+
+
 {tip}
 This Dashboard is useful as a first step to look at when troubleshooting issues with a Display!
 {/tip}
 
 ### Edit
 
-Clicking on **Edit** opens the Edit Display form which contains tabs with available configuration options:
+Clicking on **Edit** opens the Edit Display form which contains tabs with configuration options.
 
-![Edit Form](img/v3.3_displays_edit_form.png)
+![Edit Form](img/v3_displays_edit_form.png)
 
+{tip}
+The unique hardware key that is generated during installation is shown on the General tab for the selected Display!
+{/tip}
 
+### Folders
 
-### General
-
-- Displays can be optionally saved to [Folders](tour_folders.html) using the **Edit form** or from the **Select Folder** option on the Row Menu.
-
+Displays can be optionally saved to [Folders](tour_folders.html) using the **Edit form** or from the **Select Folder** option on the Row Menu.
 
 {tip}
 Displays that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
@@ -141,62 +134,23 @@ Displays that are saved in Folders will inherit the View, Edit, Delete Share opt
 Assign multiple Displays to a Folder using the **With Selected** option at the bottom of the grid!
 {/tip}
 
-- The unique **Displays Hardware Key** generated during installation will be shown here for the selected Display.
-- Displays can be tagged for organisation and to make it easier to find a large number of Displays all grouped by [Tags](tour_tags.html).  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
+### Tags
 
+Displays can be tagged for organisation and to make it easier to find a large number of Displays all grouped by [Tags](tour_tags.html).  When entering text into the Tag field on the form, an auto complete helper will show possible matches to make it easier for Users to select from.
 
-- Use the drop down to **Authorise** to use an available Licence Pool slot for the Display.
+#### Override Display Profile Settings for individual Displays
 
-- Select a Layout to use as the **Default Layout** for the Display which will be shown when no other content is scheduled. If nothing is selected the splash screen will be shown instead.
-
-- Use the drop down to select the **Display Type** 
-
-### Details
-
-Use this tab to provide further Display details:
-
-![Display Details](img/v3.3_displays_administration_edit_details.png)
-
-- If you are using the [Ad Campaign](layouts_campaigns.html) functionality ensure that you complete the **Cost per play** and **Impressions per play** fields on this tab for all selected Displays.
-
-- Additional fields have been included designed to enhance advertising needs such as:
-
-  - The physical address of the display
-  - Is the display mobile?
-  - Venue type
-  - Languages supported
-
-  
-
-### Reference
-
-Optionally use this tab to provide reference information for the selected Displays. Once added, this information can be viewed in the Display grid and via the API.
-
-### Maintenance
-
-Control email alerts and Global Timeout settings.
-
-### Wake on LAN
-
-Enable Wake on LAN
-
-### Profile Settings
-
-Override [Display Profile Settings](display_settings.html) for individual Displays:
+Use the **Profile Settings** tab to see the settings applied from the selected [Display Settings Profile](displays_settings.html).
 
 ![Displays Edit Profile Settings](img\displays_edit_profilesettings.png)
 
 Click the edit icon to change selected settings to override the Profile.
 
-### Remote
+#### Set Bandwidth Limits per Display
 
-Enter details for remote access
+Use the **Advanced** tab to apply a limit to determine the amount of bandwidth that a **Display** can consume.
 
-### Advanced
-
-![Advanced Tab](img/v3.3_displays_administration_edit_advanced.png)
-
-- Apply a limit to determine the amount of **Bandwidth** a Display can consume.
+![Displays Bandwidth](img\v3_displays_edit_advanced_bandwidth.png)
 
 {tip}
 Set bandwidth limits for multiple Displays using the With Selected option at the bottom of the grid!
@@ -240,7 +194,9 @@ Once the details provided have been authenticated, the Display will attempt regi
 
 {tip}
 Select multiple Displays to transfer using the **With Selected** option at the bottom of the grid!
+{/tip}
 
-Certain Actions from the row menu have the option to be 'automatically submitted', see [Grids](tour_grids.html) for further information!
+{tip}
+Certain Actions from the Row Menu have the option to be 'automatically submitted', see [Grids](tour_grids.html) for further information!
 {/tip}
 
