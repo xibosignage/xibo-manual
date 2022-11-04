@@ -13,7 +13,7 @@
 [[PRODUCTNAME]] has two available **Campaign** types:
 
 - Layout List
-- Ad Campaign ([Feature](users_feature_and_sharing.html) enabled for Users/User Groups)
+- Ad Campaign ([Feature](users_features_and_sharing.html) enabled for Users/User Groups)
 
 **Campaigns** are administered from the **Design** section of the CMS Menu:
 
@@ -100,7 +100,7 @@ Layouts can be directly assigned to Campaigns from the Layouts grid. Use the row
 Create Advertising Campaigns to be shown on selected Displays. [[PRODUCTNAME]] will work out how many plays are needed to satisfy entered criteria and handle the scheduling automatically.
 
 {tip}
-This [Feature](users_feature_and_sharing.html) should be enabled for each User/User Group who requires access!
+This [Feature](users_features_and_sharing.html) should be enabled for each User/User Group who requires access!
 {/tip}
 
 ## Create an Ad Campaign
