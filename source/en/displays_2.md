@@ -1,7 +1,11 @@
 # Displays
 
 {tip}
-Please note: If you are using a 3.x CMS, please use the following link: [Displays](displays.html)
+**Please note:**
+
+- If you are using a v3.3.0 CMS or later, please click [here](displays.html)
+- If you are using a v3 CMS earlier than v3.3 please click [here](displays_3.html)
+
 {/tip}
 
 The primary purpose of [[PRODUCTNAME]] is to show content on screens with the entire application suite existing for that one purpose. [[PRODUCTNAME]] provides a concept called **Displays** to manage when and how content is shown on a screen.

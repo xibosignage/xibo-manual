@@ -35,6 +35,10 @@ Did you know...you can set a bandwidth limit per [Display](displays.html)!
 
 Use the **All Reports** button to return to the Reporting dashboard or use the **Reports** drop down menu to select another 'Display' report to view.
 
+{version}
+**Note:** From CMS v3.3.0 all reports will show a Chart and Tabular data (on separate tabs) which can be exported as a CSV.
+{/version}
+
 - ### Time Connected/Disconnected
 
 

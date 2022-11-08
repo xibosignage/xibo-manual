@@ -69,30 +69,12 @@ Determine the order in which the Layout/Campaign will play in rotation when sche
 The Display Order on Overlay Layouts determines the order in which the Layout Regions are applied to the overlay and compliments the Regions own layer settings.
 
 {tip}
-To ensure ordering of Layouts we would recommend that these are ordered within a **Campaign**. The Display Order could then be used to determine the order in which entire Campaigns should playout. If no Display Order is specified for Campaigns or they have the same Display order the Campaigns will play interleaved.
-
-**Scenario**
-
-Campaign A consists of Layout 1, Layout 2 Layout 3 - Display Order of 1
-Campaign B consists of Layout 4, Layout 5, Layout 6 - Display Order of 1
-When scheduled at the same time the Campaigns will play out as follows:
-
-A - Layout 1
-
-B - Layout 4
-
-A - Layout 2
-
-B - Layout 5
-
-A - Layout 3
-
-B - Layout 6
-
-A - Layout 1 and so on.
-
-To ensure that the Campaigns played all the contained Layouts before rotating to the next, Campaign A would need a Display Order of 1 and Campaign B would need a Display Order of 2.
+To ensure ordering of Layouts we would recommend that these are ordered within a Campaign. The Display Order could then be used to determine the order in which entire Campaigns should playout. If no Display Order is specified for Campaigns or they have the same Display order the Campaigns will play according to the Play List order chosen for the [Campaign](layouts_campaigns), Interleaved or Block.
 {/tip}
+
+{version}
+If you are using a CMS earlier than v3.3.0 Campaigns with the same display order will play interleaved.
+{/version}
 
 ### Priority
 
