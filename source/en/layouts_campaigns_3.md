@@ -4,7 +4,7 @@
 **Please note:** 
 
 - If you are using a v3.3.0 and later CMS, please click [here](layouts_campaigns.html)
-- If you are using a v3.1.x CMS, please click [here](layouts_campaigns_3.html)
+- If you are using a v3.1.x CMS, please click [here](layouts_campaigns_3.1.html)
 
 {/tip}
 
