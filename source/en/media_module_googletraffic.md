@@ -1,6 +1,8 @@
 ---
 toc: "widgets"
 maxheadingLevel: 2
+minheadingLevel: 2
+excerpt: "Display data with a Google Maps API Key"
 ---
 
 # Google Traffic
