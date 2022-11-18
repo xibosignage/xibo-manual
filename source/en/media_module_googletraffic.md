@@ -1,7 +1,7 @@
 ---
 toc: "widgets"
-maxHeadingLevel: 2
-minHeadingLevel: 3
+maxHeadingLevel: 3
+minHeadingLevel: 2
 excerpt: "Display data with a Google Maps API Key"
 ---
 
