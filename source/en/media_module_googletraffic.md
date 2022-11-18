@@ -1,4 +1,7 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+maxheadingLevel: 2
+---
 
 # Google Traffic
 
