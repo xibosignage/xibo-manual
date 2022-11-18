@@ -2,4 +2,6 @@
 .sync/
 output/
 template/custom
+vendor
+
 desktop.ini

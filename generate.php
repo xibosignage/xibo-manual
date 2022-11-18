@@ -1,5 +1,5 @@
 <?php
-include_once('libraries/parsedown/parsedown.php');
+require_once 'vendor/autoload.php';
 include_once('manualgenerator.class.php');
 
 $argv = $GLOBALS['argv'];

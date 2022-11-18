@@ -1,4 +1,9 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+maxHeadingLevel: 3
+minHeadingLevel: 2
+excerpt: "Display data with a Google Maps API Key"
+---
 
 # Google Traffic
 

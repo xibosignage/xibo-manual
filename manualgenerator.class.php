@@ -18,8 +18,23 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with Xibo.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+use League\CommonMark\Environment\Environment;
+use League\CommonMark\Extension\Attributes\AttributesExtension;
+use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
+use League\CommonMark\Extension\DisallowedRawHtml\DisallowedRawHtmlExtension;
+use League\CommonMark\Extension\FrontMatter\FrontMatterExtension;
+use League\CommonMark\Extension\GithubFlavoredMarkdownExtension;
+use League\CommonMark\Extension\SmartPunct\SmartPunctExtension;
+use League\CommonMark\Node\Block\Document;
+use League\CommonMark\Normalizer\SlugNormalizer;
+use League\CommonMark\Parser\MarkdownParser;
+use League\CommonMark\Renderer\HtmlRenderer;
+
 class ManualGenerator
 {
+    private static $environment;
+
     private $whiteLabel;
     private $productName;
     private $productVersion;
@@ -164,6 +179,7 @@ class ManualGenerator
      * @param string $folder the folder
      * @param string $lang the current language
      * @param string $file the file
+     * @throws \DOMException
      */
     private function processFile($langs, $folder, $lang, $file)
     {
@@ -172,6 +188,19 @@ class ManualGenerator
 
         // Get the page content
         $pageContent = $this->processReplacements($this->file_get_contents_or_default($lang, $file . '.md'));
+
+        // Do we have front-matter or the old TOC comment.
+        $toc = strtok($pageContent, "\n");
+        if (stripos($toc, '<!--toc=') !== false) {
+            // Find out what TOC this file should have (read the first line)
+            $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
+        } else {
+            // Front matter
+            $frontMatter = new Webuni\FrontMatter\FrontMatter();
+            $meta = $frontMatter->parse($pageContent);
+            $data = $meta->getData();
+            $toc = $data['toc'] ?? '';
+        }
 
         // Replace any image URL's which do not exist in the img folder for this language
         // unless we are "en" in which case we are the source of all images so it doesn't matter
@@ -187,7 +216,7 @@ class ManualGenerator
         }
 
         // Run through parse down
-        $pageContent = Parsedown::instance()->text($pageContent);
+        $pageContent = self::getHtml($pageContent);
 
         // Look for headers in the page content and give them ID's based on their actual content.
         $pageContent = preg_replace_callback('#(<h1>)(.*)(</h1>)#i', function ($m) {
@@ -199,10 +228,6 @@ class ManualGenerator
             $id = strtolower(str_replace(' ', '_',$m[2]));
             return '<h2 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>';
         }, $pageContent);
-
-        // Find out what TOC this file should have (read the first line)
-        $toc = strtok($pageContent, "\n");
-        $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
 
         // Header and Footer
         $string = $this->template;
@@ -222,7 +247,7 @@ class ManualGenerator
             $navToc = $nav['containsToc'][0];
             if (in_array($toc, $nav['containsToc'])) {
                 $navToc = $toc;
-                $tocString = Parsedown::instance()->text(
+                $tocString = self::getHtml(
                     $this->processReplacements($this->file_get_contents_or_default($lang, 'toc/' . $toc . '.md'))
                 );
 
@@ -293,21 +318,21 @@ class ManualGenerator
             $match = $matches[0];
             $match = str_replace('{tip}', '', $match);
             $match = str_replace('{/tip}', '', $match);
-            return '<blockquote class="tip">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_engage_lightblue.svg" />' : '') . Parsedown::instance()->text($match) . '</blockquote>';
+            return '<blockquote class="tip">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_engage_lightblue.svg" />' : '') . self::getHtml($match) . '</blockquote>';
         }, $string);
 
         $string = preg_replace_callback('/({(cloud)\b[^}]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
             $match = $matches[0];
             $match = str_replace('{cloud}', '', $match);
             $match = str_replace('{/cloud}', '', $match);
-            return '<blockquote class="cloud">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_cloud_blue.svg" />' : '') . Parsedown::instance()->text($match) . '</blockquote>';
+            return '<blockquote class="cloud">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_cloud_blue.svg" />' : '') . self::getHtml($match) . '</blockquote>';
         }, $string);
 
         $string = preg_replace_callback('/({(noncloud)\b[^}]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
             $match = $matches[0];
             $match = str_replace('{noncloud}', '', $match);
             $match = str_replace('{/noncloud}', '', $match);
-            return '<blockquote class="noncloud">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_cms_orange.svg" />' : '') . Parsedown::instance()->text($match) . '</blockquote>';
+            return '<blockquote class="noncloud">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_cms_orange.svg" />' : '') . self::getHtml($match) . '</blockquote>';
         }, $string);
 
         // Strip out other not supported tags.
@@ -376,5 +401,31 @@ class ManualGenerator
         }
 
         return false;
+    }
+
+    public static function getHtml($markdown): string
+    {
+        $document = self::getDocument($markdown);
+        return (new HtmlRenderer(self::$environment))->renderDocument($document);
+    }
+
+    public static function getDocument($markdown): Document
+    {
+        self::$environment = new Environment([
+            'slug_normalizer' => [
+                'instance' => new SlugNormalizer(),
+            ],
+            'disallowed_raw_html' => [
+                'disallowed_tags' => ['title', 'textarea', 'style', 'xmp', 'noembed', 'noframes', 'script', 'plaintext'],
+            ],
+        ]);
+        self::$environment->addExtension(new CommonMarkCoreExtension());
+        self::$environment->addExtension(new DisallowedRawHtmlExtension());
+        self::$environment->addExtension(new GithubFlavoredMarkdownExtension());
+        self::$environment->addExtension(new AttributesExtension());
+        self::$environment->addExtension(new SmartPunctExtension());
+        self::$environment->addExtension(new FrontMatterExtension());
+
+        return (new MarkdownParser(self::$environment))->parse($markdown);
     }
 }

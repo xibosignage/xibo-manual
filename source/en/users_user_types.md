@@ -8,7 +8,9 @@ Every User is assigned 1 of 3 main User Types:
 - **Group Admin**
 - **User**
 
-There is an additional **DOOH** User Type which will only be granted access to the CMS via the API. Used in conjunction with the [DOOH Application](users_administration.html#my_applications>).
+{version}
+**NOTE:** There is an additional **DOOH** User Type which will only be granted access to the CMS via the API, [DOOH Application](users_administration.html#my_applications). This additional User Type will be removed from v4.
+{/version}
 
   ![User Type](img/user_type.png)
 
@@ -38,10 +40,11 @@ A User will only have access to the parts of the CMS as assigned to the User Gro
 
 ### DOOH
 
+{version}
+**NOTE:** This additional User Type will be removed from v4.
+{/version}
+
 A DOOH user will have access to the CMS, via the API, to allow for content creation and Scheduling and will only see Displays/Media/Playlists/Layouts that belong to them. Content created by the DOOH User will not be visible to other non-DOOH Users.
 
 **Super Admin** Users are able to set a Preference to view DOOH Users content in their [User Profile](tour_user_profile.html)
 
-{tip}
-User Type is selected when first adding a User and can be edited from the individual User record.
-{/tip}
