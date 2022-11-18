@@ -1,0 +1,11 @@
+{
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "require": {
+        "league/commonmark": "^2.3",
+        "webuni/front-matter": "^1.4"
+    }
+}
