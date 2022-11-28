@@ -24,6 +24,10 @@ On adding, configuration options are shown in the right hand properties panel:
 - Choose to override the default **Duration** if required.
 - In the **Link** field, enter the URL to embed from your chosen dashboard. 
 
+{version}
+NOTE: The minimum refresh interval that can be entered per dashboard is 5 minutes as we do not support dashboard service updates more frequently than 5 minutes.
+{/version}
+
 {tip}
 Please see the following page for further information on obtaining a URL to use with this service, authentication mechanisms and possible limitations [Xibo Dashboard Service](/docs/setup/xibo-dashboards-service)
 {/tip}
