@@ -23,6 +23,14 @@ On adding, configuration options are shown in the right hand properties panel:
 ### Configuration
 
 - Provide the iCal **URL** to link.
+
+{tip}
+Ensure that the ICS feed URL is available to the CMS. If the feed loads in a browser without authentication then the feed should display in the CMS without issue.
+
+For further information on how to view your Google Calendar in applications, use the following link selecting the **Get your calendar (view only)** option: https://support.google.com/calendar/answer/37648?hl=en
+
+{/tip}
+
 - Use the drop down to select the **type of calendar** to use to display events:
 
 ![Calendar Configuration](img\v3.1_media_calendar_configuration.png)

@@ -25,7 +25,7 @@ On adding, configuration options are shown in the right hand properties panel:
 - In the **Link** field, enter the URL to embed from your chosen dashboard. 
 
 {version}
-NOTE: The minimum refresh interval that can be entered per dashboard is 5 minutes as we do not support dashboard service updates more frequently than 5 minutes.
+**NOTE:** The minimum refresh interval that can be entered per dashboard is 5 minutes as we do not support dashboard service updates more frequently than 5 minutes.
 {/version}
 
 {tip}

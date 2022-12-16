@@ -1,3 +1,5 @@
+<!--toc=tour-->
+
 # Folders
 
 From v3.0.0 **Folders** can be used throughout the CMS to search, organise and easily control User/User Group [Share](users_features_and_sharing.html) options for items held within a specific Folder.
