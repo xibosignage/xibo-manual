@@ -4,7 +4,7 @@
 
 Display information held in a DataSet in a tabular format on Layouts.
 
-{feat}DataSet View Widget|v3{/feat}
+{feat}DataSet View|v3{/feat}
 
 When the underlying **DataSet Data** is changed, the DataSet View Widget included in the Layout, will update with the new data.
 

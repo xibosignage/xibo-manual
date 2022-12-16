@@ -4,7 +4,7 @@
 
 Display live streamed HLS content on Layouts.
 
-{feat}HLS Stream Widget|v3{/feat}
+{feat}HLS Stream|v3{/feat}
 
 {version}
 NOTE: This Widget requires a Player running Windows 8.1 or later/Android 6 or later. Earlier Android devices may play HLS using the [Local Video](media_module_localvideo.html) Widget. 

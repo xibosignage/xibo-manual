@@ -8,7 +8,7 @@ The HTML Package Module allows for the upload of a complete HTML Package which c
 NOTE: If you are using a v2.0 CMS please use the following link: [HTML Package](media_module_htmlpackage_2.html)
 {/version}
 
-{feat}HTML Package Widget|v3{/feat}
+{feat}HTML Package|v3{/feat}
 
 ## Add Widget
 

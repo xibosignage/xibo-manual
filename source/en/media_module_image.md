@@ -12,7 +12,7 @@ NOTE:  If you are using a CMS earlier than v3.1, please use the links below:
 
 {/version}
 
-{feat}Image Widget|v3{/feat}
+{feat}Image|v3{/feat}
 
 Image files can be uploaded to the [Library](media_library.html) or uploaded directly to Layouts using the Image [Library Search](layouts_library_search.html) function from the Toolbar in the Layout Designer.
 

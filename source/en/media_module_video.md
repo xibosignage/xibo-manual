@@ -11,7 +11,7 @@ NOTE: If  you are using a CMS earlier than v3.1, please select from the links be
 - CMS earlier than v3.0.0 please click [here](media_module_video_2.html)
   {/version}
 
-{feat}Video Widget|v3{/feat}
+{feat}Video|v3{/feat}
 
 Uploaded video files are cached for off-line playback which can then be added to Layouts.
 

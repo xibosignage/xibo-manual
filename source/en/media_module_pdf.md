@@ -8,7 +8,7 @@ Display PDF files on Layouts.
 NOTE: If you are using a CMS earlier than v3.0.0 please use the following link: [PDF](media_module_pdf_2.html)
 {/version}
 
-{feat}PDF Widget|v3{/feat}
+{feat}PDF|v3{/feat}
 
 ## Add Widget
 

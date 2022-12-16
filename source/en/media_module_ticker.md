@@ -7,7 +7,7 @@ Display dynamic feed content on Layouts.
 NOTE: If you are using a 1.8.x CMS, please use the following link: [Ticker 1.8](media_module_ticker_1.8.html)
 {/version}
 
-{feat}Ticker Widget|v3{/feat}
+{feat}Ticker|v3{/feat}
 
 The Ticker Widget primarily consists of a data source location and a template to apply to the retrieved data.
 

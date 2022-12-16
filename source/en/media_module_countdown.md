@@ -4,7 +4,7 @@
 
 Display a countdown for a selected duration or until a specified date on Layouts.
 
-{feat}Countdown Widget|v3{/feat}
+{feat}Countdown|v3{/feat}
 
 ## Add Widget
 

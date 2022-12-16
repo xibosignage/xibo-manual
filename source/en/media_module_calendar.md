@@ -8,7 +8,7 @@ Display a Schedule, Daily, Weekly or Monthly calendar views pulled from an iCal 
 NOTE: If you are using a CMS earlier than v3.1, please click [here](media_module_calendar_3.html)
 {/version}
 
-{feat}Calendar View Widget|v3{/feat}
+{feat}Calendar View|v3{/feat}
 
 ## Add Widget
 

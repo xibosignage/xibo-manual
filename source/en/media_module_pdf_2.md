@@ -6,7 +6,7 @@ The PDF Module allows for the upload of PDF files to the Library which can then 
 NOTE: If you are using a 3.x CMS, please use the following link: [PDF](media_module_pdf.html)
 {/version}
 
-{feat}PDF Widget|v2{/feat}
+{feat}PDF|v2{/feat}
 
 {tip}
 If the PDF file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

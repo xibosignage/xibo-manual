@@ -4,7 +4,7 @@
 
 Display an analogue, flip or digital clock in Layouts.
 
-{feat}Clock Widget|v3{/feat}
+{feat}Clock|v3{/feat}
 
 ## Add Widget
 
