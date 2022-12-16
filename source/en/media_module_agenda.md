@@ -26,6 +26,14 @@ On adding, configuration options are shown in the right hand properties panel:
 ![Calendar Configuration](img\v3.1_media_agenda_configuration.png)
 
 - Provide the iCal **URL** to link.
+
+{tip}
+Ensure that the ICS feed URL is available to the CMS. If the feed loads in a browser without authentication then the feed should display in the CMS without issue.
+
+For further information on how to view your Google Calendar in applications, use the following link selecting the **Get your calendar (view only)** option: https://support.google.com/calendar/answer/37648?hl=en
+
+{/tip}
+
 - Use the **Interval** field to filter events for a certain period. Use natural language such as '1 day' or '2 weeks' to return the events within your chosen time frame.
 - Tick the checkbox to enter a **Date range** instead with defined start and end dates.
 - Specify the **Number of items**/events you wish to display from the iCal feed.

@@ -4,6 +4,7 @@
 - [Two Factor Authentication](tour_two_factor_authentication.html)
 - [CMS Dashboards](tour_status_dashboard.html)
 - [CMS Navigation](tour_navigation.html)
+- [CMS Settings](tour_cms_settings.html)
 - [Grids](tour_grids.html)
 - [Forms](tour_forms.html)
 - [Tags](tour_tags.html)
