@@ -9,7 +9,7 @@ NOTE:
 - If you are using a 3.1 or later CMS, please click [here](media_module_video.html)
   {/version}
 
-{feat}Video Widget|v2{/feat}
+{feat}Video|v2{/feat}
 
 {tip}
 If the video file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

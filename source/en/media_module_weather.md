@@ -8,7 +8,7 @@ Display daily weather forecasts on Layouts.
 NOTE: If you are using a CMS earlier than v3.1, please click [here](media_module_weather_3.html)
 {/version}
 
-{feat}Weather Widget|v3{/feat}
+{feat}Weather|v3{/feat}
 
 The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
 

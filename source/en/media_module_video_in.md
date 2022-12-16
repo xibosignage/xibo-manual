@@ -4,7 +4,7 @@
 
 Display input from an external source on SoC Displays.
 
-{feat}Video In Widget|v3{/feat}
+{feat}Video In|v3{/feat}
 
 **Android only supports Phillips monitors to utilise this Widget!**
 

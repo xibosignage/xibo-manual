@@ -11,7 +11,7 @@ Display DataSet information as one of the chart types below:
 - Horizontal Bar
 - Radar
 
-{feat}Chart Widget|v3{/feat}
+{feat}Chart|v3{/feat}
 
 DataSets need to be created and defined prior to adding the Chart Widget to Layouts. Please see the [DataSet](media_datasets.html) page for further information.
 

@@ -4,7 +4,7 @@
 
 Embed HTML and JavaScript to be displayed on Layouts. This allows for custom enhancements to be made to [[PRODUCTNAME]] without modifying the core application. 
 
-{feat}Embedded HTML Widget|v3{/feat}
+{feat}Embedded HTML|v3{/feat}
 
 {tip}
 Examples of where this might be useful are displaying a Clock or Weather region.
@@ -30,7 +30,7 @@ On adding, configuration options are shown in the properties panel:
   {version}
   NOTE: Transparent background is available on all Players and Windows from v2 R253!
   Ensure that the embedded content also has a transparent background!
-{/version}
+  {/version}
   
 - Select to **Scale** embedded content along with the layout.
 - From v3.0.0 users can select to **Preload** the Widget off screen. 

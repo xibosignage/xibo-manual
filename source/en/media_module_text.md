@@ -4,7 +4,7 @@
 
 Add text to display on Layouts.
 
-{feat}Text Widget|v3{/feat}
+{feat}Text|v3{/feat}
 
 ## Add Widget
 

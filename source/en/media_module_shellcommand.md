@@ -8,7 +8,7 @@ The Shell Command Module is used to instruct the Display to execute a command ou
 NOTE: If you are using a CMS earlier than v3.0.0 please use the following link: [Shell Command](media_module_shellcommand_2.html)
 {/version}
 
-{feat}Shell Command Widget|v3{/feat}
+{feat}Shell Command|v3{/feat}
 
 {cloud}
 

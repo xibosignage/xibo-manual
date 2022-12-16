@@ -10,7 +10,7 @@ If you are using a CMS earlier than v3.0.0 please use the following link: [Flash
 
 The Flash Module allows for SWF file uploads to the [Library](media_library.html) which can then be used in Layouts.
 
-{feat}Adobe Flash Widget|v3{/feat}
+{feat}Adobe Flash|v3{/feat}
 
 {version}
 NOTE: As Adobe has discontinued development and support for this application the Flash Module is no longer supported on Android. After extensive testing, it was found that instabilities in the Player could cause the Player to close. Should you still choose to run via the Flash Module or on embedded websites, it will render using the Flash application if available. However, if you have stability problems with your device this may be due to the running of Flash content.

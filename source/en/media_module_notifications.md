@@ -4,7 +4,7 @@
 
 Display messages created in the [Notification Drawer](users_notifications.html) of the CMS on Layouts.
 
-{feat}Notification Widget|v3{/feat}
+{feat}Notification|v3{/feat}
 
 ## Add Widget
 

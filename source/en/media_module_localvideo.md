@@ -10,7 +10,7 @@ The Local Video Widget is used for video that exists **only** on the **Display**
 
 \- Streamed Videos
 
-{feat}Local Video Widget|v3{/feat}
+{feat}Local Video|v3{/feat}
 
 ## Add Widget
 

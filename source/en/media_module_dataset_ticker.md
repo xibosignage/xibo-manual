@@ -3,7 +3,7 @@
 
 Display information held in a DataSet as a ticker on Layouts.
 
-{feat}DataSet Ticker Widget|v3{/feat}
+{feat}DataSet Ticker|v3{/feat}
 
 DataSets need to be created and defined prior to adding the DataSet Ticker Widget to Layouts. Please see the [DataSet](media_datasets.html) page for further information.
 

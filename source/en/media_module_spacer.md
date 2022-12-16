@@ -4,7 +4,7 @@
 
 Include the Spacer Widget to your Layouts to create an 'empty' Region for a specified duration.
 
-{feat}Spacer Widget|v3{/feat}
+{feat}Spacer|v3{/feat}
 
 ## Add Widget
 

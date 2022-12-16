@@ -4,7 +4,7 @@
 
 Display retrieved exchange rates for currency pairs on Layouts
 
-{feat}Currencies Widget|v3{/feat}
+{feat}Currencies|v3{/feat}
 
 {nonwhite}
 {cloud}

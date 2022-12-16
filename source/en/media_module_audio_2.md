@@ -12,7 +12,7 @@ NOTE:
   {/version}
   
 
-{feat}Audio Widget|v2{/feat}
+{feat}Audio|v2{/feat}
 
 Audio files are uploaded to the [Library](media_library_2.html) and served to the Player for offline playback. The Audio Module allows for audio to be assigned to Layouts.
 

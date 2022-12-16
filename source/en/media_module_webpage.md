@@ -4,7 +4,7 @@
 
 Display an entire webpage embedded inside a Region on Layouts.
 
-{feat}Webpage Widget|v3{/feat}
+{feat}Webpage|v3{/feat}
 
 {tip}
 **Please note:** This Widget requires a valid internet connection in order to function, webpages are not cached by the Player.

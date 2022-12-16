@@ -11,7 +11,7 @@ NOTE:
 
 {/version}
 
-{feat}Video WIdget|v3{feat}
+{feat}Video|v3{feat}
 
 ## Add Widget
 

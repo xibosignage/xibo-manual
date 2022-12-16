@@ -6,7 +6,7 @@ The HTML Package Module allows for the upload of a complete HTML Package which c
 NOTE: If you are using a v3.0 CMS, please use the following link: [HTML Package](media_module_htmlpackage.html)
 {/version}
 
-{feat}HTML Package Widget|v2{/feat}
+{feat}HTML Package|v2{/feat}
 
 {tip}
 If the file has already been uploaded to the Library use the [Library Search](layouts_library_search.html) tab to quickly and simply add to a Region.

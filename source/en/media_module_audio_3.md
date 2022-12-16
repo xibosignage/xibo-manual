@@ -11,7 +11,7 @@ NOTE:
 
 {/version}
 
-{feat}Audio Widget|v3{/feat}
+{feat}Audio|v3{/feat}
 
 Audio files are uploaded to the [Library](https://xibo.org.uk/manual/en/media_library.html) which are then cached for off-line playback.
 

@@ -4,7 +4,7 @@
 
 Display content added to Playlists on Layouts.
 
-{feat}Sub-Playlist Widget|v3{/feat}
+{feat}Sub-Playlist|v3{/feat}
 
 {tip}
 Ensure that you have created a [Playlist](media_playlists.html) prior to adding this Widget!

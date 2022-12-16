@@ -6,7 +6,7 @@ Display calendar events pulled from an iCal feed.
 NOTE: If you are using CMS v3.1 or later,  please use the following link [Agenda](media_module_agenda.html)
 {/version}
 
-{feat}Calendar Widget|v3{/feat}
+{feat}Calendar|v3{/feat}
 
 Calendar events can be filtered and formatted using templates.
 

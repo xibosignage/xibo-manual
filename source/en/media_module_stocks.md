@@ -4,7 +4,7 @@
 
 Display trade price information for stock listings on Layouts.
 
-{feat}Stocks Widget|v3{/feat}
+{feat}Stocks|v3{/feat}
 
 {nonwhite}
 {cloud}
