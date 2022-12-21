@@ -2,7 +2,7 @@
 
 # Events
 
-Events are administered from the Schedule section of the m main menu.
+Events are administered from the Schedule section of the main menu.
 
 Layouts, Campaigns, Overlay Layouts, Interrupt Layouts, Command and Action **Event Types** can be assigned to Displays/Display Groups to be shown at specific dates and times.
 
@@ -146,7 +146,7 @@ Tick the box if you wish to be notified email, this will be sent to the email ad
 
 ## Geo Location
 
-Available from v2.3.0 This is currently supported in Players from Windows R253 and Android R206. 
+{feat}Geo Location Scheduling|v3{/feat}
 
 Tick the checkbox to make this Event location aware. Further details can be found on the [Geo Scheduling](scheduling_geolocation.html) page.
 

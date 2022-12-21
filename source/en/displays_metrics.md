@@ -2,9 +2,9 @@
 
 # Reporting
 
-{tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Reporting](displays_metrics_2.html)
-{/tip}
+{version}
+**Note:** If you are using a CMS earlier than v3.0.0 please use the following link: [Reporting](displays_metrics_2.html)
+{/version}
 
 [[PRODUCTNAME]] provides useful **metrics** for Users, who have the relevant enabled [Features and Sharing](users_features_and_sharing.html) options, to view reports within the CMS. These are designed to provide a centralised area for analysis into Display performance and usage as well as detailed **Proof of Play** reports which are all available from **All Reports** under the **Reporting** section on the main menu.
 
@@ -26,10 +26,8 @@ The CMS records the **bandwidth** used by each Display when connecting to XMDS f
 ![Bandwidth one Display](img\v3_displays_bandwidth_display.png)
 
 {tip}
-Filtering to just one Display helps to better understand where bandwidth has been used!
-{/tip}
+Filtering to just one Display helps to better understand where bandwidth has been used.
 
-{tip}
 Did you know...you can set a bandwidth limit per [Display](displays.html)!
 {/tip}
 
@@ -54,9 +52,15 @@ The Time Connected Report will give a breakdown of % connected (shown in green) 
 
 ![Time Connected](img\v3_displays_time_connected.png)
 
+
+
 The **Summary** gives a further breakdown between specified dates for Displays/Display Groups and shows the number of days connected/disconnected:
 
+
+
 ![Summary Time Connected](img\v3_displays_summary_connected.png)
+
+
 
 ## Proof of Play
 
@@ -70,6 +74,8 @@ Each **Display** can collect information to provide Proof of Play Reports on wha
 - **Event** - If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
 
 ![Proof of Play Type](img\v3_displays_reporting_proof_of_play_type.png)
+
+
 
 - To collect Proof of Play reports **Enable Stats Reporting** and set the **Aggregation level** on a [Display Profile Setting](displays_settings.html)
 
@@ -188,9 +194,9 @@ Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yea
 
 - A PDF of the report can  be emailed to users by ticking the Should an email be sent? checkbox
 
-{tip}
+{version}
 From v3.1.0 opt to disable the **Logo** shown on exported reports from the General tab on the **Settings** page under the **Administration** section of the main menu!
-{/tip}
+{/version}
 
 
 {tip}

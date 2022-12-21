@@ -2,9 +2,9 @@
 
 # Display Groups
 
-{tip}
-If you are using a CMS earlier than v3.0.0 please use the following link: [Display Groups](displays_groups_2.html)
-{/tip}
+{version}
+**Note:** If you are using a CMS earlier than v3.0.0 please use the following link: [Display Groups](displays_groups_2.html)
+{/version}
 
 For ease of **Scheduling** and **Media Assignment** create Display Groups and assign Displays to one or multiple Display Groups. 
 
@@ -67,11 +67,9 @@ For example, all Displays containing "a" but not "b" would be `a,-b`.
 
 ![Display Group Dynamic Criteria](img/v3_displays_group_dynamic.png)
 
-{tip}
-From v3.1.0 Criteria Tags can be filtered using addtional OR/AND filters for Displays that have multiple Tags assigned!
-{/tip}
-
-
+{version}
+From v3.1.0 Criteria Tags can be filtered using additional OR/AND filters for Displays that have multiple Tags assigned!
+{/version}
 
 ### Manual Assignment
 

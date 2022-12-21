@@ -107,9 +107,9 @@ Define a time to download updates to a Player, such as new Player versions. This
 This setting is best used in conjunction with either assigned Layouts or deferred published Layouts so that they publish during the update window!
 {/tip}
 
-### Force HTTPS - available from v2.2.0
+### Force HTTPS - available from v2.0.0
 
-**Please note:** This feature is available for Windows Players from v2 R201, Android Players v2 R203, webOS v2 R204 and Tizen v2 R201and is currently not supported for Linux Players.
+{feat}Force HTTPS Connection|v3{/feat}
 
 This option has been included to force a Displays connection to the CMS using HTTPS. 
 

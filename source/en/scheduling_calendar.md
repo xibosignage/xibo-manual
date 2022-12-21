@@ -15,18 +15,14 @@ Use the control bar at the top of the calendar to select **Displays**, **Add Eve
 Click in this field to select Displays/Display Groups to view the associated schedules.
 
 {tip}
-Multiple Displays/Display Groups can be added here!
-{/tip}
+Multiple Displays/Display Groups can be added here.
 
-{tip}
 Use the **Show All** option to see schedules for **all** Displays.
 {/tip}
 
 ### Layout / Campaign
 
-**Please note:** This functionality is available from v2.2.0
-
-Use this field to search for Layouts/Campaigns that already exist in the Schedule for filtered Display/Display Groups.
+From CMS v2.2.0 use the field to search for Layouts/Campaigns that already exist in the Schedule for filtered Display/Display Groups.
 
 ### Add Event
 
@@ -97,10 +93,7 @@ Use the slider, located above the tabs, to pinpoint the exact time of day to vie
 Click on a Layout to highlight the associated information (associations will turn blue) and view the breadcrumb, to show further Campaign and Display Group information. If nested Display Groups have been configured, these will show in the breadcrumb.
 
 {tip}
-From v3.0.0, use the Preview window to Play the highlighted Layout, use the buttons to minimise/maximise the viewing window or go to full screen to Play!
-{/tip}
-
-{tip}
+From v3.0.0, use the Preview window to Play the highlighted Layout, use the buttons to minimise/maximise the viewing window or go to full screen to Play.
 Click on the breadcrumb to view the selected Layout in the Layout Designer and make necessary edits to the Schedule!
 {/tip}
 

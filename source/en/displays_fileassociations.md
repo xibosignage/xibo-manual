@@ -6,9 +6,7 @@ Library files and Layouts can be assigned directly to a Display or Display Group
 **This does NOT mean that assigned files and Layouts will be shown, and will still need to be Scheduled**
 
 {tip}
-
-This is useful for pre-loading a Layout ahead of time when that Layout will be used for some API integration, triggering a Layout change for example.
-
+This is useful for pre-loading a Layout ahead of time when that Layout will be used for some API integration, triggering a Layout change for example!
 {/tip}
 
 ## Assign Files / Layouts

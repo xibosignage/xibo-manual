@@ -2,13 +2,12 @@
 
 # Displays
 
-{tip}
-**Please note:**
-If you are using a CMS earlier than v3.3.0 please select from the options below:
+{version}
+**Note:** If you are using a CMS earlier than v3.3.0 please select from the options below:
 
 - CMS v3.0.0 - v3.2.x click [here](displays_3.html)
 - CMS earlier than v3.0.0 click [here](displays_2.html)
-  {/tip}
+  {/version}
 
 The primary purpose of [[PRODUCTNAME]] is to show content on screens with the entire application suite existing for that one purpose. [[PRODUCTNAME]] provides a concept called **Displays** to manage when and how content is shown on a screen.
 
@@ -31,11 +30,10 @@ Displays connect to the CMS over an API called "XMDS" {nonwhite}(Xibo Media Dist
 
 Alternatively, Displays can be added by providing a 6 character ‘Activation Code’ in the **Displays** page of the CMS.
 
-**Please note:** Using the **Add Display (Code)** in the CMS to connect a Display is currently only supported for **Android Players** from v2 R204 and **Windows Players** (from v2 R202/R252). We are working on supporting this connection method for all Players.
+{feat}Connect using Authentication Code|v3{/feat}
 
-{tip}
 New Displays will need to be marked as **Authorised** before they can be sent any content. This can be done by using the Row Menu for the Display and clicking the **Authorise** action.
-{/tip}
+
 
 ## Display Administration
 
@@ -222,7 +220,7 @@ This type of [Command](displays_command_functionality.html) can also be executed
 
 ### Transfer Display to another CMS
 
-**Please note:** This feature is currently not supported on Tizen and Linux Players. We are currently working to bring this feature to all Players but at present this feature is only available for Windows Players from v2 R201, Android Players from v2 R203 and webOS from R204.  
+{feat}Transfer Display to another CMS|v3{/feat}
 
 To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_two_factor_authentication.html), if you have not already set this up.
 

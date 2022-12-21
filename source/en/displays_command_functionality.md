@@ -2,9 +2,9 @@
 
 # Command Functionality
 
-{tip}
-If you are using a CMS earlier than v3.0.0 please click [here](command_functionality_1.8_2.html)
-{/tip}
+{version}
+**Note:** If you are using a CMS earlier than v3.0.0 please click [here](command_functionality_1.8_2.html)
+{/version
 
 The Command Functionality in [[PRODUCTNAME]] can be used to configure a set of Commands that a User can select to execute via **XMR**, in a **Schedule** or include in a **Layout**.
 
