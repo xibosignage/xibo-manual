@@ -17,7 +17,7 @@ There is support for **scaling** and **offsetting** the target webpage to allow 
 Locate **Webpage** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
 {version}
-NOTE: If you are using a 1.8.x CMS, select Webpage from the Widget Toolbox to add. 
+**NOTE:** If you are using a 1.8.x CMS, select Webpage from the Widget Toolbox to add. 
 {/version}
 
 On adding, configuration options are shown in the properties panel:
@@ -46,9 +46,10 @@ After the page is rendered [[PRODUCTNAME]] will scale to fit within the Region.
 The Player will open the webpage without any alterations and will open and render in the browser as if the URL had been visited on the device outside [[PRODUCTNAME]].
 **Please note:** There is no preview available for this option.
 
-{version}
+
 From v3.1.0, **Open Natively** has an additional option to provide code to be triggered on page load error.
-{/version}
+
+{feat}Webpage - Page load error trigger|v3{/feat}
 
 #### **Manual Position**
 

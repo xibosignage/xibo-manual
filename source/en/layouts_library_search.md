@@ -170,9 +170,9 @@ Please see the [Image](media_module_image.html) page for configuration options.
 
 ## Audio Files
 
-{tip}
+{version}
 **Please note:** The Linux Player does not support Audio files.
-{/tip}
+{/version}
 
 {tip}
 We recommend the following file formats for audio:

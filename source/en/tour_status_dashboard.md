@@ -58,3 +58,9 @@ The Playlist Dashboard gives a very restricted view of the CMS with a User only 
 **Please note:** Administrators need to ensure that the **Sub-Playlist Widget** has been added to a Layout and configured to show the User's Playlist with defined Spots before a User can add/replace Media using the Playlist Dashboard.
 {/tip}
 
+{nonwhite}
+### Further Guidance
+
+[Utilising the Playlists Dashboard](https://community.xibo.org.uk/t/utilising-the-playlists-dashboard/21966)
+
+{/nonwhite}

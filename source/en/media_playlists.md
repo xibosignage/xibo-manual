@@ -121,3 +121,12 @@ Take a look at [Features and Sharing](users_features_and_sharing.html) for more 
 
 Include the [Sub-Playlist Widget](media_module_subplaylist.html) to add Playlists to Layouts.
 
+{nonwhite}
+### Further Guidance
+
+[Utilising the Playlists Dashboard](https://community.xibo.org.uk/t/utilising-the-playlists-dashboard/21966)
+
+[How to show Media at specified intervals using Playlists](https://community.xibo.org.uk/t/how-to-show-media-at-specified-intervals-using-playlists/20790)
+
+{/nonwhite}
+

@@ -4,9 +4,7 @@
 
 From version 2.3.0, **Events** can be scheduled to be location aware.
 
-{tip}
-**Please note:** This feature is currently supported in the Windows Player from v2 R253 and Android Players from v2 R206. We are currently working to bring this feature to all Players.
-{/tip}
+{feat}Geo Location Scheduling|v3{/feat}
 
 Click on the **Geo Location** tab on the **Schedule Event** form.
 
@@ -39,7 +37,6 @@ Once scheduled, the scheduler will identify this event as being Geo Location awa
 
 
 Click on the icon to open the **Edit Event** form to make any required changes to your scheduled event.
-
 
 
 

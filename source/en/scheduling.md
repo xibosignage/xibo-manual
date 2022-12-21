@@ -26,9 +26,9 @@ The CMS supports scheduling for the following Event types:
 
    Specially created [Overlay Layouts](layouts_overlay.html) are scheduled at the same time as existing Layouts to create an **overlay** of content to be displayed. 
 
-4. #### Interrupt Layout Event (available from v2.2.0)
+4. #### Interrupt Layout Event
 
-   **Please note:** Currently supported for Android from R204 and Windows from R253
+   {feat}Schedule Interrupt Layouts|v3{/feat}
 
    A Layout that is scheduled as an [Interrupt Layout](layouts_interrupt.html) will interrupt your usual schedule to fit around other scheduled Layouts to play for the specified **Share of Voice** percentage set.
 
@@ -42,11 +42,11 @@ Available [Commands](displays_command_functionality.html) can be selected using 
 Display Order and Priority are irrelevant when it comes to executing the Command, but may be set in the CMS for organisational purposes.
 {/tip}
 
-6. #### Action Events (available from v3.1.0)
+6. #### Action Events 
 
-**Please note:** Currently supported on Windows from v3 R303
+{feat}Scheduled Action Events|v3{/feat}
 
-**Actions** allows listening for webhooks independantly to Layouts. Users can schedule Action Events to **Navigate to a Layout** or run a **Command**.
+**Actions** allows listening for webhooks independently to Layouts. Users can schedule Action Events to **Navigate to a Layout** or run a **Command**.
 
 ## Schedule Events
 
