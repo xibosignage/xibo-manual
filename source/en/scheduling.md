@@ -28,7 +28,7 @@ The CMS supports scheduling for the following Event types:
 
 4. #### Interrupt Layout Event
 
-   {feat}Schedule Interrupt Layouts|v3{/feat}
+   {feat}Interrupt Layouts|v3{/feat}
 
    A Layout that is scheduled as an [Interrupt Layout](layouts_interrupt.html) will interrupt your usual schedule to fit around other scheduled Layouts to play for the specified **Share of Voice** percentage set.
 

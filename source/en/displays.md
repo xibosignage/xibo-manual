@@ -31,7 +31,6 @@ Displays connect to the CMS over an API called "XMDS" {nonwhite}(Xibo Media Dist
 Alternatively, Displays can be added by providing a 6 character ‘Activation Code’ in the **Displays** page of the CMS.
 
 {feat}Connect using Authentication Code|v3{/feat}
-
 New Displays will need to be marked as **Authorised** before they can be sent any content. This can be done by using the Row Menu for the Display and clicking the **Authorise** action.
 
 
@@ -221,7 +220,6 @@ This type of [Command](displays_command_functionality.html) can also be executed
 ### Transfer Display to another CMS
 
 {feat}Transfer Display to another CMS|v3{/feat}
-
 To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_two_factor_authentication.html), if you have not already set this up.
 
 ![Display Transfer Google Authenticator](img\displays_transfer_cms_google_authenticator.png)
