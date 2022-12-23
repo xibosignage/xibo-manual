@@ -84,6 +84,12 @@ Set the Priority of the Event with the **highest** number stated playing in pref
 This functionality is useful for displaying temporary/important notices for overriding a schedule for a specific Event without having to make any changes to your existing schedule or cancelling Layouts/Campaigns that would be running at that time.
 {/tip}
 
+### Maximum Plays per Hour
+
+{feat}Max Plays per Hour|v3{/feat}
+
+Available from CMS v3.3.0 set a number in this field to limit the amount of times this Event is shown per hour on Displays. Leave as the default 0 for unlimited plays.
+
 ### Run at CMS Time
 
 When selected, the Event will play at the time determined by the **CMS** rather than using the local display time.
@@ -110,7 +116,7 @@ E.g. With a **Weekly** Repeat you could specify to repeat each Wednesday and Fri
 {/tip}
 
 {tip}
-(Available from version 2.0 and later) **Monthly** Repeats can be determined by the Event date or by the day in the month the event falls on. 
+Available from version 2.0 and later, **Monthly** Repeats can be determined by the Event date or by the day in the month the event falls on. 
 
 For example: an event which is scheduled on 06/03/2019 can be set to repeat on the 6th day of every month or the 1st Wednesday of each month (as 06/03/2019 falls on a Wednesday). 
 {/tip}
