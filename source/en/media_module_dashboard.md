@@ -29,7 +29,7 @@ On adding, configuration options are shown in the right hand properties panel:
 {/version}
 
 {tip}
-Please see the following page for further information on obtaining a URL to use with this service, authentication mechanisms and possible limitations [Xibo Dashboard Service](/docs/setup/xibo-dashboards-service)
+Please see the following page for further information on obtaining a URL to use with this service, authentication mechanisms and possible limitations [Xibo Dashboard Service](/docs/setup/xibo-dashboard-service)
 {/tip}
 
 ![Dashboard Configuration](img/media_modules_dashboard_configuration.png)
@@ -43,6 +43,15 @@ Once you are showing your dashboards on displays, the service will keep your das
 
 If you stop showing a dashboard on your displays for a time, then the service will stop refreshing it, but will start again automatically the next time that dashboard is shown.
 {/tip}
+
+{tip}
+**Please note:** By default, reports in **Power BI** render with a US Date format. To use an alternative date format add the following parameters to the URL you pass in the Dashboards Widget as shown with the example below for `en-GB`:
+
+`&language=en&formatLocale=en-GB`
+
+{/tip}
+
+
 
 ![Dashboard Preview](img/media_modules_dashboard_preview.png)
 
