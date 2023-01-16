@@ -2,15 +2,15 @@
 
 # Layout Designer
 
-{tip}
-If you are using a CMS earlier than v3.1.0 please select from the options below:
+{version}
+**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
 
 - v3.0.x CMS click [here](layouts_designer_3.html)
 - v2.3.x CMS click [here](layouts_designer_2.html)
 - v2.0.x CMS click [here](layouts_designer_2.0.html)
 - v1.8.x CMS click [here](layouts_designer_1.8.html)
 
-{/tip}
+{/version}
 
 ## Overview
 
@@ -34,24 +34,21 @@ The left hand icon shows you the current 'play' status of the selected Layout:
 
 {tip}
 The last icon is a normal Layout status to have if your Layout contains online content, such as a webpage etc. The CMS cannot say that the Player will display the content as it is not sent directly from the CMS (as with file based media, images, videos etc,) and is instead cached (stored) Player side.  The Player will need to have a reliable internet connection to successfully display such content.
-{/tip}
 
-{tip}
 Hover over the icon to see further information regarding the status you are seeing!
 {/tip}
 
 Next to the icon the total **Duration** of the selected Layout is displayed in seconds which updates each time a **Media** item is added or an existing **Duration** is edited. 
 
-{tip}
 The overall Layout duration is always based on the longest running [Region](layouts_regions.html) on the Layout!
-{/tip}
 
-{tip}
+
+
 Interactive Actions that have been added to the Layout will be shown in the status bar.
 
 ![Interactive Actions Status](img/v3.1_layouts_designer_interactive_actions_status.png)
 
-{/tip}
+
 
 The **Layout selector** provides easy navigation between all Layouts the logged in User has permission to edit without having to leave the Layout Designer page. Enter search criteria and use the dropdown menu to change the Layout you are currently viewing/editing.
 
@@ -136,9 +133,7 @@ If audio is assigned to a Widget which is the only Widget in the Region, the aud
 
 - Enter **Start** and **End** times for Widgets
 
-{tip}
-**Please note:** Expiry dates are currently not supported on the Linux Player.
-{/tip}
+{feat}Widget Expiry Dates|v3{/feat}
 
 Widgets that have expiry dates set can be identified by the following icons shown in the **Timeline**:
 
@@ -156,17 +151,17 @@ Widgets that have expiry dates set can be identified by the following icons show
 
 Click on an icon to re-open to edit.
 
+{tip}
 It is important to note that the Layout will be marked invalid and not sent to Players if a Region is empty due to Widget expiry. It should also be noted that if at the time of download there was a valid Layout but the Player has since gone offline, the Layout will show with an empty Region.
+{/tip}
+
+{feat}Transitions|v3{/feat}
 
 - Select a **Fade/Fly In transition** for when the Widget starts playing.
 
 - Select a **Fade/Fly Out transition** to move onto the next Widget in the Timeline.
 
   If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](layouts_regions.html#region_options).
-
-{tip}
-Transitions are supported for Android/webOS ,Tizen Players and Window Players from v2 R252. Transitions are currently not supported on the Linux Player.
-{/tip}
 
 Default Transition Type's and Duration can be entered by an Administrator on the **Settings** page using the **Defaults** tab, which can then be applied to all Widgets.
 

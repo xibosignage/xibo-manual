@@ -2,15 +2,17 @@
 
 # Transitions
 
-{tip}
-**Please note:** Transitions are supported on Android, webOS, Tizen and Windows Players from v2R252, however Transitions are not supported by Tizen Players for the following Widgets:
+{feat}Transitions|v3{/feat}
+
+{version}
+
+**Note:** Transitions are not supported by Tizen Players for the following Widgets:
 
 - [Video](media_module_video.html)
 - [Video In](media_module_video_in.html)
 - [Local Video](media_module_localvideo.html)
 
-Transitions are currently **not** supported on Linux Players.
-{/tip}
+{/version}
 
 Transitions are managed from the **Transitions** page under the **Administration** section of the main CMS menu:
 
@@ -26,9 +28,9 @@ This grid is used to determine which Transitions are available for assignment to
 
 ## Transition Defaults
 
-{tip}
-**Please note:** Transition Defaults are available from v2.2.0
-{/tip}
+{version}
+**Note:** Transition Defaults are available from v2.2.0
+{/version}
 
 Set a Default Transition **Type** and **Duration** from the **Settings** page under the **Administration** page of the main CMS menu:
 
@@ -42,7 +44,7 @@ Ensure you click the green Save button at the bottom of the tab to save all chan
 
 ## Editing Transitions
 
-Deafult Transitions can also be enabled for all Widgets on a Layout using the Properties Panel in the Layout Designer
+Default Transitions can also be enabled for all Widgets on a Layout using the Properties Panel in the Layout Designer
 
 ![Transitions Layout](img\v3_layouts_transitions_layout.png)
 

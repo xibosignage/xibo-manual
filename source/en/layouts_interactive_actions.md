@@ -2,11 +2,11 @@
 
 # Interactive Actions
 
-### Please note: Interactive Actions are currently supported on Xibo for Windows R3 R300 / Xibo for Android R3 R300 and Xibo for webOS v3 R300
+{feat}Interactive Actions Layouts/Regions|v3{/feat}
 
-{tip}
-**Please note:** If you are using a v3.0.x CMS click [here](layouts_interactive_actions_3.html)
-{/tip}
+{version}
+**Note:** If you are using a v3.0.x CMS click [here](layouts_interactive_actions_3.html)
+{/version}
 
 Actions can be attached to an entire **Layout** a particular **Region** or specific **Widget** and can be used to effect changes to the Layout. These can be triggered by **Touch or Click** or programmatically by **webhook**.
 
@@ -16,7 +16,8 @@ A Product display has a product that the customer can pick up. An 'internet of t
 {/tip}
 
 {nonwhite}
-More information on webhooks can be found in our Developer documentation [here](docs/developer/player-control/webhooks){/nonwhite}
+More information on webhooks can be found in our Developer documentation [here](docs/developer/player-control/webhooks)
+{/nonwhite}
 
 ## Adding an Action
 

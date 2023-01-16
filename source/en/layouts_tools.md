@@ -1,15 +1,15 @@
 # Tools
 
-{tip}
-If you are using a version earlier than v2.3.0, please use the following link: [Tools](layouts_tools_2.0.html). 
-{/tip}
+{version}
+**Note:** If you are using a version earlier than v2.3.0 please click [here](layouts_tools_2.0.html)
+{/version}
 
 Located on the bottom toolbar of the [Layout Designer](layouts_designer.html), the **Tools** button contains a menu of actions that can be applied to the components of Layouts. 
 
 ![Tools](img/v3_layouts_tools.png)
 
 {tip}
-Versions earlier than 3.0.0 [Sharing](users_features_and_sharing.html) will be labelled [Permissions](users_permissions.html)
+CMS versions earlier than 3.0.0 [Sharing](users_features_and_sharing.html) will be labelled [Permissions](users_permissions.html)!
 {/tip}
 
 ### Audio
@@ -32,15 +32,13 @@ Once audio has been assigned to a Widget, a **speaker icon** will be visible for
 
 {tip}
 Click on the speaker icon to edit the assigned audio.
-{/tip}
 
-{tip}
 If Audio is assigned to a Widget, which is the **only** Widget in its Region, the audio will stop once the Widget duration has expired but the Widget will remain on screen until the rest of the Layout has expired!
 {/tip}
 
 ### Expiry Dates
 
-**Please note:** Expiry Dates are currently not supported on the Linux Player.
+{feat}Widget Expiry Dates|v3{/feat}
 
 Click on the Expiry Dates button and click to add or drag and drop to a Widget to enter **Start** and **End** dates and times. Use the checkbox to additionally delete the Widget at the set end time.
 
@@ -74,14 +72,9 @@ It is important to note that the Layout will be marked invalid and not sent to P
 
 ### Transitions
 
+{feat}Transitions|v3{/feat}
+
 Transition Type and Duration can be applied to a Widget by clicking to add or drag and drop.
-
-{tip}
-Transitions are supported for Android/webOS ,Tizen Players and Window Players from v2 R252.
-Transitions are currently not supported on the Linux Player.
-{/tip}
-
-### Fade/Fly In
 
 Select a Transition and Duration to be applied when the media item starts. 
 
@@ -101,19 +94,16 @@ Applied defaults can be overridden for Layouts by unticking the box on the Edit 
 
 - Assign and complete Transitions as before.
 
-
 {tip}
 When Transition Defaults are applied to a Widget the Edit form will show blank fields. Only manually entered Transitions will show on Edit Transition forms.
-{/tip}
 
-{tip}
 If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](layouts_regions.html#region_options>).
 {/tip}
 
 ### Sharing  
 
 {tip}
-If you are using a version earlier than 3.0.0 [Sharing](users_features_and_sharing.html) will be named [Permissions](users_permissions.html)
+If you are using a CMS version earlier than 3.0.0 [Sharing](users_features_and_sharing.html) will be labelled [Permissions](users_permissions.html)!
 {/tip}
 
 Enable/Disable **View**, **Edit** and **Delete** access for Users/User Groups for Widgets and Regions by clicking to add or by drag and drop. 

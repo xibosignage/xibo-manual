@@ -4,9 +4,9 @@
 
 All **CMS pages** are categorised into sections and are accessible from the CMS **Main** **Menu** for ease of navigation. This menu can be placed vertically on the left hand side or horizontally along the top of the CMS, based on [User Preference](tour_user_profile.html#preferences)
 
-{tip}
+{version}
 If you are using 1.8 the menu will only be placed vertically on the left hand side as standard.
-{/tip}
+{/version}
 
 
 

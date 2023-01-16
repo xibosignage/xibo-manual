@@ -35,10 +35,7 @@ Scan the QR code shown on the Edit User Profile form and enter the code displaye
 ![QR Code](img/tour_2fa_qrcode.png)
 
 {tip}
-Ensure that your phone and server have the correct time and date to avoid errors!
-{/tip} 
-
-{tip}
+Ensure that your phone and server have the correct time and date to avoid errors.
 You will need to enter your password to verify any changes made to the Two Factor Authentication options.
 {/tip}
 
@@ -50,8 +47,6 @@ Click on **Show** at anytime to see your generated recovery codes.
 
 {tip}
 Clicking on Generate will invalidate all existing codes.
-{/tip}
 
-{tip}
 In the event access is lost to the configured email address or app with a User unable to retrieve recovery codes, this can be reset from the [Edit User form](users_administration.html#editing_users>). Once ticked the User can reconfigure the options from the User Profile as before.
 {/tip}

@@ -2,9 +2,7 @@
 
 # Interrupt Layouts
 
-{tip}
-**Please note:** This feature is currently supported by the Android Player from v2 R204, Windows Player from v2 R253, webOS Player from v2 R207and Tizen Player from v2 R203.
-{/tip}
+{feat}Interrupt Layouts|v3{/feat}
 
 When a Layout is scheduled as an **Interrupt Layout**, [[PRODUCTNAME]] will work out how it should be played between Layouts in the 'usual schedule' using the **Share of Voice** time or percentage entered on the event.
 

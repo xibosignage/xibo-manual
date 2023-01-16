@@ -13,7 +13,7 @@ Display input from an external source on SoC Displays.
 Locate **Video In** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region. 
 
 {version}
-NOTE: If you are using a 1.8.x CMS, select Video In from the Widget Toolbox to add. 
+**NOTE:** If you are using a 1.8.x CMS, select Video In from the Widget Toolbox to add. 
 {/version}
 
 ![Add Video In](img/v3.1_media_video_in.png)
@@ -28,7 +28,7 @@ HDMI input will only support **HDMI 1**
 - Tick to expand the video over existing content and therefore play in full screen.
 
 {version}
-NOTE: Transitions are not supported for the Tizen Player when using the Video In Widget.
+**NOTE:** Transitions are not supported for the Tizen Player when using the Video In Widget.
 {/version}
 
 ### Actions 

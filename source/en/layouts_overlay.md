@@ -46,4 +46,5 @@ Overlay Layouts do not appear one after the other in Scheduling but instead will
 {/tip}
 
 {nonwhite}
-Take a look at our handy YouTube guide that gives a step by step guide on using [Overlay Layouts](https://www.youtube.com/watch?v=Dy62LZG7B0U). {/nonwhite}
+Take a look at our handy YouTube guide that gives a step by step guide on using [Overlay Layouts](https://www.youtube.com/watch?v=Dy62LZG7B0U).
+{/nonwhite}

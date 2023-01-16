@@ -2,15 +2,16 @@
 
 # Regions
 
-{tip}
-If you are using a CMS earlier than v3.1.0 please select from the options below:
+{version}
+
+**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
 
 - v3.0.x CMS click [here](layouts_regions_3.html)
 - v2.3.x CMS click [here](layouts_regions_3.html)
 - v2.0.x CMS click [here](layouts_regions_2.0.html)
 - v1.8.x CMS click [here](layouts_regions_1.8.html)
 
-{/tip}
+{/version}
 
 Regions define areas on a **Layout** which hold **Media** to form sets of timed content which are added and edited by using the edit layout icon located below the viewer:
 
@@ -93,12 +94,11 @@ On some devices, it is impossible to overlay anything on a Region showing a **Vi
 
 At the bottom of this tab, click on the **Make this Region full screen** text to resize as shown by the dimensions displayed here.
 
+{feat}Transitions|v3{/feat}
+
 - Select the [Transitions](tour_transitions.html) tab to apply an **Exit Transition** for when the Region finishes playing.
 
 Exit transitions happen when the last media item in a Region is shown and occurs only when all other media items have expired in the other Regions. 
-
-{tip}
-Transitions are supported in the Android, webOS, Tizen Players and Windows Players from v2 R252 and are **not** currently supported in the Linux Player.{/tip}
 
 - Ensure any edits made are saved using the **Save** button before returning to the Layout View.
 
@@ -122,6 +122,6 @@ Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete**
 Alternatively Share options can be accessed from the context menu at the bottom of the viewer! 
 {/tip}
 
-Remove Regions by highlighting the Region to delete in the viewer or timeline and cliick the bin icon. **Please note: This action cannot be undone!**
+Remove Regions by highlighting the Region to delete in the viewer or timeline and click the bin icon. **Please note: This action cannot be undone!**
 
 Exit the editor and return to the Layout View by using the back arrow in the top left of the viewer.

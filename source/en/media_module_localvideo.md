@@ -17,7 +17,7 @@ The Local Video Widget is used for video that exists **only** on the **Display**
 Locate **Local Video** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region.
 
 {version}
-NOTE: If you are using a 1.8.x CMS, select Local Video from the Widget Toolbox to add!
+**NOTE:** If you are using a 1.8.x CMS, select Local Video from the Widget Toolbox to add!
 {/version}
 
 On adding, configuration options are shown in the properties panel:
@@ -32,16 +32,18 @@ On adding, configuration options are shown in the properties panel:
 - Tick to expand the content over the top of existing to show full screen. (not available in versions earlier than 2.0)
 
 {version}
-NOTE: Video scaling and RTSP streams are only supported on the Android, webOS and Linux Players. Use the [HLS](media_module_hls.html) Widget to show compatible video streams on Window and Tizen Players.
+**NOTE:** Video scaling and RTSP streams are only supported on the Android, webOS and Linux Players.
+
+Use the [HLS](media_module_hls.html) Widget to show compatible video streams on Window and Tizen Players.
 {/version}
 
 {tip}
 The number of RTSP streams you can show on one Layout is dependent on the device being used.
 {/tip}
 
-{tip}
-**Please note:** [Transitions](tour_transitions.html) are not supported for the Tizen Player.
-{/tip}
+{version}
+**NOTE:** Transitions are not supported for the Tizen Player when using the Local Video Widget.
+{/version}
 
 ## Actions 
 

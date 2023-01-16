@@ -17,7 +17,6 @@ Every User is assigned 1 of 3 main User Types:
 {tip}
 
 User Types are pre-configured and cannot be modified.
-
 {/tip}
 
 ## Super Admin

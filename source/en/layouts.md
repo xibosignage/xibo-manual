@@ -2,19 +2,20 @@
 
 # Layouts
 
-{tip}
-**Please note:**
+{version}
 
-- If you are using a v3.0.x CMS, please click [here](layouts_3.html)
-- If you are using a CMS earlier than v3.0.0 please click [here](layouts_2.html)
+**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
+
+- CMS v3.0.x click [here](layouts_3.html)
+- CMS earlier than v3.0.0 click [here](layouts_2.html)
 
 
-{/tip}
+{/version}
 
 A Layout is a complete screen design made up of content, which is then scheduled to a Display/multiple Displays / Display Groups. A **Layout** is made up of 1 or more **Regions** which act as placeholders for content which each contain a **Timeline** of **Media** to show. Media is assigned to a Timeline using a wide range of Widgets. 
 
 {tip}
-Take a look at the [Modules](media_modules.html) page to see the variety of Widgets availalable!
+Take a look at the [Modules](https://xibosignage.com/manual/en/media_modules#content-player-support-table-for-widgets-and-modules---v3-cms) page to see the variety of Widgets available!
 {/tip}
 
 [[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User/User Group can have.
@@ -225,9 +226,6 @@ Export the Layout including all associated Widgets/Media/DataSet structures to a
 
 {tip}
 When exporting a Layout, all assigned **Layout**, **Playlist** and **Media Tags** will be exported. Select the **Import Tags** option to add these Tags on Layout Import.
-{/tip}
-
-{tip}
 Add the 'Export' [Feature](users_features_and_sharing.html) to allow a User/User Group to export regardless of the Share options that have been set for the Layout and its contents!
 {/tip}
 

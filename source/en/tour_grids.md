@@ -2,9 +2,9 @@
 
 # Grids 
 
-{tip}
-If you are using a CMS earlier than v3.0.0, please use the following link: [Grids](tour_grids_2.html)
-{/tip}
+{version}
+**Note:** If you are using a CMS earlier than v3.0.0, please use the following link: [Grids](tour_grids_2.html)
+{/version}
 
 The CMS presents many of the entities,**Layouts**, **Media**, **Displays** for example, as tabular data called **Grids**. Each Grid has a number of elements that combine to create a flexible administration tool that is easy to read and understand.
 
@@ -28,16 +28,14 @@ Grids have multiple **Filter** fields which can be used to restrict the criteria
 
 For example all Layouts belonging to a particular **Owner** can be the only results shown in the Grid.
 
-{tip}
 Use the checkbox to apply advanced filtering options for Names using Regex.
 
-From v3.2.0 filter **Names** using AND/OR criteria, using comma separated terms!
+{version}
 
-{/tip}
+From v3.2.0 filter **Names** using AND/OR criteria, using comma separated terms.
 
-{tip}
-From v3.1.0 set the **Orientation** for Image and Media files in the [Library](media_library.html) to apply to filters!
-{/tip}
+From v3.1.0 set the **Orientation** for Image and Media files in the [Library](media_library.html) to apply to filters.
+{/version}
 
 ## Folders
 
@@ -65,16 +63,13 @@ Use the **Column Visibility** button to select/de-select which columns to presen
 
 ![Column Visibility](img/v3_tour_column_visibility.png)
 
-{tip}
-From v3.1.0 if too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row:
+{version}
+From v3.1.0 if too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row!
+{/version}
 
 ![Addtional Rows](img/v3.1_tour_grids_addtional_rows.png)
 
 ![Visible Rows](img/v3.1_tour_grids_visible_rows.png)
-
-{/tip}
-
-
 
 ## Row Menu
 

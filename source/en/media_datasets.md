@@ -192,11 +192,11 @@ The data table will show each of the Columns as they have been configured.
 
 - **Delete** a row by clicking on the cross at the end of the selected row, and confirm.
 
-{tip}
+{version}
 From v2.3, Users can toggle to a **Multi Select Mode** using the button on the grid. In this mode, Users can select multiple rows and click on **Delete Rows** to remove in bulk.
 
 Once complete click on the **Edit Mode** button to come out of multi-select mode.
-{/tip}
+{/version}
 
 ### Importing CSV 
 
@@ -250,9 +250,9 @@ From v2.3 multiple DataSets can be selected and deleted in bulk using the With S
 - Assign [View, Edit, Delete access](users_features_and_sharing.html) for other Users/User Groups.
 
 
-{tip}
+{version}
 **Please note:** In versions earlier than 3.0.0 Share will be labelled as [Permissions](users_permissions.html)!
-{/tip}
+{/version}
 
 {tip}
 DataSets are edited independently to Layouts, so there is no need to access or edit the Layout(s) the DataSet has been added to.
