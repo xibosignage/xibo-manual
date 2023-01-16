@@ -2,9 +2,9 @@
 
 # Templates
 
-{tip}
-If you are using a CMS earlier than v3.0.0 please click [here](layouts_templates_2.html)
-{/tip}
+{version}
+**Note:** If you are using a CMS earlier than v3.0.0 please click [here](layouts_templates_2.html)
+{/version}
 
 Templates are saved copies of designed **Layouts** which can then be used when creating new Layouts. Using a template can speed up the design process and is a good way to ensure that a corporate image/standard is maintained. 
 
@@ -99,9 +99,7 @@ Each Template has additional actions/shortcuts that can be accessed from the row
 
 {tip}
 When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tags** will be exported. Select the **Import Tags** option to add these Tags on Layout Import.
-{/tip}
 
-{tip}
 Use the **With Selected** option at the bottom of the Templates [Grid](tour_grids.html) to Edit Tags, move Folder, Delete and Share in bulk actions!
 {/tip}
 

@@ -11,8 +11,10 @@ Modules are enabled/disabled by using the row menu for the selected Module. Sele
 
 ### Library Modules
 
-At times it may be necessary to add or remove the allowed extensions on a particular file based Module. {tip}
-A typical use case would be if a Player is being used which does not support that particular type of file.{/tip}
+At times it may be necessary to add or remove the allowed extensions on a particular file based Module. 
+{tip}
+A typical use case would be if a Player is being used which does not support that particular type of file.
+{/tip}
 
 ## Generic Files
 

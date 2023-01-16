@@ -2,9 +2,9 @@
 
 # Resizing Images
 
-{tip}
-**Please note:** This feature is available from v2.2.0
-{/tip}
+{version}
+**Note:** This feature is available from v2.2.0
+{/version}
 
 Default thresholds and limits can be specified which are then considered in the event an image should be resized. This could be when uploading an image or an image being downloaded by a Widget - NASA RSS in a Ticker Widget for example.
 

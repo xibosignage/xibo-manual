@@ -2,14 +2,13 @@
 
 # Widgets
 
-{tip}
+{version}
+**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
 
-If you are using a CMS earlier than v3.1.0 please select from the options below:
+- CMS v3.0.x click [here](layouts_widgets_3.html)
+- CMS earlier than v3.0.0 click [here](layouts_widgets_2,html)
 
-- v3.0.x CMS click [here](layouts_widgets_3.html)
-- Earlier than v3.0.0 click [here](layouts_widgets_2,html)
-
-{/tip}
+{/version}
 
 Add content to Layouts using the variety of **Widgets** available from the Toolbar in the [Layout Designer](layouts_designer.html):
 
@@ -61,7 +60,7 @@ A Playlist view will open to add Widgets in the same way by clicking to add or d
 ![Region Playlist View](img/v3.1_layouts_region_playlist_view.png)
 
 {tip}
-Use the **Select Multiple Widgets** button, located on the left hand side, to highlight multiplte items on the Playlist to delete!
+Use the **Select Multiple Widgets** button, located on the left hand side, to highlight multiple items on the Playlist to delete!
 {/tip}
 
 {tip}

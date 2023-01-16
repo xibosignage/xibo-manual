@@ -2,15 +2,16 @@
 
 # Layout Timeline
 
-{tip}
-If you are using a CMS earlier than v3.1.0 please select from the options below:
+{version}
+
+**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
 
 - v3.0.x CMS click [here](layouts_timeline_3.html)
 - v2.3.x CMS click [here](layouts_timeline_3.html)
 - v2.0.x CMS click [here](layouts_timeline_2.0.html)
 - v1.8.x CMS click [here](layouts_playlists.html)
 
-{/tip}
+{/version}
 
 Each Region on a Layout has its own **Playlist** of content, which is shown in a specified order by a Player. 
 

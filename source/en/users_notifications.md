@@ -4,11 +4,11 @@
 
 [[PRODUCTNAME]] has a **Notification System** to keep Administrators and Users of the CMS informed of important system events and other user-created notifications, such as [Schedule Event Reminders](scheduling_events.html#reminders).
 
-{tip}
-Please ensure that your Administrator has entered a **Sending Email** address on the CMS Settings page, **Network** tab prior to using Notifications.
+{version}
+**Note:** Ensure that your Administrator has entered a **Sending Email** address on the CMS Settings page, **Network** tab prior to using Notifications.
 
 If you are using a 1.8.x CMS,  you can find these settings on the **Maintenance** tab.
-{/tip}
+{/version}
 
 ## Notification Drawer
 
@@ -18,14 +18,15 @@ The Notification Drawer is accessed by clicking on the Alarm bell icon.
 
 {tip}
 The Notification Drawer is shown for Users / User Groups that have the appropriate [Features](users_features_and_sharing.html) enabled. From Features click on Users set of Features and apply from the Notification options available.
+{/tip}
 
 ![Notification Features](img/v3_users_notification_feature.png)
 
-{/tip}
 
-{tip}
-**Please note:** If you are using a version earlier than 3.0.0, the Notification Drawer is shown when a User/User Group has the Notification Drawer [Permission](users_permissions.html) enabled for **Page Security** settings. Without this enabled the Alarm bell icon will not be shown.
-{/tip}
+
+{version}
+**Note:** If you are using a version earlier than 3.0.0, the Notification Drawer is shown when a User/User Group has the Notification Drawer [Permission](users_permissions.html) enabled for **Page Security** settings. Without this enabled the Alarm bell icon will not be shown.
+{/version}
 
 Click on the Alarm bell to open the **Notification Drawer**, which will show the last 5 notifications received. Unread notifications will be shown in black text and notification that have already been read in a light grey text.
 
@@ -102,8 +103,8 @@ Edits to a Notification will be altered in the CMS web portal but any emails gen
 
 [[PRODUCTNAME]] raises various **System Notifications** to report on the health of the system as a whole. Notifications are emailed to the **Admin** email address configured in **Settings** from the **Network** tab. 
 
-{tip}
-If you are using a 1.8.x of the CMS,  you can find the **Admin** email address on the **Maintenance** tab!
-{/tip}
+{version}
+**Note:** If you are using a 1.8.x of the CMS,  you can find the **Admin** email address on the **Maintenance** tab!
+{/version}
 
 Notifications will also be sent to Users who belong to groups configured to receive System Notifications or who have been configured to receive these notifications themselves. This configuration is managed on the User/User Group Edit form.

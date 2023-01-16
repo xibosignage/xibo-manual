@@ -2,13 +2,11 @@
 
 # Campaigns
 
-{tip}
+{version}
 
-**Please note:** If you are using a CMS version earlier than v3.3.0, please select from the options below:
-
-- CMS v3.1.0 - v3.2.x click [here](layouts_campaigns_3.1.html)
-- CMS earlier than v3.1.0 click [here](layouts_campaigns_3.html)
-  {/tip}
+- I If you are using a v3.1.0 - v3.2.x CMS, click [here](layouts_campaigns_3.1.html)
+- If you are using a CMS earlier than v3.1.0 click [here](layouts_campaigns_3.html)
+  {/version}
 
 [[PRODUCTNAME]] has two available **Campaign** types:
 

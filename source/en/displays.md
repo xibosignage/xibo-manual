@@ -3,7 +3,6 @@
 # Displays
 
 {version}
-**Note:** If you are using a CMS earlier than v3.3.0 please select from the options below:
 
 - CMS v3.0.0 - v3.2.x click [here](displays_3.html)
 - CMS earlier than v3.0.0 click [here](displays_2.html)

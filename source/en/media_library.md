@@ -2,14 +2,12 @@
 
 # Library 
 
-{tip}
-
-**Please note:**
+{version}
 
 - If you are using a v3.0.x CMS, please click [here](media_library_3.html)
 
 - If you are using a CMS version earlier than v3.0.0 please click [here](media_library_2.html)
-  {/tip}
+  {/version}
 
 The CMS Library stores all file-based media that is uploaded for use on Layouts. 
 
@@ -141,9 +139,6 @@ Additional fonts can be added to the **Library** using the uploader tool. Once a
 
 {tip}
 If the new font does not show in the text editor after upload, try clearing the browser cache!
-{/tip}
-
-{tip}
 **Please note:** Fonts have preferences built into then known as **OS/2 tags**. [[PRODUCTNAME]] checks for OS/2 preferences and can use **fonts with OS/2 tags 0 or 8**. Fonts with other OS/2 tags may produce an error on uploading and may not display correctly.
 {/tip}
 
@@ -162,15 +157,10 @@ Make changes to Folder location, Naming, Duration etc:
 
 - **Expiry date** - set a date and time to remove the selected media file completely from the CMS.
 
-{tip}
-**Please note**: Expiry dates are currently not supported for the Linux Player.
-{/tip}
+{feat}Widget Expiry Dates|v3{/feat}
 
 {tip}
-**Please note:** This will remove media from any Layouts that contain the selected file.
-{/tip}
-
-{tip}
+Setting an Expiry Date will remove media from any Layouts that contain the selected file.
 If you do not want to completely remove the media file and keep it assigned to existing Layout's then tick the **Retire this media** option. The Media file will not show for selection for new Layouts.
 {/tip}
 
@@ -212,7 +202,7 @@ Tick in the box to enable a hard push using XMDS to completely remove the file f
 
 
 
-**Please note:** The Purge list functionality is  supported from Android R301 and Windows R302. We are currently working to bring this to all Players.
+{feat}Purge List|v3{/feat}
 
 ### Share
 
@@ -234,11 +224,8 @@ This will show if the selected **media file** is directly assigned/scheduled to 
 
 - Use the Layout tab to see what **Layouts** the media file is currently included in. 
 
-
 {tip}
 The **Usage Report** is great to make final checks prior to tidying media files.
-{/tip}
 
-{tip}
 Use the **With Selected** option at the bottom of the Library [Grid](tour_grids.html) to Edit Tags, Move to Folder, Delete and Share in bulk!
 {/tip}

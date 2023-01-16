@@ -2,17 +2,17 @@
 
 # User Groups
 
-{tip}
+{version}
 If you are using a CMS earlier than v3.0.0 please use the following link: [User Groups](users_groups_2.html)
-{/tip}
+{/version}
 
 User Groups allow for a set of [Features and Share](users_features_and_sharing.html) options to be applied to all Users within a specified Group.
 
 [[PRODUCTNAME]] comes with a set of pre-configured User Groups for common functions for new installations.
 
-{tip}
-Pre-configured User Groups are available for new v3 installations and for users who upgrade to v3 who have not previously utilised User Groups in earlier versions!
-{/tip}
+{version}
+**Note:** Pre-configured User Groups are available for new v3 installations and for users who upgrade to v3 who have not previously utilised User Groups in earlier versions!
+{/version}
 
 ![Pre-Configured Groups](img/v3_user_groups_preconfigured.png)
 
@@ -69,9 +69,7 @@ Once created, Users can be assigned to the Group using the **Row Menu** and clic
 
 {tip}
 Users can be assigned to one or more **User Groups** for ease of sharing and collaboration!
-{/tip}
 
-{tip}
 User Membership can also be controlled from the User Grid using the Row Menu. Click on **User Groups** to open the **Manage Membership** form!
 {/tip}
 

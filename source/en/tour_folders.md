@@ -23,8 +23,9 @@ Only empty folders can be removed!
 
 Folders can be created, renamed and removed from **Add** and **Edit** [Forms](tour_forms.html) and by using the **Select Folder** option from the **Row Menu** for an object (dependent on [Feature](users_features_and_sharing.html) access).
 
-
+{version}
 From v3.2.0 a **Folders management** page has been added for Super Admin access only. 
+{/version}
 
 The **Folders** page is located under the **Administration** section of the main CMS menu. 
 
@@ -145,9 +146,7 @@ Assign a Home Folder for an existing User:
 If a new Folder is created, ensure that the correct View/Edit/Delete **Share** options are applied to the Folder from the Folders page found under the Administration section of the main CMS menu or from any of the object grids (Layouts, Library Media, Playlists, Displays etc) so that any objects placed into the Folder inherit these set options. 
 
 A Home Folder can be selected when [Onboarding new Users](/manual/en/users_administration)!
-{/tip}
 
-{tip}
 Users with a Home Folder assigned will have full access to their own Media, Layouts, Schedules etc, with access to all other Folder contents as per the Share options set for the Home Folder.
 
 Users can have a Home Folder assigned and Folders disabled as a [Feature](/manual/en/users_features_and_sharing.html), Users would automatically save to their default Home Folder location without the need to view or interact with Folders in the CMS.

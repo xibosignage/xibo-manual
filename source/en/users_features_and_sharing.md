@@ -2,9 +2,9 @@
 
 # Features and Sharing
 
-{tip}
+{version}
 If you are using a version earlier than v3.0.0 please use the following link: [Permissions](users_permissions.html)
-{/tip}
+{/version}
 
 Access is controlled for Users and User Groups using two concepts:
 

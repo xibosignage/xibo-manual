@@ -2,9 +2,9 @@
 
 # User Administration
 
-{tip}
+{version}
 If you are using a CMS earlier than v3.0.0 please use the following link: [Users Administration](users_administration_2.html)
-{/tip}
+{/version}
 
 Users are administered in the CMS by clicking on **Users** under the **Administration** section on the main menu. The Users [Grid](tour_grids.html) will open for you to add new and manage existing Users.
 
@@ -119,7 +119,11 @@ To always show the manual Add User form when adding new user's to the system ins
 
 #### Home Folder
 
-From v3.2.0 a Home Folder can be set for the User. Select from the available Folders or right click to create a new Folder.
+{version}
+From v3.2.0 a Home Folder can be set for the User.
+{/version} 
+
+Select from the available Folders or right click to create a new Folder.
 See the [Folders](/manual/en/tour_folders.html#home-folders) page for further information.
 
 #### Reference
@@ -180,9 +184,6 @@ Add the **Two Factor** column to the Users grid using the **Column visibility** 
 
 ![2fa Coloumn](img/user_administration_2fa_column.png)
 
-{/tip}
-
-{tip}
 If you cannot access the CMS then run the following sql directly in the database to clear 2FA data for a specified User `{yourUserId}` , userId can be found in the User table.
 
 ```
@@ -221,6 +222,9 @@ Deleting a User is irreversible and will remove all their owned items including;
 
 {tip}
 **Add Applications** and **Add DOOH Applications** and configure from **Applications** under the **Administration** section of the main menu. 
+
+**Please note:** The additional **DOOH** User Type which is only granted access to the CMS via the API, [DOOH Application](https://xibosignage.com/manual/en/users_administration.html#my_applications) will be removed from v4.
+
 {/tip}
 
 Before using an **Application** each User must authorise the application to act on their behalf within the CMS. Once  authorised it can be viewed by clicking on the **My Applications** button to open a current list.

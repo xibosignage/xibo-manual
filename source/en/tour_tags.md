@@ -2,9 +2,9 @@
 
 # Tags
 
-{tip}
-**Please note:** If you are using a CMS earlier than v3.0.0 please click [here](tour_tags_2.html)
-{/tip}
+{version}
+**Note:** If you are using a CMS earlier than v3.0.0 please click [here](tour_tags_2.html)
+{/version}
 
 Tags can be assigned to **Layouts**, **Campaigns**, **Templates**, **Playlists**, **Media** and **Displays/ Display Groups** in order to bring about organisation and structure within the CMS.
 
@@ -65,12 +65,8 @@ On entering text in the Tag field on forms, an auto-complete helper will show po
 If the Tag Value is already known then this can also be typed in the field using the `Tag|Value` format.
 
 Users can add an associated value to a Tag without an existing predefined value using the Tag Value field. Enter the Value you wish to associate with the Tag in the Tag value field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
-{/tip}
 
-{tip}
-Tags can also be assigned to multiple elements using the [With Selected](tour_grids.html#multi-select) option on multiple pages throughout the CMS!
-{/tip}
+Tags can also be assigned to multiple elements using the [With Selected](tour_grids.html#multi-select) option on multiple pages throughout the CMS.
 
-{tip}
 When exporting a Layout the **Layout Tag** will also be exported. Select the **Import Tags** option to add the Tag on Layout import if required.
 {/tip}

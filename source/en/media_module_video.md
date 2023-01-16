@@ -5,7 +5,7 @@
 Display video on Layouts
 
 {version}
-NOTE: If  you are using a CMS earlier than v3.1, please select from the links below:
+**NOTE:** If  you are using a CMS earlier than v3.1, please select from the links below:
 
 - v3.0.x CMS, please click [here](media_module_video_3.html)
 - CMS earlier than v3.0.0 please click [here](media_module_video_2.html)
@@ -37,12 +37,17 @@ With **Set a duration** ticked you can set a lower duration to cut the file shor
 
 - Use the **Configuration** tab to select the **Scale type** for the video.
 
-{tip}
-**Please note:** Scaling is currently supported by Android, webOS and Tizen Players (from v2 R200) and Windows Players (from v2 R253).
-{/tip} 
+{version}
+**Note:** Scaling is currently supported by Android, webOS and Tizen Players (from v2 R200) and Windows Players (from v2 R253).
+{/version}
 
-- If the video has audio this can be muted by ticking the box.
+If the video has audio this can be muted by ticking the box.
+
 - If you tick to **Show Full Screen**, the video will show full screen whilst it is playing. When the next item in the Timeline is shown it will revert back to the size of the Region.
+
+{version}
+**NOTE:** Transitions are not supported for the Tizen Player when using the Video Widget.
+{/version}
 
 Use the **Context Menu** at the bottom of the viewer to apply further options to the Video Widget. 
 

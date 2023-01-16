@@ -2,13 +2,11 @@
 
 # Playlists
 
-{tip}
-
-**Please note:**
+{version}
 
 - If you are using a v3.0.x CMS, please click [here](media_playlists_3.html)
 - If you are using a v2.0.x CMS, please click [here](media_playlists_2.html)
-  {/tip}
+  {/version}
 
 Playlists allow for the creation of 'Reusable Playlists' which are created and managed independently to Layouts. Once created, Playlists can then be easily reused across multiple Regions and Layouts.
 

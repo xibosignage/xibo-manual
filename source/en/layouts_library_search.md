@@ -2,12 +2,13 @@
 
 # Library Search
 
-{tip}
-If you are using a CMS earlier than v3.1.0 please select from the options below:
+{version}
 
-- v3.0.x CMS click [here](layouts_library_search_3.html)
-- Earlier than v3.0.0 click [here](layouts_library_search_2.0)
-  {/tip}
+**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
+
+- If you are using a v3.0.x CMS, click [here](layouts_library_search_3.html)
+- If you are using a CMS earlier than v3.0.0 click [here](layouts_library_search_2.0)
+  {/version}
 
 The **Toolbar** contains multiple **Library Search** options to give users an easy way to assign media which already exists in the [Library](media_library.html) to Layouts and Playlists.
 
@@ -118,6 +119,8 @@ Files can be optionally saved to [Folders](tour_folders.html) for easier searche
 Files that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
+{feat}Widget Expiry Dates|v3{/feat}
+
 Media uploaded directly to Layouts have the option to **Set Expiry Dates**
 
 {tip}
@@ -125,10 +128,6 @@ This is particularly useful should you need to preload media to be shown at a la
 {/tip}
 
 - Tick the **Set Expiry Dates** box.
-
-{tip}
-**Please note:** Expiry Dates are currently not supported for the Linux Player!
-{/tip}
 
 ![Expiry Dates](img\v3_media_image_expiry_dates.png)
 
@@ -155,6 +154,8 @@ View or make changes to Expiry Dates by clicking on the icon on the uploaded med
 
 ## Image Files
 
+{feat}Image|v3{/feat}
+
 {tip}
 We recommend the following file formats for images:
 
@@ -170,9 +171,7 @@ Please see the [Image](media_module_image.html) page for configuration options.
 
 ## Audio Files
 
-{version}
-**Please note:** The Linux Player does not support Audio files.
-{/version}
+{feat}Audio|v3{/feat}
 
 {tip}
 We recommend the following file formats for audio:
@@ -184,6 +183,8 @@ We recommend the following file formats for audio:
 Please see the [Audio](media_module_audio.html) page for configuration options.
 
 ## Video Files
+
+{feat}Video|v3{/feat}
 
 {tip}
 We recommend the following file formats for video:

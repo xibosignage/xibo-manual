@@ -11,9 +11,9 @@
 
 Library Media is file-based Media that is uploaded and stored in the CMS Library for use on one or multiple Layouts.
 
-{tip}
+{version}
 From v3.1.0 integration with Pixaby allows for Images and Videos to be selected when adding content to Layouts using [Library Searches](layouts_library_search.html). Selections will be automatically added to the Library!
-{/tip}
+{/version}
 
 Examples of Library Media are:
 
