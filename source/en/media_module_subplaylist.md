@@ -7,7 +7,7 @@ excerpt: "Add Playlists to Layouts using the Sub-Playlist Widget"
 
 # Sub-Playlists
 
-Sub-Playlists are used to display content added to one or multiple [Playlists](media_playlists.html)
+Sub-Playlists are used to display content from one or multiple [Playlists](media_playlists.html)
 
 {feat}Sub-Playlist|v3{/feat}
 #### Widget Overview:
@@ -47,7 +47,7 @@ Use the `+` button from the first row to add additional rows to select further P
 
 ### Spots
 
-The following **Spot** options, [Spots](media_module_subplaylist#spots, [Spot Length](media_module_subplaylist#spot_length) and [Spot Fill](media_module_subplaylist#spot_fill) are available to define how much content from Playlists should show and for how long.
+The following **Spot Options** are used to define how much content from Playlists should be shown and for how long.
 
 - Use the **Spots** field to specify the **total number** of 'play spots' (the number of items to show) available for the selected Playlist.
 - Leave the **Spots** field **blank** to default to show all added content from the selected Playlist.
@@ -57,7 +57,7 @@ Spots also have an option to use a Playlists content as filler only and add cont
 - This Playlist must be the **first** added Playlist in the list.
 - Enter a **0** in the **Spots** field so that the entire Playlist will be ignored and omitted from the play order. Select how the content from this Playlist should be distributed with the other Playlists using [Spot Fill](media_module_subplaylist#spot_fill) options.
 
-![Spot Fill Playlist](img/media_subplaylist_spot_fill.png)
+![Spot Fill Playlist](img/media_subplaylist_spotfill.png)
 
 {version}
 **Note:** Please be aware that by setting **Start Dates** to Widgets may cause fewer Spots to be shown than the total amount specified!
@@ -75,14 +75,14 @@ Each Widget added to this Playlist will then play for this specified time and ig
 
 Use the drop-down menu for the **Spot Fill** field to determine how any remaining [Spots](media_module_subplaylist#spots.html) should be filled in the event that there are not enough Widgets on the selected Playlist to fulfil the specified play spots:
 
-- Select the **Repeat** option to re show and cycle through the content on the selected Playlist until the number of Spots has been fulfilled.
-- Select **Fill** to take content from the first row Playlist, that has 0 entered for Spots, to use its content to fill any remaining Spots for the selected Playlist.
-- Select the **Pad** option to take content from the first row Playlist, that has 0 entered for Spots, to distribute its content evenly with the content already contained on the selected Playlist.
+- **Repeat** to re show and cycle through the content on the selected Playlist until the number of Spots has been fulfilled.
+- **Fill** to take content from the first row Playlist, that has 0 entered for Spots, to use its content to fill any remaining Spots for the selected Playlist.
+- **Pad**t o take content from the first row Playlist, that has 0 entered for Spots, to distribute its content evenly with the content already contained on the selected Playlist.
 
 {tip}
-Spot options are a useful tool to define advertising/promotional content held in Playlists and control how that content is played.
+**Spot Options** are a useful tool to define advertising/promotional content held in Playlists and control how that content is played.
 
-Spots, Spot Length and Spot Fill are all optional and can be left blank if this functionality is not required!
+**Spots**, **Spot Length** and **Spot Fill** are all optional and can be left blank if this functionality is not required!
 {/tip}
 
 ## Playlist Ordering
@@ -93,11 +93,11 @@ Use the **Configuration** tab to define the play order when more than one Playli
 
 Use the drop-down for **Playlist Ordering** to select how all Playlists should be ordered to play:
 
-- Selecting **Play all** will play the content of each Playlist in their entirety before moving onto the next Playlist in the order they appear listed on the General tab.
-- Using **Round Robin** will take one item from each Playlist, in the order they appear listed on the General tab and then repeat to cycle through content.
-- The **Auto** setting ensures that items are played evenly from each Playlist. 
+- **Play all** will play the content of each Playlist in their entirety before moving onto the next Playlist in the order they appear listed on the General tab.
+- **Round Robin** will take one item from each Playlist, in the order they appear listed on the General tab and then repeat to cycle through content.
+- **Auto**  ensures that items are played evenly from each Playlist. 
 
-This setting uses the total count of items in each list and divides it by the smallest list to determine how often to take items from each list to ensure an even play from each Playlist.
+Auto uses the total count of items in each list and divides it by the smallest list to determine how often to take items from each list to ensure an even play from each Playlist.
 
 #### Example scenario using the Auto setting:
 
@@ -115,7 +115,7 @@ This configuration would take content from each Playlist and play it in the foll
 
 - 2 items from the Fruit Playlist
 
-This would then repeat until the play Spots had been fulfilled (which in this scenario would be one more rotation)
+This would then repeat until all Spots had been fulfilled (which in this scenario would be one more rotation)
 
 ## Remaining Widgets
 
@@ -133,11 +133,10 @@ The following options are used to determine how to handle any content that is le
 Available from v3.1.0
 {/version}
 
+- Once enabled all Playlists assigned to the Sub-Playlist Widget will be treated as one "list" and will only show one Widget each time the Layout is played, cycling through the content from all Playlists added.
+
 ![Enable Cycle Playback](img/media_subplaylist_cycle_playback.png)
 
-
-
-- Once enabled all Playlists assigned to the Sub-Playlist Widget will be treated as one "list" and will only show one Widget each time the Layout is played, cycling through the content from all Playlists added.
 - Enter a **Play count** to determine how many plays each Widget should have before moving onto the next Widget in the list.
 
 - Enable the selection of a **Random Widget** to be shown at each cycle to meet the Play count before moving onto the next random Widget.
