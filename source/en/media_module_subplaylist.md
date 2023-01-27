@@ -10,7 +10,7 @@ excerpt: "Add Playlists to Layouts using the Sub-Playlist Widget"
 Sub-Playlists are used to display content from one or multiple [Playlists](media_playlists.html)
 
 {feat}Sub-Playlist|v3{/feat}
-#### Widget Overview:
+## Widget Overview:
 
 - Easily display a 'slide-show' of content held in one or more Playlists.
 - Combine content from a variety of Playlists to be shown.
