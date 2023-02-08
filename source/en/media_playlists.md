@@ -17,7 +17,7 @@ Playlists are reusable lists of content that are created and managed independent
 
 {/version}
 
-### Feature Overview:
+## Feature Overview:
 
 - Easily create a 'slide-show' of content.
 - Re-use across multiple Layouts.
@@ -101,11 +101,11 @@ A set of further options can be accessed by right clicking on an item. From this
 
 ![Context Menu](img/v3.1_media_playlists_context_menu.png)
 
-Use the Select Multiple Widgets button at the bottom of the toolbar to multi-select items in the Playlist to delete with one click:
+Use the **Select Multiple Widgets** button at the bottom of the toolbar to multi-select items in the Playlist to delete with one click:
 
 ![Mutli Select](img/v3.1_media_playlists_multi_select.png)
 
-- Close the Playlist Editor window to return to the main Playlist [grid](manual/en/tour_grids).
+- Close the Playlist Editor window to return to the main Playlist [grid](tour_grids.html).
 
 
 ## Editing Playlists
@@ -114,11 +114,11 @@ Playlists are edited from the Playlists page using the row menu for a selected P
 
 ![Row Menu](img/v3.1_media_playlists_row_menu.png)
 
-- Select **Timeline** to open the Playlist Editor for manually media assigned Playlists.
+- Select **Timeline** to open the Playlist Editor for **Manually** assigned Playlists.
 
 From here you can add/edit/re-order or delete content for the selected Playlist.
 
-- For Dynamic Playlists select **Edit** from the row menu and use the **Filter** tab to view the list of dynamic media assignments and make changes to the set criteria.
+- For **Dynamic** Playlists select **Edit** from the row menu and use the **Filter** tab to view the list of dynamic media assignments and make changes to the set criteria.
 
 {tip}
 If you needed to change details of any Playlist record (Manual or Dynamic) to edit the Name, set Tags etc, then use the **Edit** button from the row menu.
