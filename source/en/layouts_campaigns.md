@@ -19,11 +19,11 @@
 
 A Campaign type is selected when adding a new Campaign to the grid.
 
-# Layout List
+## Layout List
 
 Layouts can be grouped together into an ordered list. A **Campaign** can then be **Scheduled** to play the grouped Layouts in a set sequence.
 
-## Create a Layout List Campaign
+### Create a Layout List Campaign
 
 Click on the **Add Campaign** button at the top of the Campaigns grid.
 
@@ -51,20 +51,22 @@ If users should also have access to the Layouts/Layout content, ensure that this
 Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_grids.html#multi-select) option at the bottom of the Campaign grid!
 {/tip}
 
--  Optionally enable **cycle based playback** for this Campaign.
-- When enabled, provide a **Play Count** to determine how many 'plays' a Layout should have before moving onto the next Layout in the Campaign.
+### Cycle Based Playback
+
+{feat}Campaign Cycle Playback|v3{/feat}
+
+-  Optionally enable **cycle based playback** for the Campaign.
+- If enabled, provide a **Play Count** to determine how many 'plays' a Layout should have before moving onto the next Layout in the Campaign.
 
 When you schedule a Campaign with cycle playback enabled, each time the scheduled event appears only 1 Layout will be shown for the set count from the Campaign.
 
-{tip}
-**Please note:** Cycle based playback is available from Windows v3 R302. 
-We are currently working to support this on other Players.
-{/tip}
+### List Play Order
 
-- Use the **List play order** drop down to select how you would like the Layouts in the Campaign to play when scheduled alongside another Campaign with the same **Display Order** in [Scheduled Events](scheduling_events.html)
-  - Round Robin - Layouts from each Campaign with the same Display Order will play interleaved.
+Use the **List play order** drop down to select how you would like the Layouts in the Campaign to play when scheduled alongside another Campaign with the same **Display Order** in [Scheduled Events](scheduling_events.html)
+
+- - Round Robin - Layouts from each Campaign with the same Display Order will play interleaved.
   - Block - Layouts will play in their entirety from the Campaign before moving onto the next.
-
+  
 - Click to **Save**.
 
 On saving the form will re-open with additional tabs:
@@ -93,7 +95,7 @@ Use the **Copy** button located on the row menu to easily make a copy of an exis
 Layouts can be directly assigned to Campaigns from the Layouts grid. Use the row menu for the Layout to add and click **Assign to Campaign**. Layouts will be assigned to the end of the selected Campaign by default!
 {/tip}
 
-# Ad Campaigns
+## Ad Campaigns
 
 Create Advertising Campaigns to be shown on selected Displays. [[PRODUCTNAME]] will work out how many plays are needed to satisfy entered criteria and handle the scheduling automatically.
 
@@ -101,7 +103,7 @@ Create Advertising Campaigns to be shown on selected Displays. [[PRODUCTNAME]] w
 This [Feature](users_features_and_sharing.html) should be enabled for each User/User Group who requires access!
 {/tip}
 
-## Create an Ad Campaign
+### Create an Ad Campaign
 
 Click on the **Add Campaign** button at the top of the Campaigns grid.
 
@@ -204,7 +206,7 @@ The Ad Campaign progress will be shown in the Campaigns grid and on opening the 
 
 
 
-### Reference
+##### Reference
 
 Optionally use this tab to provide reference information for the selected Ad Campaign. Once added, this information can be viewed in the Campaign grid and via the API.
 

@@ -119,9 +119,11 @@ Files can be optionally saved to [Folders](tour_folders.html) for easier searche
 Files that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been applied to the destination Folder for User/User Group access!
 {/tip}
 
-{feat}Widget Expiry Dates|v3{/feat}
+## Expiry Dates
 
 Media uploaded directly to Layouts have the option to **Set Expiry Dates**
+
+{feat}Widget Expiry Dates|v3{/feat}
 
 {tip}
 This is particularly useful should you need to preload media to be shown at a later date/time!

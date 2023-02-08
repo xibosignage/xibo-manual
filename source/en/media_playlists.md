@@ -1,130 +1,153 @@
-<!--toc=media-->
+---
+toc: "media"
+maxHeadingLevel: 3
+minHeadingLevel: 2
+excerpt: "Create re-usable lists of content to add to Layouts"
+---
 
 # Playlists
 
+Playlists are reusable lists of content that are created and managed independently to [Layouts](layouts.html). Once created, Playlists are added to Layouts using the [Sub-Playlist Widget](media_module_subplaylist.html)
+
 {version}
+**Documentation Versions**
 
 - If you are using a v3.0.x CMS, please click [here](media_playlists_3.html)
 - If you are using a v2.0.x CMS, please click [here](media_playlists_2.html)
-  {/version}
 
-Playlists allow for the creation of 'Reusable Playlists' which are created and managed independently to Layouts. Once created, Playlists can then be easily reused across multiple Regions and Layouts.
+{/version}
 
-Think of Playlists as a two part process:
+### Feature Overview:
 
-1. **The Playlist** (contains the content and configuration of media to be shown)
-2. **The Sub-Playlist Widget** (once added to Layouts, Playlists can be selected and further configured to Play in a specified order)
+- Easily create a 'slide-show' of content.
+- Re-use across multiple Layouts.
+- Define content order.
+- Add and maintain content dynamically.
+- Update content without accessing Layouts.
+- Add multiple Playlists to Layouts using the Sub-Playlist Widget.
 
-Playlists are administered by clicking on **Playlists** under the **Library** section of the main menu:
+Streamline resources and save time by creating Playlists to hold multiple items of content which can be used across multiple Layouts. Create Playlists to target and collate content for specific requirements, locations, categories etc. 
 
-![Playlist Grid](img/v3_media_playlists_grid.png)
+Playlists are created and managed independently to Layouts and therefore do not require further user access to Layouts or the Layout Designer to add or manage content. Edits made to a Playlist will update all Sub-Playlist Widgets on Layouts that the Playlist has been added to.
 
-The Playlists [Grid](tour_grids.html) allows you to edit existing and create new. 
+![Playlist Workflow](img/media_subplaylist_workflow.png)
 
-Click the Folders icon to toggle on/off from view.  
+## Creating a Playlist
 
-{tip}
-When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
+Playlists are administered from the **Playlists** page under the **Library** section of the main CMS menu:
 
-- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
+![Playlist Grid](img/v3.1_media_playlists_grid.png)
 
-or
-
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-Check out the [Folders](/manual/en/tour_folders.html) page for further information!
-
-### Create a new Playlist
-
-- Click on the **Add Playlist** button and complete the appropriate form fields:
-
+Click on the **Add Playlist** button and complete the form fields to create a new record:
 
 ![Add Playlist](img/v3_media_playlists_add.png)
 
-- Playlists can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
+- Playlists can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to set [Share](users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
-Playlists that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access. 
+Folders provide an easy way to define User/User Group access to its contents. Playlists will inherit any Share access that have been applied to the destination Folder. 
+
+**Please note:** If a User/User Group should also require access to any media files added to the Playlist, they would also need to be added to the Folder!
 {/tip}
 
-- Provide a **Name** for easy identification purposes within the CMS.
+- **Name** your Playlist for easy identification for when it needs to be selected in the Sub-Playlist Widget.
 
-- Include optional [Tags](tour_tags.html) to organise and make it easier to search for.
+- Include optional [Tags](tour_tags.html) to further organise and locate.
 
-### Automatic Media Assignment
 
-- Use the **Dynamic** check box if you want to automatically manage media assignments for this Playlist.
-- Once selected, click on the **Filter** tab to set the criteria to use to add Library Media and automatically maintain the Playlist. 
+### Dynamically adding Media
 
-![Playlist Filter Tab](img/v3.1_media_playlists_filter_tab.png)
+Playlists have a **Dynamic** option to automatically assign **Library Media** files based on set criteria:
+
+- Tick to enable the automatic management of assigning media to the Playlist.
+- Once ticked, click on the **Filter** tab and set the required criteria in order to populate matching Library Media. 
+- Provide a maximum number of Library Media files which can be automatically assigned.
+
+Media already in the Library that matches the criteria set will show here.
+
+![Dynamic Assignment](img/v3.1_media_playlists_dynamic.png)
+
+Any future media files that are added to the Library that satisfy the set criteria for this Playlist will be automatically added to this list.
 
 {tip}
-Use the **Tag Filter** drop down to use And/Or criteria when selecting media to add!
-{/tip}
-
-- Enter a number to set the **maximum** amount of Media items that can be dynamically assigned to the Playlist.
-
-{tip}
-You can also prepopulate a Playlist with media from the Library by leaving the Dynamic checkbox unticked and just using the Filter tab and criteria to add media as a one-time assignment.
+Library Media can also be prepopulated as a one-time assignment to a Playlist by setting criteria but leaving the Dynamic option unticked!
 {/tip}
 
 ### Manually adding Media
 
-- Complete the form fields and click the **Save** button:
+To manually add media to Playlists, **Save** the new record form without ticking the Dynamic option to open the Playlist Editor.
 
-![Playlists Timeline](img/v3.1_media_playlists_timeline.png)
+- From the **Toolbar**, select from available Widgets and Library Media and click to add or drag and drop to the Playlist Editor:
 
-- Use the Toolbar to add content to your Playlist using available [Widgets](layouts_widgets.html) and [Library Media](layouts_library_search.html) 
-- Add to the canvas by clicking to add or drag and drop.
-
-- Once added, configure using the available options:
-
-
-![Playlist Edit Widget](img/v3.1_media_playlists_edit_widget.png)
+![Manual Assignment](img/v3.1_media_playlists_manual_assignment.png)
 
 {tip}
-For further information on the options available, refer to the relevant manual page for the chosen [Widget](media_modules.html).
+Select multiple Library Media files to add to the Playlist by clicking on  `+` in the top left hand corner of the thumbnail. 
+
+Files will be added in the order selected!
 {/tip}
 
-Change the order of added media items in a Playlist by clicking on a Widget in the Timeline and dragging it to the desired positioning. As changes are autosaved, use the Undo button located at the of the toolbar to revert any changes if required.
+- Click on an item on Playlist to highlight, configuration options will load in the properties panel for the selected item.
 
-All Widgets/Library Media can access a **Context Menu** with a set of options that can be applied, such as **Share** access and **Transitions**. Right click a selected Widget/Media file to access. Further information regarding the Context Menu can be found on the [Layout Designer](layouts_designer.html) page of the manual.
+![Playlist Timeline](img/v3.1_media_playlists_timeline.png)
+
+Drag and drop items in the Playlist to re-order if required.
 
 {tip}
-If you need to delete multiple Widgets on the Timeline, click the **Select Multiple Widgets** button on the bottom of the toolbar and then click on Widgets to highlight. Once you have made your selections click to delete with one click.
+As changes are autosaved use the Undo button at the bottom of the toolbar to revert a change if required!
 {/tip}
 
-### Editing Playlists
+A set of further options can be accessed by right clicking on an item. From this [Context Menu](layouts_designer.html#content-context-menu) you can set **Share** access, set **Audio** files, **Start and End Times** and **Transitions** for the selected item. 
 
-Playlists are edited independently to Layouts, so there is no need to access or edit the Layout(s) the Playlist has been added to.
+![Context Menu](img/v3.1_media_playlists_context_menu.png)
 
-- To edit content on the Playlist use the row menu from the Playlist grid and select Timeline to open the Playlist editor.
+Use the Select Multiple Widgets button at the bottom of the toolbar to multi-select items in the Playlist to delete with one click:
+
+![Mutli Select](img/v3.1_media_playlists_multi_select.png)
+
+- Close the Playlist Editor window to return to the main Playlist [grid](manual/en/tour_grids).
+
+
+## Editing Playlists
+
+Playlists are edited from the Playlists page using the row menu for a selected Playlist:
+
+![Row Menu](img/v3.1_media_playlists_row_menu.png)
+
+- Select **Timeline** to open the Playlist Editor for manually media assigned Playlists.
+
+From here you can add/edit/re-order or delete content for the selected Playlist.
+
+- For Dynamic Playlists select **Edit** from the row menu and use the **Filter** tab to view the list of dynamic media assignments and make changes to the set criteria.
 
 {tip}
-Changes will be available in the system straight away ready to be picked up by Players on their next collection, with no need to make any edits to Layouts!
+If you needed to change details of any Playlist record (Manual or Dynamic) to edit the Name, set Tags etc, then use the **Edit** button from the row menu.
 {/tip}
 
-### Row Menu
+## Adding Playlists to Layouts
 
-Use the **Row Menu** to access further actions/shortcuts for the selected Playlist
+Once created, Playlists are added to Layouts using the Sub-Playlist Widget.
 
-### Sharing
-
-The creator (owner) of the Playlist or a Super Administrator can assign View/Edit/Delete access for other Users/User Groups.
-
-Take a look at [Features and Sharing](users_features_and_sharing.html) for more information.
-
-### Add Playlists to Layouts
-
-Include the [Sub-Playlist Widget](media_module_subplaylist.html) to add Playlists to Layouts.
+{tip}
+View where Playlists are being shown and what Layouts they have been added to by using the **Usage Report** from the row menu for a selected Playlist!
+{/tip}
 
 {nonwhite}
-### Further Guidance
 
-[Utilising the Playlists Dashboard](https://community.xibo.org.uk/t/utilising-the-playlists-dashboard/21966)
+#### Take a look at the following guides for examples of how you could utilise Playlists:
 
-[How to show Media at specified intervals using Playlists](https://community.xibo.org.uk/t/how-to-show-media-at-specified-intervals-using-playlists/20790)
+- [Utilising the Playlists Dashboard](https://community.xibo.org.uk/t/utilising-the-playlists-dashboard/21966)
+- [Show Media at specified Intervals](https://community.xibo.org.uk/t/how-to-show-media-at-specified-intervals-using-playlists/20790)
 
 {/nonwhite}
+
+
+
+
+
+
+
+
+
+
 
