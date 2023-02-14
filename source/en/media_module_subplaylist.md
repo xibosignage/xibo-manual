@@ -55,7 +55,7 @@ The following **Spot Options** are used to define how much content from Playlist
 Spots also have an option to use a Playlists content as filler only and add content from this Playlist to **Fill** or **Pad** other selected Playlists:
 
 - This Playlist must be the **first** added Playlist in the list.
-- Enter a **0** in the **Spots** field so that the entire Playlist will be ignored and omitted from the play order. Select how the content from this Playlist should be distributed with the other Playlists using [Spot Fill](media_module_subplaylist#spot_fill) options.
+- Enter a **0** in the **Spots** field so that the entire Playlist will be ignored and omitted from the play order. Select how the content from this Playlist should be distributed with the other Playlists using [Spot Fill](media_module_subplaylist#content-spot-fill) options.
 
 ![Spot Fill Playlist](img/media_subplaylist_spotfill.png)
 
@@ -73,7 +73,7 @@ Each Widget added to this Playlist will then play for this specified time and ig
 
 ### Spot Fill
 
-Use the drop-down menu for the **Spot Fill** field to determine how any remaining [Spots](media_module_subplaylist#spots.html) should be filled in the event that there are not enough Widgets on the selected Playlist to fulfil the specified play spots:
+Use the drop-down menu for the **Spot Fill** field to determine how any remaining [Spots](media_module_subplaylist#content-spots) should be filled in the event that there are not enough Widgets on the selected Playlist to fulfil the specified play spots:
 
 - **Repeat** to re show and cycle through the content on the selected Playlist until the number of Spots has been fulfilled.
 - **Fill** to take content from the first row Playlist, that has 0 entered for Spots, to use its content to fill any remaining Spots for the selected Playlist.
