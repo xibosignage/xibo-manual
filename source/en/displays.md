@@ -60,6 +60,10 @@ Next to the Folders icon is a **Display Map View**:
 
 View locations on the map to easily see the status of selected or all Displays.
 
+From v3.3.3 the status of Displays in marker clusters will be shown as pie charts for easier identification.
+
+![Status Marker Clusters](img/displays_status_marker_cluster_chart.png)
+
 {tip}
 Logged in Users will only view the status of Displays that they have been given access to
 Use the filter fields in the grid from the List View to isolate Displays to view!
