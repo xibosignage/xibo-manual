@@ -54,7 +54,7 @@ Available in **Android Players** from **v2 R207** select to preload the Widget o
 - Use the drop-down menu to select how the webpage should be embedded using one of the following options:
 
 
-#### **Open Natively**
+### Open Natively
 
 With this selected, the Player will open the webpage without any alterations and will open and render in the browser as if the URL had been visited on the device outside [[PRODUCTNAME]].
 
@@ -70,27 +70,27 @@ Enter the **Trigger Code** of a configured Action to match against a supplied we
 
 Further information about configuring Interactive Actions can be found [here](layouts_interactive_actions.html)
 
-#### **Manual Position**
+### Manual Position
 
 - This option will embed the webpage in an iframe where users can specify the dimensions required.
 - Use the Offset and Scale settings to force the page/sections of the page to fit within the dimensions to show just a section of the webpage:
 
 ![Manual Position](img/media_webpage_manual_position.png)
 
-#### **Best Fit**
+### Best Fit
 
 This option will embed the webpage in an iframe  where users can specify the dimensions required:
 
 ![Best Fit](img/media_webpage_best_fit.png)
 
-{version)
+{version}
 **NOTE:** **Manual Position** and **Best Fit** options will not work with websites that set the **X-Frame-Options header**. If you are unable to see the webpage use the Open Natively option when using Windows / Linux or Android. 
 
 If X-Frame-Options are set then webOS and Tizen will not work in any mode!
 
 If X-Frame-Options are not set then the website should show in any of the Players, using any of the above options.
 
-Use this [X-Frame-Options Header Checker Tool](https://tools.geekflare.com/tools/x-frame-options-test) to see if the header has been set for the webpage you wish to target.
+Use this [X-Frame-Options Header Checker Tool](https://geekflare.com/tools/x-frame-options-test) to see if the header has been set for the webpage you wish to target.
 {/version}
 
 ## Actions 
