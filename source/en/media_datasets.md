@@ -1,88 +1,89 @@
-<!--toc=media-->
+---
+toc: "media"
+maxHeadingLevel:4
+minHeadingLevel:3
+excerpt: "Design and store tabular data and use with data Widgets to add to Layouts"
+---
 
 # DataSets
 
-DataSets are a feature to design and store **tabular** data. Once designed data can be imported from a CSV file, entered manually, as JSON via the API or synced remotely on a Schedule. A DataSet provides a convenient way to import and display data from other systems in [[PRODUCTNAME]].
+DataSets are used to design and store tabular data which are created and managed independently to [Layouts](layouts.html). Once created, DataSets can be added to the [DataSet View](media_module_dataset_view.html)/[DataSet Ticker](media_module_dataset_ticker.html) and [Chart](media_module_chart.html) Widgets.
+
+## Feature Overview:
+
+- Define the data structure.
+- Data can be manually added.
+- Import data from a CSV file.
+- Use a JSON formatted data source via the API.
+- Sync from a 3rd party data source remotely on a schedule.
+- Maintain content without accessing Layouts.
+- Re-use across multiple Widgets and Layouts.
+- Create an RSS feed from a DataSet.
+
+DataSets have been designed to be versatile so that they can be configured in a number of ways with the DataSet View/DataSet Ticker and Chart Widgets as well as a source of data for a custom Module. A DataSet provides a convenient way to import and display data from other systems in [[PRODUCTNAME]].
 
 Examples of where DataSets could be utilised:
 
 - A drinks menu at a bar
 - Tee times at a golf club
 - Meeting room bookings
+- Bus timetables
 
-DataSets have been designed to be versatile and reusable and come in two parts:
+DataSets are created and managed independently to Layouts and therefore do not require user access to Layouts or the Layout Designer to add or manage the data within the DataSet.
 
-1. **The DataSet** (Data Structure and data)
-2. **The Display** ([DataSet View](media_module_dataset_view.html)/[DataSet Ticker](media_module_dataset_ticker.html)/[Chart](media_module_chart.html) or a source of data for a custom Module)
+![DataSet Flow](img/media_dataset_flow.png)
 
-DataSets are first defined, which can then be reused across multiple DataSet Views/Tickers/Chart Widgets added to Layouts. Access by navigating to DataSets under the Library section of the main menu:
+## Creating a DataSet
+
+DataSets are administered from the **DataSets** page under the **Library** section of the main CMS menu.
 
 ![DataSet Grid](img/v3_media_dataset_grid.png)
 
-
-
-The DataSets [Grid](tour_grid.html) allows you to edit existing and create new. 
-
-Click the Folders icon to toggle on/off from view.  
-
-{tip}
-When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
-
-- Click on a Folder/sub-folder to search the contents and return results based on any filters applied to the grid.
-
-or
-
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied to the grid.
-
-Check out the [Folders](/manual/en/tour_folders.html) page for further information!
-
-## Create a new DataSet
-
-Creating a DataSet is a 2 step process:
-
-1. Add the DataSet record
-2. Create and configure Columns
-
-### Add the DataSet record
-
-Click on the Add DataSet button and complete the appropriate form fields:
+Click on the Add DataSet button and complete the form fields to create a new record:
 
 ![DataSet Add](img/v3_media_dataset_add.png)
 
-From **v3.0.0** DataSets can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
+From v3.0.0 DataSets can be optionally saved to [Folders](https://xibosignage.com/manual/en/tour_folders.html) for easier searches, organisation and to set [Share](https://xibosignage.com/manual/en/users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
-Datasets that are saved in Folders will inherit the View, Edit, Delete Share options that been applied to the destination Folder for the User/User Group!
+Folders provide and easy way to define User/User Group access to its contents. DataSets will inherit any Share access that have been applied to the destination Folder.
 {/tip}
 
-- Give the DataSet a **Name** for easy identification purposes within the CMS.
-- Provide an optional **Description** to give more detail/instructions to other potential users of the DataSet.
-- Enter a Code to lookup this DataSet (usually used for referencing via the API)
+- **Name** your DataSet for easy identification for when it needs to be selected in the chosen Widget.
+- Provide an optional internal **Description** to give more details/instructions to other potential users of the DataSet.
+- If applicable, enter a **Code** to lookup this DataSet if referencing via the API.
 
-- If this DataSet should sync itself with a remote data source enable the **Remote** checkbox to present further options for configuration.
+If the DataSet is going to be connected to sync with a **Remote** data source, tick to enable and continue with the configuration steps outlined next.
 
-If your DataSet is **not Remote**, click to **Save** the DataSet record and continue from the the [Create and Configure Columns](media_datasets.html#create_and_configure_columns) section of this page.
+If the DataSet is **not Remote**, click to Save the DataSet record and go onto the [Create and Configure Columns](media_datasets.html#create_and_configure_columns) section on this page.
 
-### Remote DataSets
+## Creating Remote DataSets
 
-Remote DataSets are a special type of DataSet which will periodically sync from a 3rd party data source. [[PRODUCTNAME]] will call the URL at a chosen time period and parse the data according to instructions set on the DataSet record and any **Columns** defined as **Remote**.
+Remote DataSets are a special type of DataSet which will periodically sync from a 3rd party data source. [[PRODUCTNAME]] will call the URL at a chosen time period and parse the data according to instructions set on the DataSet record and any Columns that have been defined as **Remote**.
 
-On selecting Remote, additional tabbed fields are presented so that the Remote DataSet record can be completed:
+On selecting Remote, additional tabbed fields are made available so that the Remote DataSet record can be fully completed:
 
 ![Remote DataSet Options](img/v3_media_dataset_remote.png)
 
-Use each tab to enter the URL for the remote data source, request method, request parameters and authentication information.
+- #### Remote
 
-**Remote** - Enter the URL for the remote data source and request method.
+  Use this tab to set the type of request method and enter the URL for the remote data source.
 
-**Authentication** - provide authentication information and optional string of custom HTTP headers. (Custom Headers are available from v2.3.10)
+- #### Authentication
 
-**Data** - The remote data source can be JSON formatted or selected as a CSV. (The CSV option is available from v2.3.0)
+  Use the Authentication tab to provide authentication information.
 
-- #### JSON Source
+  {version}
+  From v2.3.10 Custom Headers are available to provide an optional string of custom HTTP headers.
+  {/version}
 
-JSON data is populated according to Columns defined as Remote types. When specifying a 'Remote Column' a 'data path' needs to be entered which is the JSON syntax path to the data for that column, in respect to the **Data Root** specified.
+- #### Data
+
+  From this tab set the remote data source: 
+
+#### JSON Source
+
+JSON data is populated according to the Columns defined as Remote types. When specifying a **Remote Column** a 'data path' needs to be entered which is the JSON syntax path to the data for that column, in respect to the **Data Root** specified.
 
 {tip}
 Consider an example JSON data source:
@@ -99,88 +100,137 @@ Consider an example JSON data source:
 }
 ```
 
-If we wanted to columns to capture the currency symbol and value, we would need to set the **Data Root** to `rates` and have Columns for:
+If we wanted two columns to capture the currency **Symbol** and **Value**, we would need to set the **Data Root** to `rates` and have Columns for:
 
-Symbol - data path = 0
-Value - data path = 1
+- **Symbol** - data path = 0
+- **Value** - data path = 1
 
-{/tip}
+Use the **Test data URL** to ensure that the desired structure is returned.
 
-- #### CSV Source
+#### CSV Source
 
-If the CSV source contains headers, tick to ignore the first row.
+{version}
+From v2.3.0 the remote data source can be selected as a CSV.
+{/version}
+
+- Use the drop down to select the separator to use for the CSV source.
+- If the CSV source contains headers, tick to ignore the first row.
+
+
+Use the **Test data URL** to ensure that the desired structure is returned.
+
+- #### Advanced
+
+  Set how often the remote data should be fetched and imported.
+  
+  Set a timescale to Truncate data.
+  
+  Use the drop down to select a DataSet if using dependants.
+  
+  Optionally set a row limit and what should happen if this limit is exceeded.
+
+{noncloud}
+If no **Row Limit** is set here, the Row Limit applied in the CMS Settings will be used.
+{/noncloud}
+
+{cloud}
+If no **Row Limit** is set here the default will apply which is 10,000 rows per DataSet for Cloud customers.
+{/cloud}
+
+Once completed, click to **Save** the Remote DataSet record and continue to **Create and Configure Columns**.
+
+## Create and Configure Columns
+
+Once you have saved your DataSet record you need to create Columns to define the structure of your data.
+
+- Use the row menu for a  DataSet record and select **View Columns**.
+
+![DataSets Add columns](img/media_datasets_add_columns.png)
 
 {tip}
-In both cases, use the **Test data URL** to ensure that the desired structure is returned!
+By default, all new DataSets will have a **Col1** added. This should be edited or removed using the row menu for Col1!
 {/tip}
 
-**Advanced** - Set how often the remote data should be fetched and imported.
+- Delete Col1 from the row menu and click on the **Add Column** button to create a new column
 
-- Once completed, click to **Save** the DataSet record.
+​	or
 
-### 2. Create and Configure Columns
-
-Columns are used to define the structure of the data.
-
-- Use the row menu for the selected DataSet record and select **View Columns**.
-
-![DataSets Add columns](img/media_add_columns_grid.png)
-
-{tip}
-All created Columns for the DataSet will be shown here. By default, all new DataSets will have a **Col1** added. This should be edited or removed using the row menu!
-{/tip}
-
-- Click on the **Add Column** button to create a new column. 
-- Use the form fields to define settings:
+- Use the row menu for Col1 and select **Edit**.
 
 ![DataSet Columns Form](img/media_columns_form.png)
 
-- Include a **Heading** to identify the Column.
-- Use the drop down to select the type of Column required.
-  {tip}
-  Additional information will be required for the particular type selected, see the section below!
-  {/tip}
-- Select the format to use for the intended type of data.
+- Include a **Heading** to identify this Column.
+- Use the drop down to select the type of Column to use.
+
+### Column Types:
+
+#### Value
+
+Enter a list of items to be presented in a combo box.
+
+- Use the drop down to select the **Data Type**.
+- Provide a comma-separated list of values that can be selected for this column.
 - Set the position this Column should appear when viewing/editing Data.
-- Use the additional check boxes if **Filters** or **Sort** is required for the selected Column.
+- Provide an optional tooltip message to display when entering data for this column.
 
-#### Additional information required for Column Types
+Use the additional options to enable **Filters**, **Sorting** and **Required Values** for this column.
 
-Depending on the Column Type selected, additional information will be required:
+#### Formula
 
-- **Value** - Provide a comma-separated list of values that can be selected for this field.
+Enter a MySQL statement.
 
-- **Formula** - Enter a MySQL statement suitable to use in a 'SELECT' statement, or a string to format a date field `$dateFormat(<col>,<format>,<language>)`
-
-  {tip}
-  Ensure that `<col>` has a date and time specified for the date format to work.
-  If the Language has not been set, it will default to English.
-  {/tip}
-
-- **Remote** - Provide a JSON syntax string showing how to access the data from a 3rd party data source.
-
-There is no theoretical limit to the number of Columns [[PRODUCTNAME]] can support, although a smaller DataSet is often easier to manage and display.
+- Use the drop down to select the Data Type.
+- Set the position this Column should appear when viewing/editing Data.
+- Provide a MySQL statement suitable to use in a 'SELECT' statement or a string to format a date field.
 
 {tip}
+
+`	$dateFormat(<col>,<format>,<language>)`
+	Ensure that `<col>`has a date and time specified for the date format to work. If the language has not been set, it will default to English.
+
+Two substitutions are available for Formula columns: `[DisplayId]` and `[DisplayGeoLocation]` which will be substituted at run time with the Display ID / Display Geo Location (MySQL GEOMETRY).
+
+{/tip}
+
+Use the additional options to enable **Filters** and **Sorting** for this column.
+
+#### Remote
+
+Provide a JSON syntax string.
+
+- Use the drop down to select the Data Type.
+- Enter a JSON syntax string showing how to access the data from a 3rd party data source.
+- Set the position this Column should appear when viewing/editing Data.
+
+Use the additional options to enable **Filters** and **Sorting** for this column.
+
+Continue to add and configure Columns as required. There is no theoretical limit to the number of Columns [[PRODUCTNAME]] can support, although a smaller DataSet is often easier to manage and display.
+
+{tip}
+
+Columns can be viewed/added and edited by using the row menu for a DataSet record from the DataSets page!
+
 The ordering and list content of Columns can be changed after Data has been collected!
 {/tip}
 
-Xibo should accept any date format that is in a correct PHP date format. Use the **Date Format Table** at the bottom of this page for further reference.
+## Adding Data to Columns
 
-## Data Row
+Once Columns have been defined, data needs to be added. This can be achieved a number of ways:
 
-- Once you have defined the Columns needed for the DataSet, you will need to add some data. This can be achieved a number of ways:
-
-  - Manually through the CMS User interface
-  - Imported via a CSV file
-  - Using the API
-  - Remotely Sync
+- Manually through the CMS User interface
+- Imported via a CSV file
+- Using the API
+- Remotely Sync
 
 ### Manually 
 
-Data is added/edited using the **View Data** button on the Columns page or from the row menu for a DataSet.
+Data is added using the **View Data** button on the Columns page.
 
-The data table will show each of the Columns as they have been configured.
+{tip}
+Data can be viewed/added and edited by using the row menu for a DataSet record from the DataSets page!
+{/tip}
+
+The data table will show each of the Columns added to the DataSet as they have been configured.
 
 ![Dataset Row](img/v3_media_dataset_row.png)
 
@@ -188,32 +238,30 @@ The data table will show each of the Columns as they have been configured.
 - Click **Next** to continue adding data to add more rows.
 - When all data has been completed, click **Save**
 
-- **Edit** by clicking on the row to edit and make the necessary changes and click to **Save**.
-
-- **Delete** a row by clicking on the cross at the end of the selected row, and confirm.
+{tip}
+Click in any row to Edit Data. Click on the cross at the end of a selected row to Delete.
+{/tip}
 
 {version}
-From v2.3, Users can toggle to a **Multi Select Mode** using the button on the grid. In this mode, Users can select multiple rows and click on **Delete Rows** to remove in bulk.
+From v2.3, Users can toggle to a **Multi Select Mode** using the button at the top of the grid. In this mode, Users can select multiple rows and click on **Delete Rows** to remove in bulk.
 
 Once complete click on the **Edit Mode** button to come out of multi-select mode.
 {/version}
 
-### Importing CSV 
+### Importing a CSV 
 
-The CMS has a DataSet CSV importer that can be used to extract data from a **CSV file** and put it into a DataSet. The **Import CSV** function can be accessed through the row menu of any DataSet (with the exception of DataSets configured for Remote data sources).
-
-When the importer opens, there are options to overwrite any existing data with the data held in the import file as well as ignoring the first row of the CSV to import if your file has headings.
-
-The Remote Columns in the DataSet will be listed with a field next to them to indicate the column number in the CSV file that corresponds with the listed Column Header.  
-
-An example of this form is shown below:
+The CMS has a DataSet CSV importer that can be used to extract data from a **CSV file** and put it into a DataSet. The **Import CSV** function can be accessed through the row menu of any DataSet record (with the exception of DataSets configured for Remote data sources).
 
 ![Dataset Import CSV](img/media_dataset_importcsv_form.png)
+
+The importer has options to overwrite the existing data held in the import file as well as an option to ignore the first row of the CSV when importing if your file has headings.
+
+The Remote Columns in the DataSet will be listed with a field next to them to indicate the column number in the CSV file that corresponds with the listed Column Header.  
 
 {tip}
 It is important to ensure that your CSV file has the correct file encoding if you are using non-ASCII characters. Non-ASCII characters are very common for languages outside of English. The file encoding most commonly used is UTF-8.
 
-If you have edited your CSV file using Excel, you will need to make sure you select "Unicode (UTF-8)" from the Tools -> Web Options -> Encoding tab on the Save as dialogue.
+If you have edited your CSV file using Excel, you will need to make sure you select "Unicode (UTF-8)" from the Tools -> Web Options -> Encoding tab on the 'Save as' dialogue.
 {/tip}
 
 ### Through the API
@@ -228,38 +276,43 @@ Further discussion on the API can be viewed in the [Developer documentation](/do
 
 Remote DataSets are kept in sync with a Task called **Fetch Remote DataSets**. This task is configured by default and runs once per minute.
 
-#### Dependents
+- ### Dependents
 
-A remote DataSet can depend on another DataSet to formulate its request. Each row in the dependent DataSet will be used to create a request using the parent DataSet's request parameters.
+  A remote DataSet can depend on another DataSet to formulate its request. Each row in the dependent DataSet will be used to create a request using the parent DataSet's request parameters.
 
 ## Row Menu
 
-- Use the row menu for a DataSet to access additional actions:
+Use the row menu for a DataSet to View, Add and Edit the DataSet record, Columns and Data as well as accessing additional options:
 
-- View RSS  allows for publishing content in a Layout as an RSS feed from data held in your own DataSet. Click **View RSS** to copy the URL which can then be included in the  [Ticker](media_module_ticker.html)  Widget configuration.
-- From v3.1.0 export the DataSet as a CSV
+### View RSS
 
-On selecting Delete, users will be given the option of also deleting any data contained within the DataSet.
+Create your own RSS feed using the data held in a DataSet.
+
+- Select View RSS from the row menu of a DataSet.
+- Click on the Add RSS button.
+
+![Add RSS](img/media_datasets_add_rss.png)
+
+- Complete the form fields, selecting the Columns to use.
+- On Saving a URL will be generated which can be copied and added to the [Ticker](media_module_ticker.html) Widget.
+
+### Export as a CSV
+
+From v3.1.0 the DataSet can be exported as a CSV file.
+
+### Share
+
+{version}
+**Please note:** In versions earlier than v3.0.0 Share will be labelled as [Permissions](users_permissions.html)!
+{/version}
+
+Set [Share](https://xibosignage.com/manual/en/users_features_and_sharing.html) options for Users/User Groups for the selected DataSet.
 
 {tip}
 DataSets can only be deleted if they are not in use.
 
-From v2.3 multiple DataSets can be selected and deleted in bulk using the With Selected option at the bottom of the grid.
+From v2.3 multiple DataSets can be selected and deleted in bulk using the **With Selected** option at the bottom of the DataSets grid.
 {/tip}
-
-- Assign [View, Edit, Delete access](users_features_and_sharing.html) for other Users/User Groups.
-
-
-{version}
-**Please note:** In versions earlier than 3.0.0 Share will be labelled as [Permissions](users_permissions.html)!
-{/version}
-
-{tip}
-DataSets are edited independently to Layouts, so there is no need to access or edit the Layout(s) the DataSet has been added to.
-Changes will be available in the system straight away ready to be picked up by Players on their next collection, with no need to make any edits to Layouts!
-{/tip}
-
-
 
 ## Date Format Table
 
@@ -287,3 +340,4 @@ Changes will be available in the system straight away ready to be picked up by P
 | o                | ISO-8601 year number. This has the same value as Y, except that if the ISO     week number (W) belongs to the previous or next year, that year is used instead. (added in  PHP 5.1.0) | 1999 or 2003                            |
 | Y                | A full numeric representation of a year, 4 digits            | 1999 or 2003                            |
 | y                | A two digit representation of a year                         | 99 or 0                                 |
+
