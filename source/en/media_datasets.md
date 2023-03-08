@@ -1,7 +1,7 @@
 ---
 toc: "media"
-maxHeadingLevel:4
-minHeadingLevel:3
+maxHeadingLevel: 4
+minHeadingLevel: 3
 excerpt: "Design and store tabular data and use with data Widgets to add to Layouts"
 ---
 
