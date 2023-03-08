@@ -46,7 +46,7 @@ Click on the Add DataSet button and complete the form fields to create a new rec
 From v3.0.0 DataSets can be optionally saved to [Folders](https://xibosignage.com/manual/en/tour_folders.html) for easier searches, organisation and to set [Share](https://xibosignage.com/manual/en/users_features_and_sharing.html) options for Users/User Groups.
 
 {tip}
-Folders provide and easy way to define User/User Group access to its contents. DataSets will inherit any Share access that have been applied to the destination Folder.
+Folders provide an easy way to define User/User Group access to its contents. DataSets will inherit any Share access that have been applied to the destination Folder.
 {/tip}
 
 - **Name** your DataSet for easy identification for when it needs to be selected in the chosen Widget.
@@ -105,6 +105,8 @@ If we wanted two columns to capture the currency **Symbol** and **Value**, we wo
 - **Symbol** - data path = 0
 - **Value** - data path = 1
 
+{/tip}
+
 Use the **Test data URL** to ensure that the desired structure is returned.
 
 #### CSV Source
@@ -129,13 +131,16 @@ Use the **Test data URL** to ensure that the desired structure is returned.
   
   Optionally set a row limit and what should happen if this limit is exceeded.
 
+{nonwhite}
+
 {noncloud}
-If no **Row Limit** is set here, the Row Limit applied in the CMS Settings will be used.
+If no **Row Limit** is set here, the Row Limit applied in the CMS Settings will be used for non Cloud customers.
 {/noncloud}
 
 {cloud}
 If no **Row Limit** is set here the default will apply which is 10,000 rows per DataSet for Cloud customers.
 {/cloud}
+{/nonwhite}
 
 Once completed, click to **Save** the Remote DataSet record and continue to **Create and Configure Columns**.
 
@@ -276,7 +281,7 @@ Further discussion on the API can be viewed in the [Developer documentation](/do
 
 Remote DataSets are kept in sync with a Task called **Fetch Remote DataSets**. This task is configured by default and runs once per minute.
 
-- ### Dependents
+- #### Dependents
 
   A remote DataSet can depend on another DataSet to formulate its request. Each row in the dependent DataSet will be used to create a request using the parent DataSet's request parameters.
 
@@ -288,8 +293,8 @@ Use the row menu for a DataSet to View, Add and Edit the DataSet record, Columns
 
 Create your own RSS feed using the data held in a DataSet.
 
-- Select View RSS from the row menu of a DataSet.
-- Click on the Add RSS button.
+- Select **View RSS** from the row menu of a DataSet.
+- Click on the **Add RSS** button.
 
 ![Add RSS](img/media_datasets_add_rss.png)
 
@@ -313,6 +318,23 @@ DataSets can only be deleted if they are not in use.
 
 From v2.3 multiple DataSets can be selected and deleted in bulk using the **With Selected** option at the bottom of the DataSets grid.
 {/tip}
+
+{nonwhite}
+Take a look at the following guides for additional guidance with DataSets:
+
+- [Changing the date format in DataSets](https://community.xibo.org.uk/t/how-to-change-the-date-format-in-your-dataset/28093)
+
+- [Creating a Remote DataSet](https://community.xibo.org.uk/t/creating-a-remote-dataset/25171)
+
+- [Exporting data from DataSets for Import](https://community.xibo.org.uk/t/exporting-data-from-datasets-for-import/24218)
+
+- [Building an Hours since last incident counter with DataSets](https://community.xibo.org.uk/t/building-an-hours-since-last-incident-counter-with-datasets/14391)
+
+- [Use DataSets to display meeting room bookings](https://community.xibo.org.uk/t/getting-started-guide-datasets/14149)
+
+- [Use the Chart Widget to display information held in a DataSet](https://community.xibo.org.uk/t/chart-module-guide/17791)
+
+{/nonwhite}
 
 ## Date Format Table
 
