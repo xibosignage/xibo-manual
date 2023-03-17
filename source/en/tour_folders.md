@@ -54,6 +54,18 @@ Once Share options have been set for a folder, all objects contained or moved to
 New Users can have **Folders** assigned from the start by following the onboarding wizard to [Add Users](users_administration.html)!
 {/tip}
 
+**Please Note:** Sub-Folders added to a Main Folder will inherit any applied Share options from the Main Folder. When viewing Sub-Folders only the directly assigned Share options will be shown, inherited options are not shown.
+
+![Sub-Folder Share Options](img/tour_folders_sub_folder_sharing.png)
+
+As shown above:
+
+- The Main Folder is shared with `Auser`.
+- Sub 1 will inherit from the Main Folder so is also shared with `Auser`.
+- `Not Shared` is shown as Sub 1 has no directly applied Share options.
+
+
+
 ## Folder Search
 
 The Folder tree will open by default on a grid and can be toggled off from view by clicking on the folder icon:
