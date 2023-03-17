@@ -1,7 +1,7 @@
 ---
 toc: "media"
 maxHeadingLevel: 4
-minHeadingLevel: 3
+minHeadingLevel: 2
 excerpt: "Design and store tabular data and use with data Widgets to add to Layouts"
 ---
 
@@ -121,15 +121,15 @@ From v2.3.0 the remote data source can be selected as a CSV.
 
 Use the **Test data URL** to ensure that the desired structure is returned.
 
-- #### Advanced
+#### Advanced
 
-  Set how often the remote data should be fetched and imported.
-  
-  Set a timescale to Truncate data.
-  
-  Use the drop down to select a DataSet if using dependants.
-  
-  Optionally set a row limit and what should happen if this limit is exceeded.
+- Set how often the remote data should be fetched and imported.
+
+- Set a timescale to Truncate data.
+
+- Use the drop down to select a DataSet if using dependants.
+
+- Optionally set a row limit and what should happen if this limit is exceeded.
 
 {nonwhite}
 
@@ -320,7 +320,8 @@ From v2.3 multiple DataSets can be selected and deleted in bulk using the **With
 {/tip}
 
 {nonwhite}
-Take a look at the following guides for additional guidance with DataSets:
+
+#### Take a look at the following guides for additional guidance with DataSets:
 
 - [Changing the date format in DataSets](https://community.xibo.org.uk/t/how-to-change-the-date-format-in-your-dataset/28093)
 
