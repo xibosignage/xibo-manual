@@ -53,7 +53,7 @@ Use the drop down to select from the following options and complete the presente
 
 ### Validation
 
-The Validation String is used as a comparison to the Command output and if it matches then the Command is considered a success. This string can be a regular expression.
+The Validation String is used as a comparison to the Command output and if it matches then the Command is considered a success. The Validation String must be an exact match.
 
 This could be useful for a network of mixed Windows and Android Players with a command called ‘Reboot’. The Command String for ‘Reboot’ on Windows being `shutdown /r /t 0`, and on Android, it is `reboot`.
 
