@@ -1,7 +1,7 @@
 ---
 toc: "tour"
-maxHeadingLevel: 2
-minHeadingLevel: 3
+maxHeadingLevel: 3
+minHeadingLevel: 2
 excerpt: "Configurable options in the CMS Settings"
 ---
 
