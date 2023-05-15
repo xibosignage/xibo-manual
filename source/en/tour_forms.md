@@ -8,7 +8,7 @@
 
 The CMS presents most transactions (actions that **add**/**edit** or **delete** in some way) using **Forms**.
 
-The screenshot below gives an example of a how a form may look using the **Add Layout** form:
+The screenshot below gives an example of a how a form may look using the **Edit Layout** form:
 
 ![Add Layout Form](img/v3_forms_add_layout.png)
 
