@@ -135,6 +135,10 @@ If audio is assigned to a Widget which is the only Widget in the Region, the aud
 
 {feat}Widget Expiry Dates|v3{/feat}
 
+{version}
+**NOTE:** Start dates for Library Media can only be assigned once added to a Widget on a Layout or Playlist and **not** at Upload!
+{/version}
+
 Widgets that have expiry dates set can be identified by the following icons shown in the **Timeline**:
 
 - ![Set to Start](img/v2.3_layouts_tools_set_to_start.png)Start date has been set for a future date/time.
