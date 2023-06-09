@@ -1,4 +1,9 @@
-<!--toc=layouts-->
+---
+toc: "layouts"
+maxHeadingLevel: 3
+minHeadingLevel: 2
+excerpt: "A Layout is a complete screen design made up of content which is then scheduled to a Display"
+---
 
 # Layouts
 
@@ -67,6 +72,8 @@ Select a Template to use from the available options:
 - Choose from your own published [Templates](layouts_templates.html)
 
 {nonwhite}
+
+### Xibo Exchange
 
 - Select one of our templates from the Xibo Exchange
 
