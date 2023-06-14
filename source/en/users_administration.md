@@ -220,14 +220,16 @@ Deleting a User is irreversible and will remove all their owned items including;
 
 [[PRODUCTNAME]] contains an API that allows 3rd party applications to connect and consume its data. 
 
-{tip}
-**Add Applications** and **Add DOOH Applications** and configure from **Applications** under the **Administration** section of the main menu. 
+Applications are added and configured from **Applications** under the **Administration** section of the main CMS menu.
+{version}
+**NOTE:** The additional **DOOH** User Type which is only granted access to the CMS via the API, [DOOH Application](https://xibosignage.com/manual/en/users_administration.html#my_applications) will be removed from v4.
+{/version}
 
-**Please note:** The additional **DOOH** User Type which is only granted access to the CMS via the API, [DOOH Application](https://xibosignage.com/manual/en/users_administration.html#my_applications) will be removed from v4.
+Before using an **Application** each User must authorise the application to act on their behalf within the CMS. 
 
-{/tip}
+From v3.1.0 authorised Applications can be viewed from the [User Profile](tour_user_profile.htmlc#content-my-applications)
 
-Before using an **Application** each User must authorise the application to act on their behalf within the CMS. Once  authorised it can be viewed by clicking on the **My Applications** button to open a current list.
+Versions earlier than v3.1.0 authorised Applications are viewed by clicking on the **My Applications** button to open a current list.
 
   ![Users My Applications](img/users_my_applications_button.png)
 

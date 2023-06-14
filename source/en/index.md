@@ -76,7 +76,7 @@ This flexibility drives the dynamic nature of a [[PRODUCTNAME]] display screen.
 Throughout the documentation we have included tables to show **Player** and **CMS** version support for features and functionality:
 
 ![Feature Category Table](img/tour_feature_category_table.png)
-{/tip}
+
 
 ## Open Source
 

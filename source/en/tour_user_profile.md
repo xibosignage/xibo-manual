@@ -59,6 +59,18 @@ The Edit User Profile form allows a logged in User to:
 
 - Enable [Two Factor Authentication](tour_two_factor_authentication.html) 
 
+## My Applications
+
+From v3.1.0 Applications that have been authorised by the User can be viewed from here. 
+
+{tip}
+Administrators will need to add the required information from the **Applications** page under the **Administration** section of the main CMS menu.
+{/tip}
+
+{version}
+If you are using a CMS earlier than v3.1.0, [Applications](users_administration.html#content-my-applications) are viewed from the User grid!
+{/version}
+
 ## Reshow Welcome
 
 Take a short tour of the CMS to assist with navigation and functionality.
