@@ -137,7 +137,7 @@ Located on the **Advanced** tab, use this checkbox to tell [[PRODUCTNAME]] to im
 Useful for Layouts with long durations!
 {/tip}
 
-### Use Multiple Decoders (Xibo for Android)
+### Use Multiple Decoders (Android Players)
 
 From v2 R207, Gapless Playback with Video content requires an Android device to have multiple decoders. This setting can be found on the Advanced tab and will use the Device Default automatically.
 
@@ -145,7 +145,7 @@ From v2 R207, Gapless Playback with Video content requires an Android device to 
 Should an issue arise with playback, set to On!
 {/tip}
 
-### Enable Touch capabilities on the device (Xibo for Android)
+### Enable Touch capabilities on the device (Android Players)
 
 From v3 R300, go to the **Advanced** tab and enable this option if the device will be used as a touch screen. 
 
