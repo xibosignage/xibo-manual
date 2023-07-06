@@ -20,7 +20,7 @@ When no other content is Scheduled, or if there is an issue that prevents the sc
 Displays are uniquely identified by a **hardware key** which is generated when the Signage Player software is installed. This hardware key is used to create a Display record in the CMS and is unique to that one Display record.
 
 {nonwhite}
-Administrator documentation for Player Installation guides can be found [here](/docs/setup/xibo-player-installation)
+Administrator documentation for Player Installation guides can be found [here](/docs/setup)
 {/nonwhite}
 
 ## Connecting a Display
