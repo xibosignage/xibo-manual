@@ -7,7 +7,7 @@ excerpt: "Design and store tabular data and use with data Widgets to add to Layo
 
 # DataSets
 
-DataSets are used to design and store tabular data which are created and managed independently to [Layouts](layouts.html). Once created, DataSets can be added to the [DataSet View](media_module_dataset_view.html)/[DataSet Ticker](media_module_dataset_ticker.html) and [Chart](media_module_chart.html) Widgets.
+DataSets are used to design and store tabular data which are created and managed independently to [Layouts](https://xibosignage.com/manual/en/layouts.html). Once created, DataSets can be added to the [DataSet View](https://xibosignage.com/manual/en/media_module_dataset_view.html)/[DataSet Ticker](https://xibosignage.com/manual/en/media_module_dataset_ticker.html) and [Chart](https://xibosignage.com/manual/en/media_module_chart.html) Widgets
 
 ## Feature Overview:
 
@@ -16,8 +16,8 @@ DataSets are used to design and store tabular data which are created and managed
 - Import data from a CSV file.
 - Use a JSON formatted data source via the API.
 - Sync from a 3rd party data source remotely on a schedule.
-- Maintain content without accessing Layouts.
-- Re-use across multiple Widgets and Layouts.
+- Maintain content without accessing Layouts/Playlists.
+- Re-use across multiple Widgets/Layouts/Playlists.
 - Create an RSS feed from a DataSet.
 
 DataSets have been designed to be versatile so that they can be configured in a number of ways with the DataSet View/DataSet Ticker and Chart Widgets as well as a source of data for a custom Module. A DataSet provides a convenient way to import and display data from other systems in [[PRODUCTNAME]].
@@ -29,7 +29,7 @@ Examples of where DataSets could be utilised:
 - Meeting room bookings
 - Bus timetables
 
-DataSets are created and managed independently to Layouts and therefore do not require user access to Layouts or the Layout Designer to add or manage the data within the DataSet.
+DataSets are created and managed independently to Layouts and Playlists and therefore do not require user access to Layouts the Layout Designer or Playlists to add or manage the data within the DataSet.
 
 ![DataSet Flow](img/media_dataset_flow.png)
 
@@ -39,7 +39,8 @@ DataSets are administered from the **DataSets** page under the **Library** secti
 
 ![DataSet Grid](img/v3_media_dataset_grid.png)
 
-Click on the Add DataSet button and complete the form fields to create a new record:
+- Click on the Add DataSet button and complete the form fields to create a new record:
+
 
 ![DataSet Add](img/v3_media_dataset_add.png)
 
@@ -53,9 +54,9 @@ Folders provide an easy way to define User/User Group access to its contents. Da
 - Provide an optional internal **Description** to give more details/instructions to other potential users of the DataSet.
 - If applicable, enter a **Code** to lookup this DataSet if referencing via the API.
 
-If the DataSet is going to be connected to sync with a **Remote** data source, tick to enable and continue with the configuration steps outlined next.
+If the DataSet is going to be connected to sync with a **Remote** data source, tick to enable and continue with the [Creating Remote DataSets](media_datasets.html#content-creating-remote-datasets) configuration.
 
-If the DataSet is **not Remote**, click to Save the DataSet record and go onto the [Create and Configure Columns](media_datasets.html#create_and_configure_columns) section on this page.
+If the DataSet is **not Remote**, click to Save the DataSet record and go onto the [Create and Configure Columns](media_datasets.html#content-create_and_configure_columns) section on this page.
 
 ## Creating Remote DataSets
 

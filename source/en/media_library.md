@@ -20,7 +20,7 @@ Library media is managed from **Media** under the **Library section** of the mai
 ![Media Library](img/v3.1_media_library_grid.png)
 
 
-Use the availalble filters to easily narrow down searches.
+Use the available filters to easily narrow down searches.
 
 {tip}
 Use the **OR/AND** option to filter items that have been assigned multiple **Tags**.
