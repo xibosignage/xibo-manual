@@ -1,171 +1,263 @@
-<!--toc=scheduling-->
+---
+toc: "scheduling"
+maxHeadingLevel: 3
+minHeadingLevel: 2
+excerpt: "Create Schedules to show your content at the right time and place"
+keywords: "synchronised, mirror, video wall, scheduled actions, full screen scheduling, interrupt layout, display order, priority, max plays, run at cms time, repeats, recurring instances, reminders, duplicate events"
+persona: "schedule manager"
+---
 
-# Events
+# Scheduling 
 
-Events are administered from the Schedule section of the main menu.
+[[PRODUCTNAME]] has a sophisticated system to allow for the simple creation of complex schedules across one or more [Displays](displays.html)/[Display](displays_groups.html) Groups. 
 
-Layouts, Campaigns, Overlay Layouts, Interrupt Layouts, Command and Action **Event Types** can be assigned to Displays/Display Groups to be shown at specific dates and times.
+## Creating a Schedule
+
+Schedules are created from the **Schedule** page of the main CMS menu. 
+
+Users can create one of the following:
+
+- Schedule Event using the [Add Event](scheduling_events.html#content-add-event) button
+- Synchronised Event using the [Add Synchronised Event](scheduling_events.html#content-add-synchronised-event) button
 
 ## Add Event
 
-Click on the **Add Event** button on the calendar to schedule an Event.
-
-![Add Scheduled Event](img\schedule_event_add.png)
-
-### Event Type
-
-Use the drop-down to select an Event Type:
-
-- **Layout** - select Published Layouts.
-
-- **Campaign** - select designed Campaigns. 
-
-- **Overlay Layout** - select a specifically designed Layout to schedule as an [Overlay Layout](layouts_overlay.html).
-
-- **Interrupt Layout** (available from v2.2.0) - select an [Interrupt Layout](layouts_interrupt.html) to play for a specified **Share of Voice** to interrupt your usual schedule.
-
-- **Command** -  select from a predefined command.
-
-- **Actions** (available from v3.1.0) - this Event makes the Player listen for a **Trigger Code** coming in on a webhook to trigger one of the following **Action Types**:
-
-  **Navigate to Layout** - enter the code identifier for the Layout that the Player should navigate to when triggered.
-
-  {tip}
-  This code can be entered on adding a new Layout or by editing a Layout from the Layouts Grid row menu.
-  {/tip}
-
-  **Command** - select from the drop down menu.
+- Click on the **Add Event** button at the top of the schedule grid to open the **Schedule Event** form and start by selecting the **Event Type** to schedule.
 
 {tip}
-Events, with the exception of Interrupt/Command and Action Events, can also be added using the [Schedule Now](scheduling_now.html) function.
+Schedules can also be easily created using the **row menu** for an object, selecting **Schedule**, with the exception of Interrupt Layout, Command and Action Event Types!
 {/tip}
 
-### Display 
+The CMS supports scheduling for the following types:
 
-Click in the Display field to select one or more Displays/Display Groups to show the event content on.
+### Layout
 
-### Dayparting
+Select a published [Layout]()
 
-**Custom**/**Always** or **User** created Dayparts can be selected using the drop-down menu. 
+### Command
 
-With Custom selected, use the date picker to select Start/End dates and times.
-
-### Layout/Campaign
-
-Use the drop-down menu to select the Layout or Campaign to schedule.
-
-### Preview
-
-Click on the Preview button to view the Layout or Campaign in another tab. 
+Select a [Command](displays_command_functionality.html) to be executed by the Player at a specific point in time. 
 
 {tip}
-This is useful to use to ensure that the correct Layout or Campaign has been selected and to make checks, such as the total duration, without having to leave the schedule.
+Command Events do not require a `toDt`. 
+
+[Display Order](scheduling_events.html#content-display-order) and [Priority](scheduling_events.html#content-priority) are irrelevant when it comes to executing Commands, but may be set in the CMS for organisational purposes.
 {/tip}
+
+### Overlay Layout
+
+Layouts that have been designed as an [Overlay Layout](layouts_overlay.html) will be scheduled at the same time as existing Layouts to create an overlay of content when displayed.
+
+### Interrupt Layout
+
+An Interrupt Layout will schedule a selected [Layout](layouts.html) to play **in-between** other Layouts in the 'usual schedule'.
+
+[[PRODUCTNAME]] will work out when it will be played using how many **seconds per hour** or as a **Percentage** entered on the schedule.
+
+{feat}Interrupt Layouts|v4{/feat}
+
+{tip}
+This can be useful if you have Announcements that need to be shown for a particular amount of time within the usual schedule!
+{/tip}
+
+- Select **Interrupt Layout** as the Event Type from the drop down menu when adding an [Event](scheduling_events.html).
+- Complete the form fields to create the schedule.
+
+#### Share of Voice
+
+Enter the amount of time the Layout should be shown in seconds per hour or as a percentage (0 - 100%) of the events duration (the difference between the from date and the to date) that the **Interrupt Layout** should occupy the usual schedule.
+
+{tip}
+**Please note:** If your 'main' Layout has a long duration, the Interrupt Layout may show in a block in order to satisfy the SoV criteria entered!
+{/tip}
+
+### Campaign
+
+Select a **Layout List** [Campaign](layouts_campaigns)
+
+### Action
+
+**Scheduled Actions** listen for a Trigger Code coming in on a webhook to Navigate to a Layout or to run a Command. 
+
+{feat}Scheduled Action Events|v4{/feat}
+
+- **Navigate to Layout** - enter the code identifier for the Layout the Player should navigate to when triggered. This code is created when adding a new Layout or from editing an existing from the Layouts grid.
+- **Command** - select the Command to run.
+
+### Full Screen Video / Image / Playlist 
+
+Select a **Video/Image** from your [Library](media_library.html) or a [Playlist](media_playlists.html) which when scheduled will be shown full screen without having to first add it to a Layout
+
+- Complete the form fields to create the Schedule.
+
+
+Clicking **Choose** from the **Media/Playlist** field will show a pop up:
+
+![Full Screen Media](img/v4_scheduling_events_full_screen_media.png)
+
+Use the drop down menu to select the **Media** file or **Playlist** to use.
+
+On **Saving**, further options will be shown:
+
+- **Video/Image files** only: Override the Media duration set in the Library by providing a **Duration in loop**.
+- Select a specific **Resolution** to use.
+- Set a **Background Colour** to fill any gaps if the item does not fill the entire screen.
+
+## Synchronised Events
+
+{tip}
+Synchronised Events are used in conjunction with [Sync Groups](displays_sync_groups.html) to show mirrored or a video wall configuration across 2 or more Displays.
+
+Ensure you have created and configured a **Sync Group** prior to scheduling!
+{/tip}
+
+Click on the **Add Synchronised Event** button at the top of the schedule grid to open the **Add Synchronised Event** form.
+
+Select a [Sync Group](displays_sync_groups.html) from the drop down menu.
+
+- Use the **Layout** drop down to select which content should be shown on each Display within the group.
+
+{tip}
+When selecting different content to show in a wall configuration on Displays, the total duration will be enforced by the content on the Lead Display.
+
+The Lead Display will issue instructions to change the sequence based on its assigned content. Please bear in mind that other Displays within the group could fall out of sync if their content is not similar in design (same number of items, durations etc).
+{/tip}
+
+- Select **Mirror** to automatically set the same item on each Display within the group automatically.
+
+{tip}
+Sync [Playlists](media_playlists.html) on different Layouts by using a **Content Synchronisation Key**!
+{/tip}
+
+### Dayparts
+
+- Events are scheduled using **Dayparting** information:
+  - Select **Custom** to enter your own start and end times. Use the **Relative time** checkbox to input the Hours and Minutes when creating a Scheduled Event (not available for Synchronised Events). 
+  - Select **Always** to have the content always scheduled on the selected Display. 
+
+{tip}
+Create your own defined [Dayparts](scheduling_dayparting.html) to select for even easier scheduling!
+{/tip}
+
+- Use the drop down to select what needs to be scheduled from the list.
 
 ### Display Order
 
-Determine the order in which the Layout/Campaign will play in rotation when scheduled at the same time as other Layouts/Campaigns. Ordering is by a simple numerical sort, lowest to highest numbers, therefore **Layouts/Campaigns marked 1** will be played before **Layouts/Campaigns marked 2**.
-
-The Display Order on Overlay Layouts determines the order in which the Layout Regions are applied to the overlay and compliments the Regions own layer settings.
+- Use **Display Order** to determine the order in which the event will play in rotation with other content when scheduled at the same time as other events. Ordering is a simple numerical sort, lowest to highest numbers (events marked with 1 will be played before events marked with 2.)
 
 {tip}
-To ensure ordering of Layouts we would recommend that these are ordered within a Campaign. The Display Order could then be used to determine the order in which entire Campaigns should playout. If no Display Order is specified for Campaigns or they have the same Display order the Campaigns will play according to the Play List order chosen for the [Campaign](layouts_campaigns), Interleaved or Block.
+To ensure the play order of Layouts we recommend including them in a [Campaign](layouts_campaigns.html). The Display Order can then be used to determine the order in which entire Campaigns should play. If Campaigns have the same Display Order or nothing is set, the Campaigns will play according to the Play List order (**Interleaved** or **Block**) defined for the individual Campaign.
 {/tip}
-
-{version}
-If you are using a CMS earlier than v3.3.0 Campaigns with the same display order will play interleaved.
-{/version}
 
 ### Priority
 
-Set the Priority of the Event with the **highest** number stated playing in preference to lower numbers. This can be used to override all other non-priority Events on the schedule.
+- Set the **Priority** of an Event with 0 considered the lowest Priority. 
 
- {tip}
-This functionality is useful for displaying temporary/important notices for overriding a schedule for a specific Event without having to make any changes to your existing schedule or cancelling Layouts/Campaigns that would be running at that time.
+Events with the highest number will play in preference to lower numbers. Setting a Priority can be used to override all other non-priority Events in a schedule.
+
+{tip}
+
+A good example to use Priority would be in a way to alter the Schedule at a specific time, for example, a normal rotation during the day with a Priority Event at lunchtime which shows specific ‘lunch’ information (i.e. Lunchtime specials on a cafe menu).
+
+If a Player has a schedule containing Events which are all Priority 0, then all of the Events will be shown in rotation together.
+
+If 1 of the Events has a Priority of 1, then this will be the only Event shown.
+
+If there are some Events with Priority 0, some with Priority 1 and some with Priority 2 only the Priority 2 Events will be shown, in a rotation for that Scheduled period (as the highest Priority)
+
 {/tip}
 
 ### Maximum Plays per Hour
 
-{feat}Max Plays per Hour|v3{/feat}
+{feat}Max Plays per Hour|v4{/feat}
 
-Available from CMS v3.3.0 set a number in this field to limit the amount of times this Event is shown per hour on Displays. Leave as the default 0 for unlimited plays.
+- Set a number to limit the amount of times this Event is shown per hour on Displays. 
 
-### Run at CMS Time
+Leave as the default 0 for unlimited plays.
 
-When selected, the Event will play at the time determined by the **CMS** rather than using the local display time.
+### Run at CMS time
+
+- Select this option to play the Event at the time determined by the **CMS** rather than using the local Display time.
+
 {tip}
-**Scenario**
-CMS Time = GMT
-Display 1 = GMT
-Display 2 = GMT -4
+**Scenario** 
 
-An event scheduled for 11:00 with **Run at CMS time** deselected will run on display 1 at 11:00 and display 2 at 11:00. These two displays will not show the same content at the same time, because display 2 is 4 hours behind.
+- CMS Time = GMT
+- Display 1 = GMT
+- Display 2 = GMT -4
 
-With **Run at CMS time** selected, display 1 will run at 11:00 as before but display 2 will run at 07:00.
+An event scheduled for 11:00 with Run at CMS time **deselected** will show on **Display 1** at 11:00 and **Display 2** at 11:00. These two displays will not show the same content at the same time, because display 2 is 4 hours behind.
+
+With Run at CMS time **selected**, **Display 1** will show at 11:00 as before but **Display 2** will run at 07:00.
 {/tip}
-
-Please note **The Schedule Now** functionality will always create events with this option selected.
 
 ## Repeats
 
-An Event can be repeated at defined intervals (hourly, daily, weekly, monthly or yearly) until a specified time. Use the **Repeats** tab to create recurring events. Select the type of repeat from the drop-down and complete the form fields as required. Use **Repeat every** to further specify the frequency of the repeat.
+Rather than creating numerous schedules to ensure that your content is shown, Events can be configured to Repeat Per Minute, Hourly, Daily, Weekly, Monthly or Yearly.
+
+- From the **Repeats** tab, use the drop down to select the type of Repeat.
+- Determine the Repeat frequency by entering a number here.
 
 {tip}
+For example with a **Weekly Repeat** you could select Wednesday and Friday as the days of the week to Repeat the Event, and enter a 2 to Repeat Every other week on those days.
 
-E.g. With a **Weekly** Repeat you could specify to repeat each Wednesday and Friday every other week by including a 2 in the 'Repeat every' form field.
+**Monthly Repeats** can be configured by the Event date or by which day in the month the Event falls on. For example, an Event which is scheduled on Saturday 15/07/2023 can be set to Repeat every month on the 3rd Saturday.
 {/tip}
 
-{tip}
-Available from version 2.0 and later, **Monthly** Repeats can be determined by the Event date or by the day in the month the event falls on. 
+- **Until** controls when the Repeat should finish. 
 
-For example: an event which is scheduled on 06/03/2019 can be set to repeat on the 6th day of every month or the 1st Wednesday of each month (as 06/03/2019 falls on a Wednesday). 
+{tip}
+Ensure the time selected here is after the final repetition of the defined Event so as to not cut the play back of content short!
 {/tip}
 
-- To completely remove all instances of a Recurring Event, click on the **Delete** button at the bottom of the form.
+**Recurring Events** can be removed from the Schedule in their entirety or by individual recurrence:
 
-From v2.3, an **individual recurrence** can be deleted from the Schedule. 
+- Select **Delete** at the bottom of the Schedule form to completely remove all instances of the Recurring Event.
+- From the [Calendar] view, click on the **Recurring Event** by date:
 
-![Deleting Recurring Events](img\v2.3_scheduling_deleting_repeats.png)
+![Recurring Instance Calendar](img/v4_scheduling_recurring_instance.png)
 
-- Click on the Recurring event you wish to remove from the Schedule, to open the **Edit Event** form.
+The instance details will be clearly shown at the bottom of the form:
 
-![Delete from Schedule](img\v2.3_scheduling_delete_from_schedule.png)
+![Delete from Scheduling](img/v4_scheduling_delete_from_schedule.png)
 
-- Click on the **Delete from Schedule** button to remove this singular event from the schedule and remove it from all Displays.
+- Click **Delete from Schedule** to remove only this instance from scheduling. All other instances will remain scheduled.
 
 {tip}
-Care should  be taken if amendments are made to the Schedule after deleting individual instances of a recurring schedule.  Previously deleted instances could be recreated with any edits made to the existing Schedule.
+Care should be taken if amendments are made to a recurring Schedule after deleting an individual instance. Previously deleted instances could be recreated with edits made to an existing recurring Schedule!
 {/tip}
 
 ## Reminders
 
-From v2.2.0 create a set of reminders to be sent to the [Notification Drawer](users_notifications.html) as well as notified by email for selected scheduled Events. 
+Create a set of **Reminders** to be sent to the [Notification Center](users_notifications.html#content-notification-drawer) or emailed.
 
 {tip}
-Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to set up of Reminders.
+Please ensure that an Administrator has entered a **Sending Email address** in the [CMS Settings](tour_cms_settings.html#content-network)!
 {/tip}
 
-![Event Reminders](img\v3_scheduling_event_reminders.png)
+- From the **Reminder** tab, use the form fields to define a reminder. Use the `+` icon to add additional rows if required.
 
-Use the form fields to define a reminder, use the + icon to add additional fields.
-Tick the box if you wish to be notified email, this will be sent to the email address as set for your [User Profile](users_administration.html>).
+![Event Reminders](img\v4_scheduling_event_reminders.png)
+
+- Tick the box to send an email to the address set for your [User Profile](tour_user_access.html#content-edit-profile).
 
 ## Geo Location
 
-{feat}Geo Location Scheduling|v3{/feat}
-
-Tick the checkbox to make this Event location aware. Further details can be found on the [Geo Scheduling](scheduling_geolocation.html) page.
+Use the checkbox to make this Event location aware. Further information can be found at [Geo Scheduling](scheduling_geolocation.html)
 
 ## Edit / Delete
 
-Click on any **Event/Icon** in the calendar to edit form fields or to remove completely from the schedule by clicking delete and confirming.
+Make changes to Events from the Schedule grid or Calendar view. Further information can be found at [Schedule Management](scheduling_management.html)
 
 ## Duplicate
 
-Located at the bottom of the Edit form, the **Duplicate** button allows for event details to be duplicated and configured for a new event. Once clicked a pop up will appear to confirm that a new form has been loaded so that amendments can be made.
+The Duplicate button at the bottom of the Schedule form allows for event details to be easily duplicated and configured to create new Events. 
 
 {tip}
-The new loaded form will not have a **Duplicate** button!
+On clicking Duplicate, a pop up will appear to confirm that a new form has been loaded with the same details. The new loaded form will not have a Duplicate button.
 {/tip}
 
-**It is important to note that if at any time there are no Layouts/Campaigns Scheduled to run, the Default Layout assigned for the display will run automatically.**
+{version}
+**NOTE:** If at any time there are no Schedules to run, the [Default Layout](displays.html#content-default-layout) assigned for the Display will be shown!
+{/version}
+
