@@ -44,8 +44,6 @@ Templates/Layouts are designed for an intended display Resolution and will funct
 Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
 {/tip}
 
-- Provide a **Name** for easy identification purposes within the CMS.
-
 
 - On saving the form, the [Layout Designer](layouts_designer.html) will automatically open.
 
