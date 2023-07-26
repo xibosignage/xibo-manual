@@ -1,89 +1,88 @@
-<!--toc=users-->
+---
+toc: "users"
+maxHeadingLevel: 3
+minheadingLevel: 2
+excerpt: "User Groups provide an easy way to manage system access for multiple Users"
+keywords: "pre-configured groups, create user groups, group members "
+persona: "administrator"
+---
 
 # User Groups
 
-{version}
-If you are using a CMS earlier than v3.0.0 please use the following link: [User Groups](users_groups_2.html)
-{/version}
-
-User Groups allow for a set of [Features and Share](users_features_and_sharing.html) options to be applied to all Users within a specified Group.
-
-[[PRODUCTNAME]] comes with a set of pre-configured User Groups for common functions for new installations.
-
-{version}
-**Note:** Pre-configured User Groups are available for new v3 installations and for users who upgrade to v3 who have not previously utilised User Groups in earlier versions!
-{/version}
-
-![Pre-Configured Groups](img/v3_user_groups_preconfigured.png)
-
-These Groups already have the required Features enabled to allow Users to carry out the chosen role, and can be modified if necessary.
+User Groups are an easy way to configure [Features and Share](users_features_and_sharing.html) options to apply to multiple Users who are members of a particular User Group.
 
 {tip}
-Using User Groups makes it easier to onboard new Users and manage system access. Users will inherit the [Features and Sharing](users_features_and_sharing.html) enabled for the User Group!
+User Groups makes it easier to onboard new Users and manage system access. Users will inherit the  Feature and Sharing options enabled for the group!
 {/tip}
 
-Create new and manage existing by clicking on **User Groups** under the **Administration** section of the menu.
+Create your own User Groups are select from a set of pre-configured groups, created to serve common functions in the CMS, available for new installations.
+
+{version}
+**Note:** Pre-configured User Groups are available for new v4 installations and for users who upgrade to v4 who have not previously utilised User Groups in  their earlier versions!
+{/version}
+
+![Pre-Configured Groups](img/v4_user_groups_preconfigured.png)
+
+The pre-configured User Groups already have the required Features enabled to allow Users to carry out the chosen role. These can be modified if required to suit.
+
+## Create User Groups
+
+User Groups are administered from **User Groups** under the **Administration** section of the main CMS menu. The User Group grid will open for you to add and manage User Groups:
+
+![User Group Add](img/v4_user_group_add.png)
 
 {tip}
-User Groups that you create can be enabled to be shown for the [New User](users_administration.html) onboarding wizard!
+
+Add User Groups to suit your specific needs and enable them to be shown for the [New User](users_administration.html) onboarding wizard to make it easier to add Users to the right User Group from the start!
 {/tip}
 
-![User Group Add](img/v3_user_group_add.png)
+To add a new group, click on the **Add User Group** button and enter the required information for each tab:
 
-Create a new Group by clicking on the **Add User Group** button to open the form:
+#### General
 
-![User Group Add Form](img/v3_users_group_add_form.png)
+- Give your User Group a **Name** to identify it within the CMS
+- Enter a maximum amount of [Library Quota](users_administration.html#content-library-quota) allowed to be uploaded to the Library for this User Group. Enter 0 if no quota should be applied. 
+- Select the type, **System** or **Display**, if the User Group should receive notifications.
 
-### General
-
-- Use this tab to give your User Group an identifiable **Name**
-- Assign a [Library Quota](tour_library_quota.html) to the group to determine the maximum amount of content allowed to be uploaded to the Library. Enter 0 if no quota should be applied. 
-- Enable the **Notification** options if required for the Group.
-
-### Description
+#### Description
 
 Provide optional text to describe the created Group. 
 
 {tip}
-If enabled, this description will be shown for onboarding new Users and so should describe the Groups role to make it clear for selection!
+If enabled to show for onboarding new Users, this description (such as the Groups role) will be shown to make it clear for selection.
 {/tip}
 
-### Onboarding Settings
+#### Onboarding Settings
 
-This tab controls the options for onboarding new Users.
+Use this tab to control the options for onboarding new Users:
 
-![Onboarding Settings](img/v3_users_onboarding_settings.png)
+- Tick if you want to include this User Group for selection when using the onboarding wizard.
+- Use the dropdown to select the [Dashboard](users_dashboard.html) which will be used as a homepage for all members of this group.
+- Click to Save.
 
-- Use the checkbox to include this User Group for selection when using the onboarding wizard for new User's.
-- Use the dropdown to select a [Dashboard](tour_status_dashboard.html) to be used as a homepage for Users created with the Group.
 
-Once all tabs have been created click to **Save**.
+### Group Members
 
-## Group Members
+Once added to the grid, add Users to the User Group by using the row menu:
 
-Once created, Users can be assigned to the Group using the **Row Menu** and clicking on **Members**:
+- Click on **Members**
 
-![User Group Manage Membership](img/user_group_manage_membership.png)
+![User Group Manage Membership](img/v4_user_group_manage_membership.png)
 
-- Use the checkboxes to assign **Users** to the **Group**, and click to Save.
+- Select which **Users** should belong to the selected **User Group**.
+- Click to **Save**.
 
 {tip}
 Users can be assigned to one or more **User Groups** for ease of sharing and collaboration!
 
-User Membership can also be controlled from the User Grid using the Row Menu. Click on **User Groups** to open the **Manage Membership** form!
+Membership can also be controlled from the User grid by using the row menu and selecting  **User Groups** to open the **Manage Membership** form!
 {/tip}
 
-## Features
+### Features
 
-Click on **Features** from the **Row Menu** to control the required access for the User Group:
+Control the User Groups access to the relevant parts of the CMS by selecting [Features](users_features_and_sharing.html) from the row menu.
 
-![Features](img/v3_users_features.png)
+### Copy
 
-For further information see the following page: [Features and Sharing](users_features_and_sharing.html)
-
-
-
-{tip}
-Use **Copy** from the row menu of a User Group to easily make adjustments and create new Groups to suit your needs!
-{/tip}
+Make a **Copy** of an existing User Group from the row menu to make adjustments and easily create new Groups to suit your requirements.
 
