@@ -7,15 +7,10 @@ excerpt: "A Layout is a complete screen design made up of content which is then 
 
 # Layouts
 
-{version}
-
-**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
-
-- CMS v3.0.x click [here](layouts_3.html)
-- CMS earlier than v3.0.0 click [here](layouts_2.html)
+## [PLACEHOLDER]
 
 
-{/version}
+
 
 A Layout is a complete screen design made up of content, which is then scheduled to a Display/multiple Displays / Display Groups. A **Layout** is made up of 1 or more **Regions** which act as placeholders for content which each contain a **Timeline** of **Media** to show. Media is assigned to a Timeline using a wide range of Widgets. 
 

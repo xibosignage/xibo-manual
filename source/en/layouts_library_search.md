@@ -2,6 +2,8 @@
 
 # Library Search
 
+## [PLACEHOLDER]
+
 {version}
 
 **Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
