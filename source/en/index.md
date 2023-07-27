@@ -25,7 +25,7 @@ Click [here](/docs/setup/supported-versions-and-environments.html) to view the f
 {/noncloud}
 
 
-If you are an Administrator, further information on the Installation and Set up of the system is available from our [Administration Documentation](/docs/setup.html)
+If you are an Administrator, further information on the Installation and Set up of the system is available from our [Administration Documentation](/docs/setup/)
 
 {cloud}
 If you are hosting in our [Xibo Cloud](/docs/setup/xibo-in-the-cloud.html) your CMS will be set up for you. Keep a look out for an email which will be sent once your CMS is ready with your connection details!
@@ -38,7 +38,7 @@ Throughout this manual you will see tables to show **Player** and **CMS** versio
 {/nonwhite}
 
 {version}
-**IMPORTANT:** This User Manual gives a complete overview of the CMS as a [Super Administrator](/manual/en/users_user_types.html#content-super-admin) with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
+**IMPORTANT:** This User Manual gives a complete overview of the CMS as a [Super Administrator](/manual/en/users.html#content-super-admin-user) with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
 {/version}
 
 ## Digital Signage For All!
@@ -55,7 +55,7 @@ The [[PRODUCTNAME]] software centers on 5 core concepts:
 For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory and ADFS!
 {/tip}
 
-[[PRODUCTNAME]] supports 3 [User Types](users_user_types.html) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
+[[PRODUCTNAME]] supports 3 [User Types](users.html) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
 
 - ### Displays
 
@@ -63,7 +63,7 @@ A [Display](displays.html) is the connection from the Player to the CMS which gr
 
 - ### Media
 
-[Media](media.html) is the content we want to show on Displays which is generally split into two categories:
+Media is the content we want to show on Displays which is generally split into two categories:
 
 - **File based media** - media uploaded and stored in the [Library](media_library.html) (images and video files for example)
 - **Layout based media** - media configured directly on a Layout which does not have an associated file (RSS feeds and Weather forecasts for example)
@@ -78,7 +78,7 @@ A [Layout](layouts.html) is the complete content design to be shown on Displays.
 
 - ### Scheduling
 
-[Scheduling](scheduling.html) is highly flexible and supports scheduling to single Displays as well as to [Display Groups](displays_groups.html). Displays check for new scheduled content periodically and will download new items in advance of playback. 
+[Scheduling](scheduling_events.html) is highly flexible and supports scheduling to single Displays as well as to [Display Groups](displays_groups.html). Displays check for new scheduled content periodically and will download new items in advance of playback. 
 
 {tip}
 **Default Layouts** should be assigned to Displays to be shown when nothing else is scheduled!
@@ -92,7 +92,7 @@ A [Layout](layouts.html) is the complete content design to be shown on Displays.
 
 ![Workflow 1](img\v4_tour_workflow_1.png)
 
-2. Selecting **Video**/**Image** files or saved **Playlists** to directly [schedule](scheduling_events.html):
+2. Selecting **Video**/**Image** files or saved **Playlists** to directly [Schedule](scheduling_events.html):
 
 ![Workflow 2](img\v4_tour_workflow_2.png)
 
