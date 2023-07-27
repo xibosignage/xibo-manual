@@ -1,6 +1,6 @@
 - [Introduction](layouts.html)
 
-- [Layout Editor](layouts_designer.html)
+- [Layout Editor](layouts_editor.html)
 
 - [Stencils](layouts_stencils.html)
 
