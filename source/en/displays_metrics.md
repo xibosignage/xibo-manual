@@ -60,7 +60,7 @@ The **Summary** gives a further breakdown between specified dates for Displays/D
 
 ## Proof of Play
 
-![Proof of Play Dashboard](img\v4_proof_of_play_dashboard.png)
+![Proof of Play Dashboard](img\v4_displays_proof_of_play_dashboard.png)
 
 Each **Display** can collect information to provide Proof of Play Reports on what they have shown:
 

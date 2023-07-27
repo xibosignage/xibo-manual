@@ -2,87 +2,105 @@
 
 **Revision: [[PRODUCTVERSION]]**
 
-Management of a solution as flexible as [[PRODUCTNAME]] requires a powerful CMS (Content Management System) to control the core concepts. The [[PRODUCTNAME]] CMS is packed full of features to help you get the very best out of the [[PRODUCTNAME]] solution.
+The [[PRODUCTNAME]] software comprises of a central **Content Management System (CMS)** where content is created/uploaded and scheduled to Displays. A **Player** application downloads new content and schedules from the CMS to display on screens:
 
-This User Manual covers the core concepts and CMS features and starts with a "Tour" to further explain what [[PRODUCTNAME]] can actually do...
+![System Architecture](img\v4_tour_system_architecture.png)
 
-{version}
-**Note:** The User Manual gives a complete overview of the CMS as a Super Administrator with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS.
+- The Player application runs on hardware attached to each screen.
+- The Player regularly connects to the CMS to check for any new/edited content or schedules which it needs to download.
 
-If you have any questions regarding your User access, then please contact your Administrator.
-{/version}
-
-{nonwhite}
-
-If you are an Administrator and require information regarding the Installation and Set up of the system, please refer to the [Administration Documentation](/docs/setup)
-
-If you are not a [Xibo Cloud Hosting](/hosting) User and need to install a CMS then please refer to the [Installation Guides](/docs/setup/cms-installation-guides) to get up and running with Xibo!
-{/nonwhite}
-
-# Welcome to the Tour!
-
-[[PRODUCTNAME]] is a flexible and powerful application with a core ethos in Digital Signage for all, regardless of skill level or technological knowledge. 
-
-The software itself centres on 5 core concepts:
-
-- Users
-- Displays
-- Layouts
-- Media
-- Scheduling
-
-Using these 5 concepts we can sum up what [[PRODUCTNAME]] can do in a simple sentence;
-
-**"[[PRODUCTNAME]] enables a User to upload Media and arrange it in a Layout which is then Scheduled to one or more authorised Displays".**
-
-[[PRODUCTNAME]] has many more features to take advantage of which are covered within this User Manual, but to get started let's take a quick look at the main 5.
-
-## Users
-
-[Users](users.html) are the people that are granted access to the CMS and are identified by a **Username** and **Password** to securely log in.
+This User documentation has been created to cover core concepts and CMS features to educate and showcase [[PRODUCTNAME]] capabilities to Users. Pages have been catagorised into clear neat sections to make it easier to find the relevant documentation to match your User role within the CMS.
 
 {tip}
-For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory via ADFS. 
+We recommend that all Users start with the **Tour** section of this manual to assist Users with [First Time Access](tour_user_access.html) and to get started [Navigating the CMS](tour_cms_navigation.html)!
 {/tip}
 
-[[PRODUCTNAME]] supports 3 [User Types](users_user_types.html), [User Groups](users_groups.html) as well as multi-level [Feature and Sharing](users_features_and_sharing.html) access to all parts and items stored within the CMS.
+{nonwhite}
+{noncloud}
 
-## Displays
+Users that are **not** hosting in our [Xibo Cloud](/hosting) will need to install a CMS. Please refer to the [Installation Guides](/docs/setup/cms-installation-guides.html) to assist you in getting up and running with Xibo!
 
-[Displays](displays.html) represent the hardware connected to the TV/Projector/Tablet that is displaying the **Scheduled** end content. Each Display is uniquely identified in the CMS so that every Display can have its own content, Layout designs and Schedules set with uniquely identified reporting statistics available.
+Click [here](/docs/setup/supported-versions-and-environments.html) to view the full list of supported versions and environments for the CMS and Players.
 
-## Layouts
+{/noncloud}
 
-[Layouts](layouts.html) are the complete design that is seen on the screen. Layouts are made up of **Regions** which allows you to split the screen/position how you choose, with each Region containing its own **Playlist/Timeline** to which **Media Widgets** are assigned.  A Layout will remain on screen until all Regions have finished playing their assigned content through once, then an entirely fresh Scheduled Layout can be loaded that has different positioning/sizing of Regions and different Playlists/Timelines. 
 
-This flexibility drives the dynamic nature of a [[PRODUCTNAME]] display screen.
+If you are an Administrator, further information on the Installation and Set up of the system is available from our [Administration Documentation](/docs/setup.html)
 
-## Media
+{cloud}
+If you are hosting in our [Xibo Cloud](/docs/setup/xibo-in-the-cloud.html) your CMS will be set up for you. Keep a look out for an email which will be sent once your CMS is ready with your connection details!
+{/cloud}
 
-[Media](media.html) content is at the core of the [[PRODUCTNAME]] solution and has many different types which can be generally split into two categories:
+Throughout this manual you will see tables to show **Player** and **CMS** version support for key features and functionality:
 
-**File-based media** -  uploaded and stored in the [Library](media_library.html), for example, image and video files.
+![Feature Category Table](img\v4_tour_feature_category_table.png)
 
-**Layout based media** - does not have an associated file and is configured directly on a Layout; RSS feeds and free Text
+{/nonwhite}
 
-[[PRODUCTNAME]] uses powerful [Widgets](layouts_widgets.html) which allow you to show your content as well as integrating dynamic third-party information from a variety of sources.
+{version}
+**IMPORTANT:** This User Manual gives a complete overview of the CMS as a [Super Administrator](/manual/en/users_user_types.html#content-super-admin) with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
+{/version}
 
-## Scheduling
+## Digital Signage For All!
 
-[Scheduling](scheduling.html) is highly flexible and supports Schedules to single **Displays** as well as to **Display Groups**. Each Display will check for new Scheduled content periodically, and download Scheduled Items in advance of playback. **Default Layouts** are shown on Displays when nothing else is Scheduled.
+[[PRODUCTNAME]] provides a flexible and powerful application which has a core ethos in "Digital Signage for all", regardless of skill level or technological knowledge.
+
+The [[PRODUCTNAME]] software centers on 5 core concepts:
+
+- ### Users
+
+[Users](users.html) are added to the CMS by Administrators and given a **Username** and **Password** to securely log in.
+
+{tip}
+For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory and ADFS!
+{/tip}
+
+[[PRODUCTNAME]] supports 3 [User Types](users_user_types.html) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
+
+- ### Displays
+
+A [Display](displays.html) is the connection from the Player to the CMS which groups together content and schedule information. Each Display is uniquely identified in the CMS so that each Display can have its own **Media** content, **Layout** designs and **Schedules** available each with uniquely identified [Reporting](displays_metrics.html) statistics.
+
+- ### Media
+
+[Media](media.html) is the content we want to show on Displays which is generally split into two categories:
+
+- **File based media** - media uploaded and stored in the [Library](media_library.html) (images and video files for example)
+- **Layout based media** - media configured directly on a Layout which does not have an associated file (RSS feeds and Weather forecasts for example)
+
+{tip}
+[[PRODUCTNAME]] uses powerful [Widgets](layouts_widgets.html) which integrate dynamic third-party content from a variety of sources!
+{/tip}
+
+- ### Layouts
+
+A [Layout](layouts.html) is the complete content design to be shown on Displays.  With a powerful [Layout Editor](layout_editor.html) Users can easily create eye catching content without having to leave the [[PRODUCTNAME]] CMS. Layouts can then be added to [Campaigns](layouts_campaigns.html) to play sequentially when scheduled.
+
+- ### Scheduling
+
+[Scheduling](scheduling.html) is highly flexible and supports scheduling to single Displays as well as to [Display Groups](displays_groups.html). Displays check for new scheduled content periodically and will download new items in advance of playback. 
+
+{tip}
+**Default Layouts** should be assigned to Displays to be shown when nothing else is scheduled!
+{/tip}
+
+### Core Workflows
+
+[[PRODUCTNAME]] gives Users 2 main workflow options:
+
+1. Creating content from the [Layout Editor](layout_editor.html)
+
+![Workflow 1](img\v4_tour_workflow_1.png)
+
+2. Selecting **Video**/**Image** files or saved **Playlists** to directly [schedule](scheduling_events.html):
+
+![Workflow 2](img\v4_tour_workflow_2.png)
 
 {nonwhite}
-
-Throughout the documentation we have included tables to show **Player** and **CMS** version support for features and functionality:
-
-![Feature Category Table](img/tour_feature_category_table.png)
-
 
 ## Open Source
 
-The heart of the software is [Open Source](/open-source), including the entire **CMS** platform,**Windows** and **Ubuntu Players**, and has been for many years! We're committed to keeping it that way. 
-
-The code can be downloaded and used in accordance with our AGPLv3 licence.
+The heart of the software is [Open Source](/open-source), including the entire **CMS** platform and **Windows Players**, and has been for many years! We're committed to keeping it that way. The code can be downloaded and used in accordance with our **AGPLv3 Licence**.
 
 ## Content Licensing
 
