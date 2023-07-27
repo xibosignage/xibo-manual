@@ -7,6 +7,10 @@ excerpt: "Create re-usable lists of content to add to Layouts"
 
 # Playlists
 
+## [PLACEHOLDER]
+
+
+
 Playlists are reusable lists of content that are created and managed independently to [Layouts](layouts.html). Once created, Playlists are added to Layouts using the [Sub-Playlist Widget](media_module_subplaylist.html)
 
 {version}
