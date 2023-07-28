@@ -18,7 +18,7 @@ Schedules are created from the **Schedule** page of the main CMS menu.
 Users can create one of the following:
 
 - Schedule Event using the [Add Event](scheduling_events.html#content-add-event) button
-- Synchronised Event using the [Add Synchronised Event](scheduling_events.html#content-add-synchronised-event) button
+- Synchronised Event using the [Add Synchronised Event](scheduling_events.html#content-synchronised-events) button
 
 ## Add Event
 
@@ -32,7 +32,7 @@ The CMS supports scheduling for the following types:
 
 ### Layout
 
-Select a published [Layout]()
+Select a published [Layout](layouts.html)
 
 ### Command
 
