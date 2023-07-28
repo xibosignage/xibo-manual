@@ -25,7 +25,7 @@ All items created in the CMS by an individual User are owned by that User. Owner
 
 Every User must be assigned 1 of the 3 available User Types:
 
-- ### Super Admin User
+### Super Admin User
 
 Super Admin Users have access to all parts of the CMS, regardless of any inherited Feature and Sharing options set to any User Groups they have been assigned to. This also includes full access to ALL Media, Layouts and Schedules added by any other User of the system. 
 
@@ -33,11 +33,11 @@ Super Admin Users have access to all parts of the CMS, regardless of any inherit
 A Super Admin User is created during the installation process to have full access rights to the CMS in order to set it up. We suggest having at least one Super Admin User to act as the last contact point for the CMS system.
 {/tip}
 
-- ### Group Admin User
+### Group Admin User
 
 Group Admin Users only have access to the parts of the CMS as assigned to the User Group that they belong to. In addition, they will have access to all Media, Layouts and Schedules of all other Users assigned to that User Group as well as their own Media, Layouts and Schedules.
 
-- ### User
+### User
 
 A User will only have access to the parts of the CMS as assigned to the User Group they belong to as well as access to their own Media, Layouts and Schedules.
 
@@ -93,7 +93,7 @@ Select from one of the pre-configured **User Groups** and continue through the s
 - Complete the Email address for this user, click **Next**
 
   {tip}
-  A user can enter/edit their email address after login from the [User Profile!](tour_user_profile.html)
+  A user can enter/edit their email address after login from the [User Profile!](tour_user_access.html#content-edit-profile)
   {/tip}
 
 - Select a [Folder](tour_folders.html) to easily share user objects with the new User.
@@ -102,7 +102,7 @@ Select from one of the pre-configured **User Groups** and continue through the s
   We recommend using Folders to make sharing user objects with multiple Users a simplified process. All items contained or moved into a Folder will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been enabled for Users/User Groups. 
   {/tip}
 
-- A [Home Folder](manual/en/tour_folders.html#content-home-folders) can be optionally set for a User by right clicking a Folder and selecting the **Set as Home** option:
+- A [Home Folder](manual/en/tour_folders.html#content-home-folder) can be optionally set for a User by right clicking a Folder and selecting the **Set as Home** option:
 
   ![Home Folder](img/v4_users_set_home_folder.png)
 
@@ -133,7 +133,7 @@ Enter the required information for each tab:
 - Complete the Email address for this user so they can receive notifications from the CMS, click **Next**
 
   {tip}
-  A user can enter/edit their email address after login from the [User Profile!](tour_user_profile.html)
+  A user can enter/edit their email address after login from the [User Profile!](tour_user_access.html#content-user-profile)
   {/tip}
 
 - Use the drop down to select a **User Type**
@@ -146,7 +146,7 @@ Enter the required information for each tab:
   Use **System Notifications** as the Initial User Group for Users that do not require permission to anything within the CMS but require notification emails when there are system issues as System Administrators!
   {/tip}
 
-- Use the drop down to select from the choice of [Dashboards](user_dashboards.html) for the Users 'Homepage' to only allow access to the relevant parts of the CMS. The User will be taken to this Dashboard after first login.
+- Use the drop down to select from the choice of [Dashboards](users_dashboards.html) for the Users 'Homepage' to only allow access to the relevant parts of the CMS. The User will be taken to this Dashboard after first login.
 
 ### Library Quota
 
@@ -170,7 +170,7 @@ User A is re-assigned an unlimited quota (0), their Library Quota is now 50 MB a
 
 #### Home Folder
 
-A [Home Folder](manual/en/tour_folders.html#content-home-folders) can be optionally set for a User by right clicking a Folder (or creating a new Folder) and select the **Set as Home** option.
+A [Home Folder](manual/en/tour_folders.html#content-home-folder) can be optionally set for a User by right clicking a Folder (or creating a new Folder) and select the **Set as Home** option.
 
 #### Reference
 

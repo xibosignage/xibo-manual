@@ -9,7 +9,7 @@ persona: "administrator"
 
 # User Dashboards
 
-Dashboards are assigned to [Users](users.html)/[User Groups](users_groups.html) to serve as a **Homepage** and allow access to only the permitted parts of the CMS for the assigned User.
+Dashboards are assigned to [Users](users_administration.html)/[User Groups](users_groups.html) to serve as a **Homepage** and allow access to only the permitted parts of the CMS for the assigned User.
 
 ## Status Dashboard
 
@@ -39,7 +39,7 @@ The icons shown within this dashboard are managed by the enabled [Feature](users
 
 ## Media Manager Dashboard
 
-The **Media Manager Dashboard** can be selected for **Users** who should only edit  [Media](media.html) they have been given access to from enabled [Share](users_features_and_sharing.html) options. This dashboard gives a restricted view of the CMS, presented in a grid style interface, which only lists each item the User has been granted access to. 
+The **Media Manager Dashboard** can be selected for **Users** who should only edit  [Media](media_library.html) they have been given access to from enabled [Share](users_features_and_sharing.html) options. This dashboard gives a restricted view of the CMS, presented in a grid style interface, which only lists each item the User has been granted access to. 
 
 ![CMS Media Dashboard](img/v4_users_media_dashboard.png)
 

@@ -57,7 +57,7 @@ If enabled to show for onboarding new Users, this description (such as the Group
 Use this tab to control the options for onboarding new Users:
 
 - Tick if you want to include this User Group for selection when using the onboarding wizard.
-- Use the dropdown to select the [Dashboard](users_dashboard.html) which will be used as a homepage for all members of this group.
+- Use the dropdown to select the [Dashboard](users_dashboards.html) which will be used as a homepage for all members of this group.
 - Click to Save.
 
 

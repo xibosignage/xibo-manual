@@ -12,7 +12,7 @@ persona: "user, administrator"
 The [[PRODUCTNAME]] **Notification System** is used to keep other Users of the CMS informed of important system events and user-created notifications.
 
 {tip}
-Users with Notifications already enabled please go straight to the [Notification Drawer](users_notifications.html#content_notification_drawer) section below.
+Users with Notifications already enabled please go straight to the [Notification Drawer](users_notifications.html#content-notification-drawer) section below.
 {/tip}
 
 ## Administrator Set up
@@ -45,7 +45,7 @@ Notifications will also be sent to Users who belong to User Groups configured to
 {nonwhite}
 {noncloud}
 
-Further information for Administrators on **CMS Maintenance** can be found [here](docs/setup/xibo-maintenance.html)
+Further information for Administrators on **CMS Maintenance** can be found [here](/docs/setup/xibo-maintenance.html)
 {/noncloud}
 {/nonwhite}
 
@@ -64,7 +64,7 @@ The drawer will show the last 5 Notifications received.
 Unread Notifications are shown in black text with those that have already been read shown in a light grey text.
 
 {tip}
-Notifications will only show in the Notification Drawer if their release date has passed and if the logged in User has been assigned the notification,[Schedule Event Reminders](scheduling_events.html#reminders) for example.
+Notifications will only show in the Notification Drawer if their release date has passed and if the logged in User has been assigned the notification, [Schedule Event Reminders](scheduling_events.html#content-reminders) for example.
 
 - Click on the title of a **Notification** to open to read the full Notification message.
 

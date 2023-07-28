@@ -26,7 +26,7 @@ Features are used to set the required access within the CMS for Users by restric
 If you need to give further access to specific Users within User Groups, assign these directly to the User.
 {/tip}
 
-- Features are configured from the row menu for [Users](users.html) or [User Groups](users_groups.html):
+- Features are configured from the row menu for [Users](users_administration.html) or [User Groups](users_groups.html):
 
 ![Row Menu](img/v4_users_features_row_menu.png)
 
@@ -58,7 +58,7 @@ Share options are used to set View/Edit/Delete options for User objects within t
 
 The easiest and quickest route is to create and use [Folders](tour_folders.html) to set the necessary access rights directly to the Folder which means you do not have to set multiple options for multiple items individually.  All objects that are contained or later moved into the Folder will automatically inherit the View/Edit/Delete options set for Users/User Groups.
 
-- Create a [Folder](tour_folders.html)
+- Create a [Folder](tour_folders.html#content-creating-folders)
 - Set **Share** access for Users to apply to all objects contained within the Folder.
 
 - Move/Save objects into the Folder which Users need to access by using the row menu for selected items and click **Select Folder** or select the Folder when creating/uploading an item.
@@ -89,7 +89,7 @@ Access rights for a User can also be assigned directly from the object itself:
 {tip}
 When logged in, a **User** will only see a list of other Users from their own User Group on clicking **Share**. A **Super Admin User** will see all Users in the system.
 
-Sharing options for **Widgets** are assigned using the context menu in the [Layout Editor](layouts_layouts_editor.html)!
+Sharing options for **Widgets** are assigned using the context menu in the [Layout Editor](layouts_editor.html)!
 
 {/tip}
 
@@ -110,7 +110,7 @@ The highest editing level will always be used for Users. If a User belongs to tw
 Modifications made to items are available in 'real time' which means that the next time a User interacts with the object the newly set options will be applied.
 
 {tip}
-Use **With Selected** at the bottom of [Grids](tour_grids.html) to perform bulk actions with Sharing.
+Use **With Selected** at the bottom of [Grids](tour_cms_navigation#content-grids) to perform bulk actions with Sharing.
 
 **Share** options on a **User Object** can be changed by the owner, Group Admin or a Super Administrator.
 
