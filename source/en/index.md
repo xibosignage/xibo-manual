@@ -38,7 +38,7 @@ Throughout this manual you will see tables to show **Player** and **CMS** versio
 {/nonwhite}
 
 {version}
-**IMPORTANT:** This User Manual gives a complete overview of the CMS as a [Super Administrator](/manual/en/users.html#content-super-admin-user) with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
+**IMPORTANT:** This User Manual gives a complete overview of the CMS as a [Super Administrator](/manual/en/users_administration.html#content-super-admin-user) with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
 {/version}
 
 ## Digital Signage For All!
@@ -55,7 +55,7 @@ The [[PRODUCTNAME]] software centers on 5 core concepts:
 For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory and ADFS!
 {/tip}
 
-[[PRODUCTNAME]] supports 3 [User Types](users.html) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
+[[PRODUCTNAME]] supports 3 [User Types](users_administration.html) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
 
 ### Displays
 
