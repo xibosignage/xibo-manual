@@ -12,7 +12,7 @@ persona: "display manager, administrator"
 The primary purpose of [[PRODUCTNAME]] is to show content on screens with the entire application suite existing for that one purpose. [[PRODUCTNAME]] provides a concept called **Displays** to manage when and how content is shown on a screen.
 
 {nonwhite}
-Administrator documentation for Player Installation can be found in our [Administration Manual](/docs/setup/xibo-player-installation). Select your chosen Player to follow the **Installation** instructions and required steps to **Connect to your CMS**.
+Administrator documentation for Player Installation can be found in our [Administration Manual](/docs/setup/). Select your chosen Player to follow the **Installation** instructions and required steps to **Connect to your CMS**.
 {/nonwhite}
 
 {tip}
@@ -26,7 +26,7 @@ Displays are managed in the CMS by clicking **Displays** under the **Displays** 
 ![Display Administration Grid](img\v4_displays_administration_grid.png)
 
 {tip}
-The Add Display(Code) function can be used after installing the Player in order to easily Connect Players to the CMS.  Players will show a 6 character Activation Code to enter in the form in order to Connect.
+The Add Display (Code) function can be used after installing the Player in order to easily Connect Players to the CMS.  Players will show a 6 character Activation Code to enter in the form in order to Connect.
 {/tip}
 
 {feat}Connect using Authentication Code|v3{/feat}
@@ -34,7 +34,7 @@ The Add Display(Code) function can be used after installing the Player in order 
 Displays can be saved to [Folders](/manual/en/tour_folders.html) to easily control User/User User Group levels of interaction for Displays as well as provide an additional way to organise.
 
 {tip}
-Displays that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-2-share) options that been applied to the destination Folder for the User/User Group!
+Displays that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-share) options that been applied to the destination Folder for the User/User Group!
 
 Assign multiple Displays to a Folder using the **With Selected** option at the bottom of the grid!
 {/tip}
@@ -96,7 +96,7 @@ Click **Edit** to manage configuration options for the Display:
 - Use the **General** tab to view the unique **Display Hardware Key** which is generated during installation, **Authorise a Display** to use an available Licence Pool slot and set a **Default Layout**.
 
 
-- Provide Display **Details** such as the **Latitude** and **Longitude** of the Display. If you are using the [Ad Campaign](layouts_campaigns.html) functionality ensure that you complete the **Cost per play** and **Impressions per play** fields on this tab for all selected Displays.
+- Provide Display **Details** such as the **Latitude** and **Longitude** of the Display. If you are using the [Ad Campaign](layouts_campaigns.html#content-ad-campaigns) functionality ensure that you complete the **Cost per play** and **Impressions per play** fields on this tab for all selected Displays.
 
 {tip}
 Additional fields have been included designed to enhance advertising needs such as:
@@ -113,7 +113,7 @@ Additional fields have been included designed to enhance advertising needs such 
 - Control **Email Alerts** and **Global Timeout** settings from the **Maintenance** tab.
 
 
-- Override [Display Profile Settings](display_settings.html) for individual Displays using the **Settings** tab.
+- Override [Display Profile Settings](displays_settings.html) for individual Displays using the **Settings** tab.
 
 
 ![Displays Edit Profile Settings](img\v4_displays_edit_profilesettings.png)
@@ -163,7 +163,7 @@ Files/Layouts can be unassigned from Displays by following the same steps and de
 The **Send Command** functionality is executed via XMR to Players by selecting a predefined command. This is useful for sending Players 'Reboot' commands for example.
 
 {tip}
-This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling.html#Events)
+This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling_events.html#command)
 {/tip}
 
 ### Transfer Display to another CMS

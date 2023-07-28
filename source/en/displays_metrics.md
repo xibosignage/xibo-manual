@@ -9,7 +9,7 @@ persona: "display manager, content manager, administrator"
 
 # Reporting
 
- [[PRODUCTNAME]] provides useful **metrics** which are [Feature]((users_features_and_sharing.html) ) enabled to allow Users to view a variety of reports within the CMS.
+ [[PRODUCTNAME]] provides useful **metrics** which are [Feature](users_features_and_sharing.html ) enabled to allow Users to view a variety of reports within the CMS.
 
 Reports provide a centralised area for analysis into **Display** performance and usage as well as detailed **Proof of Play** and **Library** usage reports. These reports can be viewed from **All Reports** under the **Reporting** section of the main CMS menu:
 

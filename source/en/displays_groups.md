@@ -35,7 +35,7 @@ Displays need to be assigned to the Display Group in one of two ways, by manuall
 
 To assign members to this group dynamically:
 
-- tick the Dynamic Group checkbox on the form to reveal additional form fields.
+- Tick the Dynamic Group checkbox on the form to reveal additional form fields.
 - Filter criteria for Dynamic Groups is in the format of regular expressions, but can also be simple string comparisons. The expressions should be separated by a comma and can be negated with a `-` prefix.
 
 {tip}
@@ -95,7 +95,7 @@ Each Display Group has a row menu containing a number of actions/shortcuts.
 
 - Click on **Members** to manage the membership of Display Groups which have had Displays manually assigned.
 - Use **Edit** to view the criteria used for dynamic memberships and to make changes if required.
-- Directly [Assign Library files and Layouts](displays.html#content-assign-files-/-layouts) to a Display Group so that they are always available in the local library of the Player.
+- Directly [Assign Library files and Layouts](displays.html#content-assign-files--layouts) to a Display Group so that they are always available in the local library of the Player.
 
 {tip}
 Use the **With Selected** option at the bottom of the grid to easily perform bulk actions for multiple Display Groups!
