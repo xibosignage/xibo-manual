@@ -16,7 +16,7 @@ persona: "media manager, content manager"
 {/version}
 
 {tip}
-Integration with Pixabay allows for the selection of Images and Videos when adding content to [Layouts](layouts.html) and [Playlists](media_playlists.html) using the [Library Search](library_search.html) functionality. Selected content will automatically add to the CMS Media Library for re-use!
+Integration with Pixabay allows for the selection of Images and Videos when adding content to [Layouts](layouts.html) and [Playlists](media_playlists.html) using the [Library Search](layouts_library_search.html) functionality. Selected content will automatically add to the CMS Media Library for re-use!
 {/tip}
 
 Manage file based media by selecting **Media** under the **Library** section of the main CMS menu:
@@ -55,7 +55,7 @@ Library media can be either uploaded directly using the **Add Media** button or 
 {tip}
 Add Media to the CMS Library and save to [Folders](tour_folders.html) to have media ready for use for the appropriate [Users](users_administration.html)/[User Groups](users_groups.html)! 
 
-Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](library_search.html)
+Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_library_search.html)
 {/tip}
 
 ### Add Media (Upload)
@@ -163,7 +163,7 @@ Edits will only be updated in Layouts/Playlists which you have [access](users_fe
 
 It may be necessary to upload a new revision of an existing file by using the **Replace** button at the bottom of the form.
 
-- Upload a replacement file using the same steps as before to [Add Media (Upload).](media_library.html#content-add-media-(upload))
+- Upload a replacement file using the same steps as before to [Add Media (Upload).](media_library.html#content-add-media-upload)
 - Tick to **Update** the replacement file to all Layouts/Playlists it is currently assigned to.
 - Tick to **Delete** the old file version completely from the CMS.
 
@@ -176,7 +176,7 @@ The option to force a delete must be used with caution as deleting a file cannot
 {/version}
 
 {tip}
-[Retiring Content](media_library.html#content-retire-this-media) rather than deleting it will keep the media file in any existing Layouts/Playlists it has been assigned to, with any scheduled content unaffected. Media will not be available to add to any new Layouts/Playlists.
+[Retiring Content](media_library.html#content-retire-media) rather than deleting it will keep the media file in any existing Layouts/Playlists it has been assigned to, with any scheduled content unaffected. Media will not be available to add to any new Layouts/Playlists.
 {/tip}
 
 {feat}Purge List|v4{/feat}
