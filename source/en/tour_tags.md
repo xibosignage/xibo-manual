@@ -19,7 +19,7 @@ Tags can be assigned to **Layouts**, **Campaigns**, **Templates**, **Playlists**
 - Make values a 'Required Value' in order to Save.
 - Dedicated Tags page for easier management.
 
-Tags can be created by Users from various [Forms](tour_cms_settings.html#content-forms) throughout the CMS. These can be managed by Administrators from the **Tags** page under the **Administration** section of the main CMS menu: 
+Tags can be created by Users from various [Forms](tour_cms_navigation.html#content-forms) throughout the CMS. These can be managed by Administrators from the **Tags** page under the **Administration** section of the main CMS menu: 
 
 ![Tags Grid](img/v4_tour_tags_grid.png)
 
@@ -74,7 +74,7 @@ If the Tag Value is already known then this can also be typed in the field using
 Users can add an associated value to a Tag without an existing predefined value using the Tag Value field. Enter the Value you wish to associate with the Tag in the Tag value field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
 
 {tip}
-Tags can also be assigned to multiple objects using the [With Selected](tour_cms_navigation.html#content-multi-select) option on multiple pages throughout the CMS.
+Tags can also be assigned to multiple objects using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option on multiple pages throughout the CMS.
 
 When exporting a Layout the **Layout Tag** will also be exported. Select the **Import Tags** option to add the Tag on Layout import if required.
 {/tip}

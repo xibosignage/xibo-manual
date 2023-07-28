@@ -17,7 +17,7 @@ Like any complex application, the [[PRODUCTNAME]] CMS comes with a number of con
 
 {nonwhite}
 {cloud}
-**Xibo Cloud** hosted customers will have some of these fields pre-populated as part of the service. Some can be changed with others locked to disable editing. For further information please refer to this page: [Xibo Cloud CMS Defaults and Restrictions](/docs/setup/xibo-in-the-cloud#content-xibo-cloud-cms-defaults-and-restrictions.html).
+**Xibo Cloud** hosted customers will have some of these fields pre-populated as part of the service. Some can be changed with others locked to disable editing. For further information please refer to this page: [Xibo Cloud CMS Defaults and Restrictions](/docs/setup/xibo-in-the-cloud.html#content-xibo-cloud-cms-defaults-and-restrictions).
 {/cloud}
 {/nonwhite}
 
@@ -212,7 +212,7 @@ Enable to provide a **Forgotten your Password** reset link for **Users** at logi
 Ensure that a valid **Sending email address** has been entered on the **Network** tab before enabling this functionality!
 {/tip}
 
-The User will be shown a link which once clicked will send a **Password Reset Notification** to their email address as recorded on their [User Profile](users_administration.html).
+The User will be shown a link which once clicked will send a **Password Reset Notification** to their email address as recorded on their User Profile.
 
 {tip}
 **Users** can also change their own passwords, once logged into the CMS, from their [User Profile](tour_user_access.html#content-edit-profile)
@@ -278,7 +278,7 @@ Fonts with other OS/2 tags may produce an error on uploading and may not display
 
 Please see the following pages for further **Administration** set up:
 
-- [Users](users.html)
+- [User Administration](users_administration.html)
 - [User Groups](users_groups.html)
 - [Modules](media_modules.html)
 - [Transitions](tour_transitions.html)

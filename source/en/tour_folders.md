@@ -96,7 +96,7 @@ Only empty folders can be removed!
 Admins are encouraged to assign User Groups to their Users, and then use Folder Sharing to give these Users appropriate access to each other's content (View/Edit/Delete options can be configured).
 
 {tip}
-A Home Folder can be assigned when [Onboarding new Users](/manual/en/users_administration.html)!
+A Home Folder can be assigned when [Onboarding new Users](/manual/en/users_administration.html#content-adding-users-to-the-cms)!
 {/tip}
 
 Users can always select their Home Folder and the Root Folder from the Folder Tree. 
@@ -151,7 +151,7 @@ First disable the use of the Root Folder as a default:
 
 For Users to see other Users content, it must be shared with them (Direct Sharing - individual items must be shared). Users can also see other Users content if the Folder has been shared with them (Folder Sharing - multiple items inherit the shared options).
 
-Each folder can have [Share options](users_features_and_sharing.html) set for Users/User Groups by clicking on **Share** from the menu.
+Each folder can have [Share options](users_features_and_sharing.html#content-set-share-options-on-objects) set for Users/User Groups by clicking on **Share** from the menu.
 
 {tip}
 **Share** options for folders can only be set by Super Administrator users!
@@ -165,7 +165,7 @@ Each folder can have [Share options](users_features_and_sharing.html) set for Us
 Once Share options have been set for a folder, all objects contained or moved to that folder will inherit the View, Edit, Delete options that  have been enabled for Users/User Groups.
 
 {tip} 
-New Users can have **Folders** assigned from the start by following the onboarding wizard to [Add Users](users_administration.html)!
+New Users can have **Folders** assigned from the start by following the onboarding wizard to [Add Users](users_administration.html#content-onboarding-wizard)!
 {/tip}
 
 **Please Note:** Sub-Folders added to a Main Folder will inherit any applied Share options from the Main Folder. When viewing Sub-Folders only the directly assigned Share options will be shown, inherited options are not shown.

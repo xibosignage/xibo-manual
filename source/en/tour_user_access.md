@@ -21,7 +21,7 @@ The CMS is protected by an authentication system, enter your **Username** and **
 The CMS uses cookies to track whether a Users are logged in or not. If you are experiencing trouble logging in you may need to adjust your browser settings for cookies.
 {tip}
 
-Once logged in you will see your [User Dashboard](users_user_dashboards.html), which serves as your homepage. 
+Once logged in you will see your [User Dashboard](users_dashboards.html), which serves as your homepage. 
 
 {tip}
 The Dashboard and main menu items are based on the enabled [Features](users_features_and_sharing.html) you have been given within the system!
@@ -31,7 +31,7 @@ We recommend that Users change their password after first time log in from the *
 
 ## User Profile
 
-Located in the top right of the CMS, click on the icon to manage your **User Profile** settings, reshow the short '**Welcome**' tour of the CMS to assist with navigation and functionality, click **Help** to view the User Manual for guidance when needed and to securely **Logout** of the CMS after each User session:
+Located in the top right of the CMS, click on the icon to manage your **User Profile** settings, reshow the short '**Welcome**' tour of the CMS to assist with navigation and functionality, and  securely **Logout** of the CMS after each User session:
 
 ![User Profile](img/v4_tour_user_profile.png)
 
@@ -63,7 +63,7 @@ We strongly recommend that all Users change their initial password after first l
 
 ![User Profile](img/v4_tour_user_profile_edit.png)
 
-You may have to adhere to a [Password Policy](tour_cms_settings.html), as set by your Administrator when attempting to change your password. A text prompt will be shown to explain what is needed (minimum number of characters etc.) in order to meet the requirements of the set policy.
+You may have to adhere to a [Password Policy](tour_cms_settings.html#content-password-policy), as set by your Administrator when attempting to change your password. A text prompt will be shown to explain what is needed (minimum number of characters etc.) in order to meet the requirements of the set policy.
 
 {nonwhite}
 {cloud}
@@ -71,7 +71,7 @@ Customers with [Xibo Cloud Hosting](/hosting) have a **set default policy** whic
 {/cloud}
 {/nonwhite}
 
-If you have a [Forgotten your Password](tour_cms_settings.html#content-users) reset link on the Login page, ensure that your correct **Email** address is entered in your User Profile. Once clicked a Password Reset Notification will be sent to your email address with further instructions to ensure you quickly regain access to the CMS.
+If you have a [Forgotten your Password](tour_cms_settings.html#content-password-reminder) reset link on the Login page, ensure that your correct **Email** address is entered in your User Profile. Once clicked a Password Reset Notification will be sent to your email address with further instructions to ensure you quickly regain access to the CMS.
 
 ## Two Factor Authentication
 
@@ -80,7 +80,7 @@ Users can configure Two Factor Authentication options for **Email** or **Google 
 ### Email
 
 {version}
-**NOTE:** Administrators will need to ensure that a **Sending Email** address has been added via the [CMS Settings](tour_cms_settings.html) page in order for Users to start receiving email notifications.
+**NOTE:** Administrators will need to ensure that a **Sending Email** address has been added via the [CMS Settings](tour_cms_settings.html#content-network) page in order for Users to start receiving email notifications.
 {/version}
 
 - Select Email

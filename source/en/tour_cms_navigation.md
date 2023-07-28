@@ -21,7 +21,7 @@ The menu will only show the sections/pages which have been [Feature](users_featu
 Users can select where this menu can be placed, vertically on the left hand side or horizontally along the top of the CMS,  from [User Preference](tour_user_access.html#content-preferences) settings!
 {/tip}
 
-Clicking on **Dashboard** will take you back to your [User Dashboard](users_user_dashboards.html) homepage. 
+Clicking on **Dashboard** will take you back to your [User Dashboard](users_dashboards.html) homepage. 
 
 ## Grids 
 
@@ -78,13 +78,13 @@ Most columns can be sorted by default. Where the column has an up or down arrow 
 
 Use the **Column Visibility** button to see available columns. 
 
-Select/de-select which columns should be visible in the data table:
+- Select/de-select which columns should be visible in the data table:
+
 
 ![Column Visibility](img\v4_tour_cms_navigation_column_visibility.png)
 
-{tip}
+
 If too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row!
-{/tip}
 
 ![Additional Rows](img\v4_tour_cms_navigation_grids_addtional_rows.png)
 
@@ -93,7 +93,7 @@ If too many columns have been selected to fit your screen size additional rows w
 - #### Row Menu
 
 
-Select an item and use row menu to access a list of shortcuts and actions:
+Select an item and use the row menu to access a list of shortcuts and actions:
 
 ![Row Menu](img\v4_tour_cms_navigation_grids_row_menu.png)
 
@@ -109,7 +109,7 @@ At the bottom of selected grids a **With Selected** option is available to multi
 
 - #### Edit Tags
 
-  This function allows you to add new Tags in bulk with the option of also removing any existing Tags from multiple selections:
+  This function allows you to add new [Tags](tour_tags.html) in bulk with the option of also removing any existing Tags from multiple selections:
 
   ![Bulk Tags](img\v4_tour_cms_navigation_tags.png)
 
@@ -169,9 +169,10 @@ Forms may only have one or could have multiple tabs which provide further detail
 Click on **Select Folder** and select/create the destination folder to save the item into.
 
 {tip}
-Right click a Folder/sub-folder to view further options in the [Folder Menu](tour_folders.html#content-folder-menu).
+Right click a Folder/sub-folder to view further options in the **Folder Menu**.
 
 Items that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
+{/tip}
 
 #### Form Fields
 
@@ -184,7 +185,7 @@ Each field has a title that explains what the field represents and help text for
 Options which can be enabled/disabled are presented with check boxes.
 
 {tip}
-Forms accessed from a row menu may contain an 'auto submit capability', which when selected allows for forms to be automatically submitted. Take a look at the next section for further information!
+Forms accessed from a row menu may contain an ['auto submit capability'](tour_cms_navigation.html#content-automatic-submission-of-forms), which when selected allows for forms to be automatically submitted.
 {/tip}
 
 #### Buttons
