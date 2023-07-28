@@ -78,6 +78,10 @@ Create Folders to hold **Library Media**, **DataSets**, **Playlists**, **Layouts
 
 - Right click the **Root Folder** and select **Create** to add a new Folder to the tree.
 
+{tip}
+Only Super Administrator users can create Folders under the Root Folder. Users can be granted [Feature](/manual/en/users_features_and_sharing.html) access to create sub-folders under parent Folders they have been given access to.
+{/tip}
+
 
 -  Further menu options are available to **Create** a sub-folder, **Rename**, **Remove** **Share** and [Move Folders](/manual/en/tour_folders.html#content-move-and-merge-folders):
 
@@ -86,8 +90,6 @@ Create Folders to hold **Library Media**, **DataSets**, **Playlists**, **Layouts
 {tip}
 Only empty folders can be removed! 
 {/tip}
-
-Folders can be created, renamed and removed from **Add** and **Edit** [Forms](tour_cms_navigation.html#content_forms) and by using the **Select Folder** option from the **Row Menu** for an object (dependent on the [Feature](users_features_and_sharing.html) access set for Users/User Groups).
 
 ### Home Folder
 
@@ -182,7 +184,13 @@ Control the required access of the Folder Menu for other Users/User Groups using
 ![Feature Options](img/v4_tour_folders_feature_options.png)
 
 **For Users that need access to Create on the Folders menu:**
-1. Enable **Create new Folders** from the Content tab of the Folders Feature set.
+
+1. Enable **Allow users to create Sub-Folders....** from the Content tab of the Folders Feature set.
+1. Enable **View** from the **Share options** for the parent folders(s) that can have sub-folders created under them by the User/User Group. 
+
+{tip}
+Only Super-Admin users can create Folders under the Root Folder!
+{/tip}
 
  **For Users that need access to Rename on the Folders menu:**
 1. Enable **Rename and Delete existing folders** from the Content tab on the Folders Feature set.
