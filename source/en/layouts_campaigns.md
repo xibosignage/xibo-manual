@@ -28,7 +28,7 @@ Both Campaign types are created and managed by selecting **Campaigns** under the
 
 ![Add Layout List Campaign](img/v4_layouts_campaign_add_layout_list.png)
 
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html) User objects with other Users/User Groups. Campaigns saved to a Folder will inherit the access options applied to that Folder. 
+[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Campaigns saved to a Folder will inherit the access options applied to that Folder. 
 
 {tip}
 If users should also have access to the Layouts/Layout content, ensure that this is also saved to the same Folder!
@@ -37,7 +37,7 @@ If users should also have access to the Layouts/Layout content, ensure that this
 - Give your Campaign a **Name** for easy identification in the CMS including optional [Tags](tour_tags.html).
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-Multi---select--with-selected.) option at the bottom of the Campaign grid!
+Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected.) option at the bottom of the Campaign grid!
 {/tip}
 
 ### Cycle Based Playback
@@ -102,7 +102,7 @@ This [Feature](users_features_and_sharing.html#content-features) should be enabl
 
 Complete the required form fields:
 
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html) User objects with other Users/User Groups. Ad Campaigns saved to a Folder will inherit the access options applied to that Folder. 
+[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Ad Campaigns saved to a Folder will inherit the access options applied to that Folder. 
 
 {tip}
 If users should also have access to the Layouts/Layout content, ensure that this is also saved to the same Folder!

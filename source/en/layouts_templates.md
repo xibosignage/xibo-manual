@@ -32,7 +32,7 @@ Templates are created by selecting **Templates** under the **Design** section of
 
 ![Add Template Form](img/v4_layouts_add_template_form.png)
 
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html) User objects with other Users/User Groups. Templates saved to a Folder will inherit the access options applied to that Folder.
+[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Templates saved to a Folder will inherit the access options applied to that Folder.
 
 {tip}
 If Users should also have access to the content of the Template (image media files for example), ensure that these are also saved to the same Folder!
@@ -128,7 +128,7 @@ Published **Templates** will show for selection in the toolbar of the Layout Edi
 
 Published Layouts can be saved as a Template from two locations:
 
-- From the [Layout Editor](layouts_editor.png), after **Publishing** go back to the menu and select **Save Template**:
+- From the [Layout Editor](layouts_editor.html), after **Publishing** go back to the menu and select **Save Template**:
 
 ![Save Template Editor](img/v4_layouts_templates_save_as_template.png)
 
