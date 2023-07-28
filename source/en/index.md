@@ -1,3 +1,8 @@
+---
+maxHeadingLevel: 2
+minHeadingLevel: 2
+---
+
 # [[PRODUCTNAME]] User Manual
 
 **Revision: [[PRODUCTVERSION]]**
@@ -41,13 +46,13 @@ Throughout this manual you will see tables to show **Player** and **CMS** versio
 **IMPORTANT:** This User Manual gives a complete overview of the CMS as a [Super Administrator](/manual/en/users_administration.html#content-super-admin-user) with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
 {/version}
 
-## Digital Signage For All!
+# Digital Signage For All!
 
 [[PRODUCTNAME]] provides a flexible and powerful application which has a core ethos in "Digital Signage for all", regardless of skill level or technological knowledge.
 
 The [[PRODUCTNAME]] software centers on 5 core concepts:
 
-### Users
+## Users
 
 [Users](users.html) are added to the CMS by Administrators and given a **Username** and **Password** to securely log in.
 
@@ -57,11 +62,11 @@ For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identit
 
 [[PRODUCTNAME]] supports 3 [User Types](users_administration.html) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
 
-### Displays
+## Displays
 
 A [Display](displays.html) is the connection from the Player to the CMS which groups together content and schedule information. Each Display is uniquely identified in the CMS so that each Display can have its own **Media** content, **Layout** designs and **Schedules** available each with uniquely identified [Reporting](displays_metrics.html) statistics.
 
-### Media
+## Media
 
 Media is the content we want to show on Displays which is generally split into two categories:
 
@@ -72,11 +77,11 @@ Media is the content we want to show on Displays which is generally split into t
 [[PRODUCTNAME]] uses powerful [Widgets](layouts_widgets.html) which integrate dynamic third-party content from a variety of sources!
 {/tip}
 
-### Layouts
+## Layouts
 
 A [Layout](layouts.html) is the complete content design to be shown on Displays.  With a powerful [Layout Editor](layouts_editor.html) Users can easily create eye catching content without having to leave the [[PRODUCTNAME]] CMS. Layouts can then be added to [Campaigns](layouts_campaigns.html) to play sequentially when scheduled.
 
-### Scheduling
+## Scheduling
 
 [Scheduling](scheduling_events.html) is highly flexible and supports scheduling to single Displays as well as to [Display Groups](displays_groups.html). Displays check for new scheduled content periodically and will download new items in advance of playback. 
 
@@ -84,7 +89,7 @@ A [Layout](layouts.html) is the complete content design to be shown on Displays.
 **Default Layouts** should be assigned to Displays to be shown when nothing else is scheduled!
 {/tip}
 
-### Core Workflows
+## Core Workflows
 
 [[PRODUCTNAME]] gives Users 2 main workflow options:
 
