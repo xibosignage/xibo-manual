@@ -1,5 +1,7 @@
 <!--toc=widgets-->
-# Modules
+# Module and Connector Management
+
+## [PLACEHOLDER]
 
 All content displayed in [[PRODUCTNAME]] is added/edited and served by a **Media Module**. [[PRODUCTNAME]] has a wide variety of Modules to choose from with more being introduced with new releases.
 

@@ -7,7 +7,9 @@ keywords: "cached off-line, music, sound files"
 persona: "media manager"
 ---
 
-# Audio 
+# Audio (no widget)
+
+[Info for Library Searches]
 
 Add audio files to play on your Layouts and Playlists.
 
@@ -24,7 +26,7 @@ Add audio files to play on your Layouts and Playlists.
 - Control the duration of the audio file.
 
 
-## Configuration
+## Set a duration
 
 From the properties panel you can see how long the audio will play for.
 
