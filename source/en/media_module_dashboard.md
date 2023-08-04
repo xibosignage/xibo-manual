@@ -2,6 +2,8 @@
 
 # Dashboards
 
+## [[PLACHOLDER]]
+
 {white}
 **Please note:** If you would like to take advantage of this Widget, please contact your Administrator.
 {/white}

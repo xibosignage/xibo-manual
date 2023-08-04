@@ -1,6 +1,8 @@
 <!--toc=widgets-->
 # Ticker
 
+## [[PLACEHOLDER]]
+
 Display dynamic feed content on Layouts.
 
 {version}

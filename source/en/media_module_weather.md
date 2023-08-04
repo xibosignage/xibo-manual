@@ -2,6 +2,8 @@
 
 # Weather
 
+## [[PLACEHOLDER]]
+
 Display daily weather forecasts on Layouts.
 
 {version}

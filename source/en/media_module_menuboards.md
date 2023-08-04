@@ -2,6 +2,8 @@
 
 # Menu Board (Feature Preview)
 
+## [[PLACEHOLDER]]
+
 {tip}
 
 **Please note:** This feature is a preview and should not be used in production. 

@@ -2,6 +2,8 @@
 
 # Calendar
 
+## [[PLACEHOLDER]]
+
 Display a Schedule, Daily, Weekly or Monthly calendar views pulled from an iCal feed.
 
 {version}

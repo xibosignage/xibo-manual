@@ -2,6 +2,8 @@
 
 # Stocks
 
+## [[PLACEHOLDER]]
+
 Display trade price information for stock listings on Layouts.
 
 {feat}Stocks|v3{/feat}

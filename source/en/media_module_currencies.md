@@ -2,6 +2,8 @@
 
 # Currencies
 
+## [[PLACEHOLDER]]
+
 Display retrieved exchange rates for currency pairs on Layouts
 
 {feat}Currencies|v3{/feat}

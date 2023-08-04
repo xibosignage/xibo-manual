@@ -1,6 +1,8 @@
 <!--toc=widgets-->
 
-# Twitter Metro
+# Twitter Metro or X Metro
+
+## [[PLACEHOLDER]]
 
 Display metro tiles of Twitter feeds on Layouts.
 

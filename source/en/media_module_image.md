@@ -1,51 +1,33 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+minHeadingLevel: 2m
+excerpt: "Add Image files to include on Layouts and Playlists"
+persona: "content manager"
+---
 
 # Image
 
-Display images on Layouts.
-
-{version}
-NOTE:  If you are using a CMS earlier than v3.1, please use the links below:
-
-- v3.0 CMS, please click [here](media_module_image_3.html)
-- CMS earlier than v3.0, please click [here](media_module_image_2.html)
-
-{/version}
+Add Image files to include on your Layouts and Playlists.
 
 {feat}Image|v3{/feat}
 
-Image files can be uploaded to the [Library](media_library.html) or uploaded directly to Layouts using the Image [Library Search](layouts_library_search.html) function from the Toolbar in the Layout Designer.
+## Overview
+
+- Valid extensions:  jpg,jpeg,png,bmp,gif,webp
+
+- View existing and upload new image files directly to Playlists/Layouts using the [Library Image Search](layouts_library_search.html) from the toolbar.
+- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
+- Set [start and end times](layouts_library_search#content-expiry-dates) for image files uploaded directly to a Playlist/Layout.
+- Save image files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
+- Centre, Stretch and Fit scaling.
+- Select images to use from Pixabay without leaving the CMS.
+- Image files can be also be uploaded in advance to the [Library](media_library.html) 
 
 {tip}
-Animated GIF’s are not supported on any Player!
+Animated gif’s are not supported on any Player!
 {/tip}
 
-### Configuration Options
-
-Once added to Layouts, click on the Image file in the Timeline or Viewer to show configuration options in the the properties panel:
-
-- Provide an optional **Name** if required.
-- Tick the **Set a duration** to provide a specific duration in seconds.
-
-![Edit Options](img\v3.1_media_image_options.png)
-
-- Use the **Appearance** tab to change the settings for **Scale** and **Alignment** of the image.
-
-{version}
-NOTE: From v3.1.0 **Fit** Scale type is available for Images!
-{/version}
-
-{tip}
-
-![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
-
-Use the **Context Menu** to apply options to this Widget. Please refer to the [Layout Designer](layouts_designer.html) page for further information!
-
-{/tip}
-
-### Actions
-
-Interactive Actions can be attached to this Image Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
+![Image](img/v4_media_module_image.png)
 
 
 
