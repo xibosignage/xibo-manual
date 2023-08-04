@@ -1,6 +1,6 @@
 ---
 toc: "widgets"
-minHeadingLevel: 2m
+minHeadingLevel: 2
 excerpt: "Add Image files to include on Layouts and Playlists"
 persona: "content manager"
 ---
