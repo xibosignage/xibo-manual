@@ -20,8 +20,6 @@
 - [Shell Command](media_module_shellcommand.html)
 - [Stocks](media_module_stocks.html)
 - [Ticker](media_module_ticker.html)
-- [Twitter](media_module_twitter.html)
-- [Twitter Metro](media_module_twitter_metro.html)
 - [Video](media_module_video.html)
 - [Video In](media_module_video_in.html)
 - [Weather](media_module_weather.html)
