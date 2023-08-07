@@ -29,7 +29,7 @@ The CMS presents many of the entities, **Layouts**, **Media** and **Displays** f
 
 The following screenshot shows the **Layout Grid**  as an example, annotated with each of its elements:
 
-![Grids](img\v4_tour_cms_navigation_grids.png)
+![Grids](img/v4_tour_cms_navigation_grids.png)
 
 - #### Action Buttons
 
@@ -41,7 +41,7 @@ Common Action buttons for each page, such as **Add Layout**, are located in the 
 
 Tabs provide filtering options to make finding items easier. Use the **Advanced** tab to access further filtering options:
 
-![Advanced Tab](img\v4_tour_cms_navigation_grids_advanced.png)
+![Advanced Tab](img/v4_tour_cms_navigation_grids_advanced.png)
 
 - #### Filters
 
@@ -81,12 +81,12 @@ Use the **Column Visibility** button to see available columns.
 - Select/de-select which columns should be visible in the data table:
 
 
-![Column Visibility](img\v4_tour_cms_navigation_column_visibility.png)
+![Column Visibility](img/v4_tour_cms_navigation_column_visibility.png)
 
 
 If too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row!
 
-![Additional Rows](img\v4_tour_cms_navigation_grids_addtional_rows.png)
+![Additional Rows](img/v4_tour_cms_navigation_grids_addtional_rows.png)
 
 ![Visible Rows](img\v4_tour_cms_navigation_grids_visible_rows.png)
 
@@ -95,7 +95,7 @@ If too many columns have been selected to fit your screen size additional rows w
 
 Select an item and use the row menu to access a list of shortcuts and actions:
 
-![Row Menu](img\v4_tour_cms_navigation_grids_row_menu.png)
+![Row Menu](img/v4_tour_cms_navigation_grids_row_menu.png)
 
 {tip}
 Row menu contents for items will differ dependent on the page selected!
@@ -111,7 +111,7 @@ At the bottom of selected grids a **With Selected** option is available to multi
 
   This function allows you to add new [Tags](tour_tags.html) in bulk with the option of also removing any existing Tags from multiple selections:
 
-  ![Bulk Tags](img\v4_tour_cms_navigation_tags.png)
+  ![Bulk Tags](img/v4_tour_cms_navigation_tags.png)
 
 - #### Share
 

@@ -9,7 +9,7 @@ minHeadingLevel: 2
 
 The [[PRODUCTNAME]] software comprises of a central **Content Management System (CMS)** where content is created/uploaded and scheduled to Displays. A **Player** application downloads new content and schedules from the CMS to display on screens:
 
-![System Architecture](img\v4_tour_system_architecture.png)
+![System Architecture](img/v4_tour_system_architecture.png)
 
 - The Player application runs on hardware attached to each screen.
 - The Player regularly connects to the CMS to check for any new/edited content or schedules which it needs to download.
@@ -38,7 +38,7 @@ If you are hosting in our [Xibo Cloud](/docs/setup/xibo-in-the-cloud.html) your 
 
 Throughout this manual you will see tables to show **Player** and **CMS** version support for key features and functionality:
 
-![Feature Category Table](img\v4_tour_feature_category_table.png)
+![Feature Category Table](img/v4_tour_feature_category_table.png)
 
 {/nonwhite}
 
@@ -95,11 +95,11 @@ A [Layout](layouts.html) is the complete content design to be shown on Displays.
 
 1. Creating content from the [Layout Editor](layouts_editor.html)
 
-![Workflow 1](img\v4_tour_workflow_1.png)
+![Workflow 1](img/v4_tour_workflow_1.png)
 
 2. Selecting **Video**/**Image** files or saved **Playlists** to directly [Schedule](scheduling_events.html):
 
-![Workflow 2](img\v4_tour_workflow_2.png)
+![Workflow 2](img/v4_tour_workflow_2.png)
 
 {nonwhite}
 

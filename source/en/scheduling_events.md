@@ -237,7 +237,7 @@ Please ensure that an Administrator has entered a **Sending Email address** in t
 
 - From the **Reminder** tab, use the form fields to define a reminder. Use the `+` icon to add additional rows if required.
 
-![Event Reminders](img\v4_scheduling_event_reminders.png)
+![Event Reminders](img/v4_scheduling_event_reminders.png)
 
 - Tick the box to send an email to the address set for your [User Profile](tour_user_access.html#content-edit-profile).
 
