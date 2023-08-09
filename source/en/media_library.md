@@ -200,7 +200,7 @@ This will show if the selected **media file** is directly assigned/scheduled to 
 Use the **With Selected** option at the bottom of the Library [Grid](tour_grids.html) to muti-select rows to easily perform bulk actions!
 {/tip}
 
-### Schedule (full screen)
+### Schedule
 
 Image and Video Library media files can be directly Scheduled to a Display as full screen content from the row menu.
 

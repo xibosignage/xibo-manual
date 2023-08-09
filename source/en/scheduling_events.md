@@ -3,7 +3,7 @@ toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Create Schedules to show your content at the right time and place"
-keywords: "synchronised, mirror, video wall, scheduled actions, full screen scheduling, interrupt layout, display order, priority, max plays, run at cms time, repeats, recurring instances, reminders, duplicate events"
+keywords: "synchronised, mirror, video wall, scheduled actions, media scheduling, interrupt layout, display order, priority, max plays, run at cms time, repeats, recurring instances, reminders, duplicate events"
 persona: "schedule manager"
 ---
 
@@ -84,9 +84,9 @@ Select a **Layout List** [Campaign](layouts_campaigns)
 - **Navigate to Layout** - enter the code identifier for the Layout the Player should navigate to when triggered. This code is created when adding a new Layout or from editing an existing from the Layouts grid.
 - **Command** - select the Command to run.
 
-### Full Screen Video / Image / Playlist 
+### Media Scheduling 
 
-Select a **Video/Image** from your [Library](media_library.html) or a [Playlist](media_playlists.html) which when scheduled will be shown full screen without having to first add it to a Layout
+Video and Image files saved to the [Library](media_library.html) or a [Playlist](media_playlists.html) can be scheduled to be shown full screen without having to first add it to a Layout.
 
 - Complete the form fields to create the Schedule.
 
@@ -102,6 +102,10 @@ On **Saving**, further options will be shown:
 - **Video/Image files** only: Override the Media duration set in the Library by providing a **Duration in loop**.
 - Select a specific **Resolution** to use.
 - Set a **Background Colour** to fill any gaps if the item does not fill the entire screen.
+
+{tip}
+Schedule Images and Videos directly from the [Library](media_library.htm) and [Playlists](media_playlists.html) from the Playlists grid. Use the row menu and click Schedule!
+{/tip}
 
 ## Synchronised Events
 
@@ -126,7 +130,7 @@ The Lead Display will issue instructions to change the sequence based on its ass
 - Select **Mirror** to automatically set the same item on each Display within the group automatically.
 
 {tip}
-Sync [Playlists](media_playlists.html) on different Layouts by using a **Content Synchronisation Key**!
+Sync [Playlists](media_modules_playlists.html) on different Layouts by using a **Content Synchronisation Key**!
 {/tip}
 
 ### Dayparts

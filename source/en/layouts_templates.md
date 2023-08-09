@@ -101,19 +101,20 @@ The above screenshot shows the `text` (Layer 2) Element placed on top of the `re
 **NOTE:** If you are using Windows Players, the HLS Widgets and Embedded/Web Widgets configured to use the Edge browser are not transparent and will not show anything placed underneath them.
 {/version}
 
-Add both content and Zones to your Template to build your design. Right click a Zone and select [Share](users_features_and_sharing.html#content-share) to set access options for Users/User Groups. This is particularly useful if you want a User to only have access to a section of the Layout to manage.
 
+Right click to show a menu to easily move things 'front' and 'backwards' as well as set [Sharing]((users_features_and_sharing.html#content-share)) options which  is particularly useful if you want a User to only have access to a section of the Layout to manage.
 
+![Context Menu](img/v4_layouts_templates_menu.png)
+
+Add both content and Zones to your Template to build your design. 
 
 ![Example Template](img/v4_layouts_templates_example.png)
 
 
 
 {tip}
-Adding multiple items to a zone will create a [Playlist](media_playlists.html) of content.
+Adding multiple items to a zone will create a [Playlist](media_modules_playlist.html).
 {/tip}
-
-
 
 Once your Template is complete, use the menu at the top of the editor to **Publish**:
 
