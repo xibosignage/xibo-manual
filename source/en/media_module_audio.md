@@ -9,28 +9,28 @@ persona: "content manager"
 
 # Audio
 
-Add Audio files to play on your Layouts and Playlists.
+Add Audio files to play on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-toolbar). 
 
 {feat}Audio|v3{/feat}
 
 ## Overview
 
-- View existing and upload new audio files directly to Playlists/Layouts using the [Library Audio Search](layouts_library_search.html) from the toolbar.
+-  [Upload](media_library.html#content-add-media-upload) new audio files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-toolbar).
+- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
+- Audio files can be also be uploaded in advance to the [Library](media_library.html) 
 
-- Set [start and end times](layouts_library_search#content-expiry-dates) for audio files uploaded directly to a Playlist/Layout.
+{tip}
+We recommend mp3.wav file format.
+{/tip}
 
+- Set [start and end times](media_playlists.html#content-playlist-editor) for audio files uploaded directly to a Playlist.
 - Save  audio files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
-
 - Uploaded audio files are cached for off-line playback.
-
 - Fully compatible with [Overlay Layouts.](layouts_overlay.html)
-
 - Control the duration of the audio file.
   - Set a lower duration to cut the original file short.
 
   - Set a higher duration and use the Loop function to "loop" back to the beginning to satisfy a longer duration.
-
-- Audio files can also be uploaded in advance to the [Library](media_library.html)
 
 
 ![Audio](img/v4_media_module_audio.png)

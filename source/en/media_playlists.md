@@ -3,7 +3,7 @@ toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Playlists contain a timeline of ordered content which can be re-used across multiple Layouts"
-keywords: "re-usable, slide show, add multiple items, show a sequence of content, schedule playlists, dynamic playlist, playlist editor, spacer widget, text widget"
+keywords: "re-usable, slide show, add multiple items, show a sequence of content, schedule playlists, dynamic playlist, playlist editor, spacer widget, text widget, widget expiry dates"
 persona: "content manager"
 ---
 
@@ -13,8 +13,8 @@ Playlists contain a timeline of ordered content which can be created directly on
 
 ## Feature Overview:
 
-- Easily create a 'slide-show' of content.
-- Define content order.
+- Use to create a 'slide-show' of content.
+- Define ordering of items.
 - Includes a timeline to show how the sequence of content will play.
 - Create a Playlist of content directly on a Layout as a one time assignment.
 - Create a [re-usable list](media_playlists.html#content-creating-a-re-usable-playlist) of content independently to Layouts.
@@ -23,6 +23,8 @@ Playlists contain a timeline of ordered content which can be created directly on
   - Update Playlist content without accessing Layouts.
   - Schedule directly from the Playlist grid without the need to add to a Layout.
   - Save to [Folders](tour_folders.html) to easily control Share options for Playlists.
+- Preload media to be shown at a later date/time with [Widget Expiry Dates.](media_playlists.html#content-widget-expiry-dates)
+  
 
 
 ## Creating a re-usable Playlist
@@ -75,7 +77,7 @@ Saving the form **without** the **Dynamic** option selected or when adding the [
 
 ![Manual Assignment](img/v4_media_playlists_manual.png)
 
-- From the Toolbar, add [Widgets](layouts_widgets.html)/[Library Media](layouts_library_search.html) to the Playlist Editor.
+- From the Toolbar, add Widgets / Library Media to the Playlist Editor.
 - Configuration options will load in the properties panel.
 
 ![Playlist Timeline](img/v4_media_playlists_timeline.png)
@@ -98,10 +100,9 @@ Items can be added to a specific point in the list, drag or click to add content
 Use the Undo button at the bottom of the toolbar to revert a change!
 {/tip}
 
-A set of further options can be accessed by right clicking on an item. From this [Context Menu](layouts_editor.html#content-context-menu) you can set **Share** access, set **Audio** files, **Start and End Times** and **Transitions** for the selected item on the Playlist.
+An additional [menu](layouts_editor.html#content-context-menu) of options can be accessed by right clicking on an item. (See the section below for information on [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates))
 
 ![Context Menu](img/v4_media_playlists_context_menu.png)
-
 
 
 Use the **Select Multiple Widgets** button at the bottom of the Playlist Editor to delete multiple selections with one click: 
@@ -136,6 +137,35 @@ Use the inline editor to enter text and apply formatting:
 
 Use the Spacer to create an empty 'slot' within a Playlist.
 
+## Widget Expiry Dates
+
+Items added to a Playlist have an additional option of setting Start and End times.
+
+Right click on an item in a Playlist to **Edit Expiry Dates** or set when [uploading media](media_library.html#content-add-media-upload) directly to a Playlist.
+
+Selecting Upload new from a [Library Search](layouts_editor.html#content-toolbar) will have an additional **Set Expiry Date** option:
+
+![Expiry Dates](img/v4_media_playlists_upload_expiry.png)
+
+When uploading multiple media files, clicking the **Start upload** button will upload all files with the same date/time and Folder location set.
+
+Items can also be uploaded individually using the **blue upload** button at the end of the row for a file to have different set Expiry Dates and Folder locations for each file uploaded.
+
+Items on a Playlist that have expiry dates set will include an icon for easy identification:
+
+![Expiry Dates](img/v4_media_playlists_expiry_dates.png)
+
+- Start date has been set for a date/time in the future.
+- Expiry date has been set.
+- On expiry the item will be deleted from the list.
+- Expired item but will remain on the Playlist to view in the Playlist Editor timeline.
+
+{tip}
+Once the End date has passed the item will be removed from the Playlist. Expired items that have not been set to Delete on Expiry will remain visible in the Playlist Editor only so that Start and End times can be re-adjusted if needed.
+{/tip}
+
+- Click on an icon in the Playlist Editor to open to make any changes/remove.
+
 ## Row Menu
 
 Playlists created from the Playlists grid have a row menu where Users can access a list of actions/shortcuts.
@@ -167,7 +197,7 @@ Any changes made to a Scheduled Playlist will be automatically pushed to Players
 
 ## Creating a Playlist on a Layout
 
-- Select the Playlist Widget and [Manually Add Media](media_playlists.html#content-manually-add-media) (as outlined above.)
+- Add the [Playlist Widget](media_modules_playlist.html) to your Layout and manually add Media using the [Playlist Editor](media_playlists.html#playlist-editor) (as outlined above.)
 
 
 

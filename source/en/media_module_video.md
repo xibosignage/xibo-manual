@@ -8,15 +8,24 @@ persona: "content manager"
 
 # Video 
 
-Add Video files to play on your Layouts and Playlists.
+Add Video files to play on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-toolbar). 
 
 {feat}Video|v3{/feat}
 
 ## Overview
 
-- View existing and upload new video files directly to Playlists/Layouts using the [Library Audio Search](layouts_library_search.html) from the toolbar.
+- [Upload](media_library.html#content-add-media-upload) new video files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-toolbar).
+- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
+- Video files can also be uploaded in advance to the [Library](media_library.html)
 
-- Set [start and end times](layouts_library_search#content-expiry-dates) for video files uploaded directly to a Playlist/Layout.
+{tip}
+We recommend H264 MP4 file format.
+
+When uploading video files the scroll bar can be used to select a frame to be used as a thumbnail in the CMS for easier identification.
+
+{/tip}
+
+- Set [start and end times](media_playlists.html#content-playlist-editor) for video files uploaded directly to a Playlist.
 
 - Save video files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
 
@@ -35,7 +44,7 @@ Add Video files to play on your Layouts and Playlists.
 
 - Select videos to use from Pixabay without leaving the CMS.
 
-- Video files can also be uploaded in advance to the [Library](media_library.html)
+  
 
 ![Video](img/v4_media_module_video.png)
 
@@ -44,7 +53,5 @@ Add Video files to play on your Layouts and Playlists.
 Scaling is currently supported by Android, webOS and Tizen Players (from v2 R200) and Windows Players (from v2 R253).
 Transitions are not supported for the Tizen Player when using the Video Widget.
 {/version}
-
-
 
 **As [[PRODUCTNAME]] takes no measures to control what content is put on your displays, it is your responsibility to ensure that any videos used are appropriately attributed if you do not own the rights.**

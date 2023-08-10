@@ -46,10 +46,13 @@ PowerPoint will, by default, put scroll bars up the side of your presentation, u
 
 ### Upload to CMS
 
-- Upload PPT files directly to Playlists/Layouts using the [Library other media Search](layouts_library_search.html) from the toolbar.
+Using the 'other media' search, use the **Type** drop down to select **PowerPoint**:
+
+- Upload PPT files directly to Playlists/Layouts using the [Library Search](layouts_editor.html#content-toolbar) from the toolbar.
 
 - Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- Set [start and end times](layouts_library_search#content-expiry-dates) for PowerPoint files uploaded directly to a Playlist/Layout.
+- PowerPoint files can also be uploaded in advance to the [Library](media_library.html)
+- Set [start and end times](media_playlists.html#content-playlist-editor) for PowerPoint files uploaded directly to a Playlist.
 - Save PowerPoint files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
 
 ![PowerPoint](img/v4_media_module_powerpoint.png)
