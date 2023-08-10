@@ -3,23 +3,19 @@ toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Manage file based media from the CMS Library"
-keywords: "upload library media, add media via url, expiry dates, Retire media, enable media stats collection, update media, replace media, usage report, tidy library, purge list, schedule"
+keywords: "upload library media, add media via url, media library expiry dates, Retire media, enable media stats collection, update media, replace media, usage report, tidy library, purge list, schedule"
 persona: "media manager, content manager"
 ---
 
 # Media Library 
 
-[[PRODUCTNAME]] supports a wide variety of media types, from [Widgets] which are created and stored directly on Layouts and Playlists to file-based media that is uploaded and stored in the CMS Library which can then be reused across multiple Layouts and Playlists.
+[[PRODUCTNAME]] supports a wide variety of media types, from Widgets which are created and stored directly on Layouts and Playlists to file-based media that is uploaded and stored in the CMS Library which can then be reused across multiple Layouts and Playlists.
 
 {version}
 **NOTE:** [[PRODUCTNAME]] takes no measures to control what content is put on your Displays. It is your responsibility to ensure that your content is appropriate material for your desired audience. Content must be appropriately attributed if you do not own the rights to it.
 {/version}
 
-{tip}
-Integration with Pixabay allows for the selection of Images and Videos when adding content to [Layouts](layouts.html) and [Playlists](media_playlists.html) using the [Library Search](layouts_library_search.html) functionality. Selected content will automatically add to the CMS Media Library for re-use!
-{/tip}
-
-Manage file based media by selecting **Media** under the **Library** section of the main CMS menu:
+Manage all file based media by selecting **Media** under the **Library** section of the main CMS menu:
 
 ![Media Library](img/v4_media_library_grid.png)
 
@@ -55,7 +51,7 @@ Library media can be either uploaded directly using the **Add Media** button or 
 {tip}
 Add Media to the CMS Library and save to [Folders](tour_folders.html) to have media ready for use for the appropriate [Users](users_administration.html)/[User Groups](users_groups.html)! 
 
-Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_library_search.html)
+Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor.html#content-toolbar)
 {/tip}
 
 ### Add Media (Upload)
@@ -100,9 +96,9 @@ Files can also be uploaded individually and have different Folder locations spec
 - Once all files have been successfully uploaded, click **Done**.
 
 {tip}
-Media files can also be uploaded directly to Layouts using the upload tool from the [Library Search](layouts_library_search.html) function for Images, Audio and Video files. Other file types (such as PDF) can be uploaded by adding the associated **Widget** to a **Layout**. 
+Media files can also be uploaded directly to Layouts/Playlists using the upload tool from a [Library Search.](layouts_editor.html#content-toolbar) Media uploaded to a Playlist have an additional option to set [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates).
 
-Media files that are uploaded and added directly to Layouts are also saved by default to the CMS Media Library.
+Media files that are uploaded and added directly to Layouts/Playlists are also saved by default to the CMS Media Library.
 {/tip}
 
 ### Add Media via URL
@@ -133,11 +129,7 @@ Select **Edit** to make changes to **Folder** locations, **Durations** and **Tag
 
 ### Expiry Dates
 
-Set an Expiry Date to remove the media file from any Layouts/Playlists it has been used on. 
-
-{feat}Widget Expiry Dates|v4 {/feat}
-
-- Set a date and time to remove the selected media file completely from the CMS.
+Set an Expiry Date for Library Media to remove the file from any Layouts/Playlists it has been used on. 
 
 ### Retire Media
 

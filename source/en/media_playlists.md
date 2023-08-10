@@ -141,6 +141,8 @@ Use the Spacer to create an empty 'slot' within a Playlist.
 
 Items added to a Playlist have an additional option of setting Start and End times.
 
+{feat}Widget Expiry Dates|v3{/feat}
+
 Right click on an item in a Playlist to **Edit Expiry Dates** or set when [uploading media](media_library.html#content-add-media-upload) directly to a Playlist.
 
 Selecting Upload new from a [Library Search](layouts_editor.html#content-toolbar) will have an additional **Set Expiry Date** option:
