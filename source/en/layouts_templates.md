@@ -159,7 +159,11 @@ Select to make design changes to the Template in the Layout Editor.
 
 #### Checkout
 
-To make edits to a Published Template click to Checkout and create a draft.
+To make edits to a Published Template click to Checkout and create a draft. Once edited the Template can be published to make the changes permanent overwriting the existing Template. Discard will revert the Template back to its original published state.
+
+{tip}
+Take your time with any edits you need to make as using **Checkout** ensures that no changes are made to your published version or shown on scheduled **Displays** until you choose to do so. **Publish** confirms changes have been made and will overwrite your published version. **Discard** will delete the draft with the published version remaining untouched.
+{/tip}
 
 #### Publish
 

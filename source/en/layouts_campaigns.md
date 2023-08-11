@@ -189,13 +189,9 @@ The Ad Campaign progress will be shown in the Campaigns grid and on opening the 
 
 The **Reference** tab can be optionally used to provide reference information for the selected Ad Campaign. Once added, this information can be viewed in the Campaign grid and via the API.
 
+## Row Menu
 
-
-
-
-
-
-
+Both Campaign types have a row menu where Users can access a list of actions/shortcuts.
 
 
 

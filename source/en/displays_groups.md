@@ -3,7 +3,7 @@ toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Create Display Groups for ease of scheduling and media assignment"
-keywords: "dynamic group membership, add display group, file assignments, layout assignments, "
+keywords: "dynamic group membership, add display group, "
 persona: "display manager, administrator"
 ---
 
