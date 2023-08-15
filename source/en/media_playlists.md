@@ -73,11 +73,11 @@ If you want to show your dynamic Playlist full screen on Displays, use the row m
 
 ### Playlist Editor
 
-Saving the form **without** the **Dynamic** option selected or when adding the [Playlist](media_modules_playlist.html) Widget to a Layout, the **Playlist Editor** is used to manually add content:
+Saving the form **without** the **Dynamic** option selected or when adding the [Playlist](media_modules_playlist.html) Widget to a Layout, the **Playlist Editor** will open to manually add content:
 
 ![Manual Assignment](img/v4_media_playlists_manual.png)
 
-- From the Toolbar, add Widgets / Library Media to the Playlist Editor.
+- From the Toolbar, add [Widgets](layouts_editor.html#content-widgets) / [Library Media](layouts_editor.html#content-library-search) to the Playlist Editor.
 - Configuration options will load in the properties panel.
 
 ![Playlist Timeline](img/v4_media_playlists_timeline.png)
@@ -100,9 +100,11 @@ Items can be added to a specific point in the list, drag or click to add content
 Use the Undo button at the bottom of the toolbar to revert a change!
 {/tip}
 
-An additional [menu](layouts_editor.html#content-context-menu) of options can be accessed by right clicking on an item. (See the section below for information on [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates))
+An additional [Context Menu](layouts_editor.html#content-context-menu) of options can be accessed by right clicking on an item. 
 
-![Context Menu](img/v4_media_playlists_context_menu.png)
+{version}
+**NOTE:** See the sections below for information on [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates) and [Transitions](tour_transitions.html#content-playlist-transitions) as these options are only available on Playlists.
+{/version}
 
 
 Use the **Select Multiple Widgets** button at the bottom of the Playlist Editor to delete multiple selections with one click: 
@@ -167,6 +169,16 @@ Once the End date has passed the item will be removed from the Playlist. Expired
 {/tip}
 
 - Click on an icon in the Playlist Editor to open to make any changes/remove.
+
+## Transitions
+
+Set [Playlist Transitions](tour_transitions.html#content-playlist-transitions) for items on a Playlist.
+
+Applied defaults can be overridden for Layouts by unticking the box in the properties panel.
+
+{tip}
+When Transitions are applied to a Widget by default, the properties panel will be blank.  Only manually entered Transitions will show on forms!
+{/tip}
 
 ## Row Menu
 

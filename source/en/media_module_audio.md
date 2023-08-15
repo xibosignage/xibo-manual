@@ -31,6 +31,7 @@ We recommend mp3.wav file format.
   - Set a lower duration to cut the original file short.
 
   - Set a higher duration and use the Loop function to "loop" back to the beginning to satisfy a longer duration.
+- Attach Audio files to other Widgets.
 
 
 ![Audio](img/v4_media_module_audio.png)
@@ -39,5 +40,9 @@ We recommend mp3.wav file format.
 
 
 
+Audio can also be attached to other Widgets using the [Context Menu](layouts_editor.html#content-context-menu)
 
+{tip}
+When attaching to Widgets, Users can enter a Volume as well as a Loop parameter to determine whether the audio will loop for the duration of the attached Widget or just play through once. Audio will stop once the parent Widget finishes playing!
+{/tip}
 

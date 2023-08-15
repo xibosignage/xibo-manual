@@ -3,7 +3,7 @@ toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Speed up the design process by using Templates"
-keywords: "zones, placeholders, layering, alter template"
+keywords: "zones, placeholders, alter template"
 persona: "content manager"
 ---
 
@@ -40,13 +40,7 @@ If Users should also have access to the content of the Template (image media fil
 
 - Give your Template a **Name** for easy identification in the CMS and include optional [Tags](tour_tags.html).
 
-- Select the **Resolution** to be used for this Template/Layout.
-
-Templates/Layouts are designed for an intended display resolution and will function best when shown on a **Player** with a matching resolution. If they are shown on a display that has a different resolution it will dynamically resize which may result in unused screen space.  
-
-{tip}
-Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
-{/tip}
+- Select the [Resolution.](layouts#content-resolutions) 
 
 On **Saving**, the [Layout Editor](layouts_editor.html) will automatically open with one full size Zone.
 
@@ -83,37 +77,20 @@ Use the **Snap to** buttons to get precise positioning or use the Positioning ta
 
 ### Layering
 
-Overlapping Zones/content and a background Image can be ordered using the z-index settings from the properties panel:
-
-- Click in the item you want to define a Layer.
-- Select the tab with the grid icon.
-- Enter a number to determine the Layer.
-
-![Layer](img/v4_layouts_templates_layer.png)
-
-The above screenshot shows the `text` (Layer 2) Element placed on top of the `rectangle` (Layer 1) Element.
+Use [Layering](layouts_editor.html#content-layering) for overlapping Zones/content.
 
 {tip}
-1 is considered the lowest Layer, the higher the number the higher the Layer!
+Right click to show a [context menu](layouts_editor.html#content-) and easily move items backwards and forwards.
+
+[Sharing]((users_features_and_sharing.html#content-share)) options are particularly useful if you want a User to only have access to a section of the Layout to manage.
 {/tip}
 
-{version}
-**NOTE:** If you are using Windows Players, the HLS Widgets and Embedded/Web Widgets configured to use the Edge browser are not transparent and will not show anything placed underneath them.
-{/version}
-
-
-Right click to show a menu to easily move things 'front' and 'backwards' as well as set [Sharing]((users_features_and_sharing.html#content-share)) options which  is particularly useful if you want a User to only have access to a section of the Layout to manage.
-
-![Context Menu](img/v4_layouts_templates_menu.png)
-
-Add both content and Zones to your Template to build your design. 
+Add both [content](layouts_editor.html#content-toolbar) and Zones to your Template to build your design. 
 
 ![Example Template](img/v4_layouts_templates_example.png)
 
-
-
 {tip}
-Adding multiple items to a zone will create a [Playlist](media_modules_playlist.html).
+Adding multiple items to one zone will create a [Playlist](media_modules_playlist.html).
 {/tip}
 
 Once your Template is complete, use the menu at the top of the editor to **Publish**:

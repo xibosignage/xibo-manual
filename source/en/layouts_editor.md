@@ -1,273 +1,310 @@
-<!--toc=layouts-->
+---
+toc: "Layout Editor"
+maxHeadingLevel: 4
+minHeadingLevel: 2
+excerpt: "Create Layouts using the Layout Editors flexible design elements"
+keywords: "toolbar, library search, viewer, properties panel, layering, publish now, publish date, widgets, data widgets, elements, data elements, global elements, grouping elements, stencils, context menu, static templates, layout preview, status bar, layout editor"
+persona: "content manager"
+---
 
-# Layout Designer
+# Layout Editor
 
-## [PLACEHOLDER]
+The Layout Editor is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Editor is used.
+
+On **adding** a new Layout, or clicking **Design** from the row menu for a Layout, the **Layout Editor** will open:
+
+![Layout Designer](img\v4_layouts_layout_editor_overview.png)
+
+Adding a new Layout will will create an 'untitled' Layout. Click on the '**Untitled text**' to Name and complete the form fields:
+
+![Add Layout](img/v4_layouts_add_layout.png)
+
+[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Layouts saved to a Folder will inherit the access options applied to that Folder. 
+
+{tip}
+If users should also have access to the Layout content (image files for example) ensure that this is also saved to the same Folder!
+{/tip}
+
+- Include optional [Tags](tour_tags.html).
+
+{tip}
+Tags and Folders can also be assigned to multiple Layouts using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected.) option at the bottom of the Layout grid!
+{/tip}
+
+- Enter a string to be used as the **Code Identifier** to identify this Layout when used with [Interactive Actions](layouts_interactive_actions.html)
+- Select to enable the collection of statistics for [Proof of Play Reports](displays_metrics.html) for the newly added **Layout**.
+
+{tip}
+Ensure that the **Enable Stats Collection** check box has been enabled for the **Display** this Layout will be scheduled to from the [Display Profile Settings](displays_settings.html).
+{/tip}
+
+- **Save**.
+
+{tip}
+If you want to use a [Template](layouts_templates) as a basis for your design, add from the [Toolbar](layouts_editor.html#content-templates)!
+{/tip}
+
+## Properties Panel
+
+The Properties Panel is used to configure all items added to the Layout and the Layout itself.
+
+{tip}
+To return to the overall Layout configuration options further down the design, click anywhere on the background on the viewer.
+{/tip}
+
+Select a colour or add an Image to use as your background.
+
+- Add an image from your Library using the [Image Library Search](layouts_editor.html#content-library-search) from the Toolbar. 
+- Drag the image to the **Background Image area** of the properties panel.
+
+{tip}
+New Images can also be added as a background by using the **Upload** button!
+{/tip}
+
+- Select the [Resolution](layouts.html#content-resolutions) that best matches your display.
+
+- Default [Transition](tour_transitions.html) settings can be applied to all Widgets on the Layout by ticking the box.
+
+### Layering
+
+Zones, content and a Layout Background image can be ordered using z-index settings from the properties panel:
+
+- Click in the item to highlight.
+- Select the tab with the grid icon from the properties panel.
+- Enter a number to determine the layer.
+
+![Layering](img/v4_layouts_layering.png)
+
+{tip}
+1 is considered the lowest Layer, the higher the number the higher the Layer.
+
+Right click to show a [context menu](layouts_editor.html#content-context-menu) to easily move items forwards and backwards.
+{/tip}
 
 {version}
-**Note:** If you are using a CMS earlier than v3.1.0 please select from the options below:
-
-- v3.0.x CMS click [here](layouts_designer_3.html)
-- v2.3.x CMS click [here](layouts_designer_2.html)
-- v2.0.x CMS click [here](layouts_designer_2.0.html)
-- v1.8.x CMS click [here](layouts_designer_1.8.html)
-
+**NOTE:** If you are using Windows Players, the HLS Widgets and Embedded/Web Widgets configured to use the Edge browser are not transparent and will not show anything placed underneath them.
 {/version}
 
-## Overview
+## Toolbar
 
-The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Designer is used.
+Make a start adding content to the Layout from the Toolbar:
 
-On adding a new Layout, or clicking Design from the row menu of a Layout, the **Layout Designer** will open:
+![Toolbar](img/v4_layouts_toolbar.png)
 
-![Layout Designer](img\v3.1_layouts_designer.png) 
+
+
+### Widgets
+
+From the top of the Toolbar, click to utilise a variety of Widgets to add content to your Layouts.
+
+{tip}
+Widgets can be disabled/enabled by an Administrator in the [Modules](media_modules.html) section of the CMS.
+{/tip}
+
+Set Widgets as **Favourites** to make them easier to select by clicking the star icon in the left hand side of a Widget card:
+
+![Favourite Widgets](img/v4_layouts_widgets_favourites.png)
+
+{tip}
+Click the star to deselect from the Favourites section.
+{/tip}
+
+Add Widgets by drag and drop or click the widget to highlight and click on the viewer.
+
+#### Data Widgets
+
+**Data Widgets** also contain 'data' **Elements** which allows a User to place each element of the Widget exactly where needed rather than being bound by a **Static Template** design:
+
+![Data Elements](img/v4_layouts_data_elements.png)
+
+{version}
+**NOTE:** Elements are only available in the Layout Editor and are therefore not available in the [Playlist Editor.](media_playlists.html#content-playlist-editor)
+{/version}
+
+Each Widget has a set of Elements which are fed with the data returned by the Widget. Once added to the viewer, each Element has a set of configurable options available in the properties panel:
+
+![Element Properties](img/v4_layouts_element_properties.png)
+
+Handle the paging of data when using more than one of the same Element for a Widget by specifying a **Data Slot** to use for each Element added.
+
+{tip}
+For example the image above shows 2 **Description Elements** from the **Calendar Widget** have been added. One has a **Data Slot of 1** the other a **Data Slot of 2.** If 10 (Calendar Events) items were returned, Data Slot 1 would show items 1,3,5,7,9 with Data Slot 2 showing items 2,4,6,8,10.
+{/tip}
+
+In addition Elements have the option to **Pin this slot** so that it becomes static and won't cycle through items.
+
+{tip}
+You can also set whether to **Repeat items** in order to fill all data slots by using the checkbox on the **Advanced** tab of the properties panel.
+{/tip}
+
+#### Grouping Elements
+
+Elements can be grouped and treated as 'one' for easy positioning, resizing and duplication:
+
+![Duplicated Elements](img/v4_layouts_duplicated_elements.png)
+
+{tip}
+Groups can contain both **Data** and **Global Elements**. 
+
+**NOTE:** All Data Elements need to share the same **Data Slot** and **Effect** when grouping!
+{/tip}
+
+- Hold down the shift key to multi-select and click in each **Element** to group. 
+- Once the Elements have been selected, right click and select **Group elements**:
+
+![Grouping Elements](img/v4_layouts_grouping_elements.png)
+
+{tip}
+Ungroup by right clicking!
+{/tip}
+
+#### Stencils 
+
+Stencils are 'Element Group Templates' which have been included for selected Widgets to assist Users with creating content simply and quickly.
+
+{tip}
+Take advantage of our Stencil designs by adding, configuring and duplicating. Right click to **ungroup** should you want to make edits to further customise!!
+{/tip}
+
+#### Static Templates
+
+Select from the available **Static Templates** to add to your Layout and configure.
+
+### Global Elements 
+
+Easily add Text and a variety of shapes to your Layout:
+
+![Global Elements](img/v4_layouts_global_elements.png)
+
+{tip}
+These global elements can be used across any module!
+{/tip}
+
+### Library Search
+
+Select from [Image](media_module_image.html), [Audio](media_module_audio.html), [Video](media_module_video.html) and Other media file searches to easily assign media which already exists in the [Library](media_library.html).
+
+{tip}
+'Other media' search includes [Flash](media_module_flash.html), [HTML Package](media_module_htmlpackage), [PDF](media_module_pdf.html) and [PowerPoint](media_module_powerpoint.html#content-3-upload-a-prepared-ppt-file-windows-players-only) files.
+{/tip}
+
+When using Image/Video Library Search options, Integration from Pixabay gives users additional resources which can be added to Layouts without having to leave the Layout Editor.
+
+{cloud}
+Pixabay integration is enabled by default for new Xibo in the Cloud customers.
+
+If you are upgrading from an earlier version you will need to enable by navigating to the **Administration** section of the CMS and click **Applications**. Scroll down the page to the **Connectors** section. Click to **Configure** and tick to enable, **Save** changes.
+
+{/cloud}
+
+{noncloud}
+
+Pixabay can be enabled from the **Administration** section of the CMS menu by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click Configure and enter your API Key after signing up for a Pixabay account. [PixabayAPI Documentation](https://pixabay.com/api/docs/)
+{/noncloud}
+
+{tip}
+Images/videos that are selected from Pixabay to be used in Layouts will automatically be added to your Library for reuse!
+{/tip}
+
+### Interactive Actions
+
+Widgets can have Actions attached to effect changes to the Layout triggered by Touch, click or webhook.
+[Interactive Actions](layouts_interactive_actions.html) are created and managed from the Toolbar and shown on the **Actions** tab for the selected item in the **Properties Panel**.
+
+![Actions Tab](img/v4_layouts_actions_tab.png)
+
+### Templates
+
+Select a [Template](layouts_templates.html) to use from the Toolbar.
+
+{nonwhite}
+Select from one of our templates available from the [Xibo Exchange.](layouts_xibo_exchange.html)
+{/nonwhite}
+
+## Viewer
+
+The viewer will update as the Layout is designed so that you can clearly see your designs taking shape.
+
+Position content exactly where you want it with flexible drag and drop, rotation and resizing tools.
+
+![Snap to](img/v4_layouts_snap_to_buttons.png)
+
+{tip}
+Use the buttons in the bottom right of the viewer to select to **Snap to Grid**, **Snap to Borders** or **Snap to Elements** for easier positioning when adding items.
+{/tip}
+
+## Context Menu
+
+Further options are available from a **Context Menu** located at the bottom of the viewer as well as from a right click on added items. Actions shown are dependent on what you have selected.
+
+### Audio
+
+Attach an [Audio](media_module_audio.html) file to a Widget.
+
+### Sharing
+
+Control [Sharing](users_features_and_sharing.html) options to View, Edit and Delete selected items for Users/User Groups.
+
+## Preview
+
+Play a full **Preview** of your Layout by clicking on the **Play** button located at the bottom of the viewer: 
+
+![Layout Preview](img/v4_layouts_play_preview.png)
+
+{tip}
+View in full screen by clicking on the icon in the top right corner of the preview window before pressing play!
+{/tip}
 
 ## Status Bar
 
-The left hand icon shows you the current 'play' status of the selected Layout:
+View the current status, edit Naming, Tags, Folders etc. and see the overall duration of the Layout using the status bar at the top left of the Layout Editor. Layout duration is based on the longest running item on the Layout:
 
-![Build Status](img/v2.3_layouts_build_status.png)- This Layout has not been built yet.
+![Status Bar](img/v4_layouts_status_bar.png)
 
-![Valid Status](img/v2.3_layouts_valid_status.png) - This Layout is valid and can be scheduled once Published.
+The icon shows you the current status of the selected Layout:
 
-![Invalid Status](img/v2.3_layouts_invalid_status.png) - This Layout is invalid and will not be Published for scheduling. 
+**Blue cog** - the Layout has not been built yet.
 
-![Assessed Player Side Status](img/v2.3_layouts_assessed_player_side_status.png) - This Layout contains media that can only be assessed Player side, and can be scheduled once Published. 
+**Green tick** - the Layout is valid and can be published and scheduled.
+
+**Red cross** - the Layout is invalid and should not be published for scheduling.
+
+**Orange exclamation mark** - the Layout contains media that can only be assessed Player side and can be published an scheduled.
 
 {tip}
+
+Mouse over the status icon to view further information.
+
 The last icon is a normal Layout status to have if your Layout contains online content, such as a webpage etc. The CMS cannot say that the Player will display the content as it is not sent directly from the CMS (as with file based media, images, videos etc,) and is instead cached (stored) Player side.  The Player will need to have a reliable internet connection to successfully display such content.
-
-Hover over the icon to see further information regarding the status you are seeing!
 {/tip}
 
-Next to the icon the total **Duration** of the selected Layout is displayed in seconds which updates each time a **Media** item is added or an existing **Duration** is edited. 
+The Layout jump list provides easy navigation between all Layouts the logged in User has access to edit without having to leave the Layout Editor.
 
-The overall Layout duration is always based on the longest running [Region](layouts_regions.html) on the Layout!
+![Jump List](img/v4_layouts_jump_list.png)
 
+## Publish
 
+Once your Layout design is complete you must ensure that you **Publish** your Layout before Scheduling. Use the Menu located to the far right of the status bar to view all options for your Layout:
 
-Interactive Actions that have been added to the Layout will be shown in the status bar.
-
-![Interactive Actions Status](img/v3.1_layouts_designer_interactive_actions_status.png)
-
-
-
-The **Layout selector** provides easy navigation between all Layouts the logged in User has permission to edit without having to leave the Layout Designer page. Enter search criteria and use the dropdown menu to change the Layout you are currently viewing/editing.
+![Menu](img/v4_layouts_publish_menu.png)
 
 {tip}
-Use the checkbox to only access your own Layouts!
+Available options are dependent on whether your Layout is in a [Draft](https://test.xibo.org.uk/manual/en/layouts#content-notable-settings-are-listed-below-for-a-draft-layout) or [Published](https://test.xibo.org.uk/manual/en/layouts#content-notable-settings-are-listed-below-for-a-published-layout) status.
 {/tip}
-
-The **Menu** located to the right of the Status bar provides a list of options for Layouts.
-
-Layouts in a **Draft** status have the following menu options:
-
-![Draft Actions](img\v3.1_layouts_unlock_layout.png)
-
-- Once you are happy with your designs, set your Layout to **Publish** ready to be Scheduled.
-
 
 Layouts can be set to be **Published** straight away with updates automatically pushed to Layouts that are in the schedule. A **Publish Date** can also be selected to Publish a Layout at a specified date and time.
 
 {tip}
-You can also use the **Row Menu** for a selected draft Layout to set to **Publish** immediately or on a set date..
+Setting a **Publish Date** is not an alternative to scheduling. Your Published Layout will still need to be [Scheduled](scheduling_events.html)!
 {/tip}
 
-- Clicking on **Discard draft** will delete the draft and leave the Published version untouched. 
+![Publish Date](img/v4_layouts_publish_date.png)
 
-- **Unlock Layout**  will show when another User is attempting to edit the same Layout.
+### Templates
 
-  If a User attempts to edit a Layout that is already being edited by a User, the Layout will lock to prevent editing. The Layout will remain locked for a specified amount of time (as shown in the lock message) or until the Layout is unlocked from this menu.
+Published Layouts can also be saved as a [Template](layouts_templates.html#content-save-layout-as-template)
 
-  {tip}
-  On selecting the **Unlock Layout** button, the User will be redirected to the Layout Grid.
-  {/tip}
 
-Layouts that have been **Published** have the following menu options:
-
-![Published Actions](img\v3.1_layouts_published_actions.png)
-
-- **Checkout** to enable editing by putting the published Layout into a draft status.
-
-- **Delete layout** to completely remove.
-
-- **Schedule** published Layouts onto one or more Displays without having to leave the Layout Designer. 
-
-- Use your design as a [Template](layouts_templates.html) for creating additional Layouts to save time and to maintain a corporate image/standard.
-
-## Viewer
-
-The viewer will update as the Layout is designed so that users can clearly see what has been added and make necessary edits:
-
-![Layout View](img\v3.1_layouts_view.png)
-
-Edit or add [Regions](layouts_regions.html) to your Layout using the **Edit Layout** Icon located under the viewer to open the editor:
-
-![Layout Editor](img/v3.1_layouts_editor.png)
-
-{tip}
-A Layout must contain at least one Region **and** each Region must contain at least **one** media item for it to be valid and play when scheduled.
-{/tip}
-
-Exit the editor and return to the Layout view using the back arrow in the top left corner of the viewer.
-
-
-## Context Menu
-
-All Widgets/ Library Media and Regions have a **Context Menu** with a set of options that can be applied. This menu is located under the viewer for a selected Widget or Region or by right clicking a selected Widget or Region:
-
-![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
-
-
-
-- Control [Sharing](users_features_and_sharing.html) options to View, Edit and Delete for Users/User Groups
-- Select an **Audio** file from the Library to be attached to a Widget.
-
-{tip}
-Users can enter a Volume as well as a Loop parameter to determine whether the audio will loop for the duration of the attached Widget or just play through once. Audio will be stopped once it's parent Widget finishes playing.
-{/tip}
-
-Once an audio file has been attached to a Widget, a speaker icon will show in the **Timeline** which can be clicked to re-open to edit.
-
-{tip}
-If audio is assigned to a Widget which is the only Widget in the Region, the audio will stop once the Widget duration has expired but the Widget will remain visible on screen until the rest of the Layout has expired!
-{/tip}
-
-- Enter **Start** and **End** times for Widgets
-
-{feat}Widget Expiry Dates|v3{/feat}
-
-{version}
-**NOTE:** Start dates for Library Media can only be assigned once added to a Widget on a Layout or Playlist and **not** at Upload!
-{/version}
-
-Widgets that have expiry dates set can be identified by the following icons shown in the **Timeline**:
-
-- ![Set to Start](img/v2.3_layouts_tools_set_to_start.png)Start date has been set for a future date/time.
-
-- ![Set to Expire](img/v2.3_layouts_tools_set_to_expire.png)Expiry date has been set.
-
-- ![Delete on Expiry](img/v2.3_layouts_tools_delete_on_expiry.png)Widget has been marked to be deleted on reaching the expiry date.
-
-- ![Expired Widget](img/v2.3_layouts_tools_expired_widget.png) The Widget has expired but remains on the Layout
-
-  {tip}
-  Once the End date has passed the Widget will be removed from the Region. Expired Widgets that have **not** been set to **Delete on Expiry** will remain visible in the Layout Designer so that **Start** and **End** times can be re-adjusted if needed.
-  {/tip}
-
-Click on an icon to re-open to edit.
-
-{tip}
-It is important to note that the Layout will be marked invalid and not sent to Players if a Region is empty due to Widget expiry. It should also be noted that if at the time of download there was a valid Layout but the Player has since gone offline, the Layout will show with an empty Region.
-{/tip}
-
-{feat}Transitions|v3{/feat}
-
-- Select a **Fade/Fly In transition** for when the Widget starts playing.
-
-- Select a **Fade/Fly Out transition** to move onto the next Widget in the Timeline.
-
-  If there are no more Widgets to follow or the Layout is in the process of being removed then the **Exit Transition** will apply as configured in [Region Options](layouts_regions.html#region_options).
-
-Default Transition Type's and Duration can be entered by an Administrator on the **Settings** page using the **Defaults** tab, which can then be applied to all Widgets.
-
-Applied defaults can be overridden for Layouts by unticking the box in the properties panel.
-
-{tip}
-When Transitions are applied to a Widget by default, the properties panel will be blank.  Only manually entered Transitions will show on forms!
-{/tip}
-
-Play a full **Preview** of your Layout by clicking on the **Play** button located at the bottom of the viewer: 
-
-![Layout Preview](img\v3.1_layouts_preview.png)
-
-{tip}
-View your Preview in full screen by clicking on the icon in the top right corner of this window to toggle to full screen then press Play!
-{/tip}
-
-All content that has been assigned to a Region can also be viewed. Use the arrows to cycle through all Widgets that have been assigned.
-
-![Multiple Region Preview](img\v3.1_layouts_multiple_region_preview.png)
-
-{tip}
-Video files will only play in the full Layout Preview!
-{/tip}
-
-## Toolbar
-
-Add content to your Layout using an array of [Widgets](layouts_widgets.html) and [Library Media](layouts_library_search.html) accessed from the Toolbar located on the left hand side:
-
-![Content Panel](img/v3.1_layouts_content_panel.png)
-
-
-
-## Properties Panel
-
-Edit all the elements of your **Layout**, **Regions** and assigned **Widgets** using the available options in the properties panel located on the right.
-
-Use the tabs to configure media items using the available options for the content:
-
-![Media Edit Form](img\v3.1_layouts_edit_panel_media.png)
-
-{tip}
-**Layouts**, **Regions** and **Widgets** can have **Actions** attached to effect changes to the Layout, triggered by Touch, click or by webhook. [Interactive Actions](layouts_interactive_actions.html) are created and managed from the **Actions** tab in the properties panel.
-{/tip}
-
-Use the properties panel whilst in the main Layout view, to access further configurations to apply to the Layout such as adding a background colour or selecting/uploading an image to use as the background:
-
-![Layout Edit Form](img\v3.1_layouts_edit_options.png)
-
-
-
-### Adding a Background Image
-
-Add an Image which has already been added to your Library.  Select an Image from the Image Library Search function from the Toolbar and click or drag to the **Background Image** area of the properties panel:
-
-![Layout Background](img/v3.1_layouts_add_background.png)
-
-
-
-Ensure to **Save** clicking the button at the bottom of the properties panel:
-
-![Saved Background](img/v3.1_layouts_saved_background.png)
-
-{tip}
-New Images can also be added by using the **Upload** button from here!
-{/tip}
-
-## Layout Timeline 
-
-The [Layout Timeline](layouts_timeline.html) displays the duration of individual Widgets and gives you an overview of how your configured media will play on the Layout. Icons will show to identify any options that have been applied which can be clicked to view in more detail and to edit.
-
-![Region Timeline](img\v3.1_layouts_region_timeline.png)
-
-## Interactive Drawer
-
-Located to the right of the Timeline, the Interactive Drawer is used to add Widgets to be used when configuring [Interactive Actions](layouts_interactive_actions.html).
-
-![Interactive Drawer](img\v3.1_layouts_interactive_drawer.png)
-
-- 
-  Toggle the drawer to open and add Widgets or Library files by clicking to add or drag and drop.
-
-- Once added, set a **Target Region** and configure using the available options in the properties panel.
-
-
-{tip}
-Use the Search field in the drawer to find Widgets already added to the drawer!
-{/tip}
-
-### Delete/Revert Buttons
-
-Use as you create your designs to undo any changes or to completely remove from the Layout. 
-
-![Layout Buttons](img/v3.1_layouts_buttons.png)
-
-{tip}
-Hover over the buttons for further information as to what selecting a button will do!
-{/tip}
-
-Click the top **Exit** button to leave the Layout Designer and return to the Layout Grid.
 
 
 
