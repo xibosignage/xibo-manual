@@ -125,6 +125,8 @@ Each Widget has a set of Elements which are fed with the data returned by the Wi
 
 ![Element Properties](img/v4_layouts_element_properties.png)
 
+#### Data Slots
+
 Handle the paging of data when using more than one of the same Element for a Widget by specifying a **Data Slot** to use for each Element added.
 
 {tip}
@@ -139,7 +141,7 @@ You can also set whether to **Repeat items** in order to fill all data slots by 
 
 #### Grouping Elements
 
-Elements can be grouped and treated as 'one' for easy positioning, resizing and duplication:
+Elements can be grouped and treated as 'one' for ease of configuration,positioning, resizing and duplication:
 
 ![Duplicated Elements](img/v4_layouts_duplicated_elements.png)
 
@@ -215,11 +217,17 @@ Widgets can have Actions attached to effect changes to the Layout triggered by T
 
 ### Templates
 
-Select a [Template](layouts_templates.html) to use from the Toolbar.
+Select a Template to use from the Toolbar.
+
+{tip}
+[Published Layouts](layouts_editor.html#content-publish) can also be saved as a [Template](layouts_templates.html#content-save-layout-as-template)
+{/tip}
 
 {nonwhite}
 Select from one of our templates available from the [Xibo Exchange.](layouts_xibo_exchange.html)
 {/nonwhite}
+
+Selecting a Template will replace the Layout you are currently working on with your chosen Template. (This action is irreversible and so must be used with caution)
 
 ## Viewer
 
@@ -300,9 +308,9 @@ Setting a **Publish Date** is not an alternative to scheduling. Your Published L
 
 ![Publish Date](img/v4_layouts_publish_date.png)
 
-### Templates
+### {tip}
 
-Published Layouts can also be saved as a [Template](layouts_templates.html#content-save-layout-as-template)
+
 
 
 
