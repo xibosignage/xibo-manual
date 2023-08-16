@@ -41,7 +41,7 @@ Use this option with caution as this can create long-running media items. Ensure
 {/tip}
 
 - Order and Filter results by any column.
-- Select which columns to use and re-order.
+- Select which columns to use and re-order when using tabular formats.
 - Return results side by side and configure upper and lower row limits.
 - Shuffle items to play in a random sequence.
 - Customisable appearance settings.
