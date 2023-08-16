@@ -111,7 +111,7 @@ Click the star to deselect from the Favourites section.
 
 Add Widgets by drag and drop or click the widget to highlight and click on the viewer.
 
-#### Data Widgets
+#### Data Widgets and Elements
 
 **Data Widgets** also contain 'data' **Elements** which allows a User to place each element of the Widget exactly where needed rather than being bound by a **Static Template** design:
 
@@ -170,7 +170,9 @@ Take advantage of our Stencil designs by adding, configuring and duplicating. Ri
 
 #### Static Templates
 
-Select from the available **Static Templates** to add to your Layout and configure.
+Templates are included for specific Widgets to provide an easy way to configure/customise appearance etc. to suit your requirements.
+
+Static Templates are predominantly used in the [Playlist Editor](media_playlists.html#content-playlist-editor) and are available to add to Layouts.
 
 ### Global Elements 
 
@@ -307,8 +309,6 @@ Setting a **Publish Date** is not an alternative to scheduling. Your Published L
 {/tip}
 
 ![Publish Date](img/v4_layouts_publish_date.png)
-
-### {tip}
 
 
 

@@ -12,17 +12,17 @@ Use to display dynamic feed content on Layouts/ Playlists.
 
 {feat}Ticker|v3{/feat}
 
-The Ticker Widget primarily consists of a data source location which feeds into configured **Elements** when using the [Layout Editor](layouts_editor.html).
-
-**Static Templates** can be used in both the [Playlist](media_playlists.html#content-playlist-editor) and Layout Editors.
+The Ticker Widget primarily consists of a data source location which feeds into configured **Elements** when using the [Layout Editor](layouts_editor.html) and **Static Templates** which are available in both the [Playlist](media_playlists.html#content-playlist-editor) and Layout Editors.
 
 ## Overview
 
-- Select from the available [Elements](layouts_editor#content-data-widgets) of the Widget and choose where to position.
-- Create [Element Groups](layouts_editor.html#content-grouping-elements) for easy configuration with multiple elements.
-- Handle paging of data with [Data Slots](layouts_editor,html#content-data-slots) for each Element.
-- Variety of Static Templates.
+- Select from the available [Elements](layouts_editor#content-data-widgets-and-elements) of the Widget and choose where to position.
+- Complement Elements by adding [Global Elements.](layouts_editor.html#content-global-elements)
+- Create [Element Groups](layouts_editor.html#content-grouping-elements) for easier configuration/positioning when adding groups of multiple Elements/Global Elements.
+- Handle paging of data with [Data Slots](layouts_editor.html#content-data-slots) for each Element.
+- Variety of customisable [Static Templates](layouts_editor.html#content-static-templates).
 - Define how many items to display.
+- Set transition effects.
 - Duration can be set per item.
 
 {tip}
@@ -31,10 +31,6 @@ Use this option with caution as this can create long-running media items. Ensure
 
 - Select to start with items from the Start or End of the list.
 - Reverse and Random order of feed items can be selected.
-
-{tip}
-The Randomise option works offline; the entire feed is parsed, rendered and downloaded to the Player and then sorted in a random fashion for display. We use a Durstenfeld shuffle to randomise the order of items. Randomise works on the full feed, "Number of items" and "Take items from" options.
-{/tip}
 
 - Include a Copyright notice to show at the end of the feed.
 - Return results side by side.
@@ -57,12 +53,13 @@ The Randomise option works offline; the entire feed is parsed, rendered and down
 
 - Customisable appearance settings.
 
+- Create your own no data message to show in the event of no returned data.
+
   
 
 {tip}
 Create your own [RSS Feed](media_datasets.html#content-view-rss) using [DataSets](media_datasets.html).
 {/tip}
-
 
 
 
