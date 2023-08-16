@@ -170,7 +170,7 @@ Take advantage of our Stencil designs by adding, configuring and duplicating. Ri
 
 #### Static Templates
 
-Templates are included for specific Widgets to provide an easy way to configure/customise appearance etc. to suit your requirements.
+Templates are included for specific Widgets to provide an easy way to add content using a pre-styled design. Templates can be configured to affect the behavior of returned results as well as alter styling options to suit your requirements.
 
 Static Templates are predominantly used in the [Playlist Editor](media_playlists.html#content-playlist-editor) and are available to add to Layouts.
 
