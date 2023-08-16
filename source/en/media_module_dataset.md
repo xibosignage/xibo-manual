@@ -11,7 +11,7 @@ persona: "content manager"
 
 Display data held in a DataSet anywhere on a Layout using **Elements** or include **Static Templates** to show Tickers and Tables of data in Layouts/Playlists.
 
-{feat}DataSet | v4{/feat}
+{feat}DataSet |v4{/feat}
 
 The DataSet Widget primarily consists of a DataSet source which feeds into configured Elements and Static Templates.
 
