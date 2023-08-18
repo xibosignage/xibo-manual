@@ -65,6 +65,7 @@ Unread Notifications are shown in black text with those that have already been r
 
 {tip}
 Notifications will only show in the Notification Drawer if their release date has passed and if the logged in User has been assigned the notification, [Schedule Event Reminders](scheduling_events.html#content-reminders) for example.
+{/tip}
 
 - Click on the title of a **Notification** to open to read the full Notification message.
 
