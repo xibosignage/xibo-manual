@@ -43,8 +43,6 @@ When selected, the Player will open the webpage without any alterations and will
 **Please note:** There is no preview available with this option!
 {/tip}
 
-From v3.1.0, there is an additional feature with a mechanism to 
-
 ### Trigger a web hook
 
 Trigger a web hook for an active action (navigate to Widget, navigate to Layout a Scheduled Command etc.) to be shown in the event the webpage returns an error and fails to load.
