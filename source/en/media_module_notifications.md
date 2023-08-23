@@ -1,42 +1,61 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+minHeadingLevel: 2
+excerpt: "Display messages from the Notification Drawer"
+keywords: "notification center"
+persona: "content manager"
+---
 
 # Notifications
 
-## [[PLACEHOLDER]]
+Display [Notification](users_notifications.html) data anywhere on a Layout using **Elements**.
 
-Display messages created in the [Notification Drawer](users_notifications.html) of the CMS on Layouts.
+{feat}Notification|v4{/feat}
 
-{feat}Notification|v3{/feat}
+## Notification Elements
+
+[Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Notification Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of Notifications to use and where they can be placed.
+
+{tip}
+
+![Notification Elements](img/v4_media_module_notification_elements.png)
+
+Each Element has a set of configuration options in the Properties Panel. Control how items should be cycled by specifying a [Data Slot](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
 
 ## Overview
 
-- 
-- Choose to override the default **duration** if required.
+- Update Elements with new Notifications by creating them in the [Notification Drawer](users_notifications.html#content-create-notifications)
+- Update content without accessing Layouts.
+- Specify a maximum age in which to show messages.
+- Set a duration to apply to each individual message.
+- Apply a number of items to show.
+- Content for this media is cached by the Players for off-line playback.
 
-- Select if the duration should be per Notification or a total duration for **ALL** Notifications.
+#### Next...
 
-### Configuration
-
-- Complete a maximum notification **Age** for messages you wish to use in this Widget.
-- Select an optional **Effect** and transition **Speed** for the selected effect from the drop-down menu.
+[Notifications](users_notifications.html)
 
 
 
-#### Main 
 
-- Enter HTML in the box provided or toggle On the **Visual editor** to format the template using the inline editor.
-- Click the edit icon to open.
 
-![Notification Editor](img\v3.1_media_notifications_inline_editor.png)
 
-- Include the text merge fields to format from the **Snippets** menu, to pull in the **Subject** and **Body** information from the Notification Drawer. 
-- Click on the **Save** button.
 
-### No Data Template
 
-This template allows a user to include a message to ensure that the intended audience is not left with blank displays when there are no Notifications to display. 
 
-### Optional Style Sheet
 
-Include CSS to apply to the template structure.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
