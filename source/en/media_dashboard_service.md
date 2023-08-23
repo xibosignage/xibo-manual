@@ -1,4 +1,11 @@
-<!--toc=media-->
+---
+toc: "media"
+maxHeadingLevel: 3
+minHeadingLevel: 2
+excerpt: "Commercial Feature to securely display dashboard services"
+keywords: "connector, microsoft power bi, grafana, matomo"
+persona: "administrator"
+---
 
 # Dashboard Service
 
@@ -9,7 +16,7 @@ If you would like to take advantage of this feature, please contact your Adminis
 {nonwhite}
 The Xibo Dashboards Service is a commercial feature which allows Users to securely display dashboard services; Microsoft Power BI, Grafana and Matomo, on Layouts with automation and authentication handled by Xibo.
 
-**Please note:** This commercial feature is available from v3.2.0 and requires an API for configuration as further explained [here](/pricing#dashboards).
+**Please note:** This commercial feature requires an API for configuration as further explained [here](/pricing#dashboards).
 
 Once the Connector has been configured, add dashboards to display in Layouts using the [Dashboards Widget](/manual/en/media_module_dashboard.html)
 
@@ -21,7 +28,7 @@ From the CMS:
 - Scroll down to the **Connectors** section of the page. 
 - Click the **Configure** button for the **Xibo** **Dashboard Service** connector:
 
-![Dashboard Connector](img/media_dashboard_connector.png)
+![Dashboard Connector](img/v4_media_dashboard_connector.png)
 
 - Enter the API key you have been given (available in [My Account](/login)).
 
@@ -31,14 +38,14 @@ Customers on a Business or Enterprise Plan will have their API key pre-filled!
 
 - Tick to **Enable** to start providing the dashboard services
 
-![Configure Connector](img/media_dashboard_configure_connector.png)
+![Configure Connector](img/v4_media_dashboard_configure_connector.png)
 
 - Click to **Save.**
 
 - Click the **Configure** button again for the Xibo Dashboard service connector.
 - Using the **Credentials** section of the form, select the dashboard service(s) you wish to use:
 
-![Dashboard Credentials](img/media_dashboard_credentials.png)
+![Dashboard Credentials](img/v4_media_dashboard_credentials.png)
 
 Enter the following credentials:
 

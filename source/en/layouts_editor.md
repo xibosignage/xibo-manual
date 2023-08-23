@@ -67,7 +67,7 @@ New Images can also be added as a background by using the **Upload** button!
 
 ### Layering
 
-Zones, content and a Layout Background image can be ordered using z-index settings from the properties panel:
+Zones, content and a Layout background image can be ordered using z-index settings from the positioning tab in the properties panel:
 
 - Click in the item to highlight.
 - Select the tab with the grid icon from the properties panel.
@@ -125,6 +125,14 @@ Each Widget has a set of Elements which are fed with the data returned by the Wi
 
 ![Element Properties](img/v4_layouts_element_properties.png)
 
+
+
+Elements have their own Layer, which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos.
+
+Click to highlight an Element and click the positioning tab in the properties panel:
+
+![Elements Layer](v4_layouts_editor_elements_layer.png)
+
 #### Data Slots
 
 Handle the paging of data when using more than one of the same Element for a Widget by specifying a **Data Slot** to use for each Element added.
@@ -133,10 +141,10 @@ Handle the paging of data when using more than one of the same Element for a Wid
 For example the image above shows 2 **Description Elements** from the **Calendar Widget** have been added. One has a **Data Slot of 1** the other a **Data Slot of 2.** If 10 (Calendar Events) items were returned, Data Slot 1 would show items 1,3,5,7,9 with Data Slot 2 showing items 2,4,6,8,10.
 {/tip}
 
-In addition Elements have the option to **Pin this slot** so that it becomes static and won't cycle through items.
+In addition Elements have the option to **Pin this slot** so that the first data item to appear in that slot will stay there for the entire duration of the Widget and won't cycle through items with the others.
 
 {tip}
-You can also set whether to **Repeat items** in order to fill all data slots by using the checkbox on the **Advanced** tab of the properties panel.
+You can also set whether to **Repeat items** in order to fill all data slots to ensure that you don't have any empty slots by using the checkbox on the **Advanced** tab of the properties panel.
 {/tip}
 
 #### Grouping Elements
@@ -312,7 +320,7 @@ Setting a **Publish Date** is not an alternative to scheduling. Your Published L
 
 
 
+#### Next...
 
-
-
+[Media](media_library.html)
 

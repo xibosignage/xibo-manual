@@ -39,13 +39,9 @@ The icons shown within this dashboard are managed by the enabled [Feature](users
 
 ## Media Manager Dashboard
 
-The **Media Manager Dashboard** can be selected for **Users** who should only edit  [Media](media_library.html) they have been given access to from enabled [Share](users_features_and_sharing.html) options. This dashboard gives a restricted view of the CMS, presented in a grid style interface, which only lists each item the User has been granted access to. 
+The **Media Manager Dashboard** gives an overview of the current status of Library Media in the CMS to easily see number and size of items as well as easily view any unreleased or unused media:
 
 ![CMS Media Dashboard](img/v4_users_media_dashboard.png)
-
-{tip}
-Users can use the **Widgets From** dropdown menu to select [Widgets](media_modules.html) from **Draft** Layouts or **Playlists**!
-{/tip}
 
 ## Playlist Dashboard
 

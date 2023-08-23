@@ -44,7 +44,7 @@ All of the core Modules adopt this approach, exceptions noted below:
 
 ## Connectors
 
-Modules that rely on a third party service for data, [Stocks](media_modules_stocks.html) for example, need further configuration with API keys etc.
+Modules that rely on a third party service for data, [Stocks](media_module_stocks.html) for example, need further configuration with API keys etc.
 
 Once the Module has been enabled and you have the required API key, go to the **Applications** page under the **Administration** section of the main CMS menu and scroll down to the **Connectors** section of the page.
 

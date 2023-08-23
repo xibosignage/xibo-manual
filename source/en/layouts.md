@@ -180,3 +180,7 @@ Did you know…**.Layouts** and **Library files** can be [Assigned](displays.htm
 {tip}
 Use the **With Selected** option at the bottom of the Layout [grid](tour_cms_navigation.html#content-grids) to edit Tag assignments in bulk!
 {/tip}
+
+#### Next...
+
+[Layout Editor](layouts_editor.html)

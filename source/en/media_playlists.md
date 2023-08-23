@@ -116,7 +116,7 @@ Use the **Select Multiple Widgets** button at the bottom of the Playlist Editor 
 Use the **X** to close the Playlist Editor and return to the Playlist grid. 
 
 {tip}
-If you want to show your Playlist full screen on Displays, use the row menu and click [Schedule](scheduling_events.html) or add to show in a Layout using the [Playlist](media_modules_playlist.html) Widget.
+If you want to show your Playlist full screen on Displays, use the row menu and click [Schedule](scheduling_events.html) or add to a Layout using the [Playlist](media_modules_playlist.html) Widget.
 {/tip}
 
 ## Playlist Widgets

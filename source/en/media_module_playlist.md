@@ -25,6 +25,7 @@ Add the Playlist Widget to a Playlist Timeline to show content from one or multi
 - Set a Playlist to use its content as 'filler' only.
 - Control how multiple Playlists should be ordered to play content.
 - Play one item per cycle for a specified Play Count.
+- Cycle through items contained on a Playlist in the viewer to easily see the sequence.
 
 {tip}
 [Playlists](media_playlists.html) can also be created and managed independently to Layouts and would therefore not require further user access rights to Layouts or the Layout Editor to add and manage content. Edits made to a Playlist will update all Playlist Widgets that the Playlist has been added to.
@@ -36,7 +37,8 @@ Add the Playlist Widget to create a Playlist of content as a one time assignment
 
 ![Add Playlist Widget](img/v4_media_modules_playlist_add_widget.png)
 
-Use the **Content Synchronisation Key** to sync with Playlists on other Layouts. Playlists with the same key will be synchronised when the Layout is scheduled as a [Synchronised Event.](scheduling_events.html#content-synchronised-events)
+- Use the **Content Synchronisation Key** to sync with Playlists on other Layouts. Playlists with the same key will be synchronised when the Layout is scheduled as a [Synchronised Event.](scheduling_events.html#content-synchronised-events)
+
 
 {tip}
 **Scenario:**
@@ -46,7 +48,10 @@ You have a Synchronised Event with 3 Displays and 3 different Layouts. Each Layo
 You could also set two different Playlists to sync differently which you could set to `sync_1` and `sync-2` for example.
 {/tip}
 
-Click the icon in the right hand corner of the Playlist to open the [Playlist Editor](media_playlists.html#content-playlist-editor) to add and configure content.
+- Set to **Loop** only if the Playlist contains just one Widget and that Widget needs to update periodically (e.g. RSS Ticker) and it needs to update more frequently than the duration of the overall Layout.
+
+- Click the icon in the right hand corner of the Playlist to open the [Playlist Editor](media_playlists.html#content-playlist-editor) to add and configure content.
+
 
 ## Add to Playlist
 
@@ -91,9 +96,11 @@ Once enabled all Playlists selected will be treated as one "list" and will only 
 Use the **Play count** to determine how many plays each Widget should have before moving onto the next Widget in the list.
 {/tip}
 
-Click the Back button to exit the Playlist Editor and see a preview of all content contained in the Playlist on the viewer. Use the arrows at the bottom right corner of the Playlist to cycle through the order of content.
+- Click the **Back** button to exit the Playlist Editor
 
+See a preview of all content contained in the Playlist on the viewer, use the arrows at the bottom right of the Playlist to cycle through the order of content:
 
+![Playlist Viewer](img/v4_media_module_playlist_viewer.png)
 
 
 
