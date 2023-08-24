@@ -61,7 +61,7 @@ Zones are only available when creating a new **Template** or by selecting **Alte
 ![Template Layout Editor](img/v4_layouts_templates_editor.png)
 
 {tip}
-Use the **Snap to** buttons to get precise positioning or use the Positioning tab!
+Use the buttons in the bottom right of the viewer to select to **Snap to Grid**, **Snap to Borders** or **Snap to Elements** for easier positioning when adding items.
 {/tip}
 
 **Zones** can be added from the toolbar:
@@ -77,7 +77,7 @@ Use the **Snap to** buttons to get precise positioning or use the Positioning ta
 
 ### Layering
 
-Use [Layering](layouts_editor.html#content-layering) for overlapping Zones/content.
+Use the positioning tab in the properties panel to set [Layering](layouts_editor.html#content-layering) for overlapping Zones/content.
 
 {tip}
 Right click to show a [context menu](layouts_editor.html#content-) and easily move items backwards and forwards.
