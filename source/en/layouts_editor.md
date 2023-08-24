@@ -95,7 +95,9 @@ Make a start adding content to the Layout from the Toolbar:
 
 ### Widgets
 
-From the top of the Toolbar, click to utilise a variety of Widgets to add content to your Layouts.
+From the top of the Toolbar, click to utilise a variety of Widgets to add content to your Layouts:
+
+![Widgets](img/v4_layouts_editor_widgets.png)
 
 {tip}
 Widgets can be disabled/enabled by an Administrator in the [Modules](media_modules.html) section of the CMS.

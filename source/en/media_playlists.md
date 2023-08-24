@@ -37,7 +37,7 @@ Select Playlists under the Library section of the main CMS menu.
 
 - Select the **Add Playlist** button and complete the form fields:
 
-![Add Playlist](img/v4_media_playlists_add.png)(NEW)
+![Add Playlist](img/v4_media_playlists_add.png)
 
 [Folders](https://test.xibo.org.uk/manual/en/tour_folders.html) are used to organise, search and easily [Share](https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Playlists saved to a Folder will inherit the access options applied to that Folder. 
 

@@ -45,6 +45,18 @@ Tags can have a **Required Value** enabled so that a Value must be selected in o
 
 - Enable from the row menu for a selected Tag and click **Edit**.
 
+You can also provide filter options to **exclude** items with specific tags from searches:
+
+- Enter `-Tag` to exclude the tag from search results.
+- Enter `-|Value` to exclude the value from search results.
+- Enter `-Tag|Value` to exclude both tag and value from search results.
+
+{tip}
+You can have a comma separated mix of all the above!
+{/tip}
+
+- If you want to show all items that have **not** got a tag then enter `--no-tag`
+
 ## Edit/Delete Tags
 
 From the Tags page use the row Menu for a selected Tag to **Edit** or **Delete**.
