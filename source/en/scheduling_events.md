@@ -155,21 +155,21 @@ To ensure the play order of Layouts we recommend including them in a [Campaign](
 
 ### Priority
 
-- Set the **Priority** of an Event with 0 considered the lowest Priority. 
+- Set the **Priority** of an Event with 0 considered the lowest Priority.
 
-Events with the highest number will play in preference to lower numbers. Setting a Priority can be used to override all other non-priority Events in a schedule.
+Events of the same Event Type with the highest number will play in preference to lower numbers. 
 
 {tip}
-
-A good example to use Priority would be in a way to alter the Schedule at a specific time, for example, a normal rotation during the day with a Priority Event at lunchtime which shows specific ‘lunch’ information (i.e. Lunchtime specials on a cafe menu).
-
-If a Player has a schedule containing Events which are all Priority 0, then all of the Events will be shown in rotation together.
-
-If 1 of the Events has a Priority of 1, then this will be the only Event shown.
-
-If there are some Events with Priority 0, some with Priority 1 and some with Priority 2 only the Priority 2 Events will be shown, in a rotation for that Scheduled period (as the highest Priority)
-
+Layouts/Campaigns/Images/Videos and Playlists will be treated as the same Event Type when taking Priorities into consideration.
 {/tip}
+
+A good example to use Priority would be in a way to alter the scheduling of a loop of Layouts at a specific time. For example, a normal rotation of Layouts during the day with a Priority Event at lunchtime which shows specific ‘lunch’ information (i.e. Lunchtime specials on a cafe menu).
+
+If a Player had a schedule containing Events of the same Event Type which were all Priority 0, then all of the Events will be shown in rotation together.
+
+If 1 of these Events had a Priority of 1, then this would be the only Event shown.
+
+If there were some Events with Priority 0, some with Priority 1 and some with Priority 2 only the Priority 2 Events will be shown, in a rotation for that Scheduled period (as the highest Priority)
 
 ### Maximum Plays per Hour
 

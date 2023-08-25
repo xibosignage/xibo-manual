@@ -3,7 +3,7 @@ toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Configurable options in the CMS Settings for Administrators"
-keywords: "resize images, transition defaults, automatically publish layout, proof of play default settings, tidy library, maintenance settings, network settings, regional settings, set timezone, set language, password policy, password reminder, two factor authentication, fonts"
+keywords: "resize images, transition defaults, automatically publish layout, proof of play default settings, tidy library, maintenance settings, network settings, regional settings, set timezone, set language, password policy, password reminder, two factor authentication, fonts, applications"
 persona: "administrator"
 ---
 
