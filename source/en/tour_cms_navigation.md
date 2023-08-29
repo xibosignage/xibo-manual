@@ -18,10 +18,10 @@ The menu will only show the sections/pages which have been [Feature](users_featu
 ![CMS Main Menu](img/v4_tour_cms_navigation_cms_menu.png)
 
 {tip}
-Users can select where this menu can be placed, vertically on the left hand side or horizontally along the top of the CMS,  from [User Preference](tour_user_access.html#content-preferences) settings!
+Select where this menu can be placed, vertically on the left hand side or horizontally along the top of the CMS,  from the [User Preference](tour_user_access.html#content-preferences) settings!
 {/tip}
 
-Clicking on **Dashboard** will take you back to your [User Dashboard](users_dashboards.html) homepage. 
+Click on **Dashboard** to take you back to your [User Dashboard](users_dashboards.html) homepage. 
 
 ## Grids 
 
@@ -84,7 +84,7 @@ Use the **Column Visibility** button to see available columns.
 ![Column Visibility](img/v4_tour_cms_navigation_column_visibility.png)
 
 
-If too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row!
+If too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row:
 
 ![Additional Rows](img/v4_tour_cms_navigation_grids_addtional_rows.png)
 
@@ -209,3 +209,6 @@ Once saved, this particular action will be automatically submitted the next time
 {tip}
 Forms that you have enabled to 'auto submit' can be reset from your [User Profile](tour_user_access.html#content-user-profile) settings.
 {/tip}
+
+
+

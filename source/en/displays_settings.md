@@ -192,3 +192,6 @@ Click on **Displays** under the Displays section of the main CMS menu:
 Each setting can also be overridden to suit individual Display requirements!
 {/tip}
 
+#### Next...
+
+[Reporting](displays_metrics.html)

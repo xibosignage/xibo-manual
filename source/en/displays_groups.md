@@ -26,7 +26,7 @@ Use the **Add Display Group** button to create a new Display Group and complete 
 Display Groups can be saved to [Folders](/manual/en/tour_folders.html) to easily control User/User User Group levels of interaction for Display Groups as well as provide an additional way to organise.
 
 {tip}
-Display Groups that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-2-share) options that been applied to the destination Folder for the User/User Group!
+Display Groups that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-share) options that been applied to the destination Folder for the User/User Group!
 {/tip}
 
 Displays need to be assigned to the Display Group in one of two ways, by manually adding or it can be controlled with filter criteria as a Dynamic Group.
@@ -101,5 +101,7 @@ Each Display Group has a row menu containing a number of actions/shortcuts.
 Use the **With Selected** option at the bottom of the grid to easily perform bulk actions for multiple Display Groups!
 {/tip}
 
+#### Next...
 
+[Display Sync Groups](displays_sync_groups.html)
 

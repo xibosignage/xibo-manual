@@ -90,3 +90,7 @@ Tags can also be assigned to multiple objects using the [With Selected](tour_cms
 
 When exporting a Layout the **Layout Tag** will also be exported. Select the **Import Tags** option to add the Tag on Layout import if required.
 {/tip}
+
+#### Next...
+
+[Folders](tour_folders.html)

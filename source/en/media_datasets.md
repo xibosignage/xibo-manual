@@ -9,7 +9,7 @@ persona: "media manager, content manager"
 
 # DataSets
 
-DataSets are used to design and store tabular data which are created and managed independently to [Layouts](https://xibosignage.com/manual/en/layouts.html) and [Playlists](media_playlists.html). Once created, DataSets are added to Layouts and Playlists using the [DataSet](media_module_dataset.html) Widget.
+DataSets are used to design and store tabular data which are created and managed independently to [Layouts](layouts.html) and [Playlists](media_playlists.html). Once created, DataSets are added to Layouts and Playlists using the [DataSet](media_module_dataset.html) Widget.
 
 DataSets can also be used to create your own [RSS Feeds](media_datasets.html#content-view-rss) to add to the [Ticker](media_module_ticker.html) Widget.
 
@@ -137,7 +137,8 @@ If no **Row Limit** is set here the default will apply which is 10,000 rows per 
 {/cloud}
 {/nonwhite}
 
-Click to **Save**.
+- Click to **Save**.
+
 
 ## Create and Configure Columns
 
@@ -306,3 +307,8 @@ Multiple DataSets can be selected and deleted in bulk using the [With Selected](
 
 Set [Share](users_features_and_sharing.html#content-share) options for User/User Group access to individual DataSets.
 
+
+
+#### Next...
+
+[DataSet Widget](media_module_dataset.html)

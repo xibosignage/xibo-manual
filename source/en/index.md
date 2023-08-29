@@ -54,13 +54,13 @@ The [[PRODUCTNAME]] software centers on 5 core concepts:
 
 ## Users
 
-[Users](users.html) are added to the CMS by Administrators and given a **Username** and **Password** to securely log in.
+[Users](users_administration.html) are added to the CMS by Administrators and given a **Username** and **Password** to securely log in.
 
 {tip}
 For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory and ADFS!
 {/tip}
 
-[[PRODUCTNAME]] supports 3 [User Types](users_administration.html) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
+[[PRODUCTNAME]] supports 3 [User Types](users_administration.html#content-user-types) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
 
 ## Displays
 
@@ -74,7 +74,7 @@ Media is the content we want to show on Displays which is generally split into t
 - **Layout based media** - media configured directly on a Layout which does not have an associated file (RSS feeds and Weather forecasts for example)
 
 {tip}
-[[PRODUCTNAME]] uses powerful [Widgets](layouts_widgets.html) which integrate dynamic third-party content from a variety of sources!
+[[PRODUCTNAME]] uses powerful [Widgets](layouts_editor.html#content-widgets) which integrate dynamic third-party content from a variety of sources!
 {/tip}
 
 ## Layouts
@@ -86,7 +86,7 @@ A [Layout](layouts.html) is the complete content design to be shown on Displays.
 [Scheduling](scheduling_events.html) is highly flexible and supports scheduling to single Displays as well as to [Display Groups](displays_groups.html). Displays check for new scheduled content periodically and will download new items in advance of playback. 
 
 {tip}
-**Default Layouts** should be assigned to Displays to be shown when nothing else is scheduled!
+[Default Layouts](displays.html#content-default-layout) should be assigned to Displays to be shown when nothing else is scheduled!
 {/tip}
 
 ## Core Workflows
@@ -97,7 +97,7 @@ A [Layout](layouts.html) is the complete content design to be shown on Displays.
 
 ![Workflow 1](img/v4_tour_workflow_1.png)
 
-2. Selecting **Video**/**Image** files or saved **Playlists** to directly [Schedule](scheduling_events.html):
+2. Selecting **Video**/**Image** files or saved **Playlists** to directly [Schedule](scheduling_events.html#content-media-scheduling):
 
 ![Workflow 2](img/v4_tour_workflow_2.png)
 
@@ -119,3 +119,6 @@ Customers on a Professional, Business or Enterprise Plan have access to our expe
 
 {/nonwhite}
 
+#### Next...
+
+[First time User Access](tour_user_access.html)

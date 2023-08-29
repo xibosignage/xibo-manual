@@ -99,10 +99,10 @@ Select from one of the pre-configured **User Groups** and continue through the s
 - Select a [Folder](tour_folders.html) to easily share user objects with the new User.
 
   {tip}
-  We recommend using Folders to make sharing user objects with multiple Users a simplified process. All items contained or moved into a Folder will inherit the View, Edit, Delete [Share](users_features_and_sharing.html) options that have been enabled for Users/User Groups. 
+  We recommend using Folders to make sharing user objects with multiple Users a simplified process. All items contained or moved into a Folder will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-share) options that have been enabled for Users/User Groups. 
   {/tip}
 
-- A [Home Folder](manual/en/tour_folders.html#content-home-folder) can be optionally set for a User by right clicking a Folder and selecting the **Set as Home** option:
+- A [Home Folder](tour_folders.html#content-home-folder) can be optionally set for a User by right clicking a Folder and selecting the **Set as Home** option:
 
   ![Home Folder](img/v4_users_set_home_folder.png)
 
@@ -143,7 +143,7 @@ Enter the required information for each tab:
 - Select which [User Group](users_groups.html) this User should belong to so that they can access the relevant parts of the CMS as required for their role.
 
   {tip}
-  Use **System Notifications** as the Initial User Group for Users that do not require permission to anything within the CMS but require notification emails when there are system issues as System Administrators!
+  Use **System Notifications** as the initial User Group for Users that do not require access to anything within the CMS but require notification emails when there are system issues as System Administrators!
   {/tip}
 
 - Use the drop down to select from the choice of [Dashboards](users_dashboards.html) for the Users 'Homepage' to only allow access to the relevant parts of the CMS. The User will be taken to this Dashboard after first login.
@@ -170,7 +170,7 @@ User A is re-assigned an unlimited quota (0), their Library Quota is now 50 MB a
 
 #### Home Folder
 
-A [Home Folder](manual/en/tour_folders.html#content-home-folder) can be optionally set for a User by right clicking a Folder (or creating a new Folder) and select the **Set as Home** option.
+A [Home Folder](tour_folders.html#content-home-folder) can be optionally set for a User by right clicking a Folder (or creating a new Folder) and select the **Set as Home** option.
 
 #### Reference
 
@@ -248,3 +248,7 @@ With our **Xibo Cloud Hosting** we do not impose limits on concurrent access or 
 {/cloud}
 
 {/nonwhite}
+
+#### Next...
+
+[User Groups](users_groups.html)

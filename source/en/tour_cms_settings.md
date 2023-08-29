@@ -67,7 +67,7 @@ The default for Cloud customers is set at 10,000 rows per DataSet.
 
 ## **Displays**
 
-This tab allows you to select a **Default Layout** to automatically assign to added Displays and set defaults for **Latitude** and **Longitude** for all Geo aware previews throughout the CMS.
+This tab allows you to select a [Default Layout](displays.html#content-default-layout) to automatically assign to added Displays and set defaults for **Latitude** and **Longitude** for all Geo aware previews throughout the CMS.
 
 ### Proof of Play Default Settings
 
@@ -139,7 +139,7 @@ The Tidy Library function is turned off by default for **Xibo Cloud Hosting** cu
 {/cloud}
 {/nonwhite}
 
-Allow a User to tidy files from the Library page by using the checkbox to **Enable Library Tidy**.
+Allow a User to tidy files from the [Library](media_library.html#content-tidy-library) page by using the checkbox to **Enable Library Tidy**.
 
 ## Maintenance 
 
@@ -274,7 +274,9 @@ If the new font does not show in the text editor after upload, try clearing the 
 Fonts with other OS/2 tags may produce an error on uploading and may not display correctly.
 {/version}
 
-## Further Administration set up
+#### Next...
+
+### Further Administration set up
 
 Please see the following pages for further **Administration** set up:
 

@@ -89,7 +89,7 @@ Access rights for a User can also be assigned directly from the object itself:
 {tip}
 When logged in, a **User** will only see a list of other Users from their own User Group on clicking **Share**. A **Super Admin User** will see all Users in the system.
 
-Sharing options for **Widgets** are assigned using the context menu in the [Layout Editor](layouts_editor.html)!
+Sharing options for **Widgets** are assigned using the [context menu](layouts_editor.html#content-context-menu) in the Layout Editor!
 
 {/tip}
 

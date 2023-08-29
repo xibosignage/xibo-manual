@@ -80,7 +80,7 @@ Use the buttons in the bottom right of the viewer to select to **Snap to Grid**,
 Use the positioning tab in the properties panel to set [Layering](layouts_editor.html#content-layering) for overlapping Zones/content.
 
 {tip}
-Right click to show a [context menu](layouts_editor.html#content-) and easily move items backwards and forwards.
+Right click to show a [context menu](layouts_editor.html#content-context-menu) and easily move items backwards and forwards.
 
 [Sharing]((users_features_and_sharing.html#content-share)) options are particularly useful if you want a User to only have access to a section of the Layout to manage.
 {/tip}
@@ -90,7 +90,7 @@ Add both [content](layouts_editor.html#content-toolbar) and Zones to your Templa
 ![Example Template](img/v4_layouts_templates_example.png)
 
 {tip}
-Adding multiple items to one zone will create a [Playlist](media_modules_playlist.html).
+Adding multiple items to one zone will create a [Playlist](media_module_playlist.html).
 {/tip}
 
 Once your Template is complete, use the menu at the top of the editor to **Publish**:
@@ -164,7 +164,9 @@ When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tag
 Use the **With Selected** option at the bottom of the Templates grid to perform bulk actions for multiple Templates! 
 {/tip}
 
+#### Next...
 
+[Overlay Layouts](layouts_overlay.html)
 
 
 

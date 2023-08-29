@@ -86,3 +86,6 @@ Control the User Groups access to the relevant parts of the CMS by selecting [Fe
 
 Make a **Copy** of an existing User Group from the row menu to make adjustments and easily create new Groups to suit your requirements.
 
+#### Next...
+
+[Features and Sharing](users_features_and_sharing)

@@ -37,7 +37,7 @@ If users should also have access to the Layouts/Layout content, ensure that this
 - Give your Campaign a **Name** for easy identification in the CMS including optional [Tags](tour_tags.html).
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected.) option at the bottom of the Campaign grid!
+Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Campaign grid!
 {/tip}
 
 ### Cycle Based Playback
@@ -111,7 +111,7 @@ If users should also have access to the Layouts/Layout content, ensure that this
 - Give your Ad Campaign a **Name** for easy identification in the CMS including optional [Tags](tour_tags.html).
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-Multi---select--with-selected.) option at the bottom of the Campaign grid!
+Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-Multi---select--with-selected) option at the bottom of the Campaign grid!
 {/tip}
 
 - Use the drop down to set the **Target Type** for this Ad Campaign as **Plays**, **Budget** or **Impressions**.

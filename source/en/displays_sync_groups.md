@@ -12,7 +12,7 @@ persona: "schedule manager, display manager, administrator"
 Sync Groups contain the Displays that will show synchronised content. Content can be synchronised to play across 2 or more Displays in a mirrored or video wall configuration when scheduling a [Synchronised Event](scheduling_events.html#content-synchronised-events).
 
 {tip}
-Sync [Playlists](media_playlists.html) on different Layouts using the **Content Synchronisation Key**.
+Sync [Playlists](media_module_playlist.html) on different Layouts using the **Content Synchronisation Key**.
 {/tip}
 
 [Displays](displays.html) first need to be assigned to a **Sync Group**:
@@ -49,7 +49,9 @@ Manage a Sync Group by using the row menu:
 - Select **Edit** to set an alternative Lead Display
 - Select **Members** to manage which Displays are members of the group.
 
+#### Next...
 
+[Scheduling Synchronised Events](scheduling_events.html#content-synchronised-events)
 
 
 

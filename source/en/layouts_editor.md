@@ -1,5 +1,5 @@
 ---
-toc: "Layout Editor"
+toc: "layouts"
 maxHeadingLevel: 4
 minHeadingLevel: 2
 excerpt: "Create Layouts using the Layout Editors flexible design elements"
@@ -28,7 +28,7 @@ If users should also have access to the Layout content (image files for example)
 - Include optional [Tags](tour_tags.html).
 
 {tip}
-Tags and Folders can also be assigned to multiple Layouts using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected.) option at the bottom of the Layout grid!
+Tags and Folders can also be assigned to multiple Layouts using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Layout grid!
 {/tip}
 
 - Enter a string to be used as the **Code Identifier** to identify this Layout when used with [Interactive Actions](layouts_interactive_actions.html)
@@ -236,7 +236,7 @@ Select a Template to use from the Toolbar.
 {/tip}
 
 {nonwhite}
-Select from one of our templates available from the [Xibo Exchange.](layouts_xibo_exchange.html)
+Select from one of our templates available from the [Xibo Exchange.](layouts.html#content-xibo-exchange)
 {/nonwhite}
 
 Selecting a Template will replace the Layout you are currently working on with your chosen Template. (This action is irreversible and so must be used with caution)

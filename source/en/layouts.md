@@ -31,7 +31,7 @@ If Users should also have access to the content of the Layout (image media files
 ## Adding Layouts
 
 **When should a User create a new Layout? When should a User add to an existing Layout?**
-Layouts provide vast flexibility in the system, but can also cause confusion. The recommended usage for a Layout is to only contain the design and media required for a set of related content that should be scheduled at the same time.
+Layouts provide vast flexibility in the system. The recommended usage for a Layout is for it to only contain the design and media required for a set of related content that should be scheduled at the same time.
 
 {tip}
 **Scenario**:

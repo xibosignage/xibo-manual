@@ -11,14 +11,14 @@ persona: "user"
 
 Enter the web address (URL) of your CMS instance. Your **Super Administrator** will be able to tell you where to go to log in and give you your initial login credentials to access the CMS.
 
-During the CMS installation process, a **Username** and **Password** is provided which grants unrestricted access to all areas of the CMS as a [Super Administrator User](users_administration.html#content-user-types.html). Administrators have a number of login management options which can be set for [Users](users_administration.html) from the [CMS Settings](tour_cms_settings.html) page.
+During the CMS installation process, a **Username** and **Password** is provided which grants unrestricted access to all areas of the CMS as a [Super Administrator User](users_administration.html#content-super-admin-user). Administrators have a number of login management options which can be set for [Users](users_administration.html) from [CMS Settings](tour_cms_settings.html#content-users).
 
 ## Login
 
 The CMS is protected by an authentication system, enter your **Username** and **Password** and click to login. All pages in the CMS are authenticated and if you are not logged in a login form will appear.
 
 {tip}
-The CMS uses cookies to track whether a Users are logged in or not. If you are experiencing trouble logging in you may need to adjust your browser settings for cookies.
+The CMS uses cookies to track whether a User is logged in or not. If you are experiencing trouble logging in you may need to adjust your browser settings for cookies.
 {tip}
 
 Once logged in you will see your [User Dashboard](users_dashboards.html), which serves as your homepage. 
@@ -36,7 +36,7 @@ Located in the top right of the CMS, click on the icon to manage your **User Pro
 ![User Profile](img/v4_tour_user_profile.png)
 
 {tip}
-The CMS time and timezone which has been set in the **Regional** [CMS Settings](tour_cms_settings.html) are shown here!
+The CMS time and timezone which has been set in the **Regional** [CMS Settings](tour_cms_settings.html#content-regional) are shown here!
 {/tip}
 
 ## Preferences
@@ -100,11 +100,11 @@ Once enabled, on each login after entering the **Username** and **Password** you
 
 ![QR Code](img/v4_tour_user_2fa_qrcode.png)
 
-Once enabled, on each login after entering the **Username** and **Password** you will be asked to provide the 6 digit **code** displayed in the Google Authenticator app to complete log in.
+Once enabled, after entering the **Username** and **Password** you will be asked to provide the 6 digit **code** displayed in the Google Authenticator app to complete log in each time.
 
 {tip}
 Ensure that your phone and server have the correct time and date to avoid errors.
-You will need to enter your password to verify any changes made to the Two Factor Authentication options.
+You will need to enter your password to verify any changes made to the **Two Factor Authentication** options.
 {/tip}
 
 ### Generate Recovery Codes
@@ -133,3 +133,6 @@ Applications that a User has authorised to act on their behalf within the CMS ca
 At the current time the CMS does not provide individual Users with a method of revoking access to an application. Please speak with your Administrator to request removal of an [Application](tour_cms_settings.html#content-applications).
 {/tip}
 
+#### Next...
+
+[Navigating the CMS](tour_cms_navigation.html)

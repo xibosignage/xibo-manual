@@ -51,7 +51,7 @@ Library media can be either uploaded directly using the **Add Media** button or 
 {tip}
 Add Media to the CMS Library and save to [Folders](tour_folders.html) to have media ready for use for the appropriate [Users](users_administration.html)/[User Groups](users_groups.html)! 
 
-Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor.html#content-toolbar)
+Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor.html#content-library-search)
 {/tip}
 
 ### Add Media (Upload)
@@ -96,7 +96,7 @@ Files can also be uploaded individually and have different Folder locations spec
 - Once all files have been successfully uploaded, click **Done**.
 
 {tip}
-Media files can also be uploaded directly to Layouts/Playlists using the upload tool from a [Library Search.](layouts_editor.html#content-toolbar) Media uploaded to a Playlist have an additional option to set [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates).
+Media files can also be uploaded directly to Layouts/Playlists using the upload tool from a [Library Search.](layouts_editor.html#content-library-search) Media uploaded to a Playlist have an additional option to set [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates).
 
 Media files that are uploaded and added directly to Layouts/Playlists are also saved by default to the CMS Media Library.
 {/tip}
@@ -189,7 +189,7 @@ This will show if the selected **media file** is directly assigned/scheduled to 
 - Use the Layout tab to see what **Layouts** the media file is currently included in. 
 
 {tip}
-Use the **With Selected** option at the bottom of the Library [Grid](tour_grids.html) to muti-select rows to easily perform bulk actions!
+Use the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Library grid to muti-select rows to easily perform bulk actions!
 {/tip}
 
 ### Schedule
@@ -237,3 +237,7 @@ Once enabled Users can click on a **Tidy Library** button located at the top of 
 {tip}
 This will only delete files that are owned by the logged in User which are no longer in use on a Layout or Assigned to a Display Group/Display.
 {/tip}
+
+#### Next...
+
+[Modules and Connectors](media_modules.html)

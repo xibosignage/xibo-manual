@@ -9,7 +9,7 @@ persona: "content manager"
 
 # Playlists
 
-Playlists contain a timeline of ordered content which can be created directly on a Layout as a one time assignment using the [Playlist](media_modules_playlist.html) Widget or created and managed independently for further re-use across multiple Layouts from the Playlists page.
+Playlists contain a timeline of ordered content which can be created directly on a Layout as a one time assignment using the [Playlist](media_module_playlist.html) Widget or created and managed independently for further re-use across multiple Layouts from the Playlists page.
 
 ## Feature Overview:
 
@@ -73,7 +73,7 @@ If you want to show your dynamic Playlist full screen on Displays, use the row m
 
 ### Playlist Editor
 
-Saving the form **without** the **Dynamic** option selected or when adding the [Playlist](media_modules_playlist.html) Widget to a Layout, the **Playlist Editor** will open to manually add content:
+Saving the form **without** the **Dynamic** option selected or when adding the [Playlist](media_module_playlist.html) Widget to a Layout, the **Playlist Editor** will open to manually add content:
 
 ![Manual Assignment](img/v4_media_playlists_manual.png)
 
@@ -116,7 +116,7 @@ Use the **Select Multiple Widgets** button at the bottom of the Playlist Editor 
 Use the **X** to close the Playlist Editor and return to the Playlist grid. 
 
 {tip}
-If you want to show your Playlist full screen on Displays, use the row menu and click [Schedule](scheduling_events.html) or add to a Layout using the [Playlist](media_modules_playlist.html) Widget.
+If you want to show your Playlist full screen on Displays, use the row menu and click [Schedule](scheduling_events.html) or add to a Layout using the [Playlist](media_module_playlist.html) Widget.
 {/tip}
 
 ## Playlist Widgets
@@ -147,7 +147,7 @@ Items added to a Playlist have an additional option of setting Start and End tim
 
 Right click on an item in a Playlist to **Edit Expiry Dates** or set when [uploading media](media_library.html#content-add-media-upload) directly to a Playlist.
 
-Selecting Upload new from a [Library Search](layouts_editor.html#content-toolbar) will have an additional **Set Expiry Date** option:
+Selecting Upload new from a [Library Search](layouts_editor.html#content-library-search) will have an additional **Set Expiry Date** option:
 
 ![Expiry Dates](img/v4_media_playlists_upload_expiry.png)
 
@@ -211,7 +211,7 @@ Any changes made to a Scheduled Playlist will be automatically pushed to Players
 
 ## Creating a Playlist on a Layout
 
-- Add the [Playlist Widget](media_modules_playlist.html) to your Layout and manually add Media using the [Playlist Editor](media_playlists.html#playlist-editor) (as outlined above.)
+- Add the [Playlist Widget](media_module_playlist.html) to your Layout and manually add Media using the [Playlist Editor](media_playlists.html#playlist-editor) (as outlined above.)
 
 
 

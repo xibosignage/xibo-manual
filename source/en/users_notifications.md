@@ -25,7 +25,7 @@ Notifications need to be enabled for Users/User Groups using [Features](users_fe
 ![Notification Features](img/v4_users_notification_feature.png)
 
 {version}
-**NOTE:** Ensure a **Sending Email** address has been included on the Network tab for [CMS Settings](tour_cms_settings.html) page prior to enabling Notifications!
+**NOTE:** Ensure a **Sending Email** address has been included on the [Network](tour_cms_settings.html#content-network) tab from the **CMS Settings** page prior to enabling Notifications!
 {/version}
 
 ## System Notifications
@@ -33,7 +33,7 @@ Notifications need to be enabled for Users/User Groups using [Features](users_fe
 [[PRODUCTNAME]] raises various **System Notifications** to report on the health of the system as a whole. 
 
 {tip}
-Notifications are emailed to the **Admin** email address configured in [CMS Settings](tour_cms_settings.html) from the **Network** tab. 
+Notifications are emailed to the **Admin** email address configured in **CMS Settings** from the [Network](tour_cms_settings.html#content-network) tab. 
 {/tip}
 
 Notifications will also be sent to Users who belong to User Groups configured to receive System Notifications or who have been configured to receive these Notifications themselves. System Notifications are managed from the User/User Group edit form:
@@ -93,7 +93,7 @@ The email address entered on the User record will be used. Users who should rece
 - Use the **Interrupt** option to automatically redirect Users to a page that will show the Notification in full. 
 
 {tip}
-Useful for important User messages. Users would need to click on Continue to carry on navigating the CMS.
+This option is useful for important User messages. Users would need to click on Continue to carry on navigating the CMS.
 
 Ensure that **Enable Email Alerts** has been enabled from the **Maintenance** tab on the **Administration Settings** page. If you are unsure, speak to your Administrator.
 {/tip}
@@ -127,3 +127,6 @@ Attachments can be downloaded by Users from the Notification Centre.
 
 Add the [Notification Widget](media_module_notifications.html) to Layouts/Playlists to show messages on Displays created from the **Notification Centre**.
 
+#### Next...
+
+[Layouts](layouts.html)

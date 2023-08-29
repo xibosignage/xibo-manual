@@ -59,3 +59,6 @@ Overlay Layouts do not appear one after the other in Scheduling but instead will
 Rather than creating 2 Overlay Layouts with the assigned Media, only 1 Overlay Layout should be created containing a [Playlist](media_playlists.html) which would then contain the 2 Media items to cycle through.
 {/tip}
 
+#### Next...
+
+[Creating a Schedule](scheduling_events.html)

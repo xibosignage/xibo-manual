@@ -53,9 +53,11 @@ Some of the notable options are listed below:
 
 **Display** - Friendly name given to the Display for easy identification purposes within the CMS (this is not shown on the Display itself).
 
-**Status** -  *Tick* = Player is up to date (this may also show as green in colour).
-				*Cloud Icon* =  Player has not logged in with content waiting to be downloaded (this may also show as amber in colour, as above)
-				*Cross* = Player is currently downloading new content and has yet to complete the download (this may also show as red in colour)	
+**Status**:
+
+- *Tick* = Player is up to date (this may also show as green in colour).
+- *Cloud Icon* =  Player has not logged in with content waiting to be downloaded (this may also show as amber in colour, as above)
+- *Cross* = Player is currently downloading new content and has yet to complete the download (this may also show as red in colour)	
 
 **Authorised** - Tick or cross to indicate whether the Display has been granted a licence with the CMS. This prevents unauthorised Displays being added to the CMS.
 
@@ -157,13 +159,14 @@ However, this does NOT mean that Library files and Layouts will be shown and wil
 
 {tip}
 Files/Layouts can be unassigned from Displays by following the same steps and deselecting items from the top staging area. These will be 'cleaned up' when the Player needs space or after 30 days of the that file/Layout no longer being required.
+{/tip}
 
 ### Send Command
 
 The **Send Command** functionality is executed via XMR to Players by selecting a predefined command. This is useful for sending Players 'Reboot' commands for example.
 
 {tip}
-This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling_events.html#command)
+This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling_events.html#content-command)
 {/tip}
 
 ### Transfer Display to another CMS
@@ -212,7 +215,9 @@ Clicking on a status icon will show further information about the selected Displ
 
 Click the icon - **List** to return to the Display grid view.
 
+#### Next...
 
+[Display Groups](displays_groups.html)
 
 
 
