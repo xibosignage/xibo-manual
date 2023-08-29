@@ -29,7 +29,7 @@ The Currencies Module is configured for **Xibo Cloud** hosted customers with an 
 
 [Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Currencies Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of the Currencies Widget to use and where they can be placed.
 
-[Currencies Elements]
+![Currencies Elements](img/v4_media_modules_currencies_elements.png)
 
 Each Element has a set of configuration options in the Properties Panel.  Enter **Currencies** using their acronyms/abbreviations you wish to show as well as a **Base** currency from the **Configure** tab.
 

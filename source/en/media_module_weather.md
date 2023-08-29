@@ -38,7 +38,7 @@ The Open Weather Map Terms of Service https://openweathermap.org/terms should be
 
 [Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Weather Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of the Weather Widget to use and where they can be placed.
 
-[Weather Elements]
+![Weather Elements](img/v4_media_module_weather_elements.png)
 
 Each Element has a set of configuration options in the Properties Panel.  Enter the geographical location and units to return results from the **Configure** tab.
 

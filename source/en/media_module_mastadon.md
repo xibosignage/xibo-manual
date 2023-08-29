@@ -1,5 +1,5 @@
 ---
-toc: "widget"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Show Mastadon social feed content on Displays"
@@ -19,7 +19,7 @@ The Mastadon Widget returns content from the URL entered for the [Module](media_
 
 [Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding a Mastadon Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of the Mastadon Widget to use and where they can be placed.
 
-![Mastadon Elements](img/v4_media_modules_mastadon_elements.html)
+![Mastadon Elements](img/v4_media_modules_mastadon_elements.png)
 
 Each Element has a set of configuration options in the Properties Panel. A **Hashtag** must be provided to return results from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](https://test.xibo.org.uk/manual/en/(layouts_editor.html#content-global-elements)) to add shapes and text which can all be put into an [Element Group](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
 

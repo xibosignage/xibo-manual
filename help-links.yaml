@@ -12,7 +12,7 @@ schedule.view:
     summary: >
       Start creating **Schedules**
 
-dayparting.view:
+daypart.view:
   - title: "Dayparts"
     url: "scheduling_events.html#content-dayparts"
     isAllowWhiteLabel: true
@@ -73,6 +73,13 @@ dataset.view:
     isAllowWhiteLabel: true
     summary: >
       Creating a **DataSet**
+
+menuBoard.view:
+  - title: "Menu Boards"
+    url: "media_menuboards.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Create **Menu Board** Categories and Products
 
 display.view:
   - title: "Player Installation"
@@ -171,7 +178,7 @@ tag.view:
     summary: >
       Tag Management
 
-folder.view:
+folders.view:
   - title: "Folders"
     url: "tour_folders"
     isAllowWhiteLabel: true

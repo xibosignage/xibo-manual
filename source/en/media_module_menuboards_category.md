@@ -36,6 +36,6 @@ Each Element has a set of configuration options in the Properties Panel. A Menu 
 
 
 
-**Next...**
+#### Next...
 
 [Menu Boards: Products](media_modules_menuboards_products.html)

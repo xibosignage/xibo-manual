@@ -1,5 +1,5 @@
 ---
-toc: "widget"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Display Calendar events pulled in from an iCal feed"

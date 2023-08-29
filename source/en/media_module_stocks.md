@@ -29,7 +29,7 @@ The Currencies Module is configured for **Xibo Cloud** hosted customers with an 
 
 [Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Stocks Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of the Stocks Widget to use and where they can be placed.
 
-[Stocks Elements]
+![Stocks Elements](img/v4_media_module_stocks_elements.png)
 
 Each Element has a set of configuration options in the Properties Panel.  Enter **Stock Symbols** to return results from the **Configure** tab.
 
