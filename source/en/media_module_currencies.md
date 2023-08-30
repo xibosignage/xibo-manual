@@ -27,17 +27,17 @@ The Currencies Module is configured for **Xibo Cloud** hosted customers with an 
 
 ## Currencies Elements
 
-[Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Currencies Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of the Currencies Widget to use and where they can be placed.
+[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Currencies Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Currencies Widget to use and where they can be placed.
 
 ![Currencies Elements](img/v4_media_modules_currencies_elements.png)
 
 Each Element has a set of configuration options in the Properties Panel.  Enter **Currencies** using their acronyms/abbreviations you wish to show as well as a **Base** currency from the **Configure** tab.
 
-Control how items should be cycled by specifying a [Data Slot](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](https://test.xibo.org.uk/manual/en/(layouts_editor.html#content-global-elements)) to add shapes and text which can all be put into an [Element Group](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
 
 ## Currencies Static Templates
 
-[Static Templates](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-static-templates) define how returned data should be laid out and styled and are a simple way to show your data using pre-styled templates.
+[Static Templates](layouts_editor.html#content-static-templates) define how returned data should be laid out and styled and are a simple way to show your data using pre-styled templates.
 
 ![Currencies Templates](img/v4_media_modules_currencies_templates.png)
 

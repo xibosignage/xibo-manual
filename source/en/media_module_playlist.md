@@ -61,7 +61,7 @@ Add the **Playlist Widget** to a **Playlist Timeline** to reveal further options
 
 ![Add Playlist Widget to Playlist](img/v4_media_modules_playlist_add_playlist.png)
 
-Use the dropdown menu to select [Playlists](media_playlists.html), using the `+` button to add and configure multiple Playlists if required.
+Use the dropdown menu to select Playlists, using the `+` button to add and configure multiple Playlists if required.
 
 **Spot** options are used to define how much content from Playlists should be shown and for how long.
 

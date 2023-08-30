@@ -9,7 +9,7 @@ persona: "content manager"
 
  # Menu Boards
 
-The Menu Boards interface provides a simple way for users to create and manage 'categories' and 'product' information independently to Layouts. Once created, Menu Board data can be added anywhere on a Layout using [Elements](layouts_editor#content-data-widgets-and-elements) from the  [Menu Board: Category](media_modules_menuboards_category.html) and [Menu Board: Products](media_modules_menuboards_products.html) Widgets available in the [Layout Editor.](layouts_layout_editor.html)
+The Menu Boards interface provides a simple way for users to create and manage 'categories' and 'product' information independently to Layouts. Once created, Menu Board data can be added anywhere on a Layout using [Elements](layouts_editor#content-data-widgets-and-elements) from the  [Menu Board: Category](media_module_menuboards_category.html) and [Menu Board: Products](media_module_menuboards_products.html) Widgets available in the [Layout Editor.](layouts_editor.html)
 
 {version}
 **Note:** Menu Board Widgets are not available to add to a Playlist!
@@ -55,7 +55,7 @@ Click on the **Add Category** button and complete the required form fields:
 
 {tip}
 
-Code is for advanced use when referencing the API.
+**Code** is for advanced use when referencing the API.
 {/tip}
 
 - Click **Next** to repeat this process to add the required **Categories** for the Menu Board.
@@ -101,7 +101,7 @@ Each Category will be shown as a separate tab on the Product grid so you can eas
 
 Click on **View Categories** to go back to the Categories grid to view and edit existing using the row menu or **Add Category**.
 
-Menu Board data is added to Layouts using the [Menu Board: Category](media_module_menuboard_category.html) Widget which has data elements which are primarily used to add 'header' information and the [Menu Board: Products](media_module_menuboards_products.html) Widget which allows for precise placement of Product details on Layouts.
+Menu Board data is added to Layouts using the [Menu Board: Category](media_module_menuboards_category.html) Widget which has data elements which are primarily used to add 'header' information and the [Menu Board: Products](media_module_menuboards_products.html) Widget which allows for precise placement of Product details on Layouts.
 
 {tip}
 Menu Boards are edited independently to Layouts, so there is no need to access or edit the Layout(s) the Menu Board has been added to. Changes will be available in the system straight away ready to be picked up by Players on their next collection, with no need to make any edits to Layouts!

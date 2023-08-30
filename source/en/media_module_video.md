@@ -14,9 +14,9 @@ Add Video files to play on your Layouts and Playlists from the [Library Search](
 
 ## Overview
 
-- [Upload](media_library.html#content-add-media-upload) new video files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-toolbar).
+- [Upload](media_library.html#content-add-media-upload) new video files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-library-search).
 - Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- Video files can also be uploaded in advance to the [Library](media_library.html)
+- Video files can also be uploaded in advance to the Library.
 
 {tip}
 We recommend H264 MP4 file format.
@@ -25,7 +25,7 @@ When uploading video files the scroll bar can be used to select a frame to be us
 
 {/tip}
 
-- Set [start and end times](media_playlists.html#content-playlist-editor) for video files uploaded directly to a Playlist.
+- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for video files uploaded directly to a Playlist.
 
 - Save video files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
 

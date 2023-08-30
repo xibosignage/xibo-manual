@@ -13,7 +13,7 @@ persona: "content manager"
 {/white}
 
 {nonwhite}
-The Dashboards Widget is used to display [Dashboards](/manual/en/media_dashboard_service.html) that have been configured to use the [Xibo Dashboards Service](/docs/setup/xibo-dashboard-service)
+The Dashboards Widget is used to display [Dashboards](media_dashboard_service.html) that have been configured to use the [Xibo Dashboards Service](/docs/setup/xibo-dashboard-service)
 
 **Please note:** This commercial Widget is part of the **Xibo Dashboard Service** and requires an API for configuration as further explained [here](/pricing#dashboards)
 

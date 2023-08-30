@@ -25,7 +25,7 @@ Continue by adding [Video](media_module_video.html) to your Playlists and Layout
 
 For non-Windows Players / users with no full copy of PowerPoint to install you can save your PowerPoint as a **PDF** file.
 
-Continue by adding [PDF](media_modules_pdf.html) to your Playlists and Layouts.
+Continue by adding [PDF](media_module_pdf.html) to your Playlists and Layouts.
 
 ## 3. Upload a prepared PPT file (Windows Players only)
 
@@ -48,11 +48,11 @@ PowerPoint will, by default, put scroll bars up the side of your presentation, u
 
 Using the 'other media' search, use the **Type** drop down to select **PowerPoint**:
 
-- Upload PPT files directly to Playlists/Layouts using the [Library Search](layouts_editor.html#content-toolbar) from the toolbar.
+- Upload PPT files directly to Playlists/Layouts using the [Library Search](layouts_editor.html#content-library-search) from the toolbar.
 
 - Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- PowerPoint files can also be uploaded in advance to the [Library](media_library.html)
-- Set [start and end times](media_playlists.html#content-playlist-editor) for PowerPoint files uploaded directly to a Playlist.
+- PowerPoint files can also be uploaded in advance to the Library.
+- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for PowerPoint files uploaded directly to a Playlist.
 - Save PowerPoint files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
 
 ![PowerPoint](img/v4_media_module_powerpoint.png)

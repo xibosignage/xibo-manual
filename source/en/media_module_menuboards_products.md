@@ -21,11 +21,11 @@ The Menu Boards: Products Widget primarily consists of a Menu Board source which
 
 ## Product Elements
 
-[Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding a Menu Boards: Product Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of Menu Board Products to use and where they can be placed.
+[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding a Menu Boards: Product Widget to a [Layout](layouts_editor.html) to give Users more control over what components of Menu Board Products to use and where they can be placed.
 
 ![Product Elements](img/v4_media_modules_product_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. A Menu Board must be selected to use as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+Each Element has a set of configuration options in the Properties Panel. A Menu Board must be selected to use as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
 
 ## Overview
 
@@ -36,10 +36,10 @@ Each Element has a set of configuration options in the Properties Panel. A Menu 
 - Unavailable items can be shown 'dimmed' to be less prominent.
 - Duration can be set per item.
 - Content for this media is cached by the Players for off-line playback.
-- Use with the [Menu Boards: Category](media_modules_menuboards_category.html) Widget to include header information to compliment the presentation of Product data to show on Displays.
+- Use with the [Menu Boards: Category](media_module_menuboards_category.html) Widget to include header information to compliment the presentation of Product data to show on Displays.
 
 
 
 #### Next...
 
-[Menu Boards: Category](media_modules_menuboards_category.html)
+[Menu Boards: Category](media_module_menuboards_category.html)

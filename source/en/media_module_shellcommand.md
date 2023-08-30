@@ -43,7 +43,9 @@ In most cases, commands that are run from a Layout / Playlist tend to be backgro
 For commands that are executed on a specific date/time, such as  ‘reboots’, 'turn on/off' on opening/closing times for example, then please see the [Add Event](scheduling_events.html#content-add-event) in the Scheduling section and [Send Command](displays.html#content-send-command) in the Displays section.
 {/tip}
 
+#### Next...
 
+[Command Functionality](displays_command_functionality.html)
 
 
 

@@ -7,7 +7,7 @@ persona: "content manager"
 
 # Flash
 
-Add SWF files to include on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-toolbar). 
+Add SWF files to include on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-library-search). 
 
 Using the 'other media' search, use the **Type** drop down to select **Flash**.
 
@@ -25,10 +25,10 @@ This Module is disabled by default for **Xibo Cloud Hosted** customers.
 
 ## Overview
 
--  [Upload](media_library.html#content-add-media-upload) new SWF files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-toolbar).
+-  [Upload](media_library.html#content-add-media-upload) new SWF files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-library-search).
 - Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- SWF files can be also be uploaded in advance to the [Library](media_library.html) 
-- Set [start and end times](media_playlists.html#content-playlist-editor) for SWF files uploaded directly to a Playlist.
+- SWF files can be also be uploaded in advance to the Library.
+- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for SWF files uploaded directly to a Playlist.
 - Save SWF files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
 
 ![Flash](img/v4_media_module_flash.png)

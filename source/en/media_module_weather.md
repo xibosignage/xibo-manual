@@ -36,13 +36,13 @@ The Open Weather Map Terms of Service https://openweathermap.org/terms should be
 
 ## Weather Elements
 
-[Elements](https://test.xibo.org.uk/manual/en/layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Weather Widget to a [Layout](https://test.xibo.org.uk/manual/en/layouts_editor.html) to give Users more control over what components of the Weather Widget to use and where they can be placed.
+[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Weather Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Weather Widget to use and where they can be placed.
 
 ![Weather Elements](img/v4_media_module_weather_elements.png)
 
 Each Element has a set of configuration options in the Properties Panel.  Enter the geographical location and units to return results from the **Configure** tab.
 
-Control how items should be cycled by specifying a [Data Slot](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](https://test.xibo.org.uk/manual/en/(layouts_editor.html#content-global-elements)) to add shapes and text which can all be put into an [Element Group](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
 
 {tip}
 All Layouts that use the Weather Widget need to include attribution, available by using the Attribution Element.  Static Templates contain this tag by default.
@@ -50,7 +50,7 @@ All Layouts that use the Weather Widget need to include attribution, available b
 
 ## Weather Static Templates
 
-[Static Templates](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-static-templates) define how returned results should be laid out and styled and are a simple way to show your data using pre-styled templates.
+[Static Templates](layouts_editor.html#content-static-templates) define how returned results should be laid out and styled and are a simple way to show your data using pre-styled templates.
 
 ![Weather Templates](img/v4_media_modules_weather_templates.png)
 

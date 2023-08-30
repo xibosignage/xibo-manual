@@ -20,7 +20,7 @@ The Ticker Widget primarily consists of a data source location which feeds into 
 
 ![Ticker Elements](img/v4_media_module_ticker_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. A URL must be provided to be used as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements]((layouts_editor.html#content-global-elements)) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+Each Element has a set of configuration options in the Properties Panel. A URL must be provided to be used as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
 
 ## DataSet Static Templates
 
@@ -64,7 +64,7 @@ Use this option with caution as this can create long-running media items. Ensure
   
 
 {tip}
-Create your own [RSS Feed](media_datasets.html#content-view-rss) using [DataSets](media_datasets.html).
+Create your own [RSS Feed](media_datasets.html#content-view-rss) to use with this Widget using [DataSets](media_datasets.html)!
 {/tip}
 
 
