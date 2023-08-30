@@ -104,7 +104,7 @@ On **Saving**, further options will be shown:
 - Set a **Background Colour** to fill any gaps if the item does not fill the entire screen.
 
 {tip}
-Schedule Images and Videos directly from the [Library](media_library.htm) and [Playlists](media_playlists.html) from the Playlists grid. Use the row menu and click Schedule!
+Schedule Images and Videos directly from the [Library](media_library.html) and [Playlists](media_playlists.html) from the Playlists grid. Use the row menu and click Schedule!
 {/tip}
 
 ## Synchronised Events
@@ -130,7 +130,7 @@ The Lead Display will issue instructions to change the sequence based on its ass
 - Select **Mirror** to automatically set the same item on each Display within the group automatically.
 
 {tip}
-Sync [Playlists](media_modules_playlists.html) on different Layouts by using a **Content Synchronisation Key**!
+Sync [Playlists](media_module_playlists.html) on different Layouts by using a **Content Synchronisation Key**!
 {/tip}
 
 ### Dayparts

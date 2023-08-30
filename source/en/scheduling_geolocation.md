@@ -13,6 +13,8 @@ Scheduled Events can be configured to be location aware with locations displayed
 
 {feat}Geo Location Scheduling|v3{/feat}
 
+## Define Location
+
 - From the Schedule [Event](scheduling_events.html) form, click on the **Geo Location** tab.
 
 - Tick in the **Geo Schedule** box to enable and define the location.
@@ -29,13 +31,16 @@ On opening, the map will default to what is entered for DEFAULT_LAT and DEFAULT_
 
 - Define an area by drawing a Polygon or Rectangle layer on the map.
 
-
 ![Polygon Layer](img/v4_schedule_polygon.png)
+
+## Edit
 
 - Once an area has been defined, click on the edit icon to to drag the markers to make adjustments to the existing Layer. 
 - Click on the grey **Save** button located here to ensure that edits are saved.
 
 ![Edit Layer](img/v4_schedule_edit_layer.png)
+
+## Delete
 
 - To remove the area, use the bin icon and click into the area to delete
 - Click the grey **Save** button to save the removal of the layer.
