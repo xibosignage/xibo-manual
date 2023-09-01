@@ -10,7 +10,7 @@ persona: "content manager"
 
 Select from an **Analogue**, **Flip** or a **Digital** style clock.
 
-{feat}Clock|v3{/feat}
+{feat}Clock|v4{/feat}
 
 ## Overview
 

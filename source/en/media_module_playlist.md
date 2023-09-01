@@ -13,7 +13,7 @@ Use the Playlist Widget to create a timeline of content directly on a Layout.
 
 Add the Playlist Widget to a Playlist Timeline to show content from one or multiple [Playlists](media_playlists.html) which have already been created.
 
-{feat}Playlist|v3{/feat}
+{feat}Playlist|v4{/feat}
 ## Widget Overview:
 
 - Create and configure directly on a Layout.

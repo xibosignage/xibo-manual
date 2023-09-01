@@ -10,7 +10,7 @@ persona: "content manager"
 
 Display dynamic feed content anywhere on a Layout using Elements or include Static Templates with pre-styled designs in Layouts/Playlists.
 
-{feat}Ticker|v3{/feat}
+{feat}Ticker|v4{/feat}
 
 The Ticker Widget primarily consists of a data source location which feeds into configured Elements and Static Templates.
 

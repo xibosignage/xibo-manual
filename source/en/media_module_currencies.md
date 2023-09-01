@@ -11,7 +11,7 @@ persona: "content manager"
 
 Display exchange rates for currency pairs anywhere on a Layout using **Elements** or select a **Static Template** to display results in Layouts/Playlists.
 
-{feat}Currencies|v3{/feat}
+{feat}Currencies|v4{/feat}
 
 The Currencies Widget relies in part on the [Alpha Vantage API](https://www.alphavantage.co/) to retrieve exchange rate data which feeds into configured Elements and Static Templates.
 

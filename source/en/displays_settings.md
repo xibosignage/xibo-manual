@@ -126,7 +126,7 @@ This setting is best used in conjunction with either assigned Layouts or deferre
 
 ### Force HTTPS
 
-{feat}Force HTTPS Connection|v3{/feat}
+{feat}Force HTTPS Connection|v4{/feat}
 
 From the **Network** tab use the checkbox to force a Displays connection to the CMS using HTTPS. 
 

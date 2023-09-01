@@ -9,7 +9,7 @@ persona: "content manager"
 
 Display live streamed HLS content on Layouts and Playlists.
 
-{feat}HLS Stream|v3{/feat}
+{feat}HLS Stream|v4{/feat}
 
 ## Overview
 

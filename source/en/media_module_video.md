@@ -10,7 +10,7 @@ persona: "content manager"
 
 Add Video files to play on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-toolbar). 
 
-{feat}Video|v3{/feat}
+{feat}Video|v4{/feat}
 
 ## Overview
 

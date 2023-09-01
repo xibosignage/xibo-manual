@@ -31,7 +31,7 @@ Continue by adding [PDF](media_module_pdf.html) to your Playlists and Layouts.
 
 PowerPoint is a proprietary format from Microsoft and can only be displayed on a Windows-based signage player which has a full copy of Microsoft PowerPoint installed on each Windows Player. (Please see the [Prepare your Windows Players](media_module_powerpoint.html#content-prepare-your-windows-players) section)
 
-{feat}PowerPoint|v3{/feat}
+{feat}PowerPoint|v4{/feat}
 
 ### Prepare the PowerPoint Presentation.
 

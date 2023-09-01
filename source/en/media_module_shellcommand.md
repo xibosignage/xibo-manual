@@ -10,7 +10,7 @@ persona: "content manager"
 
 Use Shell Command to instruct the Display to execute a command outside of the [[PRODUCTNAME]] environment, using the operating system shell.  
 
-{feat}Shell Command|v3{/feat}
+{feat}Shell Command|v4{/feat}
 
 {tip}
 Add the Shell Command Widget to Layouts to execute external commands, such as ‘volume up’ for a Layout with an Audio Widget that is set to play, and ‘volume down’ when the Layout finishes.

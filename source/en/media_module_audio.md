@@ -11,7 +11,7 @@ persona: "content manager"
 
 Add Audio files to play on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-library-search). 
 
-{feat}Audio|v3{/feat}
+{feat}Audio|v4{/feat}
 
 ## Overview
 

@@ -11,7 +11,7 @@ persona: "content manager"
 
 Display trade price information for stock listings anywhere on a Layout using **Elements** or select a **Static Template** to display results in Layouts/Playlists.
 
-{feat}Stocks|v3{/feat}
+{feat}Stocks|v4{/feat}
 
 The Stocks Widget relies in part on the [Alpha Vantage API](https://www.alphavantage.co/) to retrieve stock market data which feeds into configured Elements and Static Templates. The prices returned by Alpha Vantage follow the [stock market standard](https://medium.com/@patrick.collins_58673/stock-api-landscape-5c6e054ee631) of adjusting for corporate events such as splits and dividend payout.
 

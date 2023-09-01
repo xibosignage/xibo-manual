@@ -11,7 +11,7 @@ persona: "content manager, webhook triggers"
 
 Display Calendar events pulled in from an iCal feed anywhere on a Layout using **Elements** or select a **Static Template** to display results in Layouts/Playlists.
 
-{feat}Calendar View|v3{/feat}
+{feat}Calendar View|v4{/feat}
 
 Calendar data is provided by an iCal feed which will feed into configured Elements and Static Templates.
 

@@ -29,7 +29,7 @@ Displays are managed in the CMS by clicking **Displays** under the **Displays** 
 The Add Display (Code) function can be used after installing the Player in order to easily Connect Players to the CMS.  Players will show a 6 character Activation Code to enter in the form in order to Connect.
 {/tip}
 
-{feat}Connect using Authentication Code|v3{/feat}
+{feat}Connect using Authentication Code|v4{/feat}
 
 Displays can be saved to [Folders](/manual/en/tour_folders.html) to easily control User/User User Group levels of interaction for Displays as well as provide an additional way to organise.
 
@@ -171,7 +171,7 @@ This type of [Command](displays_command_functionality.html) can also be executed
 
 ### Transfer Display to another CMS
 
-{feat}Transfer Display to another CMS|v3{/feat}
+{feat}Transfer Display to another CMS|v4{/feat}
 To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_user_access.html#content-two-factor-authentication), if you have not already set this up.
 
 Once activated, use the row menu for the Display you want to transfer, and select **Transfer to another CMS**

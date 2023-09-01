@@ -9,7 +9,7 @@ persona: "content manager, administrator"
 
 # Transition Management
 
-{feat}Transitions|v3{/feat}
+{feat}Transitions|v4{/feat}
 
 {version}
 

@@ -9,7 +9,7 @@ persona: "content manager"
 
 Use to Display input from an external source on SoC Displays.
 
-{feat}Video In|v3{/feat}
+{feat}Video In|v4{/feat}
 
 {version}
 **NOTE:** This Widget is compatible for use with webOS, Tizen and Philips (Android) System on Chip Players only.

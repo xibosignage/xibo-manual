@@ -11,7 +11,7 @@ Add PDF files to include on your Layouts and Playlists from the [Library Search]
 
 Using the 'other media' search, use the **Type** drop down to select **PDF**.
 
-{feat}PDF|v3{/feat}
+{feat}PDF|v4{/feat}
 
 ## Overview
 

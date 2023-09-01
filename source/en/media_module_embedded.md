@@ -11,7 +11,7 @@ persona: "content manager"
 
 Embed HTML and JavaScript to be displayed on Layouts and Playlists. 
 
-{feat}Embedded HTML|v3{/feat}
+{feat}Embedded HTML|v4{/feat}
 
 ## Overview
 

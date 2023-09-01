@@ -11,7 +11,7 @@ persona: "schedule manager, display manager"
 
 Scheduled Events can be configured to be location aware with locations displayed on a map view.
 
-{feat}Geo Location Scheduling|v3{/feat}
+{feat}Geo Location Scheduling|v4{/feat}
 
 ## Define Location
 

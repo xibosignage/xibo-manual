@@ -10,7 +10,7 @@ persona: "media manager"
 
 Show a countdown for a selected duration or until a specified date on Layouts and Playlists.
 
-{feat}Countdown|v3{/feat}
+{feat}Countdown|v4{/feat}
 
 ## Overview
 

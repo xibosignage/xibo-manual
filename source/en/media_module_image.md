@@ -9,7 +9,7 @@ persona: "content manager"
 
 Add Image files to include on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-library-search).
 
-{feat}Image|v3{/feat}
+{feat}Image|v4{/feat}
 
 ## Overview
 

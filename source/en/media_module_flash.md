@@ -11,7 +11,7 @@ Add SWF files to include on your Layouts and Playlists from the [Library Search]
 
 Using the 'other media' search, use the **Type** drop down to select **Flash**.
 
-{feat}Adobe Flash|v3{/feat}
+{feat}Adobe Flash|v4{/feat}
 
 {version}
 **IMPORTANT:** As Adobe no longer supports Flash, it will be naturally phased out over a period of time.  With the discontinued development and support for this application the Flash Module is no longer supported on Android. After extensive testing, it was found that instabilities in the Player could cause the Player to close. Should you still choose to run via the Flash Module or on embedded websites, it will render using the Flash application if available. However, if you have stability problems with your device this may be due to the running of Flash content.

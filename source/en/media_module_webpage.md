@@ -10,7 +10,7 @@ keywords: "open natively, manual position, best fit, preloading, webpage load er
 
 Include content from a webpage to be displayed on Layouts and Playlists.
 
-{feat}Webpage|v3{/feat}
+{feat}Webpage|v4{/feat}
 
 {version}
 **Note:** The Webpage Widget requires a valid internet connection in order to function as webpages are not cached by the Player.
@@ -47,7 +47,7 @@ When selected, the Player will open the webpage without any alterations and will
 
 Trigger a web hook for an active action (navigate to Widget, navigate to Layout a Scheduled Command etc.) to be shown in the event the webpage returns an error and fails to load.
 
-{feat}Webpage - Page load error trigger|v3{/feat}
+{feat}Webpage - Page load error trigger|v4{/feat}
 
 - Enter the **Trigger Code** of a configured Action to match against a supplied web hook `trigger` parameter.
 

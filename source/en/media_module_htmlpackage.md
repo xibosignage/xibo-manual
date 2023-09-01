@@ -11,7 +11,7 @@ Add a complete HTML Package on your Layouts and Playlists from the [Library Sear
 
 Using the 'other media' search, use the **Type** drop down to select **HTML Package**.
 
-{feat}HTML Package|v3{/feat}
+{feat}HTML Package|v4{/feat}
 
 ## Overview
 

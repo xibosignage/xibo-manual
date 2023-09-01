@@ -17,7 +17,7 @@ The Dashboards Widget is used to display [Dashboards](media_dashboard_service.ht
 
 **Please note:** This commercial Widget is part of the **Xibo Dashboard Service** and requires an API for configuration as further explained [here](/pricing#dashboards)
 
-{feat}Dashboards|v3{/feat}
+{feat}Dashboards|v4{/feat}
 
 ## Configuration
 
