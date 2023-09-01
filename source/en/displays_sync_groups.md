@@ -25,7 +25,9 @@ Sync [Playlists](media_module_playlist.html) on different Layouts using the **Co
 Sync Groups can be saved to [Folders](tour_folders.html) to easily control User/User Group levels of interaction for Displays as well as provide an additional way to organise.
 
 {tip}
-The default Publisher Port is set on 9590.
+All Displays in a Sync Group need to communicate using their LAN IP address over TCP on the publisher port specified. This is defaulted to 9590 but can be changed if that port is reserved.
+
+We recommend using a wired network and high-powered similar devices for the best Synchronisation.
 {/tip}
 
 - On saving use the **Manage Membership** form to select which Displays to include in this Group.
