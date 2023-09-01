@@ -85,6 +85,8 @@ Right click to show a [context menu](layouts_editor.html#content-context-menu) t
 **NOTE:** If you are using Windows Players, the HLS Widgets and Embedded/Web Widgets configured to use the Edge browser are not transparent and will not show anything placed underneath them.
 {/version}
 
+Use the [Layer Control Panel](layouts_editor.html#content-layer-control) at the bottom of the viewer to easily see Layering and durations for all items on the Layout.
+
 ## Toolbar
 
 Make a start adding content to the Layout from the Toolbar:
@@ -252,6 +254,18 @@ Position content exactly where you want it with flexible drag and drop, rotation
 {tip}
 Use the buttons in the bottom right of the viewer to select to **Snap to Grid**, **Snap to Borders** or **Snap to Elements** for easier positioning when adding items.
 {/tip}
+
+### Layer Control
+
+Located in the bottom left of the viewer, easily view all Layering and Durations of all items added to the Layout.
+
+{tip}
+Use the Layer Control to easily select items that behind other items to make edits!
+{/tip}
+
+![Layer Control](img/v4_layouts_editor_layer_control.png)
+
+
 
 ## Context Menu
 
