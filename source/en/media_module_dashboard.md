@@ -1,4 +1,10 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+minHeadingLevel: 2
+excerpt: "Display Dashboards that have been configured to use the Xibo Dashboards Service"
+keywords: "xibo dashboards service, power bi, grafana, matomo"
+persona: "content manager"
+---
 
 # Dashboards
 
@@ -7,62 +13,47 @@
 {/white}
 
 {nonwhite}
-The Dashboards Widget is used to display [Dashboards](/manual/en/media_dashboard_service.html) that have been configured to use the [Xibo Dashboards Service](/docs/setup/xibo-dashboard-service)
+The Dashboards Widget is used to display [Dashboards](media_dashboard_service.html) that have been configured to use the [Xibo Dashboards Service](/docs/setup/xibo-dashboard-service)
 
-**Please note:** This commercial Widget is part of the **Xibo Dashboard Service** available from v3.2.0 and requires an API for configuration as further explained [here](/pricing#dashboards)
+**Please note:** This commercial Widget is part of the **Xibo Dashboard Service** and requires an API for configuration as further explained [here](/pricing#dashboards)
 
-{feat}Dashboards|v3{/feat}
+{feat}Dashboards|v4{/feat}
 
-## Add Widget
+## Configuration
 
-Locate **Dashboards** from the [Widget](layouts_widgets.html)  toolbar and click to **Add** or **Grab** to drag and drop to a Region.
-
-On adding, configuration options are shown in the right hand properties panel:
-
-- Use the drop down to select the dashboard service **Type** to use from the ones that have been configured in the connector.
-- Provide a **Name** for easier identification.
-- Choose to override the default **Duration** if required.
-- In the **Link** field, enter the URL to embed from your chosen dashboard. 
-
-{version}
-**NOTE:** The minimum refresh interval that can be entered per dashboard is 5 minutes as we do not support dashboard service updates more frequently than 5 minutes.
-{/version}
+- Select the dashboard service to match the dashboards that have been configured in the connector.
+- Enter the URL to embed.
 
 {tip}
 Please see the following page for further information on obtaining a URL to use with this service, authentication mechanisms and possible limitations [Xibo Dashboard Service](/docs/setup/xibo-dashboard-service)
 {/tip}
 
-![Dashboard Configuration](img/media_modules_dashboard_configuration.png)
+- Provide an update interval in minutes.
 
-- **Save** changes
+{version}
+**NOTE:** The minimum refresh interval that can be entered per dashboard is 5 minutes as we do not support dashboard service updates more frequently than 5 minutes.
+{/version}
 
-{tip}
-**Please note:** On first entering a URL into the Dashboard Widget it may take a few moments to load as it is dependent on how long it takes to render your dashboard content, and how busy the service currently is.
+On first entering a URL into the Dashboard Widget it may take a few moments to load as it is dependent on how long it takes to render your dashboard content, and how busy the service currently is.
 
 Once you are showing your dashboards on displays, the service will keep your dashboards updated at the interval you specify so it will always be ready to show and appear instantly on Displays.
 
 If you stop showing a dashboard on your displays for a time, then the service will stop refreshing it, but will start again automatically the next time that dashboard is shown.
-{/tip}
+
 
 {tip}
-**Please note:** By default, reports in **Power BI** render with a US Date format. To use an alternative date format add the following parameters to the URL you pass in the Dashboards Widget as shown with the example below for `en-GB`:
+
+By default reports in **Power BI** render with a US Date format. To use an alternative date format add the following parameters to the URL you pass in the Dashboards Widget as shown with the example below for `en-GB`:
 
 `&language=en&formatLocale=en-GB`
 
 {/tip}
 
-
-
-![Dashboard Preview](img/media_modules_dashboard_preview.png)
-
 **Please note:** If Xibo detects an error with a request for dashboard services, you will see a red banner message over the top of a screengrab to give an indication to the user where the problem has occurred. This will be shown in the Layout Designer previewer only for the logged in user. The Layout Preview and Displays showing the scheduled Layout will continue to show the last good capture or a spinner icon until the issue has been resolved.
 
 Example Error message with screengrab shown below:
 
-![Example Error Message](img/media_modules_dashboard_error_message.png)
+![Example Error Message](img/v4_media_modules_dashboard_error.png)
 
-## Actions
 
-Interactive Actions can be attached to this Dashboard Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
-{/nonwhite}
 

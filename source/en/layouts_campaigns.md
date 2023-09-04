@@ -1,59 +1,48 @@
-<!--toc=layouts-->
+---
+toc: "layouts"
+maxHeadingLevel: 3
+minHeadingLevel: 2
+excerpt: "Create a Layout List Campaign to ensure the play order of Layouts or create an Ad Campaign with automatic scheduling"
+keywords: "Layout list, Ad campaign, cycle based playback, round robin, block, cost per play, impressions per play, proof of play"
+persona: "content manager"
+---
 
 # Campaigns
 
-{version}
+[[PRODUCTNAME]] has two  **Campaign** types:
 
-- I If you are using a v3.1.0 - v3.2.x CMS, click [here](layouts_campaigns_3.1.html)
-- If you are using a CMS earlier than v3.1.0 click [here](layouts_campaigns_3.html)
-  {/version}
+- **Layout List** -  is used to ensure the play order of a group of Layouts by placing them in an ordered list.
+- **Ad Campaign** - create advertising campaigns ([Feature](users_features_and_sharing.html#content-features) enabled).
 
-[[PRODUCTNAME]] has two available **Campaign** types:
+Both Campaign types are created and managed by selecting **Campaigns** under the **Design** section of the main CMS Menu:
 
-- Layout List
-- Ad Campaign ([Feature](users_features_and_sharing.html) enabled for Users/User Groups)
+![Campaigns](img/v4_layouts_campaigns_grid.png)
 
-**Campaigns** are administered from the **Design** section of the CMS Menu:
+- Click the **Add Campaign** button 
+- Select the **Type** of Campaign to create.
 
-![Campaigns](img/v3.1_layouts_campaigns_grid.png)
+## Create a Layout List Campaign
 
-A Campaign type is selected when adding a new Campaign to the grid.
+- Select **Layout List** from the drop down and complete the form fields:
 
-## Layout List
 
-Layouts can be grouped together into an ordered list. A **Campaign** can then be **Scheduled** to play the grouped Layouts in a set sequence.
+![Add Layout List Campaign](img/v4_layouts_campaign_add_layout_list.png)
 
-### Create a Layout List Campaign
-
-Click on the **Add Campaign** button at the top of the Campaigns grid.
-
-Select **Layout List** from the drop down:
-
-![Add Layout List Campaign](img/v3.3_layouts_campaign_add_layout_list.png)
-
-Complete the required form fields:
-
-- Campaigns can be optionally saved to [Folders](tour_folders.html).
-
+[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Campaigns saved to a Folder will inherit the access options applied to that Folder. 
 
 {tip}
-Campaigns that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access. 
-
 If users should also have access to the Layouts/Layout content, ensure that this is also saved to the same Folder!
 {/tip}
 
-- Provide a **Name** for easy identification purposes within the CMS.
-
-
-- Include optional [Tags](tour_tags.html) to organise and make it easier to search for.
+- Give your Campaign a **Name** for easy identification in the CMS including optional [Tags](tour_tags.html).
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_grids.html#multi-select) option at the bottom of the Campaign grid!
+Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Campaign grid!
 {/tip}
 
 ### Cycle Based Playback
 
-{feat}Campaign Cycle Playback|v3{/feat}
+{feat}Campaign Cycle Playback|v4{/feat}
 
 -  Optionally enable **cycle based playback** for the Campaign.
 - If enabled, provide a **Play Count** to determine how many 'plays' a Layout should have before moving onto the next Layout in the Campaign.
@@ -62,16 +51,15 @@ When you schedule a Campaign with cycle playback enabled, each time the schedule
 
 ### List Play Order
 
-Use the **List play order** drop down to select how you would like the Layouts in the Campaign to play when scheduled alongside another Campaign with the same **Display Order** in [Scheduled Events](scheduling_events.html)
+Use the **List play order** drop down to select how you would like the Layouts in the Campaign to play when scheduled alongside another Campaign with the same **Display Order** in [Scheduled Events](scheduling_events.html):
 
-- - Round Robin - Layouts from each Campaign with the same Display Order will play interleaved.
-  - Block - Layouts will play in their entirety from the Campaign before moving onto the next.
-  
-- Click to **Save**.
+**Round Robin** - Layouts from each Campaign with the same Display Order will play interleaved.
 
-On saving the form will re-open with additional tabs:
+**Block** - Layouts will play in their entirety from the Campaign before moving onto the next.
 
-![Edit Layout List Campaign](img/v3.3_campaigns_edit_layout_list.png)
+On **Saving** , the form will re-open with additional tabs:
+
+![Edit Layout List Campaign](img/v4_campaigns_edit_layout_list.png)
 
 ### Reference
 
@@ -81,56 +69,52 @@ Optionally use this tab to provide reference information for the selected Campai
 
 Use the Layouts tab to assign Layouts to this Campaign:
 
-![Assign Layouts](img/v3.3_campaigns_assign_layouts.png)
+![Assign Layouts](img/v4_campaigns_assign_layouts.png)
 
-- Assign Layouts using the plus icon. Selected Layouts will be added to the 'staging area' at the top of the form.
-- Remove by clicking the minus icon next to a Layout from the staging area.
+- Assign Layouts using the `+` icon. Selected Layouts will be added to the 'staging area' at the top of the form.
+- Remove by clicking the `-` icon next to a Layout from the staging area.
 - Re-order selected Layouts using drag and drop to ensure that Layouts play in your chosen sequence.
 
 - Click **Save** to keep changes.
 
 {tip}
-Use the **Copy** button located on the row menu to easily make a copy of an existing Campaign as well as enabling [Share](users_features_and_sharing.html) options for selected Users/User Groups!
+Use the **Copy** button located on the row menu to easily make a copy of an existing Campaign as well as enabling [Share](users_features_and_sharing.html#content-share) options for selected Users/User Groups.
 
-Layouts can be directly assigned to Campaigns from the Layouts grid. Use the row menu for the Layout to add and click **Assign to Campaign**. Layouts will be assigned to the end of the selected Campaign by default!
+Click **Schedule** to open the [Schedule Event](scheduling_events.html) form to create a schedule for your Campaign,
+
+Layouts can be directly assigned to Campaigns from the [Layouts](layouts.html) grid. Use the row menu for the Layout to add and click **Assign to Campaign**. Layouts will be assigned to the end of the selected Campaign by default!
 {/tip}
 
 ## Ad Campaigns
 
-Create Advertising Campaigns to be shown on selected Displays. [[PRODUCTNAME]] will work out how many plays are needed to satisfy entered criteria and handle the scheduling automatically.
+Create Advertising Campaigns where  [[PRODUCTNAME]] will work out how many plays are needed to satisfy entered criteria and handle the scheduling automatically for you.
 
 {tip}
-This [Feature](users_features_and_sharing.html) should be enabled for each User/User Group who requires access!
+This [Feature](users_features_and_sharing.html#content-features) should be enabled for each User/User Group who requires access!
 {/tip}
 
 ### Create an Ad Campaign
 
-Click on the **Add Campaign** button at the top of the Campaigns grid.
+- Select **Ad Campaign** from the drop down menu:
 
-Select **Ad Campaign** from the drop down:
 
-![Add Ad Campaign](img/v3.3_layouts_campaign_add_ad_campaign.png)
+![Add Ad Campaign](img/v4_layouts_campaign_add_ad_campaign.png)
 
 Complete the required form fields:
 
-- Campaigns can be optionally saved to [Folders](tour_folders.html).
+[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Ad Campaigns saved to a Folder will inherit the access options applied to that Folder. 
 
 {tip}
-Campaigns that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access. 
-
 If users should also have access to the Layouts/Layout content, ensure that this is also saved to the same Folder!
 {/tip}
 
-- Provide a **Name** for easy identification purposes within the CMS.
-
-
-- Include optional [Tags](tour_tags.html) to organise and make it easier to search for.
+- Give your Ad Campaign a **Name** for easy identification in the CMS including optional [Tags](tour_tags.html).
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_grids.html#multi-select) option at the bottom of the Campaign grid!
+Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-Multi---select--with-selected) option at the bottom of the Campaign grid!
 {/tip}
 
-- Use the drop down to set the **Target Type** for this Ad Campaign, Plays, Budget or Impressions.
+- Use the drop down to set the **Target Type** for this Ad Campaign as **Plays**, **Budget** or **Impressions**.
 - Include the total **Target** number for this Ad Campaign in relation to its selected Target Type.
 
 - Click to **Save**.
@@ -139,14 +123,10 @@ The new Ad Campaign record will be added to the grid.
 
 - Use the row menu and select **Edit** to provide the required criteria in order that [[PRODUCTNAME]] can work out the play frequency:  
 
-![Edit Ad Campaign](img/v3.3_campaigns_edit_ad_campaign.png)
+![Edit Ad Campaign](img/v4_campaigns_edit_ad_campaign.png)
 
-
-
-
-
-- Provide **Start** and **End** Dates and Times for the Ad Campaign. (This is required information and cannot be left blank)
-- Select from available **Displays** and **Display Groups** to play this Ad Campaign on. (This is required information and cannot be left blank)
+- Provide **Start** and **End** Dates and Times for the Ad Campaign. (This is required information and **cannot** be left blank)
+- Select from available **Displays** and **Display Groups** to play this Ad Campaign on. (This is required information and **cannot** be left blank)
 
 {tip}
 Ensure that [Displays](displays.html) have had **Display Details** correctly entered for the selected Displays which play this Ad Campaign, ensuring that **Cost per play** and **Impressions per play** fields have been completed!
@@ -162,7 +142,7 @@ Ensure that [Displays](displays.html) have had **Display Details** correctly ent
 
 Once a Layout is selected further scheduling options are available:
 
-![Assign Layouts Ad Campaign](img/v3.3_campaigns_assign_layouts_ad_campaign.png)
+![Assign Layouts Ad Campaign](img/v4_campaigns_assign_layouts_ad_campaign.png)
 
 - Select which **Days of the Week** this Layout should be active in this Ad Campaign.
 
@@ -174,17 +154,18 @@ Ad Campaigns can include multiple instances of the same Layout with different Da
 For example, If you needed to show the same Layout for a defined 'Morning' daypart as well as a defined 'Evening' daypart add the Layout twice and define the required dayparts individually for each!
 {/tip}
 
-- Draw areas on the map to provide geo fenced based plays for any mobile displays, with content to be shown on entering a defined area.
+- Draw areas on the map to provide **geo fenced** based plays for any mobile displays, with content to be shown on entering a defined area.
 
 {tip}
 You can have multiple areas defined on the same map!
 {/tip}
 
-Click to **Save**.
+- Click to **Save**.
+
 
 The Layout will be added to the Campaign which can be edited/deleted if required using the row menu:
 
-![View Ad Campaigns](img/v3.3_campaigns_view_added_ad_campaigns.png)
+![View Ad Campaigns](img/v4_campaigns_view_added_ad_campaigns.png)
 
 Continue to build your Ad Campaign by selecting Layouts and defining scheduling options.
 
@@ -194,29 +175,23 @@ Continue to build your Ad Campaign by selecting Layouts and defining scheduling 
 
 [[PRODUCTNAME]] will schedule automatically to fulfil the required play criteria to meet entered Targets. 
 
-Ad Campaigns can be viewed on the [Schedule](scheduling_calendar.html) as locked entries which cannot be edited from the scheduler itself. 
+Ad Campaigns can be viewed on the [Schedule](scheduling_management.html#content-calendar-view) as locked entries which cannot be edited from the scheduler itself. 
 
-The **Agenda View** can be used to see a more detailed play view of the Ad Campaign and preview included Layouts.
+[Agenda](scheduling_management.html#content-agenda) can be used to see a more detailed play view of the Ad Campaign and preview included Layouts.
 
 The Ad Campaign progress will be shown in the Campaigns grid and on opening the Ad Campaign, providing that Proof of Play has been set to ON for all Displays and Layouts selected for the Campaign. As well as Cost per play and Impressions per play fields are completed for all selected Displays.
 
-**Please note**: If the above information is omitted the reporting cannot update to reflect Plays, Spend, Impressions and Target which will all show a 0 value. The Ad Campaign itself will also try and catch up to increase the Target which will result in Layouts being played more and more frequently until its the only content shown in order to fulfil the target.
+{version}
+**NOTE**: If the above information is omitted the reporting cannot update to reflect Plays, Spend, Impressions and Target which will all show a 0 value. The Ad Campaign itself will also try and catch up to increase the Target which will result in Layouts being played more and more frequently until its the only content shown in order to fulfil the target.
+{/version}
 
-![Ad Campaign Grid](img/v3.3_campaigns_ad_campaign_grid.png)
+![Ad Campaign Grid](img/v4_campaigns_ad_campaign_grid.png)
 
+The **Reference** tab can be optionally used to provide reference information for the selected Ad Campaign. Once added, this information can be viewed in the Campaign grid and via the API.
 
+## Row Menu
 
-##### Reference
-
-Optionally use this tab to provide reference information for the selected Ad Campaign. Once added, this information can be viewed in the Campaign grid and via the API.
-
-
-
-
-
-
-
-
+Both Campaign types have a row menu where Users can access a list of actions/shortcuts.
 
 
 

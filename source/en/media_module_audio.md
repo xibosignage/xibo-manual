@@ -1,64 +1,48 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+maxHeadingLevel: 2
+minHeadingLevel: 2
+excerpt: "Add Audio files to play on Layouts and Playlists"
+keywords: "cached off-line, music, sound files"
+persona: "content manager"
+---
 
-# Audio 
+# Audio
 
-Add audio to Layouts.
+Add Audio files to play on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-library-search). 
 
-{version}
-NOTE: If you are using a CMS version earlier than 3.1, please use the links below:
+{feat}Audio|v4{/feat}
 
-- v3.0.x CMS, please click [here](media_module_audio_3.html)
-- CMS earlier than v3.0.0 please click [here](media_module_audio_2.html)
+## Overview
 
-{/version}
-
-{feat}Audio|v3{/feat}
-
-Uploaded audio files are cached for off-line playback which can then be added to Layouts.
-
-Audio files can be uploaded to the [Library](media_library.html) or uploaded directly to Layouts using the Audio [Library Search](layouts_library_search.html) function from the Toolbar in the Layout Designer.
-
-## Configuration Options
-
-Once added to a Layout, click on the **Audio** file icon in the **Timeline** or **Viewer** to open configuration options in the right hand properties panel:
-
-![Audio Options](img/3.1_media_audio_options.png)
-
-
-
-- Provide an optional **Name** if required.
-- Here you can see how long the audio will play for. 
-- Tick the **Set a duration** to provide a specific duration for the audio file.
+-  [Upload](media_library.html#content-add-media-upload) new audio files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-library-search).
+- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
+- Audio files can be also be uploaded in advance to the Library.
 
 {tip}
-With **Set a duration** ticked you can set a lower duration to cut the file short or select a higher duration and use the Loop function!
+We recommend mp3.wav file format.
 {/tip}
 
-Use the **Context Menu** at the bottom of the viewer to apply further options to the Audio Widget.  
+- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for audio files uploaded directly to a Playlist.
+- Save  audio files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
+- Uploaded audio files are cached for off-line playback.
+- Fully compatible with [Overlay Layouts.](layouts_overlay.html)
+- Control the duration of the audio file.
+  - Set a lower duration to cut the original file short.
 
-![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
+  - Set a higher duration and use the Loop function to "loop" back to the beginning to satisfy a longer duration.
+- Attach Audio files to other Widgets.
+
+
+![Audio](img/v4_media_module_audio.png)
+
+
+
+
+
+Audio can also be attached to other Widgets using the [Context Menu](layouts_editor.html#content-context-menu)
 
 {tip}
-This menu can also be easily accessed by highlighting the Audio Widget in the Layout and using a right click! See the [Layout Designer](layouts_designer.html) page for further information!
-
-The Audio Widget is fully compatible with [Overlay Layouts](layouts_overlay.html) and can therefore be used effectively to draw attention and compliment content.
+When attaching to Widgets, Users can enter a Volume as well as a Loop parameter to determine whether the audio will loop for the duration of the attached Widget or just play through once. Audio will stop once the parent Widget finishes playing!
 {/tip}
-
-## Actions
-
-Interactive Actions can be attached to this Audio Widget from the **Actions** tab in the properties panel. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

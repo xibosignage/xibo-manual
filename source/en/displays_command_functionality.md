@@ -1,117 +1,93 @@
-<!--toc=displays-->
+---
+toc: "displays"
+maxHeadingLevel: 4
+minHeadingLevel: 2
+excerpt: "Configure Commands to execute via XMR, in a schedule or Layout"
+keywords: "philips intents, android intents, helpers, RS232, send command xmr, validation string, monitor on off"
+persona: "display manager, administrator"
+---
 
 # Command Functionality
 
-{version}
-**Note:** If you are using a CMS earlier than v3.0.0 please click [here](displays_command_functionality_1.8_2.html)
-{/version}
-
-The Command Functionality in [[PRODUCTNAME]] can be used to configure a set of Commands that a User can select to execute via **XMR**, in a **Schedule** or include in a **Layout**.
+The Command Functionality in [[PRODUCTNAME]] is used to configure a set of Commands for a User to select to execute via **XMR**, in a **Schedule** or include in a **Layout**.
 
 {tip}
 Commands can have Command Strings to apply to all Players or have a different Command String per Player which is particularly useful if your network  is mixed / connected to different Displays or have slightly different Player hardware.
 {/tip}
 
-A **Command record** is created with a Name, internal Reference and unique Command Code, which allows for a “generic command” to be created which can be used across **Display Profiles**, **Scheduled Events** and the **Shell Command Widget**.
+A **Command record** is created which allows for a “generic command” to be created which can be used across **Display Profiles**, **Scheduled Events** and the **Shell Command Widget**.
 
 {tip}
 Commands provide easy access to functionality for RS232, Android Intents and Philips SoC (system on chip)!
 {/tip}
 
-## Creating and Managing Commands
+## Command Management
 
-Commands are created and managed by navigating to **Commands** under the **Displays** section of the main menu:
+Commands are created and managed from **Commands** under the **Displays** section of the main CMS menu:
 
-![Display Commands](img/v3_displays_commands.png)
+![Display Commands](img/v4_displays_commands.png)
 
-- Use the Row Menu for existing Commands to Edit, Delete and set [Share](users_features_and_sharing.html) options.
+Use the row menu for a Command to Edit, Delete and set [Share](users_features_and_sharing.html#content-share) options.
 
-## Add Command
+### Add Command
 
-Click on the **Add Command** button at the top of the Commands Grid:
+Click on the **Add Command** button and complete the relevant form fields:
 
-![add_command](img/v3_displays_commands_add_command.png)
+![add_command](img/v4_displays_commands_add_command.png)
 
+Use the **Command** drop down menu to select from one of the following options to configure:
 
-- Complete a **Name**
-- Include a **Reference** code for internal identification
+#### Free Text
 
-### Command
-
-Use the drop down to select from the following options and complete the presented fields:
-
-- **Free Text** to type in a Command String
-
-  {tip}
-  The Command String represents the final executed Command and can be a direct call to the shell or can have a **helper** specified, see "Helpers" section below. {/tip}
-
-- **Philips Android** Intents
-
-- **RS232** configuration
-
-- **Android Intent**
-
-### Validation
-
-The Validation String is used as a comparison to the Command output and if it matches then the Command is considered a success. The Validation String must be an exact match.
-
-This could be useful for a network of mixed Windows and Android Players with a command called ‘Reboot’. The Command String for ‘Reboot’ on Windows being `shutdown /r /t 0`, and on Android, it is `reboot`.
+Type in a Command String
 
 {tip}
-The same can also be useful with a non-mixed network - imagine a network of Windows players with different monitors connected over HDMI/RS232. A single Command called ‘Monitor On’ can be created with the different brands of monitor represented by different Display Settings Profiles, each can have a different Command String to turn the monitor on/off.
-{/tip}
+The Command String represents the final executed Command and can be a direct call to the shell or can have a **helper** specified, see "Helpers" section below. {/tip}
 
-### Available on
+#### Philips Android
 
-- Click in the field and select which type of Display the Command will be available on.
-- Leave blank to apply to all types of Display.
+{version}
+Phillips Commercial Display integration is available from Android v2 R200.
+{/version}
 
-{tip}
-**Command** and **Validation** strings can be overridden using  [Display Profiles](displays_settings.html#setting_on_the_display). Click to **Edit** and use the **Command** tab!
-{/tip}
+The following commands can be used to control LED’s located on the sides of some commercial Phillips Displays:
 
-## Send Command
+```
+tpv_led|off
+tpv_led|red
+tpv_led|green
+tpv_led|blue
+tpv_led|white
+```
 
-Commands can be executed via **XMR** from Display/Display Groups using the Row Menu:
+From Android v2 R215, integration has been added to power on/off the screen backlight by using the following commands:
 
-![Send Command](img/v3_displays_commands_send_command.png)
-
-
-## Scheduling Commands
-
-Commands can be Scheduled to execute on a specific date/time by using the **Schedule** Page.:
-
-![Schedule Command](img/v3_displays_commands_schedule_command.png)
-
-
-- Click the **Add Event** button and select the [Event Type](scheduling_events.html)  as **Command**
-- Complete the form fields using the **Command** drop down menu to select the Command to schedule.
-
-Scheduled commands are executed once on the Player and only require a **Start** date and time. The Command can be executed up to 10 seconds after the time selected.
-
-## Shell Commands
-
-The [Shell Command Widget](media_module_shellcommand.html) is used to run external Commands based on the Layouts activity.
-
-Commands can be selected by adding the **Shell Command Widget** to a Layout. Shell Commands with a Command as their source act in the same fashion as normal shell commands. The Command is executed when the Widget is shown on the Layout.
+```
+tpv|backlighton
+tpv|backlightoff
+```
 
 {tip}
-They should be used in a Region on their own so they are executed only once each time the Layout is shown!
+ The below commands can be used for one specific Android 4 model only; 2016 model [10BDL3051T](https://www.philips.co.uk/p-p/10BDL3051T_00/signage-solutions-multi-touch-display)
+
+```
+tpv|screenoff
+tpv|screenon
+```
+
+`screenoff` will turn the screen off and put in a lower power state which can then be turned back on with `screenon`.
+
+For all other models, please use `backlighton/off` as `screenoff` will power completely off resulting in the need for an on site restart!
 {/tip}
 
-A Shell Command can also be a Command String with options for all Players provided. This allows Users to add Commands ‘ad-hoc’ for one-time use. 
+Mute/unmute commands have also been added from v2 R215:
 
-{tip}
-We recommend that Administrators create predefined commands when possible!
-{/tip}
+```
+tpv|mute
+tpv|unmute
+```
 
-## Helpers
-
-Command Helpers are prefixes that can be added to the Command String in order to take a more advanced action. Commands without a prefix are executed in the shell of the operating system which runs the Player. `cmd.exe` on Windows and `shell` on Android.
-
-{nonwhite}
-Xibo for Android [Helper Command to change Time zone](/docs/setup/helper-command-to-change-time-zone)
-{/nonwhite}
+**Please note:** `backlighton/off` doesn't mute audio, so if you have audio playing you will will also want to schedule  the above `mute/unmute` commands at the same time.
 
 #### RS232
 
@@ -154,9 +130,9 @@ FLOW_CONTROL_XON_XOFF = 3;
 
 The Command itself is a string which gets sent over RS232 using the connection details.
 
-#### Android Intents
+#### Android Intent
 
-Android display profiles can use the `intent` helper to specify an intent that should be called when the Command executes. The format of the Command is `intent|<type|activity,service,broadcast>|<activity>|[<extras>]` .
+Android Display Profiles can use the `intent` helper to specify an intent that should be called when the Command executes. The format of the Command is `intent|<type|activity,service,broadcast>|<activity>|[<extras>]` .
 
 `[<extras>]` is an optional parameter available from **Android v2 R206** used to provide additional data to the Intent. This must be a JSON formatted string containing an array with at least one object. The object format is below and must be on one line.
 
@@ -192,7 +168,64 @@ intent|broadcast|activity|[{ "name": "timeon", "type": "intArray", "value": [201
 Commands containing an intent helper are ignored in the Windows Player!
 {/tip}
 
-## Monitor ON/OFF
+### Helpers
+
+**Command Helpers** are prefixes that can be added to the Command String in order to take a more advanced action. Commands without a prefix are executed in the shell of the operating system which runs the Player. `cmd.exe` on Windows and `shell` on Android.
+
+{nonwhite}
+Xibo for Android [Helper Command to change Time zone](/docs/setup/helper-command-to-change-time-zone)
+{/nonwhite}
+
+### Validation
+
+The **Validation String** is used as a comparison to the **Command** output and if it matches then the Command is considered a success. The Validation String must be an exact match.
+
+This could be useful for a network of mixed Windows and Android Players with a command called ‘Reboot’. The Command String for ‘Reboot’ on Windows being `shutdown /r /t 0`, and on Android, it is `reboot`.
+
+{tip}
+The same can also be useful with a non-mixed network - imagine a network of Windows players with different monitors connected over HDMI/RS232. A single Command called ‘Monitor On’ can be created with the different brands of monitor represented by different Display Settings Profiles, each can have a different Command String to turn the monitor on/off.
+{/tip}
+
+### Available on
+
+Select which type of Display the Command will be available on, leave blank to apply the Command to all types of Display.
+
+{tip}
+**Command** and **Validation** strings can be overridden by editing a [Display Profile](displays_settings.html#setting_on_the_display) and using the **Command** tab!
+{/tip}
+
+## Send Command XMR
+
+Execute Commands via **XMR** from Displays/Display Groups using the row menu:
+
+
+## Scheduling Commands
+
+**Schedule Commands** so that they are executed at a specific time
+
+- Click on **Schedule** from the main CMS menu.
+- Select [Add Event](scheduling_events.html#content-add-event) from the top of the Schedule grid.
+
+- From the Event Type drop down select **Command**.
+- Complete the form fields and select the **Command** to use and **Start Time**.
+
+{tip}
+Scheduled commands are executed once on the Player and only require a **Start** date and time. The Command can be executed up to 10 seconds after the time selected.
+{/tip}
+
+## Shell Commands
+
+Use the [Shell Command Widget](media_module_shellcommand.html) to run external Commands based on the Layouts activity.
+
+Shell Commands with a Command as their source act in the same fashion as normal shell commands. The Command is executed when the Widget is shown on the Layout.
+
+A Shell Command can also be a Command String with options for all Players provided. This allows Users to add Commands ‘ad-hoc’ for one-time use. 
+
+{tip}
+We recommend that Administrators create predefined commands when possible!
+{/tip}
+
+## Monitor ON/OFF 
 
 ### HDMI-CEC
 
@@ -225,43 +258,3 @@ The following monitors and Commands have been tested:
 It should be noted that other models of each brand should also use the same Commands.
 {/tip}
 
-### Philips Commercial Displays
-
-Phillips integration is available from Android v2 R200
-
-The following commands can be used to control LED’s located on the sides of some commercial Phillips Displays:
-
-```
-tpv_led|off
-tpv_led|red
-tpv_led|green
-tpv_led|blue
-tpv_led|white
-```
-
-From Android v2 R215, integration has been added to power on/off the screen backlight by using the following commands:
-
-```
-tpv|backlighton
-tpv|backlightoff
-```
-
-{tip}
- The below commands can be used for one specific Android 4 model only; 2016 model [10BDL3051T](https://www.philips.co.uk/p-p/10BDL3051T_00/signage-solutions-multi-touch-display)
-
-```
-tpv|screenoff
-tpv|screenon
-```
-`screenoff` will turn the screen off and put in a lower power state which can then be turned back on with `screenon`.
-
-For all other models, please use `backlighton/off` as `screenoff` will power completely off resulting in the need for an on site restart!
-{/tip}
-
-Mute/unmute commands have also been added from v2 R215:
-```
-tpv|mute
-tpv|unmute
-```
-
-**Please note:** `backlighton/off` doesn't mute audio, so if you have audio playing you will will also want to schedule  the above `mute/unmute` commands at the same time.

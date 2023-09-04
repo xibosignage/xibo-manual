@@ -1,40 +1,20 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+minHeadingLevel: 2
+excerpt: "Display live streamed HLS content"
+persona: "content manager"
+---
 
 # HLS
 
-Display live streamed HLS content on Layouts.
+Display live streamed HLS content on Layouts and Playlists.
 
-{feat}HLS Stream|v3{/feat}
+{feat}HLS Stream|v4{/feat}
 
-{version}
-NOTE: This Widget requires a Player running Windows 8.1 or later/Android 6 or later. Earlier Android devices may play HLS using the [Local Video](media_module_localvideo.html) Widget. 
-{/version}
+## Overview
 
-This Widget requires a valid internet connection on the Player in order to function.
+- A valid internet connection is required on the Player in order to function.
+- This Widget requires a Player running either Windows 8.1 or later or Android 6 or later.
+- Android devices earlier than Android 6 may play HLS using the [Local Video](media_module_localvideo.html) Widget. 
+- Mute functionality.
 
-## Add Widget
-
-Locate **HLS** from the [Widget](layouts_widgets.html) toolbar and click to **Add** or **Grab** to drag and drop to a Region. 
-
-{verision}
-NOTE: If you are using a 1.8.x CMS, select HLS from the Widget Toolbox to add.
-{/version}
-
-On adding, configuration options are shown in the properties panel:
-
-- Provide a **Name** for ease of identification.
-- Choose to override the default **duration** if required.
-
-### Configuration
-
-![Add HLS Video Stream](img/v3.1_media_modules_hls.png)
-
-- Provide a **URL** to the HLS Video stream.
-
-- Use the checkbox to mute/unmute the video stream.
-
-## Actions 
-
-**Available from v3.0.0**
-
-Interactive Actions can be attached to this HLS Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.

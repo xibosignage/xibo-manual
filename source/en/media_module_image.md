@@ -1,52 +1,50 @@
-<!--toc=widgets-->
+---
+toc: "widgets"
+minHeadingLevel: 2
+excerpt: "Add Image files to include on Layouts and Playlists"
+persona: "content manager"
+---
 
 # Image
 
-Display images on Layouts.
+Add Image files to include on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-library-search).
 
-{version}
-NOTE:  If you are using a CMS earlier than v3.1, please use the links below:
+{feat}Image|v4{/feat}
 
-- v3.0 CMS, please click [here](media_module_image_3.html)
-- CMS earlier than v3.0, please click [here](media_module_image_2.html)
+## Overview
 
-{/version}
-
-{feat}Image|v3{/feat}
-
-Image files can be uploaded to the [Library](media_library.html) or uploaded directly to Layouts using the Image [Library Search](layouts_library_search.html) function from the Toolbar in the Layout Designer.
+- Valid extensions:  jpg,jpeg,png,bmp,gif,webp.
 
 {tip}
-Animated GIF’s are not supported on any Player!
+Animated gif’s are not supported on any Player!
 {/tip}
 
-### Configuration Options
-
-Once added to Layouts, click on the Image file in the Timeline or Viewer to show configuration options in the the properties panel:
-
-- Provide an optional **Name** if required.
-- Tick the **Set a duration** to provide a specific duration in seconds.
-
-![Edit Options](img\v3.1_media_image_options.png)
-
-- Use the **Appearance** tab to change the settings for **Scale** and **Alignment** of the image.
-
-{version}
-NOTE: From v3.1.0 **Fit** Scale type is available for Images!
-{/version}
+-  [Upload](media_library.html#content-add-media-upload) new image files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-library-search).
+- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
+- Image files can be also be uploaded in advance to the Library.
 
 {tip}
-
-![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
-
-Use the **Context Menu** to apply options to this Widget. Please refer to the [Layout Designer](layouts_designer.html) page for further information!
-
+When selecting image files to upload, users should check the resolution of the image and keep it within the intended screen size. Caution should be taken as uploading very large images can cause issues for the Player.
 {/tip}
 
-### Actions
+- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for image files uploaded directly to a Playlist.
 
-Interactive Actions can be attached to this Image Widget from the **Actions** tab. Please see the [Interactive Actions](layouts_interactive_actions.html) page for more information.
+- Save image files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
+
+- Centre, Stretch and Fit scaling.
+
+- Select images to use from Pixabay without leaving the CMS.
+
+  
+
+
+
+![Image](img/v4_media_module_image.png)
 
 
 
 **As [[PRODUCTNAME]] takes no measures to control what content is put on your displays, it is your responsibility to ensure that any images used are appropriately attributed if you do not own the rights.**
+
+#### Next...
+
+[Resizing Images](tour_cms_settings#content-resizing-images)

@@ -1,0 +1,235 @@
+dashboard.view:
+  - title: "User Dashboards"
+    url: "users_dashboards"
+    isAllowWhiteLabel: true
+    summary: >
+      A look at the available **User Dashboards**
+
+schedule.view:
+  - title: "Schedule"
+    url: "scheduling_events"
+    isAllowWhiteLabel: true
+    summary: >
+      Start creating **Schedules**
+
+daypart.view:
+  - title: "Dayparts"
+    url: "scheduling_events.html#content-dayparts"
+    isAllowWhiteLabel: true
+    summary: >
+      Add **Dayparts** to create easier Schedules
+
+campaign.view:
+  - title: "Layout List Campaign"
+    url: "layouts_campaigns.html#content-create-a-layout-list-campaign"
+    isAllowWhiteLabel: true
+    summary: >
+      Create a **Layout List Campaign**
+
+  - title: "Ad Campaign"
+    url: "layouts_campaigns.html#content-create-an-ad-campaign"
+    isAllowWhiteLabel: true
+    summary: >
+      Create an **Ad Campaign**
+
+layout.view:
+  - title: "Layouts"
+    url: "layouts"
+    isAllowWhiteLabel: true
+    summary: >
+      An Introduction to **Layouts**
+
+template.view:
+  - title: "Templates"
+    url: "layouts_templates.html#content-create-template"
+    isAllowWhiteLabel: true
+    summary: >
+      Create **Templates** to speed up the design process.
+
+resolution.view:
+  - title: "Resolutions"
+    url: "layouts.html#content-resolutions"
+    isAllowWhiteLabel: true
+    summary: >
+      Layout **Resolutions**
+
+playlist.view:
+  - title: "Playlists"
+    url: "media_playlists"
+    isAllowWhiteLabel: true
+    summary: >
+      An Introduction to **Playlists** 
+
+library.view:
+  - title: "Media Library"
+    url: "media_library"
+    isAllowWhiteLabel: true
+    summary: >
+      An Introduction to the **CMS Media Library** 
+
+dataset.view:
+  - title: "DataSets"
+    url: "media_datasets.html#content-creating-a-dataset"
+    isAllowWhiteLabel: true
+    summary: >
+      Creating a **DataSet**
+
+menuBoard.view:
+  - title: "Menu Boards"
+    url: "media_menuboards.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Create **Menu Board** Categories and Products
+
+display.view:
+  - title: "Player Installation"
+    url: "https://xibosignage.com/docs/setup"
+    isAllowWhiteLabel: false
+    summary: >
+      Select the **Installation Guide** for your chosen Player
+
+  - title: "Display Management"
+    url: "displays"
+    isAllowWhiteLabel: true
+    summary: >
+      **Display Management** in the CMS
+
+displaygroup.view:
+  - title: "Display Groups"
+    url: "displays_groups"
+    isAllowWhiteLabel: true
+    summary: >
+      **Display Group** Management
+
+syncgroup.view:
+  - title: "Sync Groups"
+    url: "displays_sync_groups"
+    isAllowWhiteLabel: true
+    summary: >
+      Display **Sync** Groups
+
+displayprofile.view:
+  - title: "Display Profiles"
+    url: "displays_settings.html##content-addediting-profiles"
+    isAllowWhiteLabel: true
+    summary: >
+      Adding **Display** Profiles
+
+playersoftware.view:
+  - title: "Upgrading Players"
+    url: "https://xibosignage.com/docs/setup/upgrading-players"
+    isAllowWhiteLabel: false
+    summary: >
+      Upgrading **Player** Versions
+
+command.view:
+  - title: "Commands"
+    url: "displays_command_functionality"
+    isAllowWhiteLabel: true
+    summary: >
+      **Command** Functionality
+
+user.view:
+  - title: "Users"
+    url: "users_administration"
+    isAllowWhiteLabel: true
+    summary: >
+      **User** Administration
+
+group.view:
+  - title: "User Groups"
+    url: "users_groups"
+    isAllowWhiteLabel: true
+    summary: >
+      **User Group** Administration
+
+admin.view:
+  - title: "CMS Settings"
+    url: "tour_cms_settings"
+    isAllowWhiteLabel: true
+    summary: >
+      CMS **Administrator** Settings
+
+application.view:
+  - title: "Applications"
+    url: "tour_cms_settings.html#content-applications"
+    isAllowWhiteLabel: true
+    summary: >
+      3rd Party **Applications**
+
+module.view:
+  - title: "Modules and Connectors"
+    url: "media_modules"
+    isAllowWhiteLabel: true
+    summary: >
+      Media Modules
+
+transition.view:
+  - title: "Transitions"
+    url: "tour_transitions"
+    isAllowWhiteLabel: true
+    summary: >
+      Transistion Management
+
+tag.view:
+  - title: "Tags"
+    url: "tour_tags"
+    isAllowWhiteLabel: true
+    summary: >
+      Tag Management
+
+folders.view:
+  - title: "Folders"
+    url: "tour_folders"
+    isAllowWhiteLabel: true
+    summary: >
+      An Introduction to Folders
+
+font.view:
+  - title: "Fonts"
+    url: "tour_cms_settings"
+    isAllowWhiteLabel: true
+    summary: >
+      Font Management
+
+report.view:
+  - title: "Reporting"
+    url: "displays_metrics"
+    isAllowWhiteLabel: true
+    summary: >
+      Reporting in the CMS
+
+reportschedule.view:
+  - title: "Report Schedules"
+    url: "displays_metrics"
+    isAllowWhiteLabel: true
+    summary: >
+      Report Schedules
+
+savedreport.view:
+  - title: "Saved Reports"
+    url: "displays_metrics.html#content-saved-reports"
+    isAllowWhiteLabel: true
+    summary: >
+      Saved Reports
+
+log.view:
+  - title: "Log"
+    url: "https://xibosignage.com/docs/setup/xibo-log-information"
+    isAllowWhiteLabel: false
+    summary: >
+      Xibo **Log** Information
+
+auditlog.view:
+  - title: "Audit Trail"
+    url: "https://xibosignage.com/docs/setup/audit-trail-cms"
+    isAllowWhiteLabel: false
+    summary: >
+      Xibo **Audit** Trail
+
+fault.view:
+  - title: "Troubleshooting"
+    url: "troubleshooting"
+    isAllowWhiteLabel: true
+    summary: >
+      User Support
