@@ -5,7 +5,7 @@
     "containsToc": ["tour"]
   },{
     "title": "Users",
-    "href": "users.html",
+    "href": "users_administration.html",
     "containsToc": ["users"]
   },{
     "title": "Displays",
@@ -17,7 +17,7 @@
     "containsToc": ["layouts"]
   },{
     "title": "Media",
-    "href": "media.html",
+    "href": "media_library.html",
     "containsToc": ["media"]
   },{
     "title": "Modules",
@@ -25,7 +25,7 @@
     "containsToc": ["widgets"]
   },{
     "title": "Scheduling",
-    "href": "scheduling.html",
+    "href": "scheduling_events.html",
     "containsToc": ["scheduling"]
   },{
     "title": "Troubleshooting",
