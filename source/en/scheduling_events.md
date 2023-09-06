@@ -109,6 +109,8 @@ Schedule Images and Videos directly from the [Library](media_library.html) and [
 
 ## Synchronised Events
 
+{feat}Sync Events|v4{/feat}
+
 {tip}
 Synchronised Events are used in conjunction with [Sync Groups](displays_sync_groups.html) to show mirrored or a video wall configuration across 2 or more Displays.
 
