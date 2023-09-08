@@ -67,7 +67,17 @@ The default for Cloud customers is set at 10,000 rows per DataSet.
 
 ## **Displays**
 
-This tab allows you to select a [Default Layout](displays.html#content-default-layout) to automatically assign to added Displays and set defaults for **Latitude** and **Longitude** for all Geo aware previews throughout the CMS.
+Set defaults for **Latitude** and **Longitude** for all Geo aware previews throughout the CMS.
+
+### Default Layout
+
+The Default Layout set here will be automatically assigned to all Displays to be shown when no other content is scheduled or if there is an issue which prevents a scheduled Event from being shown. 
+
+{tip}
+You can create your own Layout to replace the pre-set default, but keep in mind that designs should be kept simple with no complex media or web content.
+{/tip}
+
+This global Default Layout can be overridden for individual Displays by selecting an alternative [Default Layout](displays.html#content-default-layout) to be used.
 
 ### Proof of Play Default Settings
 

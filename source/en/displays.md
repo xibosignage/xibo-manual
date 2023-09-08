@@ -139,12 +139,19 @@ This can also be actioned from the **Edit** form on the General tab by selecting
 
 ### Default Layout
 
-When no other content is scheduled or if there is an issue that prevents a scheduled Event from showing, we recommend that a **Default Layout** is assigned directly to Displays so that something is **always** shown! 
+When no content is scheduled or if there is an issue that prevents a scheduled Event from showing, a **Default Layout** will be shown on Displays to ensure that something is **always** shown! 
 
-Select from the row menu or **Edit** form to choose the Layout to use from the dropdown menu. You can create your own to replace the existing default, but keep in mind that designs should be kept simple with no complex media or web content.
+Displays will show the global Default Layout as set in [CMS Settings](tour_cms_settings#content-default-layout) which can be overridden per Display if required:
+
+- Select from the row menu or **Edit** form to choose the Layout to use from the dropdown menu. 
+- Leave this field blank to automatically use the global Default Layout.
+
+{tip}
+Create your own Layout to select but keep in mind that designs should be kept simple with no complex media or web content.
+{/tip}
 
 {version}
-**NOTE:** If no Default Layout is set or there is an issue with the Default Layout that has been set, the splash screen will be shown on Displays!
+**NOTE:** If there is no other content scheduled and the Default Layout is being downloaded/there is an issue with the selected Default Layout, the splash screen will be displayed.
 {/version}
 
 ### Assign Files / Layouts
