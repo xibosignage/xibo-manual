@@ -3,7 +3,7 @@ toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Configurable options in the CMS Settings for Administrators"
-keywords: "resize images, transition defaults, automatically publish layout, proof of play default settings, tidy library, maintenance settings, network settings, regional settings, set timezone, set language, password policy, password reminder, two factor authentication, fonts, applications"
+keywords: "resize images, transition defaults, automatically publish layout, proof of play default settings, tidy library, maintenance settings, network settings, regional settings, set timezone, set language, password policy, password reminder, two factor authentication, fonts, applications, global default layout"
 persona: "administrator"
 ---
 
@@ -73,9 +73,11 @@ Set defaults for **Latitude** and **Longitude** for all Geo aware previews throu
 
 The Default Layout set here will be automatically assigned to all Displays to be shown when no other content is scheduled or if there is an issue which prevents a scheduled Event from being shown. 
 
+{nonwhite}
 {tip}
 You can create your own Layout to replace the pre-set default, but keep in mind that designs should be kept simple with no complex media or web content.
 {/tip}
+{/nonwhite}
 
 This global Default Layout can be overridden for individual Displays by selecting an alternative [Default Layout](displays.html#content-default-layout) to be used.
 

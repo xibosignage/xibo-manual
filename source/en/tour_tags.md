@@ -76,6 +76,10 @@ The deletion of Tags is irreversible, so use with care!
 
 As soon as you start entering text in the Tag field, an auto-complete helper will show possible matches to make it easier for Users to see what Tags are available to select from.
 
+{tip}
+Text entries will register on lost focus to enable a User to enter text without having to select the filtered matches.
+{/tip}
+
 - You can see in the image below that the `colour` Tag already has associated values of `Red, Green and Blue`  shown as Tag values to select from.
 
 ![Tags Value](img/v4_tour_tags_associated_value.png)
