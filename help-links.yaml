@@ -11,13 +11,13 @@ statusdashboard.view:
     summary: >
       First Time **User Access**
 
-   - title: "Navgigate the CMS"
+  - title: "Navgigate the CMS"
     url: "tour_cms_navigation.html"
     isAllowWhiteLabel: true
     summary: >
       Start Navigating the CMS.
 
-   - title: "CMS Administrator Settings"
+  - title: "CMS Administrator Settings"
     url: "tour_cms_settings.html"
     isAllowWhiteLabel: true
     summary: >
@@ -42,7 +42,7 @@ playlistdashboard.view:
     summary: >
       Start Navigating the CMS.
 
-   - title: "CMS Administrator Settings"
+  - title: "CMS Administrator Settings"
     url: "tour_cms_settings.html"
     isAllowWhiteLabel: true
     summary: >
@@ -67,7 +67,7 @@ icondashboard.view:
     summary: >
       Start Navigating the CMS.
 
-   - title: "CMS Administrator Settings"
+  - title: "CMS Administrator Settings"
     url: "tour_cms_settings.html"
     isAllowWhiteLabel: true
     summary: >
@@ -92,7 +92,7 @@ mediamanager.view:
     summary: >
       Start Navigating the CMS.
 
-   - title: "CMS Administrator Settings"
+  - title: "CMS Administrator Settings"
     url: "tour_cms_settings.html"
     isAllowWhiteLabel: true
     summary: >
@@ -105,7 +105,7 @@ schedule.view:
     summary: >
       Start creating **Schedules**
 
-   - title: "Schedule Management"
+  - title: "Schedule Management"
     url: "scheduling_management"
     isAllowWhiteLabel: true
     summary: >
@@ -117,7 +117,7 @@ schedule.view:
     summary: >
       Use **Repeats** to simplify your Scheduling!
 
- - title: "Syncronised Events"
+  - title: "Syncronised Events"
     url: "scheduling_events.html#content-synchronised-events"
     isAllowWhiteLabel: true
     summary: >
@@ -130,13 +130,13 @@ daypart.view:
     summary: >
       Add **Dayparts** to create easier Schedules
 
-   - title: "Schedule Events"
+  - title: "Schedule Events"
     url: "scheduling_events"
     isAllowWhiteLabel: true
     summary: >
        Start creating **Schedules**
 
-   - title: "Operating Hours"
+  - title: "Operating Hours"
     url: "displays_settings.html#content-operating-hours"
     isAllowWhiteLabel: true
     summary: >
@@ -174,19 +174,19 @@ layout.view:
     summary: >
       An Introduction to **Layouts**
 
-   - title: "Layout Editor"
+  - title: "Layout Editor"
     url: "layouts_editor"
     isAllowWhiteLabel: true
     summary: >
     Using the **Layout Editor**
 
-    - title: "Overlay Layout"
+   - title: "Overlay Layout"
     url: "layouts_overlay.html"
     isAllowWhiteLabel: true
     summary: >
     Create an **Overlay** to sit on top of your other Layouts!
 
-   - title: "Share Options"
+  - title: "Share Options"
     url: "users_features_and_sharing.html#content-share"
     isAllowWhiteLabel: true
     summary: >
@@ -199,7 +199,7 @@ template.view:
     summary: >
       Create **Templates** to speed up the design process.
 
-   - title: "Zones"
+  - title: "Zones"
     url: "layouts_templates.html#content-adding-zones"
     isAllowWhiteLabel: true
     summary: >
@@ -243,13 +243,13 @@ playlist.view:
     summary: >
       Using the **Playlist Editor** 
 
-   - title: "Widget Expiry Dates"
+  - title: "Widget Expiry Dates"
     url: "media_playlists.html#content-widget-expiry-dates"
     isAllowWhiteLabel: true
     summary: >
       Setting **Widget Expiry Dates.**
 
-   - title: "Playlist Widget"
+  - title: "Playlist Widget"
     url: "media_module_playlist.html"
     isAllowWhiteLabel: true
     summary: >
@@ -268,19 +268,19 @@ library.view:
     summary: >
       An Introduction to the **CMS Media Library** 
 
-   - title: "Expiry Dates"
+  - title: "Expiry Dates"
     url: "media_library.html#content-expiry-dates"
     isAllowWhiteLabel: true
     summary: >
       Setting **Expiry Dates** 
 
-   - title: "Resize Images"
+  - title: "Resize Images"
     url: "tour_cms_settings.html#content-resizing-images"
     isAllowWhiteLabel: true
     summary: >
       When to **Resize Images.**
 
-     - title: "Tidy Library"
+  - title: "Tidy Library"
     url: "tour_cms_settings.html#content-general"
     isAllowWhiteLabel: true
     summary: >
@@ -293,19 +293,19 @@ dataset.view:
     summary: >
       Creating a **DataSet**
 
-   - title: "Remote DataSets"
+  - title: "Remote DataSets"
     url: "media_datasets.html#content-creating-remote-datasets"
     isAllowWhiteLabel: true
     summary: >
       Creating remote **DataSets**
 
-   - title: "Configure Columns"
+  - title: "Configure Columns"
     url: "media_datasets.html#content-create-and-configure-columns"
     isAllowWhiteLabel: true
     summary: >
       Create and Configure **Columns** for your DataSet!
 
-   - title: "Add Data"
+  - title: "Add Data"
     url: "media_datasets.html#content-adding-data-to-columns"
     isAllowWhiteLabel: true
     summary: >
@@ -324,13 +324,13 @@ menuBoard.view:
     summary: >
       Create **Menu Board** Categories and Products
 
-   - title: "Menu Boards Category Widget"
+  - title: "Menu Boards Category Widget"
     url: "media_module_menuboards_category"
     isAllowWhiteLabel: true
     summary: >
       Add Category information held in a Menu Board to Layouts.
 
-   - title: "Menu Boards Products Widget"
+  - title: "Menu Boards Products Widget"
     url: "media_module_menuboards_category"
     isAllowWhiteLabel: true
     summary: >
@@ -349,13 +349,13 @@ display.view:
     summary: >
       **Display Management** in the CMS.
 
-   - title: "Assign Media Files"
+  - title: "Assign Media Files"
     url: "displays.html#content-assign-files--layouts"
     isAllowWhiteLabel: true
     summary: >
       Assign Media Files and Layouts directly to Displays.
 
-   - title: "Scheduled Events"
+  - title: "Scheduled Events"
     url: "scheduling_events.html#content-add-event"
     isAllowWhiteLabel: true
     summary: >
@@ -374,19 +374,19 @@ displaygroup.view:
     summary: >
       **Display Group** Management
 
-   - title: "Dynamic Groups"
+  - title: "Dynamic Groups"
     url: "displays_groups.html#content-dynamic-group-membership"
     isAllowWhiteLabel: true
     summary: >
       Assign Displays to a Group dynamically!
 
- - title: "Assign Media Files"
+  - title: "Assign Media Files"
     url: "displays.html#content-assign-files--layouts"
     isAllowWhiteLabel: true
     summary: >
       Assign Media Files and Layouts directly to Displays.
 
-   - title: "Scheduled Events"
+  - title: "Scheduled Events"
     url: "scheduling_events.html#content-add-event"
     isAllowWhiteLabel: true
     summary: >
@@ -405,7 +405,7 @@ syncgroup.view:
     summary: >
       Scheduling **Syncronised** Events.
 
-   - title: "Display Management"
+  - title: "Display Management"
     url: "displays"
     isAllowWhiteLabel: true
     summary: >
@@ -418,7 +418,7 @@ displayprofile.view:
     summary: >
       Adding **Display** Profiles
 
-   - title: "Collect Interval"
+  - title: "Collect Interval"
     url: "displays_settings.html#content-collect-interval"
     isAllowWhiteLabel: true
     summary: >
@@ -430,13 +430,13 @@ displayprofile.view:
     summary: >
       Enable Stats Reporting.
 
-   - title: "Force HTTPS"
+  - title: "Force HTTPS"
     url: "displays_settings.html#content-force-https"
     isAllowWhiteLabel: true
     summary: >
       Force an **HTTPS** Display Connection.
 
-   - title: "Expire Modified Layouts"
+  - title: "Expire Modified Layouts"
     url: "displays_settings.html#content-expire-modified-layouts"
     isAllowWhiteLabel: true
     summary: >
@@ -449,7 +449,7 @@ playersoftware.view:
     summary: >
       Upgrading **Player** Versions
 
-   - title: "Supported Versions and Environments"
+  - title: "Supported Versions and Environments"
     url: "https://xibosignage.com/docs/setup/supported-versions-and-environments"
     isAllowWhiteLabel: false
     summary: >
@@ -462,13 +462,13 @@ command.view:
     summary: >
       **Command** Functionality
 
-   - title: "Shell Command Widget"
+  - title: "Shell Command Widget"
     url: "media_module_shellcommand"
     isAllowWhiteLabel: true
     summary: >
       Add this Widget to Layouts to execute external Commands!
 
-   - title: "Scheduling Commands"
+  - title: "Scheduling Commands"
     url: "scheduling_events"
     isAllowWhiteLabel: true
     summary: >
@@ -493,7 +493,7 @@ user.view:
     summary: >
       Assign a **Dashboard** for a Users homepage.
 
-   - title: "Features and Sharing"
+  - title: "Features and Sharing"
     url: "users_features_and_sharing"
     isAllowWhiteLabel: true
     summary: >
@@ -518,7 +518,7 @@ group.view:
     summary: >
       **User** Administration.
 
-   - title: "Features and Sharing"
+  - title: "Features and Sharing"
     url: "users_features_and_sharing"
     isAllowWhiteLabel: true
     summary: >
@@ -531,7 +531,7 @@ admin.view:
     summary: >
       CMS **Administrator** Settings
 
-   - title: "CMS Post Installation Set-up"
+  - title: "CMS Post Installation Set-up"
     url: "https://xibosignage.com/docs/setup/xibo-cms-post-installation-setup-guide.html"
     isAllowWhiteLabel: false
     summary: >
@@ -550,7 +550,7 @@ application.view:
     summary: >
       3rd Party **Applications**
 
- - title: "Connectors"
+  - title: "Connectors"
     url: "media_modules.html#content-connectors"
     isAllowWhiteLabel: true
     summary: >
@@ -589,7 +589,7 @@ tag.view:
     summary: >
       Tag Management
 
-   - title: "Assigning Tags"
+  - title: "Assigning Tags"
     url: "tour_tags.html#content-assigning-tags"
     isAllowWhiteLabel: true
     summary: >
@@ -602,7 +602,7 @@ folders.view:
     summary: >
       An Introduction to Folders
 
-   - title: "Creating Folders"
+  - title: "Creating Folders"
     url: "tour_folders.html#content-folder-management"
     isAllowWhiteLabel: true
     summary: >
@@ -640,13 +640,13 @@ report.view:
     summary: >
       Collect Proof of Play Reports.
 
-   - title: "Library Reports"
+  - title: "Library Reports"
     url: "displays_metrics.html#content-library"
     isAllowWhiteLabel: true
     summary: >
       View Library Reports for Users.
 
-   - title: "Report Schedules"
+  - title: "Report Schedules"
     url: "displays_metrics.html#content-schedule"
     isAllowWhiteLabel: true
     summary: >
