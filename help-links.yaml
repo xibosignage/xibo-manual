@@ -1,16 +1,127 @@
-dashboard.view:
-  - title: "User Dashboards"
-    url: "users_dashboards"
+statusdashboard.view:
+  - title: "Status Dashboard"
+    url: "users_dashboards.html#content-status-dashboard"
     isAllowWhiteLabel: true
     summary: >
-      A look at the available **User Dashboards**
+      A look at the **Status Dashboard**
+
+  - title: "User Access"
+    url: "tour_user_access"
+    isAllowWhiteLabel: true
+    summary: >
+      First Time **User Access**
+
+  - title: "Navgigate the CMS"
+    url: "tour_cms_navigation.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Start Navigating the CMS.
+
+  - title: "CMS Administrator Settings"
+    url: "tour_cms_settings.html"
+    isAllowWhiteLabel: true
+    summary: >
+      CMS Settings for an Administrator User!
+
+playlistdashboard.view:
+  - title: "Playlist Dashboard"
+    url: "users_dashboards.html#content-playlist-dashboard"
+    isAllowWhiteLabel: true
+    summary: >
+      A look at the **Playlist Dashboard**
+
+  - title: "User Access"
+    url: "tour_user_access"
+    isAllowWhiteLabel: true
+    summary: >
+      First Time **User Access**
+
+  - title: "Navgigate the CMS"
+    url: "tour_cms_navigation.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Start Navigating the CMS.
+
+  - title: "CMS Administrator Settings"
+    url: "tour_cms_settings.html"
+    isAllowWhiteLabel: true
+    summary: >
+      CMS Settings for an Administrator User!
+
+icondashboard.view:
+  - title: "Playlist Dashboard"
+    url: "users_dashboards.html#content-icon-dashboard"
+    isAllowWhiteLabel: true
+    summary: >
+      A look at the **Icon Dashboard**
+
+  - title: "User Access"
+    url: "tour_user_access"
+    isAllowWhiteLabel: true
+    summary: >
+      First Time **User Access**
+
+  - title: "Navgigate the CMS"
+    url: "tour_cms_navigation.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Start Navigating the CMS.
+
+  - title: "CMS Administrator Settings"
+    url: "tour_cms_settings.html"
+    isAllowWhiteLabel: true
+    summary: >
+      CMS Settings for an Administrator User!
+
+mediamanager.view:
+  - title: "Media Manager Dashboard"
+    url: "users_dashboards.html#content-media-manager-dashboard"
+    isAllowWhiteLabel: true
+    summary: >
+      A look at the **Media Manager Dashboard**
+
+  - title: "User Access"
+    url: "tour_user_access"
+    isAllowWhiteLabel: true
+    summary: >
+      First Time **User Access**
+
+  - title: "Navgigate the CMS"
+    url: "tour_cms_navigation.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Start Navigating the CMS.
+
+  - title: "CMS Administrator Settings"
+    url: "tour_cms_settings.html"
+    isAllowWhiteLabel: true
+    summary: >
+      CMS Settings for an Administrator User!
 
 schedule.view:
-  - title: "Schedule"
+  - title: "Schedule Evente"
     url: "scheduling_events"
     isAllowWhiteLabel: true
     summary: >
       Start creating **Schedules**
+
+  - title: "Schedule Management"
+    url: "scheduling_management"
+    isAllowWhiteLabel: true
+    summary: >
+      Manage your Event **Schedules**
+
+  - title: "Repeat Scheduling"
+    url: "scheduling_events.html#rcontent-repeats"
+    isAllowWhiteLabel: true
+    summary: >
+      Use **Repeats** to simplify your Scheduling!
+
+  - title: "Syncronised Events"
+    url: "scheduling_events.html#content-synchronised-events"
+    isAllowWhiteLabel: true
+    summary: >
+      Scheduling **Syncronised** Events.
 
 daypart.view:
   - title: "Dayparts"
@@ -18,6 +129,18 @@ daypart.view:
     isAllowWhiteLabel: true
     summary: >
       Add **Dayparts** to create easier Schedules
+
+  - title: "Schedule Events"
+    url: "scheduling_events"
+    isAllowWhiteLabel: true
+    summary: >
+       Start creating **Schedules**
+
+  - title: "Operating Hours"
+    url: "displays_settings.html#content-operating-hours"
+    isAllowWhiteLabel: true
+    summary: >
+       Create **Operating Hours** for a Display!
 
 campaign.view:
   - title: "Layout List Campaign"
@@ -32,12 +155,42 @@ campaign.view:
     summary: >
       Create an **Ad Campaign**
 
+  - title: "Schedule Campaigns"
+    url: "scheduling_events.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Schedule your Campaign to show on Displays!
+
+  - title: "Display Order"
+    url: "scheduling_events.html#content-display-order"
+    isAllowWhiteLabel: true
+    summary: >
+      When to use **Display Order**!
+
 layout.view:
   - title: "Layouts"
     url: "layouts"
     isAllowWhiteLabel: true
     summary: >
       An Introduction to **Layouts**
+
+  - title: "Layout Editor"
+    url: "layouts_editor"
+    isAllowWhiteLabel: true
+    summary: >
+      Using the **Layout Editor.**
+
+  - title: "Overlay Layout"
+    url: "layouts_overlay"
+    isAllowWhiteLabel: true
+    summary: >
+      Create an **Overlay** to sit on top of your other Layouts!
+
+  - title: "Share Options"
+    url: "users_features_and_sharing.html#content-share"
+    isAllowWhiteLabel: true
+    summary: >
+      Set access options for Users.
 
 template.view:
   - title: "Templates"
@@ -46,19 +199,67 @@ template.view:
     summary: >
       Create **Templates** to speed up the design process.
 
+  - title: "Zones"
+    url: "layouts_templates.html#content-adding-zones"
+    isAllowWhiteLabel: true
+    summary: >
+      Add **Zones** to your Templates.
+
+  - title: "Layout Editor"
+    url: "layouts_editor.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Using the **Layout Editor**.
+
+  - title: "Save a Layout as a Template"
+    url: "layouts_templates.html#content-save-layout-as-template"
+    isAllowWhiteLabel: true
+    summary: >
+      Save existing Layouts as a Template.
+
+  - title: "Share Options"
+    url: "users_features_and_sharing.html#content-share"
+    isAllowWhiteLabel: true
+    summary: >
+      Set access options for Users.
+
 resolution.view:
-  - title: "Resolutions"
+  - title: "Layout Resolutions"
     url: "layouts.html#content-resolutions"
     isAllowWhiteLabel: true
     summary: >
-      Layout **Resolutions**
-
+      Selecting a **Resolution** for your Layout.
+  
 playlist.view:
   - title: "Playlists"
     url: "media_playlists"
     isAllowWhiteLabel: true
     summary: >
       An Introduction to **Playlists** 
+
+  - title: "Playlist Editor"
+    url: "media_playlists.html#content-playlist-editor"
+    isAllowWhiteLabel: true
+    summary: >
+      Using the **Playlist Editor** 
+
+  - title: "Widget Expiry Dates"
+    url: "media_playlists.html#content-widget-expiry-dates"
+    isAllowWhiteLabel: true
+    summary: >
+      Setting **Widget Expiry Dates.**
+
+  - title: "Playlist Widget"
+    url: "media_module_playlist.html"
+    isAllowWhiteLabel: true
+    summary: >
+      Add **Playlists** to Layouts!
+
+  - title: "Library Search"
+    url: "layouts_editor.html#content-library-search"
+    isAllowWhiteLabel: true
+    summary: >
+      Use **Library Searches** to easily add content!
 
 library.view:
   - title: "Media Library"
@@ -67,6 +268,24 @@ library.view:
     summary: >
       An Introduction to the **CMS Media Library** 
 
+  - title: "Expiry Dates"
+    url: "media_library.html#content-expiry-dates"
+    isAllowWhiteLabel: true
+    summary: >
+      Setting **Expiry Dates** 
+
+  - title: "Resize Images"
+    url: "tour_cms_settings.html#content-resizing-images"
+    isAllowWhiteLabel: true
+    summary: >
+      When to **Resize Images.**
+
+  - title: "Tidy Library"
+    url: "tour_cms_settings.html#content-general"
+    isAllowWhiteLabel: true
+    summary: >
+      **Tidy Library** Settings.
+
 dataset.view:
   - title: "DataSets"
     url: "media_datasets.html#content-creating-a-dataset"
@@ -74,12 +293,48 @@ dataset.view:
     summary: >
       Creating a **DataSet**
 
+  - title: "Remote DataSets"
+    url: "media_datasets.html#content-creating-remote-datasets"
+    isAllowWhiteLabel: true
+    summary: >
+      Creating remote **DataSets**
+
+  - title: "Configure Columns"
+    url: "media_datasets.html#content-create-and-configure-columns"
+    isAllowWhiteLabel: true
+    summary: >
+      Create and Configure **Columns** for your DataSet!
+
+  - title: "Add Data"
+    url: "media_datasets.html#content-adding-data-to-columns"
+    isAllowWhiteLabel: true
+    summary: >
+      Adding **Data** to Columns in your DataSet.
+
+  - title: "View RSS"
+    url: "media_datasets.html#content-view-rss"
+    isAllowWhiteLabel: true
+    summary: >
+      Create your own **RSS Feed** from the data in your DataSet!
+
 menuBoard.view:
   - title: "Menu Boards"
-    url: "media_menuboards.html"
+    url: "media_menuboards"
     isAllowWhiteLabel: true
     summary: >
       Create **Menu Board** Categories and Products
+
+  - title: "Menu Boards Category Widget"
+    url: "media_module_menuboards_category"
+    isAllowWhiteLabel: true
+    summary: >
+      Add Category information held in a Menu Board to Layouts.
+
+  - title: "Menu Boards Products Widget"
+    url: "media_module_menuboards_category"
+    isAllowWhiteLabel: true
+    summary: >
+      Add Product information held in a Menu Board to Layouts.
 
 display.view:
   - title: "Player Installation"
@@ -92,14 +347,50 @@ display.view:
     url: "displays"
     isAllowWhiteLabel: true
     summary: >
-      **Display Management** in the CMS
+      **Display Management** in the CMS.
 
+  - title: "Assign Media Files"
+    url: "displays.html#content-assign-files--layouts"
+    isAllowWhiteLabel: true
+    summary: >
+      Assign Media Files and Layouts directly to Displays.
+
+  - title: "Scheduled Events"
+    url: "scheduling_events.html#content-add-event"
+    isAllowWhiteLabel: true
+    summary: >
+      Create Schedules to show content on Displays.
+
+  - title: "Transfer Display"
+    url: "displays.html#content-transfer-display-to-another-cms"
+    isAllowWhiteLabel: true
+    summary: >
+      Transfer a Display to another CMS!
+   
 displaygroup.view:
   - title: "Display Groups"
     url: "displays_groups"
     isAllowWhiteLabel: true
     summary: >
       **Display Group** Management
+
+  - title: "Dynamic Groups"
+    url: "displays_groups.html#content-dynamic-group-membership"
+    isAllowWhiteLabel: true
+    summary: >
+      Assign Displays to a Group dynamically!
+
+  - title: "Assign Media Files"
+    url: "displays.html#content-assign-files--layouts"
+    isAllowWhiteLabel: true
+    summary: >
+      Assign Media Files and Layouts directly to Displays.
+
+  - title: "Scheduled Events"
+    url: "scheduling_events.html#content-add-event"
+    isAllowWhiteLabel: true
+    summary: >
+      Create Schedules to show content on Displays. 
 
 syncgroup.view:
   - title: "Sync Groups"
@@ -108,12 +399,48 @@ syncgroup.view:
     summary: >
       Display **Sync** Groups
 
+  - title: "Syncronised Events"
+    url: "scheduling_events.html#content-synchronised-events"
+    isAllowWhiteLabel: true
+    summary: >
+      Scheduling **Syncronised** Events.
+
+  - title: "Display Management"
+    url: "displays"
+    isAllowWhiteLabel: true
+    summary: >
+      **Display Management** in the CMS.
+
 displayprofile.view:
   - title: "Display Profiles"
     url: "displays_settings.html##content-addediting-profiles"
     isAllowWhiteLabel: true
     summary: >
       Adding **Display** Profiles
+
+  - title: "Collect Interval"
+    url: "displays_settings.html#content-collect-interval"
+    isAllowWhiteLabel: true
+    summary: >
+      Setting a Collect Interval for Displays.
+
+  - title: "Stat Reporting"
+    url: "displays_settings.html#content-enable-stats-reporting"
+    isAllowWhiteLabel: true
+    summary: >
+      Enable Stats Reporting.
+
+  - title: "Force HTTPS"
+    url: "displays_settings.html#content-force-https"
+    isAllowWhiteLabel: true
+    summary: >
+      Force an **HTTPS** Display Connection.
+
+  - title: "Expire Modified Layouts"
+    url: "displays_settings.html#content-expire-modified-layouts"
+    isAllowWhiteLabel: true
+    summary: >
+      Expire the playback of a Layout.
 
 playersoftware.view:
   - title: "Upgrading Players"
@@ -122,12 +449,30 @@ playersoftware.view:
     summary: >
       Upgrading **Player** Versions
 
+  - title: "Supported Versions and Environments"
+    url: "https://xibosignage.com/docs/setup/supported-versions-and-environments"
+    isAllowWhiteLabel: false
+    summary: >
+      Check supported Versions and Minimum Requirements!
+
 command.view:
   - title: "Commands"
     url: "displays_command_functionality"
     isAllowWhiteLabel: true
     summary: >
       **Command** Functionality
+
+  - title: "Shell Command Widget"
+    url: "media_module_shellcommand"
+    isAllowWhiteLabel: true
+    summary: >
+      Add this Widget to Layouts to execute external Commands!
+
+  - title: "Scheduling Commands"
+    url: "scheduling_events"
+    isAllowWhiteLabel: true
+    summary: >
+      Create Scheduled Events for Commands.
 
 user.view:
   - title: "Users"
@@ -136,12 +481,48 @@ user.view:
     summary: >
       **User** Administration
 
+  - title: "Folders"
+    url: "tour_folders"
+    isAllowWhiteLabel: true
+    summary: >
+      Easily give User access to items using **Folders**!
+
+  - title: "Dashboards"
+    url: "users_dashboards"
+    isAllowWhiteLabel: true
+    summary: >
+      Assign a **Dashboard** for a Users homepage.
+
+  - title: "Features and Sharing"
+    url: "users_features_and_sharing"
+    isAllowWhiteLabel: true
+    summary: >
+      Grant Users access to pages and items within the CMS!
+
 group.view:
   - title: "User Groups"
     url: "users_groups"
     isAllowWhiteLabel: true
     summary: >
       **User Group** Administration
+
+  - title: "Folders"
+    url: "tour_folders"
+    isAllowWhiteLabel: true
+    summary: >
+      Easily give User access to items using **Folders**!
+
+  - title: "Users"
+    url: "users_administration"
+    isAllowWhiteLabel: true
+    summary: >
+      **User** Administration.
+
+  - title: "Features and Sharing"
+    url: "users_features_and_sharing"
+    isAllowWhiteLabel: true
+    summary: >
+      Grant Users access to pages and items within the CMS!
 
 admin.view:
   - title: "CMS Settings"
@@ -150,12 +531,30 @@ admin.view:
     summary: >
       CMS **Administrator** Settings
 
+  - title: "CMS Post Installation Set-up"
+    url: "https://xibosignage.com/docs/setup/xibo-cms-post-installation-setup-guide.html"
+    isAllowWhiteLabel: false
+    summary: >
+      Additional set-up to keep things running smoothly!
+
+  - title: "Cloud CMS Defaults and Restrictions"
+    url: "https://xibosignage.com/docs/setup/xibo-in-the-cloud#content-xibo-cloud-cms-defaults-and-restrictions.html"
+    isAllowWhiteLabel: false
+    summary: >
+      Pre-configured Settings for Cloud hosting.
+
 application.view:
   - title: "Applications"
     url: "tour_cms_settings.html#content-applications"
     isAllowWhiteLabel: true
     summary: >
       3rd Party **Applications**
+
+  - title: "Connectors"
+    url: "media_modules.html#content-connectors"
+    isAllowWhiteLabel: true
+    summary: >
+      Configure API Keys for third party services.
 
 module.view:
   - title: "Modules and Connectors"
@@ -164,12 +563,24 @@ module.view:
     summary: >
       Media Modules
 
+  - title: "Widgets"
+    url: "layouts_editor.html#content-widgets"
+    isAllowWhiteLabel: true
+    summary: >
+      All Widgets have an associated Module.
+
 transition.view:
   - title: "Transitions"
     url: "tour_transitions"
     isAllowWhiteLabel: true
     summary: >
       Transistion Management
+
+  - title: "Transition Defaults"
+    url: "tour_cms_settings.html#content-defaults"
+    isAllowWhiteLabel: true
+    summary: >
+      Set **Transition Default** Settings.
 
 tag.view:
   - title: "Tags"
@@ -178,12 +589,36 @@ tag.view:
     summary: >
       Tag Management
 
+  - title: "Assigning Tags"
+    url: "tour_tags.html#content-assigning-tags"
+    isAllowWhiteLabel: true
+    summary: >
+      Assign **Tags** for easier organisation.
+
 folders.view:
   - title: "Folders"
     url: "tour_folders"
     isAllowWhiteLabel: true
     summary: >
       An Introduction to Folders
+
+  - title: "Creating Folders"
+    url: "tour_folders.html#content-folder-management"
+    isAllowWhiteLabel: true
+    summary: >
+      Create Folders to hold items throughout the CMS.
+
+  - title: "Home Folders"
+    url: "tour_folders.html#content-home-folder"
+    isAllowWhiteLabel: true
+    summary: >
+      Assign **Home Folders** to Users.
+
+  - title: "Folder Sharing"
+    url: "tour_folders.html#content-sharing-options"
+    isAllowWhiteLabel: true
+    summary: >
+      Share multiple items to multiple Users using **Folders**.
 
 font.view:
   - title: "Fonts"
@@ -199,12 +634,36 @@ report.view:
     summary: >
       Reporting in the CMS
 
+  - title: "Proof of Play"
+    url: "displays_metrics.html#content-proof-of-play"
+    isAllowWhiteLabel: true
+    summary: >
+      Collect Proof of Play Reports.
+
+  - title: "Library Reports"
+    url: "displays_metrics.html#content-library"
+    isAllowWhiteLabel: true
+    summary: >
+      View Library Reports for Users.
+
+  - title: "Report Schedules"
+    url: "displays_metrics.html#content-schedule"
+    isAllowWhiteLabel: true
+    summary: >
+      Create Report Schedules
+
 reportschedule.view:
   - title: "Report Schedules"
-    url: "displays_metrics"
+    url: "displays_metrics.html#content-report-schedules"
     isAllowWhiteLabel: true
     summary: >
       Report Schedules
+
+  - title: "Reporting"
+    url: "displays_metrics"
+    isAllowWhiteLabel: true
+    summary: >
+      Reporting in the CMS
 
 savedreport.view:
   - title: "Saved Reports"
@@ -212,6 +671,12 @@ savedreport.view:
     isAllowWhiteLabel: true
     summary: >
       Saved Reports
+
+  - title: "Reporting"
+    url: "displays_metrics"
+    isAllowWhiteLabel: true
+    summary: >
+      Reporting in the CMS
 
 log.view:
   - title: "Log"

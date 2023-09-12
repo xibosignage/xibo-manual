@@ -13,7 +13,7 @@ Dashboards are assigned to [Users](users_administration.html)/[User Groups](user
 
 ## Status Dashboard
 
-The **Status Dashboard** is the default User Dashboard for **Super Admin Users** and is intended as a high-level view of the system for administration purposes. This dashboard gives an overview for connected [Displays](displays.html), added [Users] of the CMS and provides information relating to Library and Bandwidth usage as well as Display Activity:
+The **Status Dashboard** is the default User Dashboard for **Super Admin Users** and is intended as a high-level view of the system for administration purposes. This dashboard gives an overview for connected [Displays](displays.html), added [Users](users_administration.html) of the CMS and provides information relating to Library and Bandwidth usage as well as Display Activity:
 
 ![CMS Status Dashboard](img/v4_users_status_dashboard.png)
 
