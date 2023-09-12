@@ -178,19 +178,19 @@ layout.view:
     url: "layouts_editor"
     isAllowWhiteLabel: true
     summary: >
-    Using the **Layout Editor**
+      Using the **Layout Editor.**
 
-   - title: "Overlay Layout"
-    url: "layouts_overlay.html"
+  - title: "Overlay Layout"
+    url: "layouts_overlay"
     isAllowWhiteLabel: true
     summary: >
-    Create an **Overlay** to sit on top of your other Layouts!
+      Create an **Overlay** to sit on top of your other Layouts!
 
   - title: "Share Options"
     url: "users_features_and_sharing.html#content-share"
     isAllowWhiteLabel: true
     summary: >
-    Set access options for Users.
+      Set access options for Users.
 
 template.view:
   - title: "Templates"
@@ -221,14 +221,14 @@ template.view:
     url: "users_features_and_sharing.html#content-share"
     isAllowWhiteLabel: true
     summary: >
-    Set access options for Users.
+      Set access options for Users.
 
 resolution.view:
   - title: "Layout Resolutions"
     url: "layouts.html#content-resolutions"
     isAllowWhiteLabel: true
     summary: >
-     Selecting a **Resolution** for your Layout.
+      Selecting a **Resolution** for your Layout.
   
 playlist.view:
   - title: "Playlists"
@@ -359,13 +359,13 @@ display.view:
     url: "scheduling_events.html#content-add-event"
     isAllowWhiteLabel: true
     summary: >
-     Create Schedules to show content on Displays.
+      Create Schedules to show content on Displays.
 
   - title: "Transfer Display"
     url: "displays.html#content-transfer-display-to-another-cms"
     isAllowWhiteLabel: true
     summary: >
-     Transfer a Display to another CMS!
+      Transfer a Display to another CMS!
    
 displaygroup.view:
   - title: "Display Groups"
@@ -390,7 +390,7 @@ displaygroup.view:
     url: "scheduling_events.html#content-add-event"
     isAllowWhiteLabel: true
     summary: >
-     Create Schedules to show content on Displays. 
+      Create Schedules to show content on Displays. 
 
 syncgroup.view:
   - title: "Sync Groups"
