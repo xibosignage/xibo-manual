@@ -2,6 +2,10 @@
 toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "layouts_timeline"
+  - "media_module_spacer"
+  - "media_module_text"
 excerpt: "Playlists contain a timeline of ordered content which can be re-used across multiple Layouts"
 keywords: "re-usable, slide show, add multiple items, show a sequence of content, schedule playlists, dynamic playlist, playlist editor, spacer widget, text widget, widget expiry dates"
 persona: "content manager"

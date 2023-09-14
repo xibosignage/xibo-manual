@@ -2,6 +2,7 @@
 toc: "Displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "displays_fileassociations"
 excerpt: "Configure and Manage Displays in your CMS"
 keywords: "authorise, display code, authentication code, default layout, transfer display, map display view, file assignments, layout assignments, assign"
 persona: "display manager, administrator"

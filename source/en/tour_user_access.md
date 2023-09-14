@@ -2,6 +2,10 @@
 toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "tour_login"
+  - "tour_user_profile"
+  - "tour_two_factor_authentication"
 excerpt: "First Time User Access to the CMS"
 keywords: "cms login, profile settings, logout, preferences, edit profile, two factor authentication, google authentication, generate recovery codes, my applications"
 persona: "user"

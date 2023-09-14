@@ -2,6 +2,9 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "media_module_twitter"
+  - "media_module_twitter_metro"
 excerpt: "Show Mastadon social feed content on Displays"
 keywords: "social content, social posts, social feeds, hashtags, mentions"
 persona: "content manager"

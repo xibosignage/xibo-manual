@@ -2,6 +2,11 @@
 toc: "layouts"
 maxHeadingLevel: 4
 minHeadingLevel: 2
+aliases:
+  - "layouts_designer"
+  - "layouts_regions"
+  - "layouts_widgets"
+  - "layouts_library_search"  
 excerpt: "Create Layouts using the Layout Editors flexible design elements"
 keywords: "toolbar, library search, viewer, properties panel, layering, publish now, publish date, widgets, data widgets, elements, data elements, global elements, grouping elements, stencils, context menu, static templates, layout preview, status bar, layout editor"
 persona: "content manager"

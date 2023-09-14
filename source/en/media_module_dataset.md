@@ -2,6 +2,9 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "media_module_dataset_ticker"
+  - "media_module_dataset_view"
 excerpt: "Display Information held in DataSets as Tickers or Tables"
 keywords: "dataset ticker, dataset view, dataset tables, dataset elements, dataset templates"
 persona: "content manager"

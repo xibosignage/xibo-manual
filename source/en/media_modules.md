@@ -2,6 +2,7 @@
 toc: "Widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "media_module_chart"
 excerpt: "Module and Connectors Management for Administrators"
 keywords: "configure connectors, api key, generic file, caching, external access"
 persona: "administrator"

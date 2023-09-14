@@ -2,6 +2,10 @@
 toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "layouts_interrupt"
+  - "scheduling"
+  - "schedule_now"
 excerpt: "Create Schedules to show your content at the right time and place"
 keywords: "synchronised, mirror, video wall, scheduled actions, media scheduling, interrupt layout, display order, priority, max plays, run at cms time, repeats, recurring instances, reminders, duplicate events"
 persona: "schedule manager"

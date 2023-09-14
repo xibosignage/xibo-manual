@@ -1,6 +1,9 @@
 ---
 maxHeadingLevel: 2
 minHeadingLevel: 2
+aliases:
+  - "tour_date_format"
+  - "tour_guides"
 ---
 
 # [[PRODUCTNAME]] User Manual

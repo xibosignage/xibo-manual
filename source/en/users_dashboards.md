@@ -2,6 +2,7 @@
 toc: "users"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "tour_status_dashboards"
 excerpt: "Assign Dashboards to Users to restrict access to all parts of the CMS"
 keywords: "status dashboard, icon dashboard, media manager dashboard, playlist dashboard"
 persona: "administrator"
