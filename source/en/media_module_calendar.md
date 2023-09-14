@@ -2,6 +2,7 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "media_module_agenda"
 excerpt: "Display Calendar events pulled in from an iCal feed"
 keywords: "ical feed"
 persona: "content manager, webhook triggers"
