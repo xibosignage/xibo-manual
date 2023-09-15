@@ -1,5 +1,5 @@
 ---
-toc: "Widgets"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 alias: "media_module_chart"

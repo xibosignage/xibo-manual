@@ -1,4 +1,5 @@
 ---
+toc: "tour"
 maxHeadingLevel: 2
 minHeadingLevel: 2
 aliases:
