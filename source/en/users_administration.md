@@ -2,6 +2,10 @@
 toc: "users"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "users"
+  - "users_user_types"
+  - "users_library_quota"  
 excerpt: "Manage Users of the CMS"
 keywords: "ownership, user types, super admin, group admin, onboarding wizard, home folder, adding users, reset two factor authentication, force password change, library quota "
 persona: "administrator"

@@ -2,6 +2,7 @@
 toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "media_module_menu_board"
 excerpt: "Create and Manage Menu Board information"
 keywords: "categories, products, product options"
 persona: "content manager"

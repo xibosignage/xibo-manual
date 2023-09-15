@@ -2,6 +2,7 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "media_module_subplaylist"
 excerpt: "Create new Playlists and select existing using the Playlist Widget"
 keywords: "multiple playlists, content synchronisation key, spot options, play order, play count widgets, cycle based playback"
 persona: "content manager"

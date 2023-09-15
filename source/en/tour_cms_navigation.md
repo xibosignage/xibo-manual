@@ -2,6 +2,9 @@
 toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "tour_grids"
+  - "tour_forms"
 excerpt: "Make a start navigating the CMS"
 keywords: "grids, forms, multi-select, column visibility, auto submit forms"
 persona: "user"

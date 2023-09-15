@@ -2,6 +2,10 @@
 toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+aliases:
+  - "media"
+  - "media_tidylibrary"
+  - "media_resizing_images"
 excerpt: "Manage file based media from the CMS Library"
 keywords: "upload library media, add media via url, media library expiry dates, Retire media, enable media stats collection, update media, replace media, usage report, tidy library, purge list, schedule"
 persona: "media manager, content manager"
