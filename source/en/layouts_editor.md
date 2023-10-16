@@ -20,7 +20,7 @@ On **adding** a new Layout, or clicking **Design** from the row menu for a Layou
 
 ![Layout Designer](img\v4_layouts_layout_editor_overview.png)
 
-Adding a new Layout will will create an 'untitled' Layout. Click on the '**Untitled text**' to Name and complete the form fields:
+Adding a new Layout will create an 'untitled' Layout. Click on the '**Untitled text**' to Name and complete the form fields:
 
 ![Add Layout](img/v4_layouts_add_layout.png)
 
