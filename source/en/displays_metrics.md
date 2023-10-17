@@ -8,7 +8,7 @@
 
 [[PRODUCTNAME]] provides useful **metrics** for Users, who have the relevant enabled [Features and Sharing](users_features_and_sharing.html) options, to view reports within the CMS. These are designed to provide a centralised area for analysis into Display performance and usage as well as detailed **Proof of Play** reports which are all available from **All Reports** under the **Reporting** section on the main menu.
 
-![Reporting](img\v3_displays_reporting.png)
+![Reporting](img/v3_displays_reporting.png)
 
 ## Display Metrics
 
@@ -19,11 +19,11 @@ The CMS records the **bandwidth** used by each Display when connecting to XMDS f
 
 - Select the range and click on **Apply**. Leaving the Display field empty will show a bandwidth chart total per Display:
 
-![Display Bandwidth](img\v3_displays_bandwidth.png)
+![Display Bandwidth](img/v3_displays_bandwidth.png)
 
 - Filter to just one Display and click on **Apply** to see each call that the Player made to XMDS in isolation:
 
-![Bandwidth one Display](img\v3_displays_bandwidth_display.png)
+![Bandwidth one Display](img/v3_displays_bandwidth_display.png)
 
 {tip}
 Filtering to just one Display helps to better understand where bandwidth has been used.
@@ -50,7 +50,7 @@ The Time Connected Report will give a breakdown of % connected (shown in green) 
 
 - Click **Apply**
 
-![Time Connected](img\v3_displays_time_connected.png)
+![Time Connected](img/v3_displays_time_connected.png)
 
 
 
@@ -58,13 +58,13 @@ The **Summary** gives a further breakdown between specified dates for Displays/D
 
 
 
-![Summary Time Connected](img\v3_displays_summary_connected.png)
+![Summary Time Connected](img/v3_displays_summary_connected.png)
 
 
 
 ## Proof of Play
 
-![Proof of Play Dashboard](img\v2_proof_of_play_dashboard.png)
+![Proof of Play Dashboard](img/v2_proof_of_play_dashboard.png)
 
 Each **Display** can collect information to provide Proof of Play Reports on what they have shown by:
 
@@ -73,7 +73,7 @@ Each **Display** can collect information to provide Proof of Play Reports on wha
 - **Widget** - this will give a report on that one selected Widget contained within a Layout. (This also includes Widgets that do not contain Library media files, such as Text).
 - **Event** - If the Player supports collection from external sensors, Event stats will be recorded and shown in Reports.
 
-![Proof of Play Type](img\v3_displays_reporting_proof_of_play_type.png)
+![Proof of Play Type](img/v3_displays_reporting_proof_of_play_type.png)
 
 
 
@@ -85,7 +85,7 @@ Statistical collection can be enabled by default from the **Settings** page unde
 
 Click on the **Displays** tab:
 
-![Proof of Play Settings](img\v3_displays_reporting_pop_settings.png)
+![Proof of Play Settings](img/v3_displays_reporting_pop_settings.png)
 
 ### Aggregation level
 
@@ -146,7 +146,7 @@ It is intended to have **Widget** always set to Inherit so that Layout and Media
 
 Use **Export** to select from and to dates for a Display to easily see all Proof of Play data exported to a CSV.
 
-![Proof of Play Export](img\v3_displays_export_proof_of_play.png)
+![Proof of Play Export](img/v3_displays_export_proof_of_play.png)
 
 ### Proof of Play: Report
 
@@ -154,7 +154,7 @@ Use **Export** to select from and to dates for a Display to easily see all Proof
 - Select a **Range** from the dropdown or specify your own dates and times and use the filter fields as necessary. 
 - Click **Apply**
 
-![Proof Of Play](img\v3_displays_proofofplay.png)
+![Proof Of Play](img/v3_displays_proofofplay.png)
 
 {tip}
 Returned results can be exported to a CSV!
@@ -171,7 +171,7 @@ Charts show an aggregate duration and number of plays the selected Layout, Media
 - Choose the **Type** and use the drop down to further specify the type selected.
 - Click **Apply**.
 
-![Proof of Play Summary Report](img\v3_displays_proofofplay_summary_report.png)
+![Proof of Play Summary Report](img/v3_displays_proofofplay_summary_report.png)
 
 ## Library
 
@@ -180,7 +180,7 @@ Charts show an aggregate duration and number of plays the selected Layout, Media
 
 View Library usage for all Users of the CMS or filter to have an overview of usage by an individual User/User Group. 
 
-![Displays Library Usage](img\displays_library_usage.png)
+![Displays Library Usage](img/displays_library_usage.png)
 
 ### Schedule
 
@@ -211,7 +211,7 @@ To use this functionality, ensure that a **Sending email address** has been set 
 
 - Use the row menu for a report for further options:
 
-  ![Report Row Menu](img\v3_displays_reports_row_menu.png)
+  ![Report Row Menu](img/v3_displays_reports_row_menu.png)
 
   Saved Reports
 

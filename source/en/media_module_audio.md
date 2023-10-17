@@ -36,7 +36,7 @@ With **Set a duration** ticked you can set a lower duration to cut the file shor
 
 Use the **Context Menu** at the bottom of the viewer to apply further options to the Audio Widget.  
 
-![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
+![Context Menu](img/v3.1_layouts_widgets_context_menu.png)
 
 {tip}
 This menu can also be easily accessed by highlighting the Audio Widget in the Layout and using a right click! See the [Layout Designer](layouts_designer.html) page for further information!

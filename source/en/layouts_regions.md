@@ -116,7 +116,7 @@ Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete**
 - Assign and Edit [Share](users_features_and_sharing.html) options by right clicking on the target Region to open the form:
 
 
-![Region Sharing](img\v3.1_layouts_regions_share.png)
+![Region Sharing](img/v3.1_layouts_regions_share.png)
 
 {tip}
 Alternatively Share options can be accessed from the context menu at the bottom of the viewer! 

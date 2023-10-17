@@ -59,7 +59,7 @@ Video files that are saved in Folders will inherit the View, Edit, Delete [Share
 
 - Click on the **Select Folder** button and expand to select a Folder to save in.
 
-![Select Folder](img\v3_media_video_select_folder.png)
+![Select Folder](img/v3_media_video_select_folder.png)
 
 Users can also right click a Folder to access further options.
 
@@ -86,7 +86,7 @@ This is particularly useful should you need to preload videos to be shown at a l
 
 - Use the date picker to select **Start** and **End** dates and times.
 
-![Expiry Dates](img\v3_media_video_expiry_dates.png)
+![Expiry Dates](img/v3_media_video_expiry_dates.png)
 
 - There are further options to remove the Widget from the Playlist on expiry and to delete the media file from the Library.
 
@@ -111,7 +111,7 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 Click on the added **Video Widget** from the **Timeline** to open configuration options in the **Edit Video** form:
 
-![Edit Options](img\v3_media_video_edit_options.png)
+![Edit Options](img/v3_media_video_edit_options.png)
 
 - Make edits to naming of the Widget if required
 - Here you can see how long the video will play for. Tick the **Set a duration** to provide a specific duration.

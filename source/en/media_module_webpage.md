@@ -37,7 +37,7 @@ Once added, configuration options for this Widget will be shown in the propertie
 
 - Provide the **URL** (including `http://`) of the webpage you wish to embed:
 
-![Webpage Configuration](img\v3.1_media_webpage_configuration.png)
+![Webpage Configuration](img/v3.1_media_webpage_configuration.png)
 
 {version}
 Available in **Windows Players** from **v2 R253** select to render the webpage with a transparent background. [[PRODUCTNAME]] will try its best to do this when enabled for pages which have a transparent background, however, it cannot be supported on some webpages.

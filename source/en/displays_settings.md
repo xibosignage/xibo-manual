@@ -9,7 +9,7 @@ New Display Setting Profiles can be created and assigned directly to a **Display
 
 A list of available profiles can be viewed from **Display Settings** under the **Display** section of the main menu.
 
-![Display Settings Profiles](img\displays_settings_profiles.png)
+![Display Settings Profiles](img/displays_settings_profiles.png)
 
 Each profile has a **Name**, **Type** and a flag indicating if it is the **default** or not. Default profiles are automatically assigned to Displays of the corresponding type.
 
@@ -69,7 +69,7 @@ Tick/untick the box to enable/disable the collection of statistics for **Proof o
 
 If enabled set the required level of collection for Proof of Play statistics to be applied to all Layouts / Media and Widget items using the **Aggregation level** drop down.
 
-![Enable Stats](img\v2_aggregation_level_displays_proof_of_play.png)
+![Enable Stats](img/v2_aggregation_level_displays_proof_of_play.png)
 
 - **Individual** - statistics are collected when specified by default.
 - **Hourly** - statistics will be collected hourly by default.
@@ -85,7 +85,7 @@ Players aggregate ‘completed records’ only, with collection made at the end 
 
 Located on the **Network** tab, set a time window for **Downloads** from the CMS and **Updates** to the Player.
 
-![Display Settings Network](img\v3_display_settings_network.png)
+![Display Settings Network](img/v3_display_settings_network.png)
 
 #### Download window timings
 

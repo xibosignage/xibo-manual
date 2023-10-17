@@ -177,6 +177,6 @@ Once the details provided have been authenticated, the Display will attempt regi
 {tip}
 Select multiple Displays to transfer by using the **With Selected** option at the bottom of the Displays Grid and select **Transfer to another CMS**.
 
-![Transfer with Selected](img\displays_transfer_cms_with_selected.png)
+![Transfer with Selected](img/displays_transfer_cms_with_selected.png)
 
 {/tip}

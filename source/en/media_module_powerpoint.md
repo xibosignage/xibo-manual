@@ -115,7 +115,7 @@ This is particularly useful should you need to preload files to be shown at a la
 **Please note:** Expiry Dates are currently not supported for the Linux Player!
 {/tip}
 
-![Expiry Dates](img\v3_media_powerpoint_expiry_dates.png)
+![Expiry Dates](img/v3_media_powerpoint_expiry_dates.png)
 
 - Select **Start** and **End** dates and times.
 - Use the check boxes to remove the media file from the Playlist on expiry and delete from the Library.
@@ -135,7 +135,7 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 Click on the added **PowerPoint Widget** from the **Timeline** to open configuration options in the properties panel:
 
-![Edit Options](img\v3.1_media_powerpoint_edit_options.png)
+![Edit Options](img/v3.1_media_powerpoint_edit_options.png)
 
 - Make edits to naming of the Widget if required.
 

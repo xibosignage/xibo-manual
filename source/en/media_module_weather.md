@@ -69,7 +69,7 @@ On adding, configuration options are shown in the properties panel:
 
 ### Configuration
 
-![Weather Configuration](img\v3.1_media_weather_configuration.png)
+![Weather Configuration](img/v3.1_media_weather_configuration.png)
 
 - Tick to use the **Display Location** or untick to manually enter **Latitude** and **Longitude** to be used for this Widget.
 - Use the drop down menu to select the **Unit** of measurement or opt for the automatic selection (first item) which will be based on the geographic location.
@@ -118,7 +118,7 @@ With override template selected, you can enter text, HTML and CSS.
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Weather Template Override](img\v3.1_media_weather_override_template.png)
+![Weather Template Override](img/v3.1_media_weather_override_template.png)
 
 ### Current Forecast Template
 

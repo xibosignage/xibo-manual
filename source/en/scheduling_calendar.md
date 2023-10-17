@@ -8,7 +8,7 @@ Schedule content using the simple calendar interface by clicking on the **Schedu
 
 Use the control bar at the top of the calendar to select **Displays**, **Add Events**, **view date periods** and **alternate Views**.
 
-![Schedule Controls](img\v3_schedule_controls.png)
+![Schedule Controls](img/v3_schedule_controls.png)
 
 ### Displays
 
@@ -48,7 +48,7 @@ Click on an Event Icon to view/edit the schedule!
 
 The Year view is intended as an overview of the Events scheduled throughout the year and provides a total number of Events scheduled per month. Click in a month to view the Event details.
 
-![Schedule Year View](img\v3_schedule_year_view.png)
+![Schedule Year View](img/v3_schedule_year_view.png)
 
 {tip}
 Double-click to open the Month View for that particular month!
@@ -58,7 +58,7 @@ Double-click to open the Month View for that particular month!
 
 This View includes Icons to represent the Events that have been scheduled for that Month. Click on a particular day square to see an expanded view for that day. Double click on a day square to open the Day View for that date.
 
-![Schedule Month View](img\v3_schedule_month_view.png)
+![Schedule Month View](img/v3_schedule_month_view.png)
 
 {tip}
 Hover over each Icon to view the Event information!
@@ -68,19 +68,19 @@ Hover over each Icon to view the Event information!
 
 This view gives a week overview of scheduled Events. Double click on a date to open the Day View.
 
-![Schedule Week View](img\v3_scheduled_week_view.png)
+![Schedule Week View](img/v3_scheduled_week_view.png)
 
 ### Day
 
 The Day View shows all Events occurring within a single day.
 
-![Schedule Day View](img\v3_schedule_day_view.png)
+![Schedule Day View](img/v3_schedule_day_view.png)
 
 ### Agenda
 
 Events can span multiple days/weeks/months so it is highly useful to be able to see a precise representation of Layouts/Campaigns that will be shown on a selected Display at a point in time.
 
-![Agenda View](img\v3_schedule_calendar_agenda.png)
+![Agenda View](img/v3_schedule_calendar_agenda.png)
 
 {tip}
 Select multiple Displays/Display Groups which will be presented in separate tabs!

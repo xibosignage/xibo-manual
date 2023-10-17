@@ -23,7 +23,7 @@ On adding, configuration options are shown in the right hand properties panel:
 
 ### Configuration
 
-![Calendar Configuration](img\v3.1_media_agenda_configuration.png)
+![Calendar Configuration](img/v3.1_media_agenda_configuration.png)
 
 - Provide the iCal **URL** to link.
 
@@ -68,14 +68,14 @@ Take a look at the table at the bottom of this page for PHP date formats!
 
 Click on the Templates tab:
 
-![Calendar Template Tab](img\v3.1_media_agenda_template.png)
+![Calendar Template Tab](img/v3.1_media_agenda_template.png)
 
 #### Main
 
 - Toggle **On** the Visual editor to format the main template using the inline editor. 
 - Click the edit icon to open.
 
-![Calendar Main Editor](img\v3.1_media_agenda_main.png)
+![Calendar Main Editor](img/v3.1_media_agenda_main.png)
 
 - Include text merge fields from the **Snippets** menu to pull in the required event information from the feed. 
 

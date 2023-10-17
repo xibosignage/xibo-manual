@@ -106,12 +106,12 @@ Use the **Appearance** tab to edit the **Main** template, apply **Colours** and 
 
 #### Colours
 
-![Twitter Metro Colours](img\v3.1_media_twitter_metro_colours.png)
+![Twitter Metro Colours](img/v3.1_media_twitter_metro_colours.png)
 
 - Use the drop down menu to select the colour palette to be applied.
 - Select the Override the template box to define alternative colouring.
 
-![Override Colour](img\v3.1_media_twitter_metro_override.png)
+![Override Colour](img/v3.1_media_twitter_metro_override.png)
 
 - Click in a colour bars to re-select using the colour picker. 
 - Remove selections completely by clicking `-` or add additional using `+`

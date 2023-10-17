@@ -19,7 +19,7 @@ On adding, configuration options are shown in the properties panel:
 
 Use the drop-down menu to select the type of countdown to display:
 
-![Countdown Type](img\v3.1_media_countdown_type.png)
+![Countdown Type](img/v3.1_media_countdown_type.png)
 
 - **Widget Duration -** The countdown will be determined by the duration of the Widget.
 - **Custom Duration** - Set a countdown duration in seconds.
@@ -60,7 +60,7 @@ With override template selected, you can enter text, HTML and CSS.
 
 Once override has been selected, click back on the **Templates tab** to select the templates to edit:
 
-![Override Template](img\v3.1_media_countdown_override_template.png) 
+![Override Template](img/v3.1_media_countdown_override_template.png) 
 
 ## Optional Stylesheet
 

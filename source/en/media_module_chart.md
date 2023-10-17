@@ -40,7 +40,7 @@ Once Saved, further options will be made available:
 
 #### Data
 
-![Chart Widget Data](img\v3.1_media_chart_data.png)
+![Chart Widget Data](img/v3.1_media_chart_data.png)
 
 - Use the drop down to select the **Chart type** which would best present the information held in the selected DataSet.
 - Configure an **X and Y axis** using the available columns from the associated DataSet.
@@ -52,7 +52,7 @@ Include a Series Identifier (not suitable for Pie/Donut chart types) to show a b
 
 #### Labels
 
-![Chart Widget Labels](img\v3.1_media_chart_labels.png)
+![Chart Widget Labels](img/v3.1_media_chart_labels.png)
 
 - Include a **Title** and **Labels** for each axis to display on the chart. 
 - Click in the box to include a **Legend** to further explain the data. 

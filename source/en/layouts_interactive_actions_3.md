@@ -24,7 +24,7 @@ Take a look at our guide on [Using Webhooks to trigger a Layout](https://communi
 
 Interactive Actions are accessed from the [Layout Designer](layouts_designer.html) and created and managed from the **Actions** tab on a Layout, Region or Widget **Edit** form.
 
-![Interactive Actions](img\v3_layouts_interactive_actions.png)
+![Interactive Actions](img/v3_layouts_interactive_actions.png)
 
 ## Adding an Action
 
@@ -46,11 +46,11 @@ Actions are created and configured in the [Layout Designer](layouts_designer.htm
 
   Include a Trigger Code, which must be present in the URL ``trigger=` parameter.
 
-  ![Add Action](img\v3_layouts_add_action.png)
+  ![Add Action](img/v3_layouts_add_action.png)
 
 - Use the **Action Type** drop down to determine what will happen when triggered:
 
-  ​	![Action Type](img\v3_layouts_action_type.png)
+  ​	![Action Type](img/v3_layouts_action_type.png)
 
   #### Next / Previous item in the Schedule 
 
@@ -64,7 +64,7 @@ Actions are created and configured in the [Layout Designer](layouts_designer.htm
 
   On selecting this option a further field will be presented to select the **Layout Code** to identify the Layout to be used from the drop down menu. 
 
-  ![Navigate to Layout](img\v3_layouts_action_navigate_layout.png)
+  ![Navigate to Layout](img/v3_layouts_action_navigate_layout.png)
 
   {tip}
 Layouts need to have a **Code Identifier** assigned in order to be included in this list for selection. Codes can be assigned when [adding](https://xibo.org.uk/manual/en/layouts.html#add_layout) new or by using the edit form for a Layout!
@@ -82,7 +82,7 @@ Ensure you click to Save!
   
   Once added to the drawer, Widgets will show for selection using the drop down menu.
 
-  ![Navigate to Widget](img\v3_layouts_widget_action.png)
+  ![Navigate to Widget](img/v3_layouts_widget_action.png)
 
   
 
@@ -107,7 +107,7 @@ Ensure you click to Save!
 
 - Once all relevant fields have been completed, click the **Save** button.
 
-![Saved Action](img\v3_layouts_action_saved.png)
+![Saved Action](img/v3_layouts_action_saved.png)
 
 {tip}
 Saved Actions can be further edited or deleted using the Row Menu.

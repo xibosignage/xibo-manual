@@ -23,7 +23,7 @@ On adding, configuration options are shown in the properties panel:
 
 Use the drop-down menu to select the type of clock to display:
 
-![Clock Appearance](img\v3.1_media_clock_appearance.png)
+![Clock Appearance](img/v3.1_media_clock_appearance.png)
 
 - **Analogue** is a traditional clock face available in a Light or Dark theme (black or white face).
 - **Digital** has an additional **Editor** tab to enter formatting.

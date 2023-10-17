@@ -33,7 +33,7 @@ For further information on how to view your Google Calendar in applications, use
 
 - Use the drop down to select the **type of calendar** to use to display events:
 
-![Calendar Configuration](img\v3.1_media_calendar_configuration.png)
+![Calendar Configuration](img/v3.1_media_calendar_configuration.png)
 
 #### Schedule
 

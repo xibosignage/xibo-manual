@@ -67,7 +67,7 @@ On adding, configuration options are shown in the properties panel:
 
 ### Configuration
 
-![Twitter Configuration](img\v3.1_media_twitter_configuration.png)
+![Twitter Configuration](img/v3.1_media_twitter_configuration.png)
 
 - Provide a **Search Term** to return applicable Tweets
 
@@ -106,7 +106,7 @@ Select from the available Templates:
 
 **Preset**  - use the drop down to select one of the preset templates:
 
-![Preset Templates](img\v3.1_media_twitter_preset_templates.png)
+![Preset Templates](img/v3.1_media_twitter_preset_templates.png)
 
 {tip}
 Click to Override the selected template if required. Please see the section on Editing Preset Templates below for further information.
@@ -131,7 +131,7 @@ The template will be automatically scaled and should be designed for the intende
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Twitter Override the Template](img\v3.1_media_twitter_override_template.png)
+![Twitter Override the Template](img/v3.1_media_twitter_override_template.png)
 
 **Main ** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 

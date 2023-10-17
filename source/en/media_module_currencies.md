@@ -47,7 +47,7 @@ On adding, configuration options are shown in the properties panel:
 
 ## Configuration
 
-![Currencies Configuration](img\v3.1_media_currencies_configuration.png)
+![Currencies Configuration](img/v3.1_media_currencies_configuration.png)
 
 - Define currencies using their **acronym/abbreviation** (symbols or written text will not be recognised).
 - Include a **Base** currency.
@@ -69,7 +69,7 @@ Select from the available Templates:
 
 - **Preset**  - use the drop down to select one of the preset templates:
 
-  ![Preset Templates](img\v3.1_media_currencies_preset_templates.png)
+  ![Preset Templates](img/v3.1_media_currencies_preset_templates.png)
 
   {tip}
 
@@ -97,7 +97,7 @@ The template will be automatically scaled and should be designed for the intende
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Currencies Override the Template](img\v3.1_media_currencies_override_templates.png)
+![Currencies Override the Template](img/v3.1_media_currencies_override_templates.png)
 
 **Main ** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 

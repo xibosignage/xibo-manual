@@ -54,7 +54,7 @@ Image files that are saved in Folders will inherit the View, Edit, Delete [Share
 
 - Click on the **Select Folder** button and expand to select a Folder to save in.
 
-![Select Folder](img\v3_media_image_select_folder.png)
+![Select Folder](img/v3_media_image_select_folder.png)
 
 Users can also right click a Folder to access further options.
 
@@ -77,7 +77,7 @@ This is particularly useful should you need to preload images to be shown at a l
 
 - Tick the **Set Expiry Dates** box.
 
-![Expiry Dates](img\v3_media_image_expiry_dates.png)
+![Expiry Dates](img/v3_media_image_expiry_dates.png)
 
 - Use the date picker to select **Start** and **End** dates and times.
 
@@ -104,7 +104,7 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 Click on the added **Image Widget** from the **Timeline** to open configuration options in the **Edit Image** form:
 
-![Edit Options](img\v3_media_image_edit_options.png)
+![Edit Options](img/v3_media_image_edit_options.png)
 
 - Make edits to naming of the Widget if required
 - Tick the **Set a duration** to provide a specific duration in seconds.

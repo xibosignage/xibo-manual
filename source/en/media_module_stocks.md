@@ -49,7 +49,7 @@ On adding, configuration options are shown in the properties panel:
 
 ### Configuration
 
-![Stocks Configuration](img\v3.1_media_stocks_configuration.png)
+![Stocks Configuration](img/v3.1_media_stocks_configuration.png)
 
 - Include a list of comma separated Stock Symbols (Ticker) to return results.
 
@@ -75,7 +75,7 @@ Select from the available Templates:
 
 - **Preset** - use the drop down to select one of the preset templates
 
-![Preset Stocks Templates](img\v3.1_media_stocks_preset_templates.png)
+![Preset Stocks Templates](img/v3.1_media_stocks_preset_templates.png)
 
 {tip}
 Click to Override the selected template if required. 
@@ -102,7 +102,7 @@ The template will be automatically scaled and should be designed for the intende
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Currencies Override the Template](img\v3.1_media_stocks_override_templates.png)!!
+![Currencies Override the Template](img/v3.1_media_stocks_override_templates.png)!!
 
 **Main Template** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 

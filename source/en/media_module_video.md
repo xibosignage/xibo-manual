@@ -21,7 +21,7 @@ Video files can be uploaded to the [Library](media_library.html) or uploaded dir
 
 Once added to a Layout, click on the **Video** file icon in the **Timeline** or **Viewer** to open configuration options in the right hand properties panel:
 
-![Edit Options](img\v3.1_media_video_options.png)
+![Edit Options](img/v3.1_media_video_options.png)
 
 - Provide an optional **Name** if required.
 

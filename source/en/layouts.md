@@ -27,7 +27,7 @@ Take a look at the [Modules](https://xibosignage.com/manual/en/media_modules#con
 
 Layouts are administered by clicking on **Layouts** under the **Design** section of the main menu:
 
-![Layout Grid](img\v3.1_layouts_grid.png)
+![Layout Grid](img/v3.1_layouts_grid.png)
 
 {tip}
 Thumbnails will show for Published Layouts. If you have upgraded from an earlier version, you will need to checkout and Publish existing Layouts to update the Thumbnail!
@@ -63,7 +63,7 @@ You have a video showing a fire safety demonstration and a video showing an adve
 
 Click on the **Add Layout** button at the top of the grid:
 
-![Add Layout](img\v3.1_layouts_add_layout.png) 
+![Add Layout](img/v3.1_layouts_add_layout.png) 
 
 Select a Template to use from the available options:
 
@@ -95,7 +95,7 @@ On-prem installations can enable templates from the Xibo Exchange by navigating 
 - On making a selection click the **Next** button at the very bottom of the form:
 
 
-![Add LayoutForm](img\v3.1_add_layout_form.png)
+![Add LayoutForm](img/v3.1_add_layout_form.png)
 
 - Provide a **Name** for easy identification purposes within the CMS.
 - Layouts can be optionally saved to [Folders](tour_folders.html) for easier searches, organisation and to easily set [Share](users_features_and_sharing.html) options for Users/User Groups.
@@ -127,7 +127,7 @@ Use the **With Selected** option at the bottom of the Layout [grid](tour_grids.h
 
 Click on the **Settings** tab for further options:
 
-![Settings Tab](img\v3.1_layouts_settings_tab.png)
+![Settings Tab](img/v3.1_layouts_settings_tab.png)
 
 - Enter a string to be used as the **Code Identifier** to identify this Layout when used with [Interactive Actions](layouts_interactive_actions.html)
 
@@ -147,7 +147,7 @@ Click on the **Settings** tab for further options:
 
 Each Layout has additional actions/shortcuts that can be accessed using the **Row Menu** in the grid:
 
-![Layouts Row Menu](img\v3_layouts_row_menu.png)
+![Layouts Row Menu](img/v3_layouts_row_menu.png)
 
 {tip}
 The following options are available from the row menu of a **Published** Layout!

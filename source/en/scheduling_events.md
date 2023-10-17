@@ -10,7 +10,7 @@ Layouts, Campaigns, Overlay Layouts, Interrupt Layouts, Command and Action **Eve
 
 Click on the **Add Event** button on the calendar to schedule an Event.
 
-![Add Scheduled Event](img\schedule_event_add.png)
+![Add Scheduled Event](img/schedule_event_add.png)
 
 ### Event Type
 
@@ -125,11 +125,11 @@ For example: an event which is scheduled on 06/03/2019 can be set to repeat on t
 
 From v2.3, an **individual recurrence** can be deleted from the Schedule. 
 
-![Deleting Recurring Events](img\v2.3_scheduling_deleting_repeats.png)
+![Deleting Recurring Events](img/v2.3_scheduling_deleting_repeats.png)
 
 - Click on the Recurring event you wish to remove from the Schedule, to open the **Edit Event** form.
 
-![Delete from Schedule](img\v2.3_scheduling_delete_from_schedule.png)
+![Delete from Schedule](img/v2.3_scheduling_delete_from_schedule.png)
 
 - Click on the **Delete from Schedule** button to remove this singular event from the schedule and remove it from all Displays.
 
@@ -145,7 +145,7 @@ From v2.2.0 create a set of reminders to be sent to the [Notification Drawer](us
 Please ensure that your Administrator has entered a **Sending Email** address on the CMS **Settings** page, **Network** tab prior to set up of Reminders.
 {/tip}
 
-![Event Reminders](img\v3_scheduling_event_reminders.png)
+![Event Reminders](img/v3_scheduling_event_reminders.png)
 
 Use the form fields to define a reminder, use the + icon to add additional fields.
 Tick the box if you wish to be notified email, this will be sent to the email address as set for your [User Profile](users_administration.html>).

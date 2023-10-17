@@ -27,7 +27,7 @@ Once added to Layouts, click on the Image file in the Timeline or Viewer to show
 - Provide an optional **Name** if required.
 - Tick the **Set a duration** to provide a specific duration in seconds.
 
-![Edit Options](img\v3.1_media_image_options.png)
+![Edit Options](img/v3.1_media_image_options.png)
 
 - Use the **Appearance** tab to change the settings for **Scale** and **Alignment** of the image.
 
@@ -37,7 +37,7 @@ NOTE: From v3.1.0 **Fit** Scale type is available for Images!
 
 {tip}
 
-![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
+![Context Menu](img/v3.1_layouts_widgets_context_menu.png)
 
 Use the **Context Menu** to apply options to this Widget. Please refer to the [Layout Designer](layouts_designer.html) page for further information!
 

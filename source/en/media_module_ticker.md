@@ -28,7 +28,7 @@ Use the last option with caution as this can create long-running media items. Us
 
 ### Configuration
 
-![Ticker Configuration](img\v3.1_media_ticker_configuration.png)
+![Ticker Configuration](img/v3.1_media_ticker_configuration.png)
 
 - Enter the **Feed URL** to use.
 
@@ -108,7 +108,7 @@ The template will be automatically scaled and should be designed for the intende
 
 Once override has been selected, click back on the **Templates tab** to select the template to edit:
 
-![Ticker Override Template](img\v3.1_media_ticker_template_override.png)
+![Ticker Override Template](img/v3.1_media_ticker_template_override.png)
 
 - **Main Template** - Toggle **On** the Visual editor to access the inline editor to enter text and formatting or provide text/HTML in the box provided.
 

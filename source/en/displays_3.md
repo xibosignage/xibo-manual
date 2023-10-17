@@ -43,7 +43,7 @@ New Displays will need to be marked as **Authorised** before they can be sent an
 
 Displays are administered in the CMS from clicking on **Displays** under the **Administration** section of the main menu.  The Displays [Grid](tour_grids.html) will open for you to add new and manage exiting Displays.
 
-![Display Administration Grid](img\v3_displays_administration_grid.png)
+![Display Administration Grid](img/v3_displays_administration_grid.png)
 
 
 Click the Folders icon to toggle on/off from view.  
@@ -94,7 +94,7 @@ Each Display has a Row Menu containing a number of actions that can be performed
 
 
 
-![Displays Row Menu](img\v3_displays_row_menu.png)
+![Displays Row Menu](img/v3_displays_row_menu.png)
 
 {tip}
 Selected actions allow for [Forms](tour_forms.html) to be automatically submitted by clicking on the action from the Row Menu, such as **Authorise** and **Check Licence**. Actions that have an auto submit capability will display an option to enable. Take a look at [Grids](tour_grids.html) for further information!
@@ -106,7 +106,7 @@ Selected actions allow for [Forms](tour_forms.html) to be automatically submitte
 
 Each Display has its own **Dashboard** which shows the Displays current status, bandwidth usage, file status and errors.
 
-![Manage Dashboard](img\v3_displays_manage_dashboard.png)
+![Manage Dashboard](img/v3_displays_manage_dashboard.png)
 
 
 
@@ -142,7 +142,7 @@ Displays can be tagged for organisation and to make it easier to find a large nu
 
 Use the **Profile Settings** tab to see the settings applied from the selected [Display Settings Profile](displays_settings.html).
 
-![Displays Edit Profile Settings](img\displays_edit_profilesettings.png)
+![Displays Edit Profile Settings](img/displays_edit_profilesettings.png)
 
 Click the edit icon to change selected settings to override the Profile.
 
@@ -150,7 +150,7 @@ Click the edit icon to change selected settings to override the Profile.
 
 Use the **Advanced** tab to apply a limit to determine the amount of bandwidth that a **Display** can consume.
 
-![Displays Bandwidth](img\v3_displays_edit_advanced_bandwidth.png)
+![Displays Bandwidth](img/v3_displays_edit_advanced_bandwidth.png)
 
 {tip}
 Set bandwidth limits for multiple Displays using the With Selected option at the bottom of the grid!
@@ -168,7 +168,7 @@ Deleting a **Display** will remove it from the **CMS** entirely - this operation
 
 The **Send Command** functionality is executed via XMR to Players by selecting a predefined command. This is useful for sending Players 'Reboot' commands for example.
 
-![Displays Send Command](img\displays_send_command.png)
+![Displays Send Command](img/displays_send_command.png)
 
 {tip}
 This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling.html#Events)
@@ -180,7 +180,7 @@ This type of [Command](displays_command_functionality.html) can also be executed
 
 To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_two_factor_authentication.html), if you have not already set this up.
 
-![Display Transfer Google Authenticator](img\displays_transfer_cms_google_authenticator.png)
+![Display Transfer Google Authenticator](img/displays_transfer_cms_google_authenticator.png)
 
 Once activated, click on **Displays** from the CMS main menu and use the Row Menu to click on  **Transfer to another CMS** for the selected Display you want to transfer.
 
@@ -188,7 +188,7 @@ Ensure all the form fields are completed by:
 
 - Entering the full **CMS URL** you wish to transfer this Display to.
 - Providing the **CMS Secret Key** for the CMS Address you wish to transfer to.
-- Complete the **Two Factor authentication code**, as displayed on the app.![Transfer CMS](img\displays_move_cms.png)
+- Complete the **Two Factor authentication code**, as displayed on the app.![Transfer CMS](img/displays_move_cms.png)
 
 Once the details provided have been authenticated, the Display will attempt registration with the 'new' CMS. Once the Display has been successfully transferred the Display will stop communicating with the 'old' CMS and will change from a 'tick' to a `X` in the **Authorised** column.
 

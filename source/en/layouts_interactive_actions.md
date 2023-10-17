@@ -59,7 +59,7 @@ Select the **Target**:
 
 Once all relevant fields have been completed, click the **Save** button.
 
-![Saved Action](img\v3.1_layouts_action_saved.png)
+![Saved Action](img/v3.1_layouts_action_saved.png)
 
 {tip}
 Edit or delete Actions using the row menu!

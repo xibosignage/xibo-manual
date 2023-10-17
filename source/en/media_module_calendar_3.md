@@ -12,7 +12,7 @@ Calendar events can be filtered and formatted using templates.
 
 ## Add Widget
 
-Click on **Calendar** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Calendar Widget](img\v2_media_calendar_widget.png)
+Click on **Calendar** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Calendar Widget](img/v2_media_calendar_widget.png)
 
 {version}
 NOTE: If you are using a 1.8.x CMS, select Calendar from the Widget Toolbox to add!
@@ -27,7 +27,7 @@ On adding, configuration options are shown in the Edit Calendar form:
 
 ### Configuration
 
-![Calendar Configuration](img\v3_media_calendar_configuration.png)
+![Calendar Configuration](img/v3_media_calendar_configuration.png)
 
 - Provide the iCAL **URL** to link.
 
@@ -67,7 +67,7 @@ On adding, configuration options are shown in the Edit Calendar form:
 
 Click on the Template tab to show the Calendar Templates:
 
-![Calendar Template Tab](img\v3_media_calendar_template.png)
+![Calendar Template Tab](img/v3_media_calendar_template.png)
 
 ### Main Template
 
@@ -75,7 +75,7 @@ Click on the Template tab to show the Calendar Templates:
 - Toggle **On** the Visual editor to format the main template using the inline editor. 
 - Click the edit icon to open.
 
-![Calendar Main Editor](img\v3_media_calendar_main.png)
+![Calendar Main Editor](img/v3_media_calendar_main.png)
 
 - Include text merge fields from the **Snippets** menu to pull in the required event information from the Calendar. 
 
@@ -86,7 +86,7 @@ NOTE: If you are using 1.8.x CMS use **Available Substitutions** to show availab
 {version}
 NOTE: From v2.1.0 `[Date]` fields can include an optional format `[Date|format]` so that `[Date]` can be used multiple times in a Template with different formats to allow for different styling for each element of a date.
 
-![Calendar Date Format](img\v3_media_calendar_dateformat.png)
+![Calendar Date Format](img/v3_media_calendar_dateformat.png)
 
 {/version}
 
@@ -101,7 +101,7 @@ Select **Current Event** from the Template tab
 
 - Tick the box to Use an alternative template.
 
-![Calendar Current Event](img\v3_media_calendar_current_events.png)
+![Calendar Current Event](img/v3_media_calendar_current_events.png)
 
 - Include text and select from the available **Snippets** to create a template to be used just for **Current Events**. 
 - **Save** changes.

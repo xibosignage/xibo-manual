@@ -52,7 +52,7 @@ There is an option to **Set Expiry Dates** and times for files uploaded to this 
 
 - Use the date picker to select **Start** and **End** dates and times.
 
-![Expiry Dates](img\v3_media_htmlpackage_expiry_dates.png)
+![Expiry Dates](img/v3_media_htmlpackage_expiry_dates.png)
 
 
 - Click the **Start upload** button to begin the upload. 

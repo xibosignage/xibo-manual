@@ -57,7 +57,7 @@ Open Weather Map allows 1000 requests for a forecast, per day before charging a 
 
 The Open Weather Map Terms of Service https://openweathermap.org/terms should be read and understood before using this Widget. 
 
-Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img\v2_media_weather_widget.png)
+Click on **Weather** from the [Widget](layouts_widgets.html)  toolbar and click to add or drag and drop ![Weather Widget](img/v2_media_weather_widget.png)
 
 {version}
 NOTE: If you are using a 1.8.x CMS,  select **Weather** or **Forecast IO** from the Widget Toolbox to add.
@@ -71,7 +71,7 @@ On adding, configuration options are shown in the Edit Weather form:
 
 ### Configuration
 
-![Weather Configuration](img\v3_media_weather_configuration.png)
+![Weather Configuration](img/v3_media_weather_configuration.png)
 
 - Tick to use the **Display Location** or untick to manually enter **Latitude** and **Longitude** to be used for this Widget.
 - Use the drop down menu to select the **Unit** of measurement or opt for the automatic selection (first item) which will be based on the geographic location.
@@ -108,7 +108,7 @@ With override template selected, you can enter text, HTML and CSS.
 
 Once override has been selected, click back on the **Templates tab** to select templates to edit:
 
-![Weather Template Override](img\v3_media_weather_override_template.png)
+![Weather Template Override](img/v3_media_weather_override_template.png)
 
 ### Current Forecast Template
 

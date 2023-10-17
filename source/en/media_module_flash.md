@@ -32,7 +32,7 @@ NOTE: From v3.1.0 use the **Library other media search** and filter by **Type** 
 
 The file uploader will open on adding the Flash Widget:
 
-![Flash Add](img\v3_media_flash_upload.png)
+![Flash Add](img/v3_media_flash_upload.png)
 
 - Click **Add files** and select the file(s) to upload
 
@@ -62,7 +62,7 @@ This is particularly useful should you need to preload files to be shown at a la
   NOTE: Expiry Dates are currently not supported for the Linux Player!
   {/version}
 
-  ![Expiry Dates](img\v3_media_flash_expiry_dates.png)
+  ![Expiry Dates](img/v3_media_flash_expiry_dates.png)
 
 - Select **Start** and **End** dates and times.
 
@@ -84,7 +84,7 @@ View or make changes to Expiry Dates by clicking on the icon on the Widget from 
 
 Click on the added **Flash Widget** to open configuration options in the properties panel:
 
-![Edit Options](img\v3.1_media_modules_flash.png)
+![Edit Options](img/v3.1_media_modules_flash.png)
 
 - Make edits to naming of the Widget if required
 - Tick the **Set a duration** to provide a specific duration

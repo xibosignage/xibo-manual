@@ -65,7 +65,7 @@ This is particularly useful should you need to preload PDF's to be shown at a la
   **Please note:** Expiry Dates are currently not supported for the Linux Player!
   {/tip}
 
-  ![Expiry Dates](img\v3_media_pdf_expiry_dates.png)
+  ![Expiry Dates](img/v3_media_pdf_expiry_dates.png)
 
 - Select **Start** and **End** dates and times.
 - Use the check boxes to remove the media file from the Playlist on expiry and delete from the Library.

@@ -110,7 +110,7 @@ Actions are available from v3.0.0! (Speak to your Administrator to upgrade the C
 
 Actions can be attached to Regions to effect changes on the Layout. 
 
-![Actions](img\v3_layouts_regions_actions.png)
+![Actions](img/v3_layouts_regions_actions.png)
 
 Full details are available on the [Interactive Actions](layouts_interactive_actions.html) page.
 
@@ -125,7 +125,7 @@ Control which **Users**/ **User Groups** can have **View**/ **Edit** /**Delete**
   {/tip}
 
 
-![Region Sharing](img\v3_layouts_regions_share.png)
+![Region Sharing](img/v3_layouts_regions_share.png)
 
 {tip}
 Alternatively Share options can also be located from the [Tools](layouts_tools.html) button on the bottom toolbar. Click or drag to the target Region, and enable/disable access as appropriate.

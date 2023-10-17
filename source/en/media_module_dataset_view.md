@@ -34,7 +34,7 @@ Once Saved, further options will be made available:
 
 ### Configuration
 
-![DataSet View Configuration](img\v3.1_media_datasetview_configuration.png)
+![DataSet View Configuration](img/v3.1_media_datasetview_configuration.png)
 
 - Choose which columns to use by dragging to **Columns Selected**. 
 - Tick in the box to show the **Table Headings**.

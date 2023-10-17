@@ -40,7 +40,7 @@ On adding, configuration options are shown in the properties panel:
 
 ### Templates
 
-![Embedded Templates](img\v3.1_media_embedded_templates.png)
+![Embedded Templates](img/v3.1_media_embedded_templates.png)
 
 ### HTML to Embed
 

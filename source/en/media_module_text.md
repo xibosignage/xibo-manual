@@ -16,7 +16,7 @@ NOTE: If you are using a 1.8.x CMS, select Text from the Widget Toolbox to add.
 
 ### Text Editor
 
-![Edit Text](img\v3_media_text_edit.png)
+![Edit Text](img/v3_media_text_edit.png)
 
 
 
@@ -24,7 +24,7 @@ Click the **edit icon** in the **Preview** window to open the inline editor to e
 
 
 
-![Enter Text](img\v3_media_text_inline_editor.png)
+![Enter Text](img/v3_media_text_inline_editor.png)
 
 
 

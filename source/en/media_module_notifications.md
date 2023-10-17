@@ -30,14 +30,14 @@ On adding, configuration options are shown in the properties panel:
 
 Click on the **Template** tab to format available templates:
 
-![Notification Template](img\v3.1_media_notifications_templates.png)
+![Notification Template](img/v3.1_media_notifications_templates.png)
 
 #### Main 
 
 - Enter HTML in the box provided or toggle On the **Visual editor** to format the template using the inline editor.
 - Click the edit icon to open.
 
-![Notification Editor](img\v3.1_media_notifications_inline_editor.png)
+![Notification Editor](img/v3.1_media_notifications_inline_editor.png)
 
 - Include the text merge fields to format from the **Snippets** menu, to pull in the **Subject** and **Body** information from the Notification Drawer. 
 - Click on the **Save** button.

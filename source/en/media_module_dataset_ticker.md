@@ -36,7 +36,7 @@ This should be used with caution as it can create long-running media items. It i
 
 ### Configuration
 
-![DataSet Ticker Configuration](img\v3.1_media_datasetticker_configuration.png)
+![DataSet Ticker Configuration](img/v3.1_media_datasetticker_configuration.png)
 
 - Select if returned items should be shown side by side and configure **Upper** and **Lower** row limits.
 - Set the number of items you wish to display.
@@ -56,7 +56,7 @@ NOTE: From v2.3.8 use the **Randomise** option to randomly shuffle items to de d
 
 Click on the Template tab to show the DataSet Ticker Templates:
 
-![DataSet Ticker Template](img\v3.1_media_datasetticker_templates.png)
+![DataSet Ticker Template](img/v3.1_media_datasetticker_templates.png)
 
 ### Main Template
 
@@ -65,7 +65,7 @@ Click on the Template tab to show the DataSet Ticker Templates:
 - Toggle **On** the Visual editor to format the main template using the inline editor. 
 - Click the edit icon to open.
 
-![DataSet Ticker Inline Editor](img\v3.1_media_datasetticker_inline_editor.png)
+![DataSet Ticker Inline Editor](img/v3.1_media_datasetticker_inline_editor.png)
 
 - Include text merge fields from the **Snippets** menu to pull in the required information from the DataSet.
 

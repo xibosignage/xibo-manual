@@ -18,7 +18,7 @@ The Layout Designer is the heart of **content creation** in [[PRODUCTNAME]]. Eac
 
 On adding a new Layout, or clicking Design from the row menu of a Layout, the **Layout Designer** will open:
 
-![Layout Designer](img\v3.1_layouts_designer.png) 
+![Layout Designer](img/v3.1_layouts_designer.png) 
 
 ## Status Bar
 
@@ -60,7 +60,7 @@ The **Menu** located to the right of the Status bar provides a list of options f
 
 Layouts in a **Draft** status have the following menu options:
 
-![Draft Actions](img\v3.1_layouts_unlock_layout.png)
+![Draft Actions](img/v3.1_layouts_unlock_layout.png)
 
 - Once you are happy with your designs, set your Layout to **Publish** ready to be Scheduled.
 
@@ -83,7 +83,7 @@ You can also use the **Row Menu** for a selected draft Layout to set to **Publis
 
 Layouts that have been **Published** have the following menu options:
 
-![Published Actions](img\v3.1_layouts_published_actions.png)
+![Published Actions](img/v3.1_layouts_published_actions.png)
 
 - **Checkout** to enable editing by putting the published Layout into a draft status.
 
@@ -97,7 +97,7 @@ Layouts that have been **Published** have the following menu options:
 
 The viewer will update as the Layout is designed so that users can clearly see what has been added and make necessary edits:
 
-![Layout View](img\v3.1_layouts_view.png)
+![Layout View](img/v3.1_layouts_view.png)
 
 Edit or add [Regions](layouts_regions.html) to your Layout using the **Edit Layout** Icon located under the viewer to open the editor:
 
@@ -114,7 +114,7 @@ Exit the editor and return to the Layout view using the back arrow in the top le
 
 All Widgets/ Library Media and Regions have a **Context Menu** with a set of options that can be applied. This menu is located under the viewer for a selected Widget or Region or by right clicking a selected Widget or Region:
 
-![Context Menu](img\v3.1_layouts_widgets_context_menu.png)
+![Context Menu](img/v3.1_layouts_widgets_context_menu.png)
 
 
 
@@ -177,7 +177,7 @@ When Transitions are applied to a Widget by default, the properties panel will b
 
 Play a full **Preview** of your Layout by clicking on the **Play** button located at the bottom of the viewer: 
 
-![Layout Preview](img\v3.1_layouts_preview.png)
+![Layout Preview](img/v3.1_layouts_preview.png)
 
 {tip}
 View your Preview in full screen by clicking on the icon in the top right corner of this window to toggle to full screen then press Play!
@@ -185,7 +185,7 @@ View your Preview in full screen by clicking on the icon in the top right corner
 
 All content that has been assigned to a Region can also be viewed. Use the arrows to cycle through all Widgets that have been assigned.
 
-![Multiple Region Preview](img\v3.1_layouts_multiple_region_preview.png)
+![Multiple Region Preview](img/v3.1_layouts_multiple_region_preview.png)
 
 {tip}
 Video files will only play in the full Layout Preview!
@@ -205,7 +205,7 @@ Edit all the elements of your **Layout**, **Regions** and assigned **Widgets** u
 
 Use the tabs to configure media items using the available options for the content:
 
-![Media Edit Form](img\v3.1_layouts_edit_panel_media.png)
+![Media Edit Form](img/v3.1_layouts_edit_panel_media.png)
 
 {tip}
 **Layouts**, **Regions** and **Widgets** can have **Actions** attached to effect changes to the Layout, triggered by Touch, click or by webhook. [Interactive Actions](layouts_interactive_actions.html) are created and managed from the **Actions** tab in the properties panel.
@@ -213,7 +213,7 @@ Use the tabs to configure media items using the available options for the conten
 
 Use the properties panel whilst in the main Layout view, to access further configurations to apply to the Layout such as adding a background colour or selecting/uploading an image to use as the background:
 
-![Layout Edit Form](img\v3.1_layouts_edit_options.png)
+![Layout Edit Form](img/v3.1_layouts_edit_options.png)
 
 
 
@@ -237,13 +237,13 @@ New Images can also be added by using the **Upload** button from here!
 
 The [Layout Timeline](layouts_timeline.html) displays the duration of individual Widgets and gives you an overview of how your configured media will play on the Layout. Icons will show to identify any options that have been applied which can be clicked to view in more detail and to edit.
 
-![Region Timeline](img\v3.1_layouts_region_timeline.png)
+![Region Timeline](img/v3.1_layouts_region_timeline.png)
 
 ## Interactive Drawer
 
 Located to the right of the Timeline, the Interactive Drawer is used to add Widgets to be used when configuring [Interactive Actions](layouts_interactive_actions.html).
 
-![Interactive Drawer](img\v3.1_layouts_interactive_drawer.png)
+![Interactive Drawer](img/v3.1_layouts_interactive_drawer.png)
 
 - 
   Toggle the drawer to open and add Widgets or Library files by clicking to add or drag and drop.
