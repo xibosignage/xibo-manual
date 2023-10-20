@@ -32,7 +32,7 @@ Each Element has a set of configuration options in the Properties Panel. A Menu 
 - Update Elements with new Category data by editing the underlying [Menu Board](media_menuboards.html#content-create-and-configure-categories) data.
 - Update Menu Board: Category  Widget content without accessing Layouts.
 - Content for this media is cached by the Players for off-line playback.
-- Use with the [Menu Boards: Products](media_module_menuboards_products.html) Widget to easily create a menu/catalogue of items to show on Displays.
+- Use with the [Menu Boards: Products](media_module_menuboards_products.html) Widget to easily create a menu/catalogue of items for your Category to show on Displays.
 
 
 
