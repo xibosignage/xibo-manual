@@ -1,5 +1,5 @@
 ---
-toc: "Displays"
+toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 alias: "displays_fileassociations"

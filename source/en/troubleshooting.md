@@ -1,4 +1,11 @@
-<!--toc=troubleshooting-->
+---
+toc: "troubleshooting"
+maxHeadingLevel: 3
+minHeadingLevel: 2
+excerpt: "User Support"
+keywords: "report fault, error log, player status, contact us, community forum"
+persona: "administrator"
+---
 
 # User Support 
 
@@ -26,6 +33,10 @@ The CMS collects messages from all the components within the platform; CMS, Play
 CMS logging can be provided from the **Report Fault** page located under the Advanced section of the Menu. Click on start to be taken through the fault wizard which will guide you through the steps to collect and download a troubleshoot.zip file.
 
 ![Fault Page](img/report-fault-step1.png)
+
+{tip}
+Follow our guide on [How to record logs for a CMS issue using Report Fault.](https://community.xibo.org.uk/t/how-to-record-logs-for-a-cms-issue-using-report-fault/30290)
+{/tip}
 
 Depending on the issue that you are experiencing, we may ask for additional information.
 
