@@ -126,6 +126,10 @@ Use the **Test data URL** to ensure that the desired structure is returned.
 
 - Set how often the remote data should be fetched and imported.
 
+{tip}
+The fetch remote DataSet task is run hourly by default. Remote DataSets are intended for data which updates infrequently and not in real time.
+{/tip}
+
 - Set a timescale to Truncate data.
 
 - Use the drop down to select a DataSet if using dependants.
