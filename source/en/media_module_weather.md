@@ -12,6 +12,10 @@ NOTE: If you are using a CMS earlier than v3.1, please click [here](media_module
 
 The Weather Widget provides current daily weather forecasts worldwide using a service called [Open Weather Map](https://openweathermap.org/) as a source of weather data.
 
+{version}
+**NOTE:** Please ensure that you are using a 3.2.1 or later CMS in order to account for important API changes that have been made since the release of Open Weather's One Call 3.0.
+{/version}
+
 {nonwhite}
 {cloud}
 
