@@ -12,7 +12,7 @@ Use to Display input from an external source on SoC Displays.
 {feat}Video In|v4{/feat}
 
 {version}
-**NOTE:** This Widget is compatible for use with webOS, Tizen and Philips (Android) System on Chip Players only.
+**NOTE:** This Widget is compatible for use with webOS and Tizen Players as well as Philips System on Chip Players running Android 8 only.
 {/version} 
 
 ### Overview
