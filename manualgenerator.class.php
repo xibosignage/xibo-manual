@@ -193,7 +193,7 @@ class ManualGenerator
         $toc = strtok($pageContent, "\n");
         if (stripos($toc, '<!--toc=') !== false) {
             // Find out what TOC this file should have (read the first line)
-            $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
+            $toc = trim(str_replace('-->', '', str_replace('<!--toc=', '', $toc)));
         } else {
             // Front matter
             $frontMatter = new Webuni\FrontMatter\FrontMatter();
