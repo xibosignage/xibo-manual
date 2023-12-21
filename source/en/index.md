@@ -1,3 +1,5 @@
+<!--toc=tour-->
+
 # [[PRODUCTNAME]] User Manual
 
 **Revision: [[PRODUCTVERSION]]**
