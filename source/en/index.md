@@ -9,7 +9,10 @@ aliases:
 
 # [[PRODUCTNAME]] User Manual
 
-**Revision: [[PRODUCTVERSION]]**
+{nonwhite}
+{includeRevisions}**Revision: [[PRODUCTVERSION]]**{/includeRevisions}
+{/nonwhite}
+{white}**Revision: [[PRODUCTVERSION]]**{/white}
 
 The [[PRODUCTNAME]] software comprises of a central **Content Management System (CMS)** where content is created/uploaded and scheduled to Displays. A **Player** application downloads new content and schedules from the CMS to display on screens:
 
