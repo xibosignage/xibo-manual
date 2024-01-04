@@ -16,13 +16,18 @@ Display daily weather forecast data anywhere on a Layout using **Elements** or s
 Weather data is provided by [OpenWeather](https://openweathermap.org/) which is provided under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and [ODbL](https://opendatacommons.org/licenses/odbl/) which provides current worldwide daily weather forecasts which feed into configured Elements and Static Templates.
 
 {tip}
-Please visit [Open Weather Map](https://openweathermap.org/api) to create an account and obtain an API key to enter into the Open Weather [Connector.](media_modules.html#content-connectors)
+
+Please ensure that you are using a v3.2.1 or later CMS to account for API changes.
+
+Visit [Open Weather Map](https://openweathermap.org/api) to create an account and obtain an API key to enter into the Open Weather [Connector.](media_modules.html#content-connectors)
 
 **NOTE:** Since the release of Open Weather's One Call 3.0, new users must enter credit card details to use the free x number of calls Key or opt for a paid subscription!
 
 Open Weather Map allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
 
 **Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
+
+
 
 {/tip}
 

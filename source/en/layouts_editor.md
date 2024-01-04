@@ -134,7 +134,16 @@ Each Widget has a set of Elements which are fed with the data returned by the Wi
 
 ![Element Properties](img/v4_layouts_element_properties.png)
 
+Options set from the Configure tab will apply to all Elements of the same Widget type. 
 
+{version}
+
+From v4.0.6 different configurations can be set to select data from other data sources associated with the Widget:
+
+- Right click an Element or Element Group and select New Configuration from the menu.
+- Set the new configuration using the appropriate fields from the Configure tab.
+
+{/version}
 
 Elements have their own Layer, which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos.
 
@@ -176,6 +185,11 @@ Groups can contain both **Data** and **Global Elements**.
 {tip}
 Ungroup by right clicking!
 {/tip}
+
+Make edits to the appearance of each Element in a group by clicking the pencil icon in the top right corner to **Edit Group**.
+
+- Select each Element and use the Appearance tab to make changes.
+- Click out of the group to exit editing.
 
 #### Stencils 
 
