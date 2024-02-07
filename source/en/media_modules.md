@@ -34,8 +34,9 @@ This could be useful for providing supplementary files to be used as relative pa
 Fonts to be used with Widgets can be added and managed from the [Fonts](tour_cms_settings.html#content-fonts) page under the Administration section of the main CMS menu.
 
 {version}
-**IMPORTANT:** If a font type is not explicitly set when configuring a Widget, the default font shown on Displays may differ depending on the Player type. This includes Widgets that have no configurable font options such as [Clock](https://xibosignage.com/manual/en/media_module_clock) for example, which will only use the default.
-{/version}
+**IMPORTANT:** it is possible to set a custom font on many Widgets, either via a property called **Font Family** or via the visual editor **Font** select list. If a font is not chosen the Player will show its own default "sans-serif" font, referred to as the system font. E.g. on Android this is usually Roboto.
+
+We recommend always choosing a font where available to avoid Players showing differing fonts.{/version}
 
 ## Caching and external access
 
