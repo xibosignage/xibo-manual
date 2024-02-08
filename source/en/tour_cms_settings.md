@@ -260,13 +260,18 @@ At the current time the CMS does not provide individual Users with a method of r
 
 ## Fonts
 
-[[PRODUCTNAME]] comes with a set of standard fonts provided by our text editor tool - CKEditor, which are currently:
+[[PRODUCTNAME]] comes with a set of standard fonts which can be set on many Widgets:
 
 - Aileron Heavy Regular (Aileron-Heavy.otf)
 - Aileron Regular (Aileron-Regular.otf)
 - Dancing Script Regular (DancingScript-Regular.ttf)
 - Railway Regular (Railway.ttf)
 - Linear Regular (linear-by-braydon-fuller.otf)
+
+{version}
+**IMPORTANT:** it is possible to set a custom font on many Widgets, either via a property called **Font Family** or via the visual editor **Font** select list. If a font is not chosen the Player will show its own default "sans-serif" font, referred to as the system font. E.g. on Android this is usually Roboto.
+
+We recommend always choosing a font where available to avoid Players showing differing fonts.{/version}
 
 Manage from the **Fonts** page under the **Administration** section of the main CMS menu.
 
