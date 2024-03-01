@@ -6,19 +6,19 @@ statusdashboard.view:
       A look at the **Status Dashboard.**
 
   - title: "User Access"
-    url: "tour_user_access"
+    url: "tour_user_access.html"
     isAllowWhiteLabel: true
     summary: >
       First Time **User Access**
 
   - title: "Navigate the CMS"
-    url: "tour_cms_navigation"
+    url: "tour_cms_navigation.html"
     isAllowWhiteLabel: true
     summary: >
       Start **Navigating** the CMS.
 
   - title: "CMS Administrator Settings"
-    url: "tour_cms_settings"
+    url: "tour_cms_settings.html"
     isAllowWhiteLabel: true
     summary: >
       **CMS Settings** for an Administrator User.
@@ -31,7 +31,7 @@ playlistdashboard.view:
       A look at the **Playlist Dashboard.**
 
   - title: "User Access"
-    url: "tour_user_access"
+    url: "tour_user_access.html"
     isAllowWhiteLabel: true
     summary: >
       First Time **User Access**
@@ -44,13 +44,13 @@ icondashboard.view:
       A look at the **Icon Dashboard.**
 
   - title: "User Access"
-    url: "tour_user_access"
+    url: "tour_user_access.html"
     isAllowWhiteLabel: true
     summary: >
       First Time **User Access.**
 
   - title: "Navigate the CMS"
-    url: "tour_cms_navigation"
+    url: "tour_cms_navigation.html"
     isAllowWhiteLabel: true
     summary: >
       Start **Navigating** the CMS.
@@ -63,32 +63,32 @@ mediamanager.view:
       A look at the **Media Manager Dashboard.**
 
   - title: "User Access"
-    url: "tour_user_access"
+    url: "tour_user_access.html"
     isAllowWhiteLabel: true
     summary: >
       First Time **User Access.**
 
   - title: "Navigate the CMS"
-    url: "tour_cms_navigation"
+    url: "tour_cms_navigation.html"
     isAllowWhiteLabel: true
     summary: >
       Start Navigating the CMS.
 
   - title: "Media Library"
-    url: "media_library"
+    url: "media_library.html"
     isAllowWhiteLabel: true
     summary: >
       Manage all file based media from the **Media Library**.
 
 schedule.view:
   - title: "Schedule Events"
-    url: "scheduling_events"
+    url: "scheduling_events.html"
     isAllowWhiteLabel: true
     summary: >
       Start creating **Schedules.**
 
   - title: "Schedule Management"
-    url: "scheduling_management"
+    url: "scheduling_management.html"
     isAllowWhiteLabel: true
     summary: >
       Manage your Event **Schedules.**
@@ -113,7 +113,7 @@ daypart.view:
       Add **Dayparts** to create easier Schedules.
 
   - title: "Schedule Events"
-    url: "scheduling_events"
+    url: "scheduling_events.html"
     isAllowWhiteLabel: true
     summary: >
        Start creating **Schedules.**
@@ -138,7 +138,7 @@ campaign.view:
       Create an **Ad Campaign.**
 
   - title: "Schedule Campaigns"
-    url: "scheduling_events"
+    url: "scheduling_events.html"
     isAllowWhiteLabel: true
     summary: >
       **Schedule** your Campaign to show on Displays.
@@ -151,19 +151,19 @@ campaign.view:
 
 layout.view:
   - title: "Layouts"
-    url: "layouts"
+    url: "layouts.html"
     isAllowWhiteLabel: true
     summary: >
       An Introduction to **Layouts.**
 
   - title: "Layout Editor"
-    url: "layouts_editor"
+    url: "layouts_editor.html"
     isAllowWhiteLabel: true
     summary: >
       Using the **Layout Editor.**
 
   - title: "Overlay Layout"
-    url: "layouts_overlay"
+    url: "layouts_overlay.html"
     isAllowWhiteLabel: true
     summary: >
       Create an **Overlay** to sit on top of your other Layouts!
@@ -188,7 +188,7 @@ template.view:
       Add **Zones** to your Templates.
 
   - title: "Layout Editor"
-    url: "layouts_editor"
+    url: "layouts_editor.html"
     isAllowWhiteLabel: true
     summary: >
       Using the **Layout Editor**.
@@ -214,7 +214,7 @@ resolution.view:
   
 playlist.view:
   - title: "Playlists"
-    url: "media_playlists"
+    url: "media_playlists.html"
     isAllowWhiteLabel: true
     summary: >
       An Introduction to **Playlists.** 
@@ -232,7 +232,7 @@ playlist.view:
       Setting **Widget Expiry Dates.**
 
   - title: "Playlist Widget"
-    url: "media_module_playlist"
+    url: "media_module_playlist.html"
     isAllowWhiteLabel: true
     summary: >
       Add Playlists to Layouts using the **Playlist Widget**.
@@ -245,7 +245,7 @@ playlist.view:
 
 library.view:
   - title: "Media Library"
-    url: "media_library"
+    url: "media_library.html"
     isAllowWhiteLabel: true
     summary: >
       An Introduction to the **CMS Media Library.** 
@@ -301,19 +301,19 @@ dataset.view:
 
 menuBoard.view:
   - title: "Menu Boards"
-    url: "media_menuboards"
+    url: "media_menuboards.html"
     isAllowWhiteLabel: true
     summary: >
       Create **Menu Board** Categories and Products.
 
   - title: "Menu Boards Category Widget"
-    url: "media_module_menuboards_category"
+    url: "media_module_menuboards_category.html"
     isAllowWhiteLabel: true
     summary: >
       Add **Category** data held in a Menu Board to Layouts.
 
   - title: "Menu Boards Products Widget"
-    url: "media_module_menuboards_products"
+    url: "media_module_menuboards_products.html"
     isAllowWhiteLabel: true
     summary: >
       Add **Product** data held in a Menu Board to Layouts.
@@ -326,7 +326,7 @@ display.view:
       Select the **Installation Guide** for your chosen Player.
 
   - title: "Display Management"
-    url: "displays"
+    url: "displays.html"
     isAllowWhiteLabel: true
     summary: >
       **Manage Displays** in the CMS.
@@ -351,7 +351,7 @@ display.view:
    
 displaygroup.view:
   - title: "Display Groups"
-    url: "displays_groups"
+    url: "displays_groups.html"
     isAllowWhiteLabel: true
     summary: >
       Create **Display Groups** in the CMS.
@@ -376,7 +376,7 @@ displaygroup.view:
 
 syncgroup.view:
   - title: "Sync Groups"
-    url: "displays_sync_groups"
+    url: "displays_sync_groups.html"
     isAllowWhiteLabel: true
     summary: >
       Create **Sync Display Groups**.
@@ -388,7 +388,7 @@ syncgroup.view:
       Create **Syncronised** Schedule Events.
 
   - title: "Display Management"
-    url: "displays"
+    url: "displays.html"
     isAllowWhiteLabel: true
     summary: >
       **Manage Displays** in the CMS.
@@ -439,16 +439,22 @@ playersoftware.view:
 
 command.view:
   - title: "Commands"
-    url: "displays_command_functionality"
+    url: "displays_command_functionality.html"
     isAllowWhiteLabel: true
     summary: >
       **Command** Functionality.
 
   - title: "Shell Command Widget"
-    url: "media_module_shellcommand"
+    url: "media_module_shellcommand.html"
     isAllowWhiteLabel: true
     summary: >
       Add this Widget to Layouts to execute external **Commands**.
+
+  - title: "Restart Android device with a Shell Command"
+    url: "https://xibosignage.com/docs/setup/restart-rooted-device-with-a-shell-command"
+    isAllowWhiteLabel: false
+    summary: >
+      Restart a rooted Android device!
 
   - title: "Scheduling Commands"
     url: "scheduling_events"
@@ -458,57 +464,57 @@ command.view:
 
 user.view:
   - title: "Users"
-    url: "users_administration"
+    url: "users_administration.html"
     isAllowWhiteLabel: true
     summary: >
       Add **Users** to the CMS.
 
   - title: "Folders"
-    url: "tour_folders"
+    url: "tour_folders.html"
     isAllowWhiteLabel: true
     summary: >
       Easily give User access to items using **Folders**!
 
   - title: "Dashboards"
-    url: "users_dashboards"
+    url: "users_dashboards.html"
     isAllowWhiteLabel: true
     summary: >
       Assign a **Dashboard** for a Users homepage.
 
   - title: "Features and Sharing"
-    url: "users_features_and_sharing"
+    url: "users_features_and_sharing.html"
     isAllowWhiteLabel: true
     summary: >
       Grant Users **access** to pages and items within the CMS.
 
 group.view:
   - title: "User Groups"
-    url: "users_groups"
+    url: "users_groups.html"
     isAllowWhiteLabel: true
     summary: >
       Create **User Groups** in the CMS.
 
   - title: "Folders"
-    url: "tour_folders"
+    url: "tour_folders.html"
     isAllowWhiteLabel: true
     summary: >
       Easily give User access to items using **Folders**!
 
   - title: "Users"
-    url: "users_administration"
+    url: "users_administration.html"
     isAllowWhiteLabel: true
     summary: >
       **Create and Manage** Users in the CMS.
 
   - title: "Features and Sharing"
-    url: "users_features_and_sharing"
+    url: "users_features_and_sharing.html"
     isAllowWhiteLabel: true
     summary: >
       Grant Users **access** to pages and items within the CMS.
 
 admin.view:
   - title: "CMS Settings"
-    url: "tour_cms_settings"
+    url: "tour_cms_settings.html"
     isAllowWhiteLabel: true
     summary: >
       CMS **Administrator** Settings.
@@ -527,20 +533,20 @@ admin.view:
 
 application.view:
   - title: "Applications"
-    url: "tour_cms_settings.html#content-applications"
+    url: "tour_cms_settings.html#content-applications.html"
     isAllowWhiteLabel: true
     summary: >
       3rd Party **Applications**.
 
   - title: "Connectors"
-    url: "media_modules.html#content-connectors"
+    url: "media_modules.html#content-connectors.html"
     isAllowWhiteLabel: true
     summary: >
       Configure **API Keys** for third party services.
 
 module.view:
   - title: "Modules and Connectors"
-    url: "media_modules"
+    url: "media_modules.html"
     isAllowWhiteLabel: true
     summary: >
       Manage all **Media Modules** in the CMS.
@@ -559,33 +565,33 @@ module.view:
 
 transition.view:
   - title: "Transitions"
-    url: "tour_transitions"
+    url: "tour_transitions.html"
     isAllowWhiteLabel: true
     summary: >
       Manage **Transitions**.
 
   - title: "Transition Defaults"
-    url: "tour_cms_settings.html#content-defaults"
+    url: "tour_cms_settings.html#content-defaults.html"
     isAllowWhiteLabel: true
     summary: >
       Set **Transition Default** Settings.
 
 tag.view:
   - title: "Tags"
-    url: "tour_tags"
+    url: "tour_tags.html"
     isAllowWhiteLabel: true
     summary: >
       Manage **Tags**.
 
   - title: "Assigning Tags"
-    url: "tour_tags.html#content-assigning-tags"
+    url: "tour_tags.html#content-assigning-tags.html"
     isAllowWhiteLabel: true
     summary: >
       Assign **Tags** to items throughout the CMS for easier organisation.
 
 folders.view:
   - title: "Folders"
-    url: "tour_folders"
+    url: "tour_folders.html"
     isAllowWhiteLabel: true
     summary: >
       An Introduction to **Folders**.
@@ -623,7 +629,7 @@ font.view:
 
 report.view:
   - title: "Reporting"
-    url: "displays_metrics"
+    url: "displays_metrics.html"
     isAllowWhiteLabel: true
     summary: >
       **Reporting** in the CMS.
@@ -654,7 +660,7 @@ reportschedule.view:
       Manage **Report Schedules**.
 
   - title: "Reporting"
-    url: "displays_metrics"
+    url: "displays_metrics.html"
     isAllowWhiteLabel: true
     summary: >
       **Reporting** in the CMS.
@@ -667,7 +673,7 @@ savedreport.view:
       Manage **Saved Reports**.
 
   - title: "Reporting"
-    url: "displays_metrics"
+    url: "displays_metrics.html"
     isAllowWhiteLabel: true
     summary: >
       **Reporting** in the CMS.
@@ -688,7 +694,7 @@ auditlog.view:
 
 fault.view:
   - title: "Troubleshooting"
-    url: "troubleshooting"
+    url: "troubleshooting.html"
     isAllowWhiteLabel: true
     summary: >
       User Support.
