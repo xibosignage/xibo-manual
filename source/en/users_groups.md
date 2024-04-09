@@ -25,6 +25,10 @@ Create your own User Groups are select from a set of pre-configured groups, crea
 
 The pre-configured User Groups already have the required Features enabled to allow Users to carry out the chosen role. These can be modified if required to suit.
 
+{version}
+**Note:** The Display Manager User Group does not have the rights to add and authorise new Displays as this is a Super Admin high level function. Once added, a Super Admin user can add new Displays to [Folders](https://xibosignage.com/manual/en/tour_folders#content-saving-to-folders) or give [Share](https://xibosignage.com/manual/en/tour_folders#content-sharing-options) access rights to this User Group for Display Management purposes.
+{/version}
+
 ## Create User Groups
 
 User Groups are administered from **User Groups** under the **Administration** section of the main CMS menu. The User Group grid will open for you to add and manage User Groups:
