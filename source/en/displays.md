@@ -24,7 +24,7 @@ Ensure that any new Displays have been marked as **Authorised** in the CMS so th
 
 Displays are managed in the CMS by clicking **Displays** under the **Displays** section of the main CMS menu. Displays are uniquely identified by a **hardware key** which is generated when the Player software is installed. This hardware key is used to create a unique Display record in the CMS.
 
-![Display Administration Grid](img\v4_displays_administration_grid.png)
+![Display Administration Grid](img/v4_displays_administration_grid.png)
 
 {tip}
 The Add Display (Code) function can be used after installing the Player in order to easily Connect Players to the CMS.  Players will show a 6 character Activation Code to enter in the form in order to Connect.
@@ -84,7 +84,7 @@ Selected actions allow for certain [Forms to be automatically submitted](tour_cm
 
 Each Display has its own **Dashboard** which shows the Displays current status, bandwidth usage, file status and errors.
 
-![Manage Dashboard](img\v4_displays_manage_dashboard.png)
+![Manage Dashboard](img/v4_displays_manage_dashboard.png)
 
 {tip}
 This Dashboard is useful as a first step to look at when troubleshooting issues with a Display!
@@ -119,7 +119,7 @@ Additional fields have been included designed to enhance advertising needs such 
 - Override [Display Profile Settings](displays_settings.html) for individual Displays using the **Settings** tab.
 
 
-![Displays Edit Profile Settings](img\v4_displays_edit_profilesettings.png)
+![Displays Edit Profile Settings](img/v4_displays_edit_profilesettings.png)
 
 - Use the **Advanced** tab to apply limits to determine the amount of **Bandwidth** a Display can consume and to **Clear Cached Data**.
 
@@ -192,7 +192,7 @@ Ensure all the form fields are completed as explained below:
 
 - Complete the **Two Factor authentication code**, as displayed on the app.
 
-  ![Transfer CMS](img\v4_displays_move_cms.png)
+  ![Transfer CMS](img/v4_displays_move_cms.png)
 
 Once the details provided have been authenticated, the Display will attempt registration with the 'new' CMS. Once the Display has been successfully transferred the Display will stop communicating with the 'old' CMS and will change from a 'tick' to a `X` in the **Authorised** column in the Displays grid.
 

@@ -91,7 +91,7 @@ If too many columns have been selected to fit your screen size additional rows w
 
 ![Additional Rows](img/v4_tour_cms_navigation_grids_addtional_rows.png)
 
-![Visible Rows](img\v4_tour_cms_navigation_grids_visible_rows.png)
+![Visible Rows](img/v4_tour_cms_navigation_grids_visible_rows.png)
 
 - #### Row Menu
 
