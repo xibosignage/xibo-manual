@@ -5,6 +5,7 @@ minHeadingLevel: 2
 aliases:
   - "media_module_twitter"
   - "media_module_twitter_metro"
+  - "media_module_mastadon"
 excerpt: "Show Mastodon social feed content on Displays"
 keywords: "social content, social posts, social feeds, hashtags, mentions"
 persona: "content manager"
@@ -14,7 +15,7 @@ persona: "content manager"
 
 Display Mastodon social feed content anywhere on a Layout using Elements or include Static Templates with pre-styled designs in Layouts/Playlists.
 
-{feat}mastodon|v4{/feat}
+{feat}Mastodon|v4{/feat}
 
 The Mastodon Widget returns content from the URL entered for the [Module](media_modules.html) which feeds into configured Elements and Static Templates.
 

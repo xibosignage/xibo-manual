@@ -13,7 +13,7 @@
 - [HTML Package](media_module_htmlpackage.html)
 - [Image](media_module_image.html)
 - [Local Video](media_module_localvideo.html)
-- [Mastadon](media_module_mastadon.html)
+- [Mastodon](media_module_mastodon.html)
 - [Menu Board Category](media_module_menuboards_category.html)
 - [Menu Board Products](media_module_menuboards_products.html)
 - [Notifications](media_module_notifications.html)
