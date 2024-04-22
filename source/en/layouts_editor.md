@@ -18,7 +18,7 @@ The Layout Editor is the heart of **content creation** in [[PRODUCTNAME]]. Each 
 
 On **adding** a new Layout, or clicking **Design** from the row menu for a Layout, the **Layout Editor** will open:
 
-![Layout Designer](img\v4_layouts_layout_editor_overview.png)
+![Layout Designer](img/v4_layouts_layout_editor_overview.png)
 
 Adding a new Layout will create an 'untitled' Layout. Click on the '**Untitled text**' to Name and complete the form fields:
 

@@ -13,7 +13,7 @@ Once installed and Connected to the CMS, Displays can be automatically managed a
 
 Available profiles can be viewed by clicking **Display Settings** under the **Display** section of the main CMS menu:
 
-![Display Settings Profiles](img\v4_displays_settings_profiles.png)
+![Display Settings Profiles](img/v4_displays_settings_profiles.png)
 
 Each profile has a **Name**, **Type** and a flag indicating if it is the **default** or not. Default profiles are automatically assigned to Displays of the corresponding type.
 

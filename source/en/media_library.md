@@ -234,7 +234,7 @@ The Tidy Library function is turned off by default for **Xibo Cloud Hosting** cu
 
 Once enabled Users can click on a **Tidy Library** button located at the top of the Library page:
 
-![Tidy from Library](img\v4_media_library_tidylibrary.png)
+![Tidy from Library](img/v4_media_library_tidylibrary.png)
 
  The form will show the number of files that will be deleted and how much space those files take up.
 
