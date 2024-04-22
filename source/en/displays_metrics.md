@@ -13,7 +13,7 @@ persona: "display manager, content manager, administrator"
 
 Reports provide a centralised area for analysis into **Display** performance and usage as well as detailed **Proof of Play** and **Library** usage reports. These reports can be viewed from **All Reports** under the **Reporting** section of the main CMS menu:
 
-![Reporting](img\v4_displays_reporting.png)
+![Reporting](img/v4_displays_reporting.png)
 
 ## Display
 
@@ -25,11 +25,11 @@ The CMS records the **bandwidth** used by each Display when connecting to XMDS f
 
 - Select the range and click on **Apply**. Leaving the Display field empty will show a bandwidth chart total per Display:
 
-![Display Bandwidth](img\v4_displays_bandwidth.png)
+![Display Bandwidth](img/v4_displays_bandwidth.png)
 
 - Filter to just one Display and click on **Apply** to see each call that the Player made to XMDS in isolation:
 
-![Bandwidth one Display](img\v4_displays_bandwidth_display.png)
+![Bandwidth one Display](img/v4_displays_bandwidth_display.png)
 
 {tip}
 Filtering to just one Display helps to better understand where bandwidth has been used.
@@ -52,15 +52,15 @@ The Time Connected Report will give a breakdown of % connected (shown in green) 
 
 - Click **Apply**
 
-![Time Connected](img\v4_displays_time_connected.png)
+![Time Connected](img/v4_displays_time_connected.png)
 
 The **Summary** gives a further breakdown between specified dates for Displays/Display Groups and shows the number of days connected/disconnected:
 
-![Summary Time Connected](img\v4_displays_summary_connected.png)
+![Summary Time Connected](img/v4_displays_summary_connected.png)
 
 ## Proof of Play
 
-![Proof of Play Dashboard](img\v4_displays_proof_of_play_dashboard.png)
+![Proof of Play Dashboard](img/v4_displays_proof_of_play_dashboard.png)
 
 Each **Display** can collect information to provide Proof of Play Reports on what they have shown:
 
@@ -72,7 +72,7 @@ Each **Display** can collect information to provide Proof of Play Reports on wha
 
 **Event** - If the Player supports collection from external sensors, event stats will be recorded and shown in Reports.
 
-![Proof of Play Type](img\v4_displays_reporting_proof_of_play_type.png)
+![Proof of Play Type](img/v4_displays_reporting_proof_of_play_type.png)
 
 
 To collect Proof of Play reports ensure that **Enable Stats Reporting** has been enabled and the **Aggregation level** has been set on a [Display Profile Setting](displays_settings.html)
@@ -101,7 +101,7 @@ View Proof of Play data exported to a CSV for selected Displays and timescales.
 - Select a **Range** from the dropdown or specify your own dates and times and use the filter fields as necessary. 
 - Click **Apply**
 
-![Proof Of Play](img\v4_displays_proofofplay.png)
+![Proof Of Play](img/v4_displays_proofofplay.png)
 
 {tip}
 Click on **All Reports** to return to the Reports Dashboard or use the **Reports** dropdown to select from the available Proof of Play Reports.
@@ -116,7 +116,7 @@ Charts show an aggregate duration and number of plays the selected Layout, Media
 - Choose the **Type** and use the drop down to further specify the type selected.
 - Click **Apply**.
 
-![Proof of Play Summary Report](img\v4_displays_proofofplay_summary_report.png)
+![Proof of Play Summary Report](img/v4_displays_proofofplay_summary_report.png)
 
 {tip}
 Use the tabs to switch between **Chart** and **Tabular** data for each Report.

@@ -340,6 +340,7 @@ class ManualGenerator
         $string = preg_replace('/({(feat_cat)\b[^}]*}).*?({\/\2})/s', '', $string);
         $string = preg_replace('/({(product)\b[^}]*}).*?({\/\2})/s', '', $string);
         $string = preg_replace('/({(version)\b[^}]*}).*?({\/\2})/s', '', $string);
+        $string = preg_replace('/({(includeRevisions)\b[^}]*}).*?({\/\2})/s', '', $string);
 
         return $string;
     }
