@@ -108,7 +108,9 @@ Menu Board data is added to Layouts using the [Menu Board: Category](media_modul
 Menu Boards are edited independently to Layouts, so there is no need to access or edit the Layout(s) the Menu Board has been added to. Changes will be available in the system straight away ready to be picked up by Players on their next collection, with no need to make any edits to Layouts!
 {/tip}
 
-
+{nonwhite}
+Take a look at our guide for an example of how to utilise Menu Boards for your Displays: [Using Menu Boards](https://community.xibo.org.uk/t/utilising-menu-boards-in-v4/30749)
+{/nonwhite}
 
 #### Next...
 

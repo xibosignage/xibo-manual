@@ -307,8 +307,11 @@ Multiple DataSets can be selected and deleted in bulk using the [With Selected](
 
 Set [Share](users_features_and_sharing.html#content-share) options for User/User Group access to individual DataSets.
 
-
+{nonwhite}
+Take a look at our guide for an example of how to utilise DataSets for your Displays: [Using DataSets to show upcoming birthdays](https://community.xibo.org.uk/t/using-datasets-to-show-upcoming-birthdays/31617)
+{/nonwhite}
 
 #### Next...
 
 [DataSet Widget](media_module_dataset.html)
+
