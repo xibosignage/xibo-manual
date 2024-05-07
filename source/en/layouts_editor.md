@@ -215,6 +215,10 @@ Easily add Text and a variety of shapes to your Layout:
 These global elements can be used across any module!
 {/tip}
 
+{nonwhite}
+For further insight with using Elements, take a look at our guide [here!](https://community.xibo.org.uk/t/using-elements-in-v4/30335)
+{/nonwhite}
+
 ### Library Search
 
 Select from [Image](media_module_image.html), [Audio](media_module_audio.html), [Video](media_module_video.html) and Other media file searches to easily assign media which already exists in the [Library](media_library.html).
