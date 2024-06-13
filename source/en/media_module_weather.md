@@ -27,9 +27,16 @@ Open Weather Map allows 1000 requests for a forecast, per day before charging a 
 
 **Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
 
-
-
 {/tip}
+
+{noncloud}
+{version}
+Existing users currently using the One Call API 2.5 should transfer to the One Call API 3.0 in order to continue using this service. Access to One Call 2.5 will no longer be possible after June 2024. Further details on how to transfer can be found [here.](https://openweathermap.org/one-call-transfer)
+
+After transferring to a new key, please ensure you clear the cache for Weather using the row menu from the **Modules** page!
+
+{/version}
+{/noncloud}
 
 {nonwhite}
 {cloud}
