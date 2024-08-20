@@ -18,7 +18,6 @@
 - [Menu Board Products](media_module_menuboards_products.html)
 - [Notifications](media_module_notifications.html)
 - [PDF](media_module_pdf.html)
-- [Playlist](media_module_playlist.html)
 - [PowerPoint](media_module_powerpoint.html)
 - [Shell Command](media_module_shellcommand.html)
 - [Stocks](media_module_stocks.html)
