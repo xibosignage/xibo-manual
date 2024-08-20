@@ -7,7 +7,7 @@ aliases:
    - "media_module_playlist"
 excerpt: "Create or Add Playlists directly to a Layout from the Layout Editor"
 keywords: "timeline of content, slideshow,  content synchronisation key, adding playlists to a layout, convert playlist, saved playlist, cycle based playback, random widget"
-persona: persona: "content creator, super administrator, user"
+persona: "content creator, super administrator, user"
 ---
 
 # Playlists
