@@ -14,11 +14,9 @@ persona: "content creator, super administrator, user"
 
 # Layout Editor
 
-{nonwhite}{video}{/video}(/nonwhite)
-
 The Layout Editor is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Editor is used.
 
-A**dd** a new Layout or click **Design** from the row menu of an existing Layout to open the **Layout Editor**:
+**Add** a new Layout or click **Design** from the row menu of an existing Layout to open the **Layout Editor**:
 
 ![Layout Designer](img/v4.1_layouts_layout_editor_overview.png)
 
