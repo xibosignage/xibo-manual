@@ -2,12 +2,6 @@
 toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-aliases:
-  - "layouts_editor"
-  - "layouts_designer"
-  - "layouts_regions"
-  - "layouts_widgets"
-  - "layouts_library_search"  
 excerpt: "Use Widgets to create dynamic Layouts"
 keywords: "widgets, modules, widget configuration, widget favourites"
 persona: "content creator, super administrator, user"

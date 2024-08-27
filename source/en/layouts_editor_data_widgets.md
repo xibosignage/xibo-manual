@@ -1,13 +1,7 @@
 ---
 toc: "layouts"
 maxHeadingLevel: 3
-minHeadingLevel: 2
-aliases:
-  - "layouts_editor"
-  - "layouts_designer"
-  - "layouts_regions"
-  - "layouts_widgets"
-  - "layouts_library_search"  
+minHeadingLevel: 2    
 excerpt: "Use Data Widgets to create engaging Layouts"
 keywords: "widgets, data widgets, elements, data elements, global elements, grouping elements, stencils, fallback data, html templates, css templates, javascript templates, custom templates"
 persona: "content creator, super administrator, user"

@@ -2,12 +2,6 @@
 toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-aliases:
-  - "layouts_editor"
-  - "layouts_designer"
-  - "layouts_regions"
-  - "layouts_widgets"
-  - "layouts_library_search"  
 excerpt: "Use Library Searches to easily add media to Layouts"
 keywords: "library search, remote library, remote library search, pixabay, upload files"
 persona: "content creator, super administrator, user"

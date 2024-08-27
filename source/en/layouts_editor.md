@@ -4,9 +4,7 @@ maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
   - "layouts_designer"
-  - "layouts_regions"
-  - "layouts_widgets"
-  - "layouts_library_search"  
+  - "layouts_regions"  
 excerpt: "Create Layouts using the Layout Editors flexible design elements"
 keywords: "properties panel, layering, context menu, layout preview, status bar, layout editor, layout designer, code identifier, adding content, toolbar, toolbox"
 persona: "content creator, super administrator, user"

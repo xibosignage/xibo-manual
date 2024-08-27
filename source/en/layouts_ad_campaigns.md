@@ -2,8 +2,6 @@
 toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-aliases:
-  - "layouts_campaigns"
 excerpt: "Create an Ad Campaign with automatic scheduling based on set criteria"
 keywords: "cost per play, impressions per play, proof of play"
 persona: "super administrator, user, schedule manager"
