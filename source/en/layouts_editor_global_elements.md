@@ -11,6 +11,8 @@ persona: "content creator, super administrator, user"
 
 Select from a variety of Global Elements to add to Layouts to create eye-catching designs and to enhance other content.
 
+{video}ZV4a58ujEyY{/video}
+
 ## Feature Overview
 
 - Enhance Layout designs.

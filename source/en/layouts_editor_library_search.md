@@ -9,7 +9,11 @@ persona: "content creator, super administrator, user"
 
 # Library Search
 
-Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function:
+Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function.
+
+{video}vmqxuwb3jSw{/video}
+
+Library media consists of the following:
 
 - [Images](media_module_image.html)
 - [Audio](media_module_audio.html)

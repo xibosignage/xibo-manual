@@ -1,4 +1,5 @@
-- [Modules and Connectors](media_modules.html)
+- [Modules](media_modules.html)
+- [Connectors](media_modules_connectors.html)
 - [Audio](media_module_audio.html)
 - [Calendar](media_module_calendar.html)
 - [Clock](media_module_clock.html)
