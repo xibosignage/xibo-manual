@@ -15,11 +15,8 @@ persona: "content creator, super administrator, user, schedule manager"
 
 Playlists are used to show a sequence of media items (such as an image slideshow). There are two ways to create a Playlist:
 
-- Create [Playlists](media_playlists) independently to a Layout. 
-  - These 'global' Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
-- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor.
-  - These 'local' Playlists can be converted to be saved for re-use as a global Playlist.
-  - Saved 'global' Playlists are shown in the Layout Editor to add to Layouts.
+- Create [Playlists](media_playlists) independently to a Layout. Global Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
+- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
 
 ## Feature Overview:
 

@@ -43,7 +43,7 @@ Resolutions can be added/edited and enabled/disabled by an Administrator from th
 
 [Templates](layouts_templates.html) are an easy way to speed up the design process and a great way to maintain a corporate image/standard.
 
-Templates are selected from the [Toolbox](layouts_editor.html#content-toolbar) inside the Layout Editor.
+Templates are selected from the [Toolbox](layouts_editor.html#content-toolbox) inside the Layout Editor.
 
 {nonwhite}
 
@@ -83,7 +83,7 @@ Selecting a Template will replace the Layout you are currently working on with y
 [Published Layouts](layouts_editor_publish_options.html) can also be saved as a Template!
 {/tip}
 
-### Layout Grid
+## Layout Grid
 
 Created Layouts can be viewed from **Layouts** under the **Design** section of the main CMS menu:
 
@@ -96,7 +96,7 @@ Edit will open the form to make changes to Naming, Folders, Tags etc.
 Use the **With Selected** option at the bottom of the Layout [grid](tour_cms_navigation.html#content-grids) to edit Tag assignments in bulk!
 {/tip}
 
-#### Layouts in a Draft Status:
+### Layouts in a Draft Status
 
 **Design** - open the Layout Editor to make edits to the Layout.
 
@@ -110,7 +110,7 @@ Administrators can use the default setting on the CMS **Settings** page to autom
 
 **Preview Draft Layout** - play a Preview of the Layout in its current **Draft** status.
 
-#### Layouts in a Published Status:
+### Layouts in a Published Status
 
 **Design** - open the Layout in a **Read Only Mode**, Checkout the Layout to enable editing.
 

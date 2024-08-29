@@ -1,7 +1,7 @@
 ---
 toc: "layouts"
 maxHeadingLevel: 3
-minHeadingLevel: 2
+minHeadingLevel: 1
 excerpt: "Use Library Searches to easily add media to Layouts"
 keywords: "library search, remote library, remote library search, pixabay, upload files"
 persona: "content creator, super administrator, user"
@@ -11,7 +11,7 @@ persona: "content creator, super administrator, user"
 
 Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function.
 
-{video}vmqxuwb3jSw{/video}
+{nonwhite}{video}vmqxuwb3jSw{/video}{/nonwhite}
 
 Library media consists of the following:
 

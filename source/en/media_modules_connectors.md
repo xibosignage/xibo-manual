@@ -1,7 +1,7 @@
 ---
 toc: "widgets"
 maxHeadingLevel: 3
-minHeadingLevel: 2
+minHeadingLevel: 1
 excerpt: "Connectors Management for Administrators"
 keywords: "configure connectors, api key, third party data"
 persona: "administrator"
@@ -25,5 +25,4 @@ Here you can see all third party services which can be configured:
 ![Configure Connectors](img/v4_media_modules_configure_connectors.png)
 
 - Provide the **API key** you have been given and ensure that you tick the **Enabled** box to tell the Connector to start providing the service to the relevant Modules.
-
 
