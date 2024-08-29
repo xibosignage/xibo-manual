@@ -1,10 +1,9 @@
 ---
-toc: "widgets"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases: 
-   - "media_module_subplaylist"
-   - "media_module_playlist"
+   - "media_module_subplaylist"   
 excerpt: "Create or Add Playlists directly to a Layout from the Layout Editor"
 keywords: "timeline of content, slideshow,  content synchronisation key, adding playlists to a layout, convert playlist, saved playlist, cycle based playback, random widget"
 persona: "content creator, super administrator, user"

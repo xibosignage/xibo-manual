@@ -2,10 +2,6 @@
 toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-aliases:
-  - "layouts_designer"
-  - "layouts_editor"
-  - "layouts"
 excerpt: "Publish your designs and Schedule to Displays"
 keywords: "checkout, publish, draft, publish date, automatically publish, unlock layout"
 persona: "content creator, super administrator, user"

@@ -4,9 +4,7 @@ maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
   - "layouts_designer"
-  - "layouts_regions"
-  - "layouts_widgets"
-  - "layouts_library_search"  
+  - "layouts_regions"  
 excerpt: "Create Layouts using the Layout Editors flexible design elements"
 keywords: "properties panel, layering, context menu, layout preview, status bar, layout editor, layout designer, code identifier, adding content, toolbar, toolbox"
 persona: "content creator, super administrator, user"
@@ -15,6 +13,8 @@ persona: "content creator, super administrator, user"
 # Layout Editor
 
 The Layout Editor is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Editor is used.
+
+{video}nfb9aCqbcIA{/video}
 
 **Add** a new Layout or click **Design** from the row menu of an existing Layout to open the **Layout Editor**:
 

@@ -2,12 +2,6 @@
 toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-aliases:
-  - "layouts_editor"
-  - "layouts_designer"
-  - "layouts_regions"
-  - "layouts_widgets"
-  - "layouts_library_search"  
 excerpt: "Complement content by adding Global Elements to Layouts"
 keywords: "text, shapes, lines, date, time, add circles, add rectangles, add triangles"
 persona: "content creator, super administrator, user"
@@ -16,6 +10,8 @@ persona: "content creator, super administrator, user"
 # Global Elements 
 
 Select from a variety of Global Elements to add to Layouts to create eye-catching designs and to enhance other content.
+
+{video}ZV4a58ujEyY{/video}
 
 ## Feature Overview
 

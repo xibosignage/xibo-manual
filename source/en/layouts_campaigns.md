@@ -18,8 +18,10 @@ persona: "content creator, super administrator, user, schedule manager"
 
 A **Layout List Campaign** allows a User to set the playback of a group of Layouts in a defined order. 
 
+{video}rMuYujq_LV8{/video}
+
 {tip}
-If you think of a Layouts as a single slide in a presentation deck, a Campaign is the entire presentation!
+If you think of a Layout as a single slide in a presentation deck, a Campaign is the entire presentation!
 {/tip}
 
 Click on **Campaigns** under the **Design** section of the main CMS menu:

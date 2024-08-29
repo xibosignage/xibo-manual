@@ -2,12 +2,6 @@
 toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-aliases:
-  - "layouts_editor"
-  - "layouts_designer"
-  - "layouts_regions"
-  - "layouts_widgets"
-  - "layouts_library_search"  
 excerpt: "Use Library Searches to easily add media to Layouts"
 keywords: "library search, remote library, remote library search, pixabay, upload files"
 persona: "content creator, super administrator, user"
@@ -15,7 +9,11 @@ persona: "content creator, super administrator, user"
 
 # Library Search
 
-Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function:
+Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function.
+
+{video}vmqxuwb3jSw{/video}
+
+Library media consists of the following:
 
 - [Images](media_module_image.html)
 - [Audio](media_module_audio.html)
