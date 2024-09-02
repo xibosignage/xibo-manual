@@ -11,14 +11,14 @@ persona: "content creator, super administrator, user, schedule manager"
 
 [[PRODUCTNAME]] has two  **Campaign** types:
 
-- **Layout List** - a collection of Layouts in an ordered list.
+- [Layout List](layouts_campaigns.html#content-create-a-layout-list) - a collection of Layouts in an ordered list.
 - [Ad Campaign](layouts_ad_campaigns.html) - allows for the creation of advertising campaigns ([Feature](users_features_and_sharing.html#content-features) enabled).
 
-## Create a Layout List Campaign
+## Create a Layout List
 
 A **Layout List Campaign** allows a User to set the playback of a group of Layouts in a defined order. 
 
-{video}rMuYujq_LV8{/video}
+{nonwhite}{video}rMuYujq_LV8{/video}{/nonwhite}
 
 {tip}
 If you think of a Layout as a single slide in a presentation deck, a Campaign is the entire presentation!
@@ -85,7 +85,7 @@ The Reference tab can be used to provide reference information for the selected 
 Use the row menu from the Campaign grid to easily make copies of a Campaign as well as enable [Share](users_features_and_sharing.html#content-share) options for selected Users/User Groups.
 
 {tip}
-Layouts can be directly assigned to Campaigns from the [Layouts](layouts.html) grid. Use the row menu for the Layout to add and click **Assign to Campaign**. Layouts will be assigned to the end of the selected Campaign by default!
+Layouts can be directly assigned to Campaigns from the [Layouts](layouts.html#content-layout-grid) grid. Use the row menu for the Layout to add and click **Assign to Campaign**. Layouts will be assigned to the end of the selected Campaign by default!
 {/tip}
 
 

@@ -20,7 +20,7 @@
 
 - [Campaigns - Layout List](layouts_campaigns.html)
 
-- [Campaigns - Ad Campaigns](layouts_ad_campaigns.html)
+- [Ad Campaigns](layouts_ad_campaigns.html)
 
 - [Overlay Layouts](layouts_overlay.html)
 

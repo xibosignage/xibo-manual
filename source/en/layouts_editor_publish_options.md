@@ -1,7 +1,7 @@
 ---
 toc: "layouts"
 maxHeadingLevel: 3
-minHeadingLevel: 2
+minHeadingLevel: 1
 excerpt: "Publish your designs and Schedule to Displays"
 keywords: "checkout, publish, draft, publish date, automatically publish, unlock layout"
 persona: "content creator, super administrator, user"

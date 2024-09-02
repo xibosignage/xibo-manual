@@ -1,7 +1,7 @@
 ---
 toc: "layouts"
 maxHeadingLevel: 3
-minHeadingLevel: 2
+minHeadingLevel: 1
 excerpt: "Use Widgets to create dynamic Layouts"
 keywords: "widgets, modules, widget configuration, widget favourites"
 persona: "content creator, super administrator, user"
@@ -11,7 +11,7 @@ persona: "content creator, super administrator, user"
 
 Widgets are a core component of [[PRODUCTNAME]] and are used to display content on a **Layout** or in a **Playlist**. 
 
-{video}cBnG5zL8uPo{/video}
+{nonwhite}{video}cBnG5zL8uPo{/video}{/nonwhite}
 
 ## Feature Overview
 

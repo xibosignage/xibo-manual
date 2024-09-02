@@ -11,7 +11,7 @@ persona: "content creator, super administrator, user"
 
 Select from a variety of Global Elements to add to Layouts to create eye-catching designs and to enhance other content.
 
-{video}ZV4a58ujEyY{/video}
+{nonwhite}{video}ZV4a58ujEyY{/video}{/nonwhite}
 
 ## Feature Overview
 
@@ -42,10 +42,10 @@ Global Elements can be used on their own or used to complement existing content 
 Global Elements are only available from the Layout Editor and are not available in the Playlist Editor!
 {/version}
 
-Easily position shapes behind other content using the [Layer Control](layouts_editor#content-layer-control.html) to drag into order or right click a Global Element to use the **Send/Bring** options.
+Easily position shapes behind other content using the [Layer Control](layouts_editor.html#content-layer-control) to drag into order or right click a Global Element to use the **Send/Bring** options.
 
 {tip}
-Elements have their own Canvas [Layer](layouts_editor#content-layering.html), which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
+Elements have their own Canvas [Layer](layouts_editor.html#content-layering), which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
 {/tip}
 
 

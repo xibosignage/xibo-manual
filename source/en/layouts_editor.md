@@ -14,7 +14,7 @@ persona: "content creator, super administrator, user"
 
 The Layout Editor is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Editor is used.
 
-{video}nfb9aCqbcIA{/video}
+{nonwhite}{video}nfb9aCqbcIA{/video}{/nonwhite}
 
 **Add** a new Layout or click **Design** from the row menu of an existing Layout to open the **Layout Editor**:
 
@@ -88,7 +88,7 @@ Top right, the Layout jump list provides easy navigation between all Layouts, th
 
 ![Jump List](img/v4_layouts_jump_list.png)
 
-Next to the Layout jump list is a menu of items which show available actions dependent on if the Layout is [Published]() or in a [Draft]() status.
+Next to the Layout jump list is a menu of items which show available actions dependent on if the Layout is [Published](layouts.html#content-layouts-in-a-published-status) or in a [Draft](layouts.html#content-layouts-in-a-draft-status) status.
 
 ## Properties Panel
 
@@ -164,7 +164,7 @@ Click on the expander icon at the bottom to change the media thumbnail view for 
 It will only expand to a sensible level dependent on the screen size you are working on. Using the Layout Editor on screens less than 1600px will limit the total number of available levels to view.
 {/tip}
 
-[Templates](layouts_templates,html) are selected from inside the Layout Editor from the Toolbox.
+[Templates](layouts_templates.html) are selected from inside the Layout Editor from the Toolbox.
 
 {nonwhite}
 Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates!

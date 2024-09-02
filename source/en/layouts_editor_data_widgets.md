@@ -44,12 +44,12 @@ An exclamation icon will be shown to prompt a User as to what needs to be action
 Options set from the **Configure** tab will apply to all Elements added to the Layout of the same Widget type. 
 
 {tip}
-Create a [New Configuration](layouts_data_widgets#content-new-configuration.html) to select data from alternative data sources associated with the Widget!
+Create a [New Configuration](layouts_data_widgets.html#content-new-configuration) to select data from alternative data sources associated with the Widget!
 {/tip}
 
 ### Appearance
 
-The **Appearance** tab includes options to configure how the data returned from the Element should look and includes transition effects and [Data Slot](layouts_data_widgets#content-data-slots.html) configuration.
+The **Appearance** tab includes options to configure how the data returned from the Element should look and includes transition effects and [Data Slot](layouts_data_widgets.html#content-data-slots) configuration.
 
 ### Fallback Data
 
@@ -69,14 +69,14 @@ Fallback Data options will vary dependent on the Data Widget selected!
 
 ### Advanced
 
-The Advanced tab is used to set Naming, provide specific durations, set the collection level of proof of play stats and enable items to be repeated to fill all [Data Slots](layouts_data_widgets#content-data-slots.html).
+The Advanced tab is used to set Naming, provide specific durations, set the collection level of proof of play stats and enable items to be repeated to fill all [Data Slots](layouts_data_widgets.html#content-data-slots).
 
 ### Positioning
 
 Use the **Positioning** tab (grid icon) to set precise positioning and Layering.
 
 {tip}
-Elements have their own Canvas [Layer](layouts_editor#content-layering.html), which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
+Elements have their own Canvas [Layer](layouts_editor.html#content-layering), which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
 {/tip}
 
 ## Data Slots

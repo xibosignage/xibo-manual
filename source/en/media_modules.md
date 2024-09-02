@@ -1,7 +1,7 @@
 ---
 toc: "widgets"
 maxHeadingLevel: 3
-minHeadingLevel: 2
+minHeadingLevel: 1
 alias: "media_module_chart"
 excerpt: "Module Management for Administrators"
 keywords: "generic file, caching, external access, enable modules, disable modules"

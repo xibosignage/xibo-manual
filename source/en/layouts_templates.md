@@ -24,7 +24,7 @@ Use Templates to speed up the design process and ensure a corporate standard is 
 Create new [Templates](layouts_templates.html#content-create-template) or save your existing [Layout](layouts_templates.html#content-save-layout-as-template) designs to use as Templates for future Layouts.
 
 {nonwhite}
-Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates from the Toolbox!
+Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates from the Toolbox.
 {/nonwhite}
 
 {version}
@@ -92,13 +92,13 @@ From the Properties Panel, select the Positioning tab to set [Layering](layouts_
 {tip}
 Right click to show a [Context Menu](layouts_editor.html#content-context-menu) and easily move items backwards and forwards.
 
-[Sharing]((users_features_and_sharing.html#content-share)) options are particularly useful if you want a User to only have access to a section of the Layout to manage.
+[Sharing](users_features_and_sharing.html#content-share) options are particularly useful if you want a User to only have access to a section of the Layout to manage.
 {/tip}
 
 Add both [content](layouts_editor.html#content-toolbox) from the Toolbox and Zones to build your Template design. 
 
 {tip}
-Adding multiple media items to one zone will automatically create a [Playlist](layouts_editor_playlist.html)!
+Adding multiple media items to one zone will automatically create a [Playlist](layouts_editor_playlists.html)!
 {/tip}
 
 Once your Template is complete, use the menu at the top of the editor to **Publish**:
@@ -112,11 +112,15 @@ Published **Templates** will show for selection from the Toolbox of the Layout E
 
 Published Layouts can be saved as a **Template** from two locations:
 
-- From the [Layout Editor](layouts_editor.html), after **Publishing** go back to the menu and select **Save Template**:
+- From the [Layout Editor](layouts_editor.html):
+  - After **Publishing** go back to the menu and select **Save Template**:
+
 
 ![Save Template Editor](img/v4_layouts_templates_save_as_template.png)
 
-- From the [Layouts](layouts.html) grid, use the row menu for a **Published** Layout and **select Save Template**.
+- From the [Layouts](layouts.html#content-layout-grid) grid:
+  - Use the row menu for a **Published** Layout and **select Save Template**.
+
 
 Complete all relevant form fields to save the selected Layout as a Template.
 

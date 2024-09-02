@@ -13,10 +13,8 @@ persona: "content creator, super administrator, user"
 
 Playlists are used to show a sequence of media items (such as an image slideshow). There are two ways to create a Playlist:
 
-- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor.
-  - These 'local' Playlists can be converted to be saved for re-use as a global Playlist.
-- Create [Playlists](media_playlists) independently to a Layout. 
-  - These 'global' Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
+- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
+- Create [Playlists](media_playlists.html#content-creating-a-playlist) independently to a Layout. Global Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
 
 ## Add Playlists
 
@@ -89,7 +87,7 @@ View all the content that has been added to the Timeline of the Playlist by usin
 
 ## Convert Playlist
 
-If you add a **New Playlist** to the Layout you can opt to convert this into a saved Playlist. Converted Playlists will be shown for Playlist selection in the Layout Editor and from the [Playlists](media_playlists) grid.
+If you add a **New Playlist** to the Layout you can opt to convert this into a saved Playlist. Converted Playlists will be shown for Playlist selection in the Layout Editor and from the [Playlists](media_playlists.html#content-playlists-grid) grid.
 
 - Click the Playlist on the Layout to select and give it a **Name** from the **General** tab of the **Properties Panel**.
 - Right click and select **Convert Playlist** from the menu.
@@ -133,9 +131,11 @@ Once enabled all Playlists selected will be treated as one "list" and will only 
 Using the **Random Widget each cycle** option will play a Widget from the timeline at random for each cycle.
 
 {version}
-**Note:** These additional options are **not** available when adding one or more Playlists to a [Global Playlist](media_playlists.html) timeline, which has been added directly to the Layout!
+**Note:** These additional options are **not** available when adding one or more Playlists to a [Global Playlist](media_playlists.html#content-feature-overview) timeline, which has been added directly to the Layout!
 {/version}
 
 {tip}
-Did you know [Playlists](media_playlists.html) can also be created and managed independently to Layouts and would therefore not require further user access rights to Layouts or the Layout Editor to add and manage content. These global Playlists can also be directly [Scheduled](scheduling_events.html#content-media-scheduling) without the need to add to a Layout!
+Did you know [Playlists](media_playlists.html) created and managed independently to Layouts do not require further user access rights to Layouts or the Layout Editor to add and manage content! 
+
+These global Playlists can also be directly [Scheduled](scheduling_events.html#content-media-scheduling) without the need to first create and add to a Layout!
 {/tip}
