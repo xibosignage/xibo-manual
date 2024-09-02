@@ -126,13 +126,13 @@ daypart.view:
 
 campaign.view:
   - title: "Layout List Campaign"
-    url: "layouts_campaigns.html#content-create-a-layout-list-campaign"
+    url: "layouts_campaigns.html"
     isAllowWhiteLabel: true
     summary: >
       Create a **Layout List Campaign.**
 
   - title: "Ad Campaign"
-    url: "layouts_campaigns.html#content-create-an-ad-campaign"
+    url: "layouts_ad_campaigns.html"
     isAllowWhiteLabel: true
     summary: >
       Create an **Ad Campaign.**
@@ -162,11 +162,11 @@ layout.view:
     summary: >
       Using the **Layout Editor.**
 
-  - title: "Overlay Layout"
-    url: "layouts_overlay.html"
+  - title: "Publishing Layouts"
+    url: "layouts_editor_publish_options.html"
     isAllowWhiteLabel: true
     summary: >
-      Create an **Overlay** to sit on top of your other Layouts!
+      Publish Layouts before Scheduling to Displays!
 
   - title: "Share Options"
     url: "users_features_and_sharing.html#content-share"
@@ -231,14 +231,14 @@ playlist.view:
     summary: >
       Setting **Widget Expiry Dates.**
 
-  - title: "Playlist Widget"
-    url: "media_module_playlist.html"
+  - title: "Layout Playlists"
+    url: "layouts_editor_playlists.html"
     isAllowWhiteLabel: true
     summary: >
-      Add Playlists to Layouts using the **Playlist Widget**.
+      Create and Add Playlists to Layouts.
 
   - title: "Library Search"
-    url: "layouts_editor.html#content-library-search"
+    url: "layouts_editor_library_search.html"
     isAllowWhiteLabel: true
     summary: >
       Use **Library Searches** to easily add content to Playlists!
@@ -538,27 +538,21 @@ application.view:
     summary: >
       3rd Party **Applications**.
 
-  - title: "Connectors"
-    url: "media_modules.html#content-connectors.html"
+  - title: "Connectors Management"
+    url: "media_modules_connectors.html"
     isAllowWhiteLabel: true
     summary: >
       Configure **API Keys** for third party services.
 
 module.view:
-  - title: "Modules and Connectors"
+  - title: "Modules Management"
     url: "media_modules.html"
     isAllowWhiteLabel: true
     summary: >
       Manage all **Media Modules** in the CMS.
-
-  - title: "Player Support"
-    url: "media_modules.html#content-player-support-table-for-modules---v4-cms"
-    isAllowWhiteLabel: true
-    summary: >
-      **Player Support** table for Modules.
-
+ 
   - title: "Widgets"
-    url: "layouts_editor.html#content-widgets"
+    url: "layouts_editor_widgets.html"
     isAllowWhiteLabel: true
     summary: >
       A Module has an associated **Widget** to add to Layouts and Playlists. 
