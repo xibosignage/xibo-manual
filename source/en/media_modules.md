@@ -1,14 +1,14 @@
 ---
 toc: "widgets"
 maxHeadingLevel: 3
-minHeadingLevel: 2
+minHeadingLevel: 1
 alias: "media_module_chart"
-excerpt: "Module and Connectors Management for Administrators"
-keywords: "configure connectors, api key, generic file, caching, external access"
+excerpt: "Module Management for Administrators"
+keywords: "generic file, caching, external access, enable modules, disable modules"
 persona: "administrator"
 ---
 
-# Modules and Connectors Management
+# Modules Management
 
 All content displayed in [[PRODUCTNAME]] is served by a **Media Module** managed from the **Modules** page under the **Administration** section of the main CMS menu:
 
@@ -17,26 +17,10 @@ All content displayed in [[PRODUCTNAME]] is served by a **Media Module** managed
 - Use the row menu and click **Configure** to control if it should be accessible for Users to use.
 
 {tip}
-
 At times it may be necessary to add or remove the allowed extensions on a particular Library file based Module (Image, Video, Flash etc.) A typical use case would be if a Player is being used which does not support that particular type of file.
+
+Fonts can be added and manages from the [Fonts](tour_cms_settings.html#content-fonts) page under the **Administration** section of the main CMS menu.
 {/tip}
-
-## Generic File
-
-The Generic File Module is used to send **additional files** to the Player that can then be used for other purposes. 
-
-{tip}
-This could be useful for providing supplementary files to be used as relative paths (e.g. An up and down arrow that is dynamically shown in the embedded HTML based on the results of stock data) as an example.
-{/tip}
-
-## Fonts
-
-Fonts to be used with Widgets can be added and managed from the [Fonts](tour_cms_settings.html#content-fonts) page under the Administration section of the main CMS menu.
-
-{version}
-**IMPORTANT:** it is possible to set a custom font on many Widgets, either via a property called **Font Family** or via the visual editor **Font** select list. If a font is not chosen the Player will show its own default "sans-serif" font, referred to as the system font. E.g. on Android this is usually Roboto.
-
-We recommend always choosing a font where available to avoid Players showing differing fonts.{/version}
 
 ## Caching and external access
 
@@ -52,24 +36,15 @@ All of the core Modules adopt this approach, exceptions noted below:
 - The **Local Video Module** is rendered by the video decoder on the Player and can reference an external stream.
 - **Flash** Files have the capability to reference an external file and will be run on the Player.
 
-## Connectors
+## Generic File
 
-Modules that rely on a third party service for data, [Stocks](media_module_stocks.html) for example, need further configuration with API keys etc.
+The Generic File Module is used to send **additional files** to the Player that can then be used for other purposes. 
 
-Once the Module has been enabled and you have the required API key, go to the **Applications** page under the **Administration** section of the main CMS menu and scroll down to the **Connectors** section of the page.
+{tip}
+This could be useful for providing supplementary files to be used as relative paths (e.g. An up and down arrow that is dynamically shown in the embedded HTML based on the results of stock data) as an example.
+{/tip}
 
-Here you can see all third party services which can be configured:
 
-![Connectors](img/v4_media_modules_connectors.png)
 
-- Click the **Configure** button of the Connector to configure:
 
-![Configure Connectors](img/v4_media_modules_configure_connectors.png)
 
-- Provide the **API key** you have been given and ensure that you tick the **Enabled** box to tell the Connector to start providing the service to the relevant Modules.
-
-  
-
-## Player Support table for Modules - v4 CMS
-
-{feat_cat}Widgets and Modules{/feat_cat}
