@@ -11,7 +11,7 @@ persona: "content creator, super administrator, user"
 
 Widgets are a core component of [[PRODUCTNAME]] and are used to display content on a **Layout** or in a **Playlist**. 
 
-{nonwhite}{video}cBnG5zL8uPo{/video}{/nonwhite}
+{nonwhite}{video}pGgF0ijzBg{/video}{/nonwhite}
 
 ## Feature Overview
 
