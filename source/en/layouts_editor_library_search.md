@@ -11,7 +11,7 @@ persona: "content creator, super administrator, user"
 
 Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function.
 
-{nonwhite}{video}vmqxuwb3jSw{/video}{/nonwhite}
+{nonwhite}{video}yOd7QVuF16g{/video}{/nonwhite}
 
 Library media consists of the following:
 
