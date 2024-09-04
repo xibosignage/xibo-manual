@@ -151,6 +151,12 @@ You have a video showing a fire safety demonstration along with with some import
 
 [[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User/User Group can have.
 
+**How do I view any retired Layouts?**
+
+From the Layouts grid, use the Advanced tab and use the Retired filter. Use the row menu to unretire any Layouts.
+
+
+
 #### Next...
 
 [Layout Editor](layouts_editor.html)
