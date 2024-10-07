@@ -14,7 +14,7 @@ Sync Groups contain the Displays that will show synchronised content. Content ca
 {feat}Sync Groups|v4{/feat}
 
 {tip}
-Sync [Playlists](media_module_playlist.html) on different Layouts using the **Content Synchronisation Key**.
+Sync [Playlists](layouts_editor_playlists.html) on different Layouts using the **Content Synchronisation Key**.
 {/tip}
 
 [Displays](displays.html) first need to be assigned to a **Sync Group**:
