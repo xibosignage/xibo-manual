@@ -2,7 +2,7 @@
 toc: "users"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Use the Notification System to keep Users of the CNS informed of important system events"
+excerpt: "Use the Notification System to keep Users of the CMS informed of important system events"
 keywords: "system notifications, notification drawer, notification centre"
 persona: "user, administrator"
 ---
