@@ -153,9 +153,9 @@ Located on the **Advanced** tab, use this checkbox to tell [[PRODUCTNAME]] to im
 Useful for Layouts with long durations!
 {/tip}
 
-### Use Multiple Decoders (Android only)
+### Use Multiple Decoders
 
-**Gapless Playback** with Video content requires an Android device to have multiple decoders. This setting can be found on the **Advanced** tab and will automatically use the **Device Default**.
+**Gapless Playback** with Video content requires a device to have multiple decoders. This setting can be found on the **Advanced** tab and will automatically use the **Device Default**.
 
 {tip}
 Should an issue arise with playback, use the dropdown to set to **On**!

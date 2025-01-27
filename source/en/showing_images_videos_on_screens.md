@@ -62,8 +62,6 @@ The CMS will now update a Schedule change to the Player and your media content w
 
 ## Further Reading 
 
-[Showing Playlists on Screens](a link)
-
 [Simple Scheduling](scheduling_events.html) 
 
 [Using the Layout Editor to create your own content](layouts_editor.html) 
