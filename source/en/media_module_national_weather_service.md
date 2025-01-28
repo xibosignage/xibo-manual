@@ -27,7 +27,7 @@ Help US citizens to prepare for extreme weather events by showing weather foreca
 
 {tip}
 {nonwhite}
-Enabling the CAP Connector (enabled by default in the CMS) will allow the use for **Schedule Criteria** to be provided in order to include weather alert events in the Schedule. By setting the **Criteria Type** to "Emergency Alert" and the **Category** to "Met" will ensure that Layouts with NWS Elements will be automatically added to the Schedule Loop whenever an active **Emergency Alert** occurs!
+By setting the **Criteria Type** to "Emergency Alert" and the **Category** to "Met" will ensure that Layouts with NWS Elements will be automatically added to the Schedule Loop whenever an active **Emergency Alert** occurs!
 {/nonwhite}
 {/tip}
 
