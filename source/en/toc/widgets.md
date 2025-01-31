@@ -8,7 +8,7 @@
 - [Dashboard](media_module_dashboard.html)
 - [DataSet](media_module_dataset.html)
 - [Embedded](media_module_embedded.html)
-- [Emergency Alert](media_module_emergency_alert.html)
+- [Emergency Alert](media_module_emergency_alerts.html)
 - [Flash](media_module_flash.html)
 - [Google Traffic](media_module_googletraffic.html)
 - [HLS](media_module_hls.html)
