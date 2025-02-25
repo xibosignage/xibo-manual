@@ -4,7 +4,7 @@ Welcome to the Xibo Manual.
 This repository contains the source content for the Xibo manual in markdown format. 
 
 ## Support
-Please track all issues in this repository here: https://github.com/xibosignage/xibo/issues
+Please track all issues in this repository here: https://github.com/openSignage/issues
 
 ## Building
 The manual is built by running generate.php.
@@ -27,6 +27,4 @@ are build using inheritance from the default theme.
 
 ## Translations
 
-We are not in a position to accept translated contributions for Manuals. 
-
-Please see our [FAQ](https://community.xibo.org.uk/t/how-can-i-translate-xibo/11183) for further information.
+Japanese translation is handled by Open Source Digital Signage Initiative.
