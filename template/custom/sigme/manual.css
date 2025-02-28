@@ -23,6 +23,7 @@
 
 .ss_footer p {
 	margin-bottom: 0;
+        font-size: small;
 }
 
 .ss_footer_links {
@@ -31,6 +32,7 @@
 
 body { 
 	padding-top: 70px;
+	font-size: 16px;
 }
 
 .img-thumbnail {
@@ -107,4 +109,30 @@ cloud {
 
 tip {
     background: aliceblue;
+}
+
+.leftflush {
+    float: left;
+}
+
+.header-logo {
+    width: 70px !important;
+}
+
+h1 {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #010101;/*文字色*/
+  background: #eaf3ff;/*背景色*/
+  border-bottom: solid 3px #516ab6;/*下線*/
+}
+
+h2 {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+h3 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
 }

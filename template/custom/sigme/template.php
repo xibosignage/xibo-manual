@@ -19,11 +19,16 @@
  * along with Xibo.  If not, see <http://www.gnu.org/licenses/>.
  */ 
 
+/*
+ * Portion Copyright (C) 2025 Open Source Digital Signage Initiative
+ * Modified by Mark Miura (miura@open-signage.org)
+*/
+
 # Name of the product
-define('PRODUCT_NAME', 'Xibo');
+define('PRODUCT_NAME', 'Sigme');
 
 # Home page URL
-define('PRODUCT_HOME', 'http://xibo.org.uk');
+define('PRODUCT_HOME', 'https://sigme.net');
 
 # Product Support URL
 define('PRODUCT_SUPPORT_URL', 'https://community.xibo.org.uk/');
