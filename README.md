@@ -35,8 +35,9 @@ To translate English manual to Japanese, translator.php can provide machine tran
 
 ```
 php translator.php [translation target md file]
-If target is not spacified, all .md files are translate.
 ```
+If target is not spacified, all .md files are translate.
+
 We are using Google translate API, you need to get API KEY to run this program.
 
 Japanese translation is handled by Open Source Digital Signage Initiative.
