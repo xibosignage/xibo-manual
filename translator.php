@@ -1,75 +1,76 @@
 <?php
 
-// Google Cloud Translation API の認証情報を設定します
-$apiKey = 'YOUR_API_KEY';
+// Google Cloud Translation API credentials
+$apiKey = 'YOUR_API_KEY'; // Replace with your API key
 
+// Input and output directories
 $inputDir = 'source/en/';
 $outputDir = 'source/ja/';
 
-// 出力ディレクトリが存在しない場合は作成します
+// Create output directory if it doesn't exist
 if (!file_exists($outputDir)) {
-    mkdir($outputDir, 0755, true);
+    mkdir($outputDir, 0755, true); // Create directory recursively
 }
 
-// コマンドライン引数から入力ファイル名を取得します
+// Get input file names from command line arguments
 $inputFiles = $argv;
-array_shift($inputFiles); // スクリプト名を除外
+array_shift($inputFiles); // Remove script name from arguments
 
-// 入力ファイル名の指定がない場合は、source/en/ の全ての .md ファイルを対象とします
+// If no input file names are provided, use all .md files in the input directory
 if (empty($inputFiles)) {
-    $inputFiles = glob($inputDir . '*.md');
+    $inputFiles = glob($inputDir . '*.md'); // Get all .md files from input directory
 } else {
-    // 指定されたファイル名に source/en/ ディレクトリを追加します
+    // Prepend input directory to the provided file names
     foreach ($inputFiles as &$inputFile) {
-        $inputFile = $inputDir . $inputFile;
+        $inputFile = $inputDir . $inputFile; // Add input directory to each file name
     }
 }
 
-// 各入力ファイルに対して翻訳を実行します
+// Process each input file
 foreach ($inputFiles as $inputFile) {
-    // ファイルの内容を読み込みます
-    $content = file_get_contents($inputFile);
+    // Read file content
+    $content = file_get_contents($inputFile); // Read content from the input file
 
-    // Google Cloud Translation API を使用して翻訳します
-    $translatedContent = translateText($content, $apiKey);
+    // Translate content using Google Cloud Translation API
+    $translatedContent = translateText($content, $apiKey); // Translate the content
 
-    // 翻訳された内容を、source/ja/ に元のファイル名と同じ名前のファイルとして保存します
-    $outputFilename = basename($inputFile);
-    $outputFile = $outputDir . $outputFilename;
-    file_put_contents($outputFile, $translatedContent);
+    // Save translated content to the output directory with the same file name
+    $outputFilename = basename($inputFile); // Get the base file name
+    $outputFile = $outputDir . $outputFilename; // Create the output file path
+    file_put_contents($outputFile, $translatedContent); // Save the translated content to the output file
 
-    echo "ファイル '$inputFile' を翻訳し、'$outputFile' に保存しました。\n";
+    echo "Translated file '$inputFile' to '$outputFile'.\n"; // Print the translation result
 }
 
 /**
- * Google Cloud Translation API を使用してテキストを翻訳します。
+ * Translates text using Google Cloud Translation API.
  *
- * @param string $text 翻訳するテキスト
- * @param string $apiKey API キー
- * @return string 翻訳されたテキスト
+ * @param string $text The text to translate.
+ * @param string $apiKey The API key for Google Cloud Translation.
+ * @return string The translated text.
  */
 function translateText(string $text, string $apiKey): string
 {
-    $url = 'https://translation.googleapis.com/language/translate/v2?key=' . $apiKey;
+    $url = 'https://translation.googleapis.com/language/translate/v2?key=' . $apiKey; // API endpoint
     $data = [
-        'q' => $text,
-        'source' => 'en',
-        'target' => 'ja',
-        'format' => 'text'
+        'q' => $text, // Text to be translated
+        'source' => 'en', // Source language
+        'target' => 'ja', // Target language
+        'format' => 'text' // Format of the input text
     ];
 
     $options = [
         'http' => [
-            'header' => "Content-type: application/json\r\n",
-            'method' => 'POST',
-            'content' => json_encode($data)
+            'header' => "Content-type: application/json\r\n", // HTTP header
+            'method' => 'POST', // HTTP method
+            'content' => json_encode($data) // Request body
         ]
     ];
 
-    $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-    $response = json_decode($result, true);
+    $context = stream_context_create($options); // Create stream context
+    $result = file_get_contents($url, false, $context); // Send request to API
+    $response = json_decode($result, true); // Decode the JSON response
 
-    return $response['data']['translations'][0]['translatedText'];
+    return $response['data']['translations'][0]['translatedText']; // Return the translated text
 }
 ?>
