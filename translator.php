@@ -1,8 +1,7 @@
 <?php
 
 // Google Cloud Translation API の認証情報を設定します
-//$apiKey = 'YOUR_API_KEY';
-$apiKey = 'AIzaSyDAI1-JW5SgZ0rdq5e57i6MVHXEaKZ7uYk';
+$apiKey = 'YOUR_API_KEY';
 
 $inputDir = 'source/en/';
 $outputDir = 'source/ja/';
