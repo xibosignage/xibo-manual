@@ -1,2 +1,2 @@
-- [Troubleshooting](troubleshooting.html)
+- [トラブルシューティング](troubleshooting.html)
 

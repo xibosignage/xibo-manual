@@ -1,16 +1,16 @@
-- [Introduction](index.html)
+- [イントロダクション](index.html)
 
-- [User Access](tour_user_access.html)
+- [ユーザーアクセス](tour_user_access.html)
 
-- [CMS Navigation](tour_cms_navigation.html)
+- [CMSナビゲーション](tour_cms_navigation.html)
 
-- [CMS Administrator Settings](tour_cms_settings.html)
+- [CMS管理者設定](tour_cms_settings.html)
 
-- [Tags](tour_tags.html)
+- [タグ](tour_tags.html)
 
-- [Folders](tour_folders.html)
+- [フォルダ](tour_folders.html)
 
-- [Transitions](tour_transitions.html)
+- [トランジション](tour_transitions.html)
 
   
 
