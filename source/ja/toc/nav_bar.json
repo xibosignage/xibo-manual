@@ -1,34 +1,30 @@
 [
   {
-    "title": "Tour",
+    "title": "ツアー",
     "href": "index.html",
     "containsToc": ["tour"]
   },{
-    "title": "Users",
-    "href": "users_administration.html",
+    "title": "ユーザー",
+    "href": "users.html",
     "containsToc": ["users"]
   },{
-    "title": "Displays",
+    "title": "ディスプレイ",
     "href": "displays.html",
     "containsToc": ["displays"]
   },{
-    "title": "Layouts",
+    "title": "レイアウト",
     "href": "layouts.html",
     "containsToc": ["layouts"]
   },{
-    "title": "Media",
-    "href": "media_library.html",
-    "containsToc": ["media"]
+    "title": "メディア",
+    "href": "media.html",
+    "containsToc": ["media", "widgets"]
   },{
-    "title": "Modules",
-    "href": "media_modules.html",
-    "containsToc": ["widgets"]
-  },{
-    "title": "Scheduling",
-    "href": "scheduling_events.html",
+    "title": "スケジューリング",
+    "href": "scheduling.html",
     "containsToc": ["scheduling"]
   },{
-    "title": "Troubleshooting",
+    "title": "トラブルシューティング",
     "href": "troubleshooting.html",
     "containsToc": ["troubleshooting"]
   }

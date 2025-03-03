@@ -1,14 +1,14 @@
 
 
-- [Library Media](media_library.html)
+- [ライブラリメディア](media_library.html)
 
-- [Playlists](media_playlists.html)
+- [プレイリスト](media_playlists.html)
 
-- [DataSets](media_datasets.html)
+- [データセット](media_datasets.html)
 
-- [Menu Boards](media_menuboards.html)
+- [メニューボード](media_menuboards.html)
 
-- [Dashboard Service](media_dashboard_service.html)
+- [ダッシュボードサービス](media_dashboard_service.html)
 
   
 

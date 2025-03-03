@@ -1,10 +1,10 @@
-- [Scheduling](scheduling_events.html)
+- [スケジューリング](scheduling_events.html)
 
-- [Schedule Management](scheduling_management.html)
+- [スケジュール管理](scheduling_management.html)
 
-- [Geo Scheduling](scheduling_geolocation.html)
+- [ジオ スケジューリング](scheduling_geolocation.html)
 
-- [Dayparting](scheduling_dayparting.html)
+- [配信時間割](scheduling_dayparting.html)
 
   
 
