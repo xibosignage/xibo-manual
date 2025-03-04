@@ -1,4 +1,15 @@
 <?php
+/*
+ * Copyright (C) 2025 Open Source Digital Signage Initiative.
+ *
+ * You can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * You should have received a copy of the GNU Affero General Public License.
+ * see <http://www.gnu.org/licenses/>.
+ */
 
 // Google Cloud Translation API credentials
 $apiKey = 'YOUR_API_KEY'; // Replace with your API key
