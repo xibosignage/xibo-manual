@@ -19,6 +19,11 @@
  * along with Xibo.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+ * Portion copyright (C) 2025 Open source Digital Signage Initiative.
+ * Medified by Mark Miura (miura@open-signage.org)
+ */
+
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\Attributes\AttributesExtension;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
@@ -253,7 +258,8 @@ class ManualGenerator
 
                 // highlight the sub link in this toc
                 $document = new DOMDocument();
-                $document->loadHTML($tocString);
+                $document->loadHTML('<?xml encoding="UTF-8">' . $tocString);
+                // $document->loadHTML($tocString);
 
                 foreach ($document->getElementsByTagName('a') as $a) {
                     /** @var DOMElement $a */
@@ -266,7 +272,8 @@ class ManualGenerator
                     }
                 }
 
-                $tocString = $document->saveHTML();
+                $tocString = $document->saveHTML($document->documentElement);
+                // $tocString = $document->saveHTML();
             }
 
             $navString .= '<li><a href="' . $nav['href'] . '" data-toc-name="' . $navToc . '">' . $nav['title'] . '</a></li>';
