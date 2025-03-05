@@ -3,129 +3,133 @@ toc: "tour"
 maxHeadingLevel: 2
 minHeadingLevel: 2
 aliases:
-  - "tour_date_format"
-  - "tour_guides"
+- "tour_date_format"
+- "tour_guides"
 ---
 
-# [[PRODUCTNAME]] User Manual
+# [[PRODUCTNAME]] ユーザー マニュアル
 
 {nonwhite}
-{includeRevisions}**Revision: [[PRODUCTVERSION]]**{/includeRevisions}
+{includeRevisions}**リビジョン: [[PRODUCTVERSION]]**{/includeRevisions}
 {/nonwhite}
-{white}**Revision: [[PRODUCTVERSION]]**{/white}
+{white}**リビジョン: [[PRODUCTVERSION]]**{/white}
 
-The [[PRODUCTNAME]] software comprises of a central **Content Management System (CMS)** where content is created/uploaded and scheduled to Displays. A **Player** application downloads new content and schedules from the CMS to display on screens:
+[[PRODUCTNAME]] ソフトウェアは、コンテンツが作成/アップロードされ、ディスプレイにスケジュールされる中央の **コンテンツ管理システム (CMS)** で構成されています。**プレーヤー** アプリケーションは、CMS から新しいコンテンツをダウンロードし、画面に表示するスケジュールを設定します:
 
-![System Architecture](img/v4_tour_system_architecture.png)
+![システム アーキテクチャ](img/v4_tour_system_architecture.png)
 
-- The Player application runs on hardware attached to each screen.
-- The Player regularly connects to the CMS to check for any new/edited content or schedules which it needs to download.
+- プレーヤー アプリケーションは、各画面に接続されたハードウェア上で実行されます。
+- プレーヤーは定期的に CMS に接続し、ダウンロードする必要がある新しいコンテンツや編集されたコンテンツ、スケジュールを確認します。
 
-This User documentation has been created to cover core concepts and CMS features to educate and showcase [[PRODUCTNAME]] capabilities to Users. Pages have been catagorised into clear neat sections to make it easier to find the relevant documentation to match your User role within the CMS.
+このユーザー ドキュメントは、コア コンセプトと CMS 機能を網羅し、[[PRODUCTNAME]] の機能をユーザーに説明して紹介するために作成されました。ページは、CMS 内でのユーザー ロールに一致する関連ドキュメントを簡単に見つけられるように、明確で整然としたセクションに分類されています。
 
 {tip}
-We recommend that all Users start with the **Tour** section of this manual to assist Users with [First Time Access](tour_user_access.html) and to get started [Navigating the CMS](tour_cms_navigation.html)!
+すべてのユーザーは、このマニュアルの **ツアー** セクションから始めることをお勧めします。これにより、ユーザーが [初回アクセス](tour_user_access.html) を行い、[CMS の操作](tour_cms_navigation.html) を開始するのに役立ちます。
+
 {/tip}
 
 {nonwhite}
 {noncloud}
 
-Users that are **not** hosting in our [Xibo Cloud](/hosting) will need to install a CMS. Please refer to the [Installation Guides](/docs/setup/cms-installation-guides.html) to assist you in getting up and running with Xibo!
+[Xibo Cloud](/hosting) でホスティングしていないユーザーは、CMS をインストールする必要があります。 Xibo の起動と実行に役立つ [インストール ガイド](/docs/setup/cms-installation-guides.html) を参照してください。
 
-Click [here](/docs/setup/supported-versions-and-environments.html) to view the full list of supported versions and environments for the CMS and Players.
+CMS とプレーヤーでサポートされているバージョンと環境の完全なリストを表示するには、[ここ](/docs/setup/supported-versions-and-environments.html) をクリックしてください。
 
 {/noncloud}
 
-
-If you are an Administrator, further information on the Installation and Set up of the system is available from our [Administration Documentation](/docs/setup/)
+管理者の場合は、システムのインストールとセットアップに関する詳細情報を [管理ドキュメント](/docs/setup/) から入手できます。
 
 {cloud}
-If you are hosting in our [Xibo Cloud](/docs/setup/xibo-in-the-cloud.html) your CMS will be set up for you. Keep a look out for an email which will be sent once your CMS is ready with your connection details!
-{/cloud}
+[Xibo Cloud](/docs/setup/xibo-in-the-cloud.html) でホスティングしている場合は、CMS が自動的にセットアップされます。CMS の準備が整い次第、接続の詳細が記載されたメールが送信されますので、ご確認ください。
+クラウド}
 
-Throughout this manual you will see tables to show **Player** and **CMS** version support for key features and functionality:
+このマニュアル全体を通して、主要な機能に対する**プレーヤー**と**CMS**のバージョン サポートを示す表が表示されます:
 
-![Feature Category Table](img/v4_tour_feature_category_table.png)
+![機能カテゴリ表](img/v4_tour_feature_category_table.png)
 
 {/nonwhite}
 
 {version}
-**IMPORTANT:** This User Manual gives a complete overview of the CMS as a [Super Administrator](/manual/en/users_administration.html#content-super-admin-user) with full access to all [Features and Sharing](users_features_and_sharing.html) options within the CMS. If you have any questions regarding your User access, then please contact your Administrator.
+**重要:** このユーザー マニュアルでは、CMS 内のすべての [機能と共有](users_features_and_sharing.html) オプションに完全にアクセスできる [スーパー管理者](/manual/en/users_administration.html#content-super-admin-user) として、CMS の完全な概要を説明します。ユーザー アクセスに関して質問がある場合は、管理者にお問い合わせください。
+
 {/version}
 
-# Digital Signage For All!
+# すべての人のためのデジタル サイネージ!
 
-[[PRODUCTNAME]] provides a flexible and powerful application which has a core ethos in "Digital Signage for all", regardless of skill level or technological knowledge.
+[[PRODUCTNAME]] は、スキル レベルや技術的知識に関係なく、「すべての人のためのデジタル サイネージ」を基本理念とする柔軟で強力なアプリケーションを提供します。
 
-The [[PRODUCTNAME]] software centers on 5 core concepts:
+[[PRODUCTNAME]] ソフトウェアは、次の 5 つのコア コンセプトを中心としています:
 
-## Users
+## ユーザー
 
-[Users](users_administration.html) are added to the CMS by Administrators and given a **Username** and **Password** to securely log in.
-
-{tip}
-For a corporate environment [[PRODUCTNAME]] can also integrate with SAML identity providers such as Active Directory and ADFS!
-{/tip}
-
-[[PRODUCTNAME]] supports 3 [User Types](users_administration.html#content-user-types) as well as [User Groups](users_groups.html) and multi-level [Feature and Sharing](users_features_and_sharing.html) access to all system and user objects within the CMS.
-
-## Displays
-
-A [Display](displays.html) is the connection from the Player to the CMS which groups together content and schedule information. Each Display is uniquely identified in the CMS so that each Display can have its own **Media** content, **Layout** designs and **Schedules** available each with uniquely identified [Reporting](displays_metrics.html) statistics.
-
-## Media
-
-Media is the content we want to show on Displays which is generally split into two categories:
-
-- **File based media** - media uploaded and stored in the [Library](media_library.html) (images and video files for example)
-- **Layout based media** - media configured directly on a Layout which does not have an associated file (RSS feeds and Weather forecasts for example)
+[ユーザー](users_administration.html) は管理者によって CMS に追加され、安全にログインするための **ユーザー名** と **パスワード** が付与されます。
 
 {tip}
-[[PRODUCTNAME]] uses powerful [Widgets](layouts_editor.html#content-widgets) which integrate dynamic third-party content from a variety of sources!
+
+企業環境では、[[PRODUCTNAME]] を Active Directory や ADFS などの SAML ID プロバイダーと統合することもできます。
+
 {/tip}
 
-## Layouts
+[[PRODUCTNAME]] は、3 つの [ユーザー タイプ](users_administration.html#content-user-types) に加えて、[ユーザー グループ](users_groups.html) と、CMS 内のすべてのシステムおよびユーザー オブジェクトへのマルチレベルの [機能と共有](users_features_and_sharing.html) アクセスをサポートしています。
 
-A [Layout](layouts.html) is the complete content design to be shown on Displays.  With a powerful [Layout Editor](layouts_editor.html) Users can easily create eye catching content without having to leave the [[PRODUCTNAME]] CMS. Layouts can then be added to [Campaigns](layouts_campaigns.html) to play sequentially when scheduled.
+## ディスプレイ
 
-## Scheduling
+[ディスプレイ](displays.html) は、プレーヤーから CMS への接続であり、コンテンツとスケジュール情報をグループ化します。各ディスプレイは CMS で一意に識別されるため、各ディスプレイには独自の **メディア** コンテンツ、**レイアウト** デザイン、**スケジュール** が用意され、それぞれが一意に識別された [レポート](displays_metrics.html) 統計情報とともに利用できます。
 
-[Scheduling](scheduling_events.html) is highly flexible and supports scheduling to single Displays as well as to [Display Groups](displays_groups.html). Displays check for new scheduled content periodically and will download new items in advance of playback. 
+## メディア
+
+メディアはディスプレイに表示するコンテンツで、通常は次の 2 つのカテゴリに分けられます。
+
+- **ファイル ベースのメディア** - [ライブラリ](media_library.html) にアップロードされ保存されるメディア (画像やビデオ ファイルなど)
+- **レイアウト ベースのメディア** - レイアウトに直接構成されたメディアで、関連付けられたファイルはありません (RSS フィードや天気予報など)
 
 {tip}
-[Default Layouts](displays.html#content-default-layout) should be assigned to Displays to be shown when nothing else is scheduled!
+[[PRODUCTNAME]] は、さまざまなソースからの動的なサードパーティ コンテンツを統合する強力な [ウィジェット](layouts_editor.html#content-widgets) を使用します。
+
 {/tip}
 
-## Core Workflows
+## レイアウト
 
-[[PRODUCTNAME]] gives Users 2 main workflow options:
+[レイアウト](layouts.html) は、ディスプレイに表示される完全なコンテンツ デザインです。強力な [レイアウト エディタ](layouts_editor.html) を使用すると、ユーザーは [[PRODUCTNAME]] CMS を離れることなく、目を引くコンテンツを簡単に作成できます。その後、レイアウトを [キャンペーン](layouts_campaigns.html) に追加して、スケジュール時に順番に再生することができます。
 
-1. Creating content from the [Layout Editor](layouts_editor.html)
+## スケジュール
 
-![Workflow 1](img/v4_tour_workflow_1.png)
+[スケジュール](scheduling_events.html) は非常に柔軟で、単一のディスプレイだけでなく [ディスプレイ グループ](displays_groups.html) へのスケジュールもサポートしています。ディスプレイは、スケジュールされた新しいコンテンツを定期的にチェックし、再生前に新しいアイテムをダウンロードします。
 
-2. Selecting **Video**/**Image** files or saved **Playlists** to directly [Schedule](scheduling_events.html#content-media-scheduling):
+{tip}
+[デフォルト レイアウト](displays.html#content-default-layout) は、他に何もスケジュールされていない場合に表示されるようにディスプレイに割り当てる必要があります。
+ヒント}
 
-![Workflow 2](img/v4_tour_workflow_2.png)
+## コア ワークフロー
+
+[[PRODUCTNAME]] では、ユーザーに 2 つの主要なワークフロー オプションが提供されます:
+
+1. [レイアウト エディター](layouts_editor.html) からコンテンツを作成する
+
+![ワークフロー 1](img/v4_tour_workflow_1.png)
+
+2. **ビデオ**/**画像** ファイルまたは保存された **プレイリスト** を選択して直接 [スケジュール](scheduling_events.html#content-media-scheduling):
+
+![ワークフロー 2](img/v4_tour_workflow_2.png)
 
 {nonwhite}
 
-## Open Source
+## オープン ソース
 
-The heart of the software is [Open Source](/open-source), including the entire **CMS** platform and **Windows Players**, and has been for many years! We're committed to keeping it that way. The code can be downloaded and used in accordance with our **AGPLv3 Licence**.
+ソフトウェアの中心は [オープン ソース](/open-source) であり、**CMS** プラットフォーム全体と **Windows プレーヤー** も含まれており、長年その状態が続いています。当社は、この状態を維持することに尽力しています。コードは、**AGPLv3 ライセンス** に従ってダウンロードして使用できます。
 
-## Content Licensing
+## コンテンツのライセンス
 
-Please ensure that any content you wish to use complies with Copyright law and is used in the manner as described within its own license. Xibo takes no measures to regulate what is put on displays, beyond what is described in these Manual pages.
+使用するコンテンツが著作権法に準拠していること、および独自のライセンスに記載されている方法で使用されることを確認してください。Xibo は、これらのマニュアル ページに記載されている内容を超えて、ディスプレイに表示される内容を規制する措置を講じません。
 
-## Support
+## サポート
 
-If you would like further help with the information contained in the User Manual please take a look at the [Troubleshooting](troubleshooting.html) section or our [Xibo Community Forum](https://community.xibo.org.uk/).
+ユーザー マニュアルに記載されている情報についてさらにサポートが必要な場合は、[トラブルシューティング](troubleshooting.html) セクションまたは [Xibo コミュニティ フォーラム](https://community.xibo.org.uk/) をご覧ください。
 
-Customers on a Professional, Business or Enterprise Plan have access to our experts on our Help Desk. Please open a ticket via [My Account](https://xibosignage.com/my-account/tickets?open=true) if you need assistance.
+プロフェッショナル、ビジネス、またはエンタープライズ プランのお客様は、ヘルプ デスクの専門家にアクセスできます。サポートが必要な場合は、[マイ アカウント](https://xibosignage.com/my-account/tickets?open=true) からチケットを開いてください。
 
 {/nonwhite}
 
-#### Next...
+#### 次へ...
 
-[First time User Access](tour_user_access.html)
+[初めてのユーザー アクセス](tour_user_access.html)

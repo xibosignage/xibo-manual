@@ -2,131 +2,136 @@
 toc: "users"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Use the Notification System to keep Users of the CMS informed of important system events"
-keywords: "system notifications, notification drawer, notification centre"
-persona: "user, administrator"
+抜粋: "通知システムを使用して、CMS のユーザーに重要なシステム イベントを通知します"
+キーワード: "システム通知、通知ドロワー、通知センター"
+ペルソナ: "ユーザー、管理者"
 ---
 
-# Notifications
+# 通知
 
-The [[PRODUCTNAME]] **Notification System** is used to keep other Users of the CMS informed of important system events and user-created notifications.
+[[PRODUCTNAME]] **通知システム** は、CMS の他のユーザーに重要なシステム イベントやユーザーが作成した通知を通知するために使用されます。
 
 {tip}
-Users with Notifications already enabled please go straight to the [Notification Drawer](users_notifications.html#content-notification-drawer) section below.
+通知がすでに有効になっているユーザーは、下の [通知ドロワー](users_notifications.html#content-notification-drawer) セクションに直接進んでください。
 {/tip}
 
-## Administrator Set up
+## 管理者の設定
 
-Notifications need to be enabled for Users/User Groups using [Features](users_features_and_sharing.html).
+[機能](users_features_and_sharing.html) を使用して、ユーザー/ユーザー グループの通知を有効にする必要があります。
 
-- Click on the **Users** tab.
-- Expand the **Notifications** Feature set, and tick to enable the appropriate access.
+- [**ユーザー**] タブをクリックします。
+- **通知** 機能セットを展開し、適切なアクセスを有効にするためにチェックを入れます。
 
-![Notification Features](img/v4_users_notification_feature.png)
+![通知機能](img/v4_users_notification_feature.png)
 
 {version}
-**NOTE:** Ensure a **Sending Email** address has been included on the [Network](tour_cms_settings.html#content-network) tab from the **CMS Settings** page prior to enabling Notifications!
+**注意:** 通知を有効にする前に、[CMS 設定] ページの [ネットワーク](tour_cms_settings.html#content-network) タブに **送信メール** アドレスが含まれていることを確認してください。
+
 {/version}
 
-## System Notifications
+## システム通知
 
-[[PRODUCTNAME]] raises various **System Notifications** to report on the health of the system as a whole. 
+[[PRODUCTNAME]] は、システム全体の状態を報告するために、さまざまな **システム通知** を発行します。
 
 {tip}
-Notifications are emailed to the **Admin** email address configured in **CMS Settings** from the [Network](tour_cms_settings.html#content-network) tab. 
+通知は、[ネットワーク](tour_cms_settings.html#content-network) タブの **CMS 設定** で構成された **管理者** メール アドレスにメールで送信されます。
+
 {/tip}
 
-Notifications will also be sent to Users who belong to User Groups configured to receive System Notifications or who have been configured to receive these Notifications themselves. System Notifications are managed from the User/User Group edit form:
+通知は、システム通知を受信するように構成されたユーザー グループに属するユーザー、またはこれらの通知を受信するように構成されたユーザー グループにも送信されます。システム通知は、ユーザー/ユーザー グループの編集フォームから管理されます:
 
-![System Notifications](img/v4_users_notifications_system.png)
-
-
+![システム通知](img/v4_users_notifications_system.png)
 
 {nonwhite}
+
 {noncloud}
 
-Further information for Administrators on **CMS Maintenance** can be found [here](/docs/setup/xibo-maintenance.html)
+**CMS メンテナンス** に関する管理者向けの詳細情報は、[こちら](/docs/setup/xibo-maintenance.html) で確認できます
+
 {/noncloud}
 {/nonwhite}
 
-## Notification Drawer
+## 通知ドロワー
 
-Notifications, for the logged in User, are shown in the Notification Drawer which is accessed from clicking the alarm bell icon in the top right of the screen.
+ログインしたユーザーの通知は、画面の右上にあるアラーム ベル アイコンをクリックしてアクセスできる通知ドロワーに表示されます。
 
 {tip}
-The number of unread Notifications will also be shown here in red!
+未読の通知の数も赤で表示されます!
+
 {/tip}
 
-![Users Notification Bell](img/v4_users_notification_bell.png)
+![ユーザー通知ベル](img/v4_users_notification_bell.png)
 
-The drawer will show the last 5 Notifications received. 
+ドロワーには、受信した最新の 5 件の通知が表示されます。
 
-Unread Notifications are shown in black text with those that have already been read shown in a light grey text.
+未読の通知は黒のテキストで表示され、既読の通知は薄い灰色のテキストで表示されます。
 
 {tip}
-Notifications will only show in the Notification Drawer if their release date has passed and if the logged in User has been assigned the notification, [Schedule Event Reminders](scheduling_events.html#content-reminders) for example.
+通知は、リリース日が過ぎていて、ログインしているユーザーに通知が割り当てられている場合にのみ、通知ドロワーに表示されます (例: [イベント リマインダーのスケジュール](scheduling_events.html#content-reminders))。
 {/tip}
 
-- Click on the title of a **Notification** to open to read the full Notification message.
+- **通知** のタイトルをクリックして開き、通知メッセージ全体を読んでください。
 
+## 通知の作成
 
-## Create Notifications
+通知は、ユーザーが通知ドロワーから **通知センター** をクリックして作成します。
 
-Notifications are created by Users by clicking **Notification Centre** from the Notification Drawer:
+![通知センター](img/v4_users_notification_centre.png)
 
-![Notification Centre](img/v4_users_notification_centre.png)
+グリッドの右上にある **通知の追加** アクション ボタンをクリックします。
 
+- **件名** のタイトルを追加します。
 
+- 通知を公開する **日付** と時刻を選択します。
 
-Click on the **Add Notification** action button at the top right of the grid:
-
-- Include a **Subject** title.
-
-- Select the **date** and time to publish the Notification.
-
-- Tick to optionally send the Notification additionally as an **Email**.
+- オプションで通知を **メール** として追加送信する場合は、チェックを入れます。
 
 {tip}
-The email address entered on the User record will be used. Users who should receive this Notification are defined on the **Audience** tab!
+ユーザー レコードに入力されたメール アドレスが使用されます。この通知を受け取るユーザーは、[**Audience**] タブで定義されます。
+
+ヒント}
+
+- [**Interrupt**] オプションを使用すると、通知全体が表示されるページにユーザーを自動的にリダイレクトできます。
+
+{ヒント}
+このオプションは、重要なユーザー メッセージに便利です。ユーザーは、CMS のナビゲーションを続行するには、[続行] をクリックする必要があります。
+
+[**Administration Settings**] ページの [**Maintenance**] タブで、[**Enable Email Alerts**] が有効になっていることを確認してください。不明な場合は、管理者に問い合わせてください。
+
+ヒント}
+
+- [**Message**] タブで、テキスト エディターを使用して、通知のメッセージ本文を作成し、書式設定します。
+
+{ヒント}
+[Notification Widget](media_module_notifications.html) を使用してメッセージを表示/表示グループにターゲット設定する場合、書式設定はウィジェットから適用され、ここでエディターで使用されている書式設定から適用されません。
+ヒント}
+
+- **Audience** タブから、この通知を受信する **Users/User Groups** を選択します。
+
+- この通知を送信する CMS の非ユーザーのメール アドレスを入力します。
+
+- 通知を表示する **Display/Display Groups** を選択します。
+
+{tip}
+Display/Display Groups を正常にターゲットにするには、レイアウトがスケジュールに既に存在し、[Notification Widget](media_module_notifications.html) が含まれている必要があります。
+
 {/tip}
 
-- Use the **Interrupt** option to automatically redirect Users to a page that will show the Notification in full. 
+- 通知に添付するファイルをアップロードする必要がある場合は、添付ファイル タブを使用します。
 
 {tip}
-This option is useful for important User messages. Users would need to click on Continue to carry on navigating the CMS.
+添付ファイルは、ユーザーが通知センターからダウンロードできます。
 
-Ensure that **Enable Email Alerts** has been enabled from the **Maintenance** tab on the **Administration Settings** page. If you are unsure, speak to your Administrator.
-{/tip}
-
-- From the **Message** tab, use the text editor to create and format the message body of your Notification.
-
-  {tip}
-  If you intend to target your message to Display/Display Groups using the [Notification Widget](media_module_notifications.html), the formatting will applied from the Widget and not from the formatting used in the editor here.
-  {/tip}
-
-- From the **Audience** tab, select the **Users/User Groups** to receive this Notification.
-
-- Enter the email addresses of Non Users of the CMS to send this Notification to.
-- Select the **Display/Display Groups** that should show the notification. 
-
-{tip}
-Layouts need to already be in the schedule and contain the [Notification Widget](media_module_notifications.html) to target Display/Display Groups successfully!
-{/tip}
-
-- Use the Attachment tab should you need to upload a file to attach to the Notification.
-
-{tip}
-Attachments can be downloaded by Users from the Notification Centre.
 {/tip}
 
 {version}
-**NOTE:** Edits that are made to a Notification will be reflected CMS side only. Generated emails which have already been sent will not be recalled.
-{/version}
+**注意:** 通知に加えられた編集は、CMS 側のみに反映されます。すでに送信された生成されたメールは取り消されません。
+{version}
 
-## Notification Widget
+## 通知ウィジェット
 
-Add the [Notification Widget](media_module_notifications.html) to Layouts/Playlists to show messages on Displays created from the **Notification Centre**.
+レイアウト/プレイリストに [通知ウィジェット](media_module_notifications.html) を追加して、**通知センター** から作成されたディスプレイにメッセージを表示します。
 
-#### Next...
+#### 次へ...
 
-[Layouts](layouts.html)
+[レイアウト](layouts.html)

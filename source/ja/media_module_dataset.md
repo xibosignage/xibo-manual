@@ -3,74 +3,58 @@ toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
-  - "media_module_dataset_ticker"
-  - "media_module_dataset_view"
-excerpt: "Display Information held in DataSets as Tickers or Tables"
-keywords: "dataset ticker, dataset view, dataset tables, dataset elements, dataset templates"
-persona: "content manager"
+- "media_module_dataset_ticker"
+- "media_module_dataset_view"
+抜粋: "DataSet に保持されている情報をティッカーまたはテーブルとして表示する"
+キーワード: "データセット ティッカー、データセット ビュー、データセット テーブル、データセット エレメント、データセット テンプレート"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
 # DataSet
 
-Display data held in a DataSet anywhere on a Layout using **Elements** or include **Static Templates** to show Tickers and Tables of data in Layouts/Playlists.
+**Elements** を使用してレイアウト上の任意の場所に DataSet に保持されているデータを表示するか、**Static Templates** を含めてレイアウト/プレイリストにデータのティッカーとテーブルを表示します。
 
 {feat}DataSets|v4{/feat}
 
-The DataSet Widget primarily consists of a DataSet source which feeds into configured Elements and Static Templates.
+DataSet ウィジェットは主に、構成されたエレメントと Static Templates にフィードする DataSet ソースで構成されます。
 
 {tip}
-[DataSets](media_datasets.html) need to be created and defined prior to adding the DataSet Widget to Layouts/Playlists. 
+[DataSet](media_datasets.html) は、レイアウト/プレイリストに DataSet ウィジェットを追加する前に作成して定義する必要があります。
+
 {/tip}
 
-## DataSet Elements
+## DataSet 要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding a DataSet Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the DataSet Widget to use and where they can be placed. 
+[Element](layouts_editor#content-data-widgets-and-elements) は、DataSet ウィジェットを [Layout](layouts_editor.html) に追加するときに選択できます。これにより、ユーザーは DataSet ウィジェットのどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![DataSet Elements](img/v4_media_module_dataset_elements.png)
+![DataSet 要素](img/v4_media_module_dataset_elements.png)
 
 {tip}
-You will see a message in the properties panel should you try to use an Element that has no matching field type in your DataSet!
+DataSet に一致するフィールド タイプがない要素を使用しようとすると、プロパティ パネルにメッセージが表示されます。
+
 {/tip}
 
-Each Element has a set of configuration options in the Properties Panel. A DataSet must be selected to use as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+各要素には、プロパティ パネルに一連の構成オプションがあります。レイアウトで使用される各要素の**構成**タブから、データ ソースとして使用するデータセットを選択する必要があります。追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することで、データ要素をさらに補完できます。これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめることができ、構成と配置が簡単になります。
 
-## DataSet Static Templates
+## データセットの静的テンプレート
 
-[Static Templates](layouts_editor.html#content-static-templates) define how returned data should be laid out and styled and are a simple way to show your data using pre-styled templates.
+[静的テンプレート](layouts_editor.html#content-static-templates) は、返されるデータのレイアウトとスタイル設定方法を定義し、事前にスタイル設定されたテンプレートを使用してデータを表示する簡単な方法です。
 
-![DataSet Templates](img/v4_media_module_dataset_templates.png)
+![データセット テンプレート](img/v4_media_module_dataset_templates.png)
 
+テンプレートは、返される結果の動作に影響を与えるように構成できるほか、プロパティ パネルのさまざまなオプションを使用してデザインの外観を変更することもできます。レイアウト/プレイリストに追加された各テンプレートの [構成] タブから、データ ソースとして使用するデータセットを選択する必要があります。
 
+## 概要
 
-Templates can be configured to affect the behaviour of returned results as well as make changes to the design appearance using a range of options in the Properties Panel. A DataSet must be selected to use as the data source from the **Configure** tab for each Template added to the Layout/Playlist.
+- 基礎となる [データセット](media_datasets.html#content-adding-data-to-columns) データを編集して、新しいデータで要素とテンプレートを更新します。
 
-## Overview
+- レイアウトやプレイリストにアクセスせずに、データセット ウィジェットのコンテンツを更新します。
 
-- Update Elements and Templates with new data by editing the underlying [DataSet](media_datasets.html#content-adding-data-to-columns) data.
-- Update DataSet Widget content without accessing Layouts or Playlists.
-- Order and Filter results by any column.
+- 任意の列で結果を並べ替えてフィルターします。
 
-- Shuffle items to play in a random sequence.
-- Content for this media is cached by the Players for off-line playback.
-- Set a 'freshness check' to determine when to switch to the 'No data' message when a Player is offline.
+- アイテムをシャッフルして、ランダムな順序で再生します。
 
+- このメディアのコンテンツは、オフライン再生用にプレーヤーによってキャッシュされます。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- プレーヤーがオフラインのときに「データなし」メッセージに切り替えるタイミングを決定するために、「鮮度チェック」を設定します。
 

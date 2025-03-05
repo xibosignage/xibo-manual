@@ -1,29 +1,29 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Add PDF files to include on Layouts and Playlists"
-persona: "content manager"
+抜粋: "レイアウトとプレイリストに含める PDF ファイルの追加"
+persona: "コンテンツ マネージャー"
 ---
 
 # PDF
 
-Add PDF files to include on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-library-search). 
+[ライブラリ検索](layouts_editor.html#content-library-search) から、レイアウトとプレイリストに含める PDF ファイルを追加します。
 
-Using the 'other media' search, use the **Type** drop down to select **PDF**.
+「その他のメディア」検索を使用して、**タイプ** ドロップダウンから **PDF** を選択します。
 
 {feat}PDF|v4{/feat}
 
-## Overview
+## 概要
 
--  [Upload](media_library.html#content-add-media-upload) new files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-library-search).
-- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- PDF files can be also be uploaded in advance to the Library.
-- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for PDF files uploaded directly to a Playlist.
-- Save PDF files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
-- Set a duration to apply to each page of the PDF.
+- [ライブラリ検索](layouts_editor.html#content-library-search) から、新しいファイルを直接プレイリスト/レイアウトに [アップロード](media_library.html#content-add-media-upload) します。
+- プレイリストとレイアウトに直接アップロードされたファイルは、再利用できるように [ライブラリ](media_library.html) に自動的に保存されます。
+- PDF ファイルは、事前にライブラリにアップロードすることもできます。
+- プレイリストに直接アップロードされた PDF ファイルの [開始時間と終了時間](media_playlists.html#content-widget-expiry-dates) を設定します。
+- アップロード時に PDF ファイルを [フォルダー](tour_folders.html#content-saving-to-folders) に保存して、ユーザーへのアクセスを簡単に制御します。
+- PDF の各ページに適用する期間を設定します。
 
 {tip}
-Tick the **Set a duration** box on the **Advanced** tab. The duration (in seconds) set here will be for the entire PDF or click the **Configure** tab and click in the box to apply the set duration to each individual page instead.
+[**詳細**] タブの [**期間を設定する**] ボックスにチェックを入れます。ここで設定した期間 (秒単位) は PDF 全体に適用されます。または、[**構成**] タブをクリックしてボックス内をクリックすると、設定した期間が各ページに適用されます。
 {/tip}
 
 ![PDF](img/v4_media_module_pdf.png)

@@ -1,79 +1,80 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Show daily weather forecasts on Layouts and Playlists"
-keywords: "open weather map "
-persona: "content manager"
+抜粋: "レイアウトとプレイリストに毎日の天気予報を表示する"
+キーワード: "天気マップを開く"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Weather
+# 天気
 
-Display daily weather forecast data anywhere on a Layout using **Elements** or select a **Static Template** to display results in Layouts/Playlists.
+**Element** を使用してレイアウトの任意の場所に毎日の天気予報データを表示するか、**Static Template** を選択してレイアウト/プレイリストに結果を表示します。
 
 {feat}Weather|v4{/feat}
 
-Weather data is provided by [OpenWeather](https://openweathermap.org/) which is provided under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) and [ODbL](https://opendatacommons.org/licenses/odbl/) which provides current worldwide daily weather forecasts which feed into configured Elements and Static Templates.
+天気データは [OpenWeather](https://openweathermap.org/) によって提供され、[CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/) および [ODbL](https://opendatacommons.org/licenses/odbl/) に基づいて提供されます。これらは、構成された要素と静的テンプレートに取り込まれる、現在の世界中の毎日の天気予報を提供します。
 
 {tip}
 
-Please ensure that you are using a v3.2.1 or later CMS to account for API changes.
+API の変更に対応するため、v3.2.1 以降の CMS を使用していることを確認してください。
 
-Visit [Open Weather Map](https://openweathermap.org/api) to create an account and obtain an API key to enter into the Open Weather [Connector.](media_modules.html#content-connectors)
+[Open Weather Map](https://openweathermap.org/api) にアクセスしてアカウントを作成し、Open Weather [Connector](media_modules.html#content-connectors) に入力するための API キーを取得してください。
 
-**NOTE:** Since the release of Open Weather's One Call 3.0, new users must enter credit card details to use the free x number of calls Key or opt for a paid subscription!
+**注:** Open Weather の One Call 3.0 のリリース以降、新規ユーザーは、無料の x 回の呼び出しキーを使用するためにクレジットカードの詳細を入力するか、有料サブスクリプションを選択する必要があります。
 
-Open Weather Map allows 1000 requests for a forecast, per day before charging a small fee for each subsequent request.
+Open Weather Map では、1 日あたり 1,000 件の予報リクエストが許可され、それ以降のリクエストには少額の料金が課金されます。
 
-**Paid plans** unlock a 16 day forecast as well as other optimisations in the way the data is pulled through.
+**有料プラン** では、16 日間の予報が利用できるほか、データの取得方法も最適化されます。
 
 {/tip}
 
 {noncloud}
 {version}
-Existing users currently using the One Call API 2.5 should transfer to the One Call API 3.0 in order to continue using this service. Access to One Call 2.5 will no longer be possible after June 2024. Further details on how to transfer can be found [here.](https://openweathermap.org/one-call-transfer)
+現在 One Call API 2.5 を使用している既存のユーザーは、このサービスを引き続き使用するには One Call API 3.0 に移行する必要があります。 One Call 2.5 へのアクセスは、2024 年 6 月以降はできなくなります。移行方法の詳細については、[こちら](https://openweathermap.org/one-call-transfer) をご覧ください。
 
-After transferring to a new key, please ensure you clear the cache for Weather using the row menu from the **Modules** page!
+新しいキーに移行した後は、**モジュール** ページの行メニューを使用して、天気のキャッシュを必ずクリアしてください。
 
 {/version}
 {/noncloud}
 
 {nonwhite}
 {cloud}
-The Weather Module is configured for **Xibo Cloud** hosted customers with an API key provided as part of the service.
+天気モジュールは、サービスの一部として提供される API キーを使用して、**Xibo Cloud** ホストの顧客向けに構成されています。
+
 {/cloud}
 {/nonwhite}
 
-The Open Weather Map Terms of Service https://openweathermap.org/terms should be read and understood before using this Widget. 
+このウィジェットを使用する前に、Open Weather Map の利用規約 (https://openweathermap.org/terms) を読んで理解する必要があります。
 
-## Weather Elements
+## 天気要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Weather Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Weather Widget to use and where they can be placed.
+[レイアウト](layouts_editor#content-data-widgets-and-elements) は、天気ウィジェットを [レイアウト](layouts_editor.html) に追加するときに選択できます。これにより、ユーザーは天気ウィジェットのどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![Weather Elements](img/v4_media_module_weather_elements.png)
+![天気要素](img/v4_media_module_weather_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel.  Enter the geographical location and units to return results from the **Configure** tab.
+各要素には、プロパティ パネルに構成オプションのセットがあります。地理的な場所と単位を入力すると、[**構成**] タブから結果が返されます。
 
-Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。データ要素は、[グローバル要素](layouts_editor.html#content-global-elements)を追加して図形やテキストを追加することでさらに補完できます。これらはすべて[要素グループ](layouts_editor.html#content-grouping-elements)にまとめられ、構成や配置が簡単になります。
 
 {tip}
-All Layouts that use the Weather Widget need to include attribution, available by using the Attribution Element.  Static Templates contain this tag by default.
+天気ウィジェットを使用するすべてのレイアウトには、属性を含める必要があります。属性は、属性要素を使用して利用できます。静的テンプレートには、デフォルトでこのタグが含まれています。
 {/tip}
 
-## Weather Static Templates
+## 天気静的テンプレート
 
-[Static Templates](layouts_editor.html#content-static-templates) define how returned results should be laid out and styled and are a simple way to show your data using pre-styled templates.
+[静的テンプレート](layouts_editor.html#content-static-templates)は、返される結果のレイアウトとスタイルを定義するもので、事前にスタイル設定されたテンプレートを使用してデータを表示する簡単な方法です。
 
-![Weather Templates](img/v4_media_modules_weather_templates.png)
+![天気テンプレート](img/v4_media_modules_weather_templates.png)
 
-Templates can be configured to make changes to the design appearance using a range of options in the Properties Panel. Enter geographical locations and units to return results from the **Configure** tab for each Template added to the Layout/Playlist.
+プロパティ パネルのさまざまなオプションを使用して、テンプレートを構成してデザインの外観を変更できます。レイアウト/プレイリストに追加された各テンプレートの**構成**タブから結果を返すには、地理的な場所と単位を入力します。
 
-## Overview
+## 概要
 
-- Return results based on the Display Location.
-- Automatically set the unit of measurement to use to be based on the geographical location. 
-- Automatically select weather forecasts based on Display Location.
-- Specify which Language to use.
-- Opt to show only daytime weather conditions.
-- Replace Background Images with images from the [Library](media_library.html)
-- Data for this media is cached by the Players for off-line playback.
+- 表示場所に基づいて結果を返します。
+- 使用する測定単位を地理的な場所に基づいて自動的に設定します。
+- 表示場所に基づいて天気予報を自動的に選択します。
+- 使用する言語を指定します。
+- 日中の天気状況のみを表示するように選択します。
+- 背景画像を[ライブラリ](media_library.html)の画像に置き換えます。
+- このメディアのデータは、オフライン再生用にプレーヤーによってキャッシュされます。

@@ -2,52 +2,50 @@
 toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Schedule Events to be Location aware"
-keywords: "map marker, latitude, longitude"
-persona: "schedule manager, display manager"
+抜粋: "場所を認識するようにイベントをスケジュールする"
+キーワード: "マップ マーカー、緯度、経度"
+ペルソナ: "スケジュール マネージャー、表示マネージャー"
 ---
 
 # Geo Scheduling
 
-Scheduled Events can be configured to be location aware with locations displayed on a map view.
+スケジュールされたイベントは、場所を認識するように構成でき、場所がマップ ビューに表示されます。
 
 {feat}Geo Location Scheduling|v4{/feat}
 
-## Define Location
+## 場所の定義
 
-- From the Schedule [Event](scheduling_events.html) form, click on the **Geo Location** tab.
+- スケジュール [イベント](scheduling_events.html) フォームから、**Geo Location** タブをクリックします。
 
-- Tick in the **Geo Schedule** box to enable and define the location.
-
-
-{tip}
-On opening, the map will default to what is entered for DEFAULT_LAT and DEFAULT_LONG in **CMS Settings**, under the [Displays](tour_cms_settings.html#content-displays) tab.
-{/tip}
-
-- Use the buttons in the top left of the map to Zoom in and out. 
-- Click on the search icon to enter details for a particular area.
-
-![Geolocation Search](img/v4_schedule_geolocation_search.png)
-
-- Define an area by drawing a Polygon or Rectangle layer on the map.
-
-![Polygon Layer](img/v4_schedule_polygon.png)
-
-## Edit
-
-- Once an area has been defined, click on the edit icon to to drag the markers to make adjustments to the existing Layer. 
-- Click on the grey **Save** button located here to ensure that edits are saved.
-
-![Edit Layer](img/v4_schedule_edit_layer.png)
-
-## Delete
-
-- To remove the area, use the bin icon and click into the area to delete
-- Click the grey **Save** button to save the removal of the layer.
+- **Geo Schedule** ボックスにチェックを入れて、場所を有効にして定義します。
 
 {tip}
-Edit this schedule by clicking the icon in the [Calendar](scheduling_management.html#content-calendar-view) or by using the row menu in the [Grid](scheduling_management.html#content-grid-view) view!
+マップを開くと、**CMS 設定** の [ディスプレイ](tour_cms_settings.html#content-displays) タブの DEFAULT_LAT と DEFAULT_LONG に入力された内容がデフォルトでマップに表示されます。
 {/tip}
 
+- マップの左上にあるボタンを使用して、ズームインとズームアウトを行います。
+- 検索アイコンをクリックして、特定のエリアの詳細を入力します。
 
+![ジオロケーション検索](img/v4_schedule_geolocation_search.png)
+
+- マップ上にポリゴンまたは長方形のレイヤーを描画して、エリアを定義します。
+
+![ポリゴン レイヤー](img/v4_schedule_polygon.png)
+
+## 編集
+
+- エリアを定義したら、編集アイコンをクリックしてマーカーをドラッグし、既存のレイヤーを調整します。
+- ここにある灰色の [保存] ボタンをクリックして、編集内容を保存します。
+
+![レイヤーの編集](img/v4_schedule_edit_layer.png)
+
+## 削除
+
+- 領域を削除するには、ゴミ箱アイコンを使用して削除する領域をクリックします
+- 灰色の [保存] ボタンをクリックして、レイヤーの削除を保存します。
+
+{tip}
+このスケジュールを編集するには、[カレンダー](scheduling_management.html#content-calendar-view) のアイコンをクリックするか、[グリッド](scheduling_management.html#content-grid-view) ビューの行メニューを使用します。
+
+{/tip}
 

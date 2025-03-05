@@ -3,271 +3,285 @@ toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
-  - "layouts_interrupt"
-  - "scheduling"
-  - "schedule_now"
-excerpt: "Create Schedules to show your content at the right time and place"
-keywords: "synchronised, mirror, video wall, scheduled actions, media scheduling, interrupt layout, display order, priority, max plays, run at cms time, repeats, recurring instances, reminders, duplicate events"
-persona: "schedule manager"
+- "layouts_interrupt"
+- "scheduling"
+- "schedule_now"
+抜粋: "スケジュールを作成して、適切な時間と場所でコンテンツを表示します"
+キーワード: "同期、ミラー、ビデオ ウォール、スケジュールされたアクション、メディア スケジュール、割り込みレイアウト、表示順序、優先度、最大再生回数、CMS 時間で実行、繰り返し、繰り返しインスタンス、リマインダー、重複イベント"
+ペルソナ: "スケジュール マネージャー"
 ---
 
-# Scheduling 
+# スケジュール
 
-[[PRODUCTNAME]] has a sophisticated system to allow for the simple creation of complex schedules across one or more [Displays](displays.html)/[Display](displays_groups.html) Groups. 
+[[PRODUCTNAME]] には、1 つ以上の [Displays](displays.html)/[Display](displays_groups.html) グループにわたる複雑なスケジュールを簡単に作成できる高度なシステムがあります。
 
-## Creating a Schedule
+## スケジュールの作成
 
-Schedules are created from the **Schedule** page of the main CMS menu. 
+スケジュールは、メインの CMS メニューの [スケジュール] ページから作成されます。
 
-Users can create one of the following:
+ユーザーは、次のいずれかを作成できます。
 
-- Schedule Event using the [Add Event](scheduling_events.html#content-add-event) button
-- Synchronised Event using the [Add Synchronised Event](scheduling_events.html#content-synchronised-events) button
+- [イベントの追加](scheduling_events.html#content-add-event) ボタンを使用してイベントをスケジュールする
+- [同期イベントの追加](scheduling_events.html#content-synchronised-events) ボタンを使用して同期イベントをスケジュールする
 
-## Add Event
+## イベントの追加
 
-- Click on the **Add Event** button at the top of the schedule grid to open the **Schedule Event** form and start by selecting the **Event Type** to schedule.
-
-{tip}
-Schedules can also be easily created using the **row menu** for an object, selecting **Schedule**, with the exception of Interrupt Layout, Command and Action Event Types!
-{/tip}
-
-The CMS supports scheduling for the following types:
-
-### Layout
-
-Select a published [Layout](layouts.html)
-
-### Command
-
-Select a [Command](displays_command_functionality.html) to be executed by the Player at a specific point in time. 
+- スケジュール グリッドの上部にある **イベントの追加** ボタンをクリックして **イベントのスケジュール** フォームを開き、スケジュールする **イベント タイプ** を選択して開始します。
 
 {tip}
-Command Events do not require a `toDt`. 
+スケジュールは、オブジェクトの **行メニュー** を使用して **スケジュール** を選択することでも簡単に作成できます (割り込みレイアウト、コマンド、アクション イベント タイプを除く)。
+ヒント}
 
-[Display Order](scheduling_events.html#content-display-order) and [Priority](scheduling_events.html#content-priority) are irrelevant when it comes to executing Commands, but may be set in the CMS for organisational purposes.
-{/tip}
+CMS では、次のタイプのスケジュール設定がサポートされています:
 
-### Overlay Layout
+### レイアウト
 
-Layouts that have been designed as an [Overlay Layout](layouts_overlay.html) will be scheduled at the same time as existing Layouts to create an overlay of content when displayed.
+公開済みの [レイアウト](layouts.html) を選択します
 
-### Interrupt Layout
+### コマンド
 
-An Interrupt Layout will schedule a selected [Layout](layouts.html) to play **in-between** other Layouts in the 'usual schedule'.
+特定の時点でプレーヤーによって実行される [コマンド](displays_command_ functionality.html) を選択します。
 
-[[PRODUCTNAME]] will work out when it will be played using how many **seconds per hour** or as a **Percentage** entered on the schedule.
+{ヒント}
+コマンド イベントには `toDt` は必要ありません。
 
-{feat}Interrupt Layouts|v4{/feat}
+[表示順序](scheduling_events.html#content-display-order) と [優先度](scheduling_events.html#content-priority) は、コマンドの実行には関係ありませんが、整理のために CMS で設定できます。
 
-{tip}
-This can be useful if you have Announcements that need to be shown for a particular amount of time within the usual schedule!
-{/tip}
+ヒント}
 
-- Select **Interrupt Layout** as the Event Type from the drop down menu when adding an [Event](scheduling_events.html).
-- Complete the form fields to create the schedule.
+### オーバーレイ レイアウト
 
-#### Share of Voice
+[オーバーレイ レイアウト](layouts_overlay.html) として設計されたレイアウトは、既存のレイアウトと同時にスケジュール設定され、表示時にコンテンツのオーバーレイが作成されます。
 
-Enter the amount of time the Layout should be shown in seconds per hour or as a percentage (0 - 100%) of the events duration (the difference between the from date and the to date) that the **Interrupt Layout** should occupy the usual schedule.
+### 割り込みレイアウト
 
-{tip}
-**Please note:** If your 'main' Layout has a long duration, the Interrupt Layout may show in a block in order to satisfy the SoV criteria entered!
-{/tip}
+割り込みレイアウトは、選択した [レイアウト](layouts.html) を「通常のスケジュール」内の他のレイアウトの **合間に** 再生するようにスケジュールします。
 
-### Campaign
+[[PRODUCTNAME]] は、**1 時間あたりの秒数** またはスケジュールに入力された **パーセンテージ** を使用して、いつ再生するかを計算します。
 
-Select a **Layout List** [Campaign](layouts_campaigns)
-
-### Action
-
-**Scheduled Actions** listen for a Trigger Code coming in on a webhook to Navigate to a Layout or to run a Command. 
-
-{feat}Scheduled Action Events|v4{/feat}
-
-- **Navigate to Layout** - enter the code identifier for the Layout the Player should navigate to when triggered. This code is created when adding a new Layout or from editing an existing from the Layouts grid.
-- **Command** - select the Command to run.
-
-### Media Scheduling 
-
-Video and Image files saved to the [Library](media_library.html) or a [Playlist](media_playlists.html) can be scheduled to be shown full screen without having to first add it to a Layout.
-
-- Complete the form fields to create the Schedule.
-
-
-Clicking **Choose** from the **Media/Playlist** field will show a pop up:
-
-![Full Screen Media](img/v4_scheduling_events_full_screen_media.png)
-
-Use the drop down menu to select the **Media** file or **Playlist** to use.
-
-On **Saving**, further options will be shown:
-
-- **Video/Image files** only: Override the Media duration set in the Library by providing a **Duration in loop**.
-- Select a specific **Resolution** to use.
-- Set a **Background Colour** to fill any gaps if the item does not fill the entire screen.
+{feat}割り込みレイアウト|v4{/feat}
 
 {tip}
-Schedule Images and Videos directly from the [Library](media_library.html) and [Playlists](media_playlists.html) from the Playlists grid. Use the row menu and click Schedule!
+これは、通常のスケジュール内で特定の時間表示する必要があるアナウンスがある場合に役立ちます。
+
 {/tip}
 
-## Synchronised Events
+- [イベント](scheduling_events.html) を追加するときに、ドロップダウン メニューからイベント タイプとして **割り込みレイアウト** を選択します。
 
-{feat}Sync Events|v4{/feat}
+- フォーム フィールドに入力してスケジュールを作成します。
+
+#### シェア オブ ボイス
+
+レイアウトが表示される時間を、1 時間あたりの秒数、または **割り込みレイアウト** が通常のスケジュールを占めるイベント期間 (開始日と終了日の差) のパーセンテージ (0 - 100%) で入力します。
 
 {tip}
-Synchronised Events are used in conjunction with [Sync Groups](displays_sync_groups.html) to show mirrored or a video wall configuration across 2 or more Displays.
+**注意:** 「メイン」レイアウトの期間が長い場合、入力した SoV 基準を満たすために、割り込みレイアウトがブロック内に表示されることがあります。
 
-Ensure you have created and configured a **Sync Group** prior to scheduling!
 {/tip}
 
-Click on the **Add Synchronised Event** button at the top of the schedule grid to open the **Add Synchronised Event** form.
+### キャンペーン
 
-Select a [Sync Group](displays_sync_groups.html) from the drop down menu.
+**レイアウト リスト** [キャンペーン](layouts_campaigns) を選択します
 
-- Use the **Layout** drop down to select which content should be shown on each Display within the group.
+### アクション
+
+**スケジュールされたアクション** は、レイアウトに移動するかコマンドを実行するために、Webhook でトリガー コードをリッスンします。
+
+{feat}スケジュールされたアクション イベント|v4{/feat}
+
+- **レイアウトに移動** - トリガーされたときにプレーヤーが移動するレイアウトのコード識別子を入力します。このコードは、新しいレイアウトを追加するとき、またはレイアウト グリッドから既存のレイアウトを編集するときに作成されます。
+- **コマンド** - 実行するコマンドを選択します。
+
+### メディアのスケジュール設定
+
+[ライブラリ](media_library.html) または [プレイリスト](media_playlists.html) に保存されたビデオ ファイルと画像ファイルは、最初にレイアウトに追加しなくても、フル スクリーンで表示されるようにスケジュールできます。
+
+- フォーム フィールドに入力してスケジュールを作成します。
+
+**メディア/プレイリスト** フィールドから [選択] をクリックすると、ポップアップが表示されます:
+
+![フル スクリーン メディア](img/v4_scheduling_events_full_screen_media.png)
+
+ドロップダウン メニューを使用して、使用する **メディア** ファイルまたは **プレイリスト** を選択します。
+
+**保存** 時に、さらにオプションが表示されます:
+
+- **ビデオ/画像ファイル** のみ: **ループ内の期間** を指定して、ライブラリで設定されたメディア期間を上書きします。
+
+- 使用する特定の **解像度** を選択します。
+
+- アイテムが画面全体を埋めない場合に、ギャップを埋めるために **背景色** を設定します。
 
 {tip}
-When selecting different content to show in a wall configuration on Displays, the total duration will be enforced by the content on the Lead Display.
+[ライブラリ](media_library.html) および [プレイリスト](media_playlists.html) から画像とビデオを直接スケジュールします。行メニューを使用して [スケジュール] をクリックします。
 
-The Lead Display will issue instructions to change the sequence based on its assigned content. Please bear in mind that other Displays within the group could fall out of sync if their content is not similar in design (same number of items, durations etc).
 {/tip}
 
-- Select **Mirror** to automatically set the same item on each Display within the group automatically.
+## 同期イベント
+
+{feat}同期イベント|v4{/feat}
 
 {tip}
-Sync [Playlists](media_module_playlist.html) on different Layouts by using a **Content Synchronisation Key**!
+同期イベントは [同期グループ](displays_sync_groups.html) と組み合わせて使用され、2 つ以上のディスプレイにミラーリングまたはビデオ ウォール構成を表示します。
+
+スケジュールする前に、**同期グループ** を作成して構成していることを確認してください。
+ヒント}
+
+スケジュール グリッドの上部にある [同期イベントの追加] ボタンをクリックして、[同期イベントの追加] フォームを開きます。
+
+ドロップダウン メニューから [同期グループ](displays_sync_groups.html) を選択します。
+
+- [レイアウト] ドロップダウンを使用して、グループ内の各ディスプレイに表示するコンテンツを選択します。
+
+{ヒント}
+ディスプレイの壁構成で表示するコンテンツを選択する場合、合計時間はリード ディスプレイのコンテンツによって適用されます。
+
+リード ディスプレイは、割り当てられたコンテンツに基づいてシーケンスを変更する指示を発行します。グループ内の他のディスプレイのコンテンツのデザインが似ていない場合 (アイテム数、期間などが同じ)、同期が失われる可能性があることに注意してください。
+
+{/ヒント}
+
+- [ミラー] を選択すると、グループ内の各ディスプレイに同じアイテムが自動的に設定されます。
+
+{ヒント}
+**コンテンツ同期キー** を使用して、異なるレイアウトの [プレイリスト](media_module_playlist.html) を同期します。
 {/tip}
 
-### Dayparts
+### デイパート
 
-- Events are scheduled using **Dayparting** information:
-  - Select **Custom** to enter your own start and end times. Use the **Relative time** checkbox to input the Hours and Minutes when creating a Scheduled Event (not available for Synchronised Events). 
-  - Select **Always** to have the content always scheduled on the selected Display. 
+- イベントは **デイパート** 情報を使用してスケジュールされます:
+- 独自の開始時間と終了時間を入力するには、**カスタム** を選択します。スケジュールされたイベントを作成するときに、**相対時間** チェックボックスを使用して時間と分を入力します (同期イベントでは使用できません)。
+- 選択したディスプレイでコンテンツを常にスケジュールするには、**常に** を選択します。
 
 {tip}
-Create your own defined [Dayparts](scheduling_dayparting.html) to select for even easier scheduling!
+独自の定義済み [デイパート](scheduling_dayparting.html) を作成して選択すると、さらに簡単にスケジュールできます。
+
 {/tip}
 
-- Use the drop down to select what needs to be scheduled from the list.
+- ドロップダウンを使用して、リストからスケジュールする必要があるものを選択します。
 
-### Display Order
+### 表示順序
 
-- Use **Display Order** to determine the order in which the event will play in rotation with other content when scheduled at the same time as other events. Ordering is a simple numerical sort, lowest to highest numbers (events marked with 1 will be played before events marked with 2.)
+- **表示順序** を使用して、他のイベントと同時にスケジュールされた場合に、イベントが他のコンテンツと交互に再生される順序を決定します。順序付けは、単純な数値ソートで、最小から最大までの番号です (1 でマークされたイベントは、2 でマークされたイベントより先に再生されます)。
 
 {tip}
-To ensure the play order of Layouts we recommend including them in a [Campaign](layouts_campaigns.html). The Display Order can then be used to determine the order in which entire Campaigns should play. If Campaigns have the same Display Order or nothing is set, the Campaigns will play according to the Play List order (**Interleaved** or **Block**) defined for the individual Campaign.
+レイアウトの再生順序を確実にするために、レイアウトを [キャンペーン](layouts_campaigns.html) に含めることをお勧めします。その後、表示順序を使用して、キャンペーン全体の再生順序を決定できます。キャンペーンの表示順序が同じであるか、何も設定されていない場合、キャンペーンは、個々のキャンペーンに定義されている再生リスト順序 (**インターリーブ** または **ブロック**) に従って再生されます。
+
 {/tip}
 
-### Priority
+### 優先度
 
-- Set the **Priority** of an Event with 0 considered the lowest Priority.
+- イベントの **優先度** を設定します。0 は最低優先度と見なされます。
 
-Events of the same Event Type with the highest number will play in preference to lower numbers. 
+同じイベント タイプのイベントで、最も高い番号のイベントは、より低い番号のイベントよりも優先して再生されます。
 
 {tip}
-Layouts/Campaigns/Images/Videos and Playlists will be treated as the same Event Type when taking Priorities into consideration.
-{/tip}
+レイアウト/キャンペーン/画像/ビデオおよび再生リストは、優先度を考慮する際に同じイベント タイプとして扱われます。
+ヒント}
 
-A good example to use Priority would be in a way to alter the scheduling of a loop of Layouts at a specific time. For example, a normal rotation of Layouts during the day with a Priority Event at lunchtime which shows specific ‘lunch’ information (i.e. Lunchtime specials on a cafe menu).
+優先度を使用する良い例としては、特定の時間にレイアウトのループのスケジュールを変更する方法があります。たとえば、日中の通常のレイアウトのローテーションで、ランチタイムに特定の「ランチ」情報 (カフェ メニューのランチタイム スペシャルなど) を表示する優先度イベントがあります。
 
-If a Player had a schedule containing Events of the same Event Type which were all Priority 0, then all of the Events will be shown in rotation together.
+プレーヤーのスケジュールに、優先度がすべて 0 である同じイベント タイプのイベントが含まれている場合、すべてのイベントが一緒にローテーションで表示されます。
 
-If 1 of these Events had a Priority of 1, then this would be the only Event shown.
+これらのイベントの 1 つに優先度 1 がある場合、表示されるイベントはこれのみになります。
 
-If there were some Events with Priority 0, some with Priority 1 and some with Priority 2 only the Priority 2 Events will be shown, in a rotation for that Scheduled period (as the highest Priority)
+優先度 0 のイベント、優先度 1 のイベント、優先度 2 のイベントがある場合、優先度 2 のイベントのみが、そのスケジュール期間のローテーションで表示されます (最高の優先度として)
 
-### Maximum Plays per Hour
+### 1 時間あたりの最大再生回数
 
-{feat}Max Plays per Hour|v4{/feat}
+{feat}1 時間あたりの最大再生回数|v4{/feat}
 
-- Set a number to limit the amount of times this Event is shown per hour on Displays. 
+- ディスプレイでこのイベントが 1 時間あたりに表示される回数を制限する数値を設定します。
 
-Leave as the default 0 for unlimited plays.
+無制限に再生するには、デフォルトの 0 のままにしておきます。
 
-### Run at CMS time
+### CMS 時間で実行
 
-- Select this option to play the Event at the time determined by the **CMS** rather than using the local Display time.
-
-{tip}
-**Scenario** 
-
-- CMS Time = GMT
-- Display 1 = GMT
-- Display 2 = GMT -4
-
-An event scheduled for 11:00 with Run at CMS time **deselected** will show on **Display 1** at 11:00 and **Display 2** at 11:00. These two displays will not show the same content at the same time, because display 2 is 4 hours behind.
-
-With Run at CMS time **selected**, **Display 1** will show at 11:00 as before but **Display 2** will run at 07:00.
-{/tip}
-
-## Repeats
-
-Rather than creating numerous schedules to ensure that your content is shown, Events can be configured to Repeat Per Minute, Hourly, Daily, Weekly, Monthly or Yearly.
-
-- From the **Repeats** tab, use the drop down to select the type of Repeat.
-- Determine the Repeat frequency by entering a number here.
+- ローカル ディスプレイ時間ではなく、**CMS** によって決定された時間にイベントを再生するには、このオプションを選択します。
 
 {tip}
-For example with a **Weekly Repeat** you could select Wednesday and Friday as the days of the week to Repeat the Event, and enter a 2 to Repeat Every other week on those days.
+**シナリオ**
 
-**Monthly Repeats** can be configured by the Event date or by which day in the month the Event falls on. For example, an Event which is scheduled on Saturday 15/07/2023 can be set to Repeat every month on the 3rd Saturday.
-{/tip}
+- CMS 時間 = GMT
+- ディスプレイ 1 = GMT
+- ディスプレイ 2 = GMT -4
 
-- **Until** controls when the Repeat should finish. 
+11:00 にスケジュールされたイベントで、CMS 時間で実行が **選択解除** されている場合、**ディスプレイ 1** には 11:00 に、**ディスプレイ 2** には 11:00 に表示されます。ディスプレイ 2 は 4 時間遅れているため、これら 2 つのディスプレイでは同じコンテンツが同時に表示されません。
 
-{tip}
-Ensure the time selected here is after the final repetition of the defined Event so as to not cut the play back of content short!
-{/tip}
+CMS 時間で実行が **選択** されている場合、**ディスプレイ 1** は以前と同じように 11:00 に表示されますが、**ディスプレイ 2** は 07:00 に実行されます。
+ヒント}
 
-**Recurring Events** can be removed from the Schedule in their entirety or by individual recurrence:
+## 繰り返し
 
-- Select **Delete** at the bottom of the Schedule form to completely remove all instances of the Recurring Event.
-- From the [Calendar] view, click on the **Recurring Event** by date:
+コンテンツが表示されるように多数のスケジュールを作成する代わりに、イベントを 1 分ごと、1 時間ごと、毎日、毎週、毎月、または毎年繰り返すように設定できます。
 
-![Recurring Instance Calendar](img/v4_scheduling_recurring_instance.png)
+- **繰り返し** タブで、ドロップダウンを使用して繰り返しの種類を選択します。
+- ここで数値を入力して繰り返しの頻度を決定します。
 
-The instance details will be clearly shown at the bottom of the form:
+{ヒント}
 
-![Delete from Scheduling](img/v4_scheduling_delete_from_schedule.png)
+たとえば、**毎週の繰り返し** では、イベントを繰り返す曜日として水曜日と金曜日を選択し、それらの曜日に 2 を入力して隔週で繰り返すことができます。
 
-- Click **Delete from Schedule** to remove only this instance from scheduling. All other instances will remain scheduled.
+**毎月の繰り返し** は、イベントの日付またはイベントが開催される月の日によって設定できます。たとえば、2023 年 7 月 15 日土曜日にスケジュールされているイベントは、毎月第 3 土曜日に繰り返すように設定できます。
 
-{tip}
-Care should be taken if amendments are made to a recurring Schedule after deleting an individual instance. Previously deleted instances could be recreated with edits made to an existing recurring Schedule!
-{/tip}
+{/ヒント}
 
-## Reminders
-
-Create a set of **Reminders** to be sent to the [Notification Center](users_notifications.html#content-notification-drawer) or emailed.
+- **終了時** は、繰り返しが終了するタイミングを制御します。
 
 {tip}
-Please ensure that an Administrator has entered a **Sending Email address** in the [CMS Settings](tour_cms_settings.html#content-network)!
+ここで選択した時間は、定義したイベントの最後の繰り返しの後になるようにしてください。そうしないと、コンテンツの再生が途中で切れてしまいます。
+
 {/tip}
 
-- From the **Reminder** tab, use the form fields to define a reminder. Use the `+` icon to add additional rows if required.
+**繰り返しイベント** は、スケジュールからすべてまたは個々の繰り返しごとに削除できます。
 
-![Event Reminders](img/v4_scheduling_event_reminders.png)
+- スケジュール フォームの下部にある [**削除**] を選択すると、繰り返しイベントのすべてのインスタンスが完全に削除されます。
+- [カレンダー] ビューで、日付別に [**繰り返しイベント**] をクリックします。
 
-- Tick the box to send an email to the address set for your [User Profile](tour_user_access.html#content-edit-profile).
+![繰り返しインスタンス カレンダー](img/v4_scheduling_recurring_instance.png)
 
-## Geo Location
+インスタンスの詳細は、フォームの下部に明確に表示されます。
 
-Use the checkbox to make this Event location aware. Further information can be found at [Geo Scheduling](scheduling_geolocation.html)
+![スケジュールから削除](img/v4_scheduling_delete_from_schedule.png)
 
-## Edit / Delete
-
-Make changes to Events from the Schedule grid or Calendar view. Further information can be found at [Schedule Management](scheduling_management.html)
-
-## Duplicate
-
-The Duplicate button at the bottom of the Schedule form allows for event details to be easily duplicated and configured to create new Events. 
+- [**スケジュールから削除**] をクリックすると、このインスタンスのみがスケジュールから削除されます。その他のインスタンスはスケジュールされたままです。
 
 {tip}
-On clicking Duplicate, a pop up will appear to confirm that a new form has been loaded with the same details. The new loaded form will not have a Duplicate button.
+個々のインスタンスを削除した後に定期スケジュールを修正する場合は注意が必要です。以前に削除したインスタンスは、既存の定期スケジュールを編集することで再作成できます。
+
 {/tip}
+
+## リマインダー
+
+[通知センター](users_notifications.html#content-notification-drawer) に送信したり、メールで送信したりする一連の **リマインダー** を作成します。
+
+{tip}
+管理者が [CMS 設定](tour_cms_settings.html#content-network) に **送信メール アドレス** を入力していることを確認してください。
+
+{/tip}
+
+- [**リマインダー**] タブから、フォーム フィールドを使用してリマインダーを定義します。必要に応じて、`+` アイコンを使用して行を追加します。
+
+![イベント リマインダー](img/v4_scheduling_event_reminders.png)
+
+- チェックボックスをオンにすると、[ユーザー プロファイル](tour_user_access.html#content-edit-profile) に設定されたアドレスにメールが送信されます。
+
+## 地理的位置
+
+このイベントの場所を認識させるには、チェックボックスを使用します。詳細については、[地理的スケジュール](scheduling_geolocation.html) を参照してください。
+
+## 編集 / 削除
+
+スケジュール グリッドまたはカレンダー ビューからイベントを変更します。詳細については、[スケジュール管理](scheduling_management.html) を参照してください。
+
+## 複製
+
+スケジュール フォームの下部にある [複製] ボタンを使用すると、イベントの詳細を簡単に複製して、新しいイベントを作成するように構成できます。
+
+{tip}
+[複製] をクリックすると、同じ詳細を含む新しいフォームが読み込まれたことを確認するポップアップが表示されます。新しく読み込まれたフォームには [複製] ボタンはありません。
+ヒント}
 
 {version}
-**NOTE:** If at any time there are no Schedules to run, the [Default Layout](displays.html#content-default-layout) assigned for the Display will be shown!
+**注意:** 実行するスケジュールがない場合、ディスプレイに割り当てられた [デフォルト レイアウト](displays.html#content-default-layout) が表示されます。
 {/version}
 

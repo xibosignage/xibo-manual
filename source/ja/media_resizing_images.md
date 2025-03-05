@@ -1,31 +1,29 @@
 <!--toc=media-->
 
-# Resizing Images
+# 画像のサイズ変更
 
 {version}
-**Note:** This feature is available from v2.2.0
+**注:** この機能は v2.2.0 以降で使用できます
 {/version}
 
-Default thresholds and limits can be specified which are then considered in the event an image should be resized. This could be when uploading an image or an image being downloaded by a Widget - NASA RSS in a Ticker Widget for example.
+デフォルトのしきい値と制限を指定できます。これは、画像のサイズを変更する必要があるときに考慮されます。これは、画像をアップロードするときや、ウィジェットによって画像をダウンロードするとき (たとえば、ティッカー ウィジェットの NASA RSS) に当てはまります。
 
-Settings can be configured from the **Settings** page under the **Administration** section of the main CMS menu.
+設定は、メイン CMS メニューの **管理** セクションの **設定** ページから構成できます。
 
-- Click on the **Defaults** tab:
+- **デフォルト** タブをクリックします:
 
-![Resizing Images](img/v3_media_resizing_images.png)
+![画像のサイズ変更](img/v3_media_resizing_images.png)
 
+## サイズ変更しきい値
 
-
-## Resize Threshold
-
-- Set a maximum threshold (based on the longest side) that should be considered for resizing an image.
+- 画像のサイズ変更に考慮される最大しきい値 (最長辺に基づく) を設定します。
 
 {tip}
-If you set a Resize Threshold of 1920 and you upload/download an image which is 800, this image would not need resizing. If you uploaded/downloaded an image which was 2400, this would then be resized to 1920.
+サイズ変更しきい値を 1920 に設定し、800 の画像をアップロード/ダウンロードした場合、この画像はサイズ変更の必要がありません。2400 の画像をアップロード/ダウンロードした場合、1920 にサイズ変更されます。
 {/tip}
 
-## Resize Limit
+## サイズ変更制限
 
-- Set a limit (based on the longest side) for uploaded/downloaded images. Images that exceed this limit will not be processed and should be replaced with another image that is within the limit.
+- アップロード/ダウンロードされた画像の制限 (最長辺に基づく) を設定します。この制限を超える画像は処理されず、制限内の別の画像に置き換えられます。
 
-This setting will determine whether the image file is too large to be processed.
+この設定により、画像ファイルが処理するには大きすぎるかどうかが決定されます。

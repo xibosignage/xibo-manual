@@ -1,163 +1,168 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "A Layout is a complete screen design made up of content which is then scheduled to a Display"
-keywords: "adding layouts, xibo exchange, using templates, resolutions, checkout, preview layout, preview draft layout, assign to campaign, retire layout, export layout, publish "
-persona: "content creator, super administrator, user"
+抜粋: "レイアウトは、コンテンツで構成された完全な画面デザインであり、ディスプレイにスケジュールされます"
+キーワード: "レイアウトの追加、xibo exchange、テンプレートの使用、解決策、チェックアウト、レイアウトのプレビュー、ドラフトレイアウトのプレビュー、キャンペーンへの割り当て、レイアウトの廃止、レイアウトのエクスポート、公開 "
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Layouts
+# レイアウト
 
-A Layout is a complete screen design made up of content, which is then scheduled to one or multiple Displays. A Layout can contain 1 or more items of content to show using a combination of Elements, Widgets and Library Media.
+レイアウトは、コンテンツで構成された完全な画面デザインであり、1 つまたは複数のディスプレイにスケジュールされます。レイアウトには、要素、ウィジェット、ライブラリ メディアの組み合わせを使用して表示する 1 つ以上のコンテンツ項目を含めることができます。
 
-To show a sequence of multiple items (such as an image slideshow) on Layouts, a [Playlist](media_playlists.html) is used.
+レイアウトで複数の項目のシーケンス (画像スライドショーなど) を表示するには、[プレイリスト](media_playlists.html) を使用します。
 
-[[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User can have.
+[[PRODUCTNAME]] では、システムで使用できるレイアウトの数や、ユーザーが使用できるレイアウトの数に制限はありません。
 
-## Adding Layouts
+## レイアウトの追加
 
-- Select **Layouts** under the **Design** section of the main CMS menu.
-- Click on the **Add Layout** button at the top of the grid to get started creating designs using the [Layout Editor.](layouts_editor.html)
+- メイン CMS メニューの [デザイン] セクションで [レイアウト] を選択します。
 
-{tip}
-Did you know…**.Layouts** and **Library files** can be [Assigned](displays.html#content-assign-files--layouts) directly to a **Display** or **Display Group** so that they are always available in the local library of the Player. Useful for pre-loading a Layout ahead of time ready to be scheduled.
-{/tip}
-
-
-## Resolutions
-
-Layouts are designed for an intended display resolution and will function best when shown on a Display with a matching resolution. If they are shown on a Display that has a different resolution it will dynamically resize which may result in unused screen space.  
+- グリッドの上部にある [レイアウトの追加] ボタンをクリックして、[レイアウト エディタ](layouts_editor.html) を使用してデザインの作成を開始します。
 
 {tip}
-Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content. 
+ご存知ですか…**.Layouts** と **ライブラリ ファイル** は、**ディスプレイ** または **ディスプレイ グループ** に直接 [割り当て](displays.html#content-assign-files--layouts) できるため、プレーヤーのローカル ライブラリでいつでも使用できます。事前にレイアウトをプリロードして、スケジュールできるようにしておくのに便利です。
 {/tip}
 
-Resolutions are selected for the Layout from the Properties Panel inside the [Layout Editor](layouts_editor.html).
+## 解像度
 
-[[PRODUCTNAME]] comes with a selection of default resolutions that cater for most digital signage applications.  
+レイアウトは、意図したディスプレイ解像度に合わせて設計されており、一致する解像度のディスプレイで表示されると最適に機能します。異なる解像度のディスプレイに表示される場合は、動的にサイズが変更されるため、画面スペースが使用されない可能性があります。
 
-Resolutions can be added/edited and enabled/disabled by an Administrator from the **Resolutions** page under the **Design** section of the main CMS menu.
+{tip}
+16:9 のテレビ画面に接続された 4:3 解像度で設計されたレイアウトをプレーヤーに送信すると、コンテンツの両側に 2 つの空のバーが表示されます。
 
- ## Using Templates
+{/tip}
 
-[Templates](layouts_templates.html) are an easy way to speed up the design process and a great way to maintain a corporate image/standard.
+レイアウトの解像度は、[レイアウト エディタ](layouts_editor.html) 内のプロパティ パネルから選択します。
 
-Templates are selected from the [Toolbox](layouts_editor.html#content-toolbox) inside the Layout Editor.
+[[PRODUCTNAME]] には、ほとんどのデジタル サイネージ アプリケーションに対応するデフォルトの解像度の選択肢が用意されています。
+
+管理者は、メイン CMS メニューの [**デザイン**] セクションの [**解像度**] ページから解像度を追加/編集したり、有効/無効にしたりできます。
+
+## テンプレートの使用
+
+[テンプレート](layouts_templates.html) は、デザイン プロセスを高速化する簡単な方法であり、企業のイメージ/標準を維持するのに最適です。
+
+テンプレートは、レイアウト エディター内の [ツールボックス](layouts_editor.html#content-toolbox) から選択されます。
 
 {nonwhite}
 
 ### Xibo Exchange
 
-Select from one of our designed templates available from the Xibo Exchange.
+Xibo Exchange から利用できる、弊社が設計したテンプレートの 1 つを選択します。
 
 {cloud}
 
-Xibo Exchange templates are enabled by default for new Xibo Cloud Hosting customers.
+Xibo Exchange テンプレートは、Xibo Cloud Hosting の新規顧客に対してデフォルトで有効になっています。
 
-Administrators, if you are upgrading from an earlier version you will need to enable the Xibo Exchange:
+管理者の皆さん、以前のバージョンからアップグレードする場合は、Xibo Exchange を有効にする必要があります。
 
-- Select **Applications** under the **Administration** section of the main CMS menu.
-- Scroll down to the Connectors section of the page.
-- Click Configure for the Xibo Exchange and tick to enable.
-- Save.
+- メイン CMS メニューの [**管理**] セクションで [**アプリケーション**] を選択します。
+- ページの [コネクタ] セクションまで下にスクロールします。
+- Xibo Exchange の [構成] をクリックし、有効にするためにチェックを入れます。
+- 保存します。
 
 {/cloud}
 
 {noncloud}
 
-For On-prem installations, Administrators can enable templates to be shown from the Xibo Exchange:
+オンプレミス インストールの場合、管理者は Xibo Exchange からテンプレートが表示されるようにできます。
 
-- Select **Applications** under the **Administration** section of the main CMS menu.
-- Scroll down to the Connectors section of the page.
-- Click Configure for the Xibo Exchange and tick to enable.
-- Save.
+- メイン CMS メニューの [**管理**] セクションで [**アプリケーション**] を選択します。
+- ページの [コネクタ] セクションまで下にスクロールします。
+- Xibo Exchange の [構成] をクリックし、有効にするにはチェックを入れます。
+- 保存します。
 
 {/noncloud}
 
 {/nonwhite}
 
-Selecting a Template will replace the Layout you are currently working on with your chosen Template. (This action is irreversible and so must be used with caution)
+テンプレートを選択すると、現在作業中のレイアウトが選択したテンプレートに置き換えられます。(この操作は元に戻せないため、注意して使用する必要があります)
 
 {tip}
-[Published Layouts](layouts_editor_publish_options.html) can also be saved as a Template!
+[公開されたレイアウト](layouts_editor_publish_options.html) もテンプレートとして保存できます。
+
 {/tip}
 
-## Layout Grid
+## レイアウト グリッド
 
-Created Layouts can be viewed from **Layouts** under the **Design** section of the main CMS menu:
+作成されたレイアウトは、メイン CMS メニューの [**デザイン**] セクションの [**レイアウト**] から表示できます。
 
-![Layout Grid](img/v4_layouts_grid.png)
+![レイアウト グリッド](img/v4_layouts_grid.png)
 
-Each Layout has a row menu which is used to access a menu of actions/shortcuts. This list will depend on whether the Layout is in a Draft or Published status, notable settings are listed below.
+各レイアウトには、アクション/ショートカットのメニューにアクセスするための行メニューがあります。このリストは、レイアウトがドラフト状態か公開状態かによって異なります。以下に注目すべき設定を示します。
 
 {tip}
-Edit will open the form to make changes to Naming, Folders, Tags etc.
-Use the **With Selected** option at the bottom of the Layout [grid](tour_cms_navigation.html#content-grids) to edit Tag assignments in bulk!
-{/tip}
+[編集] をクリックすると、名前、フォルダ、タグなどを変更するためのフォームが開きます。
+レイアウト [グリッド](tour_cms_navigation.html#content-grids) の下部にある [**選択済み**] オプションを使用して、タグの割り当てを一括編集します。
 
-### Layouts in a Draft Status
+[tip}]
 
-**Design** - open the Layout Editor to make edits to the Layout.
+### ドラフト ステータスのレイアウト
 
-**Publish** - Publish Now or select a future date and time to Publish.
+**デザイン** - レイアウト エディタを開いてレイアウトを編集します。
 
-{tip}
-Administrators can use the default setting on the CMS **Settings** page to automatically **Publish** draft Layouts 30 minutes after the last edit!
-{/tip}
-
-**Discard** -  all changes will be discarded and the Layout will revert back to the previous Published version.
-
-**Preview Draft Layout** - play a Preview of the Layout in its current **Draft** status.
-
-### Layouts in a Published Status
-
-**Design** - open the Layout in a **Read Only Mode**, Checkout the Layout to enable editing.
-
-**Checkout** - create a draft to make edits to the Layout.
+**公開** - 今すぐ公開するか、将来の公開日時を選択します。
 
 {tip}
-Users can select the 'auto submit' check box so that this form is [automatically sent](tour_cms_navigation.html#content-automatic-submission-of-forms) each time that **Checkout** is selected. 
-{/tip}
+管理者は、CMS **設定** ページのデフォルト設定を使用して、最後の編集から 30 分後にドラフト レイアウトを自動的に **公開** できます。
 
-**Assign to Campaign** - add the Layout to an existing [Campaign](layouts_campaigns.html).
+[tip}]
 
-**Copy** - create copies to easily make modifications.  Choose to include all contained **Media** items, to use as a base for creating new Layouts to save time.
+**破棄** - すべての変更が破棄され、レイアウトは以前の公開バージョンに戻ります。
 
-{tip}
-Copying a Layout will create an exact copy at the last point the Layout was Published so ensure that you Publish a Layout before making a copy to preserve any changes!
-{/tip}
+**ドラフト レイアウトのプレビュー** - 現在の **ドラフト** ステータスのレイアウトのプレビューを再生します。
 
-**Retire** - retiring a Layout will not affect existing Campaigns/Schedules associated with the Layout. A retired Layout will be hidden from new Scheduling options but will remain unaffected in existing Schedules and continue to show on Displays.
+### 公開ステータスのレイアウト
 
-**Export** - include all associated Widgets/Media/DataSet structures to a ZIP file, so it can be easily shared. 
+**デザイン** - レイアウトを**読み取り専用モード**で開き、レイアウトをチェックアウトして編集を有効にします。
 
-{tip}
-When exporting a Layout, all assigned **Layout**, **Playlist** and **Media Tags** will be exported. Select the **Import Tags** option to add these Tags on Layout Import.
-Add the 'Export' [Feature](users_features_and_sharing.html) to allow a User/User Group to export regardless of the Share options that have been set for the Layout and its contents!
-{/tip}
-
-## FAQ's
-
-**When should a User create a new Layout? When should a User add to an existing Layout?**
-Layouts provide vast flexibility in the system. The recommended usage for a Layout is for it to only contain the design and media required for a set of related content that should be scheduled at the same time.
+**チェックアウト** - レイアウトを編集するための下書きを作成します。
 
 {tip}
-**Scenario**:
-You have a video showing a fire safety demonstration along with with some important text and a video and images showing an advert for an upcoming production - it would be natural to have separate Layouts for these.
+ユーザーは「自動送信」チェックボックスをオンにして、**チェックアウト**が選択されるたびにこのフォームが[自動的に送信](tour_cms_navigation.html#content-automatic-submission-of-forms)されるようにすることができます。
+
 {/tip}
 
-**Are there any limits set for the amount of Layouts that can be created?**
+**キャンペーンに割り当て** - レイアウトを既存の[キャンペーン](layouts_campaigns.html)に追加します。
 
-[[PRODUCTNAME]] has no limit to the number of Layouts you can have in the system or the number a User/User Group can have.
+**コピー** - 簡単に変更できるようにコピーを作成します。含まれるすべての**メディア**アイテムを含めるように選択して、新しいレイアウトを作成するためのベースとして使用し、時間を節約します。
 
-**How do I view any retired Layouts?**
+{tip}
+レイアウトをコピーすると、レイアウトが最後に公開された時点の正確なコピーが作成されます。変更内容を保存するには、コピーを作成する前にレイアウトを公開してください。
 
-From the Layouts grid, use the Advanced tab and use the Retired filter. Use the row menu to unretire any Layouts.
+{/tip}
 
+**廃止** - レイアウトを廃止しても、レイアウトに関連付けられている既存のキャンペーン/スケジュールには影響しません。廃止されたレイアウトは新しいスケジュール オプションからは非表示になりますが、既存のスケジュールには影響せず、ディスプレイには引き続き表示されます。
 
+**エクスポート** - 関連するすべてのウィジェット/メディア/データセット構造を ZIP ファイルに含めて、簡単に共有できるようにします。
 
-#### Next...
+{tip}
+レイアウトをエクスポートすると、割り当てられたすべての**レイアウト**、**プレイリスト**、および**メディア タグ**がエクスポートされます。レイアウトのインポート時にこれらのタグを追加するには、[タグのインポート] オプションを選択します。
+'エクスポート' [機能](users_features_and_sharing.html) を追加すると、レイアウトとそのコンテンツに設定されている共有オプションに関係なく、ユーザー/ユーザー グループがエクスポートできるようになります。
 
-[Layout Editor](layouts_editor.html)
+ヒント}
+
+## FAQ
+
+**ユーザーはいつ新しいレイアウトを作成する必要がありますか? ユーザーはいつ既存のレイアウトに追加する必要がありますか?**
+レイアウトは、システムで非常に柔軟に機能します。レイアウトの推奨される使用方法は、同時にスケジュールする必要がある一連の関連コンテンツに必要なデザインとメディアのみを含めることです。
+
+{ヒント}
+**シナリオ**:
+火災安全のデモンストレーションを示すビデオと重要なテキスト、および今後の制作の広告を示すビデオと画像がある場合、これらに別々のレイアウトを用意するのが自然です。
+ヒント}
+
+**作成できるレイアウトの数に制限はありますか?**
+
+[[PRODUCTNAME]] では、システムで使用できるレイアウトの数や、ユーザー/ユーザー グループが使用できるレイアウトの数に制限はありません。
+
+**廃止されたレイアウトを表示するにはどうすればいいですか?**
+
+レイアウト グリッドから、[詳細] タブの [廃止] フィルターを使用します。行メニューを使用して、レイアウトを廃止解除します。
+
+#### 次へ...
+
+[レイアウト エディター](layouts_editor.html)
 

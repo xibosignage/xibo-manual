@@ -1,82 +1,81 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 1
-excerpt: "Use Library Searches to easily add media to Layouts"
-keywords: "library search, remote library, remote library search, pixabay, upload files"
-persona: "content creator, super administrator, user"
+抜粋: "ライブラリ検索を使用して、レイアウトにメディアを簡単に追加する"
+キーワード: "ライブラリ検索、リモート ライブラリ、リモート ライブラリ検索、pixabay、ファイルのアップロード"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Library Search
+# ライブラリ検索
 
-Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function.
+ライブラリ検索機能を使用して、[CMS ライブラリ](media_library.html) にすでに存在するメディアをレイアウト/プレイリストに追加します。
 
-{nonwhite}{video}yOd7QVuF16g{/video}{/nonwhite}
+{nonwhite}{video}yOd7QVuF16g{/video}{nonwhite}
 
-Library media consists of the following:
+ライブラリ メディアは次のものから構成されます:
 
-- [Images](media_module_image.html)
-- [Audio](media_module_audio.html)
-- [Video](media_module_video.html)
-- Other media files
-
-{tip}
-**Other media** search includes [Flash](media_module_flash.html), [HTML Package](media_module_htmlpackage), [PDF](media_module_pdf.html) and [PowerPoint](media_module_powerpoint.html#content-3-upload-a-prepared-ppt-file-windows-players-only) files available from the **Type** drop down menu.
-{/tip}
-
-![Library Search](img/v4_layouts_library_search.png)
-
-
+- [画像](media_module_image.html)
+- [オーディオ](media_module_audio.html)
+- [ビデオ](media_module_video.html)
+- その他のメディア ファイル
 
 {tip}
-Use the available filters to narrow down searches!
+**その他のメディア** 検索には、[Flash](media_module_flash.html)、[HTML パッケージ](media_module_htmlpackage)、[PDF](media_module_pdf.html)、[PowerPoint](media_module_powerpoint.html#content-3-upload-a-prepared-ppt-file-windows-players-only) ファイルが含まれており、[**タイプ**] ドロップダウン メニューから選択できます。
+
 {/tip}
 
-- Drag or select to highlight and click on the Layout to add.
-- Position and resize.
-- Configuration options will be shown in the Properties Panel.
-
-New files of the selected type, can also be added from here:
-
-![Upload file to Layouts](img/v4_layouts_upload_file.png)
-
-- Click on the Library search for the media type you wish to add. If you want to add a file using the Other media search, ensure you have selected the file type from the drop down.
-- Drag or click **Upload** to the Layout.
-- Add files, optionally select a Folder and **upload**.
-- On clicking **Done**, the file will be added ready for positioning/resizing and configuration.
+![ライブラリ検索](img/v4_layouts_library_search.png)
 
 {tip}
-Files that are uploaded directly to Layouts/Playlists will be automatically added to your CMS Library!
+使用可能なフィルターを使用して検索を絞り込みます。
 {/tip}
 
-## Remote Search
+- ドラッグまたは選択してハイライトし、追加するレイアウトをクリックします。
+- 配置とサイズを変更します。
+- 構成オプションはプロパティ パネルに表示されます。
 
-Integration from Pixabay gives users additional resources to Image and Video files which can be added to Layouts without having to leave the Layout Editor to source.
+選択したタイプの新しいファイルもここから追加できます:
+
+![レイアウトにファイルをアップロード](img/v4_layouts_upload_file.png)
+
+- 追加するメディア タイプのライブラリ検索をクリックします。その他のメディア検索を使用してファイルを追加する場合は、ドロップダウンからファイル タイプを選択していることを確認してください。
+- レイアウトに [**アップロード**] をドラッグまたはクリックします。
+- ファイルを追加し、必要に応じてフォルダーを選択して [**アップロード**] します。
+- [**完了**] をクリックすると、ファイルが追加され、配置/サイズ変更と構成の準備が整います。
+
+{tip}
+レイアウト/プレイリストに直接アップロードされたファイルは、CMS ライブラリに自動的に追加されます。
+ヒント}
+
+## リモート検索
+
+Pixabay からの統合により、レイアウト エディターを離れることなくレイアウトに追加できる画像ファイルとビデオ ファイルへの追加リソースがユーザーに提供されます。
 
 {cloud}
-Pixabay integration is enabled by default for new Xibo in the Cloud customers.
+Pixabay 統合は、Xibo in the Cloud の新規顧客に対してデフォルトで有効になっています。
 
-If you are upgrading from an earlier version you will need to enable by navigating to the **Administration** section of the CMS and click **Applications**. Scroll down the page to the **Connectors** section. Click to **Configure** and tick to enable, **Save** changes.
+以前のバージョンからアップグレードする場合は、CMS の **管理** セクションに移動して **アプリケーション** をクリックして有効にする必要があります。ページを下にスクロールして **コネクタ** セクションに移動します。**構成** をクリックして有効にするにはチェックを入れ、変更を **保存** します。
 
 {/cloud}
 
 {noncloud}
 
-Pixabay can be enabled from the **Administration** section of the CMS menu by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click Configure and enter your API Key after signing up for a Pixabay account. [PixabayAPI Documentation](https://pixabay.com/api/docs/)
+Pixabay は、CMS メニューの **管理** セクションで **アプリケーション** をクリックし、ページを下にスクロールして **コネクタ** セクションに移動することで有効にできます。Pixabay アカウントにサインアップした後、構成をクリックして API キーを入力します。 [PixabayAPI ドキュメント](https://pixabay.com/api/docs/)
 {/noncloud}
 
-- Click on **Pixabay** and select which **Type** of file to search.
-- Enter search criteria in the Name field to return results.
-- Drag or click to add, position/resize and configure.
+- **Pixabay** をクリックし、検索するファイルの **タイプ** を選択します。
+- 名前フィールドに検索条件を入力して結果を返します。
+- ドラッグまたはクリックして追加、配置/サイズ変更、および構成を行います。
 
 {tip}
-Clicking the arrow in the top right of a thumbnail will play a preview in a separate window. This window can also be enlarged using the arrow in the top left and can be added to the Layout from here by clicking the `+` button at the top.
+サムネイルの右上にある矢印をクリックすると、別のウィンドウでプレビューが再生されます。このウィンドウは、左上の矢印を使用して拡大することもでき、上部の `+` ボタンをクリックしてここからレイアウトに追加することもできます。
+
 {/tip}
 
-![Pixabay Search](img/v4_layouts_remote_search.png)
-
-
+![Pixabay 検索](img/v4_layouts_remote_search.png)
 
 {tip}
-Images/videos that are selected from Pixabay to be used will automatically be added to your Library and available for future use from the Image/Video Library Search functions!
+Pixabay から使用するために選択された画像/ビデオは、ライブラリに自動的に追加され、画像/ビデオ ライブラリ検索機能から将来使用できるようになります。
+
 {/tip}

@@ -2,54 +2,57 @@
 toc: "layouts"
 ---
 
-# Interactive Actions
+# インタラクティブ アクション
 
 {version}
-**PLEASE NOTE:** We are aware of some issues with Interactive Actions and are currently working on improvements to the work flow and accompanying documentation.
+**注意:** インタラクティブ アクションに関するいくつかの問題を認識しており、現在、ワークフローと付随するドキュメントの改善に取り組んでいます。
+
 {/version}
 
-## Documentation under review...
+## ドキュメントはレビュー中です...
 
-Actions can be attached to an entire **Layout** or a **Widget** which can be used to effect changes to the Layout. These can be triggered by **Touch or Click** or programmatically by **webhook**.
+アクションは、レイアウト全体またはレイアウトに変更を加えるために使用できるウィジェットに添付できます。これらは、**タッチまたはクリック** によってトリガーするか、**webhook** によってプログラム的にトリガーできます。
 
-{feat}Interactive Actions Layouts/Regions|v4{/feat}
+{feat}インタラクティブ アクション レイアウト/領域|v4{/feat}
 
 {tip}
-**Scenario**:
-A Product display has a product that the customer can pick up. An 'internet of things' device, such as a light sensor could be used to trigger a webhook to [[PRODUCTNAME]] which loads that particular products information into a Layout to be shown.
-{/tip}
+**シナリオ**:
+製品ディスプレイには、顧客が手に取ることができる製品があります。光センサーなどの「モノのインターネット」デバイスを使用して、[[PRODUCTNAME]] への webhook をトリガーし、特定の製品情報をレイアウトにロードして表示することができます。
+ヒント}
 
 {nonwhite}
-More information on webhooks can be found in our Developer documentation [here.](/docs/developer/player-control/webhooks)
-{/nonwhite}
+Webhook の詳細については、開発者向けドキュメント [こちら](/docs/developer/player-control/webhooks) をご覧ください。
 
-## Adding an Action
+nonwhite}
 
-Widgets can have Actions attached to effect changes to the Layout, triggered by Touch, click or webhook.
+## アクションの追加
 
-Actions are created and managed from the Toolbox inside the [Layout Editor](layouts_editor.html#content-toolbox) and are shown on the **Actions** tab from the Properties Panel for a selected item:
+ウィジェットには、タッチ、クリック、または Webhook によってトリガーされるレイアウトの変更を実行するアクションを添付できます。
 
-![Toolbar Interactive Actions](img/v4_layouts_interactive_actions_toolbar.png)
+アクションは、[レイアウト エディター](layouts_editor.html#content-toolbox) 内のツールボックスから作成および管理され、選択したアイテムのプロパティ パネルの [**アクション**] タブに表示されます。
 
-- Select the required **Action** and drag to the Target.
+![ツールバーのインタラクティブ アクション](img/v4_layouts_interactive_actions_toolbar.png)
 
-![Add Action](img/v4_layouts_interactive_actions_add_action.png)
+- 必要な **アクション** を選択し、ターゲットにドラッグします。
 
-- Once added, use the properties panel to set the **Trigger Type** and **Target**.
+![アクションの追加](img/v4_layouts_interactive_actions_add_action.png)
 
-Set the **Trigger Type**:
+- 追加したら、プロパティ パネルを使用して **トリガー タイプ** と **ターゲット** を設定します。
 
-- Trigger by touching or clicking anywhere on a Layout or a specific Widget.
+**トリガー タイプ** を設定します:
 
-or
+- レイアウトまたは特定のウィジェットの任意の場所をタッチまたはクリックしてトリガーします。
 
-- Include a Trigger Code for a Web Hook, which must be present in the URL ``trigger=` parameter.
+または
+
+- Web フックのトリガー コードを含めます。これは、URL ``trigger=` パラメータに存在する必要があります。
 
 {tip}
-When triggering by touch using Android, ensure that **Touch** capabilities are enabled for the device from [Display Settings](display_settings.html) using the **Advanced** tab!
+Android を使用してタッチでトリガーする場合は、[ディスプレイ設定](display_settings.html) の **詳細** タブを使用して、デバイスの **タッチ** 機能が有効になっていることを確認してください。
+
 {/tip}
 
-Configure the **Trigger Target**. Options available here will be dependent on the type of Action added:
+**トリガー ターゲット** を構成します。ここで使用できるオプションは、追加されたアクションのタイプによって異なります:
 
-- **Navigate to Layout** uses a **Layout Code** to identify the Layout to be used. Therefore ensure that Target Layouts have a **Code Identifier** assigned from the  Edit Layout form, in order to be included in this list for selection. 
-- **Next Widget** and **Previous Widget** Actions are only applicable for adding to **Playlists** to Target the 'Next' and 'Previous' items in a Playlists timeline.
+- **レイアウトに移動** は、**レイアウト コード** を使用して、使用するレイアウトを識別します。したがって、ターゲット レイアウトがこのリストに選択対象として含まれるようにするには、レイアウト編集フォームからターゲット レイアウトに **コード識別子** が割り当てられていることを確認してください。
+- **次のウィジェット** および **前のウィジェット** アクションは、プレイリスト タイムラインの「次」および「前」の項目をターゲットにするために **プレイリスト** に追加する場合にのみ適用されます。

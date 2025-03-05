@@ -1,174 +1,183 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
-minHeadingLevel: 2    
-excerpt: "Use Data Widgets to create engaging Layouts"
-keywords: "widgets, data widgets, elements, data elements, global elements, grouping elements, stencils, fallback data, html templates, css templates, javascript templates, custom templates"
-persona: "content creator, super administrator, user"
+minHeadingLevel: 2
+抜粋: "データ ウィジェットを使用して魅力的なレイアウトを作成する"
+キーワード: "ウィジェット、データ ウィジェット、要素、データ要素、グローバル要素、グループ化要素、ステンシル、フォールバック データ、HTML テンプレート、CSS テンプレート、JavaScript テンプレート、カスタム テンプレート"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Data Widgets
+# データ ウィジェット
 
-Data Widgets rely on an external data source to show information on Layouts by using **Elements**.
+データ ウィジェットは、**要素** を使用してレイアウトに情報を表示するために外部データ ソースに依存します。
 
-## Feature Overview
+## 機能の概要
 
-- Data source driven content.
-- Separate Elements allow for flexibility.
-- Provide fallback data to show.
-- Control paging of data with Data Slots.
-- Create Groups for easy duplication.
-- Pull data from an alternative source on the same Layout.
-- Utilise pre-made designs. 
+- データ ソース駆動型コンテンツ。
+- 個別の要素により柔軟性が実現します。
+- 表示するフォールバック データを提供します。
+- データ スロットを使用してデータのページングを制御します。
+- 簡単に複製できるようにグループを作成します。
+- 同じレイアウト上の代替ソースからデータを取得します。
+- 事前に作成されたデザインを活用します。
 
-Each Data Widget has a set of **Elements** which are fed by a data source which allow a User flexibility in the placement of returned data rather than being bound by a rigid **Static Template** design:
+各データ ウィジェットには、データ ソースによって供給される一連の **要素** があり、ユーザーは、厳格な **静的テンプレート** 設計に縛られることなく、返されるデータの配置を柔軟に行うことができます。
 
-- Click on a **Data Widget** to show all available **Elements**.
+- **データ ウィジェット** をクリックすると、使用可能なすべての **要素** が表示されます。
 
-![Data Elements](img/v4_layouts_data_elements.png)
+![データ要素](img/v4_layouts_data_elements.png)
 
 {version}
-**NOTE:** Data Elements are only available from the Layout Editor and are not available in the [Playlist Editor.](media_playlists.html#content-playlist-editor) Users can however add Data Widgets using Static Templates.
+**注:** データ要素はレイアウト エディターからのみ使用でき、[プレイリスト エディター](media_playlists.html#content-playlist-editor) では使用できません。ただし、ユーザーは静的テンプレートを使用してデータ ウィジェットを追加できます。
+}
+
+### 構成
+
+各要素には、追加された後に**プロパティ パネル**から利用できる構成可能なオプションのセットがあります:
+
+![要素のプロパティ](img/v4_layouts_element_properties.png)
+
+{tip}
+感嘆符アイコンが表示され、ユーザーに何をすべきかが示されます。上記の例では、ICS フィードの URL がまだ入力されていません!
+
+{/tip}
+
+**構成** タブから設定されたオプションは、同じウィジェット タイプのレイアウトに追加されたすべての要素に適用されます。
+
+{tip}
+ウィジェットに関連付けられた代替データ ソースからデータを選択するには、[新しい構成](layouts_data_widgets.html#content-new-configuration) を作成します!
+ヒント}
+
+### 外観
+
+**外観** タブには、要素から返されるデータの外観を構成するオプション、およびトランジション効果と [データ スロット](layouts_data_widgets.html#content-data-slots) 構成が含まれています。
+
+### フォールバック データ
+
+選択したデータ ウィジェットの **フォールバック データ** を作成し、どのような条件でそれを表示するかを指定します:
+
+![フォールバック データ](img/v4_layouts_editor_data_widgets_fallback.png)
+
+- [**新規追加**] をクリックします。
+
+- フォーム フィールドに必要な情報を入力します。
+
+- 保存します。
+
+{ヒント}
+フォールバック データ オプションは、選択したデータ ウィジェットによって異なります。
+ヒント}
+
+### 詳細
+
+[詳細] タブは、名前の設定、特定の期間の指定、再生証明統計の収集レベルの設定、アイテムを繰り返してすべての [データ スロット](layouts_data_widgets.html#content-data-slots) を埋めるために使用します。
+
+### 配置
+
+[**配置**] タブ (グリッド アイコン) を使用して、正確な配置とレイヤーを設定します。
+
+{ヒント}
+要素には独自のキャンバス [レイヤー](layouts_editor.html#content-layering) があり、これを使用して、プレイリストやビデオなどの他のネイティブにレンダリングされた要素との関係で要素が表示される場所を決定できます。
+ヒント}
+
+## データ スロット
+
+同じ **要素** を複数追加する場合は、各要素に使用する **データ スロット** を指定して、返されるデータのページングを処理します。
+
+![データ スロット](img/v4_layouts_editor_data_slots.png)
+
+{ヒント}
+
+たとえば、上の画像では、**カレンダー ウィジェット** から 2 つの **説明要素** が追加されています。1 つの **データ スロットは 1** で、もう 1 つの **データ スロットは 2** です。10 個の (カレンダー イベント) 項目が返された場合、データ スロット 1 には項目 1、3、5、7、9 が表示され、データ スロット 2 には項目 2、4、6、8、10 が表示されます。
+
+ヒント}
+
+データ スロットは、選択した要素の **プロパティ パネル** の **外観** タブから設定されます。
+
+{tip}
+同じ要素を複数追加すると、**データ スロット** の数が自動的に増加します。
+
+{/tip}
+
+さらに、要素には **このスロットを固定** するオプションがあり、そのスロットに表示される最初のデータ項目がウィジェットの継続時間全体にわたって維持され、データ項目が循環することはありません。
+
+{tip}
+ユーザーは、プロパティ パネルの [**詳細**] タブのチェックボックスを使用して、すべてのデータ スロットを埋めて空のスロットがないようにするために **項目を繰り返す** かどうかを設定できます。
+
+{/tip}
+
+## 要素のグループ化
+
+同じデータ ウィジェットの要素をグループ化して、デザインの構築を容易にします。
+
+- [**外観**] タブを使用して、レイアウト、位置、スタイルに要素を追加します。
+- Shift キーを押したまま、グループ化する各要素をクリックします。
+- 選択したら、Shift キーを放して右クリックします。
+- [**要素のグループ化**] を選択します。
+
+![要素のグループ化](img/v4_layouts_grouping_elements.png)
+
+{tip}
+グループには**グローバル要素**を含めることもできます。
+
+{/tip}
+
+{version}
+**注意:** グループ化する場合、すべてのデータ要素は同じ**データ スロット**と**効果**を共有する必要があります!
+
 {/version}
 
-### Configure
+グループは簡単に複製できます:
 
-Each Element has a set of configurable options available from the **Properties Panel** once added:
+- 右クリックして**複製**を選択します。
 
-![Element Properties](img/v4_layouts_element_properties.png)
+![複製された要素](img/v4_layouts_duplicated_elements.png)
 
-{tip}
-An exclamation icon will be shown to prompt a User as to what needs to be actioned. The above example has yet to have a URL entered for an ICS feed!
-{/tip}
+各グループの**データ スロット**を編集して、データのページングを制御します:
 
-Options set from the **Configure** tab will apply to all Elements added to the Layout of the same Widget type. 
+![データ スロット グループ](img/v4_layouts_data_slots_groups.png)
 
-{tip}
-Create a [New Configuration](layouts_data_widgets.html#content-new-configuration) to select data from alternative data sources associated with the Widget!
-{/tip}
+グループ内の各要素の**外観**を編集します:
 
-### Appearance
+- 右上隅の鉛筆アイコンをクリックします。
 
-The **Appearance** tab includes options to configure how the data returned from the Element should look and includes transition effects and [Data Slot](layouts_data_widgets.html#content-data-slots) configuration.
-
-### Fallback Data
-
-Create **Fallback Data** for selected Data Widgets and specify under what conditions it should be shown:
-
-![Fallback Data](img/v4_layouts_editor_data_widgets_fallback.png)
-
-
-
-- Click **Add New**.
-- Complete the form fields with the required information.
-- Save.
+- 各要素をクリックし、[外観] タブを使用して変更を行います。
+- グループ外をクリックするか、[X] をクリックして編集を終了します。
 
 {tip}
-Fallback Data options will vary dependent on the Data Widget selected!
+
+**構成** を編集できますが、追加されたすべての要素に適用されます。
+
+右クリック メニューから要素をグループ解除します。
+
 {/tip}
 
-### Advanced
+## 新しい構成
 
-The Advanced tab is used to set Naming, provide specific durations, set the collection level of proof of play stats and enable items to be repeated to fill all [Data Slots](layouts_data_widgets.html#content-data-slots).
+ウィジェットに別の構成オプション/別のデータ ソースを関連付けるために、新しい構成を作成できます。
 
-### Positioning
+- 要素または要素グループを右クリックし、メニューから [新しい構成] を選択します。
+- [構成] タブから別のデータ ソース/別の構成を選択します。
 
-Use the **Positioning** tab (grid icon) to set precise positioning and Layering.
+## ステンシル
+
+選択したデータ ウィジェットには、**ステンシル** と呼ばれる要素グループの既成のデザインが含まれており、ユーザーがコンテンツを簡単かつ迅速に作成するのに役立ちます。
+
+- ステンシルはまったく同じ方法で追加され、配置およびサイズ変更されます。
+- **構成** のフィールドに入力します。 - グループの右上にある鉛筆アイコンをクリックして、**外観** を編集します。
+- グループ内の要素を選択して編集します。
 
 {tip}
-Elements have their own Canvas [Layer](layouts_editor.html#content-layering), which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
+さらにカスタマイズするには、右クリックしてグループを解除します。
+
 {/tip}
 
-## Data Slots
+## 静的テンプレート
 
-When adding more than one of the same **Element**, handle the paging of returned data by specifying a **Data Slot** to use for each Element:
-
-![Data Slots](img/v4_layouts_editor_data_slots.png)
-
-{tip}
-For example, the image above shows 2 **Description Elements** from the **Calendar Widget** have been added. One has a **Data Slot of 1** the other a **Data Slot of 2.** If 10 (Calendar Events) items were returned, Data Slot 1 would show items 1,3,5,7,9 with Data Slot 2 showing items 2,4,6,8,10.
-{/tip}
-
-Data Slots are set from the **Appearance** tab of the **Properties Panel** for the selected Element.
-
-{tip}
-Adding more than one of the same Element will automatically increase in **Data Slot** number!
-{/tip}
-
-In addition Elements have the option to **Pin this slot** so that the first data item to appear in that slot will remain for the entire duration of the Widget and won't cycle through data items.
-
-{tip}
-Users can set whether to **Repeat items** in order to fill all data slots to ensure there are no empty slots by using the checkbox on the **Advanced** tab of the Properties Panel!
-{/tip}
-
-## Grouping Elements
-
-Group Elements of the same Data Widget together to make it easier to build designs:
-
-- Add Elements to the Layout, position and style using the **Appearance** tab.
-- Hold down the shift key and click into each Element you wish to group.
-- Once selected, release the shift key and right click.
-- Select **Group elements**.
-
-![Grouping Elements](img/v4_layouts_grouping_elements.png)
-
-{tip}
-Groups can also include **Global Elements**. 
-{/tip}
+静的テンプレートは特定のウィジェットに含まれています。テンプレートは、返される結果の動作に影響を与えたり、スタイル オプションを変更したりするように構成できます。
 
 {version}
-**NOTE:** All Data Elements need to share the same **Data Slot** and **Effect** when grouping!
-{/version}
+高度な使用方法として、メイン CMS メニューの **開発者** セクションから HTML/CSS と JavaScript を使用して、データ ウィジェットで使用するための **モジュール テンプレート** を作成できます。
 
-Groups can be easily duplicated:
-
-- Right click and select **Duplicate**.
-
-![Duplicated Elements](img/v4_layouts_duplicated_elements.png)
-
-Edit **Data Slots** for each group to control data paging:
-
-![Data Slots Groups](img/v4_layouts_data_slots_groups.png)
-
-Make edits to the **Appearance** of each Element in a group:
-
-- Click the pencil icon in the top right corner.
-
-- Click in each Element and use the Appearance tab to make changes.
-- Click out of the group or click the X to exit editing.
-
-{tip}
-
-Edits can be made to the **Configuration** but it will apply to all Elements added.
-
-Ungroup elements from the right click menu!
-{/tip}
-
-## New Configurations 
-
-New Configurations can be created in order to have alternative configuration options/different data source associated with the Widget:
-
-- Right click an Element or Element Group and select **New Configuration** from the menu.
-- Select an alternative data source / alternative configuration from the **Configure** tab.
-
-## Stencils 
-
-Selected Data Widgets include pre made designs of Element Groups called **Stencils** to assist Users with creating content simply and quickly:
-
-- Stencils are added in exactly the same way, positioned and resized.
-- Complete the fields to **Configure**.
-- Edit the **Appearance** by clicking on the pencil icon in the top right of the group.
-- Select an Element in the group to make edits.
-
-{tip}
-Right click to ungroup to customise further!
-{/tip}
-
-## Static Templates
-
-Static Templates are included for specific Widgets. Templates can be configured to affect the behaviour of returned results as well as alter styling options.
-
-{version}
-For advanced use, **Module Templates** can be created to be used with Data Widgets using HTML/CSS and JavaScript from the **Developer** section of the main CMS menu!
 {/version}
 

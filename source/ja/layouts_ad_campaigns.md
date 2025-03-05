@@ -1,117 +1,122 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Create an Ad Campaign with automatic scheduling based on set criteria"
-keywords: "cost per play, impressions per play, proof of play"
-persona: "super administrator, user, schedule manager"
+抜粋: "設定された基準に基づいて自動的にスケジュール設定する広告キャンペーンを作成する"
+キーワード: "再生あたりのコスト、再生あたりのインプレッション数、再生の証明"
+ペルソナ: "スーパー管理者、ユーザー、スケジュール管理者"
 ---
 
-# Ad Campaigns
+# 広告キャンペーン
 
-Create Advertising Campaigns where  [[PRODUCTNAME]] will work out how many plays are needed to satisfy entered criteria and handle the scheduling automatically for you.
-
-{tip}
-Enable the **Access to Ad Campaigns** [Feature](users_features_and_sharing.html#content-features) for each User/User Group who should have full access to this feature!
-{/tip}
-
-## Create an Ad Campaign
-
-Click on **Campaigns** under the **Design** section of the main CMS menu:
-
-- Click the **Add Campaign** button at the top of the grid.
-
-- Select **Ad Campaign** from the drop down menu and complete the form fields:
-
-
-![Add Ad Campaign](img/v4_layouts_campaign_add_ad_campaign.png)
-
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Ad Campaigns saved to a Folder will inherit the access options applied to that Folder. 
+[[PRODUCTNAME]] が入力した基準を満たすために必要な再生回数を計算し、自動的にスケジュール設定を処理する広告キャンペーンを作成します。
 
 {tip}
-If users should also have access to the Layouts/Layout content, ensure that this is also saved to the same Folder!
+この機能にフルアクセスできる各ユーザー/ユーザー グループに対して、**広告キャンペーンへのアクセス** [機能](users_features_and_sharing.html#content-features) を有効にします。
+
 {/tip}
 
-- Give your Ad Campaign a **Name** for easy identification in the CMS including optional [Tags](tour_tags.html).
+## 広告キャンペーンを作成する
+
+メイン CMS メニューの **デザイン** セクションの **キャンペーン** をクリックします。
+
+- グリッドの上部にある **キャンペーンの追加** ボタンをクリックします。
+
+- ドロップダウン メニューから [**広告キャンペーン**] を選択し、フォーム フィールドに入力します:
+
+![広告キャンペーンの追加](img/v4_layouts_campaign_add_ad_campaign.png)
+
+[フォルダー](tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](users_features_and_sharing.html#content-share) するために使用されます。フォルダーに保存された広告キャンペーンは、そのフォルダーに適用されたアクセス オプションを継承します。
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-Multi---select--with-selected) option at the bottom of the Campaign grid!
+ユーザーがレイアウト/レイアウト コンテンツにもアクセスできるようにする場合は、これも同じフォルダーに保存してください。
+
 {/tip}
 
-- Use the drop down to set the **Target Type** for this Ad Campaign as **Plays**, **Budget** or **Impressions**.
-- Include the total **Target** number for this Ad Campaign in relation to its selected Target Type.
-
-- Click to **Save**.
-
-Next, criteria needs to be set to allow [[PRODUCTNAME]] to work out the play frequency.
-
-- From the grid, use the row menu for the **Ad Campaign** and select **Edit**:
-
-![Edit Ad Campaign](img/v4_campaigns_edit_ad_campaign.png)
-
-- Provide **Start** and **End** Dates and Times for the Ad Campaign. (This is required information and **cannot** be left blank)
-- Select from available **Displays** and **Display Groups** to play this Ad Campaign on. (This is required information and **cannot** be left blank)
+- CMS で簡単に識別できるように、広告キャンペーンに [タグ](tour_tags.html) を含めた **名前** を付けます。
 
 {tip}
-Ensure that [Displays](displays.html) have had **Display Details** correctly entered for the selected Displays which play this Ad Campaign, ensuring that **Cost per play** and **Impressions per play** fields have been completed!
+タグとフォルダは、キャンペーン グリッドの下部にある [選択されたもの](tour_cms_navigation.html#content-Multi---select--with-selected) オプションを使用して、複数のキャンペーンに割り当てることもできます。
 {/tip}
 
-- Click to **Save**.
+- ドロップダウンを使用して、この広告キャンペーンの **ターゲット タイプ** を **再生**、**予算**、または **インプレッション** に設定します。
+- 選択したターゲット タイプに関連して、この広告キャンペーンの合計 **ターゲット** 数を含めます。
+
+- [**保存**] をクリックします。
+
+次に、[[PRODUCTNAME]] が再生頻度を計算できるように条件を設定する必要があります。
+
+- グリッドから、**広告キャンペーン** の行メニューを使用して、[**編集**] を選択します:
+
+![広告キャンペーンの編集](img/v4_campaigns_edit_ad_campaign.png)
+
+- 広告キャンペーンの **開始** および **終了** の日付と時刻を入力します。(これは必須の情報であり、**空白のままにすることはできません**)
+
+- この広告キャンペーンを再生する利用可能な **ディスプレイ** および **ディスプレイ グループ** を選択します。(これは必須の情報であり、**空白のままにすることはできません**)
 
 {tip}
-**Proof of Play** needs to be set to **ON** for all Displays/Display Groups selected here, to ensure accurate reporting and plays!
+[ディスプレイ](displays.html) で、この広告キャンペーンを再生する選択したディスプレイの **ディスプレイの詳細** が正しく入力されていることを確認し、**再生あたりのコスト** および **再生あたりのインプレッション数** フィールドが入力されていることを確認してください。
+
 {/tip}
 
-- Assign a Layout using the **Add Layout** drop down menu.
-
-Once a Layout is selected further scheduling options are available:
-
-![Assign Layouts Ad Campaign](img/v4_campaigns_assign_layouts_ad_campaign.png)
-
-- Select which **Days of the Week** this Layout should be active in this Ad Campaign.
-
-- Choose from existing [Dayparts](scheduling_dayparting.html) if this Layout is only to be shown at selected predefined times.
+- [**保存**] をクリックします。
 
 {tip}
-Ad Campaigns can include multiple instances of the same Layout with different Dayparts assigned if required.
-
-For example, If you needed to show the same Layout for a defined 'Morning' daypart as well as a defined 'Evening' daypart add the Layout twice and define the required dayparts individually for each!
+正確なレポートと再生を確実に行うには、ここで選択したすべてのディスプレイ/ディスプレイ グループで **再生の証明** を **オン** に設定する必要があります。
 {/tip}
 
-- Draw areas on the map to provide **geo fenced** based plays for any mobile displays, with content to be shown on entering a defined area.
+- **レイアウトの追加** ドロップダウン メニューを使用してレイアウトを割り当てます。
+
+レイアウトを選択すると、さらにスケジュール オプションが利用可能になります:
+
+![広告キャンペーンのレイアウトの割り当て](img/v4_campaigns_assign_layouts_ad_campaign.png)
+
+- この広告キャンペーンでこのレイアウトをアクティブにする **曜日** を選択します。
+
+- このレイアウトを特定の定義済みの時間にのみ表示する場合は、既存の [時間帯](scheduling_dayparting.html) から選択します。
 
 {tip}
-You can have multiple areas defined on the same map!
-{/tip}
+広告キャンペーンには、必要に応じて異なる時間帯が割り当てられた同じレイアウトの複数のインスタンスを含めることができます。
 
-- Click to **Save**.
+たとえば、定義済みの「午前」時間帯と定義済みの「夕方」時間帯に同じレイアウトを表示する必要がある場合は、レイアウトを 2 回追加し、それぞれに必要な時間帯を個別に定義します。
+ヒント}
 
+- マップ上にエリアを描画して、モバイル ディスプレイに **ジオフェンス** ベースの再生を提供し、定義されたエリアに入るとコンテンツが表示されます。
 
-The Layout will be added to the Campaign which can be edited/deleted if required using the row menu:
+{ヒント}
 
-![View Ad Campaigns](img/v4_campaigns_view_added_ad_campaigns.png)
+同じマップに複数のエリアを定義できます。
 
-Continue to build your Ad Campaign by selecting Layouts and defining scheduling options.
+{/ヒント}
 
-{tip}
-**Proof of Play** needs to be set to **ON** for all Layouts added to the Ad Campaign to ensure accurate reporting and plays!
-{/tip}
+- **保存** をクリックして。
 
-[[PRODUCTNAME]] will schedule automatically to fulfil the required play criteria to meet entered Targets. 
+レイアウトがキャンペーンに追加され、必要に応じて行メニューを使用して編集/削除できます。
 
-Ad Campaigns can be viewed on the [Schedule](scheduling_management.html#content-calendar-view) as locked entries which cannot be edited from the scheduler itself. 
+![広告キャンペーンの表示](img/v4_campaigns_view_added_ad_campaigns.png)
 
-[Agenda](scheduling_management.html#content-agenda) can be used to see a more detailed play view of the Ad Campaign and preview included Layouts.
+レイアウトを選択し、スケジュール オプションを定義して、広告キャンペーンの作成を続けます。
 
-The Ad Campaign progress will be shown in the Campaigns grid and on opening the Ad Campaign, providing that Proof of Play has been set to ON for all Displays and Layouts selected for the Campaign. As well as Cost per play and Impressions per play fields are completed for all selected Displays.
+{ヒント}
+正確なレポートと再生を確実に行うには、広告キャンペーンに追加されるすべてのレイアウトで **再生の証明** を **オン** に設定する必要があります。
+
+{/ヒント}
+
+[[PRODUCTNAME]] は、入力されたターゲットを満たすために必要な再生基準を満たすように自動的にスケジュールします。
+
+広告キャンペーンは、[スケジュール](scheduling_management.html#content-calendar-view) でロックされたエントリとして表示できます。このエントリは、スケジューラ自体からは編集できません。
+
+[アジェンダ](scheduling_management.html#content-agenda) を使用すると、広告キャンペーンのより詳細な再生ビューを表示し、含まれるレイアウトをプレビューできます。
+
+広告キャンペーンの進行状況は、キャンペーン グリッドと広告キャンペーンを開いたときに表示されます。ただし、キャンペーン用に選択されたすべてのディスプレイとレイアウトで再生証明がオンに設定されている必要があります。また、選択されたすべてのディスプレイで再生あたりのコストと再生あたりのインプレッションのフィールドが入力されています。
 
 {version}
-**NOTE**: If the above information is omitted the reporting cannot update to reflect Plays, Spend, Impressions and Target which will all show a 0 value. The Ad Campaign itself will also try and catch up to increase the Target which will result in Layouts being played more and more frequently until its the only content shown in order to fulfil the target.
+**注意**: 上記の情報が省略されている場合、レポートは再生、支出、インプレッション、ターゲットを反映するように更新できず、すべて 0 値が表示されます。広告キャンペーン自体もターゲットの増加に追いつこうとするため、レイアウトがますます頻繁に再生され、目標を達成するために表示されるコンテンツがレイアウトのみになります。
 {/version}
 
-![Ad Campaign Grid](img/v4_campaigns_ad_campaign_grid.png)
+![広告キャンペーン グリッド](img/v4_campaigns_ad_campaign_grid.png)
 
 {tip}
-The Reference tab can be used to provide reference information for the selected Campaign. Once added, this information can be viewed in the Campaign grid and via the API.
+[参照] タブを使用すると、選択したキャンペーンの参照情報を提供できます。追加すると、この情報はキャンペーン グリッドと API 経由で表示できます。
 {/tip}
 

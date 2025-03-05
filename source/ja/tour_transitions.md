@@ -2,60 +2,59 @@
 toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Transition Management options for Users"
-keywords: "transition defaults, fade in, fad out, fly, playlist transitions, exit transitions"
-persona: "content manager, administrator"
+抜粋: "ユーザー向けトランジション管理オプション"
+キーワード: "トランジションのデフォルト、フェードイン、フェードアウト、フライ、プレイリストトランジション、終了トランジション"
+ペルソナ: "コンテンツ マネージャー、管理者"
 ---
 
-# Transition Management
+# トランジション管理
 
-{feat}Transitions|v4{/feat}
-
-{version}
-
-**Note:** Transitions are not supported by Tizen Players for the following Widgets:
-
-- [Video](media_module_video.html)
-- [Video In](media_module_video_in.html)
-- [Local Video](media_module_localvideo.html)
-
-{/version}
-
-Transitions are managed from the **Transitions** page under the **Administration** section of the main CMS menu. Configure which Transitions should be available to Users for assignment to Media items:
-
-![Transitions Grid](img/v4_tour_transitions_grid.png)
-
-- **Fade In** - Increase Opacity from 0 to 100.
-- **Fade Out** - Decrease Opacity from 100 to 0.
-- **Fly** - Fly in or out on a compass point. 
-
-## Transition Defaults
-
-{version}
-Global default settings can be set for Transitions by Administrators from the [CMS Settings](tour_cms_settings.html#content-defaults) page.
-{/version}
-
-Default Transitions can be easily enabled for all Widgets added to a Layout by ticking the **Automatically apply Transitions?** box from the Layout property panel:
-
-![Transitions Layout](img/v4_tour_transitions_layout.png)
+{feat}トランジション|v4{/feat}
 
 {version}
 
-**NOTE:** When Transition Defaults have been applied, the Widget Transition fields will show as blank entries:
+**注:** 次のウィジェットでは、Tizen プレーヤーでトランジションはサポートされていません:
 
-![Transitions Widget](img/v4_tour_transitions_widget.png)
+- [ビデオ](media_module_video.html)
+- [ビデオ入力](media_module_video_in.html)
+- [ローカル ビデオ](media_module_localvideo.html)
 
-This is because only **manually** entered Transitions for a Widget will be shown in the form fields.
 {/version}
 
-## Playlist Transitions
+トランジションは、メイン CMS メニューの **管理** セクションの **トランジション** ページから管理されます。ユーザーがメディア アイテムに割り当てることができるトランジションを設定します:
 
-These are the Transitions between **Media items** on a [Playlist](media_playlists.html) and are set as **In** and **Out** transitions.
+![トランジション グリッド](img/v4_tour_transitions_grid.png)
+
+- **フェード イン** - 不透明度を 0 から 100 に上げます。
+- **フェード アウト** - 不透明度を 100 から 0 に下げます。
+- **フライ** - コンパス ポイントでフライ インまたはフライ アウトします。
+
+## トランジションのデフォルト
+
+{version}
+トランジションのグローバル デフォルト設定は、管理者が [CMS 設定](tour_cms_settings.html#content-defaults) ページから設定できます。
+レイアウト プロパティ パネルの [**トランジションを自動的に適用しますか?**] ボックスにチェックを入れると、レイアウトに追加されたすべてのウィジェットでデフォルトのトランジションを簡単に有効にできます。
+
+![トランジション レイアウト](img/v4_tour_transitions_layout.png)
+
+{version}
+
+**注意:** トランジションのデフォルトが適用されると、ウィジェットのトランジション フィールドは空白のエントリとして表示されます。
+
+![トランジション ウィジェット](img/v4_tour_transitions_widget.png)
+
+これは、ウィジェットに対して **手動で** 入力されたトランジションのみがフォーム フィールドに表示されるためです。
+
+{/version}
+
+## プレイリスト トランジション
+
+これらは [プレイリスト](media_playlists.html) の **メディア アイテム** 間のトランジションで、**イン** および **アウト** トランジションとして設定されます。
 
 {tip}
-The Transition form adapts depending on the Transition selected and the options available for that transition. In most cases it is necessary to select a duration for the Transition in Milliseconds and in the case of Fly, a direction must also be selected.
+トランジション フォームは、選択したトランジションとそのトランジションで使用できるオプションに応じて適応します。ほとんどの場合、トランジションの継続時間をミリ秒単位で選択する必要があり、Fly の場合は方向も選択する必要があります。
 {/tip}
 
-## Playlist Exit Transition
+## プレイリスト終了トランジション
 
-A Playlist Exit Transition happens when the last Media Item to be displayed on a [Playlist](media_playlists.html) is shown and allows for a different Exit Transition to be set. 
+プレイリスト終了トランジションは、[プレイリスト](media_playlists.html) に表示される最後のメディア アイテムが表示されたときに発生し、別の終了トランジションを設定できます。

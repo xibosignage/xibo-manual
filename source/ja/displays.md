@@ -3,233 +3,220 @@ toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 alias: "displays_fileassociations"
-excerpt: "Configure and Manage Displays in your CMS"
-keywords: "authorise, display code, authentication code, default layout, transfer display, map display view, file assignments, layout assignments, assign"
-persona: "display manager, administrator"
+excerpt: "CMS でディスプレイを設定および管理する"
+keywords: "authorise、display code、authentication code、default layout、transfer display、map display view、file assignments、layout assignments、assign"
+persona: "display manager、administrator"
 ---
 
 # Displays
 
-The primary purpose of [[PRODUCTNAME]] is to show content on screens with the entire application suite existing for that one purpose. [[PRODUCTNAME]] provides a concept called **Displays** to manage when and how content is shown on a screen.
+[[PRODUCTNAME]] の主な目的は、その目的のために存在するアプリケーション スイート全体を使用して、画面にコンテンツを表示することです。[[PRODUCTNAME]] は、画面にコンテンツを表示するタイミングと方法を管理するための **Displays** という概念を提供します。
 
 {nonwhite}
-Administrator documentation for Player Installation can be found in our [Administration Manual](/docs/setup/). Select your chosen Player to follow the **Installation** instructions and required steps to **Connect to your CMS**.
-{/nonwhite}
+Player のインストールに関する管理者向けドキュメントは、[Administration Manual](/docs/setup/) にあります。選択した Player を選択して、**インストール** の手順と **CMS への接続** に必要な手順に従います。
+:::no-loc(display): ...ヒント}
+
+{feat}認証コードを使用して接続|v4{/feat}
+
+ディスプレイを [フォルダ](/manual/en/tour_folders.html) に保存すると、ディスプレイのユーザー/ユーザー グループ インタラクション レベルを簡単に制御できるほか、整理方法も追加できます。
 
 {tip}
-Ensure that any new Displays have been marked as **Authorised** in the CMS so that they can start receiving content. Use the Display row menu and select **Authorise**.
-{/tip}
+フォルダに保存されたディスプレイは、ユーザー/ユーザー グループの宛先フォルダに適用されている表示、編集、削除 [共有](users_features_and_sharing.html#content-share) オプションを継承します。
 
-## Display Administration
-
-Displays are managed in the CMS by clicking **Displays** under the **Displays** section of the main CMS menu. Displays are uniquely identified by a **hardware key** which is generated when the Player software is installed. This hardware key is used to create a unique Display record in the CMS.
-
-![Display Administration Grid](img/v4_displays_administration_grid.png)
-
-{tip}
-The Add Display (Code) function can be used after installing the Player in order to easily Connect Players to the CMS.  Players will show a 6 character Activation Code to enter in the form in order to Connect.
-{/tip}
-
-{feat}Connect using Authentication Code|v4{/feat}
-
-Displays can be saved to [Folders](/manual/en/tour_folders.html) to easily control User/User User Group levels of interaction for Displays as well as provide an additional way to organise.
-
-{tip}
-Displays that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-share) options that been applied to the destination Folder for the User/User Group!
-
-Assign multiple Displays to a Folder using the **With Selected** option at the bottom of the grid!
-{/tip}
-
-The grid will update to show only objects inside a Folder once selected or use **All Folders** to include searching in the Root Folder.
-
-{tip}
-Click the Folders icon to toggle on/off from view.  When Folders are hidden from view, the file path for the selected folder will be shown!
-{/tip}
-
-Use the Column visibility button to select from the available options to show the information you need for your administration purposes. 
-
-Some of the notable options are listed below:
-
-**ID** - Internal identification of a Display.
-
-**Display** - Friendly name given to the Display for easy identification purposes within the CMS (this is not shown on the Display itself).
-
-**Status**:
-
-- *Tick* = Player is up to date (this may also show as green in colour).
-- *Cloud Icon* =  Player has not logged in with content waiting to be downloaded (this may also show as amber in colour, as above)
-- *Cross* = Player is currently downloading new content and has yet to complete the download (this may also show as red in colour)	
-
-**Authorised** - Tick or cross to indicate whether the Display has been granted a licence with the CMS. This prevents unauthorised Displays being added to the CMS.
-
-{tip}
-Include the **Commercial License** column using the **Column Visibility** button to easily identify the Commercial Licence status of your Displays!
-{/tip}
-
-**Logged In** - Tick or cross to show if the Display has logged in recently.
-
-**Last Accessed** - Date and time stamp of when the Display was last accessed. 
-
-**MAC Address** - Media Access Control Address of the Display (if the Player software is capable of sending it).
-
-## Row Menu
-
-Each Display has a row menu containing a number of actions/shortcuts.
-
-{tip}
-Selected actions allow for certain [Forms to be automatically submitted](tour_cms_navigation.html#content-automatic-submission-of-forms) such as **Authorise** and **Check Licence**. Actions that have an auto submit capability will display an option to enable. 
-{/tip}
-
-### Manage
-
-Each Display has its own **Dashboard** which shows the Displays current status, bandwidth usage, file status and errors.
-
-![Manage Dashboard](img/v4_displays_manage_dashboard.png)
-
-{tip}
-This Dashboard is useful as a first step to look at when troubleshooting issues with a Display!
-{/tip}
-
-### Edit
-
-Click **Edit** to manage configuration options for the Display:
-
-![Edit Form](img/v4_displays_edit_form.png)
-
-- Use the **General** tab to view the unique **Display Hardware Key** which is generated during installation, **Authorise a Display** to use an available Licence Pool slot and set a **Default Layout**.
-
-
-- Provide Display **Details** such as the **Latitude** and **Longitude** of the Display. If you are using the [Ad Campaign](layouts_campaigns.html#content-ad-campaigns) functionality ensure that you complete the **Cost per play** and **Impressions per play** fields on this tab for all selected Displays.
-
-{tip}
-Additional fields have been included designed to enhance advertising needs such as:
-
-- The physical address of the display
-- Is the display mobile?
-- Venue type
-- Languages supported
+グリッドの下部にある [**選択されたもの**] オプションを使用して、複数のディスプレイをフォルダに割り当てます。
 
 {/tip}
 
-- Optionally provide **Reference** information for the selected Display. Once added, this information can be viewed in the Display grid and via the API.
-
-- Control **Email Alerts** and **Global Timeout** settings from the **Maintenance** tab.
-
-
-- Override [Display Profile Settings](displays_settings.html) for individual Displays using the **Settings** tab.
-
-
-![Displays Edit Profile Settings](img/v4_displays_edit_profilesettings.png)
-
-- Use the **Advanced** tab to apply limits to determine the amount of **Bandwidth** a Display can consume and to **Clear Cached Data**.
-
+グリッドは、選択するとフォルダ内のオブジェクトのみを表示するように更新されます。または、[すべてのフォルダ] を使用してルート フォルダ内の検索を含めます。
 
 {tip}
-You can easily set bandwidth limits for multiple Displays using the **With Selected** option at the bottom of the Displays grid!
-{/tip}
+フォルダ アイコンをクリックして、ビューのオン/オフを切り替えます。フォルダがビューから非表示になっている場合は、選択したフォルダのファイル パスが表示されます。
+ヒント}
 
-### Delete
+列の表示ボタンを使用して、管理に必要な情報を表示するための利用可能なオプションから選択します。
 
-Deleting a **Display** will remove it from the **CMS** entirely - this operation cannot be reversed. A deleted Display can be reconnected to the CMS by repeating the **Connect to CMS** procedure which will create a new unique Display record.
+注目すべきオプションの一部を以下に示します:
 
-{tip}
-**Deauthorise** a Display instead of deleting so that it can be re-authorised at a later date if needed. Use the row menu for the Display and click on **Authorise** to toggle to **Deauthorise**. 
+**ID** - ディスプレイの内部識別。
 
-This can also be actioned from the **Edit** form on the General tab by selecting **No** for Authorise display.
-{/tip}
+**ディスプレイ** - CMS 内で簡単に識別できるようにディスプレイに付けられたフレンドリ名 (ディスプレイ自体には表示されません)。
 
-### Default Layout
+**ステータス**:
 
-When no content is scheduled or if there is an issue that prevents a scheduled Event from showing, a **Default Layout** will be shown on Displays to ensure that something is **always** shown! 
+- *チェック* = プレーヤーは最新です (緑色で表示される場合もあります)。
+- *クラウド アイコン* = プレーヤーはログインしておらず、コンテンツのダウンロードを待機しています (上記のように、琥珀色で表示される場合もあります)。
+- *クロス* = プレーヤーは現在新しいコンテンツをダウンロード中で、ダウンロードがまだ完了していません (赤色で表示される場合もあります)。
 
-Displays will show the global Default Layout as set in [CMS Settings](tour_cms_settings#content-default-layout) which can be overridden per Display if required:
-
-- Select from the row menu or **Edit** form to choose the Layout to use from the dropdown menu. 
-- Leave this field blank to automatically use the global Default Layout.
+**承認済み** - チェックまたはクロスで、ディスプレイが CMS でライセンスを付与されているかどうかを示します。これにより、承認されていないディスプレイが CMS に追加されるのを防ぎます。
 
 {tip}
-Create your own Layout to select but keep in mind that designs should be kept simple with no complex media or web content.
+**列の表示** ボタンを使用して **商用ライセンス** 列を含めると、ディスプレイの商用ライセンス ステータスを簡単に識別できます。
 {/tip}
+
+**ログイン** - ディスプレイが最近ログインしたかどうかを示すためにチェックマークを付けるか、×印を付けます。
+
+**最終アクセス** - ディスプレイが最後にアクセスされた日時のスタンプ。
+
+**MAC アドレス** - ディスプレイのメディア アクセス制御アドレス (プレーヤー ソフトウェアが送信可能な場合)。
+
+## 行メニュー
+
+各ディスプレイには、いくつかのアクション/ショートカットを含む行メニューがあります。
+
+{tip}
+選択したアクションにより、**承認** や **ライセンスの確認** などの特定の [フォームを自動的に送信](tour_cms_navigation.html#content-automatic-submission-of-forms) が可能になります。自動送信機能を持つアクションには、有効にするオプションが表示されます。
+ヒント}
+
+### 管理
+
+各ディスプレイには独自の**ダッシュボード**があり、ディスプレイの現在のステータス、帯域幅の使用状況、ファイルのステータス、エラーが表示されます。
+
+![ダッシュボードの管理](img/v4_displays_manage_dashboard.png)
+
+{ヒント}
+
+このダッシュボードは、ディスプレイの問題をトラブルシューティングするときに最初に確認する手順として役立ちます。
+
+ヒント}
+
+### 編集
+
+**編集** をクリックして、ディスプレイの構成オプションを管理します。
+
+![フォームの編集](img/v4_displays_edit_form.png)
+
+- **全般** タブを使用して、インストール中に生成される固有の**ディスプレイ ハードウェア キー** を表示し、**ディスプレイを承認** して使用可能なライセンス プール スロットを使用し、**デフォルト レイアウト** を設定します。
+
+- ディスプレイの**緯度** や**経度** などのディスプレイの**詳細** を入力します。 [広告キャンペーン](layouts_campaigns.html#content-ad-campaigns)機能を使用している場合は、選択したすべてのディスプレイについて、このタブの**再生あたりのコスト**と**再生あたりのインプレッション数**のフィールドに必ず入力してください。
+
+{tip}
+広告のニーズを高めるために、次のような追加フィールドが含まれています:
+
+- ディスプレイの物理アドレス
+- ディスプレイはモバイルですか?
+- 会場タイプ
+- サポートされている言語
+
+{/tip}
+
+- 必要に応じて、選択したディスプレイの**参照**情報を入力します。追加すると、この情報はディスプレイ グリッドと API 経由で表示できます。
+
+- **メンテナンス** タブから、**電子メール アラート**と**グローバル タイムアウト**設定を制御します。
+
+- **設定** タブを使用して、個々のディスプレイの [ディスプレイ プロファイル設定](displays_settings.html) を上書きします。
+
+![ディスプレイのプロファイル設定の編集](img/v4_displays_edit_profilesettings.png)
+
+- **詳細** タブを使用して、ディスプレイが消費できる **帯域幅** の量を決定するための制限を適用し、**キャッシュされたデータをクリア**します。
+
+{tip}
+ディスプレイ グリッドの下部にある **選択されたもの** オプションを使用して、複数のディスプレイの帯域幅制限を簡単に設定できます。
+
+{/tip}
+
+### 削除
+
+**ディスプレイ** を削除すると、**CMS** から完全に削除されます。この操作を元に戻すことはできません。削除されたディスプレイは、**CMS への接続** 手順を繰り返すことで CMS に再接続できます。これにより、新しい一意のディスプレイ レコードが作成されます。
+
+{tip}
+ディスプレイを削除する代わりに **認証解除** して、必要に応じて後日再認証できるようにします。ディスプレイの行メニューを使用して、**認証** をクリックして **認証解除** に切り替えます。
+
+これは、[全般] タブの [編集] フォームから [表示の承認] で [いいえ] を選択することで実行することもできます。
+
+ヒント}
+
+### デフォルト レイアウト
+
+コンテンツがスケジュールされていない場合、またはスケジュールされたイベントが表示されないようにする問題がある場合は、何かが **常に** 表示されるように、ディスプレイに **デフォルト レイアウト** が表示されます。
+
+ディスプレイには、[CMS 設定](tour_cms_settings#content-default-layout) で設定されたグローバル デフォルト レイアウトが表示されます。これは、必要に応じてディスプレイごとに上書きできます。
+
+- 行メニューまたは **編集** フォームから選択して、ドロップダウン メニューから使用するレイアウトを選択します。
+- このフィールドを空白のままにすると、グローバル デフォルト レイアウトが自動的に使用されます。
+
+{ヒント}
+選択する独自のレイアウトを作成しますが、デザインは複雑なメディアや Web コンテンツを使用せず、シンプルにしておく必要があることに注意してください。
+ヒント}
 
 {version}
-**NOTE:** If there is no other content scheduled and the Default Layout is being downloaded/there is an issue with the selected Default Layout, the splash screen will be displayed.
+**注意:** 他にスケジュールされているコンテンツがなく、デフォルト レイアウトがダウンロード中の場合、または選択したデフォルト レイアウトに問題がある場合は、スプラッシュ スクリーンが表示されます。
+
 {/version}
 
-### Assign Files / Layouts
+### ファイル/レイアウトの割り当て
 
-[Library files](media_library.html) and [Layouts](layouts.html) can be assigned directly to a Display so that they are always available in the local library of the Player. This is useful for pre-loading a Layout ahead of time when that Layout will be used for some API integration, triggering a change for example.
+[ライブラリ ファイル](media_library.html) と [レイアウト](layouts.html) をディスプレイに直接割り当てることができるため、プレーヤーのローカル ライブラリで常に使用できます。これは、レイアウトが API 統合に使用される場合、たとえば変更をトリガーする場合に、事前にレイアウトをプリロードするのに便利です。
 
-- Select which files/Layouts to assign and click to **Save**.
+- 割り当てるファイル/レイアウトを選択し、[**保存**] をクリックします。
 
-Selected files/Layouts will be downloaded to the Display at the next collection interval. If XMR is installed these will be downloaded immediately.
+選択したファイル/レイアウトは、次の収集間隔でディスプレイにダウンロードされます。XMR がインストールされている場合は、すぐにダウンロードされます。
 
-However, this does NOT mean that Library files and Layouts will be shown and will still need to be [Scheduled](scheduling_events.html).
-
-{tip}
-Files/Layouts can be unassigned from Displays by following the same steps and deselecting items from the top staging area. These will be 'cleaned up' when the Player needs space or after 30 days of the that file/Layout no longer being required.
-{/tip}
-
-### Send Command
-
-The **Send Command** functionality is executed via XMR to Players by selecting a predefined command. This is useful for sending Players 'Reboot' commands for example.
+ただし、これはライブラリ ファイルとレイアウトが表示されることを意味するものではなく、引き続き [スケジュール](scheduling_events.html) する必要があります。
 
 {tip}
-This type of [Command](displays_command_functionality.html) can also be executed by scheduling a [Command Event](scheduling_events.html#content-command)
+同じ手順に従い、上部のステージング領域からアイテムの選択を解除することで、ファイル/レイアウトをディスプレイから割り当て解除できます。これらは、プレーヤーがスペースを必要とするとき、またはファイル/レイアウトが不要になってから 30 日後に「クリーンアップ」されます。
+
 {/tip}
 
-### Transfer Display to another CMS
+### コマンドの送信
 
-{feat}Transfer Display to another CMS|v4{/feat}
-To use this functionality you will first need to activate Google Authenticator using [Two factor Authentication](tour_user_access.html#content-two-factor-authentication), if you have not already set this up.
-
-Once activated, use the row menu for the Display you want to transfer, and select **Transfer to another CMS**
-
-Ensure all the form fields are completed as explained below:
-
-- Enter the full **CMS URL** you wish to transfer this Display to.
-
-- Provide the **CMS Secret Key** for the CMS Address you wish to transfer to.
-
-- Complete the **Two Factor authentication code**, as displayed on the app.
-
-  ![Transfer CMS](img/v4_displays_move_cms.png)
-
-Once the details provided have been authenticated, the Display will attempt registration with the 'new' CMS. Once the Display has been successfully transferred the Display will stop communicating with the 'old' CMS and will change from a 'tick' to a `X` in the **Authorised** column in the Displays grid.
+**コマンドの送信** 機能は、定義済みのコマンドを選択することで、XMR 経由でプレーヤーに実行されます。これは、たとえばプレーヤーに「再起動」コマンドを送信する場合に便利です。
 
 {tip}
-Select multiple Displays to transfer using the **With Selected** option at the bottom of the grid!
+このタイプの [コマンド](displays_command_ functionality.html) は、[コマンド イベント](scheduling_events.html#content-command) をスケジュールすることによっても実行できます。
 {/tip}
 
-## Map View
+### ディスプレイを別の CMS に転送
 
-Use the Map view to see the locations and status of Displays.
+{feat}ディスプレイを別の CMS に転送|v4{/feat}
+この機能を使用するには、まだ設定していない場合は、まず [2 要素認証](tour_user_access.html#content-two-factor-authentication) を使用して Google Authenticator をアクティブ化する必要があります。
 
-Click the icon located next to the Folders toggle to switch to the **Map View**:
+アクティブ化したら、転送するディスプレイの行メニューを使用して、[**別の CMS に転送**] を選択します。
 
-![Display Map View](img/v4_displays_administration_map_view.png)
+以下の説明に従って、すべてのフォーム フィールドが入力されていることを確認します。
 
-The status of Displays in marker clusters will be shown as pie charts for easier identification:
+- このディスプレイを転送する完全な **CMS URL** を入力します。
 
-![Status Marker Clusters](img/v4_displays_status_marker_cluster_chart.png)
+- 転送先の CMS アドレスの **CMS シークレット キー** を入力します。
+
+- アプリに表示される**2要素認証コード**を入力します。
+
+![CMSの転送](img/v4_displays_move_cms.png)
+
+提供された詳細が認証されると、ディスプレイは「新しい」CMSへの登録を試みます。ディスプレイが正常に転送されると、ディスプレイは「古い」CMSとの通信を停止し、ディスプレイ グリッドの**承認済み**列のチェックマークが「チェック」から「X」に変わります。
 
 {tip}
-Logged in Users will only be able to view the status of Displays they have been given access to. 
-Use the filter fields in the grid from the List View to isolate Displays to view!
+グリッドの下部にある**選択したもの**オプションを使用して、転送する複数のディスプレイを選択します。
+
 {/tip}
 
-Clicking on a status icon will show further information about the selected Display:
+## マップ ビュー
 
-![Display Map View Status](img/v4_displays_administration_display_map_status.png)
+マップ ビューを使用して、ディスプレイの場所とステータスを確認します。
 
-Click the icon - **List** to return to the Display grid view.
+フォルダ切り替えの横にあるアイコンをクリックして、**マップ ビュー** に切り替えます:
 
-#### Next...
+![マップ ビューの表示](img/v4_displays_administration_map_view.png)
 
-[Display Groups](displays_groups.html)
+マーカー クラスター内のディスプレイのステータスは、識別しやすいように円グラフで表示されます:
 
+![ステータス マーカー クラスター](img/v4_displays_status_marker_cluster_chart.png)
 
+{tip}
 
+ログインしたユーザーは、アクセスを許可されているディスプレイのステータスのみを表示できます。
 
+リスト ビューのグリッドのフィルター フィールドを使用して、表示するディスプレイを分離します!
 
+{/tip}
 
+ステータス アイコンをクリックすると、選択したディスプレイに関する詳細情報が表示されます:
+
+![マップ ビューのステータスの表示](img/v4_displays_administration_display_map_status.png)
+
+**リスト** アイコンをクリックすると、ディスプレイ グリッド ビューに戻ります。
+
+#### 次へ...
+
+[表示グループ](displays_groups.html)
 

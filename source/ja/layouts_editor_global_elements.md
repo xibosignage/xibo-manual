@@ -1,84 +1,51 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Complement content by adding Global Elements to Layouts"
-keywords: "text, shapes, lines, date, time, add circles, add rectangles, add triangles"
-persona: "content creator, super administrator, user"
+抜粋: "レイアウトにグローバル要素を追加してコンテンツを補完する"
+キーワード: "テキスト、図形、線、日付、時刻、円の追加、四角形の追加、三角形の追加"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Global Elements 
+# グローバル要素
 
-Select from a variety of Global Elements to add to Layouts to create eye-catching designs and to enhance other content.
+さまざまなグローバル要素から選択してレイアウトに追加し、目を引くデザインを作成し、他のコンテンツを強化します。
 
-{nonwhite}{video}4NxcXfiKBfM{/video}{/nonwhite}
+{nonwhite}{video}4NxcXfiKBfM{/video}{nonwhite}
 
-## Feature Overview
+## 機能の概要
 
-- Enhance Layout designs.
-- Flexibility in placement and sizing.
-- Configure styling and appearance to suit.
-- Compatible with all Widgets/Data Elements on a Layout.
-- Easily add text to Layouts.
-- Choose from a variety of shapes and lines to make your designs stand out.
+- レイアウト デザインを強化します。
+- 配置とサイズ設定の柔軟性。
+- スタイルと外観を適切なものに構成します。
+- レイアウト上のすべてのウィジェット/データ要素と互換性があります。
+- レイアウトにテキストを簡単に追加します。
+- さまざまな図形と線から選択して、デザインを目立たせます。
 
-Global Elements are accessed from the **Toolbox** inside the Layout Editor:
+グローバル要素は、レイアウト エディター内の **ツールボックス** からアクセスできます。
 
-![Global Elements](img/v4_layouts_global_elements.png)
+![グローバル要素](img/v4_layouts_global_elements.png)
 
-- Drag and drop or click in an element and click on the canvas to add.
-- Position and resize.
-- Configure from the **Properties Panel** to style.
+- 要素をドラッグ アンド ドロップするかクリックして、キャンバスをクリックして追加します。
+- 位置とサイズを変更します。
+- **プロパティ パネル** からスタイルを設定します。
 
 {tip}
-To edit **Text** directly, double click the Text Element on the Layout and type into the text box. A right click on this element also includes an **Edit Text** option to edit directly rather than from the Properties Panel.
+**テキスト** を直接編集するには、レイアウト上のテキスト要素をダブルクリックして、テキスト ボックスに入力します。この要素を右クリックすると、プロパティ パネルからではなく直接編集するための **テキスト編集** オプションも表示されます。
 {/tip}
 
-![Add Text Element](img/v4_layouts_add_text_element.png)
+![テキスト要素の追加](img/v4_layouts_add_text_element.png)
 
-Global Elements can be used on their own or used to complement existing content already added to the Layout.
+グローバル要素は単独で使用することも、レイアウトに既に追加されている既存のコンテンツを補完するために使用することもできます。
 
 {version}
-Global Elements are only available from the Layout Editor and are not available in the Playlist Editor!
-{/version}
+グローバル要素はレイアウト エディターからのみ使用でき、プレイリスト エディターでは使用できません。
+{version}
 
-Easily position shapes behind other content using the [Layer Control](layouts_editor.html#content-layer-control) to drag into order or right click a Global Element to use the **Send/Bring** options.
+[レイヤー コントロール](layouts_editor.html#content-layer-control) を使用してドラッグし、図形を他のコンテンツの背後に簡単に配置したり、グローバル要素を右クリックして **送信/移動** オプションを使用したりできます。
 
 {tip}
-Elements have their own Canvas [Layer](layouts_editor.html#content-layering), which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
-{/tip}
+要素には独自のキャンバス [レイヤー](layouts_editor.html#content-layering) があり、これを使用して、プレイリストやビデオなどの他のネイティブにレンダリングされた要素との関係で、要素がどこに表示されるかを決めることができます。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{tip}
 

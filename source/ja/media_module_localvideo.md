@@ -1,30 +1,30 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Add videos from a local file path or URL to show on Displays"
-keywords: "manually transferred videos, videos on a lan, stream, rtsp stream"
-persona: "content manager"
+抜粋: "ローカル ファイル パスまたは URL からビデオを追加してディスプレイに表示する"
+キーワード: "手動で転送されたビデオ、LAN 上のビデオ、ストリーム、RTSP ストリーム"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Local Video
+# ローカル ビデオ
 
-Add a video from a local file path or URL to Playlists and Layouts. This type of video only exists on the Player and is not uploaded to the CMS.
+ローカル ファイル パスまたは URL からビデオをプレイリストとレイアウトに追加します。このタイプのビデオはプレーヤーにのみ存在し、CMS にはアップロードされません。
 
-{feat}Local Video|v4{/feat}
+{feat}ローカル ビデオ|v4{/feat}
 
-## Overview
+## 概要
 
-- Show manually transferred videos.
-- Use with videos on a LAN.
-- Stream videos.
-- File path or URL can be to an RTSP Stream.
-- Aspect and Stretch scaling options.
-- Mute functionality.
-- Expand content over the top of existing content to show video full screen.
+- 手動で転送されたビデオを表示します。
+- LAN 上のビデオで使用します。
+- ビデオをストリーミングします。
+- ファイル パスまたは URL は RTSP ストリームにすることができます。
+- アスペクトおよびストレッチのスケーリング オプション。
+- ミュート機能。
+- 既存のコンテンツの上にコンテンツを展開して、ビデオを全画面で表示します。
 
 {version}
-**NOTE:** Video scaling and RTSP streams are only supported on Android, webOS and Linux Players. Use the [HLS](media_module_hls.html) Widget to show compatible video streams on Windows and Tizen Players.
-The number of RTSP streams you can show on one Layout / Playlist is dependent on the device being used.
-Transitions are not supported for the Tizen Player when using the Local Video Widget.
+**注意:** ビデオのスケーリングと RTSP ストリームは、Android、webOS、Linux プレーヤーでのみサポートされています。Windows および Tizen プレーヤーで互換性のあるビデオ ストリームを表示するには、[HLS](media_module_hls.html) ウィジェットを使用してください。
+1 つのレイアウト/プレイリストに表示できる RTSP ストリームの数は、使用しているデバイスによって異なります。
+ローカル ビデオ ウィジェットを使用する場合、Tizen プレーヤーではトランジションはサポートされません。
 {/version}
 

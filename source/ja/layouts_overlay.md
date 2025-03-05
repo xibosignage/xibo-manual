@@ -1,36 +1,37 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Create an Overlay Layout that once scheduled will sit on top of other Layouts in the schedule"
-keywords: "show on top of existing content"
-persona: "content creator, super administrator, user"
+抜粋: "スケジュールするとスケジュール内の他のレイアウトの上に配置されるオーバーレイ レイアウトを作成します"
+キーワード: "既存のコンテンツの上に表示"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Overlay Layouts
+# オーバーレイ レイアウト
 
-Create an Overlay Layout which when [Scheduled](scheduling_events.html#content-creating-a-schedule) will show on top of other Layouts in that schedule. 
+[スケジュール済み](scheduling_events.html#content-creating-a-schedule) ときにそのスケジュール内の他のレイアウトの上に表示されるオーバーレイ レイアウトを作成します。
 
 {tip}
-Overlay Layouts can also be Scheduled to be used with Layouts inside a [Layout List Campaign](layouts_campaigns.html#content-create-a-layout-list).
+オーバーレイ レイアウトは、[レイアウト リスト キャンペーン](layouts_campaigns.html#content-create-a-layout-list) 内のレイアウトで使用するようにスケジュールすることもできます。
 {/tip}
 
-Overlay Layouts remain on top while your normal scheduled content changes underneath. This is particularly useful for logos, important information or emergency notices for example.
+オーバーレイ レイアウトは、通常のスケジュール済みコンテンツが下で変更されても上部に残ります。これは、たとえばロゴ、重要な情報、緊急通知などに特に便利です。
 
-![Overlay Layout](img/v4_layouts_overlay.png)
+![オーバーレイ レイアウト](img/v4_layouts_overlay.png)
 
-## Create an Overlay Layout
+## オーバーレイ レイアウトを作成する
 
-Overlay Layouts are created in exactly the same way as all other **Layouts**. Add content to fit around your existing designs so that your Overlay Layout can "sit on top" of other Layouts that are **Scheduled** at the same time as the Overlay.  Your Overlay Layout will display its all important content whilst the Layouts "underneath" play in rotation.
+オーバーレイ レイアウトは、他のすべての **レイアウト** とまったく同じ方法で作成されます。既存のデザインに合わせてコンテンツを追加し、オーバーレイ レイアウトがオーバーレイと同時に **スケジュール** されている他のレイアウトの上に「配置」できるようにします。オーバーレイ レイアウトには、その下にあるレイアウトが順番に再生される間、すべての重要なコンテンツが表示されます。
 
 {tip}
-[[PRODUCTNAME]] will not render the background on Players when a Layout is scheduled as an Overlay Layout.
+レイアウトがオーバーレイ レイアウトとしてスケジュールされている場合、[[PRODUCTNAME]] はプレーヤーの背景をレンダリングしません。
+
 {/tip}
 
 {version}
-**NOTE:** Layouts that contain Widgets / Media that use the Edge browser cannot be used with an Overlay Layout as content cannot sit on top of other content under these circumstances. This would include HLS and Embedded YouTube. If your content is not a video then the CEF browser can be used instead. 
-{/version}
+**注意:** Edge ブラウザーを使用するウィジェット/メディアを含むレイアウトは、このような状況ではコンテンツを他のコンテンツの上に配置できないため、オーバーレイ レイアウトでは使用できません。これには HLS と埋め込み YouTube が含まれます。コンテンツがビデオでない場合は、代わりに CEF ブラウザーを使用できます。
+{version}
 
-Overlay Layouts behave in a different way to Layouts when scheduled and will only render media content once so will not show any refreshed content.
+オーバーレイ レイアウトは、スケジュールされたときにレイアウトとは異なる動作をし、メディア コンテンツを 1 回だけレンダリングするため、更新されたコンテンツは表示されません。
 
-If your Overlay Layout includes content which needs to be refreshed, Calendar or Ticker Widgets for example, a [Playlist](layouts_editor_playlists.html#content-add-playlists) should be added to the Layout and the media added to the Playlist. Then when it loads the next item in the Playlist it will reload the other items to show refreshed content.
+オーバーレイ レイアウトに更新が必要なコンテンツ (カレンダーやティッカー ウィジェットなど) が含まれている場合は、[プレイリスト](layouts_editor_playlists.html#content-add-playlists) をレイアウトに追加し、メディアをプレイリストに追加する必要があります。その後、プレイリストの次のアイテムを読み込むと、他のアイテムが再読み込みされ、更新されたコンテンツが表示されます。

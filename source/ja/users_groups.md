@@ -2,94 +2,95 @@
 toc: "users"
 maxHeadingLevel: 3
 minheadingLevel: 2
-excerpt: "User Groups provide an easy way to manage system access for multiple Users"
-keywords: "pre-configured groups, create user groups, group members "
-persona: "administrator"
+抜粋: "ユーザー グループを使用すると、複数のユーザーのシステム アクセスを簡単に管理できます"
+キーワード: "事前設定されたグループ、ユーザー グループの作成、グループ メンバー "
+ペルソナ: "管理者"
 ---
 
-# User Groups
+# ユーザー グループ
 
-User Groups are an easy way to configure [Features and Share](users_features_and_sharing.html) options to apply to multiple Users who are members of a particular User Group.
+ユーザー グループを使用すると、特定のユーザー グループのメンバーである複数のユーザーに適用する [機能と共有](users_features_and_sharing.html) オプションを簡単に設定できます。
 
 {tip}
-User Groups makes it easier to onboard new Users and manage system access. Users will inherit the  Feature and Sharing options enabled for the group!
+ユーザー グループを使用すると、新しいユーザーのオンボーディングやシステム アクセスの管理が簡単になります。ユーザーは、グループで有効になっている機能と共有オプションを継承します。
 {/tip}
 
-Create your own User Groups are select from a set of pre-configured groups, created to serve common functions in the CMS, available for new installations.
+独自のユーザー グループを作成するには、CMS の一般的な機能を提供するために作成された、新規インストールで使用可能な事前設定された一連のグループから選択します。
 
 {version}
-**Note:** Pre-configured User Groups are available for new v4 installations and for users who upgrade to v4 who have not previously utilised User Groups in  their earlier versions!
+**注:** 事前設定されたユーザー グループは、新しい v4 インストールと、以前のバージョンでユーザー グループを使用したことのない v4 にアップグレードするユーザーにご利用いただけます。
 {/version}
 
-![Pre-Configured Groups](img/v4_user_groups_preconfigured.png)
+![事前設定されたグループ](img/v4_user_groups_preconfigured.png)
 
-The pre-configured User Groups already have the required Features enabled to allow Users to carry out the chosen role. These can be modified if required to suit.
+事前設定されたユーザー グループには、ユーザーが選択したロールを実行できるようにするために必要な機能がすでに有効になっています。必要に応じて、これらを変更できます。
 
 {version}
-**Note:** The Display Manager User Group does not have the rights to add and authorise new Displays as this is a Super Admin high level function. Once added, a Super Admin user can add new Displays to [Folders](https://xibosignage.com/manual/en/tour_folders#content-saving-to-folders) or give [Share](https://xibosignage.com/manual/en/tour_folders#content-sharing-options) access rights to this User Group for Display Management purposes.
+**注:** これはスーパー管理者の高レベル機能であるため、ディスプレイ マネージャー ユーザー グループには新しいディスプレイを追加して承認する権限がありません。追加されたスーパー管理者ユーザーは、[フォルダー](https://xibosignage.com/manual/en/tour_folders#content-saving-to-folders) に新しいディスプレイを追加したり、ディスプレイ管理の目的でこのユーザー グループに [共有](https://xibosignage.com/manual/en/tour_folders#content-sharing-options) アクセス権を付与したりできます。
+
 {/version}
 
-## Create User Groups
+## ユーザー グループの作成
 
-User Groups are administered from **User Groups** under the **Administration** section of the main CMS menu. The User Group grid will open for you to add and manage User Groups:
+ユーザー グループは、メイン CMS メニューの [**管理**] セクションの [**ユーザー グループ**] から管理されます。ユーザー グループ グリッドが開き、ユーザー グループを追加および管理できます。
 
-![User Group Add](img/v4_user_group_add.png)
-
-{tip}
-
-Add User Groups to suit your specific needs and enable them to be shown for the [New User](users_administration.html) onboarding wizard to make it easier to add Users to the right User Group from the start!
-{/tip}
-
-To add a new group, click on the **Add User Group** button and enter the required information for each tab:
-
-#### General
-
-- Give your User Group a **Name** to identify it within the CMS
-- Enter a maximum amount of [Library Quota](users_administration.html#content-library-quota) allowed to be uploaded to the Library for this User Group. Enter 0 if no quota should be applied. 
-- Select the type, **System** or **Display**, if the User Group should receive notifications.
-
-#### Description
-
-Provide optional text to describe the created Group. 
+![ユーザー グループの追加](img/v4_user_group_add.png)
 
 {tip}
-If enabled to show for onboarding new Users, this description (such as the Groups role) will be shown to make it clear for selection.
-{/tip}
 
-#### Onboarding Settings
+特定のニーズに合わせてユーザー グループを追加し、[新規ユーザー](users_administration.html) オンボーディング ウィザードに表示されるようにすると、最初から適切なユーザー グループにユーザーを簡単に追加できます。
+ヒント}
 
-Use this tab to control the options for onboarding new Users:
+新しいグループを追加するには、[**ユーザー グループの追加**] ボタンをクリックし、各タブに必要な情報を入力します。
 
-- Tick if you want to include this User Group for selection when using the onboarding wizard.
-- Use the dropdown to select the [Dashboard](users_dashboards.html) which will be used as a homepage for all members of this group.
-- Click to Save.
+#### 全般
 
+- CMS 内でユーザー グループを識別するための **名前** を付けます
+- このユーザー グループのライブラリにアップロードできる [ライブラリ クォータ](users_administration.html#content-library-quota) の最大量を入力します。クォータを適用しない場合は 0 を入力します。
+- ユーザー グループが通知を受信する場合は、タイプ (**システム** または **表示**) を選択します。
 
-### Group Members
+#### 説明
 
-Once added to the grid, add Users to the User Group by using the row menu:
+作成したグループを説明するオプションのテキストを入力します。
 
-- Click on **Members**
+{ヒント}
+新しいユーザーのオンボーディングに表示するように有効にした場合、この説明 (グループの役割など) は選択しやすいように表示されます。
+ヒント}
 
-![User Group Manage Membership](img/v4_user_group_manage_membership.png)
+#### オンボーディング設定
 
-- Select which **Users** should belong to the selected **User Group**.
-- Click to **Save**.
+このタブを使用して、新規ユーザーのオンボーディングのオプションを制御します:
 
-{tip}
-Users can be assigned to one or more **User Groups** for ease of sharing and collaboration!
+- オンボーディング ウィザードを使用するときに、このユーザー グループを選択対象に含める場合はチェックを入れます。
+- ドロップダウンを使用して、このグループのすべてのメンバーのホームページとして使用される [ダッシュボード](users_dashboards.html) を選択します。
+- [保存] をクリックします。
 
-Membership can also be controlled from the User grid by using the row menu and selecting  **User Groups** to open the **Manage Membership** form!
-{/tip}
+### グループ メンバー
 
-### Features
+グリッドに追加したら、行メニューを使用してユーザーをユーザー グループに追加します:
 
-Control the User Groups access to the relevant parts of the CMS by selecting [Features](users_features_and_sharing.html) from the row menu.
+- [**メンバー**] をクリックします
 
-### Copy
+![ユーザー グループのメンバーシップの管理](img/v4_user_group_manage_membership.png)
 
-Make a **Copy** of an existing User Group from the row menu to make adjustments and easily create new Groups to suit your requirements.
+- 選択した **ユーザー グループ** に属する **ユーザー** を選択します。
+- [保存] をクリックします。
 
-#### Next...
+{ヒント}
+共有とコラボレーションを容易にするために、ユーザーを 1 つ以上の **ユーザー グループ** に割り当てることができます!
 
-[Features and Sharing](users_features_and_sharing)
+メンバーシップは、行メニューを使用して [ユーザー グループ] を選択し、[メンバーシップの管理] フォームを開くことで、ユーザー グリッドから制御することもできます。
+
+ヒント}
+
+### 機能
+
+行メニューから [機能](users_features_and_sharing.html) を選択して、CMS の関連部分へのユーザー グループのアクセスを制御します。
+
+### コピー
+
+行メニューから既存のユーザー グループの **コピー** を作成し、調整して、要件に合わせて新しいグループを簡単に作成します。
+
+#### 次へ...
+
+[機能と共有](users_features_and_sharing)

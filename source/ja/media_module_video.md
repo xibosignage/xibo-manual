@@ -1,57 +1,56 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Add Video files to play on Layouts and Playlists"
-keywords: "cached off-line"
-persona: "content manager"
+抜粋: "レイアウトとプレイリストで再生するビデオ ファイルを追加する"
+キーワード: "オフラインでキャッシュ"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Video 
+# ビデオ
 
-Add Video files to play on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-toolbar). 
+[ライブラリ検索](layouts_editor.html#content-toolbar) から、レイアウトとプレイリストで再生するビデオ ファイルを追加します。
 
-{feat}Video|v4{/feat}
+{feat}ビデオ|v4{/feat}
 
-## Overview
+## 概要
 
-- [Upload](media_library.html#content-add-media-upload) new video files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-library-search).
-- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- Video files can also be uploaded in advance to the Library.
+- [ライブラリ検索](layouts_editor.html#content-library-search) から、新しいビデオ ファイルをプレイリスト/レイアウトに直接 [アップロード](media_library.html#content-add-media-upload) します。
+- プレイリストとレイアウトに直接アップロードされたファイルは、再利用できるように [ライブラリ](media_library.html) に自動的に保存されます。
+- ビデオ ファイルを事前にライブラリにアップロードすることもできます。
 
 {tip}
-We recommend H264 MP4 file format.
+H264 MP4 ファイル形式をお勧めします。
 
-When uploading video files the scroll bar can be used to select a frame to be used as a thumbnail in the CMS for easier identification.
+ビデオ ファイルをアップロードする際、スクロール バーを使用して、CMS でサムネイルとして使用するフレームを選択し、識別しやすくすることができます。
 
 {/tip}
 
-- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for video files uploaded directly to a Playlist.
+- プレイリストに直接アップロードされたビデオ ファイルの [開始時間と終了時間](media_playlists.html#content-widget-expiry-dates) を設定します。
 
-- Save video files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
+- アップロード時にビデオ ファイルを [フォルダー](tour_folders.html#content-saving-to-folders) に保存して、ユーザーへのアクセスを簡単に制御します。
 
-- Uploaded video files are cached for off-line playback.
+- アップロードされたビデオ ファイルは、オフライン再生用にキャッシュされます。
 
-- Control the duration of the video file.
-  - Set a lower duration to cut the original file short.
+- ビデオ ファイルの継続時間を制御します。
 
-  - Set a higher duration and use the Loop function to "loop" back to the beginning to satisfy a longer duration.
+- 元のファイルを短くするには、継続時間を短く設定します。
 
-- Aspect and Stretch scaling options.
+- 継続時間を長く設定し、ループ機能を使用して最初に戻って「ループ」し、より長い継続時間を実現します。
 
-- Expand the top of existing content to show the video full screen.
+- アスペクト比とストレッチのスケーリング オプション。
 
-- Mute videos that have audio.
+- 既存のコンテンツの上部を拡大して、ビデオを全画面で表示します。
 
-- Select videos to use from Pixabay without leaving the CMS.
+- 音声付きの動画をミュートします。
 
-  
+- CMS を離れることなく、Pixabay から使用する動画を選択します。
 
-![Video](img/v4_media_module_video.png)
+![動画](img/v4_media_module_video.png)
 
 {version}
-**NOTE:**
-Scaling is currently supported by Android, webOS and Tizen Players (from v2 R200) and Windows Players (from v2 R253).
-Transitions are not supported for the Tizen Player when using the Video Widget.
+**注:**
+スケーリングは現在、Android、webOS、Tizen プレーヤー (v2 R200 以降)、および Windows プレーヤー (v2 R253 以降) でサポートされています。
+ビデオ ウィジェットを使用する場合、Tizen プレーヤーではトランジションはサポートされません。
 {/version}
 
-**As [[PRODUCTNAME]] takes no measures to control what content is put on your displays, it is your responsibility to ensure that any videos used are appropriately attributed if you do not own the rights.**
+**[[PRODUCTNAME]] ではディスプレイに表示されるコンテンツを制御する手段がないため、権利を所有していない場合は、使用する動画の帰属表示を適切に行う責任はお客様にあります。**

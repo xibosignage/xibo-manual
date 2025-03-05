@@ -1,41 +1,41 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Display alert and emergency messaging from Common Alerting Protocol(CAP)feeds"
-keywords: "common alerting protocol, cap feeds, cap url, cap connector, pupil safety, public alerts"
+抜粋: "共通アラート プロトコル (CAP) フィードからのアラートと緊急メッセージの表示"
+キーワード: "共通アラート プロトコル、CAP フィード、CAP URL、CAP コネクタ、生徒の安全、公共アラート"
 ---
 
-## Emergency Alert
+## 緊急アラート
 
-Help to ensure the safety of staff, pupils and the public by showing alert and emergency messaging using data from Common Alerting Protocol (CAP) feeds to increase warning effectiveness across your [[PRODUCTNAME]] Display network.
+共通アラート プロトコル (CAP) フィードのデータを使用してアラートと緊急メッセージを表示し、[[PRODUCTNAME]] ディスプレイ ネットワーク全体で警告の有効性を高めることで、スタッフ、生徒、一般の人々の安全を確保します。
 
 ![Emergency_Alerts_Elements](img/media_module_emergency_alerts_elements.png)
 
-## Feature Overview
+## 機能の概要
 
-- **CAP Connector** uses data from the Common Alerting Protocol feed service.
-- Provide a **CAP URL** to pull alert data from CAP feeds.
-- Add from a variety **Elements** to tailor visual representations in the Layout editor for maximum impact.
-- Send emergency alerts to only match area specific **Displays** for effective targeted messaging.
-- Use industry standard filters to tailor messaging from returned data.
-- Show multiple emergency alert messages with data cycling from CAP feeds.
-- Set **Criteria** when **Scheduling** to determine if the alert should be included in the Schedule Loop for supported Players.
+- **CAP コネクタ** は、共通アラート プロトコル フィード サービスからのデータを使用します。
+- CAP フィードからアラート データを取得するには、**CAP URL** を指定します。
+- さまざまな**要素**から追加して、レイアウト エディターの視覚表現をカスタマイズし、最大限の効果を実現します。
+- 効果的なターゲット メッセージングのために、エリア固有の**ディスプレイ**にのみ一致する緊急アラートを送信します。
+- 業界標準のフィルターを使用して、返されたデータからメッセージをカスタマイズします。
+- CAP フィードからのデータ サイクルを使用して、複数の緊急アラート メッセージを表示します。
+- **スケジュール** 時に**基準**を設定して、サポートされているプレーヤーのスケジュール ループにアラートを含めるかどうかを決定します。
 
-## Player Feature Support
+## プレーヤー機能のサポート
 
-{feat}Emergency Alert|v4{/feat}
+{feat}緊急アラート|v4{/feat}
 
-## Further Reading
+## 詳細情報
 
-[Connectors Management](/media_modules_connectors)
+[コネクタ管理](/media_modules_connectors)
 
-[Data Widgets](/layouts_editor_data_widgets)
+[データ ウィジェット](/layouts_editor_data_widgets)
 
-[Layout Editor](/layouts_editor)
+[レイアウト エディター](/layouts_editor)
 
 {nonwhite}
-[Schedule Criteria](/developer/player-control/schedule-criteria)
+[スケジュール基準](/developer/player-control/schedule-criteria)
 {/nonwhite}
 
 

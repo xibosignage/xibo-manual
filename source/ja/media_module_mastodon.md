@@ -3,53 +3,54 @@ toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
-  - "media_module_twitter"
-  - "media_module_twitter_metro"
-  - "media_module_mastadon"
-excerpt: "Show Mastodon social feed content on Displays"
-keywords: "social content, social posts, social feeds, hashtags, mentions"
-persona: "content manager"
+- "media_module_twitter"
+- "media_module_twitter_metro"
+- "media_module_mastadon"
+抜粋: "ディスプレイに Mastodon ソーシャル フィード コンテンツを表示する"
+キーワード: "ソーシャル コンテンツ、ソーシャル 投稿、ソーシャル フィード、ハッシュタグ、メンション"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
 # Mastodon
 
-Display Mastodon social feed content anywhere on a Layout using Elements or include Static Templates with pre-styled designs in Layouts/Playlists.
+エレメントを使用してレイアウト上の任意の場所に Mastodon ソーシャル フィード コンテンツを表示するか、レイアウト/プレイリストに事前にスタイル設定されたデザインの静的テンプレートを含めます。
 
 {feat}Mastodon|v4{/feat}
 
-The Mastodon Widget returns content from the URL entered for the [Module](media_modules.html) which feeds into configured Elements and Static Templates.
+Mastodon ウィジェットは、[モジュール](media_modules.html) に入力された URL からコンテンツを返します。このコンテンツは、構成されたエレメントと静的テンプレートにフィードされます。
 
-## Mastodon Elements
+## Mastodon 要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding a Mastodon Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Mastodon Widget to use and where they can be placed.
+Mastodon ウィジェットを [レイアウト](layouts_editor.html) に追加するときに [要素](layouts_editor#content-data-widgets-and-elements) を選択できるため、ユーザーは Mastodon ウィジェットのどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![Mastodon Elements](img/v4_media_modules_mastadon_elements.png)
+![Mastodon 要素](img/v4_media_modules_mastadon_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. A **Hashtag** must be provided to return results from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+各要素には、プロパティ パネルに一連の構成オプションがあります。レイアウトで使用される各要素の [構成] タブから結果を返すには、**ハッシュタグ** を指定する必要があります。追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。データ要素は、[グローバル要素](layouts_editor.html#content-global-elements)を追加して図形やテキストを追加することでさらに強化できます。これらはすべて[要素グループ](layouts_editor.html#content-grouping-elements)にまとめられるため、構成や配置が簡単になります。
 
-Take advantage of [Stencils](layouts_editor.html#content-stencils) to add a predesigned group of Elements to your Layout.
+[ステンシル](layouts_editor.html#content-stencils)を利用して、事前にデザインされた要素のグループをレイアウトに追加します。
 
 {tip}
-All Elements in the Stencil are treated as ‘one’ when configured and can be easily duplicated from a right click!
+ステンシル内のすべての要素は、構成時に「1 つ」として扱われ、右クリックで簡単に複製できます。
+
 {/tip}
 
-## Mastodon Static Templates
+## Mastodon 静的テンプレート
 
-[Static Templates](layouts_editor.html#content-static-templates) define how returned items should be laid out and styled and are a simple way to show items using pre-styled templates.
+[静的テンプレート](layouts_editor.html#content-static-templates)は、返されるアイテムのレイアウトとスタイルを定義するもので、事前にスタイル設定されたテンプレートを使用してアイテムを表示する簡単な方法です。
 
-![Mastadon Templates](img/v4_media_modules_mastadon_templates.png)
+![Mastadon テンプレート](img/v4_media_modules_mastadon_templates.png)
 
-Templates can be configured to affect the behaviour of returned results as well as make changes to the design appearance using a range of options in the Properties Panel. A **Hashtag** must be provided to return results from the **Configure** tab for each Template added to the Layout/Playlist.
+テンプレートは、返される結果の動作に影響を与えるように構成できるほか、プロパティ パネルのさまざまなオプションを使用してデザインの外観を変更することもできます。レイアウト/プレイリストに追加された各テンプレートの [**構成**] タブから結果を返すには、**ハッシュタグ** を指定する必要があります。
 
-## Overview
+## 概要
 
-- Display posts only with attached media.
-- Remove Mentions, Hashtags and URL's from posts.
-- Show posts only from local or remote servers.
-- Include a Mastodon Username to return public statuses.
-- Set the duration per item.
+- メディアが添付されている投稿のみを表示します。
+- 投稿からメンション、ハッシュタグ、URL を削除します。
+- ローカル サーバーまたはリモート サーバーからの投稿のみを表示します。
+- パブリック ステータスを返すために、Mastodon ユーザー名を含めます。
+- アイテムごとに期間を設定します。
 
 {tip}
-Most URL's do not compliment Digital Signage.
+ほとんどの URL はデジタル サイネージに適していません。
 {/tip}
 

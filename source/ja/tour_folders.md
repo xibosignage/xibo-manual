@@ -1,201 +1,210 @@
 ---
-toc: "tour"
+toc: "ツアー"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Utilise Folders to easily share contents with Users"
-keywords: "move and merge folders, folder management, home folders, sharing folder contents"
-persona: "user, administrator"
+抜粋: "フォルダーを使用してユーザーとコンテンツを簡単に共有する"
+キーワード: "フォルダーの移動と結合、フォルダー管理、ホーム フォルダー、フォルダー コンテンツの共有"
+ペルソナ: "ユーザー、管理者"
 ---
 
-# Folders
+# フォルダー
 
-**Folders** can be used throughout the CMS to easily control User/User Group [Share](users_features_and_sharing.html) options for all items held within a specific Folder. Folders also provides an additional way to organise and locate user objects within the CMS.
+**フォルダー** は CMS 全体で使用でき、特定のフォルダー内に保持されているすべてのアイテムのユーザー/ユーザー グループの [共有](users_features_and_sharing.html) オプションを簡単に制御できます。フォルダーは、CMS 内でユーザー オブジェクトを整理および検索するための追加の方法も提供します。
 
-## Feature Overview
+## 機能の概要
 
-- Easily control and maintain View/Edit/Delete access for all user objects saved to a Folder.
-- Used throughout the CMS.
-- Assign Folders to new Users from the on-boarding wizard.
-- Set a Home Folder for Users.
-- Force saving into a selected Folder.
-- Control User access to Folder options.
-- Dedicated Folders page for easier management.
+- フォルダーに保存されているすべてのユーザー オブジェクトの表示/編集/削除アクセスを簡単に制御および維持します。
+- CMS 全体で使用されます。
+- オンボーディング ウィザードから新しいユーザーにフォルダーを割り当てます。
+- ユーザーのホーム フォルダーを設定します。
+- 選択したフォルダーに強制的に保存します。
+- フォルダ オプションへのユーザー アクセスを制御します。
+- 管理を容易にする専用のフォルダ ページ。
 
-### Folder Search
+### フォルダ検索
 
-Available from multiple grids throughout the CMS, the Folder tree will first open by default and can be toggled off from view  by clicking on the folder icon:
+CMS 全体の複数のグリッドから利用できます。フォルダ ツリーはデフォルトで最初に開き、フォルダ アイコンをクリックして表示をオフにできます。
 
-![Folder File Path](img/v4_tour_folders_file_path.png)
+![フォルダ ファイル パス](img/v4_tour_folders_file_path.png)
 
-When a Folder has been selected, the grid will update to show only objects inside the Folder.
+フォルダが選択されると、グリッドが更新され、フォルダ内のオブジェクトのみが表示されます。
 
 {tip}
-Use the **All Folders** tick box to include searching in the Root Folder!
+ルート フォルダで検索を含めるには、[**すべてのフォルダ**] チェック ボックスを使用します。
+
 {/tip}
 
-Users can have a set [Home Folder](/manual/en/tour_folders.html#content-home-folder) (indicated by a House icon) which will allow full access to their own Media, Layouts, Schedules etc. and access to all other 'shared' Folder content. 
+ユーザーは [ホーム フォルダ](/manual/en/tour_folders.html#content-home-folder) (家のアイコンで示されます) を設定できます。これにより、自分のメディア、レイアウト、スケジュールなどに完全にアクセスでき、他のすべての「共有」フォルダ コンテンツにもアクセスできます。
 
 {tip} 
-When Folders are toggled off from view, the file path for a selected folder will be shown so you always know where you are looking!
+フォルダーの表示をオフにすると、選択したフォルダーのファイル パスが表示されるので、どこを見ているのか常に把握できます。
+
 {/tip}
 
-### Saving to Folders
+### フォルダーへの保存
 
-Items can be saved to folders from **Add**/**Edit** forms and from an items row menu using **Select Folder** to open the Folder tree.
+アイテムは、**追加**/**編集** フォームから、またはアイテム行メニューから **フォルダーの選択** を使用してフォルダー ツリーを開くことで、フォルダーに保存できます。
 
 {tip}
-If you already have a folder selected, user objects added via the Add form (Layouts, Campaigns, Media files etc) will be saved into that selected folder!
+すでにフォルダーが選択されている場合は、追加フォームで追加されたユーザー オブジェクト (レイアウト、キャンペーン、メディア ファイルなど) は、その選択したフォルダーに保存されます。
+
 {/tip}
 
-### Move and Merge Folders
+### フォルダーの移動と結合
 
-Folders can be moved to another Folder location to be added as a Sub-Folder:
+フォルダーを別のフォルダーの場所に移動して、サブフォルダーとして追加できます。
 
-- Select the **Folder**
-- Right click and select **Move**
-- Highlight the Folder destination to move to
-- **Save**
+- **フォルダー** を選択します。
+- 右クリックして **移動** を選択します。
+- 移動先のフォルダーの宛先を強調表示します。
+- **保存**
 
-The Folder and any contained sub-folders will now be moved as a new sub-folder within the new Folder location maintaining the original Folder structure.
+フォルダーとそれに含まれるサブフォルダーは、元のフォルダー構造を維持しながら、新しいフォルダーの場所内で新しいサブフォルダーとして移動されます。
 
-You can also select the **Merge** option to add the original Folder contents to the main Folder location, with the original Folder being deleted from the Folder tree.
+また、**マージ** オプションを選択して、元のフォルダの内容をメインのフォルダの場所に追加し、元のフォルダをフォルダ ツリーから削除することもできます。
 
 {version}
-**NOTE:** If you move a Folder that does not have any Share options set, it will inherit the applied Share options of the destination Folder!
+**注意:** 共有オプションが設定されていないフォルダを移動すると、移動先のフォルダに適用されている共有オプションが継承されます。
+
 {/version}
 
-## Folder Management
+## フォルダ管理
 
-A **Folders** page is located under the **Administration** section of the main CMS menu to allow Super Admins to manage all aspects of Folders  (right click a Folder to access the context menu) as well as see detailed information about Folders such as who it has been shared with and a breakdown of its contents!
+**フォルダ** ページは、メインの CMS メニューの **管理** セクションにあり、スーパー管理者はフォルダのすべての側面を管理できます (フォルダを右クリックしてコンテキスト メニューにアクセスします)。また、共有相手やその内容の内訳など、フォルダに関する詳細情報を表示できます。
 
-![Folders Management](img/v4_tour_folders_management_page.png)
+![フォルダ管理](img/v4_tour_folders_management_page.png)
 
-### Creating Folders
+### フォルダの作成
 
-Create Folders to hold **Library Media**, **DataSets**, **Playlists**, **Layouts**, **Campaigns**, **Templates**, **Displays** and **Display Groups** which are then accessed from multiple [Grids](tour_cms_navigation.html#content-grids) by clicking the **Folder** icon to open the Folder Tree:
+**ライブラリ メディア**、**データセット**、**プレイリスト**、**レイアウト**、**キャンペーン**、**テンプレート**、**ディスプレイ**、**ディスプレイ グループ** を格納するフォルダを作成します。これらのフォルダは、**フォルダ** アイコンをクリックしてフォルダ ツリーを開き、複数の [グリッド](tour_cms_navigation.html#content-grids) からアクセスできます。
 
-![Folder Grid](img/v4_tour_folders_grid.png)
+![フォルダ グリッド](img/v4_tour_folders_grid.png)
 
-- Right click the **Root Folder** and select **Create** to add a new Folder to the tree.
-
-{tip}
-Only Super Administrator users can create Folders under the Root Folder. Users can be granted [Feature](/manual/en/users_features_and_sharing.html) access to create sub-folders under parent Folders they have been given access to.
-{/tip}
-
-
--  Further menu options are available to **Create** a sub-folder, **Rename**, **Remove** **Share** and [Move Folders](/manual/en/tour_folders.html#content-move-and-merge-folders):
-
-![Folder Menu](img/v4_tour_folders_menu.png)
+- **ルート フォルダ** を右クリックし、[作成] を選択してツリーに新しいフォルダを追加します。
 
 {tip}
-Only empty folders can be removed! 
+ルート フォルダの下にフォルダを作成できるのは、スーパー管理者ユーザーのみです。ユーザーには、[機能](/manual/en/users_features_and_sharing.html) アクセス権を付与して、アクセス権が付与されている親フォルダの下にサブフォルダを作成できます。
+
 {/tip}
 
-### Home Folder
+- サブフォルダの**作成**、**名前の変更**、**削除**、**共有**、[フォルダの移動](/manual/en/tour_folders.html#content-move-and-merge-folders) などのメニュー オプションも用意されています:
 
-Admins are encouraged to assign User Groups to their Users, and then use Folder Sharing to give these Users appropriate access to each other's content (View/Edit/Delete options can be configured).
+![フォルダ メニュー](img/v4_tour_folders_menu.png)
 
 {tip}
-A Home Folder can be assigned when [Onboarding new Users](/manual/en/users_administration.html#content-adding-users-to-the-cms)!
+削除できるのは空のフォルダのみです! 
+
 {/tip}
 
-Users can always select their Home Folder and the Root Folder from the Folder Tree. 
+### ホーム フォルダ
+
+管理者は、ユーザーにユーザー グループを割り当て、フォルダ共有を使用してこれらのユーザーに互いのコンテンツへの適切なアクセス権を付与することをお勧めします (表示/編集/削除オプションを設定できます)。
 
 {tip}
-Users can view/edit and delete objects they own by selecting **All Folders**, even if they are in a Folder they cannot view.
-Conversely, users cannot view/edit or delete other Users objects unless shared with them by Direct/Folder sharing.
+ホーム フォルダは、[新しいユーザーのオンボーディング](/manual/en/users_administration.html#content-adding-users-to-the-cms) 時に割り当てることができます。
 {/tip}
 
-A Users Home Folder is shown to them in the Folder Tree with a house icon. If a Folder is not selected, or the Folders Feature has been disabled, new content will automatically save into the Home Folder.
+ユーザーは、フォルダ ツリーからいつでもホーム フォルダとルート フォルダを選択できます。
 
 {tip}
-If you require Group Admins to set a Home Folder for Users, ensure that they have the appropriate [Feature](/manual/en/users_features_and_sharing.html) enabled!
+ユーザーは、**すべてのフォルダ** を選択することで、自分が所有するオブジェクトを表示/編集および削除できます。表示できないフォルダにいる場合でも同様です。
+逆に、直接/フォルダ共有によって共有されていない限り、ユーザーは他のユーザーのオブジェクトを表示/編集または削除できません。
 {/tip}
 
-#### Assign Home Folders for Users (Admins / Group Admins)
-
-For an existing User:
-
-- Go to **Users** under the **Administration** section of the main CMS menu. 
-- Use the row menu for the User and select **Edit**.
-- Click on the **Home Folder** tab:
-
-![Home Folder](img/v4_tour_folders_default_folder.png)
-
-- Select a Folder to use, or right click the Root Folder to create a new Folder.
+ユーザーのホーム フォルダは、フォルダ ツリーに家のアイコンで表示されます。フォルダが選択されていない場合、またはフォルダ機能が無効になっている場合、新しいコンテンツは自動的にホーム フォルダに保存されます。
 
 {tip}
-If a new Folder is created, ensure that the correct View/Edit/Delete Share options are applied from the [Folders](tour_folders.html#content-folder-management) page!
+グループ管理者にユーザーのホーム フォルダの設定を義務付ける場合は、適切な [機能](/manual/en/users_features_and_sharing.html) が有効になっていることを確認してください。
 {/tip}
 
-Users with a Home Folder assigned will have full access to their own Media, Layouts, Schedules etc, and access to all other Folder contents as per the Share options set for their Home Folder.
+#### ユーザーにホーム フォルダを割り当てる (管理者 / グループ管理者)
+
+既存のユーザーの場合:
+
+- メイン CMS メニューの [**管理**] セクションの [**ユーザー**] に移動します。
+- ユーザーの行メニューを使用して [**編集**] を選択します。
+- [**ホーム フォルダ**] タブをクリックします:
+
+![ホーム フォルダ](img/v4_tour_folders_default_folder.png)
+
+- 使用するフォルダを選択するか、ルート フォルダを右クリックして新しいフォルダを作成します。
 
 {tip}
-Users can have a Home Folder assigned and Folders disabled as a [Feature](/manual/en/users_features_and_sharing.html), Users would then automatically save to their default Home Folder location without the need to view or interact with Folders in the CMS.
+新しいフォルダを作成する場合は、[フォルダ](tour_folders.html#content-folder-management) ページから正しい共有の表示/編集/削除オプションが適用されていることを確認してください。
 {/tip}
 
-### Force Saving to a Folder
-
-Super Admins can prevent Users from saving into the Root Folder which forces them to select a Folder before saving.
-First disable the use of the Root Folder as a default:
-
-- Navigate to **Settings** under the **Administration** section of the main CMS menu.
-- Click on the **Sharing** tab:
-
-![Disable Root Folder](img/v4_tour_folders_disable_root.png)
-
-- Untick **Allow saving in the root folder** option.
-- Click the **Save** button at the bottom.
-
-### Sharing Options
-
-For Users to see other Users content, it must be shared with them (Direct Sharing - individual items must be shared). Users can also see other Users content if the Folder has been shared with them (Folder Sharing - multiple items inherit the shared options).
-
-Each folder can have [Share options](users_features_and_sharing.html#content-set-share-options-on-objects) set for Users/User Groups by clicking on **Share** from the menu.
+ホーム フォルダが割り当てられたユーザーは、自分のメディア、レイアウト、スケジュールなどに完全にアクセスでき、ホーム フォルダに設定された共有オプションに従って他のすべてのフォルダ コンテンツにアクセスできます。
 
 {tip}
-**Share** options for folders can only be set by Super Administrator users!
+ユーザーにホーム フォルダを割り当て、フォルダを [機能](/manual/en/users_features_and_sharing.html) として無効にすることができます。その場合、ユーザーは CMS でフォルダを表示したり操作したりしなくても、デフォルトのホーム フォルダの場所に自動的に保存します。
 {/tip}
 
-- Select from the list of Users and User Groups (User Groups are shown in **bold**) and assign **View**, **Edit** and **Delete** options as required for the selected folder.
+### フォルダへの強制保存
 
+スーパー管理者は、ユーザーがルート フォルダに保存できないようにして、保存前にフォルダを選択するように強制できます。
+まず、ルート フォルダをデフォルトで使用しないようにします。
 
-![Folder Share Options](img/v4_tour_folders_share.png)
+- メイン CMS メニューの [**管理**] セクションの [**設定**] に移動します。
+- [**共有**] タブをクリックします。
 
-Once Share options have been set for a folder, all objects contained or moved to that folder will inherit the View, Edit, Delete options that  have been enabled for Users/User Groups.
+![ルート フォルダを無効にする](img/v4_tour_folders_disable_root.png)
 
-{tip} 
-New Users can have **Folders** assigned from the start by following the onboarding wizard to [Add Users](users_administration.html#content-onboarding-wizard)!
-{/tip}
+- [**ルート フォルダへの保存を許可する**] オプションのチェックを外します。
+- 下部の [**保存**] ボタンをクリックします。
 
-**Please Note:** Sub-Folders added to a Main Folder will inherit any applied Share options from the Main Folder. When viewing Sub-Folders only the directly assigned Share options will be shown, inherited options are not shown.
+### 共有オプション
 
-![Sub-Folder Share Options](img/v4_tour_folders_sub_folder_sharing.png)
+ユーザーが他のユーザーのコンテンツを表示するには、そのコンテンツが共有されている必要があります (直接共有 - 個々のアイテムを共有する必要があります)。また、フォルダーが共有されている場合は、他のユーザーのコンテンツも表示できます (フォルダー共有 - 複数のアイテムが共有オプションを継承します)。
 
-As shown above:
-
-- The Main Folder is shared with `Auser`.
-- Sub 1 will inherit from the Main Folder so is also shared with `Auser`.
-- `Not Shared` is shown as Sub 1 has no directly applied Share options.
-
-### Folder Menu Options
-Control the required access of the Folder Menu for other Users/User Groups using [Features and Share](users_features_and_sharing.html) options:
-
-![Feature Options](img/v4_tour_folders_feature_options.png)
-
-**For Users that need access to Create on the Folders menu:**
-
-1. Enable **Allow users to create Sub-Folders....** from the Content tab of the Folders Feature set.
-1. Enable **View** from the **Share options** for the parent folders(s) that can have sub-folders created under them by the User/User Group. 
+各フォルダーでは、メニューから [**共有**] をクリックすることで、ユーザー/ユーザー グループに対して [共有オプション](users_features_and_sharing.html#content-set-share-options-on-objects) を設定できます。
 
 {tip}
-Only Super-Admin users can create Folders under the Root Folder!
+フォルダの**共有**オプションは、スーパー管理者ユーザーのみが設定できます。
+
 {/tip}
 
- **For Users that need access to Rename on the Folders menu:**
-1. Enable **Rename and Delete existing folders** from the Content tab on the Folders Feature set.
-2. Enable **Edit** from the **Share options** for the folder(s) that can be renamed by the User/User Group.
+- ユーザーとユーザー グループの一覧から選択し (ユーザー グループは**太字**で表示されます)、選択したフォルダに必要な**表示**、**編集**、**削除**オプションを割り当てます。
 
-**For Users that need access to Delete on the Folders menu:**
-1. Enable **Rename and Delete existing Folders** from the Content tab on the Folders Feature set.
-2. Enable **Delete** from the **Share options** for the folder(s) that can be removed by the User/User Group.
+![フォルダ共有オプション](img/v4_tour_folders_share.png)
+
+フォルダの共有オプションが設定されると、そのフォルダに含まれるか、そのフォルダに移動されたすべてのオブジェクトは、ユーザー/ユーザー グループに対して有効になっている表示、編集、削除オプションを継承します。
+
+{tip}
+新規ユーザーは、オンボーディング ウィザードに従って [ユーザーの追加](users_administration.html#content-onboarding-wizard) を行うことで、最初から**フォルダ**を割り当てることができます。
+
+{/tip}
+
+**注意:** メイン フォルダに追加されたサブフォルダは、メイン フォルダから適用された共有オプションを継承します。サブフォルダを表示すると、直接割り当てられた共有オプションのみが表示され、継承されたオプションは表示されません。
+
+![サブフォルダの共有オプション](img/v4_tour_folders_sub_folder_sharing.png)
+
+上記のように:
+
+- メインフォルダは `Auser` と共有されます。
+- サブ 1 はメインフォルダから継承されるため、`Auser` とも共有されます。
+- サブ 1 には直接適用された共有オプションがないため、`Not Shared` が表示されます。
+
+### フォルダ メニュー オプション
+[機能と共有](users_features_and_sharing.html) オプションを使用して、他のユーザー/ユーザー グループに必要なフォルダ メニューのアクセスを制御します。
+
+![機能オプション](img/v4_tour_folders_feature_options.png)
+
+**フォルダ メニューで作成にアクセスする必要があるユーザーの場合:**
+
+1. フォルダ機能セットのコンテンツ タブから、**ユーザーにサブフォルダの作成を許可する...** を有効にします。
+
+1. ユーザー/ユーザー グループによってサブフォルダを作成できる親フォルダの **共有オプション** から **表示** を有効にします。
+
+{tip}
+ルート フォルダの下にフォルダを作成できるのは、スーパー管理者ユーザーのみです。
+
+{/tip}
+
+**フォルダ メニューで名前の変更にアクセスする必要があるユーザーの場合:**
+
+1. フォルダ機能セットのコンテンツ タブから、**既存のフォルダの名前の変更と削除** を有効にします。
+2. ユーザー/ユーザー グループが名前を変更できるフォルダーの **共有オプション** から **編集** を有効にします。
+
+**フォルダー メニューの削除にアクセスする必要があるユーザーの場合:**
+1. フォルダー機能セットのコンテンツ タブから **既存のフォルダーの名前変更と削除** を有効にします。
+2. ユーザー/ユーザー グループが削除できるフォルダーの **共有オプション** から **削除** を有効にします。

@@ -1,61 +1,65 @@
 ---
-toc: "scheduling"
+toc: "スケジュール"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Create your own Day Parts to simplify scheduling"
-keywords: "exceptions, display operating hours, pre-defined"
-persona: "schedule manager"
+抜粋: "スケジュールを簡素化するために独自の Day Parts を作成する"
+キーワード: "例外、営業時間の表示、事前定義"
+ペルソナ: "スケジュール マネージャー"
 ---
 
 # Dayparting
 
 {tip}
-In broadcast programming, dayparting is the practice of dividing the broadcast day into several parts, in which a different type of radio or television program apropos for that time period is aired.
+放送番組では、Dayparting とは放送日をいくつかの部分に分割し、その時間帯に適した異なる種類のラジオ番組やテレビ番組を放送する手法です。
 -- Wikipedia
 {/tip}
 
-[[PRODUCTNAME]] supports the creation of multiple Dayparts, which can include day of the week exceptions. This means that a single day can be split into as many **pre-defined** parts as necessary.
+[[PRODUCTNAME]] は、曜日の例外を含めることができる複数の Dayparts の作成をサポートしています。つまり、1 日を必要な数の **事前定義** 部分に分割できます。
 {tip}
-A typical use case would be a hospitality User who has different content to display for Breakfast, Lunch and Dinner. Dayparting allows that User to create a Breakfast, Lunch and Dinner daypart, each of which starts and ends on a different day for selection to simplify day to day scheduling.
-{/tip}
+典型的な使用例は、朝食、昼食、夕食に異なるコンテンツを表示するホスピタリティ ユーザーです。デイパート機能を使用すると、ユーザーは朝食、昼食、夕食のデイパートを作成できます。各デイパートの開始日と終了日はそれぞれ異なるため、選択して日々のスケジュールを簡素化できます。
+
+tip}
 
 {version}
-**Dayparts** can also be created to set a [Displays Operating Hours](displays_settings.html#content-operating-hours).
+**デイパート** を作成して、[ディスプレイの営業時間](displays_settings.html#content-operating-hours) を設定することもできます。
+
 {/version}
 
-## Add Daypart
+## デイパートの追加
 
-Dayparts are created and administered from **Dayparting** on the main CMS menu.
+デイパートは、メインの CMS メニューの **デイパート** から作成および管理されます。
 
-- Select the **Add Daypart** button.
-- Complete the form fields to configure.
+- **デイパートの追加** ボタンを選択します。
+
+- フォームのフィールドに入力して構成します。
 
 {tip}
-Include **Exceptions** to define different start and end timings for selected days!
+**例外** を追加して、選択した日に異なる開始時間と終了時間を定義します。
+
 {/tip}
 
-On Saving, the Daypart will be available for selection in the **Dayparting** drop down menu of the schedule form when adding an [Event](scheduling_events.html).
+保存すると、[イベント](scheduling_events.html) を追加するときに、スケジュール フォームの **デイパート** ドロップダウン メニューでデイパートを選択できるようになります。
 
 {tip}
-The below Daypart form shows an example Breakfast Daypart:
+以下のデイパート フォームは、朝食のデイパートの例を示しています:
 
-![Exanple Breakfast Daypart](img/v4_scheduling_daypart_form.png)
+![朝食のデイパートの例](img/v4_scheduling_daypart_form.png)
 
-Saturday and Sunday have been configured as exceptions so that breakfast starts and ends at different times on those days:
+土曜日と日曜日は例外として設定されており、これらの日は朝食の開始時間と終了時間が異なります:
 
-![Daypart form exceptions tab](img/v4_scheduling_daypart_form_exceptions.png)
+![デイパート フォームの例外タブ](img/v4_scheduling_daypart_form_exceptions.png)
 
-On Scheduling, the **Breakfast** Daypart will appear in the drop-down for selection. On selecting, the from/to date time selectors will change to date only selectors and the time will be taken from the Daypart configuration - according to the day of the week the Event occurs on.
+スケジュール設定時に、**朝食** デイパートがドロップダウンに表示され、選択できます。選択すると、開始/終了日付の時間セレクターが日付のみのセレクターに変わり、イベントが発生する曜日に応じて、デイパート設定から時間が取得されます。
 {/tip}
 
-## Edit Dayparts
+## デイパートの編集
 
-Make edits to existing Dayparts using the row menu.
+行メニューを使用して、既存のデイパートを編集します。
 
 {tip}
-Add Sharing options for Dayparts to [Share](users_features_and_sharing.html#content-share) with other Users/User Groups!
+他のユーザー/ユーザー グループと [共有](users_features_and_sharing.html#content-share) するために、デイパートの共有オプションを追加します。
 
-Updating the start/end times or exceptions for a Daypart will cause existing future events to be updated with the newly defined times.
+デイパートの開始/終了時間または例外を更新すると、既存の将来のイベントが新しく定義された時間で更新されます。
 
-Existing [recurring Schedules](scheduling_events.html#content-repeats), set to recur beyond the current time, will have new Schedules created to reflect the updated information.
+現在の時間を超えて繰り返し実行されるように設定されている既存の [定期的なスケジュール](scheduling_events.html#content-repeats) には、更新された情報を反映する新しいスケジュールが作成されます。
 {/tip}

@@ -1,35 +1,31 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Display input from an external source on System on Chip Displays"
-persona: "content manager"
+抜粋: "システム オン チップ ディスプレイに外部ソースからの入力を表示する"
+persona: "コンテンツ マネージャー"
 ---
 
-# Video In
+# ビデオ入力
 
-Use to Display input from an external source on SoC Displays.
+SoC ディスプレイに外部ソースからの入力を表示する場合に使用します。
 
-{feat}Video In|v4{/feat}
-
-{version}
-**NOTE:** This Widget is compatible for use with webOS and Tizen Players as well as Philips System on Chip Players running Android 8 only.
-{/version} 
-
-### Overview
-
-- Select from multiple device inputs.
-  - HDMI (support for HDMI 1 only)
-  - RGB
-  - DVI
-  - DP
-  - OPS
-- Expand over the top of existing content to show video full screen.
+{feat}ビデオ入力|v4{/feat}
 
 {version}
-**NOTE:** Transitions are not supported for the Tizen Player when using this Widget.
+**注:** このウィジェットは、webOS および Tizen プレーヤー、および Android 8 のみを実行する Philips システム オン チップ プレーヤーで使用できます。
 {/version}
 
+### 概要
 
+- 複数のデバイス入力から選択します。
+- HDMI (HDMI 1 のみをサポート)
+- RGB
+- DVI
+- DP
+- OPS
+- 既存のコンテンツの上に展開して、ビデオを全画面で表示します。
 
-
+{version}
+**注:** このウィジェットを使用する場合、Tizen プレーヤーではトランジションはサポートされません。
+{/version}
 

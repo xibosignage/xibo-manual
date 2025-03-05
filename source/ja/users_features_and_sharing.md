@@ -1,123 +1,122 @@
 ---
-toc: "users"
+toc: "ユーザー"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Features and Sharing control User access and interaction within the CMS"
-keywords: "system objects, user objects, permissions, user access"
-persona: "administrator, user"
+抜粋: "機能と共有は、CMS 内でのユーザー アクセスとインタラクションを制御します"
+キーワード: "システム オブジェクト、ユーザー オブジェクト、権限、ユーザー アクセス"
+ペルソナ: "管理者、ユーザー"
 ---
 
-# Features and Sharing
+# 機能と共有
 
-Access to the CMS for all system objects and User objects is controlled for Users/User Groups using two concepts:
+すべてのシステム オブジェクトとユーザー オブジェクトの CMS へのアクセスは、次の 2 つの概念を使用してユーザー/ユーザー グループに対して制御されます:
 
-- **Features** - control what a User can see and do within the CMS (system objects)
-- **Share** - controls View, Edit and Delete options for user objects such as; Folders, Media, Layouts, Displays/Display Groups. (User objects)
+- **機能** - CMS 内でユーザーが表示および実行できる内容を制御します (システム オブジェクト)
+- **共有** - フォルダー、メディア、レイアウト、ディスプレイ/ディスプレイ グループなどのユーザー オブジェクトの表示、編集、および削除オプションを制御します (ユーザー オブジェクト)
 
-When used in conjunction with each other, these concepts ensure that only the relevant parts of the CMS are visible to Users/User Groups with the appropriate level of user interaction applied.
+これらの概念を組み合わせて使用すると、適切なレベルのユーザー インタラクションが適用され、CMS の関連部分のみがユーザー/ユーザー グループに表示されるようになります。
 
-## Features
+## 機能
 
-Features are used to set the required access within the CMS for Users by restricting pages and page functionality (controlling what a User can see and do in the CMS).
-
-{tip}
-**We recommend** utilising User Groups in order to set the required Feature access for multiple Users within the CMS and then adding Users to this group who will then inherit enabled Features for an easier and safer work flow with less room for error.
-
-If you need to give further access to specific Users within User Groups, assign these directly to the User.
-{/tip}
-
-- Features are configured from the row menu for [Users](users_administration.html) or [User Groups](users_groups.html):
-
-![Row Menu](img/v4_users_features_row_menu.png)
-
-Features have been grouped into logical tabs to make it easier to control the appropriate areas of access:
-
-![Features Form User Group](img/v4_user_features_form.png)
-
-An **Inherited** column is shown when viewing **Users** to indicate if a Feature has been inherited from an existing **User Group** membership.
-
-A `-` shown in a column for a Feature tells you that that only selected Features within that Feature Set have been enabled. Expand a Feature using the arrow to see all available Features within the set:
-
-![Feature Set](img/v4_users_feature_set.png)
-
-A tick tells you that all the Features within that set have been enabled.
-
-- Click in the Enabled column to turn on the required Features for the User/User Group.
-
-![Enable Features](img/v4_users_enable_features.png)
+機能は、ページとページ機能を制限して (ユーザーが CMS で表示および実行できる内容を制御して)、CMS 内でユーザーに必要なアクセスを設定するために使用されます。
 
 {tip}
-Make it easier to onboard new Users by using the predefined [User Groups](users_groups.html) which already contain the appropriate Feature access for the type of User. 
-{/tip}
+**推奨** : CMS 内の複数のユーザーに必要な機能アクセスを設定するには、ユーザー グループを利用し、その後、このグループにユーザーを追加して、有効な機能を継承することで、エラーが少なく、より簡単で安全なワークフローを実現します。
 
-## Share
+ユーザー グループ内の特定のユーザーにさらにアクセスを許可する必要がある場合は、これらをユーザーに直接割り当てます。
+ヒント}
 
-Share options are used to set View/Edit/Delete options for User objects within the CMS for Users (controlling the level of interaction for an item, such as a Layout or Media file, for a User).
+- 機能は、[ユーザー](users_administration.html) または [ユーザー グループ](users_groups.html) の行メニューから構成されます:
 
-### Set Share options on Folders (Recommended)
+![行メニュー](img/v4_users_features_row_menu.png)
 
-The easiest and quickest route is to create and use [Folders](tour_folders.html) to set the necessary access rights directly to the Folder which means you do not have to set multiple options for multiple items individually.  All objects that are contained or later moved into the Folder will automatically inherit the View/Edit/Delete options set for Users/User Groups.
+機能は論理タブにグループ化されており、適切なアクセス領域を簡単に制御できます:
 
-- Create a [Folder](tour_folders.html#content-creating-folders)
-- Set **Share** access for Users to apply to all objects contained within the Folder.
+![ユーザー グループ フォームの機能](img/v4_user_features_form.png)
 
-- Move/Save objects into the Folder which Users need to access by using the row menu for selected items and click **Select Folder** or select the Folder when creating/uploading an item.
+**ユーザー** を表示すると、機能が既存の **ユーザー グループ** メンバーシップから継承されているかどうかを示す **継承済み** 列が表示されます。
+
+機能の列に表示される `-` は、その機能セット内の選択された機能のみが有効になっていることを示します。矢印を使用して機能を展開すると、セット内で利用可能なすべての機能が表示されます。
+
+![機能セット](img/v4_users_feature_set.png)
+
+チェックマークは、そのセット内のすべての機能が有効になっていることを示します。
+
+- ユーザー/ユーザー グループに必要な機能をオンにするには、[有効] 列をクリックします。
+
+![機能を有効にする](img/v4_users_enable_features.png)
 
 {tip}
-**NOTE:** Share options for Folders can only be set by a Super Administrator.
+定義済みの [ユーザー グループ](users_groups.html) を使用すると、新しいユーザーのオンボードが容易になります。このグループには、ユーザーのタイプに適した機能アクセスがすでに含まれています。
+
 {/tip}
+
+## 共有
+
+共有オプションは、ユーザー用の CMS 内のユーザー オブジェクトの表示/編集/削除オプションを設定するために使用されます (ユーザー用のレイアウトやメディア ファイルなどのアイテムの操作レベルを制御します)。
+
+### フォルダーの共有オプションを設定する (推奨)
+
+最も簡単で迅速な方法は、[フォルダー](tour_folders.html) を作成して使用し、フォルダーに必要なアクセス権を直接設定することです。これにより、複数のアイテムに対して複数のオプションを個別に設定する必要がなくなります。フォルダーに含まれる、または後でフォルダーに移動されるすべてのオブジェクトは、ユーザー/ユーザー グループに設定された表示/編集/削除オプションを自動的に継承します。
+
+- [フォルダー](tour_folders.html#content-creating-folders) を作成します
+- フォルダーに含まれるすべてのオブジェクトに適用するユーザーの **共有** アクセスを設定します。
+
+- 選択したアイテムの行メニューを使用してユーザーがアクセスする必要があるオブジェクトをフォルダーに移動/保存し、**フォルダーの選択** をクリックするか、アイテムの作成/アップロード時にフォルダーを選択します。
+
+{tip}
+**注:** フォルダーの共有オプションは、スーパー管理者のみが設定できます。
+ヒント}
 
 {version}
-**IMPORTANT:** All elements of an item that need to be shared should also be moved to the Folder, this includes moving Media files contained on Layouts, and Layouts within Campaigns, as an example,  if Users need access to those to!
-{/version}
-
-### Set Share options on objects
-
-Access rights for a User can also be assigned directly from the object itself:
-
-- Use the row menu for the object and select **Share**.
-
-- Use the form to enable/disable **View**, **Edit** and **Delete** options for Users (User Groups are shown in bold).
-
-{version}
-**NOTE:** In order for Users to have the ability to **Share** items with other Users of the system, the User would first need the 'Allow Sharing capabilities for all User objects' Feature enabled which is within the **User functions** subset of **User** Features.
-
-![Share Feature](img/v4_users_share_option_feature.png)
+**重要:** 共有する必要があるアイテムのすべての要素もフォルダーに移動する必要があります。これには、レイアウトに含まれるメディア ファイルやキャンペーン内のレイアウトの移動も含まれます。たとえば、ユーザーがそれらにアクセスする必要がある場合は、これらの移動も対象となります。
 
 {/version}
 
-{tip}
-When logged in, a **User** will only see a list of other Users from their own User Group on clicking **Share**. A **Super Admin User** will see all Users in the system.
+### オブジェクトの共有オプションを設定する
 
-Sharing options for **Widgets** are assigned using the [context menu](layouts_editor.html#content-context-menu) in the Layout Editor!
+ユーザーのアクセス権は、オブジェクト自体から直接割り当てることもできます。
+
+- オブジェクトの行メニューを使用して、[共有] を選択します。
+
+- フォームを使用して、ユーザーの [表示]、[編集]、[削除] オプションを有効/無効にします (ユーザー グループは太字で表示されます)。
+
+{version}
+**注:** ユーザーがシステムの他のユーザーとアイテムを **共有** できるようにするには、まず、**ユーザー** 機能の **ユーザー機能** サブセット内にある [すべてのユーザー オブジェクトの共有機能を許可する] 機能を有効にする必要があります。
+
+![共有機能](img/v4_users_share_option_feature.png)
+
+{/version}
+
+{tip}
+ログインすると、**ユーザー** は [共有] をクリックすると、自分のユーザー グループの他のユーザーのリストのみが表示されます。**スーパー管理者ユーザー** は、システム内のすべてのユーザーを表示します。
+
+**ウィジェット** の共有オプションは、レイアウト エディターの [コンテキスト メニュー](layouts_editor.html#content-context-menu) を使用して割り当てられます。
 
 {/tip}
 
-### Scenario:
+### シナリオ:
 
-All members of a User Group need to edit DataSet data with only one specific User able to **Delete** the data:
+ユーザー グループのすべてのメンバーがデータセット データを編集する必要があり、特定の 1 人のユーザーのみがデータを **削除** できます。
 
-- Use the row menu for the User Group and select **Features**.
-- From the **Content** tab expand the **Library** Feature set.
-- Enable the checkbox for  'Allow edits including deletion to all data contained within a DataSet independently to Layouts'.
-- Move the DataSets to a **Folder** which has been shared with the User Group (View and Edit options enabled so the DataSets will inherit those options) or use the row menu for each DataSet and select Share to enable View and Edit options for the User Group.
-- Tick **Delete** for the **User** (View and Edit are already enabled for the Group so do not need to be ticked for the User).
+- ユーザー グループの行メニューを使用して、[機能] を選択します。
+- [コンテンツ] タブから、[ライブラリ] 機能セットを展開します。
 
-{tip}
-The highest editing level will always be used for Users. If a User belongs to two groups where one group has Delete enabled for an object and the other does not, the User will have Delete access for the object.
-{/tip}
-
-Modifications made to items are available in 'real time' which means that the next time a User interacts with the object the newly set options will be applied.
+- 「レイアウトとは別に、データセットに含まれるすべてのデータに対する編集（削除を含む）を許可する」チェックボックスをオンにします。
+- データセットをユーザー グループと共有されている**フォルダー**に移動します（表示および編集オプションが有効になっているため、データセットはそれらのオプションを継承します）。または、各データセットの行メニューを使用して共有を選択し、ユーザー グループの表示および編集オプションを有効にします。
+- **ユーザー** の**削除** にチェックを入れます（表示および編集はグループに対してすでに有効になっているため、ユーザーに対してチェックする必要はありません）。
 
 {tip}
-Use **With Selected** at the bottom of [Grids](tour_cms_navigation#content-grids) to perform bulk actions with Sharing.
-
-**Share** options on a **User Object** can be changed by the owner, Group Admin or a Super Administrator.
-
-**Share** options for **Displays** and **Display Groups**, that have no owner, can only be changed by a Super Administrator.
+ユーザーには常に最高の編集レベルが使用されます。ユーザーが 2 つのグループに属していて、一方のグループではオブジェクトに対して削除が有効になっていて、もう一方のグループでは有効になっていない場合、ユーザーはオブジェクトに対して削除アクセス権を持ちます。
 {/tip}
 
+アイテムに加えられた変更は「リアルタイム」で利用可能になります。つまり、ユーザーが次にオブジェクトを操作するときに、新しく設定されたオプションが適用されます。
 
+{tip}
+[グリッド](tour_cms_navigation#content-grids) の下部にある [選択済み] を使用して、共有に関する一括操作を実行します。
 
+**ユーザー オブジェクト** の [共有] オプションは、所有者、グループ管理者、またはスーパー管理者が変更できます。
 
+所有者がいない **ディスプレイ** および **ディスプレイ グループ** の [共有] オプションは、スーパー管理者のみが変更できます。
+{/tip}
 

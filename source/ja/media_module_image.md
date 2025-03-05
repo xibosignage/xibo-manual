@@ -1,50 +1,45 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Add Image files to include on Layouts and Playlists"
-persona: "content manager"
+抜粋: "レイアウトとプレイリストに含める画像ファイルの追加"
+persona: "コンテンツ マネージャー"
 ---
 
-# Image
+# 画像
 
-Add Image files to include on your Layouts and Playlists from the [Library Search](layouts_editor.html#content-library-search).
+[ライブラリ検索](layouts_editor.html#content-library-search) から、レイアウトとプレイリストに含める画像ファイルを追加します。
 
-{feat}Image|v4{/feat}
+{feat}画像|v4{/feat}
 
-## Overview
+## 概要
 
-- Valid extensions:  jpg,jpeg,png,bmp,gif,webp.
-
-{tip}
-Animated gif’s are not supported on any Player!
-{/tip}
-
--  [Upload](media_library.html#content-add-media-upload) new image files directly to Playlists/Layouts from the [Library Search](layouts_editor.html#content-library-search).
-- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- Image files can be also be uploaded in advance to the Library.
+- 有効な拡張子: jpg、jpeg、png、bmp、gif、webp。
 
 {tip}
-When selecting image files to upload, users should check the resolution of the image and keep it within the intended screen size. Caution should be taken as uploading very large images can cause issues for the Player.
+アニメーション gif はどのプレーヤーでもサポートされていません。
+
 {/tip}
 
-- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for image files uploaded directly to a Playlist.
+- [ライブラリ検索](layouts_editor.html#content-library-search) から、新しい画像ファイルを直接プレイリスト/レイアウトに [アップロード](media_library.html#content-add-media-upload) します。
+- プレイリストやレイアウトに直接アップロードされたファイルは、再利用できるように [ライブラリ](media_library.html) に自動的に保存されます。
+- 画像ファイルを事前にライブラリにアップロードすることもできます。
 
-- Save image files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
+{tip}
+アップロードする画像ファイルを選択する際、ユーザーは画像の解像度を確認し、意図した画面サイズ内に収める必要があります。非常に大きな画像をアップロードすると、プレーヤーに問題が発生する可能性があるため、注意してください。
+{/tip}
 
-- Centre, Stretch and Fit scaling.
+- プレイリストに直接アップロードされた画像ファイルの [開始時間と終了時間](media_playlists.html#content-widget-expiry-dates) を設定します。
 
-- Select images to use from Pixabay without leaving the CMS.
+- アップロード時に画像ファイルを [フォルダ](tour_folders.html#content-saving-to-folders) に保存して、ユーザーのアクセスを簡単に制御します。
 
-  
+- 中央揃え、ストレッチ、フィットのスケーリング。
 
+- CMS を離れることなく、Pixabay から使用する画像を選択します。
 
+![画像](img/v4_media_module_image.png)
 
-![Image](img/v4_media_module_image.png)
+**[[PRODUCTNAME]] では、ディスプレイに表示されるコンテンツを制御する手段を講じていないため、権利を所有していない場合は、使用する画像に適切な帰属表示を行う責任はお客様にあります。**
 
+#### 次へ...
 
-
-**As [[PRODUCTNAME]] takes no measures to control what content is put on your displays, it is your responsibility to ensure that any images used are appropriately attributed if you do not own the rights.**
-
-#### Next...
-
-[Resizing Images](tour_cms_settings#content-resizing-images)
+[画像のサイズ変更](tour_cms_settings#content-resizing-images)

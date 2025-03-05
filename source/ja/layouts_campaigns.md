@@ -1,94 +1,94 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Create a Layout List Campaign to ensure the play order of Layouts"
-keywords: "Layout list, group of Layouts, cycle based playback, round robin, block"
-persona: "content creator, super administrator, user, schedule manager"
+抜粋: "レイアウトの再生順序を保証するレイアウト リスト キャンペーンを作成する"
+キーワード: "レイアウト リスト、レイアウトのグループ、サイクル ベースの再生、ラウンドロビン、ブロック"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー、スケジュール マネージャー"
 ---
 
-# Campaigns
+# キャンペーン
 
-[[PRODUCTNAME]] has two  **Campaign** types:
+[[PRODUCTNAME]] には 2 つの **キャンペーン** タイプがあります:
 
-- [Layout List](layouts_campaigns.html#content-create-a-layout-list) - a collection of Layouts in an ordered list.
-- [Ad Campaign](layouts_ad_campaigns.html) - allows for the creation of advertising campaigns ([Feature](users_features_and_sharing.html#content-features) enabled).
+- [レイアウト リスト](layouts_campaigns.html#content-create-a-layout-list) - 順序付きリスト内のレイアウトのコレクション。
+- [広告キャンペーン](layouts_ad_campaigns.html) - 広告キャンペーンを作成できます ([機能](users_features_and_sharing.html#content-features) が有効)。
 
-## Create a Layout List
+## レイアウト リストを作成する
 
-A **Layout List Campaign** allows a User to set the playback of a group of Layouts in a defined order. 
+**レイアウト リスト キャンペーン** を使用すると、ユーザーは、定義された順序でレイアウトのグループの再生を設定できます。
 
-{nonwhite}{video}rMuYujq_LV8{/video}{/nonwhite}
-
-{tip}
-If you think of a Layout as a single slide in a presentation deck, a Campaign is the entire presentation!
-{/tip}
-
-Click on **Campaigns** under the **Design** section of the main CMS menu:
-
-![Campaigns](img/v4_layouts_campaigns_grid.png)
-
-- Click the **Add Campaign** button at the top of the grid.
-
-- Select **Layout List** from the drop down and complete the form fields:
-
-
-![Add Layout List Campaign](img/v4_layouts_campaign_add_layout_list.png)
-
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Campaigns saved to a Folder will inherit the access options applied to that Folder. 
+{nonwhite}{video}rMuYujq_LV8{/video}{nonwhite}
 
 {tip}
-If users should also have access to the Layouts/Layout content, ensure that this is also saved to the same Folder!
+レイアウトをプレゼンテーション デッキの 1 つのスライドと考えると、キャンペーンはプレゼンテーション全体です。
+
 {/tip}
 
-- Give your Campaign a **Name** for easy identification in the CMS including optional [Tags](tour_tags.html).
+メイン CMS メニューの [**デザイン**] セクションの [**キャンペーン**] をクリックします。
+
+![キャンペーン](img/v4_layouts_campaigns_grid.png)
+
+- グリッドの上部にある [**キャンペーンの追加**] ボタンをクリックします。
+
+- ドロップダウンから**レイアウト リスト**を選択し、フォーム フィールドに入力します:
+
+![レイアウト リスト キャンペーンの追加](img/v4_layouts_campaign_add_layout_list.png)
+
+[フォルダー](tour_folders.html)は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に[共有](users_features_and_sharing.html#content-share)するために使用されます。フォルダーに保存されたキャンペーンは、そのフォルダーに適用されたアクセス オプションを継承します。
 
 {tip}
-Tags and Folders can also be assigned to multiple Campaigns using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Campaign grid!
+ユーザーがレイアウト/レイアウト コンテンツにもアクセスできるようにする場合は、これも同じフォルダーに保存してください。
+
 {/tip}
 
-### Cycle Based Playback
-
-When a **Campaign** is scheduled with **Cycle Based Playback** enabled, 1 Layout will be shown for a set Play Count. The same Layout will be shown each Schedule loop until the Play Count has been achieved.
-
-{feat}Campaign Cycle Playback|v4{/feat}
-
-Once enabled, provide a **Play Count** to determine how many 'plays' a Layout should have before moving onto the next Layout in the Campaign.
-
-### List Play Order
-
-For Campaigns that do not have Cycle Based Playback enabled, **List Play Order** options can be used to determine how Layouts assigned to the Campaign will play when scheduled at the same time as another Campaign with the same Display Order:
-
-**Round Robin** - Layouts from each Campaign will play interleaved.
-
-**Block** - Layouts will play in their entirety from a Campaign before moving onto the next Campaign.
-
-## Add Layouts to a Campaign
-
-On **Saving**, the form will re-open with additional tabs.
-
-Use the **Layouts** tab to select which Layouts to add:
-
-![Assign Layouts](img/v4_campaigns_assign_layouts.png)
-
-- Using the `+` icon to select which **Layouts** to add.
-
-- Selected Layouts will be added to the 'staging area' at the top of the form.
-- Layouts can be **re-ordered** from here by drag and drop.
-- Remove a Layout by clicking the  `-` icon.
-- Click **Save** to keep changes.
+- CMS で簡単に識別できるように、キャンペーンに**名前**を付けます。オプションの[タグ](tour_tags.html)も含めます。
 
 {tip}
-The Reference tab can be used to provide reference information for the selected Campaign. Once added, this information can be viewed in the Campaign grid and via the API.
-{/tip}
+タグとフォルダは、キャンペーン グリッドの下部にある [選択済み](tour_cms_navigation.html#content-multi-select---with-selected) オプションを使用して、複数のキャンペーンに割り当てることもできます。
 
-Use the row menu from the Campaign grid to easily make copies of a Campaign as well as enable [Share](users_features_and_sharing.html#content-share) options for selected Users/User Groups.
+tip}
+
+### サイクル ベースの再生
+
+**サイクル ベースの再生** を有効にして **キャンペーン** をスケジュールすると、設定された再生回数に対して 1 つのレイアウトが表示されます。再生回数が達成されるまで、スケジュール ループごとに同じレイアウトが表示されます。
+
+{feat}キャンペーン サイクル再生|v4{/feat}
+
+有効にしたら、**再生回数** を指定して、キャンペーン内の次のレイアウトに移動する前にレイアウトを何回「再生」するかを決定します。
+
+### リスト再生順序
+
+サイクル ベース再生が有効になっていないキャンペーンの場合、**リスト再生順序** オプションを使用して、同じ表示順序の別のキャンペーンと同時にスケジュールされたときに、キャンペーンに割り当てられたレイアウトがどのように再生されるかを指定できます。
+
+**ラウンド ロビン** - 各キャンペーンのレイアウトが交互に再生されます。
+
+**ブロック** - レイアウトは、キャンペーンから完全に再生されてから、次のキャンペーンに移動します。
+
+## キャンペーンにレイアウトを追加する
+
+**保存** すると、フォームが再度開き、追加のタブが表示されます。
+
+**レイアウト** タブを使用して、追加するレイアウトを選択します。
+
+![レイアウトの割り当て](img/v4_campaigns_assign_layouts.png)
+
+- `+` アイコンを使用して、追加する **レイアウト** を選択します。
+
+- 選択したレイアウトは、フォームの上部にある「ステージング領域」に追加されます。
+- レイアウトはここからドラッグ アンド ドロップで **並べ替え** できます。
+- レイアウトを削除するには、`-` アイコンをクリックします。
+- 変更を保存するには、**保存** をクリックします。
 
 {tip}
-Layouts can be directly assigned to Campaigns from the [Layouts](layouts.html#content-layout-grid) grid. Use the row menu for the Layout to add and click **Assign to Campaign**. Layouts will be assigned to the end of the selected Campaign by default!
+[参照] タブを使用すると、選択したキャンペーンの参照情報を提供できます。追加すると、この情報はキャンペーン グリッドと API 経由で表示できます。
+
 {/tip}
 
+キャンペーン グリッドの行メニューを使用すると、キャンペーンのコピーを簡単に作成できるほか、選択したユーザー/ユーザー グループの [共有](users_features_and_sharing.html#content-share) オプションを有効にできます。
 
+{tip}
+レイアウトは、[レイアウト](layouts.html#content-layout-grid) グリッドからキャンペーンに直接割り当てることができます。レイアウトの行メニューを使用して追加し、[**キャンペーンに割り当て**] をクリックします。レイアウトは、デフォルトで選択したキャンペーンの最後に割り当てられます。
 
-
+{/tip}
 

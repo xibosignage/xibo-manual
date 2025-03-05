@@ -1,37 +1,27 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 2
-excerpt: "Show a countdown on Layouts and Playlists"
-keywords: "countdown table, countdown simple text, countdown hours, warning date"
-persona: "media manager"
+抜粋: "レイアウトとプレイリストにカウントダウンを表示する"
+キーワード: "カウントダウン テーブル、カウントダウンのシンプルなテキスト、カウントダウン時間、警告日"
+ペルソナ: "メディア マネージャー"
 ---
 
-# Countdown
+# カウントダウン
 
-Show a countdown for a selected duration or until a specified date on Layouts and Playlists.
+レイアウトとプレイリストに、選択した期間または指定した日付までのカウントダウンを表示します。
 
 {feat}Countdown|v4{/feat}
 
-## Overview
+## 概要
 
-- Select to show a countdown in minutes and seconds.
-- Show a detailed countdown to show days, hours, minutes and seconds.
-- Countdown in a table format to show years, months, weeks, days with total hours, minutes and seconds.
-- Show a countdown in a simple text format.
-- Determine a countdown by the total duration of the Widget.
-- Set your own custom duration to countdown in seconds.
-- Specify a date and time to use.
-- Set a Warning Date to change the countdown to a 'warning mode' for the remainder of the Countdown.
+- 分と秒でカウントダウンを表示するように選択します。
+- 日、時間、分、秒を表示する詳細なカウントダウンを表示します。
+- 年、月、週、日を合計時間、分、秒とともに表示する表形式のカウントダウン。
+- シンプルなテキスト形式でカウントダウンを表示します。
+- ウィジェットの合計期間によってカウントダウンを決定します。
+- 秒単位でカウントダウンする独自のカスタム期間を設定します。
+- 使用する日付と時刻を指定します。
+- 警告日を設定すると、カウントダウンの残り期間にカウントダウンが「警告モード」に変更されます。
 
-![Countdown](img/v4_media_module_countdown.png)
-
-
-
-
-
-
-
-
-
-
+![カウントダウン](img/v4_media_module_countdown.png)
 

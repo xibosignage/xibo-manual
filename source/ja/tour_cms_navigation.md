@@ -3,215 +3,208 @@ toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
-  - "tour_grids"
-  - "tour_forms"
-excerpt: "Make a start navigating the CMS"
-keywords: "grids, forms, multi-select, column visibility, auto submit forms"
-persona: "user"
+- "tour_grids"
+- "tour_forms"
+抜粋: "CMS の操作を始めましょう"
+キーワード: "グリッド、フォーム、複数選択、列の表示、自動送信フォーム"
+ペルソナ: "user"
 ---
 
-# Navigating the CMS
+# CMS の操作
 
-All pages within the CMS are categorised into sections and accessible from the **CMS main menu** for all Users.
+CMS 内のすべてのページはセクションに分類され、すべてのユーザーが **CMS メイン メニュー** からアクセスできます。
 
-The menu will only show the sections/pages which have been [Feature](users_features_and_sharing.html) enabled for the logged in User to access.
+メニューには、ログインしたユーザーがアクセスできるように [機能](users_features_and_sharing.html) が有効になっているセクション/ページのみが表示されます。
 
-
-
-![CMS Main Menu](img/v4_tour_cms_navigation_cms_menu.png)
+![CMS メイン メニュー](img/v4_tour_cms_navigation_cms_menu.png)
 
 {tip}
-Select where this menu can be placed, vertically on the left hand side or horizontally along the top of the CMS,  from the [User Preference](tour_user_access.html#content-preferences) settings!
+[ユーザー設定](tour_user_access.html#content-preferences) 設定から、このメニューを配置する場所 (CMS の左側に垂直に配置するか、上部に水平に配置するか) を選択します。
+
 {/tip}
 
-Click on **Dashboard** to take you back to your [User Dashboard](users_dashboards.html) homepage. 
+[ユーザー ダッシュボード](users_dashboards.html) ホームページに戻るには、[ダッシュボード] をクリックします。
 
-## Grids 
+## グリッド
 
-The CMS presents many of the entities, **Layouts**, **Media** and **Displays** for example, as tabular data in **Grids**. These grids have a number of elements that combine to create a flexible administration tool that is easy to read and understand.
+CMS では、**レイアウト**、**メディア**、**ディスプレイ** などの多くのエンティティが、**グリッド** 内の表形式のデータとして表示されます。これらのグリッドには、読みやすく理解しやすい柔軟な管理ツールを作成するために組み合わせられる多数の要素があります。
 
-The following screenshot shows the **Layout Grid**  as an example, annotated with each of its elements:
+次のスクリーンショットは、**レイアウト グリッド** を例として示しており、各要素が注釈として付けられています。
 
-![Grids](img/v4_tour_cms_navigation_grids.png)
+![グリッド](img/v4_tour_cms_navigation_grids.png)
 
-- #### Action Buttons
+- #### アクション ボタン
 
+**レイアウトの追加** などの各ページの一般的なアクション ボタンは、CMS 全体から簡単にアクセスできるようにグリッドの右上にあります。
 
-Common Action buttons for each page, such as **Add Layout**, are located in the top right of grids for ease of access across the CMS.
+- #### タブ
 
-- #### Tabs
+タブには、アイテムを簡単に見つけられるようにフィルター オプションが用意されています。**詳細** タブを使用して、さらにフィルター オプションにアクセスします。
 
+![詳細タブ](img/v4_tour_cms_navigation_grids_advanced.png)
 
-Tabs provide filtering options to make finding items easier. Use the **Advanced** tab to access further filtering options:
+- #### フィルター
 
-![Advanced Tab](img/v4_tour_cms_navigation_grids_advanced.png)
-
-- #### Filters
-
-
-Use the multiple **filter** fields to restrict criteria for returned results. For example all Layouts belonging to a particular **Owner** can be the only results shown in the grid.
+複数の **フィルター** フィールドを使用して、返される結果の条件を制限します。たとえば、特定の **所有者** に属するすべてのレイアウトを、グリッドに表示される結果のみにすることができます。
 
 {tip}
-Use the checkbox to apply advanced filtering options for Names using Regex. Provide AND/OR criteria using comma separated terms!
+チェックボックスを使用して、正規表現を使用して名前の高度なフィルタリング オプションを適用します。カンマ区切りの用語を使用して AND/OR 条件を指定します。
+
 {/tip}
 
-- #### Folders
+- #### フォルダー
 
+[フォルダー](tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](users_features_and_sharing.html) するために使用されます。
 
- [Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html) User objects with other Users/User Groups.
+- フォルダー/サブフォルダーをクリックすると、選択したフォルダーの内容のみが検索され、適用されたフィルターに基づいて結果が返されます。
 
-- Click on a Folder/sub-folder to search the contents of only the selected Folder and return results based on any filters applied.
+または
 
-or
-
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied.
+- **すべてのフォルダー** にチェックマークを付けると、ルート フォルダーも検索され、適用されたフィルターに基づいて結果が返されます。
 
 {tip}
-Click the Folders menu to toggle on/off from view.  When the Folder tree is hidden from view, the file path for the selected folder will be shown!
+[フォルダー] メニューをクリックして、ビューのオン/オフを切り替えます。フォルダー ツリーがビューから非表示になっている場合は、選択したフォルダーのファイル パスが表示されます。
+
 {/tip}
 
-- #### Results 
+- #### 結果
 
-
-Returned results are shown in columns. 
+返された結果は列に表示されます。
 
 {tip}
-Most columns can be sorted by default. Where the column has an up or down arrow the **Shift** key can be used to multi-sort the column!
+ほとんどの列はデフォルトで並べ替えることができます。列に上矢印または下矢印がある場合は、**Shift** キーを使用して列を複数並べ替えることができます。
 {/tip}
 
-Use the **Column Visibility** button to see available columns. 
+**列の表示** ボタンを使用して、使用可能な列を表示します。
 
-- Select/de-select which columns should be visible in the data table:
+- データ テーブルに表示する列を選択/選択解除します:
 
+![列の表示](img/v4_tour_cms_navigation_column_visibility.png)
 
-![Column Visibility](img/v4_tour_cms_navigation_column_visibility.png)
+画面サイズに収まらないほど多くの列が選択されている場合は、追加の行が非表示になります。これらは、行の先頭にある + アイコンをクリックすると表示されます:
 
+![追加の行](img/v4_tour_cms_navigation_grids_addtional_rows.png)
 
-If too many columns have been selected to fit your screen size additional rows will be hidden. These can be viewed by clicking on the + icon at the beginning of the row:
+![表示可能な行](img/v4_tour_cms_navigation_grids_visible_rows.png)
 
-![Additional Rows](img/v4_tour_cms_navigation_grids_addtional_rows.png)
+- #### 行メニュー
 
-![Visible Rows](img/v4_tour_cms_navigation_grids_visible_rows.png)
+項目を選択し、行メニューを使用してショートカットとアクションのリストにアクセスします:
 
-- #### Row Menu
-
-
-Select an item and use the row menu to access a list of shortcuts and actions:
-
-![Row Menu](img/v4_tour_cms_navigation_grids_row_menu.png)
+![行メニュー](img/v4_tour_cms_navigation_grids_row_menu.png)
 
 {tip}
-Row menu contents for items will differ dependent on the page selected!
-{/tip}
+項目の行メニューの内容は、選択したページによって異なります!
+ヒント}
 
-### Multi-select - With Selected
+### 複数選択 - 選択済み
 
-At the bottom of selected grids a **With Selected** option is available to multi-select rows to easily perform bulk actions:
+選択したグリッドの下部にある **選択済み** オプションを使用すると、行を複数選択して一括操作を簡単に実行できます。
 
-![Multi Select](img/v4_tour_cms_navigation_multi_select.png)
+![複数選択](img/v4_tour_cms_navigation_multi_select.png)
 
-- #### Edit Tags
+- #### タグの編集
 
-  This function allows you to add new [Tags](tour_tags.html) in bulk with the option of also removing any existing Tags from multiple selections:
+この機能を使用すると、新しい [タグ](tour_tags.html) を一括で追加できます。また、複数の選択から既存のタグを削除することもできます。
 
-  ![Bulk Tags](img/v4_tour_cms_navigation_tags.png)
+![タグの一括追加](img/v4_tour_cms_navigation_tags.png)
 
-- #### Share
+- #### 共有
 
-  Use to edit multiple [Sharing](users_features_and_sharing.html) options for selected items.
+選択したアイテムの複数の [共有](users_features_and_sharing.html) オプションを編集するために使用します。
 
-  Elements that are shown with an indeterminate status `-` are the result of a difference in options already set. Any changes made here will be applied to all selected elements.
-
-  {tip}
-
-  **Example scenario**:
-
-  Two Layouts are selected which already have the following Share options applied:
-
-  Layout 1 - view 1, Edit 0, Delete 0
-
-  Layout 2 - View 1, Edit 1, Delete 0
-
-  When multi-selected it would show the following:
-
-  View 1, Edit `-`, Delete 0
-
-  A User makes changes and toggles to:
-
-  View 0, Edit `-`, Delete 1 (leaving Edit in its current status)
-
-  The two Layouts would now have the following Share options set:
-
-  Layout 1 - View 0, Edit 0, Delete 0
-
-  Layout 2 - View 0, Edit 1, Delete 1
-
-  {/tip}
+不確定ステータス `-` で表示される要素は、すでに設定されているオプションの違いの結果です。ここで行った変更は、選択したすべての要素に適用されます。
 
 {tip}
-Available multi-select options are dependent on the page selected!
+
+**シナリオ例**:
+
+2 つのレイアウトが選択されており、すでに次の共有オプションが適用されています:
+
+レイアウト 1 - 表示 1、編集 0、削除 0
+
+レイアウト 2 - 表示 1、編集 1、削除 0
+
+複数選択すると、次のように表示されます:
+
+表示 1、編集 `-`、削除 0
+
+ユーザーが変更を加えて切り替えます:
+
+表示 0、編集 `-`、削除 1 (編集は現在の状態のまま)
+
+2 つのレイアウトに次の共有オプションが設定されます:
+
+レイアウト 1 - 表示 0、編集 0、削除 0
+
+レイアウト 2 - 表示 0、編集 1、削除 1
+
 {/tip}
-
-## Forms
-
-The CMS presents most transactions (actions that **add**/**edit** or **delete** in some way) using **Forms**.
-
-The screenshot below gives an example of a how a form may look using the **Edit Layout** form:
-
-![Add Layout Form](img/v4_tour_cms_navigation_forms.png)
-
-- #### Tabs
-
-
-Forms may only have one or could have multiple tabs which provide further details and options to Users. 
-
-#### Folders
-
- [Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html) User objects with other Users/User Groups.
-
-Click on **Select Folder** and select/create the destination folder to save the item into.
 
 {tip}
-Right click a Folder/sub-folder to view further options in the **Folder Menu**.
+使用可能な複数選択オプションは、選択したページによって異なります!
+ヒント}
 
-Items that are saved in Folders will inherit the View, Edit, Delete **Share** options that have been applied to the destination Folder for User/User Group access!
-{/tip}
+## フォーム
 
-#### Form Fields
+CMS は、ほとんどのトランザクション (何らかの方法で **追加**/**編集** または **削除** するアクション) を **フォーム** を使用して表示します。
 
-Each Form has fields that require completion as well as optional fields.
+以下のスクリーンショットは、**レイアウト編集** フォームを使用したフォームの表示例を示しています:
 
-Each field has a title that explains what the field represents and help text for additional guidance.
+![レイアウト フォームの追加](img/v4_tour_cms_navigation_forms.png)
 
-#### Check Boxes
+- #### タブ
 
-Options which can be enabled/disabled are presented with check boxes.
+フォームには、ユーザーに詳細情報とオプションを提供するタブが 1 つだけある場合もあれば、複数ある場合もあります。
 
-{tip}
-Forms accessed from a row menu may contain an ['auto submit capability'](tour_cms_navigation.html#content-automatic-submission-of-forms), which when selected allows for forms to be automatically submitted.
-{/tip}
+#### フォルダー
 
-#### Buttons
+[フォルダー](tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](users_features_and_sharing.html) するために使用されます。
 
-Every form has a button bar at the bottom to commit or cancel the additions/edits they have made.
+[フォルダーの選択] をクリックし、アイテムを保存する宛先フォルダーを選択/作成します。
 
 {tip}
-Most forms also include a **Help** button, which provides a link to sections of this **User Manual** for additional guidance.
+フォルダ/サブフォルダを右クリックすると、**フォルダ メニュー** でさらにオプションが表示されます。
+
+フォルダに保存されたアイテムは、ユーザー/ユーザー グループ アクセス用に宛先フォルダに適用された表示、編集、削除、**共有** オプションを継承します。
+
 {/tip}
 
-### Automatic Submission of Forms
+#### フォーム フィールド
 
-Selected actions, such as, **Checkout** from the Layouts grid **Check Licence** and **Authorise** from the **Displays** grid or **Clear Cache** from the **Modules** grid, allow for **Forms** to be automatically submitted by clicking on the action from the row menu.
+各フォームには、入力が必要なフィールドとオプション フィールドがあります。
 
-Actions that have an 'auto submit' capability will clearly display a checkbox option to enable on the form:
+各フィールドには、フィールドの意味を説明するタイトルと、追加のガイダンスとなるヘルプ テキストがあります。
 
-![Auto Submit](img/v4_tour_cms_navigation_auto_submit.png)
+#### チェック ボックス
 
-Once saved, this particular action will be automatically submitted the next time it is selected.
+有効/無効にできるオプションは、チェック ボックスで表示されます。
 
 {tip}
-Forms that you have enabled to 'auto submit' can be reset from your [User Profile](tour_user_access.html#content-user-profile) settings.
+行メニューからアクセスされるフォームには、['自動送信機能'](tour_cms_navigation.html#content-automatic-submission-of-forms) が含まれている場合があります。これを選択すると、フォームが自動的に送信されます。
+ヒント}
+
+#### ボタン
+
+すべてのフォームの下部には、追加/編集を確定またはキャンセルするためのボタン バーがあります。
+
+{ヒント}
+
+ほとんどのフォームには、**ヘルプ** ボタンも含まれており、この **ユーザー マニュアル** のセクションへのリンクが提供され、追加のガイダンスを参照できます。
+
+ヒント}
+
+### フォームの自動送信
+
+レイアウト グリッドの **チェックアウト**、**ディスプレイ** グリッドの **ライセンスの確認** と **承認**、**モジュール** グリッドの **キャッシュのクリア** などの選択されたアクションにより、行メニューからアクションをクリックするだけで **フォーム** が自動的に送信されます。
+
+「自動送信」機能を持つアクションには、フォーム上で有効にするチェックボックス オプションが明確に表示されます:
+
+![自動送信](img/v4_tour_cms_navigation_auto_submit.png)
+
+保存すると、この特定のアクションは次回選択されたときに自動的に送信されます。
+
+{tip}
+「自動送信」を有効にしたフォームは、[ユーザー プロファイル](tour_user_access.html#content-user-profile) 設定からリセットできます。
 {/tip}
-
-
 

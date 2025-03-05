@@ -1,96 +1,99 @@
 ---
-toc: "scheduling"
+toc: "スケジュール"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Use the Grid and Calendar Views to Manage all Schedules"
-keywords: "range, agenda, event icon"
-persona: "schedule manager"
+抜粋: "グリッド ビューとカレンダー ビューを使用してすべてのスケジュールを管理する"
+キーワード: "範囲、アジェンダ、イベント アイコン"
+ペルソナ: "スケジュール マネージャー"
 ---
 
-# Schedule Management
+# スケジュール管理
 
-All Schedules are managed from the **Schedule** page where you **Add**/ **Edit** and **View** all scheduled in a [Grid](tour_cms_navigation.html#content-grids) or **Calendar** view.
+すべてのスケジュールは、**スケジュール** ページから管理されます。このページでは、[グリッド](tour_cms_navigation.html#content-grids) または **カレンダー** ビューでスケジュールされているすべてのスケジュールを **追加**/ **編集** および **表示** できます。
 
-Use the filter fields to restrict criteria for returned results to view in a simple list format or use the key to see Events on a Calendar.
-
-{tip}
-Leave fields blank to include all Displays/Display Groups and Layouts/Campaigns to view all Schedules.
-{/tip} 
-
-## Grid View
-
-- Easily view full schedule information for all Displays/Display Groups or use the filters to view specific Display scheduling.
-- Use the row menu to **Edit/Delete** an existing Schedule.
+フィルター フィールドを使用して、返される結果の条件を制限し、単純なリスト形式で表示するか、キーを使用してカレンダーでイベントを表示します。
 
 {tip}
-If too many columns have been selected to view in the grid from the Column Visibility menu, to fit your screen size, additional rows will be hidden. Click on the `+` icon at the beginning of a row in the grid to view this information.
-{/tip}
+すべてのディスプレイ/ディスプレイ グループとレイアウト/キャンペーンを含めるには、フィールドを空白のままにして、すべてのスケジュールを表示します。
+ヒント} 
 
-## Calendar View
+## グリッド ビュー
 
-The Calendar will show associated schedules for selected Display/Display Groups represented by Event Icons with a key to explain each one, located below the calendar.
+- すべてのディスプレイ/ディスプレイ グループの完全なスケジュール情報を簡単に表示したり、フィルターを使用して特定のディスプレイ スケジュールを表示したりできます。
+- 行メニューを使用して、既存のスケジュールを **編集/削除** します。
 
-{tip}
-Ensure you select at least one Display/Display Group to view schedules on the Calendar view!
-{/tip}
+{ヒント}
+列の表示メニューからグリッドに表示する列が多すぎると、画面サイズに収まりきらず、追加の行は非表示になります。グリッドの行の先頭にある `+` アイコンをクリックすると、この情報が表示されます。
 
-- Mouse over an **Event Icon** to view the basic scheduling information:
+{/ヒント}
 
-![Calendar Event](img/v4_scheduling_management_calendar_event.png)
+## カレンダー ビュー
 
--  Click it to open the form to see the full details and to make edits to the existing schedule.
+カレンダーには、選択したディスプレイ/ディスプレイ グループに関連付けられたスケジュールが表示されます。これらのスケジュールは、カレンダーの下にイベント アイコンで表され、それぞれを説明するキーが付いています。
 
-#### Today/ Select Range
+{ヒント}
+カレンダー ビューでスケジュールを表示するには、少なくとも 1 つのディスプレイ/ディスプレイ グループを選択してください。
+ヒント}
 
-This range shows all Events occurring within the specified dates.
+- **イベント アイコン** にマウスを合わせると、基本的なスケジュール情報が表示されます。
 
-#### Week Range
+![カレンダー イベント](img/v4_scheduling_management_calendar_event.png)
 
-This range gives a week overview of scheduled Events.
+- クリックするとフォームが開き、詳細が表示され、既存のスケジュールを編集できます。
 
-{tip}
- Double click on a date to open the Day View!
-{/tip}
+#### 今日/範囲を選択
 
-#### Month Range
+この範囲には、指定された日付内に発生するすべてのイベントが表示されます。
 
-This range includes Icons to represent the Events that have been scheduled for that Month. Click on a particular day square to see an expanded view for that day. Double click on a day square to open the Day View for that date.
+#### 週の範囲
 
-{tip}
-Hover over each Icon to view the Event information!
-{/tip}
+この範囲には、スケジュールされたイベントの週の概要が表示されます。
 
-#### Year Range
+{ヒント}
+日付をダブルクリックすると、日表示が開きます。
 
-This is intended as an overview of the Events scheduled throughout the year and provides a total number of Events scheduled per month. Click in a month to view the Event details.
+ヒント}
 
-{tip}
-Double-click to open the Month View for that particular month!
-{/tip}
+#### 月の範囲
 
-### Agenda
+この範囲には、その月にスケジュールされたイベントを表すアイコンが含まれています。特定の日付の四角をクリックすると、その日の拡大表示が表示されます。日付の四角をダブルクリックすると、その日付の日表示が開きます。
 
-Events can span multiple days/weeks/months so it is highly useful to be able to see a precise representation of Layouts/Campaigns that will be shown on a selected Display at a point in time.
+{ヒント}
+各アイコンにマウスを合わせると、イベント情報が表示されます。
+ヒント}
 
-- Select **Agenda** from the **Range** filter:
+#### 年範囲
 
-![Agenda](img/v4_scheduling_agenda.png)
+これは、年間を通じて予定されているイベントの概要を示すためのもので、月ごとに予定されているイベントの合計数を示します。イベントの詳細を表示するには、月をクリックします。
 
-{tip}
-At least one **Display/Display Group** must be selected in order to view the Agenda. If multiple Displays/Display Groups are selected, these will be presented in separate **tabs** under the slider!
-{/tip}
+{ヒント}
+ダブルクリックすると、その月の月間ビューが開きます。
 
-- Use the slider, to pinpoint the exact time of day to view. Change the date using the **Prev/Today/Next** buttons or by selecting a date using the calendar icon.
+{ヒント}
 
+### アジェンダ
 
-- Click on a Layout to highlight the associated information (associations will turn blue) and view the breadcrumb, to show further Campaign and Display Group information. If nested Display Groups have been configured, these will show in the breadcrumb.
-- Click the map icon to see Display locations as determined by the coordinates entered.
+イベントは複数の日/週/月にまたがる可能性があるため、選択したディスプレイに特定の時点で表示されるレイアウト/キャンペーンの正確な表現を確認できることは非常に便利です。
 
-{tip}
-Scheduled Layouts/Campaigns will be shown in tabular format in the order they will cycle on the Display.
+- **範囲** フィルターから **アジェンダ** を選択します:
 
-Use the Preview window to Play a selected Layout and use the buttons to minimise/maximise the viewing window or go to full screen to Play.
-Click on the breadcrumb to view the selected Layout in the Layout Editor and to make necessary edits to the existing schedule!
-{/tip}
+![アジェンダ](img/v4_scheduling_agenda.png)
 
-- Click the **Back** button to exit the Agenda view.
+{ヒント}
+アジェンダを表示するには、少なくとも 1 つの **ディスプレイ/ディスプレイ グループ** を選択する必要があります。複数のディスプレイ/ディスプレイ グループを選択した場合、これらはスライダーの下の個別の **タブ** に表示されます。
+ヒント}
+
+- スライダーを使用して、表示する正確な時刻を指定します。**前/今日/次** ボタンを使用するか、カレンダー アイコンを使用して日付を選択して日付を変更します。
+
+- レイアウトをクリックして関連情報をハイライト表示し (関連付けは青色に変わります)、パンくずリストを表示して、キャンペーンとディスプレイ グループの詳細情報を表示します。ネストされたディスプレイ グループが設定されている場合は、パンくずリストに表示されます。
+
+- マップ アイコンをクリックすると、入力した座標によって決定されたディスプレイの場所が表示されます。
+
+{ヒント}
+スケジュールされたレイアウト/キャンペーンは、ディスプレイ上で循環する順序で表形式で表示されます。
+
+プレビュー ウィンドウを使用して選択したレイアウトを再生し、ボタンを使用して表示ウィンドウを最小化/最大化するか、全画面で再生します。
+パンくずリストをクリックすると、レイアウト エディターで選択したレイアウトが表示され、既存のスケジュールに必要な編集を加えることができます。
+ヒント}
+
+- **戻る** ボタンをクリックして、アジェンダ ビューを終了します。

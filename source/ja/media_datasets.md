@@ -2,316 +2,324 @@
 toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Design and store tabular data and use with data Widgets to add to Layouts"
-keywords: "remote dataset, json source, csv source, dataset columns, dataset rows, dataset data, view RSS"
-persona: "media manager, content manager"
+抜粋: "表形式のデータを設計および保存し、データ ウィジェットを使用してレイアウトに追加します"
+キーワード: "リモート データセット、JSON ソース、CSV ソース、データセット列、データセット行、データセット データ、RSS の表示"
+ペルソナ: "メディア マネージャー、コンテンツ マネージャー"
 ---
 
 # DataSets
 
-DataSets are used to design and store tabular data which are created and managed independently to [Layouts](layouts.html) and [Playlists](media_playlists.html). Once created, DataSets are added to Layouts and Playlists using the [DataSet](media_module_dataset.html) Widget.
+DataSet は、[レイアウト](layouts.html) および [プレイリスト](media_playlists.html) とは独立して作成および管理される表形式のデータを設計および保存するために使用されます。作成された DataSet は、[DataSet](media_module_dataset.html) ウィジェットを使用してレイアウトおよびプレイリストに追加されます。
 
-DataSets can also be used to create your own [RSS Feeds](media_datasets.html#content-view-rss) to add to the [Ticker](media_module_ticker.html) Widget.
+DataSet は、[Ticker](media_module_ticker.html) ウィジェットに追加する独自の [RSS フィード](media_datasets.html#content-view-rss) を作成するためにも使用できます。
 
-## Feature Overview:
+## 機能の概要:
 
-- Define the data structure.
-- Data can be manually added.
-- Import data from a CSV file.
-- Use a JSON formatted data source via the API.
-- Sync from a 3rd party data source remotely on a schedule.
-- Maintain content without accessing Layouts/Playlists.
-- Re-use across multiple Widgets/Layouts/Playlists.
-- Create an RSS feed from a DataSet.
+- データ構造を定義します。
+- データを手動で追加できます。
+- CSV ファイルからデータをインポートします。
+- API 経由で JSON 形式のデータ ソースを使用します。
+- スケジュールに従って、サードパーティのデータ ソースからリモートで同期します。
+- レイアウト/プレイリストにアクセスせずにコンテンツを維持します。
+- 複数のウィジェット/レイアウト/プレイリストで再利用します。
+- DataSet から RSS フィードを作成します。
 
-DataSets have been designed to be versatile so that they can be configured in a number of ways with the DataSet Widget as well as a source of data for a custom Module. A DataSet provides a convenient way to import and display data from other systems in [[PRODUCTNAME]].
+DataSet は汎用性を考慮して設計されているため、DataSet ウィジェットやカスタム モジュールのデータ ソースを使用してさまざまな方法で構成できます。DataSet を使用すると、[[PRODUCTNAME]] で他のシステムからデータをインポートして表示できます。
 
-Examples of where DataSets could be utilised:
+DataSet を活用できる例:
 
-- A drinks menu at a bar
-- Tee times at a golf club
-- Meeting room bookings
-- Bus timetables
+- バーのドリンク メニュー
+- ゴルフ クラブのティー タイム
+- 会議室の予約
+- バスの時刻表
 
-DataSets are created and managed independently to Layouts and Playlists and therefore do not require user access to Layouts the Layout Editor or Playlists to add or manage the data held within a DataSet.
+DataSet はレイアウトやプレイリストとは独立して作成および管理されるため、DataSet 内に保持されているデータを追加または管理するために、レイアウト、レイアウト エディター、またはプレイリストにユーザーがアクセスする必要はありません。
 
-![DataSet Flow](img/v4_media_dataset_flow.png)
+![データセット フロー](img/v4_media_dataset_flow.png)
 
-## Creating a DataSet
+## データセットの作成
 
-DataSets are created and managed by selecting  **DataSets** under the **Library** section of the main CMS menu:
+データセットは、メイン CMS メニューの [ライブラリ] セクションで [データセット] を選択して作成および管理します。
 
-![DataSet Grid](img/v4_media_dataset_grid.png)
+![データセット グリッド](img/v4_media_dataset_grid.png)
 
-- Select the **Add DataSet** button and complete the form fields to create a new record:
+- [データセットの追加] ボタンを選択し、フォーム フィールドに入力して新しいレコードを作成します。
 
-![DataSet Add](img/v4_media_dataset_add.png)
+![データセットの追加](img/v4_media_dataset_add.png)
 
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. DataSets saved to a Folder will inherit the access options applied to that Folder.
+[フォルダー](tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](users_features_and_sharing.html#content-share) するために使用されます。フォルダーに保存されたデータセットは、そのフォルダーに適用されたアクセス オプションを継承します。
 
-- Give your DataSet a **Name** for easy identification in the CMS. Provide an optional internal **Description** and enter a **Code** if referencing this DataSet via the API.
+- CMS で簡単に識別できるように、データセットに [名前] を付けます。オプションの内部**説明**を提供し、API経由でこのデータセットを参照する場合は**コード**を入力します。
 
-If the DataSet is going to be connected to sync with a **Remote** data source, tick to enable and continue with the [Creating Remote DataSets](media_datasets.html#content-creating-remote-datasets) configuration.
+データセットが**リモート**データソースと同期するように接続される場合は、有効にするためにチェックを入れ、[リモートデータセットの作成](media_datasets.html#content-creating-remote-datasets)構成に進みます。
 
-If the DataSet is **not Remote**, click to Save the DataSet record and continue from the [Create and Configure Columns](media_datasets.html#content-create-and-configure-columns) section.
+データセットが**リモート**でない場合は、データセットレコードを保存して、[列の作成と構成](media_datasets.html#content-create-and-configure-columns)セクションから続行します。
 
-### Creating Remote DataSets
+### リモートデータセットの作成
 
-Remote DataSets are a special type of DataSet which will periodically sync from a 3rd party data source. [[PRODUCTNAME]] will call the URL at a chosen time period and parse the data according to instructions set on the DataSet record and any Columns that have been defined as **Remote**.
+リモートデータセットは、サードパーティのデータソースから定期的に同期される特別なタイプのデータセットです。[[PRODUCTNAME]]は、選択された期間にURLを呼び出し、データセットレコードと**リモート**として定義されている列に設定された指示に従ってデータを解析します。
 
-On selecting Remote, additional tabbed fields are made available so that the Remote DataSet record can be fully completed:
+リモートを選択すると、追加のタブ付きフィールドが利用可能になり、リモートデータセットレコードを完全に入力できるようになります:
 
-![Remote DataSet Options](img/v4_media_dataset_remote.png)
+![リモートデータセットオプション](img/v4_media_dataset_remote.png)
 
-- #### Remote
+- #### リモート
 
-  Set the type of request method and enter the URL for the remote data source.
+リクエストメソッドのタイプを設定し、リモートデータソースの URL を入力します。
 
-- #### Authentication
+- #### 認証
 
-  Provide authentication information. Custom Headers are available to provide an optional string of custom HTTP headers.
+認証情報を提供します。カスタムヘッダーは、カスタム HTTP ヘッダーのオプション文字列を提供するために使用できます。
 
-- #### Data
+- #### データ
 
-  Set the remote data source: 
+リモートデータソースを設定します:
 
-### JSON Source
+### JSON ソース
 
-JSON data is populated according to the Columns defined as Remote types. When specifying a **Remote Column** a 'data path' needs to be entered which is the JSON syntax path to the data for that column, in respect to the **Data Root** specified.
+JSON データは、リモートタイプとして定義された列に従って入力されます。**リモート列** を指定する場合は、指定された **データルート** に関して、その列のデータへの JSON 構文パスである「データパス」を入力する必要があります。
 
 {tip}
-Consider an example JSON data source:
+JSON データ ソースの例を考えてみましょう:
 
 ```json
 {
-    "base": "EUR",
-    "date": "2017-12-22",
-    "rates": {
-        "GBP": 0.88568,
-        "THB": 38.83,
-        "USD": 1.1853
-    }
+"base": "EUR",
+"date": "2017-12-22",
+"rates": {
+"GBP": 0.88568,
+"THB": 38.83,
+"USD": 1.1853
+}
 }
 ```
 
-If we wanted two columns to capture the currency **Symbol** and **Value**, we would need to set the **Data Root** to `rates` and have Columns for:
+通貨の **Symbol** と **Value** を 2 つの列で取得したい場合は、**Data Root** を `rates` に設定し、次の列を用意する必要があります:
 
-- **Symbol** - data path = 0
-- **Value** - data path = 1
+- **Symbol** - データ パス = 0
+- **Value** - データ パス = 1
 
 {/tip}
 
-Use the **Test data URL** to ensure that the desired structure is returned.
+**Test data URL** を使用して、目的の構造が返されることを確認します。
 
-### CSV Source
+### CSV ソース
 
-The remote data source can be selected as a CSV.
+リモート データ ソースは CSV として選択できます。
 
-If the CSV source contains headers, tick to ignore the first row.
+CSV ソースにヘッダーが含まれている場合は、最初の行を無視するようにチェックします。
 
+**テスト データ URL** を使用して、目的の構造が返されることを確認します。
 
-Use the **Test data URL** to ensure that the desired structure is returned.
+#### 詳細
 
-#### Advanced
-
-- Set how often the remote data should be fetched and imported.
+- リモート データの取得とインポートの頻度を設定します。
 
 {tip}
-The fetch remote DataSet task is run hourly by default. Remote DataSets are intended for data which updates infrequently and not in real time.
+リモート データセットの取得タスクは、デフォルトでは 1 時間ごとに実行されます。リモート データセットは、リアルタイムではなく、頻繁に更新されないデータを対象としています。
+
 {/tip}
 
-- Set a timescale to Truncate data.
+- データの切り捨てにタイムスケールを設定します。
 
-- Use the drop down to select a DataSet if using dependants.
+- 依存関係を使用する場合は、ドロップダウンを使用してデータセットを選択します。
 
-- Optionally set a row limit and what should happen if this limit is exceeded.
+- オプションで、行制限と、この制限を超えた場合の動作を設定します。
 
 {nonwhite}
 
 {noncloud}
-If no **Row Limit** is set here, the Row Limit applied in the [CMS Settings](tour_cms_settings.html#content-defaults) will be used for non Cloud customers.
+ここで **行制限** が設定されていない場合、非クラウド カスタマーには [CMS 設定](tour_cms_settings.html#content-defaults) で適用された行制限が使用されます。
 {/noncloud}
 
 {cloud}
-If no **Row Limit** is set here the default will apply which is 10,000 rows per DataSet for Cloud customers.
+
+ここで**行制限**が設定されていない場合は、デフォルトが適用されます。これは、クラウド ユーザーの場合、データセットごとに 10,000 行です。
+
 {/cloud}
+
 {/nonwhite}
 
-- Click to **Save**.
+- **保存**をクリックします。
 
+## 列の作成と構成
 
-## Create and Configure Columns
+列はデータの構造を定義します。
 
-Columns define the structure of your data:
+- データセット レコードの行メニューを使用して、**列の表示**を選択します。
 
-- Use the row menu for a DataSet record and select **View Columns**:
-
-![DataSets Add columns](img/v4_media_datasets_add_columns.png)
-
-{tip}
-By default, all new DataSets will have a **Col1** added. This should be edited or removed using the row menu for Col1!
-{/tip}
-
-- Delete Col1 from the row menu and click on the **Add Column** button to create a new column
-
-​	or
-
-- Use the row menu for Col1 and select **Edit**.
-
-![DataSet Columns Form](img/v4_media_columns_form.png)
-
-- Include a **Heading** to identify this Column.
-- Use the drop down to select a **Type** of Column to use.
-
-### Column Types:
-
-#### Value
-
-Enter a list of items to be presented in a combo box.
-
-- Use the drop down to select the **Data Type**.
-- Provide a comma-separated list of values that can be selected for this column.
-- Set the position this Column should appear when viewing/editing Data.
-- Provide an optional tooltip message to display when entering data for this column.
-
-Use the additional options to enable **Filters**, **Sorting** and **Required Values** for this column.
-
-#### Formula
-
-Enter a MySQL statement.
-
-- Use the drop down to select the Data Type.
-- Set the position this Column should appear when viewing/editing Data.
-- Provide a MySQL statement suitable to use in a 'SELECT' statement or a string to format a date field.
+![データセットの列の追加](img/v4_media_datasets_add_columns.png)
 
 {tip}
 
-`	$dateFormat(<col>,<format>,<language>)`
-	Ensure that `<col>`has a date and time specified for the date format to work. If the language has not been set, it will default to English.
-
-Two substitutions are available for Formula columns: `[DisplayId]` and `[DisplayGeoLocation]` which will be substituted at run time with the Display ID / Display Geo Location (MySQL GEOMETRY).
+デフォルトでは、すべての新しいデータセットに**Col1**が追加されます。これは、Col1 の行メニューを使用して編集または削除する必要があります。
 
 {/tip}
 
-Use the additional options to enable **Filters** and **Sorting** for this column.
+- 行メニューから Col1 を削除し、**列の追加** ボタンをクリックして新しい列を作成します
 
-#### Remote
+​ または
 
-Provide a JSON syntax string.
+- Col1 の行メニューを使用して、**編集**を選択します。
 
-- Use the drop down to select the Data Type.
-- Enter a JSON syntax string showing how to access the data from a 3rd party data source.
-- Set the position this Column should appear when viewing/editing Data.
+![データセット列フォーム](img/v4_media_columns_form.png)
 
-Use the additional options to enable **Filters** and **Sorting** for this column.
+- この列を識別するための**見出し**を含めます。
+- ドロップダウンを使用して、使用する列の**タイプ**を選択します。
 
-Continue to add and configure Columns as required. There is no theoretical limit to the number of Columns [[PRODUCTNAME]] can support, although a smaller DataSet is often easier to manage and display.
+### 列タイプ:
+
+#### 値
+
+コンボ ボックスに表示される項目のリストを入力します。
+
+- ドロップダウンを使用して**データ タイプ**を選択します。
+- この列に選択できる値のコンマ区切りリストを提供します。
+- データを表示/編集するときにこの列が表示される位置を設定します。
+- この列にデータを入力するときに表示するオプションのツールヒント メッセージを提供します。
+
+追加のオプションを使用して、この列の**フィルター**、**並べ替え**、および**必須値**を有効にします。
+
+#### 数式
+
+MySQL ステートメントを入力します。
+
+- ドロップダウンを使用してデータ タイプを選択します。 - データを表示/編集するときにこの列が表示される位置を設定します。
+- 'SELECT' ステートメントで使用するのに適した MySQL ステートメント、または日付フィールドをフォーマットする文字列を指定します。
 
 {tip}
 
-Columns can be viewed/added and edited by using the row menu for a DataSet record from the DataSets page.
+` $dateFormat(<col>,<format>,<language>)`
+日付フォーマットが機能するには、`<col>` に日付と時刻が指定されていることを確認してください。言語が設定されていない場合は、デフォルトで英語になります。
 
-The ordering and list content of Columns can be changed after Data has been collected.
+数式列には 2 つの置換が使用できます: `[DisplayId]` と `[DisplayGeoLocation]` は、実行時に表示 ID / 表示ジオロケーション (MySQL GEOMETRY) に置換されます。
+
 {/tip}
 
-## Adding Data to Columns
+追加オプションを使用して、この列の **フィルター** と **並べ替え** を有効にします。
 
-Once Columns have been defined, data needs to be added. This can be achieved a number of ways:
+#### リモート
 
-- Manually through the CMS User interface
-- Imported via a CSV file
-- Using the API
-- Remotely Sync
+JSON 構文文字列を指定します。
 
-### Manually 
+- ドロップダウンを使用してデータ型を選択します。
 
-Data is added using the **View Data** button on the Columns page.
+- サードパーティのデータ ソースからデータにアクセスする方法を示す JSON 構文文字列を入力します。
+- データを表示/編集するときにこの列が表示される位置を設定します。
+
+追加オプションを使用して、この列の **フィルター** と **並べ替え** を有効にします。
+
+必要に応じて列の追加と構成を続けます。[[PRODUCTNAME]] がサポートできる列の数に理論上の制限はありませんが、多くの場合、DataSet が小さいほど管理と表示が簡単になります。
 
 {tip}
-Data can be viewed/added and edited by using the row menu for a DataSet record from the DataSets page!
+
+列は、DataSet ページから DataSet レコードの行メニューを使用して表示/追加および編集できます。
+
+列の順序とリストの内容は、データが収集された後に変更できます。
+
 {/tip}
 
-The data table will show each of the Columns added to the DataSet as they have been configured.
+## 列へのデータの追加
 
-![Dataset Row](img/v4_media_dataset_row.png)
+列を定義したら、データを追加する必要があります。これは、いくつかの方法で実現できます。
 
-- Add a new row of data by clicking on the **Add Row** button and complete for each non-formula Column type.
-- Click **Next** to continue adding data to add more rows.
-- When all data has been completed, click **Save**
+- CMS ユーザー インターフェースから手動で
+- CSV ファイルからインポート
+- API を使用する
+- リモートで同期
+
+### 手動で
+
+データは、列ページの **データの表示** ボタンを使用して追加されます。
 
 {tip}
-Click in any row to Edit Data. Click on the cross at the end of a selected row to Delete.
-
-Users can toggle to a **Multi Select Mode** using the button at the top of the grid. In this mode, Users can select multiple rows and click on **Delete Rows** to remove in bulk.
-
-Once complete click on the **Edit Mode** button to come out of multi-select mode.
+データは、データセット ページのデータセット レコードの行メニューを使用して表示/追加および編集できます。
 {/tip}
 
-### Importing a CSV 
+データ テーブルには、データセットに追加された各列が、構成されたとおりに表示されます。
 
-The CMS has a DataSet CSV importer that can be used to extract data from a **CSV file** and put it into a DataSet. The **Import CSV** function can be accessed through the row menu of any DataSet record (with the exception of DataSets configured for Remote data sources).
+![データセット行](img/v4_media_dataset_row.png)
 
-![Dataset Import CSV](img/v4_media_dataset_importcsv_form.png)
-
-The importer has options to overwrite the existing data held in the import file as well as an option to ignore the first row of the CSV when importing if your file has headings.
-
-The Remote Columns in the DataSet will be listed with a field next to them to indicate the column number in the CSV file that corresponds with the listed Column Header.  
+- **行の追加** ボタンをクリックして新しいデータ行を追加し、数式以外の各列タイプを完了します。
+- **次へ** をクリックしてデータの追加を続行し、さらに行を追加します。
+- すべてのデータが完了したら、**保存** をクリックします。
 
 {tip}
-It is important to ensure that your CSV file has the correct file encoding if you are using non-ASCII characters. Non-ASCII characters are very common for languages outside of English. The file encoding most commonly used is UTF-8.
+任意の行をクリックしてデータを編集します。選択した行の末尾の十字をクリックすると、削除されます。
 
-If you have edited your CSV file using Excel, you will need to make sure you select "Unicode (UTF-8)" from the Tools -> Web Options -> Encoding tab on the 'Save as' dialogue.
+ユーザーは、グリッドの上部にあるボタンを使用して、**複数選択モード** に切り替えることができます。このモードでは、ユーザーは複数の行を選択し、**行の削除** をクリックして一括で削除できます。
+
+完了したら、**編集モード** ボタンをクリックして、複数選択モードを終了します。
+
 {/tip}
 
-### Through the API
+### CSV のインポート
 
-You can write your own application which syncs data into a DataSet using the [[PRODUCTNAME]] API. Data can be added row by row or by importing whole JSON structures.
+CMS には、**CSV ファイル** からデータを抽出して DataSet に入れるために使用できる DataSet CSV インポーターがあります。**CSV のインポート** 機能は、任意の DataSet レコードの行メニューからアクセスできます (リモート データ ソース用に構成された DataSet を除く)。
+
+![Dataset の CSV インポート](img/v4_media_dataset_importcsv_form.png)
+
+インポーターには、インポート ファイルに保存されている既存のデータを上書きするオプションと、ファイルに見出しがある場合にインポート時に CSV の最初の行を無視するオプションがあります。
+
+DataSet 内のリモート列は、その横に、リストされた列ヘッダーに対応する CSV ファイル内の列番号を示すフィールドとともにリストされます。
+
+{tip}
+非 ASCII 文字を使用している場合は、CSV ファイルのファイル エンコーディングが正しいことを確認することが重要です。非 ASCII 文字は、英語以外の言語では非常に一般的です。最も一般的に使用されるファイル エンコーディングは UTF-8 です。
+
+Excel を使用して CSV ファイルを編集した場合は、[名前を付けて保存] ダイアログの [ツール] -> [Web オプション] -> [エンコーディング] タブで [Unicode (UTF-8)] を選択する必要があります。
+
+{/tip}
+
+### API 経由
+
+[[PRODUCTNAME]] API を使用して、DataSet にデータを同期する独自のアプリケーションを作成できます。データは、行ごとに追加することも、JSON 構造全体をインポートすることもできます。
 
 {nonwhite}
-Further discussion on the API can be viewed in the [Developer documentation](/docs/developer).
+API に関する詳細な説明は、[開発者向けドキュメント](/docs/developer) で確認できます。
 {/nonwhite}
 
-### Remotely
+### リモート
 
-Remote DataSets are kept in sync with a Task called **Fetch Remote DataSets**. This task is configured by default and runs once per minute.
+リモート DataSet は、**Fetch Remote DataSets** というタスクと同期されます。このタスクはデフォルトで設定されており、1 分ごとに 1 回実行されます。
 
-- #### Dependents
+- #### 依存関係
 
-  A remote DataSet can depend on another DataSet to formulate its request. Each row in the dependent DataSet will be used to create a request using the parent DataSet's request parameters.
+リモート DataSet は、別の DataSet に依存してリクエストを作成できます。依存 DataSet の各行は、親 DataSet のリクエスト パラメータを使用してリクエストを作成するために使用されます。
 
-## Row Menu
+## 行メニュー
 
-Each DataSet has a row menu where Users can access a list of actions/shortcuts.
+各 DataSet には、ユーザーがアクション/ショートカットのリストにアクセスできる行メニューがあります。
 
-- Notable settings are listed below:
+- 注目すべき設定を以下に示します。
 
-### View RSS
+### RSS の表示
 
-Create your own RSS feed using the data held in a DataSet.
+DataSet に保持されているデータを使用して、独自の RSS フィードを作成します。
 
-- Select **View RSS** from the row menu of a DataSet.
-- Click on the **Add RSS** button.
+- DataSet の行メニューから **View RSS** を選択します。
+- **Add RSS** ボタンをクリックします。
 
-![Add RSS](img/v4_media_datasets_add_rss.png)
+![RSS を追加](img/v4_media_datasets_add_rss.png)
 
-- Complete the form fields, selecting the Columns to use.
-- On Saving a URL will be generated which can be copied and added to the [Ticker](media_module_ticker.html) Widget.
+- フォーム フィールドに入力し、使用する列を選択します。
 
-### Delete
+- 保存すると URL が生成され、コピーして [Ticker](media_module_ticker.html) ウィジェットに追加できます。
 
-DataSets can only be deleted if they are not in use.
+### 削除
 
-Multiple DataSets can be selected and deleted in bulk using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the DataSets grid.
+データセットは、使用されていない場合にのみ削除できます。
 
-### Share
+データセット グリッドの下部にある [選択済み](tour_cms_navigation.html#content-multi-select---with-selected) オプションを使用して、複数のデータセットを一括で選択して削除できます。
 
-Set [Share](users_features_and_sharing.html#content-share) options for User/User Group access to individual DataSets.
+### 共有
+
+ユーザー/ユーザー グループが個々のデータセットにアクセスできるように、[共有](users_features_and_sharing.html#content-share) オプションを設定します。
 
 {nonwhite}
-Take a look at our guide for an example of how to utilise DataSets for your Displays: [Using DataSets to show upcoming birthdays](https://community.xibo.org.uk/t/using-datasets-to-show-upcoming-birthdays/31617)
+ディスプレイに DataSet を活用する方法の例については、ガイドをご覧ください: [DataSet を使用して今後の誕生日を表示する](https://community.xibo.org.uk/t/using-datasets-to-show-upcoming-birthdays/31617)
 {/nonwhite}
 
-#### Next...
+#### 次へ...
 
-[DataSet Widget](media_module_dataset.html)
+[DataSet ウィジェット](media_module_dataset.html)
 
