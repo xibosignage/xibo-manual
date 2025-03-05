@@ -4,7 +4,7 @@ Welcome to the Xibo Manual.
 This repository contains the source content for the Xibo manual in markdown format. 
 
 ## Support
-Please track all issues in this repository here: https://github.com/openSignage/xibo-manual/issues
+Please track all issues in this repository here: https://github.com/OpenSignage/xibo-manual/issues
 
 ## Building
 The manual is built by running generate.php.
