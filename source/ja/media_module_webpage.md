@@ -1,73 +1,73 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Display Webpage content by adding the Webpage Widget to Layouts"
-keywords: "open natively, manual position, best fit, preloading, webpage load error"
+抜粋: "レイアウトに Web ページ ウィジェットを追加して Web ページ コンテンツを表示する"
+キーワード: "ネイティブで開く、手動配置、最適フィット、プリロード、Web ページ ロード エラー"
 ---
 
-# Webpage
+# Web ページ
 
-Include content from a webpage to be displayed on Layouts and Playlists.
+レイアウトとプレイリストに表示される Web ページのコンテンツを含めます。
 
 {feat}Webpage|v4{/feat}
 
 {version}
-**Note:** The Webpage Widget requires a valid internet connection in order to function as webpages are not cached by the Player.
+**注:** Web ページはプレーヤーによってキャッシュされないため、Web ページ ウィジェットが機能するには有効なインターネット接続が必要です。
 {/version}
 
-## Overview
+## 概要
 
-- View a full webpage without any alterations.
-- Open Natively, Manual Position and Best Fit embed options.
-- Scale and offset the target webpage to show a particular section of the webpage.
-- For content with a transparent background tick to show the Widget with a transparent background.
-- Preload content off screen.
-- Trigger a web hook to navigate to an active [action](layouts_interactive_actions.html) in the event of a webpage load error.
+- 変更を加えずに Web ページ全体を表示します。
+- ネイティブで開く、手動配置、最適フィットの埋め込みオプション。
+- 対象の Web ページを拡大縮小してオフセットし、Web ページの特定のセクションを表示します。
+- 透明な背景のコンテンツの場合は、ウィジェットを透明な背景で表示するにはチェックを入れます。
+- コンテンツを画面外にプリロードします。
+- Web ページの読み込みエラーが発生した場合に、Web フックをトリガーしてアクティブな [アクション](layouts_interactive_actions.html) に移動します。
 
 {version}
 
-**NOTE:**
+**注意:**
 
-- Transparent background is available on Windows from v2 R253.  [[PRODUCTNAME]] will try its best to do this when enabled for pages which have a transparent background, however, it cannot be supported on some webpages.
-- Preloading off screen is currently only available from Android v2 R207.
+- 透明な背景は、Windows で v2 R253 から使用できます。[[PRODUCTNAME]] は、透明な背景を持つページで有効にすると、これを最大限に実行しようとしますが、一部の Web ページではサポートされません。
+- 画面外のプリロードは現在、Android v2 R207 からのみ使用できます。
 
 {/version}
 
+### ネイティブに開く
 
-### Open Natively
-
-When selected, the Player will open the webpage without any alterations and will open and render in the browser as if the URL had been visited on the device outside [[PRODUCTNAME]].
+これを選択すると、プレーヤーは Web ページを変更せずに開き、URL が [[PRODUCTNAME]] の外部のデバイスでアクセスされたかのように、ブラウザーで開いてレンダリングします。
 
 {tip}
-**Please note:** There is no preview available with this option!
-{/tip}
+**注意:** このオプションではプレビューは使用できません。
+ヒント}
 
-### Trigger a web hook
+### Web フックをトリガー
 
-Trigger a web hook for an active action (navigate to Widget, navigate to Layout a Scheduled Command etc.) to be shown in the event the webpage returns an error and fails to load.
+Web ページがエラーを返して読み込みに失敗した場合に、アクティブなアクション (ウィジェットへの移動、スケジュールされたコマンドのレイアウトへの移動など) の Web フックをトリガーして表示します。
 
-{feat}Webpage - Page load error trigger|v4{/feat}
+{feat}Web ページ - ページ読み込みエラー トリガー|v4{/feat}
 
-- Enter the **Trigger Code** of a configured Action to match against a supplied web hook `trigger` parameter.
+- 指定された Web フック `trigger` パラメータと一致するように構成されたアクションの **トリガー コード** を入力します。
 
-### Manual Position
+### 手動位置
 
-This option will embed the webpage in an iframe where users can specify the dimensions required.
+このオプションでは、ユーザーが必要な寸法を指定できる iframe に Web ページが埋め込まれます。
 
-- Use the Offset and Scale settings to force the page/sections of the page to fit within the dimensions to show just a section of the webpage.
+- オフセットとスケールの設定を使用して、ページ/ページのセクションを寸法内に収め、Web ページのセクションのみを表示します。
 
-### Best Fit
+### 最適フィット
 
-This option will embed the webpage in an iframe  where users can specify the dimensions required.
+このオプションでは、ユーザーが必要な寸法を指定できる iframe に Web ページが埋め込まれます。
 
 {version}
-**NOTE:** **Manual Position** and **Best Fit** options will not work with websites that set the **X-Frame-Options header**. If you are unable to see the webpage use the Open Natively option when using Windows / Linux or Android. 
+**注意:** **手動位置** および **ベスト フィット** オプションは、**X-Frame-Options ヘッダー** を設定する Web サイトでは機能しません。Web ページが表示されない場合は、Windows / Linux または Android を使用しているときに [ネイティブで開く] オプションを使用してください。
 
-If X-Frame-Options are set then webOS and Tizen will not work in any mode!
+X-Frame-Options が設定されている場合、webOS および Tizen はどのモードでも機能しません。
 
-If X-Frame-Options are not set then the website should show in any of the Players, using any of the above options.
+X-Frame-Options が設定されていない場合、上記のオプションのいずれかを使用して、Web サイトはいずれかのプレーヤーに表示されます。
 
-Use this [X-Frame-Options Header Checker Tool](https://geekflare.com/tools/x-frame-options-test) to see if the header has been set for the webpage you wish to target.
+この [X-Frame-Options ヘッダー チェッカー ツール](https://geekflare.com/tools/x-frame-options-test) を使用して、ターゲットとする Web ページにヘッダーが設定されているかどうかを確認します。
+
 {/version}
 

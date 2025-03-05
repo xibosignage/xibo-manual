@@ -1,85 +1,68 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 2
-excerpt: "Use the RSS Ticker Widget to display dynamic feed content"
-keywords: "dynamic feeds"
-persona: "content manager"
+抜粋: "RSS ティッカー ウィジェットを使用して動的なフィード コンテンツを表示する"
+キーワード: "動的なフィード"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# RSS Ticker
+# RSS ティッカー
 
-Display dynamic feed content anywhere on a Layout using Elements or include Static Templates with pre-styled designs in Layouts/Playlists.
+レイアウト上の任意の場所に要素を使用して動的なフィード コンテンツを表示するか、レイアウト/プレイリストに事前にスタイル設定されたデザインの静的テンプレートを含めます。
 
 {feat}Ticker|v4{/feat}
 
-The Ticker Widget primarily consists of a data source location which feeds into configured Elements and Static Templates.
+ティッカー ウィジェットは主に、構成された要素と静的テンプレートにフィードするデータ ソースの場所で構成されます。
 
-## Ticker Elements
+## ティッカー要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding an RSS Ticker Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Ticker Widget to use and where they can be placed. 
+[レイアウト](layouts_editor.html) に RSS ティッカー ウィジェットを追加するときに [要素](layouts_editor#content-data-widgets-and-elements) を選択でき、ユーザーはティッカー ウィジェットのどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![Ticker Elements](img/v4_media_module_ticker_elements.png)
+![ティッカー要素](img/v4_media_module_ticker_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. A URL must be provided to be used as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+各要素には、プロパティ パネルに一連の構成オプションがあります。レイアウトで使用される各要素の [構成] タブから、データ ソースとして使用する URL を指定する必要があります。追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。データ要素は、[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することでさらに補完でき、これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめられるため、構成と配置が簡単になります。
 
-## DataSet Static Templates
+## データセットの静的テンプレート
 
-[Static Templates](layouts_editor.html#content-static-templates) define how returned items should be laid out and styled and are a simple way to show items using pre-styled templates.
+[静的テンプレート](layouts_editor.html#content-static-templates) は、返されるアイテムのレイアウトとスタイル設定方法を定義し、事前にスタイル設定されたテンプレートを使用してアイテムを表示する簡単な方法です。
 
-![Ticker Templates](img/v4_media_module_ticker_templates.png)
+![ティッカー テンプレート](img/v4_media_module_ticker_templates.png)
 
-Templates can be configured to affect the behaviour of returned results as well as make changes to the design appearance using a range of options in the Properties Panel. A URL must be provided to be used as the data source from the **Configure** tab for each Template added to the Layout/Playlist.
+テンプレートは、返される結果の動作に影響を与えるように構成できるほか、プロパティ パネルのさまざまなオプションを使用してデザインの外観を変更できます。レイアウト/プレイリストに追加された各テンプレートの [**構成**] タブから、データ ソースとして使用する URL を指定する必要があります。
 
-## Overview
+## 概要
 
-- Define how many items should show from a feed.
-- Duration can be set per item.
-
-{tip}
-Use this option with caution as this can create long-running media items. Ensure to use in conjunction with **Number of items** to limit!
-{/tip}
-
-- Select to start with items from the Start or End of the list.
-
-- Reverse and Random order of feed items can be selected.
-
-- Include a Copyright notice to show at the end of the feed.
-
-- Return results side by side.
-
-- Provide a list of attributes that should not be stripped from the incoming feed.
-
-- Include a list of HTML tags to be stripped from the feed.
-
-- Set a specific User Agent.
-
-- Decode HTML entities in the feed before parsing it.
-
-- Disable date sort.
-
-- Cached for off-line playback.
-
-- Override the Update Interval for Images.
-
-  
+- フィードから表示するアイテムの数を定義します。
+- アイテムごとに期間を設定できます。
 
 {tip}
-Create your own [RSS Feed](media_datasets.html#content-view-rss) to use with this Widget using [DataSets](media_datasets.html)!
-{/tip}
+このオプションを使用すると、長時間実行されるメディア アイテムが作成される可能性があるため、注意して使用してください。制限するには、**アイテム数** と組み合わせて使用してください。
+ヒント}
 
+- リストの先頭または末尾のアイテムから開始するように選択します。
 
+- フィード アイテムの逆順とランダム順を選択できます。
 
+- フィードの最後に表示される著作権通知を含めます。
 
+- 結果を並べて返します。
 
+- 受信フィードから削除しない属性のリストを提供します。
 
+- フィードから削除する HTML タグのリストを含めます。
 
+- 特定のユーザー エージェントを設定します。
 
+- フィードを解析する前に、フィード内の HTML エンティティをデコードします。
 
+- 日付の並べ替えを無効にします。
 
+- オフライン再生用にキャッシュします。
 
+- 画像の更新間隔をオーバーライドします。
 
+{ヒント}
+[データセット](media_datasets.html) を使用して、このウィジェットで使用する独自の [RSS フィード](media_datasets.html#content-view-rss) を作成します。
 
-
-
-
+ヒント}
 

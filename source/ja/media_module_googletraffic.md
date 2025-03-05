@@ -2,58 +2,54 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Display data with a Google Maps API Key"
+excerpt: "Google Maps API キーでデータを表示する"
 persona: "content manager"
 ---
 
 # Google Traffic
 
-Display traffic data configured with a Google Maps API key on Layouts and Playlists.
+レイアウトとプレイリストに Google Maps API キーで構成されたトラフィック データを表示します。
 
 {version}
-**IMPORTANT:** This Module requires a Google API key which has associated usage charges. Please make sure you are aware of the usage charges before entering your key in this Module's configuration.
+**重要:** このモジュールには、使用料が関連付けられている Google API キーが必要です。このモジュールの構成にキーを入力する前に、使用料について理解しておいてください。
+
 {/version}
 
 {feat}Google Traffic Maps|v4{/feat}
 
-## Installation
+## インストール
 
-The Google Traffic Module must be configured with a Google Maps API key before use. The "[get a key](https://developers.google.com/maps/documentation/javascript/get-api-key)" documentation describes the process and differences between the keys.
+Google Traffic モジュールは、使用前に Google Maps API キーで構成する必要があります。"[キーの取得](https://developers.google.com/maps/documentation/javascript/get-api-key)" ドキュメントに、プロセスとキー間の違いが説明されています。
 
-The Google Traffic Module is installed from the **Modules** page under the **Administration** section of the main CMS menu. 
+Google トラフィック モジュールは、メイン CMS メニューの [**管理**] セクションの [**モジュール**] ページからインストールされます。
 
-- Click on the **Install Module** button and select the Module to install.
-- After installation, select the Module from the grid and use the row menu to select **Edit**.
+- [**モジュールのインストール**] ボタンをクリックして、インストールするモジュールを選択します。
 
-- Complete the form fields and include the **API key**. 
+- インストール後、グリッドからモジュールを選択し、行メニューを使用して [**編集**] を選択します。
 
-This form also contains settings to provide a **default duration** and a **minimum duration**. Please make sure you understand these two settings and configure them in a suitable way for your environment.
+- フォーム フィールドに入力し、**API キー** を含めます。
+
+このフォームには、**デフォルトの期間** と **最小期間** を指定する設定も含まれています。これら 2 つの設定を理解し、環境に適した方法で構成してください。
 
 {version}
-**IMPORTANT:** The Google API is charged per map load and therefore how long the Widget remains on screen has a direct relation on the charges you will accrue.
+**重要:** Google API はマップの読み込みごとに課金されるため、ウィジェットが画面に表示される時間は、発生する料金に直接関係します。
+
 {/version}
 
 {tip}
-Until an API key is entered the Widget will not render in the Layout Editor or the Player, although you can still add the Widget to your Layouts.
+API キーが入力されるまで、ウィジェットはレイアウト エディタまたはプレーヤーにレンダリングされませんが、ウィジェットをレイアウトに追加することはできます。
 
-This Module requires a **valid internet connection** on the Player in order to function.
-{/tip}
+このモジュールが機能するには、プレーヤーに**有効なインターネット接続**が必要です。
 
-The Google Maps API terms of use must be read and understood before using this Module. At the time of writing these terms can be found [here](https://developers.google.com/maps/terms).
+ヒント}
 
-## Overview
+このモジュールを使用する前に、Google Maps API の利用規約を読んで理解する必要があります。執筆時点では、これらの規約は [こちら](https://developers.google.com/maps/terms) で確認できます。
 
-- Enter the Latitude and Longitude to use.
+## 概要
 
-- Use the Display Location to use the Latitude and Longitude recorded for a Display.
+- 使用する緯度と経度を入力します。
 
-- Easily re-use 1 Layout on multiple Displays to show the traffic in the correct location for each Display using the Display Location setting.
+- ディスプレイの場所を使用して、ディスプレイに記録された緯度と経度を使用します。
 
-  
-
-  
-
-
-
-
+- ディスプレイの場所設定を使用して、1 つのレイアウトを複数のディスプレイで簡単に再利用し、各ディスプレイの正しい場所に交通状況を表示します。
 

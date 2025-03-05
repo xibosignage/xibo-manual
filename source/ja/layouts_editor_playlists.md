@@ -3,139 +3,142 @@ toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases: 
-   - "media_module_subplaylist"   
-excerpt: "Create or Add Playlists directly to a Layout from the Layout Editor"
-keywords: "timeline of content, slideshow,  content synchronisation key, adding playlists to a layout, convert playlist, saved playlist, cycle based playback, random widget"
-persona: "content creator, super administrator, user"
+- "media_module_subplaylist"
+抜粋: "レイアウト エディターからレイアウトに直接プレイリストを作成または追加する"
+キーワード: "コンテンツのタイムライン、スライドショー、コンテンツ同期キー、レイアウトへのプレイリストの追加、プレイリストの変換、保存されたプレイリスト、サイクル ベースの再生、ランダム ウィジェット"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Playlists
+# プレイリスト
 
-Playlists are used to show a sequence of media items (such as an image slideshow). There are two ways to create a Playlist:
+プレイリストは、メディア アイテムのシーケンス (画像スライドショーなど) を表示するために使用されます。プレイリストを作成するには、次の 2 つの方法があります:
 
-- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
-- Create [Playlists](media_playlists.html#content-creating-a-playlist) independently to a Layout. Global Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
+- レイアウト エディターからレイアウトに直接 [プレイリストを追加](layouts_editor_playlists.html#content-add-playlists) します。ローカル プレイリストは、グローバル プレイリストとして再利用できるように変換して保存できます。保存したプレイリストはレイアウト エディタに表示され、レイアウトに追加できます。
+- レイアウトとは独立して [プレイリスト](media_playlists.html#content-creating-a-playlist) を作成します。グローバル プレイリストは、レイアウトを作成しなくてもディスプレイにスケジュールできます。レイアウト エディタの外部で作成されたプレイリストは、レイアウト エディタの [プレイリストの追加] 機能から選択できます。
 
-## Add Playlists
+## プレイリストの追加
 
-Create new or select existing Playlists to use from the **Layout editor** to create a timeline of content to show on a Layout.
+**レイアウト エディタ** から新しいプレイリストを作成するか、既存のプレイリストを選択して、レイアウトに表示するコンテンツのタイムラインを作成します。
 
-## Feature Overview:
+## 機能の概要:
 
-- Create and configure directly on a Layout.
-- Convert a Playlist created on a Layout to a Global Playlist to save for future use.
-- Easily display a 'slide-show' of content held in one or more Playlists.
-- Sync with Playlists on other Layouts which are part of a Synchronised Event.
-- Combine content from a variety of Playlists to be shown.
-- Set the maximum number of items to be shown from a Playlist.
-- Control how long each item on a Playlist should show before moving onto the next item.
-- Set Expiry Dates for media items added to a Playlist.
-- Play one item per cycle for a specified Play Count.
-- Select a Random Widget to play at each cycle.
-- Cycle through items contained on a Playlist in the viewer to easily see the sequence.
+- レイアウト上で直接作成および構成します。
+- レイアウト上で作成されたプレイリストをグローバル プレイリストに変換して、後で使用できるように保存します。
+- 1 つ以上のプレイリストに保持されているコンテンツの「スライドショー」を簡単に表示します。
+- 同期イベントの一部である他のレイアウト上のプレイリストと同期します。
+- さまざまなプレイリストからコンテンツを組み合わせて表示します。
+- プレイリストから表示するアイテムの最大数を設定します。
+- プレイリストの各アイテムが次のアイテムに移動する前に表示される時間を制御します。
+- プレイリストに追加されたメディア アイテムの有効期限を設定します。
+- 指定された再生回数ごとに 1 つのアイテムを再生します。
+- 各サイクルで再生するランダム ウィジェットを選択します。
+- ビューアでプレイリストに含まれるアイテムを循環して、シーケンスを簡単に確認します。
 
-## Adding Playlists to a Layout
+## レイアウトへのプレイリストの追加
 
-- From the [Layout Editor](layouts_editor), click on **Add Playlists** from the **Toolbox**:
+- [レイアウト エディター](layouts_editor) で、**ツールボックス** から **プレイリストの追加** をクリックします。
 
-![Add Playlists](img/v4.1_layouts_editor_add_playlists.png)
+![プレイリストの追加](img/v4.1_layouts_editor_add_playlists.png)
 
-- Click to Add or drag on a **New Playlist** or a named Playlist which has already been created.
-- Resize and position:
+- **新しいプレイリスト** または既に作成されている名前付きプレイリストをクリックして追加するか、ドラッグします。
+- サイズ変更と配置:
 
-![Content Synchronisation Key](img/v4.1_layouts_editor_synchronisation_key.png)
+![コンテンツ同期キー](img/v4.1_layouts_editor_synchronisation_key.png)
 
-
-
-From the **Properties Panel**, use the **Content Synchronisation Key** to sync with Playlists on other Layouts. Playlists with the same key will be synchronised when the Layout is scheduled as a [Synchronised Event.](scheduling_events.html#content-synchronised-events)
+**プロパティ パネル** から、**コンテンツ同期キー** を使用して他のレイアウトのプレイリストと同期します。レイアウトが [同期イベント](scheduling_events.html#content-synchronised-events) としてスケジュールされると、同じキーを持つプレイリストが同期されます。
 
 {tip}
-**Scenario:**
+**シナリオ:**
 
-You have a Synchronised Event with 3 Displays and 3 different Layouts. Each Layout has some Text at the top and a Playlist in the middle which all 3 need to play in sync. 
+3 つのディスプレイと 3 つの異なるレイアウトを持つ同期イベントがあります。各レイアウトの上部にはテキストがあり、中央には 3 つすべてが同期して再生される必要があるプレイリストがあります。
 
-You could also set two different Playlists to sync differently which you could set to `sync_1` and `sync-2` for example.
-{/tip}
+また、2 つの異なるプレイリストを異なる方法で同期するように設定することもできます。たとえば、`sync_1` と `sync-2` に設定できます。
+ヒント}
 
-- Optionally set [Transitions](tour_transitions.html#content-playlist-transitions) for items on a Playlist from the Properties Panel.
+- 必要に応じて、プロパティ パネルからプレイリストのアイテムの [トランジション](tour_transitions.html#content-playlist-transitions) を設定します。
 
-{tip}
-When default Transitions have been applied, the properties panel will be blank. Only manually entered Transitions will show on forms.
-Defaults can be overridden by unticking the **Automatically apply Transitions** check box from the Properties Panel for the Layout.
-{/tip}
+{ヒント}
 
-- Click the icon in the right hand corner of the Playlist to open the [Playlist Editor](media_playlists.html#content-playlist-editor) to add and configure content.
+デフォルトのトランジションが適用されると、プロパティ パネルは空白になります。フォームには手動で入力したトランジションのみが表示されます。
 
-{tip}
-The [Playlist Editor](media_playlists.html#content-playlist-editor) includes **Spacer** and **Rich Text** Widgets that are only available for use with Playlists.
+レイアウトのプロパティ パネルで [トランジションを自動的に適用する] チェック ボックスをオフにすると、デフォルトを上書きできます。
 
-Media added to a Playlist can also have Start and End times using [Expiry Dates](media_playlists.html#content-widget-expiry-dates).
+{/ヒント}
+
+- プレイリストの右隅にあるアイコンをクリックして [プレイリスト エディター](media_playlists.html#content-playlist-editor) を開き、コンテンツを追加して構成します。
+
+{ヒント}
+[プレイリスト エディター](media_playlists.html#content-playlist-editor) には、プレイリストでのみ使用できる **スペーサー** ウィジェットと **リッチ テキスト** ウィジェットが含まれています。
+
+プレイリストに追加されたメディアには、[有効期限](media_playlists.html#content-widget-expiry-dates) を使用して開始時間と終了時間を設定することができます。
 
 {/tip}
 
 {version}
-**Note:** If you add a named Playlist which has already been created, any edits made to the Playlist will be applied everywhere the Playlist is being currently used!
+**注:** すでに作成されている名前付きプレイリストを追加すると、プレイリストに加えられた編集は、プレイリストが現在使用されているすべての場所に適用されます。
+
 {/version}
 
-- Click the **Back** button at the top to exit the Playlist Editor and return to the Layout Editor.
+- 上部の [**戻る**] ボタンをクリックしてプレイリスト エディターを終了し、レイアウト エディターに戻ります。
 
-View all the content that has been added to the Timeline of the Playlist by using the arrows in the bottom right of the Playlist on the Layout.
+レイアウト上のプレイリストの右下にある矢印を使用して、プレイリストのタイムラインに追加されたすべてのコンテンツを表示します。
 
-- Cycle through the order of content:
+- コンテンツの順序を切り替えます:
 
-![Preview Timeline Content](img/v4.1_layouts_editor_playlists_preview_content.png)
+![タイムライン コンテンツのプレビュー](img/v4.1_layouts_editor_playlists_preview_content.png)
 
-## Convert Playlist
+## プレイリストの変換
 
-If you add a **New Playlist** to the Layout you can opt to convert this into a saved Playlist. Converted Playlists will be shown for Playlist selection in the Layout Editor and from the [Playlists](media_playlists.html#content-playlists-grid) grid.
+レイアウトに **新しいプレイリスト** を追加すると、これを保存済みのプレイリストに変換できます。変換されたプレイリストは、レイアウト エディターのプレイリスト選択と [プレイリスト](media_playlists.html#content-playlists-grid) グリッドに表示されます。
 
-- Click the Playlist on the Layout to select and give it a **Name** from the **General** tab of the **Properties Panel**.
-- Right click and select **Convert Playlist** from the menu.
+- レイアウト上のプレイリストをクリックして選択し、**プロパティ パネル** の **一般** タブから **名前** を付けます。
 
-![Convert Playlist](img/v4.1_layouts_editor_convert_playlist.png)
+- 右クリックして、メニューから **プレイリストの変換** を選択します。
 
+![プレイリストの変換](img/v4.1_layouts_editor_convert_playlist.png)
 
-You will see a pop up message at the bottom of the Layout Editor to say that the Playlist has been saved as a Global Playlist.
-
-{tip}
-Click the **Show more** button to see your Playlist added to the list of available Playlists!
-{/tip}
-
-Converted Playlists will be saved to the [Playlists Grid](media_playlists.html#content-playlist-grid).
-
-## Add to Playlist
-
-If you have a **New Playlist** on a Layout, you can add a new or global Playlist to the Timeline to open further options in the Properties Panel for configuration:
-
-![Playlist Spots](img/v4.1_layouts_editor_playlist_spots.png)
-
-- Select Playlists, Spot Options and Playlist Ordering, when selecting more than one Playlist to [Embed](media_playlists.html#content-embedding-playlists) from the Properties Panel.
-
-Adding a **Playlist** to a **New Playlist** on a Layout has additional [Cycle Based Playback](layouts_editor_playlists.html#content-cycle-based-playback) options which includes a Random Widget feature.
+レイアウト エディターの下部に、プレイリストがグローバル プレイリストとして保存されたことを示すポップアップ メッセージが表示されます。
 
 {tip}
-If you want to add more than one Playlist to combine the play order, we recommend that you should only add one Playlist to the Timeline and then use the options in the Properties Panel to select the additional Playlists and configure.
+[さらに表示] ボタンをクリックすると、使用可能なプレイリストのリストにプレイリストが追加されます。
+
 {/tip}
 
-- ### Cycle Based Playback
+変換されたプレイリストは [プレイリスト グリッド](media_playlists.html#content-playlist-grid) に保存されます。
 
-Once enabled all Playlists selected will be treated as one "list" and will only show one Widget each time the Layout is played, cycling through the content from all Playlists added:
+## プレイリストに追加
 
-- Tick Enable cycle based playback from the Properties Panel.
-- Provide a **Play Count** to determine how many plays each Widget on the Playlist should have before moving onto the next Widget in the timeline.
+レイアウトに **新しいプレイリスト** がある場合は、タイムラインに新しいプレイリストまたはグローバル プレイリストを追加して、プロパティ パネルでさらに設定オプションを開くことができます。
 
-![Cycle Playback](img/v4.1_layouts_editor_playlist_cycle_playback.png)
+![プレイリスト スポット](img/v4.1_layouts_editor_playlist_spots.png)
 
+- プロパティ パネルから複数のプレイリストを選択して [埋め込み](media_playlists.html#content-embedding-playlists) する場合は、プレイリスト、スポット オプション、プレイリストの順序を選択します。
 
+レイアウトの **新しいプレイリスト** に **プレイリスト** を追加すると、ランダム ウィジェット機能を含む追加の [サイクル ベース再生](layouts_editor_playlists.html#content-cycle-based-playback) オプションが使用できます。
 
-Using the **Random Widget each cycle** option will play a Widget from the timeline at random for each cycle.
+{tip}
+再生順序を結合するために複数のプレイリストを追加する場合は、タイムラインにプレイリストを 1 つだけ追加し、プロパティ パネルのオプションを使用して追加のプレイリストを選択して構成することをお勧めします。
+{/tip}
+
+- ### サイクル ベースの再生
+
+有効にすると、選択したすべてのプレイリストが 1 つの「リスト」として扱われ、レイアウトが再生されるたびに 1 つのウィジェットのみが表示され、追加されたすべてのプレイリストからのコンテンツが循環します。
+
+- プロパティ パネルでサイクル ベースの再生を有効にするにチェックを入れます。
+- **再生回数** を指定して、プレイリストの各ウィジェットがタイムラインの次のウィジェットに移動する前に再生する回数を決定します。
+
+![サイクル再生](img/v4.1_layouts_editor_playlist_cycle_playback.png)
+
+**サイクルごとにランダム ウィジェット** オプションを使用すると、サイクルごとにタイムラインからウィジェットがランダムに再生されます。
 
 {version}
-**Note:** These additional options are **not** available when adding one or more Playlists to a [Global Playlist](media_playlists.html#content-feature-overview) timeline, which has been added directly to the Layout!
+**注:** これらの追加オプションは、レイアウトに直接追加された [グローバル プレイリスト](media_playlists.html#content-feature-overview) タイムラインに 1 つ以上のプレイリストを追加する場合には **利用できません**。
+
 {/version}
 
 {tip}
-Did you know [Playlists](media_playlists.html) created and managed independently to Layouts do not require further user access rights to Layouts or the Layout Editor to add and manage content! 
+レイアウトとは独立して作成および管理される [プレイリスト](media_playlists.html) では、コンテンツを追加および管理するためにレイアウトまたはレイアウト エディターへの追加のユーザー アクセス権は必要ありません。
 
-These global Playlists can also be directly [Scheduled](scheduling_events.html#content-media-scheduling) without the need to first create and add to a Layout!
+これらのグローバル プレイリストは、最初にレイアウトを作成して追加することなく、直接 [スケジュール](scheduling_events.html#content-media-scheduling) することもできます。
+
 {/tip}

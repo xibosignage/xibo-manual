@@ -1,186 +1,190 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Speed up the design process by using Templates"
-keywords: "zones, placeholders, alter template, xibo exchange"
-persona: "content creator, super administrator, user"
+抜粋: "テンプレートを使用して設計プロセスをスピードアップ"
+キーワード: "ゾーン、プレースホルダー、テンプレートの変更、xibo exchange"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Templates
+# テンプレート
 
-Use Templates to speed up the design process and ensure a corporate standard is maintained.
+テンプレートを使用して設計プロセスをスピードアップし、企業標準が維持されるようにします。
 
-## Feature Overview:
+## 機能の概要:
 
-- Use existing published Layout designs to easily save as Templates.
-- Create and manage Templates from a dedicated page for easier management.
-- Add Zones to Templates to act as content placeholders on a Layout.
-- Set Share options to restrict User access to selected zones on a Template.
-- Show Published Templates for selection in the Layout Editor.
-- Speed up the entire Layout design process for all Users.
-- Apply a standardised look to all Layouts.
+- 既存の公開済みレイアウト デザインを使用して、テンプレートとして簡単に保存します。
+- 管理を容易にするために、専用ページからテンプレートを作成および管理します。
+- レイアウト上のコンテンツ プレースホルダーとして機能するゾーンをテンプレートに追加します。
+- 共有オプションを設定して、テンプレート上の選択したゾーンへのユーザー アクセスを制限します。
+- レイアウト エディターで選択できるように、公開済みテンプレートを表示します。
+- すべてのユーザーのレイアウト設計プロセス全体をスピードアップします。
+- すべてのレイアウトに標準化された外観を適用します。
 
-Create new [Templates](layouts_templates.html#content-create-template) or save your existing [Layout](layouts_templates.html#content-save-layout-as-template) designs to use as Templates for future Layouts.
+新しい [テンプレート](layouts_templates.html#content-create-template) を作成するか、既存の [レイアウト](layouts_templates.html#content-save-layout-as-template) デザインを保存して、将来のレイアウトのテンプレートとして使用します。
 
 {nonwhite}
-Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates from the Toolbox.
+[Xibo Exchange.](layouts.html#content-xibo-exchange) からデザインされたテンプレートの 1 つを選択するには、ツールボックスのテンプレートの下にあるボタンをクリックします。
+
 {/nonwhite}
 
 {version}
-Selecting a Template will replace the current Layout design to the chosen Template. This action is irreversible and so must be used with caution.
+テンプレートを選択すると、現在のレイアウト デザインが選択したテンプレートに置き換えられます。この操作は元に戻せないため、注意して使用する必要があります。
+
 {/version}
 
-## Create Template
+## テンプレートの作成
 
-Templates are created by selecting **Templates** under the **Design** section of the main CMS menu.
+テンプレートは、メインの CMS メニューの [**デザイン**] セクションで [**テンプレート**] を選択して作成します。
 
-- Select the **Add Template** button and complete the form fields.
+- [**テンプレートの追加**] ボタンを選択し、フォーム フィールドに入力します。
 
+![テンプレートの追加フォーム](img/v4_layouts_add_template_form.png)
 
-![Add Template Form](img/v4_layouts_add_template_form.png)
-
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Templates saved to a Folder will inherit the access options applied to that Folder.
-
-{tip}
-If Users should also have access to the content of the Template (image media files for example), ensure that these are also saved to the same Folder!
-{/tip}
-
-- Give your Template a **Name** for easy identification in the CMS and include optional [Tags](tour_tags.html).
-
-- Select the [Resolution.](layouts#content-resolutions) 
-
-On **Saving**, the [Layout Editor](layouts_editor.html) will automatically open with one full size **Zone**.
-
-Zones are used to define areas on a Layout which content can be added to.
+[フォルダ](tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](users_features_and_sharing.html#content-share) するために使用されます。フォルダに保存されたテンプレートは、そのフォルダに適用されているアクセス オプションを継承します。
 
 {tip}
-If you don't want to include any Zones and add content directly to the Template, remove the Zone from the canvas by right clicking and selecting **Delete**. Add content in the same way as creating a [Layout](layouts.html).
+ユーザーがテンプレートのコンテンツ (画像メディア ファイルなど) にもアクセスできるようにする場合は、これらも同じフォルダに保存されていることを確認してください。
+
 {/tip}
 
-### Adding Zones
+- CMS で簡単に識別できるように、テンプレートに **名前** を付け、オプションで [タグ](tour_tags.html) を含めます。
+
+- [解像度](layouts#content-resolutions) を選択します。
+
+**保存** すると、[レイアウト エディタ](layouts_editor.html) が 1 つのフル サイズの **ゾーン** とともに自動的に開きます。
+
+ゾーンは、コンテンツを追加できるレイアウト上の領域を定義するために使用されます。
 
 {tip}
-Zones are only available for use with Templates!
+ゾーンを含めずにテンプレートに直接コンテンツを追加する場合は、右クリックして [**削除**] を選択し、キャンバスからゾーンを削除します。[レイアウト](layouts.html) を作成するのと同じ方法でコンテンツを追加します。
+
 {/tip}
 
-- Click anywhere on the zone to resize and position:
-
-![Template Layout Editor](img/v4_layouts_templates_editor.png)
+### ゾーンの追加
 
 {tip}
-Use the buttons, in the bottom right to select to **Snap to Grid**, **Snap to Borders** or **Snap to Elements** for easier positioning when adding items.
+ゾーンはテンプレートでのみ使用できます。
+
 {/tip}
 
-**Zones** can be added from the toolbar:
+- ゾーンの任意の場所をクリックして、サイズを変更し、配置します。
 
-- Click on the top **Widget** button.
-
-![Add Zone](img/v4_layouts_templates_add_zone.png)
-
-- Select the Zone and drag and drop or click to add.
-- Resize and Position.
+![テンプレート レイアウト エディター](img/v4_layouts_templates_editor.png)
 
 {tip}
-Set to **Loop** only if the Zone contains a Widget that needs to update periodically (e.g. RSS Ticker) and it needs to update more frequently than the duration of the overall Layout.
+右下のボタンを使用して、[**グリッドにスナップ**]、[**境界線にスナップ**]、または [**要素にスナップ**] を選択すると、アイテムを追加するときに簡単に配置できます。
+
 {/tip}
 
-### Layering
+**ゾーン** はツールバーから追加できます。
 
-From the Properties Panel, select the Positioning tab to set [Layering](layouts_editor.html#content-layering) for overlapping Zones/ added content.
+- 上部の [**ウィジェット**] ボタンをクリックします。
+
+![ゾーンの追加](img/v4_layouts_templates_add_zone.png)
+
+- ゾーンを選択し、ドラッグ アンド ドロップまたはクリックして追加します。
+- サイズ変更と配置。
 
 {tip}
-Right click to show a [Context Menu](layouts_editor.html#content-context-menu) and easily move items backwards and forwards.
+ゾーンに定期的に更新する必要があるウィジェット (RSS ティッカーなど) が含まれており、レイアウト全体の継続時間よりも頻繁に更新する必要がある場合のみ、**ループ** に設定します。
 
-[Sharing](users_features_and_sharing.html#content-share) options are particularly useful if you want a User to only have access to a section of the Layout to manage.
 {/tip}
 
-Add both [content](layouts_editor.html#content-toolbox) from the Toolbox and Zones to build your Template design. 
+### レイヤー化
+
+プロパティ パネルから [配置] タブを選択し、重複するゾーン/追加コンテンツの [レイヤー化](layouts_editor.html#content-layering) を設定します。
 
 {tip}
-Adding multiple media items to one zone will automatically create a [Playlist](layouts_editor_playlists.html)!
-{/tip}
+右クリックすると [コンテキスト メニュー](layouts_editor.html#content-context-menu) が表示され、アイテムを簡単に前後に移動できます。
 
-Once your Template is complete, use the menu at the top of the editor to **Publish**:
+[共有](users_features_and_sharing.html#content-share) オプションは、ユーザーが管理するレイアウトのセクションのみにアクセスできるようにする場合に特に便利です。
 
-![Publish Template](img/v4_layouts_templates_publish.png)
+ヒント}
 
-Published **Templates** will show for selection from the Toolbox of the Layout Editor.
+ツールボックスとゾーンの両方の [コンテンツ](layouts_editor.html#content-toolbox) を追加して、テンプレート デザインを構築します。
 
+{ヒント}
+1 つのゾーンに複数のメディア アイテムを追加すると、[プレイリスト](layouts_editor_playlists.html) が自動的に作成されます。
 
-## Save Layout as Template
+ヒント}
 
-Published Layouts can be saved as a **Template** from two locations:
+テンプレートが完成したら、エディターの上部にあるメニューを使用して **公開** します。
 
-- From the [Layout Editor](layouts_editor.html):
-  - After **Publishing** go back to the menu and select **Save Template**:
+![テンプレートを公開](img/v4_layouts_templates_publish.png)
 
+公開された **テンプレート** は、レイアウト エディターのツールボックスから選択できます。
 
-![Save Template Editor](img/v4_layouts_templates_save_as_template.png)
+## レイアウトをテンプレートとして保存
 
-- From the [Layouts](layouts.html#content-layout-grid) grid:
-  - Use the row menu for a **Published** Layout and **select Save Template**.
+公開されたレイアウトは、次の 2 つの場所から **テンプレート** として保存できます。
 
+- [レイアウト エディター](layouts_editor.html) から:
+- **公開** 後、メニューに戻って **テンプレートの保存** を選択します:
 
-Complete all relevant form fields to save the selected Layout as a Template.
+![テンプレート エディターの保存](img/v4_layouts_templates_save_as_template.png)
 
-{tip}
-Optionally use the tick box to also include all added **Widgets** to the Template!
-{/tip}
+- [レイアウト](layouts.html#content-layout-grid) グリッドから:
+- **公開** されたレイアウトの行メニューを使用して、**テンプレートの保存** を選択します。
 
-- **Save**
-
-{tip}
-Layouts that are saved as a Template can be viewed and edited from the **Templates** grid under the **Design** section of the main CMS menu.
-
-**Tagging** a Layout as a 'Template' will also add your designs to your Template list!
-{/tip}
-
-## Row Menu
-
-All Templates have a row menu where Users can access a list of actions/shortcuts.
-
-- Notable settings are listed below:
-
-#### Alter Template 
-
-Select to make design changes to the Template in the Layout Editor.
-
-#### Checkout
-
-To make edits to a Published Template click to **Checkout** and create a draft. Once edited the Template can be published to make the changes permanent overwriting the existing Template. Discard will revert the Template back to its original published state.
+関連するすべてのフォーム フィールドに入力して、選択したレイアウトをテンプレートとして保存します。
 
 {tip}
-Take your time with any edits you need to make as using **Checkout** ensures that no changes are made to your published version or shown on scheduled **Displays** until you choose to do so. **Publish** confirms changes have been made and will overwrite your published version. **Discard** will delete the draft with the published version remaining untouched.
-{/tip}
+オプションで、チェックボックスを使用して、追加されたすべての **ウィジェット** もテンプレートに含めることができます。
 
-#### Publish
+ヒント}
 
-Publish will ensure that the Template is shown for selection from the Toolbox.
+- **保存**
 
-#### Discard 
+{ヒント}
+テンプレートとして保存されたレイアウトは、メインの CMS メニューの **デザイン** セクションの **テンプレート** グリッドから表示および編集できます。
 
-Discard all changes made to a draft and revert back to the previous Published version.
+レイアウトを「テンプレート」として **タグ付け** すると、デザインがテンプレート リストに追加されます。
 
-#### Share
+ヒント}
 
-Set [Share](users_features_and_sharing.html#content-share) options for User/User Group access to individual Templates.
+## 行メニュー
 
-#### Export 
+すべてのテンプレートには行メニューがあり、ユーザーはそこからアクション/ショートカットのリストにアクセスできます。
 
-Export the Template including all associated Widgets/Media/DataSet structures to a ZIP file, so it can be easily shared. 
+- 注目すべき設定を以下に示します:
+
+#### テンプレートの変更
+
+レイアウト エディターでテンプレートのデザインを変更する場合に選択します。
+
+#### チェックアウト
+
+公開済みのテンプレートを編集するには、**チェックアウト** をクリックして下書きを作成します。編集したら、テンプレートを公開して、既存のテンプレートを上書きして変更を永続化できます。破棄すると、テンプレートは元の公開状態に戻ります。
 
 {tip}
-When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tags** will be exported. Select the **Import Tags** option to add these Tags on Layout Import.
-
-Use the **With Selected** option at the bottom of the Templates grid to perform bulk actions for multiple Templates! 
+**チェックアウト** を使用すると、公開バージョンに変更が加えられたり、スケジュールされた **ディスプレイ** に表示されたりすることがなくなるため、編集には時間をかけてください。**公開** は変更が行われたことを確認し、公開バージョンを上書きします。**破棄** は下書きを削除しますが、公開バージョンはそのまま残ります。
 {/tip}
 
-#### Next...
+#### 公開
 
-[Overlay Layouts](layouts_overlay.html)
+公開すると、テンプレートがツールボックスから選択可能になります。
 
+#### 破棄
 
+下書きに加えられたすべての変更を破棄し、以前の公開バージョンに戻します。
 
+#### 共有
 
+ユーザー/ユーザー グループが個々のテンプレートにアクセスできるように、[共有](users_features_and_sharing.html#content-share) オプションを設定します。
+
+#### エクスポート
+
+関連するすべてのウィジェット/メディア/データセット構造を含むテンプレートを ZIP ファイルにエクスポートして、簡単に共有できるようにします。
+
+{tip}
+テンプレートをエクスポートすると、割り当てられたすべての**レイアウト**、**プレイリスト**、**メディア タグ**がエクスポートされます。レイアウトのインポート時にこれらのタグを追加するには、[タグのインポート] オプションを選択します。
+
+テンプレート グリッドの下部にある [選択したものを含む] オプションを使用して、複数のテンプレートに対して一括操作を実行します。
+
+{/tip}
+
+#### 次へ...
+
+[オーバーレイ レイアウト](layouts_overlay.html)
 

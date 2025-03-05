@@ -1,71 +1,70 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Add PowerPoint files to Playlists and Layouts using one of the three options available"
-keywords: "prepare powerpoint, prepare windows players, enable powerpoint on displays"
-persona: "content manager"
+抜粋: "3 つのオプションのいずれかを使用して、PowerPoint ファイルをプレイリストとレイアウトに追加します"
+キーワード: "PowerPoint の準備、Windows プレーヤーの準備、ディスプレイでの PowerPoint の有効化"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
 # PowerPoint
 
-Display PowerPoint presentations by selecting from one of the following options:
+次のオプションのいずれかを選択して、PowerPoint プレゼンテーションを表示します:
 
-## 1. Add Video (RECOMMENDED)
+## 1. ビデオの追加 (推奨)
 
-For non-Windows Players / users with no full copy of PowerPoint to install, from Office 2010 onwards PowerPoint presentations can be exported as a **Video** file.   Export a PowerPoint file by using the option on the file menu from inside the PowerPoint application. 
+Windows 以外のプレーヤー / PowerPoint のフル コピーをインストールしていないユーザーの場合、Office 2010 以降では、PowerPoint プレゼンテーションを **ビデオ** ファイルとしてエクスポートできます。PowerPoint アプリケーション内のファイル メニューのオプションを使用して、PowerPoint ファイルをエクスポートします。
 
 {version}
-**NOTE:** If your Players are Android or webOS devices you should ensure that the export format is MP4 (PowerPoint 2013 onwards) or convert your video to a MP4 using a 3rd party tool.
+**注意:** プレーヤーが Android または webOS デバイスの場合は、エクスポート形式が MP4 (PowerPoint 2013 以降) であることを確認するか、サード パーティ ツールを使用してビデオを MP4 に変換する必要があります。
 {/version}
 
-Continue by adding [Video](media_module_video.html) to your Playlists and Layouts.
+[ビデオ](media_module_video.html) をプレイリストとレイアウトに追加して続行します。
 
-## 2. Add PDF
+## 2. PDF を追加
 
-For non-Windows Players / users with no full copy of PowerPoint to install you can save your PowerPoint as a **PDF** file.
+Windows 以外のプレーヤーや PowerPoint のフル コピーをインストールしていないユーザーの場合は、PowerPoint を **PDF** ファイルとして保存できます。
 
-Continue by adding [PDF](media_module_pdf.html) to your Playlists and Layouts.
+[PDF](media_module_pdf.html) をプレイリストとレイアウトに追加して続行します。
 
-## 3. Upload a prepared PPT file (Windows Players only)
+## 3. 準備した PPT ファイルをアップロードします (Windows プレーヤーのみ)
 
-PowerPoint is a proprietary format from Microsoft and can only be displayed on a Windows-based signage player which has a full copy of Microsoft PowerPoint installed on each Windows Player. (Please see the [Prepare your Windows Players](media_module_powerpoint.html#content-prepare-your-windows-players) section)
+PowerPoint は Microsoft 独自の形式であり、各 Windows プレーヤーに Microsoft PowerPoint のフル コピーがインストールされている Windows ベースのサイネージ プレーヤーでのみ表示できます。([Windows プレーヤーの準備](media_module_powerpoint.html#content-prepare-your-windows-players) セクションを参照してください)
 
 {feat}PowerPoint|v4{/feat}
 
-### Prepare the PowerPoint Presentation.
+### PowerPoint プレゼンテーションを準備します。
 
-PowerPoint will, by default, put scroll bars up the side of your presentation, unless you do the following for each PowerPoint file *BEFORE* you upload it:
+PowerPoint では、アップロードする *前* に各 PowerPoint ファイルに対して次の操作を行わない限り、デフォルトでプレゼンテーションの横にスクロール バーが表示されます。
 
-1. Open your PowerPoint Document
-2. Slide Show -> Set-up Show
-3. Under "Show Type", choose "Browsed by an individual (window)" and then untick "Show scrollbar"
-4. Click OK
-5. Save the Presentation
-6. Please note that [[PRODUCTNAME]] will not advance the slides in a Presentation, so you should record automatic slide timings by going to "Slide Show -> Rehearse Timings" and then save the presentation.
+1. PowerPoint ドキュメントを開きます。
+2. スライド ショー -> セットアップ ショーを選択します。
+3. [ショーの種類] で [個人による参照 (ウィンドウ)] を選択し、[スクロール バーを表示] のチェックを外します。
+4. [OK] をクリックします。
+5. プレゼンテーションを保存します。
+6. [[PRODUCTNAME]] ではプレゼンテーション内のスライドが進められないため、[スライド ショー -> タイミングのリハーサル] に移動して自動スライド タイミングを記録してから、プレゼンテーションを保存する必要があります。
 
-### Upload to CMS
+### CMS にアップロードします。
 
-Using the 'other media' search, use the **Type** drop down to select **PowerPoint**:
+[その他のメディア] 検索を使用して、[**タイプ**] ドロップダウンから [**PowerPoint**] を選択します。
 
-- Upload PPT files directly to Playlists/Layouts using the [Library Search](layouts_editor.html#content-library-search) from the toolbar.
+- ツールバーの [ライブラリ検索](layouts_editor.html#content-library-search) を使用して、PPT ファイルをプレイリスト/レイアウトに直接アップロードします。
 
-- Files uploaded directly to Playlists and Layouts are automatically saved to the [Library](media_library.html) for re-use.
-- PowerPoint files can also be uploaded in advance to the Library.
-- Set [start and end times](media_playlists.html#content-widget-expiry-dates) for PowerPoint files uploaded directly to a Playlist.
-- Save PowerPoint files to [Folders](tour_folders.html#content-saving-to-folders) on upload, to easily control access to Users.
+- プレイリストとレイアウトに直接アップロードされたファイルは、再利用できるように [ライブラリ](media_library.html) に自動的に保存されます。
+- PowerPoint ファイルを事前にライブラリにアップロードすることもできます。
+- プレイリストに直接アップロードされた PowerPoint ファイルの [開始時間と終了時間](media_playlists.html#content-widget-expiry-dates) を設定します。
+- アップロード時に PowerPoint ファイルを [フォルダ](tour_folders.html#content-saving-to-folders) に保存して、ユーザーへのアクセスを簡単に制御します。
 
 ![PowerPoint](img/v4_media_module_powerpoint.png)
 
-
-
 {tip}
-A Preview for PowerPoint files is not available in the CMS!
+PowerPoint ファイルのプレビューは CMS では使用できません。
+
 {/tip}
 
-## Prepare your Windows Players
+## Windows プレーヤーを準備する
 
-Install PowerPoint on your Windows PC alongside your [[PRODUCTNAME]] Player and make the following adjustments to the Windows Registry to disable the windows prompt when opening the PowerPoint. **Please ensure you have taken all necessary precautions when making these changes**.
+[[PRODUCTNAME]] プレーヤーと一緒に Windows PC に PowerPoint をインストールし、Windows レジストリに次の調整を行って、PowerPoint を開いたときに Windows プロンプトを無効にします。 **これらの変更を行う際は、必要な予防措置をすべて講じていることを確認してください**。
 
 ```registry
 [HKEY_CLASSES_ROOT\PowerPoint.Show.12]
@@ -76,7 +75,7 @@ Install PowerPoint on your Windows PC alongside your [[PRODUCTNAME]] Player and 
 "BrowserFlags"=dword:00000002
 "EditFlags"=dword:00010000
 
-[HKEY_CLASSES_ROOT\PowerPoint.SlideShow.12]
+[H KEY_CLASSES_ROOT\PowerPoint.SlideShow.12]
 "BrowserFlags"=dword:800000a0
 "EditFlags"=dword:00010000
 
@@ -85,22 +84,22 @@ Install PowerPoint on your Windows PC alongside your [[PRODUCTNAME]] Player and 
 "EditFlags"=dword:00010000
 ```
 
-If you do not feel comfortable changing the registry it may be possible to achieve the same results by waiting for [[PRODUCTNAME]] to open the first PowerPoint and then when the pop-up notification appears, choose to "Open" the file, and un-check the box so you won't be prompted again.
+レジストリを変更するのが面倒な場合は、[[PRODUCTNAME]] が最初の PowerPoint を開くまで待ってから、ポップアップ通知が表示されたらファイルを「開く」を選択し、再度プロンプトが表示されないようにボックスのチェックを外すことで、同じ結果を得ることができる場合があります。
 
-### Enable PowerPoint on Displays
+### ディスプレイで PowerPoint を有効にする
 
-You will need to ensure that the Windows [Display Setting Profile](displays_settings) used for the Displays you intend to use PowerPoint on, must be first enabled:
+PowerPoint を使用する予定のディスプレイで使用する Windows [ディスプレイ設定プロファイル](displays_settings) が最初に有効になっていることを確認する必要があります。
 
-- Click on **Display Settings** under the **Displays** section of the main CMS menu.
-- Use the row menu for the Windows Display Profile and select **Edit**.
-- From the **General** tab, tick to **Enable PowerPoint**.
-- **Save**.
+- メイン CMS メニューの [ディスプレイ] セクションの [ディスプレイ設定] をクリックします。
+- Windows ディスプレイ プロファイルの行メニューを使用して [編集] を選択します。
+- [全般] タブで [PowerPoint を有効にする] にチェックを入れます。
+- [保存] をクリックします。
 
-### Advanced Steps
+### 高度な手順
 
-When displaying PowerPoint, [[PRODUCTNAME]] is relying on Windows and PowerPoint to display the content. This means that error capture and reporting is outside the control of [[PRODUCTNAME]]. To mitigate any issues we recommend disabling Windows error notifications. This can be done by following the [steps here](https://www.lifewire.com/how-do-i-disable-error-reporting-in-windows-2626074). 
+PowerPoint を表示する場合、[[PRODUCTNAME]] は Windows と PowerPoint を使用してコンテンツを表示します。つまり、エラーのキャプチャとレポートは [[PRODUCTNAME]] の制御外です。問題を軽減するには、Windows エラー通知を無効にすることをお勧めします。これは、[ここの手順](https://www.lifewire.com/how-do-i-disable-error-reporting-in-windows-2626074) に従って実行できます。
 
-If you still experience issues, it may also be advisable to disable Office Application Error reporting by merging the registry patch below.
+それでも問題が解決しない場合は、以下のレジストリ パッチをマージして、Office アプリケーション エラー報告を無効にすることもお勧めします。
 
 ```reg
 [HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\11.0\Common]
@@ -114,13 +113,9 @@ If you still experience issues, it may also be advisable to disable Office Appli
 ```
 
 {version}
-**NOTE:** The Windows player displays the PowerPoint presentation inside an Internet Explorer container. Internet Explorer uses the directory
-`C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\Content.MSO` to cache Microsoft Office temporary files that are identified as being from the Internet security zone. This can cause multiple copies of the presentation to be saved to this directory over time. Windows does not automatically remove the cached duplicates from that directory, which can consume storage space on your hard drive over time. If you find multiple copies of your presentation cached at this directory it is safe to delete them. 
+**注意:** Windows プレーヤーは、PowerPoint プレゼンテーションを Internet Explorer コンテナー内に表示します。 Internet Explorer は、ディレクトリ `C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\Content.MSO` を使用して、インターネット セキュリティ ゾーンからであると識別された Microsoft Office 一時ファイルをキャッシュします。これにより、時間の経過とともにプレゼンテーションの複数のコピーがこのディレクトリに保存される可能性があります。Windows は、キャッシュされた重複ファイルをこのディレクトリから自動的に削除しないため、時間の経過とともにハード ドライブのストレージ領域が消費される可能性があります。このディレクトリにプレゼンテーションの複数のコピーがキャッシュされている場合は、削除しても問題ありません。
 
-We would recommend creating a scheduled task or script that will delete the contents of that directory regularly.
+このディレクトリの内容を定期的に削除するスケジュールされたタスクまたはスクリプトを作成することをお勧めします。
+
 {/version}
-
-
-
-
 

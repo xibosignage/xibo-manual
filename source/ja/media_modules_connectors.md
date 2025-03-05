@@ -1,28 +1,28 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 3
 minHeadingLevel: 1
-excerpt: "Connectors Management for Administrators"
-keywords: "configure connectors, api key, third party data"
-persona: "administrator"
+抜粋: "管理者向けコネクタ管理"
+キーワード: "コネクタ、API キー、サードパーティ データの構成"
+ペルソナ: "管理者"
 ---
 
-# Connectors Management
+# コネクタ管理
 
-Modules that rely on a third party service for data, [Stocks](media_module_stocks.html) for example, need further configuration with API keys etc.
+たとえば [Stocks](media_module_stocks.html) など、サードパーティのサービスにデータを利用するモジュールでは、API キーなどを使用した追加の構成が必要です。
 
-Once the Module has been enabled and you have the required API key:
+モジュールが有効になり、必要な API キーを取得したら、次の操作を行います。
 
-- Go to the **Applications** page under the **Administration** section of the main CMS menu.
-- Scroll down to the **Connectors** section of the page.
+- メイン CMS メニューの [**管理**] セクションの [**アプリケーション**] ページに移動します。
+- ページの [**コネクタ**] セクションまで下にスクロールします。
 
-Here you can see all third party services which can be configured:
+ここでは、構成可能なすべてのサードパーティ サービスを確認できます:
 
-![Connectors](img/v4_media_modules_connectors.png)
+![コネクタ](img/v4_media_modules_connectors.png)
 
-- Click the **Configure** button of the Connector to configure:
+- コネクタの [**構成**] ボタンをクリックして構成します:
 
-![Configure Connectors](img/v4_media_modules_configure_connectors.png)
+![コネクタの構成](img/v4_media_modules_configure_connectors.png)
 
-- Provide the **API key** you have been given and ensure that you tick the **Enabled** box to tell the Connector to start providing the service to the relevant Modules.
+- 提供された **API キー** を入力し、[**有効**] ボックスにチェックマークを付けて、コネクタが関連するモジュールにサービスを提供するように指示します。
 

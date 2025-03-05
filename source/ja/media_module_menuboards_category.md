@@ -1,41 +1,39 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 2
 minHeadingLevel: 2
-excerpt: "Display Category data held in Menu Boards"
-keywords: "menu board elements"
-persona: "content manager"
+抜粋: "メニュー ボードに保持されているカテゴリ データを表示する"
+キーワード: "メニュー ボード要素"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Menu Boards: Category
+# メニュー ボード: カテゴリ
 
-Display data for Categories held in a Menu Board anywhere on a Layout using **Elements**.
+**要素** を使用して、レイアウト上の任意の場所にメニュー ボードに保持されているカテゴリのデータを表示します。
 
-{feat}Menu Board: Category|v4{/feat}
+{feat}メニュー ボード: カテゴリ|v4{/feat}
 
-The Menu Boards: Category Widget primarily consists of a Menu Board source which feeds into configured Elements.
+メニュー ボード: カテゴリ ウィジェットは、主に、構成された要素にフィードするメニュー ボード ソースで構成されます。
 
 {tip}
-[Menu Boards](media_menuboards.html) need to be created with defined Categories prior to adding the Menu Boards: Category Widget to Layouts.
-{/tip}
+[メニュー ボード](media_menuboards.html) は、メニュー ボード: カテゴリ ウィジェットをレイアウトに追加する前に、定義済みのカテゴリを使用して作成する必要があります。
+ヒント}
 
-## Category Elements
+## カテゴリ要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding a Menu Boards: Category Widget to a [Layout](layouts_editor.html) to give Users more control over what components of Menu Board Categories to use and where they can be placed.
+[レイアウト](layouts_editor.html) にメニュー ボード: カテゴリ ウィジェットを追加するときに [要素](layouts_editor#content-data-widgets-and-elements) を選択でき、ユーザーはメニュー ボード カテゴリのどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![Category Elements](img/v4_media_modules_category_elements.png)
+![カテゴリ要素](img/v4_media_modules_category_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. A Menu Board must be selected to use as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+各要素には、プロパティ パネルに一連の構成オプションがあります。レイアウトで使用される各要素の [構成] タブから、データ ソースとして使用するメニュー ボードを選択する必要があります。追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。データ要素は、[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することでさらに補完できます。これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめられ、構成や配置が簡単になります。
 
-## Overview
+## 概要
 
-- Update Elements with new Category data by editing the underlying [Menu Board](media_menuboards.html#content-create-and-configure-categories) data.
-- Update Menu Board: Category  Widget content without accessing Layouts.
-- Content for this media is cached by the Players for off-line playback.
-- Use with the [Menu Boards: Products](media_module_menuboards_products.html) Widget to easily create a menu/catalogue of items for your Category to show on Displays.
+- 基礎となる [メニュー ボード](media_menuboards.html#content-create-and-configure-categories) データを編集して、新しいカテゴリ データで要素を更新します。
+- レイアウトにアクセスせずに、メニュー ボード: カテゴリ ウィジェット コンテンツを更新します。
+- このメディアのコンテンツは、オフライン再生用にプレーヤーによってキャッシュされます。
+- [メニュー ボード: 製品](media_module_menuboards_products.html) ウィジェットとともに使用して、ディスプレイに表示するカテゴリのアイテムのメニュー/カタログを簡単に作成します。
 
+#### 次へ...
 
-
-#### Next...
-
-[Menu Boards: Products](media_module_menuboards_products.html)
+[メニューボード: 製品](media_module_menuboards_products.html)

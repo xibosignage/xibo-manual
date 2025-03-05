@@ -1,75 +1,41 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Display trade price information for stock listings"
-keywords: "alpha vantage api, alpha vantage connector"
-persona: "content manager"
+抜粋: "株式リストの取引価格情報を表示する"
+キーワード: "alpha vantage api、alpha vantage コネクタ"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Stocks
+# 株式
 
-Display trade price information for stock listings anywhere on a Layout using **Elements** or select a **Static Template** to display results in Layouts/Playlists.
+**要素** を使用してレイアウト上の任意の場所に株式リストの取引価格情報を表示するか、**静的テンプレート** を選択してレイアウト/プレイリストに結果を表示します。
 
-{feat}Stocks|v4{/feat}
+{feat}株式|v4{/feat}
 
-The Stocks Widget relies in part on the [Alpha Vantage API](https://www.alphavantage.co/) to retrieve stock market data which feeds into configured Elements and Static Templates. The prices returned by Alpha Vantage follow the [stock market standard](https://medium.com/@patrick.collins_58673/stock-api-landscape-5c6e054ee631) of adjusting for corporate events such as splits and dividend payout.
+株式ウィジェットは、構成された要素と静的テンプレートにフィードされる株式市場データを取得するために、[Alpha Vantage API](https://www.alphavantage.co/) に部分的に依存しています。 Alpha Vantage によって返される価格は、株式分割や配当支払いなどの企業イベントに合わせて調整される [株式市場標準](https://medium.com/@patrick.collins_58673/stock-api-landscape-5c6e054ee631) に従います。
 
 {tip}
-Please visit [Alpha Vantage](https://www.alphavantage.co/support/#api-key) to create an account and obtain an API key to enter into the Alpha Vantage [Connector.](media_modules.html#content-connectors)
+[Alpha Vantage](https://www.alphavantage.co/support/#api-key) にアクセスしてアカウントを作成し、Alpha Vantage [コネクタ](media_modules.html#content-connectors) に入力するための API キーを取得してください。
 {/tip}
 
 {nonwhite}
 {cloud}
-The Currencies Module is configured for **Xibo Cloud** hosted customers with an API key provided as part of the service.
-{/cloud}
-{/nonwhite}
+通貨モジュールは、サービスの一部として提供される API キーを使用して、**Xibo Cloud** でホストされる顧客向けに構成されています。
+:::no-loc(shared): ...ヒント}
 
-## Stocks Elements
+追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することで、データ要素をさらに補完できます。これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめることができ、構成と配置が簡単になります。
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Stocks Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Stocks Widget to use and where they can be placed.
+## Stocks 静的テンプレート
 
-![Stocks Elements](img/v4_media_module_stocks_elements.png)
+[静的テンプレート](layouts_editor.html#content-static-templates) は、返される結果のレイアウトとスタイル設定方法を定義し、事前にスタイル設定されたテンプレートを使用してデータを表示する簡単な方法です。
 
-Each Element has a set of configuration options in the Properties Panel.  Enter **Stock Symbols** to return results from the **Configure** tab.
+![Stocks テンプレート](img/v4_media_modules_stocks_templates.png)
 
-{tip}
-If you need a stock symbol that is only quoted on a specific exchange then you can use the format `SYMBOL:EXCHANGE` to return results. 
-Stock symbols can be found on various lookup sites such as [Yahoo Finance](https://finance.yahoo.com/)!
-{/tip}
+プロパティ パネルのさまざまなオプションを使用して、テンプレートを構成してデザインの外観を変更できます。 **Stock Symbols** を入力すると、レイアウト/プレイリストに追加された各テンプレートの **Configure** タブから結果が返されます。
 
-Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+## 概要
 
-## Stocks Static Templates
-
-[Static Templates](layouts_editor.html#content-static-templates) define how returned results should be laid out and styled and are a simple way to show your data using pre-styled templates.
-
-![Stocks Templates](img/v4_media_modules_stocks_templates.png)
-
-Templates can be configured to make changes to the design appearance using a range of options in the Properties Panel. Enter **Stock Symbols** to return results from the **Configure** tab for each Template added to the Layout/Playlist.
-
-## Overview
-
-- Content for this media is cached by the Players for off-line playback.
-- Duration can be applied per item or per page.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- このメディアのコンテンツは、オフライン再生用にプレーヤーによってキャッシュされます。
+- 期間はアイテムごとまたはページごとに適用されます。
 

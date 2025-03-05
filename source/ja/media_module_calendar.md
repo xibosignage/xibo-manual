@@ -3,71 +3,70 @@ toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 alias: "media_module_agenda"
-excerpt: "Display Calendar events pulled in from an iCal feed"
-keywords: "ical feed"
-persona: "content manager, webhook triggers"
+excerpt: "iCal フィードから取得したカレンダー イベントを表示する"
+keywords: "ical フィード"
+persona: "コンテンツ マネージャー、Webhook トリガー"
 ---
 
-# Calendar
+# カレンダー
 
-Display Calendar events pulled in from an iCal feed anywhere on a Layout using **Elements** or select a **Static Template** to display results in Layouts/Playlists.
+**Elements** を使用してレイアウト上の任意の場所に iCal フィードから取得したカレンダー イベントを表示するか、**Static Template** を選択してレイアウト/プレイリストに結果を表示します。
 
 {feat}Calendar View|v4{/feat}
 
-Calendar data is provided by an iCal feed which will feed into configured Elements and Static Templates.
+カレンダー データは、構成された要素と Static Templates にフィードされる iCal フィードによって提供されます。
 
 {tip}
-Ensure that the ICS feed URL is available to the CMS. If the feed loads in a browser without authentication then the feed should display in the CMS without issue.
+ICS フィード URL が CMS で使用できることを確認します。認証なしでブラウザにフィードが読み込まれる場合、フィードは問題なく CMS に表示されます。
 
-For further information on how to view your Google Calendar in applications, use the following link selecting the **Get your calendar (view only)** option: https://support.google.com/calendar/answer/37648?hl=en
+アプリケーションで Google カレンダーを表示する方法の詳細については、次のリンクを使用して [**カレンダーを取得 (表示のみ)**] オプションを選択してください: https://support.google.com/calendar/answer/37648?hl=en
 {/tip}
 
-## Calendar Elements
+## カレンダー要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Calendar Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Calendar Widget to use and where they can be placed.
+[レイアウト](layouts_editor.html) にカレンダー ウィジェットを追加するときに [要素](layouts_editor#content-data-widgets-and-elements) を選択できます。これにより、ユーザーはカレンダー ウィジェットのどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![Calendar Elements](img/v4_media_modules_calendar_elements.png)
+![カレンダー要素](img/v4_media_modules_calendar_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel.  Enter the iCal feed to use to return results from the **Configure** tab.
+各要素には、プロパティ パネルに一連の構成オプションがあります。**構成** タブから結果を返すために使用する iCal フィードを入力します。
 
-Control how items should be cycled by specifying a [Data Slot](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+追加された各要素に使用する [データ スロット](https://test.xibo.org.uk/manual/en/layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することで、データ要素をさらに補完できます。これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめられるため、構成や配置が簡単になります。
 
-Take advantage of [Stencils](layouts_editor.html#content-stencils) to add a predesigned group of Elements to your Layout. 
-
-{tip}
-All Elements in the Stencil are treated as 'one' when configured and can be easily duplicated from a right click!
-{/tip}
-
-## Calendar Static Templates
-
-[Static Templates](layouts_editor.html#content-static-templates) define how returned results should be laid out and styled and are a simple way to show your data using pre-styled templates.
-
-![Calendar Elements](img/v4_media_modules_calendar_templates.png)
-
-Templates can be configured to make changes to the design appearance using a range of options in the Properties Panel. Enter an iCal to return results from the **Configure** tab for each Template added to the Layout/Playlist.
-
-## Overview
-
-- Return events within a specified date range.
-- Options to exclude all day and current events from the feed so they won't be shown.
-- Use event and calendar timezones.
-- Set duration per item.
-- Specify how many events to display.
-- Execute a Web Hook trigger when certain conditions are detected.
-- Data for this media is cached by the Players for off-line playback.
-
-### Web Hook Triggers 
-
-Trigger a Web Hook [Action](layouts_interactive_actions.html) when there is a **Current Event** or **No Event** from the Trigger tab.
+[ステンシル](layouts_editor.html#content-stencils) を利用して、事前にデザインされた要素のグループをレイアウトに追加します。
 
 {tip}
-**Example Scenario**:
+ステンシル内のすべての要素は、構成時に「1 つ」として扱われ、右クリックで簡単に複製できます。
+ヒント}
 
-A user has a meeting room calendar configured using the Calendar Widget on a Layout which shows the current occupancy for a room and would like to change LED lights to show when vacant or in use.
+## カレンダーの静的テンプレート
 
-- The user would first need to create [Shell Commands](displays_command_functionality.html#content-shell-commands) which issued commands to an LED IoT device or the inbuilt LEDS's on some of the Philips Commercial Displays.
-- Next an [Interactive Action](layouts_interactive_actions.html) would need to be defined on the **Layout**, which would **Navigate to Widget** and **Target the Screen**, with the [Shell Command Widget.](media_module_shellcommand.html) 
-- From the **Trigger** tab, assign the code's to trigger the **Web Hooks** for **Current Event** and **No Event**.
+[静的テンプレート](layouts_editor.html#content-static-templates) は、返される結果のレイアウトとスタイル設定方法を定義し、事前にスタイル設定されたテンプレートを使用してデータを表示する簡単な方法です。
+
+![カレンダー要素](img/v4_media_modules_calendar_templates.png)
+
+テンプレートは、プロパティ パネルのさまざまなオプションを使用して、デザインの外観を変更するように構成できます。レイアウト/プレイリストに追加された各テンプレートの [**構成**] タブから結果を返すには、iCal を入力します。
+
+## 概要
+
+- 指定された日付範囲内のイベントを返します。
+- 終日イベントと現在のイベントをフィードから除外して、表示されないようにするオプション。
+- イベントとカレンダーのタイムゾーンを使用します。
+- アイテムごとに期間を設定します。
+- 表示するイベントの数を指定します。
+- 特定の条件が検出されたときに Web フック トリガーを実行します。 - このメディアのデータは、オフライン再生用にプレーヤーによってキャッシュされます。
+
+### Web フック トリガー
+
+トリガー タブから **現在のイベント** または **イベントなし** がある場合に、Web フック [アクション](layouts_interactive_actions.html) をトリガーします。
+
+{tip}
+**シナリオ例**:
+
+ユーザーは、レイアウト上のカレンダー ウィジェットを使用して会議室カレンダーを構成しており、部屋の現在の占有状況を表示し、空いているか使用中かを示すように LED ライトを変更したいと考えています。
+
+- ユーザーはまず、LED IoT デバイスまたは一部の Philips Commercial Displays に組み込まれている LED にコマンドを発行する [シェル コマンド](displays_command_ functionality.html#content-shell-commands) を作成する必要があります。
+- 次に、[シェル コマンド ウィジェット](media_module_shellcommand.html) を使用して、**ウィジェットに移動** し、**画面をターゲット** する [インタラクティブ アクション](layouts_interactive_actions.html) を**レイアウト**に定義する必要があります。
+- [トリガー] タブから、**現在のイベント** と **イベントなし** の **Web フック** をトリガーするコードを割り当てます。
 
 {/tip}
 

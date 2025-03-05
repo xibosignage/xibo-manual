@@ -1,90 +1,60 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 1
-excerpt: "Use Widgets to create dynamic Layouts"
-keywords: "widgets, modules, widget configuration, widget favourites"
-persona: "content creator, super administrator, user"
+抜粋: "ウィジェットを使用して動的なレイアウトを作成する"
+キーワード: "ウィジェット、モジュール、ウィジェット構成、ウィジェットのお気に入り"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Widgets
+# ウィジェット
 
-Widgets are a core component of [[PRODUCTNAME]] and are used to display content on a **Layout** or in a **Playlist**. 
+ウィジェットは [[PRODUCTNAME]] のコア コンポーネントであり、**レイアウト** または **プレイリスト** にコンテンツを表示するために使用されます。
 
-{nonwhite}{video}-pGgF0ijzBg{/video}{/nonwhite}
+{nonwhite}{video}-pGgF0ijzBg{/video}{nonwhite}
 
-## Feature Overview
+## 機能の概要
 
-- Selection of powerful Widgets to choose from.
-- Create content quickly and easily.
-- Integrated content from third parties.
-- Show dynamic content on screens.
-- Select which Modules to make available to other users of the CMS.
+- 選択できる強力なウィジェットの選択。
+- コンテンツをすばやく簡単に作成します。
+- サードパーティのコンテンツを統合します。
+- 画面に動的なコンテンツを表示します。
+- CMS の他のユーザーが利用できるモジュールを選択します。
 
-All Widgets have an associated [Module](media_modules.html) which tells [[PRODUCTNAME]] what information is required from the User for configuration as to how it should be displayed.
-
-{tip}
-Widgets can be disabled/enabled by an Administrator in the **Modules** section of the CMS.
-{/tip}
-
-Widgets are available from the **Toolbox**:
-
-- Click the top button to view available Widgets.
-
-![Widgets](img/v4_layouts_editor_widgets.png)
-
-Widgets can be marked as **Favourites** to appear in their own section for easier selection:
-
--  Click the star icon at the top left of a Widget card.
-
-![Favourite Widgets](img/v4_layouts_editor_widgets_favourites.png)
+すべてのウィジェットには、関連付けられた [モジュール](media_modules.html) があり、このモジュールは、ウィジェットの表示方法に関する設定でユーザーからどのような情報が必要かを [[PRODUCTNAME]] に伝えます。
 
 {tip}
-Click the star to deselect from the Favourites section.
+ウィジェットは、管理者が CMS の **モジュール** セクションで無効/有効にすることができます。
+
 {/tip}
 
-Widgets that have an `>` need to be opened to select from additional Widget templates:
+ウィジェットは **ツールボックス** から利用できます:
 
-![Widget Clock](img/v4_layouts_editor_widgets_clock_example.png)
+- 上部のボタンをクリックして、利用可能なウィジェットを表示します。
 
-Add to Layouts by drag and drop or click in the Widget card to highlight then click on the canvas to add:
+![ウィジェット](img/v4_layouts_editor_widgets.png)
 
-- Position and resize.
-- Configure from the available options in the **Properties Panel**.
+ウィジェットを **お気に入り** としてマークすると、独自のセクションに表示され、選択しやすくなります:
 
-![Clock Configuration](img/v4_layouts_editor_clock_configuration.png)
+- ウィジェット カードの左上にある星のアイコンをクリックします。
 
+![お気に入りのウィジェット](img/v4_layouts_editor_widgets_favourites.png)
 
+{tip}
+星をクリックすると、お気に入りセクションから選択解除されます。
 
-Next [Data Widgets](layouts_editor_data_widgets.html)...
+{/tip}
 
+`>` のあるウィジェットは、追加のウィジェット テンプレートを選択するために開く必要があります:
 
+![ウィジェット クロック](img/v4_layouts_editor_widgets_clock_example.png)
 
+ドラッグ アンド ドロップでレイアウトに追加するか、ウィジェット カードをクリックしてハイライト表示してから、キャンバスをクリックして追加します:
 
+- 位置とサイズを変更します。
+- **プロパティ パネル** で使用可能なオプションから構成します。
 
+![クロック構成](img/v4_layouts_editor_clock_configuration.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+次の [データ ウィジェット](layouts_editor_data_widgets.html)...
 

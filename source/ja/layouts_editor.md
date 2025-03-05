@@ -3,236 +3,252 @@ toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
-  - "layouts_designer"
-  - "layouts_regions"  
-excerpt: "Create Layouts using the Layout Editors flexible design elements"
-keywords: "properties panel, layering, context menu, layout preview, status bar, layout editor, layout designer, code identifier, adding content, toolbar, toolbox"
-persona: "content creator, super administrator, user"
+- "layouts_designer"
+- "layouts_regions"
+抜粋: "レイアウト エディタの柔軟なデザイン要素を使用してレイアウトを作成する"
+キーワード: "プロパティ パネル、レイヤー、コンテキスト メニュー、レイアウト プレビュー、ステータス バー、レイアウト エディタ、レイアウト デザイナー、コード識別子、コンテンツの追加、ツールバー、ツールボックス"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Layout Editor
+# レイアウト エディタ
 
-The Layout Editor is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Editor is used.
+レイアウト エディタは、[[PRODUCTNAME]] における **コンテンツ作成** の中心です。新しいレイアウトが追加されるたびに、または既存のレイアウトのデザイン変更が必要になるたびに、レイアウト エディタが使用されます。
 
-{nonwhite}{video}nfb9aCqbcIA{/video}{/nonwhite}
+{nonwhite}{video}nfb9aCqbcIA{/video}{nonwhite}
 
-**Add** a new Layout or click **Design** from the row menu of an existing Layout to open the **Layout Editor**:
+**新しいレイアウトを追加**するか、既存のレイアウトの行メニューから**デザイン**をクリックして**レイアウト エディター**を開きます:
 
-![Layout Designer](img/v4.1_layouts_layout_editor_overview.png)
+![レイアウト デザイナー](img/v4.1_layouts_layout_editor_overview.png)
 
-New Layouts are added as 'untitled' and need to be named:
+新しいレイアウトは「無題」として追加され、名前を付ける必要があります:
 
-- Click on the '**Untitled text**' to enter a **Name** and complete further form fields as required.
+- 「**無題のテキスト**」をクリックして**名前**を入力し、必要に応じてフォームのその他のフィールドに入力します。
 
-![Add Layout](img/v4.1_layouts_add_layout.png)
+![レイアウトの追加](img/v4.1_layouts_add_layout.png)
 
-- [Folders](tour_folders.html) are used to organise as well as easily share user objects (Layouts, Playlists, media files etc.) with other Users/User Groups. Layouts saved to a Folder will inherit share options already applied to that Folder. 
-
-{tip}
-If users will need access to any of the Layout content, (image files which need to be added to the Layout for example), ensure that these are also saved to the same Folder!
-{/tip}
-
-- Include optional [Tags](tour_tags.html).
+- [フォルダー](tour_folders.html) は、ユーザー オブジェクト (レイアウト、プレイリスト、メディア ファイルなど) を整理したり、他のユーザー/ユーザー グループと簡単に共有したりするために使用されます。フォルダーに保存されたレイアウトは、そのフォルダーにすでに適用されている共有オプションを継承します。
 
 {tip}
-Tags and Folders can also be assigned to multiple Layouts using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Layout grid!
-{/tip}
-
-- A string can be used as a **Code Identifier** for the Layout when using [Interactive Actions.](layouts_interactive_actions.html)
-- The collection of statistics for [Proof of Play Reports](displays_metrics.html) can be enabled for the Layout.
-
-{tip}
-Prior to enabling the collection for Proof of Play for the Layout, ensure that the **Enable Stats Collection** check box has been enabled for the **Display** the Layout will be scheduled to by using [Display Profile Settings](displays_settings.html).
-{/tip}
-
-- Click to **Save** the new Layout record.
-
-{tip}
-If you are looking to use a [Template](layouts_templates) as a basis for your design you can add from the **Toolbar** inside the Layout Editor!
-{/tip}
-
-## Status Bar
-
-In the top left of the editor you can see the current "play" status of the Layout as well as make edits to the Layout record and view the overall duration of the Layout:
-
-![Status Bar](img/v4_layouts_status_bar.png)
-
-The Icons shown here represent the current status of the Layout:
-
-- **Blue cog** - the Layout has yet to be built.
-- **Green tick** - the Layout is valid and can be published and scheduled.
-
-- **Red cross** - the Layout is invalid and should not be published for scheduling.
-
-- **Orange exclamation mark** - the Layout contains media that can only be assessed Player side and can be published and scheduled.
-
-{tip}
-
-You can mouse over the icon to see the details as to the current status.
-
-The Orange exclamation mark is a normal Layout status to have if your Layout contains online content, such as a webpage. The CMS cannot determine that the Player will display the content as this type of content is not sent directly from the CMS and is instead cached (stored) Player side.  The Player will need to have a reliable internet connection to successfully display such content.
+ユーザーがレイアウト コンテンツにアクセスする必要がある場合 (たとえば、レイアウトに追加する必要がある画像ファイル)、これらも同じフォルダーに保存されていることを確認してください。
 
 {/tip}
 
-The current **Name** of the Layout is shown next to the status icon. This can be clicked to make edits to the naming,  Folder location, Tags etc.
-
-The total **Duration** of the Layout is shown here in minutes and seconds and is based on the longest running item on the Layout.
+- オプションの [タグ](tour_tags.html) を含めます。
 
 {tip}
-Each item has a default duration which can be overridden from the **Advanced** tab from the **Properties Panel** when selected.
+レイアウト グリッドの下部にある [選択あり](tour_cms_navigation.html#content-multi-select---with-selected) オプションを使用して、タグとフォルダーを複数のレイアウトに割り当てることもできます。
+
 {/tip}
 
-The dimensions of the Layout are set from the **Resolution** selected from the **Properties Panel** for the Layout configuration.
-
-Top right, the Layout jump list provides easy navigation between all Layouts, the logged in User has access to edit, without having to leave the Layout Editor to switch:
-
-![Jump List](img/v4_layouts_jump_list.png)
-
-Next to the Layout jump list is a menu of items which show available actions dependent on if the Layout is [Published](layouts.html#content-layouts-in-a-published-status) or in a [Draft](layouts.html#content-layouts-in-a-draft-status) status.
-
-## Properties Panel
-
-The **Properties Panel** is used to configure all items added to the Layout as well as the Layout itself.
+- [インタラクティブ アクション](layouts_interactive_actions.html) を使用する場合、文字列をレイアウトの **コード識別子** として使用できます。
+- [Proof of Play レポート](displays_metrics.html) の統計の収集をレイアウトに対して有効にできます。
 
 {tip}
-Configuration options and available tabs will differ across items added.
+レイアウトの Proof of Play の収集を有効にする前に、[ディスプレイ プロファイル設定](displays_settings.html) を使用して、レイアウトがスケジュールされる **ディスプレイ** の [統計収集を有効にする] チェック ボックスが有効になっていることを確認してください。
 {/tip}
 
-On adding a new Layout with no content, configuration options are shown in the Properties Panel:
-
-![Layout Properties](img/v4_layouts_layout_properties.png)
-
+- 新しいレイアウト レコードを [保存] するにはクリックします。
 
 {tip}
-Return to the Layout properties at any stage of creating the Layout by clicking anywhere on the background!
+[テンプレート](layouts_templates) をデザインのベースとして使用する場合は、レイアウト エディター内の **ツールバー** から追加できます。
+ヒント}
+
+## ステータス バー
+
+エディターの左上では、レイアウトの現在の「再生」ステータスを確認できるほか、レイアウト レコードを編集したり、レイアウトの全体的な再生時間を表示したりできます。
+
+![ステータス バー](img/v4_layouts_status_bar.png)
+
+ここに表示されるアイコンは、レイアウトの現在のステータスを表します。
+
+- **青い歯車** - レイアウトはまだ構築されていません。
+
+- **緑のチェック マーク** - レイアウトは有効で、公開およびスケジュールできます。
+
+- **赤い十字** - レイアウトは無効で、スケジュール用に公開しないでください。
+
+- **オレンジ色の感嘆符** - レイアウトには、プレーヤー側でのみ評価でき、公開およびスケジュールできるメディアが含まれています。
+
+{ヒント}
+
+アイコンの上にマウスを置くと、現在のステータスの詳細が表示されます。
+
+オレンジ色の感嘆符は、レイアウトに Web ページなどのオンライン コンテンツが含まれている場合の通常のレイアウト ステータスです。この種類のコンテンツは CMS から直接送信されず、プレーヤー側にキャッシュ (保存) されるため、CMS はプレーヤーがコンテンツを表示するかどうかを判断できません。このようなコンテンツを正常に表示するには、プレーヤーに信頼性の高いインターネット接続が必要です。
+
 {/tip}
 
-Select to use a colour or an image as your background:
+レイアウトの現在の **名前** は、ステータス アイコンの横に表示されます。これをクリックすると、名前、フォルダーの場所、タグなどを編集できます。
 
-- Click on the **Background Colour** field and select a colour to use.
-
-- Drag an image from the [Image Library Search](layouts_editor_library_search.html) from the Toolbar, to the **Background Image** box.
-- Use **Upload** to select and add a new image.
+レイアウトの合計 **期間** は、レイアウトで最も長く実行されているアイテムに基づいて、分と秒で表示されます。
 
 {tip}
-Images uploaded here will automatically be saved to your CMS Library!
+各アイテムにはデフォルトの期間があり、**プロパティ パネル** の [詳細] タブを選択すると、これを上書きできます。
+
 {/tip}
 
-- Use the drop down to set the [Resolution](layouts.html#content-resolutions) that best matches your display.
+レイアウトのサイズは、レイアウト構成の **プロパティ パネル** で選択した **解像度** によって設定されます。
+
+右上のレイアウト ジャンプ リストを使用すると、すべてのレイアウト間を簡単に移動できます。ログインしたユーザーは、レイアウト エディターを離れて切り替えることなく、編集にアクセスできます。
+
+![ジャンプ リスト](img/v4_layouts_jump_list.png)
+
+レイアウト ジャンプ リストの横には、レイアウトが [公開済み](layouts.html#content-layouts-in-a-published-status) か [下書き](layouts.html#content-layouts-in-a-draft-status) かに応じて、使用可能なアクションを表示する項目のメニューがあります。
+
+## プロパティ パネル
+
+**プロパティ パネル** は、レイアウトに追加されるすべての項目とレイアウト自体を構成するために使用されます。
 
 {tip}
-Custom Resolutions can be created by a Super Administrator!
+構成オプションと使用可能なタブは、追加された項目によって異なります。
+ヒント}
+
+コンテンツのない新しいレイアウトを追加すると、プロパティ パネルに設定オプションが表示されます:
+
+![レイアウト プロパティ](img/v4_layouts_layout_properties.png)
+
+{ヒント}
+レイアウトの作成中は、背景の任意の場所をクリックすると、どの段階でもレイアウト プロパティに戻ることができます。
+
+ヒント}
+
+背景として使用する色または画像を選択します:
+
+- [**背景色**] フィールドをクリックし、使用する色を選択します。
+
+- ツールバーの [画像ライブラリ検索](layouts_editor_library_search.html) から画像をドラッグし、[**背景画像**] ボックスにドロップします。
+
+- [**アップロード**] を使用して、新しい画像を選択して追加します。
+
+{ヒント}
+
+ここでアップロードした画像は、CMS ライブラリに自動的に保存されます。
+
+ヒント}
+
+- ドロップダウンを使用して、ディスプレイに最適な [解像度](layouts.html#content-resolutions) を設定します。
+
+{tip}
+カスタム解像度はスーパー管理者が作成できます!
+
 {/tip}
 
-- Tick to apply default [Transition](tour_transitions.html) settings to all Widgets added to the Layout.
+- レイアウトに追加されたすべてのウィジェットにデフォルトの [トランジション](tour_transitions.html) 設定を適用するには、チェックを入れます。
 
-## Layering
+## レイヤー化
 
-Template Zones, Layout content and the Layout background can be ordered using z-index settings.
+テンプレート ゾーン、レイアウト コンテンツ、レイアウトの背景は、z インデックス設定を使用して順序付けできます。
 
-Everything added to the Layout will get a new Layer (Video files, Playlists etc.) Elements get their own Canvas Layer to hold all added Elements which can be moved up and down the layers as one.
+レイアウトに追加されたすべての要素 (ビデオ ファイル、プレイリストなど) には、独自のキャンバス レイヤーが割り当てられ、追加されたすべての要素が保持されます。これらの要素は、レイヤーを 1 つとして上下に移動できます。
 
 {tip}
-To set the Layer for a Background Image, click on the background and set from the Properties Panel.
+背景画像のレイヤーを設定するには、背景をクリックし、プロパティ パネルから設定します。
+
 {/tip}
 
-- Click in the item to open the configuration options in the Properties Panel .
-- Select the positioning tab (with the grid icon).
-- Enter a number to determine the layer.
+- アイテムをクリックして、プロパティ パネルで構成オプションを開きます。
 
-![Layering](img/v4_layouts_layering.png)
+- 配置タブ (グリッド アイコン付き) を選択します。
+
+- レイヤーを決定するための番号を入力します。
+
+![レイヤー化](img/v4_layouts_layering.png)
 
 {tip}
-The higher the number the higher the Layer.
+数値が大きいほどレイヤーは高くなります。
 
-Use the [Context Menu](layouts_editor.html#content-context-menu) and  [Layer Control Panel](layouts_editor.html#content-layer-control) to easily move selected items forwards and backwards.
+[コンテキスト メニュー](layouts_editor.html#content-context-menu) と [レイヤー コントロール パネル](layouts_editor.html#content-layer-control) を使用すると、選択したアイテムを簡単に前後に移動できます。
+
 {/tip}
 
 {version}
-**NOTE:** If you are using Windows Players, the HLS Widgets and Embedded/Web Widgets configured to use the Edge browser are not transparent and will not show anything placed underneath them.
+**注意:** Windows プレーヤーを使用している場合、Edge ブラウザーを使用するように構成された HLS ウィジェットと埋め込み/Web ウィジェットは透明ではなく、その下に配置されたものが表示されません。
+
 {/version}
 
-## Toolbox
+## ツールボックス
 
-The Toolbox is used to access various content types to add to Layouts:
+ツールボックスは、レイアウトに追加するさまざまなコンテンツ タイプにアクセスするために使用されます。
 
-![Toolbar](img/v4_layouts_toolbar.png)
+![ツールバー](img/v4_layouts_toolbar.png)
 
 {tip}
-Click on the expander icon at the bottom to change the media thumbnail view for easier media assignment!
+下部の展開アイコンをクリックすると、メディアのサムネイル ビューが変更され、メディアの割り当てが簡単になります。
 
-It will only expand to a sensible level dependent on the screen size you are working on. Using the Layout Editor on screens less than 1600px will limit the total number of available levels to view.
+作業中の画面サイズに応じて適切なレベルまでしか拡大されません。1600 ピクセル未満の画面でレイアウト エディターを使用すると、表示可能なレベルの合計数が制限されます。
 {/tip}
 
-[Templates](layouts_templates.html) are selected from inside the Layout Editor from the Toolbox.
+[テンプレート](layouts_templates.html) は、レイアウト エディター内のツールボックスから選択されます。
 
 {nonwhite}
-Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates!
+[Xibo Exchange.](layouts.html#content-xibo-exchange) から、テンプレートの下のボタンをクリックして、弊社が設計したテンプレートの 1 つを選択します。
 {/nonwhite}
 
 {version}
-Selecting a **Template** will replace the Layout you are currently working on to the chosen Template. This action is irreversible and so must be used with caution.
-{/version}
+**テンプレート** を選択すると、現在作業中のレイアウトが選択したテンプレートに置き換えられます。この操作は元に戻せないため、注意して使用する必要があります。
+}
 
-## Arranging Layout Content
+## レイアウト コンテンツの配置
 
-Position content exactly where you want it with flexible drag and drop, rotation and resizing tools:
+柔軟なドラッグ アンド ドロップ、回転、サイズ変更ツールを使用して、コンテンツを必要な場所に正確に配置します。
 
-![Snap Buttons](img/v4_layouts_snap_to_buttons.png)
+![スナップ ボタン](img/v4_layouts_snap_to_buttons.png)
 
 {tip}
-Use the "Snap to buttons" at the bottom right to select to **Snap to Grid**, **Snap to Borders** or **Snap to Elements** for easier positioning when adding items to the Layout.
+右下の [スナップ ボタン] を使用して、**グリッドにスナップ**、**境界線にスナップ**、または **要素にスナップ** を選択すると、レイアウトにアイテムを追加するときに簡単に配置できます。
+
 {/tip}
 
-Move multiple items added to a Layout in a block.
+レイアウトに追加された複数のアイテムをブロックで移動します。
 
-- Click and hold an on the background.
-- Drag to create a rectangle outline.
+- 背景をクリックして押したままにします。
+- ドラッグして四角形のアウトラインを作成します。
 
-Ensure that all items that need to be moved are contained within the rectangle.
+移動する必要があるすべてのアイテムが四角形内に含まれていることを確認します。
 
-![Drag Selector](img/v4_layouts_editor_drag_selector.png)
+![ドラッグセレクター](img/v4_layouts_editor_drag_selector.png)
 
-- Click to re-position the block of items on the Layout:
+- クリックすると、レイアウト上のアイテムのブロックの位置が変更されます:
 
-![Move Block](img/v4_layouts_editor_move_block.png)
+![ブロックの移動](img/v4_layouts_editor_move_block.png)
 
-- Click anywhere outside of the block to return to separate items once positioned.
+- ブロックの外側の任意の場所をクリックすると、配置した個別のアイテムに戻ります。
 
-## Layer Control
+## レイヤーコントロール
 
-View Layering and item durations of all items added to the Layout from the **Layer Control** located at the bottom left:
+左下にある**レイヤーコントロール**から、レイアウトに追加されたすべてのアイテムのレイヤーとアイテムの持続時間を表示します:
 
-![Layer Control](img/v4_layouts_editor_layer_control.png)
+![レイヤーコントロール](img/v4_layouts_editor_layer_control.png)
+
+{ヒント}
+レイヤーコントロールを使用すると、他のアイテムの背後に配置されているアイテムを簡単に選択して編集できます!
+ヒント}
+
+## コンテキスト メニュー
+
+レイアウトに追加されたアイテムには、選択したアイテムを右クリックするとアクセスできる追加のメニューがあります:
+
+![コンテキスト メニュー](img/v4_layouts_editor_context_menu.png)
+
+{ヒント}
+表示されるオプションは、選択したアイテムによって異なります!
+
+ヒント}
+
+ウィジェットには、ウィジェット名/タイプの下に表示される追加のオプションがあります:
+
+![ウィジェット オプション](img/v4_layouts_editor_widget_options.png)
+
+オプションには、[オーディオ](media_module_audio.html) ファイルをウィジェットに添付することや、[共有](users_features_and_sharing.html) オプションを制御して、ユーザー/ユーザー グループの選択したアイテムを表示、編集、削除することが含まれます。
+
+## プレビュー
+
+**再生** ボタンをクリックして、レイアウトの完全な **プレビュー** を再生します。
+
+![レイアウト プレビュー](img/v4_layouts_play_preview.png)
 
 {tip}
-Use the Layer Control to easily select items that are positioned behind other items to make edits!
-{/tip}
+レイアウトを開始する前に、すべての **メディア** をブラウザにダウンロードして検証する必要があります。この処理中は若干の遅延が発生する場合があります。
 
-## Context Menu
+再生を押す前に、プレビュー ウィンドウの右上隅にあるアイコンをクリックして全画面で表示してください。
 
-Items added to a Layout have an additional menu of items which are accessed from right clicking in a selected item:
-
-![Context Menu](img/v4_layouts_editor_context_menu.png)
-
-{tip}
-Options shown are dependent on the item selected!
-{/tip}
-
-Widgets have further options which are show under the Widget name/type:
-
-![Widget Options](img/v4_layouts_editor_widget_options.png)
-
-Options include attaching an [Audio](media_module_audio.html) file to a Widget as well as controlling [Sharing](users_features_and_sharing.html) options to View, Edit and Delete selected items for Users/User Groups.
-
-## Preview
-
-Play a full **Preview** of your Layout by clicking on the **Play** button: 
-
-![Layout Preview](img/v4_layouts_play_preview.png)
-
-{tip}
-Before the Layout can start all **Media** must be downloaded to your browser and verified so you may experience a slight delay whilst this is in process.
-
-View in full screen by clicking on the icon in the top right corner of the preview window before pressing play!
 {/tip}

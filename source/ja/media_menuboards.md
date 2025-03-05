@@ -3,118 +3,116 @@ toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 alias: "media_module_menu_board"
-excerpt: "Create and Manage Menu Board information"
-keywords: "categories, products, product options"
-persona: "content manager"
+excerpt: "メニュー ボード情報の作成と管理"
+keywords: "カテゴリ、製品、製品オプション"
+persona: "コンテンツ マネージャー"
 ---
 
- # Menu Boards
+# メニュー ボード
 
-The Menu Boards interface provides a simple way for users to create and manage 'categories' and 'product' information independently to Layouts. Once created, Menu Board data can be added anywhere on a Layout using [Elements](layouts_editor#content-data-widgets-and-elements) from the  [Menu Board: Category](media_module_menuboards_category.html) and [Menu Board: Products](media_module_menuboards_products.html) Widgets available in the [Layout Editor.](layouts_editor.html)
+メニュー ボード インターフェイスは、ユーザーがレイアウトとは独立して「カテゴリ」と「製品」情報を簡単に作成および管理できる方法を提供します。メニュー ボード データは、作成後、[レイアウト エディター](layouts_editor.html) で使用可能な [メニュー ボード: カテゴリ](media_module_menuboards_category.html) および [メニュー ボード: 製品](media_module_menuboards_products.html) ウィジェットの [要素](layouts_editor#content-data-widgets-and-elements) を使用して、レイアウトの任意の場所に追加できます。
 
 {version}
-**Note:** Menu Board Widgets are not available to add to a Playlist!
+**注:** メニュー ボード ウィジェットはプレイリストに追加できません!
+
 {/version}
 
-## Feature Overview
+## 機能の概要
 
-- Create and define Categories.
-- Include detailed product information.
-- Select Images to use from your Library.
-- Maintain content without accessing Layouts.
-- Re-use across multiple Widgets/Layouts.
+- カテゴリを作成して定義します。
+- 詳細な製品情報を含めます。
+- ライブラリから使用する画像を選択します。
+- レイアウトにアクセスせずにコンテンツを維持します。
+- 複数のウィジェット/レイアウトで再利用します。
 
-Menu Boards are created and managed independently to Layouts and therefore do not require user access to Layouts or the Layout Editor to add or manage categories/product data held within a Menu Board.
+メニュー ボードはレイアウトとは独立して作成および管理されるため、メニュー ボード内のカテゴリ/製品データを追加または管理するために、レイアウトまたはレイアウト エディターへのユーザー アクセスは必要ありません。
 
-## Creating a Menu Board
+## メニュー ボードの作成
 
-Menu Boards are created and managed by selecting **Menu Boards** under the **Library** section of the main CMS menu: 
+メニュー ボードは、メイン CMS メニューの [ライブラリ] セクションで [メニュー ボード] を選択して作成および管理します。
 
-![Menu Board](img/v4_media_menuboards_grid.png)
+![メニュー ボード](img/v4_media_menuboards_grid.png)
 
-- Select the **Add Menu Board** button and complete the form fields to create a new record:
+- [メニュー ボードの追加] ボタンを選択し、フォーム フィールドに入力して新しいレコードを作成します。
 
-![Menu Board Add](img/v4_media_menuboards_add.png)
+![メニュー ボードの追加](img/v4_media_menuboards_add.png)
 
-[Folders](tour_folders.html) are used to organise, search and easily [Share](https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share) User objects with other Users/User Groups. DataSets saved to a Folder will inherit the access options applied to that Folder.
+[フォルダー](tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share) するために使用されます。フォルダーに保存されたデータセットは、そのフォルダーに適用されたアクセス オプションを継承します。
 
-- Give your Menu Board a **Name** for easy identification in the CMS. Provide an optional internal **Description** and enter a **Code** if referencing this Menu Board via the API.
+- CMS で簡単に識別できるように、メニュー ボードに **名前** を付けます。オプションの内部 **説明** を提供し、API 経由でこのメニュー ボードを参照する場合は **コード** を入力します。
 
-- Click to **Save**.
+- **保存** をクリックして下さい。
 
-## Create and Configure Categories
+## カテゴリの作成と構成
 
-Categories define the structure of your data:
+カテゴリはデータの構造を定義します:
 
-- Use the row menu for a Menu Board record and select **View Categories**.
+- メニュー ボード レコードの行メニューを使用し、**カテゴリの表示** を選択します。
 
-![Menu Board row menu](img/v4_media_menuboards_row_menu.png)
+![メニュー ボードの行メニュー](img/v4_media_menuboards_row_menu.png)
 
-Click on the **Add Category** button and complete the required form fields:
+**カテゴリの追加** ボタンをクリックし、必要なフォーム フィールドに入力します:
 
-![Add Category](img/v4_media_menuboards_add_category.png)
+![カテゴリの追加](img/v4_media_menuboards_add_category.png)
+
+{ヒント}
+
+**コード** は、API を参照する場合の高度な使用を目的としています。
+ヒント}
+
+- **次へ** をクリックしてこのプロセスを繰り返し、メニュー ボードに必要な **カテゴリ** を追加します。
+
+- 使用する最後のカテゴリを入力するときに **保存** を選択します。
+
+## 製品の追加
+
+製品データはカテゴリに追加され、ディスプレイに表示するように選択できるすべての重要な情報を提供します。
+
+- カテゴリの行メニューを使用して、**製品の表示** を選択します:
+
+![製品](img/v4_media_menuboards_products.png)
+
+- **製品の追加** ボタンをクリックして新しい製品データを作成し、関連するすべてのフォーム フィールドに入力します:
+
+![製品の追加](img/v4_media_menuboards_add_product.png)
+
+{ヒント}
+[メニュー ボード: 製品](media_module_menuboards_products.html) ウィジェットは、ディスプレイに表示できないとマークされた製品を暗くするように構成できます。
+ヒント}
+
+### 製品オプション
+
+このタブを使用して、さらに製品オプションを提供します:
+
+![製品オプション](img/v4_media_menuboards_product_options.png)
+
+{ヒント}
+オプションを使用して、この特定の製品に特別オファーや限定特典などを提供します。
+
+ヒント}
+
+- このプロセスを繰り返して、カテゴリにさらに製品/製品オプションを追加します。
+
+{ヒント}
+各カテゴリは製品グリッドに個別のタブとして表示されるため、カテゴリを簡単に切り替えて製品情報を追加および編集できます。
+
+ヒント}
+
+![製品タブ](img/v4_media_menuboards_product_tabs.png)
+
+**カテゴリの表示** をクリックしてカテゴリ グリッドに戻り、行メニューまたは **カテゴリの追加** を使用して既存のカテゴリを表示および編集します。
+
+メニュー ボードのデータは、[メニュー ボード: カテゴリ](media_module_menuboards_category.html) ウィジェットを使用してレイアウトに追加されます。このウィジェットには、主に「ヘッダー」情報の追加に使用されるデータ要素と、レイアウトに製品の詳細を正確に配置できる [メニュー ボード: 製品](media_module_menuboards_products.html) ウィジェットがあります。
 
 {tip}
-
-**Code** is for advanced use when referencing the API.
-{/tip}
-
-- Click **Next** to repeat this process to add the required **Categories** for the Menu Board.
-- Select **Save** when entering the last Category to use.
-
-## Add Products
-
-Product data is added to Categories to provide all key information which can be selected to be shown on Displays.
-
-- Use the row menu for a Category and select **View Products**:
-
-![Products](img/v4_media_menuboards_products.png)
-
-- Create new Product data by clicking the **Add Product** button and complete all relevant form fields:
-
-![Add Products](img/v4_media_menuboards_add_product.png)
-
-
-
-{tip}
-The [Menu Boards: Products](media_module_menuboards_products.html) Widget can be configured to dim products that are marked as unavailable to show on Displays!
-{/tip}
-
-### Product Options
-
-Use this tab to provide further product options:
-
-![Product Options](img/v4_media_menuboards_product_options.png)
-
-
-
-{tip}
-Use Options to provide special offers, limited deals etc for this particular product.
-{/tip}
-
-- Repeat the process to add further Products/Product Options to the Category. 
-
-{tip}
-Each Category will be shown as a separate tab on the Product grid so you can easily switch between Categories to add and edit product information!
-{/tip}
-
-![Product Tabs](img/v4_media_menuboards_product_tabs.png)
-
-Click on **View Categories** to go back to the Categories grid to view and edit existing using the row menu or **Add Category**.
-
-Menu Board data is added to Layouts using the [Menu Board: Category](media_module_menuboards_category.html) Widget which has data elements which are primarily used to add 'header' information and the [Menu Board: Products](media_module_menuboards_products.html) Widget which allows for precise placement of Product details on Layouts.
-
-{tip}
-Menu Boards are edited independently to Layouts, so there is no need to access or edit the Layout(s) the Menu Board has been added to. Changes will be available in the system straight away ready to be picked up by Players on their next collection, with no need to make any edits to Layouts!
-{/tip}
+メニュー ボードはレイアウトとは独立して編集されるため、メニュー ボードが追加されたレイアウトにアクセスしたり編集したりする必要はありません。変更はすぐにシステムで利用可能になり、プレイヤーは次のコレクションですぐに使用できます。レイアウトを編集する必要はありません。
+ヒント}
 
 {nonwhite}
-Take a look at our guide for an example of how to utilise Menu Boards for your Displays: [Using Menu Boards](https://community.xibo.org.uk/t/utilising-menu-boards-in-v4/30749)
+ディスプレイにメニュー ボードを活用する方法の例については、ガイドをご覧ください: [メニュー ボードの使用](https://community.xibo.org.uk/t/utilising-menu-boards-in-v4/30749)
 {/nonwhite}
 
-#### Next...
+#### 次へ...
 
-[Add Layout](layouts.html#content-adding-layouts)
-
-
+[レイアウトの追加](layouts.html#content-adding-layouts)
 

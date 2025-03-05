@@ -1,45 +1,43 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 2
 minHeadingLevel: 2
-excerpt: "Display Product data held in Menu Boards"
-keywords: "menu board elements"
-persona: "content manager"
+抜粋: "メニュー ボードに保持されている製品データを表示する"
+キーワード: "メニュー ボード要素"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Menu Boards: Products
+# メニュー ボード: 製品
 
-Display data for Products held in a Menu Board anywhere on a Layout using **Elements**.
+**要素** を使用して、レイアウト上の任意の場所にメニュー ボードに保持されている製品のデータを表示します。
 
-{feat}Menu Board: Products|v4{/feat}
+{feat}メニュー ボード: 製品|v4{/feat}
 
-The Menu Boards: Products Widget primarily consists of a Menu Board source which feeds into configured Elements.
+メニュー ボード: 製品ウィジェットは、主に、構成された要素にフィードするメニュー ボード ソースで構成されます。
 
 {tip}
-[Menu Boards](media_menuboards.html) need to be created with added Products prior to adding the Menu Boards: Products Widget to Layouts.
-{/tip}
+メニュー ボード: 製品ウィジェットをレイアウトに追加する前に、製品を追加して [メニュー ボード](media_menuboards.html) を作成する必要があります。
+ヒント}
 
-## Product Elements
+## 製品要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding a Menu Boards: Product Widget to a [Layout](layouts_editor.html) to give Users more control over what components of Menu Board Products to use and where they can be placed.
+[レイアウト](layouts_editor.html) にメニュー ボード: 製品ウィジェットを追加するときに [要素](layouts_editor#content-data-widgets-and-elements) を選択でき、ユーザーはメニュー ボード製品のどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![Product Elements](img/v4_media_modules_product_elements.png)
+![製品要素](img/v4_media_modules_product_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. A Menu Board must be selected to use as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+各要素には、プロパティ パネルに一連の構成オプションがあります。レイアウトで使用される各要素の [構成] タブから、データ ソースとして使用するメニュー ボードを選択する必要があります。追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。データ要素は、[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することでさらに補完でき、これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめられるため、構成や配置が簡単になります。
 
-## Overview
+## 概要
 
-- Update Elements with new Product data by editing the underlying [Menu Board](media_menuboards.html#content-create-and-configure-categories) data.
-- Update Menu Board: Products Widget content without accessing Layouts.
-- Select how items should be sorted.
-- Choose to show Products that have been marked as unavailable.
-- Unavailable items can be shown 'dimmed' to be less prominent.
-- Duration can be set per item.
-- Content for this media is cached by the Players for off-line playback.
-- Use with the [Menu Boards: Category](media_module_menuboards_category.html) Widget to include header information to compliment the presentation of Product data to show on Displays.
+- 基礎となる [メニュー ボード](media_menuboards.html#content-create-and-configure-categories) データを編集して、新しい製品データで要素を更新します。
+- レイアウトにアクセスせずにメニュー ボード: 製品ウィジェット コンテンツを更新します。
+- アイテムの並べ替え方法を選択します。
+- 利用不可としてマークされた製品を表示するように選択します。
+- 利用不可のアイテムは目立たないように「淡色表示」できます。
+- アイテムごとに期間を設定できます。
+- このメディアのコンテンツは、オフライン再生用にプレーヤーによってキャッシュされます。
+- [メニュー ボード: カテゴリ](media_module_menuboards_category.html) ウィジェットと一緒に使用して、ディスプレイに表示される製品データのプレゼンテーションを補完するヘッダー情報を含めます。
 
+#### 次へ...
 
-
-#### Next...
-
-[Menu Boards: Category](media_module_menuboards_category.html)
+[メニュー ボード: カテゴリ](media_module_menuboards_category.html)

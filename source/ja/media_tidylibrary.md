@@ -1,61 +1,63 @@
 <!--toc=media-->
-# Tidy Library
+# 整理ライブラリ
 
 {nonwhite}
 {cloud}
-The Tidy Library function is turned off by default for **Xibo Cloud Hosting** customers as it can be potentially destructive if the options are not fully understood. This can be enabled if required by following the steps below.
+**Xibo Cloud Hosting** のお客様の場合、整理ライブラリ機能はデフォルトでオフになっています。オプションを完全に理解していないと、潜在的に破壊的になる可能性があるためです。必要に応じて、以下の手順に従って有効にすることができます。
+
 {/cloud}
 {/nonwhite}
 
-As the CMS is used and Layouts/Media are added, over time the Library can become cluttered with old content that is no longer in use.
+CMS が使用され、レイアウト/メディアが追加されると、時間の経過とともに、使用されなくなった古いコンテンツでライブラリが乱雑になる可能性があります。
 
-The Library can be *tidied* by a User or Super Administrator so that it is kept clean and small. 
-**Actions cannot be reversed so this must be used with caution.**
+ライブラリは、ユーザーまたはスーパー管理者によって *整理* され、クリーンかつ小さな状態に保つことができます。
 
-{tip}
-This might be of particular interest if the CMS is installed on a web server that has quotas or if Users have been assigned their own quotas.
-{/tip}
-
-There are two places where the Library can be tidied:
-
-1. **Settings** page - available to all Super Administrators
-2. **Library** page - enabled for All Users of the CMS
-
-## Tidy from Settings
-
-Super Administrators can initiate a system-wide Library tidy operation by navigating to the Settings page under the Administration section on the Menu. Click on the General tab and click on the **Tidy Library** button.
-
-![Settings Tidy Library](img/media_settings_tidylibrary.png)
-
-As this functionality is system-wide and therefore operates on **ALL** User files, confirmation is required to remove unused and old revisions.
-
-This option is more comprehensive and removes:
-
-- Temporary files
-- Orphaned files
-- Thumbnails
-- Media revisions that aren't used anywhere
-- Media that isn't used anywhere (on any Layouts / Display Groups / Displays)
-- Generic files uploaded to the CMS
-
-### Orphaned files
-
-Orphaned files are a rare occurrence where a file stored on disk in the Library folder is not deleted when the Media item is deleted from the Library. This means that the file exists but the CMS doesn't know anything about it.
-
-## Tidy from Library
-
-Allow **ANY** User to initiate a Library tidy from the Library page by enabling the functionality in **Settings** under the Administration section of the main menu. 
-
-- Click on the General tab and use the checkbox for **Enable Library Tidy.**
-
-![Enable Library Tidy](img/media_settings_enable_librarytidy.png)
-
-Once enabled Users can click on a **Tidy Library** button located at the top of the Library page.
-
-![Tidy from Library](img/media_library_tidylibrary.png)
-
- The form will show the number of files that will be deleted and how much space those files take up.
+**アクションを元に戻すことはできないため、注意して使用する必要があります。**
 
 {tip}
-This will only delete files that are owned by the logged in User which are no longer in use on a Layout or Assigned to a Display Group/Display.
+これは、クォータのある Web サーバーに CMS がインストールされている場合、またはユーザーに独自のクォータが割り当てられている場合に特に重要です。
+ヒント}
+
+ライブラリを整理できる場所は 2 つあります:
+
+1. **設定** ページ - すべてのスーパー管理者が利用可能
+2. **ライブラリ** ページ - CMS のすべてのユーザーが有効
+
+## 設定からの整理
+
+スーパー管理者は、メニューの [管理] セクションの [設定] ページに移動して、システム全体のライブラリ整理操作を開始できます。[全般] タブをクリックし、[ライブラリの整理] ボタンをクリックします。
+
+![設定 ライブラリの整理](img/media_settings_tidylibrary.png)
+
+この機能はシステム全体に適用され、**すべての** ユーザー ファイルに対して実行されるため、使用されていないリビジョンや古いリビジョンを削除するには確認が必要です。
+
+このオプションはより包括的で、次のものを削除します:
+
+- 一時ファイル
+- 孤立ファイル
+- サムネイル
+- どこでも使用されていないメディア リビジョン
+- どこでも使用されていないメディア (レイアウト / 表示グループ / 表示)
+- CMS にアップロードされた汎用ファイル
+
+### 孤立ファイル
+
+孤立ファイルはまれに発生するもので、メディア アイテムがライブラリから削除されたときに、ライブラリ フォルダ内のディスクに保存されているファイルが削除されません。つまり、ファイルは存在しますが、CMS はそれについて何も認識していません。
+
+## ライブラリからの整理
+
+メイン メニューの [管理] セクションの [**設定**] で機能を有効にすることで、**すべての** ユーザーがライブラリ ページからライブラリの整理を開始できるようにします。
+
+- [全般] タブをクリックし、[**ライブラリ整理を有効にする**] のチェックボックスをオンにします。
+
+![ライブラリ整理を有効にする](img/media_settings_enable_librarytidy.png)
+
+有効にすると、ユーザーはライブラリ ページの上部にある [**ライブラリの整理**] ボタンをクリックできます。
+
+![ライブラリから整理](img/media_library_tidylibrary.png)
+
+フォームには、削除されるファイルの数と、それらのファイルが占めるスペースが表示されます。
+
+{tip}
+これにより、ログインしているユーザーが所有し、レイアウトで使用されなくなったファイル、またはディスプレイ グループ/ディスプレイに割り当てられていないファイルのみが削除されます。
 {/tip}

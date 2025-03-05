@@ -1,56 +1,55 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Embed HTML and Javascript to display on Layouts and Playlists"
-keywords: "preload content, CSS, script header tags"
-persona: "content manager"
+抜粋: "レイアウトとプレイリストに表示する HTML と JavaScript を埋め込む"
+キーワード: "コンテンツ、CSS、スクリプト ヘッダー タグをプリロード"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Embedded Content
+# 埋め込みコンテンツ
 
-Embed HTML and JavaScript to be displayed on Layouts and Playlists. 
+レイアウトとプレイリストに表示する HTML と JavaScript を埋め込みます。
 
-{feat}Embedded HTML|v4{/feat}
+{feat}埋め込み HTML|v4{/feat}
 
-## Overview
+## 概要
 
-- Make custom enhancements without modifying the core application.
-- For content with a transparent background tick to show the Widget with a transparent background.
-- Scale content with the Layout.
-- Preload content off screen.
+- コア アプリケーションを変更せずにカスタム拡張機能を作成します。
+- 透明な背景のコンテンツの場合は、透明な背景のウィジェットを表示するようにチェックします。
+- レイアウトに合わせてコンテンツを拡大縮小します。
+- 画面外にコンテンツをプリロードします。
 
-- Enter text or HTML to embed.
-- Use a CSS style sheet to control the visual styling.
-- Include `script` tags to embed content in the HEAD of the document. (Please see section below.)
+- 埋め込むテキストまたは HTML を入力します。
+- CSS スタイル シートを使用して視覚的なスタイルを制御します。
+- ドキュメントの HEAD にコンテンツを埋め込むには、`script` タグを含めます。 (以下のセクションを参照してください。)
 
 {version}
-**NOTE:** 
+**注意:**
 
-- Transparent background and Scale is available on Windows from v2 R253.
+- 透明な背景とスケールは、Windows で v2 R253 から使用できます。
 
-- Preloading off screen is currently only available from Android v2 R207.
+- 画面外のプリロードは、現在 Android v2 R207 からのみ使用できます。
 
-  {/version}
+{/version}
 
-### HEAD content to Embed
+### 埋め込む HEAD コンテンツ
 
-JavaScript should be wrapped in `script` tags. [[PRODUCTNAME]] will automatically add jQuery.
+JavaScript は `script` タグで囲む必要があります。[[PRODUCTNAME]] は自動的に jQuery を追加します。
 
-The `EmbedInit()` method will be called by the Player and can be used to safely start any custom JavaScript at the appropriate time. The method is defaulted on any new Embedded media Item.
+`EmbedInit()` メソッドはプレーヤーによって呼び出され、適切なタイミングでカスタム JavaScript を安全に開始するために使用できます。このメソッドは、新しい埋め込みメディア アイテムでデフォルト設定されます。
 
 ```html
 <script type="text/javascript">
 function EmbedInit()
 {
-    // Init will be called when this page is loaded in the client.
+// このページがクライアントに読み込まれると、Init が呼び出されます。
 
-    return;
-}
+return; }
 </script>
 ```
 
 {tip}
-Show embedded HTML with Active-X content on a Windows Player, with the security settings of IE, so that local files are allowed to run active content by default. This can be done in Tools -> Internet Options -> Advanced -> Security -> "Allow Active content to run in files on My Computer".
+Windows プレーヤーで Active-X コンテンツを含む埋め込み HTML を IE のセキュリティ設定で表示し、ローカル ファイルでアクティブ コンテンツの実行が既定で許可されるようにします。これは、[ツール] -> [インターネット オプション] -> [詳細設定] -> [セキュリティ] -> [マイ コンピューターのファイルでアクティブ コンテンツの実行を許可する] で実行できます。
 {/tip}
 

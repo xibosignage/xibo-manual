@@ -2,65 +2,67 @@
 toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Commercial Feature to securely display dashboard services"
-keywords: "connector, microsoft power bi, grafana, matomo"
-persona: "administrator"
+抜粋: "ダッシュボード サービスを安全に表示するための商用機能"
+キーワード: "コネクタ、Microsoft Power BI、Grafana、Matomo"
+ペルソナ: "管理者"
 ---
 
-# Dashboard Service
+# ダッシュボード サービス
 
 {white}
-If you would like to take advantage of this feature, please contact your Administrator.
+この機能を利用する場合は、管理者にお問い合わせください。
+
 {/white}
 
 {nonwhite}
-The Xibo Dashboards Service is a commercial feature which allows Users to securely display dashboard services; Microsoft Power BI, Grafana and Matomo, on Layouts with automation and authentication handled by Xibo.
+Xibo ダッシュボード サービスは、ユーザーがダッシュボード サービス (Microsoft Power BI、Grafana、Matomo) をレイアウト上に安全に表示できるようにする商用機能です。自動化と認証は Xibo によって処理されます。
 
-**Please note:** This commercial feature requires an API for configuration as further explained [here](/pricing#dashboards).
+**注意:** この商用機能には、構成用の API が必要です。詳細については、[こちら](/pricing#dashboards) で説明します。
 
-Once the Connector has been configured, add dashboards to display in Layouts using the [Dashboards Widget](/manual/en/media_module_dashboard.html)
+コネクタの設定が完了したら、[ダッシュボード ウィジェット](/manual/en/media_module_dashboard.html) を使用して、レイアウトに表示するダッシュボードを追加します。
 
-## Configure Connector
+## コネクタの設定
 
-From the CMS:
+CMS から:
 
-- Click on **Applications** under the **Administration** section of the main menu.
-- Scroll down to the **Connectors** section of the page. 
-- Click the **Configure** button for the **Xibo** **Dashboard Service** connector:
+- メイン メニューの [**管理**] セクションの [**アプリケーション**] をクリックします。
+- ページの [**コネクタ**] セクションまで下にスクロールします。
+- **Xibo** **ダッシュボード サービス** コネクタの [**設定**] ボタンをクリックします:
 
-![Dashboard Connector](img/v4_media_dashboard_connector.png)
+![ダッシュボード コネクタ](img/v4_media_dashboard_connector.png)
 
-- Enter the API key you have been given (available in [My Account](/login)).
-
-{tip}
-Customers on a Business or Enterprise Plan will have their API key pre-filled!
-{/tip}
-
-- Tick to **Enable** to start providing the dashboard services
-
-![Configure Connector](img/v4_media_dashboard_configure_connector.png)
-
-- Click to **Save.**
-
-- Click the **Configure** button again for the Xibo Dashboard service connector.
-- Using the **Credentials** section of the form, select the dashboard service(s) you wish to use:
-
-![Dashboard Credentials](img/v4_media_dashboard_credentials.png)
-
-Enter the following credentials:
-
-- Username
-- Password
-- Two Factor Secret (if required)
-- URL (if required)
+- 提供された API キーを入力します ([マイ アカウント](/login) で入手できます)。
 
 {tip}
-Grafana does not support multi factor authentication, so please leave the **Two Factor** **Secret field empty** when configuring this integration.
+ビジネス プランまたはエンタープライズ プランのお客様の API キーは事前に入力されています。
+ヒント}
 
-Please see the following page for further information on obtaining a URL to use with this service, supported authentication mechanisms and possible limitations [Xibo Dashboard Service](/docs/setup/xibo-dashboard-service)
+- ダッシュボード サービスの提供を開始するには、[**有効**] にチェックを入れます
+
+![コネクタの構成](img/v4_media_dashboard_configure_connector.png)
+
+- [**保存**] をクリックします。
+
+- Xibo ダッシュボード サービス コネクタの [**構成**] ボタンをもう一度クリックします。
+
+- フォームの [**認証情報**] セクションで、使用するダッシュボード サービスを選択します:
+
+![ダッシュボード認証情報](img/v4_media_dashboard_credentials.png)
+
+次の認証情報を入力します:
+
+- ユーザー名
+- パスワード
+- 2 要素認証 (必要な場合)
+- URL (必要な場合)
+
+{ヒント}
+Grafana は多要素認証をサポートしていないため、この統合を構成するときは [**2 要素**] **認証情報フィールドを空のままにしてください**。
+
+このサービスで使用する URL の取得、サポートされている認証メカニズム、考えられる制限の詳細については、次のページを参照してください [Xibo ダッシュボード サービス](/docs/setup/xibo-dashboard-service)
 {/tip}
 
-- Click to **Save** and wait a few moments whilst those credentials are successfully registered.
+- [**保存**] をクリックし、資格情報が正常に登録されるまでしばらくお待ちください。
 
-Your Dashboard is ready to be added to Layouts using the [Dashboard Widget](/manual/en/media_module_dashboard.html)
+[ダッシュボード ウィジェット](/manual/en/media_module_dashboard.html) を使用して、ダッシュボードをレイアウトに追加する準備が整いました
 {/nonwhite}

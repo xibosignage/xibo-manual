@@ -1,30 +1,26 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 2
-excerpt: "Select from Analogue, Time and Date or Text style clocks to show selected Timezones"
-keywords: "multiple timezones, clock columns, clock rows"
-persona: "content manager"
+抜粋: "アナログ、時刻と日付、またはテキスト スタイルの時計から選択して、選択したタイムゾーンを表示します"
+キーワード: "複数のタイムゾーン、時計の列、時計の行"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# World Clock 
+# 世界時計
 
-Select from Analogue, Time and Date or Text style clocks to show selected Timezones.
+アナログ、時刻と日付、またはテキスト スタイルの時計から選択して、選択したタイムゾーンを表示します。
 
-{feat}World Clock|v4{/feat}
+{feat}世界時計|v4{/feat}
 
-## Overview
+## 概要
 
-- Show multiple Timezones in your chosen World Clock style.
-- Set the number of Columns and Rows when multiple Timezones have been selected.
-- Include your own Label for each Timezone selected.
-- Optionally select to Highlight.
+- 選択した世界時計スタイルで複数のタイムゾーンを表示します。
+- 複数のタイムゾーンが選択されている場合は、列と行の数を設定します。
+- 選択した各タイムゾーンに独自のラベルを含めます。
+- オプションでハイライトを選択します。
 
-- Customisable appearance settings.
-- Additional custom settings for the Analogue Clock to show seconds hand, show steps, inner digital clock for example.
+- カスタマイズ可能な外観設定。
+- アナログ時計の追加のカスタム設定で、秒針、ステップ、内部デジタル時計などを表示します。
 
-![World Clock](img/v4_media_module_world_clock.png)
-
-
-
-
+![世界時計](img/v4_media_module_world_clock.png)
 

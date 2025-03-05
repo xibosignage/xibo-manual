@@ -3,245 +3,256 @@ toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
-  - "media"
-  - "media_tidylibrary"
-  - "media_resizing_images"
-excerpt: "Manage file based media from the CMS Library"
-keywords: "upload library media, add media via url, media library expiry dates, Retire media, enable media stats collection, update media, replace media, usage report, tidy library, purge list, schedule"
-persona: "media manager, content manager"
+- "media"
+- "media_tidylibrary"
+- "media_resizing_images"
+抜粋: "CMS ライブラリからのファイルベースのメディアの管理"
+キーワード: "ライブラリ メディアのアップロード、URL 経由のメディアの追加、メディア ライブラリの有効期限、メディアの削除、メディア統計収集の有効化、メディアの更新、メディアの置き換え、使用状況レポート、ライブラリの整理、リストの消去、スケジュール"
+ペルソナ: "メディア マネージャー、コンテンツ マネージャー"
 ---
 
-# Media Library 
+# メディア ライブラリ
 
-[[PRODUCTNAME]] supports a wide variety of media types, from Widgets which are created and stored directly on Layouts and Playlists to file-based media that is uploaded and stored in the CMS Library which can then be reused across multiple Layouts and Playlists.
+[[PRODUCTNAME]] は、レイアウトやプレイリストに直接作成および保存されるウィジェットから、CMS ライブラリにアップロードおよび保存され、複数のレイアウトやプレイリストで再利用できるファイルベースのメディアまで、さまざまなメディア タイプをサポートしています。
 
 {version}
-**NOTE:** [[PRODUCTNAME]] takes no measures to control what content is put on your Displays. It is your responsibility to ensure that your content is appropriate material for your desired audience. Content must be appropriately attributed if you do not own the rights to it.
+**注意:** [[PRODUCTNAME]] は、ディスプレイに表示されるコンテンツを制御する手段を講じません。コンテンツが対象ユーザーにとって適切な素材であることを確認するのは、お客様の責任です。コンテンツの権利を所有していない場合は、コンテンツに適切な帰属表示を行う必要があります。
 {/version}
 
-Manage all file based media by selecting **Media** under the **Library** section of the main CMS menu:
+すべてのファイルベースのメディアを管理するには、メインの CMS メニューの [**ライブラリ**] セクションで [**メディア**] を選択します。
 
-![Media Library](img/v4_media_library_grid.png)
+![メディア ライブラリ](img/v4_media_library_grid.png)
 
-Use the multiple filter fields across the top of the [grid](tour_cms_navigation.html#content-grids) to restrict criteria for returned results.
+[グリッド](tour_cms_navigation.html#content-grids) の上部にある複数のフィルター フィールドを使用して、返される結果の条件を制限します。
 
 {tip}
-Use the **OR/AND** option for **Names** and to filter items that have been assigned multiple **Tags**.
+**名前** および複数の **タグ** が割り当てられているアイテムをフィルターするには、**OR/AND** オプションを使用します。
 
-Images and Videos that have a set thumbnail can also be filtered by **Orientation** once set:
+サムネイルが設定されている画像や動画は、設定後、**方向** でフィルタリングすることもできます。
 
-- Use the row menu for the item and select **Edit** for an Image/Video file.  
+- アイテムの行メニューを使用して、画像/動画ファイルの **編集** を選択します。
 
-- Scroll down to the bottom of the form and set the intended **Orientation**.
+- フォームの一番下までスクロールし、目的の **方向** を設定します。
 
 {/tip}
 
- [Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html) User objects with other Users/User Groups.
+[フォルダー](tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](users_features_and_sharing.html) するために使用されます。
 
-- Click on a Folder/sub-folder to search the contents of only the selected Folder and return results based on any filters applied.
+- フォルダー/サブフォルダーをクリックすると、選択したフォルダーの内容のみが検索され、適用されているフィルターに基づいて結果が返されます。
 
-or
+または
 
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied.
-
-{tip}
-Click the Folders menu to toggle on/off from view.  When the Folder tree is hidden from view, the file path for the selected folder will be shown!
-{/tip}
-
-## Adding Library Media
-
-Library media can be either uploaded directly using the **Add Media** button or by providing a URL using the **Add Media (URL)** button.
+- ルート フォルダーで検索を含めるには、**すべてのフォルダー** にチェックを入れ、適用されているフィルターに基づいて結果が返されます。
 
 {tip}
-Add Media to the CMS Library and save to [Folders](tour_folders.html) to have media ready for use for the appropriate [Users](users_administration.html)/[User Groups](users_groups.html)! 
+[フォルダー] メニューをクリックして、表示のオン/オフを切り替えます。フォルダー ツリーが非表示になっている場合は、選択したフォルダーのファイル パスが表示されます。
+ヒント}
 
-Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor.html#content-library-search)
-{/tip}
+## ライブラリ メディアの追加
 
-### Add Media (Upload)
+ライブラリ メディアは、[**メディアの追加**] ボタンを使用して直接アップロードするか、[**メディアの追加 (URL)] ボタンを使用して URL を指定してアップロードできます。
 
-- Select the **Add Media** button
+{ヒント}
+CMS ライブラリにメディアを追加して [フォルダー](tour_folders.html) に保存すると、適切な [ユーザー](users_administration.html)/[ユーザー グループ](users_groups.html) がメディアを使用できるようになります。
 
-  ![Upload Media](img/v4_media_library_upload.png)
+CMS ライブラリに追加されたファイルは、[ライブラリ検索](layouts_editor.html#content-library-search) を使用してレイアウトやプレイリストに簡単に追加できます。
 
-- Click **Add files** and select the file(s) you wish to upload. 
+ヒント}
 
-{tip}
-Default thresholds and limits can be specified which are then considered in the event an [Image](media_module_image.html) should be resized when uploading an image for example. Further information can be found in [CMS Settings](tour_cms_settings.html#content-resizing-images).
-{/tip}
+### メディアの追加 (アップロード)
 
-- Give your file a **Name** for easier identification in the CMS and optional [Tags](tour_tags.html). 
+- [**メディアの追加**] ボタンを選択します
 
-{tip}
-If the Name field is left blank, the file will be named as per the original file name on upload!
-{/tip}
+![メディアのアップロード](img/v4_media_library_upload.png)
 
-Upload files to a specified Folder location to inherit the View, Edit, Delete Share options that have been applied to the destination Folder for easy User/User Group access:
-
-- Click on the **Select Folder** button and expand to select the Folder to save in.
+- [**ファイルの追加**] をクリックし、アップロードするファイルを選択します。
 
 {tip}
-Users can also right click a Folder to access further options as enabled in the [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
+デフォルトのしきい値と制限を指定できます。これは、たとえば画像をアップロードするときに [画像](media_module_image.html) のサイズを変更する必要がある場合に考慮されます。詳細については、[CMS 設定](tour_cms_settings.html#content-resizing-images) を参照してください。
 {/tip}
 
-- Click in the Folder you wish to upload the file to and click **Done**. 
-- The **Current Folder** will now show the selected file path.
-
-- Click the **Start upload** button to begin the upload of all files. If a Folder has been selected and you have added multiple files, all files will be uploaded to that location.
-
-Files can also be uploaded individually and have different Folder locations specified:
-
-- Instead of clicking on the Start upload button, click on the **blue upload** button shown at the end of the row for an added file. 
-
-- Change the Folder location using the **Select Folder** button as before and then click the blue button at the end of the row to upload just that singular file.
-
-![Single Upload](img/v4_media_library_single_upload.png)
-
-- Once all files have been successfully uploaded, click **Done**.
+- CMS で簡単に識別できるようにファイルに **名前** を付け、オプションで [タグ](tour_tags.html) を付けます。
 
 {tip}
-Media files can also be uploaded directly to Layouts/Playlists using the upload tool from a [Library Search.](layouts_editor.html#content-library-search) Media uploaded to a Playlist have an additional option to set [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates).
+名前フィールドが空白の場合、ファイルはアップロード時に元のファイル名に従って名前が付けられます。
+ヒント}
 
-Media files that are uploaded and added directly to Layouts/Playlists are also saved by default to the CMS Media Library.
-{/tip}
+ファイルを指定したフォルダの場所にアップロードすると、宛先フォルダに適用されている表示、編集、共有の削除オプションが継承され、ユーザー/ユーザー グループが簡単にアクセスできるようになります。
 
-### Add Media via URL
+- **フォルダの選択** ボタンをクリックし、展開して保存先のフォルダを選択します。
 
-- Select the **Add Media (URL)** button:
+{ヒント}
+ユーザーは、フォルダを右クリックして、ユーザー/ユーザー グループの [機能と共有](users_features_and_sharing.html) オプションで有効になっているその他のオプションにアクセスすることもできます。
 
-![Upload via URL](img/v4_media_library_upload_url.png)
+ヒント}
 
-- Save to a [Folder](tour_folders.html) to inherit the View, Edit, Delete Share options that have been applied to the destination Folder for easy User/User Group access.
-- Provide the remote URL for the file.
-- Give your file a **Name** for easier identification in the CMS.
+- ファイルをアップロードするフォルダをクリックし、**完了** をクリックします。
+
+- **現在のフォルダ** に、選択したファイル パスが表示されます。
+
+- **アップロードの開始** ボタンをクリックして、すべてのファイルのアップロードを開始します。フォルダが選択されていて、複数のファイルを追加している場合は、すべてのファイルがその場所にアップロードされます。
+
+ファイルを個別にアップロードして、異なるフォルダの場所を指定することもできます。
+
+- [アップロードを開始] ボタンをクリックする代わりに、追加したファイルの行の末尾に表示される **青いアップロード** ボタンをクリックします。
+
+- 以前と同じように **フォルダを選択** ボタンを使用してフォルダの場所を変更し、行の末尾にある青いボタンをクリックして、その 1 つのファイルだけをアップロードします。
+
+![単一アップロード](img/v4_media_library_single_upload.png)
+
+- すべてのファイルが正常にアップロードされたら、[完了] をクリックします。
+
+{ヒント}
+メディア ファイルは、[ライブラリ検索](layouts_editor.html#content-library-search) からアップロード ツールを使用して、レイアウト/プレイリストに直接アップロードすることもできます。プレイリストにアップロードされたメディアには、[ウィジェットの有効期限](media_playlists.html#content-widget-expiry-dates) を設定するための追加オプションがあります。
+
+アップロードされ、レイアウト/プレイリストに直接追加されたメディア ファイルも、デフォルトで CMS メディア ライブラリに保存されます。
+
+ヒント}
+
+### URL 経由でメディアを追加
+
+- [**メディアの追加 (URL)**] ボタンを選択します:
+
+![URL 経由でアップロード](img/v4_media_library_upload_url.png)
+
+- [フォルダー](tour_folders.html) に保存すると、宛先フォルダーに適用されている表示、編集、削除、共有オプションが継承され、ユーザー/ユーザー グループが簡単にアクセスできるようになります。
+- ファイルのリモート URL を指定します。
+- CMS で簡単に識別できるように、ファイルに **名前** を付けます。
+
+{ヒント}
+[名前] フィールドが空白の場合、ファイルは元のファイル名と同じ名前になります。
+
+ヒント}
+
+- [保存] をクリックします。
+
+## 行メニュー
+
+**ライブラリ** の各項目には行メニューがあり、ユーザーはそこからアクション/ショートカットのリストにアクセスできます
+
+## 編集
+
+**編集** を選択して、**フォルダ** の場所、**期間**、**タグ** などの設定を変更します。
+
+- 注目すべき設定を以下に示します:
+
+### 有効期限
+
+ライブラリ メディアの有効期限を設定すると、そのファイルが使用されているレイアウト/プレイリストからそのファイルが削除されます。
+
+### メディアを廃止
+
+**このメディアを廃止** にチェックを入れると、メディア ファイルは既存のレイアウト/プレイリストに割り当てられたままになりますが、レイアウト/プレイリストに追加するための選択はできなくなります。
+
+### メディア統計収集を有効にする
+
+- 選択したメディア ファイルの [Proof of Play](displays_metrics.html#proof_of_play) 統計の収集をオン/オフ/継承に設定します。
 
 {tip}
-If the Name field is left blank, the file will be named as per the original file name!
+Proof of Play 統計を収集するには、[表示設定](displays_settings.html) で **統計レポートを有効にする** にチェックが入っていることを確認してください。
+
 {/tip}
 
-- Click to **Save**.
+### メディアの更新
 
-## Row Menu
-
-Each item in the **Library** has a row menu where Users can access a list of actions/shortcuts
-
-## Edit
-
-Select **Edit** to make changes to **Folder** locations, **Durations** and **Tags** and other settings.
-
-- Notable settings are listed below:
-
-### Expiry Dates
-
-Set an Expiry Date for Library Media to remove the file from any Layouts/Playlists it has been used on. 
-
-### Retire Media
-
-Ticking **Retire this Media** will keep the media file assigned to any existing Layouts/Playlists but will not be made available for further selection to add to Layouts/Playlists.
-
-### Enable Media Stats Collection
-
-- Set the collection of [Proof of Play](displays_metrics.html#proof_of_play) statistics to On / Off / Inherit for the selected media file.
+**割り当てられているすべてのレイアウトでこのメディアを更新する** チェックボックスを使用して、このメディア ファイルが現在割り当てられているレイアウト/プレイリストに編集が反映されるようにします。
 
 {tip}
-Ensure that **Enable Stats Reporting** has been ticked in [Display Settings](displays_settings.html) in order to collect Proof of Play stats!
+編集は、編集するための [アクセス権](users_features_and_sharing.html#content-share) があるレイアウト/プレイリストでのみ更新されます。
+
 {/tip}
 
-### Update Media
+### メディアの置き換え
 
-Use the check box **Update this Media in all Layouts it is assigned to** so that any edits are reflected in Layouts/Playlists that this media file is currently assigned to. 
+フォームの下部にある **置き換え** ボタンを使用して、既存のファイルの新しいリビジョンをアップロードする必要がある場合があります。
 
-{tip}
-Edits will only be updated in Layouts/Playlists which you have [access](users_features_and_sharing.html#content-share) to edit!
-{/tip}
+- [メディアの追加 (アップロード)] と同じ手順で、代替ファイルをアップロードします。(media_library.html#content-add-media-upload)
+- 現在割り当てられているすべてのレイアウト/プレイリストに代替ファイルを **更新** するには、チェックを入れます。
+- CMS から古いファイル バージョンを完全に **削除** するには、チェックを入れます。
 
-### Replace Media
+## 削除
 
-It may be necessary to upload a new revision of an existing file by using the **Replace** button at the bottom of the form.
-
-- Upload a replacement file using the same steps as before to [Add Media (Upload).](media_library.html#content-add-media-upload)
-- Tick to **Update** the replacement file to all Layouts/Playlists it is currently assigned to.
-- Tick to **Delete** the old file version completely from the CMS.
-
-## Delete
-
-Media files can only be deleted from the CMS if they are **not** being used on any existing **Layouts/Playlists**.
+メディア ファイルは、既存の **レイアウト/プレイリスト** で **使用されていない** 場合にのみ、CMS から削除できます。
 
 {version}
-The option to force a delete must be used with caution as deleting a file cannot be reversed.
+ファイルの削除は元に戻せないため、強制削除オプションは注意して使用する必要があります。
+
 {/version}
 
 {tip}
-[Retiring Content](media_library.html#content-retire-media) rather than deleting it will keep the media file in any existing Layouts/Playlists it has been assigned to, with any scheduled content unaffected. Media will not be available to add to any new Layouts/Playlists.
-{/tip}
+[コンテンツの廃止](media_library.html#content-retire-media) は削除ではなく、割り当てられている既存のレイアウト/プレイリストにメディア ファイルを保持し、スケジュールされたコンテンツには影響しません。メディアは、新しいレイアウト/プレイリストに追加できなくなります。
+ヒント}
 
-{feat}Purge List|v4{/feat}
+{feat}パージ リスト|v4{/feat}
 
-- Tick in the box to enable a hard push using XMDS to completely remove the file from a Players local storage.
+- ボックスにチェックを入れると、XMDS を使用してハード プッシュが有効になり、プレーヤーのローカル ストレージからファイルが完全に削除されます。
 
-
-### Usage Report
-
-{tip}
-This report is great to use to make final checks prior to tidying media files!
-{/tip}
-
-This will show if the selected **media file** is directly assigned/scheduled to **Displays**. 
-
-![Library Usage Report](img/v4_media_library_usage_report.png)
-
-- Use the Layout tab to see what **Layouts** the media file is currently included in. 
+### 使用状況レポート
 
 {tip}
-Use the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Library grid to muti-select rows to easily perform bulk actions!
+このレポートは、メディア ファイルを整理する前の最終チェックに最適です。
+
 {/tip}
 
-### Schedule
+選択した **メディア ファイル** が **ディスプレイ** に直接割り当てられているか、スケジュールされているかが表示されます。
 
-Image and Video Library media files can be directly Scheduled to a Display as full screen content from the row menu.
+![ライブラリ使用状況レポート](img/v4_media_library_usage_report.png)
 
-- Click **Schedule**
-
-![Schedule Library Media](img/v4_media_library_schedule_fullscreen.png)
-
-- Set the **Duration** of the item to determine how long this media file should be shown each time it appears in the schedule. Use the duration,as set in the Media Library by leaving this field blank.
-- Optionally select a **Resolution** to use. If left blank a resolution that matches closest in size to the selected media file will be used.
-- An optional **Background Colour** can be set to fill any gaps if the media does not fill the entire screen.
-- **Save**
-- Complete the rest of the form fields to complete the new [Schedule](scheduling_events.html).
-
-## Tidy Library
-
-As the CMS is used and Layouts/Playlists and Media are added, over time the Library can become cluttered with old content that is no longer in use.
-
-The Library can be *tidied* by a User or Super Administrator so that it is kept clean and small. 
-**Actions cannot be reversed so this must be used with caution.**
+- レイアウト タブを使用して、メディア ファイルが現在どの **レイアウト** に含まれているかを確認します。
 
 {tip}
-This might be particularly useful if the CMS is installed on a web server that has quotas or if Users have been assigned their own quotas!
+ライブラリ グリッドの下部にある [選択済み](tour_cms_navigation.html#content-multi-select---with-selected) オプションを使用して行を複数選択し、一括操作を簡単に実行できます。
+ヒント}
+
+### スケジュール
+
+画像およびビデオ ライブラリのメディア ファイルは、行メニューからフル スクリーン コンテンツとして直接表示するようにスケジュールできます。
+
+- [**スケジュール**] をクリックします
+
+![ライブラリ メディアのスケジュール](img/v4_media_library_schedule_fullscreen.png)
+
+- アイテムの [**期間**] を設定して、このメディア ファイルがスケジュールに表示されるたびに表示される時間を決定します。このフィールドを空白のままにしておくと、メディア ライブラリで設定されている期間が使用されます。
+- 必要に応じて、使用する [**解像度**] を選択します。空白のままにしておくと、選択したメディア ファイルのサイズに最も近い解像度が使用されます。
+- メディアが画面全体を埋めない場合、オプションの [背景色**] を設定してギャップを埋めることができます。
+- [**保存**]
+- フォームの残りのフィールドに入力して、新しい [スケジュール](scheduling_events.html) を完了します。
+
+## ライブラリの整理
+
+CMS が使用され、レイアウト/プレイリストやメディアが追加されると、時間の経過とともに、ライブラリは使用されなくなった古いコンテンツで乱雑になります。
+
+ライブラリは、ユーザーまたはスーパー管理者が *整理* して、すっきりと小さく保つことができます。
+
+**アクションを元に戻すことはできないため、注意して使用する必要があります。**
+
+{tip}
+これは、クォータのある Web サーバーに CMS がインストールされている場合や、ユーザーに独自のクォータが割り当てられている場合に特に便利です。
+
 {/tip}
 
-There are two places where the Library can be tidied:
+ライブラリを整理できる場所は 2 つあります。
 
-1. From [CMS Settings](tour_cms_settings.html#content-tidy-library-(global)) - available to all Super Administrators only.
-2. From the **Library**  - for all Users when [Enable Library Tidy](tour_cms_settings.html#content-tidy-from-user-library) is ticked.
+1. [CMS 設定](tour_cms_settings.html#content-tidy-library-(global)) - すべてのスーパー管理者のみが使用できます。
+2. **ライブラリ** から - [ライブラリ整理を有効にする](tour_cms_settings.html#content-tidy-from-user-library) がオンになっている場合、すべてのユーザーに対して。
 
 {nonwhite}
 {cloud}
-The Tidy Library function is turned off by default for **Xibo Cloud Hosting** customers as it can be potentially destructive if the options are not fully understood. Use the checkbox to [Enable Library Tidy](tour_cms_settings.html#content-tidy-from-user-library) if required.
+**Xibo Cloud Hosting** のお客様の場合、ライブラリ整理機能はデフォルトでオフになっています。オプションを完全に理解していないと、潜在的に破壊的になる可能性があるためです。必要に応じて、チェックボックスを使用して [ライブラリ整理を有効にする](tour_cms_settings.html#content-tidy-from-user-library) してください。
+
 {/cloud}
 {/nonwhite}
 
-Once enabled Users can click on a **Tidy Library** button located at the top of the Library page:
+有効にすると、ユーザーはライブラリ ページの上部にある **ライブラリ整理** ボタンをクリックできます。
 
-![Tidy from Library](img/v4_media_library_tidylibrary.png)
+![ライブラリから整理](img/v4_media_library_tidylibrary.png)
 
- The form will show the number of files that will be deleted and how much space those files take up.
+フォームには、削除されるファイルの数と、それらのファイルが占めるスペースが表示されます。
 
 {tip}
-This will only delete files that are owned by the logged in User which are no longer in use on a Layout or Assigned to a Display Group/Display.
+これにより、ログインしているユーザーが所有し、レイアウトで使用されなくなった、またはディスプレイ グループ/ディスプレイに割り当てられていないファイルのみが削除されます。
 {/tip}
 
-#### Next...
+#### 次へ...
 
-[Modules and Connectors](media_modules.html)
+[モジュールとコネクタ](media_modules.html)

@@ -1,34 +1,24 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 maxHeadingLevel: 2
-excerpt: "Select from an Analogue, Flip or Digital clock to add to Playlists and Layouts"
-keywords: "analogue, flip, digital, countdown"
-persona: "content manager"
+抜粋: "アナログ、フリップ、デジタル時計から選択して、プレイリストやレイアウトに追加します"
+キーワード: "アナログ、フリップ、デジタル、カウントダウン"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Clock
+# 時計
 
-Select from an **Analogue**, **Flip** or a **Digital** style clock.
+**アナログ**、**フリップ**、**デジタル** スタイルの時計から選択します。
 
 {feat}Clock|v4{/feat}
 
-## Overview
+## 概要
 
-- Show a traditional Analogue Clock face in a light or dark theme.
-- Specify the time format to use for your Digital Clock by entering text / HTML or use the supplied Date Formats.
-- Show an animated Flip Clock and include to show seconds elapsed.
-- Use the Hourly, Minute and Daily Counter options with the Flip Clock and run from a specified date/time to show a countdown.
-- Apply an offset in minutes to the current time.
+- 明るいテーマまたは暗いテーマで、従来のアナログ時計の文字盤を表示します。
+- テキスト/HTML を入力するか、提供されている日付形式を使用して、デジタル時計に使用する時間形式を指定します。
+- アニメーション化されたフリップ時計を表示し、経過秒数を表示します。
+- フリップ時計で時間、分、日次カウンター オプションを使用し、指定した日付/時刻から実行してカウントダウンを表示します。
+- 現在の時刻に分単位のオフセットを適用します。
 
-![Clock](img/v4_media_module_clock.png)
-
-
-
-
-
-
-
-
-
-
+![時計](img/v4_media_module_clock.png)
 

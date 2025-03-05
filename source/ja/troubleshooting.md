@@ -1,63 +1,59 @@
 ---
-toc: "troubleshooting"
+toc: "トラブルシューティング"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "User Support"
-keywords: "report fault, error log, player status, contact us, community forum"
-persona: "administrator"
+抜粋: "ユーザー サポート"
+キーワード: "障害の報告、エラー ログ、プレーヤーのステータス、お問い合わせ、コミュニティ フォーラム"
+ペルソナ: "管理者"
 ---
 
-# User Support 
+# ユーザー サポート
 
 {white}
 
-Please contact your administrator.
+管理者にお問い合わせください。
 
 {/white}
 
 {nonwhite}
 
-So you can get the best support from us we ask that you provide us with specific information when contacting us with a support request:
+弊社から最高のサポートを受けられるように、サポート リクエストでお問い合わせいただく際には、具体的な情報をご提供いただくようお願いいたします:
 
-- The version of the software that you are using.
-- Description of the issue you are experiencing.
-- Detailed steps so that the issue can be recreated by our team.
-- Download a troubleshoot zip file from the CMS central ‘error log’ and attach to your support ticket.
+- 使用しているソフトウェアのバージョン。
+- 発生している問題の説明。
+- 弊社のチームが問題を再現できるように、詳細な手順。
+- CMS セントラルの「エラー ログ」からトラブルシューティングの zip ファイルをダウンロードし、サポート チケットに添付してください。
 
+## CMS エラー ログ
 
+CMS は、プラットフォーム内のすべてのコンポーネントからメッセージを収集します。 CMS、プレーヤー、API、メンテナンスなど、問題を調査する際には貴重なリソースとなります。
 
-## CMS error log
+CMS ログは、メニューの [詳細] セクションにある [障害の報告] ページから提供できます。[開始] をクリックすると、障害ウィザードが起動し、troubleshoot.zip ファイルを収集してダウンロードする手順が案内されます。
 
-The CMS collects messages from all the components within the platform; CMS, Players, API, Maintenance etc and so is a valuable resource when investigating issues.
-
-CMS logging can be provided from the **Report Fault** page located under the Advanced section of the Menu. Click on start to be taken through the fault wizard which will guide you through the steps to collect and download a troubleshoot.zip file.
-
-![Fault Page](img/report-fault-step1.png)
+![障害ページ](img/report-fault-step1.png)
 
 {tip}
-Follow our guide on [How to record logs for a CMS issue using Report Fault.](https://community.xibo.org.uk/t/how-to-record-logs-for-a-cms-issue-using-report-fault/30290)
+[障害の報告を使用して CMS の問題のログを記録する方法](https://community.xibo.org.uk/t/how-to-record-logs-for-a-cms-issue-using-report-fault/30290) のガイドに従ってください。
 {/tip}
 
-Depending on the issue that you are experiencing, we may ask for additional information.
+発生している問題によっては、追加情報を求められる場合があります。
 
+## プレーヤー ステータスのスクリーンショットを提供してください
 
+プレーヤーの種類に応じた手順に従って、プレーヤーのステータス ページにアクセスします:
 
-## Provide a screenshot of the Player Status
+**Windows / Linux** - Xibo の実行中に、キーボードの「i」をクリックしてステータス画面を開きます。
 
-Access the status page on Players by following the steps for the Player type:
+**Android** - マウスをデバイスに接続し、Xibo の実行中に画面をクリックします。画面上部のアクション バーから「ステータス」を選択します。
 
-**Windows / Linux** - Whilst Xibo is running, click `i` on the keyboard to open the Status screen.
+**webOS / Tizen** - Xibo の実行中に、webOS リモコンの OK または Enter ボタンを押し、画面上部のアクション バーから「ステータス」を選択します。
 
-**Android** - Connect a mouse to your device and click on the screen whilst Xibo is running. Choose ‘Status’ from the Action bar at the top of the screen.
+## お問い合わせ…
 
-**webOS / Tizen** - Press the OK or Enter button on your webOS remote control whilst Xibo is running and choose 'Status' from the Action bar at the top of the screen.
+プロフェッショナル、ビジネス、またはエンタープライズ プランのお客様は、ヘルプ デスクの専門家にアクセスできます。サポートが必要な場合は、[マイ アカウント](https://xibosignage.com/my-account/tickets?open=true) からチケットを開いてください。
 
-## Contacting us…
+### コミュニティ フォーラム
 
-Customers on a Professional, Business or Enterprise Plan have access to our experts on our Help Desk. Please open a ticket via [My Account](https://xibosignage.com/my-account/tickets?open=true) if you need assistance.
-
-### Community Forum
-
-The [Xibo Community](https://community.xibo.org.uk/) provides a wealth of knowledge and expertise from its members as well as our own support team, with many answered questions, support guides and feature walkthroughs accessible to all.
+[Xibo コミュニティ](https://community.xibo.org.uk/) では、メンバーや弊社のサポート チームから豊富な知識と専門知識が提供され、多くの質問への回答、サポート ガイド、機能のウォークスルーが誰でもアクセスできます。
 
 {/nonwhite}

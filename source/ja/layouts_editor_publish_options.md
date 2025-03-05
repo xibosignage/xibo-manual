@@ -1,57 +1,61 @@
 ---
-toc: "layouts"
+toc: "レイアウト"
 maxHeadingLevel: 3
 minHeadingLevel: 1
-excerpt: "Publish your designs and Schedule to Displays"
-keywords: "checkout, publish, draft, publish date, automatically publish, unlock layout"
-persona: "content creator, super administrator, user"
+抜粋: "デザインを公開してディスプレイにスケジュールする"
+キーワード: "チェックアウト、公開、下書き、公開日、自動公開、レイアウトのロック解除"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー"
 ---
 
-# Publishing Layouts
+# レイアウトの公開
 
-Once your Layout design is complete you must ensure that you **Publish** your Layout before Scheduling. Use the Menu located to the far right of the status bar to view all options for your Layout:
+レイアウトのデザインが完了したら、スケジュールする前にレイアウトを **公開** する必要があります。ステータス バーの右端にあるメニューを使用して、レイアウトのすべてのオプションを表示します:
 
-![Publish Menu](img/v4_layouts_publish_menu.png)
-
-{tip}
-Options shown are dependent on whether your Layout is in a **Draft** or **Published** status.
-
-**Discard draft** to revert back to the previous Published version and discard all changes.
-{/tip}
-
-Layouts can be **Published** straight away to push updates automatically to Layouts that are already in the schedule. A **Publish Date** can be set to determine a specified date and time to Publish: 
-
-![Publish Date](img/v4_layouts_publish_date.png)
+![公開メニュー](img/v4_layouts_publish_menu.png)
 
 {tip}
-Administrators can use the default setting on the CMS **Settings** page to automatically **Publish** draft Layouts 30 minutes after the last edit.
-{/tip}
+表示されるオプションは、レイアウトが **下書き** または **公開済み** のどちらのステータスであるかによって異なります。
 
-{version}
-Setting a **Publish Date** is not an alternative to scheduling. Your Published Layout will still need to be [Scheduled](scheduling_events.html)!
-{/version}
+**下書きを破棄** すると、以前の公開バージョンに戻り、すべての変更が破棄されます。
+ヒント}
 
-## Checkout
+レイアウトをすぐに**公開**して、すでにスケジュールされているレイアウトに更新を自動的にプッシュできます。**公開日**を設定して、公開する特定の日時を決定できます: 
 
-Published Layouts can be edited by selecting to Checkout to create a draft of the Layout. 
+![公開日](img/v4_layouts_publish_date.png)
 
-{tip}
-Users can select the 'auto submit' check box so that this form is [automatically sent](tour_cms_navigation.html#content-automatic-submission-of-forms) each time that **Checkout** is selected. 
-{/tip}
+{ヒント}
 
-Users can take their time with any edits that need to be made as a Layout in a draft status will not reflect any changes to the published version. Scheduled Displays will continue to show the Published version of the Layout. 
+管理者は、CMS **設定**ページのデフォルト設定を使用して、最後の編集から 30 分後にドラフトレイアウトを自動的に**公開**できます。
 
-- Make the changes permanent and overwrite the existing Layout by selecting to Publish. Once Published Scheduled Layouts will show the changes made.
-- Discard will revert the Layout back to its original published state, with no changes made to the Scheduled Layout.
+ヒント}
 
-{tip}
-Use the row menu from the Layouts grid to access a list of actions and shortcuts!
-{/tip}
+{バージョン}
+**公開日**の設定は、スケジュール設定の代わりにはなりません。公開されたレイアウトは、引き続き[スケジュール設定](scheduling_events.html)する必要があります!
 
-## Unlock Layout
+{/バージョン}
 
-If a User attempts to edit a Layout that is already being edited by another User of the CMS, the Layout will lock to prevent editing by the User. The Layout will remain locked for a specified amount of time (as shown in the lock message) or until **Unlock Layout** is selected by the initial User.
+## チェックアウト
+
+公開されたレイアウトは、チェックアウトを選択してレイアウトの下書きを作成することで編集できます。
 
 {tip}
-Users will be redirected to the Layout grid on unlocking a Layout to release it for another User to make edits.
+ユーザーは「自動送信」チェックボックスをオンにして、**チェックアウト** が選択されるたびにこのフォームが [自動的に送信](tour_cms_navigation.html#content-automatic-submission-of-forms) されるようにすることができます。
 {/tip}
+
+ドラフト ステータスのレイアウトには公開バージョンへの変更が反映されないため、ユーザーは必要な編集をゆっくりと行うことができます。スケジュールされた表示には、レイアウトの公開バージョンが引き続き表示されます。
+
+- 変更を永続的にして既存のレイアウトを上書きするには、[公開] を選択します。公開されると、[スケジュールされたレイアウト] に加えられた変更が表示されます。
+- [破棄] は、スケジュールされたレイアウトに変更を加えずに、レイアウトを元の公開状態に戻します。
+
+{tip}
+レイアウト グリッドの行メニューを使用して、アクションとショートカットのリストにアクセスします。
+ヒント}
+
+## レイアウトのロック解除
+
+ユーザーが CMS の別のユーザーによって既に編集されているレイアウトを編集しようとすると、そのレイアウトはユーザーによる編集を防ぐためにロックされます。レイアウトは、指定された時間 (ロック メッセージに表示) または最初のユーザーが **レイアウトのロック解除** を選択するまでロックされたままになります。
+
+{ヒント}
+レイアウトのロックを解除すると、ユーザーはレイアウト グリッドにリダイレクトされ、別のユーザーが編集できるように解放されます。
+
+ヒント}

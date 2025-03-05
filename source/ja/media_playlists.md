@@ -3,214 +3,214 @@ toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 aliases:
-  - "layouts_timeline"
-  - "media_module_spacer"
-  - "media_module_text"
-excerpt: "Playlists contain a timeline of ordered content which can be re-used across multiple Layouts"
-keywords: "re-usable, slide show, add multiple items, show a sequence of content, schedule playlists, dynamic playlist, playlist editor, spacer widget, text widget, widget expiry dates, spots, play ordering, embedding playlists"
-persona: "content creator, super administrator, user, schedule manager"
+- "layouts_timeline"
+- "media_module_spacer"
+- "media_module_text"
+抜粋: "プレイリストには、複数のレイアウトで再利用できる順序付けられたコンテンツのタイムラインが含まれています"
+キーワード: "再利用可能、スライドショー、複数のアイテムの追加、コンテンツのシーケンスの表示、プレイリストのスケジュール、動的プレイリスト、プレイリスト エディター、スペーサー ウィジェット、テキスト ウィジェット、ウィジェットの有効期限、スポット、再生順序、プレイリストの埋め込み"
+ペルソナ: "コンテンツ作成者、スーパー管理者、ユーザー、スケジュール マネージャー"
 ---
 
-# Playlists
+# プレイリスト
 
-Playlists are used to show a sequence of media items (such as an image slideshow). There are two ways to create a Playlist:
+プレイリストは、メディア アイテムのシーケンス (画像スライドショーなど) を表示するために使用されます。プレイリストを作成するには、次の 2 つの方法があります:
 
-- Create [Playlists](media_playlists) independently to a Layout. Global Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
-- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
+- レイアウトとは独立して [プレイリスト](media_playlists) を作成します。グローバル プレイリストは、レイアウトを作成せずにディスプレイにスケジュールできます。レイアウト エディタの外部で作成されたプレイリストは、レイアウト エディタの [プレイリストの追加] 機能から選択できるように表示されます。
+- レイアウト エディタからレイアウトに [プレイリストを追加](layouts_editor_playlists.html#content-add-playlists) します。ローカル プレイリストは、グローバル プレイリストとして再利用できるように保存するように変換できます。保存されたプレイリストは、レイアウト エディタに表示され、レイアウトに追加されます。
 
-## Feature Overview:
+## 機能の概要:
 
-- Create and configure independently to Layouts.
-- Add and maintain content [dynamically](media_playlists.html#content-dynamically-adding-media).
-- Update Playlist content without accessing Layouts.
-- Schedule directly from the Playlist grid without the need to add to a Layout.
-- Combine content from a variety of Playlists to be shown.
-- Set the maximum number of items to be shown from a Playlist.
-- Control how long each item on a Playlist should show before moving onto the next item.
-- Set Expiry Dates for media items added to a Playlist.
+- レイアウトとは独立して作成および構成します。
+- コンテンツを [動的に](media_playlists.html#content-dynamically-adding-media) 追加および維持します。
+- レイアウトにアクセスせずにプレイリスト コンテンツを更新します。
+- レイアウトに追加することなく、プレイリスト グリッドから直接スケジュールします。
+- さまざまなプレイリストからコンテンツを組み合わせて表示します。
+- プレイリストから表示するアイテムの最大数を設定します。 - プレイリストの各アイテムが次のアイテムに移るまでの表示時間を制御します。
+- プレイリストに追加されたメディア アイテムの有効期限を設定します。
 
+## プレイリストの作成
 
-## Creating a Playlist
+ディスプレイに表示される複数のコンテンツ アイテムを保持するプレイリストを作成することで、リソースを合理化し、時間を節約できます。特定の要件、場所、主題カテゴリなどに合わせてコンテンツをターゲットにして照合するプレイリストを作成します。
 
-Streamline resources and save time by creating Playlists to hold multiple items of content to be shown on Displays. Create Playlists to target and collate content for specific requirements, locations, subject categories etc. 
+レイアウトとは独立して作成されるプレイリストで、プレイリストにコンテンツを追加または管理するために、レイアウトまたはレイアウト エディターへの追加のユーザー アクセスは必要ありません。プレイリストに加えられた変更は、そのプレイリストがすでに含まれているすべてのレイアウト/スケジュールで更新されます。
 
-Playlists that are created independently to Layouts and do not require additional User access to Layouts or the Layout Editor in order to add or manage content on Playlists.  Any changes made to a Playlist will be updated in all Layouts/Schedules that already contain that Playlist.
+- メイン CMS メニューの [**ライブラリ**] セクションで [**プレイリスト**] を選択します。
 
-- Select **Playlists** under the **Library** section of the main CMS menu.
+- [**プレイリストを追加**] ボタンをクリックし、フォーム フィールドに入力します:
 
+![プレイリストを追加](img/v4_media_playlists_add.png)
 
-- Click the **Add Playlist** button and complete the form fields:
-
-![Add Playlist](img/v4_media_playlists_add.png)
-
-[Folders](https://test.xibo.org.uk/manual/en/tour_folders.html) are used to organise, search and easily [Share](https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Playlists saved to a Folder will inherit the access options applied to that Folder. 
+[フォルダー](https://test.xibo.org.uk/manual/en/tour_folders.html) は、ユーザー オブジェクトを整理、検索し、他のユーザー/ユーザー グループと簡単に [共有](https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share) するために使用されます。フォルダーに保存されたプレイリストは、そのフォルダーに適用されたアクセス オプションを継承します。
 
 {tip}
-If Users should also have access to the content of the Playlist (image/video media files for example), ensure that these are also saved to the same Folder!
-{/tip}
+ユーザーがプレイリストのコンテンツ (画像/ビデオ メディア ファイルなど) にもアクセスできるようにする場合は、これらも同じフォルダーに保存されていることを確認してください。
+ヒント}
 
-- Give your Playlist a **Name** for easy identification in the CMS and include optional [Tags.](tour_tags.html) 
+- CMS で簡単に識別できるように、プレイリストに **名前** を付け、オプションで [タグ](tour_tags.html) を含めます。
 
-There are two options for adding [Media](media_library) content to Playlists:
+[メディア](media_library) コンテンツをプレイリストに追加するには、次の 2 つのオプションがあります。
 
-- Automatically assigning Library based media on criteria using the [Dynamic](media_playlists.html#content-dynamically-adding-media) option.
-- Manually assigning media using the [Playlist Editor](media_playlists.html#content-media-playlists), which will open on saving the form.
+- [動的](media_playlists.html#content-dynamically-adding-media) オプションを使用して、基準に基づいてライブラリ ベースのメディアを自動的に割り当てます。
 
+- フォームを保存すると開く [プレイリスト エディター](media_playlists.html#content-media-playlists) を使用して、メディアを手動で割り当てます。
 
-## Dynamically adding Media
+## メディアを動的に追加する
 
-- Once ticked, click on the **Filter** tab and set the required criteria in order to populate matching Library Media. 
-- Provide a **maximum number** of Library Media files to limit the number that can be automatically assigned.
+- チェックしたら、[**フィルター**] タブをクリックし、一致するライブラリ メディアを入力するために必要な基準を設定します。
 
-Media already in the CMS Library that matches the criteria set will be shown:
+- 自動的に割り当てられるライブラリ メディア ファイルの **最大数** を指定して、自動的に割り当てられる数を制限します。
 
-![Dynamic Assignment](img/v4_media_playlists_dynamic.png)
+設定された条件に一致する CMS ライブラリにすでに存在するメディアが表示されます:
 
+![動的割り当て](img/v4_media_playlists_dynamic.png)
 
-Any future media files that are added to the Library that satisfy the set criteria for this Playlist will be automatically added to this list.
-
-{tip}
-Library Media can also be prepopulated as a one-time assignment to a Playlist by setting criteria but leaving the Dynamic option unticked!
-{/tip}
-
-- Click to **Save**.
+今後ライブラリに追加されるメディア ファイルで、このプレイリストに設定された条件を満たすものはすべて、このリストに自動的に追加されます。
 
 {tip}
-Did you know a Dynamic Playlist can be scheduled to be shown on Displays full screen without first adding it to a Layout? Use the row menu for the Playlist and select Schedule!
+ライブラリ メディアは、条件を設定して [動的] オプションのチェックを外しておくことで、プレイリストへの 1 回限りの割り当てとして事前入力することもできます。
+
 {/tip}
 
-## Playlist Editor
-
-- From the Toolbox, select content to add to the Playlist.
-- Configuration options will load in the properties panel.
-
-![Playlist Timeline](img/v4_media_playlists_timeline.png)
+- **保存** をクリックします。
 
 {tip}
-The **Playlist Editor** contains two additional Widgets, a **Rich Text Editor** to provide text, Html or JavaScript and a **Spacer** to create an empty 'slot' within a Playlist.
+動的プレイリストは、最初にレイアウトに追加しなくても、ディスプレイのフル スクリーンに表示されるようにスケジュールできることをご存知ですか? プレイリストの行メニューを使用して [スケジュール] を選択します。
+
 {/tip}
 
-Durations will update to show the minutes/seconds as items are added to the Playlist timeline.
+## プレイリスト エディター
 
-- Re-order the sequence by drag and drop.
+- ツールボックスから、プレイリストに追加するコンテンツを選択します。
 
-- Click the ruler icon to **Change Scale mode**:
+- 構成オプションがプロパティ パネルに読み込まれます。
 
-
-![Scale Mode](img/v4_media_playlists_scale_mode.png)
-
-Use the scale options to zoom in and out to decrease/increase the visible time span.
-
-Items can be added to a specific point in the list, drag or click to add content to a position marker within the Playlist.
-
-![Add to Timeline](img/v4_media_playlists_add_timeline.png)
+![プレイリスト タイムライン](img/v4_media_playlists_timeline.png)
 
 {tip}
-Use the Undo button at the bottom of the toolbar to revert a change.
+**プレイリスト エディター** には、テキスト、HTML、または JavaScript を提供する **リッチ テキスト エディター** と、プレイリスト内に空の「スロット」を作成する **スペーサー** の 2 つの追加ウィジェットが含まれています。
 {/tip}
 
-An additional [Context Menu](layouts_editor.html#content-context-menu) of options can be accessed by right clicking on an item which includes setting [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates) and [Playlist Transitions](tour_transitions.html#content-playlist-transitions).
+プレイリスト タイムラインにアイテムが追加されると、継続時間が更新され、分/秒が表示されます。
+
+- ドラッグ アンド ドロップでシーケンスを並べ替えます。
+
+- ルーラー アイコンをクリックして、**スケール モードを変更** します:
+
+![スケール モード](img/v4_media_playlists_scale_mode.png)
+
+スケール オプションを使用してズームインおよびズームアウトし、表示される時間範囲を縮小/拡大します。
+
+アイテムはリスト内の特定のポイントに追加できます。ドラッグまたはクリックして、プレイリスト内の位置マーカーにコンテンツを追加します。
+
+![タイムラインに追加](img/v4_media_playlists_add_timeline.png)
 
 {tip}
-When Transitions are applied to a Widget by default, the properties panel will be blank. Only manually entered Transitions will show on forms!
+変更を元に戻すには、ツールバーの下部にある [元に戻す] ボタンを使用します。
+
 {/tip}
 
-
-Use the **Select Multiple Widgets** button at the bottom of the Playlist Editor to delete multiple selections with one click: 
-
-![Mutli Select](img/v4_media_playlists_multi_select.png)
+[ウィジェットの有効期限](media_playlists.html#content-widget-expiry-dates) と [プレイリストのトランジション](tour_transitions.html#content-playlist-transitions) の設定を含む追加の [コンテキスト メニュー](layouts_editor.html#content-context-menu) オプションには、項目を右クリックすることでアクセスできます。
 
 {tip}
-Did you know a 'global' Playlist can be scheduled to be shown on Displays full screen without first adding it to a Layout? Use the row menu for the Playlist and select Schedule!
-{/tip}
+トランジションがデフォルトでウィジェットに適用されている場合、プロパティ パネルは空白になります。フォームには手動で入力されたトランジションのみが表示されます。
+ヒント}
 
-## Widget Expiry Dates
+プレイリスト エディターの下部にある [複数のウィジェットを選択] ボタンを使用すると、1 回のクリックで複数の選択を削除できます。
 
-Items added to a Playlist have an additional option of setting Start and End times.
+![複数選択](img/v4_media_playlists_multi_select.png)
 
-{feat}Widget Expiry Dates|v4{/feat}
+{ヒント}
+「グローバル」プレイリストは、最初にレイアウトに追加しなくても、ディスプレイのフル スクリーンで表示されるようにスケジュール設定できることをご存知ですか? プレイリストの行メニューを使用して、[スケジュール] を選択します。
 
-- Right click on an item in a Playlist to **Edit Expiry Dates** or set when [uploading media](media_library.html#content-add-media-upload) directly to a Playlist.
+ヒント}
 
+## ウィジェットの有効期限
 
-Uploading from a [Library Search](layouts_editor.html#content-library-search) will have an additional **Set Expiry Date** option:
+プレイリストに追加されたアイテムには、開始時間と終了時間を設定する追加オプションがあります。
 
-![Expiry Dates](img/v4_media_playlists_upload_expiry.png)
+{feat}ウィジェットの有効期限|v4{/feat}
 
-When uploading multiple media files, clicking the **Start upload** button will upload all files with the same date/time and Folder location set.
+- プレイリスト内のアイテムを右クリックして、**有効期限を編集** するか、[メディアをアップロード](media_library.html#content-add-media-upload) するときに設定できます。
 
-{tip}
-Items can also be uploaded individually using the **blue upload** button at the end of the row for a file to have different set Expiry Dates and Folder locations for each file uploaded.
-{/tip}
+[ライブラリ検索](layouts_editor.html#content-library-search) からアップロードする場合は、**有効期限の設定** オプションが追加されます:
 
-Any items on a Playlist that have **Expiry Dates** set show an icon, which when moused over will show further information:
+![有効期限](img/v4_media_playlists_upload_expiry.png)
 
-![Expiry Dates](img/v4_media_playlists_expiry_dates.png)
-
-
+複数のメディア ファイルをアップロードする場合、[アップロードの開始] ボタンをクリックすると、すべてのファイルが同じ日時とフォルダの場所が設定された状態でアップロードされます。
 
 {tip}
-Once the End date has passed the item will be removed from the Playlist. Expired items that have not been set to Delete on Expiry will remain visible in the Playlist Editor only so that Start and End times can be re-adjusted if needed.
-{/tip}
+ファイルの行末にある **青いアップロード** ボタンを使用してアイテムを個別にアップロードすることもできます。これにより、アップロードするファイルごとに異なる有効期限とフォルダの場所が設定されます。
+ヒント}
 
-- Click on an icon to open to make any changes/remove from the item.
+**有効期限** が設定されているプレイリストのアイテムにはアイコンが表示され、マウスオーバーすると詳細情報が表示されます:
 
-## Embedding Playlists
+![有効期限](img/v4_media_playlists_expiry_dates.png)
 
-Playlists can be added to other Playlist timelines in order to define how much content should be shown, for how long as well as determine a play order.
+{ヒント}
+終了日を過ぎると、アイテムはプレイリストから削除されます。期限切れ時に削除するように設定されていない期限切れアイテムは、必要に応じて開始時間と終了時間を再調整できるように、プレイリスト エディターにのみ表示されます。
 
-- From the Playlist Editor select to add a New or select from the list of available 'global' Playlists from the Toolbox.
-- Options for configuration are shown in the Properties Panel:
+ヒント}
 
-![Embedding Playlists](img/v4.1_media_playlists_embedding.png)
+- アイコンをクリックして開き、アイテムを変更したり削除したりできます。
 
-- Use the dropdown menu to select **Playlists** using the `+` button to add and configure multiple Playlists if required.
+## プレイリストの埋め込み
 
+プレイリストを他のプレイリスト タイムラインに追加して、表示するコンテンツの量や期間を定義したり、再生順序を決定したりできます。
 
-- **Spot** options are used to define how much content from Playlists should be shown and for how long.
+- プレイリスト エディターで、新しいプレイリストを追加するか、ツールボックスから使用可能な「グローバル」プレイリストのリストから選択します。
+- 設定のオプションはプロパティ パネルに表示されます:
 
-Spots also have an option to use a Playlists content as filler only and add content from this Playlist to **Fill** or **Pad** other selected Playlists:
+![プレイリストの埋め込み](img/v4.1_media_playlists_embedding.png)
 
-- This Playlist must be the **first** added Playlist in the list.
-- Enter a **0** in the **Spots** field so that the entire Playlist will be ignored and omitted from the play order. Select how the content from this Playlist should be distributed with the other Playlists using **Spot Fill** options.
+- ドロップダウン メニューを使用して **プレイリスト** を選択し、必要に応じて `+` ボタンを使用して複数のプレイリストを追加および設定します。
+
+- **スポット** オプションは、プレイリストから表示するコンテンツの量と時間を定義するために使用されます。
+
+スポットには、プレイリストのコンテンツをフィラーとしてのみ使用し、このプレイリストからコンテンツを追加して、選択した他のプレイリストを **埋める** または **埋め込む** ためのオプションもあります:
+
+- このプレイリストは、リストに追加された **最初の** プレイリストである必要があります。
+- **スポット** フィールドに **0** を入力すると、プレイリスト全体が無視され、再生順序から除外されます。**スポット埋め** オプションを使用して、このプレイリストからのコンテンツを他のプレイリストとどのように分配するかを選択します。
 
 {version}
-**Note:** Please be aware that by setting **Start Dates** to Widgets may cause fewer Spots to be shown than the total amount specified!
+**注:** **開始日**をウィジェットに設定すると、指定された合計数よりも少ないスポットが表示される可能性があることに注意してください。
+
 {/version}
 
-Use the drop-down menu for the **Spot Fill** field to select how any remaining Spots should be filled in the event that there are not enough Widgets on the selected Playlist to fulfil the specified play spots. 
+**スポット埋め**フィールドのドロップダウンメニューを使用して、選択したプレイリストに指定された再生スポットを満たすのに十分なウィジェットがない場合に、残りのスポットを埋める方法を選択します。
 
 {tip}
-**Spots**, **Spot Length** and **Spot Fill** are all optional and can be left blank if this functionality is not required!
+**スポット**、**スポットの長さ**、および**スポット埋め**はすべてオプションであり、この機能が不要な場合は空白のままにすることができます。
+
 {/tip}
 
-Use the drop-down for **Playlist Ordering** to select how all Playlists should be ordered to play.
+**プレイリストの順序**のドロップダウンを使用して、すべてのプレイリストを再生する順序を選択します。
 
 {tip}
-**Auto** uses the total count of items in each list and divides it by the smallest list to determine how often to take items from each list to ensure an even play from each Playlist.
-{/tip}
+**自動**は、各リストのアイテムの合計数を使用し、それを最小のリストで割って、各プレイリストから均等に再生されるように、各リストからアイテムを取得する頻度を決定します。
+ヒント}
 
-Select from the **Remaining Widgets** options to handle any content that is left unordered at the end of a Playlist.
+プレイリストの最後に順序付けされていないコンテンツを処理するには、[残りのウィジェット] オプションを選択します。
 
-{tip}
-Adding Playlists to a **New Playlist** on a Layout has an additional [Cycle Based Playback](layouts_editor_playlists.html#content-cycle-based-playback) option which includes a **Random Widget** feature.
-Cycle based playback is not supported when adding Playlists to a global Playlist!
-{/tip}
+{ヒント}
+レイアウト上の **新しいプレイリスト** にプレイリストを追加すると、**ランダム ウィジェット** 機能を含む [サイクル ベースの再生](layouts_editor_playlists.html#content-cycle-based-playback) オプションが追加されます。
 
-## Playlist Grid
+グローバル プレイリストにプレイリストを追加する場合、サイクル ベースの再生はサポートされません。
+ヒント}
 
-Saved Playlists can be viewed from **Playlists** under the **Library** section of the main CMS menu:
+## プレイリスト グリッド
 
-![Playlist Grid](img/v4.1_media_playlists_grid.png)
+保存されたプレイリストは、メイン CMS メニューの **ライブラリ** セクションの **プレイリスト** から表示できます。
 
-Each Playlist has a row menu which is used to access a menu of actions/shortcuts, notable settings are listed below: 
+![プレイリスト グリッド](img/v4.1_media_playlists_grid.png)
 
-- **Timeline** - open the Playlist Editor to make changes to content on the timeline.
-- **Edit** - use the Filter tab for Dynamic Playlists to view the list of dynamically assigned media and make changes to criteria.
-- **Usage Report** - view where Playlists are being shown and what Layouts they have been included on.
-- **Schedule** - directly Schedule a Playlist to be shown full screen on Displays.
+各プレイリストには、アクション/ショートカットのメニューにアクセスするための行メニューがあります。主な設定を以下に示します。
 
-{tip}
-Any changes made to a Scheduled Playlist will be automatically pushed to Players as they are made.
-{/tip}
+- **タイムライン** - プレイリスト エディターを開いて、タイムライン上のコンテンツを変更します。
+- **編集** - 動的プレイリストのフィルター タブを使用して、動的に割り当てられたメディアのリストを表示し、条件を変更します。
+- **使用状況レポート** - プレイリストが表示される場所と、プレイリストが含まれているレイアウトを表示します。
+- **スケジュール** - ディスプレイで全画面表示されるようにプレイリストを直接スケジュールします。
+
+{ヒント}
+スケジュールされたプレイリストに加えられた変更は、変更が行われると自動的にプレーヤーにプッシュされます。
+{/ヒント}
 

@@ -3,58 +3,58 @@ toc: "users"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 alias: "tour_status_dashboards"
-excerpt: "Assign Dashboards to Users to restrict access to all parts of the CMS"
-keywords: "status dashboard, icon dashboard, media manager dashboard, playlist dashboard"
-persona: "administrator"
+抜粋: "ダッシュボードをユーザーに割り当てて、CMS のすべての部分へのアクセスを制限します"
+キーワード: "ステータス ダッシュボード、アイコン ダッシュボード、メディア マネージャー ダッシュボード、プレイリスト ダッシュボード"
+ペルソナ: "管理者"
 ---
 
-# User Dashboards
+# ユーザー ダッシュボード
 
-Dashboards are assigned to [Users](users_administration.html)/[User Groups](users_groups.html) to serve as a **Homepage** and allow access to only the permitted parts of the CMS for the assigned User.
+ダッシュボードは [ユーザー](users_administration.html)/[ユーザー グループ](users_groups.html) に割り当てられ、**ホームページ** として機能し、割り当てられたユーザーに対して CMS の許可された部分のみへのアクセスを許可します。
 
-## Status Dashboard
+## ステータス ダッシュボード
 
-The **Status Dashboard** is the default User Dashboard for **Super Admin Users** and is intended as a high-level view of the system for administration purposes. This dashboard gives an overview for connected [Displays](displays.html), added [Users](users_administration.html) of the CMS and provides information relating to Library and Bandwidth usage as well as Display Activity:
+**ステータス ダッシュボード** は、**スーパー管理者ユーザー** のデフォルトのユーザー ダッシュボードであり、管理目的でシステムの高レベル ビューとして意図されています。このダッシュボードには、CMS に接続された [ディスプレイ](displays.html)、追加された [ユーザー](users_administration.html) の概要が表示され、ライブラリと帯域幅の使用状況、およびディスプレイ アクティビティに関する情報が提供されます。
 
-![CMS Status Dashboard](img/v4_users_status_dashboard.png)
+![CMS ステータス ダッシュボード](img/v4_users_status_dashboard.png)
 
-Scroll down the Status Dashboard to access further charts to view **Display Status** and **Display Content Status**:
+ステータス ダッシュボードを下にスクロールして、**ディスプレイ ステータス** と **ディスプレイ コンテンツ ステータス** を表示するその他のチャートにアクセスします。
 
-![Display Charts](img/v4_users_status_dashboard_charts.png)
+![ディスプレイ チャート](img/v4_users_status_dashboard_charts.png)
 
-Get further breakdowns by clicking on either of these charts:
+これらのチャートのいずれかをクリックすると、さらに詳細な内訳が表示されます。
 
-![Chart Breakdowns](img/v4_users_status_dashboard_breakdown.png)
-
-{tip}
-Use the Displays Page link to be redirected straight to the Displays grid in the CMS!
-{/tip}
-
-## Icon Dashboard 
-
-The **Icon Dashboard** is a default User Dashboard which is used for all newly assigned **Users** and is intended as a **Launcher** into other areas of the CMS. 
-
-![CMS Icon Dashboard](img/v4_users_icon_dashboard.png)
-
-The icons shown within this dashboard are managed by the enabled [Feature](users_features_and_sharing.html) access for the User. 
-
-## Media Manager Dashboard
-
-The **Media Manager Dashboard** gives an overview of the current status of Library Media in the CMS to easily see number and size of items as well as easily view any unreleased or unused media:
-
-![CMS Media Dashboard](img/v4_users_media_dashboard.png)
-
-## Playlist Dashboard
-
-The **Playlist Dashboard** can be assigned to Users who belong to the **Playlist Dashboard User Group** so that they can only upload or replace media in [Playlists](media_playlists.html) they have been given access to from enabled [Share](users_features_and_sharing.html) options.
-
-The Playlist Dashboard gives a very restricted view of the CMS with a User only able to select specific Playlists to manage using the drop-down menu.
-
-![Playlist Dashboard](img/v4_users_playlist_dashboard.png)
-
-In order to determine how many media files a User can upload to a Playlist, Spots need to be configured by adding the [Playlist Widget](media_module_playlist.html) to a Playlist.
+![チャートの内訳](img/v4_users_status_dashboard_breakdown.png)
 
 {tip}
-**NOTE:** Administrators need to ensure that the **Playlist Widget** has been configured with Spots and added to a Playlist in a Layout before a User can add/replace Media using the **Playlist Dashboard**.
+ディスプレイ ページ リンクを使用すると、CMS のディスプレイ グリッドに直接リダイレクトされます。
+ヒント}
+
+## アイコン ダッシュボード
+
+**アイコン ダッシュボード** は、新しく割り当てられたすべての **ユーザー** に使用されるデフォルトのユーザー ダッシュボードであり、CMS の他の領域への **ランチャー** として意図されています。
+
+![CMS アイコン ダッシュボード](img/v4_users_icon_dashboard.png)
+
+このダッシュボード内に表示されるアイコンは、ユーザーに対して有効になっている [機能](users_features_and_sharing.html) アクセスによって管理されます。
+
+## メディア マネージャー ダッシュボード
+
+**メディア マネージャー ダッシュボード** では、CMS 内のライブラリ メディアの現在のステータスの概要が提供され、アイテムの数とサイズを簡単に確認できるほか、リリースされていないメディアや未使用のメディアも簡単に表示できます。
+
+![CMS メディア ダッシュボード](img/v4_users_media_dashboard.png)
+
+## プレイリスト ダッシュボード
+
+**プレイリスト ダッシュボード** は、**プレイリスト ダッシュボード ユーザー グループ** に属するユーザーに割り当てることができます。これにより、有効な [共有](users_features_and_sharing.html) オプションからアクセスを許可された [プレイリスト](media_playlists.html) 内のメディアのみをアップロードまたは置換できます。
+
+プレイリスト ダッシュボードでは、CMS の非常に制限されたビューが提供され、ユーザーはドロップダウン メニューを使用して管理する特定のプレイリストのみを選択できます。
+
+![プレイリスト ダッシュボード](img/v4_users_playlist_dashboard.png)
+
+ユーザーがプレイリストにアップロードできるメディア ファイルの数を決定するには、[プレイリスト ウィジェット](media_module_playlist.html) をプレイリストに追加してスポットを構成する必要があります。
+
+{tip}
+**注意:** ユーザーが **プレイリスト ダッシュボード** を使用してメディアを追加/置換できるようにするには、管理者は **プレイリスト ウィジェット** がスポットで構成され、レイアウト内のプレイリストに追加されていることを確認する必要があります。
 {/tip}
 

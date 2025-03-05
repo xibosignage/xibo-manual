@@ -1,63 +1,62 @@
 ---
-toc: "displays"
+toc: "ディスプレイ"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Sync Groups contain Displays to show synchronised content"
-keywords: "synchronised content, publisher port, lead display"
-persona: "schedule manager, display manager, administrator"
+抜粋: "同期グループには、同期されたコンテンツを表示するディスプレイが含まれます"
+キーワード: "同期されたコンテンツ、パブリッシャー ポート、リード ディスプレイ"
+ペルソナ: "スケジュール マネージャー、ディスプレイ マネージャー、管理者"
 ---
 
-# Sync Groups
+# 同期グループ
 
-Sync Groups contain the Displays that will show synchronised content. Content can be synchronised to play across 2 or more Displays in a mirrored or video wall configuration when scheduling a [Synchronised Event](scheduling_events.html#content-synchronised-events).
+同期グループには、同期されたコンテンツを表示するディスプレイが含まれます。[同期イベント](scheduling_events.html#content-synchronised-events) をスケジュールするときに、コンテンツを同期して、ミラーリングまたはビデオ ウォール構成の 2 つ以上のディスプレイで再生できます。
 
-{feat}Sync Groups|v4{/feat}
-
-{tip}
-Sync [Playlists](layouts_editor_playlists.html) on different Layouts using the **Content Synchronisation Key**.
-{/tip}
-
-[Displays](displays.html) first need to be assigned to a **Sync Group**:
-
-- Click on **Sync Groups** under the **Displays** section of the main CMS menu.
-- Select the **Add Sync Group** button.
-
-![Add Sync Group](img/v4_displays_add_sync_groups.png)
-
-Sync Groups can be saved to [Folders](tour_folders.html) to easily control User/User Group levels of interaction for Displays as well as provide an additional way to organise.
+{feat}同期グループ|v4{/feat}
 
 {tip}
-All Displays in a Sync Group need to communicate using their LAN IP address over TCP on the publisher port specified. This is defaulted to 9590 but can be changed if that port is reserved.
+**コンテンツ同期キー** を使用して、異なるレイアウトの [プレイリスト](layouts_editor_playlists.html) を同期します。
 
-We recommend using a wired network and high-powered similar devices for the best Synchronisation.
-{/tip}
+ヒント}
 
-- On saving use the **Manage Membership** form to select which Displays to include in this Group.
+[ディスプレイ](displays.html) は、まず **同期グループ** に割り当てる必要があります。
+
+- メイン CMS メニューの **ディスプレイ** セクションの **同期グループ** をクリックします。
+- **同期グループの追加** ボタンを選択します。
+
+![同期グループの追加](img/v4_displays_add_sync_groups.png)
+
+同期グループは [フォルダー](tour_folders.html) に保存でき、ディスプレイのユーザー/ユーザー グループ レベルのインタラクションを簡単に制御できるほか、整理するための追加の方法も提供されます。
+
+{ヒント}
+同期グループ内のすべてのディスプレイは、指定されたパブリッシャー ポートで TCP 経由で LAN IP アドレスを使用して通信する必要があります。これはデフォルトで 9590 に設定されていますが、そのポートが予約されている場合は変更できます。
+
+最適な同期のために、有線ネットワークと高性能の同様のデバイスを使用することをお勧めします。
+ヒント}
+
+- 保存時に、**メンバーシップの管理** フォームを使用して、このグループに含めるディスプレイを選択します。
 
 {version}
-**NOTE:** A Display can only belong to one Sync Group at the same time.
+**注意:** ディスプレイは、同時に 1 つの同期グループにしか属せません。
+
 {/version}
 
-- On saving use the Edit form use the drop down to select which Display should be the **Lead Display** for the Sync Group.
+- 保存時に、編集フォームのドロップダウンを使用して、同期グループの **リード ディスプレイ** にするディスプレイを選択します。
 
-- Click to **Save**
+- **保存** をクリックして
 
 {tip}
-Content can now be scheduled to the Sync Group by clicking **Schedule** from the main CMS menu and selecting the [Add Synchronised Event button](scheduling_events.html#content-synchronised-events).
+メインの CMS メニューから **スケジュール** をクリックし、[同期イベントの追加] ボタン (scheduling_events.html#content-synchronised-events) を選択すると、コンテンツを同期グループにスケジュールできるようになりました。
+
 {/tip}
 
-## Edit / Manage Membership
+## メンバーシップの編集/管理
 
-Manage a Sync Group by using the row menu:
+行メニューを使用して同期グループを管理します。
 
-- Select **Edit** to set an alternative Lead Display
-- Select **Members** to manage which Displays are members of the group.
+- 代替リード ディスプレイを設定するには、**編集** を選択します
+- グループのメンバーであるディスプレイを管理するには、**メンバー** を選択します。
 
-#### Next...
+#### 次へ...
 
-[Scheduling Synchronised Events](scheduling_events.html#content-synchronised-events)
-
-
-
-
+[同期イベントのスケジュール設定](scheduling_events.html#content-synchronised-events)
 

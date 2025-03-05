@@ -1,197 +1,212 @@
 ---
-toc: "displays"
+toc: "ディスプレイ"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Use Display Setting Profiles to automatically configure Displays"
-keywords: "display profiles, collect interval, enable stats reporting, force https, operating hours, expire modified layouts, multiple decoders, touch capabilities"
-persona: "display manager, administrator"
+抜粋: "ディスプレイ設定プロファイルを使用してディスプレイを自動的に構成する"
+キーワード: "ディスプレイ プロファイル、収集間隔、統計レポートの有効化、https の強制、稼働時間、変更されたレイアウトの有効期限、複数のデコーダー、タッチ機能"
+ペルソナ: "ディスプレイ マネージャー、管理者"
 ---
 
-# Display Settings 
+# ディスプレイ設定
 
-Once installed and Connected to the CMS, Displays can be automatically managed and configured using **Display Setting Profiles**. Each Display has a default profile which can be customised by an Administrator to suit requirements.
+インストールして CMS に接続すると、**ディスプレイ設定プロファイル** を使用してディスプレイを自動的に管理および構成できます。各ディスプレイにはデフォルトのプロファイルがあり、管理者は要件に合わせてこれをカスタマイズできます。
 
-Available profiles can be viewed by clicking **Display Settings** under the **Display** section of the main CMS menu:
+使用可能なプロファイルは、メイン CMS メニューの **ディスプレイ** セクションの **ディスプレイ設定** をクリックすると表示されます:
 
-![Display Settings Profiles](img/v4_displays_settings_profiles.png)
+![ディスプレイ設定プロファイル](img/v4_displays_settings_profiles.png)
 
-Each profile has a **Name**, **Type** and a flag indicating if it is the **default** or not. Default profiles are automatically assigned to Displays of the corresponding type.
+各プロファイルには、**名前**、**タイプ**、および **デフォルト** かどうかを示すフラグがあります。デフォルト プロファイルは、対応するタイプのディスプレイに自動的に割り当てられます。
 
-## Add/Editing Profiles
+## プロファイルの追加/編集
 
-To **Add** a new Profile:
+新しいプロファイルを **追加** するには:
 
-- Click on the **Add Profile** button and give the new Profile a **Name** and select the **Display Type**.
-- Use the box if this should be used as the **Default Profile** for all Displays of the selected type.
+- **プロファイルの追加** ボタンをクリックし、新しいプロファイルに **名前** を付けて、**ディスプレイ タイプ** を選択します。
+
+- 選択したタイプのすべてのディスプレイの **デフォルト プロファイル** として使用する場合は、ボックスを使用します。
 
 {tip}
-Only 1 profile can be selected as the **Default Profile** per Display Type!
+**デフォルト プロファイル** として選択できるプロファイルは、ディスプレイ タイプごとに 1 つだけです。
+
 {/tip}
 
-- Complete all the required settings for the new Profile.
+- 新しいプロファイルに必要なすべての設定を完了します。
 
-To **Edit** an existing Profile:
+既存のプロファイルを **編集** するには:
 
-- From the row menu of the selected Profile click **Edit**.
-- Use the form to adjust the available settings.
+- 選択したプロファイルの行メニューから **編集** をクリックします。
 
-{tip}
-For ease, use the row menu to **Copy** a Profile so you can make adjustments as needed to quickly create new Profiles!
-{/tip}
-
-Some of the notable settings are listed below:
-
-### Collect Interval
-
-Located on the **General** tab, use the **Collect interval** drop-down menu to determine how often the Player checks for new content/schedules. This means that once a Player has communicated with the CMS, it will check again for any changes by the time set here.
+- フォームを使用して、使用可能な設定を調整します。
 
 {tip}
-**Scenario:**
-A Player has a collect interval set for 24 hours, it will check for any changes, action pending changes and then wait for the next 24-hour collection. If a change is made between this period of time, the Player will not be aware of it until it is time to check again.
-{/tip}
+簡単にするために、行メニューを使用してプロファイルを **コピー** すると、必要に応じて調整して新しいプロファイルをすばやく作成できます。
+ヒント}
 
-If a Display Profile for a Player is changed, the Player will only be aware of the change after it has connected according to its prior connection interval. 
+注目すべき設定のいくつかを以下に示します:
+
+### 収集間隔
+
+**全般** タブにある **収集間隔** ドロップダウン メニューを使用して、プレーヤーが新しいコンテンツ/スケジュールを確認する頻度を決定します。これは、プレーヤーが CMS と通信した後、ここで設定された時間までに再度変更を確認することを意味します。
+
+{ヒント}
+**シナリオ:**
+プレーヤーの収集間隔が 24 時間に設定されている場合、プレーヤーは変更、保留中のアクション、および次の 24 時間の収集を待機します。この期間内に変更が行われた場合、プレーヤーは再度確認するまでその変更を認識しません。
+
+ヒント}
+
+プレーヤーのディスプレイ プロファイルが変更された場合、プレーヤーは以前の接続間隔に従って接続した後にのみ変更を認識します。
 
 {tip}
-**Scenario:**
+**シナリオ:**
 
-A Player with a collect interval set for 24 hours made a check at 12 pm, it will not check again until 12 pm the following day for any changes that have been made. Once the 24 hour interval has passed, it will update the new changes and from this point will collect changes based on the new Profile.
+収集間隔が 24 時間に設定されているプレーヤーが午後 12 時にチェックを行った場合、翌日の午後 12 時まで変更の有無はチェックされません。24 時間の間隔が経過すると、新しい変更が更新され、この時点から新しいプロファイルに基づいて変更が収集されます。
 {/tip}
 
 {nonwhite}
 {cloud}
 
-XMR is configured by default with **Xibo Cloud Hosting** which allows for changes to be communicated immediately to the Player, regardless of the Collection Interval set. This means that fast and dynamic modifications can be made to your Display, without the need to modify a Display Profile.
+XMR はデフォルトで **Xibo Cloud Hosting** で構成されており、設定されている収集間隔に関係なく、変更がプレーヤーにすぐに伝達されます。つまり、ディスプレイ プロファイルを変更することなく、ディスプレイに迅速かつ動的な変更を加えることができます。
 {/cloud}
 
 {noncloud}
 
-For non-cloud customers the CMS can be configured to talk to an XMR instance if player actions are required, please contact your Administrator.
+クラウド以外のお客様の場合、プレーヤーのアクションが必要な場合は、CMS を XMR インスタンスと通信するように構成できます。管理者にお問い合わせください。
 {/noncloud}
 
 {/nonwhite} 
 
 {white}
 
-The CMS can be configured to talk to an XMR instance if player actions are required, please contact your Administrator.
+プレーヤーのアクションが必要な場合、CMS は XMR インスタンスと通信するように設定できます。管理者にお問い合わせください。
 
 {/white}
 
 {tip}
-We recommend setting an interval no lower than 5 minutes for production, generally a 15-30 minute setting would be sensible.
+
+本番環境では 5 分以上の間隔を設定することをお勧めします。通常は 15 ～ 30 分の設定が適切です。
+
 {/tip}
 
-### Enable Stats Reporting
+### 統計レポートを有効にする
 
-Further down the **General** tab, use the box to enable/disable the collection of statistics for **Proof of Play Reports** for all **Displays** that use the selected **Display Profile**.
+[**全般**] タブのさらに下にあるボックスを使用して、選択した **ディスプレイ プロファイル** を使用するすべての **ディスプレイ** の **Proof of Play レポート** の統計収集を有効/無効にします。
 
-- If enabled set the required level of collection for Proof of Play statistics to be applied to all Layouts, Media and Widget items using the **Aggregation level** drop down:
+- 有効にした場合、[**集計レベル**] ドロップダウンを使用して、すべてのレイアウト、メディア、ウィジェット アイテムに適用される Proof of Play 統計の収集レベルを設定します。
 
-  - **Individual** - statistics are collected when specified by default.
+- **個別** - デフォルトでは、指定されたときに統計が収集されます。
 
-  - **Hourly** - statistics will be collected hourly by default.
+- **時間ごと** - デフォルトでは、統計は時間ごとに収集されます。
 
-  - **Daily** - statistics will be collected daily by default.
+- **毎日** - デフォルトでは統計が毎日収集されます。
 
-
-If the geolocation of the Display is known, enable the checkbox to record the location against each proof of play record. Users with mobile Displays can turn this setting on if desired.
+ディスプレイの地理的位置がわかっている場合は、チェックボックスをオンにして、各プレイ証明レコードに対して位置を記録します。モバイルディスプレイを使用しているユーザーは、必要に応じてこの設定をオンにできます。
 
 {version}
-Players aggregate **completed records only**, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired. 
+
+プレーヤーは**完了したレコードのみ**を集計し、ウィジェットの期間の終了時に収集が行われるため、ウィジェットの期間が 3 時間の場合、ウィジェットの有効期限が切れると統計が記録されます。
+
 {/version}
 
-### Download and Update windows
+### ダウンロードおよび更新ウィンドウ
 
-Located on the **Network** tab, set a time window for **Downloads** from the CMS and **Updates** to the Player:
+**ネットワーク** タブで、CMS からの**ダウンロード** とプレーヤーへの**更新** の時間ウィンドウを設定します。
 
-#### Download window timings
+#### ダウンロードウィンドウのタイミング
 
-- Select Start and End times to connect to the CMS to download any changes that have been made.
+- 開始時刻と終了時刻を選択して、CMS に接続し、行われた変更をダウンロードします。
 
-If you make changes to content outside of the download window set, the Player will not be able to download any changes and could cause the Player to show the assigned default Layout or Splash screen instead.
-
-{tip}
-Leave at the Default 00:00 - 00:00 to leave the window as always open!
-{/tip}
-
-#### Update window timings
-
-- Select Start and End times to install any application updates. 
-
-Define a time to download updates to a Player, such as new Player versions. This will also include any new or changes to existing schedules to be updated to the Player. Changes to content will **NOT** be updated during the set Update window timings set.
+ダウンロードウィンドウの設定外でコンテンツに変更を加えた場合、プレーヤーは変更をダウンロードできず、代わりに割り当てられたデフォルトのレイアウトまたはスプラッシュ画面が表示される可能性があります。
 
 {tip}
-This setting is best used in conjunction with either assigned Layouts or deferred published Layouts so that they publish during the update window!
+ウィンドウを常に開いたままにするには、デフォルトの 00:00 - 00:00 のままにしてください。
+
 {/tip}
 
-### Force HTTPS
+#### 更新ウィンドウのタイミング
 
-{feat}Force HTTPS Connection|v4{/feat}
+- アプリケーションの更新をインストールするには、開始時間と終了時間を選択します。
 
-From the **Network** tab use the checkbox to force a Displays connection to the CMS using HTTPS. 
+新しいプレーヤー バージョンなどの更新をプレーヤーにダウンロードする時間を定義します。これには、プレーヤーに更新される新しいスケジュールや既存のスケジュールの変更も含まれます。コンテンツの変更は、設定された更新ウィンドウのタイミング中に更新されません。
 
 {tip}
-This option can be overridden for individual Displays if required.
+この設定は、割り当てられたレイアウトまたは遅延公開されたレイアウトと組み合わせて使用するのが最適です。これにより、レイアウトは更新ウィンドウ中に公開されます。
+
 {/tip}
 
-### Operating Hours
+### HTTPS を強制
 
-Set **Operating Hours** for Displays by setting pre-defined [Dayparts](scheduling_dayparting.html)
+{feat}HTTPS 接続を強制|v4{/feat}
 
-- Use the **Network** tab for Windows, Android and Linux Players, and select the day part to use from the drop down menu.
-- Use the **General** tab for webOS and Tizen Players, and select the day part to use from the drop down menu.
+**ネットワーク** タブからチェックボックスを使用して、HTTPS を使用してディスプレイを CMS に接続します。
 
 {tip}
-'Email alerts' such as those which send when a Display is offline, will not be sent outside of the specified Operating Hours.
-{/tip}
+このオプションは、必要に応じて個々のディスプレイに対して上書きできます。
+ヒント}
 
-### Expire Modified Layouts
+### 営業時間
 
-Located on the **Advanced** tab, use this checkbox to tell [[PRODUCTNAME]] to immediately expire and cut playback of a Layout when a Player receives an update from the CMS. 
+定義済みの [Dayparts](scheduling_dayparting.html) を設定して、ディスプレイの **営業時間** を設定します。
+
+- Windows、Android、Linux プレーヤーの場合は **ネットワーク** タブを使用し、ドロップダウン メニューから使用する時間帯を選択します。
+- webOS および Tizen プレーヤーの場合は **全般** タブを使用し、ドロップダウン メニューから使用する時間帯を選択します。
+
+{ヒント}
+ディスプレイがオフラインのときに送信されるような「電子メール アラート」は、指定された営業時間外には送信されません。
+
+{/ヒント}
+
+### 変更されたレイアウトを期限切れにする
+
+**詳細** タブにあるこのチェックボックスを使用すると、プレーヤーが CMS から更新を受け取ったときに、レイアウトの再生を直ちに期限切れにしてカットするように [[PRODUCTNAME]] に指示できます。
+
+{ヒント}
+長時間のレイアウトに便利です!
+ヒント}
+
+### 複数のデコーダーを使用する
+
+ビデオ コンテンツで **ギャップレス再生** を行うには、デバイスに複数のデコーダーが必要です。この設定は [詳細設定] タブにあり、自動的に [デバイスのデフォルト] が使用されます。
+
+{ヒント}
+
+再生で問題が発生した場合は、ドロップダウンを使用して [オン] に設定してください。
+
+ヒント}
+
+### デバイスのタッチ機能を有効にする (Android のみ)
+
+ディスプレイを **タッチ スクリーン** として使用する場合は、[詳細設定] タブからこのオプションを有効にします。
+
+{ヒント}
+
+このオプションを有効にすると、プレーヤーに 1 回限りのメッセージが表示されますが、手動で閉じる必要があります。
+
+ヒント}
+
+無効のままにしておくと、画面をタッチすると [アクション バー モード] オプションに従ってアクション バーが表示されます。
+
+## プロファイルの削除
+
+行メニューを使用してディスプレイ プロファイルを削除します。
+
+タイプごとに **デフォルト** が 1 つ残っていることを確認してください。
+
+## 設定プロファイル
+
+**デフォルト プロファイル** は、同じタイプのすべてのディスプレイにその設定を自動的に適用します。
+
+[ディスプレイ](displays.html) をオーバーライドして、デフォルト以外のプロファイルを使用できます。
+
+メイン CMS メニューのディスプレイ セクションの **ディスプレイ** をクリックします。
+
+- オーバーライドするディスプレイを選択し、行メニューから **編集** をクリックします。
+- **設定** タブで、ドロップダウンを使用して、ディスプレイで使用する **設定プロファイル** を選択します。
 
 {tip}
-Useful for Layouts with long durations!
+各設定は、個々のディスプレイ要件に合わせてオーバーライドすることもできます。
+
 {/tip}
 
-### Use Multiple Decoders
+#### 次へ...
 
-**Gapless Playback** with Video content requires a device to have multiple decoders. This setting can be found on the **Advanced** tab and will automatically use the **Device Default**.
-
-{tip}
-Should an issue arise with playback, use the dropdown to set to **On**!
-{/tip}
-
-### Enable Touch capabilities on the device (Android only)
-
-If the Display is to be used as a **touch screen**, enable this option from the **Advanced** tab.
-
-{tip}
-Enabling this option will show a one time message on the Player which will need to be manually dismissed!
-{/tip}
-
-When left disabled, touching the screen will show the action bar according to the **Action Bar Mode** option.
-
-## Deleting Profiles
-
-Delete Display Profiles by using the row menu. 
-
-Please ensure that there is **one default** remaining for each Type.
-
-## Settings Profile
-
-A **Default Profile** will automatically apply its settings to all Displays of the same Type.
-
-A [Display](displays.html) can be overridden to use an alternative Profile from the default. 
-
-Click on **Displays** under the Displays section of the main CMS menu:
-
-- Select the Display to override click **Edit** from the row menu.
-- From the **Settings** tab, use the drop down to select which **Settings Profile** the Display should use.
-
-{tip}
-Each setting can also be overridden to suit individual Display requirements!
-{/tip}
-
-#### Next...
-
-[Reporting](displays_metrics.html)
+[レポート](displays_metrics.html)

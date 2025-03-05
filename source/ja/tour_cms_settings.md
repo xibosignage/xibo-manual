@@ -2,265 +2,269 @@
 toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Configurable options in the CMS Settings for Administrators"
-keywords: "resize images, transition defaults, automatically publish layout, proof of play default settings, tidy library, maintenance settings, network settings, regional settings, set timezone, set language, password policy, password reminder, two factor authentication, fonts, applications, global default layout"
-persona: "administrator"
+抜粋: "管理者向け CMS 設定の構成可能なオプション"
+キーワード: "画像のサイズ変更、トランジションのデフォルト、レイアウトの自動公開、プルーフ オブ プレイのデフォルト設定、整理されたライブラリ、メンテナンス設定、ネットワーク設定、地域設定、タイムゾーンの設定、言語の設定、パスワード ポリシー、パスワード リマインダー、2 要素認証、フォント、アプリケーション、グローバル デフォルト レイアウト"
+ペルソナ: "管理者"
 ---
 
-# CMS Administrator Settings
+# CMS 管理者設定
 
 {nonwhite}
-Once your CMS is installed, there is some additional set up required to enable all functionality. Please see the following guidance: [CMS Post Installation Set up](/docs/setup/xibo-cms-post-installation-setup-guide.html)
+CMS をインストールしたら、すべての機能を有効にするために追加の設定が必要です。次のガイダンスを参照してください: [CMS インストール後の設定](/docs/setup/xibo-cms-post-installation-setup-guide.html)
 {/nonwhite}
 
-Like any complex application, the [[PRODUCTNAME]] CMS comes with a number of configurable options.  These are located from the **Settings** page under the **Administration** section of the main CMS menu.
-
-{nonwhite}
-{cloud}
-**Xibo Cloud** hosted customers will have some of these fields pre-populated as part of the service. Some can be changed with others locked to disable editing. For further information please refer to this page: [Xibo Cloud CMS Defaults and Restrictions](/docs/setup/xibo-in-the-cloud.html#content-xibo-cloud-cms-defaults-and-restrictions).
-{/cloud}
-{/nonwhite}
-
-Settings are split into related category tabs:
-
-![CMS Settings](img/v4_tour_cms_settings_admin.png)
-
-## Configuration
-
-From this tab view the **CMS Secret Key** which is used to authenticate Players with the CMS and apply a **Theme** to pages (if applicable) as well as setting the default positioning for the [Navigation Menu](tour_cms_navigation.html).
-
-## Defaults 
-
-Use this tab to apply defaults to all [Media](media_library.html) files and set default [Transitions](tour_transitions.html).
-
-You can also set Layouts to **automatically Publish** 30 minutes after the last recorded edit by enabling the checkbox for this setting.
-
-### Resizing Images
-
-Default thresholds and limits can be specified which are then considered in the event an image should be resized. This could be when uploading an image or an image being downloaded by a Widget - NASA RSS in a Ticker Widget for example.
-
-- #### Resize Threshold
-
-
-Set a maximum threshold (based on the longest side) that should be considered for resizing an image.
-
-{tip}
-If you set a Resize Threshold of 1920 and you upload/download an image which is 800, this image would not need resizing. If you uploaded/downloaded an image which was 2400, this would then be resized to 1920.
-{/tip}
-
-- #### Resize Limit
-
-
-Set a limit (based on the longest side) for uploaded/downloaded images. Images that exceed this limit will not be processed and should be replaced with another image that is within the limit.
-
-This setting will determine whether the image file is too large to be processed.
-
-- #### DataSet maximum number of Rows
-
-Set the maximum permitted number of rows a User can create in a DataSet.
+他の複雑なアプリケーションと同様に、[[PRODUCTNAME]] CMS には多数の構成可能なオプションが付属しています。これらは、メイン CMS メニューの **管理** セクションの **設定** ページにあります。
 
 {nonwhite}
 {cloud}
-The default for Cloud customers is set at 10,000 rows per DataSet.
-{/cloud}
-{/nonwhite}
+**Xibo Cloud** でホストされているお客様の場合、これらのフィールドの一部はサービスの一部として事前に入力されています。一部は変更できますが、他のフィールドは編集できないようにロックされています。詳細については、次のページを参照してください: [Xibo Cloud CMS のデフォルトと制限](/docs/setup/xibo-in-the-cloud.html#content-xibo-cloud-cms-defaults-and-restrictions)。
+設定は関連するカテゴリのタブに分かれています:
 
-## **Displays**
+![CMS 設定](img/v4_tour_cms_settings_admin.png)
 
-Set defaults for **Latitude** and **Longitude** for all Geo aware previews throughout the CMS.
+## 構成
 
-### Default Layout
+このタブでは、**CMS シークレット キー** を表示します。これは、CMS でプレーヤーを認証し、ページに **テーマ** を適用 (該当する場合) するために使用されるほか、[ナビゲーション メニュー](tour_cms_navigation.html) のデフォルトの位置を設定します。
 
-The Default Layout set here will be automatically assigned to all Displays to be shown when no other content is scheduled or if there is an issue which prevents a scheduled Event from being shown. 
+## デフォルト
 
-{nonwhite}
-{tip}
-You can create your own Layout to replace the pre-set default, but keep in mind that designs should be kept simple with no complex media or web content.
-{/tip}
-{/nonwhite}
+このタブを使用して、すべての [メディア](media_library.html) ファイルにデフォルトを適用し、デフォルトの [トランジション](tour_transitions.html) を設定します。
 
-This global Default Layout can be overridden for individual Displays by selecting an alternative [Default Layout](displays.html#content-default-layout) to be used.
+また、この設定のチェックボックスをオンにすると、最後に記録された編集から 30 分後にレイアウトを **自動的に公開** するように設定できます。
 
-### Proof of Play Default Settings
+### 画像のサイズ変更
 
-Set the **Aggregation level** of collection of [Proof of Play](displays_metrics.html) statistics to be applied to all **Layouts** / **Media** and **Widget items** as default.
+デフォルトのしきい値と制限を指定でき、画像のサイズを変更する必要があるときに考慮されます。これは、画像をアップロードする場合や、ウィジェットによってダウンロードされる画像 (ティッカー ウィジェット内の NASA RSS など) の場合に発生することがあります。
 
-- **Individual** - statistics are recorded at the start and finish of each item individually and sent back to the CMS at each collection interval.
-- **Hourly** - records each item once, and includes the total number of times played and the length of time played during the hour and is sent back to the CMS on the next collection interval after the hour period has expired.
-- **Daily** - records each item once, and includes the total number of times played and the length of time played during the day and is sent back to the CMS on the next collection interval after the day has expired.
+- #### サイズ変更しきい値
+
+画像のサイズ変更に考慮する最大しきい値 (最長辺に基づく) を設定します。
 
 {tip}
-Players aggregate ‘completed records’ only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded once the Widget has expired!
+サイズ変更しきい値を 1920 に設定し、800 の画像をアップロード/ダウンロードした場合、この画像はサイズ変更の必要がありません。2400 の画像をアップロード/ダウンロードした場合、1920 にサイズ変更されます。
 {/tip}
 
-- Use this box to **enable the collection** of Proof of Play statistics to all **Displays** as default.
+- #### サイズ変更制限
 
-{tip}
-This can be toggled on/off by editing [Display Setting Profiles](displays_settings.html#content-editing-profiles).
-{/tip}
+アップロード/ダウンロードされる画像の制限 (最長辺に基づく) を設定します。この制限を超える画像は処理されず、制限内の別の画像に置き換えられます。
 
-- Tick the box to set the default to on for the collection of Proof of Play statistics for all newly added **Layouts**.
+この設定により、画像ファイルが処理するには大きすぎるかどうかが決定されます。
 
-{tip}
-Collection can be disabled by unticking the box on the **Add/Edit** Layout form.
-{/tip}
+- #### DataSet の最大行数
 
-Use the settings to enable the collection of Proof of Play statistics to apply to all **Media**, **Playlist** and **Widgets** (Off/On/Inherit).
-
-{tip}
-It is intended to have **Widget** always set to Inherit so that Layout and Media options control the collection!
-{/tip}
-
-## General
-
-View/set the address for the **User Manual** and tick to send **anonymous statistics** to help improve the software.
-
-### Tidy Library (Global)
-
-The Library can be *tidied* by a Super Administrator or User so that it is kept clean and small. 
-**Actions cannot be reversed so this must be used with caution.**
-
-{tip}
-This might be of particular interest if the CMS is installed on a web server that has quotas or if Users have been assigned their own quotas.
-{/tip}
-
-Administrators can initiate a system-wide Library tidy operation by clicking the **Tidy Library** button in the right hand corner of the Settings page:
-
-![Settings Tidy Library](img/v4_tour_cms_settings_tidy_library.png)
-
-As this functionality is system-wide and therefore operates on **ALL** User files, confirmation is required to remove unused and old revisions.
-
-This option is more comprehensive and removes:
-
-- Temporary files
-- Orphaned files
-- Thumbnails
-- Media revisions that aren't used anywhere
-- Media that isn't used anywhere (on any Layouts / Display Groups / Displays)
-- Generic files uploaded to the CMS
-
-#### Orphaned files
-
-Orphaned files are a rare occurrence where a file stored on disk in the Library folder is not deleted when the Media item is deleted from the Library. This means that the file exists but the CMS doesn't know anything about it.
-
-### Tidy from User Library
+ユーザーが DataSet に作成できる最大行数を設定します。
 
 {nonwhite}
 {cloud}
-The Tidy Library function is turned off by default for **Xibo Cloud Hosting** customers as it can be potentially destructive if the options are not fully understood. 
+
+クラウド カスタマーのデフォルトは、DataSet あたり 10,000 行に設定されています。
+
 {/cloud}
 {/nonwhite}
 
-Allow a User to tidy files from the [Library](media_library.html#content-tidy-library) page by using the checkbox to **Enable Library Tidy**.
+## **ディスプレイ**
 
-## Maintenance 
+CMS 全体のすべての地理認識プレビューの **緯度** と **経度** のデフォルトを設定します。
 
-From here **Enable Maintenance** and **Email Alerts** to be sent and set the maximum retention ages for **Logs** and **Statistics**.
+### デフォルト レイアウト
 
-## Network 
+ここで設定したデフォルト レイアウトは、他のコンテンツがスケジュールされていない場合、またはスケジュールされたイベントが表示されない場合に表示されるすべてのディスプレイに自動的に割り当てられます。
 
-From the Network tab complete an **Admin email address** for the overall CMS administrator. All email notifications generated by the CMS will be sent to this address.
+{nonwhite}
+{tip}
+独自のレイアウトを作成して、事前設定されたデフォルトを置き換えることができますが、複雑なメディアや Web コンテンツを使用せず、デザインをシンプルに保つ必要があることに注意してください。
+{tip}
+{/nonwhite}
 
-Ensure that the **Sending email address** and **name** is completed prior to setting up any further email notifications throughout the CMS.
+このグローバル デフォルト レイアウトは、別の [デフォルト レイアウト](displays.html#content-default-layout) を選択して、個々のディスプレイで上書きできます。
+
+### 再生証明のデフォルト設定
+
+すべての **レイアウト** / **メディア** および **ウィジェット アイテム** にデフォルトで適用される [再生証明](displays_metrics.html) 統計の収集の **集約レベル** を設定します。
+
+- **個別** - 統計は各アイテムの開始時と終了時に個別に記録され、各収集間隔で CMS に返されます。
+
+- **時間ごと** - 各アイテムを 1 回記録し、1 時間中の再生回数と再生時間の合計を含め、1 時間の期間が経過した後の次の収集間隔で CMS に返されます。
+- **毎日** - 各アイテムを 1 回記録し、その日のプレイ回数とプレイ時間の合計が記録され、その日の終了後の次の収集間隔で CMS に返されます。
+
+{tip}
+プレーヤーは「完了した記録」のみを集計し、ウィジェットの有効期間の終了時に収集が行われるため、ウィジェットの有効期間が 3 時間の場合、ウィジェットの有効期間が切れると統計が記録されます。
+
+{/tip}
+
+- このボックスを使用して、デフォルトですべての **ディスプレイ** への Proof of Play 統計の収集を **有効** にします。
+
+{tip}
+[ディスプレイ設定プロファイル](displays_settings.html#content-editing-profiles) を編集することで、オン/オフを切り替えることができます。
+
+{/tip}
+
+- 新しく追加されたすべての **レイアウト** の Proof of Play 統計の収集をデフォルトでオンに設定するには、ボックスにチェックを入れます。
+
+{tip}
+**レイアウトの追加/編集** フォームのボックスのチェックを外すと、収集を無効にすることができます。
+{/tip}
+
+設定を使用して、再生証明統計の収集をすべての **メディア**、**プレイリスト**、**ウィジェット** (オフ/オン/継承) に適用できるようにします。
+
+{tip}
+**ウィジェット** は常に継承に設定して、レイアウトとメディアのオプションで収集を制御するように意図されています。
+{/tip}
+
+## 全般
+
+**ユーザー マニュアル** のアドレスを表示/設定し、ソフトウェアの改善に役立つ **匿名統計** を送信するようにチェックを入れます。
+
+### 整理されたライブラリ (グローバル)
+
+ライブラリは、スーパー管理者またはユーザーが *整理* して、すっきりと小さく保つことができます。
+**アクションを元に戻すことはできないため、注意して使用する必要があります。**
+
+{tip}
+これは、クォータのある Web サーバーに CMS がインストールされている場合、またはユーザーに独自のクォータが割り当てられている場合に特に重要です。
+{/tip}
+
+管理者は、設定ページの右隅にある **ライブラリの整理** ボタンをクリックして、システム全体のライブラリ整理操作を開始できます。
+
+![設定 ライブラリの整理](img/v4_tour_cms_settings_tidy_library.png)
+
+この機能はシステム全体に適用され、**すべての** ユーザー ファイルに対して実行されるため、未使用のリビジョンや古いリビジョンを削除するには確認が必要です。
+
+このオプションはより包括的で、次のものを削除します:
+
+- 一時ファイル
+- 孤立ファイル
+- サムネイル
+- どこでも使用されていないメディア リビジョン
+- どこでも使用されていないメディア (レイアウト / 表示グループ / 表示)
+- CMS にアップロードされた汎用ファイル
+
+#### 孤立ファイル
+
+孤立ファイルはまれに発生するもので、メディア アイテムがライブラリから削除されたときに、ライブラリ フォルダー内のディスクに保存されているファイルが削除されません。つまり、ファイルは存在しますが、CMS はそれについて何も認識していません。
+
+### ユーザー ライブラリからの整理
+
+{nonwhite}
+{cloud}
+**Xibo Cloud Hosting** のお客様では、オプションを完全に理解していないと破壊的な結果になる可能性があるため、整理ライブラリ機能はデフォルトでオフになっています。
+**ライブラリ整理を有効にする**チェックボックスを使用して、ユーザーが[ライブラリ](media_library.html#content-tidy-library)ページからファイルを整理できるようにします。
+
+## メンテナンス
+
+ここから**メンテナンスを有効にする**と**メールアラート**を送信し、**ログ**と**統計**の最大保存期間を設定します。
+
+## ネットワーク
+
+[ネットワーク]タブで、全体のCMS管理者の**管理者メール アドレス**を入力します。CMSによって生成されたすべてのメール通知はこのアドレスに送信されます。
+
+CMS全体でさらにメール通知を設定する前に、**送信メール アドレス**と**名前**が入力されていることを確認してください。
 
 {nonwhite}
 {noncloud}
-You can also provide Proxy Server information (if your CMS is behind a proxy) force **HTTPS** and set monthly **Bandwidth** and **Library** size limits.
+プロキシ サーバー情報を指定し（CMSがプロキシの背後にある場合）、**HTTPS**を強制し、毎月の**帯域幅**と**ライブラリ**のサイズ制限を設定することもできます。
 {/noncloud}
 {/nonwhite}
 
-## Sharing
+## 共有
 
-Use the dropdown to change how Widget colour appears in Playlists for Users.
+ドロップダウンを使用して、ユーザーのプレイリストでウィジェットの色がどのように表示されるかを変更します。
 
-- **Media Colouring** will use the colours from the **theme** for each Widget.
-- **Sharing Colouring** will show the Widget colour based on **User access** from **Sharing** options. (Green = editable)
+- **メディアの色付け** では、各ウィジェットの **テーマ** の色が使用されます。
 
-From here you can set if Users should have the ability to schedule to Displays when [Share](users_features_and_sharing.html#content-2-share) options are set to View for the User as well as being able to set whether Users should be able to see the names of Layouts in schedules that have not been shared with them.
+- **共有の色付け** では、**共有** オプションの **ユーザー アクセス** に基づいてウィジェットの色が表示されます。(緑 = 編集可能)
 
-Tick to allow Users to save their content into the top level [Root Folder](tour_folders.html) or disable to force Users to select a Folder to save to.
+ここから、ユーザーが [共有](users_features_and_sharing.html#content-2-share) オプションがユーザーの [表示] に設定されている場合に表示をスケジュールできるかどうかを設定できます。また、ユーザーが共有されていないスケジュールのレイアウトの名前を表示できるかどうかも設定できます。
 
-## Regional
+ユーザーがコンテンツを最上位の [ルート フォルダー](tour_folders.html) に保存できるようにするにはチェックを入れ、保存先のフォルダーをユーザーが選択するようにするには無効にします。
 
-From this tab set the **Language** and default **Timezone** and **Date Format** to use across the CMS.
+## 地域
 
-{tip}
-Select the nearest major city in your timezone!
-{/tip}
-
-Use the checkbox to detect the **browser language** to use for the CMS and select which type of **Calendar** should be used.
-
-## Troubleshooting
-
-This tab is used to to set Log Levels which are useful for capturing php errors and environment issues.
-
-## Users
-
-Select the System User and set the Default User Group and User Type when onboarding new Users.
+このタブから、CMS 全体で使用する **言語** とデフォルトの **タイムゾーン** および **日付形式** を設定します。
 
 {tip}
-We recommend that the **Default User Type** is set to **User**!
+タイムゾーン内の最も近い主要都市を選択してください。
+
 {/tip}
 
-### Password Policy
+チェックボックスを使用して、CMS で使用する **ブラウザ言語** を検出し、使用する **カレンダー** の種類を選択します。
 
-Enter any valid regular expression in the **Password Policy Regular Expression** field so all password change requests and newly created passwords are tested against this.
+## トラブルシューティング
+
+このタブは、php エラーや環境の問題をキャプチャするのに役立つログ レベルを設定するために使用されます。
+
+## ユーザー
+
+新しいユーザーをオンボーディングするときに、システム ユーザーを選択し、デフォルトのユーザー グループとユーザー タイプを設定します。
 
 {tip}
-A text description will be shown to Users when their passwords do not meet the required policy as a prompt!
+**デフォルトのユーザー タイプ** は **ユーザー** に設定することをお勧めします。
+
 {/tip}
+
+### パスワード ポリシー
+
+**パスワード ポリシーの正規表現** フィールドに有効な正規表現を入力すると、すべてのパスワード変更リクエストと新しく作成されたパスワードがこれに対してテストされます。
+
+{tip}
+パスワードが必要なポリシーを満たしていない場合、プロンプトとしてテキストの説明が表示されます。
+
+tip}
 
 {nonwhite}
 {cloud}
-Customers with [Xibo Cloud Hosting](/hosting) have a **set default policy** which requires a password of at least 10 characters.
-{/cloud}
+[Xibo Cloud Hosting](/hosting) のお客様には、少なくとも 10 文字のパスワードを必要とする **デフォルト ポリシー** が設定されています。
+
+cloud}
 {/nonwhite}
 
-### Password Reminder
+### パスワード リマインダー
 
-Enable to provide a **Forgotten your Password** reset link for **Users** at login so they can easily regain access to the CMS.
-
-{tip}
-Ensure that a valid **Sending email address** has been entered on the **Network** tab before enabling this functionality!
-{/tip}
-
-The User will be shown a link which once clicked will send a **Password Reset Notification** to their email address as recorded on their User Profile.
+**ユーザー**がログイン時に **パスワードを忘れた場合** のリセット リンクを提供できるようにすると、CMS へのアクセスを簡単に回復できます。
 
 {tip}
-**Users** can also change their own passwords, once logged into the CMS, from their [User Profile](tour_user_access.html#content-edit-profile)
+この機能を有効にする前に、**ネットワーク** タブに有効な **送信メール アドレス** が入力されていることを確認してください。
+
 {/tip}
 
-## Two Factor Authentication
-
-[Two Factor Authentication](tour_user_access.html#content-two-factor-authentication) can be set by a User for added security once logged in. 
-
-Once configured, a User would need to enter the code sent via email or as displayed in the Google Authenticator app to complete login to gain access to the CMS. 
+ユーザーにはリンクが表示され、それをクリックすると、ユーザー プロファイルに記録されているメール アドレスに **パスワード リセット通知** が送信されます。
 
 {tip}
-Ensure that an Email address has been provided by the user to receive the generated email!
+**ユーザー**は、CMSにログインしたら、[ユーザー プロファイル](tour_user_access.html#content-edit-profile)から自分のパスワードを変更することもできます。
 {/tip}
 
-Set a valid **Sending email address** has been entered on the **Network** tab and a name has been entered in the **Two Factor Issuer** field to make it clear on the Google Authenticator app and email when authenticated codes are generated for login to the CMS.
+## 2要素認証
 
-[Reset Two Factor Authentication](users_administration.html#content-reset-two-factor-authentication) for Users from their User Profile.
+[2要素認証](tour_user_access.html#content-two-factor-authentication)は、ログイン後のセキュリティを強化するためにユーザーが設定できます。
 
-## Applications
+設定が完了すると、ユーザーは、CMSにアクセスするためにログインを完了するために、メールで送信されたコードまたはGoogle Authenticatorアプリに表示されたコードを入力する必要があります。
 
-[[PRODUCTNAME]] contains an API that allows 3rd party applications to connect and consume its data.
+{tip}
+生成されたメールを受信するために、ユーザーがメール アドレスを提供していることを確認してください。
+{/tip}
 
-Applications are added and configured from **Applications** under the **Administration** section of the main CMS menu.
+有効な**送信メール アドレス**が**ネットワーク**タブに入力され、**2要素発行者**フィールドに名前が入力されていることを設定して、CMSへのログイン用に認証コードが生成されたときにGoogle Authenticatorアプリとメールで明確にわかるようにします。
+
+ユーザーのユーザー プロファイルから [2 要素認証をリセット](users_administration.html#content-reset-two-factor-authentication) します。
+
+## アプリケーション
+
+[[PRODUCTNAME]] には、サードパーティ アプリケーションが接続してデータを使用できる API が含まれています。
+
+アプリケーションは、メイン CMS メニューの [**管理**] セクションの [**アプリケーション**] から追加および構成されます。
 
 {tip}
 
-Before using an Application, each User must authorise the application to act on their behalf within the CMS.
-Users can view authorised Applications from the [My Applications](tour_user_access.html#content-my-applications) section of their **User Profile**.
+アプリケーションを使用する前に、各ユーザーは CMS 内でアプリケーションがユーザーに代わって動作することを承認する必要があります。
+
+ユーザーは、**ユーザー プロファイル** の [マイ アプリケーション](tour_user_access.html#content-my-applications) セクションから承認されたアプリケーションを表示できます。
 {/tip}
 
-At the current time the CMS does not provide individual Users with a method of revoking access to an application. Only an Administrator can remove an application completely.
+現時点では、CMS は個々のユーザーにアプリケーションへのアクセスを取り消す方法を提供していません。管理者だけがアプリケーションを完全に削除できます。
 
-## Fonts
+## フォント
 
-[[PRODUCTNAME]] comes with a set of standard fonts which can be set on many Widgets:
+[[PRODUCTNAME]] には、多くのウィジェットに設定できる標準フォントのセットが付属しています:
 
 - Aileron Heavy Regular (Aileron-Heavy.otf)
 - Aileron Regular (Aileron-Regular.otf)
@@ -269,40 +273,40 @@ At the current time the CMS does not provide individual Users with a method of r
 - Linear Regular (linear-by-braydon-fuller.otf)
 
 {version}
-**IMPORTANT:** it is possible to set a custom font on many Widgets, either via a property called **Font Family** or via the visual editor **Font** select list. If a font is not chosen the Player will show its own default "sans-serif" font, referred to as the system font. E.g. on Android this is usually Roboto.
+**重要:** 多くのウィジェットで、**Font Family** というプロパティまたはビジュアル エディターの **Font** 選択リストを使用して、カスタム フォントを設定できます。フォントが選択されていない場合、プレーヤーはシステム フォントと呼ばれる独自のデフォルトの「サンセリフ」フォントを表示します。たとえば、Android では通常 Roboto です。
 
-We recommend always choosing a font where available to avoid Players showing differing fonts.{/version}
+プレーヤーに異なるフォントが表示されないように、利用可能なフォントを常に選択することをお勧めします。{/version}
 
-Manage from the **Fonts** page under the **Administration** section of the main CMS menu.
+メイン CMS メニューの [**管理**] セクションの [**フォント**] ページから管理します。
 
-- Use the row menu to view a Fonts **Details** and see an example of the font style:
+- 行メニューを使用してフォントの **詳細** を表示し、フォント スタイルの例を確認します:
 
-![Font Details](img/v4_tour_settings_fonts.png)
+![フォントの詳細](img/v4_tour_settings_fonts.png)
 
-Additional fonts can be added by clicking the **Upload Font** button and using the file uploader tool.
+追加のフォントは、[**フォントのアップロード**] ボタンをクリックし、ファイル アップローダー ツールを使用して追加できます。
 
 {tip}
-If the new font does not show in the text editor after upload, try clearing the browser cache! 
+アップロード後に新しいフォントがテキスト エディターに表示されない場合は、ブラウザーのキャッシュをクリアしてみてください。
+
 {/tip}
 
 {version}
-**NOTE:** Fonts have preferences built into them known as **OS/2 tags**. [[PRODUCTNAME]] checks for OS/2 preferences and can use **fonts with OS/2 tags 0 or 8**. 
+**注:** フォントには、**OS/2 タグ** と呼ばれる設定が組み込まれています。[[PRODUCTNAME]] は OS/2 設定をチェックし、**OS/2 タグ 0 または 8 のフォント** を使用できます。
 
-Fonts with other OS/2 tags may produce an error on uploading and may not display correctly.
+他の OS/2 タグのフォントはアップロード時にエラーが発生し、正しく表示されない場合があります。
+
 {/version}
 
-#### Next...
+#### 次へ...
 
-### Further Administration set up
+### 管理設定の詳細
 
-Please see the following pages for further **Administration** set up:
+**管理** 設定の詳細については、次のページを参照してください:
 
-- [User Administration](users_administration.html)
-- [User Groups](users_groups.html)
-- [Modules](media_modules.html)
-- [Transitions](tour_transitions.html)
-- [Tags](tour_tags.html)
-- [Folders](tour_folders.html#content-folder-management)
-
-
+- [ユーザー管理](users_administration.html)
+- [ユーザー グループ](users_groups.html)
+- [モジュール](media_modules.html)
+- [トランジション](tour_transitions.html)
+- [タグ](tour_tags.html)
+- [フォルダー](tour_folders.html#content-folder-management)
 

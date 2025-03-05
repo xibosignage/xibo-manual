@@ -1,107 +1,112 @@
 ---
-toc: "displays"
+toc: "ディスプレイ"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Create Display Groups for ease of scheduling and media assignment"
-keywords: "dynamic group membership, add display group, "
-persona: "display manager, administrator"
+抜粋: "ディスプレイ グループを作成してスケジュールとメディアの割り当てを容易にする"
+キーワード: "動的グループ メンバーシップ、ディスプレイ グループの追加、"
+ペルソナ: "ディスプレイ マネージャー、管理者"
 ---
 
-# Display Groups
+# ディスプレイ グループ
 
-Create Display Groups to group together specific [Displays](displays.html) for easier Scheduling and management as your [[PRODUCTNAME]] system grows.
+[[PRODUCTNAME]] システムの拡大に合わせて、特定の [ディスプレイ](displays.html) をグループ化してディスプレイ グループを作成し、スケジュールと管理を容易にします。
 
-Display Groups can contain both singular **Displays** as well as other **Display Groups**. This allows you to target large numbers of Displays with just a simple [Schedule](scheduling_events.html)
+ディスプレイ グループには、単一の **ディスプレイ** と他の **ディスプレイ グループ** の両方を含めることができます。これにより、単純な [スケジュール](scheduling_events.html) だけで多数のディスプレイをターゲットにすることができます。
 
-## Display Group Administration
+## ディスプレイ グループの管理
 
-Display Groups are managed in the CMS by clicking **Display Groups** under the Displays section of the main CMS menu:
+ディスプレイ グループは、CMS のメイン メニューのディスプレイ セクションの [**ディスプレイ グループ**] をクリックして CMS で管理されます。
 
-![Display Groups Grid](img/v4_displays_groups_grid.png)
+![ディスプレイ グループ グリッド](img/v4_displays_groups_grid.png)
 
-Use the **Add Display Group** button to create a new Display Group and complete the required form fields:
+[**ディスプレイ グループの追加**] ボタンを使用して新しいディスプレイ グループを作成し、必要なフォーム フィールドに入力します。
 
-![Add Display Group](img/v4_displays_groups_add.png)
+![ディスプレイ グループの追加](img/v4_displays_groups_add.png)
 
-Display Groups can be saved to [Folders](/manual/en/tour_folders.html) to easily control User/User User Group levels of interaction for Display Groups as well as provide an additional way to organise.
-
-{tip}
-Display Groups that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-share) options that been applied to the destination Folder for the User/User Group!
-{/tip}
-
-Displays need to be assigned to the Display Group in one of two ways, by manually adding or it can be controlled with filter criteria as a Dynamic Group.
-
-### Dynamic Group Membership
-
-To assign members to this group dynamically:
-
-- Tick the Dynamic Group checkbox on the form to reveal additional form fields.
-- Filter criteria for Dynamic Groups is in the format of regular expressions, but can also be simple string comparisons. The expressions should be separated by a comma and can be negated with a `-` prefix.
+ディスプレイ グループは [フォルダー](/manual/en/tour_folders.html) に保存して、ディスプレイ グループのユーザー/ユーザー ユーザー グループ レベルのインタラクションを簡単に制御できるほか、整理するための追加の方法も提供されます。
 
 {tip}
-For example, all Displays containing "a" but not "b" would be `a,-b`.
+フォルダに保存されたディスプレイ グループは、ユーザー/ユーザー グループの宛先フォルダに適用された表示、編集、削除 [共有](users_features_and_sharing.html#content-share) オプションを継承します。
+
 {/tip}
 
-![Display Group Dynamic Criteria](img/v4_displays_group_dynamic.png)
+ディスプレイは、手動で追加するか、フィルター条件を使用して動的グループとして制御するかのいずれかの方法でディスプレイ グループに割り当てる必要があります。
+
+### 動的グループ メンバーシップ
+
+メンバーをこのグループに動的に割り当てるには:
+
+- フォームの [動的グループ] チェックボックスをオンにして、追加のフォーム フィールドを表示します。
+- 動的グループのフィルター条件は正規表現の形式ですが、単純な文字列比較にすることもできます。式はカンマで区切る必要があり、`-` プレフィックスで否定できます。
 
 {tip}
-Criteria Tags can be filtered using additional OR/AND filters for Displays that have multiple Tags assigned!
-{/tip}
+たとえば、「a」を含み「b」を含まないすべてのディスプレイは `a,-b` になります。
+ヒント}
 
-- Click to **Save** 
+![ディスプレイ グループの動的条件](img/v4_displays_group_dynamic.png)
 
-{tip}
-If you have more Display Groups to create instead of hitting Save click **Next** to keep the form open and continue creating new Display Groups!
-{/tip}
+{ヒント}
+複数のタグが割り当てられているディスプレイでは、追加の OR/AND フィルターを使用して条件タグをフィルターできます。
 
-### Manual Group Membership
+ヒント}
 
-To manually assign members to this group:
+- [**保存**] をクリックします。
 
-- Leave the Dynamic Group checkbox unticked and click to **Save** the form.
-- Use the row menu for the new Display Group record and select **Members**.
-- Use the checkbox for each Display to control the membership to the group.
+{ヒント}
+さらにディスプレイ グループを作成する場合は、[保存] をクリックする代わりに [**次へ**] をクリックしてフォームを開いたままにし、新しいディスプレイ グループの作成を続けます。
 
-![Display Group Memberships](img/v4_displays_groups_memberships.png)
+ヒント}
 
-{tip}
-Use the **Relationship Tree** tab to view the ancestors and descendants of the Display Group being edited. The current Display Group will be in bold text. Parent Display Groups (above the current one) will pass their schedule down to the current and child Display Groups. Child Display Groups (below the current one) will inherit schedule information from the Parent Display Group and the current Display Group.
-{/tip}
+### 手動グループ メンバーシップ
 
-- click to **Save**.
+このグループにメンバーを手動で割り当てるには:
 
-## Nested Groups
+- [動的グループ] チェックボックスをオフにしたまま、[**保存**] をクリックします。
+- 新しいディスプレイ グループ レコードの行メニューを使用して、[**メンバー**] を選択します。
+- 各ディスプレイのチェックボックスを使用して、グループのメンバーシップを制御します。
 
-Display Groups can be nested to create complex structures and targeted Scheduling.
+![表示グループのメンバーシップ](img/v4_displays_groups_memberships.png)
 
 {tip}
-Example Group Structure
 
-- Site 1
-- Site 1 - Building A
-- Site 1 - Building A - Level 1
-- Site 1 - Building A - Level 2
-- Site 1 - Building B
+**関係ツリー** タブを使用して、編集中の表示グループの祖先と子孫を表示します。現在の表示グループは太字で表示されます。親表示グループ (現在の表示グループより上) は、現在の表示グループと子表示グループにスケジュールを渡します。子表示グループ (現在の表示グループより下) は、親表示グループと現在の表示グループからスケジュール情報を継承します。
 
-The Display membership is set on the lowest level groups and those groups then belong to the next level up, which in turn belong to the highest level parent "Site 1".
-The CMS will not allow a circular reference to be created (an assignment that creates a loop i.e. Site 1 has Site 1 - Building A, and Site 1 - Building A has Site 1.)
 {/tip}
 
-**Schedules**, **Media files** and **Layout Assignments** set to the Display Group, will apply to all members assigned to the group.
+- クリックして **保存** します。
 
-## Row Menu
+## ネストされたグループ
 
-Each Display Group has a row menu containing a number of actions/shortcuts.
-
-- Click on **Members** to manage the membership of Display Groups which have had Displays manually assigned.
-- Use **Edit** to view the criteria used for dynamic memberships and to make changes if required.
-- Directly [Assign Library files and Layouts](displays.html#content-assign-files--layouts) to a Display Group so that they are always available in the local library of the Player.
+表示グループをネストして、複雑な構造とターゲットを絞ったスケジュールを作成できます。
 
 {tip}
-Use the **With Selected** option at the bottom of the grid to easily perform bulk actions for multiple Display Groups!
+グループ構造の例
+
+- サイト 1
+- サイト 1 - 建物 A
+- サイト 1 - 建物 A - レベル 1
+- サイト 1 - 建物 A - レベル 2
+- サイト 1 - 建物 B
+
+ディスプレイ メンバーシップは最下位レベルのグループに設定され、それらのグループは次のレベルに属し、そのレベルは最上位レベルの親「サイト 1」に属します。
+CMS では、循環参照 (ループを作成する割り当て、つまりサイト 1 にサイト 1 - 建物 A があり、サイト 1 - 建物 A にサイト 1 がある) の作成は許可されません。
 {/tip}
 
-#### Next...
+ディスプレイ グループに設定された **スケジュール**、**メディア ファイル**、および **レイアウト割り当て** は、グループに割り当てられたすべてのメンバーに適用されます。
 
-[Display Sync Groups](displays_sync_groups.html)
+## 行メニュー
+
+各ディスプレイ グループには、いくつかのアクション/ショートカットを含む行メニューがあります。
+
+- ディスプレイが手動で割り当てられたディスプレイ グループのメンバーシップを管理するには、[**メンバー**] をクリックします。
+- **編集** を使用して、動的メンバーシップに使用される基準を表示し、必要に応じて変更します。
+- [ライブラリ ファイルとレイアウト](displays.html#content-assign-files--layouts)をディスプレイ グループに直接割り当てて、プレーヤーのローカル ライブラリで常に使用できるようにします。
+
+{tip}
+グリッドの下部にある**選択されたもの** オプションを使用すると、複数のディスプレイ グループに対して一括操作を簡単に実行できます。
+{/tip}
+
+#### 次へ...
+
+[ディスプレイ同期グループ](displays_sync_groups.html)
 

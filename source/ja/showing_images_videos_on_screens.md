@@ -1,77 +1,78 @@
 ---
 maxHeadingLevel: 3
 minHeadingLevel: 1
-excerpt: "Use the Media Library to easily upload and schedule Media and Video files to Displays"
-keywords: "full screen images, full screen videos, schedule row menu, duration in loop, media library schedule, upload media"
-persona: "advertising and promotion"
+抜粋: 「メディア ライブラリを使用して、メディア ファイルとビデオ ファイルをディスプレイに簡単にアップロードしてスケジュール設定する」
+キーワード: 「フル スクリーン画像、フル スクリーン ビデオ、スケジュール行メニュー、ループの継続時間、メディア ライブラリ スケジュール、メディアのアップロード」
+ペルソナ: 「広告とプロモーション」
 ---
 
-# Showing Images/Videos on Screens
+# 画面に画像/ビデオを表示する
 
-## Introduction
+## はじめに
 
-Using the **Media Library** you can easily upload and schedule **Image** and **Video** files to be shown on screens. 
+**メディア ライブラリ** を使用すると、**画像** および **ビデオ** ファイルを簡単にアップロードして、画面に表示するようにスケジュール設定できます。
 
-You may have Image/Video content created outside of Xibo, e.g. created by an agency, marketing team etc, which is ready to be shown. Follow the guidance below to see how to **Upload**, **Configure** and **Schedule** your Image/Video file to your Displays in just a few simple steps.
+Xibo 以外で作成された画像/ビデオ コンテンツ (代理店、マーケティング チームなどによって作成されたもの) があり、すぐに表示できる状態になっている場合があります。以下のガイダンスに従って、画像/ビデオ ファイルをディスプレイに **アップロード**、**構成**、**スケジュール** する方法を、わずか数ステップで確認してください。
 
 {nonwhite}
-This short video will take you through the process:
+この短い動画で、プロセスについてご説明します:
 
-![Video](img/example_to_delete.png)
+![動画](img/example_to_delete.png)
 {/nonwhite}
 
-### Upload
+### アップロード
 
-- Click on **Media** under the **Library** section of the main CMS menu.
-- Click the **Add Media** button.
-- Select **Add files** and select the Image/Video file to upload.
-- If you don't want to use the original file name, add a **Name** here.
-- Click **Start upload**.
+- メイン CMS メニューの [**ライブラリ**] セクションの [**メディア**] をクリックします。
+- [**メディアの追加**] ボタンをクリックします。
+- [**ファイルの追加**] を選択し、アップロードする画像/ビデオ ファイルを選択します。
+- 元のファイル名を使用しない場合は、ここで [**名前**] を追加します。
+- [**アップロードを開始**] をクリックします。
 
-- Once uploaded click **Done**.
+- アップロードが完了したら、[**完了**] をクリックします。
 
-### Configure
+### 構成
 
-- From the **Media** grid use the filters to make it easier to find the uploaded file if required.
-- Use the row menu and select **Schedule**:
+- 必要に応じて、[**メディア**] グリッドからフィルターを使用して、アップロードしたファイルを見つけやすくします。
+- 行メニューを使用して、**スケジュール** を選択します:
 
-![Media Row Menu Schedule](img/v4_showing_images_videos_row_menu_schedule.png) 
+![メディア行メニュー スケジュール](img/v4_showing_images_videos_row_menu_schedule.png)
 
-The **Select Media** form will open to provide further optional configuration if required:
+**メディアの選択** フォームが開き、必要に応じてさらにオプションの構成を行うことができます:
 
-**Duration in loop** determines how long this media should be shown each time it appears in a **Schedule Loop**. 
+**ループ内の期間** は、**スケジュール ループ** に表示されるたびにこのメディアが表示される時間を決定します。
 
-- Specify a **duration** to override the media file duration.
-- Select a a specific **Resolution** to use.
-- Set a **colour** to fill any gaps in the background if the media file will not fill the screen.
-- **Save** to close the **Select Media form** and continue with scheduling.
+- メディア ファイルの期間を上書きするには、**期間** を指定します。
 
-### Schedule
+- 使用する特定の **解像度** を選択します。
+- メディア ファイルが画面に収まらない場合は、背景のギャップを埋めるために **色** を設定します。
+- **保存** をクリックして、**メディアの選択フォーム** を閉じ、スケジュール設定を続行します。
 
- Complete the fields in the **Schedule Event** form:
+### スケジュール
 
-- Give the event a **Name** which can be easily identified when looking at complete Schedule lists.
+**イベントのスケジュール** フォームのフィールドに入力します:
 
-- Select which **Displays** this Media will be shown on.
+- 完全なスケジュール リストを見るときに簡単に識別できる **名前** をイベントに付けます。
 
-- Select **Custom** to set specific start and end dates/times or choose **Always** to show the media on Displays at all times.
+- このメディアを表示する **ディスプレイ** を選択します。
 
-- Click **Save.**
+- 特定の開始日時と終了日時を設定するには **カスタム** を選択し、メディアを常にディスプレイに表示するには **常時** を選択します。
 
-The CMS will now update a Schedule change to the Player and your media content will be shown on screens for the timings set in the schedule.
+- **保存** をクリックします。
 
-## Further Reading 
+CMS はプレーヤーのスケジュール変更を更新し、スケジュールで設定されたタイミングでメディア コンテンツが画面に表示されます。
 
-[Simple Scheduling](scheduling_events.html) 
+## 詳細情報 
 
-[Using the Layout Editor to create your own content](layouts_editor.html) 
+[シンプルなスケジュール設定](scheduling_events.html) 
 
-## FAQ's
+[レイアウト エディターを使用して独自のコンテンツを作成する](layouts_editor.html) 
 
-What are **Schedule Loops**? 
+## FAQ
 
-A Schedule Loop is how media content will play when in schedules with other media content. For example, if you have scheduled 2 media items each with a 10 second duration to be shown at the same time for 1 hour, both items will play for their 10 second durations in fair rotation for the scheduled time.
+**スケジュール ループ** とは何ですか? 
 
-How do I remove an **Always Event** from the Schedule?
+スケジュール ループとは、他のメディア コンテンツとスケジュールを組んだときにメディア コンテンツが再生される方法です。たとえば、それぞれ 10 秒間の再生時間を持つ 2 つのメディア アイテムを 1 時間同時に表示するようにスケジュールした場合、スケジュールされた時間に両方のアイテムが 10 秒間公平にローテーションして再生されます。
 
-From the Schedule, use the row menu for the Event in the Grid view and select Delete, or click on the Event icon from the Calendar to open the Edit Event form and Delete.
+スケジュールから **常時イベント** を削除するにはどうすればよいですか?
+
+スケジュールから、グリッド ビューのイベントの行メニューを使用して [削除] を選択するか、カレンダーからイベント アイコンをクリックして [イベント編集] フォームを開き、[削除] を選択します。

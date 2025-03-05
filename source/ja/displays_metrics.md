@@ -1,177 +1,179 @@
 ---
-toc: "displays"
+toc: "ディスプレイ"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Reports provide a centralised area for analysis into Display performance and Usage as well as Proof of Play"
-keywords: "display statistics, display bandwidth, time connected, time disconnected, library usage, aggregation level, proof of play export, chart summary, chart distribution"
-persona: "display manager, content manager, administrator"
+抜粋: "レポートは、ディスプレイのパフォーマンスと使用状況、および再生証明を分析するための一元化された領域を提供します"
+キーワード: "ディスプレイ統計、ディスプレイ帯域幅、接続時間、切断時間、ライブラリの使用状況、集計レベル、再生証明のエクスポート、チャートの概要、チャートの分布"
+ペルソナ: "ディスプレイ マネージャー、コンテンツ マネージャー、管理者"
 ---
 
-# Reporting
+# レポート
 
- [[PRODUCTNAME]] provides useful **metrics** which are [Feature](users_features_and_sharing.html ) enabled to allow Users to view a variety of reports within the CMS.
+[[PRODUCTNAME]] は、ユーザーが CMS 内でさまざまなレポートを表示できるように [機能](users_features_and_sharing.html) が有効になっている便利な **メトリック** を提供します。
 
-Reports provide a centralised area for analysis into **Display** performance and usage as well as detailed **Proof of Play** and **Library** usage reports. These reports can be viewed from **All Reports** under the **Reporting** section of the main CMS menu:
+レポートは、**ディスプレイ** のパフォーマンスと使用状況、および詳細な **再生証明** と **ライブラリ** の使用状況レポートを分析するための一元化された領域を提供します。これらのレポートは、メイン CMS メニューの [**レポート**] セクションの [**すべてのレポート**] から表示できます。
 
-![Reporting](img/v4_displays_reporting.png)
+![レポート](img/v4_displays_reporting.png)
 
-## Display
+## ディスプレイ
 
-**Display** Reports:
+**ディスプレイ** レポート:
 
-### Display Statistics: Bandwidth
+### ディスプレイ統計: 帯域幅
 
-The CMS records the **bandwidth** used by each Display when connecting to XMDS for content and when reporting back Display information. 
+CMS は、コンテンツのために XMDS に接続するとき、およびディスプレイ情報をレポートするときに、各ディスプレイが使用する **帯域幅** を記録します。
 
-- Select the range and click on **Apply**. Leaving the Display field empty will show a bandwidth chart total per Display:
+- 範囲を選択して [**適用**] をクリックします。ディスプレイ フィールドを空のままにすると、ディスプレイごとの帯域幅チャートの合計が表示されます。
 
-![Display Bandwidth](img/v4_displays_bandwidth.png)
+![ディスプレイ帯域幅](img/v4_displays_bandwidth.png)
 
-- Filter to just one Display and click on **Apply** to see each call that the Player made to XMDS in isolation:
+- 1 つのディスプレイだけにフィルターして [**適用**] をクリックすると、プレーヤーが XMDS に対して行った各呼び出しが個別に表示されます。
 
-![Bandwidth one Display](img/v4_displays_bandwidth_display.png)
-
-{tip}
-Filtering to just one Display helps to better understand where bandwidth has been used.
-
-Did you know...you can set a bandwidth limit per [Display](displays.html)!
-{/tip}
-
-Use the **All Reports** button to return to the Reporting dashboard or use the **Reports** drop down menu to select another 'Display' report to view.
-
-### Time Connected/Disconnected
-
-
-The CMS records all Displays/Display Groups on/offline events to provide a breakdown regarding a Displays availability. 
-
-The Time Connected Report will give a breakdown of % connected (shown in green) and % disconnected (shown in blue)
-
-- Select the **Range** and **Group by** Hour or Day of Month. 
-
-- Leave the Display/Display Group field empty to view all or select  Displays/Display Groups to view.
-
-- Click **Apply**
-
-![Time Connected](img/v4_displays_time_connected.png)
-
-The **Summary** gives a further breakdown between specified dates for Displays/Display Groups and shows the number of days connected/disconnected:
-
-![Summary Time Connected](img/v4_displays_summary_connected.png)
-
-## Proof of Play
-
-![Proof of Play Dashboard](img/v4_displays_proof_of_play_dashboard.png)
-
-Each **Display** can collect information to provide Proof of Play Reports on what they have shown:
-
-**Layout** - show all instances of a selected Layout being shown.
-
-**Media** - show all instances of a selected Media file being shown.
-
-**Widget** - give a report on a selected Widget contained within a Layout. (This also includes Widgets that do not contain Library media files, such as Text).
-
-**Event** - If the Player supports collection from external sensors, event stats will be recorded and shown in Reports.
-
-![Proof of Play Type](img/v4_displays_reporting_proof_of_play_type.png)
-
-
-To collect Proof of Play reports ensure that **Enable Stats Reporting** has been enabled and the **Aggregation level** has been set on a [Display Profile Setting](displays_settings.html)
-
-- **Individual** - statistics are recorded at the start and finish of each item individually and sent back to the CMS at each collection interval.
-- **Hourly** - records each item once, and includes the total number of times played and the length of time played during the hour and is sent back to the CMS on the next collection interval after the hour period has expired.
-- **Daily** - records each item once, and includes the total number of times played and the length of time played during the day and is sent back to the CMS on the next collection interval after the day has expired.
+![1 つのディスプレイの帯域幅](img/v4_displays_bandwidth_display.png)
 
 {tip}
-Players aggregate 'completed records' only, with collection made at the end of the Widgets duration so if a Widget has a duration of 3 hours, the stat will be recorded one the Widget has expired.
+1 つのディスプレイだけにフィルターすると、帯域幅がどこで使用されたかをよりよく理解できます。
+
+ご存知ですか...[ディスプレイ](displays.html)ごとに帯域幅制限を設定できます!
+
+ヒント}
+
+**すべてのレポート** ボタンを使用してレポートダッシュボードに戻るか、**レポート** ドロップダウンメニューを使用して別の「ディスプレイ」レポートを選択して表示します。
+
+### 接続/切断時間
+
+CMS は、すべてのディスプレイ/ディスプレイグループのオン/オフラインイベントを記録して、ディスプレイの可用性に関する内訳を提供します。
+
+接続時間レポートには、接続率 (緑で表示) と切断率 (青で表示) の内訳が表示されます
+
+- **範囲** と **グループ化** 時間または月日を選択します。
+
+- すべてを表示するにはディスプレイ/ディスプレイグループフィールドを空のままにするか、表示するディスプレイ/ディスプレイグループを選択します。
+
+- [**適用**] をクリックします
+
+![接続時間](img/v4_displays_time_connected.png)
+
+**概要** には、ディスプレイ/ディスプレイ グループの指定された日付間の詳細な内訳と、接続/切断された日数が表示されます:
+
+![接続時間の概要](img/v4_displays_summary_connected.png)
+
+## 再生証明
+
+![再生証明ダッシュボード](img/v4_displays_proof_of_play_dashboard.png)
+
+各 **ディスプレイ** は、表示内容に関する再生証明レポートを提供するために情報を収集できます:
+
+**レイアウト** - 表示されている選択したレイアウトのすべてのインスタンスを表示します。
+
+**メディア** - 表示されている選択したメディア ファイルのすべてのインスタンスを表示します。
+
+**ウィジェット** - レイアウト内に含まれる選択したウィジェットに関するレポートを表示します。(テキストなどのライブラリ メディア ファイルを含まないウィジェットも含まれます)。
+
+**イベント** - プレーヤーが外部センサーからの収集をサポートしている場合、イベント統計が記録され、レポートに表示されます。
+
+![プレイ証明タイプ](img/v4_displays_reporting_proof_of_play_type.png)
+
+プレイ証明レポートを収集するには、[ディスプレイ プロファイル設定](displays_settings.html) で [**統計レポートを有効にする**] が有効になっており、[集計レベル**] が設定されていることを確認してください。
+
+- **個別** - 統計は各項目の開始時と終了時に個別に記録され、各収集間隔で CMS に返送されます。
+- **時間ごと** - 各項目を 1 回記録し、1 時間中の再生回数と再生時間の合計を含め、1 時間の期間が経過した後の次の収集間隔で CMS に返送されます。
+- **日次** - 各項目を 1 回記録し、その日のプレイ回数とプレイ時間の合計が記録され、その日の終了後の次の収集間隔で CMS に返されます。
+
+{tip}
+プレーヤーは「完了した記録」のみを集計し、ウィジェットの期間の終了時に収集が行われるため、ウィジェットの期間が 3 時間の場合、ウィジェットの有効期限が切れると統計が記録されます。
+
 {/tip}
 
 {version}
-Proof of Play collection can be enabled by default in the [CMS Settings](tour_cms_settings.html#content-proof-of-play-default-settings).
+[CMS 設定](tour_cms_settings.html#content-proof-of-play-default-settings) で、プレイ証明の収集をデフォルトで有効にすることができます。
+
 {/version}
 
-**Proof of Play** Reports:
+**プレイ証明** レポート:
 
-### Proof of Play: Export
+### プレイ証明: エクスポート
 
-View Proof of Play data exported to a CSV for selected Displays and timescales. 
+選択したディスプレイとタイムスケールの CSV にエクスポートされたプレイ証明データを表示します。
 
-### Proof of Play: Report
+### 再生証明: レポート
 
+- ドロップダウンから **範囲** を選択するか、独自の日付と時刻を指定して、必要に応じてフィルター フィールドを使用します。
+- [適用] をクリックします
 
-- Select a **Range** from the dropdown or specify your own dates and times and use the filter fields as necessary. 
-- Click **Apply**
-
-![Proof Of Play](img/v4_displays_proofofplay.png)
-
-{tip}
-Click on **All Reports** to return to the Reports Dashboard or use the **Reports** dropdown to select from the available Proof of Play Reports.
-{/tip}
-
-### Chart: Summary/Distribution by Layout, Media or Event
-
-
-Charts show an aggregate duration and number of plays the selected Layout, Media or Event.
-
-- Select a **Range**.
-- Choose the **Type** and use the drop down to further specify the type selected.
-- Click **Apply**.
-
-![Proof of Play Summary Report](img/v4_displays_proofofplay_summary_report.png)
+![再生証明](img/v4_displays_proofofplay.png)
 
 {tip}
-Use the tabs to switch between **Chart** and **Tabular** data for each Report.
-Tabular data can be exported as a CSV.
+[すべてのレポート] をクリックしてレポート ダッシュボードに戻るか、[レポート] ドロップダウンを使用して利用可能な再生証明レポートから選択します。
 {/tip}
 
-## Library
+### チャート: レイアウト、メディア、またはイベント別の概要/分布
 
-**Library** Reports:
+チャートには、選択したレイアウト、メディア、またはイベントの合計時間と再生回数が表示されます。
 
-### Library Usage
+- [範囲] を選択します。
+- [タイプ] を選択し、ドロップダウンを使用して選択したタイプをさらに指定します。
+- [適用] をクリックします。
 
-
-View Library usage for all Users of the CMS or filter to have an overview of usage by an individual User/User Group. 
-
-## Schedule
-
-Reports can be scheduled to run on a **Daily**, **Weekly**, **Monthly** or **Yearly** basis. 
+![Proof of Play サマリー レポート](img/v4_displays_proofofplay_summary_report.png)
 
 {tip}
-**Chart: Distribution** and **Chart: Summary Reports** must have the **Type** and the named Layout/Media/Event selected to activate the **Schedule** button.
+タブを使用して、各レポートの **チャート** と **表形式** データを切り替えます。
+表形式データは CSV としてエクスポートできます。
 {/tip}
 
-- Click on the **Schedule** button and complete the necessary form fields for the particular report type.
+## ライブラリ
 
-- A PDF of the report can  be emailed to users by ticking the **Should an email be sent?** checkbox.
+**ライブラリ** レポート:
+
+### ライブラリの使用状況
+
+CMS のすべてのユーザーのライブラリの使用状況を表示するか、フィルターを使用して個々のユーザー/ユーザー グループの使用状況の概要を表示します。
+
+## スケジュール
+
+レポートは、**日次**、**週次**、**月次**、または **年次** ベースで実行するようにスケジュールできます。
+
+{tip}
+**チャート: 分布** および **チャート: サマリー レポート** では、**スケジュール** ボタンをアクティブにするために、**タイプ** と名前付きレイアウト/メディア/イベントを選択する必要があります。
+ヒント}
+
+- **スケジュール** ボタンをクリックし、特定のレポート タイプに必要なフォーム フィールドに入力します。
+
+- **メールを送信しますか?** チェックボックスをオンにすると、レポートの PDF をユーザーにメールで送信できます。
 
 {version}
-Optionally disable the **Logo** shown on exported reports using the **General** tab on the **Settings** page under the **Administration** section of the main menu!
+オプションで、メイン メニューの **管理** セクションの **設定** ページの **全般** タブを使用して、エクスポートされたレポートに表示される **ロゴ** を無効にできます。
+
 {/version}
 
 {tip}
-Scheduled Reports can also be emailed to additional email addresses entered in the **Email addresses** field. Ensure that a **Sending email address** has been set on the [Network](tour_cms_settings.html#content-network) tab in CMS Settings.
-{/tip} 
+スケジュールされたレポートは、**メール アドレス** フィールドに入力された追加のメール アドレスにメールで送信することもできます。CMS 設定の [ネットワーク](tour_cms_settings.html#content-network) タブで **送信メール アドレス** が設定されていることを確認してください。
 
-## Report Schedules
-
-- Click on the **Report Schedules** button to view all schedules by Owner/Type. 
-
-{tip}
-Each report has a row menu containing shortcuts and further actions!
 {/tip}
 
+## レポート スケジュール
 
-## Saved Reports
-
-Click on **Saved Reports** to view all run reports. 
+- 所有者/タイプ別にすべてのスケジュールを表示するには、**レポート スケジュール** ボタンをクリックします。
 
 {tip}
-Use the checkbox to only view your own run reports!
+各レポートには、ショートカットと追加のアクションを含む行メニューがあります。
+
 {/tip}
 
-Use the row menu to view a saved report,schedule, export as a PDF or delete.
+## 保存済みレポート
+
+すべての実行レポートを表示するには、[**保存済みレポート**] をクリックします。
 
 {tip}
-**Report Schedules** and **Saved Reports** can also be accessed directly from the CMS menu under the **Reporting** section.
-{/tip} 
+自分の実行レポートのみを表示するには、チェックボックスを使用します。
+
+{/tip}
+
+行メニューを使用して、保存済みレポートの表示、スケジュール、PDF としてのエクスポート、または削除を行います。
+
+{tip}
+**レポート スケジュール** と **保存済みレポート** には、CMS メニューの [**レポート**] セクションから直接アクセスすることもできます。
+
+{/tip}
 

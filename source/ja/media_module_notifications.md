@@ -1,59 +1,35 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Display messages from the Notification Drawer"
-keywords: "notification center"
-persona: "content manager"
+抜粋: "通知ドロワーからのメッセージを表示する"
+キーワード: "通知センター"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Notifications
+# 通知
 
-Display [Notification](users_notifications.html) data anywhere on a Layout using **Elements**.
+**要素** を使用して、レイアウト上の任意の場所に [通知](users_notifications.html) データを表示します。
 
-{feat}Notification|v4{/feat}
+{feat}通知|v4{/feat}
 
-## Notification Elements
+## 通知要素
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Notification Widget to a [Layout](layouts_editor.html) to give Users more control over what components of Notifications to use and where they can be placed.
+[要素](layouts_editor#content-data-widgets-and-elements) は、通知ウィジェットを [レイアウト](layouts_editor.html) に追加するときに選択でき、ユーザーは通知のどのコンポーネントを使用するか、どこに配置できるかをより細かく制御できます。
 
-![Notification Elements](img/v4_media_module_notification_elements.png)
+![通知要素](img/v4_media_module_notification_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+各要素には、プロパティ パネルに一連の構成オプションがあります。追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することで、データ要素をさらに補完できます。これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめることができ、構成と配置が簡単になります。
 
-## Overview
+## 概要
 
-- Update Elements with new Notifications by creating them in the [Notification Drawer](users_notifications.html#content-create-notifications)
-- Update content without accessing Layouts.
-- Specify a maximum age in which to show messages.
-- Set a duration to apply to each individual message.
-- Apply a number of items to show.
-- Content for this media is cached by the Players for off-line playback.
+- [通知ドロワー](users_notifications.html#content-create-notifications) で新しい通知を作成して、要素を更新します。
+- レイアウトにアクセスせずにコンテンツを更新します。
+- メッセージを表示する最大期間を指定します。
+- 個々のメッセージに適用する期間を設定します。
+- 表示するアイテムの数を適用します。
+- このメディアのコンテンツは、オフライン再生用にプレーヤーによってキャッシュされます。
 
-#### Next...
+#### 次へ...
 
-[Notifications](users_notifications.html)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[通知](users_notifications.html)
 

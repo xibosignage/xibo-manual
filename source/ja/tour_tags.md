@@ -1,100 +1,103 @@
 ---
-toc: "tour"
+toc: "ツアー"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-excerpt: "Manage Tags created throughout the CMS"
-keywords: "associated values, system tags, required value, assigning tags"
-persona: "user, administrator"
+抜粋: "CMS 全体で作成されたタグの管理"
+キーワード: "関連付けられた値、システム タグ、必須値、タグの割り当て"
+ペルソナ: "ユーザー、管理者"
 ---
 
-# Tag Management
+# タグ管理
 
-Tags can be assigned to **Layouts**, **Campaigns**, **Templates**, **Playlists**, **Media** and **Displays/ Display Groups** in order to bring about organisation and structure within the CMS.
+タグは、**レイアウト**、**キャンペーン**、**テンプレート**、**プレイリスト**、**メディア**、**ディスプレイ/ディスプレイ グループ** に割り当てることができ、CMS 内で組織化と構造化を実現できます。
 
-## Feature Overview:
+## 機能の概要:
 
-- Used throughout the CMS.
-- Easier searches by narrowing down results.
-- Set values to be associated with a Tag.
-- Make values a 'Required Value' in order to Save.
-- Dedicated Tags page for easier management.
+- CMS 全体で使用されます。
+- 結果を絞り込むことで、検索が簡単になります。
+- タグに関連付ける値を設定します。
+- 保存するために、値を「必須値」にします。
+- 管理を容易にする専用のタグ ページ。
 
-Tags can be created by Users from various [Forms](tour_cms_navigation.html#content-forms) throughout the CMS. These can be managed by Administrators from the **Tags** page under the **Administration** section of the main CMS menu: 
+タグは、CMS 全体のさまざまな [フォーム](tour_cms_navigation.html#content-forms) からユーザーが作成できます。これらは、メイン CMS メニューの [**管理**] セクションの [**タグ**] ページから管理者が管理できます。
 
-![Tags Grid](img/v4_tour_tags_grid.png)
-
-{tip}
-Additional filter options can be applied to only view **System Tags** and Tags with associated **Values**!
-{/tip}
-
-When adding Tags you can optionally create a **Tag value** to be associated with the Tag.
-
-* Free type the **Tag Value** to be used with the Tag:
-
-![Tag Value](img/v4_tour_tags_value.png)
-
-* Click enter on your keyboard to confirm. 
-
-The Tag field will update to show the `Tag|Value`
-
-![Updated Tag Value](img/v4_tour_tags_updated_value.png)
-
-The next time this Tag is entered the associated Value will be shown for selection. 
-
-Tags can have a **Required Value** enabled so that a Value must be selected in order for a User to save the form. 
-
-- Enable from the row menu for a selected Tag and click **Edit**.
-
-You can also provide filter options to **exclude** items with specific tags from searches:
-
-- Enter `-Tag` to exclude the tag from search results.
-- Enter `-|Value` to exclude the value from search results.
-- Enter `-Tag|Value` to exclude both tag and value from search results.
+![タグ グリッド](img/v4_tour_tags_grid.png)
 
 {tip}
-You can have a comma separated mix of all the above!
+追加のフィルター オプションを適用して、**システム タグ** と関連する **値** を持つタグのみを表示できます。
+
 {/tip}
 
-- If you want to show all items that have **not** got a tag then enter `--no-tag`
+タグを追加するときに、オプションでタグに関連付ける **タグ値** を作成できます。
 
-## Edit/Delete Tags
+* タグで使用する **タグ値** を自由に入力します。
 
-From the Tags page use the row Menu for a selected Tag to **Edit** or **Delete**.
+![タグ値](img/v4_tour_tags_value.png)
 
-- Select **Edit** to rename, set associated Values and enable/disable the Required Value function.
+* キーボードの Enter キーを押して確定します。
 
-Tags can be deleted individually or removed in bulk:
+タグ フィールドが更新され、`タグ|値` が表示されます
 
-- Click rows to select which Tags you wish to delete and use the **With Selected** drop down at the bottom of the grid
-- Select **Delete**.
+![更新されたタグ値](img/v4_tour_tags_updated_value.png)
+
+このタグが次に入力されると、関連付けられた値が選択用に表示されます。
+
+タグでは **必須値** を有効にすることができ、ユーザーがフォームを保存するには値を選択する必要があります。
+
+- 選択したタグの行メニューから有効にして、**編集** をクリックします。
+
+また、特定のタグを持つアイテムを検索から **除外** するためのフィルター オプションを提供することもできます:
+
+- 検索結果からタグを除外するには、`-Tag` と入力します。
+
+- 検索結果から値を除外するには、`-|値` と入力します。
+
+- 検索結果からタグと値の両方を除外するには、`-Tag|値` と入力します。
+
+{ヒント}
+上記すべてをコンマで区切って組み合わせることができます!
+ヒント}
+
+- タグが **ない** すべてのアイテムを表示する場合は、`--no-tag` と入力します
+
+## タグの編集/削除
+
+タグ ページから、選択したタグの行メニューを使用して **編集** または **削除** します。
+
+- 名前の変更、関連する値の設定、および必須値機能の有効化/無効化を行うには、**編集** を選択します。
+
+タグは個別に削除することも、一括で削除することもできます。
+
+- 行をクリックして削除するタグを選択し、グリッドの下部にある **選択したもの** ドロップダウンを使用します
+- **削除** を選択します。
 
 {version}
-The deletion of Tags is irreversible, so use with care!
+タグの削除は元に戻せないため、慎重に使用してください。
+
 {/version}
 
-## Assigning Tags
+## タグの割り当て
 
-As soon as you start entering text in the Tag field, an auto-complete helper will show possible matches to make it easier for Users to see what Tags are available to select from.
-
-{tip}
-To enter a Tag, start typing in the Tag field and pick from the list or click out of the box when you are done.
-{/tip}
-
-- You can see in the image below that the `colour` Tag already has associated values of `Red, Green and Blue`  shown as Tag values to select from.
-
-![Tags Value](img/v4_tour_tags_associated_value.png)
-
-
-If the Tag Value is already known then this can also be typed in the field using the `Tag|Value` format.
-
-Users can add an associated value to a Tag without an existing predefined value using the Tag Value field. Enter the Value you wish to associate with the Tag in the Tag value field and click enter. If you do not wish to enter a Tag value, then this field can be left blank.
+タグ フィールドにテキストを入力し始めるとすぐに、オートコンプリート ヘルパーによって一致する候補が表示され、ユーザーが選択可能なタグを簡単に確認できるようになります。
 
 {tip}
-Tags can also be assigned to multiple objects using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option on multiple pages throughout the CMS.
-
-When exporting a Layout the **Layout Tag** will also be exported. Select the **Import Tags** option to add the Tag on Layout import if required.
+タグを入力するには、タグ フィールドに入力を開始し、リストから選択するか、入力が終わったらボックスの外をクリックします。
 {/tip}
 
-#### Next...
+- 下の画像では、`colour` タグにはすでに `Red、Green、Blue` の関連値がタグ値として表示されており、選択できます。
 
-[Folders](tour_folders.html)
+![タグ値](img/v4_tour_tags_related_value.png)
+
+タグ値がすでにわかっている場合は、`Tag|Value` 形式を使用してフィールドに入力することもできます。
+
+ユーザーは、タグ値フィールドを使用して、定義済みの値がなくても、タグに関連値を追加できます。タグ値フィールドに、タグに関連付ける値を入力し、Enter をクリックします。タグ値を入力しない場合は、このフィールドを空白のままにすることができます。
+
+{tip}
+タグは、CMS 全体の複数のページで [選択されたもの](tour_cms_navigation.html#content-multi-select---with-selected) オプションを使用して、複数のオブジェクトに割り当てることもできます。
+
+レイアウトをエクスポートすると、**レイアウト タグ** もエクスポートされます。必要に応じて、レイアウトのインポート時にタグを追加するには、[タグのインポート] オプションを選択します。
+{/tip}
+
+#### 次へ...
+
+[フォルダ](tour_folders.html)

@@ -1,59 +1,53 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Display Dashboards that have been configured to use the Xibo Dashboards Service"
-keywords: "xibo dashboards service, power bi, grafana, matomo"
-persona: "content manager"
+抜粋: "Xibo ダッシュボード サービスを使用するように構成されたダッシュボードを表示します"
+キーワード: "xibo ダッシュボード サービス、Power BI、Grafana、Matomo"
+ペルソナ: "コンテンツ マネージャー"
 ---
 
-# Dashboards
+# ダッシュボード
 
 {white}
-**Please note:** If you would like to take advantage of this Widget, please contact your Administrator.
-{/white}
+**注意:** このウィジェットを利用する場合は、管理者に問い合わせてください。
+ダッシュボード ウィジェットは、[Xibo ダッシュボード サービス](/docs/setup/xibo-dashboard-service) を使用するように構成された [ダッシュボード](media_dashboard_service.html) を表示するために使用されます。
 
-{nonwhite}
-The Dashboards Widget is used to display [Dashboards](media_dashboard_service.html) that have been configured to use the [Xibo Dashboards Service](/docs/setup/xibo-dashboard-service)
+**注意:** この商用ウィジェットは **Xibo ダッシュボード サービス** の一部であり、構成には API が必要です。詳細については、[こちら](/pricing#dashboards) を参照してください。
 
-**Please note:** This commercial Widget is part of the **Xibo Dashboard Service** and requires an API for configuration as further explained [here](/pricing#dashboards)
+{feat}ダッシュボード|v4{/feat}
 
-{feat}Dashboards|v4{/feat}
+## 構成
 
-## Configuration
-
-- Select the dashboard service to match the dashboards that have been configured in the connector.
-- Enter the URL to embed.
+- コネクタで構成されたダッシュボードと一致するダッシュボード サービスを選択します。
+- 埋め込む URL を入力します。
 
 {tip}
-Please see the following page for further information on obtaining a URL to use with this service, authentication mechanisms and possible limitations [Xibo Dashboard Service](/docs/setup/xibo-dashboard-service)
+このサービスで使用する URL の取得、認証メカニズム、および考えられる制限の詳細については、次のページを参照してください。[Xibo ダッシュボード サービス](/docs/setup/xibo-dashboard-service)
 {/tip}
 
-- Provide an update interval in minutes.
+- 更新間隔を分単位で指定します。
 
 {version}
-**NOTE:** The minimum refresh interval that can be entered per dashboard is 5 minutes as we do not support dashboard service updates more frequently than 5 minutes.
+**注意:** ダッシュボードごとに入力できる最小更新間隔は 5 分です。ダッシュボード サービスの更新は 5 分より頻繁にはサポートされていません。
 {/version}
 
-On first entering a URL into the Dashboard Widget it may take a few moments to load as it is dependent on how long it takes to render your dashboard content, and how busy the service currently is.
+ダッシュボード ウィジェットに URL を初めて入力すると、ダッシュボード コンテンツのレンダリングにかかる時間と、現在のサービスの混雑状況によって、読み込みに数分かかる場合があります。
 
-Once you are showing your dashboards on displays, the service will keep your dashboards updated at the interval you specify so it will always be ready to show and appear instantly on Displays.
+ダッシュボードをディスプレイに表示すると、指定した間隔でダッシュボードが更新されるため、いつでもすぐにディスプレイに表示され、すぐに表示されます。
 
-If you stop showing a dashboard on your displays for a time, then the service will stop refreshing it, but will start again automatically the next time that dashboard is shown.
-
+ダッシュボードをディスプレイに表示しなくなると、サービスはダッシュボードの更新を停止しますが、次回ダッシュボードが表示されるときに自動的に再開します。
 
 {tip}
 
-By default reports in **Power BI** render with a US Date format. To use an alternative date format add the following parameters to the URL you pass in the Dashboards Widget as shown with the example below for `en-GB`:
+デフォルトでは、**Power BI** のレポートは米国の日付形式でレンダリングされます。代替の日付形式を使用するには、ダッシュボード ウィジェットに渡す URL に次のパラメータを追加します (`en-GB` の例を参照)。
 
 `&language=en&formatLocale=en-GB`
 
 {/tip}
 
-**Please note:** If Xibo detects an error with a request for dashboard services, you will see a red banner message over the top of a screengrab to give an indication to the user where the problem has occurred. This will be shown in the Layout Designer previewer only for the logged in user. The Layout Preview and Displays showing the scheduled Layout will continue to show the last good capture or a spinner icon until the issue has been resolved.
+**注意:** Xibo がダッシュボード サービスのリクエストでエラーを検出した場合、問題が発生した場所をユーザーに知らせるために、スクリーン グラブの上に赤いバナー メッセージが表示されます。これは、ログインしたユーザーのレイアウト デザイナー プレビューアーにのみ表示されます。スケジュールされたレイアウトを表示するレイアウト プレビューとディスプレイには、問題が解決されるまで、最後の正常なキャプチャまたはスピナー アイコンが表示され続けます。
 
-Example Error message with screengrab shown below:
+スクリーン グラブのエラー メッセージの例を以下に示します。
 
-![Example Error Message](img/v4_media_modules_dashboard_error.png)
-
-
+![エラー メッセージの例](img/v4_media_modules_dashboard_error.png)
 

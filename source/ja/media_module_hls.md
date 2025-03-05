@@ -1,20 +1,20 @@
 ---
-toc: "widgets"
+toc: "ウィジェット"
 minHeadingLevel: 2
-excerpt: "Display live streamed HLS content"
-persona: "content manager"
+抜粋: "ライブ ストリーミングされた HLS コンテンツを表示する"
+persona: "コンテンツ マネージャー"
 ---
 
 # HLS
 
-Display live streamed HLS content on Layouts and Playlists.
+レイアウトとプレイリストにライブ ストリーミングされた HLS コンテンツを表示します。
 
 {feat}HLS Stream|v4{/feat}
 
-## Overview
+## 概要
 
-- A valid internet connection is required on the Player in order to function.
-- This Widget requires a Player running either Windows 8.1 or later or Android 6 or later.
-- Android devices earlier than Android 6 may play HLS using the [Local Video](media_module_localvideo.html) Widget. 
-- Mute functionality.
+- 機能するには、プレーヤーに有効なインターネット接続が必要です。
+- このウィジェットには、Windows 8.1 以降または Android 6 以降を実行しているプレーヤーが必要です。
+- Android 6 より前の Android デバイスでは、[ローカル ビデオ](media_module_localvideo.html) ウィジェットを使用して HLS を再生できます。
+- ミュート機能。
 
