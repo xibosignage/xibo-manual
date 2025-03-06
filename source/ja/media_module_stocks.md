@@ -22,7 +22,7 @@ minHeadingLevel: 2
 {nonwhite}
 {cloud}
 通貨モジュールは、サービスの一部として提供される API キーを使用して、**Xibo Cloud** でホストされる顧客向けに構成されています。
-:::no-loc(shared): ...ヒント}
+:::no-loc(shared): ...{/tip}
 
 追加された各要素に使用する [データ スロット](layouts_editor.html#content-data-slots) を指定して、アイテムの循環方法を制御します。[グローバル要素](layouts_editor.html#content-global-elements) を追加して図形やテキストを追加することで、データ要素をさらに補完できます。これらはすべて [要素グループ](layouts_editor.html#content-grouping-elements) にまとめることができ、構成と配置が簡単になります。
 

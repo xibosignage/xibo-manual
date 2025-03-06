@@ -18,7 +18,7 @@ toc: "layouts"
 {tip}
 **シナリオ**:
 製品ディスプレイには、顧客が手に取ることができる製品があります。光センサーなどの「モノのインターネット」デバイスを使用して、[[PRODUCTNAME]] への webhook をトリガーし、特定の製品情報をレイアウトにロードして表示することができます。
-ヒント}
+{/tip}
 
 {nonwhite}
 Webhook の詳細については、開発者向けドキュメント [こちら](/docs/developer/player-control/webhooks) をご覧ください。
