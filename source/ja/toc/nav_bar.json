@@ -5,7 +5,7 @@
     "containsToc": ["tour"]
   },{
     "title": "ユーザー",
-    "href": "users.html",
+    "href": "users_administration.html",
     "containsToc": ["users"]
   },{
     "title": "ディスプレイ",
@@ -17,11 +17,15 @@
     "containsToc": ["layouts"]
   },{
     "title": "メディア",
-    "href": "media.html",
-    "containsToc": ["media", "widgets"]
+    "href": "media_library.html",
+    "containsToc": ["media"]
+  },{
+    "title": "モジュール",
+    "href": "media_modules.html",
+    "containsToc": ["widgets"]
   },{
     "title": "スケジューリング",
-    "href": "scheduling.html",
+    "href": "scheduling_events.html",
     "containsToc": ["scheduling"]
   },{
     "title": "トラブルシューティング",
