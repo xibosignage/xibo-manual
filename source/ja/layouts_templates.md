@@ -1,5 +1,5 @@
 ---
-toc: "レイアウト"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "テンプレートを使用して設計プロセスをスピードアップ"

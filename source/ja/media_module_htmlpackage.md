@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 minHeadingLevel: 2
 抜粋: "プレーヤーに配布する完全な HTML パッケージをアップロードする"
 persona: "コンテンツ マネージャー"

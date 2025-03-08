@@ -1,5 +1,5 @@
 ---
-toc: "レイアウト"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 1
 抜粋: "デザインを公開してディスプレイにスケジュールする"

@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "株式リストの取引価格情報を表示する"

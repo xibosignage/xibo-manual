@@ -1,5 +1,5 @@
 ---
-toc: "レイアウト"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "スケジュールするとスケジュール内の他のレイアウトの上に配置されるオーバーレイ レイアウトを作成します"

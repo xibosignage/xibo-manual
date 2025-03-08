@@ -1,5 +1,5 @@
 ---
-toc: "レイアウト"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "レイアウトの再生順序を保証するレイアウト リスト キャンペーンを作成する"

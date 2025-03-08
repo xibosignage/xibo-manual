@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "3 つのオプションのいずれかを使用して、PowerPoint ファイルをプレイリストとレイアウトに追加します"

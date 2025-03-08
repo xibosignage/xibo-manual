@@ -1,5 +1,5 @@
 ---
-toc: "ディスプレイ"
+toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "ディスプレイ設定プロファイルを使用してディスプレイを自動的に構成する"

@@ -1,5 +1,5 @@
 ---
-toc: "スケジュール"
+toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "グリッド ビューとカレンダー ビューを使用してすべてのスケジュールを管理する"

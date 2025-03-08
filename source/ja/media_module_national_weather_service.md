@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "リアルタイムの天気警報を表示"

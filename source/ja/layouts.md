@@ -1,5 +1,5 @@
 ---
-toc: "レイアウト"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "レイアウトは、コンテンツで構成された完全な画面デザインであり、ディスプレイにスケジュールされます"

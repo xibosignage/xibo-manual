@@ -1,5 +1,5 @@
 ---
-toc: "レイアウト"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "データ ウィジェットを使用して魅力的なレイアウトを作成する"

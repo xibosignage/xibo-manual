@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 minHeadingLevel: 2
 抜粋: "レイアウトとプレイリストに含める画像ファイルの追加"
 persona: "コンテンツ マネージャー"

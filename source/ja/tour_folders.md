@@ -1,5 +1,5 @@
 ---
-toc: "ツアー"
+toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "フォルダーを使用してユーザーとコンテンツを簡単に共有する"

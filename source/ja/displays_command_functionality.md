@@ -1,5 +1,5 @@
 ---
-toc: "ディスプレイ"
+toc: "displays"
 maxHeadingLevel: 4
 minHeadingLevel: 2
 抜粋: "スケジュールまたはレイアウトで XMR 経由で実行するコマンドを構成する"

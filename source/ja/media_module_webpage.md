@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "レイアウトに Web ページ ウィジェットを追加して Web ページ コンテンツを表示する"
