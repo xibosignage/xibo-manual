@@ -1,5 +1,5 @@
 ---
-toc: "ツアー"
+toc: "tour"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "CMS 全体で作成されたタグの管理"

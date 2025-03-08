@@ -1,5 +1,5 @@
 ---
-toc: "ディスプレイ"
+toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "レポートは、ディスプレイのパフォーマンスと使用状況、および再生証明を分析するための一元化された領域を提供します"

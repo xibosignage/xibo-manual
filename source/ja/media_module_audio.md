@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 2
 minHeadingLevel: 2
 抜粋: "レイアウトとプレイリストで再生するオーディオ ファイルを追加する"

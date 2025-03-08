@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "通貨ペアの為替レートを表示"

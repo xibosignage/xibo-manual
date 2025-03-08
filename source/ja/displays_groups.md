@@ -1,5 +1,5 @@
 ---
-toc: "ディスプレイ"
+toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "ディスプレイ グループを作成してスケジュールとメディアの割り当てを容易にする"

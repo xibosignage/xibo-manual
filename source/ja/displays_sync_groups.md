@@ -1,5 +1,5 @@
 ---
-toc: "ディスプレイ"
+toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "同期グループには、同期されたコンテンツを表示するディスプレイが含まれます"

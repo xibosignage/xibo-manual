@@ -1,5 +1,5 @@
 ---
-toc: "レイアウト"
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "設定された基準に基づいて自動的にスケジュール設定する広告キャンペーンを作成する"

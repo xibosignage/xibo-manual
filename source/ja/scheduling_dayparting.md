@@ -1,5 +1,5 @@
 ---
-toc: "スケジュール"
+toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "スケジュールを簡素化するために独自の Day Parts を作成する"

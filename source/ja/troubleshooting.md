@@ -1,5 +1,5 @@
 ---
-toc: "トラブルシューティング"
+toc: "troubleshooting"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "ユーザー サポート"

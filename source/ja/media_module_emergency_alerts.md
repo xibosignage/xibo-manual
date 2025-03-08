@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "共通アラート プロトコル (CAP) フィードからのアラートと緊急メッセージの表示"

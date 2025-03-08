@@ -1,5 +1,5 @@
 ---
-toc: "ユーザー"
+toc: "users"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 抜粋: "機能と共有は、CMS 内でのユーザー アクセスとインタラクションを制御します"

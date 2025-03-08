@@ -1,5 +1,5 @@
 ---
-toc: "ウィジェット"
+toc: "widgets"
 maxHeadingLevel: 2
 minHeadingLevel: 2
 抜粋: "メニュー ボードに保持されているカテゴリ データを表示する"
