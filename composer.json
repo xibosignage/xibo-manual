@@ -6,6 +6,7 @@
     },
     "require": {
         "league/commonmark": "^2.3",
-        "webuni/front-matter": "^1.4"
+        "webuni/front-matter": "^1.4",
+        "google/cloud-translate": "^1.17"
     }
 }

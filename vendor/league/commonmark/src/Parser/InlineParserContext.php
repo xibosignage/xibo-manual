@@ -42,12 +42,12 @@ final class InlineParserContext
      */
     private array $matches;
 
-    public function __construct(Cursor $contents, AbstractBlock $container, ReferenceMapInterface $referenceMap)
+    public function __construct(Cursor $contents, AbstractBlock $container, ReferenceMapInterface $referenceMap, int $maxDelimitersPerLine = PHP_INT_MAX)
     {
         $this->referenceMap   = $referenceMap;
         $this->container      = $container;
         $this->cursor         = $contents;
-        $this->delimiterStack = new DelimiterStack();
+        $this->delimiterStack = new DelimiterStack($maxDelimitersPerLine);
     }
 
     public function getContainer(): AbstractBlock
@@ -83,7 +83,7 @@ final class InlineParserContext
      */
     public function getFullMatchLength(): int
     {
-        return \mb_strlen($this->matches[0]);
+        return \mb_strlen($this->matches[0], 'UTF-8');
     }
 
     /**
