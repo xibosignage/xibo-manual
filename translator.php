@@ -11,8 +11,16 @@
  * see <http://www.gnu.org/licenses/>.
  */
 
+require 'vendor/autoload.php'; // Composerのオートローダー
+
+use Google\Cloud\Translate\V3\TranslationServiceClient;
+use Google\Cloud\Translate\V3\TranslateTextGlossaryConfig;
+
 // Google Cloud Translation API credentials
-$apiKey = 'YOUR_API_KEY'; // Replace with your API key
+$projectId = 'YOUR_PROJECT_ID'; // Replace with your Project ID
+$location = 'global'; // or e.g., 'us-central1'
+$glossaryId = 'YOUR_GLOSSARY_ID'; // Replace with your Glossary ID
+$glossaryUri = 'gs://YOUR_BUCKET_NAME/YOUR_GLOSSARY_FILE.csv'; // Replace with your Glossary URI.
 
 // Input and output directories
 $inputDir = 'source/en/';
@@ -42,8 +50,8 @@ foreach ($inputFiles as $inputFile) {
     // Read file content
     $content = file_get_contents($inputFile); // Read content from the input file
 
-    // Translate content using Google Cloud Translation API
-    $translatedContent = translateText($content, $apiKey); // Translate the content
+    // Translate content using Google Cloud Translation API with glossary
+    $translatedContent = translateTextWithGlossary($content, $projectId, $location, $glossaryId, $glossaryUri); // Translate the content
 
     // Save translated content to the output directory with the same file name
     $outputFilename = basename($inputFile); // Get the base file name
@@ -54,34 +62,35 @@ foreach ($inputFiles as $inputFile) {
 }
 
 /**
- * Translates text using Google Cloud Translation API.
+ * Translates text using Google Cloud Translation API with glossary.
  *
  * @param string $text The text to translate.
- * @param string $apiKey The API key for Google Cloud Translation.
+ * @param string $projectId The Google Cloud Project ID.
+ * @param string $location The location for the API.
+ * @param string $glossaryId The ID of the glossary.
+ * @param string $glossaryUri The Cloud Storage URI of the glossary.
  * @return string The translated text.
  */
-function translateText(string $text, string $apiKey): string
+function translateTextWithGlossary(string $text, string $projectId, string $location, string $glossaryId, string $glossaryUri): string
 {
-    $url = 'https://translation.googleapis.com/language/translate/v2?key=' . $apiKey; // API endpoint
-    $data = [
-        'q' => $text, // Text to be translated
-        'source' => 'en', // Source language
-        'target' => 'ja', // Target language
-        'format' => 'text' // Format of the input text
-    ];
+    $translationServiceClient = new TranslationServiceClient();
+    $parent = $translationServiceClient->locationName($projectId, $location);
 
-    $options = [
-        'http' => [
-            'header' => "Content-type: application/json\r\n", // HTTP header
-            'method' => 'POST', // HTTP method
-            'content' => json_encode($data) // Request body
+    $glossary = $translationServiceClient->glossaryName($projectId, $location, $glossaryId);
+    $glossaryConfig = (new TranslateTextGlossaryConfig())
+        ->setGlossary($glossary);
+
+    $response = $translationServiceClient->translateText(
+        [
+            'parent' => $parent,
+            'contents' => [$text],
+            'mimeType' => 'text/plain',
+            'sourceLanguageCode' => 'en',
+            'targetLanguageCode' => 'ja',
+            'glossaryConfig' => $glossaryConfig,
         ]
-    ];
+    );
 
-    $context = stream_context_create($options); // Create stream context
-    $result = file_get_contents($url, false, $context); // Send request to API
-    $response = json_decode($result, true); // Decode the JSON response
-
-    return $response['data']['translations'][0]['translatedText']; // Return the translated text
+    return $response->getGlossaryTranslations()[0]->getTranslatedText();
 }
 ?>
