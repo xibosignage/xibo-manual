@@ -2,9 +2,9 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "通貨ペアの為替レートを表示"
-キーワード: "alpha vantage api、alpha vantage コネクタ、逆変換、基本通貨"
-ペルソナ: "コンテンツ マネージャー"
+excerpt: "通貨ペアの為替レートを表示"
+keywords: "alpha vantage api、alpha vantage コネクタ、逆変換、基本通貨"
+persona: "コンテンツ マネージャー"
 ---
 
 # 通貨

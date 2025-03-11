@@ -2,8 +2,8 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "リアルタイムの天気警報を表示"
-キーワード: "緊急天気警報、Atom フィード形式、カスタム Atom フィード URL、NWS コネクタ"
+excerpt: "リアルタイムの天気警報を表示"
+keywords: "緊急天気警報、Atom フィード形式、カスタム Atom フィード URL、NWS コネクタ"
 ---
 
 ## National Weather Service

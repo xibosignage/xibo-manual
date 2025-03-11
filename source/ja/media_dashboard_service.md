@@ -2,9 +2,9 @@
 toc: "media"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "ダッシュボード サービスを安全に表示するための商用機能"
-キーワード: "コネクタ、Microsoft Power BI、Grafana、Matomo"
-ペルソナ: "管理者"
+excerpt: "ダッシュボード サービスを安全に表示するための商用機能"
+keywords: "コネクタ、Microsoft Power BI、Grafana、Matomo"
+persona: "管理者"
 ---
 
 # ダッシュボード サービス

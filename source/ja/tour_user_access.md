@@ -6,9 +6,9 @@ aliases:
 - "tour_login"
 - "tour_user_profile"
 - "tour_two_factor_authentication"
-抜粋: "CMS への初回ユーザー アクセス"
-キーワード: "cms ログイン、プロファイル設定、ログアウト、設定、プロファイル編集、2 要素認証、Google 認証、リカバリ コードの生成、マイ アプリケーション"
-ペルソナ: "user"
+excerpt: "CMS への初回ユーザー アクセス"
+keywords: "cms ログイン、プロファイル設定、ログアウト、設定、プロファイル編集、2 要素認証、Google 認証、リカバリ コードの生成、マイ アプリケーション"
+persona: "user"
 ---
 
 # 初回ユーザー アクセス

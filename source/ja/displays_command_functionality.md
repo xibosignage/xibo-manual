@@ -2,9 +2,9 @@
 toc: "displays"
 maxHeadingLevel: 4
 minHeadingLevel: 2
-抜粋: "スケジュールまたはレイアウトで XMR 経由で実行するコマンドを構成する"
-キーワード: "philips インテント、android インテント、ヘルパー、RS232、コマンド xmr の送信、検証文字列、モニターのオン/オフ"
-ペルソナ: "ディスプレイ マネージャー、管理者"
+excerpt: "スケジュールまたはレイアウトで XMR 経由で実行するコマンドを構成する"
+keywords: "philips インテント、android インテント、ヘルパー、RS232、コマンド xmr の送信、検証文字列、モニターのオン/オフ"
+persona: "ディスプレイ マネージャー、管理者"
 ---
 
 # コマンド機能

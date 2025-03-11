@@ -2,9 +2,9 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "3 つのオプションのいずれかを使用して、PowerPoint ファイルをプレイリストとレイアウトに追加します"
-キーワード: "PowerPoint の準備、Windows プレーヤーの準備、ディスプレイでの PowerPoint の有効化"
-ペルソナ: "コンテンツ マネージャー"
+excerpt: "3 つのオプションのいずれかを使用して、PowerPoint ファイルをプレイリストとレイアウトに追加します"
+keywords: "PowerPoint の準備、Windows プレーヤーの準備、ディスプレイでの PowerPoint の有効化"
+persona: "コンテンツ マネージャー"
 ---
 
 # PowerPoint

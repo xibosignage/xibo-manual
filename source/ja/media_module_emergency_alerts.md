@@ -2,8 +2,8 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "共通アラート プロトコル (CAP) フィードからのアラートと緊急メッセージの表示"
-キーワード: "共通アラート プロトコル、CAP フィード、CAP URL、CAP コネクタ、生徒の安全、公共アラート"
+excerpt: "共通アラート プロトコル (CAP) フィードからのアラートと緊急メッセージの表示"
+keywords: "共通アラート プロトコル、CAP フィード、CAP URL、CAP コネクタ、生徒の安全、公共アラート"
 ---
 
 ## 緊急アラート

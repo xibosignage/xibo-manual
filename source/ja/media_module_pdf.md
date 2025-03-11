@@ -1,7 +1,7 @@
 ---
 toc: "widgets"
 minHeadingLevel: 2
-抜粋: "レイアウトとプレイリストに含める PDF ファイルの追加"
+excerpt: "レイアウトとプレイリストに含める PDF ファイルの追加"
 persona: "コンテンツ マネージャー"
 ---
 

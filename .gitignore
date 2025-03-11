@@ -6,3 +6,5 @@ desktop.ini
 translate_api.key
 translate.php
 translate_with_glossary.php
+
+replace_word.php

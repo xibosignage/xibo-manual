@@ -2,9 +2,9 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 1
-抜粋: "管理者向けコネクタ管理"
-キーワード: "コネクタ、API キー、サードパーティ データの構成"
-ペルソナ: "管理者"
+excerpt: "管理者向けコネクタ管理"
+keywords: "コネクタ、API キー、サードパーティ データの構成"
+persona: "管理者"
 ---
 
 # コネクタ管理
