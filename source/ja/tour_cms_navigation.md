@@ -5,9 +5,9 @@ minHeadingLevel: 2
 aliases:
 - "tour_grids"
 - "tour_forms"
-抜粋: "CMS の操作を始めましょう"
-キーワード: "グリッド、フォーム、複数選択、列の表示、自動送信フォーム"
-ペルソナ: "user"
+excerpt: "CMS の操作を始めましょう"
+keywords: "グリッド、フォーム、複数選択、列の表示、自動送信フォーム"
+persona: "user"
 ---
 
 # CMS の操作

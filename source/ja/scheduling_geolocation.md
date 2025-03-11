@@ -2,9 +2,9 @@
 toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "場所を認識するようにイベントをスケジュールする"
-キーワード: "マップ マーカー、緯度、経度"
-ペルソナ: "スケジュール マネージャー、表示マネージャー"
+excerpt: "場所を認識するようにイベントをスケジュールする"
+keywords: "マップ マーカー、緯度、経度"
+persona: "スケジュール マネージャー、表示マネージャー"
 ---
 
 # Geo Scheduling

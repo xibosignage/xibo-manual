@@ -2,9 +2,9 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "レイアウトとプレイリストに表示する HTML と JavaScript を埋め込む"
-キーワード: "コンテンツ、CSS、スクリプト ヘッダー タグをプリロード"
-ペルソナ: "コンテンツ マネージャー"
+excerpt: "レイアウトとプレイリストに表示する HTML と JavaScript を埋め込む"
+keywords: "コンテンツ、CSS、スクリプト ヘッダー タグをプリロード"
+persona: "コンテンツ マネージャー"
 ---
 
 # 埋め込みコンテンツ

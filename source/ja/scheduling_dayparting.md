@@ -2,9 +2,9 @@
 toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "スケジュールを簡素化するために独自の Day Parts を作成する"
-キーワード: "例外、営業時間の表示、事前定義"
-ペルソナ: "スケジュール マネージャー"
+excerpt: "スケジュールを簡素化するために独自の Day Parts を作成する"
+keywords: "例外、営業時間の表示、事前定義"
+persona: "スケジュール マネージャー"
 ---
 
 # Dayparting

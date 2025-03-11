@@ -1,9 +1,9 @@
 ---
 toc: "widgets"
 minHeadingLevel: 2
-抜粋: "Xibo ダッシュボード サービスを使用するように構成されたダッシュボードを表示します"
-キーワード: "xibo ダッシュボード サービス、Power BI、Grafana、Matomo"
-ペルソナ: "コンテンツ マネージャー"
+excerpt: "Xibo ダッシュボード サービスを使用するように構成されたダッシュボードを表示します"
+keywords: "xibo ダッシュボード サービス、Power BI、Grafana、Matomo"
+persona: "コンテンツ マネージャー"
 ---
 
 # ダッシュボード

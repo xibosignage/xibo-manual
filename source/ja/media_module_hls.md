@@ -1,7 +1,7 @@
 ---
 toc: "widgets"
 minHeadingLevel: 2
-抜粋: "ライブ ストリーミングされた HLS コンテンツを表示する"
+excerpt: "ライブ ストリーミングされた HLS コンテンツを表示する"
 persona: "コンテンツ マネージャー"
 ---
 

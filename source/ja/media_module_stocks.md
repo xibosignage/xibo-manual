@@ -2,9 +2,9 @@
 toc: "widgets"
 maxHeadingLevel: 3
 minHeadingLevel: 2
-抜粋: "株式リストの取引価格情報を表示する"
-キーワード: "alpha vantage api、alpha vantage コネクタ"
-ペルソナ: "コンテンツ マネージャー"
+excerpt: "株式リストの取引価格情報を表示する"
+keywords: "alpha vantage api、alpha vantage コネクタ"
+persona: "コンテンツ マネージャー"
 ---
 
 # 株式

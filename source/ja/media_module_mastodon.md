@@ -6,9 +6,9 @@ aliases:
 - "media_module_twitter"
 - "media_module_twitter_metro"
 - "media_module_mastadon"
-抜粋: "ディスプレイに Mastodon ソーシャル フィード コンテンツを表示する"
-キーワード: "ソーシャル コンテンツ、ソーシャル 投稿、ソーシャル フィード、ハッシュタグ、メンション"
-ペルソナ: "コンテンツ マネージャー"
+excerpt: "ディスプレイに Mastodon ソーシャル フィード コンテンツを表示する"
+keywords: "ソーシャル コンテンツ、ソーシャル 投稿、ソーシャル フィード、ハッシュタグ、メンション"
+persona: "コンテンツ マネージャー"
 ---
 
 # Mastodon
