@@ -101,7 +101,7 @@ CMS の **ナビゲーション メニュー** の位置を変更した場合は
 
 {version}
 **注意:** 管理者は [CMS 設定](tour_cms_settings.html) ページで名前を入力する必要があります。この名前は、Google Authenticator アプリで発行者として表示されます。
-}
+{/version}
 
 - モバイル デバイスに [Google Authenticator アプリ](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) をインストールします。
 
@@ -133,6 +133,7 @@ CMS の **ナビゲーション メニュー** の位置を変更した場合は
 
 {version}
 **注意:** [生成] をクリックすると、既存の生成コードは無効になります。
+{/version}
 
 {tip}
 
