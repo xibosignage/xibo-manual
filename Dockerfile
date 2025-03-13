@@ -1,5 +1,5 @@
 FROM nginx:alpine
-MAINTAINER Xibo Signage <info@xibosignage.com>
+MAINTAINER Open Source Digital Signage Initiative <info@open-signage.org>
 
 COPY ./output /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
