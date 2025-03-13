@@ -18,7 +18,7 @@ persona: "コンテンツ作成者、スーパー管理者、ユーザー、ス�
 
 **レイアウト リスト キャンペーン** を使用すると、ユーザーは、定義された順序でレイアウトのグループの再生を設定できます。
 
-{nonwhite}{video}rMuYujq_LV8{/video}{nonwhite}
+{nonwhite}{video}rMuYujq_LV8{/video}{/nonwhite}
 
 {tip}
 レイアウトをプレゼンテーション デッキの 1 つのスライドと考えると、キャンペーンはプレゼンテーション全体です。
@@ -47,7 +47,7 @@ persona: "コンテンツ作成者、スーパー管理者、ユーザー、ス�
 {tip}
 タグとフォルダは、キャンペーン グリッドの下部にある [選択済み](tour_cms_navigation.html#content-multi-select---with-selected) オプションを使用して、複数のキャンペーンに割り当てることもできます。
 
-tip}
+{/tip}
 
 ### サイクル ベースの再生
 

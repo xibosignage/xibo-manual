@@ -23,7 +23,7 @@ toc: "layouts"
 {nonwhite}
 Webhook の詳細については、開発者向けドキュメント [こちら](/docs/developer/player-control/webhooks) をご覧ください。
 
-nonwhite}
+{/nonwhite}
 
 ## アクションの追加
 
