@@ -60,6 +60,7 @@ class ComposerStaticInit075cc20228757f6e09df00b9208e01cf
             'Google\\Iam\\' => 11,
             'Google\\Cloud\\Translate\\' => 23,
             'Google\\Cloud\\Core\\' => 18,
+            'Google\\Cloud\\AIPlatform\\' => 24,
             'Google\\Cloud\\' => 13,
             'Google\\Auth\\' => 12,
             'Google\\Api\\' => 11,
@@ -72,6 +73,7 @@ class ComposerStaticInit075cc20228757f6e09df00b9208e01cf
             'GPBMetadata\\Google\\Logging\\' => 27,
             'GPBMetadata\\Google\\Iam\\' => 23,
             'GPBMetadata\\Google\\Cloud\\Translate\\' => 35,
+            'GPBMetadata\\Google\\Cloud\\Aiplatform\\' => 36,
             'GPBMetadata\\Google\\Cloud\\' => 25,
             'GPBMetadata\\Google\\Api\\' => 23,
             'GPBMetadata\\ApiCore\\' => 20,
@@ -188,6 +190,10 @@ class ComposerStaticInit075cc20228757f6e09df00b9208e01cf
         array (
             0 => __DIR__ . '/..' . '/google/cloud-core/src',
         ),
+        'Google\\Cloud\\AIPlatform\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/cloud-ai-platform/src',
+        ),
         'Google\\Cloud\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/common-protos/src/Cloud',
@@ -235,6 +241,10 @@ class ComposerStaticInit075cc20228757f6e09df00b9208e01cf
         'GPBMetadata\\Google\\Cloud\\Translate\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/cloud-translate/metadata',
+        ),
+        'GPBMetadata\\Google\\Cloud\\Aiplatform\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/cloud-ai-platform/metadata',
         ),
         'GPBMetadata\\Google\\Cloud\\' => 
         array (
