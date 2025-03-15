@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .logo {
 	width: 100px;
 	margin-bottom: 20px;
@@ -32,107 +36,175 @@
 
 body { 
 	padding-top: 70px;
-	font-size: 16px;
 }
 
 .img-thumbnail {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 	margin-bottom: 10px;
+        border: 2px solid #0e70f6;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .0823529412);
+        border-radius: 7px;
+        text-align: center;
 }
 
 .api-method-call-doc {
-  margin-top: 30px;
-  border-bottom: 1px solid #eee
+	margin-top: 30px;
+	border-bottom: 1px solid #eee
 }
 
 nav#top-nav {
-  background-color: #273759;
-  border-color: #273759;
+	background-color: #273759;
+	border-color: #273759;
 }
 
 ul.navbar-nav a, .navbar-inverse .navbar-nav>li>a {
-  color: #b2bfdc;
+	color: #b2bfdc;
 }
+
 ul.navbar-nav a:hover {
-  color: #fff;
-  border-bottom: 3px solid #e99d1a;
+	color: #fff;
+	border-bottom: 3px solid #e99d1a;
 }
+
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-  color: #fff;
-  background-color: #273759;
-  border-bottom: 3px solid #e99d1a;
+	color: #fff;
+	background-color: #273759;
+	border-bottom: 3px solid #e99d1a;
 }
 
 .header-link {
-    padding-left: 4px;
-    line-height: 1;
-    font-size: 16px;
+	padding-left: 4px;
+	line-height: 1;
+	font-size: 16px;
 }
 
 .top-tip {
-    border: 1px solid lightgray;
-    border-radius: 15px;
-    padding: 25px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    background: #f4f7fa;
+	border: 1px solid aliceblue;
+	border-radius: 15px;
+	padding: 25px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background: #f4f7fa;
 }
 
 ul#side-nav ul {
-    margin-left: 15px;
+	margin-left: 15px;
 }
 
 ul#side-nav ul > li {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 ul#side-nav ul > li.active {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 ul#side-nav ul > li.active span.you-are-here-arrow {
-    margin-left: 5px;
+	margin-left: 5px;
 }
 
 noncloud, cloud, tip {
-    padding: 10px;
-    margin: 25px;
-    display: block;
+	padding: 10px;
+	margin: 25px;
+	display: block;
 }
 
 noncloud {
-    background: aliceblue;
+	background: aliceblue;
+        justify-content: space-between;
+        font-size: 14px;
+        border-radius: 20px;
+        border: 2px solid #0e70f6;
+        background-color: #fff;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .0823529412);
 }
 
-cloud {
-    background: aliceblue;
+.cloud {
+	background: aliceblue;
+        justify-content: space-between;
+        font-size: 14px;
+        border-radius: 20px;
+        border: 2px solid #0e70f6;
+        background-color: #fff;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .0823529412);
 }
 
-tip {
-    background: aliceblue;
+.tip {
+	background: aliceblue;
+	justify-content: space-between;
+	font-size: 14px;
+	border-radius: 20px;
+	border: 2px solid #0e70f6;
+	background-color: #fff;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, .0823529412);
+}
+
+.version {
+        background: aliceblue;
+        justify-content: space-between;
+        font-size: 14px;
+        border-radius: 20px;
+        border: 2px solid #f5c842;
+        background-color: #fff;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, .0823529412);
 }
 
 .leftflush {
-    float: left;
+	float: left;
 }
 
 .header-logo {
-    width: 70px !important;
+	width: 70px !important;
 }
 
 h1 {
-  padding: 0.5em;/*文字周りの余白*/
-  color: #010101;/*文字色*/
-  background: #eaf3ff;/*背景色*/
-  border-bottom: solid 3px #516ab6;/*下線*/
+	padding: 0.5em;/*文字周りの余白*/
+	color: #494949;/*文字色*/
+	background: #eaf3ff;/*背景色*/
+	border-bottom: solid 3px #516ab6;/*下線*/
 }
 
 h2 {
-  padding: 0.5em;/*文字周りの余白*/
-  color: #494949;/*文字色*/
-  background: #fffaf4;/*背景色*/
-  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+	padding: 0.5em;/*文字周りの余白*/
+	color: #494949;/*文字色*/
+	background: #eaf3ff;/*背景色*/
+	border-left: solid 5px #516ab6;/*左線（実線 太さ 色）*/
 }
 
 h3 {
-  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+	background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
+
+blockquote {
+	font-size: 14px;
+	min-height: 80px;
+}
+
+.tip::before {
+	content: url("img/tip.png");
+	display: inline-block;
+	width: 70px;
+	height: 50px;
+	margin-right: 5px;
+	float: left;
+}
+
+.cloud::before {
+        content: url("img/cloud.png");
+        display: inline-block;
+        width: 70px;
+        height: 50px;
+        margin-right: 5px;
+        float: left;
+}
+
+.version::before {
+        content: url("img/attention.png");
+        display: inline-block;
+        width: 70px;
+        height: 50px;
+        margin-right: 5px;
+        float: left;
 }

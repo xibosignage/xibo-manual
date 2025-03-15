@@ -199,12 +199,16 @@ class ManualGenerator
         if (stripos($toc, '<!--toc=') !== false) {
             // Find out what TOC this file should have (read the first line)
             $toc = str_replace('-->', '', str_replace('<!--toc=', '', $toc));
+            $maxHeadingLevel = '';
+            $minHeadingLevel = '';
         } else {
             // Front matter
             $frontMatter = new Webuni\FrontMatter\FrontMatter();
             $meta = $frontMatter->parse($pageContent);
             $data = $meta->getData();
             $toc = $data['toc'] ?? '';
+            $maxHeadingLevel = $data['maxHeadingLevel'] ?? '';
+            $minHeadingLevel = $data['minHeadingLevel'] ?? '';
         }
 
         // Replace any image URL's which do not exist in the img folder for this language
@@ -234,11 +238,25 @@ class ManualGenerator
             return '<h2 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>';
         }, $pageContent);
 
+        $pageContent = preg_replace_callback('#(<h3>)(.*)(</h3>)#i', function ($m) {
+            $id = strtolower(str_replace(' ', '_',$m[2]));
+            return '<h3 id="' . $id . '">' . $m[2] . ' <a href="#' . $id . '" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h3>';
+        }, $pageContent);
+
         // Header and Footer
         $string = $this->template;
 
         $string = str_replace('[[TOCNAME]]', $toc, $string);
         $string = str_replace('[[PAGE]]', $pageContent, $string);
+
+        // Table of Header index
+        //   we want to create contents index at the right side bar
+        $tocString = '';
+//        $tocString = $this->generateTOC($string, $minHeadingLevel, $maxHeadingLevel);
+$minHeadingLevel = 1;
+        $tocString = $this->generateTOC($string, $minHeadingLevel, $maxHeadingLevel);
+        $string = str_replace('[[TOC]]', $tocString, $string);
+
 
         // Navigation
         //  we want to put the appropriate TOC at the right place inside the navbar
@@ -287,6 +305,41 @@ class ManualGenerator
 
         file_put_contents($folder . $lang . DIRECTORY_SEPARATOR . $file . '.html', $string);
     }
+
+    private function generateTOC($html, $minHeadingLevel = 1, $maxHeadingLevel = 6) {
+    $dom = new DOMDocument();
+    @$dom->loadHTML($html);
+
+    $headings = [];
+    for ($level = $minHeadingLevel; $level <= $maxHeadingLevel; $level++) {
+        $tag = 'h' . $level;
+        $elements = $dom->getElementsByTagName($tag);
+        foreach ($elements as $element) {
+            $id = $element->getAttribute('id');
+            $text = $element->textContent;
+            if ($id && $text) {
+                $headings[] = ['id' => $id, 'text' => $text, 'level' => $level];
+            }
+        }
+    }
+
+    if (empty($headings)) {
+        return '<p>指定されたレベル範囲に見出しがありません。</p>';
+    }
+
+    $toc = '';
+    $previousLevel = $minHeadingLevel;
+
+    foreach ($headings as $heading) {
+        $level = $heading['level'];
+        $indent = str_repeat('&nbsp;', $level - $minHeadingLevel); // インデントを生成
+
+        $toc .= '<p>' . $indent . '<a href="#' . $heading['id'] . '">' . htmlspecialchars($heading['text']) . '</a></p>';
+        $previousLevel = $level;
+    }
+
+    return $toc;
+}
 
     private function file_get_contents_or_default($lang, $file)
     {
@@ -342,11 +395,18 @@ class ManualGenerator
             return '<blockquote class="noncloud">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_cms_orange.svg" />' : '') . self::getHtml($match) . '</blockquote>';
         }, $string);
 
+        $string = preg_replace_callback('/({(version)\b[^}]*}).*?({\/\2})/s', function($matches) use ($isSvg) {
+            $match = $matches[0];
+            $match = str_replace('{version}', '', $match);
+            $match = str_replace('{/version}', '', $match);
+            return '<blockquote class="version">' . (($isSvg) ? '<img class="blockquote-image" src="../img/svg/Home/icon_home_version.svg" />' : '') . self::getHtml($match) . '</blockquote>';
+        }, $string);
+
         // Strip out other not supported tags.
         $string = preg_replace('/({(feat)\b[^}]*}).*?({\/\2})/s', '', $string);
         $string = preg_replace('/({(feat_cat)\b[^}]*}).*?({\/\2})/s', '', $string);
         $string = preg_replace('/({(product)\b[^}]*}).*?({\/\2})/s', '', $string);
-        $string = preg_replace('/({(version)\b[^}]*}).*?({\/\2})/s', '', $string);
+//        $string = preg_replace('/({(version)\b[^}]*}).*?({\/\2})/s', '', $string);
         $string = str_replace(['{includeRevisions}', '{/includeRevisions}'], '', $string);
 
         return $string;
