@@ -1,6 +1,6 @@
 ---
 maxHeadingLevel: 3
-maxHeadingLevel: 1
+minHeadingLevel: 1
 excerpt: "Library Searches allow users to easily add file based media to Layouts and Playlists"
 keywords: "audio files, image files, video files, pdf, powerpoint, html, other media, expander, pixabay"
 ---
