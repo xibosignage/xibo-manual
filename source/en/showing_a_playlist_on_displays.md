@@ -14,8 +14,11 @@ You may have a set of content collated to meet a specific requirement which need
 
 Playlists can have content added by automatic assignment based on selected criteria or by manual selection. For this example Image content already uploaded to the CMS Media Library will be added to a Playlist manually.
 
-{nonwhite}
-This short video will take you through the process:
+{nonwhite} 
+
+## How-to Video
+
+{video}Cch392voYic|how_to_create_a_playlist.png{/video}
 {/nonwhite}
 
 ## Add Playlist
@@ -72,15 +75,15 @@ The CMS will now update a Schedule change and the Playlist will be shown on Disp
 
 ## FAQ's
 
-- ***Can I add Widgets to a Playlist?***
+***Can I add Widgets to a Playlist?***
 
 Yes, Widgets can be added using the Playlist Editor using the top button from the Toolbox.
 
-- ***I don't see any Global or Data Elements to add to my Playlist?***
+***I don't see any Global or Data Elements to add to my Playlist?***
 
 Elements are not available in the Playlist Editor. Data Widgets have a selection of Static Templates to choose from to display your data. 
 
-- ***Do I have to upload the files I want to use to the CMS Media Library before creating a Playlist?***
+***Do I have to upload the files I want to use to the CMS Media Library before creating a Playlist?***
 
 No, you can upload media directly to a Playlist by dragging the Upload card for a selected media type to the Timeline and use the file uploader.
 

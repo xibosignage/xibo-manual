@@ -14,8 +14,10 @@ You may have image content created outside of the Layout Editor, e.g. created by
 
 Image files are first added to the Library by upload or by URL. For this example an Image file will be uploaded to the CMS Media Library.
 
-{nonwhite}
-This short video will take you through the process:
+{nonwhite} 
+## How-to Video
+
+{video}yYv0B0B9MIc|how_to_show_an_image.png{/video}
 {/nonwhite}
 
 ### Add Media
@@ -70,15 +72,15 @@ The CMS will now update a Schedule change and the Image will be shown on Display
 
 ## FAQ's
 
-- ***What are Schedule Loops?*** 
+***What are Schedule Loops?*** 
 
 A Schedule Loop is how media content will play when in schedules with other media content. For example, if you have scheduled 2 media items each with a 10 second duration to be shown at the same time for 1 hour, both items will play for their 10 second durations in fair rotation for the scheduled time.
 
-- ***What file extensions are supported on upload?***
+***What file extensions are supported on upload?***
 
 Valid file extensions: jpg,jpeg,png,bmp,gif,webp.
 
-- ***Can I upload an animated gif?***
+***Can I upload an animated gif?***
 
 Animated gif's are not supported.
 
