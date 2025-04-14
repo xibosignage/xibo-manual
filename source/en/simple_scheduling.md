@@ -14,8 +14,11 @@ All content to be shown on authorised Displays must be included in a Schedule. D
 
 You may have a Layout created by a member of your team, in order to share an important announcement within a company, which is now Published and ready to be shown on Displays. 
 
-{nonwhite}
-This short video will take you through the process of creating a simple schedule:
+{nonwhite} 
+
+## How-to Video
+
+{video}QmAfUsSEOAk|how_to_simple_scheduling.png{/video}
 {/nonwhite}
 
 ## Creating a Schedule
@@ -39,10 +42,10 @@ The Scheduled Event can be viewed/edited from the Schedule grid and Calendar vie
 
 ## FAQ's
 
-- ***Can I create Schedules from other parts of the CMS?***
+***Can I create Schedules from other parts of the CMS?***
 
 Yes, the Schedule Event form is available from the row menu for Layouts, Campaigns, Playlists and the Media grid for Images and Videos. Once a Layout has been published, it can also be Scheduled directly from the Layout Editor.
 
-- ***How do I remove an Always Event from the Schedule?***
+***How do I remove an Always Event from the Schedule?***
 
 From the Schedule, use the row menu for the Event in the Grid view and select Delete, or click on the Event icon from the Calendar to open the Edit Event form and Delete.

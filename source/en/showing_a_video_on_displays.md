@@ -14,8 +14,11 @@ You may have Video content which has been created to showcase product promotions
 
 Video files are first added to the Library by upload or by URL. For this example a Video file will be uploaded to the CMS Media Library.
 
-{nonwhite}
-This short video will take you through the process:
+{nonwhite} 
+
+## How-to Video
+
+{video}1zZKaL-iUZo|how_to_show_a_video.png{/video}
 {/nonwhite}
 
 ### Add Media
@@ -63,11 +66,11 @@ The CMS will now update a Schedule change and your Video will be shown on Displa
 
 ## FAQ's
 
-- ***What are Schedule Loops?*** 
+***What are Schedule Loops?*** 
 
 A Schedule Loop is how media content will play when in schedules with other media content. For example, if you have scheduled 2 media items each with a 10 second duration to be shown at the same time for 1 hour, both items will play for their 10 second durations in fair rotation for the scheduled time.
 
-- ***Which file format is recommended for Videos?***
+***Which file format is recommended for Videos?***
 
 We recommend H264 MP4 file format.
 

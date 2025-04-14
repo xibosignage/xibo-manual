@@ -59,7 +59,7 @@ Clicking in the top right of a thumbnail will play a preview in a separate windo
 
 ***I don't see Pixabay in the Toolbox?***
 
-> Pixabay is enabled from the **Administration** section of the CMS by clicking **Applications**. Scroll down to the **Connectors** section and select **Configure** to enable.
+Pixabay is enabled from the **Administration** section of the CMS by clicking **Applications**. Scroll down to the **Connectors** section and select **Configure** to enable.
 
 {noncloud}
 After clicking **Configure**, you will need to enter your API Key from signing up for a Pixabay account: [PixabayAPI Documentation](https://pixabay.com/api/docs/) to enable.
@@ -67,8 +67,8 @@ After clicking **Configure**, you will need to enter your API Key from signing u
 
 ***I don't see all 4 levels when I click the expander?***
 
-> It will only expand to a sensible level dependent on the screen size you are working on. When using on screens with less than 1600px it will limit the total number of available levels to view. m
+It will only expand to a sensible level dependent on the screen size you are working on. When using on screens with less than 1600px it will limit the total number of available levels to view. m
 
 ***How do I show a PowerPoint on my non-Windows Displays?***
 
-> Use the option on the file menu inside the PowerPoint application to convert to Video and export to upload to the CMS as a Video file. 
+Use the option on the file menu inside the PowerPoint application to convert to Video and export to upload to the CMS as a Video file. 
