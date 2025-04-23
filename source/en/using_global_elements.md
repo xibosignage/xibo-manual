@@ -11,8 +11,11 @@ keywords: "date and time on layouts, add shapes, add lines, add text, format tex
 
 Global Elements give Users an easy way to add **Text**, **Dates and Times**, **Lines** and a variety of **Shapes** to Layouts to create eye-catching content from within the CMS.
 
-{nonwhite}
-This short video will take you through the basics of adding Global Elements to your Layouts:
+{nonwhite} 
+
+## How-to Video
+
+{video}MpuFyYbp0tw|how_to_use_global_elements.png{/video}
 {/nonwhite}
 
 Global Elements give Users great flexibility, with precise positioning and customisable options its easy to create visually impactful designs. Use them on their own or add them to your designs to further enhance and complement other content.

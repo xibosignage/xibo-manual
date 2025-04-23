@@ -13,8 +13,11 @@ A Layout presents content to be shown on Displays and are made up of just 1 or m
 
 The [[PRODUCTNAME]] Layout Editor gives Users a range of tools to add and arrange a variety of content, regardless of skill level, to easily create eye catching Layouts to capture attention on Displays.
 
-{nonwhite}
-This short video will take you through the process of creating a new Layout using the Layout Editor:
+{nonwhite} 
+
+## How-to Video
+
+{video}Sh-5b8OJycE|how_to_create_a_layout.png{/video}
 {/nonwhite}
 
 ## Creating Layouts

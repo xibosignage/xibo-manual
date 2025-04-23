@@ -11,8 +11,11 @@ keywords: "audio files, image files, video files, pdf, powerpoint, html, other m
 
 File based Media can be first uploaded to the **CMS Library** ahead of time, or added directly using the file uploader when creating **Layouts** and **Playlists**.
 
-{nonwhite}
-This short video will take you through the Library Search function in order to add file based media to your Layouts and Playlists:
+{nonwhite} 
+
+## How-to Video
+
+{video}pymUvJDp-lE|how_to_use_library_searches.png{/video}
 {/nonwhite}
 
 Media already saved to the Library, can be easily selected by using a **Library Search** function.
