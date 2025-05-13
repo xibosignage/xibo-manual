@@ -44,6 +44,10 @@ Each Display is assigned a default profile which will automatically apply its se
 
 **Display Setting Profiles** can be customised for automatic management and configuration of your Display Network.
 
+## Further Reading
+
+[What is a Display?](what_is_a_display.html)
+
 ## FAQ's
 
 ***What happens if I have no content scheduled, and my default layout has an issue with downloading it's content?***
