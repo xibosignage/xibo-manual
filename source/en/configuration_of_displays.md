@@ -10,7 +10,10 @@ keywords: "default layout, latitude, longitude, timezone, map view, display grid
 Once Displays have been connected, they are configured and managed from the **Displays** page inside the CMS.
 
 {nonwhite}
-This short video will take you through Display Configuration basics:
+
+## How-to Video
+
+{video}DsYGiDgiigM|how_to_display_configuration.png{/video}
 {/nonwhite}
 
 In order to start showing content, **Displays** must be **Authorised** with the CMS. Check the Displays grid to make sure the right Displays are showing as **Authorised**, as a first step.
