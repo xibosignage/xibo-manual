@@ -10,7 +10,10 @@ keywords: "default layout, latitude, longitude, timezone, map view, display grid
 Once Displays have been connected, they are configured and managed from the **Displays** page inside the CMS.
 
 {nonwhite}
-This short video will take you through Display Configuration basics:
+
+## How-to Video
+
+{video}DsYGiDgiigM|how_to_display_configuration.png{/video}
 {/nonwhite}
 
 In order to start showing content, **Displays** must be **Authorised** with the CMS. Check the Displays grid to make sure the right Displays are showing as **Authorised**, as a first step.
@@ -40,6 +43,10 @@ The **Displays** map can be viewed by clicking the icon next to the **Folders** 
 Each Display is assigned a default profile which will automatically apply its settings to all Displays of the same type. For example, you edit the Collect Interval for your Android Display Profile. Once saved, the new collection time will be applied to all Displays assigned this as a Display Profile.
 
 **Display Setting Profiles** can be customised for automatic management and configuration of your Display Network.
+
+## Further Reading
+
+[What is a Display?](what_is_a_display.html)
 
 ## FAQ's
 

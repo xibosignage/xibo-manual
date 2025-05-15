@@ -14,7 +14,10 @@ keywords: "player app, media player, connecting displays, authorising displays"
 A **Display** is an essential part of digital signage as is it bridges the communication between the **CMS** software (Content Management System) and **Media Player App**. 
 
 {nonwhite}
-This short video will take you through Display creation:
+
+## How-to Video
+
+{video}9H8Ct00qkqs|how_to_what_is_a_display.png{/video}
 {/nonwhite}
 
 The **Player App** is installed onto a **Media Player**, which can be a separate physical hardware device attached to a screen or an integrated Media Player found in supported System on Chip (SoC) professional signage monitors. A hardware key is generated on installing the Player App which creates a unique **Display** record in the CMS.
