@@ -1,8 +1,12 @@
 [
   {
-    "title": "Tour",
+    "title": "Getting Started",
     "href": "index.html",
-    "containsToc": ["tour"]
+    "containsToc": ["getting_started"]
+  },{
+    "title": "Configuration and Organisation",
+    "href": "configure_cms_settings.html",
+    "containsToc": ["configure"]	
   },{
     "title": "Users",
     "href": "users_administration.html",

@@ -1,6 +1,8 @@
 ---
+toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 1
+alias: "displays_fileassociations"        
 excerpt: "Displays are an essential part of digital signage which communicate between the CMS and Media Player App"
 keywords: "player app, media player, connecting displays, authorising displays"
 ---
@@ -49,11 +51,17 @@ Manage **Displays** from the CMS to and use the range of device management tools
 
 All Players, at the latest version support connecting via a code, with the exception of the Linux Player.
 
+***Can I easily transfer a Display to another CMS?***
+
+First you need to ensure that you have Two Factor Authentication set up, from the User Profile to use Transfer to another CMS setting from a Display row menu. Multiple Displays can be transferred using the With Selected option at the bottom of the Displays grid.
+
 ***Do the Player and CMS versions have to match?***
 
 Our recommendation is that your CMS and Players should be of the same major version for the best results.
 
+***What does it mean to Assign Files / Assign Layouts?***
 
+Library files and Layouts can be directly assigned to a Display so that they are always available in the local library of the Player. This is useful for pre-loading a Layout ahead of time when the Layout will be used for some API integration to trigger a change for example. Content will still need to be scheduled to show on Displays.
 
 
 

@@ -1,9 +1,9 @@
 ---
+toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 1
 excerpt: "Create Schedules to show your content at the right time and location"
-keywords: "adding a schedule, always schedule, custom schedule, relative time, "
-persona: "internal communications"
+keywords: "adding a schedule, always schedule, custom schedule, relative time, calendar view, grid view, agenda view"
 ---
 
 # Simple Scheduling
@@ -49,3 +49,7 @@ Yes, the Schedule Event form is available from the row menu for Layouts, Campaig
 ***How do I remove an Always Event from the Schedule?***
 
 From the Schedule, use the row menu for the Event in the Grid view and select Delete, or click on the Event icon from the Calendar to open the Edit Event form and Delete.
+
+***How can I see what will be shown on a Display at a specific point in time?***
+
+Use Agenda from the range filter to see a precise representation of what Layouts/Campaigns will be shown on a selected Display. Use the slider to pinpoint the exact time of day to view.

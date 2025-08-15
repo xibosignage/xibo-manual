@@ -47,8 +47,6 @@ DataSets are created and managed by selecting  **DataSets** under the **Library*
 
 ![DataSet Add](img/v4_media_dataset_add.png)
 
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. DataSets saved to a Folder will inherit the access options applied to that Folder.
-
 - Give your DataSet a **Name** for easy identification in the CMS. Provide an optional internal **Description** and enter a **Code** if referencing this DataSet via the API.
 
 If the DataSet is going to be connected to sync with a **Remote** data source, tick to enable and continue with the [Creating Remote DataSets](media_datasets.html#content-creating-remote-datasets) configuration.
@@ -301,11 +299,11 @@ Create your own RSS feed using the data held in a DataSet.
 
 DataSets can only be deleted if they are not in use.
 
-Multiple DataSets can be selected and deleted in bulk using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the DataSets grid.
+Multiple DataSets can be selected and deleted in bulk using the With Selected option at the bottom of the DataSets grid.
 
 ### Share
 
-Set [Share](users_features_and_sharing.html#content-share) options for User/User Group access to individual DataSets.
+Set Share options for User/User Group access to individual DataSets.
 
 {nonwhite}
 Take a look at our guide for an example of how to utilise DataSets for your Displays: [Using DataSets to show upcoming birthdays](https://community.xibo.org.uk/t/using-datasets-to-show-upcoming-birthdays/31617)

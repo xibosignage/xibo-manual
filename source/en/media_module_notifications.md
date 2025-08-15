@@ -14,11 +14,11 @@ Display [Notification](users_notifications.html) data anywhere on a Layout using
 
 ## Notification Elements
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding the Notification Widget to a [Layout](layouts_editor.html) to give Users more control over what components of Notifications to use and where they can be placed.
+Elements are available for selection when adding the Notification Widget to a [Layout](layouts_editor.html) to give Users more control over what components of Notifications to use and where they can be placed.
 
 ![Notification Elements](img/v4_media_module_notification_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+Each Element has a set of configuration options in the Properties Panel. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding Global Elements to add shapes and text which can all be put into an Element Group for easier configuration and positioning.
 
 ## Overview
 
