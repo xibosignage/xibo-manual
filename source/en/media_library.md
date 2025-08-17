@@ -36,26 +36,14 @@ Images and Videos that have a set thumbnail can also be filtered by **Orientatio
 
 {/tip}
 
- [Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html) User objects with other Users/User Groups.
-
-- Click on a Folder/sub-folder to search the contents of only the selected Folder and return results based on any filters applied.
-
-or
-
-- Tick **All Folders** to include searching in the Root Folder and return results based on any filters applied.
-
-{tip}
-Click the Folders menu to toggle on/off from view.  When the Folder tree is hidden from view, the file path for the selected folder will be shown!
-{/tip}
-
 ## Adding Library Media
 
 Library media can be either uploaded directly using the **Add Media** button or by providing a URL using the **Add Media (URL)** button.
 
 {tip}
-Add Media to the CMS Library and save to [Folders](tour_folders.html) to have media ready for use for the appropriate [Users](users_administration.html)/[User Groups](users_groups.html)! 
+Add Media to the CMS Library and save to Folders to have media ready for use for the appropriate Users/User Groups!
 
-Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor.html#content-library-search)
+Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor_using_library_search)
 {/tip}
 
 ### Add Media (Upload)
@@ -70,7 +58,7 @@ Files added to the CMS Library can be easily added to Layouts and Playlists usin
 Default thresholds and limits can be specified which are then considered in the event an [Image](media_module_image.html) should be resized when uploading an image for example. Further information can be found in [CMS Settings](tour_cms_settings.html#content-resizing-images).
 {/tip}
 
-- Give your file a **Name** for easier identification in the CMS and optional [Tags](tour_tags.html). 
+- Give your file a **Name** for easier identification in the CMS.
 
 {tip}
 If the Name field is left blank, the file will be named as per the original file name on upload!
@@ -79,10 +67,6 @@ If the Name field is left blank, the file will be named as per the original file
 Upload files to a specified Folder location to inherit the View, Edit, Delete Share options that have been applied to the destination Folder for easy User/User Group access:
 
 - Click on the **Select Folder** button and expand to select the Folder to save in.
-
-{tip}
-Users can also right click a Folder to access further options as enabled in the [Feature and Sharing](users_features_and_sharing.html) options for a User/User Group.
-{/tip}
 
 - Click in the Folder you wish to upload the file to and click **Done**. 
 - The **Current Folder** will now show the selected file path.
@@ -100,7 +84,7 @@ Files can also be uploaded individually and have different Folder locations spec
 - Once all files have been successfully uploaded, click **Done**.
 
 {tip}
-Media files can also be uploaded directly to Layouts/Playlists using the upload tool from a [Library Search.](layouts_editor.html#content-library-search) Media uploaded to a Playlist have an additional option to set [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates).
+Media files can also be uploaded directly to Layouts/Playlists using the upload tool from a Library Search. Media uploaded to a Playlist have an additional option to set [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates).
 
 Media files that are uploaded and added directly to Layouts/Playlists are also saved by default to the CMS Media Library.
 {/tip}
@@ -111,7 +95,7 @@ Media files that are uploaded and added directly to Layouts/Playlists are also s
 
 ![Upload via URL](img/v4_media_library_upload_url.png)
 
-- Save to a [Folder](tour_folders.html) to inherit the View, Edit, Delete Share options that have been applied to the destination Folder for easy User/User Group access.
+- Save to a Folder to inherit the View, Edit, Delete Share options that have been applied to the destination Folder for easy User/User Group access.
 - Provide the remote URL for the file.
 - Give your file a **Name** for easier identification in the CMS.
 
@@ -144,7 +128,7 @@ Ticking **Retire this Media** will keep the media file assigned to any existing 
 - Set the collection of [Proof of Play](displays_metrics.html#proof_of_play) statistics to On / Off / Inherit for the selected media file.
 
 {tip}
-Ensure that **Enable Stats Reporting** has been ticked in [Display Settings](displays_settings.html) in order to collect Proof of Play stats!
+Ensure that **Enable Stats Reporting** has been ticked in Display Settings in order to collect Proof of Play stats!
 {/tip}
 
 ### Update Media
@@ -152,7 +136,7 @@ Ensure that **Enable Stats Reporting** has been ticked in [Display Settings](dis
 Use the check box **Update this Media in all Layouts it is assigned to** so that any edits are reflected in Layouts/Playlists that this media file is currently assigned to. 
 
 {tip}
-Edits will only be updated in Layouts/Playlists which you have [access](users_features_and_sharing.html#content-share) to edit!
+Edits will only be updated in Layouts/Playlists which you have access to edit!
 {/tip}
 
 ### Replace Media
@@ -192,10 +176,6 @@ This will show if the selected **media file** is directly assigned/scheduled to 
 
 - Use the Layout tab to see what **Layouts** the media file is currently included in. 
 
-{tip}
-Use the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Library grid to muti-select rows to easily perform bulk actions!
-{/tip}
-
 ### Schedule
 
 Image and Video Library media files can be directly Scheduled to a Display as full screen content from the row menu.
@@ -208,7 +188,7 @@ Image and Video Library media files can be directly Scheduled to a Display as fu
 - Optionally select a **Resolution** to use. If left blank a resolution that matches closest in size to the selected media file will be used.
 - An optional **Background Colour** can be set to fill any gaps if the media does not fill the entire screen.
 - **Save**
-- Complete the rest of the form fields to complete the new [Schedule](scheduling_events.html).
+- Complete the rest of the form fields to complete the new Schedule.
 
 ## Tidy Library
 

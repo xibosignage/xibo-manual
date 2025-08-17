@@ -1,238 +1,114 @@
 ---
-toc: "layouts"
 maxHeadingLevel: 3
-minHeadingLevel: 2
+minHeadingLevel: 1
 aliases:
-  - "layouts_designer"
-  - "layouts_regions"  
-excerpt: "Create Layouts using the Layout Editors flexible design elements"
-keywords: "properties panel, layering, context menu, layout preview, status bar, layout editor, layout designer, code identifier, adding content, toolbar, toolbox"
-persona: "content creator, super administrator, user"
+  - "layouts"
+  - "layout_editor_overview"  
+excerpt: "The Layout Editor is at the heart of content creation and where your designs come to life"
+keywords: "adding a layout, edit a layout, layout designs, navigating the layout editor, toolbox, preview, publish, background image, background colour, layout resolution, publish date"
 ---
 
-# Layout Editor
+# Layout Editor Overview
 
-The Layout Editor is the heart of **content creation** in [[PRODUCTNAME]]. Each time a new Layout is added, or an existing one needs a design change, the Layout Editor is used.
+The Layout Editor is used to create new Layout designs and when an existing Layout needs a Design change.
 
-{nonwhite}{video}nfb9aCqbcIA{/video}{/nonwhite}
+A Layout presents content to be shown on Displays and are made up of just 1 or multiple content items. Designs can include a combination of **Elements**, **Widgets** and **Library Media** and can be added to be shown in different sections of the Layout to show simultaneously.
 
-**Add** a new Layout or click **Design** from the row menu of an existing Layout to open the **Layout Editor**:
+The [[PRODUCTNAME]] Layout Editor gives Users a range of tools to add and arrange a variety of content, regardless of skill level, to easily create eye catching Layouts to capture attention on Displays.
 
-![Layout Designer](img/v4.1_layouts_layout_editor_overview.png)
+{nonwhite} 
 
-New Layouts are added as 'untitled' and need to be named:
+## How-to Video
 
-- Click on the '**Untitled text**' to enter a **Name** and complete further form fields as required.
-
-![Add Layout](img/v4.1_layouts_add_layout.png)
-
-- [Folders](tour_folders.html) are used to organise as well as easily share user objects (Layouts, Playlists, media files etc.) with other Users/User Groups. Layouts saved to a Folder will inherit share options already applied to that Folder. 
-
-{tip}
-If users will need access to any of the Layout content, (image files which need to be added to the Layout for example), ensure that these are also saved to the same Folder!
-{/tip}
-
-- Include optional [Tags](tour_tags.html).
-
-{tip}
-Tags and Folders can also be assigned to multiple Layouts using the [With Selected](tour_cms_navigation.html#content-multi-select---with-selected) option at the bottom of the Layout grid!
-{/tip}
-
-- A string can be used as a **Code Identifier** for the Layout when using [Interactive Actions.](layouts_interactive_actions.html)
-- The collection of statistics for [Proof of Play Reports](displays_metrics.html) can be enabled for the Layout.
-
-{tip}
-Prior to enabling the collection for Proof of Play for the Layout, ensure that the **Enable Stats Collection** check box has been enabled for the **Display** the Layout will be scheduled to by using [Display Profile Settings](displays_settings.html).
-{/tip}
-
-- Click to **Save** the new Layout record.
-
-{tip}
-If you are looking to use a [Template](layouts_templates) as a basis for your design you can add from the **Toolbar** inside the Layout Editor!
-{/tip}
-
-## Status Bar
-
-In the top left of the editor you can see the current "play" status of the Layout as well as make edits to the Layout record and view the overall duration of the Layout:
-
-![Status Bar](img/v4_layouts_status_bar.png)
-
-The Icons shown here represent the current status of the Layout:
-
-- **Blue cog** - the Layout has yet to be built.
-- **Green tick** - the Layout is valid and can be published and scheduled.
-
-- **Red cross** - the Layout is invalid and should not be published for scheduling.
-
-- **Orange exclamation mark** - the Layout contains media that can only be assessed Player side and can be published and scheduled.
-
-{tip}
-
-You can mouse over the icon to see the details as to the current status.
-
-The Orange exclamation mark is a normal Layout status to have if your Layout contains online content, such as a webpage. The CMS cannot determine that the Player will display the content as this type of content is not sent directly from the CMS and is instead cached (stored) Player side.  The Player will need to have a reliable internet connection to successfully display such content.
-
-{/tip}
-
-The current **Name** of the Layout is shown next to the status icon. This can be clicked to make edits to the naming,  Folder location, Tags etc.
-
-The total **Duration** of the Layout is shown here in minutes and seconds and is based on the longest running item on the Layout.
-
-{tip}
-Each item has a default duration which can be overridden from the **Advanced** tab from the **Properties Panel** when selected.
-{/tip}
-
-The dimensions of the Layout are set from the **Resolution** selected from the **Properties Panel** for the Layout configuration.
-
-Top right, the Layout jump list provides easy navigation between all Layouts, the logged in User has access to edit, without having to leave the Layout Editor to switch:
-
-![Jump List](img/v4_layouts_jump_list.png)
-
-Next to the Layout jump list is a menu of items which show available actions dependent on if the Layout is [Published](layouts.html#content-layouts-in-a-published-status) or in a [Draft](layouts.html#content-layouts-in-a-draft-status) status.
-
-## Properties Panel
-
-The **Properties Panel** is used to configure all items added to the Layout as well as the Layout itself.
-
-{tip}
-Configuration options and available tabs will differ across items added.
-{/tip}
-
-On adding a new Layout with no content, configuration options are shown in the Properties Panel:
-
-![Layout Properties](img/v4_layouts_layout_properties.png)
-
-
-{tip}
-Return to the Layout properties at any stage of creating the Layout by clicking anywhere on the background!
-{/tip}
-
-Select to use a colour or an image as your background:
-
-- Click on the **Background Colour** field and select a colour to use.
-
-- Drag an image from the [Image Library Search](layouts_editor_library_search.html) from the Toolbar, to the **Background Image** box.
-- Use **Upload** to select and add a new image.
-
-{tip}
-Images uploaded here will automatically be saved to your CMS Library!
-{/tip}
-
-- Use the drop down to set the [Resolution](layouts.html#content-resolutions) that best matches your display.
-
-{tip}
-Custom Resolutions can be created by a Super Administrator!
-{/tip}
-
-- Tick to apply default [Transition](tour_transitions.html) settings to all Widgets added to the Layout.
-
-## Layering
-
-Template Zones, Layout content and the Layout background can be ordered using z-index settings.
-
-Everything added to the Layout will get a new Layer (Video files, Playlists etc.) Elements get their own Canvas Layer to hold all added Elements which can be moved up and down the layers as one.
-
-{tip}
-To set the Layer for a Background Image, click on the background and set from the Properties Panel.
-{/tip}
-
-- Click in the item to open the configuration options in the Properties Panel .
-- Select the positioning tab (with the grid icon).
-- Enter a number to determine the layer.
-
-![Layering](img/v4_layouts_layering.png)
-
-{tip}
-The higher the number the higher the Layer.
-
-Use the [Context Menu](layouts_editor.html#content-context-menu) and  [Layer Control Panel](layouts_editor.html#content-layer-control) to easily move selected items forwards and backwards.
-{/tip}
-
-{version}
-**NOTE:** If you are using Windows Players, the HLS Widgets and Embedded/Web Widgets configured to use the Edge browser are not transparent and will not show anything placed underneath them.
-{/version}
-
-## Toolbox
-
-The Toolbox is used to access various content types to add to Layouts:
-
-![Toolbar](img/v4_layouts_toolbar.png)
-
-{tip}
-Click on the expander icon at the bottom to change the media thumbnail view for easier media assignment!
-
-It will only expand to a sensible level dependent on the screen size you are working on. Using the Layout Editor on screens less than 1600px will limit the total number of available levels to view.
-{/tip}
-
-[Templates](layouts_templates.html) are selected from inside the Layout Editor from the Toolbox.
-
-{nonwhite}
-Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates!
+{video}Sh-5b8OJycE|how_to_create_a_layout.png{/video}
 {/nonwhite}
 
-{version}
-Selecting a **Template** will replace the Layout you are currently working on to the chosen Template. This action is irreversible and so must be used with caution.
-{/version}
+## Creating Layouts
 
-## Arranging Layout Content
+Layouts are created from the **Layouts** page under the **Design** section of the main CMS menu.
 
-Position content exactly where you want it with flexible drag and drop, rotation and resizing tools:
+Clicking the **Add Layout** button will open the **Layout Editor** used to add content to design Layouts.
 
-![Snap Buttons](img/v4_layouts_snap_to_buttons.png)
+## Navigating the Layout Editor
 
-{tip}
-Use the "Snap to buttons" at the bottom right to select to **Snap to Grid**, **Snap to Borders** or **Snap to Elements** for easier positioning when adding items to the Layout.
-{/tip}
+![Layout Editor Overview](img/layout_editor_overview_explainer.png)
 
-Move multiple items added to a Layout in a block.
+To **Rename** the Layout, click the "Untitled" text at the top of the Layout Editor.
 
-- Click and hold an on the background.
-- Drag to create a rectangle outline.
+From here, also view the **Status** and total **Duration** of the Layout as you build your design. The total Layout duration is always based on the item added to the Layout with the highest set duration.
 
-Ensure that all items that need to be moved are contained within the rectangle.
+Layouts will function best when shown on a Display with a matching resolution. To change the **Dimensions** of a Layout, select the **Resolution** to use from the drop down menu in the **Properties Panel**.
 
-![Drag Selector](img/v4_layouts_editor_drag_selector.png)
+Using the **Properties Panel**, select a **Colour** or add a static **Image** from the **Toolbox** or upload a new file to use as a **Background** for the Layout.
 
-- Click to re-position the block of items on the Layout:
+All content is added to the canvas from the **Toolbox**.
 
-![Move Block](img/v4_layouts_editor_move_block.png)
+### Adding and Arranging Content
 
-- Click anywhere outside of the block to return to separate items once positioned.
+The **Toolbox** contains a variety of content types, which when selected will open the items to add.
 
-## Layer Control
+Content is added to the canvas using the flexibility of drag and drop, along with rotation and resizing tools to enable Users to position items exactly where they are needed. 
 
-View Layering and item durations of all items added to the Layout from the **Layer Control** located at the bottom left:
+On adding an item to the Canvas, "Snap to" buttons are available from the bottom right under the canvas, which allow for easier positioning when moving items around the canvas.
 
-![Layer Control](img/v4_layouts_editor_layer_control.png)
+### Properties Panel
 
-{tip}
-Use the Layer Control to easily select items that are positioned behind other items to make edits!
-{/tip}
+As items are added, the **Properties Panel** will show the configuration options available for the selected item.
 
-## Context Menu
+The **Advanced** tab can be used to override the duration of an item.
 
-Items added to a Layout have an additional menu of items which are accessed from right clicking in a selected item:
+- Click in **Set a duration** and provide the new **Duration** in seconds.
 
-![Context Menu](img/v4_layouts_editor_context_menu.png)
+If this item now has the longest duration on the Layout, it will also update the total Layout duration shown at the top of the Layout Editor.
 
-{tip}
-Options shown are dependent on the item selected!
-{/tip}
+### Layout Preview
 
-Widgets have further options which are show under the Widget name/type:
+The full Layout can be played to preview how your design will look when showing on Displays.
 
-![Widget Options](img/v4_layouts_editor_widget_options.png)
-
-Options include attaching an [Audio](media_module_audio.html) file to a Widget as well as controlling [Sharing](users_features_and_sharing.html) options to View, Edit and Delete selected items for Users/User Groups.
-
-## Preview
-
-Play a full **Preview** of your Layout by clicking on the **Play** button: 
-
-![Layout Preview](img/v4_layouts_play_preview.png)
+- Click out of any selected items by clicking on the background.
+- Select the **Play** button icon at the bottom left under the canvas.
 
 {tip}
-Before the Layout can start all **Media** must be downloaded to your browser and verified so you may experience a slight delay whilst this is in process.
-
-View in full screen by clicking on the icon in the top right corner of the preview window before pressing play!
+Play a preview in full screen by using the icon in the top right of the canvas before selecting the Play button!
 {/tip}
+
+### Publishing Layouts
+
+Layouts need to be **Published** in order to be shown correctly on Displays when included in Schedules. 
+
+Use the 3 line menu located in the top right of the Layout Editor to select the **Publish** option.
+
+Layouts can be Published straight away or a **Publish Date** can be set, by unticking the **Publish Now** option to determine a specified date and time in the future to Publish.
+
+Once Published or after setting a Publish Date, the Layout can now be Scheduled to Displays.
+
+## Further Reading
+
+[Using Global Elements on Layouts](/layouts_editor_global_elements.html)
+
+[Using the Library Search Functions](/layouts_editor_library_search.html)
+
+## FAQ's
+
+***When should a User create a new Layout?***
+
+The recommended usage for a Layout is for it to only contain the design and media required for a set of related content that should be shown at the same time. Keeping your content concise will make it easier for your audience to understand your messaging!
+
+***Are there any restrictions to the amount of Layouts I can have?***
+
+There are no limits to the number of Layouts in the system or the number a User can have.
+
+***My Layout status is always showing as an orange exclamation mark, I how do I make it a green tick?***
+
+The orange exclamation mark is an expected status to have if your Layout contains online content, such as a Webpage. In this situation, the CMS cannot determine what the Display will play as this type of content is not sent directly from the CMS and is instead assessed Player side. The Layout should still be Published and Scheduled to Displays, which will need to have a reliable internet connection in order to successfully show this content.
+
+***I want to divide my Layout and have static content on one side and a carousel of content fill the other side, how do I achieve that?***
+
+Add and position a Playlist to the side you want to show a rotation of items and resize to fit the area as needed.
+
+***How do I make design changes to an existing Layout?***
+
+Use the row menu for the Layout you need to make changes to and select Design to open the Layout Editor. If the Layout has been Published you will need to first Checkout the Layout which will create a draft copy of the Layout so as to not disrupt any current schedules the Layout is in.
+
+
+

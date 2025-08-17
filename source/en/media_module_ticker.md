@@ -16,15 +16,15 @@ The Ticker Widget primarily consists of a data source location which feeds into 
 
 ## Ticker Elements
 
-[Elements](layouts_editor#content-data-widgets-and-elements) are available for selection when adding an RSS Ticker Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Ticker Widget to use and where they can be placed. 
+Elements are available for selection when adding an RSS Ticker Widget to a [Layout](layouts_editor.html) to give Users more control over what components of the Ticker Widget to use and where they can be placed. 
 
 ![Ticker Elements](img/v4_media_module_ticker_elements.png)
 
-Each Element has a set of configuration options in the Properties Panel. A URL must be provided to be used as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+Each Element has a set of configuration options in the Properties Panel. A URL must be provided to be used as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a Data Slot to use for each of the added Elements. Data Elements can be further complimented by adding Global Elements to add shapes and text which can all be put into an Element Group for easier configuration and positioning.
 
 ## DataSet Static Templates
 
-[Static Templates](layouts_editor.html#content-static-templates) define how returned items should be laid out and styled and are a simple way to show items using pre-styled templates.
+Static Templates define how returned items should be laid out and styled and are a simple way to show items using pre-styled templates.
 
 ![Ticker Templates](img/v4_media_module_ticker_templates.png)
 

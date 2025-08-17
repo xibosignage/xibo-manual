@@ -13,7 +13,7 @@ persona: "content creator, super administrator, user"
 
 Playlists are used to show a sequence of media items (such as an image slideshow). There are two ways to create a Playlist:
 
-- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
+- Add Playlists directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
 - Create [Playlists](media_playlists.html#content-creating-a-playlist) independently to a Layout. Global Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
 
 ## Add Playlists
@@ -57,7 +57,7 @@ You have a Synchronised Event with 3 Displays and 3 different Layouts. Each Layo
 You could also set two different Playlists to sync differently which you could set to `sync_1` and `sync-2` for example.
 {/tip}
 
-- Optionally set [Transitions](tour_transitions.html#content-playlist-transitions) for items on a Playlist from the Properties Panel.
+- Optionally set **Transitions** for items on a Playlist from the Properties Panel.
 
 {tip}
 When default Transitions have been applied, the properties panel will be blank. Only manually entered Transitions will show on forms.
@@ -136,6 +136,4 @@ Using the **Random Widget each cycle** option will play a Widget from the timeli
 
 {tip}
 Did you know [Playlists](media_playlists.html) created and managed independently to Layouts do not require further user access rights to Layouts or the Layout Editor to add and manage content! 
-
-These global Playlists can also be directly [Scheduled](scheduling_events.html#content-media-scheduling) without the need to first create and add to a Layout!
 {/tip}

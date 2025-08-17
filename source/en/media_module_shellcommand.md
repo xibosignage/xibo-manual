@@ -40,7 +40,7 @@ On ticking the **Set a duration** box and entering a time in seconds on the **Ad
 
 In most cases, commands that are run from a Layout / Playlist tend to be background commands which trigger something to happen like screen on/off or restart the device etc. In such cases, the Set a duration box can be left unticked.
 
-For commands that are executed on a specific date/time, such as  ‘reboots’, 'turn on/off' on opening/closing times for example, then please see the [Add Event](scheduling_events.html#content-add-event) in the Scheduling section and [Send Command](displays.html#content-send-command) in the Displays section.
+For commands that are executed on a specific date/time, such as  ‘reboots’, 'turn on/off' on opening/closing times for example, then please see the [Add Event](scheduling_events) in the Scheduling section and [Send Command](displays.html#content-send-command) in the Displays section.
 {/tip}
 
 #### Next...

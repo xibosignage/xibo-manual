@@ -23,12 +23,6 @@ Use the **Add Display Group** button to create a new Display Group and complete 
 
 ![Add Display Group](img/v4_displays_groups_add.png)
 
-Display Groups can be saved to [Folders](/manual/en/tour_folders.html) to easily control User/User User Group levels of interaction for Display Groups as well as provide an additional way to organise.
-
-{tip}
-Display Groups that are saved in Folders will inherit the View, Edit, Delete [Share](users_features_and_sharing.html#content-share) options that been applied to the destination Folder for the User/User Group!
-{/tip}
-
 Displays need to be assigned to the Display Group in one of two ways, by manually adding or it can be controlled with filter criteria as a Dynamic Group.
 
 ### Dynamic Group Membership
@@ -95,7 +89,7 @@ Each Display Group has a row menu containing a number of actions/shortcuts.
 
 - Click on **Members** to manage the membership of Display Groups which have had Displays manually assigned.
 - Use **Edit** to view the criteria used for dynamic memberships and to make changes if required.
-- Directly [Assign Library files and Layouts](displays.html#content-assign-files--layouts) to a Display Group so that they are always available in the local library of the Player.
+- Directly Assign Library files and Layouts to a Display Group so that they are always available in the local library of the Player.
 
 {tip}
 Use the **With Selected** option at the bottom of the grid to easily perform bulk actions for multiple Display Groups!

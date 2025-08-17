@@ -14,7 +14,7 @@ Sync Groups contain the Displays that will show synchronised content. Content ca
 {feat}Sync Groups|v4{/feat}
 
 {tip}
-Sync [Playlists](layouts_editor_playlists.html) on different Layouts using the **Content Synchronisation Key**.
+Sync Playlists on different Layouts using the **Content Synchronisation Key**.
 {/tip}
 
 [Displays](displays.html) first need to be assigned to a **Sync Group**:
@@ -24,7 +24,7 @@ Sync [Playlists](layouts_editor_playlists.html) on different Layouts using the *
 
 ![Add Sync Group](img/v4_displays_add_sync_groups.png)
 
-Sync Groups can be saved to [Folders](tour_folders.html) to easily control User/User Group levels of interaction for Displays as well as provide an additional way to organise.
+Sync Groups can be saved to Folders to easily control User/User Group levels of interaction for Displays as well as provide an additional way to organise.
 
 {tip}
 All Displays in a Sync Group need to communicate using their LAN IP address over TCP on the publisher port specified. This is defaulted to 9590 but can be changed if that port is reserved.

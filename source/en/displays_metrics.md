@@ -34,7 +34,7 @@ The CMS records the **bandwidth** used by each Display when connecting to XMDS f
 {tip}
 Filtering to just one Display helps to better understand where bandwidth has been used.
 
-Did you know...you can set a bandwidth limit per [Display](displays.html)!
+Did you know...you can set a bandwidth limit per Display!
 {/tip}
 
 Use the **All Reports** button to return to the Reporting dashboard or use the **Reports** drop down menu to select another 'Display' report to view.

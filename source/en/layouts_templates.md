@@ -21,7 +21,7 @@ Use Templates to speed up the design process and ensure a corporate standard is 
 - Speed up the entire Layout design process for all Users.
 - Apply a standardised look to all Layouts.
 
-Create new [Templates](layouts_templates.html#content-create-template) or save your existing [Layout](layouts_templates.html#content-save-layout-as-template) designs to use as Templates for future Layouts.
+Create new Templates or save your existing Layout designs to use as Templates for future Layouts.
 
 {nonwhite}
 Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates from the Toolbox.
@@ -40,22 +40,16 @@ Templates are created by selecting **Templates** under the **Design** section of
 
 ![Add Template Form](img/v4_layouts_add_template_form.png)
 
-[Folders](tour_folders.html) are used to organise, search and easily [Share](users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Templates saved to a Folder will inherit the access options applied to that Folder.
+- Give your Template a **Name** for easy identification in the CMS.
 
-{tip}
-If Users should also have access to the content of the Template (image media files for example), ensure that these are also saved to the same Folder!
-{/tip}
-
-- Give your Template a **Name** for easy identification in the CMS and include optional [Tags](tour_tags.html).
-
-- Select the [Resolution.](layouts#content-resolutions) 
+- Select the Resolution.
 
 On **Saving**, the [Layout Editor](layouts_editor.html) will automatically open with one full size **Zone**.
 
 Zones are used to define areas on a Layout which content can be added to.
 
 {tip}
-If you don't want to include any Zones and add content directly to the Template, remove the Zone from the canvas by right clicking and selecting **Delete**. Add content in the same way as creating a [Layout](layouts.html).
+If you don't want to include any Zones and add content directly to the Template, remove the Zone from the canvas by right clicking and selecting **Delete**. Add content in the same way as creating a Layout.
 {/tip}
 
 ### Adding Zones
@@ -87,19 +81,9 @@ Set to **Loop** only if the Zone contains a Widget that needs to update periodic
 
 ### Layering
 
-From the Properties Panel, select the Positioning tab to set [Layering](layouts_editor.html#content-layering) for overlapping Zones/ added content.
+From the Properties Panel, select the Positioning tab to set Layering for overlapping Zones/ added content.
 
-{tip}
-Right click to show a [Context Menu](layouts_editor.html#content-context-menu) and easily move items backwards and forwards.
-
-[Sharing](users_features_and_sharing.html#content-share) options are particularly useful if you want a User to only have access to a section of the Layout to manage.
-{/tip}
-
-Add both [content](layouts_editor.html#content-toolbox) from the Toolbox and Zones to build your Template design. 
-
-{tip}
-Adding multiple media items to one zone will automatically create a [Playlist](layouts_editor_playlists.html)!
-{/tip}
+Add both content from the Toolbox and Zones to build your Template design. 
 
 Once your Template is complete, use the menu at the top of the editor to **Publish**:
 
@@ -118,7 +102,7 @@ Published Layouts can be saved as a **Template** from two locations:
 
 ![Save Template Editor](img/v4_layouts_templates_save_as_template.png)
 
-- From the [Layouts](layouts.html#content-layout-grid) grid:
+- From the Layouts grid:
   - Use the row menu for a **Published** Layout and **select Save Template**.
 
 
@@ -164,7 +148,7 @@ Discard all changes made to a draft and revert back to the previous Published ve
 
 #### Share
 
-Set [Share](users_features_and_sharing.html#content-share) options for User/User Group access to individual Templates.
+Set Share options for User/User Group access to individual Templates.
 
 #### Export 
 
@@ -175,10 +159,6 @@ When exporting a Template, all assigned **Layout**, **Playlist** and **Media Tag
 
 Use the **With Selected** option at the bottom of the Templates grid to perform bulk actions for multiple Templates! 
 {/tip}
-
-#### Next...
-
-[Overlay Layouts](layouts_overlay.html)
 
 
 

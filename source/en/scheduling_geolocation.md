@@ -15,13 +15,12 @@ Scheduled Events can be configured to be location aware with locations displayed
 
 ## Define Location
 
-- From the Schedule [Event](scheduling_events.html) form, click on the **Geo Location** tab.
+- From the Schedule Event form, click on the **Geo Location** tab.
 
 - Tick in the **Geo Schedule** box to enable and define the location.
 
-
 {tip}
-On opening, the map will default to what is entered for DEFAULT_LAT and DEFAULT_LONG in **CMS Settings**, under the [Displays](tour_cms_settings.html#content-displays) tab.
+On opening, the map will default to what is entered for DEFAULT_LAT and DEFAULT_LONG in **CMS Settings**, under the Displays tab.
 {/tip}
 
 - Use the buttons in the top left of the map to Zoom in and out. 
@@ -46,7 +45,7 @@ On opening, the map will default to what is entered for DEFAULT_LAT and DEFAULT_
 - Click the grey **Save** button to save the removal of the layer.
 
 {tip}
-Edit this schedule by clicking the icon in the [Calendar](scheduling_management.html#content-calendar-view) or by using the row menu in the [Grid](scheduling_management.html#content-grid-view) view!
+Edit this schedule by clicking the icon in the Calendar or by using the row menu in the Grid view!
 {/tip}
 
 

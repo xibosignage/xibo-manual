@@ -32,11 +32,11 @@ The DataSet Widget primarily consists of a DataSet source which feeds into confi
 You will see a message in the properties panel should you try to use an Element that has no matching field type in your DataSet!
 {/tip}
 
-Each Element has a set of configuration options in the Properties Panel. A DataSet must be selected to use as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding [Global Elements](layouts_editor.html#content-global-elements) to add shapes and text which can all be put into an [Element Group](layouts_editor.html#content-grouping-elements) for easier configuration and positioning.
+Each Element has a set of configuration options in the Properties Panel. A DataSet must be selected to use as the data source from the **Configure** tab for each Element used on the Layout. Control how items should be cycled by specifying a [Data Slot](layouts_editor.html#content-data-slots) to use for each of the added Elements. Data Elements can be further complimented by adding Global Elements to add shapes and text which can all be put into an Element Group for easier configuration and positioning.
 
 ## DataSet Static Templates
 
-[Static Templates](layouts_editor.html#content-static-templates) define how returned data should be laid out and styled and are a simple way to show your data using pre-styled templates.
+Static Templates define how returned data should be laid out and styled and are a simple way to show your data using pre-styled templates.
 
 ![DataSet Templates](img/v4_media_module_dataset_templates.png)
 
