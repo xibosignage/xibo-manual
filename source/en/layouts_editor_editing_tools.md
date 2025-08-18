@@ -69,9 +69,9 @@ From here select to **Clear Canvas** to start your design over or **New** to cre
 
 ## Further Reading
 
-[Creating Layouts using the Layout Editor](/layouts_editor.html)
+[Creating Layouts using the Layout Editor](layouts_editor.html)
 
-[Using Global Elements on Layouts](/layouts_editor_global_elements.html)
+[Using Global Elements on Layouts](layouts_editor_global_elements.html)
 
 ## FAQ's
 

@@ -48,7 +48,7 @@ Each Display is assigned a default profile which will automatically apply its se
 
 ## Further Reading
 
-[What is a Display?](/displays.html)
+[What is a Display?](displays.html)
 
 ## FAQ's
 

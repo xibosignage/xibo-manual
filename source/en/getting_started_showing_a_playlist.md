@@ -73,7 +73,7 @@ The CMS will now update a Schedule change and the Playlist will be shown on Disp
 
 [Show a full screen Video on Displays](getting_started_showing_a_video.html)
 
-[Use the Layout Editor to create your own content](layout_editor_overview.html) 
+[Use the Layout Editor to create your own content](layouts_editor.html) 
 
 ## FAQ's
 

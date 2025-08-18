@@ -1,4 +1,5 @@
 ---
+toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 1
 aliases:
@@ -84,9 +85,9 @@ Once Published or after setting a Publish Date, the Layout can now be Scheduled 
 
 ## Further Reading
 
-[Using Global Elements on Layouts](/layouts_editor_global_elements.html)
+[Using Global Elements on Layouts](layouts_editor_global_elements.html)
 
-[Using the Library Search Functions](/layouts_editor_library_search.html)
+[Using the Library Search Functions](layouts_editor_library_search.html)
 
 ## FAQ's
 

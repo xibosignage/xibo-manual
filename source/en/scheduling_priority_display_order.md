@@ -43,9 +43,9 @@ There is an additional setting when scheduling Events to limit the number of tim
 
 ## Further Reading
 
-[Setting a Play List order for a Campaign](/scheduling_layout_list_campaign.html)
+[Setting a Play List order for a Campaign](scheduling_layout_list_campaign.html)
 
-[Showing a sequence of content in a Playlist](/getting_started_showing_a_playlist.html)
+[Showing a sequence of content in a Playlist](getting_started_showing_a_playlist.html)
 
 ## FAQs
 

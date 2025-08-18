@@ -50,9 +50,9 @@ Clicking in the top right of a thumbnail will play a preview in a separate windo
 
 ## Further Reading
 
-[Navigating the Layout Editor](/layouts_editor.html)
+[Navigating the Layout Editor](layouts_editor.html)
 
-[Showing Playlists on Displays](/getting_started_showing_a_playlist.html)
+[Showing Playlists on Displays](getting_started_showing_a_playlist.html)
 
 [Displaying complete HTML Packages](media_module_htmlpackage.html)
 

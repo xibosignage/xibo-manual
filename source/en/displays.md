@@ -45,7 +45,7 @@ Manage **Displays** from the CMS to and use the range of device management tools
 
 ## Further Reading
 
-[Display Configuration](/displays_configuration.html)
+[Display Configuration](displays_configuration.html)
 
 ## FAQ's
 

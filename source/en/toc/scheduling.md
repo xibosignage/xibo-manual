@@ -8,7 +8,7 @@
 
 - [Layout List Campaign](scheduling_layout_list)
 
-- [Ad Campaigns](scheduling_ad_campaign)
+- [Ad Campaigns](scheduling_ad_campaigns.html)
 
 - [Schedule Overlays](scheduling_overlays.html)
 
