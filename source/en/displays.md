@@ -6,7 +6,7 @@ aliases:
   - "displays_fileassociations"
   - "what_is_a_display"      
 excerpt: "Displays are an essential part of digital signage which communicate between the CMS and Media Player App"
-keywords: keywords: "player app, media player, connecting displays, authorising displays, transfer display, assign files, assign layouts"
+keywords: "player app, media player, connecting displays, authorising displays, transfer display, assign files, assign layouts"
 ---
 
 # What is a Display?
