@@ -62,7 +62,7 @@ The CMS will now update a Schedule change and your Video will be shown on Displa
 
 ## Further Reading 
 
-[Use Playlists to show a carousal/slideshow of images](/getting_started_showing_a_playlist.html)
+[Use Playlists to show a carousal/slideshow of images](getting_started_showing_a_playlist.html)
 
 [Use the Layout Editor to create your own content](layouts_editor.html) 
 

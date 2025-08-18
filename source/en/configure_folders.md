@@ -80,7 +80,7 @@ As only empty folders can be removed, move, merge or delete contents before remo
 
 ## Further Reading
 
-[Managing Tags](/configure_tags.html)
+[Managing Tags](configure_tags.html)
 
 ## FAQ's
 

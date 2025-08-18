@@ -68,9 +68,9 @@ Xibo Templates are available from inside the Layout Editor:
 
 ## Further Reading
 
-[Creating Layouts using the Layout Editor](/layouts_editor.htmll)
+[Creating Layouts using the Layout Editor](layouts_editor.htmll)
 
-[Editing Tools](/layouts_editor_editing_tools.html)
+[Editing Tools](layouts_editor_editing_tools.html)
 
 ## FAQ's
 

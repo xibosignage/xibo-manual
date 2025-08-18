@@ -47,4 +47,4 @@ Check to make sure that a **Sending Email address** has been set in the CMS Sett
 
 ## Further Reading
 
-[Using Priority and Display Order in Schedules](/scheduling_priority_display_order.html)
+[Using Priority and Display Order in Schedules](scheduling_priority_display_order.html)
