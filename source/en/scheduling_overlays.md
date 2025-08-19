@@ -2,6 +2,7 @@
 toc: "scheduling"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "layouts_overlay"
 excerpt: "Create an Overlay Layout that once scheduled will sit on top of other Layouts in the schedule"
 keywords: "show on top of existing content"
 persona: "content creator, super administrator, user"

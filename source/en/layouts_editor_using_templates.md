@@ -10,6 +10,13 @@ keywords: "save template, xibo exchange connector"
 
 Use **Templates** to speed up the design process so that Users can customise content rather than having to start from scratch building Layout designs. Streamline content creation with pre-designed Layouts to allow Users to concentrate on the core content whilst maintaining company/industry visual set standards and guidelines.
 
+{nonwhite}
+
+## How-to Video
+
+{video}xo7aLuf-VGk|how_to_using_templates.png{/video}
+{/nonwhite}
+
 ## Published Layouts as Templates
 
 Layouts created in the Layout Editor can be saved for future selection as a Template after Publishing:

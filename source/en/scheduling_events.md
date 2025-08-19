@@ -85,7 +85,7 @@ The Lead Display will issue instructions to change the sequence based on its ass
 - Select **Mirror** to automatically set the same item on each Display within the group automatically.
 
 {tip}
-Sync [Playlists](media_module_playlist.html) on different Layouts by using a **Content Synchronisation Key**!
+Sync [Playlists](media_module_playlists.html) on different Layouts by using a **Content Synchronisation Key**!
 {/tip}
 
 ### Dayparts
