@@ -8,13 +8,13 @@
 
 - [Sort and Filter Grids](getting_started_sorting_and_filtering.html)
 
-- [CMS Administrator Settings](tour_cms_settings.html)
+  
 
-- [Tags](tour_tags.html)
+  
 
-- [Folders](tour_folders.html)
+  
 
-- [Transitions](tour_transitions.html)
+  
 
   
 
