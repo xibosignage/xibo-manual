@@ -10,7 +10,7 @@ persona: "content manager"
 
  # Menu Boards
 
-The Menu Boards interface provides a simple way for users to create and manage 'categories' and 'product' information independently to Layouts. Once created, Menu Board data can be added anywhere on a Layout using [Elements](layouts_editor#content-data-widgets-and-elements) from the  [Menu Board: Category](media_module_menuboards_category.html) and [Menu Board: Products](media_module_menuboards_products.html) Widgets available in the [Layout Editor.](layouts_editor.html)
+The Menu Boards interface provides a simple way for users to create and manage 'categories' and 'product' information independently to Layouts. Once created, Menu Board data can be added anywhere on a Layout using Elements from the  [Menu Board: Category](media_module_menuboards_category.html) and [Menu Board: Products](media_module_menuboards_products.html) Widgets available in the [Layout Editor.](layouts_editor.html)
 
 {version}
 **Note:** Menu Board Widgets are not available to add to a Playlist!
@@ -35,8 +35,6 @@ Menu Boards are created and managed by selecting **Menu Boards** under the **Lib
 - Select the **Add Menu Board** button and complete the form fields to create a new record:
 
 ![Menu Board Add](img/v4_media_menuboards_add.png)
-
-[Folders](tour_folders.html) are used to organise, search and easily [Share](https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share) User objects with other Users/User Groups. DataSets saved to a Folder will inherit the access options applied to that Folder.
 
 - Give your Menu Board a **Name** for easy identification in the CMS. Provide an optional internal **Description** and enter a **Code** if referencing this Menu Board via the API.
 
@@ -114,7 +112,7 @@ Take a look at our guide for an example of how to utilise Menu Boards for your D
 
 #### Next...
 
-[Add Layout](layouts.html#content-adding-layouts)
+[Add Layout](layouts_editor.html)
 
 
 

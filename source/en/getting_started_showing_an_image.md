@@ -1,6 +1,8 @@
 ---
+toc: "getting_started"
 maxHeadingLevel: 3
 minHeadingLevel: 1
+alias: "showing_an_image_on_displays"
 excerpt: "Add Image files to your Library and schedule to your Displays"
 keywords: "full screen images, schedule row menu, duration in loop, media library schedule, upload media, cms library"
 persona: "advertising and promotion"
@@ -66,9 +68,9 @@ The CMS will now update a Schedule change and the Image will be shown on Display
 
 ## Further Reading 
 
-[Use Playlists to show a carousal/slideshow of images](showing_a_playlist_on_displays.html)
+[Use Playlists to show a carousal/slideshow of images](getting_started_showing_a_playlist.html)
 
-[Use the Layout Editor to create your own content](layout_editor_overview.html) 
+[Use the Layout Editor to create your own content](layouts_editor.html) 
 
 ## FAQ's
 

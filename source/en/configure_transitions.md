@@ -1,7 +1,8 @@
 ---
-toc: "tour"
+toc: "configure"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "tour_transitions"
 excerpt: "Transition Management options for Users"
 keywords: "transition defaults, fade in, fad out, fly, playlist transitions, exit transitions"
 persona: "content manager, administrator"

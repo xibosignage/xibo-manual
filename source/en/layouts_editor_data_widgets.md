@@ -76,7 +76,7 @@ The Advanced tab is used to set Naming, provide specific durations, set the coll
 Use the **Positioning** tab (grid icon) to set precise positioning and Layering.
 
 {tip}
-Elements have their own Canvas [Layer](layouts_editor.html#content-layering), which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
+Elements have their own Canvas Layer, which can be used to determine where they appear in relation to other natively rendered Elements such as Playlists and Videos!
 {/tip}
 
 ## Data Slots

@@ -1,6 +1,8 @@
 ---
+toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 1
+alias: "configuration_of_displays"
 excerpt: "Configuring your Display Network"
 keywords: "default layout, latitude, longitude, timezone, map view, display grid, display management, adding displays, authorising displays"
 ---
@@ -46,11 +48,15 @@ Each Display is assigned a default profile which will automatically apply its se
 
 ## Further Reading
 
-[What is a Display?](what_is_a_display.html)
+[What is a Display?](displays.html)
 
 ## FAQ's
 
 ***What happens if I have no content scheduled, and my default layout has an issue with downloading it's content?***
 
 The splash screen will be shown until the issue with the default layout is resolved or content is scheduled to show on the Display.
+
+***What does the Cloud Icon in the Status column of the Display Grid indicate?***
+
+The Cloud Icon shows that the Player has not logged in and content is waiting to be downloaded. A Cross indicates that the Player is yet to complete the download and a Tick shows the Player is up to date.
 

@@ -34,7 +34,7 @@ Dayparts are created and administered from **Dayparting** on the main CMS menu.
 Include **Exceptions** to define different start and end timings for selected days!
 {/tip}
 
-On Saving, the Daypart will be available for selection in the **Dayparting** drop down menu of the schedule form when adding an [Event](scheduling_events.html).
+On Saving, the Daypart will be available for selection in the **Dayparting** drop down menu of the schedule form when adding an Event.
 
 {tip}
 The below Daypart form shows an example Breakfast Daypart:
@@ -53,9 +53,9 @@ On Scheduling, the **Breakfast** Daypart will appear in the drop-down for select
 Make edits to existing Dayparts using the row menu.
 
 {tip}
-Add Sharing options for Dayparts to [Share](users_features_and_sharing.html#content-share) with other Users/User Groups!
+Add Sharing options for Dayparts to Share with other Users/User Groups!
 
 Updating the start/end times or exceptions for a Daypart will cause existing future events to be updated with the newly defined times.
 
-Existing [recurring Schedules](scheduling_events.html#content-repeats), set to recur beyond the current time, will have new Schedules created to reflect the updated information.
+Existing recurring Schedules, set to recur beyond the current time, will have new Schedules created to reflect the updated information.
 {/tip}

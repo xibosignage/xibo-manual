@@ -1,20 +1,12 @@
 [
   {
-    "title": "Tour",
+    "title": "Getting Started",
     "href": "index.html",
-    "containsToc": ["tour"]
-  },{
-    "title": "Users",
-    "href": "users_administration.html",
-    "containsToc": ["users"]
-  },{
-    "title": "Displays",
-    "href": "displays.html",
-    "containsToc": ["displays"]
+    "containsToc": ["getting_started"]
   },{
     "title": "Layouts",
     "href": "layouts.html",
-    "containsToc": ["layouts"]
+    "containsToc": ["layouts"]  
   },{
     "title": "Media",
     "href": "media_library.html",
@@ -22,11 +14,23 @@
   },{
     "title": "Modules",
     "href": "media_modules.html",
-    "containsToc": ["widgets"]
+    "containsToc": ["widgets"] 
   },{
     "title": "Scheduling",
     "href": "scheduling_events.html",
     "containsToc": ["scheduling"]
+  },{
+    "title": "Displays",
+    "href": "displays.html",
+    "containsToc": ["displays"]  
+ },{
+    "title": "Users",
+    "href": "users_administration.html",
+    "containsToc": ["users"]
+ },{
+    "title": "Configuration and Organisation",
+    "href": "configure_cms_settings.html",
+    "containsToc": ["configure"] 
   },{
     "title": "Troubleshooting",
     "href": "troubleshooting.html",

@@ -1,6 +1,8 @@
 ---
+toc: "getting_started"
 maxHeadingLevel: 3
 minHeadingLevel: 1
+alias: "showing_a_playlist_on_displays"
 excerpt: "Create a Playlist of content to show in a rotating sequence and schedule to your Displays"
 keywords: "full screen playlists, manually add playlist content, schedule row menu, playlist grid schedule"
 persona: "advertising and promotion"
@@ -67,11 +69,11 @@ The CMS will now update a Schedule change and the Playlist will be shown on Disp
 
 ## Further Reading 
 
-[Show a full screen Image on Displays](showing_an_image_on_displays.html)
+[Show a full screen Image on Displays](getting_started_showing_an_image.html)
 
-[Show a full screen Video on Displays](showing_a_video_on_displays)
+[Show a full screen Video on Displays](getting_started_showing_a_video.html)
 
-[Use the Layout Editor to create your own content](layout_editor_overview.html) 
+[Use the Layout Editor to create your own content](layouts_editor.html) 
 
 ## FAQ's
 

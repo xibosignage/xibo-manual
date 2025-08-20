@@ -2,81 +2,78 @@
 toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 1
-excerpt: "Use Library Searches to easily add media to Layouts"
-keywords: "library search, remote library, remote library search, pixabay, upload files"
-persona: "content creator, super administrator, user"
+alias: "using_library_searches"
+excerpt: "Library Searches allow users to easily add file based media to Layouts and Playlists"
+keywords: "audio files, image files, video files, pdf, powerpoint, html, other media, expander, pixabay"
 ---
 
-# Library Search
+# Using Library Searches
 
-Add media which already exists in the [CMS Library](media_library.html) to Layouts/Playlists using the Library Search function.
+[[PRODUCTNAME]] supports a variety of file based Media types. Along with Image, Video and Audio files, show PDF's, PowerPoints as well as complete HTML Packages on your Displays. 
 
-{nonwhite}{video}yOd7QVuF16g{/video}{/nonwhite}
+File based Media can be first uploaded to the **CMS Library** ahead of time, or added directly using the file uploader when creating **Layouts** and **Playlists**.
 
-Library media consists of the following:
+{nonwhite} 
 
-- [Images](media_module_image.html)
-- [Audio](media_module_audio.html)
-- [Video](media_module_video.html)
-- Other media files
+## How-to Video
 
-{tip}
-**Other media** search includes [Flash](media_module_flash.html), [HTML Package](media_module_htmlpackage), [PDF](media_module_pdf.html) and [PowerPoint](media_module_powerpoint.html#content-3-upload-a-prepared-ppt-file-windows-players-only) files available from the **Type** drop down menu.
-{/tip}
+{video}pymUvJDp-lE|how_to_use_library_searches.png{/video}
+{/nonwhite}
 
-![Library Search](img/v4_layouts_library_search.png)
+Media already saved to the Library, can be easily selected by using a **Library Search** function.
+
+Available from the **Toolbox**, each **Media** file type can be viewed and added from here.
+
+When using the **Other Media** search, use the **Type** drop down to select from the available options.
+
+- Use filters to limit returned results for searches and make it easier to find the content to use.
 
 
+New Media files can be directly uploaded and added by using the file uploader for a selected Media type.
 
-{tip}
-Use the available filters to narrow down searches!
-{/tip}
+- Drag and drop or click to add the uploader.
 
-- Drag or select to highlight and click on the Layout to add.
-- Position and resize.
-- Configuration options will be shown in the Properties Panel.
 
-New files of the selected type, can also be added from here:
-
-![Upload file to Layouts](img/v4_layouts_upload_file.png)
-
-- Click on the Library search for the media type you wish to add. If you want to add a file using the Other media search, ensure you have selected the file type from the drop down.
-- Drag or click **Upload** to the Layout.
-- Add files, optionally select a Folder and **upload**.
-- On clicking **Done**, the file will be added ready for positioning/resizing and configuration.
+Once uploaded, the file will be added to the **CMS Library** and will be shown for future selection in relevant Library Searches.
 
 {tip}
-Files that are uploaded directly to Layouts/Playlists will be automatically added to your CMS Library!
+Try using the expander function by clicking the icon at the bottom of the **Toolbox** for easier media assignment!
 {/tip}
 
-## Remote Search
+## Pixabay 
 
-Integration from Pixabay gives users additional resources to Image and Video files which can be added to Layouts without having to leave the Layout Editor to source.
+Pixabay integration gives Users easy access to additional Image and Video resources from within the CMS.
 
-{cloud}
-Pixabay integration is enabled by default for new Xibo in the Cloud customers.
+Any Images/videos used from Pixabay will automatically be added to your CMS Library and made available for future use from the Image/Video Library Search functions.
 
-If you are upgrading from an earlier version you will need to enable by navigating to the **Administration** section of the CMS and click **Applications**. Scroll down the page to the **Connectors** section. Click to **Configure** and tick to enable, **Save** changes.
+Clicking in the top right of a thumbnail will play a preview in a separate window. This window can also be enlarged using the arrow in the top left and can be added to the canvas from here by clicking the `+` button at the top.
 
-{/cloud}
+## Further Reading
+
+[Navigating the Layout Editor](layouts_editor.html)
+
+[Showing Playlists on Displays](getting_started_showing_a_playlist.html)
+
+[Displaying complete HTML Packages](media_module_htmlpackage.html)
+
+[Displaying PDF Files](media_module_pdf.html)
+
+[Displaying PowerPoint Presentations](media_module_powerpoint.html)
+
+## FAQ'S
+
+***I don't see Pixabay in the Toolbox?***
+
+Pixabay is enabled from the **Administration** section of the CMS by clicking **Applications**. Scroll down to the **Connectors** section and select **Configure** to enable.
 
 {noncloud}
-
-Pixabay can be enabled from the **Administration** section of the CMS menu by clicking on **Applications** and scrolling down the page to the **Connectors** section. Click Configure and enter your API Key after signing up for a Pixabay account. [PixabayAPI Documentation](https://pixabay.com/api/docs/)
+After clicking **Configure**, you will need to enter your API Key from signing up for a Pixabay account: [PixabayAPI Documentation](https://pixabay.com/api/docs/) to enable.
 {/noncloud}
 
-- Click on **Pixabay** and select which **Type** of file to search.
-- Enter search criteria in the Name field to return results.
-- Drag or click to add, position/resize and configure.
+***I don't see all 4 levels when I click the expander?***
 
-{tip}
-Clicking the arrow in the top right of a thumbnail will play a preview in a separate window. This window can also be enlarged using the arrow in the top left and can be added to the Layout from here by clicking the `+` button at the top.
-{/tip}
+It will only expand to a sensible level dependent on the screen size you are working on. When using on screens with less than 1600px it will limit the total number of available levels to view. m
 
-![Pixabay Search](img/v4_layouts_remote_search.png)
+***How do I show a PowerPoint on my non-Windows Displays?***
 
-
-
-{tip}
-Images/videos that are selected from Pixabay to be used will automatically be added to your Library and available for future use from the Image/Video Library Search functions!
-{/tip}
+Use the option on the file menu inside the PowerPoint application to convert to Video and export to upload to the CMS as a Video file. 

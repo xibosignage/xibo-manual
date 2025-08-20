@@ -1,6 +1,8 @@
 ---
+toc: "getting_started"
 maxHeadingLevel: 3
 minHeadingLevel: 1
+alias: "showing_a_video_on_displays"
 excerpt: "Add Video files to your Library and schedule to your Displays"
 keywords: "full screen videos, schedule row menu, duration in loop, media library schedule, upload video, cms library"
 persona: "advertising and promotion"
@@ -60,9 +62,9 @@ The CMS will now update a Schedule change and your Video will be shown on Displa
 
 ## Further Reading 
 
-[Use Playlists to show a carousal/slideshow of images](showing_a_playlist_on_displays.html)
+[Use Playlists to show a carousal/slideshow of images](getting_started_showing_a_playlist.html)
 
-[Use the Layout Editor to create your own content](layout_editor_overview.html) 
+[Use the Layout Editor to create your own content](layouts_editor.html) 
 
 ## FAQ's
 

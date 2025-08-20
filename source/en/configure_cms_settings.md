@@ -1,7 +1,8 @@
 ---
-toc: "tour"
+toc: "configure"
 maxHeadingLevel: 3
 minHeadingLevel: 2
+alias: "tour_cms_settings"
 excerpt: "Configurable options in the CMS Settings for Administrators"
 keywords: "resize images, transition defaults, automatically publish layout, proof of play default settings, tidy library, maintenance settings, network settings, regional settings, set timezone, set language, password policy, password reminder, two factor authentication, fonts, applications, global default layout"
 persona: "administrator"
@@ -31,7 +32,7 @@ From this tab view the **CMS Secret Key** which is used to authenticate Players 
 
 ## Defaults 
 
-Use this tab to apply defaults to all [Media](media_library.html) files and set default [Transitions](tour_transitions.html).
+Use this tab to apply defaults to all [Media](media_library.html) files and set default [Transitions](configure_transitions.html).
 
 You can also set Layouts to **automatically Publish** 30 minutes after the last recorded edit by enabling the checkbox for this setting.
 
@@ -176,9 +177,9 @@ Use the dropdown to change how Widget colour appears in Playlists for Users.
 - **Media Colouring** will use the colours from the **theme** for each Widget.
 - **Sharing Colouring** will show the Widget colour based on **User access** from **Sharing** options. (Green = editable)
 
-From here you can set if Users should have the ability to schedule to Displays when [Share](users_features_and_sharing.html#content-2-share) options are set to View for the User as well as being able to set whether Users should be able to see the names of Layouts in schedules that have not been shared with them.
+From here you can set if Users should have the ability to schedule to Displays when Share options are set to View for the User as well as being able to set whether Users should be able to see the names of Layouts in schedules that have not been shared with them.
 
-Tick to allow Users to save their content into the top level [Root Folder](tour_folders.html) or disable to force Users to select a Folder to save to.
+Tick to allow Users to save their content into the top level [Root Folder](configure_folders.html) or disable to force Users to select a Folder to save to.
 
 ## Regional
 
@@ -227,12 +228,12 @@ Ensure that a valid **Sending email address** has been entered on the **Network*
 The User will be shown a link which once clicked will send a **Password Reset Notification** to their email address as recorded on their User Profile.
 
 {tip}
-**Users** can also change their own passwords, once logged into the CMS, from their [User Profile](tour_user_access.html#content-edit-profile)
+**Users** can also change their own passwords, once logged into the CMS, from their **User Profile**.
 {/tip}
 
 ## Two Factor Authentication
 
-[Two Factor Authentication](tour_user_access.html#content-two-factor-authentication) can be set by a User for added security once logged in. 
+[Two Factor Authentication](index.html) can be set by a User for added security once logged in. 
 
 Once configured, a User would need to enter the code sent via email or as displayed in the Google Authenticator app to complete login to gain access to the CMS. 
 
@@ -242,7 +243,7 @@ Ensure that an Email address has been provided by the user to receive the genera
 
 Set a valid **Sending email address** has been entered on the **Network** tab and a name has been entered in the **Two Factor Issuer** field to make it clear on the Google Authenticator app and email when authenticated codes are generated for login to the CMS.
 
-[Reset Two Factor Authentication](users_administration.html#content-reset-two-factor-authentication) for Users from their User Profile.
+Reset Two Factor Authentication for Users from their User Profile.
 
 ## Applications
 
@@ -253,7 +254,7 @@ Applications are added and configured from **Applications** under the **Administ
 {tip}
 
 Before using an Application, each User must authorise the application to act on their behalf within the CMS.
-Users can view authorised Applications from the [My Applications](tour_user_access.html#content-my-applications) section of their **User Profile**.
+Users can view authorised Applications from the My Applications section of their **User Profile**.
 {/tip}
 
 At the current time the CMS does not provide individual Users with a method of revoking access to an application. Only an Administrator can remove an application completely.
@@ -290,19 +291,6 @@ If the new font does not show in the text editor after upload, try clearing the 
 
 Fonts with other OS/2 tags may produce an error on uploading and may not display correctly.
 {/version}
-
-#### Next...
-
-### Further Administration set up
-
-Please see the following pages for further **Administration** set up:
-
-- [User Administration](users_administration.html)
-- [User Groups](users_groups.html)
-- [Modules](media_modules.html)
-- [Transitions](tour_transitions.html)
-- [Tags](tour_tags.html)
-- [Folders](tour_folders.html#content-folder-management)
 
 
 

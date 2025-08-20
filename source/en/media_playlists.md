@@ -16,7 +16,7 @@ persona: "content creator, super administrator, user, schedule manager"
 Playlists are used to show a sequence of media items (such as an image slideshow). There are two ways to create a Playlist:
 
 - Create [Playlists](media_playlists) independently to a Layout. Global Playlists can be scheduled to Displays without the creation of a Layout. Playlists created outside of the Layout Editor are still shown for selection from the Add Playlist function from the Layout Editor.
-- [Add Playlists](layouts_editor_playlists.html#content-add-playlists) directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
+- Add Playlists directly to a Layout from the Layout Editor. Local Playlists can be converted to be saved for re-use as a global Playlist. Saved Playlists will be shown in the Layout Editor to add to Layouts.
 
 ## Feature Overview:
 
@@ -43,13 +43,9 @@ Playlists that are created independently to Layouts and do not require additiona
 
 ![Add Playlist](img/v4_media_playlists_add.png)
 
-[Folders](https://test.xibo.org.uk/manual/en/tour_folders.html) are used to organise, search and easily [Share](https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share) User objects with other Users/User Groups. Playlists saved to a Folder will inherit the access options applied to that Folder. 
 
-{tip}
-If Users should also have access to the content of the Playlist (image/video media files for example), ensure that these are also saved to the same Folder!
-{/tip}
 
-- Give your Playlist a **Name** for easy identification in the CMS and include optional [Tags.](tour_tags.html) 
+- Give your Playlist a **Name** for easy identification in the CMS.
 
 There are two options for adding [Media](media_library) content to Playlists:
 
@@ -109,7 +105,7 @@ Items can be added to a specific point in the list, drag or click to add content
 Use the Undo button at the bottom of the toolbar to revert a change.
 {/tip}
 
-An additional [Context Menu](layouts_editor.html#content-context-menu) of options can be accessed by right clicking on an item which includes setting [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates) and [Playlist Transitions](tour_transitions.html#content-playlist-transitions).
+An additional Context Menu of options can be accessed by right clicking on an item which includes setting [Widget Expiry Dates](media_playlists.html#content-widget-expiry-dates) and Playlist Transitions.
 
 {tip}
 When Transitions are applied to a Widget by default, the properties panel will be blank. Only manually entered Transitions will show on forms!
@@ -130,10 +126,10 @@ Items added to a Playlist have an additional option of setting Start and End tim
 
 {feat}Widget Expiry Dates|v4{/feat}
 
-- Right click on an item in a Playlist to **Edit Expiry Dates** or set when [uploading media](media_library.html#content-add-media-upload) directly to a Playlist.
+- Right click on an item in a Playlist to **Edit Expiry Dates** or set when uploading media directly to a Playlist.
 
 
-Uploading from a [Library Search](layouts_editor.html#content-library-search) will have an additional **Set Expiry Date** option:
+Uploading from a [Library Search](layouts_editor_using_library_search.html) will have an additional **Set Expiry Date** option:
 
 ![Expiry Dates](img/v4_media_playlists_upload_expiry.png)
 
@@ -193,7 +189,7 @@ Use the drop-down for **Playlist Ordering** to select how all Playlists should b
 Select from the **Remaining Widgets** options to handle any content that is left unordered at the end of a Playlist.
 
 {tip}
-Adding Playlists to a **New Playlist** on a Layout has an additional [Cycle Based Playback](layouts_editor_playlists.html#content-cycle-based-playback) option which includes a **Random Widget** feature.
+Adding Playlists to a **New Playlist** on a Layout has an additional Cycle Based Playback option which includes a **Random Widget** feature.
 Cycle based playback is not supported when adding Playlists to a global Playlist!
 {/tip}
 
