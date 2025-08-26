@@ -24,7 +24,7 @@ Use Templates to speed up the design process and ensure a corporate standard is 
 Create new Templates or save your existing Layout designs to use as Templates for future Layouts.
 
 {nonwhite}
-Select from one of our designed templates from the [Xibo Exchange.](layouts.html#content-xibo-exchange) by clicking the button below Templates from the Toolbox.
+Select from one of our designed templates from the [Xibo Exchange.](layouts_editor_using_templates.html#content-xibo-exchange) by clicking the button below Templates from the Toolbox.
 {/nonwhite}
 
 {version}
