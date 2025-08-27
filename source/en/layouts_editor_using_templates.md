@@ -75,7 +75,7 @@ Xibo Templates are available from inside the Layout Editor:
 
 ## Further Reading
 
-[Creating Layouts using the Layout Editor](layouts_editor.htmll)
+[Creating Layouts using the Layout Editor](layouts_editor.html)
 
 [Editing Tools](layouts_editor_editing_tools.html)
 
@@ -89,7 +89,7 @@ Layouts which have been saved as Templates are viewed and managed from the Templ
 
 ***I don't see the Xibo Exchange button from the Toolbox?***
 
-{/cloud}
+{cloud}
 These Templates are enabled by default for new Xibo Cloud Hosting customers. If you are upgrading from an earlier version you will need to enable the **Xibo Exchange Connector** found under the **Administrator** section of the main CMS menu.
 {/cloud}
 

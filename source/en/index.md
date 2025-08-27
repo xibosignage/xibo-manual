@@ -23,7 +23,7 @@ Welcome to the [[PRODUCTNAME]] User Manual. Whether you are a first time user or
 
 ## First Time User
 
-- Enter the web address (**URL)** of your CMS.
+- Enter the web address **(URL)** of your CMS.
 - Use the **Username** and **Password** provided to you.
 - Click **Login**.
 
