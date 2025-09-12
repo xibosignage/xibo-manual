@@ -9,6 +9,7 @@ aliases:
   - "tour_user_profile"
   - "tour_two_factor_authentication"
   - "tour_user_access"
+  - "users_notifications"
 keywords: "user login, user password, user profile, preferences, reshow welcome, 2fa"
 ---
 
@@ -49,6 +50,12 @@ Once enabled and saved, you will need to generate **Recovery Codes** to be used 
 
 If you need to view the generated codes at anytime, click on **Show**.
 
+### Notifications
+
+User created messages and system events will be shown as **Notifications**, accessed from clicking the alarm bell icon located next to the **User Profile**. 
+
+To add a Notification, click on **Notification Centre** and select **Add Notification** and complete the form fields.
+
 ## Showing content on Displays
 
 - If you have image and video content created outside of the [[PRODUCTNAME]] CMS, follow the guidance in the **Getting Started** section to start uploading and scheduling content to your Displays.
@@ -70,6 +77,14 @@ If a User no longer has access to their email address/generated codes, an Admini
 ***What are My Applications from the User Profile?***
 
 These are 3rd party applications that a User has authorised to act on their behalf within the CMS. An Administrator can add and configure Applications from the Administration section of the main CMS.
+
+***I cannot see the Notification Drawer, to view or create?***
+
+Notifications are enabled by an Administrator for a User using Features, tick to enable options for the appropriate access. Please ensure that a Sending Email address has been included on the Network tab from the Settings page, under the Administration section of the main CMS menu.
+
+***What does the interrupt option do for Notifications?***
+
+Using this option will automatically redirect Users to a page to view the notification in full. Please ensure that the Enable Email Alerts option has been enabled from the Maintenance tab from the Settings page, under the Administration section of the main CMS menu.
 
 ## Further Reading
 

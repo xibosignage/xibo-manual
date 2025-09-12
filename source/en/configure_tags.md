@@ -11,6 +11,13 @@ keywords: "associated values, system tags, required value, assigning tags, delet
 
 Tags are used throughout the CMS in order to easily organise and categorise items to make it easier for Users to locate and use. Tags act as keywords or labels which when assigned to items enhances the search functionality for Users. 
 
+{nonwhite} 
+
+## How-to Video
+
+{video}gHRMKiiXdRA|how_to_managing_tags.png{/video}
+{/nonwhite}
+
 Tags can be created by Users from various forms throughout the CMS, as well as created and managed by Administrators from the Tags page under the Administration section of the main CMS menu.
 
 Create and assign **Tags** to items throughout the CMS using the Tag field on forms. As text is entered, an auto-complete helper will show possible matches to make it easier for Users to see what Tags are already available to select from:
