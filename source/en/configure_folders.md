@@ -13,8 +13,14 @@ Folders are used throughout the CMS and provide a great way to organise and easi
 
 Administrators are encouraged to assign User Groups to their Users, and then use Folder Share options to give these Users appropriate access to each other's content. Folders can be assigned to new Users from the on-boarding wizard to ensure that they are up and running from the start.
 
-
 Folders are managed from the Administration section of the main CMS menu where administrators can see detailed information including who the Folder has been shared with and a breakdown of its contents.
+
+{nonwhite} 
+
+## How-to Video
+
+{video}kq0vR4FZuAM|how_to_managing_folders.png{/video}
+{/nonwhite}
 
 ### Creating Folders
 
@@ -27,8 +33,12 @@ Only administrators can create **Folders** under the **Root Folder**.
 
 - Configure View, Edit and Delete **Share** options to apply to Users/User Groups for individual Folders.
 
-
 Once set, all items contained or moved to that Folder will inherit the applied options.
+
+{tip}
+Only Administrators can set Share options for Folders.
+All elements of an item that need to be shared should also be moved to the Folder. This includes Media files contained on Layouts, and Layouts within Campaigns, as an example, if Users also require access to those.
+{/tip}
 
 Users can be granted access via the **Feature** functionality, to create sub-folders under parent folders they have been given access to.
 

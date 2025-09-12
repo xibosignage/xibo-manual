@@ -1,92 +1,71 @@
 ---
 toc: "users"
 maxHeadingLevel: 3
-minheadingLevel: 2
-excerpt: "User Groups provide an easy way to manage system access for multiple Users"
-keywords: "pre-configured groups, create user groups, group members "
-persona: "administrator"
+minHeadingLevel: 2
+alias: "users_features_and_sharing"
+excerpt: "User Groups provide an easy way to manage Features to configure system access for multiple Users"
+keywords: "pre-configured groups, create user groups, group members, features, share, share options, members"
 ---
 
-# User Groups
+# User Groups and Features
 
-User Groups are an easy way to configure [Features and Share](users_features_and_sharing.html) options to apply to multiple Users who are members of a particular User Group.
+User Groups make it easier to onboard new Users and manage system access. Users that belong to a group will inherit any Features that have been enabled for the User Group.
 
-{tip}
-User Groups makes it easier to onboard new Users and manage system access. Users will inherit the  Feature and Sharing options enabled for the group!
-{/tip}
+## Creating User Groups
 
-Create your own User Groups are select from a set of pre-configured groups, created to serve common functions in the CMS, available for new installations.
+User Groups are created and managed by clicking **User Groups** under the **Administration** section of the main CMS menu.
 
-{version}
-**Note:** Pre-configured User Groups are available for new v4 installations and for users who upgrade to v4 who have not previously utilised User Groups in  their earlier versions!
-{/version}
+Pre-configured groups are available which have been created to serve common functions within the CMS and have the required **Features** already enabled to allow Users to carry out their role. 
 
-![Pre-Configured Groups](img/v4_user_groups_preconfigured.png)
+- To add a new group, click on the **Add User Group** button and complete the form fields.
+- **Save**.
 
-The pre-configured User Groups already have the required Features enabled to allow Users to carry out the chosen role. These can be modified if required to suit.
 
-{version}
-**Note:** The Display Manager User Group does not have the rights to add and authorise new Displays as this is a Super Admin high level function. Once added, a Super Admin user can add new Displays to [Folders](configure_folders.html) or give Share access rights to this User Group for Display Management purposes.
-{/version}
+You can easily make a **Copy** of a User Group from the row menu and make changes to the **Feature** access to suit requirements without the need to create a new group from scratch!
 
-## Create User Groups
+## Members
 
-User Groups are administered from **User Groups** under the **Administration** section of the main CMS menu. The User Group grid will open for you to add and manage User Groups:
+Users are added to a User Group by using the row menu:
 
-![User Group Add](img/v4_user_group_add.png)
+- Click **Members**.
+- Select which **Users** should belong to the selected User Group.
+- **Save**.
 
-{tip}
+## Features
 
-Add User Groups to suit your specific needs and enable them to be shown for the [New User](users_administration.html) onboarding wizard to make it easier to add Users to the right User Group from the start!
-{/tip}
+**Features** control what a User can see and do within the CMS, by restricting pages and page functionality. When combined with **Share** options, View, Edit and Delete options for user items such as Folders, Media, Display Groups. These concepts ensure that only the relevant parts of the CMS are visible to Users with the appropriate level of User interaction applied.
 
-To add a new group, click on the **Add User Group** button and enter the required information for each tab:
+- Features are configured from the row menu for a **User** or **User Group** and are grouped into logical tabs.
 
-#### General
+It is recommended to set the required feature access to user groups and add users to the group to inherit enabled Features for an easier and safer work flow with less room for error. If specific Users require further access then these can be assigned directly to the User.
 
-- Give your User Group a **Name** to identify it within the CMS
-- Enter a maximum amount of [Library Quota](users_administration.html#content-library-quota) allowed to be uploaded to the Library for this User Group. Enter 0 if no quota should be applied. 
-- Select the type, **System** or **Display**, if the User Group should receive notifications.
+A `-` indicates that selected Features within that Feature Set have been enabled. 
 
-#### Description
+- Use the arrow to expand the Feature Set to see all options available.
 
-Provide optional text to describe the created Group. 
+A tick indicates that all Features within that set are enabled.
 
 {tip}
-If enabled to show for onboarding new Users, this description (such as the Groups role) will be shown to make it clear for selection.
+In order for a User to have the ability to Share items with other Users, the option "Allow Sharing capabilities for all User objects" within the User functions subset of User Features needs to be enabled.
 {/tip}
 
-#### Onboarding Settings
+## Further Reading
 
-Use this tab to control the options for onboarding new Users:
+[Set Share Options on Folders](configure_folders)
 
-- Tick if you want to include this User Group for selection when using the onboarding wizard.
-- Use the dropdown to select the [Dashboard](users_dashboards.html) which will be used as a homepage for all members of this group.
-- Click to Save.
+[Creating Users](users_administration)
+
+### FAQs
+
+***If a User belongs to the Display Manager User Group why can't they add and authorise new Displays?***
+
+This is deemed a high level Administration function. An Admin can add new Displays to a Folder and give access rights to that Folder for the Display Manager Group to manage.
+
+***Can a User only belong to one User Group?***
+
+Users can be assigned to one or more User Groups for ease of sharing and collaboration.
 
 
-### Group Members
 
-Once added to the grid, add Users to the User Group by using the row menu:
 
-- Click on **Members**
-
-![User Group Manage Membership](img/v4_user_group_manage_membership.png)
-
-- Select which **Users** should belong to the selected **User Group**.
-- Click to **Save**.
-
-{tip}
-Users can be assigned to one or more **User Groups** for ease of sharing and collaboration!
-
-Membership can also be controlled from the User grid by using the row menu and selecting  **User Groups** to open the **Manage Membership** form!
-{/tip}
-
-### Features
-
-Control the User Groups access to the relevant parts of the CMS by selecting [Features](users_features_and_sharing.html) from the row menu.
-
-### Copy
-
-Make a **Copy** of an existing User Group from the row menu to make adjustments and easily create new Groups to suit your requirements.
 

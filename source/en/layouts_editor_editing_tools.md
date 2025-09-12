@@ -10,6 +10,13 @@ keywords: "group global elements, group data elements, canvas layer, layer contr
 
 [[PRODUCTNAME]] has a variety of editing tools to assist Users when using the Layout Editor to build and create designs to show on Displays.
 
+{nonwhite} 
+
+## How-to Video
+
+{video}1H28dMKgmaI|how_to_using_editing_tools.png{/video}
+{/nonwhite}
+
 ## Rectangle Selector
 
 Multiple items can be moved together to maintain alignment in a block by using the **Rectangle Selector** tool:

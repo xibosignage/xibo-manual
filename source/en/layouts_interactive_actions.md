@@ -36,7 +36,7 @@ They can also be created by clicking **Add Action** from the **Properties Panel*
 
 - Selecting **Touch/Click**, requires devices that will be used as a touch screen to have touch capabilities enabled.
 
-- To use a **Webhook, **a **Trigger Code** needs to be entered which must be present in the URL ``trigger=` parameter.
+- To use a **Webhook** a **Trigger Code** needs to be entered which must be present in the URL ``trigger=` parameter.
 
 Select which item on the Layout should be the **Trigger**.
 

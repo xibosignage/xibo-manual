@@ -8,7 +8,13 @@ persona: "content manager"
 
 # Notifications
 
-Display [Notification](users_notifications.html) data anywhere on a Layout using **Elements**.
+Display Notifications on Layouts and Playlists as well as target messaging to Display/Display Groups using the Notification Widget.
+
+Users can create messages by clicking **Notification Centre** which is accessed by clicking the alarm bell icon next to the User Profile.
+
+{tip}
+Layouts need to already be in the schedule and contain the Notification Widget to target Display/Display Groups successfully!
+{/tip}
 
 {feat}Notification|v4{/feat}
 
@@ -22,8 +28,9 @@ Each Element has a set of configuration options in the Properties Panel. Control
 
 ## Overview
 
-- Update Elements with new Notifications by creating them in the [Notification Drawer](users_notifications.html#content-create-notifications)
+- Update Elements with new Notifications by creating them in the Notification Drawer.
 - Update content without accessing Layouts.
+- Targeted messaging to Displays/Display Groups.
 - Specify a maximum age in which to show messages.
 - Set a duration to apply to each individual message.
 - Apply a number of items to show.
