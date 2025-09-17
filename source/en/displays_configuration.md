@@ -50,6 +50,10 @@ Each Display is assigned a default profile which will automatically apply its se
 
 [What is a Display?](displays.html)
 
+[Using Display Groups](displays_groups)
+
+[Apply settings using Display Profiles](displays_settings)
+
 ## FAQ's
 
 ***What happens if I have no content scheduled, and my default layout has an issue with downloading it's content?***

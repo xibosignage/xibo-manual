@@ -47,6 +47,10 @@ Manage **Displays** from the CMS to and use the range of device management tools
 
 [Display Configuration](displays_configuration.html)
 
+[Create Display Groups](displays_groups)
+
+[Apply settings using Display Profiles](displays_settings)
+
 ## FAQ's
 
 ***Which Players can connect to the CMS using code?***
