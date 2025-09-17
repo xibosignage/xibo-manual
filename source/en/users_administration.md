@@ -61,6 +61,12 @@ Please ensure that the default user account named `cms_admin` is not modified or
 {/cloud}
 {/white}
 
+## Further Reading
+
+[Managing Folders](getting_started_configure_folders)
+
+[Configuring Features](users_groups)
+
 ## FAQ's
 
 ***Is there a way to ensure Users change their password within the system?***
@@ -71,6 +77,7 @@ Edit a User from the row menu and select the Options tab to find the setting "Fo
 
 Edit the User from the row menu and use the checkbox to Reset Two Factor Authentication. The User can now set up two factor authentication from their User Profile.
 
-## Further Reading
+***How can I add a User to a User Group?***
 
-[Managing Folders](getting_started_configure_folders)
+Use the row menu and select User Groups to manage group membership.
+
