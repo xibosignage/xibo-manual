@@ -3,99 +3,55 @@ toc: "displays"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Create Display Groups for ease of scheduling and media assignment"
-keywords: "dynamic group membership, add display group, "
-persona: "display manager, administrator"
+keywords: "dynamic group membership, add display group"
 ---
 
 # Display Groups
 
-Create Display Groups to group together specific [Displays](displays.html) for easier Scheduling and management as your [[PRODUCTNAME]] system grows.
+Group together specific **Displays** to allow content and schedules to span multiple Displays with just one configured **Event**, saving time and reducing errors. Grouping Displays makes it easier to manage an expanding network. Simply add newly connected **Displays** to an existing **Display Group** to inherit schedules and to quickly start showing content.
 
-Display Groups can contain both singular **Displays** as well as other **Display Groups**. This allows you to target large numbers of Displays with just a simple [Schedule](scheduling_events.html)
+Group Displays by industry or location to make it easier to update and target content which differs by areas or purpose.
 
-## Display Group Administration
+Display Groups can contain a mix of singular **Displays** as well as other **Display Groups** to allow you to easily target the right Displays to show your content.
 
-Display Groups are managed in the CMS by clicking **Display Groups** under the Displays section of the main CMS menu:
+For example, you could have Displays located within stores over different levels, intended to reach differing audiences so could have Display Groups that contain:
 
-![Display Groups Grid](img/v4_displays_groups_grid.png)
+- All Displays in store A
+- All Displays in store B
+- All Displays that are street facing
+- All Displays on level 1
+- All Displays on level 2
+- All internal Displays
+- All external Displays
 
-Use the **Add Display Group** button to create a new Display Group and complete the required form fields:
+**Create Display Groups** and automatically assign **Displays** with matching criteria **dynamically** or **manually** selecting Display membership.
 
-![Add Display Group](img/v4_displays_groups_add.png)
+- Click on Add Display Group from the Display Groups grid.
 
-Displays need to be assigned to the Display Group in one of two ways, by manually adding or it can be controlled with filter criteria as a Dynamic Group.
+## Dynamic Groups
 
-### Dynamic Group Membership
+To assign members dynamically, tick the **Dynamic Group** checkbox.
 
-To assign members to this group dynamically:
+- Set the **filter criteria** to use in the format of regular comma separated expressions or simple string comparisons. 
+- Prefix expressions with a `-` to exclude from filters. For example, all Displays containing `a` but not `b` in the name would be `a, -b`
+- **Criteria Tags** can also be filtered using additional OR/AND filters for Displays with multiple Tags assigned.
 
-- Tick the Dynamic Group checkbox on the form to reveal additional form fields.
-- Filter criteria for Dynamic Groups is in the format of regular expressions, but can also be simple string comparisons. The expressions should be separated by a comma and can be negated with a `-` prefix.
+## Manual Groups
 
-{tip}
-For example, all Displays containing "a" but not "b" would be `a,-b`.
-{/tip}
+To assign members manually, leave the checkbox unticked and click to Save the form:
 
-![Display Group Dynamic Criteria](img/v4_displays_group_dynamic.png)
+- Use the row menu for the new Display Group record and select **Members** using the checkbox for each Display.
 
-{tip}
-Criteria Tags can be filtered using additional OR/AND filters for Displays that have multiple Tags assigned!
-{/tip}
-
-- Click to **Save** 
-
-{tip}
-If you have more Display Groups to create instead of hitting Save click **Next** to keep the form open and continue creating new Display Groups!
-{/tip}
-
-### Manual Group Membership
-
-To manually assign members to this group:
-
-- Leave the Dynamic Group checkbox unticked and click to **Save** the form.
-- Use the row menu for the new Display Group record and select **Members**.
-- Use the checkbox for each Display to control the membership to the group.
-
-![Display Group Memberships](img/v4_displays_groups_memberships.png)
-
-{tip}
-Use the **Relationship Tree** tab to view the ancestors and descendants of the Display Group being edited. The current Display Group will be in bold text. Parent Display Groups (above the current one) will pass their schedule down to the current and child Display Groups. Child Display Groups (below the current one) will inherit schedule information from the Parent Display Group and the current Display Group.
-{/tip}
-
-- click to **Save**.
+The Relationship Tree shows the ancestors and descendants. Parent Display Groups, shown above the selected Group will pass their schedule down to the Displays groups underneath.
 
 ## Nested Groups
 
-Display Groups can be nested to create complex structures and targeted Scheduling.
+Display Groups can be nested to simplify scheduling to allow sub-groups to inherit permissions from a parent group.
 
-{tip}
-Example Group Structure
+## Further Reading
 
-- Site 1
-- Site 1 - Building A
-- Site 1 - Building A - Level 1
-- Site 1 - Building A - Level 2
-- Site 1 - Building B
+[Configuring Displays](displays_configuration)
 
-The Display membership is set on the lowest level groups and those groups then belong to the next level up, which in turn belong to the highest level parent "Site 1".
-The CMS will not allow a circular reference to be created (an assignment that creates a loop i.e. Site 1 has Site 1 - Building A, and Site 1 - Building A has Site 1.)
-{/tip}
+[Sync Groups](displays_sync_groups)
 
-**Schedules**, **Media files** and **Layout Assignments** set to the Display Group, will apply to all members assigned to the group.
-
-## Row Menu
-
-Each Display Group has a row menu containing a number of actions/shortcuts.
-
-- Click on **Members** to manage the membership of Display Groups which have had Displays manually assigned.
-- Use **Edit** to view the criteria used for dynamic memberships and to make changes if required.
-- Directly Assign Library files and Layouts to a Display Group so that they are always available in the local library of the Player.
-
-{tip}
-Use the **With Selected** option at the bottom of the grid to easily perform bulk actions for multiple Display Groups!
-{/tip}
-
-#### Next...
-
-[Display Sync Groups](displays_sync_groups.html)
-
+[Display Profile Settings](displays_settings)
