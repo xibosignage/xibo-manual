@@ -23,7 +23,7 @@ Manage all file based media by selecting **Media** under the **Library** section
 
 ![Media Library](img/v4_media_library_grid.png)
 
-Use the multiple filter fields across the top of the [grid](tour_cms_navigation.html#content-grids) to restrict criteria for returned results.
+Use the multiple filter fields across the top of the grid to restrict criteria for returned results.
 
 {tip}
 Use the **OR/AND** option for **Names** and to filter items that have been assigned multiple **Tags**.
@@ -43,7 +43,7 @@ Library media can be either uploaded directly using the **Add Media** button or 
 {tip}
 Add Media to the CMS Library and save to Folders to have media ready for use for the appropriate Users/User Groups!
 
-Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor_using_library_search)
+Files added to the CMS Library can be easily added to Layouts and Playlists using a [Library Search](layouts_editor_library_search)
 {/tip}
 
 ### Add Media (Upload)
@@ -55,7 +55,7 @@ Files added to the CMS Library can be easily added to Layouts and Playlists usin
 - Click **Add files** and select the file(s) you wish to upload. 
 
 {tip}
-Default thresholds and limits can be specified which are then considered in the event an [Image](media_module_image.html) should be resized when uploading an image for example. Further information can be found in [CMS Settings](tour_cms_settings.html#content-resizing-images).
+Default thresholds and limits can be specified which are then considered in the event an [Image](media_module_image.html) should be resized when uploading an image for example. Further information can be found in **CMS Settings**.
 {/tip}
 
 - Give your file a **Name** for easier identification in the CMS.
@@ -203,12 +203,12 @@ This might be particularly useful if the CMS is installed on a web server that h
 
 There are two places where the Library can be tidied:
 
-1. From [CMS Settings](tour_cms_settings.html#content-tidy-library-(global)) - available to all Super Administrators only.
-2. From the **Library**  - for all Users when [Enable Library Tidy](tour_cms_settings.html#content-tidy-from-user-library) is ticked.
+1. From **CMS Settings** - available to all Super Administrators only.
+2. From the **Library**  - for all Users when **Enable Library Tidy** is ticked.
 
 {nonwhite}
 {cloud}
-The Tidy Library function is turned off by default for **Xibo Cloud Hosting** customers as it can be potentially destructive if the options are not fully understood. Use the checkbox to [Enable Library Tidy](tour_cms_settings.html#content-tidy-from-user-library) if required.
+The Tidy Library function is turned off by default for **Xibo Cloud Hosting** customers as it can be potentially destructive if the options are not fully understood. Use the checkbox to enable if required.
 {/cloud}
 {/nonwhite}
 

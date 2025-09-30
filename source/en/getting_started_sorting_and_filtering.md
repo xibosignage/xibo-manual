@@ -11,6 +11,13 @@ keywords: grids, forms, multi-select, regex, filter criteria, column visibility,
 
 Page information within the CMS is presented as tabular data in a grid format. **Grids** have a number of features that when combined create a flexible tool for Users making it easier to visualize and understand presented information.
 
+{nonwhite} 
+
+## How-to Video
+
+{video}IO7OsG7ianc|how_to_sorting_and_filtering.png{/video}
+{/nonwhite}
+
 Multiple filter fields can be used to restrict criteria for returned results.
 
 - Use the checkbox to apply advanced filtering options for Names using Regex and provide AND/OR criteria using comma separated terms.

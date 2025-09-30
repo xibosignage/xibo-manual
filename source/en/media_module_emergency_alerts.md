@@ -28,14 +28,14 @@ Help to ensure the safety of staff, pupils and the public by showing alert and e
 
 ## Further Reading
 
-[Connectors Management](/media_modules_connectors)
+[Connectors Management](media_modules_connectors.html)
 
-[Data Widgets](/layouts_editor_data_widgets)
+[Data Widgets](layouts_editor_data_widgets.html)
 
-[Layout Editor](/layouts_editor)
+[Layout Editor](layouts_editor.html)
 
 {nonwhite}
-[Schedule Criteria](/developer/player-control/schedule-criteria)
+[Schedule Criteria](developer/player-control/schedule-criteria.html)
 {/nonwhite}
 
 
