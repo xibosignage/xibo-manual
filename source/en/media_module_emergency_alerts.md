@@ -35,7 +35,7 @@ Help to ensure the safety of staff, pupils and the public by showing alert and e
 [Layout Editor](layouts_editor.html)
 
 {nonwhite}
-[Schedule Criteria](developer/player-control/schedule-criteria.html)
+[Schedule Criteria](https://xibosignage.com/docs/developer/player-control/schedule-criteria)
 {/nonwhite}
 
 
