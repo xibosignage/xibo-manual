@@ -11,6 +11,13 @@ keywords: "pre-configured groups, create user groups, group members, features, s
 
 User Groups make it easier to onboard new Users and manage system access. Users that belong to a group will inherit any Features that have been enabled for the User Group.
 
+{nonwhite}
+
+## How-to Video
+
+{video}-sESDKREuY0|how_to_creating_user_groups.png{/video}
+{/nonwhite}
+
 ## Creating User Groups
 
 User Groups are created and managed by clicking **User Groups** under the **Administration** section of the main CMS menu.
