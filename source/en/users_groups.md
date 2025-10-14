@@ -15,7 +15,7 @@ User Groups make it easier to onboard new Users and manage system access. Users 
 
 ## How-to Video
 
-{video}-sESDKREuY0|how_to_creating_user_groups.png{/video}
+{video}PRioJgzvrEY|how_to_creating_user_groups.png{/video}
 {/nonwhite}
 
 ## Creating User Groups
