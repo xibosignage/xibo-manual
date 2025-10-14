@@ -21,7 +21,7 @@ Administrators are encouraged to assign **Users** to **User Groups** to determin
 
 ## How-to Video
 
-{video}PRioJgzvrEY|how_to_creating_users.png{/video}
+{video}-sESDKREuY0|how_to_creating_user_groups.png{/video}
 {/nonwhite}
 
 ## Creating Users
