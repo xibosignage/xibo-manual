@@ -17,6 +17,13 @@ keywords: "ownership, user types, super admin, group admin, onboarding wizard, h
 
 Administrators are encouraged to assign **Users** to **User Groups** to determine what the Users should access within the CMS and share **Folders** with the User to control the interaction (View, Edit, Delete)  of items contained within the Folder. 
 
+{nonwhite}
+
+## How-to Video
+
+{video}-sESDKREuY0|how_to_creating_users.png{/video}
+{/nonwhite}
+
 ## Creating Users
 
 Users are created and managed by clicking **Users** under the **Administration** section of the  main CMS menu.
