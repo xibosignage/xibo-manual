@@ -18,7 +18,7 @@ You may have a Layout created by a member of your team, in order to share an imp
 
 ## How-to Video
 
-{video}QmAfUsSEOAk|how_to_simple_scheduling.png{/video}
+{video}mHIzltOMUcI|how_to_simple_scheduling_4_4.png{/video}
 {/nonwhite}
 
 ## Creating a Schedule
@@ -26,25 +26,29 @@ You may have a Layout created by a member of your team, in order to share an imp
 - Click on **Schedule** from the main CMS menu.
 - Click the **Add Event** button.
 
-Complete the fields in the **Schedule Event** form:
+Follow the steps in the schedule wizard:
 
-- Give the event a **Name** for easier identification in the CMS.
 - Use the **Event Type** drop down to select the type of Event to Schedule. For this example, select **Layout**.
+- Use the drop down to select the **Layout** to show, click **Next**.
 - Select which **Displays** to show the Layout on. 
-- From **Dayparting**, choose **Always** to show the Layout on Displays constantly or select **Custom** to set specific start and end dates/times.
-- Select the **Use Relative time** option if the Layout should be shown immediately and provide how long it should remain showing on Displays by providing hours and minutes.
-- Use the drop down to select the **Layout** to show.
-- Click **Save.**
+- If you want to use the default **Always** schedule, can click **Finish** to complete.
+- If you want to select alternative created **Dayparts** or **Custom** dates, select **Next**.
+- With **Custom** selected, use the Relative time option to show the Layout straight away. Provide how long it should remain showing on displays by entering the hours and minutes.
+- Click to **Finish** or **Next** to access further scheduling options such as **Priority, Display Order** and **Repeats**.
 
 The CMS will now update a Schedule change and show the Layout on Displays for the specified time.
 
-The Scheduled Event can be viewed/edited from the Schedule grid and Calendar views.
+The Scheduled Event can be viewed/edited from the **Schedule Grid** and **Calendar** views.
 
 ## FAQ's
 
+***I see a Schedule Event form and not a wizard in my CMS?***
+
+A wizard was introduced in v4.4 to simplify the scheduling process.  Use the link to view the Event form flow: [Simple Scheduling ](simple_scheduling_v4)
+
 ***Can I create Schedules from other parts of the CMS?***
 
-Yes, the Schedule Event form is available from the row menu for Layouts, Campaigns, Playlists and the Media grid for Images and Videos. Once a Layout has been published, it can also be Scheduled directly from the Layout Editor.
+Yes, Schedule Events from the row menu for Layouts, Campaigns, Playlists and the Media grid for Images and Videos. Once a Layout has been published, it can also be Scheduled directly from the Layout Editor.
 
 ***How do I remove an Always Event from the Schedule?***
 
@@ -52,4 +56,9 @@ From the Schedule, use the row menu for the Event in the Grid view and select De
 
 ***How can I see what will be shown on a Display at a specific point in time?***
 
-Use Agenda from the range filter to see a precise representation of what Layouts/Campaigns will be shown on a selected Display. Use the slider to pinpoint the exact time of day to view.
+Use Agenda to see a precise representation of what Layouts/Campaigns will be shown on a selected Display. Use the slider to pinpoint the exact time of day to view.
+
+
+
+
+

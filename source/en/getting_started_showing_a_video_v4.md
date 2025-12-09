@@ -1,16 +1,12 @@
----
-toc: "getting_started"
-maxHeadingLevel: 3
-minHeadingLevel: 1
-alias: "showing_a_video_on_displays"
-excerpt: "Add Video files to your Library and schedule to your Displays"
-keywords: "full screen videos, schedule row menu, duration in loop, media library schedule, upload video, cms library"
-persona: "advertising and promotion"
----
-
 # Showing a Video on Displays
 
 Add a **Video** file to your **Media Library** and **Schedule** to play on **Displays**.
+
+{nonwhite}
+Improvements have been made to make scheduling a video even easier from v4.4. Take a look at our video for a quick summary of changes!
+
+{video}JEqPKSkQOyg{video}
+{/nonwhite}
 
 You may have Video content which has been created to showcase product promotions or show company updates to employees, ready to be shown full screen on your Display network.
 
@@ -20,7 +16,7 @@ Video files are first added to the Library by upload or by URL. For this example
 
 ## How-to Video
 
-{video}U6tQKfhDOp0|how_to_show_a_video.png{/video}
+{video}1zZKaL-iUZo|how_to_show_a_video.png{/video}
 {/nonwhite}
 
 ### Add Media
@@ -37,30 +33,34 @@ Video files are first added to the Library by upload or by URL. For this example
 ### Select Media
 
 - From the **Media** grid use the filters to make it easier to find the uploaded video file if required.
-- Use the row menu and select **Schedule**.
-- Select which **Displays** to show the video on. 
+- Use the row menu and select **Schedule**:
 
-- If you want to use the default **Always** schedule, and happy with the default settings and have no further scheduling options to set, you can click **Finish** to complete the schedule.
-- If you want to select alternative created **Dayparts** or **Custom** dates, select **Next**.
-- To configure advanced scheduling options and override the duration of the video for example, click **Next**.
-- **Duration in loop** determines how long this video should be shown each time it appears in a **Schedule Loop**. 
-- You can specify a **duration** here and provide a lower duration to cut the video short. When setting a higher duration, the video will loop back to the beginning and play to satisfy the duration applied.
-- Click to **Finish** once all relevant fields have been completed.
+The **Select Media** form will open to provide further configuration options for the Video:
+
+**Duration in loop** determines how long the video should play each time it appears in a **Schedule Loop**. 
+
+- Set a lower duration to cut the original file short or set a higher duration and the video will "loop" back to the beginning to satisfy a longer set duration.
+- Select a a specific **Resolution** to use.
+- Set a **colour** to fill any gaps in the background if the media file will not fill the screen.
+- **Save** to close the **Select Media** form and continue with scheduling.
+
+### Schedule Event
+
+ Complete the fields in the **Schedule Event** form:
+
+- Give the event a **Name** for easier identification in the CMS.
+- Select which **Displays** this Video will be shown on.
+- From **Dayparting**, select **Always** to show the Video constantly or select **Custom** to set specific start and end dates/times.
+- Click **Save.**
 
 
 The CMS will now update a Schedule change and your Video will be shown on Displays for the timings set in the schedule.
 
 ## Further Reading 
 
-[Use Playlists to show a carousal/slideshow of images](getting_started_showing_a_playlist.html)
-
 [Use the Layout Editor to create your own content](layouts_editor.html) 
 
 ## FAQ's
-
-***I don't see the wizard when scheduling a Video?***
-
-A wizard was introduced in v4.4 to simplify the scheduling process. Use the link to view the earlier flow: [Showing a Video](getting_started_showing_a_video_v4.html)
 
 ***What are Schedule Loops?*** 
 

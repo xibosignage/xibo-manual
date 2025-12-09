@@ -1,16 +1,12 @@
----
-toc: "getting_started"
-maxHeadingLevel: 3
-minHeadingLevel: 1
-alias: "showing_a_playlist_on_displays"
-excerpt: "Create a Playlist of content to show in a rotating sequence and schedule to your Displays"
-keywords: "full screen playlists, manually add playlist content, schedule row menu, playlist grid schedule"
-persona: "advertising and promotion"
----
-
 # Showing a Playlist on Displays
 
 **Create** a **Playlist** of content and **Schedule** to show on **Displays**.
+
+{nonwhite}
+Improvements have been made to make scheduling a Playlist even easier from v4.4. Take a look at our video for a quick summary of changes!
+
+{video}JEqPKSkQOyg{video}
+{/nonwhite}
 
 You may have a set of content collated to meet a specific requirement which need to be shown in a rotating sequence on Displays. Playlists allow users to streamline resources and organise multiple content types to play in the order they need to be displayed.
 
@@ -20,7 +16,7 @@ Playlists can have content added by automatic assignment based on selected crite
 
 ## How-to Video
 
-{video}IHCaSsKwKq4|how_to_create_a_playlist.png{/video}
+{video}Cch392voYic|how_to_create_a_playlist.png{/video}
 {/nonwhite}
 
 ## Add Playlist
@@ -48,27 +44,29 @@ You can view the total duration of the Playlist at the top of the Timeline.
 
 - From the Playlists grid use the filters to locate the Playlist.
 - Use the row menu and select **Schedule**.
-- Select which **Displays** to show the Playlist on. 
-- If you want to use the default **Always** schedule, and happy with the default settings and have no further advanced scheduling options to set, you can click **Finish** to complete the schedule.
-- If you want to select alternative created **Dayparts** or **Custom** dates, select **Next**.
-- If you don't need to apply any further scheduling options and are happy with the defaults set for **Resolution**, **Background Colour** etc. click to **Finish**.
+
+- The **Select Playlist** form will open to provide further configuration options for the Playlist:
+- Select a specific **Resolution** to use.
+- Set a **colour** to fill any gaps in the background if the Playlist content will not fill the screen.
+- **Save** to close the **Select Playlist** form and continue with scheduling.
+
+## Schedule Event
+
+Complete the fields in the **Schedule Event** form:
+
+- Give the event a **Name** for easier identification in the CMS.
+- Select which **Displays** this Playlist will be shown on.
+- From **Dayparting**, select **Custom** to set specific start and end dates/times or select **Always** to show the Playlist constantly.
+- Click **Save.**
 
 
 The CMS will now update a Schedule change and the Playlist will be shown on Displays for the timings set in the schedule.
 
 ## Further Reading 
 
-[Show a full screen Image on Displays](getting_started_showing_an_image.html)
-
-[Show a full screen Video on Displays](getting_started_showing_a_video.html)
-
 [Use the Layout Editor to create your own content](layouts_editor.html) 
 
 ## FAQ's
-
-***I don't see the wizard when scheduling a Playlist?***
-
-A wizard was introduced in v4.4 to simplify the scheduling process. Use the link to view the earlier flow: [Showing a Playlist](getting_started_showing_a_playlist_v4.html)
 
 ***Can I add Widgets to a Playlist?***
 
