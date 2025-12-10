@@ -1,16 +1,12 @@
----
-toc: "getting_started"
-maxHeadingLevel: 3
-minHeadingLevel: 1
-alias: "showing_an_image_on_displays"
-excerpt: "Add Image files to your Library and schedule to your Displays"
-keywords: "full screen images, schedule row menu, duration in loop, media library schedule, upload media, cms library"
-persona: "advertising and promotion"
----
-
 # Showing an Image on Displays
 
 Add an **Image** file to your **Media Library** and **Schedule** to play on **Displays**.
+
+{nonwhite}
+Improvements have been made to make scheduling an image even easier from v4.4. Take a look at our video for a quick summary of changes!
+
+{video}JEqPKSkQOyg{video}
+{/nonwhite}
 
 You may have image content created outside of the Layout Editor, e.g. created by an agency, in house marketing team etc, ready to be shown full screen on your Display network.
 
@@ -19,7 +15,7 @@ Image files are first added to the Library by upload or by URL. For this example
 {nonwhite} 
 ## How-to Video
 
-{video}zVjruJtnbys|how_to_show_an_image.png{/video}
+{video}yYv0B0B9MIc|how_to_show_an_image.png{/video}
 {/nonwhite}
 
 ### Add Media
@@ -43,28 +39,34 @@ Caution should be taken when uploading very large images. Users should check the
 
 ![Media Row Menu Schedule](img/v4_showing_images_videos_row_menu_schedule.png) 
 
-- Select which **Displays** to show the Image on. 
-- If you want to use the default **Always** schedule, and happy with the default settings and have no further advanced scheduling options to set, you can click **Finish** to complete the schedule.
-- If you want to select alternative created **Dayparts** or **Custom** dates, select **Next**.
-- If you don't need to apply any further scheduling options and are happy with the defaults set for **Duration in Loop**, **Resolution** etc, click to **Finish**.
+The **Select Media** form will open to provide further configuration options for the Image:
 
-{tip}
 **Duration in loop** determines how long this Image should be shown each time it appears in a **Schedule Loop**. 
-{/tip}
+
+- Specify a **duration** to override the Image file duration.
+- Select a a specific **Resolution** to use.
+- Set a **colour** to fill any gaps in the background if the Image will not fill the screen.
+- **Save** to close the **Select Media** form and continue with scheduling.
+
+### Schedule Event
+
+ Complete the fields in the **Schedule Event** form:
+
+- Give the event a **Name** for easier identification in the CMS.
+
+- Select which **Displays** this Image will be shown on.
+
+- From **Dayparting**, select **Custom** to set specific start and end dates/times or choose **Always** to show the Image on Displays constantly.
+
+- Click **Save.**
 
 The CMS will now update a Schedule change and the Image will be shown on Displays for the timings set in the schedule.
 
 ## Further Reading 
 
-[Use Playlists to show a carousal/slideshow of images](getting_started_showing_a_playlist.html)
-
 [Use the Layout Editor to create your own content](layouts_editor.html) 
 
 ## FAQ's
-
-***I don't see the wizard when scheduling an Image?***
-
-A wizard was introduced in v4.4 to simplify the scheduling process. Use the link to view the earlier flow: [Showing an Image](getting_started_showing_an_image_v4.html)
 
 ***What are Schedule Loops?*** 
 
