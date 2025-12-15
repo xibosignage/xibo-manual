@@ -5,7 +5,7 @@ Add a **Video** file to your **Media Library** and **Schedule** to play on **Dis
 {nonwhite}
 Improvements have been made to make scheduling a video even easier from v4.4. Take a look at our video for a quick summary of changes!
 
-{video}JEqPKSkQOyg{video}
+{video}JEqPKSkQOyg{/video}
 {/nonwhite}
 
 You may have Video content which has been created to showcase product promotions or show company updates to employees, ready to be shown full screen on your Display network.
