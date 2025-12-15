@@ -5,7 +5,7 @@
 {nonwhite}
 Improvements have been made to make scheduling even easier from v4.4. Take a look at our video for a quick summary of changes!
 
-{video}JEqPKSkQOyg{video}
+{video}JEqPKSkQOyg{/video}
 {/nonwhite}
 
 All content to be shown on authorised Displays must be included in a Schedule. Displays check for new scheduled content periodically and will download any new items in advance of playback ready to be shown.

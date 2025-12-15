@@ -5,7 +5,7 @@
 {nonwhite}
 Improvements have been made to make scheduling a Playlist even easier from v4.4. Take a look at our video for a quick summary of changes!
 
-{video}JEqPKSkQOyg{video}
+{video}JEqPKSkQOyg{/video}
 {/nonwhite}
 
 You may have a set of content collated to meet a specific requirement which need to be shown in a rotating sequence on Displays. Playlists allow users to streamline resources and organise multiple content types to play in the order they need to be displayed.

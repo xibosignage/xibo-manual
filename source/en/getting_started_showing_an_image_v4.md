@@ -5,7 +5,7 @@ Add an **Image** file to your **Media Library** and **Schedule** to play on **Di
 {nonwhite}
 Improvements have been made to make scheduling an image even easier from v4.4. Take a look at our video for a quick summary of changes!
 
-{video}JEqPKSkQOyg{video}
+{video}JEqPKSkQOyg{/video}
 {/nonwhite}
 
 You may have image content created outside of the Layout Editor, e.g. created by an agency, in house marketing team etc, ready to be shown full screen on your Display network.
