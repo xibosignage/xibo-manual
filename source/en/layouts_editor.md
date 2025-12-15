@@ -89,7 +89,7 @@ Once Published or after setting a Publish Date, the Layout can now be Scheduled 
 
 [Using the Library Search Functions](layouts_editor_library_search.html)
 
-## FAQ's
+## FAQs
 
 ***When should a User create a new Layout?***
 

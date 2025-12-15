@@ -14,11 +14,6 @@ Playlists can have content added by automatic assignment based on selected crite
 
 {nonwhite} 
 
-## How-to Video
-
-{video}Cch392voYic|how_to_create_a_playlist.png{/video}
-{/nonwhite}
-
 ## Add Playlist
 
 - Click on **Playlists** under the **Library** section of the main CMS menu.
@@ -66,7 +61,7 @@ The CMS will now update a Schedule change and the Playlist will be shown on Disp
 
 [Use the Layout Editor to create your own content](layouts_editor.html) 
 
-## FAQ's
+## FAQs
 
 ***Can I add Widgets to a Playlist?***
 

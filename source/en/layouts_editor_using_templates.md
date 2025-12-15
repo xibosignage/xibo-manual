@@ -79,7 +79,7 @@ Xibo Templates are available from inside the Layout Editor:
 
 [Editing Tools](layouts_editor_editing_tools.html)
 
-## FAQ's
+## FAQs
 
 ***Where can I view/edit my saved Templates?***
 

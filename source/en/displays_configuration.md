@@ -54,7 +54,7 @@ Each Display is assigned a default profile which will automatically apply its se
 
 [Apply settings using Display Profiles](displays_settings)
 
-## FAQ's
+## FAQs
 
 ***What happens if I have no content scheduled, and my default layout has an issue with downloading it's content?***
 

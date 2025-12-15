@@ -56,7 +56,7 @@ The CMS will now update a Schedule change and your Video will be shown on Displa
 
 [Use the Layout Editor to create your own content](layouts_editor.html) 
 
-## FAQ's
+## FAQs
 
 ***I don't see the wizard when scheduling a Video?***
 

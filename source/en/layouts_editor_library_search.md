@@ -60,7 +60,7 @@ Clicking in the top right of a thumbnail will play a preview in a separate windo
 
 [Displaying PowerPoint Presentations](media_module_powerpoint.html)
 
-## FAQ'S
+## FAQs
 
 ***I don't see Pixabay in the Toolbox?***
 

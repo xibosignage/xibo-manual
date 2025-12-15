@@ -14,11 +14,6 @@ You may have a Layout created by a member of your team, in order to share an imp
 
 {nonwhite} 
 
-## How-to Video
-
-{video}QmAfUsSEOAk|how_to_simple_scheduling.png{/video}
-{/nonwhite}
-
 ## Creating a Schedule
 
 - Click on **Schedule** from the main CMS menu.
@@ -38,7 +33,7 @@ The CMS will now update a Schedule change and show the Layout on Displays for th
 
 The Scheduled Event can be viewed/edited from the Schedule grid and Calendar views.
 
-## FAQ's
+## FAQs
 
 ***Can I create Schedules from other parts of the CMS?***
 

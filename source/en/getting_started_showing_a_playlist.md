@@ -64,7 +64,7 @@ The CMS will now update a Schedule change and the Playlist will be shown on Disp
 
 [Use the Layout Editor to create your own content](layouts_editor.html) 
 
-## FAQ's
+## FAQs
 
 ***I don't see the wizard when scheduling a Playlist?***
 
