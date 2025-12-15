@@ -40,7 +40,7 @@ The CMS will now update a Schedule change and show the Layout on Displays for th
 
 The Scheduled Event can be viewed/edited from the **Schedule Grid** and **Calendar** views.
 
-## FAQ's
+## FAQs
 
 ***I see a Schedule Event form and not a wizard in my CMS?***
 

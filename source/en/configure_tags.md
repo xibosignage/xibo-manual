@@ -44,7 +44,7 @@ Use the **With Selected** option at the bottom of the grid to **Delete** Tags in
 
 [Managing Folders](configure_folders.html)
 
-## FAQ's
+## FAQs
 
 *Can I use filter options to exclude Tags from searches?*
 

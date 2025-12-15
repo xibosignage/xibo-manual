@@ -55,7 +55,7 @@ Use the `-` icon for an added Layout to remove from the Campaign.
 
 [Creating Layouts in the Layout Editor](layouts_editor.html)
 
-## FAQ's
+## FAQs
 
 ***Is there an easy way to create multiple Campaigns?***
 

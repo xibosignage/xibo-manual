@@ -48,7 +48,7 @@ If your Display is not connected and logged in and you have no way to manage rem
 
 [How to record logs for a CMS issue using Report Fault](https://community.xibo.org.uk/t/how-to-record-logs-for-a-cms-issue-using-report-fault/30290)
 
-## FAQS
+## FAQs
 
 **I don’t have a plan and need help with an issue I am experiencing?**
 

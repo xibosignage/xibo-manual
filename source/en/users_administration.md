@@ -74,7 +74,7 @@ Please ensure that the default user account named `cms_admin` is not modified or
 
 [Configuring Features](users_groups)
 
-## FAQ's
+## FAQs
 
 ***Is there a way to ensure Users change their password within the system?***
 
