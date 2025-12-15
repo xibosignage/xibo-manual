@@ -14,11 +14,6 @@ Playlists can have content added by automatic assignment based on selected crite
 
 {nonwhite} 
 
-## How-to Video
-
-{video}Cch392voYic|how_to_create_a_playlist.png{/video}
-{/nonwhite}
-
 ## Add Playlist
 
 - Click on **Playlists** under the **Library** section of the main CMS menu.

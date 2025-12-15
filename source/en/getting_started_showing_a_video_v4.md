@@ -14,11 +14,6 @@ Video files are first added to the Library by upload or by URL. For this example
 
 {nonwhite} 
 
-## How-to Video
-
-{video}1zZKaL-iUZo|how_to_show_a_video.png{/video}
-{/nonwhite}
-
 ### Add Media
 
 - Click on **Media** under the **Library** section of the main CMS menu.

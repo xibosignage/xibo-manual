@@ -14,11 +14,6 @@ You may have a Layout created by a member of your team, in order to share an imp
 
 {nonwhite} 
 
-## How-to Video
-
-{video}QmAfUsSEOAk|how_to_simple_scheduling.png{/video}
-{/nonwhite}
-
 ## Creating a Schedule
 
 - Click on **Schedule** from the main CMS menu.
