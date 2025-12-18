@@ -3,55 +3,77 @@ toc: "layouts"
 maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Add Interactive Actions to Layouts to trigger content changes on Displays"
-keywords: "webhook, touch, button, link, interactive zone, interactive widgets, trigger code, layout code, code identifier"
+keywords: "webhook, touch, button, link, interactive zone, interactive widgets, trigger code, layout code, code identifier, keyboard, key press, trigger key"
 ---
 
-# Interactive Actions
+# Interactive actions
 
-Create Interactive **Actions** on **Layouts** to trigger content changes to show on your **Displays**.
+Create **Interactive actions** on **Layouts** to trigger content changes to show on your **Displays**.
 
-You may have a product display that includes an 'internet of things' device, such as a light sensor, which could be used to trigger a webhook to show a Layout with product specific information on a Display for the product that has been interacted with by a customer. 
+You could have a product display that includes an 'internet of things' device, such as a light sensor, which could be used to trigger a webhook. Product specific information could be included on a Layout to show on Displays for the specific product that has been interacted with by a customer. 
 
-You could use touchscreens to show specific information triggered from pressing a button on a Layout, shown on the Display.
+You could use touchscreens to show specific information triggered from pressing a button on a Layout, shown on the Display, or by pressing a key, which has been defined as a trigger type, from an attached keyboard.
 
-Actions can be attached to a complete **Layout**, individual **Widgets** on a Layout or on an **Image within a Playlist** on a Layout, triggered by **Touch/Click** or programmatically by a **Webhook**.
+Actions are created for:
 
-Design your Layout, adding **Widgets** to configure as interactive **Triggers** and **Targets**.
+- A complete **Layout**
+- Individual **Widgets** on a Layout 
+- An **Image within a Playlist** on a Layout
 
-Further **Interactive Widgets** are available from the **Toolbox**:
+These actions can be triggered by **Touch/Click**, by pressing a **key** on a keyboard or programmatically by a **Webhook**.
 
-- **Button** can be used as a Trigger which can be fully customised to suit your designs.
-- **Link** can be added to provide text to be used as a Trigger.
-- **Interactive Zone** to define an area on the Layout to be used as a Target or Trigger.
+## Create an interactive layout
 
-To use an **Image** as a trigger, first add a **Playlist** from the **Toolbox** and add an Image to the Playlist Timeline.
+1. Create and design a Layout, adding **Widgets** to configure as interactive **Triggers** and **Targets**, if required.
 
-Once designed, toggle **Interactive Mode to ON**, located at the top of the Layout Editor.
+   Further **Interactive Widgets** are available from the **Toolbox**.
 
-The design elements will be locked to focus on adding and editing **Actions** only.
+   {tip}Toggle Interactive Mode to OFF to open the Toolbox{/tip}
 
-Actions are created by clicking on a item on the Layout as a Trigger to drag an arrow to a Target item, clicking to **Save** from the Properties Panel.
+2. Click the **Widgets** button at the top of the Toolbox 
 
-They can also be created by clicking **Add Action** from the **Properties Panel**, and selecting the Type of Action and Trigger Type.
+3. Click on **Interactive** to open:
 
-- Selecting **Touch/Click**, requires devices that will be used as a touch screen to have touch capabilities enabled.
+- **Button** can be used as a Trigger which can be fully customised to suit your designs
+- **Link** can be added to provide text to be used as a Trigger
+- **Interactive Zone** to define an area on the Layout to be used as a Target or Trigger
 
-- To use a **Webhook** a **Trigger Code** needs to be entered which must be present in the URL ``trigger=` parameter.
+## Adding and editing actions on a layout
 
-Select which item on the Layout should be the **Trigger**.
+1. Toggle **Interactive Mode to ON**, using the button at the top of the Layout Editor
 
-- Click to **Save**.
+   The design elements will be locked to focus on adding and editing **Actions** only.
 
-Arrows will be displayed to easily see the relationship between Triggers and Targets.
+2. Use the drop-down menu to select the **Action Type**:
 
-### Action Types
+   - **Next/Previous Layout** to show the next or previous Layout in the schedule for the selected Display(s)
 
-- **Next/Previous Layout** will show the next or previous Layout in the schedule for the selected Display(s).
-- **Navigate to Layout** uses a **Code** to identify the Layout to switch to. Use the **Search for Layouts** button at the bottom of the canvas, to search for Layouts by Code. Ensure that Layouts which will be used as Interactive Targets have a **Code Identifier** assigned in the **Edit Layout form**.
-- **Next/Previous Widget** is used with content from inside a **Playlist** and will show the next/previous item on that Playlist Timeline.
-- **Navigate to Widget** to specify which Widget to Load or click to **Create Widget** so an item can be selected from the Toolbox to add to the specified Target.
+   - **Navigate to Layout** using a **Code** to identify the Layout
 
-## Further Reading
+   Use the **Search for Layouts** button at the bottom of the canvas, to easily search for Layouts by code. Ensure that Layouts to be used as Interactive Targets have a **Code Identifier** entered in the **Edit Layout form**
+
+   - **Next/Previous Widget** to show content from inside a **Playlist** for the next/previous item shown on the timeline
+
+   - **Navigate to Widget** to specify which Widget to Load, or click to **Create Widget** and select an item from the Toolbox to add to the specified Target
+
+3. From the Layout, click on an item to select the **Trigger Type**
+   Alternatively, use the drop-down menu from the Properties Panel
+
+   - Selecting **Touch/Click**, requires devices that will be used as a touch screen to have touch capabilities enabled
+
+   - To use a **Webhook** a **Trigger Code** needs to be entered which must be present in the URL ``trigger=` parameter
+
+   - **Key Press**, requires an attached keyboard with a key selected as the **Trigger Key**
+
+4. Draw an arrow to a **Target** item, or use the drop-down menu
+
+5. Click **Save** on the Properties Panel
+
+{version}
+**NOTE:** Fields shown are dependent on the Action Type selected.
+{/version}
+
+## Further reading
 
 {nonwhite}
 [Player Control with Webhooks](/docs/developer/player-control/webhooks)
@@ -67,3 +89,10 @@ Arrows will be displayed to easily see the relationship between Triggers and Tar
 
 From Display Settings under the Displays section of the main CMS menu and use the row menu to select Edit. From the Advanced tab, check the Enable touch capabilities on the device setting at the bottom of the form. 
 
+***How can I use an image as a trigger?***
+
+You need to add a Playlist to a Layout from the Toolbox, and then add the image to the Playlist Timeline.
+
+***Why do I not see key press as a trigger type?***
+
+Assigning a keyboard key as a trigger type was introduced in v4.4. Update your CMS to benefit from this feature!
