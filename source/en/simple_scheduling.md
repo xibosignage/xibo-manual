@@ -56,7 +56,7 @@ From the Schedule, use the row menu for the Event in the Grid view and select De
 
 ***How can I see what will be shown on a Display at a specific point in time?***
 
-Use Agenda to see a precise representation of what Layouts/Campaigns will be shown on a selected Display. Use the slider to pinpoint the exact time of day to view.
+Use Agenda to see a precise representation of what Layouts/Campaigns will be shown on a selected Display. Click on an event icon in the calendar and use the slider to pinpoint the exact time of day to view.
 
 
 
