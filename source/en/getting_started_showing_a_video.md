@@ -18,7 +18,7 @@ Video files are first added to the Library by upload or by URL. For this example
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Showing a Video
 
 {video}U6tQKfhDOp0|how_to_show_a_video.png{/video}
 {/nonwhite}

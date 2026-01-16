@@ -13,7 +13,7 @@ From time to time, **Layouts** may need design changes/updates to keep content f
 
 {nonwhite}
 
-## How-to Video
+## How-to Video Design Changes
 
 {video}5NdKMd8QAk0|how_to_design_changes.png{/video}
 {/nonwhite}

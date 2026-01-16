@@ -13,7 +13,7 @@ Once Displays have been connected, they are configured and managed from the **Di
 
 {nonwhite}
 
-## How-to Video
+## How-to Video Display Configuration
 
 {video}DsYGiDgiigM|how_to_display_configuration.png{/video}
 {/nonwhite}

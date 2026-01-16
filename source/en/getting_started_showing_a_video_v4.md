@@ -12,8 +12,6 @@ You may have Video content which has been created to showcase product promotions
 
 Video files are first added to the Library by upload or by URL. For this example a Video file will be uploaded to the CMS Media Library.
 
-{nonwhite} 
-
 ### Add Media
 
 - Click on **Media** under the **Library** section of the main CMS menu.

@@ -12,8 +12,6 @@ All content to be shown on authorised Displays must be included in a Schedule. D
 
 You may have a Layout created by a member of your team, in order to share an important announcement within a company, which is now Published and ready to be shown on Displays. 
 
-{nonwhite} 
-
 ## Creating a Schedule
 
 - Click on **Schedule** from the main CMS menu.

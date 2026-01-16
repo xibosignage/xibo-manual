@@ -15,7 +15,7 @@ Global Elements give Users an easy way to add **Text**, **Dates and Times**, **L
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Using Global Elements
 
 {video}MpuFyYbp0tw|how_to_use_global_elements.png{/video}
 {/nonwhite}

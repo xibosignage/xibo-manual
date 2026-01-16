@@ -19,7 +19,7 @@ The [[PRODUCTNAME]] Layout Editor gives Users a range of tools to add and arrang
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Create a Layout
 
 {video}Sh-5b8OJycE|how_to_create_a_layout.png{/video}
 {/nonwhite}

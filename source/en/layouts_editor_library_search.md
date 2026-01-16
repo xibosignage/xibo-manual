@@ -15,7 +15,7 @@ File based Media can be first uploaded to the **CMS Library** ahead of time, or 
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Using Library Searches
 
 {video}pymUvJDp-lE|how_to_use_library_searches.png{/video}
 {/nonwhite}

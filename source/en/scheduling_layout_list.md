@@ -13,7 +13,7 @@ Create a Campaign containing a list of ordered Layouts so that they play in a co
 
 {nonwhite}
 
-## How-to Video
+## How-to Video Layout List
 
 {video}4Gv1I8NDC9o|how_to_layout_list_campaign.png{/video}
 {/nonwhite}

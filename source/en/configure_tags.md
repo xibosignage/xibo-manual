@@ -13,7 +13,7 @@ Tags are used throughout the CMS in order to easily organise and categorise item
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Managing Tags
 
 {video}gHRMKiiXdRA|how_to_managing_tags.png{/video}
 {/nonwhite}

@@ -12,8 +12,6 @@ You may have a set of content collated to meet a specific requirement which need
 
 Playlists can have content added by automatic assignment based on selected criteria or by manual selection. For this example Image content already uploaded to the CMS Media Library will be added to a Playlist manually.
 
-{nonwhite} 
-
 ## Add Playlist
 
 - Click on **Playlists** under the **Library** section of the main CMS menu.
