@@ -19,7 +19,7 @@ Administrators are encouraged to assign **Users** to **User Groups** to determin
 
 {nonwhite}
 
-## How-to Video
+## How-to Video Creating Users
 
 {video}-sESDKREuY0|how_to_creating_users.png{/video}
 {/nonwhite}

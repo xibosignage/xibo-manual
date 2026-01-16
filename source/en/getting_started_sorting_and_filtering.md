@@ -13,7 +13,7 @@ Page information within the CMS is presented as tabular data in a grid format. *
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Sorting and Filtering
 
 {video}IO7OsG7ianc|how_to_sorting_and_filtering.png{/video}
 {/nonwhite}

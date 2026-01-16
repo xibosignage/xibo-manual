@@ -18,7 +18,7 @@ Playlists can have content added by automatic assignment based on selected crite
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Showing a Playlist
 
 {video}IHCaSsKwKq4|how_to_create_a_playlist.png{/video}
 {/nonwhite}

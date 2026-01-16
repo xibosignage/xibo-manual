@@ -17,7 +17,7 @@ Folders are managed from the Administration section of the main CMS menu where a
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Managing Folders
 
 {video}kq0vR4FZuAM|how_to_managing_folders.png{/video}
 {/nonwhite}

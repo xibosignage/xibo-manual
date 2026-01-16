@@ -12,7 +12,7 @@ keywords: "group global elements, group data elements, canvas layer, layer contr
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Editing Tools
 
 {video}1H28dMKgmaI|how_to_using_editing_tools.png{/video}
 {/nonwhite}

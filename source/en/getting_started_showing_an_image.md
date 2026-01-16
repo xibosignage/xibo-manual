@@ -17,7 +17,7 @@ You may have image content created outside of the Layout Editor, e.g. created by
 Image files are first added to the Library by upload or by URL. For this example an Image file will be uploaded to the CMS Media Library.
 
 {nonwhite} 
-## How-to Video
+## How-to Video Showing an Image
 
 {video}zVjruJtnbys|how_to_show_an_image.png{/video}
 {/nonwhite}

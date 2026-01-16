@@ -4,12 +4,18 @@ maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Create recurring events in order to show regular content without the need to manually update schedules"
 keywords: "recurring, duplicate, calendar view, grid view, reminders, "
-
 ---
 
 # Repeat scheduling
 
 Set up recurring Events to repeat at specified intervals. **Repeating Events** is an efficient way to create the same Event details, to be shown multiple times without the need to manually duplicate information over and over. It could be useful for content that needs to shown regularly on Displays such as recurring room bookings and meeting events and reduces the need to manually keep schedules updated.
+
+{nonwhite} 
+
+## How-to Video Using Repeats
+
+{video}HvhGgF_RQNI|how_to_using_repeats.png{/video}
+{/nonwhite}
 
 ## How-to create repeats
 
