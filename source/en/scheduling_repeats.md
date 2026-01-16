@@ -14,7 +14,7 @@ Set up recurring Events to repeat at specified intervals. **Repeating Events** i
 
 ## How-to Video Using Repeats
 
-{video}bFPMrQiayzY|how_to_using_repeats.png{/video}
+{video}HvhGgF_RQNI|how_to_using_repeats.png{/video}
 {/nonwhite}
 
 ## How-to create repeats
