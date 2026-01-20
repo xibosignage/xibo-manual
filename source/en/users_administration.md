@@ -19,7 +19,7 @@ Administrators are encouraged to assign **Users** to **User Groups** to determin
 
 {nonwhite}
 
-## How-to Video
+## How-to Video Creating Users
 
 {video}-sESDKREuY0|how_to_creating_users.png{/video}
 {/nonwhite}
@@ -74,7 +74,7 @@ Please ensure that the default user account named `cms_admin` is not modified or
 
 [Configuring Features](users_groups)
 
-## FAQ's
+## FAQs
 
 ***Is there a way to ensure Users change their password within the system?***
 

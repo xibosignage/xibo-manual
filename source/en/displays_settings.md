@@ -28,7 +28,7 @@ If individual Displays require different settings from those set in a Display Pr
 
 [Using Display Groups](displays_groups)
 
-## FAQ's
+## FAQs
 
 ***I have a Display that should use an alternative Profile from the set default?***
 

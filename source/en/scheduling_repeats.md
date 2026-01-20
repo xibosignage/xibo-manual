@@ -4,21 +4,22 @@ maxHeadingLevel: 3
 minHeadingLevel: 2
 excerpt: "Create recurring events in order to show regular content without the need to manually update schedules"
 keywords: "recurring, duplicate, calendar view, grid view, reminders, "
-
 ---
 
-# Repeat Scheduling
+# Repeat scheduling
 
 Set up recurring Events to repeat at specified intervals. **Repeating Events** is an efficient way to create the same Event details, to be shown multiple times without the need to manually duplicate information over and over. It could be useful for content that needs to shown regularly on Displays such as recurring room bookings and meeting events and reduces the need to manually keep schedules updated.
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Using Repeats
 
-{video}FkXZjTKJ-b4|how_to_using_repeats.png{/video}
+{video}HvhGgF_RQNI|how_to_using_repeats.png{/video}
 {/nonwhite}
 
-Once an Event has been created with start and end times, an appropriate repeat (Minute, Hourly, Daily, Weekly, Monthly or Yearly) can be configured from the **Repeats** tab.
+## How-to create repeats
+
+Once an Event has been created with start and end times, an appropriate repeat (Minute, Hourly, Daily, Weekly, Monthly or Yearly) can be configured from the **Repeats** tab under **Optional**.
 
 
 For example selecting a **Weekly Repeat** you could select Wednesday and Friday as the days of the week to Repeat the Event, and by entering a 2, it would Repeat Every other week on those days.
@@ -31,7 +32,7 @@ Use **Until** to control when the repeated event should finish.
 Ensure the time selected here is after the final repetition of the defined Event so as to not cut the play back of content short!
 {/tip}
 
-**Recurring Events** can be removed from the Schedule in their entirety by selecting Delete at the bottom of the schedule form. All instances of the recurring event will be removed. 
+**Recurring Events** can be removed from the Schedule in their entirety using the Grid view and selecting Delete from the row menu. All instances of the recurring event will be removed. 
 
 Alternatively, remove only an instance of a recurring event:
 

@@ -12,7 +12,7 @@ keywords: "group global elements, group data elements, canvas layer, layer contr
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Editing Tools
 
 {video}1H28dMKgmaI|how_to_using_editing_tools.png{/video}
 {/nonwhite}
@@ -80,7 +80,7 @@ From here select to **Clear Canvas** to start your design over or **New** to cre
 
 [Using Global Elements on Layouts](layouts_editor_global_elements.html)
 
-## FAQ's
+## FAQs
 
 ***Why can't I group a Currency Element with a Menu Board Element?***
 

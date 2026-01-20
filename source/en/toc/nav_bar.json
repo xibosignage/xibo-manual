@@ -5,7 +5,7 @@
     "containsToc": ["getting_started"]
   },{
     "title": "Layouts",
-    "href": "layouts.html",
+    "href": "layouts_editor.html",
     "containsToc": ["layouts"]  
   },{
     "title": "Media",

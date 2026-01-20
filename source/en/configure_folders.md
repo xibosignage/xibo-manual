@@ -17,7 +17,7 @@ Folders are managed from the Administration section of the main CMS menu where a
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Managing Folders
 
 {video}kq0vR4FZuAM|how_to_managing_folders.png{/video}
 {/nonwhite}
@@ -92,7 +92,7 @@ As only empty folders can be removed, move, merge or delete contents before remo
 
 [Managing Tags](configure_tags.html)
 
-## FAQ's
+## FAQs
 
 ***Where can I find the Feature set for Folders to configure for Users/User Groups?***
 

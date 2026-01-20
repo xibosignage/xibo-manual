@@ -12,7 +12,7 @@ Use **Templates** to speed up the design process so that Users can customise con
 
 {nonwhite}
 
-## How-to Video
+## How-to Video Using Templates
 
 {video}xo7aLuf-VGk|how_to_using_templates.png{/video}
 {/nonwhite}
@@ -79,7 +79,7 @@ Xibo Templates are available from inside the Layout Editor:
 
 [Editing Tools](layouts_editor_editing_tools.html)
 
-## FAQ's
+## FAQs
 
 ***Where can I view/edit my saved Templates?***
 

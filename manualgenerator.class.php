@@ -308,6 +308,19 @@ class ManualGenerator
             $string = preg_replace('/({(white)\b[^}]*}).*?({\/\2})/s', '', $string);
             $string = str_replace('{nonwhite}', '', $string);
             $string = str_replace('{/nonwhite}', '', $string);
+
+            $string = preg_replace_callback('/({(video)\b[^}]*}).*?({\/\2})/s', function ($matches) {
+                $match = $matches[0];
+                $match = str_replace('{video}', '', $match);
+                $match = str_replace('{/video}', '', $match);
+
+                $video = self::processVideo($match);
+                $videoId = $video['videoId'];
+
+                return '<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/'.$videoId.'?enablejsapi=1autoplay=0"
+ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen=""></iframe>';
+            }, $string);
         }
 
         // Do the SVG's exist (not all templates will have these)
@@ -428,5 +441,17 @@ class ManualGenerator
         self::$environment->addExtension(new FrontMatterExtension());
 
         return (new MarkdownParser(self::$environment))->parse($markdown);
+    }
+
+    private static function processVideo($match)
+    {
+        $match = explode('|', $match);
+        $videoId = $match[0];
+        $coverImage = $match[1] ?? null;
+
+        return [
+            'videoId' => $videoId,
+            'coverImage' => $coverImage,
+        ];
     }
 }

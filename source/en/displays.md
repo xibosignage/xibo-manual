@@ -19,7 +19,7 @@ A **Display** is an essential part of digital signage as is it bridges the commu
 
 {nonwhite}
 
-## How-to Video
+## How-to Video What is a Display
 
 {video}9H8Ct00qkqs|how_to_what_is_a_display.png{/video}
 {/nonwhite}
@@ -51,7 +51,7 @@ Manage **Displays** from the CMS to and use the range of device management tools
 
 [Apply settings using Display Profiles](displays_settings)
 
-## FAQ's
+## FAQs
 
 ***Which Players can connect to the CMS using code?***
 

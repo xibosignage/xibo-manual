@@ -13,7 +13,7 @@ Once Displays have been connected, they are configured and managed from the **Di
 
 {nonwhite}
 
-## How-to Video
+## How-to Video Display Configuration
 
 {video}DsYGiDgiigM|how_to_display_configuration.png{/video}
 {/nonwhite}
@@ -54,7 +54,7 @@ Each Display is assigned a default profile which will automatically apply its se
 
 [Apply settings using Display Profiles](displays_settings)
 
-## FAQ's
+## FAQs
 
 ***What happens if I have no content scheduled, and my default layout has an issue with downloading it's content?***
 

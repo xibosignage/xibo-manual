@@ -15,7 +15,7 @@ File based Media can be first uploaded to the **CMS Library** ahead of time, or 
 
 {nonwhite} 
 
-## How-to Video
+## How-to Video Using Library Searches
 
 {video}pymUvJDp-lE|how_to_use_library_searches.png{/video}
 {/nonwhite}
@@ -60,7 +60,7 @@ Clicking in the top right of a thumbnail will play a preview in a separate windo
 
 [Displaying PowerPoint Presentations](media_module_powerpoint.html)
 
-## FAQ'S
+## FAQs
 
 ***I don't see Pixabay in the Toolbox?***
 

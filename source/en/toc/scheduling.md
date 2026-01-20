@@ -6,7 +6,7 @@
 
 - [Scheduling](scheduling_events.html)
 
-- [Layout List Campaign](scheduling_layout_list)
+- [Layout List Campaign](scheduling_layout_list.html)
 
 - [Ad Campaigns](scheduling_ad_campaigns.html)
 
