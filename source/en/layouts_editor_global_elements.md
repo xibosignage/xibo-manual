@@ -42,7 +42,7 @@ Global Elements are compatible with all Widgets/Data Elements and Library Media 
 
 [Overview of the Layout Editor](layouts_editor.html)
 
-[Using the Library Search Functions](/layouts_editor_library_searches.html)
+[Using the Library Search Functions](/layouts_editor_library_search.html)
 
 
 

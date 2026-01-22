@@ -68,7 +68,7 @@ If you have yet to create a **Display** in the CMS, take a look at the **Display
 
 ***Are training materials available for a new user?***
 
-We have a selection of videos which complement our user documentation, more information is available from our [Training](/training) page.
+We have a selection of videos which complement our user documentation, more information is available from our [Training](https://xibosignage.com/training) page.
 
 ***I cannot retrieve my recovery codes, what should I do?***
 
@@ -88,9 +88,9 @@ Using this option will automatically redirect Users to a page to view the notifi
 
 ## Further Reading
 
-[Using the Layout Editor to create your own Content](layouts_editor.html)
+[Using the Layout Editor to create your own Content](/layouts_editor.html)
 
-[Utilise Templates to make designing content easy](layouts_editor_using_templates.html)
+[Utilise Templates to make designing content easy](/layouts_editor_using_templates.html)
 
 
 

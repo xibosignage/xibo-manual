@@ -27,7 +27,7 @@ Commands are created and managed from **Commands** under the **Displays** sectio
 
 ![Display Commands](img/v4_displays_commands.png)
 
-Use the row menu for a Command to Edit, Delete and set [Share](users_features_and_sharing.html#content-share) options.
+Use the row menu for a Command to Edit, Delete and set **Share** options.
 
 ### Add Command
 
