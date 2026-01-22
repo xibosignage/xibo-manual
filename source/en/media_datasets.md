@@ -127,7 +127,7 @@ The fetch remote DataSet task is run hourly by default. Remote DataSets are inte
 {nonwhite}
 
 {noncloud}
-If no **Row Limit** is set here, the Row Limit applied in the [CMS Settings](tour_cms_settings.html#content-defaults) will be used for non Cloud customers.
+If no **Row Limit** is set here, the Row Limit applied in the **CMS Settings** will be used for non Cloud customers.
 {/noncloud}
 
 {cloud}

@@ -36,9 +36,7 @@ Each Element has a set of configuration options in the Properties Panel. Control
 - Apply a number of items to show.
 - Content for this media is cached by the Players for off-line playback.
 
-#### Next...
 
-[Notifications](users_notifications.html)
 
 
 

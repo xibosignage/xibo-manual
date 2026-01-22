@@ -129,7 +129,7 @@ Items added to a Playlist have an additional option of setting Start and End tim
 - Right click on an item in a Playlist to **Edit Expiry Dates** or set when uploading media directly to a Playlist.
 
 
-Uploading from a [Library Search](layouts_editor_using_library_search.html) will have an additional **Set Expiry Date** option:
+Uploading from a [Library Search](layouts_editor_library_search.html) will have an additional **Set Expiry Date** option:
 
 ![Expiry Dates](img/v4_media_playlists_upload_expiry.png)
 
