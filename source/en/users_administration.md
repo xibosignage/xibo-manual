@@ -70,9 +70,7 @@ Please ensure that the default user account named `cms_admin` is not modified or
 
 ## Further Reading
 
-[Managing Folders](getting_started_configure_folders)
-
-[Configuring Features](users_groups)
+[Managing Folders](/configure_folders.html)
 
 ## FAQs
 

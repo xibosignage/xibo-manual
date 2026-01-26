@@ -9,7 +9,7 @@ persona: "content manager"
 
 # Audio
 
-Add Audio files to play on your Layouts and Playlists from the [Library Search](layouts_editor_using_library_search.html). 
+Add Audio files to play on your Layouts and Playlists from the [Library Search](layouts_editor_library_search.html). 
 
 {feat}Audio|v4{/feat}
 
@@ -26,7 +26,7 @@ We recommend mp3.wav file format.
 - Set [start and end times](media_playlists.html#content-widget-expiry-dates) for audio files uploaded directly to a Playlist.
 - Save  audio files to Folders on upload, to easily control access to Users.
 - Uploaded audio files are cached for off-line playback.
-- Fully compatible with [Overlay Layouts.](layouts_overlay.html)
+- Fully compatible with [Overlay Layouts.](scheduling_overlays.html)
 - Control the duration of the audio file.
   - Set a lower duration to cut the original file short.
 

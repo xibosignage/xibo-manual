@@ -28,9 +28,7 @@ Settings are split into related category tabs:
 
 ## Configuration
 
-From this tab view the **CMS Secret Key** which is used to authenticate Players with the CMS and apply a **Theme** to pages (if applicable) as well as setting the default positioning for the [Navigation Menu](tour_cms_navigation.html).
-
-## Defaults 
+From this tab view the **CMS Secret Key** which is used to authenticate Players with the CMS and apply a **Theme** to pages (if applicable) as well as setting the default positioning for the **Navigation Menu**.
 
 Use this tab to apply defaults to all [Media](media_library.html) files and set default [Transitions](configure_transitions.html).
 

@@ -44,7 +44,7 @@ An exclamation icon will be shown to prompt a User as to what needs to be action
 Options set from the **Configure** tab will apply to all Elements added to the Layout of the same Widget type. 
 
 {tip}
-Create a [New Configuration](layouts_data_widgets.html#content-new-configuration) to select data from alternative data sources associated with the Widget!
+Create a  **New Configuration** to select data from alternative data sources associated with the Widget!
 {/tip}
 
 ### Appearance

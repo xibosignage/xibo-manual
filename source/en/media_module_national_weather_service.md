@@ -37,13 +37,13 @@ By setting the **Criteria Type** to "Emergency Alert" and the **Category** to "M
 
 ## Further Reading
 
-[Connectors Management](/media_modules_connectors)
+[Connectors Management](/media_modules_connectors.html)
 
-[Data Widgets](/layouts_editor_data_widgets)
+[Data Widgets](/layouts_editor_data_widgets.html)
 
-[Layout Editor](/layouts_editor)
+[Layout Editor](/layouts_editor.html)
 
 {nonwhite}
-[Schedule Criteria](/developer/player-control/schedule-criteria)
+[Schedule Criteria](/developer/player-control/schedule-criteria.html)
 {/nonwhite}
 

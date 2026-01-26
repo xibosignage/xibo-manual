@@ -7,7 +7,7 @@ persona: "content manager"
 
 # Flash
 
-Add SWF files to include on your Layouts and Playlists from the [Library Search](layouts_editor_using_library_search). 
+Add SWF files to include on your Layouts and Playlists from the [Library Search](layouts_editor_library_search). 
 
 Using the 'other media' search, use the **Type** drop down to select **Flash**.
 
