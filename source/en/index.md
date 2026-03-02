@@ -88,9 +88,9 @@ Using this option will automatically redirect Users to a page to view the notifi
 
 ## Further Reading
 
-[Using the Layout Editor to create your own Content](/layouts_editor.html)
+[Using the Layout Editor to create your own Content](layouts_editor.html)
 
-[Utilise Templates to make designing content easy](/layouts_editor_using_templates.html)
+[Utilise Templates to make designing content easy](layouts_editor_using_templates.html)
 
 
 
