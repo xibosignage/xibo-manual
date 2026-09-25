@@ -35,3 +35,7 @@ If individual Displays require different settings from those set in a Display Pr
 ***I have a Display that should use an alternative Profile from the set default?***
 
 Override individual Displays from the Displays grid. Click to Edit and use the Settings tab to select an alternative Settings Profile to use for the selected Display.
+
+***Can I use Portrait Displays?***
+
+Android, webOS and Tizen can control rotation if your device supports screen rotation. Orientation can be selected from the appropriate Display Settings profile using the Location tab. 

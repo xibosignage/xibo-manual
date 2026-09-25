@@ -7,39 +7,39 @@ persona: "content manager"
 
 # Image
 
-Add Image files to include on your Layouts and Playlists.
-
-## Overview
-
-- Valid extensions:  jpg,jpeg,png,bmp,gif,webp.
+Images are downloaded from the CMS and saved to the Player library (on internal storage or an SD card).
 
 {tip}
 Animated gif’s are not supported on any Player!
 {/tip}
 
--  Upload new image files directly to Playlists/Layouts from the Library Search.
-- Files uploaded directly to Playlists and Layouts are automatically saved to the Library for re-use.
-- Image files can be also be uploaded in advance to the Library.
+## Size and Format
+
+Images served through the image module are sampled so that only the quantity of pixels that an be displayed on the screen are loaded into the Player memory.
+
+When using images, follow our recommendations for best results:
+
+- Ensure your image is saved no bigger than 96 dpi
+- Check the resolution of the image and keep it within the intended screen size
+- Use PNG/JPG file format
 
 {tip}
-When selecting image files to upload, users should check the resolution of the image and keep it within the intended screen size. Caution should be taken as uploading very large images can cause issues for the Player.
+When an image is shown, the physical space the image takes up in memory is far greater than the size of the file, the majority of file containers use compression to reduce the file size.
+
+**Example**: *A JPEG image with a resolution of 2160 x 3840 at 600 dpi (which is common for printed media) shown without any sampling, would take -24 MB of memory to paint on the screen. If a graphics package were used to drop the resolution to 1080 x 1920 at 96 dpi, it would only take 6 MB of memory to open.*
 {/tip}
 
-- Set start and end times for image files uploaded directly to a Playlist.
+## Webpage Images
 
-- Save image files to Folders on upload, to easily control access to Users.
+Images on embedded or webpage media, observe the rules of the browser application for the player hardware.
 
-- Centre, Stretch and Fit scaling.
+## Pixabay Integration
 
-- Select images to use from Pixabay without leaving the CMS.
+Images can be selected for use directly from Pixabay without leaving the CMS. Once selected, Pixabay image files will be saved to the CMS library.
 
-  
+## Image Start and End times
 
-
-
-![Image](img/v4_media_module_image.png)
-
-
+Start and end times can be set for image files uploaded directly to Playlists.
 
 **As [[PRODUCTNAME]] takes no measures to control what content is put on your displays, it is your responsibility to ensure that any images used are appropriately attributed if you do not own the rights.**
 
